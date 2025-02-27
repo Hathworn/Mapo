@@ -1,5 +1,6 @@
 # LS-CAT-HIP
 LS-CAT数据集移植到HIP
+原项目地址: https://github.com/NTNU-HPC-Lab/LS-CAT
 
 # 东方超算运行收集数据集
 ## 1.slurm脚本
