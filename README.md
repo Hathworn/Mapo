@@ -1,6 +1,8 @@
 # LS-CAT-HIP
 LS-CAT数据集移植到HIP，保存在LS-CAT-HIP.tar.gz文件
 
+运行7种矩阵规模下20种线程块配置下的执行时间，包含约200w条数据
+
 原项目地址: https://github.com/NTNU-HPC-Lab/LS-CAT
 
 # 东方超算运行收集数据集
