@@ -2,29 +2,30 @@
 #include <stdio.h>
 #include <string.h>
 #include <getopt.h>
+#include <curand_kernel.h>
 #include <stdlib.h>
+#include <cuda.h>
 #include <sys/time.h>
-#include <hip/hip_runtime.h>
 #include "extract_with_interpolation.cu"
-#include <chrono>
-#include <iostream>
+#include<chrono>
+#include<iostream>
 using namespace std;
 using namespace std::chrono;
 int blocks_[20][2] = {{8,8},{16,16},{24,24},{32,32},{1,64},{1,128},{1,192},{1,256},{1,320},{1,384},{1,448},{1,512},{1,576},{1,640},{1,704},{1,768},{1,832},{1,896},{1,960},{1,1024}};
 int matrices_[7][2] = {{240,240},{496,496},{784,784},{1016,1016},{1232,1232},{1680,1680},{2024,2024}};
 int main(int argc, char **argv) {
-hipSetDevice(0);
+cudaSetDevice(0);
 char* p;int matrix_len=strtol(argv[1], &p, 10);
 for(int matrix_looper=0;matrix_looper<matrix_len;matrix_looper++){
 for(int block_looper=0;block_looper<20;block_looper++){
 int XSIZE=matrices_[matrix_looper][0],YSIZE=matrices_[matrix_looper][1],BLOCKX=blocks_[block_looper][0],BLOCKY=blocks_[block_looper][1];
 int nthreads = 1;
 float *data = NULL;
-hipMalloc(&data, XSIZE*YSIZE);
+cudaMalloc(&data, XSIZE*YSIZE);
 float *n_xy_coords = NULL;
-hipMalloc(&n_xy_coords, XSIZE*YSIZE);
+cudaMalloc(&n_xy_coords, XSIZE*YSIZE);
 float *extracted_data = NULL;
-hipMalloc(&extracted_data, XSIZE*YSIZE);
+cudaMalloc(&extracted_data, XSIZE*YSIZE);
 int n_max_coord = 1;
 int channels = 1;
 int height = YSIZE;
@@ -41,14 +42,14 @@ iYSIZE++;
 }
 dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
 dim3 threadBlock(BLOCKX, BLOCKY);
-hipFree(0);
+cudaFree(0);
 extract_with_interpolation<<<gridBlock,threadBlock>>>(nthreads,data,n_xy_coords,extracted_data,n_max_coord,channels,height,width);
-hipDeviceSynchronize();
-for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+cudaDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 10; ++loop_counter) {
 extract_with_interpolation<<<gridBlock,threadBlock>>>(nthreads,data,n_xy_coords,extracted_data,n_max_coord,channels,height,width);
 }
 auto start = steady_clock::now();
-for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+for (int loop_counter = 0; loop_counter < 1000; loop_counter++) {
 extract_with_interpolation<<<gridBlock,threadBlock>>>(nthreads,data,n_xy_coords,extracted_data,n_max_coord,channels,height,width);
 }
 auto end = steady_clock::now();

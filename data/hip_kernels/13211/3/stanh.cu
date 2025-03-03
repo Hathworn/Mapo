@@ -1,0 +1,13 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+extern "C"
+{
+}
+__global__ void stanh(const int lengthA, const double alpha, const double *a, double *b)
+{
+int i = threadIdx.x + blockIdx.x * blockDim.x;
+if (i<lengthA)
+{
+b[i] = alpha*tanh(a[i]);
+}
+}

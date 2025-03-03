@@ -2,18 +2,19 @@
 #include <stdio.h>
 #include <string.h>
 #include <getopt.h>
+#include <curand_kernel.h>
 #include <stdlib.h>
+#include <cuda.h>
 #include <sys/time.h>
-#include <hip/hip_runtime.h>
 #include "cudaSNormalizeROIs_kernel.cu"
-#include <chrono>
-#include <iostream>
+#include<chrono>
+#include<iostream>
 using namespace std;
 using namespace std::chrono;
 int blocks_[20][2] = {{8,8},{16,16},{24,24},{32,32},{1,64},{1,128},{1,192},{1,256},{1,320},{1,384},{1,448},{1,512},{1,576},{1,640},{1,704},{1,768},{1,832},{1,896},{1,960},{1,1024}};
 int matrices_[7][2] = {{240,240},{496,496},{784,784},{1016,1016},{1232,1232},{1680,1680},{2024,2024}};
 int main(int argc, char **argv) {
-hipSetDevice(0);
+cudaSetDevice(0);
 char* p;int matrix_len=strtol(argv[1], &p, 10);
 for(int matrix_looper=0;matrix_looper<matrix_len;matrix_looper++){
 for(int block_looper=0;block_looper<20;block_looper++){
@@ -32,35 +33,35 @@ bool generateTemplates = 1;
 const float normX = 1;
 const float normY = 1;
 const float *means = NULL;
-hipMalloc(&means, XSIZE*YSIZE);
+cudaMalloc(&means, XSIZE*YSIZE);
 const float *std = NULL;
-hipMalloc(&std, XSIZE*YSIZE);
+cudaMalloc(&std, XSIZE*YSIZE);
 const int *numPartsPerClass = NULL;
-hipMalloc(&numPartsPerClass, XSIZE*YSIZE);
+cudaMalloc(&numPartsPerClass, XSIZE*YSIZE);
 const int *numTemplatesPerClass = NULL;
-hipMalloc(&numTemplatesPerClass, XSIZE*YSIZE);
+cudaMalloc(&numTemplatesPerClass, XSIZE*YSIZE);
 const float *ROIRef = NULL;
-hipMalloc(&ROIRef, XSIZE*YSIZE);
+cudaMalloc(&ROIRef, XSIZE*YSIZE);
 const float *ROIEst = NULL;
-hipMalloc(&ROIEst, XSIZE*YSIZE);
+cudaMalloc(&ROIEst, XSIZE*YSIZE);
 const float *ValueEst = NULL;
-hipMalloc(&ValueEst, XSIZE*YSIZE);
+cudaMalloc(&ValueEst, XSIZE*YSIZE);
 const float *partsEst = NULL;
-hipMalloc(&partsEst, XSIZE*YSIZE);
+cudaMalloc(&partsEst, XSIZE*YSIZE);
 const float *partsVisibilityEst = NULL;
-hipMalloc(&partsVisibilityEst, XSIZE*YSIZE);
+cudaMalloc(&partsVisibilityEst, XSIZE*YSIZE);
 const float *templatesEst = NULL;
-hipMalloc(&templatesEst, XSIZE*YSIZE);
+cudaMalloc(&templatesEst, XSIZE*YSIZE);
 float *outputs = NULL;
-hipMalloc(&outputs, XSIZE*YSIZE);
+cudaMalloc(&outputs, XSIZE*YSIZE);
 int *argMax = NULL;
-hipMalloc(&argMax, XSIZE*YSIZE);
+cudaMalloc(&argMax, XSIZE*YSIZE);
 float *partsPrediction = NULL;
-hipMalloc(&partsPrediction, XSIZE*YSIZE);
+cudaMalloc(&partsPrediction, XSIZE*YSIZE);
 float *partsVisibilityPrediction = NULL;
-hipMalloc(&partsVisibilityPrediction, XSIZE*YSIZE);
+cudaMalloc(&partsVisibilityPrediction, XSIZE*YSIZE);
 float *templatesPrediction = NULL;
-hipMalloc(&templatesPrediction, XSIZE*YSIZE);
+cudaMalloc(&templatesPrediction, XSIZE*YSIZE);
 float scoreThreshold = 1;
 int iXSIZE= XSIZE;
 int iYSIZE= YSIZE;
@@ -74,14 +75,14 @@ iYSIZE++;
 }
 dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
 dim3 threadBlock(BLOCKX, BLOCKY);
-hipFree(0);
+cudaFree(0);
 cudaSNormalizeROIs_kernel<<<gridBlock,threadBlock>>>(inputSizeX,inputSizeY,nbProposals,batchSize,scoreIdx,nbCls,maxParts,maxTemplates,keepMax,generateParts,generateTemplates,normX,normY,means,std,numPartsPerClass,numTemplatesPerClass,ROIRef,ROIEst,ValueEst,partsEst,partsVisibilityEst,templatesEst,outputs,argMax,partsPrediction,partsVisibilityPrediction,templatesPrediction,scoreThreshold);
-hipDeviceSynchronize();
-for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+cudaDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 10; ++loop_counter) {
 cudaSNormalizeROIs_kernel<<<gridBlock,threadBlock>>>(inputSizeX,inputSizeY,nbProposals,batchSize,scoreIdx,nbCls,maxParts,maxTemplates,keepMax,generateParts,generateTemplates,normX,normY,means,std,numPartsPerClass,numTemplatesPerClass,ROIRef,ROIEst,ValueEst,partsEst,partsVisibilityEst,templatesEst,outputs,argMax,partsPrediction,partsVisibilityPrediction,templatesPrediction,scoreThreshold);
 }
 auto start = steady_clock::now();
-for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+for (int loop_counter = 0; loop_counter < 1000; loop_counter++) {
 cudaSNormalizeROIs_kernel<<<gridBlock,threadBlock>>>(inputSizeX,inputSizeY,nbProposals,batchSize,scoreIdx,nbCls,maxParts,maxTemplates,keepMax,generateParts,generateTemplates,normX,normY,means,std,numPartsPerClass,numTemplatesPerClass,ROIRef,ROIEst,ValueEst,partsEst,partsVisibilityEst,templatesEst,outputs,argMax,partsPrediction,partsVisibilityPrediction,templatesPrediction,scoreThreshold);
 }
 auto end = steady_clock::now();

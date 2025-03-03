@@ -2,18 +2,19 @@
 #include <stdio.h>
 #include <string.h>
 #include <getopt.h>
+#include <curand_kernel.h>
 #include <stdlib.h>
+#include <cuda.h>
 #include <sys/time.h>
-#include <hip/hip_runtime.h>
 #include "forwardPathKernel.cu"
-#include <chrono>
-#include <iostream>
+#include<chrono>
+#include<iostream>
 using namespace std;
 using namespace std::chrono;
 int blocks_[20][2] = {{8,8},{16,16},{24,24},{32,32},{1,64},{1,128},{1,192},{1,256},{1,320},{1,384},{1,448},{1,512},{1,576},{1,640},{1,704},{1,768},{1,832},{1,896},{1,960},{1,1024}};
 int matrices_[7][2] = {{240,240},{496,496},{784,784},{1016,1016},{1232,1232},{1680,1680},{2024,2024}};
 int main(int argc, char **argv) {
-hipSetDevice(0);
+cudaSetDevice(0);
 char* p;int matrix_len=strtol(argv[1], &p, 10);
 for(int matrix_looper=0;matrix_looper<matrix_len;matrix_looper++){
 for(int block_looper=0;block_looper<20;block_looper++){
@@ -26,44 +27,44 @@ int noControls = 1;
 int noUncertainties = 1;
 float timeStep = 1;
 float *initPops = NULL;
-hipMalloc(&initPops, XSIZE*YSIZE);
+cudaMalloc(&initPops, XSIZE*YSIZE);
 float *pops = NULL;
-hipMalloc(&pops, XSIZE*YSIZE);
+cudaMalloc(&pops, XSIZE*YSIZE);
 float *mmm = NULL;
-hipMalloc(&mmm, XSIZE*YSIZE);
+cudaMalloc(&mmm, XSIZE*YSIZE);
 int *rowIdx = NULL;
-hipMalloc(&rowIdx, XSIZE*YSIZE);
+cudaMalloc(&rowIdx, XSIZE*YSIZE);
 int *elemsPerCol = NULL;
-hipMalloc(&elemsPerCol, XSIZE*YSIZE);
+cudaMalloc(&elemsPerCol, XSIZE*YSIZE);
 int maxElems = 1;
 float *speciesParams = NULL;
-hipMalloc(&speciesParams, XSIZE*YSIZE);
+cudaMalloc(&speciesParams, XSIZE*YSIZE);
 float *caps = NULL;
-hipMalloc(&caps, XSIZE*YSIZE);
+cudaMalloc(&caps, XSIZE*YSIZE);
 float *aars = NULL;
-hipMalloc(&aars, XSIZE*YSIZE);
+cudaMalloc(&aars, XSIZE*YSIZE);
 float *uncertParams = NULL;
-hipMalloc(&uncertParams, XSIZE*YSIZE);
+cudaMalloc(&uncertParams, XSIZE*YSIZE);
 int *controls = NULL;
-hipMalloc(&controls, XSIZE*YSIZE);
+cudaMalloc(&controls, XSIZE*YSIZE);
 float *uJumps = NULL;
-hipMalloc(&uJumps, XSIZE*YSIZE);
+cudaMalloc(&uJumps, XSIZE*YSIZE);
 float *uBrownian = NULL;
-hipMalloc(&uBrownian, XSIZE*YSIZE);
+cudaMalloc(&uBrownian, XSIZE*YSIZE);
 float *uJumpSizes = NULL;
-hipMalloc(&uJumpSizes, XSIZE*YSIZE);
+cudaMalloc(&uJumpSizes, XSIZE*YSIZE);
 float *uJumpsSpecies = NULL;
-hipMalloc(&uJumpsSpecies, XSIZE*YSIZE);
+cudaMalloc(&uJumpsSpecies, XSIZE*YSIZE);
 float *uBrownianSpecies = NULL;
-hipMalloc(&uBrownianSpecies, XSIZE*YSIZE);
+cudaMalloc(&uBrownianSpecies, XSIZE*YSIZE);
 float *uJumpSizesSpecies = NULL;
-hipMalloc(&uJumpSizesSpecies, XSIZE*YSIZE);
+cudaMalloc(&uJumpSizesSpecies, XSIZE*YSIZE);
 float *rgr = NULL;
-hipMalloc(&rgr, XSIZE*YSIZE);
+cudaMalloc(&rgr, XSIZE*YSIZE);
 float *uResults = NULL;
-hipMalloc(&uResults, XSIZE*YSIZE);
+cudaMalloc(&uResults, XSIZE*YSIZE);
 float *totalPops = NULL;
-hipMalloc(&totalPops, XSIZE*YSIZE);
+cudaMalloc(&totalPops, XSIZE*YSIZE);
 int iXSIZE= XSIZE;
 int iYSIZE= YSIZE;
 while(iXSIZE%BLOCKX!=0)
@@ -76,14 +77,14 @@ iYSIZE++;
 }
 dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
 dim3 threadBlock(BLOCKX, BLOCKY);
-hipFree(0);
+cudaFree(0);
 forwardPathKernel<<<gridBlock,threadBlock>>>(noPaths,nYears,noSpecies,noPatches,noControls,noUncertainties,timeStep,initPops,pops,mmm,rowIdx,elemsPerCol,maxElems,speciesParams,caps,aars,uncertParams,controls,uJumps,uBrownian,uJumpSizes,uJumpsSpecies,uBrownianSpecies,uJumpSizesSpecies,rgr,uResults,totalPops);
-hipDeviceSynchronize();
-for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+cudaDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 10; ++loop_counter) {
 forwardPathKernel<<<gridBlock,threadBlock>>>(noPaths,nYears,noSpecies,noPatches,noControls,noUncertainties,timeStep,initPops,pops,mmm,rowIdx,elemsPerCol,maxElems,speciesParams,caps,aars,uncertParams,controls,uJumps,uBrownian,uJumpSizes,uJumpsSpecies,uBrownianSpecies,uJumpSizesSpecies,rgr,uResults,totalPops);
 }
 auto start = steady_clock::now();
-for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+for (int loop_counter = 0; loop_counter < 1000; loop_counter++) {
 forwardPathKernel<<<gridBlock,threadBlock>>>(noPaths,nYears,noSpecies,noPatches,noControls,noUncertainties,timeStep,initPops,pops,mmm,rowIdx,elemsPerCol,maxElems,speciesParams,caps,aars,uncertParams,controls,uJumps,uBrownian,uJumpSizes,uJumpsSpecies,uBrownianSpecies,uJumpSizesSpecies,rgr,uResults,totalPops);
 }
 auto end = steady_clock::now();

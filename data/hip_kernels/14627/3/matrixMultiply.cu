@@ -1,0 +1,5 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+__global__ void matrixMultiply(float *A, float *B, float *C, int numARows, int numAColumns, int numBRows, int numBColumns, int numCRows, int numCColumns) {
+//@@ Insert code to implement matrix multiplication here
+}

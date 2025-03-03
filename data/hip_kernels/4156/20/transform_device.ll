@@ -1,0 +1,377 @@
+; ModuleID = '../data/hip_kernels/4156/20/main.cu'
+source_filename = "../data/hip_kernels/4156/20/main.cu"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-G1-ni:7"
+target triple = "amdgcn-amd-amdhsa"
+
+; Function Attrs: argmemonly mustprogress nofree norecurse nosync nounwind
+define protected amdgpu_kernel void @_Z9transformPfS_S_(float addrspace(1)* nocapture writeonly %0, float addrspace(1)* nocapture readonly %1, float addrspace(1)* nocapture readonly %2) local_unnamed_addr #0 {
+  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()
+  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4
+  %6 = tail call i32 @llvm.amdgcn.workgroup.id.y()
+  %7 = shl i32 %6, 5
+  %8 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4
+  %9 = add i32 %7, %8
+  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr()
+  %11 = getelementptr inbounds i8, i8 addrspace(4)* %10, i64 12
+  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*
+  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !5
+  %14 = getelementptr i8, i8 addrspace(4)* %10, i64 4
+  %15 = bitcast i8 addrspace(4)* %14 to i16 addrspace(4)*
+  %16 = load i16, i16 addrspace(4)* %15, align 4, !range !14, !invariant.load !15
+  %17 = zext i16 %16 to i32
+  %18 = udiv i32 %13, %17
+  %19 = mul i32 %18, %17
+  %20 = icmp ugt i32 %13, %19
+  %21 = zext i1 %20 to i32
+  %22 = add i32 %18, %21
+  %23 = mul i32 %9, %22
+  %24 = add i32 %23, %4
+  %25 = shl i32 %24, 5
+  %26 = add i32 %25, %5
+  %27 = shl nsw i32 %26, 2
+  %28 = sext i32 %27 to i64
+  %29 = getelementptr inbounds float, float addrspace(1)* %1, i64 %28
+  %30 = add nuw nsw i32 %27, 1
+  %31 = sext i32 %30 to i64
+  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %31
+  %33 = add nuw nsw i32 %27, 2
+  %34 = sext i32 %33 to i64
+  %35 = getelementptr inbounds float, float addrspace(1)* %1, i64 %34
+  %36 = add nuw nsw i32 %27, 3
+  %37 = sext i32 %36 to i64
+  %38 = getelementptr inbounds float, float addrspace(1)* %1, i64 %37
+  %39 = mul nsw i32 %26, 3
+  %40 = load float, float addrspace(1)* %29, align 4, !tbaa !16
+  %41 = load float, float addrspace(1)* %2, align 4, !tbaa !16
+  %42 = fmul contract float %40, %41
+  %43 = load float, float addrspace(1)* %32, align 4, !tbaa !16
+  %44 = getelementptr inbounds float, float addrspace(1)* %2, i64 1
+  %45 = load float, float addrspace(1)* %44, align 4, !tbaa !16
+  %46 = fmul contract float %43, %45
+  %47 = fadd contract float %42, %46
+  %48 = load float, float addrspace(1)* %35, align 4, !tbaa !16
+  %49 = getelementptr inbounds float, float addrspace(1)* %2, i64 2
+  %50 = load float, float addrspace(1)* %49, align 4, !tbaa !16
+  %51 = fmul contract float %48, %50
+  %52 = fadd contract float %47, %51
+  %53 = load float, float addrspace(1)* %38, align 4, !tbaa !16
+  %54 = getelementptr inbounds float, float addrspace(1)* %2, i64 3
+  %55 = load float, float addrspace(1)* %54, align 4, !tbaa !16
+  %56 = fmul contract float %53, %55
+  %57 = fadd contract float %52, %56
+  %58 = sext i32 %39 to i64
+  %59 = getelementptr inbounds float, float addrspace(1)* %0, i64 %58
+  store float %57, float addrspace(1)* %59, align 4, !tbaa !16
+  %60 = load float, float addrspace(1)* %29, align 4, !tbaa !16
+  %61 = getelementptr inbounds float, float addrspace(1)* %2, i64 4
+  %62 = load float, float addrspace(1)* %61, align 4, !tbaa !16
+  %63 = fmul contract float %60, %62
+  %64 = load float, float addrspace(1)* %32, align 4, !tbaa !16
+  %65 = getelementptr inbounds float, float addrspace(1)* %2, i64 5
+  %66 = load float, float addrspace(1)* %65, align 4, !tbaa !16
+  %67 = fmul contract float %64, %66
+  %68 = fadd contract float %63, %67
+  %69 = load float, float addrspace(1)* %35, align 4, !tbaa !16
+  %70 = getelementptr inbounds float, float addrspace(1)* %2, i64 6
+  %71 = load float, float addrspace(1)* %70, align 4, !tbaa !16
+  %72 = fmul contract float %69, %71
+  %73 = fadd contract float %68, %72
+  %74 = load float, float addrspace(1)* %38, align 4, !tbaa !16
+  %75 = getelementptr inbounds float, float addrspace(1)* %2, i64 7
+  %76 = load float, float addrspace(1)* %75, align 4, !tbaa !16
+  %77 = fmul contract float %74, %76
+  %78 = fadd contract float %73, %77
+  %79 = add nsw i32 %39, 1
+  %80 = sext i32 %79 to i64
+  %81 = getelementptr inbounds float, float addrspace(1)* %0, i64 %80
+  store float %78, float addrspace(1)* %81, align 4, !tbaa !16
+  %82 = load float, float addrspace(1)* %29, align 4, !tbaa !16
+  %83 = getelementptr inbounds float, float addrspace(1)* %2, i64 8
+  %84 = load float, float addrspace(1)* %83, align 4, !tbaa !16
+  %85 = fmul contract float %82, %84
+  %86 = load float, float addrspace(1)* %32, align 4, !tbaa !16
+  %87 = getelementptr inbounds float, float addrspace(1)* %2, i64 9
+  %88 = load float, float addrspace(1)* %87, align 4, !tbaa !16
+  %89 = fmul contract float %86, %88
+  %90 = fadd contract float %85, %89
+  %91 = load float, float addrspace(1)* %35, align 4, !tbaa !16
+  %92 = getelementptr inbounds float, float addrspace(1)* %2, i64 10
+  %93 = load float, float addrspace(1)* %92, align 4, !tbaa !16
+  %94 = fmul contract float %91, %93
+  %95 = fadd contract float %90, %94
+  %96 = load float, float addrspace(1)* %38, align 4, !tbaa !16
+  %97 = getelementptr inbounds float, float addrspace(1)* %2, i64 11
+  %98 = load float, float addrspace(1)* %97, align 4, !tbaa !16
+  %99 = fmul contract float %96, %98
+  %100 = fadd contract float %95, %99
+  %101 = add nsw i32 %39, 2
+  %102 = sext i32 %101 to i64
+  %103 = getelementptr inbounds float, float addrspace(1)* %0, i64 %102
+  store float %100, float addrspace(1)* %103, align 4, !tbaa !16
+  %104 = add nsw i32 %9, 8
+  %105 = mul i32 %104, %22
+  %106 = add i32 %105, %4
+  %107 = shl i32 %106, 5
+  %108 = add i32 %107, %5
+  %109 = shl nsw i32 %108, 2
+  %110 = sext i32 %109 to i64
+  %111 = getelementptr inbounds float, float addrspace(1)* %1, i64 %110
+  %112 = add nuw nsw i32 %109, 1
+  %113 = sext i32 %112 to i64
+  %114 = getelementptr inbounds float, float addrspace(1)* %1, i64 %113
+  %115 = add nuw nsw i32 %109, 2
+  %116 = sext i32 %115 to i64
+  %117 = getelementptr inbounds float, float addrspace(1)* %1, i64 %116
+  %118 = add nuw nsw i32 %109, 3
+  %119 = sext i32 %118 to i64
+  %120 = getelementptr inbounds float, float addrspace(1)* %1, i64 %119
+  %121 = mul nsw i32 %108, 3
+  %122 = load float, float addrspace(1)* %111, align 4, !tbaa !16
+  %123 = load float, float addrspace(1)* %2, align 4, !tbaa !16
+  %124 = fmul contract float %122, %123
+  %125 = load float, float addrspace(1)* %114, align 4, !tbaa !16
+  %126 = load float, float addrspace(1)* %44, align 4, !tbaa !16
+  %127 = fmul contract float %125, %126
+  %128 = fadd contract float %124, %127
+  %129 = load float, float addrspace(1)* %117, align 4, !tbaa !16
+  %130 = load float, float addrspace(1)* %49, align 4, !tbaa !16
+  %131 = fmul contract float %129, %130
+  %132 = fadd contract float %128, %131
+  %133 = load float, float addrspace(1)* %120, align 4, !tbaa !16
+  %134 = load float, float addrspace(1)* %54, align 4, !tbaa !16
+  %135 = fmul contract float %133, %134
+  %136 = fadd contract float %132, %135
+  %137 = sext i32 %121 to i64
+  %138 = getelementptr inbounds float, float addrspace(1)* %0, i64 %137
+  store float %136, float addrspace(1)* %138, align 4, !tbaa !16
+  %139 = load float, float addrspace(1)* %111, align 4, !tbaa !16
+  %140 = load float, float addrspace(1)* %61, align 4, !tbaa !16
+  %141 = fmul contract float %139, %140
+  %142 = load float, float addrspace(1)* %114, align 4, !tbaa !16
+  %143 = load float, float addrspace(1)* %65, align 4, !tbaa !16
+  %144 = fmul contract float %142, %143
+  %145 = fadd contract float %141, %144
+  %146 = load float, float addrspace(1)* %117, align 4, !tbaa !16
+  %147 = load float, float addrspace(1)* %70, align 4, !tbaa !16
+  %148 = fmul contract float %146, %147
+  %149 = fadd contract float %145, %148
+  %150 = load float, float addrspace(1)* %120, align 4, !tbaa !16
+  %151 = load float, float addrspace(1)* %75, align 4, !tbaa !16
+  %152 = fmul contract float %150, %151
+  %153 = fadd contract float %149, %152
+  %154 = add nsw i32 %121, 1
+  %155 = sext i32 %154 to i64
+  %156 = getelementptr inbounds float, float addrspace(1)* %0, i64 %155
+  store float %153, float addrspace(1)* %156, align 4, !tbaa !16
+  %157 = load float, float addrspace(1)* %111, align 4, !tbaa !16
+  %158 = load float, float addrspace(1)* %83, align 4, !tbaa !16
+  %159 = fmul contract float %157, %158
+  %160 = load float, float addrspace(1)* %114, align 4, !tbaa !16
+  %161 = load float, float addrspace(1)* %87, align 4, !tbaa !16
+  %162 = fmul contract float %160, %161
+  %163 = fadd contract float %159, %162
+  %164 = load float, float addrspace(1)* %117, align 4, !tbaa !16
+  %165 = load float, float addrspace(1)* %92, align 4, !tbaa !16
+  %166 = fmul contract float %164, %165
+  %167 = fadd contract float %163, %166
+  %168 = load float, float addrspace(1)* %120, align 4, !tbaa !16
+  %169 = load float, float addrspace(1)* %97, align 4, !tbaa !16
+  %170 = fmul contract float %168, %169
+  %171 = fadd contract float %167, %170
+  %172 = add nsw i32 %121, 2
+  %173 = sext i32 %172 to i64
+  %174 = getelementptr inbounds float, float addrspace(1)* %0, i64 %173
+  store float %171, float addrspace(1)* %174, align 4, !tbaa !16
+  %175 = add nsw i32 %9, 16
+  %176 = mul i32 %175, %22
+  %177 = add i32 %176, %4
+  %178 = shl i32 %177, 5
+  %179 = add i32 %178, %5
+  %180 = shl nsw i32 %179, 2
+  %181 = sext i32 %180 to i64
+  %182 = getelementptr inbounds float, float addrspace(1)* %1, i64 %181
+  %183 = add nuw nsw i32 %180, 1
+  %184 = sext i32 %183 to i64
+  %185 = getelementptr inbounds float, float addrspace(1)* %1, i64 %184
+  %186 = add nuw nsw i32 %180, 2
+  %187 = sext i32 %186 to i64
+  %188 = getelementptr inbounds float, float addrspace(1)* %1, i64 %187
+  %189 = add nuw nsw i32 %180, 3
+  %190 = sext i32 %189 to i64
+  %191 = getelementptr inbounds float, float addrspace(1)* %1, i64 %190
+  %192 = mul nsw i32 %179, 3
+  %193 = load float, float addrspace(1)* %182, align 4, !tbaa !16
+  %194 = load float, float addrspace(1)* %2, align 4, !tbaa !16
+  %195 = fmul contract float %193, %194
+  %196 = load float, float addrspace(1)* %185, align 4, !tbaa !16
+  %197 = load float, float addrspace(1)* %44, align 4, !tbaa !16
+  %198 = fmul contract float %196, %197
+  %199 = fadd contract float %195, %198
+  %200 = load float, float addrspace(1)* %188, align 4, !tbaa !16
+  %201 = load float, float addrspace(1)* %49, align 4, !tbaa !16
+  %202 = fmul contract float %200, %201
+  %203 = fadd contract float %199, %202
+  %204 = load float, float addrspace(1)* %191, align 4, !tbaa !16
+  %205 = load float, float addrspace(1)* %54, align 4, !tbaa !16
+  %206 = fmul contract float %204, %205
+  %207 = fadd contract float %203, %206
+  %208 = sext i32 %192 to i64
+  %209 = getelementptr inbounds float, float addrspace(1)* %0, i64 %208
+  store float %207, float addrspace(1)* %209, align 4, !tbaa !16
+  %210 = load float, float addrspace(1)* %182, align 4, !tbaa !16
+  %211 = load float, float addrspace(1)* %61, align 4, !tbaa !16
+  %212 = fmul contract float %210, %211
+  %213 = load float, float addrspace(1)* %185, align 4, !tbaa !16
+  %214 = load float, float addrspace(1)* %65, align 4, !tbaa !16
+  %215 = fmul contract float %213, %214
+  %216 = fadd contract float %212, %215
+  %217 = load float, float addrspace(1)* %188, align 4, !tbaa !16
+  %218 = load float, float addrspace(1)* %70, align 4, !tbaa !16
+  %219 = fmul contract float %217, %218
+  %220 = fadd contract float %216, %219
+  %221 = load float, float addrspace(1)* %191, align 4, !tbaa !16
+  %222 = load float, float addrspace(1)* %75, align 4, !tbaa !16
+  %223 = fmul contract float %221, %222
+  %224 = fadd contract float %220, %223
+  %225 = add nsw i32 %192, 1
+  %226 = sext i32 %225 to i64
+  %227 = getelementptr inbounds float, float addrspace(1)* %0, i64 %226
+  store float %224, float addrspace(1)* %227, align 4, !tbaa !16
+  %228 = load float, float addrspace(1)* %182, align 4, !tbaa !16
+  %229 = load float, float addrspace(1)* %83, align 4, !tbaa !16
+  %230 = fmul contract float %228, %229
+  %231 = load float, float addrspace(1)* %185, align 4, !tbaa !16
+  %232 = load float, float addrspace(1)* %87, align 4, !tbaa !16
+  %233 = fmul contract float %231, %232
+  %234 = fadd contract float %230, %233
+  %235 = load float, float addrspace(1)* %188, align 4, !tbaa !16
+  %236 = load float, float addrspace(1)* %92, align 4, !tbaa !16
+  %237 = fmul contract float %235, %236
+  %238 = fadd contract float %234, %237
+  %239 = load float, float addrspace(1)* %191, align 4, !tbaa !16
+  %240 = load float, float addrspace(1)* %97, align 4, !tbaa !16
+  %241 = fmul contract float %239, %240
+  %242 = fadd contract float %238, %241
+  %243 = add nsw i32 %192, 2
+  %244 = sext i32 %243 to i64
+  %245 = getelementptr inbounds float, float addrspace(1)* %0, i64 %244
+  store float %242, float addrspace(1)* %245, align 4, !tbaa !16
+  %246 = add nsw i32 %9, 24
+  %247 = mul i32 %246, %22
+  %248 = add i32 %247, %4
+  %249 = shl i32 %248, 5
+  %250 = add i32 %249, %5
+  %251 = shl nsw i32 %250, 2
+  %252 = sext i32 %251 to i64
+  %253 = getelementptr inbounds float, float addrspace(1)* %1, i64 %252
+  %254 = add nuw nsw i32 %251, 1
+  %255 = sext i32 %254 to i64
+  %256 = getelementptr inbounds float, float addrspace(1)* %1, i64 %255
+  %257 = add nuw nsw i32 %251, 2
+  %258 = sext i32 %257 to i64
+  %259 = getelementptr inbounds float, float addrspace(1)* %1, i64 %258
+  %260 = add nuw nsw i32 %251, 3
+  %261 = sext i32 %260 to i64
+  %262 = getelementptr inbounds float, float addrspace(1)* %1, i64 %261
+  %263 = mul nsw i32 %250, 3
+  %264 = load float, float addrspace(1)* %253, align 4, !tbaa !16
+  %265 = load float, float addrspace(1)* %2, align 4, !tbaa !16
+  %266 = fmul contract float %264, %265
+  %267 = load float, float addrspace(1)* %256, align 4, !tbaa !16
+  %268 = load float, float addrspace(1)* %44, align 4, !tbaa !16
+  %269 = fmul contract float %267, %268
+  %270 = fadd contract float %266, %269
+  %271 = load float, float addrspace(1)* %259, align 4, !tbaa !16
+  %272 = load float, float addrspace(1)* %49, align 4, !tbaa !16
+  %273 = fmul contract float %271, %272
+  %274 = fadd contract float %270, %273
+  %275 = load float, float addrspace(1)* %262, align 4, !tbaa !16
+  %276 = load float, float addrspace(1)* %54, align 4, !tbaa !16
+  %277 = fmul contract float %275, %276
+  %278 = fadd contract float %274, %277
+  %279 = sext i32 %263 to i64
+  %280 = getelementptr inbounds float, float addrspace(1)* %0, i64 %279
+  store float %278, float addrspace(1)* %280, align 4, !tbaa !16
+  %281 = load float, float addrspace(1)* %253, align 4, !tbaa !16
+  %282 = load float, float addrspace(1)* %61, align 4, !tbaa !16
+  %283 = fmul contract float %281, %282
+  %284 = load float, float addrspace(1)* %256, align 4, !tbaa !16
+  %285 = load float, float addrspace(1)* %65, align 4, !tbaa !16
+  %286 = fmul contract float %284, %285
+  %287 = fadd contract float %283, %286
+  %288 = load float, float addrspace(1)* %259, align 4, !tbaa !16
+  %289 = load float, float addrspace(1)* %70, align 4, !tbaa !16
+  %290 = fmul contract float %288, %289
+  %291 = fadd contract float %287, %290
+  %292 = load float, float addrspace(1)* %262, align 4, !tbaa !16
+  %293 = load float, float addrspace(1)* %75, align 4, !tbaa !16
+  %294 = fmul contract float %292, %293
+  %295 = fadd contract float %291, %294
+  %296 = add nsw i32 %263, 1
+  %297 = sext i32 %296 to i64
+  %298 = getelementptr inbounds float, float addrspace(1)* %0, i64 %297
+  store float %295, float addrspace(1)* %298, align 4, !tbaa !16
+  %299 = load float, float addrspace(1)* %253, align 4, !tbaa !16
+  %300 = load float, float addrspace(1)* %83, align 4, !tbaa !16
+  %301 = fmul contract float %299, %300
+  %302 = load float, float addrspace(1)* %256, align 4, !tbaa !16
+  %303 = load float, float addrspace(1)* %87, align 4, !tbaa !16
+  %304 = fmul contract float %302, %303
+  %305 = fadd contract float %301, %304
+  %306 = load float, float addrspace(1)* %259, align 4, !tbaa !16
+  %307 = load float, float addrspace(1)* %92, align 4, !tbaa !16
+  %308 = fmul contract float %306, %307
+  %309 = fadd contract float %305, %308
+  %310 = load float, float addrspace(1)* %262, align 4, !tbaa !16
+  %311 = load float, float addrspace(1)* %97, align 4, !tbaa !16
+  %312 = fmul contract float %310, %311
+  %313 = fadd contract float %309, %312
+  %314 = add nsw i32 %263, 2
+  %315 = sext i32 %314 to i64
+  %316 = getelementptr inbounds float, float addrspace(1)* %0, i64 %315
+  store float %313, float addrspace(1)* %316, align 4, !tbaa !16
+  ret void
+}
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare align 4 i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr() #1
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workitem.id.x() #1
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workitem.id.y() #1
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workgroup.id.x() #1
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workgroup.id.y() #1
+
+attributes #0 = { argmemonly mustprogress nofree norecurse nosync nounwind "amdgpu-flat-work-group-size"="1,256" "frame-pointer"="none" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="gfx906" "target-features"="+16-bit-insts,+ci-insts,+dl-insts,+dot1-insts,+dot2-insts,+dot7-insts,+dpp,+flat-address-space,+gfx8-insts,+gfx9-insts,+s-memrealtime,+s-memtime-inst,+sramecc" "uniform-work-group-size"="true" }
+attributes #1 = { mustprogress nofree nosync nounwind readnone speculatable willreturn }
+
+!llvm.module.flags = !{!0, !1}
+!opencl.ocl.version = !{!2}
+!llvm.ident = !{!3}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{i32 7, !"PIC Level", i32 1}
+!2 = !{i32 2, i32 0}
+!3 = !{!"clang version 15.0.0 (http://10.15.3.7/dcutoolkit/driverruntime/llvm-project.git 340750feeda88c9c2ce8ad481b11d9aa7f033d39)"}
+!4 = !{i32 0, i32 1024}
+!5 = !{!6, !10, i64 12}
+!6 = !{!"hsa_kernel_dispatch_packet_s", !7, i64 0, !7, i64 2, !7, i64 4, !7, i64 6, !7, i64 8, !7, i64 10, !10, i64 12, !10, i64 16, !10, i64 20, !10, i64 24, !10, i64 28, !11, i64 32, !12, i64 40, !11, i64 48, !13, i64 56}
+!7 = !{!"short", !8, i64 0}
+!8 = !{!"omnipotent char", !9, i64 0}
+!9 = !{!"Simple C/C++ TBAA"}
+!10 = !{!"int", !8, i64 0}
+!11 = !{!"long", !8, i64 0}
+!12 = !{!"any pointer", !8, i64 0}
+!13 = !{!"hsa_signal_s", !11, i64 0}
+!14 = !{i16 1, i16 1025}
+!15 = !{}
+!16 = !{!17, !17, i64 0}
+!17 = !{!"float", !18, i64 0}
+!18 = !{!"omnipotent char", !19, i64 0}
+!19 = !{!"Simple C++ TBAA"}

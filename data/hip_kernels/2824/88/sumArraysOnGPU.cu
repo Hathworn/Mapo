@@ -1,0 +1,12 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+__global__ void sumArraysOnGPU(float *A, float *B, float *C, const int N)
+{
+int i = blockIdx.x * blockDim.x + threadIdx.x;
+__shared__ float d[256];
+
+if (i < N) {
+d[threadIdx.x%16]= A[i] + B[i];
+C[i] = d[threadIdx.x%8];
+}
+}

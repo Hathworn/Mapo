@@ -2,18 +2,19 @@
 #include <stdio.h>
 #include <string.h>
 #include <getopt.h>
+#include <curand_kernel.h>
 #include <stdlib.h>
+#include <cuda.h>
 #include <sys/time.h>
-#include <hip/hip_runtime.h>
 #include "cudaSBilinearTF_Forward_kernel.cu"
-#include <chrono>
-#include <iostream>
+#include<chrono>
+#include<iostream>
 using namespace std;
 using namespace std::chrono;
 int blocks_[20][2] = {{8,8},{16,16},{24,24},{32,32},{1,64},{1,128},{1,192},{1,256},{1,320},{1,384},{1,448},{1,512},{1,576},{1,640},{1,704},{1,768},{1,832},{1,896},{1,960},{1,1024}};
 int matrices_[7][2] = {{240,240},{496,496},{784,784},{1016,1016},{1232,1232},{1680,1680},{2024,2024}};
 int main(int argc, char **argv) {
-hipSetDevice(0);
+cudaSetDevice(0);
 char* p;int matrix_len=strtol(argv[1], &p, 10);
 for(int matrix_looper=0;matrix_looper<matrix_len;matrix_looper++){
 for(int block_looper=0;block_looper<20;block_looper++){
@@ -25,21 +26,21 @@ unsigned int batchSize = 1;
 unsigned int inputWidth = 1;
 unsigned int inputHeight = 1;
 const unsigned int *yLowIdx = NULL;
-hipMalloc(&yLowIdx, XSIZE*YSIZE);
+cudaMalloc(&yLowIdx, XSIZE*YSIZE);
 const unsigned int *yHighIdx = NULL;
-hipMalloc(&yHighIdx, XSIZE*YSIZE);
+cudaMalloc(&yHighIdx, XSIZE*YSIZE);
 const float *yInter = NULL;
-hipMalloc(&yInter, XSIZE*YSIZE);
+cudaMalloc(&yInter, XSIZE*YSIZE);
 const unsigned int *xLowIdx = NULL;
-hipMalloc(&xLowIdx, XSIZE*YSIZE);
+cudaMalloc(&xLowIdx, XSIZE*YSIZE);
 const unsigned int *xHighIdx = NULL;
-hipMalloc(&xHighIdx, XSIZE*YSIZE);
+cudaMalloc(&xHighIdx, XSIZE*YSIZE);
 const float *xInter = NULL;
-hipMalloc(&xInter, XSIZE*YSIZE);
+cudaMalloc(&xInter, XSIZE*YSIZE);
 const float *input = NULL;
-hipMalloc(&input, XSIZE*YSIZE);
+cudaMalloc(&input, XSIZE*YSIZE);
 float *outputs = NULL;
-hipMalloc(&outputs, XSIZE*YSIZE);
+cudaMalloc(&outputs, XSIZE*YSIZE);
 int iXSIZE= XSIZE;
 int iYSIZE= YSIZE;
 while(iXSIZE%BLOCKX!=0)
@@ -52,14 +53,14 @@ iYSIZE++;
 }
 dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
 dim3 threadBlock(BLOCKX, BLOCKY);
-hipFree(0);
+cudaFree(0);
 cudaSBilinearTF_Forward_kernel<<<gridBlock,threadBlock>>>(outputWidth,outputHeight,nbChannels,batchSize,inputWidth,inputHeight,yLowIdx,yHighIdx,yInter,xLowIdx,xHighIdx,xInter,input,outputs);
-hipDeviceSynchronize();
-for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+cudaDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 10; ++loop_counter) {
 cudaSBilinearTF_Forward_kernel<<<gridBlock,threadBlock>>>(outputWidth,outputHeight,nbChannels,batchSize,inputWidth,inputHeight,yLowIdx,yHighIdx,yInter,xLowIdx,xHighIdx,xInter,input,outputs);
 }
 auto start = steady_clock::now();
-for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+for (int loop_counter = 0; loop_counter < 1000; loop_counter++) {
 cudaSBilinearTF_Forward_kernel<<<gridBlock,threadBlock>>>(outputWidth,outputHeight,nbChannels,batchSize,inputWidth,inputHeight,yLowIdx,yHighIdx,yInter,xLowIdx,xHighIdx,xInter,input,outputs);
 }
 auto end = steady_clock::now();

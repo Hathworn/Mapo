@@ -1,0 +1,1273 @@
+; ModuleID = '../data/hip_kernels/13511/1/main.cu'
+source_filename = "../data/hip_kernels/13511/1/main.cu"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-G1-ni:7"
+target triple = "amdgcn-amd-amdhsa"
+
+%struct.SHA256_CTX = type { [64 x i8], i32, [2 x i32], [8 x i32] }
+
+@k = protected addrspace(1) externally_initialized global [64 x i32] [i32 1116352408, i32 1899447441, i32 -1245643825, i32 -373957723, i32 961987163, i32 1508970993, i32 -1841331548, i32 -1424204075, i32 -670586216, i32 310598401, i32 607225278, i32 1426881987, i32 1925078388, i32 -2132889090, i32 -1680079193, i32 -1046744716, i32 -459576895, i32 -272742522, i32 264347078, i32 604807628, i32 770255983, i32 1249150122, i32 1555081692, i32 1996064986, i32 -1740746414, i32 -1473132947, i32 -1341970488, i32 -1084653625, i32 -958395405, i32 -710438585, i32 113926993, i32 338241895, i32 666307205, i32 773529912, i32 1294757372, i32 1396182291, i32 1695183700, i32 1986661051, i32 -2117940946, i32 -1838011259, i32 -1564481375, i32 -1474664885, i32 -1035236496, i32 -949202525, i32 -778901479, i32 -694614492, i32 -200395387, i32 275423344, i32 430227734, i32 506948616, i32 659060556, i32 883997877, i32 958139571, i32 1322822218, i32 1537002063, i32 1747873779, i32 1955562222, i32 2024104815, i32 -2067236844, i32 -1933114872, i32 -1866530822, i32 -1538233109, i32 -1090935817, i32 -965641998], align 16
+@llvm.compiler.used = appending addrspace(1) global [1 x i8*] [i8* addrspacecast (i8 addrspace(1)* bitcast ([64 x i32] addrspace(1)* @k to i8 addrspace(1)*) to i8*)], section "llvm.metadata"
+
+; Function Attrs: argmemonly mustprogress nocallback nofree nosync nounwind willreturn
+declare void @llvm.lifetime.start.p5i8(i64 immarg, i8 addrspace(5)* nocapture) #0
+
+; Function Attrs: argmemonly mustprogress nocallback nofree nosync nounwind willreturn
+declare void @llvm.lifetime.end.p5i8(i64 immarg, i8 addrspace(5)* nocapture) #0
+
+; Function Attrs: mustprogress nofree norecurse nosync nounwind
+define protected amdgpu_kernel void @_Z13sha256_updateP10SHA256_CTXPhj(%struct.SHA256_CTX addrspace(1)* %0, i8 addrspace(1)* nocapture readonly %1, i32 %2) local_unnamed_addr #1 {
+  %4 = alloca [64 x i32], align 16, addrspace(5)
+  %5 = icmp eq i32 %2, 0
+  br i1 %5, label %1119, label %6
+
+6:                                                ; preds = %3
+  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()
+  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr()
+  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4
+  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*
+  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5
+  %12 = zext i16 %11 to i32
+  %13 = mul i32 %7, %12
+  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6
+  %15 = add i32 %13, %14
+  %16 = sext i32 %15 to i64
+  %17 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 1
+  %18 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 0
+  %19 = bitcast [64 x i32] addrspace(5)* %4 to i8 addrspace(5)*
+  %20 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 1
+  %21 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 2
+  %22 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 3
+  %23 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 0
+  %24 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 4
+  %25 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 5
+  %26 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 6
+  %27 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 7
+  %28 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 1
+  %29 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 8
+  %30 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 9
+  %31 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 10
+  %32 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 11
+  %33 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 2
+  %34 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 12
+  %35 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 13
+  %36 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 14
+  %37 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 15
+  %38 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 3
+  %39 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 16
+  %40 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 17
+  %41 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 18
+  %42 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 19
+  %43 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 4
+  %44 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 20
+  %45 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 21
+  %46 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 22
+  %47 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 23
+  %48 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 5
+  %49 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 24
+  %50 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 25
+  %51 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 26
+  %52 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 27
+  %53 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 6
+  %54 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 28
+  %55 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 29
+  %56 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 30
+  %57 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 31
+  %58 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 7
+  %59 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 32
+  %60 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 33
+  %61 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 34
+  %62 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 35
+  %63 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 8
+  %64 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 36
+  %65 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 37
+  %66 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 38
+  %67 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 39
+  %68 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 9
+  %69 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 40
+  %70 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 41
+  %71 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 42
+  %72 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 43
+  %73 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 10
+  %74 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 44
+  %75 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 45
+  %76 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 46
+  %77 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 47
+  %78 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 11
+  %79 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 48
+  %80 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 49
+  %81 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 50
+  %82 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 51
+  %83 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 12
+  %84 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 52
+  %85 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 53
+  %86 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 54
+  %87 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 55
+  %88 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 13
+  %89 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 56
+  %90 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 57
+  %91 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 58
+  %92 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 59
+  %93 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 14
+  %94 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 60
+  %95 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 61
+  %96 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 62
+  %97 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 63
+  %98 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 15
+  %99 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 16
+  %100 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 17
+  %101 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 18
+  %102 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 19
+  %103 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 20
+  %104 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 21
+  %105 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 22
+  %106 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 23
+  %107 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 24
+  %108 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 25
+  %109 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 26
+  %110 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 27
+  %111 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 28
+  %112 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 29
+  %113 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 30
+  %114 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 31
+  %115 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 32
+  %116 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 33
+  %117 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 34
+  %118 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 35
+  %119 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 36
+  %120 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 37
+  %121 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 38
+  %122 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 39
+  %123 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 40
+  %124 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 41
+  %125 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 42
+  %126 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 43
+  %127 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 44
+  %128 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 45
+  %129 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 46
+  %130 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 47
+  %131 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 48
+  %132 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 49
+  %133 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 50
+  %134 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 51
+  %135 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 52
+  %136 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 53
+  %137 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 54
+  %138 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 55
+  %139 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 56
+  %140 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 57
+  %141 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 58
+  %142 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 59
+  %143 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 60
+  %144 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 61
+  %145 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 62
+  %146 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 63
+  %147 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 0
+  %148 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 1
+  %149 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 2
+  %150 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 3
+  %151 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 4
+  %152 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 5
+  %153 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 6
+  %154 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 3, i64 7
+  %155 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 2, i64 0
+  %156 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 2, i64 1
+  %157 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7
+  br label %158
+
+158:                                              ; preds = %6, %1115
+  %159 = phi i32 [ %157, %6 ], [ %1116, %1115 ]
+  %160 = phi i32 [ 0, %6 ], [ %1117, %1115 ]
+  %161 = zext i32 %160 to i64
+  %162 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %161
+  %163 = load i8, i8 addrspace(1)* %162, align 1, !tbaa !12
+  %164 = zext i32 %159 to i64
+  %165 = getelementptr inbounds %struct.SHA256_CTX, %struct.SHA256_CTX addrspace(1)* %0, i64 %16, i32 0, i64 %164
+  store i8 %163, i8 addrspace(1)* %165, align 1, !tbaa !12
+  %166 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7
+  %167 = add i32 %166, 1
+  store i32 %167, i32 addrspace(1)* %17, align 4, !tbaa !7
+  %168 = icmp eq i32 %167, 64
+  br i1 %168, label %169, label %1115
+
+169:                                              ; preds = %158
+  call void @llvm.lifetime.start.p5i8(i64 256, i8 addrspace(5)* %19) #4
+  %170 = load i8, i8 addrspace(1)* %18, align 1, !tbaa !12
+  %171 = zext i8 %170 to i32
+  %172 = shl nuw i32 %171, 24
+  %173 = load i8, i8 addrspace(1)* %20, align 1, !tbaa !12
+  %174 = zext i8 %173 to i32
+  %175 = shl nuw nsw i32 %174, 16
+  %176 = or i32 %175, %172
+  %177 = load i8, i8 addrspace(1)* %21, align 1, !tbaa !12
+  %178 = zext i8 %177 to i32
+  %179 = shl nuw nsw i32 %178, 8
+  %180 = or i32 %176, %179
+  %181 = load i8, i8 addrspace(1)* %22, align 1, !tbaa !12
+  %182 = zext i8 %181 to i32
+  %183 = or i32 %180, %182
+  store i32 %183, i32 addrspace(5)* %23, align 16, !tbaa !13
+  %184 = load i8, i8 addrspace(1)* %24, align 1, !tbaa !12
+  %185 = zext i8 %184 to i32
+  %186 = shl nuw i32 %185, 24
+  %187 = load i8, i8 addrspace(1)* %25, align 1, !tbaa !12
+  %188 = zext i8 %187 to i32
+  %189 = shl nuw nsw i32 %188, 16
+  %190 = or i32 %189, %186
+  %191 = load i8, i8 addrspace(1)* %26, align 1, !tbaa !12
+  %192 = zext i8 %191 to i32
+  %193 = shl nuw nsw i32 %192, 8
+  %194 = or i32 %190, %193
+  %195 = load i8, i8 addrspace(1)* %27, align 1, !tbaa !12
+  %196 = zext i8 %195 to i32
+  %197 = or i32 %194, %196
+  store i32 %197, i32 addrspace(5)* %28, align 4, !tbaa !13
+  %198 = load i8, i8 addrspace(1)* %29, align 1, !tbaa !12
+  %199 = zext i8 %198 to i32
+  %200 = shl nuw i32 %199, 24
+  %201 = load i8, i8 addrspace(1)* %30, align 1, !tbaa !12
+  %202 = zext i8 %201 to i32
+  %203 = shl nuw nsw i32 %202, 16
+  %204 = or i32 %203, %200
+  %205 = load i8, i8 addrspace(1)* %31, align 1, !tbaa !12
+  %206 = zext i8 %205 to i32
+  %207 = shl nuw nsw i32 %206, 8
+  %208 = or i32 %204, %207
+  %209 = load i8, i8 addrspace(1)* %32, align 1, !tbaa !12
+  %210 = zext i8 %209 to i32
+  %211 = or i32 %208, %210
+  store i32 %211, i32 addrspace(5)* %33, align 8, !tbaa !13
+  %212 = load i8, i8 addrspace(1)* %34, align 1, !tbaa !12
+  %213 = zext i8 %212 to i32
+  %214 = shl nuw i32 %213, 24
+  %215 = load i8, i8 addrspace(1)* %35, align 1, !tbaa !12
+  %216 = zext i8 %215 to i32
+  %217 = shl nuw nsw i32 %216, 16
+  %218 = or i32 %217, %214
+  %219 = load i8, i8 addrspace(1)* %36, align 1, !tbaa !12
+  %220 = zext i8 %219 to i32
+  %221 = shl nuw nsw i32 %220, 8
+  %222 = or i32 %218, %221
+  %223 = load i8, i8 addrspace(1)* %37, align 1, !tbaa !12
+  %224 = zext i8 %223 to i32
+  %225 = or i32 %222, %224
+  store i32 %225, i32 addrspace(5)* %38, align 4, !tbaa !13
+  %226 = load i8, i8 addrspace(1)* %39, align 1, !tbaa !12
+  %227 = zext i8 %226 to i32
+  %228 = shl nuw i32 %227, 24
+  %229 = load i8, i8 addrspace(1)* %40, align 1, !tbaa !12
+  %230 = zext i8 %229 to i32
+  %231 = shl nuw nsw i32 %230, 16
+  %232 = or i32 %231, %228
+  %233 = load i8, i8 addrspace(1)* %41, align 1, !tbaa !12
+  %234 = zext i8 %233 to i32
+  %235 = shl nuw nsw i32 %234, 8
+  %236 = or i32 %232, %235
+  %237 = load i8, i8 addrspace(1)* %42, align 1, !tbaa !12
+  %238 = zext i8 %237 to i32
+  %239 = or i32 %236, %238
+  store i32 %239, i32 addrspace(5)* %43, align 16, !tbaa !13
+  %240 = load i8, i8 addrspace(1)* %44, align 1, !tbaa !12
+  %241 = zext i8 %240 to i32
+  %242 = shl nuw i32 %241, 24
+  %243 = load i8, i8 addrspace(1)* %45, align 1, !tbaa !12
+  %244 = zext i8 %243 to i32
+  %245 = shl nuw nsw i32 %244, 16
+  %246 = or i32 %245, %242
+  %247 = load i8, i8 addrspace(1)* %46, align 1, !tbaa !12
+  %248 = zext i8 %247 to i32
+  %249 = shl nuw nsw i32 %248, 8
+  %250 = or i32 %246, %249
+  %251 = load i8, i8 addrspace(1)* %47, align 1, !tbaa !12
+  %252 = zext i8 %251 to i32
+  %253 = or i32 %250, %252
+  store i32 %253, i32 addrspace(5)* %48, align 4, !tbaa !13
+  %254 = load i8, i8 addrspace(1)* %49, align 1, !tbaa !12
+  %255 = zext i8 %254 to i32
+  %256 = shl nuw i32 %255, 24
+  %257 = load i8, i8 addrspace(1)* %50, align 1, !tbaa !12
+  %258 = zext i8 %257 to i32
+  %259 = shl nuw nsw i32 %258, 16
+  %260 = or i32 %259, %256
+  %261 = load i8, i8 addrspace(1)* %51, align 1, !tbaa !12
+  %262 = zext i8 %261 to i32
+  %263 = shl nuw nsw i32 %262, 8
+  %264 = or i32 %260, %263
+  %265 = load i8, i8 addrspace(1)* %52, align 1, !tbaa !12
+  %266 = zext i8 %265 to i32
+  %267 = or i32 %264, %266
+  store i32 %267, i32 addrspace(5)* %53, align 8, !tbaa !13
+  %268 = load i8, i8 addrspace(1)* %54, align 1, !tbaa !12
+  %269 = zext i8 %268 to i32
+  %270 = shl nuw i32 %269, 24
+  %271 = load i8, i8 addrspace(1)* %55, align 1, !tbaa !12
+  %272 = zext i8 %271 to i32
+  %273 = shl nuw nsw i32 %272, 16
+  %274 = or i32 %273, %270
+  %275 = load i8, i8 addrspace(1)* %56, align 1, !tbaa !12
+  %276 = zext i8 %275 to i32
+  %277 = shl nuw nsw i32 %276, 8
+  %278 = or i32 %274, %277
+  %279 = load i8, i8 addrspace(1)* %57, align 1, !tbaa !12
+  %280 = zext i8 %279 to i32
+  %281 = or i32 %278, %280
+  store i32 %281, i32 addrspace(5)* %58, align 4, !tbaa !13
+  %282 = load i8, i8 addrspace(1)* %59, align 1, !tbaa !12
+  %283 = zext i8 %282 to i32
+  %284 = shl nuw i32 %283, 24
+  %285 = load i8, i8 addrspace(1)* %60, align 1, !tbaa !12
+  %286 = zext i8 %285 to i32
+  %287 = shl nuw nsw i32 %286, 16
+  %288 = or i32 %287, %284
+  %289 = load i8, i8 addrspace(1)* %61, align 1, !tbaa !12
+  %290 = zext i8 %289 to i32
+  %291 = shl nuw nsw i32 %290, 8
+  %292 = or i32 %288, %291
+  %293 = load i8, i8 addrspace(1)* %62, align 1, !tbaa !12
+  %294 = zext i8 %293 to i32
+  %295 = or i32 %292, %294
+  store i32 %295, i32 addrspace(5)* %63, align 16, !tbaa !13
+  %296 = load i8, i8 addrspace(1)* %64, align 1, !tbaa !12
+  %297 = zext i8 %296 to i32
+  %298 = shl nuw i32 %297, 24
+  %299 = load i8, i8 addrspace(1)* %65, align 1, !tbaa !12
+  %300 = zext i8 %299 to i32
+  %301 = shl nuw nsw i32 %300, 16
+  %302 = or i32 %301, %298
+  %303 = load i8, i8 addrspace(1)* %66, align 1, !tbaa !12
+  %304 = zext i8 %303 to i32
+  %305 = shl nuw nsw i32 %304, 8
+  %306 = or i32 %302, %305
+  %307 = load i8, i8 addrspace(1)* %67, align 1, !tbaa !12
+  %308 = zext i8 %307 to i32
+  %309 = or i32 %306, %308
+  store i32 %309, i32 addrspace(5)* %68, align 4, !tbaa !13
+  %310 = load i8, i8 addrspace(1)* %69, align 1, !tbaa !12
+  %311 = zext i8 %310 to i32
+  %312 = shl nuw i32 %311, 24
+  %313 = load i8, i8 addrspace(1)* %70, align 1, !tbaa !12
+  %314 = zext i8 %313 to i32
+  %315 = shl nuw nsw i32 %314, 16
+  %316 = or i32 %315, %312
+  %317 = load i8, i8 addrspace(1)* %71, align 1, !tbaa !12
+  %318 = zext i8 %317 to i32
+  %319 = shl nuw nsw i32 %318, 8
+  %320 = or i32 %316, %319
+  %321 = load i8, i8 addrspace(1)* %72, align 1, !tbaa !12
+  %322 = zext i8 %321 to i32
+  %323 = or i32 %320, %322
+  store i32 %323, i32 addrspace(5)* %73, align 8, !tbaa !13
+  %324 = load i8, i8 addrspace(1)* %74, align 1, !tbaa !12
+  %325 = zext i8 %324 to i32
+  %326 = shl nuw i32 %325, 24
+  %327 = load i8, i8 addrspace(1)* %75, align 1, !tbaa !12
+  %328 = zext i8 %327 to i32
+  %329 = shl nuw nsw i32 %328, 16
+  %330 = or i32 %329, %326
+  %331 = load i8, i8 addrspace(1)* %76, align 1, !tbaa !12
+  %332 = zext i8 %331 to i32
+  %333 = shl nuw nsw i32 %332, 8
+  %334 = or i32 %330, %333
+  %335 = load i8, i8 addrspace(1)* %77, align 1, !tbaa !12
+  %336 = zext i8 %335 to i32
+  %337 = or i32 %334, %336
+  store i32 %337, i32 addrspace(5)* %78, align 4, !tbaa !13
+  %338 = load i8, i8 addrspace(1)* %79, align 1, !tbaa !12
+  %339 = zext i8 %338 to i32
+  %340 = shl nuw i32 %339, 24
+  %341 = load i8, i8 addrspace(1)* %80, align 1, !tbaa !12
+  %342 = zext i8 %341 to i32
+  %343 = shl nuw nsw i32 %342, 16
+  %344 = or i32 %343, %340
+  %345 = load i8, i8 addrspace(1)* %81, align 1, !tbaa !12
+  %346 = zext i8 %345 to i32
+  %347 = shl nuw nsw i32 %346, 8
+  %348 = or i32 %344, %347
+  %349 = load i8, i8 addrspace(1)* %82, align 1, !tbaa !12
+  %350 = zext i8 %349 to i32
+  %351 = or i32 %348, %350
+  store i32 %351, i32 addrspace(5)* %83, align 16, !tbaa !13
+  %352 = load i8, i8 addrspace(1)* %84, align 1, !tbaa !12
+  %353 = zext i8 %352 to i32
+  %354 = shl nuw i32 %353, 24
+  %355 = load i8, i8 addrspace(1)* %85, align 1, !tbaa !12
+  %356 = zext i8 %355 to i32
+  %357 = shl nuw nsw i32 %356, 16
+  %358 = or i32 %357, %354
+  %359 = load i8, i8 addrspace(1)* %86, align 1, !tbaa !12
+  %360 = zext i8 %359 to i32
+  %361 = shl nuw nsw i32 %360, 8
+  %362 = or i32 %358, %361
+  %363 = load i8, i8 addrspace(1)* %87, align 1, !tbaa !12
+  %364 = zext i8 %363 to i32
+  %365 = or i32 %362, %364
+  store i32 %365, i32 addrspace(5)* %88, align 4, !tbaa !13
+  %366 = load i8, i8 addrspace(1)* %89, align 1, !tbaa !12
+  %367 = zext i8 %366 to i32
+  %368 = shl nuw i32 %367, 24
+  %369 = load i8, i8 addrspace(1)* %90, align 1, !tbaa !12
+  %370 = zext i8 %369 to i32
+  %371 = shl nuw nsw i32 %370, 16
+  %372 = or i32 %371, %368
+  %373 = load i8, i8 addrspace(1)* %91, align 1, !tbaa !12
+  %374 = zext i8 %373 to i32
+  %375 = shl nuw nsw i32 %374, 8
+  %376 = or i32 %372, %375
+  %377 = load i8, i8 addrspace(1)* %92, align 1, !tbaa !12
+  %378 = zext i8 %377 to i32
+  %379 = or i32 %376, %378
+  store i32 %379, i32 addrspace(5)* %93, align 8, !tbaa !13
+  %380 = load i8, i8 addrspace(1)* %94, align 1, !tbaa !12
+  %381 = zext i8 %380 to i32
+  %382 = shl nuw i32 %381, 24
+  %383 = load i8, i8 addrspace(1)* %95, align 1, !tbaa !12
+  %384 = zext i8 %383 to i32
+  %385 = shl nuw nsw i32 %384, 16
+  %386 = or i32 %385, %382
+  %387 = load i8, i8 addrspace(1)* %96, align 1, !tbaa !12
+  %388 = zext i8 %387 to i32
+  %389 = shl nuw nsw i32 %388, 8
+  %390 = or i32 %386, %389
+  %391 = load i8, i8 addrspace(1)* %97, align 1, !tbaa !12
+  %392 = zext i8 %391 to i32
+  %393 = or i32 %390, %392
+  store i32 %393, i32 addrspace(5)* %98, align 4, !tbaa !13
+  %394 = tail call i32 @llvm.fshl.i32(i32 %379, i32 %372, i32 15)
+  %395 = tail call i32 @llvm.fshl.i32(i32 %379, i32 %372, i32 13)
+  %396 = lshr i32 %376, 10
+  %397 = xor i32 %395, %396
+  %398 = xor i32 %397, %394
+  %399 = tail call i32 @llvm.fshl.i32(i32 %196, i32 %197, i32 25)
+  %400 = tail call i32 @llvm.fshl.i32(i32 %197, i32 %190, i32 14)
+  %401 = xor i32 %399, %400
+  %402 = lshr i32 %197, 3
+  %403 = xor i32 %401, %402
+  %404 = add i32 %403, %183
+  %405 = add i32 %404, %309
+  %406 = add i32 %405, %398
+  store i32 %406, i32 addrspace(5)* %99, align 16, !tbaa !13
+  %407 = tail call i32 @llvm.fshl.i32(i32 %393, i32 %386, i32 15)
+  %408 = tail call i32 @llvm.fshl.i32(i32 %393, i32 %386, i32 13)
+  %409 = lshr i32 %390, 10
+  %410 = xor i32 %408, %409
+  %411 = xor i32 %410, %407
+  %412 = tail call i32 @llvm.fshl.i32(i32 %210, i32 %211, i32 25)
+  %413 = tail call i32 @llvm.fshl.i32(i32 %211, i32 %204, i32 14)
+  %414 = xor i32 %412, %413
+  %415 = lshr i32 %211, 3
+  %416 = xor i32 %414, %415
+  %417 = add i32 %416, %197
+  %418 = add i32 %417, %323
+  %419 = add i32 %418, %411
+  store i32 %419, i32 addrspace(5)* %100, align 4, !tbaa !13
+  %420 = tail call i32 @llvm.fshl.i32(i32 %406, i32 %406, i32 15)
+  %421 = tail call i32 @llvm.fshl.i32(i32 %406, i32 %406, i32 13)
+  %422 = xor i32 %420, %421
+  %423 = lshr i32 %406, 10
+  %424 = xor i32 %422, %423
+  %425 = tail call i32 @llvm.fshl.i32(i32 %224, i32 %225, i32 25)
+  %426 = tail call i32 @llvm.fshl.i32(i32 %225, i32 %218, i32 14)
+  %427 = xor i32 %425, %426
+  %428 = lshr i32 %225, 3
+  %429 = xor i32 %427, %428
+  %430 = add i32 %429, %211
+  %431 = add i32 %430, %337
+  %432 = add i32 %431, %424
+  store i32 %432, i32 addrspace(5)* %101, align 8, !tbaa !13
+  %433 = tail call i32 @llvm.fshl.i32(i32 %419, i32 %419, i32 15)
+  %434 = tail call i32 @llvm.fshl.i32(i32 %419, i32 %419, i32 13)
+  %435 = xor i32 %433, %434
+  %436 = lshr i32 %419, 10
+  %437 = xor i32 %435, %436
+  %438 = tail call i32 @llvm.fshl.i32(i32 %238, i32 %239, i32 25)
+  %439 = tail call i32 @llvm.fshl.i32(i32 %239, i32 %232, i32 14)
+  %440 = xor i32 %438, %439
+  %441 = lshr i32 %239, 3
+  %442 = xor i32 %440, %441
+  %443 = add i32 %442, %225
+  %444 = add i32 %443, %351
+  %445 = add i32 %444, %437
+  store i32 %445, i32 addrspace(5)* %102, align 4, !tbaa !13
+  %446 = tail call i32 @llvm.fshl.i32(i32 %432, i32 %432, i32 15)
+  %447 = tail call i32 @llvm.fshl.i32(i32 %432, i32 %432, i32 13)
+  %448 = xor i32 %446, %447
+  %449 = lshr i32 %432, 10
+  %450 = xor i32 %448, %449
+  %451 = tail call i32 @llvm.fshl.i32(i32 %252, i32 %253, i32 25)
+  %452 = tail call i32 @llvm.fshl.i32(i32 %253, i32 %246, i32 14)
+  %453 = xor i32 %451, %452
+  %454 = lshr i32 %253, 3
+  %455 = xor i32 %453, %454
+  %456 = add i32 %455, %239
+  %457 = add i32 %456, %365
+  %458 = add i32 %457, %450
+  store i32 %458, i32 addrspace(5)* %103, align 16, !tbaa !13
+  %459 = tail call i32 @llvm.fshl.i32(i32 %445, i32 %445, i32 15)
+  %460 = tail call i32 @llvm.fshl.i32(i32 %445, i32 %445, i32 13)
+  %461 = xor i32 %459, %460
+  %462 = lshr i32 %445, 10
+  %463 = xor i32 %461, %462
+  %464 = tail call i32 @llvm.fshl.i32(i32 %266, i32 %267, i32 25)
+  %465 = tail call i32 @llvm.fshl.i32(i32 %267, i32 %260, i32 14)
+  %466 = xor i32 %464, %465
+  %467 = lshr i32 %267, 3
+  %468 = xor i32 %466, %467
+  %469 = add i32 %468, %253
+  %470 = add i32 %469, %379
+  %471 = add i32 %470, %463
+  store i32 %471, i32 addrspace(5)* %104, align 4, !tbaa !13
+  %472 = tail call i32 @llvm.fshl.i32(i32 %458, i32 %458, i32 15)
+  %473 = tail call i32 @llvm.fshl.i32(i32 %458, i32 %458, i32 13)
+  %474 = xor i32 %472, %473
+  %475 = lshr i32 %458, 10
+  %476 = xor i32 %474, %475
+  %477 = tail call i32 @llvm.fshl.i32(i32 %280, i32 %281, i32 25)
+  %478 = tail call i32 @llvm.fshl.i32(i32 %281, i32 %274, i32 14)
+  %479 = xor i32 %477, %478
+  %480 = lshr i32 %281, 3
+  %481 = xor i32 %479, %480
+  %482 = add i32 %481, %267
+  %483 = add i32 %482, %393
+  %484 = add i32 %483, %476
+  store i32 %484, i32 addrspace(5)* %105, align 8, !tbaa !13
+  %485 = tail call i32 @llvm.fshl.i32(i32 %471, i32 %471, i32 15)
+  %486 = tail call i32 @llvm.fshl.i32(i32 %471, i32 %471, i32 13)
+  %487 = xor i32 %485, %486
+  %488 = lshr i32 %471, 10
+  %489 = xor i32 %487, %488
+  %490 = tail call i32 @llvm.fshl.i32(i32 %294, i32 %295, i32 25)
+  %491 = tail call i32 @llvm.fshl.i32(i32 %295, i32 %288, i32 14)
+  %492 = xor i32 %490, %491
+  %493 = lshr i32 %295, 3
+  %494 = xor i32 %492, %493
+  %495 = add i32 %494, %281
+  %496 = add i32 %495, %406
+  %497 = add i32 %496, %489
+  store i32 %497, i32 addrspace(5)* %106, align 4, !tbaa !13
+  %498 = tail call i32 @llvm.fshl.i32(i32 %484, i32 %484, i32 15)
+  %499 = tail call i32 @llvm.fshl.i32(i32 %484, i32 %484, i32 13)
+  %500 = xor i32 %498, %499
+  %501 = lshr i32 %484, 10
+  %502 = xor i32 %500, %501
+  %503 = tail call i32 @llvm.fshl.i32(i32 %308, i32 %309, i32 25)
+  %504 = tail call i32 @llvm.fshl.i32(i32 %309, i32 %302, i32 14)
+  %505 = xor i32 %503, %504
+  %506 = lshr i32 %309, 3
+  %507 = xor i32 %505, %506
+  %508 = add i32 %507, %295
+  %509 = add i32 %508, %419
+  %510 = add i32 %509, %502
+  store i32 %510, i32 addrspace(5)* %107, align 16, !tbaa !13
+  %511 = tail call i32 @llvm.fshl.i32(i32 %497, i32 %497, i32 15)
+  %512 = tail call i32 @llvm.fshl.i32(i32 %497, i32 %497, i32 13)
+  %513 = xor i32 %511, %512
+  %514 = lshr i32 %497, 10
+  %515 = xor i32 %513, %514
+  %516 = tail call i32 @llvm.fshl.i32(i32 %322, i32 %323, i32 25)
+  %517 = tail call i32 @llvm.fshl.i32(i32 %323, i32 %316, i32 14)
+  %518 = xor i32 %516, %517
+  %519 = lshr i32 %323, 3
+  %520 = xor i32 %518, %519
+  %521 = add i32 %520, %309
+  %522 = add i32 %521, %432
+  %523 = add i32 %522, %515
+  store i32 %523, i32 addrspace(5)* %108, align 4, !tbaa !13
+  %524 = tail call i32 @llvm.fshl.i32(i32 %510, i32 %510, i32 15)
+  %525 = tail call i32 @llvm.fshl.i32(i32 %510, i32 %510, i32 13)
+  %526 = xor i32 %524, %525
+  %527 = lshr i32 %510, 10
+  %528 = xor i32 %526, %527
+  %529 = tail call i32 @llvm.fshl.i32(i32 %336, i32 %337, i32 25)
+  %530 = tail call i32 @llvm.fshl.i32(i32 %337, i32 %330, i32 14)
+  %531 = xor i32 %529, %530
+  %532 = lshr i32 %337, 3
+  %533 = xor i32 %531, %532
+  %534 = add i32 %533, %323
+  %535 = add i32 %534, %445
+  %536 = add i32 %535, %528
+  store i32 %536, i32 addrspace(5)* %109, align 8, !tbaa !13
+  %537 = tail call i32 @llvm.fshl.i32(i32 %523, i32 %523, i32 15)
+  %538 = tail call i32 @llvm.fshl.i32(i32 %523, i32 %523, i32 13)
+  %539 = xor i32 %537, %538
+  %540 = lshr i32 %523, 10
+  %541 = xor i32 %539, %540
+  %542 = tail call i32 @llvm.fshl.i32(i32 %350, i32 %351, i32 25)
+  %543 = tail call i32 @llvm.fshl.i32(i32 %351, i32 %344, i32 14)
+  %544 = xor i32 %542, %543
+  %545 = lshr i32 %351, 3
+  %546 = xor i32 %544, %545
+  %547 = add i32 %546, %337
+  %548 = add i32 %547, %458
+  %549 = add i32 %548, %541
+  store i32 %549, i32 addrspace(5)* %110, align 4, !tbaa !13
+  %550 = tail call i32 @llvm.fshl.i32(i32 %536, i32 %536, i32 15)
+  %551 = tail call i32 @llvm.fshl.i32(i32 %536, i32 %536, i32 13)
+  %552 = xor i32 %550, %551
+  %553 = lshr i32 %536, 10
+  %554 = xor i32 %552, %553
+  %555 = tail call i32 @llvm.fshl.i32(i32 %364, i32 %365, i32 25)
+  %556 = tail call i32 @llvm.fshl.i32(i32 %365, i32 %358, i32 14)
+  %557 = xor i32 %555, %556
+  %558 = lshr i32 %365, 3
+  %559 = xor i32 %557, %558
+  %560 = add i32 %559, %351
+  %561 = add i32 %560, %471
+  %562 = add i32 %561, %554
+  store i32 %562, i32 addrspace(5)* %111, align 16, !tbaa !13
+  %563 = tail call i32 @llvm.fshl.i32(i32 %549, i32 %549, i32 15)
+  %564 = tail call i32 @llvm.fshl.i32(i32 %549, i32 %549, i32 13)
+  %565 = xor i32 %563, %564
+  %566 = lshr i32 %549, 10
+  %567 = xor i32 %565, %566
+  %568 = tail call i32 @llvm.fshl.i32(i32 %378, i32 %379, i32 25)
+  %569 = tail call i32 @llvm.fshl.i32(i32 %379, i32 %372, i32 14)
+  %570 = xor i32 %568, %569
+  %571 = lshr i32 %379, 3
+  %572 = xor i32 %570, %571
+  %573 = add i32 %572, %365
+  %574 = add i32 %573, %484
+  %575 = add i32 %574, %567
+  store i32 %575, i32 addrspace(5)* %112, align 4, !tbaa !13
+  %576 = tail call i32 @llvm.fshl.i32(i32 %562, i32 %562, i32 15)
+  %577 = tail call i32 @llvm.fshl.i32(i32 %562, i32 %562, i32 13)
+  %578 = xor i32 %576, %577
+  %579 = lshr i32 %562, 10
+  %580 = xor i32 %578, %579
+  %581 = tail call i32 @llvm.fshl.i32(i32 %392, i32 %393, i32 25)
+  %582 = tail call i32 @llvm.fshl.i32(i32 %393, i32 %386, i32 14)
+  %583 = xor i32 %581, %582
+  %584 = lshr i32 %393, 3
+  %585 = xor i32 %583, %584
+  %586 = add i32 %585, %379
+  %587 = add i32 %586, %497
+  %588 = add i32 %587, %580
+  store i32 %588, i32 addrspace(5)* %113, align 8, !tbaa !13
+  %589 = tail call i32 @llvm.fshl.i32(i32 %575, i32 %575, i32 15)
+  %590 = tail call i32 @llvm.fshl.i32(i32 %575, i32 %575, i32 13)
+  %591 = xor i32 %589, %590
+  %592 = lshr i32 %575, 10
+  %593 = xor i32 %591, %592
+  %594 = tail call i32 @llvm.fshl.i32(i32 %406, i32 %406, i32 25)
+  %595 = tail call i32 @llvm.fshl.i32(i32 %406, i32 %406, i32 14)
+  %596 = xor i32 %594, %595
+  %597 = lshr i32 %406, 3
+  %598 = xor i32 %596, %597
+  %599 = add i32 %598, %393
+  %600 = add i32 %599, %510
+  %601 = add i32 %600, %593
+  store i32 %601, i32 addrspace(5)* %114, align 4, !tbaa !13
+  %602 = tail call i32 @llvm.fshl.i32(i32 %588, i32 %588, i32 15)
+  %603 = tail call i32 @llvm.fshl.i32(i32 %588, i32 %588, i32 13)
+  %604 = xor i32 %602, %603
+  %605 = lshr i32 %588, 10
+  %606 = xor i32 %604, %605
+  %607 = tail call i32 @llvm.fshl.i32(i32 %419, i32 %419, i32 25)
+  %608 = tail call i32 @llvm.fshl.i32(i32 %419, i32 %419, i32 14)
+  %609 = xor i32 %607, %608
+  %610 = lshr i32 %419, 3
+  %611 = xor i32 %609, %610
+  %612 = add i32 %611, %406
+  %613 = add i32 %612, %523
+  %614 = add i32 %613, %606
+  store i32 %614, i32 addrspace(5)* %115, align 16, !tbaa !13
+  %615 = tail call i32 @llvm.fshl.i32(i32 %601, i32 %601, i32 15)
+  %616 = tail call i32 @llvm.fshl.i32(i32 %601, i32 %601, i32 13)
+  %617 = xor i32 %615, %616
+  %618 = lshr i32 %601, 10
+  %619 = xor i32 %617, %618
+  %620 = tail call i32 @llvm.fshl.i32(i32 %432, i32 %432, i32 25)
+  %621 = tail call i32 @llvm.fshl.i32(i32 %432, i32 %432, i32 14)
+  %622 = xor i32 %620, %621
+  %623 = lshr i32 %432, 3
+  %624 = xor i32 %622, %623
+  %625 = add i32 %624, %419
+  %626 = add i32 %625, %536
+  %627 = add i32 %626, %619
+  store i32 %627, i32 addrspace(5)* %116, align 4, !tbaa !13
+  %628 = tail call i32 @llvm.fshl.i32(i32 %614, i32 %614, i32 15)
+  %629 = tail call i32 @llvm.fshl.i32(i32 %614, i32 %614, i32 13)
+  %630 = xor i32 %628, %629
+  %631 = lshr i32 %614, 10
+  %632 = xor i32 %630, %631
+  %633 = tail call i32 @llvm.fshl.i32(i32 %445, i32 %445, i32 25)
+  %634 = tail call i32 @llvm.fshl.i32(i32 %445, i32 %445, i32 14)
+  %635 = xor i32 %633, %634
+  %636 = lshr i32 %445, 3
+  %637 = xor i32 %635, %636
+  %638 = add i32 %637, %432
+  %639 = add i32 %638, %549
+  %640 = add i32 %639, %632
+  store i32 %640, i32 addrspace(5)* %117, align 8, !tbaa !13
+  %641 = tail call i32 @llvm.fshl.i32(i32 %627, i32 %627, i32 15)
+  %642 = tail call i32 @llvm.fshl.i32(i32 %627, i32 %627, i32 13)
+  %643 = xor i32 %641, %642
+  %644 = lshr i32 %627, 10
+  %645 = xor i32 %643, %644
+  %646 = tail call i32 @llvm.fshl.i32(i32 %458, i32 %458, i32 25)
+  %647 = tail call i32 @llvm.fshl.i32(i32 %458, i32 %458, i32 14)
+  %648 = xor i32 %646, %647
+  %649 = lshr i32 %458, 3
+  %650 = xor i32 %648, %649
+  %651 = add i32 %650, %445
+  %652 = add i32 %651, %562
+  %653 = add i32 %652, %645
+  store i32 %653, i32 addrspace(5)* %118, align 4, !tbaa !13
+  %654 = tail call i32 @llvm.fshl.i32(i32 %640, i32 %640, i32 15)
+  %655 = tail call i32 @llvm.fshl.i32(i32 %640, i32 %640, i32 13)
+  %656 = xor i32 %654, %655
+  %657 = lshr i32 %640, 10
+  %658 = xor i32 %656, %657
+  %659 = tail call i32 @llvm.fshl.i32(i32 %471, i32 %471, i32 25)
+  %660 = tail call i32 @llvm.fshl.i32(i32 %471, i32 %471, i32 14)
+  %661 = xor i32 %659, %660
+  %662 = lshr i32 %471, 3
+  %663 = xor i32 %661, %662
+  %664 = add i32 %663, %458
+  %665 = add i32 %664, %575
+  %666 = add i32 %665, %658
+  store i32 %666, i32 addrspace(5)* %119, align 16, !tbaa !13
+  %667 = tail call i32 @llvm.fshl.i32(i32 %653, i32 %653, i32 15)
+  %668 = tail call i32 @llvm.fshl.i32(i32 %653, i32 %653, i32 13)
+  %669 = xor i32 %667, %668
+  %670 = lshr i32 %653, 10
+  %671 = xor i32 %669, %670
+  %672 = tail call i32 @llvm.fshl.i32(i32 %484, i32 %484, i32 25)
+  %673 = tail call i32 @llvm.fshl.i32(i32 %484, i32 %484, i32 14)
+  %674 = xor i32 %672, %673
+  %675 = lshr i32 %484, 3
+  %676 = xor i32 %674, %675
+  %677 = add i32 %676, %471
+  %678 = add i32 %677, %588
+  %679 = add i32 %678, %671
+  store i32 %679, i32 addrspace(5)* %120, align 4, !tbaa !13
+  %680 = tail call i32 @llvm.fshl.i32(i32 %666, i32 %666, i32 15)
+  %681 = tail call i32 @llvm.fshl.i32(i32 %666, i32 %666, i32 13)
+  %682 = xor i32 %680, %681
+  %683 = lshr i32 %666, 10
+  %684 = xor i32 %682, %683
+  %685 = tail call i32 @llvm.fshl.i32(i32 %497, i32 %497, i32 25)
+  %686 = tail call i32 @llvm.fshl.i32(i32 %497, i32 %497, i32 14)
+  %687 = xor i32 %685, %686
+  %688 = lshr i32 %497, 3
+  %689 = xor i32 %687, %688
+  %690 = add i32 %689, %484
+  %691 = add i32 %690, %601
+  %692 = add i32 %691, %684
+  store i32 %692, i32 addrspace(5)* %121, align 8, !tbaa !13
+  %693 = tail call i32 @llvm.fshl.i32(i32 %679, i32 %679, i32 15)
+  %694 = tail call i32 @llvm.fshl.i32(i32 %679, i32 %679, i32 13)
+  %695 = xor i32 %693, %694
+  %696 = lshr i32 %679, 10
+  %697 = xor i32 %695, %696
+  %698 = tail call i32 @llvm.fshl.i32(i32 %510, i32 %510, i32 25)
+  %699 = tail call i32 @llvm.fshl.i32(i32 %510, i32 %510, i32 14)
+  %700 = xor i32 %698, %699
+  %701 = lshr i32 %510, 3
+  %702 = xor i32 %700, %701
+  %703 = add i32 %702, %497
+  %704 = add i32 %703, %614
+  %705 = add i32 %704, %697
+  store i32 %705, i32 addrspace(5)* %122, align 4, !tbaa !13
+  %706 = tail call i32 @llvm.fshl.i32(i32 %692, i32 %692, i32 15)
+  %707 = tail call i32 @llvm.fshl.i32(i32 %692, i32 %692, i32 13)
+  %708 = xor i32 %706, %707
+  %709 = lshr i32 %692, 10
+  %710 = xor i32 %708, %709
+  %711 = tail call i32 @llvm.fshl.i32(i32 %523, i32 %523, i32 25)
+  %712 = tail call i32 @llvm.fshl.i32(i32 %523, i32 %523, i32 14)
+  %713 = xor i32 %711, %712
+  %714 = lshr i32 %523, 3
+  %715 = xor i32 %713, %714
+  %716 = add i32 %715, %510
+  %717 = add i32 %716, %627
+  %718 = add i32 %717, %710
+  store i32 %718, i32 addrspace(5)* %123, align 16, !tbaa !13
+  %719 = tail call i32 @llvm.fshl.i32(i32 %705, i32 %705, i32 15)
+  %720 = tail call i32 @llvm.fshl.i32(i32 %705, i32 %705, i32 13)
+  %721 = xor i32 %719, %720
+  %722 = lshr i32 %705, 10
+  %723 = xor i32 %721, %722
+  %724 = tail call i32 @llvm.fshl.i32(i32 %536, i32 %536, i32 25)
+  %725 = tail call i32 @llvm.fshl.i32(i32 %536, i32 %536, i32 14)
+  %726 = xor i32 %724, %725
+  %727 = lshr i32 %536, 3
+  %728 = xor i32 %726, %727
+  %729 = add i32 %728, %523
+  %730 = add i32 %729, %640
+  %731 = add i32 %730, %723
+  store i32 %731, i32 addrspace(5)* %124, align 4, !tbaa !13
+  %732 = tail call i32 @llvm.fshl.i32(i32 %718, i32 %718, i32 15)
+  %733 = tail call i32 @llvm.fshl.i32(i32 %718, i32 %718, i32 13)
+  %734 = xor i32 %732, %733
+  %735 = lshr i32 %718, 10
+  %736 = xor i32 %734, %735
+  %737 = tail call i32 @llvm.fshl.i32(i32 %549, i32 %549, i32 25)
+  %738 = tail call i32 @llvm.fshl.i32(i32 %549, i32 %549, i32 14)
+  %739 = xor i32 %737, %738
+  %740 = lshr i32 %549, 3
+  %741 = xor i32 %739, %740
+  %742 = add i32 %741, %536
+  %743 = add i32 %742, %653
+  %744 = add i32 %743, %736
+  store i32 %744, i32 addrspace(5)* %125, align 8, !tbaa !13
+  %745 = tail call i32 @llvm.fshl.i32(i32 %731, i32 %731, i32 15)
+  %746 = tail call i32 @llvm.fshl.i32(i32 %731, i32 %731, i32 13)
+  %747 = xor i32 %745, %746
+  %748 = lshr i32 %731, 10
+  %749 = xor i32 %747, %748
+  %750 = tail call i32 @llvm.fshl.i32(i32 %562, i32 %562, i32 25)
+  %751 = tail call i32 @llvm.fshl.i32(i32 %562, i32 %562, i32 14)
+  %752 = xor i32 %750, %751
+  %753 = lshr i32 %562, 3
+  %754 = xor i32 %752, %753
+  %755 = add i32 %754, %549
+  %756 = add i32 %755, %666
+  %757 = add i32 %756, %749
+  store i32 %757, i32 addrspace(5)* %126, align 4, !tbaa !13
+  %758 = tail call i32 @llvm.fshl.i32(i32 %744, i32 %744, i32 15)
+  %759 = tail call i32 @llvm.fshl.i32(i32 %744, i32 %744, i32 13)
+  %760 = xor i32 %758, %759
+  %761 = lshr i32 %744, 10
+  %762 = xor i32 %760, %761
+  %763 = tail call i32 @llvm.fshl.i32(i32 %575, i32 %575, i32 25)
+  %764 = tail call i32 @llvm.fshl.i32(i32 %575, i32 %575, i32 14)
+  %765 = xor i32 %763, %764
+  %766 = lshr i32 %575, 3
+  %767 = xor i32 %765, %766
+  %768 = add i32 %767, %562
+  %769 = add i32 %768, %679
+  %770 = add i32 %769, %762
+  store i32 %770, i32 addrspace(5)* %127, align 16, !tbaa !13
+  %771 = tail call i32 @llvm.fshl.i32(i32 %757, i32 %757, i32 15)
+  %772 = tail call i32 @llvm.fshl.i32(i32 %757, i32 %757, i32 13)
+  %773 = xor i32 %771, %772
+  %774 = lshr i32 %757, 10
+  %775 = xor i32 %773, %774
+  %776 = tail call i32 @llvm.fshl.i32(i32 %588, i32 %588, i32 25)
+  %777 = tail call i32 @llvm.fshl.i32(i32 %588, i32 %588, i32 14)
+  %778 = xor i32 %776, %777
+  %779 = lshr i32 %588, 3
+  %780 = xor i32 %778, %779
+  %781 = add i32 %780, %575
+  %782 = add i32 %781, %692
+  %783 = add i32 %782, %775
+  store i32 %783, i32 addrspace(5)* %128, align 4, !tbaa !13
+  %784 = tail call i32 @llvm.fshl.i32(i32 %770, i32 %770, i32 15)
+  %785 = tail call i32 @llvm.fshl.i32(i32 %770, i32 %770, i32 13)
+  %786 = xor i32 %784, %785
+  %787 = lshr i32 %770, 10
+  %788 = xor i32 %786, %787
+  %789 = tail call i32 @llvm.fshl.i32(i32 %601, i32 %601, i32 25)
+  %790 = tail call i32 @llvm.fshl.i32(i32 %601, i32 %601, i32 14)
+  %791 = xor i32 %789, %790
+  %792 = lshr i32 %601, 3
+  %793 = xor i32 %791, %792
+  %794 = add i32 %793, %588
+  %795 = add i32 %794, %705
+  %796 = add i32 %795, %788
+  store i32 %796, i32 addrspace(5)* %129, align 8, !tbaa !13
+  %797 = tail call i32 @llvm.fshl.i32(i32 %783, i32 %783, i32 15)
+  %798 = tail call i32 @llvm.fshl.i32(i32 %783, i32 %783, i32 13)
+  %799 = xor i32 %797, %798
+  %800 = lshr i32 %783, 10
+  %801 = xor i32 %799, %800
+  %802 = tail call i32 @llvm.fshl.i32(i32 %614, i32 %614, i32 25)
+  %803 = tail call i32 @llvm.fshl.i32(i32 %614, i32 %614, i32 14)
+  %804 = xor i32 %802, %803
+  %805 = lshr i32 %614, 3
+  %806 = xor i32 %804, %805
+  %807 = add i32 %806, %601
+  %808 = add i32 %807, %718
+  %809 = add i32 %808, %801
+  store i32 %809, i32 addrspace(5)* %130, align 4, !tbaa !13
+  %810 = tail call i32 @llvm.fshl.i32(i32 %796, i32 %796, i32 15)
+  %811 = tail call i32 @llvm.fshl.i32(i32 %796, i32 %796, i32 13)
+  %812 = xor i32 %810, %811
+  %813 = lshr i32 %796, 10
+  %814 = xor i32 %812, %813
+  %815 = tail call i32 @llvm.fshl.i32(i32 %627, i32 %627, i32 25)
+  %816 = tail call i32 @llvm.fshl.i32(i32 %627, i32 %627, i32 14)
+  %817 = xor i32 %815, %816
+  %818 = lshr i32 %627, 3
+  %819 = xor i32 %817, %818
+  %820 = add i32 %819, %614
+  %821 = add i32 %820, %731
+  %822 = add i32 %821, %814
+  store i32 %822, i32 addrspace(5)* %131, align 16, !tbaa !13
+  %823 = tail call i32 @llvm.fshl.i32(i32 %809, i32 %809, i32 15)
+  %824 = tail call i32 @llvm.fshl.i32(i32 %809, i32 %809, i32 13)
+  %825 = xor i32 %823, %824
+  %826 = lshr i32 %809, 10
+  %827 = xor i32 %825, %826
+  %828 = tail call i32 @llvm.fshl.i32(i32 %640, i32 %640, i32 25)
+  %829 = tail call i32 @llvm.fshl.i32(i32 %640, i32 %640, i32 14)
+  %830 = xor i32 %828, %829
+  %831 = lshr i32 %640, 3
+  %832 = xor i32 %830, %831
+  %833 = add i32 %832, %627
+  %834 = add i32 %833, %744
+  %835 = add i32 %834, %827
+  store i32 %835, i32 addrspace(5)* %132, align 4, !tbaa !13
+  %836 = tail call i32 @llvm.fshl.i32(i32 %822, i32 %822, i32 15)
+  %837 = tail call i32 @llvm.fshl.i32(i32 %822, i32 %822, i32 13)
+  %838 = xor i32 %836, %837
+  %839 = lshr i32 %822, 10
+  %840 = xor i32 %838, %839
+  %841 = tail call i32 @llvm.fshl.i32(i32 %653, i32 %653, i32 25)
+  %842 = tail call i32 @llvm.fshl.i32(i32 %653, i32 %653, i32 14)
+  %843 = xor i32 %841, %842
+  %844 = lshr i32 %653, 3
+  %845 = xor i32 %843, %844
+  %846 = add i32 %845, %640
+  %847 = add i32 %846, %757
+  %848 = add i32 %847, %840
+  store i32 %848, i32 addrspace(5)* %133, align 8, !tbaa !13
+  %849 = tail call i32 @llvm.fshl.i32(i32 %835, i32 %835, i32 15)
+  %850 = tail call i32 @llvm.fshl.i32(i32 %835, i32 %835, i32 13)
+  %851 = xor i32 %849, %850
+  %852 = lshr i32 %835, 10
+  %853 = xor i32 %851, %852
+  %854 = tail call i32 @llvm.fshl.i32(i32 %666, i32 %666, i32 25)
+  %855 = tail call i32 @llvm.fshl.i32(i32 %666, i32 %666, i32 14)
+  %856 = xor i32 %854, %855
+  %857 = lshr i32 %666, 3
+  %858 = xor i32 %856, %857
+  %859 = add i32 %858, %653
+  %860 = add i32 %859, %770
+  %861 = add i32 %860, %853
+  store i32 %861, i32 addrspace(5)* %134, align 4, !tbaa !13
+  %862 = tail call i32 @llvm.fshl.i32(i32 %848, i32 %848, i32 15)
+  %863 = tail call i32 @llvm.fshl.i32(i32 %848, i32 %848, i32 13)
+  %864 = xor i32 %862, %863
+  %865 = lshr i32 %848, 10
+  %866 = xor i32 %864, %865
+  %867 = tail call i32 @llvm.fshl.i32(i32 %679, i32 %679, i32 25)
+  %868 = tail call i32 @llvm.fshl.i32(i32 %679, i32 %679, i32 14)
+  %869 = xor i32 %867, %868
+  %870 = lshr i32 %679, 3
+  %871 = xor i32 %869, %870
+  %872 = add i32 %871, %666
+  %873 = add i32 %872, %783
+  %874 = add i32 %873, %866
+  store i32 %874, i32 addrspace(5)* %135, align 16, !tbaa !13
+  %875 = tail call i32 @llvm.fshl.i32(i32 %861, i32 %861, i32 15)
+  %876 = tail call i32 @llvm.fshl.i32(i32 %861, i32 %861, i32 13)
+  %877 = xor i32 %875, %876
+  %878 = lshr i32 %861, 10
+  %879 = xor i32 %877, %878
+  %880 = tail call i32 @llvm.fshl.i32(i32 %692, i32 %692, i32 25)
+  %881 = tail call i32 @llvm.fshl.i32(i32 %692, i32 %692, i32 14)
+  %882 = xor i32 %880, %881
+  %883 = lshr i32 %692, 3
+  %884 = xor i32 %882, %883
+  %885 = add i32 %884, %679
+  %886 = add i32 %885, %796
+  %887 = add i32 %886, %879
+  store i32 %887, i32 addrspace(5)* %136, align 4, !tbaa !13
+  %888 = tail call i32 @llvm.fshl.i32(i32 %874, i32 %874, i32 15)
+  %889 = tail call i32 @llvm.fshl.i32(i32 %874, i32 %874, i32 13)
+  %890 = xor i32 %888, %889
+  %891 = lshr i32 %874, 10
+  %892 = xor i32 %890, %891
+  %893 = tail call i32 @llvm.fshl.i32(i32 %705, i32 %705, i32 25)
+  %894 = tail call i32 @llvm.fshl.i32(i32 %705, i32 %705, i32 14)
+  %895 = xor i32 %893, %894
+  %896 = lshr i32 %705, 3
+  %897 = xor i32 %895, %896
+  %898 = add i32 %897, %692
+  %899 = add i32 %898, %809
+  %900 = add i32 %899, %892
+  store i32 %900, i32 addrspace(5)* %137, align 8, !tbaa !13
+  %901 = tail call i32 @llvm.fshl.i32(i32 %887, i32 %887, i32 15)
+  %902 = tail call i32 @llvm.fshl.i32(i32 %887, i32 %887, i32 13)
+  %903 = xor i32 %901, %902
+  %904 = lshr i32 %887, 10
+  %905 = xor i32 %903, %904
+  %906 = tail call i32 @llvm.fshl.i32(i32 %718, i32 %718, i32 25)
+  %907 = tail call i32 @llvm.fshl.i32(i32 %718, i32 %718, i32 14)
+  %908 = xor i32 %906, %907
+  %909 = lshr i32 %718, 3
+  %910 = xor i32 %908, %909
+  %911 = add i32 %910, %705
+  %912 = add i32 %911, %822
+  %913 = add i32 %912, %905
+  store i32 %913, i32 addrspace(5)* %138, align 4, !tbaa !13
+  %914 = tail call i32 @llvm.fshl.i32(i32 %900, i32 %900, i32 15)
+  %915 = tail call i32 @llvm.fshl.i32(i32 %900, i32 %900, i32 13)
+  %916 = xor i32 %914, %915
+  %917 = lshr i32 %900, 10
+  %918 = xor i32 %916, %917
+  %919 = tail call i32 @llvm.fshl.i32(i32 %731, i32 %731, i32 25)
+  %920 = tail call i32 @llvm.fshl.i32(i32 %731, i32 %731, i32 14)
+  %921 = xor i32 %919, %920
+  %922 = lshr i32 %731, 3
+  %923 = xor i32 %921, %922
+  %924 = add i32 %923, %718
+  %925 = add i32 %924, %835
+  %926 = add i32 %925, %918
+  store i32 %926, i32 addrspace(5)* %139, align 16, !tbaa !13
+  %927 = tail call i32 @llvm.fshl.i32(i32 %913, i32 %913, i32 15)
+  %928 = tail call i32 @llvm.fshl.i32(i32 %913, i32 %913, i32 13)
+  %929 = xor i32 %927, %928
+  %930 = lshr i32 %913, 10
+  %931 = xor i32 %929, %930
+  %932 = tail call i32 @llvm.fshl.i32(i32 %744, i32 %744, i32 25)
+  %933 = tail call i32 @llvm.fshl.i32(i32 %744, i32 %744, i32 14)
+  %934 = xor i32 %932, %933
+  %935 = lshr i32 %744, 3
+  %936 = xor i32 %934, %935
+  %937 = add i32 %936, %731
+  %938 = add i32 %937, %848
+  %939 = add i32 %938, %931
+  store i32 %939, i32 addrspace(5)* %140, align 4, !tbaa !13
+  %940 = tail call i32 @llvm.fshl.i32(i32 %926, i32 %926, i32 15)
+  %941 = tail call i32 @llvm.fshl.i32(i32 %926, i32 %926, i32 13)
+  %942 = xor i32 %940, %941
+  %943 = lshr i32 %926, 10
+  %944 = xor i32 %942, %943
+  %945 = tail call i32 @llvm.fshl.i32(i32 %757, i32 %757, i32 25)
+  %946 = tail call i32 @llvm.fshl.i32(i32 %757, i32 %757, i32 14)
+  %947 = xor i32 %945, %946
+  %948 = lshr i32 %757, 3
+  %949 = xor i32 %947, %948
+  %950 = add i32 %949, %744
+  %951 = add i32 %950, %861
+  %952 = add i32 %951, %944
+  store i32 %952, i32 addrspace(5)* %141, align 8, !tbaa !13
+  %953 = tail call i32 @llvm.fshl.i32(i32 %939, i32 %939, i32 15)
+  %954 = tail call i32 @llvm.fshl.i32(i32 %939, i32 %939, i32 13)
+  %955 = xor i32 %953, %954
+  %956 = lshr i32 %939, 10
+  %957 = xor i32 %955, %956
+  %958 = tail call i32 @llvm.fshl.i32(i32 %770, i32 %770, i32 25)
+  %959 = tail call i32 @llvm.fshl.i32(i32 %770, i32 %770, i32 14)
+  %960 = xor i32 %958, %959
+  %961 = lshr i32 %770, 3
+  %962 = xor i32 %960, %961
+  %963 = add i32 %962, %757
+  %964 = add i32 %963, %874
+  %965 = add i32 %964, %957
+  store i32 %965, i32 addrspace(5)* %142, align 4, !tbaa !13
+  %966 = tail call i32 @llvm.fshl.i32(i32 %952, i32 %952, i32 15)
+  %967 = tail call i32 @llvm.fshl.i32(i32 %952, i32 %952, i32 13)
+  %968 = xor i32 %966, %967
+  %969 = lshr i32 %952, 10
+  %970 = xor i32 %968, %969
+  %971 = tail call i32 @llvm.fshl.i32(i32 %783, i32 %783, i32 25)
+  %972 = tail call i32 @llvm.fshl.i32(i32 %783, i32 %783, i32 14)
+  %973 = xor i32 %971, %972
+  %974 = lshr i32 %783, 3
+  %975 = xor i32 %973, %974
+  %976 = add i32 %975, %770
+  %977 = add i32 %976, %887
+  %978 = add i32 %977, %970
+  store i32 %978, i32 addrspace(5)* %143, align 16, !tbaa !13
+  %979 = tail call i32 @llvm.fshl.i32(i32 %965, i32 %965, i32 15)
+  %980 = tail call i32 @llvm.fshl.i32(i32 %965, i32 %965, i32 13)
+  %981 = xor i32 %979, %980
+  %982 = lshr i32 %965, 10
+  %983 = xor i32 %981, %982
+  %984 = tail call i32 @llvm.fshl.i32(i32 %796, i32 %796, i32 25)
+  %985 = tail call i32 @llvm.fshl.i32(i32 %796, i32 %796, i32 14)
+  %986 = xor i32 %984, %985
+  %987 = lshr i32 %796, 3
+  %988 = xor i32 %986, %987
+  %989 = add i32 %988, %783
+  %990 = add i32 %989, %900
+  %991 = add i32 %990, %983
+  store i32 %991, i32 addrspace(5)* %144, align 4, !tbaa !13
+  %992 = tail call i32 @llvm.fshl.i32(i32 %978, i32 %978, i32 15)
+  %993 = tail call i32 @llvm.fshl.i32(i32 %978, i32 %978, i32 13)
+  %994 = xor i32 %992, %993
+  %995 = lshr i32 %978, 10
+  %996 = xor i32 %994, %995
+  %997 = tail call i32 @llvm.fshl.i32(i32 %809, i32 %809, i32 25)
+  %998 = tail call i32 @llvm.fshl.i32(i32 %809, i32 %809, i32 14)
+  %999 = xor i32 %997, %998
+  %1000 = lshr i32 %809, 3
+  %1001 = xor i32 %999, %1000
+  %1002 = add i32 %1001, %796
+  %1003 = add i32 %1002, %913
+  %1004 = add i32 %1003, %996
+  store i32 %1004, i32 addrspace(5)* %145, align 8, !tbaa !13
+  %1005 = tail call i32 @llvm.fshl.i32(i32 %991, i32 %991, i32 15)
+  %1006 = tail call i32 @llvm.fshl.i32(i32 %991, i32 %991, i32 13)
+  %1007 = xor i32 %1005, %1006
+  %1008 = lshr i32 %991, 10
+  %1009 = xor i32 %1007, %1008
+  %1010 = tail call i32 @llvm.fshl.i32(i32 %822, i32 %822, i32 25)
+  %1011 = tail call i32 @llvm.fshl.i32(i32 %822, i32 %822, i32 14)
+  %1012 = xor i32 %1010, %1011
+  %1013 = lshr i32 %822, 3
+  %1014 = xor i32 %1012, %1013
+  %1015 = add i32 %1014, %809
+  %1016 = add i32 %1015, %926
+  %1017 = add i32 %1016, %1009
+  store i32 %1017, i32 addrspace(5)* %146, align 4, !tbaa !13
+  %1018 = load i32, i32 addrspace(1)* %147, align 4, !tbaa !13
+  %1019 = load i32, i32 addrspace(1)* %148, align 4, !tbaa !13
+  %1020 = load i32, i32 addrspace(1)* %149, align 4, !tbaa !13
+  %1021 = load i32, i32 addrspace(1)* %150, align 4, !tbaa !13
+  %1022 = load i32, i32 addrspace(1)* %151, align 4, !tbaa !13
+  %1023 = load i32, i32 addrspace(1)* %152, align 4, !tbaa !13
+  %1024 = load i32, i32 addrspace(1)* %153, align 4, !tbaa !13
+  %1025 = load i32, i32 addrspace(1)* %154, align 4, !tbaa !13
+  br label %1026
+
+1026:                                             ; preds = %1026, %169
+  %1027 = phi i32 [ %1018, %169 ], [ %1096, %1026 ]
+  %1028 = phi i32 [ %1019, %169 ], [ %1065, %1026 ]
+  %1029 = phi i32 [ 0, %169 ], [ %1097, %1026 ]
+  %1030 = phi i32 [ %1025, %169 ], [ %1032, %1026 ]
+  %1031 = phi i32 [ %1024, %169 ], [ %1033, %1026 ]
+  %1032 = phi i32 [ %1023, %169 ], [ %1064, %1026 ]
+  %1033 = phi i32 [ %1022, %169 ], [ %1095, %1026 ]
+  %1034 = phi i32 [ %1021, %169 ], [ %1028, %1026 ]
+  %1035 = phi i32 [ %1020, %169 ], [ %1027, %1026 ]
+  %1036 = tail call i32 @llvm.fshl.i32(i32 %1033, i32 %1033, i32 26)
+  %1037 = tail call i32 @llvm.fshl.i32(i32 %1033, i32 %1033, i32 21)
+  %1038 = xor i32 %1036, %1037
+  %1039 = tail call i32 @llvm.fshl.i32(i32 %1033, i32 %1033, i32 7)
+  %1040 = xor i32 %1038, %1039
+  %1041 = and i32 %1033, %1032
+  %1042 = xor i32 %1033, -1
+  %1043 = and i32 %1031, %1042
+  %1044 = zext i32 %1029 to i64
+  %1045 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(1)* @k, i64 0, i64 %1044
+  %1046 = load i32, i32 addrspace(1)* %1045, align 8, !tbaa !13
+  %1047 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 %1029
+  %1048 = load i32, i32 addrspace(5)* %1047, align 8, !tbaa !13
+  %1049 = add i32 %1041, %1030
+  %1050 = add i32 %1049, %1043
+  %1051 = add i32 %1050, %1040
+  %1052 = add i32 %1051, %1046
+  %1053 = add i32 %1052, %1048
+  %1054 = tail call i32 @llvm.fshl.i32(i32 %1027, i32 %1027, i32 30)
+  %1055 = tail call i32 @llvm.fshl.i32(i32 %1027, i32 %1027, i32 19)
+  %1056 = xor i32 %1054, %1055
+  %1057 = tail call i32 @llvm.fshl.i32(i32 %1027, i32 %1027, i32 10)
+  %1058 = xor i32 %1056, %1057
+  %1059 = xor i32 %1035, %1028
+  %1060 = and i32 %1059, %1027
+  %1061 = and i32 %1035, %1028
+  %1062 = xor i32 %1060, %1061
+  %1063 = add i32 %1062, %1058
+  %1064 = add i32 %1053, %1034
+  %1065 = add i32 %1063, %1053
+  %1066 = or i32 %1029, 1
+  %1067 = tail call i32 @llvm.fshl.i32(i32 %1064, i32 %1064, i32 26)
+  %1068 = tail call i32 @llvm.fshl.i32(i32 %1064, i32 %1064, i32 21)
+  %1069 = xor i32 %1067, %1068
+  %1070 = tail call i32 @llvm.fshl.i32(i32 %1064, i32 %1064, i32 7)
+  %1071 = xor i32 %1069, %1070
+  %1072 = and i32 %1064, %1033
+  %1073 = xor i32 %1064, -1
+  %1074 = and i32 %1032, %1073
+  %1075 = zext i32 %1066 to i64
+  %1076 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(1)* @k, i64 0, i64 %1075
+  %1077 = load i32, i32 addrspace(1)* %1076, align 4, !tbaa !13
+  %1078 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(5)* %4, i32 0, i32 %1066
+  %1079 = load i32, i32 addrspace(5)* %1078, align 4, !tbaa !13
+  %1080 = add i32 %1072, %1031
+  %1081 = add i32 %1080, %1074
+  %1082 = add i32 %1081, %1071
+  %1083 = add i32 %1082, %1077
+  %1084 = add i32 %1083, %1079
+  %1085 = tail call i32 @llvm.fshl.i32(i32 %1065, i32 %1065, i32 30)
+  %1086 = tail call i32 @llvm.fshl.i32(i32 %1065, i32 %1065, i32 19)
+  %1087 = xor i32 %1085, %1086
+  %1088 = tail call i32 @llvm.fshl.i32(i32 %1065, i32 %1065, i32 10)
+  %1089 = xor i32 %1087, %1088
+  %1090 = xor i32 %1028, %1027
+  %1091 = and i32 %1090, %1065
+  %1092 = and i32 %1028, %1027
+  %1093 = xor i32 %1091, %1092
+  %1094 = add i32 %1093, %1089
+  %1095 = add i32 %1084, %1035
+  %1096 = add i32 %1094, %1084
+  %1097 = add nuw nsw i32 %1029, 2
+  %1098 = icmp eq i32 %1097, 64
+  br i1 %1098, label %1099, label %1026, !llvm.loop !14
+
+1099:                                             ; preds = %1026
+  %1100 = add i32 %1096, %1018
+  store i32 %1100, i32 addrspace(1)* %147, align 4, !tbaa !13
+  %1101 = add i32 %1065, %1019
+  store i32 %1101, i32 addrspace(1)* %148, align 4, !tbaa !13
+  %1102 = add i32 %1027, %1020
+  store i32 %1102, i32 addrspace(1)* %149, align 4, !tbaa !13
+  %1103 = add i32 %1028, %1021
+  store i32 %1103, i32 addrspace(1)* %150, align 4, !tbaa !13
+  %1104 = add i32 %1095, %1022
+  store i32 %1104, i32 addrspace(1)* %151, align 4, !tbaa !13
+  %1105 = add i32 %1064, %1023
+  store i32 %1105, i32 addrspace(1)* %152, align 4, !tbaa !13
+  %1106 = add i32 %1033, %1024
+  store i32 %1106, i32 addrspace(1)* %153, align 4, !tbaa !13
+  %1107 = add i32 %1032, %1025
+  store i32 %1107, i32 addrspace(1)* %154, align 4, !tbaa !13
+  call void @llvm.lifetime.end.p5i8(i64 256, i8 addrspace(5)* %19) #4
+  %1108 = load i32, i32 addrspace(1)* %155, align 4, !tbaa !13
+  %1109 = icmp ugt i32 %1108, -513
+  br i1 %1109, label %1110, label %1113
+
+1110:                                             ; preds = %1099
+  %1111 = load i32, i32 addrspace(1)* %156, align 4, !tbaa !13
+  %1112 = add i32 %1111, 1
+  store i32 %1112, i32 addrspace(1)* %156, align 4, !tbaa !13
+  br label %1113
+
+1113:                                             ; preds = %1110, %1099
+  %1114 = add i32 %1108, 512
+  store i32 %1114, i32 addrspace(1)* %155, align 4, !tbaa !13
+  store i32 0, i32 addrspace(1)* %17, align 4, !tbaa !7
+  br label %1115
+
+1115:                                             ; preds = %158, %1113
+  %1116 = phi i32 [ %167, %158 ], [ 0, %1113 ]
+  %1117 = add nuw i32 %160, 1
+  %1118 = icmp eq i32 %1117, %2
+  br i1 %1118, label %1119, label %158, !llvm.loop !16
+
+1119:                                             ; preds = %1115, %3
+  ret void
+}
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workitem.id.x() #2
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare align 4 i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr() #2
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workgroup.id.x() #2
+
+; Function Attrs: nocallback nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.fshl.i32(i32, i32, i32) #3
+
+attributes #0 = { argmemonly mustprogress nocallback nofree nosync nounwind willreturn }
+attributes #1 = { mustprogress nofree norecurse nosync nounwind "amdgpu-flat-work-group-size"="1,256" "frame-pointer"="none" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="gfx906" "target-features"="+16-bit-insts,+ci-insts,+dl-insts,+dot1-insts,+dot2-insts,+dot7-insts,+dpp,+flat-address-space,+gfx8-insts,+gfx9-insts,+s-memrealtime,+s-memtime-inst,+sramecc" "uniform-work-group-size"="true" }
+attributes #2 = { mustprogress nofree nosync nounwind readnone speculatable willreturn }
+attributes #3 = { nocallback nofree nosync nounwind readnone speculatable willreturn }
+attributes #4 = { nounwind }
+
+!llvm.module.flags = !{!0, !1}
+!opencl.ocl.version = !{!2}
+!llvm.ident = !{!3}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{i32 7, !"PIC Level", i32 1}
+!2 = !{i32 2, i32 0}
+!3 = !{!"clang version 15.0.0 (http://10.15.3.7/dcutoolkit/driverruntime/llvm-project.git 340750feeda88c9c2ce8ad481b11d9aa7f033d39)"}
+!4 = !{i16 1, i16 1025}
+!5 = !{}
+!6 = !{i32 0, i32 1024}
+!7 = !{!8, !11, i64 64}
+!8 = !{!"_ZTS10SHA256_CTX", !9, i64 0, !11, i64 64, !9, i64 68, !9, i64 76}
+!9 = !{!"omnipotent char", !10, i64 0}
+!10 = !{!"Simple C++ TBAA"}
+!11 = !{!"int", !9, i64 0}
+!12 = !{!9, !9, i64 0}
+!13 = !{!11, !11, i64 0}
+!14 = distinct !{!14, !15}
+!15 = !{!"llvm.loop.mustprogress"}
+!16 = distinct !{!16, !15}
