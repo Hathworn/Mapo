@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce access latency from global memory
+// Optimize memory coalescing by ensuring contiguous threads access contiguous memory locations
+// Explore using __ldg() intrinsic for reading src if it is read-only and improves caching
+// Align src and dst pointers to enhance memory coalescing
+```

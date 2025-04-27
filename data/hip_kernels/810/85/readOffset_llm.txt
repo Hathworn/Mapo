@@ -1,0 +1,6 @@
+```
+// Calculate global index once to minimize repeated calculations
+// Use grid-stride loop to improve memory throughput by allowing each thread to load/store multiple elements
+// Ensure memory accesses are within bounds to prevent out-of-bounds memory access
+// Consider using shared memory if there are multiple accesses to the same data within the kernel to reduce global memory I/O
+```

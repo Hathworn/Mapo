@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access when loading data into shared memory
+// Use __syncthreads() to avoid shared memory race condition
+// Utilize all threads to efficiently load shared memory
+// Optimize the loop to minimize register usage
+// Minimize global memory access by utilizing shared memory
+// Calculate indices before the inner loop to reduce redundant calculations
+```

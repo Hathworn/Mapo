@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to improve memory access patterns and reduce global memory traffic.
+// Optimize thread divergence by ensuring conditional branches are minimized.
+// Use constant memory for values like lenOf_ek if they remain unchanged to reduce repeated global memory access.
+// Evaluate the possibility of loop unrolling to decrease loop overhead and improve latency.
+// Assess coalescing potential by ensuring aligned memory accesses to improve bandwidth utilization.
+// Pre-fetch required data to registers where possible for faster access and reduced latency.
+```

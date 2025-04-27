@@ -1,0 +1,6 @@
+```
+// Minimize memory access latency by improving coalesced access for V and V_s arrays.
+// Consider using shared memory to further reduce global memory access frequency.
+// Avoid unnecessary __syncthreads calls to enhance kernel performance.
+// Ensure optimal memory access pattern for the Ele and vdW arrays to prevent serialization.
+```

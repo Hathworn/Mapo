@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory access for rInput1 and rInput2.
+// Use shared memory to cache frequently accessed data.
+// Reduce global memory accesses by using shared memory buffers.
+// Minimize bank conflicts in shared memory access.
+// Ensure memory accesses are aligned for better performance.
+// Leverage loop unrolling techniques for the inner loop over channels.
+// Optimize the reduce operation to minimize __syncthreads() calls.
+// Consider using __restrict__ pointers to help the compiler with optimizations.
+```

@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to store intermediate Gaussian values to reduce global memory accesses.
+// Ensure __syncthreads() is placed where necessary to avoid race conditions, especially when reading and writing shared values.
+// Optimize the reduction operation for normalization by using parallel reduction techniques.
+// Revisit boundary checks and ensure they minimize warp divergence by structuring them efficiently.
+```

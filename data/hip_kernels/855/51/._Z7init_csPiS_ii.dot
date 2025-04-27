@@ -1,0 +1,15 @@
+digraph "CFG for '_Z7init_csPiS_ii' function" {
+	label="CFG for '_Z7init_csPiS_ii' function";
+
+	Node0x46fc120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp slt i32 %13, %2\l  br i1 %14, label %15, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x46fc120:s0 -> Node0x46fe030;
+	Node0x46fc120:s1 -> Node0x46fe0c0;
+	Node0x46fe030 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%15:\l15:                                               \l  %16 = icmp eq i32 %13, 0\l  br i1 %16, label %17, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x46fe030:s0 -> Node0x46fccd0;
+	Node0x46fe030:s1 -> Node0x46fe3a0;
+	Node0x46fccd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%17:\l17:                                               \l  store i32 0, i32 addrspace(1)* %1, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x46fccd0 -> Node0x46fe0c0;
+	Node0x46fe3a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%18:\l18:                                               \l  %19 = add nsw i32 %13, -1\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %23 = mul nsw i32 %22, %3\l  %24 = sext i32 %13 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %24\l  store i32 %23, i32 addrspace(1)* %25, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x46fe3a0 -> Node0x46fe0c0;
+	Node0x46fe0c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

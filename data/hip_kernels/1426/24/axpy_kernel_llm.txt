@@ -1,0 +1,6 @@
+// Consider using shared memory to cache frequently accessed data for faster access  
+// Ensure coalesced memory access by organizing data for sequential access by threads  
+// Minimize register usage and avoid global memory redundancies  
+// Evaluate warp occupancy and adjust block size for maximum efficiency  
+// Use constant memory for read-only data that all threads access frequently  
+// Maximize arithmetic intensity to minimize memory bandwidth bottlenecks

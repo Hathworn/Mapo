@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to temporarily store data for 'a' and 'b' to reduce global memory access time.
+// Align data accesses to 128 bytes where possible to take advantage of coalesced global memory access.
+// Ensure that all memory accesses are correctly vectorized to improve throughput.
+// Minimize branching within the kernel to maintain warp execution efficiency.
+```

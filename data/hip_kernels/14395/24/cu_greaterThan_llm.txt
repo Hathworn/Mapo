@@ -1,0 +1,6 @@
+// Use __restrict__ to indicate no aliasing for improved memory access
+// Consider using shared memory if applicable for reducing redundant global accesses
+// Ensure coalesced memory access for both src and dst arrays
+// Check if loop unrolling further improves performance with larger unroll factors
+// Verify if using float3 or float4 types provides better memory throughput
+// Opt for aligning data and ensuring correct data types for best effective bandwidth

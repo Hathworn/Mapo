@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Unroll the inner loop to save instruction overhead
+// Synchronize threads after loading tiles to shared memory
+// Consider adjusting tile size to fit shared memory limits
+// Ensure that shared memory size (SHMEM_SIZE) is properly defined
+```

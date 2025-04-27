@@ -1,0 +1,7 @@
+```
+// Use shared memory for index storage to reduce global memory access latency
+// Prefetch res and src data to shared memory where possible to improve access efficiency
+// Ensure memory coalescing by adjusting access patterns of src and res
+// Consider using __restrict__ qualifier for pointers to enable better compiler optimization
+// Optimize grid and block dimensions to maximize occupancy and resource utilization
+```

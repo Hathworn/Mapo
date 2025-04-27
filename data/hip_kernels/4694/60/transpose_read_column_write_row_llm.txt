@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access 
+// Add padding to shared memory array to avoid bank conflicts 
+// Transpose block offset to improve data coalescing 
+// Ensure thread synchronization before accessing shared memory

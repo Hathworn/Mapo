@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access for devDiff
+// Consider using __restrict__ pointers to enable compiler optimizations
+// Minimize bank conflicts in shared memory access for better performance
+// Optimize memory access patterns to utilize coalesced memory access
+// Consider loop unrolling techniques for small and known nClusters
+// Prefetch data to registers to reduce redundant global memory access

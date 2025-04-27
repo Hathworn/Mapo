@@ -1,0 +1,4 @@
+// Avoid loading devDiff[index] repeatedly by using a local variable instead
+// Consider using shared memory for devDiff access to reduce global memory latency
+// Coalesce memory access for devClusters[x] to improve memory throughput
+// Minimize divergent branches by organizing control flow efficiently

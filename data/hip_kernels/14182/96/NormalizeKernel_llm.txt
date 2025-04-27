@@ -1,0 +1,3 @@
+// Use shared memory to cache normalization factors for faster access
+// Use LDG to leverage read-only data cache for normalization_factor
+// Use cooperative groups for more efficient thread synchronization

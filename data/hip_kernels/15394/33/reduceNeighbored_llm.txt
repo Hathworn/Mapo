@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory accesses by aligning data access patterns
+// Minimize thread divergence by evenly distributing operations
+// Avoid unnecessary synchronization for warp-synchronous code
+// Utilize bank conflict-free memory access pattern in shared memory
+```

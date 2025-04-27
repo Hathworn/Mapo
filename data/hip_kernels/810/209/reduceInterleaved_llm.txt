@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses for the reduction operations
+// Ensure coalesced memory accesses by aligning data for threads within the same warp
+// Prefetch data to shared memory to improve memory access latency
+// Avoid divergent branching by ensuring each warp executes the same instructions
+```

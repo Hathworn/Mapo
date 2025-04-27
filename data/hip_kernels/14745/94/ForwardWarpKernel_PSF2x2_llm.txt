@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by restructuring data if possible
+// Reduce atomic operations by accumulating results in shared memory before writing to global memory
+// Investigate using half-precision floats if precision allows to reduce memory bandwidth
+// Preload data into shared memory to minimize redundant global memory accesses
+// Check occupancy to ensure maximum efficiency and consider adjusting block size if necessary
+// Utilize async copy operations to overlap computation and data transfer if applicable
+```

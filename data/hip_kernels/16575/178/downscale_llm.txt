@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store gradOutput_data to reduce global memory accesses.
+// Ensure coalesced memory access pattern by adjusting data layout if necessary.
+// Pre-fetch data into registers to reduce repeated global memory accesses.
+// Increase block size to optimize occupancy and maximize resource utilization.
+// Consider optimizing the loop unrolling based on hardware characteristics.
+```

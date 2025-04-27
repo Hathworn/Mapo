@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns for loading and storing to global memory
+// Use shared memory to minimize global memory access and latency
+// Load frequently accessed data (like 'x') into shared memory to reduce redundant global memory accesses
+// Ensure proper synchronization using __syncthreads() to avoid race conditions
+```

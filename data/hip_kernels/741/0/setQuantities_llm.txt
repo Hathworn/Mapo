@@ -1,0 +1,4 @@
+// Ensure `numInputs` is a multiple of the block size for optimal occupancy
+// Use shared memory if `d_quantity` is accessed repeatedly by threads
+// Align `d_quantity` to avoid potential memory bank conflicts
+// Minimize global memory access by adjusting kernel configurations

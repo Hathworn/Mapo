@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for data accessed by multiple threads to reduce global memory traffic.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory addresses.
+// Align data structures to 128 bytes to leverage aligned memory operations for better performance.
+// Minimize the usage of global memory and prefer registers or shared memory where possible.
+// Use __restrict__ keyword to provide the compiler with information for better memory optimization.
+// Reduce diverging branches by organizing code to minimize conditional branches within the kernel.
+```

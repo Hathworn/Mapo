@@ -1,0 +1,5 @@
+// Consider coalescing global memory access patterns for optimal performance
+// Minimize redundant data transfers by maximizing shared memory usage
+// Ensure shared memory usage fits within hardware limits to prevent bank conflicts
+// Double-check the synchronicity of shared memory operations to avoid race conditions
+// Explore using warp-level primitives to reduce atomic operations overhead

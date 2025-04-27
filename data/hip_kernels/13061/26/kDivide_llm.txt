@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses for better performance
+// Consider using shared memory if data can be reused within a block
+// Minimize memory bandwidth by avoiding bank conflicts in shared memory
+// Utilize register memory efficiently for frequently accessed data
+// Optimize loop unrolling based on the target architecture and input size

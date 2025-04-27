@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Add padding to shared memory to avoid bank conflicts
+// Load entire tiles into shared memory to maximize coalesced access
+// Synchronize threads after loading data to ensure all data is available
+// Transpose data using shared memory to reduce accesses to slow global memory
+// Store transposed data back to global memory with coalesced writes
+```

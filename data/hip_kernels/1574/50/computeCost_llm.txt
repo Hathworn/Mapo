@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses for frequently accessed data.
+// Prefetch data into registers to minimize memory access latency.
+// Optimize memory access patterns for coalesced reads and writes.
+// Use vectorized data types for memory-bound operations to enhance throughput.
+// Apply loop unrolling for the innermost loop if appropriate.
+// Ensure warp divergence is minimized within conditional statements.
+```

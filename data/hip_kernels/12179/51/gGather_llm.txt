@@ -1,0 +1,6 @@
+```
+// Use coalesced memory accesses for denseData and sparseData
+// Ensure sparseIndices are accessed in a coalesced manner
+// Use shared memory if there are frequent accesses to common indices
+// Minimize conditional statements inside the kernel where possible
+```

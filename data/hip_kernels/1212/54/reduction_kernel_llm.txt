@@ -1,0 +1,7 @@
+```
+// Use a grid-stride loop to improve memory access patterns
+// Store intermediate results in shared memory to reduce global memory transactions
+// Use volatile keyword to avoid redundant memory operations during reduction
+// Ensure coalesced access to global memory for output write
+// Consider using atomic operations for final accumulation in global memory if needed
+```

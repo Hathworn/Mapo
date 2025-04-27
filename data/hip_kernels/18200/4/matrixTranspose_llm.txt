@@ -1,0 +1,4 @@
+// Use shared memory to optimize access patterns and reduce global memory reads
+// Add padding to shared memory to avoid bank conflicts during access
+// Ensure memory reads from global memory are coalesced to maximize bandwidth
+// Use __syncthreads() to synchronize threads after loading into shared memory

@@ -1,0 +1,3 @@
+// Precompute flow_row_offset and image_row_offset to reduce redundant calculations
+// Combine consecutive atomicAdd calls to optimize synchronization overhead
+// Reduce branching by calculating weights outside of conditions

@@ -1,0 +1,7 @@
+```
+// Ensure shared memory size matches block size to avoid excess allocation
+// Consider coalesced access patterns when loading to shared memory
+// Minimize memory divergence by using consistent data access pattern across threads
+// Reduce __syncthreads() usage if overlapping operations are possible
+// Ensure workload balance by assigning optimal block and grid sizes
+```

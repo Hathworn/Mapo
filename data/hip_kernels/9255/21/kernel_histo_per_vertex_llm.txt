@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Coalesce global memory accesses to improve memory bandwidth.
+// Restructure data layout for better memory access patterns.
+// Align data access to warp size to minimize memory divergence.
+// Use const memory for frequently accessed data to reduce global memory bandwidth.
+// Evaluate if loop unrolling can improve performance within the while loop.
+// Explore using threadfence before atomicAdd if data consistency is an issue.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure data is aligned in memory to improve coalesced access
+// Use shared memory to reduce global memory access if possible
+// Avoid thread divergence by structuring conditions efficiently
+// Consider launching the kernel with optimal block size for occupancy
+// Balance between grid and block dimensions to maximize parallelism
+```

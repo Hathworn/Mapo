@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Ensure coalesced access pattern to global memory by organizing index computations efficiently
+// Minimize bank conflicts in shared memory if shared memory is used
+// Evaluate warp divergence and try to minimize it for better performance
+// Check if reducing the precision of floating-point operations affects the necessary computation accuracy positively
+// Consider using asynchronous memory copies to overlap memory operations with computation
+```

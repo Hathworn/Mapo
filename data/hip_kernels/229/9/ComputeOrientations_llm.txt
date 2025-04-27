@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory efficiently by minimizing bank conflicts
+// Ensure all threads in a warp are busy to avoid warp divergence
+// Consider loop unrolling to minimize loop overhead
+// Align data accesses to minimize memory transaction overheads
+// Group atomic operations to reduce contention and improve throughput
+// Preload frequently accessed data into registers or shared memory
+// Adjust thread block size for optimal occupancy and performance
+// Evaluate memory coalescing opportunities for global memory access
+```

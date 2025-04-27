@@ -1,0 +1,10 @@
+digraph "CFG for '_Z14vec_add_kernelPfS_S_i' function" {
+	label="CFG for '_Z14vec_add_kernelPfS_S_i' function";
+
+	Node0x64e5c10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = icmp sgt i32 %3, 0\l  br i1 %5, label %6, label %10\l|{<s0>T|<s1>F}}"];
+	Node0x64e5c10:s0 -> Node0x64e5bb0;
+	Node0x64e5c10:s1 -> Node0x64e6390;
+	Node0x64e5bb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%6:\l6:                                                \l  %7 = load float, float addrspace(1)* %1, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %8 = load float, float addrspace(1)* %2, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %9 = fadd contract float %7, %8\l  store float %9, float addrspace(1)* %0, align 4, !tbaa !4\l  br label %10\l}"];
+	Node0x64e5bb0 -> Node0x64e6390;
+	Node0x64e6390 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%10:\l10:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,4 @@
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Avoid excessive conditional statements within the kernel to reduce branching.
+// Use shared memory for common data accessed by multiple threads.
+// Explore using warp shuffle operations for more efficient data exchange between threads.

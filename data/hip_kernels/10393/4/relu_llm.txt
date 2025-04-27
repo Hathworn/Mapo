@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by using continuous memory reads for A and ret
+// Consider shared memory usage for frequently accessed data within block
+// Optimize block and grid dimensions for better occupancy
+// Use warp-level operations to reduce branching overhead
+// Minimize the use of global memory access by utilizing registers effectively
+// Profile and balance workload across threads to prevent idle threads
+```

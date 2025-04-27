@@ -1,0 +1,6 @@
+// Utilize shared memory to minimize access latency and increase throughput.
+// Avoid excessive use of global memory by utilizing shared memory as a buffer.
+// Ensure memory coalescing by structuring access patterns that align with warp boundaries.
+// Reduce the number of atomic operations on global memory by performing them in shared memory first.
+// Prioritize warp-level optimizations to hide memory latency and maximize efficiency.
+// Adjust grid and block dimensions to maximize occupancy and balance the workload evenly across threads.

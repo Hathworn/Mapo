@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for spMmat, spBmat, and spTmat to improve memory throughput.
+// Use __restrict__ qualifiers for input pointers to help the compiler with additional optimization.
+// Explore replacing atomic operations with warp-level primitives if possible for better performance.
+// Ensure shared memory usage is effective; avoid bank conflicts when accessing sharedMem.
+// Evaluate if the use of constant memory is feasible for scalar constants like deltaRMin, deltaRMax, cotThetaMax, etc., to reduce global memory access.
+// Investigate loop unrolling for fixed-size operations to reduce loop overhead and improve performance.
+```

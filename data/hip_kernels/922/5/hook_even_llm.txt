@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to minimize the number of accesses to global memory.
+// Initialize shared memory to track if any updates occur within the block.
+// Synchronize threads to ensure shared memory is correctly initialized.
+// Use a stride loop to ensure coalesced access to global memory.
+// Deactivate edges directly within the loop to reduce further checks.
+// Update the global flag only once per block to reduce global memory writes.
+```

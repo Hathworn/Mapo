@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by aligning input and output accesses
+// Consider using shared memory for input and output fragments if reuse is high
+// Minimize divergence by reshaping control flow to avoid conditional branches 
+// Evaluate using constant memory for alpha and beta if they do not change frequently

@@ -1,0 +1,9 @@
+```
+// Load centroids into shared memory to reduce global memory access
+// Use __shared__ memory to store centroids and reduce redundant reads
+// Implement __syncthreads() to synchronize threads after loading data
+// Check nPixels condition to avoid out-of-bound memory access
+// Use accumulant to reduce redundant calculations
+// Consider maximizing the use of shared memory for efficiency
+// Avoid bank conflicts when accessing shared memory
+```

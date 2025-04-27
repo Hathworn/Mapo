@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning threads with consecutive data in global memory
+// Consider using shared memory to cache hash data if it is reused across threads
+// Reduce global memory writes by storing intermediate results in registers when possible
+// Optimize loop to avoid unnecessary calculations and minimize memory access latency 
+```

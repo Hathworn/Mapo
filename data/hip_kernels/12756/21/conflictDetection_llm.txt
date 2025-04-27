@@ -1,0 +1,8 @@
+```c
+// Consider coalescing global memory access for vertexArray and neighbourArray
+// Increase shared memory usage to leverage higher memory bandwidth and lower latency
+// Minimize divergence in the control flow by aligning the warp to the workload
+// Investigate the possibility of load balancing across threads within a block
+// Prefer using registers over shared memory when variable lifetimes are short
+// Evaluate the potential to unroll small loops for fixed-size iterations
+```

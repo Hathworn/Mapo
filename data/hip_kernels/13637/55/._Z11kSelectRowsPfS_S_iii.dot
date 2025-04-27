@@ -1,0 +1,30 @@
+digraph "CFG for '_Z11kSelectRowsPfS_S_iii' function" {
+	label="CFG for '_Z11kSelectRowsPfS_S_iii' function";
+
+	Node0x5398720 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#aec9fc70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = shl i32 %7, 5\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = sub nsw i32 %3, %8\l  %11 = tail call i32 @llvm.smin.i32(i32 %10, i32 32)\l  %12 = icmp slt i32 %9, %11\l  br i1 %12, label %13, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5398720:s0 -> Node0x539a0d0;
+	Node0x5398720:s1 -> Node0x539a160;
+	Node0x539a0d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#93b5fe70",label="{%13:\l13:                                               \l  %14 = add nsw i32 %8, %9\l  %15 = sext i32 %14 to i64\l  %16 = getelementptr inbounds float, float addrspace(1)* %2, i64 %15\l  %17 = load float, float addrspace(1)* %16, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %18 = fptosi float %17 to i32\l  %19 = getelementptr inbounds [32 x i32], [32 x i32] addrspace(3)*\l... @_ZZ11kSelectRowsPfS_S_iiiE16sourceRowIndices, i32 0, i32 %9\l  %20 = icmp slt i32 %18, 0\l  %21 = select i1 %20, i32 %5, i32 0\l  %22 = add nsw i32 %21, %18\l  %23 = icmp sgt i32 %22, -1\l  %24 = icmp slt i32 %22, %5\l  %25 = select i1 %23, i1 %24, i1 false\l  %26 = select i1 %25, i32 %22, i32 -1\l  store i32 %26, i32 addrspace(3)* %19, align 4\l  br label %27\l}"];
+	Node0x539a0d0 -> Node0x539a160;
+	Node0x539a160 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#aec9fc70",label="{%27:\l27:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %28 = icmp sgt i32 %10, 0\l  br i1 %28, label %29, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x539a160:s0 -> Node0x539b2d0;
+	Node0x539a160:s1 -> Node0x539b320;
+	Node0x539b2d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#9abbff70",label="{%29:\l29:                                               \l  %30 = icmp slt i32 %9, %4\l  %31 = tail call i32 @llvm.smax.i32(i32 %11, i32 1)\l  br label %33\l}"];
+	Node0x539b2d0 -> Node0x539b6d0;
+	Node0x539b320 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#aec9fc70",label="{%32:\l32:                                               \l  ret void\l}"];
+	Node0x539b6d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%33:\l33:                                               \l  %34 = phi i32 [ 0, %29 ], [ %43, %42 ]\l  %35 = getelementptr inbounds [32 x i32], [32 x i32] addrspace(3)*\l... @_ZZ11kSelectRowsPfS_S_iiiE16sourceRowIndices, i32 0, i32 %34\l  %36 = load i32, i32 addrspace(3)* %35, align 4, !tbaa !10\l  br i1 %30, label %37, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x539b6d0:s0 -> Node0x539bae0;
+	Node0x539b6d0:s1 -> Node0x539a4c0;
+	Node0x539bae0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4c5ad70",label="{%37:\l37:                                               \l  %38 = add nuw nsw i32 %34, %8\l  %39 = icmp eq i32 %36, -1\l  %40 = mul nsw i32 %36, %4\l  %41 = mul nsw i32 %38, %4\l  br i1 %39, label %45, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x539bae0:s0 -> Node0x539c090;
+	Node0x539bae0:s1 -> Node0x539c0e0;
+	Node0x539a4c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%42:\l42:                                               \l  %43 = add nuw nsw i32 %34, 1\l  %44 = icmp eq i32 %43, %31\l  br i1 %44, label %32, label %33, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x539a4c0:s0 -> Node0x539b320;
+	Node0x539a4c0:s1 -> Node0x539b6d0;
+	Node0x539c090 [shape=record,color="#b70d28ff", style=filled, fillcolor="#cc403a70",label="{%45:\l45:                                               \l  %46 = phi i32 [ %50, %45 ], [ %9, %37 ]\l  %47 = add nsw i32 %46, %41\l  %48 = sext i32 %47 to i64\l  %49 = getelementptr inbounds float, float addrspace(1)* %1, i64 %48\l  store float 0x7FF8000000000000, float addrspace(1)* %49, align 4, !tbaa !5\l  %50 = add nuw nsw i32 %46, 32\l  %51 = icmp slt i32 %50, %4\l  br i1 %51, label %45, label %42, !llvm.loop !14\l|{<s0>T|<s1>F}}"];
+	Node0x539c090:s0 -> Node0x539c090;
+	Node0x539c090:s1 -> Node0x539a4c0;
+	Node0x539c0e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%52:\l52:                                               \l  %53 = phi i32 [ %61, %52 ], [ %9, %37 ]\l  %54 = add nsw i32 %53, %40\l  %55 = sext i32 %54 to i64\l  %56 = getelementptr inbounds float, float addrspace(1)* %0, i64 %55\l  %57 = load float, float addrspace(1)* %56, align 4, !tbaa !5\l  %58 = add nsw i32 %53, %41\l  %59 = sext i32 %58 to i64\l  %60 = getelementptr inbounds float, float addrspace(1)* %1, i64 %59\l  store float %57, float addrspace(1)* %60, align 4, !tbaa !5\l  %61 = add nuw nsw i32 %53, 32\l  %62 = icmp slt i32 %61, %4\l  br i1 %62, label %52, label %42, !llvm.loop !14\l|{<s0>T|<s1>F}}"];
+	Node0x539c0e0:s0 -> Node0x539c0e0;
+	Node0x539c0e0:s1 -> Node0x539a4c0;
+}

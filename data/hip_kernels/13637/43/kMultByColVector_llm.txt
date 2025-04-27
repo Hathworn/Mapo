@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory for the vector
+// Reduce the number of calculations for thread indices
+// Ensure sharedVec size fits within shared memory limits of the device
+// Use __syncthreads() to synchronize threads before accessing shared memory
+// Improve coalescing by using stride to access matrix elements

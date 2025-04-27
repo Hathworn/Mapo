@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for kernel data
+// Consider prefetching data into registers to hide memory latency
+// Optimize memory access patterns for coalesced access
+// Replace atomicAdd with a warp reduction to minimize synchronization overhead
+// Unroll inner loops to improve instruction-level parallelism
+```

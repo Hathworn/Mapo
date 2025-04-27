@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Align shared memory size with blockDim to ensure efficient utilization
+// Utilize __syncthreads() to synchronize memory operations among threads
+// Minimize global memory access by computing values in shared memory

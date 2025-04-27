@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access.
+// Process two elements per thread to reduce overall memory transactions.
+// Ensure memory access patterns are coalesced for improved bandwidth utilization.
+// Implement boundary checks when loading into shared memory to avoid out-of-bounds access.

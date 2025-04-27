@@ -1,0 +1,7 @@
+```
+// Combine input calculation to minimize memory access
+// Pre-fetch B[index] outside the if condition to reduce redundant memory access
+// Use shared memory if possible to reduce global memory access latency
+// Check for coalesced memory access patterns to improve memory throughput
+// Consider loop unrolling or increasing the work per thread for more efficient utilization
+```

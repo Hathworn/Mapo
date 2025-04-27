@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access to global memory when reading fineAggregateSort array.
+// Utilize shared memory to reduce global memory access latency.
+// Consider using warp shuffle techniques to reduce __syncthreads() calls.
+// Minimize branch divergence by arranging threads handling similar conditions.
+// Ensure correct usage and size configuration of shared memory to prevent bank conflicts.
+```

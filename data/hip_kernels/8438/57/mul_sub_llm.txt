@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache in2 data if possible to reduce global memory access.
+// Ensure coalesced memory access by appropriately aligning threadIdx.x with data indices.
+// Consider loop unrolling for performance improvement if in1ScalarCount is large enough.
+// Evaluate if using textures for read-only data (in2) would benefit performance.
+// Check if pre-fetching data for next loop iteration can hide memory latency.
+```

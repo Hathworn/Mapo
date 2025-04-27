@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses for pixel data.
+// Optimize memory coalescing by aligning memory accesses to 32-byte boundaries.
+// Avoid divergent warp execution by ensuring all threads within a warp follow the same execution path.
+// Prefetch data in registers to reduce latency of memory accesses.
+// Increase occupancy by adjusting block size based on GPU architecture specifications.
+// Use texture memory for read-only input data to take advantage of cache mechanisms.
+```

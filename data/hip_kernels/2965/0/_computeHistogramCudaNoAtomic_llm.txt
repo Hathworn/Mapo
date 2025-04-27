@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access
+// Avoid bank conflicts in shared memory access
+// Ensure coalesced access to global memory
+// Utilize __syncthreads() to ensure all threads synchronize at key points
+// Minimize divergence in control flow
+// Optimize block size for better occupancy
+```

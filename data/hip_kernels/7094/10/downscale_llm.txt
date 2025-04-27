@@ -1,0 +1,7 @@
+```
+// For memory coalescing, ensure gradOutput_data is accessed in a pattern that maximizes bandwidth
+// Consider using shared memory to cache gradOutput_data for repeated accesses within the loop
+// Check if loop unrolling can benefit performance by reducing loop overhead
+// Determine if atomic operations are necessary when writing to gradInput_data
+// Evaluate if having fewer threads with more work per thread would improve register utilization
+```

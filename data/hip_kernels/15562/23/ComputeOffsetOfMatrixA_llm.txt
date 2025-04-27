@@ -1,0 +1,4 @@
+// Ensure coalesced memory access patterns for col_sum and output
+// Increase block size to maximize thread utilization
+// Use shared memory to reduce redundant global reads
+// Avoid unnecessary synchronization barriers when possible

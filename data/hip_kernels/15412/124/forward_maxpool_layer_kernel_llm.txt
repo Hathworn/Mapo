@@ -1,0 +1,8 @@
+```
+// Consider memory coalescing by ensuring consecutive threads access consecutive elements
+// Use shared memory to reduce global memory accesses
+// Optimize thread block size based on target GPU architecture
+// Consider loop unrolling for the inner loop
+// Use __restrict__ keyword for input and output pointer parameters
+// Pre-compute repeated arithmetic expressions to improve efficiency
+```

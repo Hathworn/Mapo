@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access when reading input data
+// Consider using __restrict__ keyword for input and output pointers to assume no aliasing
+// Adjust grid and block dimensions to optimize occupancy and balance load
+// Consider using warp shuffle operations for reduction instead of shared memory for improved efficiency
+// Opt for a warp-wide reduction step to minimize the number of __syncthreads() needed
+// Ensure shared memory usage is within limits to prevent bank conflicts
+// Use atomic operations efficiently to reduce contention when updating output value
+```

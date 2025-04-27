@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses where possible for improved performance.
+// Ensure that memory accesses are contiguous to optimize the memory bandwidth.
+// Use shared memory to cache frequently accessed data if there's any spatial or temporal reuse.
+// Minimize use of atomic operations or ensure they are on low-contention areas to reduce performance bottlenecks.
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access.
+// Add padding in shared memory to avoid out-of-bounds checks and ensure data continuity.
+// Load all necessary boundary data into shared memory to minimize repetitive global memory access.
+// Ensure __syncthreads() is used after loading data into shared memory for synchronization.

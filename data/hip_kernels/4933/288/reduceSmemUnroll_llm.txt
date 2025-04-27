@@ -1,0 +1,9 @@
+```
+// Consider increasing unroll factor for better memory coalescing.
+// Use __restrict__ keyword for pointer inputs to assist compiler optimization.
+// Align idx calculation with warp size to improve memory access patterns.
+// Experiment with different shared memory bank configurations to avoid conflicts.
+// Balance shared memory usage to prevent resource contention among blocks.
+// Ensure proper alignment of shared memory usage to avoid bank conflicts.
+// Evaluate register usage per thread to ensure optimal occupancy.
+```

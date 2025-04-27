@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by reordering data access patterns if possible
+// Explore shared memory for frequently reused values such as inv_log_Y_range
+// Use warp shuffle operations to reduce redundant calculations in SIMD fashion
+// Consider using texture memory for read-only data like d_cdf_norm to optimize cached access
+// Analyze thread block size and grid size to optimize occupancy and load balancing
+```

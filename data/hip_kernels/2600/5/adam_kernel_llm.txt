@@ -1,0 +1,7 @@
+```
+// Use shared memory if possible to reduce global memory accesses.
+// Consider loop unrolling for better instruction throughput.
+// Align memory access to ensure coalesced global memory transactions.
+// Use __restrict__ keyword to indicate no aliasing and improve compiler optimizations.
+// Pre-fetch data into registers to reduce latency in computations.
+```

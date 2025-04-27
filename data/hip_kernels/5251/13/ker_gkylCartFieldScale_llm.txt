@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory access latency.
+// Apply loop unrolling with best-fit unroll factor for better ILP.
+// Ensure coalesced memory access by aligning data layout.
+// Use __restrict__ keyword for pointers if there are no aliasing concerns.
+// Experiment with adjusting block size for optimal occupancy and performance.
+```

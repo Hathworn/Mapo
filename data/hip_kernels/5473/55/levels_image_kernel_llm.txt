@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for reading and writing to image array
+// Use shared memory to load neighbouring pixel data to reduce global memory access
+// Evaluate potential for loop unrolling in hsv_to_rgb_kernel function
+// Consider using __ldg() intrinsic for read-only accesses to global memory
+// Assess benefits of using float2 or float4 for color operations to reduce operations
+// Check if constant memory can be utilized for any static data
+```

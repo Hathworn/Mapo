@@ -1,0 +1,5 @@
+// Use shared memory for data that is read by multiple threads to reduce global memory accesses.
+// Consider using vectorized operations if possible to improve memory throughput.
+// Use cooperative groups to simplify thread synchronization and optimize performance.
+// Ensure memory accesses are coalesced for better memory efficiency.
+// Use __restrict__ qualifiers for pointers to enable compiler optimizations.

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by ensuring contiguous threads access contiguous memory locations.
+// Utilize shared memory to reduce redundant global memory fetches.
+// Ensure data is aligned in a way that avoids bank conflicts in shared memory.
+// Aim to increase occupancy by adjusting block size to better utilize available resources.
+// Experiment with different grid and block configurations to determine optimal utilization.
+// Reduce divergent branching within the loop when processing data conditionally.
+```

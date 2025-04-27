@@ -1,0 +1,5 @@
+// Use coalesced memory access to minimize global memory transaction overhead.
+// Consider using adjacent threads to access consecutive memory locations for Md and Nd.
+// Explore alternative memory alignment strategies to further reduce bank conflicts.
+// Minimize the use of __syncthreads() where possible to reduce synchronization overhead.
+// Investigate increasing block size to potentially increase parallelism and reduce memory latency.

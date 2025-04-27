@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache points for better memory access patterns.
+// Coalesce memory access when reading from 'points' to improve bandwidth utilization.
+// Consider utilizing asynchronous memory copies for prefetching data.
+// Optimize 'idx' memory access by using texture memory if supported by the hardware.
+// Unroll inner loops to increase instruction-level parallelism.
+// Ensure grid and block dimensions maximize occupancy.
+```

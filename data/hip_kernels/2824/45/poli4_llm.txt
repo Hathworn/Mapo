@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data if there's reuse among threads
+// Ensure coalesced memory accesses by using contiguous data access patterns
+// Minimize thread divergence by ensuring all threads within a warp execute the same path
+// Consider using constexpr for constant values to avoid recomputation
+// Use loop unrolling if possible to reduce loop control overhead
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to improve memory throughput.
+// Use shared memory to reduce global memory accesses and increase data locality.
+// Ensure all-in block synchronization (__syncthreads()) is used correctly to prevent race conditions.
+// Minimize branch divergence by keeping thread execution paths homogeneous.
+// Explore using warp-level primitives to reduce synchronization overhead.
+// Ensure efficient use of occupancy to maximize resource utilization.
+```

@@ -1,0 +1,5 @@
+// Precompute d1*d2 for avoiding recomputation in inner loops
+// Use shared memory for frequently accessed data to reduce global memory access
+// Align memory access patterns to avoid bank conflicts
+// Optimize thread block size to maximize occupancy and reduce warp divergence
+// Consider using vectorized memory accesses for improved performance

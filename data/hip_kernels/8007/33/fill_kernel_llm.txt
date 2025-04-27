@@ -1,0 +1,5 @@
+```cpp
+// Optimize memory access by ensuring X is accessed with coalesced memory patterns.
+// Consider using shared memory if INCX leads to strided access for better memory access efficiency.
+// Ensure vector length (N) is a multiple of block size to avoid warp divergence.
+```

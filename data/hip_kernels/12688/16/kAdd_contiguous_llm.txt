@@ -1,0 +1,4 @@
+// Ensure memory accesses are coalesced by using stride loop.
+// Use shared memory if reused data can be loaded multiple times.
+// Optimize block and grid sizes to maximize occupancy and reduce idle threads.
+// Consider using warp-level primitives for operations that can benefit from reduced latency.

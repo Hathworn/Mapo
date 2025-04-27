@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory accesses
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Consider loop unrolling if the loop body is more complex
+// Profile the kernel to identify if memory or compute bound for further optimization
+// Assess register usage to ensure efficient occupancy
+```

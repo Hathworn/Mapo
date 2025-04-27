@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by threads in the same warp
+// Utilize shared memory to minimize redundant global memory accesses
+// Maintain coalesced writes back to global memory for efficiency
+// Replace static shared memory size with dynamically allocated size if appropriate
+// Verify if reducing the number of __syncthreads() improves performance
+```

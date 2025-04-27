@@ -1,0 +1,6 @@
+```cpp
+// Reuse cached coordinates (x, y, z) to minimize global memory accesses.
+// Use loop unrolling to optimize vertexData updates.
+// Use loop unrolling to optimize texture coordinate updates.
+// Consider loading activityFlag, operationMaskConstant, and cubeTexCoordinatesConstant into shared memory if beneficial.
+```

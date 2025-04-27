@@ -1,0 +1,15 @@
+digraph "CFG for '_Z17transpose_sigmoidPfS_ii' function" {
+	label="CFG for '_Z17transpose_sigmoidPfS_ii' function";
+
+	Node0x609a050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 4\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %10 = shl i32 %9, 4\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %12 = add i32 %10, %11\l  %13 = icmp ult i32 %8, %2\l  %14 = icmp ult i32 %12, %3\l  %15 = select i1 %13, i1 %14, i1 false\l  br i1 %15, label %16, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x609a050:s0 -> Node0x609c4d0;
+	Node0x609a050:s1 -> Node0x609c560;
+	Node0x609c4d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = mul i32 %12, %2\l  %18 = add i32 %17, %8\l  %19 = zext i32 %18 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %1, i64 %19\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %22 = getelementptr inbounds [16 x [17 x float]], [16 x [17 x float]]\l... addrspace(3)* @_ZZ17transpose_sigmoidPfS_iiE5block, i32 0, i32 %11, i32 %7\l  store float %21, float addrspace(3)* %22, align 4, !tbaa !5\l  br label %23\l}"];
+	Node0x609c4d0 -> Node0x609c560;
+	Node0x609c560 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%23:\l23:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %24 = add i32 %10, %7\l  %25 = add i32 %6, %11\l  %26 = icmp ult i32 %24, %3\l  %27 = icmp ult i32 %25, %2\l  %28 = select i1 %26, i1 %27, i1 false\l  br i1 %28, label %29, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x609c560:s0 -> Node0x609dac0;
+	Node0x609c560:s1 -> Node0x609db10;
+	Node0x609dac0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%29:\l29:                                               \l  %30 = mul i32 %25, %3\l  %31 = add i32 %30, %24\l  %32 = getelementptr inbounds [16 x [17 x float]], [16 x [17 x float]]\l... addrspace(3)* @_ZZ17transpose_sigmoidPfS_iiE5block, i32 0, i32 %7, i32 %11\l  %33 = load float, float addrspace(3)* %32, align 4, !tbaa !5\l  %34 = zext i32 %31 to i64\l  %35 = getelementptr inbounds float, float addrspace(1)* %0, i64 %34\l  store float %33, float addrspace(1)* %35, align 4, !tbaa !5\l  br label %36\l}"];
+	Node0x609dac0 -> Node0x609db10;
+	Node0x609db10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

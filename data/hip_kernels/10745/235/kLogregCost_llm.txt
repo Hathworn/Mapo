@@ -1,0 +1,7 @@
+```cpp
+// Use __ldg() for read-only data like labels, maxProbs for potential caching benefits
+// Minimize branching by using conditional assignment, e.g., correctProbs[tx] = (labelp == maxp) ? 1.0f / numMax : 0;
+// Consider unrolling the loop over numOut to reduce loop overhead
+// Ensure all memory accesses are coalesced for optimal performance
+// Double-check bank conflicts in use of shared memory, if applicable
+```

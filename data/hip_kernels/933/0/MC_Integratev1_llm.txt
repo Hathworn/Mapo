@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses for 'degrees' array within a block.
+// Optimize memory coalescing by ensuring 'degrees' access is aligned with thread ID.
+// Use fewer registers per thread to increase occupancy and improve throughput.
+// Unroll loops if dimensions and n_terms values are constants and known at compile-time for performance gain.
+// Replace hiprand_uniform with hiprand_uniform(&states[id]) inside a loop to minimize state reads.
+// Avoid recalculating the same index or expression multiple times, store it in a register, and reuse.
+```

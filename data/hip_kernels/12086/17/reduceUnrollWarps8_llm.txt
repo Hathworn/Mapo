@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure memory access patterns are coalesced to improve performance
+// Utilize loop unrolling to maximize instruction throughput
+// Replace __syncthreads with warp-level primitives where possible
+// Use volatile keyword to prevent reordering and optimize memory access
+```

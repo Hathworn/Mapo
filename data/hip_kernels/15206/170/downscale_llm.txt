@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Prefetch data into shared memory to improve memory access patterns
+// Ensure coalesced memory accesses by aligning data structures properly
+// Minimize the use of device functions that can introduce additional overhead
+// Use __restrict__ qualifiers to help the compiler optimize memory accesses
+// Opt for more fine-grained parallelism by increasing the number of threads or optimizing block size
+```

@@ -1,0 +1,7 @@
+```cpp
+// Align memory accesses to reduce cache misses
+// Avoid bank conflicts by ensuring memory accesses are coalesced
+// Ensure the block size is a multiple of warp size to maximize warp occupancy
+// Minimize memory transactions by optimizing stride access patterns
+// Use shared memory if frequent data reuse is possible within threads
+```

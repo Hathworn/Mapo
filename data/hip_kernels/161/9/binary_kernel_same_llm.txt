@@ -1,0 +1,7 @@
+```
+// Optimize memory access by minimizing bank conflicts in shared memory
+// Avoid redundant memory reads by loading data into registers where possible
+// Use loop unrolling in the calculation loop to reduce control overhead
+// Ensure coalescing of global memory reads for improved performance
+// Consider using warp shuffle functions for inter-thread communication instead of shared memory
+```

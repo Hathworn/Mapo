@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Use coalesced memory accesses by ensuring pos is accessed in a contiguous manner
+// Minimize memory divergence by ensuring threads within a warp follow similar execution paths
+// Align memory access to 128-byte boundaries for better performance
+// Implement loop unrolling if the loop contains repetitive computations
+```

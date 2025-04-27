@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access by aligning data structures properly for efficient global memory access
+// Use float2 or float4 for vectorized memory access to increase memory throughput
+// Avoid atomic operations for better performance by utilizing warp-level primitives
+// Optimize shared memory usage by minimizing shared memory bank conflicts
+// Consider loop unrolling for the reduction operations to reduce instruction overhead
+// Evaluate whether employing hierarchical parallelism can enhance throughput for large data sizes
+```

@@ -1,0 +1,5 @@
+// Consider using warp-wide operations for loading masks and values for improved memory efficiency.
+// Optimize shared memory usage by minimizing bank conflicts with careful indexing.
+// Ensure that input loading is coalesced to reduce global memory access latency.
+// Utilize vectorized operations for output computations where applicable to enhance performance.
+// Explore the possibility of using a wider block size if registers allow, to increase parallel throughput.

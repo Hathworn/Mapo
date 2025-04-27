@@ -1,0 +1,8 @@
+```
+// Consider using float4 or float2 to coalesce memory loads and improve memory bandwidth utilization.
+// Use __ldg() function in architectures where applicable for read-only data to leverage cache benefits.
+// Ensure the data alignment is appropriate to take advantage of vectorized memory operations.
+// Experiment with different block sizes to find the optimal configuration for the hardware.
+// Avoid bank conflicts in shared memory and ensure the memory access pattern maximizes throughput.
+// Consider using __half2, if CUDA Cores and memory throughput support, to double the operations per cycle.
+```

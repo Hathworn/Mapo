@@ -1,0 +1,3 @@
+// Consider using shared memory for neighboring pixel access to reduce global memory access latency
+// Precompute index values reused within the loop to minimize redundant computations
+// Explore potential warp-level parallelism opportunities to optimize thread usage within blocks

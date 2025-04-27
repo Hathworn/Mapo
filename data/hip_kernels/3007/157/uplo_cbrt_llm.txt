@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access when reading from array 'a' for improved memory bandwidth.
+// Optimize memory writes for array 'b' to ensure coalesced access, possibly aligning 'ld_b' to warp size.
+// Consider using shared memory to minimize redundant global memory accesses for data frequently used within a block.
+// Minimize conditional branching within the kernel to avoid warp divergence and improve execution efficiency.
+```

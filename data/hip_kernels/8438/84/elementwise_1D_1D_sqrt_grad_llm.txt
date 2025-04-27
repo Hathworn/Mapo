@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache reusable data and reduce global memory access
+// Ensure coalesced memory access by aligning data access patterns to warp size
+// Use __restrict__ qualifiers for pointers to optimize memory access
+// Evaluate if loop unrolling further benefits performance improvements
+// Check if using a different thread block size increases memory throughput
+```

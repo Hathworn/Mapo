@@ -1,0 +1,7 @@
+```
+// Use shared memory for repeated access to frequently used data.
+// Ensure coalesced memory access by aligning data structures to the warp size.
+// Minimize device memory accesses by using registers effectively.
+// Optimize memory access patterns to reduce global memory transactions.
+// Use __syncthreads() only when necessary to reduce overhead.
+```

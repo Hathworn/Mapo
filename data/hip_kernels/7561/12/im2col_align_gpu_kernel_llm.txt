@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to re-use data and minimize global memory accesses.
+// Use texture memory for repetitive access to data_im if read-only.
+// Ensure coalesced memory access for data_im_ptr to optimize performance.
+// Evaluate the stride and pad parameters to ensure efficient memory usage.
+// Verify alignment of data_col_ptr to optimize memory bandwidth utilization.
+// Check the impact of bit_align on memory access patterns to prevent misaligned access.
+// Optimize loop unrolling for small ksize values to reduce overhead.
+```

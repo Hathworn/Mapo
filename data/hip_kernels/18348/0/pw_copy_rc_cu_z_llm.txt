@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce redundant global memory accesses for elements that are repeatedly used.
+// Ensure coalesced memory access by aligning data structures properly.
+// Consider loop unrolling for improved performance and reduced control overhead.
+// Optimize the use of registers by limiting unnecessary variable declarations within loops.
+// Consider using texture memory for read-only data to benefit from caching.

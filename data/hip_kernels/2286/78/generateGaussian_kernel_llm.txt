@@ -1,0 +1,5 @@
+```
+// Precompute constant term deltaSquared outside loop to reduce computation
+// Use __expf for faster computation than exp
+// Consider using shared memory for gaussian values if reused across threads
+```

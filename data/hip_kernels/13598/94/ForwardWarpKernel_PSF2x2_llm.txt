@@ -1,0 +1,4 @@
+// Consider using shared memory for common data that is accessed repeatedly by multiple threads to reduce global memory accesses.
+// Precompute frequently accessed indices and values where possible to minimize repeated calculations.
+// Ensure efficient memory access patterns by accessing global memory in coalesced fashion where possible.
+// Optimize atomic operations by minimizing their usage and consider using warp-wide operations where applicable.

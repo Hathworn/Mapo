@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Ensure coalesced memory access patterns for optimal performance
+// Use constant memory for data that does not change during kernel execution
+// Explore increasing the block size for better occupancy if resources permit
+// Avoid branch divergence by ensuring threads within a warp follow the same execution path
+```

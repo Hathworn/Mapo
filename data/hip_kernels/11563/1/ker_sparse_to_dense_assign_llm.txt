@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access to improve memory throughput
+// Consider using shared memory to reduce global memory traffic
+// Optimize thread divergence by ensuring all threads within a warp follow the same execution path
+// Use proper data alignment to enable faster memory access
+// Utilize loop unrolling techniques if beneficial to increase parallel execution
+```

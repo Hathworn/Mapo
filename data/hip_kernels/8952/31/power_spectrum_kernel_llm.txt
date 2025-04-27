@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to cache data and reduce global memory accesses
+// Consider coalesced memory accesses when reading from A_in and writing to A_out
+// Strive to align memory accesses to warp boundaries to improve efficiency
+// Reduce branching by handling special cases outside the main loop if possible
+// Ensure data structures are aligned to 128-bit boundaries for float2 reads
+// Explore loop unrolling to increase instruction-level parallelism
+```

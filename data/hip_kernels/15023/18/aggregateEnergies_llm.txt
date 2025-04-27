@@ -1,0 +1,8 @@
+```
+// Use shared memory to optimize access to frequently used data
+// Load data from global memory to shared memory in batches to improve coalesced access
+// Use syncthreads to synchronize threads and ensure all data is loaded into shared memory
+// Reduce multiple values in shared memory to minimize accesses to slower global memory
+// Write final results from shared memory to global memory in a coalesced manner
+// Ensuring that only valid indices are accessed to prevent invalid memory accesses
+```

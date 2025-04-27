@@ -1,0 +1,6 @@
+// Ensure tile size is a multiple of warp size to improve memory coalescing  
+// Use float4 data type for loading to minimize memory transactions  
+// Optimize shared memory usage by minimizing padding  
+// Utilize vectorized load/store to improve memory throughput  
+// Consider loop unrolling for improved instruction-level parallelism  
+// Check boundary conditions to avoid unnecessary computations

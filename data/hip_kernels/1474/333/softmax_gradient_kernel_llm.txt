@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Prefetch Y and dY values to registers to reduce global memory latency
+// Consider increasing block size if shared memory allows for better occupancy
+// Optimize reduction with warp-level primitives to reduce synchronization overhead
+```

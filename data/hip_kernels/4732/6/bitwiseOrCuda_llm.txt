@@ -1,0 +1,7 @@
+```
+// Consider using texture memory for read-only input arrays to exploit caching
+// Use coalesced memory access by ensuring consecutive threads access consecutive elements
+// Minimize divergent branching within warps by structuring conditions to reflect probable outcomes
+// Employ shared memory to reduce global memory accesses, particularly in compute-intensive operations
+// Fuse multiple kernel launches where possible to minimize memory latency and kernel invocation overhead
+```

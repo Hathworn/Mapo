@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses by ensuring INCX and INCY equal 1.
+// Use shared memory to reduce global memory bandwidth usage if the block size is small enough.
+// Ensure grid and block dimensions optimize occupancy and minimize idle threads.
+// Align memory accesses to reduce potential bank conflicts.
+// Prefetch data into registers to reduce memory access latency.
+// Consider loop unrolling if stride divides evenly into N for efficiency.
+// Evaluate increasing block size for better use of chip resources.
+```

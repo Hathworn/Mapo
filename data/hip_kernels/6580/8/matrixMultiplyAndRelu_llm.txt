@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory accesses
+// Ensure tiles are collaboratively loaded into shared memory to improve coalesced access patterns
+// Leverage shared memory to perform matrix multiplication in tiles, minimizing register usage
+// Optimize memory transfer from global to shared memory using conditional logic for boundary handling
+// Employ __syncthreads() to synchronize threads within the same block, ensuring data consistency

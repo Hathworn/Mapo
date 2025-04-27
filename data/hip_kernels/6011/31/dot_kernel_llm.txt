@@ -1,0 +1,7 @@
+```
+// Ensure the kernel is being launched with optimal block and grid sizes to maximize occupancy.
+// Use shared memory to cache 'output' values to reduce global memory accesses.
+// Consider coalescing the global memory accesses for 'output' and 'delta' to enhance memory throughput.
+// Employ warp shuffle operations instead of atomicAdd for accumulating 'delta' if possible to reduce overhead.
+// Double-check that #pragma unroll is effectively unrolling the loop to take advantage of instruction-level parallelism.
+```

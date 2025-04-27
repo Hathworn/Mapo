@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses if multiple threads within a block access the same data
+// Seed setup can be done in a more memory-efficient manner if possible, consider using fewer unique seeds
+// Consider using warp-level operations to reduce divergence and synchronization overhead
+// Ensure alignment to avoid misaligned accesses which result in lower memory bandwidth

@@ -1,0 +1,4 @@
+// Ensure flat thread index calculated for memory coalescing
+// Consider loop unrolling for 'sum += input[in_index]' for better performance
+// Use shared memory for reduction if blockDim.x > 1 to minimize global memory access time
+// Optimize the use of __syncthreads() to prevent unnecessary synchronization overhead

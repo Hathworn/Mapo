@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ to potentially aid optimizing memory access.
+// Ensure coalesced memory access for field array to improve memory throughput.
+// Minimize the use of repeated calculations by storing reused values in variables.
+// Align data structures to ensure optimal memory usage and avoid bank conflicts.
+// Take advantage of shared memory if the algorithm can benefit from it.
+// Ensure that idx does not exceed the bounds of the allocated memory for field.
+```

@@ -1,0 +1,32 @@
+digraph "CFG for '_Z12find_maximumPdS_iPi' function" {
+	label="CFG for '_Z12find_maximumPdS_iPi' function";
+
+	Node0x61b3c40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !5, !invariant.load !6\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !7\l  %15 = mul i32 %6, %11\l  %16 = add i32 %15, %5\l  %17 = udiv i32 %14, %11\l  %18 = mul i32 %17, %11\l  %19 = icmp ugt i32 %14, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %11\l  %23 = icmp slt i32 %16, %2\l  br i1 %23, label %24, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x61b3c40:s0 -> Node0x61b3c90;
+	Node0x61b3c40:s1 -> Node0x61b6280;
+	Node0x61b3c90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %34, %24 ], [ %16, %4 ]\l  %26 = phi float [ %32, %24 ], [ -1.000000e+09, %4 ]\l  %27 = phi i32 [ %33, %24 ], [ 0, %4 ]\l  %28 = sext i32 %25 to i64\l  %29 = getelementptr inbounds double, double addrspace(1)* %0, i64 %28\l  %30 = load double, double addrspace(1)* %29, align 8, !tbaa !16,\l... !amdgpu.noclobber !6\l  %31 = fptrunc double %30 to float\l  %32 = tail call float @llvm.maxnum.f32(float %26, float %31)\l  %33 = add nsw i32 %27, %22\l  %34 = add nsw i32 %16, %33\l  %35 = icmp slt i32 %34, %2\l  br i1 %35, label %24, label %36, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x61b3c90:s0 -> Node0x61b3c90;
+	Node0x61b3c90:s1 -> Node0x61b5e80;
+	Node0x61b5e80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%36:\l36:                                               \l  %37 = fpext float %32 to double\l  br label %38\l}"];
+	Node0x61b5e80 -> Node0x61b6280;
+	Node0x61b6280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%38:\l38:                                               \l  %39 = phi double [ 0xC1CDCD64FF800000, %4 ], [ %37, %36 ]\l  %40 = getelementptr inbounds [512 x double], [512 x double] addrspace(3)*\l... @_ZZ12find_maximumPdS_iPiE5cache, i32 0, i32 %5\l  store double %39, double addrspace(3)* %40, align 8, !tbaa !16\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %41 = icmp ult i16 %10, 2\l  br i1 %41, label %54, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x61b6280:s0 -> Node0x61b8d60;
+	Node0x61b6280:s1 -> Node0x61b8df0;
+	Node0x61b8df0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = phi i32 [ %44, %52 ], [ %11, %38 ]\l  %44 = lshr i32 %43, 1\l  %45 = icmp ult i32 %5, %44\l  br i1 %45, label %46, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x61b8df0:s0 -> Node0x61b91f0;
+	Node0x61b8df0:s1 -> Node0x61b8f60;
+	Node0x61b91f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%46:\l46:                                               \l  %47 = load double, double addrspace(3)* %40, align 8, !tbaa !16\l  %48 = add nuw nsw i32 %44, %5\l  %49 = getelementptr inbounds [512 x double], [512 x double] addrspace(3)*\l... @_ZZ12find_maximumPdS_iPiE5cache, i32 0, i32 %48\l  %50 = load double, double addrspace(3)* %49, align 8, !tbaa !16\l  %51 = tail call double @llvm.maxnum.f64(double %47, double %50)\l  store double %51, double addrspace(3)* %40, align 8, !tbaa !16\l  br label %52\l}"];
+	Node0x61b91f0 -> Node0x61b8f60;
+	Node0x61b8f60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%52:\l52:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %53 = icmp ult i32 %43, 4\l  br i1 %53, label %54, label %42, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x61b8f60:s0 -> Node0x61b8d60;
+	Node0x61b8f60:s1 -> Node0x61b8df0;
+	Node0x61b8d60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%54:\l54:                                               \l  %55 = icmp eq i32 %5, 0\l  br i1 %55, label %56, label %64\l|{<s0>T|<s1>F}}"];
+	Node0x61b8d60:s0 -> Node0x61b9cb0;
+	Node0x61b8d60:s1 -> Node0x61b9d00;
+	Node0x61b9cb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#ca3b3770",label="{%56:\l56:                                               \l  %57 = cmpxchg i32 addrspace(1)* %3, i32 0, i32 1 syncscope(\"agent-one-as\")\l... monotonic monotonic, align 4\l  %58 = extractvalue \{ i32, i1 \} %57, 1\l  br i1 %58, label %59, label %56, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x61b9cb0:s0 -> Node0x61ba1c0;
+	Node0x61b9cb0:s1 -> Node0x61b9cb0;
+	Node0x61ba1c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%59:\l59:                                               \l  %60 = load double, double addrspace(1)* %1, align 8, !tbaa !16\l  %61 = load double, double addrspace(3)* getelementptr inbounds ([512 x\l... double], [512 x double] addrspace(3)* @_ZZ12find_maximumPdS_iPiE5cache, i32\l... 0, i32 0), align 16, !tbaa !16\l  %62 = tail call double @llvm.maxnum.f64(double %60, double %61)\l  store double %62, double addrspace(1)* %1, align 8, !tbaa !16\l  %63 = atomicrmw xchg i32 addrspace(1)* %3, i32 0 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %64\l}"];
+	Node0x61ba1c0 -> Node0x61b9d00;
+	Node0x61b9d00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%64:\l64:                                               \l  ret void\l}"];
+}

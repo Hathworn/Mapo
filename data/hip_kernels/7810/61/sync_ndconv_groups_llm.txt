@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure __syncthreads() calls are correctly placed to avoid unnecessary synchronization
+// Optimize block and grid dimensions based on the specific use case for better occupancy
+// Evaluate the usefulness of syncthreads call at the beginning for your algorithm
+// Ensure you are maximizing memory coalescing in accessing any global memory
+```

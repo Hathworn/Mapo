@@ -1,0 +1,6 @@
+```c
+// Use shared memory to load neighboring elements for better memory coalescing
+// Prefetch required filter values into registers if possible to reduce repetitive access
+// Minimize divergent branches and ensure memory accesses are coalesced
+// Consider using constant memory for small fixed-size data like filter coefficients
+```

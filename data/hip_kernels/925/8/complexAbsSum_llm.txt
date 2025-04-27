@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory access for better performance
+// Load data from global to shared memory to exploit data locality
+// Ensure __syncthreads() is used after loading data to shared memory for synchronization
+// Minimize bank conflicts in shared memory access for improved throughput
+// Consider the occupancy and adjust shared memory size according to the block size for optimal use
+```

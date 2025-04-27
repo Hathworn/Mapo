@@ -1,0 +1,7 @@
+```cpp
+// Consider reducing the use of global memory
+// Use shared memory for intermediate results if needed
+// Ensure the first thread's operation doesn't cause a bottleneck
+// Evaluate if using a warp shuffle could improve performance
+// Check for potential warp divergence
+```

@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Coalesce memory accesses to improve memory throughput
+// Use warp-level primitives to minimize divergence within a warp
+// Prefer using __syncthreads() where required to avoid race conditions
+```

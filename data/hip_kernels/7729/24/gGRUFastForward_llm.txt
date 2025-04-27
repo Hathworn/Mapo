@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for xW, sU, b to improve memory throughput.
+// Use shared memory to cache xW, sU, b for each j to reduce global memory accesses.
+// Optimize data alignment to avoid unaligned memory accesses.
+// Leverage memory access patterns by ensuring block size matched to the memory layout.
+// Minimize divergent branches for better warp execution efficiency.
+```

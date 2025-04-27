@@ -1,0 +1,4 @@
+// Consider coalesced accesses for positions and velocities to improve memory bandwidth
+// Use shared memory to cache pBests and gBest if these values are accessed multiple times
+// Check for the possibility of using vector types (e.g., double2, double4) for positions and velocities to reduce memory transactions
+// Align data structures to 128-bit boundaries for improved memory transfer efficiency

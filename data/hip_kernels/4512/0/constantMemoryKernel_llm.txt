@@ -1,0 +1,4 @@
+// Consider using shared memory for temporary storage to reduce global memory access latency.
+// Optimize memory access patterns to ensure coalesced reads and writes where possible.
+// Ensure threads within a warp access consecutive memory locations to improve throughput.
+// Perform memory access alignment to prevent uncoalesced memory access issues.

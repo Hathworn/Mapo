@@ -1,0 +1,4 @@
+// Consider using shared memory if the data can benefit from caching
+// Ensure memory accesses are coalesced by adjusting INCX to be contiguous
+// Profile the code to identify if reducing ALPHA calculations can provide benefits
+// Evaluate if loop unrolling could improve performance in this context

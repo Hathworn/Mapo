@@ -1,0 +1,16 @@
+digraph "CFG for '_Z22cudaSMaxForward_kerneljPfS_jPj' function" {
+	label="CFG for '_Z22cudaSMaxForward_kerneljPfS_jPj' function";
+
+	Node0x4be5680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = udiv i32 %14, %11\l  %19 = mul i32 %18, %11\l  %20 = icmp ugt i32 %14, %19\l  %21 = zext i1 %20 to i32\l  %22 = add i32 %18, %21\l  %23 = mul i32 %22, %11\l  %24 = icmp ult i32 %17, %0\l  br i1 %24, label %26, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x4be5680:s0 -> Node0x4be7c30;
+	Node0x4be5680:s1 -> Node0x4be7cc0;
+	Node0x4be7cc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%25:\l25:                                               \l  ret void\l}"];
+	Node0x4be7c30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i32 [ %37, %36 ], [ %17, %5 ]\l  %28 = zext i32 %27 to i64\l  %29 = getelementptr inbounds float, float addrspace(1)* %1, i64 %28\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !16\l  %31 = getelementptr inbounds float, float addrspace(1)* %2, i64 %28\l  %32 = load float, float addrspace(1)* %31, align 4, !tbaa !16\l  %33 = fcmp contract ogt float %30, %32\l  br i1 %33, label %34, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x4be7c30:s0 -> Node0x4be77e0;
+	Node0x4be7c30:s1 -> Node0x4be7e50;
+	Node0x4be77e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e36c5570",label="{%34:\l34:                                               \l  store float %30, float addrspace(1)* %31, align 4, !tbaa !16\l  %35 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %28\l  store i32 %3, i32 addrspace(1)* %35, align 4, !tbaa !20\l  br label %36\l}"];
+	Node0x4be77e0 -> Node0x4be7e50;
+	Node0x4be7e50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  %37 = add i32 %27, %23\l  %38 = icmp ult i32 %37, %0\l  br i1 %38, label %26, label %25, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x4be7e50:s0 -> Node0x4be7c30;
+	Node0x4be7e50:s1 -> Node0x4be7cc0;
+}

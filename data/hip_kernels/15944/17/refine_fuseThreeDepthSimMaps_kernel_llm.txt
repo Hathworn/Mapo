@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access for improved efficiency
+// Use shared memory to reduce repeated global memory access by threads in the same block
+// Explore using warp shuffling to minimize dependence on shared memory for small data
+// Ensure all memory accesses are aligned to maximize memory throughput
+// Evaluate the impact of loop unrolling if applicable for the inner operations
+```

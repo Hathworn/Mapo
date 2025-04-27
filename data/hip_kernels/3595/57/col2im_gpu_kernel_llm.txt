@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for coalesced access to data_col to improve memory access efficiency.
+// Loop unrolling is already applied, further loop optimizations can be explored based on specific GPU architecture.
+// Precompute constants outside nested loops to minimize redundant calculations.
+// Optimize boundaries calculations to reduce branch divergence.
+// Ensure efficient use of atomic operations or explore alternatives if contention is a bottleneck.
+```

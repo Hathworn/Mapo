@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache frequently accessed data such as 'in_scales_c' if possible.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory addresses in 'in_w_h_c_delta', 'in_scales_c', and other arrays.
+// Consider using __restrict__ keyword for pointers to hint the compiler for better memory access optimization.
+// Minimize atomic operations on 'out_state_delta' and 'out_from_delta' by restructuring computation or using warp-level primitives if applicable.
+// Unroll loops manually or using compiler directives if applicable to reduce loop overhead.
+```

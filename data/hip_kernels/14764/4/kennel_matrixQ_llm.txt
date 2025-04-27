@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache d_px and d_py for better memory access efficiency.
+// Minimize global memory accesses by caching rownum and colnum repeated calculations.
+// Avoid atomic operations if possible, try using reduction or other techniques to accumulate results.
+```

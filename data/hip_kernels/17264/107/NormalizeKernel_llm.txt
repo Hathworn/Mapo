@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache normalization_factor if it fits, reducing global memory accesses
+// Consider using float4 or float2 for coalesced memory access if data alignment allows
+// Load normalization_factor[pos] and use it multiple times instead of recalculating invScale condition
+// Consider loop unrolling if the image size is within a known small range
+```

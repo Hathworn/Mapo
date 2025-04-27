@@ -1,0 +1,9 @@
+```
+// Ensure coalesced access to global memory by aligning memory accesses
+// Use shared memory to reduce global memory access if possible
+// Consider loop unrolling if applicable for better performance
+// Prefetch data into registers to minimize latency
+// Avoid bank conflicts when using shared memory
+// Utilize warp-level primitives to optimize thread communication
+// Minimize branch divergence by ensuring threads in a warp follow the same execution path
+```

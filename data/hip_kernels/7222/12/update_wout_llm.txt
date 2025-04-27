@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Align memory accesses to improve coalescing
+// Avoid bank conflicts in shared memory by ensuring proper indexing
+// Use atomic operations efficiently to minimize contention
+// Consider unrolling loops to enhance parallel execution efficiency

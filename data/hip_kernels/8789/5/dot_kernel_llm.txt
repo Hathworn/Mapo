@@ -1,0 +1,7 @@
+```c
+// Utilize shared memory to minimize global memory accesses and improve latency
+// Load data to shared memory to capitalize on faster memory access speeds
+// Employ __syncthreads() to ensure consistent data loading and processing
+// Consider optimal shared memory allocation to enhance performance gains
+// Use atomicAdd to handle race conditions while updating global memory
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory to store frequently accessed data like 'pred' and 'truth' values within the same block.
+// Optimize memory access patterns by ensuring coalesced accesses to 'pred', 'truth', 'delta', and 'error' arrays.
+// If possible, reduce divergent branching by refactoring conditional statements or optimizing data layout.

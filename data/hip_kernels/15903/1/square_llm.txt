@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifier for d_out to improve compiler optimization.
+// Ensure memory accesses are coalesced to improve bandwidth utilization.
+// Consider using shared memory to reduce global memory traffic.
+// Optimize block size to maximize occupancy and reduce warp divergence.
+// Consider using constexpr for any constants to allow compile-time optimizations.
+// Ensure the kernel is launched with enough threads to keep all GPU multiprocessors busy.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses by reorganizing data layout
+// Minimize divergent branches, especially in the nested conditions
+// Reduce shared memory bank conflicts by adjusting memory access patterns
+// Use constant memory for frequently accessed read-only data such as xMin, xMax, yMax
+// Pre-fetch input data using shared memory to reduce global memory latency
+// Avoid recalculating constant expressions inside loops or conditionals
+```

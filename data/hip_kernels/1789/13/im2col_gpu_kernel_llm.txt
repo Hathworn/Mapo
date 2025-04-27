@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to load data_im in chunks to reduce global memory accesses
+// Coalesce global memory accesses by arranging data_col indexing to align with memory architecture
+// Minimize divergent branching by restructuring conditional statements
+// Experiment with different block and grid sizes for optimal occupancy and performance
+```

@@ -1,0 +1,7 @@
+```
+// Consider using warp shuffle functions for more efficient warp-level reductions
+// Ensure coalesced access to global memory for input data
+// Consider padding shared memory to avoid bank conflicts
+// Use loop unrolling to reduce loop overhead if applicable
+// Align shared memory size to natural multiples to optimize access
+```

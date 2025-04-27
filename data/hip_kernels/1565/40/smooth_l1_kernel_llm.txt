@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory accesses
+// Prefetch data into registers to reduce memory latency
+// Try loop unrolling to enhance instruction-level parallelism
+// Optimize memory access patterns for better coalescing
+// Consider using __syncthreads() to synchronize threads when necessary
+// Make use of warp-level primitives for efficient data exchange
+// Explore using texture memory for potentially improved access patterns
+```

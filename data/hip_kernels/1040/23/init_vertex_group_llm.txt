@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to reduce global memory access.
+// Use coalesced memory access patterns within get_vertex_row_group.
+// Unroll inner loop for better instruction-level parallelism.
+// Ensure proper alignment for optimal memory transactions.
+// Consider loop fusion if applicable to reduce memory access overhead.
+// Minimize redundant calculations and variable assignments.
+// Utilize warp-synchronous programming to minimize divergence.
+```

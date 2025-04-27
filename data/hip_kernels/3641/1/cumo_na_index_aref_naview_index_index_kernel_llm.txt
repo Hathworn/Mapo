@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency if access patterns allow
+// Ensure coalesced memory access for idx1 to maximize bandwidth utilization
+// Investigate employing loop unrolling techniques to reduce loop overhead for longer arrays
+// Check for opportunities for instruction-level parallelism to hide memory latency
+// Assess alignment of idx and idx1 to ensure they match the expected alignment for best performance
+// Explore the possibility of reducing grid-stride loop to leverage more efficient thread utilization
+```

@@ -1,0 +1,5 @@
+// Consider shared memory for frequently accessed data to reduce memory latency
+// Optimize memory coalescing by aligning access patterns for grad_out and grad_points
+// Check if loop unrolling can benefit the nsample or c iterations 
+// Evaluate the use of warp-level primitives to reduce atomic operations
+// Investigate using texture memory for read-only data to improve cache efficiency

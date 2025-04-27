@@ -1,0 +1,6 @@
+```
+// Recommend using shared memory to store input data for faster access.
+// Utilize memory coalescing by accessing global memory in a warp-aligned manner.
+// Minimize divergence by ensuring threads within a warp follow the same execution path.
+// Consider loop unrolling for the size loop to improve branch prediction.
+```

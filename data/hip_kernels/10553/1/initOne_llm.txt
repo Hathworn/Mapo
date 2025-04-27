@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses for devValue and devWeight.
+// Use coalesced memory access to optimize the pattern of memory reads.
+// Implement loop unrolling where applicable to minimize loop overhead.
+// Consider using atomic operations to safely handle concurrent updates to shared variables.
+// Minimize block divergence by ensuring all threads in a block follow similar execution paths.
+// Use local memory for temporary variables that do not need to be shared across threads.

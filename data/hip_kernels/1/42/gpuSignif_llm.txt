@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency
+// Load data into shared memory to minimize access to slower global memory
+// Synchronize threads after loading to ensure all data is available before computation

@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access frequency
+// Perform warp-level reduction using shuffles to minimize shared memory usage
+// Use atomic operations to accumulate reductions at the warp level
+// Ensure coalesced memory access by iterating over dim with blockDim.x strides
+```

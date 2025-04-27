@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns to improve memory bandwidth utilization
+// Consider loop unrolling for the spatial dimension to enhance pipeline efficiency
+// Allocate shared memory dynamically if spatial size is not fixed
+// Ensure shared memory usage is within optimal limits for the target GPU architecture
+// Utilize __builtin_assume_aligned to enable more effective compiler optimizations
+// Experiment with larger block sizes to increase occupancy and maximize parallelism
+```

@@ -1,0 +1,4 @@
+// Precompute stride for filter to reduce redundant calculations
+// Use a local variable for accumulation to improve memory access patterns
+// Precompute batch offset to minimize repeated calculations inside loops
+// Ensure computations use FMA where possible for performance improvement

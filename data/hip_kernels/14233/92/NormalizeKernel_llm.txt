@@ -1,0 +1,3 @@
+// Consider using shared memory for frequently accessed variables like normalization_factor.
+// Optimize memory access by ensuring coalesced access patterns.
+// Use __ldg() if normalization_factor is read-only and resides in global memory for improved caching.

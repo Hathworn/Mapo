@@ -1,0 +1,7 @@
+```c
+// Use shared memory to store intermediate results for improved access speed
+// Reduce warp divergence by ensuring all threads perform related operations
+// Avoid using global memory directly within critical sections
+// Minimize bank conflicts in shared memory access patterns
+// Optimize memory access by coalescing global memory reads/writes
+```

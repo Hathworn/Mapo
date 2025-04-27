@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for reusable data to further reduce global memory access
+// Ensure memory access patterns are coalesced for both iptr and cptr arrays to improve throughput
+// Use __restrict__ keyword for pointers to hint at compiler optimizations for reducing memory latency
+// Validate grid and block dimensions to ensure occupancy and warp execution efficiency are maximized
+// Avoid conditional statements within kernels when possible to reduce divergence between threads
+```

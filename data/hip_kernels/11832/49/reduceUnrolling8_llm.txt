@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to load data in chunks to reduce global memory access.
+// Perform loop unrolling for the reduction phase to increase instruction-level parallelism.
+// Align memory accesses to reduce transaction overhead and increase memory coalescing.
+// Ensure data is read in contiguous memory segments to improve cache utilization.
+// Use warp-level primitives wherever possible to avoid synchronization overhead.
+```

@@ -1,0 +1,5 @@
+// Consider using __builtin_assume to inform the compiler of pointer alignment.
+// Use __restrict__ keyword for _ptr and _start_ptr to avoid aliasing and allow better optimizations.
+// Prefetch data to L1 cache if possible using __builtin_prefetch.
+// Increase block size to fully utilize the available memory bandwidth.
+// Use shared memory to reduce redundant reads from global memory.

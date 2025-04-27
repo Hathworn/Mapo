@@ -1,0 +1,6 @@
+// Use shared memory to speed up memory access for small patch sizes
+// Avoid redundant memory accesses by storing temporary results in shared memory
+// Minimize divergent branches within the loop to improve warp execution efficiency
+// Ensure shared memory usage is optimized for the architecture and fits within hardware limits
+// Consider using texture or cache memory for read-only data to enhance memory throughput
+// Try to align memory access patterns to improve coalesced memory access

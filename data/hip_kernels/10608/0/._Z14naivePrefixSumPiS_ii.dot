@@ -1,0 +1,17 @@
+digraph "CFG for '_Z14naivePrefixSumPiS_ii' function" {
+	label="CFG for '_Z14naivePrefixSumPiS_ii' function";
+
+	Node0x477f360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp slt i32 %13, %2\l  br i1 %14, label %15, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x477f360:s0 -> Node0x4781270;
+	Node0x477f360:s1 -> Node0x4781300;
+	Node0x4781270 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%15:\l15:                                               \l  %16 = add nsw i32 %3, -1\l  %17 = shl nuw i32 1, %16\l  %18 = icmp slt i32 %13, %17\l  br i1 %18, label %28, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x4781270:s0 -> Node0x477ff40;
+	Node0x4781270:s1 -> Node0x4781700;
+	Node0x4781700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%19:\l19:                                               \l  %20 = sub nsw i32 %13, %17\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %24 = sext i32 %13 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %24\l  %26 = load i32, i32 addrspace(1)* %25, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %27 = add nsw i32 %26, %23\l  br label %32\l}"];
+	Node0x4781700 -> Node0x4782a70;
+	Node0x477ff40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%28:\l28:                                               \l  %29 = sext i32 %13 to i64\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %29\l  %31 = load i32, i32 addrspace(1)* %30, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %32\l}"];
+	Node0x477ff40 -> Node0x4782a70;
+	Node0x4782a70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%32:\l32:                                               \l  %33 = phi i64 [ %24, %19 ], [ %29, %28 ]\l  %34 = phi i32 [ %27, %19 ], [ %31, %28 ]\l  %35 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %33\l  store i32 %34, i32 addrspace(1)* %35, align 4, !tbaa !7\l  br label %36\l}"];
+	Node0x4782a70 -> Node0x4781300;
+	Node0x4781300 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

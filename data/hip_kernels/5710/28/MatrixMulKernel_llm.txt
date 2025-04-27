@@ -1,0 +1,8 @@
+```
+// Consider increasing thread block size to maximize occupancy
+// Ensure coalesced memory accesses for Md and Nd
+// Optimize shared memory usage to avoid bank conflicts
+// Prefetch data to shared memory to hide global memory latency
+// Unroll loops to improve instruction throughput
+// Use warp-level primitives for optimized parallelism in shared memory
+```

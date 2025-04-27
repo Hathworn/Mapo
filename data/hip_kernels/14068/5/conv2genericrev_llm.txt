@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for input and output pointers for efficient global memory reads and writes.
+// Prefetch data into shared memory before processing to minimize global memory latency.
+// Ensure shared memory is utilized optimally by aligning accesses to warp boundaries.
+// Minimize thread divergence by ensuring loops and conditionals are warp-synchronized where possible.
+// Use loop unrolling in the kernel loop for the inner dot product calculation to reduce loop overhead.
+```

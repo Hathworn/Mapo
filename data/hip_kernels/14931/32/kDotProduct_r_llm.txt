@@ -1,0 +1,4 @@
+// Use shared memory to store partial results to reduce global memory access
+// Ensure efficient memory coalescing by aligning data access patterns
+// Employ warp-level primitives like __shfl_down_sync for efficient intra-warp reduction
+// Reduce global memory writes by storing the accumulated result in shared memory first

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Ensure synchronization between threads with __syncthreads()
+// Avoid bank conflicts by optimizing shared memory access patterns
+// Consider adjusting block size for better occupancy and performance
+// Minimize the use of conditional statements within the kernel if possible

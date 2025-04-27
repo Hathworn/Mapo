@@ -1,0 +1,9 @@
+```
+// Use shared memory to optimize memory access and reduce global memory reads
+// Consider increasing the tile size for better shared memory utilization if resources permit
+// Optimize loop unrolling in the intra-tile computation to reduce loop overhead
+// Minimize bank conflicts in shared memory by padding or using appropriate access patterns
+// Reduce the use of __syncthreads() wherever possible while ensuring data consistency
+// Use vectorized memory loads if applicable to increase memory throughput
+// Consider prefetching data to shared memory to hide global memory latency
+```

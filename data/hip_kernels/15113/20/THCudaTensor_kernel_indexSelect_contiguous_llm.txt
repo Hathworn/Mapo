@@ -1,0 +1,8 @@
+```
+// Consider increasing the VT (vectorization factor) for better memory coalescing in appropriate scenarios
+// Use shared memory to cache index values to reduce redundant global memory reads
+// Ensure idxSize is small enough for efficient use of shared memory to avoid bank conflicts
+// Utilize __syncthreads() to synchronize threads after loading shared memory
+// Implement memory coalescing to improve global memory bandwidth utilization
+// Employ unrolling to reduce loop overhead and enhance parallel execution of memory operations
+```

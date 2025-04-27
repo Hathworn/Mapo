@@ -1,0 +1,9 @@
+```
+// Utilize coalesced memory access patterns by organizing data access in contiguous blocks to enhance memory bandwidth utilization.
+// Reduce shared memory usage where possible to increase concurrent block occupancy.
+// Consider loop unrolling for repeated operations to diminish loop control overhead.
+// Employ constant memory for k_k1 and k1_k values if accessed frequently, to benefit from faster cache operations.
+// Ensure enough threads per block to effectively hide memory latency by maximizing GPU utilization.
+// Minimize synchronizations with careful memory access and reduce __syncthreads() usage where possible.
+// Consider using warp shuffle functions to share data within a warp efficiently, reducing reliance on shared memory.
+```

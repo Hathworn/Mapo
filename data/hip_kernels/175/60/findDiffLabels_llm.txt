@@ -1,0 +1,5 @@
+```
+// Consider using __ldg intrinsic for reading devDiff to benefit from L1 cache
+// Use loop unrolling for iterating over clusters to improve instruction-level parallelism
+// Ensure memory coalescing when accessing devDiff to enhance global memory throughput
+```

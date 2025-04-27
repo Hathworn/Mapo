@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache xyz2 coordinates for each block to reduce global memory access.
+// Loop unrolling for improving instruction-level parallelism and reducing loop overhead.
+// Check memory coalescing for writing current_idx array to enhance global memory throughput.
+// Prefetch the radius value into a register to avoid redundant global memory reads.
+```

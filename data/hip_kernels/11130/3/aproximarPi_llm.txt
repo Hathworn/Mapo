@@ -1,0 +1,5 @@
+// Consider using shared memory for x and y to reduce global memory access latency
+// Check and coalesce global memory access patterns for x and y
+// Optimize: Reduce bank conflicts in shared memory access if implemented
+// Ensure atomic operations on z are minimized or optimized for parallel execution
+// Experiment with using warp-level primitives to increase efficiency

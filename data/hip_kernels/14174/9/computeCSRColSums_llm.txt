@@ -1,0 +1,8 @@
+```
+// Optimize memory access by improving coalesced access patterns.
+// Share more data into shared memory only if it reduces global memory access significantly.
+// Consider a warp-level scan for accessing row boundaries to decrease synchronization overhead.
+// Ensure that shared memory usage does not limit occupancy; check and tune block size accordingly.
+// Balance the use of __syncthreads() to ensure it aids synchronization without hurting performance.
+// Evaluate the utilization of registers, shared, and global memory in the context of different GPU architectures.
+```

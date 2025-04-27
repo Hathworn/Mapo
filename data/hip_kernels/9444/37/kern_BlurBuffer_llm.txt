@@ -1,0 +1,4 @@
+// Use shared memory for input values within the block to reduce global memory accesses.
+// Utilize warp-level synchronization to avoid redundant calculations.
+// Ensure coalesced memory access by aligning data structures to warp size.
+// Optimize spread calculation by precomputing values that are reused across threads.

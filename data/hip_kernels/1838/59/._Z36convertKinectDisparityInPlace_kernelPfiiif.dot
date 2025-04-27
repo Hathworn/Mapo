@@ -1,0 +1,15 @@
+digraph "CFG for '_Z36convertKinectDisparityInPlace_kernelPfiiif' function" {
+	label="CFG for '_Z36convertKinectDisparityInPlace_kernelPfiiif' function";
+
+	Node0x4f8d520 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = getelementptr i8, i8 addrspace(4)* %7, i64 6\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 2, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = mul i32 %15, %19\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %22 = add i32 %20, %21\l  %23 = icmp slt i32 %14, %2\l  %24 = icmp slt i32 %22, %3\l  %25 = and i1 %23, %24\l  br i1 %25, label %26, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x4f8d520:s0 -> Node0x4f90f80;
+	Node0x4f8d520:s1 -> Node0x4f91010;
+	Node0x4f90f80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%26:\l26:                                               \l  %27 = bitcast float addrspace(1)* %0 to i8 addrspace(1)*\l  %28 = mul nsw i32 %22, %1\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds i8, i8 addrspace(1)* %27, i64 %29\l  %31 = bitcast i8 addrspace(1)* %30 to float addrspace(1)*\l  %32 = sext i32 %14 to i64\l  %33 = getelementptr inbounds float, float addrspace(1)* %31, i64 %32\l  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %35 = fcmp contract oeq float %34, 0.000000e+00\l  br i1 %35, label %39, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x4f90f80:s0 -> Node0x4f922e0;
+	Node0x4f90f80:s1 -> Node0x4f92370;
+	Node0x4f92370 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%36:\l36:                                               \l  %37 = fneg contract float %4\l  %38 = fdiv contract float %37, %34\l  br label %39\l}"];
+	Node0x4f92370 -> Node0x4f922e0;
+	Node0x4f922e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%39:\l39:                                               \l  %40 = phi contract float [ %38, %36 ], [ 0x7FF8000000000000, %26 ]\l  store float %40, float addrspace(1)* %33, align 4, !tbaa !7\l  br label %41\l}"];
+	Node0x4f922e0 -> Node0x4f91010;
+	Node0x4f91010 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  ret void\l}"];
+}

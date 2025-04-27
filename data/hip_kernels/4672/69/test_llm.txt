@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Use __syncthreads() to synchronize threads after shared memory load
+// Minimize branch divergence in the mask assignment
+// Ensure shared memory is used efficiently by avoiding bank conflicts
+```

@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data like targetColIdx to reduce global memory access latency.
+// Consider using memory coalescing for out and in arrays to improve global memory access efficiency.
+// Avoid branch divergence in the inner loop by restructuring the conditional logic if possible.
+// Ensure proper alignment of memory to maximize memory bandwidth utilization.

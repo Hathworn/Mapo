@@ -1,0 +1,7 @@
+```
+// Consider increasing shared memory usage for better occupancy
+// Use cooperative matrix to improve memory access patterns
+// Minimize division operations by using multiplication of reciprocal
+// Use __ldg intrinsic for reading global memory if possible
+// Balance the workload to avoid divergence in wavefronts
+```

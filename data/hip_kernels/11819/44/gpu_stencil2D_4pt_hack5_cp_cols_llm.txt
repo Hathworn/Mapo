@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns when loading data into shared_cols
+// Minimize memory transactions by using calculated row_offset once
+// Ensure __syncthreads() is called to synchronize threads after memory loading
+// Use efficient indexing to reduce redundant calculations and improve access patterns
+// Consider prefetching data to better hide memory latency
+```

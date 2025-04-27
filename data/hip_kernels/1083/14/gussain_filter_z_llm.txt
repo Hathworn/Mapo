@@ -1,0 +1,6 @@
+```
+// Use shared memory for kernel coefficients to reduce redundant global memory accesses
+// Use shared memory for input data within each block to improve memory access performance
+// Coalesce global memory accesses for random array to maximize memory bandwidth
+// Minimize divergent branches within the for loop to improve warp execution efficiency
+```

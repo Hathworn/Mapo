@@ -1,0 +1,9 @@
+```
+// Use shared memory to store data for reducing global memory access
+// Ensure coalesced access pattern when loading matrices into shared memory
+// Use the __syncthreads() directive after loading into shared memory
+// Unroll loops to reduce loop overhead and increase instruction-level parallelism
+// Minimize synchronization within warp to improve performance
+// Increase register-level compute to lessen shared memory dependency
+// Use Kahan summation algorithm to reduce numerical error in floating-point addition
+```

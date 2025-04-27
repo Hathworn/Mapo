@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to improve memory access patterns and reduce global memory accesses
+// Ensure shared memory is used effectively by limiting the number of threads accessing it simultaneously
+// Optimize thread synchronization to reduce the overhead of __syncthreads()
+// Consider loop unrolling to improve execution efficiency in loops
+// Ensure coalesced access for global memory reads/writes where possible
+```

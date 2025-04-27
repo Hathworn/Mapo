@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Consider coalescing memory accesses for d_Data.
+// Ensure d_ConstantA and d_ConstantB are loaded into registers.
+// Align memory accesses to cache line boundaries for better performance.
+// Minimize register pressure by reusing variables when possible.
+// Consider loop unrolling if there are repetitive computations.
+```

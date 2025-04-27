@@ -1,0 +1,4 @@
+// Utilize shared memory to minimize redundant global memory accesses  
+// Avoid unnecessary recalculations by storing intermediate results in shared memory  
+// Use __syncthreads() to ensure consistent shared data across threads  
+// Write final result to global memory efficiently by utilizing shared memory

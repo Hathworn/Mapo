@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory accesses to improve memory throughput
+// Minimize warp divergence by ensuring threads in a warp follow the same execution path
+// Avoid branch divergence to maximize warp efficiency
+// Prefetch data to registers to minimize latency
+```

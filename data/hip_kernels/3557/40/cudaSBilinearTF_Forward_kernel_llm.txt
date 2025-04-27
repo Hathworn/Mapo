@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses by aligning shared memory loading pattern
+// Use a loop to load shared memory to handle cases where thread block size exceeds shared memory size
+// Ensure shared memory usage does not exceed 48KB for optimal performance on most hardware
+// Minimize divergence within warps by ensuring conditional branches are minimized
+// Consider using texture memory for invariant input data to benefit from cache locality
+// Optimize the number of registers used per thread to prevent spilling to local memory
+```

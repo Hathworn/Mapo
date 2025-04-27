@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access where possible
+// Minimize divergent branches by aligning workload with warp size
+// Consider using shared memory if data reuse within a block is possible
+// Optimize the grid and block dimensions to maximize occupancy
+```

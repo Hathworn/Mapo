@@ -1,0 +1,7 @@
+```
+// Use shared memory for state if possible to reduce global memory access
+// Consider coalesced access patterns for better memory transaction efficiency
+// Minimize the usage of atomic operations to avoid serialization
+// Strive for occupancy by balancing warps per multiprocessor with resource allocation
+// Examine if loop unrolling could reduce branch divergence
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for probs and labels arrays
+// Leverage shared memory to reduce global memory transactions for prob calculations
+// Utilize __ldg() for reading constant data to take advantage of read-only cache
+// Experiment with different block sizes to improve warp occupancy and performance
+```

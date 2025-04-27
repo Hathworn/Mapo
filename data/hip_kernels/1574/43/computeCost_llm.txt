@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to cache the values of Params, W, and mu per block for faster access.
+// Loop unrolling on the inner loop for better performance on NrankPC if the number of iterations is low.
+// Coalesce memory accesses when reading from and writing to arrays like uproj and cmax for efficiency.
+// Reduce divergent branches by rearranging logic where applicable.
+// Check if wider vector types (float2, float4) can be used for uproj and W to potentially reduce memory transactions.
+// Consider optimizing the computation of 'this_chan' using shared memory if NchanNear is not too large.
+```

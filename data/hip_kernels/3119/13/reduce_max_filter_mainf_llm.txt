@@ -1,0 +1,10 @@
+```
+// Consider using cooperative groups for better warp synchronization.
+// Ensure memory alignment to prevent potential bank conflicts.
+// Use shared memory more effectively to cache repeated data.
+// Minimize global memory accesses via shared memory caching.
+// Consider unrolling loops for reduced instruction count and improved pipeline utilization.
+// Increase blockSize for better parallelization and memory throughput.
+// Prefer atomic operations to handle race conditions efficiently.
+// Ensure shared memory usage does not exceed GPU constraints.
+```

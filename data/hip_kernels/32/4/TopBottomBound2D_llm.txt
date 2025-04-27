@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for Ztopo as it's reused across boundary conditions
+// Use loop unrolling within the while loop for increased computational efficiency
+// Ensure memory coalescing by aligning data access patterns for Hs, K2n, and K2s arrays
+// Implement a conditional check outside the stride loop for BC2D to minimize unnecessary computation during each iteration
+// Evaluate the potential of using __restrict__ pointers to indicate no aliasing and aid compiler optimization
+```

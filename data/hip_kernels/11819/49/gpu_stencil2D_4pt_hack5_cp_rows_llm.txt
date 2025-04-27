@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory accesses to improve memory throughput
+// Prefetch data to shared memory to hide memory latency
+// Check bank conflicts in shared memory and arrange data to avoid them
+// Ensure that the number of threads per block is a multiple of the warp size
+// Minimize divergence by avoiding conditional statements inside loops
+// Align data structures to achieve better memory alignment
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead
+```

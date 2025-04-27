@@ -1,0 +1,3 @@
+// Precompute random state once per thread to reduce redundant computation
+// Optimize memory access patterns by processing multiple elements per thread to minimize global memory transactions
+// Reduce branch divergence by ensuring consistent control flow across threads

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for temporary storage to minimize global memory access.
+// Optimize thread scheduling to ensure memory coalescing and avoid divergent branches.
+// Prefetch data and use registers to minimize multiple accesses to the same global memory location.
+// Check for potential data dependencies to allow loop unrolling for increased efficiency.
+// Evaluate using constant memory for read-only data which is accessed by all threads.
+```

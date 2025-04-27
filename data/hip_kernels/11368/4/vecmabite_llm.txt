@@ -1,0 +1,4 @@
+// Consider using shared memory for out[] if operations permit to reduce global memory access.
+// Ensure optimal block size to maximize occupancy and reduce latency.
+// Use coalesced memory access for in[] to improve bandwidth utilization.
+// Investigate warp-level operations to potentially decrease the branch divergence.

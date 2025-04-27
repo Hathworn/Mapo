@@ -1,0 +1,5 @@
+```
+// Remove __syncthreads as it is not needed; each thread works on unique data.
+// Pre-compute half_dim_y once per thread to reduce redundant calculations.
+// Pre-compute half_dim_x once per thread to reduce redundant calculations.
+```

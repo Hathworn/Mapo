@@ -1,0 +1,9 @@
+```
+// Reorder threadIdx and blockIdx to improve memory access pattern
+// Ensure coalesced memory access by aligning data access with thread index
+// Use shared memory to minimize repeated global memory access and enhance data reuse
+// Consider using warp-level primitives for operations involving multiple threads
+// Implement loop unrolling for the computations within the kernel to reduce branch divergence
+// Avoid memory bank conflicts by properly accessing shared memory
+// Minimize the usage of double precision if single precision provides sufficient accuracy
+```

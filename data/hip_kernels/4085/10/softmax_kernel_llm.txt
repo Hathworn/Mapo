@@ -1,0 +1,7 @@
+```
+// Consider using float2 or float4 for input/output to optimize memory transactions
+// Use warp-level primitives for reduction to minimize shared memory use and synchronization
+// Replace atomicAdd with warp shuffle for more efficient parallel reduction
+// Preload and cache input data in shared memory to reduce global memory reads
+// Consider reducing bank conflicts in shared memory accesses
+```

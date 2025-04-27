@@ -1,0 +1,7 @@
+```
+// Use shared memory for better data reuse
+// Adjust sharedFFT size as needed for specific usage
+// Load data into shared memory to minimize global memory access
+// Ensure correct thread synchronization after data loading
+// Improve load balancing by ensuring thread indices do not exceed array bounds
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access when loading data into shared memory
+// Consider block size to match shared memory size for optimal performance
+// Use __syncthreads() to ensure all threads have written to shared memory before proceeding
+// Optimize the loop to minimize redundant memory reads from shared memory
+// Consider loop unrolling to improve performance in the sum calculation
+```

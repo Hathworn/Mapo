@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory accesses for optimal memory bandwidth utilization
+// Experiment with different block sizes to find the best occupancy and performance balance
+// Ensure ALPHA is placed in shared memory if reused across threads for faster access
+// Use __restrict__ qualifier if applicable for pointers to signal no overlapping in memory
+// Prefetch or cache X values in shared memory if there are multiple operations per element
+```

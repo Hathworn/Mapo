@@ -1,0 +1,8 @@
+```cpp
+// Use __restrict__ pointers for features, splits, conditions, polynomOffsets, and probs to avoid aliasing
+// Pre-fetch data into shared memory if the depth is large to reduce global memory access
+// Use float4 or vectorized loads if possible for conditions and splits for coalesced memory access
+// Use `__syncthreads()` to synchronize threads if using shared memory for consistent data access
+// Consider splitting the kernel or launching more threads to keep all SMs busy if kernel execution is not optimizing hardware occupancy
+// Ensure arrays are aligned to 32/64 bytes for optimal memory transactions
+```

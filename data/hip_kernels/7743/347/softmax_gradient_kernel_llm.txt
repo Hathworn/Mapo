@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access during reduction.
+// Ensure full utilization of block dimensions for better parallelism.
+// Avoid bank conflicts in shared memory operations.
+// Prefetch data into shared memory to minimize redundant global loads.
+// Optimize memory coalescing when accessing global memory.
+```

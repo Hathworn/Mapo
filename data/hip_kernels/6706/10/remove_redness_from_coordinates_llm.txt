@@ -1,0 +1,6 @@
+```
+// Utilize shared memory for storing portions of d_r, d_g, and d_b to reduce global memory access latency.
+// Consider using texture memory if temporal locality in d_g and d_b can be beneficial.
+// Employ coalesced memory access by ensuring that threads read contiguous blocks from global memory to maximize bandwidth.
+// Reduce branch divergence by aligning array accesses and condition checks across warp threads.
+```

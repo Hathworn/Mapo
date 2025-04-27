@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for biases if they are reused frequently within a block
+// Ensure coalesced memory access for the output array to improve memory bandwidth utilization
+// Optimize grid and block dimensions for better occupancy and load balancing
+// Pre-calculate and store reused values like (size * n) to reduce redundant computations in the loop
+```

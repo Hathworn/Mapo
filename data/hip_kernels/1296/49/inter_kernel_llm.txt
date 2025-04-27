@@ -1,0 +1,4 @@
+// Consider tiling the data loading to leverage shared memory for improved memory access patterns.
+// Utilize vectorized loads and stores, if possible, to drive coalesced memory accesses.
+// Ensure alignment of input data arrays to facilitate efficient memory transactions.
+// Minimize conditional branches in the kernel to reduce thread divergence and improve execution efficiency.

@@ -1,0 +1,7 @@
+```cpp
+// Use vectorized loads and stores for memory access to increase memory throughput
+// Consider using shared memory for 'a' and 'b' tiles to further reduce global memory access latency
+// Optimize memory coalescing by ensuring threads access contiguous memory locations
+// Reduce bank conflicts when using shared memory by padding shared memory allocations
+// Consider using warp-level primitives to further optimize reduction operations
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for out and state arrays
+// Use shared memory to reduce global memory accesses for xW and sU
+// Eliminate redundant loads by storing mask[j] result for reuse
+// Unroll loops where possible for better performance
+// Assure b array accesses remain within bounds to leverage any potential constant memory benefits
+```

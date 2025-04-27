@@ -1,0 +1,7 @@
+```
+// Use shared memory to optimize access to 'matrices' within a block.
+// Consider using vectorized load/store operations for 'coeffArray' to reduce memory access overhead.
+// Optimize loop index calculations to reduce redundant calculations within the while loops.
+// Evaluate the possibility of reducing branch divergence in the 'while' loops with optimized conditions.
+// Use constant memory for 'savedCoeffs' and 'dimsize' if they remain fixed throughout the kernel execution.
+```

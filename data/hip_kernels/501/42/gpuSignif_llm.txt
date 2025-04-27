@@ -1,0 +1,8 @@
+```c
+// Avoid divergent branches by ensuring all threads in a warp execute the same instructions.
+// Use shared memory to cache repeated values, reducing global memory access.
+// Coalesce global memory accesses by ensuring data is aligned and accessed sequentially.
+// Prefetch data to registers before the loop to reduce latency.
+// Minimize the number of calculations inside the loop to increase throughput.
+// Ensure correct memory access patterns to fully utilize memory bandwidth.
+```

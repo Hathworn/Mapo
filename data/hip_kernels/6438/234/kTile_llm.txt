@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by aligning src and tgt memory addresses
+// Use shared memory to cache src data for reuse
+// Consider loop unrolling to reduce the number of iterations
+// Minimize register usage to increase occupancy
+// Use __restrict__ to denote non-aliasing pointers for better optimization
+```

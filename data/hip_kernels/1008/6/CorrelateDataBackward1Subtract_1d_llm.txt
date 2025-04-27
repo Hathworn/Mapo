@@ -1,0 +1,8 @@
+```
+// Precompute values like "round_off_s1" to minimize recalculations and improve efficiency.
+// Use shared memory to store frequently accessed variables within threads to reduce global memory access.
+// Consider coalesced memory access patterns by ensuring threads access consecutive memory locations.
+// Minimize warp divergence by ensuring consistent execution paths for threads within the same warp.
+// Optimize loop indices calculations to prevent unnecessary complexity and operations.
+// Reuse computed variables to avoid redundant calculations within loops.
+```

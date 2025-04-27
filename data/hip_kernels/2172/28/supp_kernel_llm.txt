@@ -1,0 +1,8 @@
+```c
+// Use shared memory to cache data and reduce global memory accesses
+// Consider coalescing global memory accesses for better performance
+// Minimize bank conflicts when accessing shared memory
+// Evaluate using a larger block size for increased parallelism
+// Reduce thread divergence by ensuring warp synchronous execution
+// Use prefetching to overlap computation and data transfer
+```

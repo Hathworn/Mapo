@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning memory allocations on 128-byte boundaries
+// Consider using float4 vectors to load/store multiple data points at once
+// Explore loop unrolling techniques to reduce loop overhead and improve throughput
+// Use shared memory to cache data if reused multiple times by threads in the block
+// Experiment with different block sizes to optimize the balance between occupancy and performance
+// Use __restrict__ qualifier for pointer parameters to help the compiler optimize memory accesses
+```

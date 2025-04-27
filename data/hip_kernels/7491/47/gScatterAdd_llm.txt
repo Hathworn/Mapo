@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure shared memory size matches block dimension for optimal usage
+// Load sparse indices and data into shared memory to minimize repetitive global memory accesses
+// Synchronize threads after loading to avoid race conditions
+// Utilize atomicAdd to safely handle simultaneous updates to denseData
+```

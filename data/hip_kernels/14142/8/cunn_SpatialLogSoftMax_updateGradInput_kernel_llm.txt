@@ -1,0 +1,7 @@
+```
+// Optimize global memory access by coalescing the reads and writes
+// Consider using shared memory to reduce redundant global memory accesses
+// Avoid divergent branches within the warp for better performance
+// Minimize the use of expf by pre-calculating values where possible
+// Use atomics for sum calculation if needed to ensure thread safety
+```

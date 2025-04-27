@@ -1,0 +1,7 @@
+```
+// Use coalesced global memory accesses for g_idata
+// Minimize usage of __syncthreads() to reduce overhead
+// Use shared memory to reduce global memory latency
+// Optimize for occupancy by adjusting block size
+// Use volatile keyword to handle race conditions at warp level
+```

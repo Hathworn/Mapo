@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store d_ind and d_label if reused multiple times within the block
+// Minimize global memory accesses by using local variables for repeated data
+// Ensure memory coalescing by accessing contiguous memory locations across threads
+// Reduce instruction count by avoiding unnecessary computations
+// Use integer arithmetic to reduce arithmetic latency
+// Optimize thread block size for better occupancy and memory bandwidth utilization
+```

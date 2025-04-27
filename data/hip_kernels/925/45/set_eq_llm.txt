@@ -1,0 +1,5 @@
+// Consider using shared memory to store commonly accessed values.
+// Optimize memory access patterns to avoid strided access.
+// Use coalesced memory access by ensuring threads access contiguous memory locations.
+// Explore the use of registers for frequently used variables.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access and improve data locality.
+// Consider using warp shuffle functions for better intra-warp communication.
+// Ensure memory coalescing by aligning data structures and access patterns appropriately.
+// Optimize stride to match memory fetch size for efficient memory bandwidth utilization.
+// Minimize divergent branching to reduce warp serialization.

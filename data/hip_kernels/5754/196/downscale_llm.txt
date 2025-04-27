@@ -1,0 +1,4 @@
+// Use 1D grid-stride loop to reduce synchronization overhead
+// Use local memory 'sum' for accumulation to reduce redundant global memory writes
+// Translate index with 'translate_idx_inv' for efficient coalesced memory access
+// Optimize for single global memory write with 'gradInput_data[ii] = sum'

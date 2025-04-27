@@ -1,0 +1,4 @@
+// Consider using shared memory if data reuse can benefit threads within a block
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory addresses
+// Exploit data locality by loading data into registers when possible
+// Use __restrict__ qualifier for pointers to suggest no aliasing for the compiler

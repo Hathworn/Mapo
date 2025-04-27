@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by aligning source and destination columns
+// Use shared memory for better reuse within blocks
+// Prefetch data to registers to minimize global memory access latency
+// Optimize block and grid dimensions for better occupancy
+// Minimize divergent branching by ensuring warp synchronous operations
+```

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store input data for better memory coalescing.
+// Ensure that 'pred' and 'truth' arrays are aligned and coalesced for optimal global memory access.
+// Optimize the block size and grid size based on the GPU architecture for maximum occupancy.
+// Use float4 loads if possible to reduce memory transaction overhead.

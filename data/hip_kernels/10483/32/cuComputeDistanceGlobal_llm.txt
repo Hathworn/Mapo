@@ -1,0 +1,9 @@
+```
+// Consider adjusting the block size based on the target GPU to maximize occupancy and reduce register pressure.
+// Use __ldg() for reading input matrices if they are read-only to utilize texture memory for cached access.
+// Utilize loop unrolling for the innermost loop to reduce loop overhead.
+// Coalesce global memory accesses to ensure continuous memory reads for improved throughput.
+// Ensure shared memory accesses have no bank conflicts to optimize parallel reads and writes.
+// Explore using streaming multiprocessor features like warp-shuffle operations for optimized data exchange.
+// Assess the shared memory size and reduce it if possible to increase SM utilization and occupancy.
+```

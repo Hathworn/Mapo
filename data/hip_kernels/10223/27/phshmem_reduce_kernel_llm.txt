@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory access for better memory throughput
+// Use shared memory efficiently to minimize global memory traffic
+// Perform loop unrolling to reduce the number of iterations and synchronization
+// Utilize the last warp efficiently with volatile access to skip __syncthreads()
+// Ensure only thread 0 performs the write operation to global memory to avoid race conditions
+```

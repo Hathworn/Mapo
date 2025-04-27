@@ -1,0 +1,8 @@
+```
+// Utilize shared memory if data reuse is possible between threads
+// Coalesce global memory accesses to improve memory throughput
+// Minimize the use of global memory by leveraging registers
+// Avoid bank conflicts in shared memory access patterns
+// Align data structures to achieve optimal memory access speed
+// Ensure kernel launches use a sufficient number of threads to saturate the GPU
+```

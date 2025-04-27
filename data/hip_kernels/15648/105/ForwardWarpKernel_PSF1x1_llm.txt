@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by organizing data layout to match thread access pattern.
+// Consider using shared memory to reduce global memory accesses for frequently accessed data.
+// Optimize memory usage by loading src values into registers, minimizing repeated global memory reads.
+// Minimize divergent branches by reordering condition checks for early exits.
+// Align memory allocations to memory transaction boundaries to improve access efficiency.
+```

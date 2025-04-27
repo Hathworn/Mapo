@@ -1,0 +1,18 @@
+digraph "CFG for '_Z18PolynomForwardImplPKfiS0_iiPf' function" {
+	label="CFG for '_Z18PolynomForwardImplPKfiS0_iiPf' function";
+
+	Node0x5eb9920 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4c5ad70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = icmp slt i32 %8, %1\l  br i1 %9, label %10, label %53\l|{<s0>T|<s1>F}}"];
+	Node0x5eb9920:s0 -> Node0x5eb8bb0;
+	Node0x5eb9920:s1 -> Node0x5ebaa30;
+	Node0x5eb8bb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%10:\l10:                                               \l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = zext i32 %8 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %14 = sext i32 %7 to i64\l  %15 = getelementptr inbounds float, float addrspace(1)* %2, i64 %14\l  %16 = icmp slt i32 %11, %3\l  br i1 %16, label %17, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x5eb8bb0:s0 -> Node0x5eba8d0;
+	Node0x5eb8bb0:s1 -> Node0x5ebb0d0;
+	Node0x5eba8d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%17:\l17:                                               \l  %18 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %19 = getelementptr inbounds i8, i8 addrspace(4)* %18, i64 12\l  %20 = bitcast i8 addrspace(4)* %19 to i32 addrspace(4)*\l  %21 = load i32, i32 addrspace(4)* %20, align 4, !tbaa !5\l  %22 = getelementptr i8, i8 addrspace(4)* %18, i64 4\l  %23 = bitcast i8 addrspace(4)* %22 to i16 addrspace(4)*\l  %24 = load i16, i16 addrspace(4)* %23, align 4, !range !14, !invariant.load\l... !15\l  %25 = zext i16 %24 to i32\l  %26 = udiv i32 %21, %25\l  %27 = mul i32 %26, %25\l  %28 = icmp ugt i32 %21, %27\l  %29 = zext i1 %28 to i32\l  br label %30\l}"];
+	Node0x5eba8d0 -> Node0x5ebc4a0;
+	Node0x5ebc4a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  %31 = phi float [ 0.000000e+00, %17 ], [ %42, %30 ]\l  %32 = phi i32 [ %11, %17 ], [ %44, %30 ]\l  %33 = mul nsw i32 %32, %1\l  %34 = sext i32 %33 to i64\l  %35 = getelementptr inbounds float, float addrspace(1)* %13, i64 %34\l  %36 = load float, float addrspace(1)* %35, align 4, !tbaa !16,\l... !amdgpu.noclobber !15\l  %37 = mul nsw i32 %32, %4\l  %38 = sext i32 %37 to i64\l  %39 = getelementptr inbounds float, float addrspace(1)* %15, i64 %38\l  %40 = load float, float addrspace(1)* %39, align 4, !tbaa !16,\l... !amdgpu.noclobber !15\l  %41 = fmul contract float %36, %40\l  %42 = fadd contract float %31, %41\l  %43 = add i32 %26, %32\l  %44 = add i32 %43, %29\l  %45 = icmp slt i32 %44, %3\l  br i1 %45, label %30, label %46, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5ebc4a0:s0 -> Node0x5ebc4a0;
+	Node0x5ebc4a0:s1 -> Node0x5ebb0d0;
+	Node0x5ebb0d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%46:\l46:                                               \l  %47 = phi float [ 0.000000e+00, %10 ], [ %42, %30 ]\l  %48 = mul nsw i32 %7, %1\l  %49 = sext i32 %48 to i64\l  %50 = getelementptr inbounds float, float addrspace(1)* %5, i64 %49\l  %51 = getelementptr inbounds float, float addrspace(1)* %50, i64 %12\l  %52 = atomicrmw fadd float addrspace(1)* %51, float %47\l... syncscope(\"agent-one-as\") monotonic, align 4\l  br label %53\l}"];
+	Node0x5ebb0d0 -> Node0x5ebaa30;
+	Node0x5ebaa30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4c5ad70",label="{%53:\l53:                                               \l  ret void\l}"];
+}

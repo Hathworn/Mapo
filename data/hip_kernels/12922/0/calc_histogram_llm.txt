@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to optimize shared memory usage
+// Use shared memory efficiently to minimize global memory access
+// Use warp-level primitives to minimize the use of __syncthreads()
+// Reduce the number of atomic operations to minimize contention
+// Carefully manage shared memory initialization to avoid warp divergence
+```

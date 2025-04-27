@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning thread accesses to contiguous blocks
+// Utilize shared memory to minimize global memory access latency where possible
+// Ensure optimal block size and grid size to maximize occupancy and throughput
+// Avoid branch divergence by simplifying conditional statements in critical sections
+// Utilize the __restrict__ qualifier where applicable to improve data access patterns
+// Consider using different memory spaces (shared, constant) for mask data if access pattern allows
+```

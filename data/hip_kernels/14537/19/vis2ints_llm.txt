@@ -1,0 +1,8 @@
+```
+// Use shared memory to store frequently accessed data and reduce global memory accesses.
+// Consider aligning data with memory coalescing to improve access efficiency.
+// Experiment with different block sizes to achieve optimal occupancy and performance.
+// Prefetch data to registers to minimize memory latency.
+// Reduce register pressure by using local variables wisely.
+// Ensure that loop does not suffer from branch divergence across different threads.
+```

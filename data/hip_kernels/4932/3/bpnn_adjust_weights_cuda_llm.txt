@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Move eta and momentum calculation to use registers for faster access
+// Minimize redundant calculations by combining updates within a single branch
+// Use __syncthreads() to ensure all threads complete memory updates before proceeding
+```

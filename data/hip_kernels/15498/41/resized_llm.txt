@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to reduce texture memory access
+// Ensure coalesced memory accesses to improve global memory read efficiency
+// Minimize the use of __syncthreads() if not necessary to avoid performance bottlenecks
+// Explore the use of float4 to read/write values for better throughput on 32/64-bit architectures
+```

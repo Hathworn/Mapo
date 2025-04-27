@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to reduce global memory accesses.
+// Optimize memory coalescing by ensuring aligned access patterns.
+// Minimize bank conflicts if shared memory is used.
+// Adjust block size to achieve maximum occupancy and improve performance.
+// Use __restrict__ qualifiers to enable additional compiler optimizations.
+// Explore asynchronous memory prefetching to hide latency.
+```

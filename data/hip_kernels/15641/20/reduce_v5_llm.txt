@@ -1,0 +1,5 @@
+// Use shared memory to store intermediate results to reduce global memory access
+// Coalesce global memory reads by accessing contiguous memory locations
+// Leverage warp-level operations to minimize thread divergence
+// Reduce synchronization overhead by optimizing shared memory operations
+// Consider unrolling additional reduction steps for performance improvement

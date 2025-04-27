@@ -1,0 +1,10 @@
+```cpp
+// Consider using shared memory to minimize global memory access latency.
+// Prefetch data into shared memory for coalesced access.
+// Align memory accesses to avoid bank conflicts.
+// Use loop unrolling to reduce overhead and improve performance.
+// Perform in-register computations to take advantage of faster register memory.
+// Streamline warp divergence by ensuring all threads within a warp execute the same path.
+// Ensure __syncthreads() is used properly to avoid race conditions.
+// Replace __syncthreads() with warp-level primitives within a warp for efficiency.
+```

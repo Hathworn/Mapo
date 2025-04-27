@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for faster data access and accumulation
+// Ensure coalesced global memory access by each thread
+// Minimize bank conflicts in shared memory usage
+// Use warp-level primitives for efficient intra-warp reduction
+// Consider loop unrolling for fixed-size operations
+// Manage occupancy to balance between latency hiding and shared memory usage
+```

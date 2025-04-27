@@ -1,0 +1,5 @@
+// Consider reducing shared memory usage by optimizing index calculations.
+// Use of atomic operations in shared memory can be expensive; explore alternatives.
+// Ensure that memory access patterns are coalesced for better performance.
+// Investigate using warp shuffle techniques for sum reduction instead of atomic adds.
+// Optimize block and thread configuration for better occupancy and to minimize idle threads.

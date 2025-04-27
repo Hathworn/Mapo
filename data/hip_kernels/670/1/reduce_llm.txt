@@ -1,0 +1,8 @@
+```
+// Consider using coalesced memory access for d_in to improve memory throughput
+// Use __restrict__ qualifiers on d_in and d_out_shared for improved compiler optimizations
+// Ensure occupancy is maximized by selecting an appropriate block size
+// Use appropriate memory access patterns to minimize global memory access latency
+// Optimize shared memory usage to avoid bank conflicts
+// Balance the number of threads per block and shared memory usage to maximize performance
+```

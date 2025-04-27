@@ -1,0 +1,4 @@
+// Consider using __restrict__ keyword for num1, num2, and result pointers to improve memory access patterns
+// Ensure memory accesses are coalesced for optimal performance
+// Evaluate if shared memory usage can further optimize memory access
+// Minimize conditionals inside the kernel to reduce branching overhead

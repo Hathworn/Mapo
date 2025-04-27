@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Use coalesced memory access patterns to reduce latency
+// Consider using double buffering to overlap computation and data transfer
+// Evaluate if using __syncthreads() after the loop can synchronize threads effectively
+```

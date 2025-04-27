@@ -1,0 +1,9 @@
+```cpp
+// Consider coalescing memory accesses in the loop to improve memory bandwidth
+// Use memory padding to avoid bank conflicts in shared memory
+// Reduce register pressure by minimizing loop variables or using __restrict__ pointers
+// Prefer float4 or float2 if applicable for vectorized access
+// Avoid branching within loops to improve thread divergence
+// Increase thread block size if performance is limited by occupancy
+// Analyze the warp execution efficiency for potential warp-level optimizations
+```

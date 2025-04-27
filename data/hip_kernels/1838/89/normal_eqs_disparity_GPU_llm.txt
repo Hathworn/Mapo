@@ -1,0 +1,7 @@
+```c
+// Use shared memory for accumulation to reduce global memory access.
+// Ensure that shared memory is initialized by all threads collectively.
+// Use atomic operations in shared memory to handle concurrent writes.
+// After accumulation, synchronize threads before using accumulated data.
+// Write results from shared to global memory using a single thread to avoid concurrency issues.
+```

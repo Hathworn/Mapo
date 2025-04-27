@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache submatrices for faster access
+// Load tiles into shared memory to reduce global memory transactions
+// Utilize loop unrolling to increase instruction level parallelism
+// Ensure __syncthreads() to synchronize threads after loading data into shared memory
+// Minimize divergence by avoiding conditional statements in the compute loop
+// Prefer reading from shared memory to global memory for frequently accessed data
+// Write results back to global memory using a coalesced access pattern
+```

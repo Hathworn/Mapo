@@ -1,0 +1,5 @@
+// Consider using shared memory to store 5x5 region data for faster access
+// Ensure coalesced memory accesses by ensuring threads access consecutive memory locations
+// Use constant memory for invariant data that every thread reads
+// Minimize divergence by ensuring threads follow similar execution paths
+// Optimize loop unrolling for the region summation to reduce loop overhead

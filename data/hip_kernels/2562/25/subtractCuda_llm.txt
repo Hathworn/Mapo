@@ -1,0 +1,6 @@
+// Coalesce memory access by aligning thread indices with data structures.
+// Minimize shared memory use, aiming to avoid extra allocations.
+// Ensure vectorized operations if possible to increase throughput.
+// Use constant memory for frequently accessed constants or coefficients.
+// Explore warp-level primitives to reduce divergence in conditional operations.
+// Optimize stride access patterns to minimize bank conflicts in shared memory.

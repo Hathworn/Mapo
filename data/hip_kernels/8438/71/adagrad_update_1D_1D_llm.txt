@@ -1,0 +1,6 @@
+```c
+// Consider coalesced memory accesses by ensuring threads access consecutive memory locations
+// Use shared memory to cache parts of the input data that are reused, reducing global memory accesses
+// Consider loop unrolling if the number of iterations is fixed or known beforehand
+// Ensure grid and block sizes are appropriate for the target GPU to maximize occupancy and performance
+```

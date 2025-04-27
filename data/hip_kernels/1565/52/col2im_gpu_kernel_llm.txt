@@ -1,0 +1,7 @@
+```
+// Unroll the loop for better ILP (Instruction Level Parallelism)
+// Utilize shared memory to reduce global memory access latency
+// Minimize bank conflicts when accessing shared memory
+// Ensure proper synchronization with __syncthreads() when using shared memory
+// Optimize grid and block dimensions for better occupancy
+```

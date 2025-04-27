@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if the same src data is accessed repeatedly by multiple threads to reduce global memory access.
+// Ensure coalesced memory access patterns by organizing the src and tgt data structures effectively.
+// Optimize stride-based loop for thread divergence by pooling contiguous memory accesses.
+// Assess memory alignment requirements to ensure fastest access and reduce potential stalls.
+// Evaluate potential register usage to minimize memory latency and maximize throughput.
+```

@@ -1,0 +1,4 @@
+// Consider coalescing memory access for src[] by rearranging the computation
+// Ensure src[] accesses are hitting the same memory bank for better performance
+// Use shared memory to reduce repetitive global memory access
+// Avoid branching in the loop by ensuring uniform access and operations

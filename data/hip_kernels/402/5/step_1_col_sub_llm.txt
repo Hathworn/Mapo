@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by ensuring threads in a warp access consecutive elements in memory.
+// Use shared memory to reduce global memory accesses when computing min_in_cols for each column.
+// Use a loop unrolling technique to independently compute slack values for multiple columns.
+// Ensure the 'slack' array is accessed in a memory-coalesced manner to improve performance.
+// Initialize zeros_size and zeros_size_b using atomic operations to avoid race conditions.
+```

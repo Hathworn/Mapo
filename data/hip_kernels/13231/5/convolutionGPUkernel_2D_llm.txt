@@ -1,0 +1,5 @@
+// Consider using shared memory to cache blocks of M for reduced global memory access.
+// Ensure coalesced memory access patterns for global memory reads and writes.
+// Evaluate thread block size for optimal occupancy and memory throughput.
+// Minimize register usage by reusing variables where possible.
+// Utilize constant memory for the mask if it's read-only and small enough.

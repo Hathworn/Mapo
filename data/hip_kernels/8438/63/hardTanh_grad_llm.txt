@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory accesses
+// Load data into register to reduce read latency
+// Select based on inplace to avoid unnecessary computation
+// Store result back to global memory only when required
+// Use shared memory for intermediate computation to reduce global memory usage
+// Sync to ensure all threads have written to shared memory
+// Write shared memory result back to global memory efficiently
+```

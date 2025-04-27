@@ -1,0 +1,7 @@
+```cpp
+// Combine smaller accesses into larger coalesced reads to improve memory throughput.
+// Consider using shared memory to reduce global memory accesses within the loop.
+// Ensure the input is aligned for optimal coalesced access.
+// Use asynchronous memory prefetching if supported by the hardware.
+// Reduce the redundant computation of indices and constants outside of loops.
+```

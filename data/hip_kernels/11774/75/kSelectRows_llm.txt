@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for row indices
+// Minimize the number of threads performing out-of-bound checks
+// Optimize the use of __syncthreads() to manage shared memory access
+// Avoid branching by handling invalid source indices efficiently
+// Ensure coalesced memory access by aligning data access patterns
+```

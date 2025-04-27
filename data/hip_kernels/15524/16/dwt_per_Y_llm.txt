@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce redundant global memory access.
+// Employ loop unrolling for better parallel execution and instruction level parallelism.
+// Consider coalesced memory accesses to improve bandwidth utilization.
+// Optimize halo loading by avoiding unnecessary boundaries checks.
+// Ensure memory alignment to maximize cache efficiency and reduce bank conflicts.
+// Minimize memory transactions by increasing the number of threads per block.
+// Incorporate synchronization to ensure all threads have finished computation before proceeding.
+// Check for potential memory bank conflicts in shared memory accesses to improve performance.
+```

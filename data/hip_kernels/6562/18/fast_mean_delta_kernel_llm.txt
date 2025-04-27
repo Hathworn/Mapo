@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory access by aligning thread indices with memory locations.
+// Prefetch data to reduce global memory latency by amortizing access cost over iterations.
+// Use shared memory to save intermediate results and reduce global memory traffic.
+// Implement warp-level reduction to minimize synchronization and improve efficiency.
+// Optimize synchronization by reducing the number of __syncthreads() calls.
+// Consider using atomic operations if applicable to avoid the final step loop.
+```

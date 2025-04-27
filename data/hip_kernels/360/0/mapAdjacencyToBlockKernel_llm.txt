@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access
+// Assuming max blockDim.x is 256
+// Synchronize threads to ensure all have updated shared memory
+// Optimize shared memory usage by avoiding unnecessary loads

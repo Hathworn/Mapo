@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache normalization_factor for better memory access patterns
+// Consider using vectorized loads/stores for image data to benefit from coalesced accesses
+// Optimize block size to maximize occupancy while considering shared memory usage
+// Use loop unrolling if computation within the kernel allows it for better throughput
+// Review data alignment for potential benefits in memory access efficiency
+```

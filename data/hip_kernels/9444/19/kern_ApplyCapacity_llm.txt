@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to sinkBuffer and capBuffer for optimal performance
+// Consider using shared memory if there's a data reuse opportunity to reduce global memory access
+// Prefetch data into registers to minimize latency when accessing sinkBuffer and capBuffer
+// Assess the impact of bank conflicts if shared memory is introduced
+// Launch configurations should be optimized for the occupancy and block size for the specific GPU architecture
+```

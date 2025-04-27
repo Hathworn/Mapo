@@ -1,0 +1,6 @@
+// Coalesce memory access by ensuring consecutive threads access consecutive memory locations
+// Minimize memory transactions by reducing the number of memory accesses to global memory
+// Optimize shared memory usage if applicable to reduce global memory latency
+// Consider loop unrolling to reduce loop overhead and improve performance
+// Ensure proper alignment of data structures for efficient memory access patterns
+// Use warp-level operations like __shfl_sync to reduce shared memory usage in futureoptimizations

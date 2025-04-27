@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses by adjusting data layout
+// Use shared memory to minimize redundant global memory accesses
+// Ensure __syncthreads() is used appropriately to avoid race conditions
+// Ensure memory access patterns are strided to utilize memory coalescing
+// Reduce the number of global memory accesses by reusing data in shared memory
+// Consider optimizing block and grid configuration for better performance
+```

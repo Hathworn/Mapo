@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to store sub-matrices of Md and Nd to reduce global memory access.
+// Ensure coalesced memory access when loading Md and Nd into shared memory.
+// Optimize synchronization by minimizing the number of __syncthreads() calls.
+// Ensure coalesced memory write when storing the result in Pd.
+// Consider adjusting TILE_WIDTH to maximize occupancy and performance.
+// Check for bank conflicts in shared memory accesses.
+```

@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to reduce global memory accesses
+// Align memory access patterns to ensure coalesced memory transactions
+// Minimize divergent branching to improve warp execution efficiency
+// Consider loop unrolling for repetitive computation to leverage instruction level parallelism
+// Opt for fewer kernel launches by batching operations when possible
+// Employ texture memory for readonly data to benefit from caching
+// Adjust grid and block dimensions for optimal processor occupancy
+```

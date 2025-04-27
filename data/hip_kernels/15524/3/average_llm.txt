@@ -1,0 +1,3 @@
+// Use shared memory to minimize global memory access latency
+// Load data into shared memory to reduce redundancy in global memory accesses
+// Ensure shared memory writes and reads are synchronized with __syncthreads

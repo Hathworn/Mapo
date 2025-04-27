@@ -1,0 +1,16 @@
+digraph "CFG for '_Z29apply_lifter_and_floor_energyiifbfPfS_S_i' function" {
+	label="CFG for '_Z29apply_lifter_and_floor_energyiifbfPfS_S_i' function";
+
+	Node0x4ee9af0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%9:\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul nsw i32 %11, %8\l  %13 = sext i32 %12 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %7, i64 %13\l  %15 = fcmp contract une float %2, 0.000000e+00\l  %16 = icmp slt i32 %10, %1\l  %17 = select i1 %15, i1 %16, i1 false\l  br i1 %17, label %18, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4ee9af0:s0 -> Node0x4ee9b70;
+	Node0x4ee9af0:s1 -> Node0x4eecd40;
+	Node0x4ee9b70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  %19 = phi i32 [ %26, %18 ], [ %10, %9 ]\l  %20 = zext i32 %19 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %6, i64 %20\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !5\l  %23 = getelementptr inbounds float, float addrspace(1)* %14, i64 %20\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !5\l  %25 = fmul contract float %22, %24\l  store float %25, float addrspace(1)* %23, align 4, !tbaa !5\l  %26 = add nuw nsw i32 %19, 256\l  %27 = icmp slt i32 %26, %1\l  br i1 %27, label %18, label %28, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x4ee9b70:s0 -> Node0x4ee9b70;
+	Node0x4ee9b70:s1 -> Node0x4eecd40;
+	Node0x4eecd40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%28:\l28:                                               \l  %29 = icmp eq i32 %10, 0\l  %30 = select i1 %3, i1 %29, i1 false\l  br i1 %30, label %31, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x4eecd40:s0 -> Node0x4eeded0;
+	Node0x4eecd40:s1 -> Node0x4eedf20;
+	Node0x4eeded0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%31:\l31:                                               \l  %32 = sext i32 %11 to i64\l  %33 = getelementptr inbounds float, float addrspace(1)* %5, i64 %32\l  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !5\l  %35 = tail call i1 @llvm.amdgcn.class.f32(float %4, i32 144)\l  %36 = select i1 %35, float 0x41F0000000000000, float 1.000000e+00\l  %37 = fmul float %36, %4\l  %38 = tail call float @llvm.log2.f32(float %37)\l  %39 = fmul float %38, 0x3FE62E42E0000000\l  %40 = tail call i1 @llvm.amdgcn.class.f32(float %38, i32 519)\l  %41 = fneg float %39\l  %42 = tail call float @llvm.fma.f32(float %38, float 0x3FE62E42E0000000,\l... float %41)\l  %43 = tail call float @llvm.fma.f32(float %38, float 0x3E6EFA39E0000000,\l... float %42)\l  %44 = fadd float %39, %43\l  %45 = select i1 %40, float %38, float %44\l  %46 = select i1 %35, float 0x40362E4300000000, float 0.000000e+00\l  %47 = fsub float %45, %46\l  %48 = fcmp contract ogt float %4, 0.000000e+00\l  %49 = fcmp contract olt float %34, %47\l  %50 = select i1 %48, i1 %49, i1 false\l  %51 = select i1 %50, float %47, float %34\l  store float %51, float addrspace(1)* %14, align 4, !tbaa !5\l  br label %52\l}"];
+	Node0x4eeded0 -> Node0x4eedf20;
+	Node0x4eedf20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%52:\l52:                                               \l  ret void\l}"];
+}

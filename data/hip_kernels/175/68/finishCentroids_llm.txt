@@ -1,0 +1,8 @@
+```c
+// Optimize memory access patterns with coalesced reads for centroidMass and centroidCount.
+// Use shared memory to reduce global memory accesses by storing frequently accessed data.
+// Consider using float2 or float4 vector types for centroids to increase memory throughput.
+// Minimize divergent branches within warp execution to optimize performance.
+// Precompute indices to reduce redundant calculations inside the kernel.
+// Ensure grid and block dimensions are optimized for target architecture.
+```

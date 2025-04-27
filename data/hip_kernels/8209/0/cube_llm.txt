@@ -1,0 +1,4 @@
+// Consider using shared memory for faster access if data reuse occurs
+// Ensure coalesced memory accesses for optimal memory throughput
+// Investigate the use of texture memory if data access patterns are suitable
+// Optimize block and grid dimensions to maximize parallelism while avoiding warp divergence

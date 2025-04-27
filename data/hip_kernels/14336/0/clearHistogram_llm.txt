@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access frequency
+// Consider using warp shuffle operations to further reduce memory divergence
+// Ensure coalesced memory access to global memory
+// Avoid bank conflicts in shared memory usage
+// Optimize the loop to unroll iterations where possible

@@ -1,0 +1,6 @@
+// Use loop unrolling to minimize the loop overhead and increase arithmetic intensity
+// Ensure optimal data coalescing by accessing elements in contiguous memory locations
+// Leverage shared memory to reduce global memory access latency
+// Implement warp-level communication to avoid excessive synchronization barriers
+// Balance computation and memory access workloads between threads to avoid idle threads
+// Consider using atomic operations for more granular parallel reduction of results

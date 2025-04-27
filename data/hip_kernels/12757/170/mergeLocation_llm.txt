@@ -1,0 +1,4 @@
+// Use register variables to minimize global memory access latency
+// Consider using shared memory if data is reused within the block
+// Coalesce memory accesses to improve throughput
+// Ensure memory alignment to prevent bank conflicts

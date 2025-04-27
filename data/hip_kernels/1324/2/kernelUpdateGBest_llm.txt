@@ -1,0 +1,5 @@
+// Consider coalesced memory access for pBests for improved memory throughput
+// Optimize the use of shared memory by minimizing redundant memory loads
+// Use warp-level primitives to reduce the need for __syncthreads()
+// Balance the workload among threads to ensure maximum occupancy
+// Consider loop unrolling for the for-loops to reduce instruction overhead

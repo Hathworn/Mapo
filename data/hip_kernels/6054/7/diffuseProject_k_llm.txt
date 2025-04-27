@@ -1,0 +1,8 @@
+```plaintext
+// Optimize memory access by ensuring coalesced access patterns.
+// Consider pre-loading data into shared memory to reduce global memory access latency.
+// Explore using texture memory for read-only data to benefit from cached accesses.
+// Ensure that data is aligned to achieve coalesced memory access.
+// Use loop unrolling to minimize control overhead and improve instruction throughput.
+// Minimize the number of redundant arithmetic operations by reusing computed values.
+```

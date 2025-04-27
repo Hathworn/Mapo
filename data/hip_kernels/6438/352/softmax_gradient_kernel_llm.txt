@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access patterns for Y, dY, and dX arrays
+// Use __restrict__ keyword for pointer arguments to optimize memory access
+// Consider data prefetching to hide global memory latency
+// Use warp-level primitives for reduction if available for further optimization
+```

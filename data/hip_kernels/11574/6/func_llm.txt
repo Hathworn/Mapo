@@ -1,0 +1,5 @@
+// Consider increasing the shared memory size if data access pattern requires it.
+// Ensure optimal block size to maximize shared memory utilization.
+// Ensure data alignment to minimize memory bank conflicts.
+// Minimize use of __syncthreads() where possible to reduce synchronization overhead.
+// Consider using warp shuffle operations for data exchange among threads.

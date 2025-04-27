@@ -1,0 +1,7 @@
+```
+// Use shared memory to store results locally before writing to global memory.
+// Reorder computations to improve access pattern for coalesced memory accesses.
+// Consider loop unrolling if repeated computations are present.
+// Align memory accesses to reduce bank conflicts and improve throughput.
+// Optimize block size and grid dimension based on device's compute capabilities.
+```

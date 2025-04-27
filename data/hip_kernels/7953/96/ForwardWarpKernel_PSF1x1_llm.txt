@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access for better performance
+// Minimize number of register variables to maximize occupancy
+// Consider shared memory for frequently accessed data
+// Use __ldg intrinsic for read-only data to leverage L1 cache
+// Explore using float4 for memory reads to reduce latencies
+```

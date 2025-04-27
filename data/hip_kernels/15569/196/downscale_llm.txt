@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Apply loop unrolling in both nested loops to reduce loop overhead.
+// Coalesce memory accesses to improve memory bandwidth.
+// Use __restrict__ qualifier for pointers to minimize pointer aliasing.
+// Consider using warp shuffle operations to aggregate results more efficiently.
+// Optimize block and grid dimensions to ensure maximum occupancy.
+// Consider offsetting memory addresses to utilize aligned memory access.
+```

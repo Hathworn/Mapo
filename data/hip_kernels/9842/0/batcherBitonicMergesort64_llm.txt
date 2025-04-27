@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency 
+// Ensure optimal memory coalescing for global memory reads and writes
+// Consider unrolling loops to minimize loop control overhead 
+// Minimize the use of __syncthreads() to reduce synchronization overhead 
+// Verify that bank conflicts are avoided when accessing shared memory 
+// Align data size and thread block size with the warp size for execution efficiency 
+```

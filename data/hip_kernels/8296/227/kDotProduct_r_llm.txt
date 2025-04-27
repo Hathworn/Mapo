@@ -1,0 +1,9 @@
+```
+// Use loop unrolling to reduce looping overhead and improve efficiency.
+// Ensure data access patterns reduce bank conflicts by aligning shared memory access.
+// Utilize __syncthreads() to synchronize threads effectively in parallel reduction.
+// Optimize reduction with loop unrolling to minimize warp divergence.
+// Use volatile in the last warp to force correct order of memory accesses.
+// Align memory operations to maximize coalesced access and reduce memory access latency.
+// Minimize grid dimension to balance workload across blocks efficiently.
+```

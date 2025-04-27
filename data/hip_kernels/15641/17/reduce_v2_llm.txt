@@ -1,0 +1,5 @@
+// Use coalesced memory access patterns to improve memory bandwidth utilization
+// Consider aligning memory accesses to avoid bank conflicts in shared memory
+// Implement additional loop unrolling for smaller warp sizes to enhance efficiency
+// Prefer atomic operations on shared memory for performance gains in certain contexts
+// Employ occupancy calculator to verify optimal block size and resource utilization

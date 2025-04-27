@@ -1,0 +1,5 @@
+// Use shared memory if multiple accesses to the same data are needed
+// Consider using warp shuffle functions for adjacent thread communication
+// Ensure coalesced memory access by arranging data access pattern correctly
+// Optimize grid and block dimensions to maximize occupancy and minimize thread divergence
+// Use constant memory for div if it remains unchanged throughout the kernel execution

@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for MatA and MatB to reduce global memory accesses.
+// Ensure coalesced memory accesses by organizing threads to access sequential memory locations.
+// Use loop unrolling if applicable to enhance performance within the kernel.
+// Evaluate the grid and block dimensions to maximize occupancy and minimize warp divergence.
+```

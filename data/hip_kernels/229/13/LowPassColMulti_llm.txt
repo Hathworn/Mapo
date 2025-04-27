@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Prefetch data to shared memory before processing in each thread.
+// Unroll loops to improve performance by reducing branching overhead.
+// Use __syncthreads() to synchronize threads before proceeding.

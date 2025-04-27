@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve memory access efficiency.
+// Ensure shared memory allocation has a padding to avoid bank conflicts.
+// Read from global to shared memory in a coalesced manner.
+// Perform transpose in shared memory to minimize global memory transactions.
+// Use __syncthreads() to synchronize threads before data is used.
+```

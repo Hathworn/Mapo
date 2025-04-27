@@ -1,0 +1,7 @@
+```c
+// Use shared memory if possible to reduce global memory accesses
+// Consider coalesced memory accesses for better performance
+// Minimize usage of hiprand_init inside the loop to save computational resources
+// Utilize multiple threads per block to improve parallelism
+// Use __restrict__ keyword for pointer parameters if applicable to hint the compiler for optimization
+```

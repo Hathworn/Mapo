@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by using continuous threads to access contiguous memory locations
+// Utilize shared memory to further optimize memory transactions if possible
+// Avoid redundant calculations by storing reused computations in registers
+// Consider using vectorized loads/stores for improved memory bandwidth utilization
+// Leverage texture memory for the source image if appropriate to take advantage of caching
+// Align data structures and ensure data is 16-byte aligned for efficient memory access
+// Investigate warp shuffle operations to reduce shared memory usage where applicable
+```

@@ -1,0 +1,6 @@
+```
+// Ensure coalesced global memory accesses for g_idata
+// Consider using warp shuffle to reduce synchronization within warp
+// Avoid unnecessary loading by considering early exit if g_size is small
+// Check if further loop unrolling can enhance reduction efficiency
+```

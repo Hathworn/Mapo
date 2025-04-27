@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access.
+// Ensure coalesced memory access by aligning data accesses along warp boundaries.
+// Consider loop unrolling if further arithmetic operations are needed after subtraction.
+// Minimize condition checks by rearranging code structure for better warp execution efficiency.
+```

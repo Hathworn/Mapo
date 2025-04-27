@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifiers to enable compiler optimizations for pointer aliasing
+// Use float4 vector types for coalesced memory access and reduced global memory transactions
+// Optimize shared memory usage by ensuring data fits within the available limit per block
+// Minimize the use of __syncthreads() as it incurs overhead and may reduce warp efficiency
+// Utilize warp shuffle operations for reduction instead of shared memory for better performance
+```

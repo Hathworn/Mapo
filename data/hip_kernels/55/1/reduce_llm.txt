@@ -1,0 +1,4 @@
+// Reduce the synchronization points to minimize overhead.
+// Replace volatile shared memory with atomic operations where possible.
+// Coalesce global memory access by ensuring sequential thread indices read/write sequential memory locations.
+// Ensure shared memory access is bank conflict-free.

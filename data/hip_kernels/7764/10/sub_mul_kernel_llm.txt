@@ -1,0 +1,4 @@
+// Utilize shared memory for 'ct' to minimize global memory access.
+// Consider pre-fetching data into registers where possible to reduce memory latency.
+// Reduce redundant calculations by pre-computing certain values ahead of the loop.
+// Use conditional statements to optimize branch divergences for different thread conditions.

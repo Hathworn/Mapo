@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for better global memory throughput.
+// Use shared memory to store intermediate values and reduce redundant global memory accesses.
+// Ensure optimal occupancy by fine-tuning block size and grid size for this specific kernel.
+// Minimize bank conflicts if shared memory is utilized in further optimizations.
+// Prefetch data into registers if beneficial for computation-heavy sections.
+```

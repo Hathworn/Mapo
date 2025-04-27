@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses by ensuring that threads within a block access contiguous memory locations
+// Evaluate using shared memory to cache frequently accessed data and reduce global memory accesses
+// Check for opportunities to reduce divergence by ensuring uniform code execution among threads
+// Analyze the possibility of loop unrolling if applicable to minimize overhead
+// Assess the use of warp-level primitives for reducing atomics overhead where possible
+// Investigate vectorizing computations to optimize throughput on SIMD architectures
+```

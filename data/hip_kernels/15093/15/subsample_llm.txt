@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache input data to reduce global memory access
+// Consider coalesced memory access to improve memory bandwidth utilization
+// Use warp-level primitives to optimize summation within the kernel
+// Evaluate using loop unrolling for kernel loops to reduce instruction overhead
+// Ensure no bank conflicts in shared memory access pattern
+// Apply occupancy calculator to select optimal block size for performance
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed bottom0 data to reduce global memory accesses
+// Unroll loops when possible for better throughput
+// Avoid redundant calculations by storing reused values in registers
+// Minimize divergent branches within warp
+// Consider memory access patterns to enhance coalesced memory access

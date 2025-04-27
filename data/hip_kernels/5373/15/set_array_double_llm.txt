@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory access patterns by ensuring coalesced memory access
+// Avoid bank conflicts when accessing memory within a warp
+// Consider using shared memory if multiple accesses to the same data are needed
+// Make sure the grid and block dimensions maximize occupancy on the GPU
+// Utilize asynchronous memory transfers if applicable to overlap computation with data movement
+```

@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency for height_fn.
+// Load neighboring heights conditionally to minimize unnecessary global memory reads.
+// Use atomic operations efficiently to handle concurrent access in g_push_reser.
+// Efficiently calculate the minimum flow push utilizing the min function.
+// Simplified relabel condition to reduce computation overhead.
+// Effectively synchronize threads using __syncthreads to ensure proper data sharing in shared memory.

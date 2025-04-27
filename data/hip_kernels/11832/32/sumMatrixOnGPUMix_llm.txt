@@ -1,0 +1,4 @@
+// Ensure coalesced memory access to improve bandwidth utilization.
+// Consider using shared memory for frequently accessed data to reduce global memory traffic.
+// Analyze warp execution efficiency and consider loop unrolling if applicable.
+// Evaluate occupancy and adjust block and grid sizes for optimal performance.

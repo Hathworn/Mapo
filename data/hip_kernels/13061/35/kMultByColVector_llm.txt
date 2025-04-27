@@ -1,0 +1,5 @@
+```
+// Consider optimizing the memory access pattern by using shared memory for vec, which can reduce global memory accesses.
+// Ensure enough threads are available to fully utilize the compute units, possibly by tuning blockDim.x.
+// If possible, check memory coalescing for mat and tgtMat to ensure efficient access.
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns by ensuring coalesced global memory accesses.
+// Consider padding shared memory to avoid bank conflicts during reduction.
+// Evaluate the use of warp-synchronous programming for reduction instead of __syncthreads().
+// Minimize thread divergence by avoiding conditional statements inside the loop.
+// Investigate the possibility of loop unrolling for the innermost loop for performance benefits.
+```

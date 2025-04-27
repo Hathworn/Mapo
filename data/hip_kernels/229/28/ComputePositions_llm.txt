@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache g_Data2 values for neighboring positions
+// Consider using __ldg() for frequently accessed read-only data
+// Align data access by ensuring g_Data2 accesses are coalesced
+// Group loads to g_Data3 and g_Data1 to reduce global memory transactions
+// Use compiler intrinsics like __fdividef for faster division operations
+// Ensure d_Ptrs is accessed in a coalesced manner for better performance
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory traffic
+// Reduce the number of divisions and modulo operations by using loop unrolling or pre-calculated offsets
+// Ensure all threads within a warp access consecutive memory addresses (coalesced access) for optimal performance
+// Check if the use of atomic operations can be minimized or replaced to avoid performance bottlenecks
+// Evaluate whether loop transformations can help with memory access patterns and reduce latency
+```

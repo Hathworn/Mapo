@@ -1,0 +1,6 @@
+```
+// Improve data locality by coalescing global memory access
+// Increase tile size if shared memory resources allow for better data reuse
+// Preload multiple elements per thread to reduce the number of iterations
+// Ensure __syncthreads() is used judiciously to minimize synchronization overhead
+```

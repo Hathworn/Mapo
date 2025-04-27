@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced access patterns to global memory wherever possible
+// Reduce redundant calculations within shared memory utilization
+// Consider using loop unrolling for the convolution operation to improve efficiency
+// Use __syncthreads() judiciously to synchronize shared memory access between threads
+// Utilize symmetry in kernel operations to lower arithmetic computations
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory access for input buffer to improve memory bandwidth usage
+// Evaluate effectiveness of using larger shared memory if block size exceeds 256 for performance boost
+// Ensure the warp-level synchronization is well-aligned to avoid potential read-after-write hazards
+// Investigate latency hiding through increasing blocks if occupancy is underutilized
+```

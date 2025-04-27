@@ -1,0 +1,4 @@
+// Consider coalesced memory access by ensuring mat and target arrays are aligned
+// Use suitable block size and grid size to increase occupancy and reduce divergence
+// Experiment with different loop unrolling techniques for potential performance improvement
+// Assess the use of shared memory to reduce redundant global memory accesses if possible

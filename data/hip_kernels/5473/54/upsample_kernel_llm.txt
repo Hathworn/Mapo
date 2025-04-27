@@ -1,0 +1,9 @@
+```cpp
+// Consider using shared memory for reused values to reduce global memory access.
+// Ensure memory coalescing by organizing data access patterns.
+// Use LDG to load values if they will be reused and are read-only.
+// Avoid bank conflicts when accessing shared memory.
+// Prefetch data if possible to hide latency.
+// Experiment with different block sizes for optimal occupancy.
+// Use appropriate loop unrolling for frequent operations.
+```

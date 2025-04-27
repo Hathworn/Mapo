@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure memory coalescing by having threads access consecutive memory addresses
+// Minimize synchronization points to reduce overhead
+// Consider using warp shuffles to reduce the need for __syncthreads()
+```

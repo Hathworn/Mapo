@@ -1,0 +1,10 @@
+```
+// Use coalesced memory accesses when copying t2_d into shared memory
+// Consider adjusting the shared memory size if T1 * 4 * Tcomm is large
+// Use __shared__ memory efficiently to minimize global memory reads
+// Ensure thread divergence is minimized within loops
+// Optimize for occupancy by tuning block and grid dimensions
+// Use registers as much as possible for frequently accessed variables
+// Profile atomic operations to check for potential bottlenecks
+// Consider warp-level primitives for inter-thread communication
+```

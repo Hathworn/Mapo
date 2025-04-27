@@ -1,0 +1,6 @@
+```
+// Use shared memory to load a tile of the input image for better memory access patterns.
+// Consider memory coalescing by ensuring consecutive threads access consecutive memory addresses.
+// Align input and output memory to reduce address calculations inside the kernel.
+// Ensure 128-bit reads and writes by using data types like uchar4 for better memory bandwidth utilization.
+```

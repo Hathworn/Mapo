@@ -1,0 +1,4 @@
+// Use `__restrict__` keyword to help compiler with memory access optimization
+// Ensure all memory allocations have efficient alignment for coalesced access
+// Consider prefetching data if there is significant latency in accessing A and B
+// Investigate use of shared memory to reduce redundant global memory accesses

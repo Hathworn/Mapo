@@ -1,0 +1,2 @@
+// Consider using shared memory if multiple threads need to read the same value from distance to reduce redundant global memory access.
+// Ensure coalesced memory access by organizing the data in a manner that adjacent threads access adjacent memory locations.

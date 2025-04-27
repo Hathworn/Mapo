@@ -1,0 +1,7 @@
+```cpp
+// Coalesce memory accesses by ensuring contiguous threads access contiguous data
+// Minimize warp divergence by ensuring all threads follow the same execution path
+// Consider using shared memory for intermediate results to reduce global memory accesses
+// Utilize fast math operations (like __logf) for better performance
+// Ensure optimal block and grid sizes for efficient resource utilization
+```

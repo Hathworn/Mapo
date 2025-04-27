@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by accessing mat and target arrays with stride-1 access pattern
+// Use shared memory if mat array elements are reused across threads
+// Consider occupancy optimization by adjusting block size
+// Align data structures to improve memory transaction efficiency
+// Consider using __powf for single-precision performance benefits
+```

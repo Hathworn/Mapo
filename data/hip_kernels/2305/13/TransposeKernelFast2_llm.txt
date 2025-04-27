@@ -1,0 +1,4 @@
+// Unroll the loop to reduce instruction overhead and increase ILP (Instruction Level Parallelism).
+// Use __syncthreads() to ensure all threads have completed data transfer to shared memory before proceeding.
+// Minimize bank conflicts in shared memory by padding with extra 4 columns.
+// For coalesced memory access, ensure threads in the same warp access consecutive memory locations.

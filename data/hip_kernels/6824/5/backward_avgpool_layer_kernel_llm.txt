@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce redundant global memory access for variables like w, h.  
+// Explore using loop unrolling for the width-height iteration to minimize loop overhead and increase efficiency.  
+// Assess if employing atomic operations are necessary to avoid race conditions when updating in_delta.  
+// Evaluate if using specific warp-level optimization techniques could enhance performance for large n, c values.  
+// Investigate memory coalescing for optimizing out_delta memory access to increase throughput.  
+// Check if bank conflicts are present when accessing in_delta and address them if necessary.  

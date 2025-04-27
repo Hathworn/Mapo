@@ -1,0 +1,4 @@
+// Use shared memory to store intermediate computations to reduce global memory accesses.
+// Consider coalescing memory accesses for better throughput.
+// Use warp-level synchronization where possible to optimize thread cooperation.
+// Ensure memory accesses are aligned to improve performance.

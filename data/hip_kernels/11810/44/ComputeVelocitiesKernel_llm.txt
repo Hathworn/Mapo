@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses for Dens, RadMomP, and RadMomM
+// Coalesced memory access for Dens array to improve memory bandwidth utilization
+// Ensure that Rmed[i] is stored in a register to reduce redundant global memory access
+// Use of inline calculations in denominator_rad and denominator_theta to minimize memory operations
+```

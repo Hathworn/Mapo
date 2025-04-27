@@ -1,0 +1,10 @@
+```
+// Consider using vectorized memory operations to improve memory access efficiency
+// Reduce redundant synchronization by reorganizing code or using warp-level primitives if applicable
+// Ensure shared memory usage is optimal and does not exceed block memory limits
+// Prefetch data into shared memory or registers to hide memory latency
+// Consider occupancy optimization by adjusting block and grid sizes based on usage
+// Look into utilizing async copy features for faster memory transfers if HIP supports it
+// Evaluate the use of constant memory for frequently accessed constants like D_HIDDEN_UNITS
+// Investigate if loop unrolling could benefit the inner loops for performance gains
+```

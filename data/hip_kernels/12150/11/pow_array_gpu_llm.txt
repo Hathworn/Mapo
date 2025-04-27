@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory for data reuse if multiple threads access similar data
+// Use coalesced memory accesses to improve global memory throughput
+// Ensure that the block size is a power of two for optimal occupancy
+// Avoid divergent branches by ensuring that all threads in a warp follow the same execution path
+// Consider unrolling the loop for powers known at compile time to reduce loop overhead
+// Prefetch data into registers if there is a possibility of memory access latency
+```

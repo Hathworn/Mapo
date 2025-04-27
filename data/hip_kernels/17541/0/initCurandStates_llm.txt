@@ -1,0 +1,5 @@
+```c
+// Use grid-stride loop to improve occupancy and reduce thread divergence
+// Initialize local state variable to avoid repeated memory access
+// Avoid frequent global memory writes by using local variables for computations
+```

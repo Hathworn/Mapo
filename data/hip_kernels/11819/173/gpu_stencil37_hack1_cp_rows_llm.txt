@@ -1,0 +1,7 @@
+```
+// Reuse shared memory to minimize global memory access
+// Calculate indices outside loops to reduce redundant computation
+// Use boolean flags to eliminate unnecessary memory operations
+// Ensure memory coalescing by aligning data access to warp boundaries
+// Use __syncthreads() to synchronize threads and ensure data consistency
+```

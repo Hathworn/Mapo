@@ -1,0 +1,4 @@
+// Ensure memory coalescing by aligning memory accesses within the inner loop.
+// Minimize divergent branches in the inner loop for consistent warp execution.
+// Note the potential for increasing block size to optimize memory throughput.
+// Consider Shared Memory Utilization for the frequently accessed variables.

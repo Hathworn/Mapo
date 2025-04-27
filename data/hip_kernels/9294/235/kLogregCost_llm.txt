@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access pattern for better global memory performance
+// Consider using shared memory to cache maxProbs and improve memory access speed
+// Minimize branch divergence by restructuring conditional statements where possible
+// Optimize memory accesses by ensuring alignment to improve access efficiency
+// Consider using __shfl_xor_sync for efficient warp-level reductions if applicable
+```

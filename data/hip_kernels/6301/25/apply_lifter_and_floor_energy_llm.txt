@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory access for optimal memory bandwidth utilization
+// Leverage shared memory to store log_energy_floor to reduce global memory accesses
+// Avoid recomputation by storing computed values in shared memory
+// Use a single thread to perform operations that don't require parallelization
+```

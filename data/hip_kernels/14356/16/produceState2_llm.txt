@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced memory access patterns for global memory operations
+// Optimize warp occupancy by ensuring thread divergence is minimized
+// Consider pre-fetching global memory values to shared memory
+// Align shared memory usage to the dimensions of warp size
+// Try using loop unrolling techniques for the summation loop

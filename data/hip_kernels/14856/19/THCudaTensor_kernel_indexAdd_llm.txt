@@ -1,0 +1,7 @@
+```
+// Use shared memory to store frequently accessed data to reduce global memory accesses.
+// Ensure index computations avoid repeated calculations by leveraging shared or register memory.
+// Consider coalesced memory accesses by organizing threads to access consecutive memory addresses.
+// Reevaluate atomic operation usage for efficiency, as it might cause serialization and reduce performance.
+// Use loop unrolling when accessing data within loops for improved performance.
+```

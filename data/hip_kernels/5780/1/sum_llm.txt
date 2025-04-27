@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store input data temporarily to reduce global memory accesses
+// Use warp-level operations to optimize reduction and minimize divergence
+// Ensure coalesced accesses by aligning memory addresses where possible
+// Evaluate if further loop unrolling may improve performance for specific configurations
+```

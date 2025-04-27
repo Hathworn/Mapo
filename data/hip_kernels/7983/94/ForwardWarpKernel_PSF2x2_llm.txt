@@ -1,0 +1,10 @@
+```
+// Consider maximizing memory coalescing by ensuring continuous memory access patterns
+// Use shared memory to reduce global memory access where possible
+// Ensure memory access is aligned for efficiency, particularly for u, v, and src arrays
+// Strive to minimize the use of __global__ memory accesses in favor of registers or shared memory
+// Leverage texture memory for input data with uniform access patterns to improve throughput
+// Optimize the precision of floating-point arithmetic to balance performance and accuracy
+// Explore the use of warp shuffle operations to reduce synchronization overhead
+// Unroll loops to improve instruction-level parallelism and enhance performance
+```

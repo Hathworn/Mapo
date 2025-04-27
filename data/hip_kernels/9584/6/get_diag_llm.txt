@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access.
+// Ensure coalesced memory access by aligning read operations to consecutive threads for better performance.
+// Use __ldg() intrinsics for read-only data to take advantage of cached load operations if appropriate.
+// Evaluate the need for warp-level primitives to optimize calculations that require inter-thread communication.
+```

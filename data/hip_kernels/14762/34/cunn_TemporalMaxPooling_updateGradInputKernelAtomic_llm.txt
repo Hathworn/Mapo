@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to optimize global memory read/write
+// Use shared memory if possible to further reduce global memory access
+// Consider using warp-level primitives for more efficient intra-thread communication
+// Minimize the use of atomic operations if feasible or explore atomic optimizations
+// Unroll loops if loop bounds are known at compile-time
+```

@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses for better performance
+// Consider using shared memory to reduce redundant global memory accesses
+// Group threads with similar control paths to avoid divergence
+// Minimize global memory accesses by caching values in registers where possible
+// Align data structures to optimize memory transactions

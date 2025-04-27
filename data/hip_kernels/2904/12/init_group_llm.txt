@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns to improve memory bandwidth utilization.
+// Consider loading col_widths into shared memory to reduce repetitive global memory access.
+// Use const memory for init_vals if they don't change and need to be accessed by all threads.
+// Ensure aligned memory access to prevent bank conflicts and improve performance.
+// Minimize the size of the kernel if possible to improve occupancy and reduce register usage.
+```

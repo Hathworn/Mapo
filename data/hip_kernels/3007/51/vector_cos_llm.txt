@@ -1,0 +1,6 @@
+```
+// Use __restrict__ to help the compiler optimize memory accesses by indicating no aliasing.
+// Ensure proper alignment of memory accesses by using aligned data structures where possible.
+// Utilize shared memory if there are any reusable data across threads to reduce global memory access.
+// Coalesce memory accesses by ensuring that consecutive threads access consecutive memory locations.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access to the delta array.
+// Use shared memory efficiently by reducing bank conflicts.
+// Ensure all threads in a block contribute before synchronization.
+// Minimize the number of synchronizations to reduce overhead.
+// Optimize loop unrolling if the spatial dimension size is known.
+// Ensure the use of math operations that avoid precision loss.
+```

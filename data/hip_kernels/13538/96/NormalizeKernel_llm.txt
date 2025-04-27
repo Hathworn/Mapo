@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access for normalization_factor
+// Load normalization_factor[pos] into a register to reduce repeated access
+// Ensure coalesced access patterns for global memory reads and writes
+// Consider using vectorized loads/stores for image data if possible
+// Optimize thread block size for occupancy and memory access patterns
+// Employ warp-level primitives to minimize thread divergence
+```

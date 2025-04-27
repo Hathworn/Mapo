@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to store intermediate results if possible
+// Align memory access for better coalescing
+// Avoid thread divergence within warp
+// Consider using float2 to load/store data if applicable
+```

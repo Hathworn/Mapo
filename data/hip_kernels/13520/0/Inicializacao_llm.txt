@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to improve memory access times.
+// Ensure coalesced memory access patterns by aligning the data layout with warp size.
+// Preload data into registers if possible to minimize global memory access latency.
+// Minimize divergent branches by organizing threads to follow the same execution path.
+```

@@ -1,0 +1,9 @@
+```c
+// Optimize memory access patterns to ensure coalescing
+// Prefetch 'variance[f]', 'mean[f]', 'variance_delta[f]', and 'mean_delta[f]' into registers
+// Use shared memory to store intermediate results if they are reused within warp
+// Ensure data alignment for float4 or float2 access if possible
+// Minimize divergent branches within the kernel
+// Consider using loop unrolling for spatial dimension if applicable
+// Balance the number of threads per block with occupancy for the hardware
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for input and output to improve bandwidth usage
+// Avoid bank conflicts by ensuring proper memory alignment of input and output arrays
+// Minimize divergent branches, check boundary conditions before kernel launch
+// Consider prefetching data to registers to reduce latency
+// Utilize shared memory if appropriate to reduce global memory access
+```

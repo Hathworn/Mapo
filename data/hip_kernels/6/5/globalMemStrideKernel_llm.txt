@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to further reduce global memory accesses.
+// Use memory access patterns that ensure coalesced memory transactions.
+// Ensure stride is large enough to overlap memory latency with computation.
+// Minimize bank conflicts by aligning memory access with warp size.
+```

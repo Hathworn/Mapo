@@ -1,0 +1,7 @@
+```
+// Use shared memory for devDiff values accessed multiple times
+// Minimize index calculations inside the loop for efficiency
+// Use FLT_MAX directly for better performance and clarity
+// Prefer atomic operations to handle shared data safely
+// Minimize the number of times barriers are used to synchronize threads
+```

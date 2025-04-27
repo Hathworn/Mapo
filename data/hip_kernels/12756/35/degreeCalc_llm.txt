@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns for vertexArray and neighbourArray.
+// Optimize global memory access by using shared memory if accessing common elements.
+// For atomic operations, ensure they are necessary to avoid serialization bottlenecks.
+// Evaluate warp divergence, especially in conditional statements within kernel.
+// Use loop unrolling if applicable in processing continuous memory blocks.
+// Ensure memory accesses are aligned to improve memory transaction efficiency.
+// Prefetch data into registers to minimize repeated global memory access.
+```

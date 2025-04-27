@@ -1,0 +1,4 @@
+// Consider using shared memory to load inputs for better memory access patterns
+// Use memory coalescing when reading from adj and mask arrays
+// Implement loop unrolling in the loop over width for further performance gain
+// Ensure atomicAdd does not cause contention by optimizing access patterns

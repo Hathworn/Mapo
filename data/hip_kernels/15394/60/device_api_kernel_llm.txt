@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by aligning tid and output memory access
+// Avoid excessive hiprand_init calls by initializing localState only once per thread
+// Unroll the loop to reduce loop overhead and improve ILP (Instruction Level Parallelism)
+// Use shared memory if possible to reduce global memory access latency for temporary data
+// Optimize grid and block dimensions to maximize GPU occupancy
+```

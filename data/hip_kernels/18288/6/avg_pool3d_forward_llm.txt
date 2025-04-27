@@ -1,0 +1,6 @@
+```c
+// Utilize shared memory for nnCount to reduce global memory access
+// Load nnCount into shared memory to minimize data fetching latency
+// Use syncthreads for proper synchronization after loading into shared memory
+// Accumulate results in a local register to minimize global memory writes
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by processing contiguous elements
+// Minimize thread divergence by using a fixed stride within the loop
+// Consider using shared memory if accessing ma and mb repeatedly
+// Optimize use of registers by minimizing intermediate computations
+// Utilize occupancy calculator to optimize block size and threads per block
+```

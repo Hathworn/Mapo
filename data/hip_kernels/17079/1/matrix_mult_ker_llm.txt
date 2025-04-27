@@ -1,0 +1,11 @@
+```
+// Use __syncthreads() to ensure proper synchronization between threads
+// Avoid bank conflicts in shared memory by reorganizing data access patterns
+// Load data into shared memory in coalesced global memory access patterns
+// Minimize the number of __syncthreads() calls for better performance
+// Ensure matrix dimensions are multiples of TILE_WIDTH for full occupancy
+// Use loop unrolling in block-based multiplication for better performance
+// Consider padding shared memory arrays to avoid bank conflicts
+// Align shared memory access to ensure memory coalescing
+// Use conditional statements to avoid out-of-bound memory access
+```

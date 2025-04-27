@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns to improve memory bandwidth utilization.
+// Ensure thread workloads are balanced for maximum occupancy.
+// Minimize shared memory bank conflicts by adjusting data placement.
+// Use __restrict__ qualifiers for pointer parameters if applicable.
+// Prefetch data to registers to hide global memory latency.
+// Avoid warp divergence by ensuring threads within a warp follow the same execution path.
+// If applicable, use loop unrolling to reduce loop overhead and increase parallel execution.
+```

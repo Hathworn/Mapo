@@ -1,0 +1,5 @@
+```c
+// Use shared memory to reduce global memory access for bin_counters
+// Consider coalescing memory access for the bin array
+// Minimize thread divergence by ensuring warp threads execute similar operations
+```

@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by ensuring contiguous memory access patterns
+// Initialize out-of-bound threads to 0 to avoid invalid memory access
+// Perform in-place reduction in shared memory with loop unrolling to optimize computation
+// Unroll the final warp operations to reduce iteration overhead and eliminate unnecessary __syncthreads
+// Store the block's reduced result in global memory only from thread 0 to minimize global memory writes
+```

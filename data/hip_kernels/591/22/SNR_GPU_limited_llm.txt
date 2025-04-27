@@ -1,0 +1,9 @@
+```c
+// Use shared memory to reduce global memory accesses for d_MSD values.
+// Consider coalesced access patterns for d_FIR_input and d_SNR_output.
+// Avoid bank conflicts when accessing shared memory.
+// Minimize divergence caused by branch instructions.
+// Precompute invariant expressions outside of loops, especially those involving pos_x and pos_y.
+// Align memory accesses to ensure peak performance.
+// Use thread synchronization to manage shared memory if needed.
+```

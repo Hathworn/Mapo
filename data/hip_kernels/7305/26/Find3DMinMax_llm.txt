@@ -1,0 +1,9 @@
+```
+// Use shared memory for data caching to reduce global memory access latency
+// Minimize redundant calculations by caching values in thread registers
+// Perform clamped boundary checks to avoid out-of-bounds memory access
+// Optimize memory access patterns to ensure coalesced reads and writes
+// Use __syncthreads() to ensure proper synchronization between threads
+// Reduce conditional branching to optimize execution flow   
+// Use constant memory for frequently accessed data to optimize memory bandwidth
+```

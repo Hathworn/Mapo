@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing contiguous memory locations
+// Minimize divergent branches by reducing complexity of condition checks
+// Use __restrict__ qualifier for pointers if no aliasing is intended
+// Consider prefetching data to shared memory if reuse is expected
+// Use warp shuffle instructions to optimize intra-warp communications
+```

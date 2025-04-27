@@ -1,0 +1,4 @@
+// Use shared memory for frequent access data to reduce global memory access
+// Minimize bank conflicts in shared memory if using shared memory optimization
+// Consider use of vectorized loads/stores for improved memory bandwidth utilization
+// Explore cooperative groups for more efficient context-switching between threads

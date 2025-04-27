@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce global memory access latency.
+// Perform reduction in shared memory before a single thread writes back to global memory.
+// Utilize warp-level primitives for efficient intra-warp communication and reduction.
+// Align data accesses to benefit from coalesced memory access.
+// Ensure out is bank conflict-free in shared memory to optimize atomic operations.
+```

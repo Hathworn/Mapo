@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to cache x, y, z data to reduce global memory access latency.
+// Ensure coalesced global memory accesses by aligning data accesses for x, y, z, and result arrays.
+// Use __restrict__ keyword for pointers to improve compiler optimizations by indicating no aliasing.
+// Ensure optimal occupancy by choosing an appropriate block size based on the GPU architecture.
+```

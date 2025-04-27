@@ -1,0 +1,5 @@
+digraph "CFG for '_Z25batcherBitonicMergesort64PfPKf' function" {
+	label="CFG for '_Z25batcherBitonicMergesort64PfPKf' function";
+
+	Node0x56204c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds float, float addrspace(1)* %1, i64 %4\l  %6 = load float, float addrspace(1)* %5, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %7 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %3\l  store float %6, float addrspace(3)* %7, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %8 = load float, float addrspace(3)* %7, align 4, !tbaa !5\l  %9 = getelementptr inbounds float, float addrspace(1)* %0, i64 %4\l  store float %8, float addrspace(1)* %9, align 4, !tbaa !5\l  ret void\l}"];
+}

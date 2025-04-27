@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by aligning global memory writes
+// Use shared memory to cache frequently accessed data to reduce global memory latency
+// Evaluate the use of texture memory for optimized access patterns since the source image data is read-only
+// Pre-compute indices more efficiently to reduce calculation repetitions
+// Ensure blocks and threads are configured to maximize occupancy and minimize divergence
+```

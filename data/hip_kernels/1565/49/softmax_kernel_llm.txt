@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Use warp-level primitives to optimize reduction for finding the largest value
+// Consider loop unrolling to improve performance of tight loops
+// Use texture memory if input data is read-only and benefits from caching
+// Align memory accesses to increase coalesced memory transactions
+// Prefetch data to reduce memory latency where applicable
+// Optimize thread block size based on occupancy calculator for best performance
+```

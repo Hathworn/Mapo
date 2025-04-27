@@ -1,0 +1,5 @@
+```
+// Use coalesced memory accesses for better performance by ensuring sequential threads access sequential data locations
+// Consider using warp shuffle operations in reduction to minimize shared memory bank conflicts and synchronization overhead
+// Optimize memory footprint by reducing shared memory usage where possible, especially if the occupancy is low
+```

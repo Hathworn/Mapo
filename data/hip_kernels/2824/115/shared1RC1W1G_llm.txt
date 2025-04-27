@@ -1,0 +1,4 @@
+// Utilize shared memory effectively to reduce global memory accesses.
+// Avoid bank conflicts in shared memory for improved performance.
+// Direct use of threadIdx.x reduces the number of modulo operations.
+// Optimize access by minimizing arithmetic operations within the kernel.

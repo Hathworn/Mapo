@@ -1,0 +1,4 @@
+// Consider coalesced memory accesses by aligning data structures to warp boundaries.
+// Use shared memory to cache in_lod and num_erased elements within the block to reduce global memory accesses.
+// Eliminate divergent branches by using masked assignments when possible.
+// Prefetch relevant data to reduce memory latency and improve throughput.

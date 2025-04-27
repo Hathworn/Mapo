@@ -1,0 +1,8 @@
+```
+// Consider using a larger __shared__ memory for accumulating more elements
+// Reduce global memory access by utilizing __shared__ memory effectively
+// Ensure coalesced access to global memory wherever possible
+// Minimize use of atomic operations to avoid performance bottlenecks
+// Optimize block and grid dimensions for GPU occupancy
+// Verify alignment of memory accesses for improved efficiency
+```

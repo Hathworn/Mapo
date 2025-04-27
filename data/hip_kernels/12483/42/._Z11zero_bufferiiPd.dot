@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11zero_bufferiiPd' function" {
+	label="CFG for '_Z11zero_bufferiiPd' function";
+
+	Node0x4754f50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = mul nsw i32 %1, %0\l  %14 = icmp slt i32 %12, %13\l  br i1 %14, label %15, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x4754f50:s0 -> Node0x4755cb0;
+	Node0x4754f50:s1 -> Node0x4756f40;
+	Node0x4755cb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = sext i32 %12 to i64\l  %17 = getelementptr inbounds double, double addrspace(1)* %2, i64 %16\l  store double 0.000000e+00, double addrspace(1)* %17, align 8, !tbaa !7\l  br label %18\l}"];
+	Node0x4755cb0 -> Node0x4756f40;
+	Node0x4756f40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache out_delta values for each block to reduce global memory access.
+// Consider vectorized loads of out_delta using float4 for better memory coalescing.
+// Optimize memory access pattern by ensuring alignment and minimizing bank conflicts.
+// Use warp shuffling methods to share delta_part among threads to avoid redundant calculations.
+```

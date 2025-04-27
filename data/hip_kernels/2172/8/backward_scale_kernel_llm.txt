@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access latency
+// Optimize loop with loop unrolling to improve performance
+// Employ warp-level primitives like __shfl_down_sync() for reduction to reduce shared memory usage
+// Consider memory coalescing for accessing delta and x_norm
+```

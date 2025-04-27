@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to reduce global memory accesses if the data is reused
+// Minimize the number of powf function calls by unrolling loops if applicable
+// Ensure the grid and block sizes are optimized for the specific GPU architecture being used
+// Consider aligning data structures in memory to improve cache utilization
+```

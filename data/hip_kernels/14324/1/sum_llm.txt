@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for repeated access to global data
+// Optimize memory coalescing by ensuring data is accessed sequentially
+// Explore using vectorized memory access to reduce memory transactions
+// Assess usage of __restrict__ qualifier for pointer arguments
+// Utilize memory prefetching to hide latency in data fetching
+// Align data structures to cache line size for better cache usage
+// Balance the block size to optimize occupancy and avoid warp divergence
+```

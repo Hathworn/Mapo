@@ -1,0 +1,10 @@
+```
+// Consider coalescing reads from global memory by arranging data in a structure-of-arrays.
+// Optimize memory access patterns to improve throughput when reading u and v arrays.
+// Leverage shared memory to store per-block data for faster access and reduced global memory latency.
+// Use loop unrolling to reduce the number of iterations in the bounding check for tx and ty.
+// Prefetch data into registers to minimize latency during the computation of cx and cy.
+// Ensure memory alignment for better memory access efficiency and reduced memory transactions.
+// Evaluate the usage of warp shuffle functions to avoid bank conflicts in shared memory.
+// Consider adjusting block size to reach optimal occupancy and maximize shader performance.
+```

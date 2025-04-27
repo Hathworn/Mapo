@@ -1,0 +1,6 @@
+// Pre-compute constants like scale to reduce computational overhead within the kernel
+// Use efficient indexing calculations to minimize repeated computations within loop iterations
+// Consider padding memory or adjusting memory layout to optimize memory coalescing
+// Reduce arithmetic operations like using diff * diff instead of powf for better performance
+// Use shared memory to store frequently accessed data (e.g., mean) to reduce global memory access
+// Employ loop unrolling techniques if beneficial for batch and spatial loops

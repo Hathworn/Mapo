@@ -1,0 +1,9 @@
+```
+// Consider vectorizing data loads to coalesce memory access
+// Utilize shared memory to store intermediate results for reduction
+// Apply loop unrolling to improve computation throughput
+// Use __syncthreads to synchronize threads within a block
+// Ensure reduction is efficient by optimizing the shared memory usage
+// Perform warp-level reduction with volatile to ensure correct results
+// Reduce branch divergence in reduction loop
+```

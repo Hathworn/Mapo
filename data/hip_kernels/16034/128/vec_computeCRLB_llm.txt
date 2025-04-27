@@ -1,0 +1,8 @@
+```
+// Consider aligning memory access to improve coalescing
+// Use const __restrict__ pointers if applicable to enable better optimization
+// Ensure shared memory usage is limited to avoid resource constraints
+// Prefetch data to shared memory to optimize memory access patterns
+// Consider double buffering in shared memory for overlapping computation with memory transfer
+// Use warp shuffle instructions if applicable to reduce shared memory dependency
+```

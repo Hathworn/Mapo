@@ -1,0 +1,8 @@
+```cpp
+// Store stats[4] in a register to reduce memory access.
+// Compute clampedX using intermediate storage to save repeated calculations.
+// Use fmaxf and fminf to clamp values, reducing conditional branches.
+// Precalculate combinedVariance to minimize redundant operations.
+// Minimize the use of sqrtf by performing it only once when calculating variance.
+// Conditional blocks should be minimized to improve warp execution efficiency.
+```

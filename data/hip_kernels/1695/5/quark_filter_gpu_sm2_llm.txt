@@ -1,0 +1,4 @@
+// Use __restrict__ pointers to improve memory access patterns and reduce cache conflicts.
+// Ensure thread index calculations minimize warp divergence for performance optimization.
+// Consider unrolling loops if applicable to reduce control overhead in GPU threads.
+// Evaluate if shared memory usage can reduce global memory access latency.

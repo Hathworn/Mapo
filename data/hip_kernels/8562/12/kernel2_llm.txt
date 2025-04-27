@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access.
+// Optimize memory coalescing by ensuring threads within a warp access contiguous memory locations.
+// Check for bank conflicts in shared memory, if shared memory is incorporated.
+// Use __restrict__ keyword for pointers to allow compiler optimizations on memory access patterns.
+// Investigate loop unrolling if there are any loops for further optimization.

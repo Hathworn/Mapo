@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to minimize global memory accesses
+// Load data into shared memory in a coalesced manner
+// Ensure threads in a warp access consecutive memory addresses
+// Minimize __syncthreads() usage by reducing unnecessary synchronization
+// Prefetch data into shared memory to reduce idle time waiting for data
+// Align tile size with warp size to optimize memory bandwidth usage
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced accesses to global memory for improved performance
+// Minimize shared memory bank conflicts by proper data alignment
+// Use warp synchronous programming if applicable to reduce __syncthreads frequency
+// Ensure occupancy is maximized by selecting an appropriate block size
+// Avoid warp divergence by ensuring all threads within a warp follow the same execution path
+```

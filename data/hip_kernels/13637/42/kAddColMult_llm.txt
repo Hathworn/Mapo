@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses for vec array.
+// Employ memory coalescing by ensuring contiguous threads access contiguous memory locations in mat and tgtMat arrays.
+// Consider using warp shuffling to minimize divergent branches within the loop.

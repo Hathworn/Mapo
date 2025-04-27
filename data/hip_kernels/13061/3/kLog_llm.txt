@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by aligning data structures
+// Reduce global memory access by caching frequently used values in shared memory
+// Consider using warp-level primitives to optimize computation across threads within a warp
+// Use __logf for fast computation assuming input values are within its range for better performance

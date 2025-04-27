@@ -1,0 +1,13 @@
+digraph "CFG for '_Z29findPartIndicesNegStartKerneliPiS_' function" {
+	label="CFG for '_Z29findPartIndicesNegStartKerneliPiS_' function";
+
+	Node0x55e6180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = add i32 %12, 1\l  %14 = icmp slt i32 %13, %0\l  br i1 %14, label %15, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x55e6180:s0 -> Node0x55e8150;
+	Node0x55e6180:s1 -> Node0x55e81e0;
+	Node0x55e8150 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%15:\l15:                                               \l  %16 = sext i32 %13 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %19 = add i32 %12, 2\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %23 = icmp eq i32 %18, %22\l  br i1 %23, label %28, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x55e8150:s0 -> Node0x55e81e0;
+	Node0x55e8150:s1 -> Node0x55e95f0;
+	Node0x55e95f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%24:\l24:                                               \l  %25 = add nsw i32 %18, 1\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %26\l  store i32 %13, i32 addrspace(1)* %27, align 4, !tbaa !7\l  br label %28\l}"];
+	Node0x55e95f0 -> Node0x55e81e0;
+	Node0x55e81e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

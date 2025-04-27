@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache columns and reduce global memory accesses
+// Consider coalescing global memory accesses for better performance
+// Avoid divergence in warp by ensuring all threads follow similar execution paths
+// Optimize loop unrolling to reduce loop overhead
+// Check for memory bank conflicts in shared memory access
+```

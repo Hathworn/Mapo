@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory transactions
+// Ensure one thread per block performs atomic operation on global sum
+// Explore memory coalescing opportunities within stride loop
+// Consider optimizing thread block and grid sizes
+// Evaluate using warp-level primitives for reduction
+```

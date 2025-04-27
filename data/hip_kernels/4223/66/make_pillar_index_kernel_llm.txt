@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses by restructuring array indices to improve memory throughput.
+// Utilize shared memory to store frequently accessed data such as dev_pillar_count_histo for faster access.
+// Minimize atomic operations by batching updates or revisiting how dev_counter is utilized.
+// Investigate memory access patterns for dev_sparse_pillar_map to ensure efficient updates.

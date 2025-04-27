@@ -1,0 +1,5 @@
+// Use shared memory for table if frequently accessed
+// Prefetch inputs into local variables for coalesced access
+// Align memory accesses to improve coalescing
+// Consider using texture memory for table for better cache behavior
+// Use vectorized loads and stores for wider data handling

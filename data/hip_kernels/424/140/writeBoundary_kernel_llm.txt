@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access where possible
+// Consider coalesced memory access patterns when reading from d_startArray and d_startSumArray
+// Ensure warp divergence is minimized in if-else branches
+// Use __restrict__ keyword for pointer parameters if possible to enable compiler optimizations
+// Experiment with launching the kernel with different block sizes to find optimal performance
+```

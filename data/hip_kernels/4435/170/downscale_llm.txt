@@ -1,0 +1,5 @@
+// Consider using __restrict__ pointers for gradInput_data and gradOutput_data to improve memory access patterns.
+// Use shared memory to cache commonly accessed data within the thread block to reduce global memory traffic.
+// Optimize memory access by coalescing global memory reads and writes, ensuring threads access contiguous memory addresses.
+// Investigate using texture memory for read-only data to potentially improve memory read throughput.
+// Consider implementing asynchronous data transfer techniques like double buffering to overlap computation and data transfer.

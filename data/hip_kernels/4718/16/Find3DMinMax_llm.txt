@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache data for faster access and reduce global memory transactions.
+// Ensure threads synchronize after loading data into shared memory to prevent race conditions.
+// Use warp-level optimizations by accessing memory positions based on WARP_SIZE.
+// Implement memory coalescing by aligning threads' memory accesses to avoid serialization.
+// Avoid unnecessary calculations outside of valid x range to reduce computation overhead.
+// Restrict thread computations and output updating to clamped and valid x positions.
+// Reduce conditional branching to optimize kernel execution time.
+```

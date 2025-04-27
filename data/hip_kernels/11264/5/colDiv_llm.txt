@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Ensure memory coalescing by accessing memory in a linear and consecutive manner
+// Assign more work to each thread to hide memory latency
+// Check for potential bank conflicts in shared memory usage
+// Consider loop unrolling for repeated operations within threads
+```

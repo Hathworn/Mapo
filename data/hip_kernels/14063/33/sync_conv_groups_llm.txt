@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Coalesce global memory accesses to improve memory bandwidth
+// Use vectorized data types to optimize memory throughput
+// Minimize divergence in warp execution for better performance
+// Prefetch data into registers to hide memory latency
+// Utilize constant memory for read-only data access pattern
+// Align data structures to improve access efficiency
+// Verify occupancy to ensure enough threads per block are used
+```

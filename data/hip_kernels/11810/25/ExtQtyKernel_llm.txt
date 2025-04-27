@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency
+// Consider coalescing memory accesses for better memory throughput
+// Ensure memory alignment to improve access times
+// Minimize register usage to increase occupancy
+// Use loop unrolling for better parallel performance
+// Check for warp divergence and optimize conditional logic

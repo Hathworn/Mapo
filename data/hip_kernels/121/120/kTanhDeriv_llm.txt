@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by organizing data linearly in global memory
+// Consider using shared memory if multiple threads need to access the same data
+// Optimize divergent branching by ensuring all threads in a warp take the same execution path
+// Ensure memory accesses are aligned to improve performance
+// Explore using vectorized loads if hardware supports it for further optimization
+```

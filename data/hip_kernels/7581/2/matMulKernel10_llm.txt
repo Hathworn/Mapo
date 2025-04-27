@@ -1,0 +1,7 @@
+```
+// Ensure the use of shared memory to minimize global memory accesses
+// Use thread block size to match the tile size for efficient memory access
+// Utilize the __syncthreads() function to synchronize threads after loading tiles
+// Consider using loop unrolling to improve performance where applicable
+// Optimize data alignment in shared memory for better memory coalescing
+```

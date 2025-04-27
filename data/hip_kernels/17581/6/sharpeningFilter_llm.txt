@@ -1,0 +1,8 @@
+```
+// Use shared memory to store frequently accessed kernel to reduce global memory accesses
+// Ensure all threads have loaded the kernel in shared memory before proceeding with computations
+// Check bounds to prevent out-of-bounds access which could lead to undefined behavior
+// Minimize use of branching or conditionals inside the main computation loop for efficiency
+// Consider using loop unrolling to optimize the convolution loops
+// Ensure thread and block dimensions are configured to optimize coalesced memory access
+```

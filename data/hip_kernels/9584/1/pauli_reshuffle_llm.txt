@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for pointers to improve memory access efficiency.
+// Use shared memory to cache frequently accessed data and reduce global memory traffic.
+// Align memory accesses to improve coalescing and reduce memory transaction overhead.
+// Evaluate if loop unrolling improves performance for address calculations.
+// Utilize warp shuffles to minimize the need for global or shared memory for data exchange.
+// Consider using constant memory for any values that remain unchanged across kernel executions.
+```

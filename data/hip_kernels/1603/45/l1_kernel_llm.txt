@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access patterns to maximize coalescing
+// Ensure pred, truth, delta, and error arrays are correctly aligned in memory
+// Evaluate using shared memory if n is too large for efficient global memory access
+// Potentially use texture memory for read-only data like pred and truth for faster accesses
+// Experiment with different block and thread configurations to find optimal performance
+```

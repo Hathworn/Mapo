@@ -1,0 +1,8 @@
+```
+// Minimize memory accesses by calculating base index outside the inner loop.
+// Use __restrict__ qualifier to enable potential compiler optimizations.
+// Ensure coalesced memory access patterns by proper data layout.
+// Prefetch data to shared memory if reuse can benefit performance.
+// Use float4 for vectorized loads/stores if applicable to improve bandwidth.
+// Consider loop unrolling if the loop count is a constant.
+```

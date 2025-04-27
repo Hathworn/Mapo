@@ -1,0 +1,7 @@
+```cpp
+// Use thread_stride and loop unrolling for performance improvement
+// Optimize memory access by ensuring coalesced reads of delta and x_norm
+// Use shared memory to reduce global memory access
+// Use __syncthreads to synchronize threads before reduction
+// Minimize contention using atomicAdd only when necessary
+```

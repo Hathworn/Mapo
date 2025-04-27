@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache row sums for better memory access patterns
+// Reduce global memory reads by loading row_sum into shared memory
+// Ensure memory coalescing by having contiguous threads access contiguous memory locations in col_sum
+// Consider using vectorized loads/stores for col_sum if possible
+// Balance the workload across threads to utilize available processing power
+```

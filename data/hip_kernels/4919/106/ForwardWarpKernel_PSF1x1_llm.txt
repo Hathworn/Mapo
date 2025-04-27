@@ -1,0 +1,5 @@
+// Use shared memory to minimize redundant accesses to global memory.
+// Coalesce global memory access by reorganizing data layout or thread indexing.
+// Consider using texture or surface memory for `src` if data exhibits spatial locality.
+// Cache values like `flow_row_offset` and `image_row_offset` in registers to reduce global memory access.
+// Merge branch condition checks into warp-wide predication where appropriate.

@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access when reading from global memory into shared memory
+// Minimize use of __syncthreads() for efficiency where possible
+// Optimize loop unrolling for the inclusive scan within block
+// Consider offsetting shared memory reads to reduce bank conflicts
+// Use coalesced memory access patterns when writing results to global memory
+// Aggregate results efficiently to minimize unnecessary reads during accumulation
+```

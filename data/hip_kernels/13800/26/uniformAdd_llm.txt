@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Load only once from global to shared memory per block
+// Ensure memory coalescing by accessing consecutive memory locations
+// Avoid unnecessary global memory accesses by using the second element check

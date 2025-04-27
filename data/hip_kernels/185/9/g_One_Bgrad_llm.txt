@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory access.
+// Minimize synchronization by using a single synchronization after reduction.
+// Perform reduction in-place within shared memory.
+// Ensure coalesced memory access when reading _delta.
+```

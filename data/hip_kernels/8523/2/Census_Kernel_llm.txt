@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses for neighboring pixel values.
+// Use coalesced memory access patterns to improve global memory bandwidth utilization.
+// Apply loop unrolling to optimize the internal loops, as done in the #pragma unroll directive.
+// Consider optimizing conditional branches to minimize divergence within warps.
+// Explore warp-level parallelism to improve performance when accessing neighboring pixel values.

@@ -1,0 +1,4 @@
+// Use shared memory for bias to reduce global memory access
+// Consider unrolling the loop for improved performance
+// Allocate memory in contiguous blocks for better cache access
+// Ensure coalesced access patterns for preact array

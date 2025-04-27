@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data accessed multiple times to reduce global memory access
+// Ensure memory coalescing by keeping consecutive threads accessing consecutive memory locations
+// Use __restrict__ qualifiers correctly to assist the compiler with optimizing memory access
+// Optimize the loop further by increasing unroll factor if registers allow, considering register pressure
+// Check boundary conditions to ensure all threads have valid data access, avoiding warp divergence
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Consider using shared memory to reduce global memory access latency.
+// Minimize divergent branches by ensuring uniform code paths across threads.
+// Use the __restrict__ keyword for pointers to help the compiler with optimizations.
+// Consider loop unrolling to increase instruction-level parallelism.
+```

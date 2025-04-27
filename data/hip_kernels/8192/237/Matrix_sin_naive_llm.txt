@@ -1,0 +1,6 @@
+```plaintext
+// Use shared memory to cache data if input matrix A is accessed multiple times to reduce global memory accesses.
+// Utilize coalesced memory access patterns to improve memory throughput where possible.
+// Consider prefetching elements of matrix A to registers before computation to hide memory latency.
+// Ensure appropriate grid and block sizes to maximize GPU occupancy and resource utilization.
+```

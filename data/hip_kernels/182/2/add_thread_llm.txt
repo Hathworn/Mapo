@@ -1,0 +1,7 @@
+```
+// Optimize global memory access by using shared memory for frequently used data
+// Ensure coalesced memory access for input arrays a and b
+// Consider loop unrolling if applicable for increased performance
+// Avoid divergent branches by ensuring index computations are uniform
+// Use __restrict__ pointers if there's no aliasing to improve load/store efficiency
+```

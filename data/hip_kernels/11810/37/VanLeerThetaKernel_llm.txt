@@ -1,0 +1,4 @@
+// Consider using shared memory to store Rsup, Rinf, Surf, QRStar, DensStar, and Vazimutal_d for faster access.
+// Use loop unrolling to reduce the overhead of conditional checks and increment operations.
+// Check if the data can be pre-loaded into registers to minimize global memory access.
+// Evaluate the need for atomic operations to prevent race conditions on Qbase updates.

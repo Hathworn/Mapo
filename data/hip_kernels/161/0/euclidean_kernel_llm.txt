@@ -1,0 +1,4 @@
+// Use shared memory for temporary storage to reduce global memory accesses.
+// Divide k among threads in the block to ensure coalesced memory access patterns.
+// Use __syncthreads() effectively to ensure proper memory transactions between threads.
+// Perform reduction with fewer synchronization points for better parallelism.

@@ -1,0 +1,18 @@
+digraph "CFG for '_Z12IFD_boundaryiPddd' function" {
+	label="CFG for '_Z12IFD_boundaryiPddd' function";
+
+	Node0x4672120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add i32 %12, %5\l  %14 = icmp slt i32 %13, %0\l  br i1 %14, label %15, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x4672120:s0 -> Node0x4673fc0;
+	Node0x4672120:s1 -> Node0x4674050;
+	Node0x4673fc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%15:\l15:                                               \l  %16 = icmp eq i32 %13, 0\l  br i1 %16, label %17, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x4673fc0:s0 -> Node0x46737f0;
+	Node0x4673fc0:s1 -> Node0x4674330;
+	Node0x46737f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%17:\l17:                                               \l  store double %2, double addrspace(1)* %1, align 8, !tbaa !7\l  br label %24\l}"];
+	Node0x46737f0 -> Node0x4674050;
+	Node0x4674330 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%18:\l18:                                               \l  %19 = add nsw i32 %0, -1\l  %20 = icmp eq i32 %13, %19\l  br i1 %20, label %21, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x4674330:s0 -> Node0x46747b0;
+	Node0x4674330:s1 -> Node0x4674050;
+	Node0x46747b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%21:\l21:                                               \l  %22 = sext i32 %13 to i64\l  %23 = getelementptr inbounds double, double addrspace(1)* %1, i64 %22\l  store double 0.000000e+00, double addrspace(1)* %23, align 8, !tbaa !7\l  br label %24\l}"];
+	Node0x46747b0 -> Node0x4674050;
+	Node0x4674050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  ret void\l}"];
+}

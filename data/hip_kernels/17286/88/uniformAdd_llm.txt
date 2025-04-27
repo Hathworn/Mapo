@@ -1,0 +1,6 @@
+```
+// Load the uniform value into shared memory at the beginning to reduce redundant global memory accesses
+// Simplify address calculation to reduce instruction overhead
+// Use __syncthreads() to ensure all threads have loaded the uniform value before proceeding
+// Combine conditional checks to minimize branching and improve control flow
+```

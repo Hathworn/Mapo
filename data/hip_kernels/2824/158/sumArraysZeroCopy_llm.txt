@@ -1,0 +1,5 @@
+// Consider using coalesced memory access for A and B
+// Optimize the block size to ensure all threads fill shared memory blocks efficiently
+// Reduce conditional branching to improve performance
+// Pre-fetch data into shared memory to hide memory latency
+// Use __syncthreads() judiciously to prevent unnecessary synchronization overhead

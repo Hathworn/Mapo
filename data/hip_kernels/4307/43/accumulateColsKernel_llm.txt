@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Avoid casting between float and double to improve memory coalescing.
+// Ensure memory access patterns are contiguous to maximize coalesced access.
+// Optimize block and grid dimensions for better occupancy and load balancing.
+// Evaluate unrolling the loop to improve instruction-level parallelism.
+```

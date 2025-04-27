@@ -1,0 +1,5 @@
+// Move common calculations out of conditional branches for better efficiency.
+// Consider using shared memory to reduce global memory access latency.
+// Minimize bank conflicts by ensuring memory accesses are aligned and coalesced.
+// Evaluate the use of constant memory for frequently accessed, read-only data.
+// Try to maximize occupancy by choosing optimal block and grid sizes.

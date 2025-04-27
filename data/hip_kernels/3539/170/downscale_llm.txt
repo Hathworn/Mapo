@@ -1,0 +1,6 @@
+```cpp
+// Avoid recalculating d2 and d3 scalings for each loop iteration
+// Use local variable for aggregation
+// Accumulate results in local memory
+// Only update global memory once per thread
+```

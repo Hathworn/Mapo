@@ -1,0 +1,4 @@
+// Consider coalesced memory access pattern to reduce latency.
+// Utilize __restrict__ keyword for pointer arguments to improve compiler optimization.
+// Prefer shared memory over global memory for repeated access within the kernel.
+// Examine warp efficiency and occupancy to ensure optimal use of the GPU resources.

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access
+// Minimize control divergence by ensuring conditions lead to similar execution paths
+// Align memory access patterns to maximize coalescing
+// Consider using atomic operations if updates to the matrix overlap

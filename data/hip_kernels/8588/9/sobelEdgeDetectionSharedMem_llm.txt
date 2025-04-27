@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns by using shared memory to reduce global memory traffic.
+// Ensure data alignment when accessing shared memory to maximize memory throughput.
+// Consider padding shared memory to avoid bank conflicts and align data access.
+// Use __syncthreads() carefully to synchronize threads after shared memory loading.
+// Reduce conditional statements within the kernel for faster execution.
+// Balance computational load across threads to avoid divergence and improve efficiency.
+```

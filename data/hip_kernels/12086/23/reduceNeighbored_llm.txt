@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for input data to optimize memory access
+// Reduce unnecessary memory accesses by loading data into shared memory once
+// Use warp shuffle instructions if supported to reduce synchronization overhead
+// Check if all threads in a warp need synchronization to reduce __syncthreads() calls
+```

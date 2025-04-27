@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access while loading data into shared memory
+// Use padding to avoid bank conflicts in shared memory
+// Ensure global memory access pattern is coalesced for output
+// Use __syncthreads() to synchronize threads after loading data
+// Check boundary conditions to avoid out-of-bounds memory access
+```

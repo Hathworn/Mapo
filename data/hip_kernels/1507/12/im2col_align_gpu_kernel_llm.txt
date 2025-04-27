@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache commonly accessed data_im_ptr if necessary
+// Consider unrolling the inner loop for ksize to improve instruction throughput
+// Ensure memory accesses are coalesced for both data_im and data_col
+// Eliminate redundant calculations and reuse computed indices
+// Align data accesses on 32-byte boundaries to optimize memory transactions
+```

@@ -1,0 +1,6 @@
+```
+// Leverage coalesced memory access by ensuring input arrays are aligned and accessed sequentially
+// Consider using shared memory if the input data can be reused across threads to reduce global memory access
+// Use __restrict__ keyword as done to inform the compiler there are no aliasing pointers, which allows for better optimization
+// Optimize block size to ensure high occupancy and minimize memory latency
+```

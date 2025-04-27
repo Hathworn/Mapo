@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access for 'generated_out' array
+// Ensure proper alignment for 'state' to improve access efficiency
+// Evaluate the use of shared memory if applicable for 'state' to reduce global memory accesses
+// Use __restrict__ keyword if applicable to inform the compiler of non-aliasing
+// Minimize divergence by aligning warp size of blockDim.x where possible
+```

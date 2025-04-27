@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access times
+// Preload MSD_DIT_widths into shared memory if it is frequently accessed
+// Align data access patterns to warp boundaries to minimize bank conflicts
+// Coalesce global memory accesses to improve throughput
+// Ensure variable initializations prevent uncoalesced access

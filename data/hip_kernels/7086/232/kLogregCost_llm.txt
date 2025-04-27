@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns when accessing 'probs' and 'maxProbs' to improve memory bandwidth utilization.
+// Consider using shared memory to cache frequently accessed data like 'maxProbs' to reduce global memory access latency.
+// Ensure that access to 'labelLogProbs' and 'correctProbs' is coalesced.
+// Reduce divergent branching by aligning computations that can be processed in parallel.
+```

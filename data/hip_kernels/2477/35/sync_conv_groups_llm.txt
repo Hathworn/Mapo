@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access when operations are added
+// Ensure memory coalescing for better memory access efficiency
+// Minimize __syncthreads() usage for performance optimization
+// Group computations to reduce warp divergence if future logic involves conditional statements

@@ -1,0 +1,7 @@
+```c
+// Cache sequence lengths in registers to reduce global memory accesses.
+// Use shared memory efficiently to minimize global memory transactions.
+// Utilize atomic operations sparingly to prevent performance bottlenecks.
+// Align memory accesses to increase transaction efficiency and coalescing.
+// Balance workload across threads to avoid warp divergence.
+```

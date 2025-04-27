@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing by aligning input_k and target_k accesses
+// Evaluate if using shared memory efficiently reduces the number of global memory accesses
+// Consider unrolling more if hardware resources allow, e.g., by a factor greater than 4
+// Prioritize warp-synchronous programming to minimize shared memory usage
+// Ensure atomicAdd does not become a bottleneck; consider hierarchical reduction or atomic operations per block
+```

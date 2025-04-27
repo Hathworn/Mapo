@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store partial sums to reduce global memory accesses.
+// Reduce the loop iterations by processing multiple elements per thread if possible.
+// Use atomic operations if updating global memory from multiple threads to ensure correctness.
+// Ensure coalesced memory access by aligning data structures and accessing memory in contiguous patterns.
+// Explore the use of warp-level primitives to further optimize reduction operations.
+```

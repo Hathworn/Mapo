@@ -1,0 +1,6 @@
+// Consider using float2 or float4 vectors for memory coalescing
+// Ensure memory alignment by padding arrays if necessary
+// Prefetch data to shared memory before the computation loop
+// Minimize shared memory bank conflicts by adjusting data layout
+// Use atomic operations for reduction if possible to prevent synchronization barriers
+// Assess the effect of loop unrolling at different levels of iteration

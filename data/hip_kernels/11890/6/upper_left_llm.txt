@@ -1,0 +1,5 @@
+```
+// Use shared memory for input_itemsets to reduce global memory access
+// Access input_itemsets array in coalesced manner to improve bandwidth
+// Pre-fetch reference values to registers to minimize redundant global reads
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache yGrad for coalesced memory access.
+// Ensure that xStride is properly aligned to improve access patterns.
+// Evaluate thread block sizes to match the memory access pattern and SM occupancy.
+// Minimize use of atomic operations by restructuring data or using warp shuffling.
+```

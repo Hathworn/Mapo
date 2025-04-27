@@ -1,0 +1,7 @@
+```
+// Use local variable `grid_stride` to reduce grid calculation per iteration
+// Unroll the loop to increase instruction level parallelism if possible
+// Prefetch input data `Ar` using shared memory to reduce global memory access latency
+// Consider using cooperative groups for dynamic parallelism and better synchronization
+// Coalesce memory accesses for `A_out` to improve memory throughput
+```

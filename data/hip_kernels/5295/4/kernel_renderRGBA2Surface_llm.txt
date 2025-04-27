@@ -1,0 +1,8 @@
+```
+// Consider increasing shared memory size or using dynamic shared memory for larger data
+// Prefetch data into shared memory to optimize memory access patterns
+// Ensure coalesced memory access by aligning data to cache line size
+// Avoid bank conflicts in shared memory by accessing it in a structured way
+// Use __ldg intrinsic for read-only data to benefit from GPU memory caches
+// Use __syncthreads() to avoid race conditions after writing to shared memory
+```

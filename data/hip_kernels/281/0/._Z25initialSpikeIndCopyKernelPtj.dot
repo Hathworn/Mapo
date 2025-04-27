@@ -1,0 +1,10 @@
+digraph "CFG for '_Z25initialSpikeIndCopyKernelPtj' function" {
+	label="CFG for '_Z25initialSpikeIndCopyKernelPtj' function";
+
+	Node0x5e63f80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = add i32 %10, %3\l  %12 = freeze i32 %11\l  %13 = mul i32 %1, 3\l  %14 = icmp ult i32 %12, %13\l  br i1 %14, label %15, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x5e63f80:s0 -> Node0x5e65fc0;
+	Node0x5e63f80:s1 -> Node0x5e66050;
+	Node0x5e65fc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = urem i32 %12, %1\l  %17 = sub nuw i32 %12, %16\l  %18 = zext i32 %17 to i64\l  %19 = getelementptr inbounds i16, i16 addrspace(1)* %0, i64 %18\l  %20 = load i16, i16 addrspace(1)* %19, align 2, !tbaa !7, !amdgpu.noclobber\l... !6\l  %21 = zext i32 %12 to i64\l  %22 = getelementptr inbounds i16, i16 addrspace(1)* %0, i64 %21\l  store i16 %20, i16 addrspace(1)* %22, align 2, !tbaa !7\l  br label %23\l}"];
+	Node0x5e65fc0 -> Node0x5e66050;
+	Node0x5e66050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%23:\l23:                                               \l  ret void\l}"];
+}

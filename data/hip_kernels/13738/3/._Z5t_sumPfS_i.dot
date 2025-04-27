@@ -1,0 +1,15 @@
+digraph "CFG for '_Z5t_sumPfS_i' function" {
+	label="CFG for '_Z5t_sumPfS_i' function";
+
+	Node0x56c5150 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp eq i32 %12, 0\l  br i1 %13, label %14, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x56c5150:s0 -> Node0x56c7060;
+	Node0x56c5150:s1 -> Node0x56c70f0;
+	Node0x56c7060 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%14:\l14:                                               \l  store float 0.000000e+00, float addrspace(1)* %1, align 4, !tbaa !7\l  br label %15\l}"];
+	Node0x56c7060 -> Node0x56c70f0;
+	Node0x56c70f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %16 = icmp slt i32 %12, %2\l  br i1 %16, label %17, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x56c70f0:s0 -> Node0x56c6910;
+	Node0x56c70f0:s1 -> Node0x56c82f0;
+	Node0x56c6910 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{%17:\l17:                                               \l  %18 = sext i32 %12 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7\l  %21 = atomicrmw fadd float addrspace(1)* %1, float %20\l... syncscope(\"agent-one-as\") monotonic, align 4\l  br label %22\l}"];
+	Node0x56c6910 -> Node0x56c82f0;
+	Node0x56c82f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access
+// Align memory allocations to improve coalescing
+// Minimize divergent branches in conditional statements
+// Prefer const memory for read-only data frequently used by threads

@@ -1,0 +1,7 @@
+```
+// Use a common pattern that calculates only within bounds to avoid unneeded checks
+// Consider coalesced memory accesses for better memory throughput
+// Use shared memory if multiple accesses to the same data within a block occur
+// Reduce global memory transactions by reusing data in registers whenever possible
+// Use warp-level primitives to optimize reductions or collective operations
+```

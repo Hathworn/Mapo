@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access for g_uquery and g_vpoint to improve memory performance.
+// Investigate shared memory bank conflicts in kindexes and kdistances and adjust to minimize them.
+// Use __restrict__ qualifiers on g_uquery and g_vpointset for potential performance gains on read-only data.
+// Evaluate the use of warp shuffle functions to eliminate __syncthreads() where possible for performance gains.
+// Ensure all memory accesses are aligned to improve throughput.
+```

@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses by ensuring contiguous memory read/writes.
+// Avoid unnecessary recalculation of thread and block indices.
+// Minimize global memory traffic by using shared memory if applicable.
+// Consider using __restrict__ to help the compiler with aliasing optimizations.
+// Utilize warp-level optimization if the algorithm permits.
+```

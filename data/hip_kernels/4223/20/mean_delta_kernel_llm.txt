@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache accesses to delta and reduce global memory access.
+// Use loop unrolling within the inner loop for greater efficiency.
+// Optimize memory coalescing by ensuring delta accesses are aligned and contiguous.
+// Minimize divergence by ensuring kernels are executed with enough occupancy.
+// Ensure variance is loaded once per filter to minimize redundant global memory reads.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Use vectorized loads if data alignment allows
+// Ensure blocks are fully utilized by maximizing occupancy
+// Use warp-level primitives to optimize reduction operations if applicable
+// Consider loop unrolling for stride-based memory access patterns
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access by ensuring contiguous threads access contiguous memory addresses
+// Use shared memory to reduce global memory accesses and improve performance
+// Unroll loops to reduce loop overhead and improve the instruction pipeline
+// Ensure alignment of data structures to enable optimal memory transactions
+// Avoid bank conflicts when accessing shared memory by considering memory layout and access patterns
+// Minimize divergent branching to maintain warp efficiency
+```

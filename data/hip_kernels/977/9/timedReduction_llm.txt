@@ -1,0 +1,8 @@
+```
+// Ensure alignment of memory access to improve coalescing
+// Minimize thread divergence by keeping warp execution paths aligned
+// Consider loop unrolling for further performance gain
+// Ensure shared memory is used efficiently to avoid bank conflicts
+// Use __syncthreads() judiciously to synchronize threads
+// Store result directly to global memory to reduce redundant operations
+```

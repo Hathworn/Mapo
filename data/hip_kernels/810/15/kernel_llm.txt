@@ -1,0 +1,7 @@
+```
+// Consider aligning memory for F and D to improve memory access efficiency
+// Ensure data is accessed in a coalesced manner to reduce global memory transactions
+// Use __shared__ memory if frequent access to F and D is needed across threads
+// Minimize the number of blocks if only a small number of threads need to update F and D
+// Use appropriate data types for F and D considering computation precision and memory size
+```

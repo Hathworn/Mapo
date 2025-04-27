@@ -1,0 +1,6 @@
+```
+// Optimize memory coalescing when accessing ma and mb by ensuring continuous memory access
+// Consider increasing the block size to enhance parallelism and better utilize the GPU
+// Ensure shared memory usage is within hardware limits to avoid bank conflicts
+// Use __syncthreads() only when necessary to reduce synchronization overhead
+```

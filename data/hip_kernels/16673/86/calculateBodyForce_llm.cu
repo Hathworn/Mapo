@@ -1,0 +1,43 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+__global__ void calculateBodyForce(float4 *p, float4 *v, float dt, int n) {
+    int i = blockDim.x * blockIdx.x + threadIdx.x;
+    if (i < n) {
+        float Fx = 0.0f;
+        float Fy = 0.0f;
+        float Fz = 0.0f;
+
+        float3 myPosition = make_float3(p[i].x, p[i].y, p[i].z); // Preload current position
+
+        for (int tile = 0; tile < gridDim.x; tile++) {
+            __shared__ float3 shared_position[BLOCK_SIZE];
+            if (threadIdx.x < BLOCK_SIZE && tile * blockDim.x + threadIdx.x < n) {
+                // Load to shared memory
+                float4 temp_position = p[tile * blockDim.x + threadIdx.x];
+                shared_position[threadIdx.x] = make_float3(temp_position.x, temp_position.y, temp_position.z);
+            }
+            __syncthreads();
+
+            for (int j = 0; j < BLOCK_SIZE; j++) {
+                if (tile * blockDim.x + j < n) { // Avoid out-of-bounds
+                    float dx = shared_position[j].x - myPosition.x;
+                    float dy = shared_position[j].y - myPosition.y;
+                    float dz = shared_position[j].z - myPosition.z;
+                    float distSqr = dx*dx + dy*dy + dz*dz + SOFTENING;
+                    float invDist = rsqrtf(distSqr);
+                    float invDist3 = invDist * invDist * invDist;
+
+                    Fx += dx * invDist3;
+                    Fy += dy * invDist3;
+                    Fz += dz * invDist3;
+                }
+            }
+            __syncthreads();
+        }
+
+        // Update velocities
+        v[i].x += dt * Fx;
+        v[i].y += dt * Fy;
+        v[i].z += dt * Fz;
+    }
+}

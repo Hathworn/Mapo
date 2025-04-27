@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for vectsA and vectsB.
+// Optimize for the shared memory usage to reduce bank conflicts.
+// Utilize __restrict__ pointer qualifiers for input parameters to improve compiler optimizations.
+// Ensure all threads contribute to the final reduction using warp-level primitives (e.g., __shfl_down_sync).
+// Optimize memory access by aligning data structures to cache line sizes.
+```

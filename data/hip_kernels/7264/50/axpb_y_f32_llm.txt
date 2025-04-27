@@ -1,0 +1,6 @@
+```
+// Use shared memory for caching x[idx] values if multiple accesses are needed
+// Ensure coalesced memory access for y[idx] by assigning contiguous memory locations to consecutive threads
+// Consider loop unrolling if idx operation can be broken into smaller independent tasks
+// Evaluate using texture memory for x and y arrays if it improves access latency
+```

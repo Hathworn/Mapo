@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access to improve throughput
+// Ensure that the data arrays 'a' and 'b' are aligned to avoid misaligned memory access
+// Consider using shared memory if multiple accesses to the same data are required
+// Optimize grid and block dimensions for better occupancy
+// Utilize multiple streams if performing other independent tasks
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses for frequently used values
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations
+// Ensure that beta is read from constant memory to take advantage of faster access times
+// Minimize the number of accesses to global memory by using registers to store temporary computations
+// Use loop unrolling if applicable to reduce overhead caused by loop control
+// Balance workload across blocks and threads to maximize occupancy and utilization
+```

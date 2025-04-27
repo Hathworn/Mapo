@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory accesses for A and B
+// Use __syncthreads() to synchronize threads before computation
+// Prefetch data into shared memory to hide global memory latency
+```

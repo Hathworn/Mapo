@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Loop unrolling improves memory throughput by processing multiple elements per thread
+// Align memory access and reduce bank conflicts with shared memory
+// Memory access coalescing to improve access patterns
+// Minimize warp divergence by keeping warp reductions in volatile memory

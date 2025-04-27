@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring hiprandState is accessed coalesced
+// Minimize bank conflicts in shared memory usage if applicable
+// Consider using warp-level primitives for synchronization and data sharing
+// Utilize appropriate block and grid sizes for better occupancy and resource utilization
+// Ensure seed value is varied enough to generate diverse random numbers
+```

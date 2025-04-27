@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using shared memory to store res_stride and index arrays
+// Consider utilizing vectorized loads and stores for res and src arrays to improve memory throughput
+// Utilize coalesced memory access for src and res arrays to reduce memory transaction overhead
+// Investigate use of atomic operations where necessary to prevent race conditions
+// Evaluate warp-level primitives to maximize parallel compute efficiency and reduce divergence
+// Review kernel launch configuration to ensure maximum occupancy and minimize warp execution latency
+```

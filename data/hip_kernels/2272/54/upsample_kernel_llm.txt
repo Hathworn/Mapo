@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced access by aligning data structure to warp size
+// Optimize memory access patterns through shared memory usage
+// Minimize usage of atomic operations if possible, or use finer granularity
+// Pre-calculate stride as a constant outside the loop for optimization
+// Ensure appropriate grid and block size to maximize occupancy and minimize divergence
+```

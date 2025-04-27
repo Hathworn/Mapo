@@ -1,0 +1,3 @@
+// Consider using shared memory to reduce redundant global memory accesses
+// Ensure memory accesses are coalesced by aligning thread indices with data layout
+// Minimize divergent branching to improve warp execution efficiency

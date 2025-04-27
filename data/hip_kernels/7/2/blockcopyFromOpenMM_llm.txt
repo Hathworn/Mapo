@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for better memory throughput
+// Ensure that 'target' and 'source' are aligned to 128 or 256 bytes if possible
+// Use shared memory to cache 'source' data if multiple threads require the same data
+// Check if combining multiple small memory transactions is feasible to reduce global memory operations
+// Optimize memory access patterns to be stride-one where possible
+// Use loop unrolling if applicable to reduce the overhead of loop control and increase pipeline utilization
+```

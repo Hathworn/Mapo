@@ -1,0 +1,5 @@
+// Consider reducing register pressure by optimizing index calculations
+// Ensure shared memory usage does not exceed hardware limits
+// Use loop unrolling for the inner loop over 'len' for potential speed gains
+// Minimize memory bank conflicts in shared memory access
+// Optimize memory accesses to utilize coalesced reads from global memory

@@ -1,0 +1,9 @@
+```cpp
+// Consider using shared memory to cache frequently accessed data like output and delta.
+// Use asynchronous memory prefetching to improve memory access latency.
+// Minimize divergent branches, especially inside inner loops.
+// Optimize the loop order to ensure coalesced memory access for the output array.
+// Unroll inner loops to increase instruction throughput and improve performance.
+// Assess if atomic operations on delta can be avoided to reduce synchronization overhead.
+// Evaluate loop interchange strategy to improve memory access patterns.
+```

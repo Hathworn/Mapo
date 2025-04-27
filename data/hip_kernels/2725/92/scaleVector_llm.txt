@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Utilize shared memory if multiple threads require the same data to reduce global memory accesses
+// Consider reducing the usage of global memory and leverage registers for frequently accessed variables
+// Ensure that the kernel launch is configured with an appropriate number of blocks and threads for optimal occupancy
+// Use appropriate data alignment to enhance memory access efficiency
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Minimize thread divergence by aligning data structures
+// Ensure coalesced memory access patterns
+// Consider using warp shuffle for intra-warp communication
+// Optimize block and grid dimensions for better occupancy
+// Leverage asynchronous memory operations where possible
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache tmp1, tmp2, tmp3 variables to reduce global memory access
+// Consider using texture memory for tIn for improved spatial locality
+// Ensure coalesced memory access patterns for tIn and tOut arrays
+// Experiment with different block sizes for better occupancy and memory throughput
+// Prefetch data for tIn to hide memory latency while computing tOut
+```

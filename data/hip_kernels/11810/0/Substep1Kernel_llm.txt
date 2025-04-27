@@ -1,0 +1,8 @@
+```c
+// Consider reducing the number of global memory accesses by using shared memory for frequently used data.
+// Unroll loops where possible to enhance parallel execution and improve memory coalescing.
+// Use __restrict__ qualifiers to inform the compiler that pointers do not alias, enabling further optimization.
+// Align data structures in memory to improve cache efficiency and access speed.
+// Minimize branching within kernels to ensure warp execution efficiency.
+// Reuse previously loaded data by exploiting data locality in shared or register memory.
+```

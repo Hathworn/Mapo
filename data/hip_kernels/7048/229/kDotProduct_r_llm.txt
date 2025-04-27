@@ -1,0 +1,8 @@
+```c
+// Use shared memory to minimize global memory access
+// Preload data into local registers to reduce memory latency
+// Access memory coalesced by using blockDim.x and gridDim.x
+// Use warp shuffle operations to reduce synchronization overhead
+// Unroll loop to increase instruction-level parallelism
+// Use volatile keyword to prevent incorrect reordering or optimization
+```

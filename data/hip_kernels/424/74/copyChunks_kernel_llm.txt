@@ -1,0 +1,9 @@
+```
+// Minimize global memory accesses by using shared memory for frequently accessed data
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory locations
+// Ensure proper memory alignment to maximize throughput of memory transactions
+// Reduce the number of iterations in the loop over size variable by vectorizing the copy operation
+// Use asynchronous memory prefetching where supported to hide memory latency
+// Minimize divergent branches by ensuring that all threads in a warp follow the same path
+// Use const qualifiers for constant data to enable compiler optimizations
+```

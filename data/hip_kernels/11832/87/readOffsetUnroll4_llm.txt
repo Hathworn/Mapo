@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache A and B arrays for faster access
+// Ensure coalesced memory access by having threads access contiguous memory locations
+// Align data to 128 bytes if possible for better memory bandwidth utilization
+// Evaluate the effects of increasing or decreasing blockDim.x depending on target hardware
+```

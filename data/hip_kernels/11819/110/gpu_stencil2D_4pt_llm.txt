@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory loads.
+// Ensure coalesced memory access patterns for global memory.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Try to maximize the tile size to leverage shared memory capacity.
+// Consider using warp-level parallelism for better efficiency in halo processing.

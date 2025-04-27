@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access for feats array
+// Consider memory coalescing techniques for improved access speed
+// Evaluate using texture memory for repetitive read patterns
+// Implement loop unrolling inside the kernel
+// Optimize block size and grid size based on hardware resources
+// Experiment with half-precision floating points if possible for reduced memory bandwidth

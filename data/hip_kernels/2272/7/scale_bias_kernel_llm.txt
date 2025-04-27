@@ -1,0 +1,3 @@
+// Consider reorganizing data to ensure coalesced global memory access
+// Use shared memory to reduce repeated access to bias values within the same block
+// Optimize thread block and grid size for better occupancy and performance

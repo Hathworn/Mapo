@@ -1,0 +1,7 @@
+```cpp
+// Consider preloading spMmat, spBmat, and spTmat data into shared memory to reduce global memory access.
+// Align memory access patterns with warp boundaries when accessing spBmat and spTmat to enhance coalesced memory access.
+// Use loop unrolling techniques for the loop iterating with offset for better performance.
+// Minimize the number of atomic operations to reduce possible contention and improve performance.
+// Ensure that shared memory usage is optimal and does not lead to bank conflicts for operations utilizing sharedMem.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure each thread processes multiple elements for better utilization of resources
+// Pre-compute memory access indices for improved coalesced memory access
+// Consider using shared memory to cache data locally and reduce global memory access
+// Use warp-level primitives to optimize reduction operations if needed
+// Evaluate occupancy and adjust block size for better performance
+```

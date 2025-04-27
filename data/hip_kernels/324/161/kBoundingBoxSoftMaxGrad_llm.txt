@@ -1,0 +1,10 @@
+```cpp
+// Use __restrict__ to leverage potential compiler optimizations by indicating no aliasing
+// Utilize shared memory to load frequently used data and minimize global memory access
+// Unroll loop if possible to improve ILP and better utilize resources
+// Use __syncthreads() wisely to ensure proper data loading and avoid unnecessary synchronization
+// Minimize computation within loop by moving invariant calculations outside
+// Ensure sufficient occupancy by configuring block size and grid size appropriately
+// Consider further tuning of shared memory and registers based on specific hardware capabilities
+// Leverage coalesced memory access patterns to reduce memory latency
+```

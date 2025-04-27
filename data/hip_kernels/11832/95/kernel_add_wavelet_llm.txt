@@ -1,0 +1,3 @@
+// Ensure memory access coalescing for g_u2 by aligning data structures
+// Consider using shared memory if multiple threads read the same data for improved performance
+// Minimize divergence by ensuring threads in the same warp follow similar execution paths

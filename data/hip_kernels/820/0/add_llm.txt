@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Leverage memory coalescing by ensuring a[i], b[i], and c[i] are accessed in a linear pattern.
+// Consider using vectorized loads and stores if supported by hardware.
+// Align memory allocations to improve data fetch efficiency.
+// Ensure kernels are launched with sufficient blocks to cover vector_size.
+```

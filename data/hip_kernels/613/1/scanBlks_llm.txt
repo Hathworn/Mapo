@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access when loading data into shared memory
+// Consider using a warp shuffle operation to reduce synchronization overhead
+// Minimize bank conflicts in shared memory access during up-sweep and down-sweep
+// Ensure blkData access patterns are fully coalesced and prevent memory divergence
+// Optimize memory access by avoiding redundant loads and stores
+```

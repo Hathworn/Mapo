@@ -1,0 +1,4 @@
+// Consider using shared memory for d_r, d_g, and d_b to reduce global memory accesses.
+// Precompute repetitive calculations to reduce redundant operations. For example, calculating base_y_index once per y loop.
+// Avoid branching by using ternary operators for value assignments where possible.
+// Optimize for memory coalescing by ensuring thread access patterns are aligned.

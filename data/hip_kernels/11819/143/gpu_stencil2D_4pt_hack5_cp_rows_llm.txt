@@ -1,0 +1,6 @@
+```
+// Optimize memory access by utilizing shared memory for frequently accessed rows.
+// Ensure coalesced memory access by organizing threads to minimize non-coalesced memory reads.
+// Leverage __syncthreads() to synchronize threads when using shared memory to prevent race conditions.
+// Consider using texture or constant memory for repeated read-only data access to reduce global memory latency.
+```

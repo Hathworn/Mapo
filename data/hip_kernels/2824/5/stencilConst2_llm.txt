@@ -1,0 +1,7 @@
+```
+// Move stencil weights to shared memory to reduce global memory accesses
+// Load stencil weights into shared memory before computation begins
+// Synchronize threads to ensure all stencil weights are loaded before computation
+// Unroll loop to improve instruction-level parallelism
+// Use shared memory to store partial results for efficiency
+```

@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access when loading tiles from global memory
+// Consider block size matching TILE_WIDTH for more efficient shared memory usage

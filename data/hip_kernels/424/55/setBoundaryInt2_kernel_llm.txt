@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses to d_boundary for better global memory efficiency
+// Ensure d_boundaryRange writes are coalesced to improve memory access patterns
+// Evaluate if shared memory can be used to minimize global memory access latency
+// Consider loop unrolling for better instruction-level parallelism

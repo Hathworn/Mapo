@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses by ensuring consecutive threads access consecutive memory locations in 'dst' and 'shared_rows'.
+// Consider using shared memory collaboratively among threads in a block to reduce global memory accesses.
+// Explore optimizing the memory alignment to avoid unnecessary warp serialization.
+// Evaluate if increasing the tile size ('tile_x', 'tile_y', 'tile_z') could improve occupancy and reduce memory access overhead.
+// Determine if prefetching necessary data into shared memory before computation could help in reducing memory latency.
+```

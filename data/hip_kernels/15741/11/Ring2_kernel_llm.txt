@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data like `corrAB`.
+// Optimize memory access patterns by ensuring coalesced accesses when threads read/write the data.
+// Reduce divergence by organizing condition checks to minimize branching.
+// Use memory prefetching to improve data loading efficiency.
+// Analyze if loop unrolling could benefit the nested loops for processing the area around `ring`.

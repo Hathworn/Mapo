@@ -1,0 +1,5 @@
+// Use shared memory to cache gradOutput_data for faster access
+// Optimize IPIDX calculation by reducing arithmetic operations
+// Flatten nested loops to improve thread execution efficiency
+// Align memory accesses to coalesced patterns for gradInput_data and gradOutput_data
+// Avoid control divergence by ensuring if conditions are warp-friendly

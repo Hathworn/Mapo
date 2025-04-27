@@ -1,0 +1,5 @@
+// Utilize shared memory to decrease global memory access latency
+// Minimize global memory transactions by coalescing memory accesses
+// Ensure shared memory usage does not exceed hardware limits
+// Sync threads after loading to shared memory to prevent race conditions
+// Consider optimizing block size for better performance and resource usage

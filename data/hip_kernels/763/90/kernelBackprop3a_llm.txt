@@ -1,0 +1,7 @@
+```
+// Cache the delta_nabla_b value in a register for faster access
+// Initialize the register
+// Calculate the weights index once outside the for loop to reduce redundant computation
+// Accumulate directly into the register
+// Write the computed value back to global memory
+```

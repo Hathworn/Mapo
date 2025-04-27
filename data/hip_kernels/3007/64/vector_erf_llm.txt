@@ -1,0 +1,7 @@
+```
+// Use shared memory for block-level operations if beneficial
+// __shared__ REAL shared_x[blockDim.x];
+// Use shared memory to reduce redundant global memory accesses
+// Aim to minimize stride accesses for better memory coalescing
+// Ensure all threads are utilized by advancing gid efficiently
+```

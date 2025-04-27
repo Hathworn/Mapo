@@ -1,0 +1,10 @@
+```
+// Minimize global memory access by reusing data in shared memory when possible.
+// Coalesce global memory access for better memory throughput.
+// Utilize int4 data type to reduce the number of memory accesses.
+// Unroll loops to reduce overhead and improve performance.
+// Ensure data alignment for efficient memory transactions.
+// Consider using shared memory to hold data between steps, reducing repeated global memory access.
+// Profile the kernel to identify potential bottlenecks in memory access patterns.
+// Use conditional operators efficiently to eliminate unnecessary branches.
+```

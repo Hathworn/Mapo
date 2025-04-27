@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access on 'in' to improve memory throughput.
+// Try using __restrict__ more extensively for better compiler optimization.
+// Reduce the stride of accesses to 'in' by modifying loop iteration strategy.
+// Try using float4 or float2 for vectorized loads to buffer if applicable.
+// Ensure buffer usage remains within shared memory limits for optimal performance.
+// Evaluate use of warp shuffle operations for final reduction instead of __syncthreads().
+```

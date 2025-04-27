@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses for d_Data.
+// Use vectorized data types, like float4, for better memory throughput.
+// Utilize more shared memory for risk of exceeding 128 threads per block.
+// Try loop unrolling in reduction to decrease overhead.
+// Employ warp shuffle instructions for efficient reduction.
+// Prefetch data into shared memory to hide memory latency.
+// Avoid using atomic operations if not necessary as they are expensive.
+// Optimize stride-based reduction to use warp-level primitives.
+```

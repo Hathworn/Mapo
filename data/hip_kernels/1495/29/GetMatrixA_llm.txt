@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache OCTData if accessed multiple times
+// Use loop unrolling to reduce loop overhead in computation
+// Pre-compute reciprocal of OneDataSize to replace division with multiplication
+// Utilize warp-level primitives to reduce latency of exponential calculations
+// Consider employing FMAD (Fused Multiply-Add) to improve precision and performance
+// Investigate if MatrixA[id] can take advantage of coalesced memory access patterns
+```

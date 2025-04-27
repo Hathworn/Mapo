@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring contiguous memory access pattern in global memory.
+// Use shared memory if possible to minimize global memory access time.
+// Optimize grid and block dimensions to maximize occupancy and minimize warp divergence.
+// Ensure that the threads are working within a contiguous range to improve cache utilization.
+// Use __restrict__ qualifiers to indicate that pointers do not alias for further optimization.
+```

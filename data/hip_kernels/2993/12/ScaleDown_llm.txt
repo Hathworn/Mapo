@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses to improve global memory throughput.
+// Use aligned memory accesses for `d_Data` to enhance performance.
+// Prioritize reusing data loaded into shared memory to minimize global memory accesses.
+// Combine loop iterations when possible to decrease the number of synchronization points.
+// Evaluate need for all values in shared memory to minimize shared memory usage.
+// Unroll loops to potentially reduce loop overhead and increase instruction level parallelism.
+// Ensure memory access patterns are optimized for the GPU architecture being used.
+```

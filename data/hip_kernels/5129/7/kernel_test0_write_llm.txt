@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by aligning memory accesses to warp boundaries
+// Recompute values instead of storing them in registers if register pressure is high
+// Ensure memory accesses stay within the allocated block to avoid segmentation faults
+// Use shared memory if the data can be reused by threads within the same block
+// Consider using atomic operations if shared data needs to be updated by multiple threads
+```

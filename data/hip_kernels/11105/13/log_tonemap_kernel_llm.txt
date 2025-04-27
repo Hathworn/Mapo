@@ -1,0 +1,8 @@
+```c
+// Use shared memory to cache tile of imageIn for coalesced memory access.
+// Prefetch input image data to registers to minimize global memory access.
+// Ensure alignment of memory accesses for imageIn and imageOut to improve memory throughput.
+// Consider loop unrolling if loop iterations within the kernel are fixed and known.
+// Optimize the calculation by using a register to store width * Row + Col computation.
+// Reduce redundant calculation of memory indices for imageOut writes.
+```

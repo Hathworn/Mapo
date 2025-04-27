@@ -1,0 +1,5 @@
+// Consider optimizing memory accesses by ensuring coalesced reads.
+// Use shared memory to store partial results within a block to reduce global memory traffic.
+// Minimize atomic operations where possible, as they can be a bottleneck.
+// Consider padding flows for reducing bank conflicts in shared memory usage.
+// Ensure that conditional checks inside the kernel are minimized as they can increase divergence.

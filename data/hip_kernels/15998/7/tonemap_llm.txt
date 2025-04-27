@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for d_x, d_y, and d_log_Y to improve memory throughput.
+// Use shared memory to reduce repeated global memory accesses for frequently used variables.
+// Ensure that d_cdf_norm accesses are coalesced to enhance memory performance.
+// Optimize memory writes to d_r_new, d_g_new, and d_b_new by ensuring coalesced access patterns.
+// Minimize the use of expensive mathematical operations within the loop to improve computation speed.
+```

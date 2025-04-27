@@ -1,0 +1,7 @@
+```
+// Consider using vectorized loads and stores to optimize memory access patterns
+// Utilize warp shuffle operations to reduce shared memory access and improve data sharing
+// Optimize loop unrolling inside the kernel to reduce instruction overhead
+// Avoid bank conflicts in shared memory by rearranging data layout
+// Profile and adjust shared memory size to balance occupancy and memory throughput
+```

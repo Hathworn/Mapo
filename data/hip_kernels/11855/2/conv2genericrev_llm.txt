@@ -1,0 +1,7 @@
+```
+// Optimize memory access by coalescing global memory reads for input and kernel arrays.
+// Use shared memory to reduce redundant global memory accesses within the thread block.
+// Consider loop unrolling in the inner convolution loop for improved performance.
+// Ensure shared memory allocation is appropriately sized to avoid bank conflicts.
+// Optimize for warp divergence by aligning thread operations within warps.
+```

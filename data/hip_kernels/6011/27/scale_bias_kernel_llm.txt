@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache biases to reduce global memory accesses.
+// Use float4 or other vectorized data types for coalesced memory access.
+// Optimize block and grid dimensions for the specific hardware characteristics.
+// Ensure occupancy is maximized by adjusting block size according to the CUDA Occupancy Calculator.
+```

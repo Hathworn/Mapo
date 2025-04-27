@@ -1,0 +1,6 @@
+```
+// Consider optimizing memory access patterns to ensure coalesced accesses when reading from col_group
+// Use shared memory efficiently by ensuring the shared memory access pattern is optimal
+// Ensure __syncthreads() is placed appropriately to avoid race conditions
+// Evaluate if loop unrolling is beneficial for the for-loop iteration over i
+```

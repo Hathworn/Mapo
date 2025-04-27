@@ -1,0 +1,6 @@
+```
+// Ensure only valid thread indices access memory
+// Use a single branch for better warp execution
+// Consider coalescing memory accesses for sum and cluster arrays
+// Utilize shared memory to reduce global memory accesses if possible
+```

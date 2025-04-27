@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory accesses by aligning d_rho, d_Ex, d_Ey, and d_Ez arrays
+// Use shared memory to minimize global memory accesses
+// Use __syncthreads() to synchronize to ensure correctness after loading to shared memory
+// Accumulate values in shared memory to optimize reduction
+// Use warp synchronous programming for small size reductions
+// Consider loop unrolling for performance improvement in the reduction loop
+// Write reduction results from shared to global memory only from a single thread
+```

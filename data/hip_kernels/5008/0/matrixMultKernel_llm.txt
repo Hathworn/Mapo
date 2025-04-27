@@ -1,0 +1,5 @@
+// Consider using matrix elements padding in shared memory to avoid bank conflicts.
+// Evaluate the impact of using different shared memory tile sizes for performance.
+// Ensure optimal block size and grid size are chosen based on the problem dimensions.
+// Check memory access patterns for coalescing to maximize global memory throughput.
+// Verify that shared memory tile size matches block dimension for optimal synchronization.

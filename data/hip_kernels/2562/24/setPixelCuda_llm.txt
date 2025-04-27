@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently accessed data
+// Use __restrict__ keyword for pointers if no aliasing to improve performance
+// Use float4 or int4 for coalesced memory access if applicable
+// Prefer using half precision if full precision is not necessary
+// Ensure memory accesses are aligned to prevent misaligned address penalties
+```

@@ -1,0 +1,5 @@
+// Optimize memory access by coalescing memory reads and writes.
+// Use shared memory to reduce global memory access where possible.
+// Consider loop unrolling for both i and j loops to maximize warp utilization.
+// Use pinned memory if data transfer between host and device is a bottleneck.
+// Vectorize arithmetic operations to fully utilize the FPU.

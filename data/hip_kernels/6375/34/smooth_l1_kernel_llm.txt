@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses for pred, truth, delta, and error arrays.
+// Investigate the use of shared memory to potentially reduce global memory access latency.
+// Align data structures to ensure memory accesses are optimal and eliminate potential bank conflicts.
+// Explore compiler optimization flags for improved performance during kernel execution.
+// Evaluate the use of asynchronous memory copies to overlap computation and communication.

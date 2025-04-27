@@ -1,0 +1,7 @@
+```
+// Use shared memory for data array to improve memory access speed
+// Coalesce memory accesses by ensuring data array is accessed in a contiguous manner
+// Avoid using printf in performance-critical kernels as it can significantly degrade performance
+// Consider marking the data array with __restrict__ to potentially enable further compiler optimizations
+// Ensure the grid and block dimensions are chosen to maximize occupancy
+```

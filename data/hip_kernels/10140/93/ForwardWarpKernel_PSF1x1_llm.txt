@@ -1,0 +1,9 @@
+```cpp
+// Consider coalesced memory access patterns by ensuring threads in a warp access contiguous memory locations.
+// Utilize shared memory to reduce redundant global memory accesses, particularly for frequently accessed flow fields.
+// Use vectorized loads and stores where applicable to leverage wider memory transactions.
+// Explore loop unrolling techniques within the kernel to improve instruction level parallelism when accessing or computing data.
+// Reduce usage of atomic operations with strategies like hierarchical reduction or using warp shuffle instructions.
+// Profile memory bandwidth and latency to identify specific bottlenecks and experiment with various caching strategies.
+// Analyze if the use of __forceinline__ effectively contributes to performance gains and consider inlining decisions based on compile-time feedback.
+```

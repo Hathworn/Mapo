@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access when reducing sums to lessen global memory transaction overhead.
+// Ensure that the data is aligned in memory to maximize the coalescing efficiency.
+// Use shared memory to stage data and perform partial sums to take advantage of its lower latency compared to global memory.
+// Minimize warp divergence by assuring uniform execution within warps, especially in the loop computations.
+```

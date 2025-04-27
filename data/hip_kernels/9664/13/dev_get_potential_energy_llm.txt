@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access for fxh, fyh, fzh, fxt, fyt, and fzt arrays
+// Consider using shared memory to optimize access for repeatedly used data like fxhj, fyhj, fzhj
+// Use loop unrolling to increase instruction-level parallelism
+// Prefetch data before use to hide latency
+// Reduce register pressure by minimizing the number of variables inside loop
+// Optimize reduction loop by minimizing thread divergence
+// Use atomic operations carefully to avoid bank conflicts
+// Leverage CUDA occupancy calculator to maximize occupancy to improve performance
+```

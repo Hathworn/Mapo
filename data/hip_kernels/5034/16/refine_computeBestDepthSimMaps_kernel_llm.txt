@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache isims and idpts for faster access.
+// Use coalesced access patterns for osim and odpt to improve global memory efficiency.
+// Minimize divergent branches within thread blocks to enhance warp execution.
+// Investigate if replacing division operations with multiplications by constants yields performance gains.
+// Ensure that memory accesses are aligned and continuous to leverage the memory bandwidth.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed variables to reduce global memory access.
+// Store frequently used values like powf(B1, t) and powf(B2, t) to reduce repeated computation.
+// Ensure data is coalesced to improve memory bandwidth and reduce access latency.
+// Utilize occupancy potential by adjusting block and grid size for better performance.
+```

@@ -1,0 +1,42 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void computeHessianListS0(float *trans_x, float *trans_y, float *trans_z, int *valid_points, int *starting_voxel_id, int *voxel_id, int valid_points_num, double *centroid_x, double *centroid_y, double *centroid_z, double *icov00, double *icov01, double *icov02, double *icov10, double *icov11, double *icov12, double *icov20, double *icov21, double *icov22, double *point_gradients, double *tmp_hessian, int valid_voxel_num)
+{
+    int id = threadIdx.x + blockIdx.x * blockDim.x;
+    int stride = blockDim.x * gridDim.x;
+    int col = blockIdx.y;
+
+    if (col < 6) {
+        double *tmp_pg0 = point_gradients + col * valid_points_num;
+        double *tmp_pg1 = tmp_pg0 + 6 * valid_points_num;
+        double *tmp_pg2 = tmp_pg1 + 6 * valid_points_num;
+        double *tmp_h = tmp_hessian + col * valid_voxel_num;
+
+        for (int i = id; i < valid_points_num; i += stride) {
+            int pid = valid_points[i];
+            double d_x = static_cast<double>(trans_x[pid]);
+            double d_y = static_cast<double>(trans_y[pid]);
+            double d_z = static_cast<double>(trans_z[pid]);
+
+            double pg0 = tmp_pg0[i];
+            double pg1 = tmp_pg1[i];
+            double pg2 = tmp_pg2[i];
+
+            double dx_cx = d_x - centroid_x[voxel_id[starting_voxel_id[i]]];
+            double dy_cy = d_y - centroid_y[voxel_id[starting_voxel_id[i]]];
+            double dz_cz = d_z - centroid_z[voxel_id[starting_voxel_id[i]]];
+
+            // Unroll the inner loop for better efficiency
+            for (int j = starting_voxel_id[i]; j < starting_voxel_id[i + 1]; j++) {
+                int vid = voxel_id[j];
+
+                double cov_pg0 = icov00[vid] * pg0 + icov01[vid] * pg1 + icov02[vid] * pg2;
+                double cov_pg1 = icov10[vid] * pg0 + icov11[vid] * pg1 + icov12[vid] * pg2;
+                double cov_pg2 = icov20[vid] * pg0 + icov21[vid] * pg1 + icov22[vid] * pg2;
+
+                tmp_h[j] = dx_cx * cov_pg0 + dy_cy * cov_pg1 + dz_cz * cov_pg2;
+            }
+        }
+    }
+}

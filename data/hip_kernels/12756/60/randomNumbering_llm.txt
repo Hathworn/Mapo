@@ -1,0 +1,5 @@
+// Consider optimizing memory access patterns by using shared memory for frequently accessed data.
+// Trade-off between register pressure and arithmetic operations can be considered to improve performance.
+// Consider the use of warp-level primitives to reduce divergence within a warp.
+// Ensure coalesced memory accesses by ensuring contiguous allocation of states for efficient memory access.
+// Evaluate whether using a smaller limit may increase cache effectiveness for integer arithmetic.

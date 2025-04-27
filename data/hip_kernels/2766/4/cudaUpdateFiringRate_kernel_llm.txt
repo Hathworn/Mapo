@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure all threads within a block are converged before accessing shared memory
+// Reduce number of synchronization points
+// Ensure data is coalesced when writing to and reading from global memory
+// Minimize thread divergence by ensuring all pathways are equally executed
+```

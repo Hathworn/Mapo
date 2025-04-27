@@ -1,0 +1,7 @@
+```cpp
+// Consider using coalesced memory access for better performance.
+// Ensure shared memory tiles are fully utilized before synchronization.
+// Avoid bank conflicts in shared memory by utilizing padding if necessary.
+// Consider loop unrolling for the inner multiplication loop for optimization.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+```

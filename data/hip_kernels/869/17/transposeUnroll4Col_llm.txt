@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Avoid bank conflicts in shared memory by padding the allocation.
+// Consider prefetching data into registers for even faster access.
+// Optimize the grid and block dimensions to match the memory access pattern.
+// Utilize warp shuffling to further minimize memory traffic.
+// Align memory accesses to prevent potential performance penalties.
+// Ensure memory transactions are coalesced for optimal throughput.
+```

@@ -1,0 +1,6 @@
+// Unroll loop for better performance  
+// Use atomic operation to minimize write conflicts  
+// Align memory accesses to improve coalescing  
+// Consider using shared memory to reduce global memory accesses  
+// Ensure data is accessed in a coalesced manner to improve throughput  
+// Optimize block and grid sizes to maximize occupancy  

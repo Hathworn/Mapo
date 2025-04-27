@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access when reading from the index array to improve memory throughput.
+// Pre-load the index values into shared memory to reduce global memory access latency.
+// Unroll loop to minimize loop overhead and potentially increase instruction-level parallelism.
+// Consider adjusting grid and block dimensions to better fit the problem size and improve occupancy.
+// Use __restrict__ keyword for tensor and index pointers to help the compiler with optimization by avoiding pointer aliasing assumptions.
+```

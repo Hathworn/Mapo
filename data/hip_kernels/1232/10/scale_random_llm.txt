@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses by ensuring contiguous threads access contiguous memory
+// Use shared memory to cache frequently accessed data if needed
+// Ensure 'total_size' is evenly divisible by the block size to avoid divergent branching
+// Launch kernel with an optimal block size for better occupancy and performance
+// Minimize global memory accesses by reusing data already loaded into registers or shared memory

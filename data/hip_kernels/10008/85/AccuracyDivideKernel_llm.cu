@@ -1,0 +1,10 @@
+```c
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void AccuracyDivideKernel(const int N, float* accuracy) {
+    // Assign a single thread to perform the division for eliminating race conditions
+    if (threadIdx.x == 0 && blockIdx.x == 0) {
+        *accuracy /= N;
+    }
+}

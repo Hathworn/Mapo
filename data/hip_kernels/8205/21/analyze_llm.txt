@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses by ensuring aligned access patterns for input and sum arrays.
+// Assess use of shared memory for reduction instead of atomicAdd for potential performance improvement.
+// Investigate using warp shuffle operations for intra-warp reduction to minimize latency.
+// Evaluate grid and block dimensions to ensure optimal occupancy and minimize memory divergence.

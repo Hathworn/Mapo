@@ -1,0 +1,6 @@
+```
+// Ensure coalesced global memory access by using a stride loop
+// Minimize divergence by ensuring thread blocks process contiguous memory regions
+// Use shared memory if further inter-thread communication is needed
+// Ensure that atomics do not become a bottleneck by evaluating parallel reduction alternatives
+```

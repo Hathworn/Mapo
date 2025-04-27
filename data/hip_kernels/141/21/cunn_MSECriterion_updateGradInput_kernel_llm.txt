@@ -1,0 +1,3 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Consider using memory coalescing to improve memory access patterns.
+// Ensure blocks and threads are configured to maximize occupancy while avoiding warp divergence.

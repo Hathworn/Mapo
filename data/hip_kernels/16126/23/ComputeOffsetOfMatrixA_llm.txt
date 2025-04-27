@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for col_sum to reduce global memory access
+// Ensure output array is coalesced to improve memory throughput
+// Use __restrict__ keyword to indicate no aliasing and improve compiler optimization
+```

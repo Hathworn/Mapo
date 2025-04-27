@@ -1,0 +1,6 @@
+```
+// Use shared memory to store variance if multiple threads access the same value
+// Use 'restrict' keyword to pointers if they do not alias to improve optimization
+// Consider loop unrolling for spatial and batch loops for improved performance
+// Pre-calculate repeated expressions to reduce computation within loops
+```

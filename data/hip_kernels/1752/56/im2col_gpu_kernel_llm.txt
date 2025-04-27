@@ -1,0 +1,4 @@
+// Increment loop with blockDim.x * gridDim.x for better parallel execution.
+// Calculate data_col_ptr and data_im_ptr once per outer loop iteration to reduce redundant computations.
+// Use conditional ternary operator to minimize branching for element assignment.
+// Move data_col_ptr by height_col * width_col to avoid redundant calculation within inner loop.

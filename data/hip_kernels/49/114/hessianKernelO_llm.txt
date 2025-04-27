@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for d_gxx, d_gxy, d_gxz, d_gyy, d_gyz, d_gzz to improve memory throughput.
+// Utilize shared memory if reused values from global memory can be shared among threads within the same block.
+// Assess potential for loop unrolling in computeDeterminant to reduce overhead and increase throughput.
+// Evaluate using constant memory for values like sigma that don't change per thread and are read often.
+// Opt for using __restrict__ qualifiers for pointers if possible to allow for better compiler optimizations.
+// Explore using warp-level primitives for reduction operations, especially when computing maxEig.
+```

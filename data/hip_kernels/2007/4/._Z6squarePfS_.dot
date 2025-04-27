@@ -1,0 +1,5 @@
+digraph "CFG for '_Z6squarePfS_' function" {
+	label="CFG for '_Z6squarePfS_' function";
+
+	Node0x5984bc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds float, float addrspace(1)* %0, i64 %4\l  %6 = load float, float addrspace(1)* %5, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %7 = fmul contract float %6, %6\l  %8 = getelementptr inbounds float, float addrspace(1)* %1, i64 %4\l  store float %7, float addrspace(1)* %8, align 4, !tbaa !5\l  ret void\l}"];
+}

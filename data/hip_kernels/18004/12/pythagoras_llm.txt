@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to store intermediate values for Gx and Gy to reduce global memory access.
+// Consider loop unrolling to enhance computational efficiency within the kernel.
+// Attempt to minimize divergence by ensuring threads within the same warp follow the same execution path.
+// Evaluate the use of vectorized operations for simultaneous processing of multiple data points.
+```

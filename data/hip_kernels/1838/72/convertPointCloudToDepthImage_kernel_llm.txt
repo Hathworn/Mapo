@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access by using shared memory for transformation matrices if possible.
+// Consider using texture memory for point_cloud data to leverage cache benefits.
+// Ensure coalesced access for point_cloud reads to optimize global memory bandwidth.
+// Prevent bank conflicts if shared memory is utilized for transformation data.
+```

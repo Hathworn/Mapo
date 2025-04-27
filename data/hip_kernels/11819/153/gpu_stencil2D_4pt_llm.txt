@@ -1,0 +1,9 @@
+```
+// Use coalesced memory accesses when loading data from global to shared memory
+// Ensure SHMEM accesses are bank conflict-free
+// Balance thread workload to avoid divergence
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Consider loop-unrolling for the stencil computation if TILE_SIZE is known at compile-time
+// Optimize shared memory usage to fit within hardware limitations
+// Use constant memory for any invariant coefficients used in computation
+```

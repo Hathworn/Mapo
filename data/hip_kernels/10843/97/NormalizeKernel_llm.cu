@@ -1,0 +1,25 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__device__ __forceinline__ float imag(const float2& val)
+{
+    return val.y;
+}
+
+__global__ void NormalizeKernel(const float *normalization_factor, int w, int h, int s, float *image)
+{
+    int i = blockIdx.y * blockDim.y + threadIdx.y;
+    int j = blockIdx.x * blockDim.x + threadIdx.x;
+
+    // Early exit for threads beyond bounds
+    if (i >= h || j >= w) return;
+
+    const int pos = i * s + j;
+
+    // Load factor and compute inverse scale
+    float scale = normalization_factor[pos];
+    float invScale = (scale == 0.0f) ? 1.0f : (1.0f / scale);
+
+    // Apply inverse scale
+    image[pos] *= invScale;
+}

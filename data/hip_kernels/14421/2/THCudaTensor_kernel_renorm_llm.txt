@@ -1,0 +1,8 @@
+```
+// Consider using memory coalescing by ensuring data elements accessed by consecutive threads in a warp are adjacent.
+// Use half2 or float2 for potential vectorization to improve memory throughput and arithmetic efficiency.
+// Increase shared memory usage by expanding buffer size only if shared memory resources allow.
+// Potentially unroll loops where possible to improve GPU execution efficiency.
+// Ensure that __syncthreads() are necessary and correctly placed to avoid performance bottlenecks.
+// Evaluate grid and block dimensions for optimal occupancy and performance balance.
+```

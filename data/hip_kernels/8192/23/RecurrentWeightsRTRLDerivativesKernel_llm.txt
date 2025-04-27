@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache recurrentWeights and previousRecurrentWeightRTRLDerivatives for threads in the same block
+// Ensure coalesced access to global memory by having contiguous threads access contiguous memory locations
+// Pre-compute repeated global memory access results to reduce latency
+// Employ asynchronous prefetching of data to hide global memory latency
+// Minimize divergent branches within warp, especially in critical loops
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency.
+// Avoid calculating sqrt multiple times; use a temporary variable for storing results.
+// Use __syncthreads() carefully to avoid unnecessary synchronization and improve performance.
+// Consider using loop unrolling inside the innermost loop for better instruction-level parallelism.
+// Optimize memory coalescing by ensuring continuous memory access patterns for output array.

@@ -1,0 +1,6 @@
+```c
+// Use __restrict__ to hint the compiler for potential optimizations in memory accesses.
+// Align memory accesses to improve coalesced memory transactions.
+// Consider using shared memory to decrease global memory accesses.
+// Evaluate padding arrays to avoid bank conflicts in shared memory.
+```

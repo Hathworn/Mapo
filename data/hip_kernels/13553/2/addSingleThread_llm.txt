@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring x and y arrays are allocated in memory-aligned fashion.
+// Ensure the data is contiguous in memory to optimize for the memory access pattern.
+// If possible, utilize shared memory to cache frequently accessed data to minimize global memory accesses.
+// Prefetch data into registers if usage pattern allows, to reduce latency in accessing global memory.
+// Check if using larger data types could improve load/store efficiency by reducing the number of memory transactions.
+```

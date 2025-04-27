@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory if there's data reuse across threads to minimize global memory access
+// Ensure that all memory accesses are aligned to improve global memory throughput
+// Avoid branch divergence to maintain warp execution efficiency
+// Evaluate occupancy and ensure full utilization of compute resources and memory bandwidth
+```

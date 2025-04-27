@@ -1,0 +1,8 @@
+```
+// Use more blocks if len is large to improve parallelization
+// Consider loading multiple elements per thread to reduce iteration count
+// Ensure coalesced memory access for `recip` and `data` arrays
+// Minimize the use of __syncthreads(), only when necessary
+// Optimize shared memory usage by minimizing its footprint
+// Align shared memory access to improve memory performance
+```

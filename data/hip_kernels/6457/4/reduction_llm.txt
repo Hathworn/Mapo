@@ -1,0 +1,5 @@
+// Use shared memory efficiently by ensuring coalesced accesses from input to shared memory.
+// Consider loop unrolling deeper to reduce loop control overhead.
+// Remove unnecessary synchronizations if memory writes are guaranteed to not overlap.
+// Optimize memory access patterns to minimize bank conflicts in shared memory.
+// Validate if warp reduction can replace thread block reduction for smaller problem sizes.

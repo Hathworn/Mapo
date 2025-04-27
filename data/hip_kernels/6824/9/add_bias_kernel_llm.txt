@@ -1,0 +1,6 @@
+```
+// Use shared memory for biases to reduce global memory access latency.
+// Coalesce memory accesses by ensuring threads access consecutive memory locations.
+// Utilize register space to store frequently accessed data like biases for faster access.
+// Optimize block and grid size to ensure maximum occupancy and efficient memory bandwidth utilization.
+```

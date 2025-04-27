@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to reduce global memory access, particularly for the z_tile array.
+// Ensure all shared memory loads are before __syncthreads() to optimize synchronization.
+// Minimize boundary checks using logical conditions to reduce divergence within warp execution.
+// Consider padding shared memory allocation to avoid bank conflicts.
+```

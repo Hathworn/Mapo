@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Ensure shared memory is utilized effectively if the data is reused multiple times
+// Attempt to unroll loops for reduced instruction overhead
+// Make sure to synchronize only when necessary to avoid idle threads
+// Align memory access patterns to improve coalescing and reduce memory divergence
+```

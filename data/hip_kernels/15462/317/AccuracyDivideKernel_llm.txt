@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for temporary variables to reduce global memory access latency.
+// Group memory accesses to ensure coalesced memory reads and writes.
+// Minimize the use of global memory writes by using atomic operations if possible.
+// Ensure that the kernel is launched with an optimal block size for your specific hardware.
+```

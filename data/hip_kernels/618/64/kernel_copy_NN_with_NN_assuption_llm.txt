@@ -1,0 +1,5 @@
+```
+// Load d_nearest_neighbour_indexes[index] into a register to reduce repeated global memory access
+// Use shared memory for blocks processing contiguous indices to enhance memory access patterns
+// Consider coalesced memory access pattern for d_nearest_neighbour_indexes to improve performance
+```

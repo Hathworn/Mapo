@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced memory access patterns for global memory reads and writes
+// Consider loop unrolling for accessing filters to enhance throughput
+// Use __syncthreads() if necessary to prevent race conditions between threads
+// Optimize thread block size to maximize GPU occupancy
+```

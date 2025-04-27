@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Initialize shared memory to minimize latency
+// Synchronize threads to ensure all updates to shared memory are complete
+// Use a stride to spread memory accesses and reduce conflict contention
+// Perform atomic operations in shared memory first to minimize global memory contention
+// Synchronize threads before writing back to ensure all local updates are complete
+// Minimize global memory atomic operations by accumulating results in shared memory
+```

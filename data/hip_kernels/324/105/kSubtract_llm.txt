@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access if multiple threads access nearby data.
+// Evaluate warp divergence and ensure memory coalescing for better memory throughput.
+// Optimize block and thread dimensions to maximize occupancy and resource utilization.
+// Ensure arrays are correctly aligned and use float4/float2 operations for faster vectorized processing.

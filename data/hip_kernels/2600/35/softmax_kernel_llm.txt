@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store intermediate results to reduce global memory accesses.
+// Replace atomicMax and atomicAdd with warp-level primitives for better performance.
+// Use memory coalescing by ensuring contiguous blocks access contiguous segments of memory.
+// Minimize the use of __syncthreads to reduce synchronization overhead.
+// Consider launching with a more optimal grid and block size that maximizes occupancy.
+```

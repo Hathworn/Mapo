@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access for kernel values
+// Ensure that thread index calculations reuse existing data in registers to minimize redundant calculations
+// Utilize __syncthreads() effectively to ensure all threads have loaded the shared data before proceeding
+// Compute thread index efficiently by avoiding non-essential complex operations
+// Merge conditional checks to minimize branching and ensure continuous flow

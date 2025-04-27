@@ -1,0 +1,5 @@
+digraph "CFG for '_Z11childKerneljPf' function" {
+	label="CFG for '_Z11childKerneljPf' function";
+
+	Node0x4d86bb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = uitofp i32 %0 to float\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = uitofp i32 %4 to float\l  %6 = fmul contract float %5, 0x3FB99999A0000000\l  %7 = fadd contract float %6, %3\l  %8 = zext i32 %4 to i64\l  %9 = getelementptr inbounds float, float addrspace(1)* %1, i64 %8\l  store float %7, float addrspace(1)* %9, align 4, !tbaa !5\l  ret void\l}"];
+}

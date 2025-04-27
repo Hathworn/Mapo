@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access patterns for X and Y arrays.
+// Use __restrict__ keyword for pointers X and Y to facilitate compiler optimizations.
+// Consider loop unrolling if INCX or INCY values are known at compile time.
+// Use shared memory if there are reused values across threads for further optimization.
+// Minimize use of powf by caching ALPHA value if it's constant.
+```

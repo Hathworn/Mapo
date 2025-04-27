@@ -1,0 +1,5 @@
+// Coalesce memory access for global memory reads
+// Ensure alignment of memory pointers to avoid non-coalesced access
+// Consider using shared memory for frequently accessed data to reduce redundant global memory reads
+// Minimize divergent branching by structuring conditional blocks for uniform access
+// Optimize memory access patterns to minimize bank conflicts in shared memory usage

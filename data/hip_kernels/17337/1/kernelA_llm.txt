@@ -1,0 +1,4 @@
+// Use shared memory to store data used across multiple threads
+// Consider coalesced memory accesses to improve bandwidth usage
+// Assess warp divergence in conditionals to reduce instruction overhead
+// Ensure alignment of data for efficient vectorized operations

@@ -1,0 +1,10 @@
+```
+// Use shared memory to store intermediate results to minimize global memory accesses
+// Utilize loop unrolling to improve performance by reducing loop overhead
+// Leverage warp-level parallelism for efficiency by minimizing divergence
+// Employ pre-computation of indices for reduced computational complexity within loops
+// Ensure thread synchronization to prevent race conditions when using shared memory
+// Consider increasing block size if GPU resources allow to improve load balancing
+// Apply conditional checks before accessing arrays to prevent out-of-bounds errors
+// Reduce redundant boundary checks by calculating effective index limits outside loops
+```

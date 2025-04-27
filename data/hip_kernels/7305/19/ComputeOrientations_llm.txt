@@ -1,0 +1,11 @@
+```
+// Consider optimizing memory access by coalescing the loading of global memory into shared memory.
+// Evaluate if the loop unrolling can improve the performance when initializing the histogram.
+// Review the use of atomic operations to prevent race conditions in gradient calculation.
+// Investigate if precomputing values can reduce redundant computations for bin calculation.
+// Check if loop interchange might lead to better accesses to hist array for smoothing.
+// Consider computing sqrt(dx*dx + dy*dy) outside the conditional branch for better instruction throughput.
+// Examine the reduction pattern for possible implementation with warp-level primitives to enhance speed.
+// Assess the use of texture memory for g_Data if spatial locality is high and caching could be beneficial.
+// Validate if using a constant memory for gauss can provide performance improvement due to frequent accesses.
+```

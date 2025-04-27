@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access during filter operations.
+// Ensure coalesced memory access for both reads and writes.
+// Preload filter data into shared memory to reduce redundant global memory fetch.
+// Minimize conditional branching for better warp execution efficiency.
+// Compute memory indices once per loop iteration to avoid redundant calculations.

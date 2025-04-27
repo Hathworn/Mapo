@@ -1,0 +1,4 @@
+// Consider using shared memory for frequent data access
+// Avoid large block sizes to minimize register pressure
+// Utilize warp-level primitives for optimized reduction
+// Ensure *accuracy is properly initialized before kernel execution

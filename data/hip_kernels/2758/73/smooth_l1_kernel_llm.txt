@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for pred and truth arrays to optimize memory bandwidth
+// Consider double buffering technique to hide memory latency
+// Implement shared memory if calculations involve common data among threads
+// Examine loop unrolling for minor performance gain in the branch condition
+// Evaluate atomic operations for error array updates to avoid race conditions in parallel execution
+```

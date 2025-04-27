@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data like g_Data2 and g_Data3.
+// Prefetch data from global memory to registers to reduce latency.
+// Minimize divergent branches for warp efficiency when calculating step increment.
+// Optimize memory access patterns by aligning memory reads to improve coalescing.

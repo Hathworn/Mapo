@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache `out_delta[out_index]` to reduce global memory accesses
+// Explore memory coalescing strategies for accessing `in_delta` and `out_delta`
+// Use loop unrolling for the loop over `w * h` for potential reduction in loop overhead
+```

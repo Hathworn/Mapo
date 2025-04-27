@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for d_hash by aligning data structures or adjusting thread use
+// Use shared memory if possible to further reduce global memory accesses for d_hash
+// Implement loop unrolling if applicable for operations on d_branch2 and d_NonceBranch
+// Ensure d_branch2 and d_NonceBranch accesses are coalesced to optimize memory throughput
+// Minimize use of global memory by storing intermediary results in registers
+// If atomic operations are needed, ensure minimal contention for d_NonceBranch
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads and data structures.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+// Use shared memory to reduce redundant global memory accesses if necessary.
+// Consider using loop unrolling for potential performance improvements.
+// Check for occupancy limits to ensure GPU resources are fully utilized.
+```

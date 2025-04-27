@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses for bodyPos and bodySpeed to optimize memory bandwidth
+// Ensure the use of __restrict__ qualifier for bodyPos and bodySpeed to improve memory access patterns
+// Minimize bank conflicts in shared memory access by aligning data properly
+// Use float4 for both position and speed to increase data throughput
+// Consider using shared memory for temporary storage of elementPosMass if it leads to better performance
+// Leverage loop unrolling if applicable to enhance parallel execution
+```

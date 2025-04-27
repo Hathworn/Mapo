@@ -1,0 +1,5 @@
+digraph "CFG for '_Z3expPfS_' function" {
+	label="CFG for '_Z3expPfS_' function";
+
+	Node0x61eff60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = load float, float addrspace(1)* %0, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %4 = fmul float %3, 0x3FF7154760000000\l  %5 = tail call float @llvm.rint.f32(float %4)\l  %6 = fcmp ogt float %3, 0x40562E4300000000\l  %7 = fcmp olt float %3, 0xC059D1DA00000000\l  %8 = fneg float %4\l  %9 = tail call float @llvm.fma.f32(float %3, float 0x3FF7154760000000, float\l... %8)\l  %10 = tail call float @llvm.fma.f32(float %3, float 0x3E54AE0BE0000000,\l... float %9)\l  %11 = fsub float %4, %5\l  %12 = fadd float %10, %11\l  %13 = tail call float @llvm.exp2.f32(float %12)\l  %14 = fptosi float %5 to i32\l  %15 = tail call float @llvm.amdgcn.ldexp.f32(float %13, i32 %14)\l  %16 = select i1 %7, float 0.000000e+00, float %15\l  %17 = select i1 %6, float 0x7FF0000000000000, float %16\l  store float %17, float addrspace(1)* %1, align 4, !tbaa !4\l  ret void\l}"];
+}

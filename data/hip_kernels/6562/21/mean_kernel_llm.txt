@@ -1,0 +1,4 @@
+// Consider using shared memory for blocks to reduce global memory accesses
+// Use loop unrolling to decrease the number of iterations and improve instruction-level parallelism
+// Calculate 'batch * spatial' outside the loop to avoid redundant calculations
+// Apply the calculated scale at the end to minimize operations within the loop

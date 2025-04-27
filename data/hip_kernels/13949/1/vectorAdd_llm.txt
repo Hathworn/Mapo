@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency.
+// Group memory access to minimize bank conflicts in shared memory.
+// Ensure proper synchronization with __syncthreads() to prevent race conditions.

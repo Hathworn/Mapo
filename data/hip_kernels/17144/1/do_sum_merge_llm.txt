@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Use warp-level primitives for efficient reduction within warps
+// Avoid printf for performance improvements; remove it after debugging
+// Coalesce global memory accesses by aligning data structure
+// Optimize thread and block configuration for better occupancy
+// Consider using atomic operations if data integrity issues arise
+// Minimize divergence by avoiding complex conditional statements
+```

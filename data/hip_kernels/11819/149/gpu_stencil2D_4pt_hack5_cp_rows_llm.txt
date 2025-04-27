@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses for better performance.
+// Ensure coalesced memory access by all threads in a warp to improve memory throughput.
+// Minimize memory bank conflicts in shared memory to enhance performance.
+// Leverage __syncthreads() to synchronize threads effectively after updating shared memory.
+```

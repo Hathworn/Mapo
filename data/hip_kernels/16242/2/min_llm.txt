@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses if multiple threads access the same data
+// Use coalesced memory access patterns for U, d, and minOutEdges arrays to enhance memory throughput
+// Ensure global memory accesses are aligned to meet the hardware's memory requirements
+// Avoid using conditional statements inside loops or frequently executed paths to reduce branching divergence
+// Explore loop unrolling where applicable to reduce loop overhead and improve performance
+```

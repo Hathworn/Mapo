@@ -1,0 +1,6 @@
+```c
+// Ensure memory coalescing by aligning memory accesses; consider using shared memory for src if data reuse is possible.
+// Use __restrict__ qualifiers on src and dst pointers to enable better compiler optimizations by reducing aliasing.
+// Reduce register pressure by optimizing the variable usage and minimize in-loop variable redeclarations.
+// Consider loop unrolling if beneficial for the specific GPU architecture; might improve performance by reducing branch overhead.
+```

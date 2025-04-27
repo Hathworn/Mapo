@@ -1,0 +1,9 @@
+```
+// Use __restrict__ qualifier on pointer parameters to enable better compiler optimizations by indicating no aliasing
+// Consider using texture memory for read-only input data (D, NEIGHBOR, NBOFFSETS, nNeighbors) to achieve better caching
+// Coalesce memory accesses for D and TD array to optimize global memory bandwidth
+// Reduce shared memory usage by caching fewer elements at a time, or use atomics if applicable and beneficial with limited memory
+// Implement loop unrolling for the neighbors accumulation loop (for(int n = 0; n < N; n++)) to enhance performance
+// Assess the use of vectorized loads/stores (e.g., float4) for better memory read/write efficiency
+// Use warp-level primitives (e.g., __shfl_sync) to reduce shared memory dependencies and achieve faster data exchange
+```

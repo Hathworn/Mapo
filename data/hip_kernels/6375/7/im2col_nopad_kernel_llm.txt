@@ -1,0 +1,7 @@
+```
+// Consider merging multiple float loads into a float2 or float4 for coalesced memory access.
+// Ensure that data_col is aligned on a float4 boundary for efficient memory writes.
+// Precompute repeated terms to reduce arithmetic operations and increase performance.
+// Optimize shared memory usage, if applicable, to alleviate global memory load.
+// Optimize thread block size to improve memory access coalescing and occupancy.
+```

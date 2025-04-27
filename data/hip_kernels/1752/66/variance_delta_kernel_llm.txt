@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store the `mean` and `variance` values if they are reused across threads to reduce global memory access.
+// Try using loop unrolling within the innermost loop to potentially reduce the loop overhead and improve memory access patterns.
+// Ensure memory access for `delta` and `x` is coalesced by having consecutive threads access consecutive memory locations.
+// Consider aligning data structures to cache line boundaries to minimize cache misses.
+```

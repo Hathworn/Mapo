@@ -1,0 +1,3 @@
+// Consider optimizing memory access by using coalesced memory access patterns for source and target arrays.
+// Use shared memory to store rows being swapped, reducing global memory traffic.
+// Ensure proper thread synchronization with __syncthreads() to prevent data races.

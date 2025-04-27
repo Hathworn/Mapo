@@ -1,0 +1,8 @@
+```
+// Consider increasing the block size along y-dimension to maximize occupancy.
+// Use shared memory for normDistPrefixSum if possible to improve memory access speed.
+// Coalesce memory accesses in dest by having threads write sequential elements.
+// Ensure each block's random state is well-separated to avoid correlation between block random numbers.
+// Use __restrict__ qualifiers if normDistPrefixSum and dest have no aliasing issues.
+// Consider splitting the kernel if the loop structure causes warp divergence.
+```

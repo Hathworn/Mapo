@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access
+// Ensure memory accesses are coalesced for better performance
+// Consider loop unrolling if the loop has a fixed size
+// Optimize block and grid size to maximize occupancy

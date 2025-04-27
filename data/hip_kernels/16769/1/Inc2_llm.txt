@@ -1,0 +1,4 @@
+// Load Ad[tx] to a register for faster access
+// Increment A_val instead of Ad[tx]
+// Store in a temporary variable to minimize global memory accesses
+// Write once to global memory

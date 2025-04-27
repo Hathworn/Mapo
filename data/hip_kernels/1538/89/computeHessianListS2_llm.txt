@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory load/store operations
+// Employ loop unrolling to reduce loop overhead and increase instruction-level parallelism
+// Minimize divergent branches by structuring conditions for coherence
+// Consider using float4 or float3 for multiple data fetches at once if applicable
+// Align memory accesses to improve coalescing
+// Optimize memory access patterns for stride-based accesses
+```

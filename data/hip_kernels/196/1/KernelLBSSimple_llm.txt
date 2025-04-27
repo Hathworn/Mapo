@@ -1,0 +1,9 @@
+```cpp
+// Use coalesced access to load data from global to shared memory for better memory utilization.
+// Adjust chunk_size for optimal shared memory occupancy based on bCount and NT.
+// Ensure __shared__ array is efficiently utilized to prevent bank conflicts.
+// Consider further unrolling the loop that loads data into shared memory for performance gain.
+// Use __syncthreads() judiciously to synchronize threads only when necessary.
+// Look into reducing the __syncthreads() count if shared memory dependencies allow it.
+// Unroll the loop with #pragma unroll when accessing the shared and global memory to enhance performance.
+```

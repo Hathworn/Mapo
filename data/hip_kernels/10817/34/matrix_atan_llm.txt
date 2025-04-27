@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning A and C
+// Use shared memory if possible to minimize global memory access
+// Optimize block size and grid size to maximize occupancy
+// Consider using __restrict__ keyword for A and C if possible
+// Use asynchronous memory transfers to overlap data transfer and computation if applicable
+// Investigate warp-level primitives for potential further optimizations
+```

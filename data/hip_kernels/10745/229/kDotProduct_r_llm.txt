@@ -1,0 +1,6 @@
+// Use a register for accumulation to minimize reads and writes to memory.
+// Unroll comparison and blocking accesses to improve instruction throughput.
+// Store intermediate sum in shared memory to reduce global memory accesses.
+// Use loop for reduction with warp-synchronous programming to optimize parallel reduction.
+// Use warp-level reduction to minimize synchronization overhead.
+// Store result for this block directly in global memory without extra computation.

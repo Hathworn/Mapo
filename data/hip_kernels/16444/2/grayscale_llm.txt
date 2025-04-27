@@ -1,0 +1,4 @@
+// Consider using shared memory for rgb if multiple threads access nearby elements
+// Optimize global memory access patterns for coalesced reads
+// Prefer using warp intrinsics for potential further optimization on newer hardware
+// Avoid redundant calculation by storing the reused value j * cols + i in a register

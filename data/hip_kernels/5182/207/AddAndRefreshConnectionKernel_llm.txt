@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access
+// Coalesce memory accesses to improve memory bandwidth utilization
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+// Consider using atomic operations if updating shared data is required across threads
+// Implement loop unrolling if applicable to reduce loop overhead
+```

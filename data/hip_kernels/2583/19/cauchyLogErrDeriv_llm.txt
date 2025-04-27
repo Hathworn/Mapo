@@ -1,0 +1,4 @@
+// Use shared memory for faster access to A and Y arrays
+// Ensure shared memory usage fits within hardware constraints
+// Load data into shared memory outside condition checks for better warp efficiency
+// Consider alignment and coalesced access for global memory writes to out array

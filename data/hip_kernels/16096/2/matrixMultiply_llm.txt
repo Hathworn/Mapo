@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access and enhance memory coalescing
+// Align the shared memory usage with TILE_SIZE to optimize memory access patterns
+// Ensure thread synchronization using __syncthreads() after loading shared memory
+// Optimize loop iteration by minimizing arithmetic operations inside the loop
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed variables to reduce global memory access
+// Try to use coalesced memory access patterns when accessing the u, v, w_, z arrays
+// Consider loop unrolling if applicable to reduce overhead of loop management
+// Optimize the index calculation to minimize redundant computation inside kernels

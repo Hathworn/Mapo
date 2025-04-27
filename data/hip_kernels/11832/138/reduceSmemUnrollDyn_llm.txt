@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access by aligning data structures optimally.
+// Use texture memory for read-only input data to improve cache hit rates.
+// Ensure smem[] size is within shared memory limits for optimal performance.
+// Prefer use of __restrict__ keyword for pointers to avoid unnecessary aliasing.
+// Optimize warp unrolling to use __shfl_down_sync for intra-warp communication.
+// Use of atomic operations for final reduction may reduce kernel launch overhead.
+// Consider using cudaLaunchCooperativeKernel for better synchronization across blocks.
+```

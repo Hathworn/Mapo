@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache results if they will be accessed multiple times
+// Minimize state reinitialization by reusing state within the same thread
+// Coalesce memory accesses to maximize memory throughput
+// Unroll loops when the number of iterations is known at compile time
+// Consider using double buffer strategy to overlap computation and memory transfer
+```

@@ -1,0 +1,6 @@
+```
+// Cache blockIdx.y to avoid repeated access
+// Compute indices outside the loop to reduce calculations
+// Consider improving memory access patterns for coalescing
+// Ensure usage of __restrict__ pointers if applicable
+```

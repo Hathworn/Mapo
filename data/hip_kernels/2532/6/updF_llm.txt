@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses for repeated z values
+// Optimize memory access by using memory coalescing for accessing z and f arrays
+// Precompute and store repeated computations such as tf * lambda to improve performance
+// Use loop unrolling for the divergence computation to minimize branch instructions
+```

@@ -1,0 +1,7 @@
+```
+// Prioritize shared memory usage for frequently accessed data to minimize redundant global memory accesses.
+// Consider using __syncthreads() to synchronize threads when using shared memory in order to avoid data hazards.
+// Ensure memory access patterns are coalesced to improve memory bandwidth utilization especially in devOutput.
+// Assess whether loop unrolling can be leveraged to optimize repeated calculations within the kernel.
+// Evaluate the use of warp shuffles to reduce shared memory overhead and promote data sharing within a warp.
+```

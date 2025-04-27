@@ -1,0 +1,8 @@
+```c
+// Optimize memory access patterns by ensuring coalesced access to input and output arrays.
+// Consider using shared memory to store input data for faster access within a block.
+// Ensure that nnIndex and nnCount arrays are accessed in a coalesced manner.
+// Use appropriate grid and block dimensions to maximize occupancy.
+// Implement loop unrolling for the accumulation loop to reduce loop overhead.
+// Minimize divergent branches by checking if(nnSize > 0) before the loop if possible.
+```

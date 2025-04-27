@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for better memory throughput.
+// Ensure that the arrays A, B, and C are aligned to 128-byte boundaries on modern GPUs.
+// Use __restrict__ qualifier for pointers if the data does not alias to optimize compiler vectorization.
+// Employ shared memory if the data from A or B needs to be reused within the block.
+// Evaluate using warp-level primitives if applicable to reduce latency.
+```

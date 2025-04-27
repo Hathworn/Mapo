@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to cache input tiles for faster access
+// Coalesce global memory accesses to improve memory throughput
+// Use the __restrict__ qualifier to optimize pointer aliasing
+// Preload weights and biases into shared memory if reused frequently
+// Ensure output calculation is well aligned with warp size for efficiency
+// Minimize divergent branches within loops for better performance
+```

@@ -1,0 +1,5 @@
+```
+// Use shared memory to store intermediate results to reduce global memory access latency
+// Minimize divergence by ensuring all threads take similar paths in conditional statements
+// Optimize random number generation by using vectorized operations (e.g., hiprand_uniform4)
+```

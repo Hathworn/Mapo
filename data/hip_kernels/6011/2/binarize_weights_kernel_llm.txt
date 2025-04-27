@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed weights for better memory access patterns
+// Minimize memory divergence by ensuring that all threads within a warp perform similar operations
+// Analyze the possibility of loop unrolling to reduce loop overhead
+// Check for coalesced memory access patterns to maximize global memory throughput
+```

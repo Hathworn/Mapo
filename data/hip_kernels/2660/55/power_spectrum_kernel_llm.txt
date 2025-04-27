@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Utilize continuous memory access patterns to reduce cache misses.
+// Minimize divergent branching within the kernel.
+// Ensure memory coalescing when writing results back to global memory.
+// Reduce bank conflicts by appropriately padding shared memory.
+```

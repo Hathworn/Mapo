@@ -1,0 +1,7 @@
+```
+// Optimize access patterns to ensure coalesced memory access for outputWeights and outputWeightDeltas.
+// Consider using shared memory to reduce global memory accesses and improve memory access patterns.
+// Ensure that the product 'D_OUTPUT_UNITS * D_HIDDEN_UNITS' is aligned to the warp size for efficiency.
+// Utilize __syncthreads() to synchronize threads when using shared memory to ensure data consistency.
+// Minimize the usage of registers by optimizing arithmetic operations and loop unrolling if applicable.
+```

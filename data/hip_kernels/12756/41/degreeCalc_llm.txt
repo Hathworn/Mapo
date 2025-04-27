@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring coalesced loads from 'array' into local variables.
+// Consider using warp-level primitives for reduction to minimize synchronization overhead.
+// Ensure memory alignment for 'sharedSum' for optimal shared memory performance.
+// Use __shfl_down_sync for reduction across warp to reduce the need for shared memory.
+// Reduce atomic operations in 'degreeCalc' by accumulating results in registers.
+// Prefetch 'vertexArray' and 'neighbourArray' data into registers for reduced memory latency.
+```

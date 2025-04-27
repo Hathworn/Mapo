@@ -1,0 +1,7 @@
+```
+// Consider increasing the number of threads per block to better utilize shared memory
+// Ensure the atomic operations in global memory access are minimized
+// Avoid bank conflicts in shared memory by ensuring data is accessed linearly
+// Use __syncthreads() correctly to ensure all threads complete shared memory operations before proceeding
+// Optimize the computation of b_size and b_offset to ensure load balancing across blocks
+```

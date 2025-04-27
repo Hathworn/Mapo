@@ -1,0 +1,7 @@
+```
+// Use shared memory to store frequently accessed variables like mean and variance
+// Consider using register variables for inv_sqrt_var and factor to reduce access time
+// Optimize memory access patterns to ensure coalesced global memory access
+// Check if using atomic operations can improve performance when updating shared variables
+// Investigate loop unrolling for operations inside if-clause to reduce instruction overhead
+```

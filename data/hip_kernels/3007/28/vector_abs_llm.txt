@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for x and y arrays for better memory throughput.
+// Utilize shared memory if multiple threads are accessing the same elements of x and y.
+// Try to align data accesses to improve bandwidth usage on modern hardware.
+// Ensure datatype alignment; for example, use float4 if possible for vectorized memory access.

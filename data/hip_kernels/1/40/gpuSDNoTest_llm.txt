@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access for vectsA and vectsB to improve memory throughput.
+// Load means and numPairs in a coalesced manner to reduce shared memory bank conflicts.
+// Optimize shared memory usage by ensuring threadSumsA and threadSumsB do not exceed shared memory per block.
+// Use warp shuffle operations to reduce thread divergences during sum reduction phase.
+// Ensure that the dimension (dim) aligns with the memory access pattern for optimal performance.
+```

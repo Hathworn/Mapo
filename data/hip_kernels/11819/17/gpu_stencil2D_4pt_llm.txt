@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for improved memory throughput.
+// Ensure shared memory access patterns avoid bank conflicts.
+// Evaluate using a larger TILE_SIZE for better load balancing and fewer kernel launches.
+// Prefetch boundary halo regions into registers where possible to reduce shared memory pressure.
+// Use __syncthreads() only when necessary to minimize performance overhead.
+```

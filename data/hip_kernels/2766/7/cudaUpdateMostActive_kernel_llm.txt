@@ -1,0 +1,8 @@
+```
+// Use coalesced global memory access patterns to improve memory throughput.
+// Ensure that shared memory size is sufficient to prevent bank conflicts.
+// Minimize use of __syncthreads to reduce synchronization overhead.
+// Consider using warp-level primitives for efficient reduction within a warp.
+// Avoid unnecessary memory accesses by caching frequently used values in registers.
+// Align data structures to ensure efficient memory transactions.
+```

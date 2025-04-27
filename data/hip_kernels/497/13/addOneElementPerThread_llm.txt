@@ -1,0 +1,4 @@
+// Consider using shared memory for data accessed multiple times within the thread
+// Optimize memory access patterns to ensure coalesced reads and writes
+// Minimize divergent branches in the kernel for improved warp efficiency
+// Ensure n is a suitable number to maximize utilization of available hardware threads

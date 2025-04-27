@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by accessing delta in a more linear fashion
+// Implement shared memory for delta if there are repeated accesses to the same data
+// Consider loop unrolling for the nested loops to increase ILP (instruction-level parallelism)
+// Use __restrict__ qualifiers for delta and prev_delta pointers to avoid aliasing
+// Precompute values like w_offset and h_offset outside the loop if they're constant within each block
+```

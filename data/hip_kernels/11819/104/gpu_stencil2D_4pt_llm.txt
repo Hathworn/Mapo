@@ -1,0 +1,10 @@
+```
+// Ensure enough shared memory is declared to accommodate halos and the main tile.
+// Reduce shared memory bank conflicts by declaring shared memory dynamically when possible.
+// Optimize memory coalescing by ensuring global memory accesses are contiguous.
+// Use __syncthreads() to synchronize threads after loading to shared memory.
+// Exploit the spatial locality by copying a larger section of the grid to shared memory in one go.
+// Consider unrolling loops for improving computation-related parallelism.
+// Minimize the number of global memory accesses by maximizing the use of shared memory.
+// Reduce occupancy loss through better handling both computation and memory latency.
+```

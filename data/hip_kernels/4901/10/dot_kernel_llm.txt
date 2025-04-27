@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache repeated reads from global memory for output[ ].
+// Use loop unrolling techniques to optimize the inner loop over size for reducing loop overhead.
+// Prefetch data from global memory to registers in advance to reduce latency.
+// Investigate opportunities for coalesced access to improve memory bandwidth usage.
+// Analyze if using half precision for float variables may provide performance benefits.
+// Ensure the use of rsqrtf() does not introduce precision issues; consider alternatives if needed.
+// Evaluate if reducing the number of atomicAdd operations can minimize contention.
+```

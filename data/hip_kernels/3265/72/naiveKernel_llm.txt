@@ -1,0 +1,6 @@
+```
+// Use shared memory to prevent reloading from global memory
+// Load data into shared memory only once per block
+// Utilize __syncthreads() to ensure all threads have loaded data
+// Reduce global memory accesses by performing computations in shared memory
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache gradOutput_data for coalesced memory access
+// Consider loop unrolling for fixed scale_factor values to improve performance
+// Use texture memory for gradOutput_data accesses to benefit from cache locality
+// Align data structures to 128-byte boundaries for improved memory performance
+```

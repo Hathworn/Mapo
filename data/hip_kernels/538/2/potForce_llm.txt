@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store PairWise values to reduce global memory access.
+// Enable coalesced memory access by ensuring that threads access contiguous memory locations.
+// Use appropriate synchronization mechanisms to prevent race conditions when using shared memory.
+// Optimize memory usage by minimizing the number of accesses to global memory per thread.
+// Consider loop unrolling if applicable to improve instruction-level parallelism.
+```

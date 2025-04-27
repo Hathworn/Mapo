@@ -1,0 +1,4 @@
+// Use shared memory to cache data to reduce global memory access latency.
+// Align data memory accesses to improve coalesced memory accesses.
+// Optimize block and grid sizes to maximize occupancy and minimize divergence.
+// Consider using warp-level primitives for reduction where applicable.

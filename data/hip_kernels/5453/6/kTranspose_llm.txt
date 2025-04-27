@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by reading rows and writing columns
+// Use shared memory to reduce global memory load/store operations
+// Padding shared memory to COPY_BLOCK_SIZE+1 prevents bank conflicts
+// Synchronize threads before accessing shared memory to ensure all values are loaded
+// Limit memory access conditions to ensure no out-of-bounds memory access
+```

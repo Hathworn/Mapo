@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Use shared memory to cache frequently accessed data and reduce global memory reads
+// Minimize thread divergence by ensuring all threads in a warp follow the same execution path
+// Explore use of texture memory for read-only data to take advantage of cache mechanisms
+// Attempt to increase the occupancy by optimizing block and grid dimensions
+```

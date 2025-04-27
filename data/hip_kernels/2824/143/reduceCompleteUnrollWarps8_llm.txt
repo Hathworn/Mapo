@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by having threads read contiguous memory locations.
+// Use shared memory to minimize global memory accesses during the reduction.
+// Leverage warp-level primitives to reduce synchronization overhead and optimize within-warp reductions.
+// Utilize all available threads by completely unrolling the reduction loops.
+// Employ volatile keyword for within-warp reduction to prevent unnecessary memory reads/writes.
+// Use only __syncthreads() when absolutely necessary to minimize synchronization penalty.
+```

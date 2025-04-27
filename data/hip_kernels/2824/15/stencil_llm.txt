@@ -1,0 +1,7 @@
+```c
+// Consider optimizing block size to utilize more threads concurrently
+// Using shared memory effectively reduces global memory access latency
+// Preload halo elements into shared memory to prevent bank conflicts
+// Ensure proper synchronization to prevent race conditions
+// Leverage thread parallelism by unrolling the loop for efficiency
+```

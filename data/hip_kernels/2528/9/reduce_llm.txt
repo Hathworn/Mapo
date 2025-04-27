@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput
+// Use padding to avoid bank conflicts in shared memory
+// Minimize the number of __syncthreads() calls for better performance
+// Try using warp shuffle instructions for further optimization
+```

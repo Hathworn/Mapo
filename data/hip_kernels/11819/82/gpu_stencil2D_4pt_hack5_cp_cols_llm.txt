@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Ensure coalesced memory access patterns to improve memory bandwidth utilization
+// Avoid bank conflicts in shared memory access to maximize performance
+// Minimize usage of __syncthreads() to reduce synchronization overhead
+```

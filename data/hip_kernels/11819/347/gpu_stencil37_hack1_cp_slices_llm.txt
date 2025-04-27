@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning base_global_col with warp size.
+// Move condition outside loop to further reduce redundant checks.
+// Minimize thread divergence by structuring conditionals carefully.
+// Consider using shared memory for the frequently accessed n_cols and n_rows variables to reduce global memory access.
+// Utilize loop unrolling for the inner for loop with tile_y to improve performance.
+// Align shared memory allocation to warp boundaries to improve memory access efficiency.
+```

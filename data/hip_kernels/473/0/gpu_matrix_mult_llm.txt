@@ -1,0 +1,6 @@
+```
+// Load matrix A and B tiles into shared memory to minimize global memory access
+// Synchronize after loading tiles to ensure all threads have complete data
+// Accumulate the product of tiles in a loop to improve performance
+// Synchronize threads before loading the next tileset to prevent data hazards
+```

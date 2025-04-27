@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache data_im and reduce global memory accesses.
+// Minimize divergence by ensuring that data each thread pulls in is contiguous in global memory.
+// Use coalesced memory access patterns for data_im and data_col to improve memory throughput.
+// Evaluate whether using the constant memory space for frequently accessed static values like ksize, pad, and stride may yield performance benefits.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for outputWeights to reduce global memory access latency
+// Use coalesced memory access patterns for inputWeightRTRLDerivatives to improve memory throughput
+// Ensure all loops are unrolled properly to maximize instruction throughput
+// Evaluate using warp-level primitives for reduction to further enhance parallel efficiency
+```

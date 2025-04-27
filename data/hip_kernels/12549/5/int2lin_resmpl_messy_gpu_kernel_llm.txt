@@ -1,0 +1,8 @@
+```
+// Use shared memory to store intermediate computed values to reduce global memory accesses
+// Coalesce global memory accesses by ensuring threads access contiguous memory locations
+// Avoid bank conflicts by using padding in shared memory
+// Consider using texture memory for regular access patterns to improve cache hits
+// Minimize synchronization barriers to reduce overhead
+// Use loop unrolling to improve performance in iterative calculations
+```

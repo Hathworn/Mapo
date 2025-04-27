@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory accesses
+// Coalesce global memory accesses by ensuring threads in a warp access consecutive memory locations
+// Experiment with different block and grid sizes to maximize occupancy and performance
+// Use register keyword or shared memory to cache d_ConstantA and d_ConstantB if they are accessed repeatedly
+// Minimize the use of if statements within the kernel to enhance performance
+```

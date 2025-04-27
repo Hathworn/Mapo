@@ -1,0 +1,5 @@
+// Consider using shared memory for caching frequently accessed values
+// Ensure coalesced memory access by aligning data with thread IDs
+// Reduce bank conflicts by using padding if necessary
+// Optimize thread block and grid size for increased occupancy
+// Avoid redundant global memory accesses when possible

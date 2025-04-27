@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access to global memory for improved memory throughput
+// Prefer shared memory as much as possible to reduce global memory latency
+// Minimize the use of __syncthreads() to decrease synchronization overhead
+// Consider reducing shared memory size for larger problem sizes to avoid occupancy issues
+// Align data access patterns to take advantage of memory transaction granularity
+// Double-check the input data alignment for optimal performance on input loading
+```

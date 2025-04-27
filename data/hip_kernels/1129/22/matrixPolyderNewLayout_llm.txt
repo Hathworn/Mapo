@@ -1,0 +1,6 @@
+// Consider using shared memory to store coefImg for frequent access
+// Ensure memory accesses are coalesced for global memory optimizations
+// Explore using vectorized operations to process multiple elements together
+// Check for bank conflicts in shared memory to maximize efficiency
+// Minimize divergence by ensuring uniform control flow across threads
+// Evaluate the use of asynchronous copy for overlapping computations with memory transfers

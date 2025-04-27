@@ -1,0 +1,8 @@
+```c
+// Consider using warp-level primitives for intra-warp reduction
+// Use the volatile keyword or atomic operations for shared memory updates if necessary
+// Ensure data alignment to improve memory access speed
+// Use __ldg to load input if constant memory can be utilized for input data
+// Minimize the use of __syncthreads() by optimizing the reduction pattern
+// Ensure coalesced memory access patterns when reading input data
+```

@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access
+// Consider coalesced memory access patterns for X and Y
+// Prefetch OUT[i] into a register for faster access
+// Evaluate using float4 operations for vectorized computation
+// Minimize divergent branches for better warp efficiency
+```

@@ -1,0 +1,7 @@
+```cpp
+// Load data into shared memory to minimize global memory accesses
+// Use __syncthreads() to synchronize shared memory operations
+// Reduce global memory operations by performing calculations in shared memory
+// Ensure that __syncthreads() are used correctly to avoid race conditions
+// Optimize the number of threads per block to balance memory utilization
+```

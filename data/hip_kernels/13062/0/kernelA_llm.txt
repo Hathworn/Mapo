@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory reads.
+// Prefetch data into registers to enhance memory access speed.
+// Use __restrict__ qualifier to avoid unnecessary memory fetches.
+// Ensure proper alignment of input data for coalesced memory access.
+// Adjust block size to match the size of the warp for optimal performance.
+// Experiment with loop unrolling for the for-loop to increase instruction-level parallelism.
+```

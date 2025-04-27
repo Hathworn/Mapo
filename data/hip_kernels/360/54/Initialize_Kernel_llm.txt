@@ -1,0 +1,4 @@
+// Use shared memory to store randoms if memory access is frequent and improves coalescing
+// Consider using atomic operations for bestSeen updates to avoid race conditions
+// Pre-fetch data into registers where possible to minimize memory latency
+// Perform loop unrolling for index computation if multiple iterations are required

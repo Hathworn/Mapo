@@ -1,0 +1,10 @@
+```
+// Ensure data is coalesced for efficient memory access
+// Consider adjusting memory access patterns to reduce memory bandwidth
+// Utilize shared memory where applicable to reduce global memory accesses
+// Use texture memory for read-only data to potentially improve cache hit rate
+// Minimize data movement between CPU and GPU to reduce latency
+// Optimize block and grid dimensions for better resource utilization
+// Assess if the kernel could benefit from register spilling reduction
+// Consider loop unrolling if applicable in other parts of kernel for performance enhancement
+```

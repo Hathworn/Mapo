@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced access to global memory for 'a' and 'b'
+// Consider larger shared memory allocation to store more elements
+// Minimize divergence by ensuring branches are balanced
+// Experiment with varying block sizes to optimize performance
+// Unroll loops if possible to reduce overhead
+// Perform computation in shared memory to minimize global memory access
+```

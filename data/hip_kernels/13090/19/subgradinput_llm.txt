@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache parts of gradOutput for reduced global memory access
+// Leverage memory coalescing by aligning data accesses to avoid memory bank conflicts
+// Implement loop blocking or tiling for improved cache utilization
+// Consider reducing the number of index computations inside the loops
+// Optimize the use of registers by minimizing variable usage within compute-intensive loops
+```

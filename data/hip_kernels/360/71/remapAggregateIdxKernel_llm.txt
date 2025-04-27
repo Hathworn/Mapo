@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for fineAggregateSort for better memory throughput
+// Ensure fineAggregateSort and aggregateRemapId are stored in global memory efficiently
+// Explore using shared memory if beneficial to reduce global memory bandwidth
+// Check if loop unrolling offers any performance advantage
+// Prefetch data if it helps to hide memory latency
+// Align memory access patterns to ensure maximum performance on current architecture
+// Investigate if reducing the number of divergent branches would improve performance
+```

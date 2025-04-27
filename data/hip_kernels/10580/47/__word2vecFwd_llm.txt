@@ -1,0 +1,7 @@
+```
+// Minimize global memory access by using shared memory where possible
+// Ensure coalesced access when loading data into shared memory
+// Use appropriate block and grid sizes to maximize occupancy and hide latency
+// Avoid bank conflicts by careful shared memory layout design
+// Consider using float4 for coalesced access if data alignment allows
+```

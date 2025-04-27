@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store intermediate results for better performance
+// Optimize memory coalescing to improve memory access patterns
+// Use __restrict__ keyword for pointers to help the compiler optimize memory loads
+// Avoid using atomic operations inside heavily used loops if possible
+// Consider splitting the kernel for different phases (finding max, calculating exp, summing)
+// Minimize usage of __syncthreads() for better performance and reducing thread divergence
+```

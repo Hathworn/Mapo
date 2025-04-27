@@ -1,0 +1,4 @@
+
+// Ensure only necessary data is loaded into registers to reduce register pressure.
+// Consider using shared memory if multiple threads require access to the same data to reduce global memory traffic.
+// Prefetch any global memory data into shared memory if it's accessed multiple times to reduce memory latency.

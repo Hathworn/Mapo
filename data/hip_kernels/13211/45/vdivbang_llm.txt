@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access
+// Ensure that input arrays 'a' and 'b' are aligned to improve coalesced memory access
+// Consider using texture memory for read-only data to benefit from cached access
+// Use vectorized data types if elements are aligned to improve memory throughput
+// Adjust the block size to maximize occupancy based on the specific hardware capabilities
+```

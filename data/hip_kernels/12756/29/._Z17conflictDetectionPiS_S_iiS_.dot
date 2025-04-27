@@ -1,0 +1,37 @@
+digraph "CFG for '_Z17conflictDetectionPiS_S_iiS_' function" {
+	label="CFG for '_Z17conflictDetectionPiS_S_iiS_' function";
+
+	Node0x56f7a10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4c5ad70",label="{%6:\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = mul i32 %12, %11\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = icmp slt i32 %15, %3\l  br i1 %16, label %17, label %61\l|{<s0>T|<s1>F}}"];
+	Node0x56f7a10:s0 -> Node0x56f82f0;
+	Node0x56f7a10:s1 -> Node0x56f99e0;
+	Node0x56f82f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %18\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %23 = add nsw i32 %3, -1\l  %24 = icmp eq i32 %15, %23\l  br i1 %24, label %25, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x56f82f0:s0 -> Node0x56facb0;
+	Node0x56f82f0:s1 -> Node0x56fad40;
+	Node0x56facb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%25:\l25:                                               \l  %26 = shl nsw i32 %4, 1\l  br label %32\l}"];
+	Node0x56facb0 -> Node0x56faf40;
+	Node0x56fad40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%27:\l27:                                               \l  %28 = add nsw i32 %15, 1\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %29\l  %31 = load i32, i32 addrspace(1)* %30, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %32\l}"];
+	Node0x56fad40 -> Node0x56faf40;
+	Node0x56faf40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%32:\l32:                                               \l  %33 = phi i32 [ %26, %25 ], [ %31, %27 ]\l  %34 = icmp slt i32 %22, %33\l  br i1 %34, label %35, label %61\l|{<s0>T|<s1>F}}"];
+	Node0x56faf40:s0 -> Node0x56f9980;
+	Node0x56faf40:s1 -> Node0x56f99e0;
+	Node0x56f9980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%35:\l35:                                               \l  %36 = getelementptr inbounds i32, i32 addrspace(1)* %5, i64 %18\l  br label %37\l}"];
+	Node0x56f9980 -> Node0x56fb6a0;
+	Node0x56fb6a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%37:\l37:                                               \l  %38 = phi i32 [ %22, %35 ], [ %59, %58 ]\l  %39 = sext i32 %38 to i64\l  %40 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %39\l  %41 = load i32, i32 addrspace(1)* %40, align 4, !tbaa !7\l  %42 = add nsw i32 %41, -1\l  %43 = sext i32 %42 to i64\l  %44 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %43\l  %45 = load i32, i32 addrspace(1)* %44, align 4, !tbaa !7\l  %46 = icmp eq i32 %45, %20\l  br i1 %46, label %47, label %58\l|{<s0>T|<s1>F}}"];
+	Node0x56fb6a0:s0 -> Node0x56fbcf0;
+	Node0x56fb6a0:s1 -> Node0x56fb760;
+	Node0x56fbcf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%47:\l47:                                               \l  %48 = icmp slt i32 %15, %42\l  br i1 %48, label %49, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x56fbcf0:s0 -> Node0x56fbec0;
+	Node0x56fbcf0:s1 -> Node0x56fbf10;
+	Node0x56fbec0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%49:\l49:                                               \l  %50 = load i32, i32 addrspace(1)* %36, align 4, !tbaa !7\l  %51 = icmp eq i32 %50, 1\l  br i1 %51, label %58, label %56\l|{<s0>T|<s1>F}}"];
+	Node0x56fbec0:s0 -> Node0x56fb760;
+	Node0x56fbec0:s1 -> Node0x56fc150;
+	Node0x56fbf10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%52:\l52:                                               \l  %53 = getelementptr inbounds i32, i32 addrspace(1)* %5, i64 %43\l  %54 = load i32, i32 addrspace(1)* %53, align 4, !tbaa !7\l  %55 = icmp eq i32 %54, 1\l  br i1 %55, label %58, label %56\l|{<s0>T|<s1>F}}"];
+	Node0x56fbf10:s0 -> Node0x56fb760;
+	Node0x56fbf10:s1 -> Node0x56fc150;
+	Node0x56fc150 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%56:\l56:                                               \l  %57 = phi i32 addrspace(1)* [ %36, %49 ], [ %53, %52 ]\l  store i32 1, i32 addrspace(1)* %57, align 4, !tbaa !7\l  br label %58\l}"];
+	Node0x56fc150 -> Node0x56fb760;
+	Node0x56fb760 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%58:\l58:                                               \l  %59 = add nsw i32 %38, 1\l  %60 = icmp slt i32 %59, %33\l  br i1 %60, label %37, label %61, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x56fb760:s0 -> Node0x56fb6a0;
+	Node0x56fb760:s1 -> Node0x56f99e0;
+	Node0x56f99e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4c5ad70",label="{%61:\l61:                                               \l  ret void\l}"];
+}

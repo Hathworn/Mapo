@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access if N is large
+// Load data into shared memory for coalesced access
+// Example: assuming blockDim.x <= 256 for optimal shared memory usage
+// Compute normalization using data loaded from shared memory

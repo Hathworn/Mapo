@@ -1,0 +1,3 @@
+// Load normalization constant once per block to reduce register usage.
+// Use shared memory for faster access to normalization constant.
+// Ensure synchronization with __syncthreads() after loading normalization constant.

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses by ensuring render_buffer is aligned
+// Use shared memory if applicable to reduce global memory access frequency
+// Minimize divergent branches within the loop to maintain parallel efficiency
+// Ensure that thread blocks cover the entirety of qw_count for complete processing
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce multiple loads of the same data
+// Ensure coalesced memory access for optimal performance
+// Use __ldg() for reading read-only data if appropriate
+// Minimize thread divergence by grouping similar operations
+// Validate whether loop unrolling would benefit performance
+```

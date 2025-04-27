@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache row_sum and col_sum values to reduce global memory access.
+// Ensure coalesced memory access for the output array to optimize the memory bandwidth.
+// Evaluate using warp-level primitives for synchronization to potentially reduce overhead.
+```

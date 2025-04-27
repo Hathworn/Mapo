@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency
+// Ensure tiles fit into shared memory by correctly sizing them
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Keep the loop unrolled where possible for loop efficiency
+// Minimize bank conflicts in shared memory access
+// Optimize the number of tiles to minimize thread divergence
+```

@@ -1,0 +1,8 @@
+```
+// Consider aligning shared memory arrays to improve access speed
+// Evaluate if the shared memory size can be reduced for further optimization
+// Ensure coalesced access pattern to global memory arrays a and b
+// Avoid unnecessary synchronization (__syncthreads) if operations are independent
+// Check if loop unrolling can be applied for operations in shared memory
+// Use vectorized data types for a and b to improve memory throughput
+```

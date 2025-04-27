@@ -1,0 +1,10 @@
+```cpp
+// Make use of shared memory to cache data for better memory access patterns.
+// Ensure memory coalescing when loading and storing data from/to global memory.
+// Use fminf and fmaxf for fast floating-point min/max calculations.
+// Avoid warp divergence by synchronizing threads appropriately.
+// Pre-compute indices to minimize runtime calculations.
+// Clamp xEnd to avoid out-of-bounds memory accesses.
+// Use __syncthreads() to synchronize shared memory usage among threads.
+// Consider loop unrolling for the loop with a fixed size to improve performance.
+```

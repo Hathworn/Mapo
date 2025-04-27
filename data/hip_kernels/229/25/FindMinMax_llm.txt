@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing global memory accesses on d_Data for improved performance
+// Use __restrict__ keyword for pointer parameters if data is read-only
+// Align block size to a power of 2 for more efficient reduction
+// Ensure shared memory usage is optimal and within device limits
+// Evaluate if unrolling the loop could enhance performance due to reduced branch divergence
+// Confirm that each warp is fully utilized for memory transactions
+```

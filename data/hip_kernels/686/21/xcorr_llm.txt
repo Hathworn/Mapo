@@ -1,0 +1,8 @@
+```
+// Use shared memory to store tiles of d_i1 and d_i2 for faster access
+// Apply loop unrolling techniques in the kernel loop to reduce instruction overhead
+// Consider using texture memory for read-only data to benefit from caching
+// Coalesce global memory access for improved memory throughput
+// Balance block and grid dimensions to optimize occupancy and resource utilization
+// Minimize divergent branches inside the critical computation loop
+```

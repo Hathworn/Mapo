@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for optimal performance
+// Use __restrict__ keyword to inform compiler about non-aliasing pointers
+// Consider using shared memory if there's data reuse across threads
+// Minimize divergent branching by ensuring aligned memory access
+// Use warp-synchronous programming to reduce barrier usage if applicable
+```

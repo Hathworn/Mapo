@@ -1,0 +1,7 @@
+```cpp
+// Ensure memory coalescing by having threads access contiguous memory locations
+// Avoid shared memory usage unless necessary as it may increase complexity
+// Consider using texture or surface memory for repeated read accesses
+// Load input elements into registers to reduce global memory access
+// Minimize conditional checks within the kernel loop
+```

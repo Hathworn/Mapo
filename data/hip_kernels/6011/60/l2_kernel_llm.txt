@@ -1,0 +1,7 @@
+```c
+// Use shared memory to minimize global memory access latency
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Consider increasing the block size if the data allows, to improve occupancy
+// Ensure all shared memory is utilized effectively to avoid wastage
+// Consider refining memory access patterns to coalesce global memory access
+```

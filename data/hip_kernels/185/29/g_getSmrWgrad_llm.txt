@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data (e.g., weight) to reduce global memory access.
+// Consider using loop unrolling to reduce loop overhead and increase instruction throughput.
+// Optimize the memory access pattern to ensure coalesced memory accesses for wgrad and weight.
+// Verify whether the memory access pattern is causing bank conflicts, and apply padding if necessary.
+// If possible, use warp-level primitives to reduce divergent threads and improve efficiency.
+```

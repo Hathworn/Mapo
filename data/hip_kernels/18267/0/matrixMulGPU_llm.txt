@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access latency
+// Optimize memory coalescing by aligning global memory access patterns
+// Use __syncthreads() to ensure all threads have synchronized data
+// Consider setting #pragma unroll for the innermost loop for loop unrolling
+```

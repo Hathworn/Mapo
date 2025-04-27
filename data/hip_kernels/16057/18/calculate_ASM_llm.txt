@@ -1,0 +1,5 @@
+// Consider using shared memory to cache norm values for faster access.
+// Ensure memory coalescing by accessing global memory in a consecutive manner.
+// Reduce thread divergence by balancing the workload across threads.
+// Optimize parallel reduction by using warp-level operations if possible.
+// Use atomic operations if necessary to safely sum values across blocks.

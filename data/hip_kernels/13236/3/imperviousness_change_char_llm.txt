@@ -1,0 +1,4 @@
+// Use shared memory to optimize memory access if multiple threads access nearby data.
+// Coalesce global memory access to minimize memory transaction cost.
+// Minimize divergence by ensuring branches align across warps.
+// Leverage memory caching hints like __ldg() for read-only memory.

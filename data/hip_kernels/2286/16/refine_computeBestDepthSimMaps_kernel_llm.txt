@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses by using contiguous memory storage.
+// Align memory access patterns with data layout to ensure coalesced accesses.
+// Utilize texture or __ldg for read-only data to improve cache hit rates.
+// Implement shared memory usage to cache repeated data accesses within blocks.
+// Reduce divergent warps by minimizing branching and using warp-synchronous programming.
+// Optimize the use of registers by avoiding unnecessary variables and operations.
+// Consider loop unrolling for fixed iteration patterns if applicable in your kernel.
+```

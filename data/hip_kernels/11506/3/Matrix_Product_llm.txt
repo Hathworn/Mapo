@@ -1,0 +1,6 @@
+```
+// For coalesced memory access, ensure that 'A' is accessed in a linear fashion
+// Minimize bank conflicts when accessing 'g_shared' by ensuring aligned access
+// Use __syncthreads() efficiently to avoid unnecessary synchronization overhead
+// Optimize thread block size for better occupancy and memory throughput
+```

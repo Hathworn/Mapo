@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access for atomic operations.
+// Consider prefetching data into shared memory to minimize global memory latency.
+// Optimize thread block size to maximize occupancy and balance memory access.
+// Ensure memory coalescing by accessing consecutive memory indices within a warp.
+```

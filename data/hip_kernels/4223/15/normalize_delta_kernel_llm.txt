@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache frequently accessed values such as variance[f] and mean[f] to reduce global memory accesses.
+// Consider loop unrolling techniques to enhance performance when accessing x array with different index computations.
+// Prefetch the data required for computations into registers to reduce latency.
+// Utilize __restrict__ pointer qualifiers for input parameters to inform the compiler of non-aliasing pointers.
+// Ensure coalesced memory accesses for the delta and x arrays to improve global memory throughput.
+// Adjust block and thread configuration to maximize occupancy while considering register and shared memory usage.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for data reused by threads within the same block to decrease access latency.
+// Investigate if reducing memory divergence can be achieved by structuring data access patterns more uniformly.
+// Align data structures in global memory to warp size to optimize coalesced memory access.
+// Utilize __syncthreads() to ensure all threads have completed memory updates before accessing shared data.
+```

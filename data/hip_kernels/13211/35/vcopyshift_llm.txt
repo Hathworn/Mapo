@@ -1,0 +1,8 @@
+```c
+// Use coalesced memory access by ensuring 'a' and 'b' are aligned
+// Utilize shared memory if there is data reuse within a block
+// Ensure 'n' is a multiple of the block size for better occupancy
+// Use memory padding to avoid bank conflicts if using shared memory
+// Consider using loop unrolling for handling larger shifts
+// Minimize the number of memory operations in the kernel
+```

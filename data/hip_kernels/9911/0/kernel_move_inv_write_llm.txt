@@ -1,0 +1,7 @@
+```
+// Ensure global memory accesses are coalesced for better performance.
+// Use shared memory if the pattern writing involves reused data to reduce global memory access.
+// Consider warp-level primitives for better synchronous operations among threads.
+// Minimize the use of divergent branches within the kernel function.
+// Prefetch data if possible to hide memory latency.
+```

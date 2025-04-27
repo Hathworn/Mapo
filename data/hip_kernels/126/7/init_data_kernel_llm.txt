@@ -1,0 +1,5 @@
+```cpp
+// Loop unrolling could be applied here for better instruction-level parallelism.
+// Ensure coalesced memory accesses by checking stride alignment with n.
+// Consider using shared memory if x is accessed by other threads in a block.
+```

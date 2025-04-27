@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory accesses for xval, xrow, xcol, sval, srow, and scol.
+// Utilize memory coalescing techniques when accessing xval, xrow, and xcol arrays to improve memory throughput.
+// Minimize the use of atomic operations by reducing contention or using warp-level primitives for updates.
+// Investigate the use of shuffle or warp-synchronous programming to better manage reductions or updates.

@@ -1,0 +1,7 @@
+// Use __restrict__ keyword for pointers to improve memory access
+// Apply loop unrolling if applicable to reduce instruction overhead
+// Ensure coalesced memory access by adjusting indexing patterns
+// Consider using shared memory for frequently accessed data like variance and mean
+// Minimize bank conflicts in shared memory by careful data placement
+// Optimize memory access patterns for better cache utilization
+// Use atomic operations for shared data updates if required

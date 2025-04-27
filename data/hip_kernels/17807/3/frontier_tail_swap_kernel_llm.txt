@@ -1,0 +1,3 @@
+// Use atomic operations to prevent race conditions during the swap
+// Consider aligning data structures for better coalesced global memory access
+// Minimize divergence by reducing condition checks outside the main logic

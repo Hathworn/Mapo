@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache portions of inData and intData to reduce global memory accesses.
+// Consider using __ldg() to leverage hardware read-only cache for read-only data like xMin, yMin, and yMax.
+// Optimize thread block size to ensure maximum occupancy while keeping memory access coalesced.
+// Minimize redundant calculations within the loop, for example, common subexpression elimination.
+// Ensure alignment of memory accesses to achieve coalesced memory reads and writes.
+// Consider loop unrolling for small loops to reduce the overhead of loop control.
+```

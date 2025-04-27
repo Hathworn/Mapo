@@ -1,0 +1,10 @@
+```
+// Optimize memory access patterns to achieve coalesced global memory access.
+// Ensure `b` and `a` pointers are properly aligned to avoid misaligned memory access penalties.
+// Use shared memory if possible to reduce redundant global memory accesses.
+// Consider loop unrolling to improve instruction-level parallelism.
+// Minimize divergent branches inside the loop for better warp efficiency.
+// Leverage read-only data cache for `b` to optimize read performance from global memory.
+// Use `__ldg` intrinsic for read-only memory fetch from constant memory if applicable.
+// Verify if using `reinterpret_cast` instead of pointer casting improves performance or code clarity.
+```

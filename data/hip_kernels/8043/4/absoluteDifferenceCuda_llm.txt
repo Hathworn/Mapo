@@ -1,0 +1,5 @@
+```c
+// Coalesce global memory accesses by ensuring threads within a warp access consecutive addresses
+// Ensure each thread accesses adjacent elements to leverage memory coalescing
+// Consider using shared memory for frequently accessed data within a block
+```

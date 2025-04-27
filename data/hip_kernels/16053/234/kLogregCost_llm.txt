@@ -1,0 +1,9 @@
+```
+// Consider using shared memory or register variables to reduce redundant global memory accesses.
+// Load frequently used data into shared or register memory to minimize access latency.
+// Unroll loops where possible to decrease loop control overhead and improve performance.
+// Ensure coalesced memory accesses by organizing data in memory to match access patterns.
+// Minimize divergent branches within the warp to improve kernel efficiency.
+// Evaluate the data layout to potentially reduce stride and improve memory access patterns.
+// Profile kernel to identify bottlenecks and adjust memory access strategies accordingly.
+```

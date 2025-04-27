@@ -1,0 +1,11 @@
+```
+// Optimize memory coalescing in shared memory loads and stores
+// Reduce bank conflicts in shared memory accesses
+// Use warp shuffle instructions for intra-warp reductions instead of shared memory
+// Use fast math operations (e.g., __sinf) where precision allows
+// Minimize redundant math operations by hoisting invariant calculations outside loops
+// Ensure data alignment for better coalesced global memory access
+// Consider using float2 or float4 for vectorized math and memory operations
+// Use __ldg() intrinsics for read-only data from global memory if applicable
+// Explore loop unrolling in gradient calculation for potential speedup
+```

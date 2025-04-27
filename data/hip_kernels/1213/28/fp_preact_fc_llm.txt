@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache parts of weight and input for faster access.
+// Use warp-level primitives for reduction to minimize global memory accesses.
+// Ensure aligned memory access for coalescing and improved bandwidth efficiency.
+// Consider loop unrolling to reduce loop overhead and increase instruction throughput.
+// Explore using a half precision data type if precision requirements allow to reduce memory bandwidth usage.
+// Ensure enough threads per block to maximize occupancy and achieve better latency hiding.
+```

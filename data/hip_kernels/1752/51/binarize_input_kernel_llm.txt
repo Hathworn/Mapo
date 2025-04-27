@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory usage by utilizing shared memory more effectively for parallel reduction.
+// Investigate coalesced memory access patterns to enhance memory throughput.
+// Ensure shared memory usage does not exceed limits to prevent bank conflicts.
+// Utilize __syncthreads() only when necessary to minimize warp serialization.
+// Consider loop unrolling for reduction within each block to increase performance.
+```

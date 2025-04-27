@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Minimize register usage to improve occupancy
+// Consider using shared memory for frequently accessed data (e.g., amplitude[id2], background[id2])
+// Optimize loop unrolling for the for-loop to reduce overhead
+// Ensure warp divergence is minimized by structuring conditional logic effectively
+// Validate that memory access patterns are optimized for L2 cache utilization
+```

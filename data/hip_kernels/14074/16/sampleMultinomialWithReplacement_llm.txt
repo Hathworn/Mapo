@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns for normDistPrefixSum
+// Use shared memory to reduce global memory accesses within binarySearchForMultinomial
+// Consider loop unrolling if beneficial for the sampleBase loop
+// Minimize warp divergence where possible
+// Align memory allocation to benefit from memory coalescing
+```

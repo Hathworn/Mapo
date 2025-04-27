@@ -1,0 +1,8 @@
+```
+// Consider coalesced access for the probs and labels arrays to improve memory bandwidth utilization.
+// Use shared memory to cache frequently-accessed data, such as maxProbs, for faster access.
+// Minimize divergence by grouping threads with the same execution paths.
+// Examine the possibility of using texture memory for faster access to repeating data.
+// Explore loop unrolling within the for-loop to improve performance.
+// Consider prefetching data into registers where possible for reducing latency.
+```

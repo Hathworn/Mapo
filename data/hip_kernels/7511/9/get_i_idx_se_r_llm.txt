@@ -1,0 +1,6 @@
+```
+// Use shared memory to store temporary data if multiple threads access the same memory location
+// Consider using texture memory for more efficient reads if ilist is frequently accessed
+// Ensure coalesced memory access by aligning nloc and blockDim.x with memory banks size
+// Reduce thread divergence by minimizing conditional checks within the kernel
+```

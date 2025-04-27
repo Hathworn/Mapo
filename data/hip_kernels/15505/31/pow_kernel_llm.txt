@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access by ensuring threads access contiguous memory addresses
+// Use shared memory if multiple threads need access to the same value
+// Employ warp-level primitives to reduce redundant calculations
+// Check if using fast_math library could benefit performance
+// Minimize global memory access by preferring registers whenever possible
+```

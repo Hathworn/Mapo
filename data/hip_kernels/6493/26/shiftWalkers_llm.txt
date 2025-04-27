@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to cache the x array for faster repeated access by threads.
+// Coalesce global memory access for both xx and yy to improve memory bandwidth.
+// Consider using float4 data type for vectorized memory operations when dim is a multiple of 4.
+// Reduce the index calculation by leveraging warp or block granularity for thread mapping.
+```

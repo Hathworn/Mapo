@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Use __syncthreads() to ensure shared memory is correctly synchronized.
+// Cache c2 values in shared memory for faster access.
+// Reduce redundant calculations by storing intermediate results in shared memory.

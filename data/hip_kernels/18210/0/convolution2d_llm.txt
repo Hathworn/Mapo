@@ -1,0 +1,7 @@
+```
+// Consider optimizing shared memory usage if kernel size is known to be less than 32x32.
+// Ensure grid and block dimensions are set to maximize occupancy and efficient GPU utilization.
+// Minimize divergent code paths in the kernel for better performance.
+// Evaluate if padding calculations can be further optimized or pre-computed.
+// Make sure to avoid bank conflicts in shared memory when accessing shared_kernel.
+```

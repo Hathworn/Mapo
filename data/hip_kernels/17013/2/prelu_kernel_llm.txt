@@ -1,0 +1,8 @@
+```
+// Prefetch data to shared memory to reduce global memory access latency.
+// Optimize memory access patterns to ensure coalesced access.
+// Consider using float2 or float4 to increase data throughput.
+// Use constant memory for small data, like the gamma value, if applicable.
+// Explore occupancy optimizations by adjusting block size and grid size.
+// Ensure that the memory reads and writes are aligned to avoid performance penalties.
+```

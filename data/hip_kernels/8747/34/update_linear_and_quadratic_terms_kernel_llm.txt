@@ -1,0 +1,11 @@
+```
+// Consider using __restrict__ qualifier for cur_tot_weight, quadratic, and linear pointers to enable more aggressive compiler optimizations.
+// Evaluate if shared memory can be utilized to hold temporary values, reducing global memory accesses.
+// Consider restructuring data layout of quadratic and linear arrays for better access patterns, such as tiled storage.
+// Check for possible bank conflicts in accessing shared memory regions if implemented.
+// Reduce synchronization points by analyzing if atomic operations can be avoided or minimized.
+// Investigate loop unrolling strategies to enhance loop performance where applicable.
+// Consider increasing thread block size to maximize occupancy and improve memory bandwidth utilization.
+// Review if memory coalescing is happening correctly for quadratic and linear arrays updates.
+// Assess use of texture memory or constant memory for readonly data, potentially prior_offset.
+```

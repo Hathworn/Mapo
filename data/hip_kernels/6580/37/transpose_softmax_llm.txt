@@ -1,0 +1,6 @@
+```
+// Leverage shared memory to reduce global memory accesses
+// Avoid bank conflicts in shared memory by padding shared memory (BLOCK_DIM + 1)
+// Ensure memory coalescing when reading from global memory
+// Optimize memory access patterns to minimize warp divergence
+```

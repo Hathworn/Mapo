@@ -1,0 +1,4 @@
+// Consider using shared memory to cache the mask values within a block
+// Use coalesced memory access patterns for both x and mask arrays
+// Ensure that data is aligned for optimal memory access speed
+// Minimize divergence by organizing data to avoid conditional branching

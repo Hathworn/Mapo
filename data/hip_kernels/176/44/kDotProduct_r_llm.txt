@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing memory accesses to vectors a and b to improve memory bandwidth utilization
+// Ensure alignment of a and b on optimal boundaries for better memory access patterns
+// Use __restrict__ keyword if possible for a, b, and target if no aliasing occurs, to allow for compiler optimizations
+// Consider using atomic operations for reduction if there's a need to reduce across blocks
+// Possibly increase DP_BLOCKSIZE to better utilize shared memory and warp size if it doesn't exceed resource limits
+// Minimize divergence by ensuring the block size is a multiple of warp size
+```

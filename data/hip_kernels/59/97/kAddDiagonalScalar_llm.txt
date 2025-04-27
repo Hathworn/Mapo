@@ -1,0 +1,4 @@
+// Consider using shared memory for diagonal elements to reduce global memory access.
+// Ensure coalesced memory access by aligning threads with data access patterns.
+// Optimize grid and block dimensions to match GPU architecture for efficient warp usage.
+// Evaluate the use of atomic operations if concurrent writes to memory are possible.

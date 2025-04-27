@@ -1,0 +1,10 @@
+```c
+// Consider using coalesced memory access to improve memory bandwidth utilization
+// Ensure memory accesses are aligned for optimal performance
+// Use shared memory efficiently to avoid bank conflicts
+// Minimize divergent branches by ensuring threads within a warp follow the same execution path
+// Use appropriate synchronization to prevent race conditions
+// Balance between computation and memory transactions
+// Consider loop unrolling for better performance if the block size is known at compile time
+// Store intermediate results that are reused in shared memory to reduce global memory accesses
+```

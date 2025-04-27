@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache A data for better memory access patterns
+// Coalesce global memory reads by aligning access across threads in a warp
+// Minimize repeated computation of Acols * (int)col_id by precomputing it in a register
+// Avoid branch divergence by ensuring all threads in the warp have similar execution paths
+```

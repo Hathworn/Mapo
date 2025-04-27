@@ -1,0 +1,9 @@
+```cpp
+// Ensure memory coalescing by aligning memory accesses for `image` and `new_image`.
+// Utilize shared memory for the weights to reduce global memory bandwidth.
+// Use `__syncthreads()` to synchronize threads before using shared memory values.
+// Optimize the loop by unrolling if possible to improve performance.
+// Consider using constant memory for the weights if they do not change at runtime.
+// Use `fminf` and `fmaxf` to clamp values efficiently in the range [0, 255].
+// Calculate the alpha channel conditionally for better performance.
+```

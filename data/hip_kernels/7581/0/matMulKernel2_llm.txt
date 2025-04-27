@@ -1,0 +1,7 @@
+```
+// Coalesce global memory access for M and N to improve memory bandwidth utilization
+// Consider increasing tile size for better data reuse in shared memory
+// Ensure proper use of __syncthreads() to avoid race conditions
+// Experiment with increasing or decreasing unroll factor to find optimal performance
+// Use larger blocks if register usage and shared memory allow for it to increase parallelism
+```

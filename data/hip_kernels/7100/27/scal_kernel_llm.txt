@@ -1,0 +1,8 @@
+```
+// Ensure that the kernel launch configuration effectively balances the workload across threads
+// Consider using shared memory to cache frequent global memory accesses for improved performance
+// Ensure coalesced global memory access by ensuring sequential threads access sequential memory locations
+// Fine-tune the thread block size to optimize warp occupancy and maximize the throughput
+// Reuse allocated registers as much as possible by reducing code complexity inside the loop
+// Minimize conditional statements inside the loop to reduce divergence and improve efficiency
+```

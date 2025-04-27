@@ -2,19 +2,6 @@
 #include "includes.h"
 #define NUM_THREADS 16
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 __global__ void euclidean_kernel(const float * vg_a, size_t pitch_a, size_t n_a, const float * vg_b, size_t pitch_b, size_t n_b, size_t k, float * d, size_t pitch_d, float p)
 {
 size_t x = blockIdx.x;

@@ -1,0 +1,3 @@
+// Minimize usage of printf in GPU kernels for better performance
+// Consider using __syncthreads() after conditional statements to ensure threads are synchronized
+// Use shared memory to minimize global memory accesses and latency

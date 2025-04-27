@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses when indexing into intData
+// Prefetch data into shared memory to reduce global memory accesses
+// Minimize divergent branching within the kernel
+// Optimize boundary clamping to avoid redundant calculations
+// Utilize register usage strategically for frequently accessed variables
+// Employ loop unrolling within critical sections if applicable
+```

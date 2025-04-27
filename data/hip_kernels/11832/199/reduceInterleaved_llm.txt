@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access latency.
+// Ensure block size does not exceed shared memory limits.
+// Consider using warp shuffle functions for reduction to avoid synchronization when stride <= warp size.
+// Use loop unrolling to decrease loop overhead and improve performance.

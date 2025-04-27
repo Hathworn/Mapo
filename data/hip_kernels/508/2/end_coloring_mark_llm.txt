@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce redundant global memory accesses
+// Consider vectorization or using warp-level primitives for efficient computation
+// Avoid diverging branches within the warp to improve execution efficiency
+// Coalesce memory access patterns to prevent unnecessary latency
+// Evaluate if asynchronous memory copies can be beneficial
+// Examine memory alignment and padding to optimize access patterns
+```

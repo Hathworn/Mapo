@@ -1,0 +1,9 @@
+```
+// Ensure data is coalesced in shared memory loads to minimize bank conflicts
+// Consider using a larger TILE_WIDTH if registers and shared memory allow
+// Loading a_index and b_index in loop can be improved by reducing redundant calculations
+// Potentially use auto-implemented memory prefetching for better latency hiding
+// Assess potential threading model to ensure sync points aren't bottlenecks
+// Verify if shared memory allocation can be optimized for better occupancy
+// Check if loop unrolling makes sense for the tile multiplication loop
+```

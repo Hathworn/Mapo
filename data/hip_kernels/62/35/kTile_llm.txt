@@ -1,0 +1,5 @@
+// Consider increasing the block size to optimize the utilization of shared memory
+// Use coalesced access patterns for loading data into sharedSrc
+// Optimize loop to minimize divergence by ensuring warp-aligned access
+// Adjust sharedSrc size based on the problem constraints and memory availability
+// Consider using vectorized loads if possible to improve memory bandwidth usage

@@ -1,0 +1,7 @@
+```
+// Consider increasing the shared memory size if processing more elements
+// Utilize vectorized operations if applicable for faster data processing
+// Prefetch data to shared_in using loop if processing a large array
+// Minimize __syncthreads() usage to reduce synchronization overhead
+// Ensure coalesced global memory access for input and output arrays
+```

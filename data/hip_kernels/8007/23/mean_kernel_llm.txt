@@ -1,0 +1,6 @@
+```
+// Move scale calculation outside the kernel if used across multiple invocations
+// Use shared memory to store intermediate results to minimize global memory access
+// Ensure boundary checks are performed to avoid out-of-bounds access
+// Accumulate sums in local variables before writing to global memory
+```

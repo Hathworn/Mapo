@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache the segment of d_matrix being processed
+// Ensure enough threads are used to fully occupy the GPU for better performance
+// Perform memory access coalescing for improved bandwidth utilization
+// Minimize divergence in the grid by ensuring all threads within a block perform similar work
+// Use __restrict__ qualifier to help the compiler with optimization if applicable
+```

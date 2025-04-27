@@ -1,0 +1,5 @@
+// Consider using shared memory to cache data from matrices A and B for faster access
+// Optimize memory access patterns by ensuring data coalescing in the global memory reads and writes
+// Minimize bank conflicts when using shared memory by adjusting memory access patterns if needed
+// Try to reduce the number of conditional checks within the kernels' execution paths
+// Investigate the use of vectorized operations for improving data throughput and parallelism efficiency

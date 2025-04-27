@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for dy elements accessed repeatedly within a block
+// Optimize memory accesses by ensuring coalesced access patterns
+// Use a pragma directive to unroll loops if applicable and beneficial
+// Evaluate using shuffle operations for intra-warp communication instead of global memory writes where possible
+// Consider tiling computation to better leverage L1 cache for dy and result arrays
+```

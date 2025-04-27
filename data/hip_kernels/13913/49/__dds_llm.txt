@@ -1,0 +1,7 @@
+```c
+// Use dynamic shared memory to reduce global memory access overhead.
+// Unroll j loop to increase instruction level parallelism.
+// Use local variable for shared memory indexing to improve memory access pattern.
+// Implement loop unrolling in reduction to optimize throughput.
+// Utilize __syncthreads() to synchronize threads before sum reduction.
+```

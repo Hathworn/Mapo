@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for pointers to enable better compile-time optimizations
+// Use shared memory for N_ptr and G_ptr if the access pattern allows to reduce global memory reads
+// Align data in exp_V and row_ptr to ensure coalesced memory access by threads
+// Experiment with block size settings to fully utilize GPU cores and memory bandwidth
+// Unroll loops if applicable to optimize performance further by reducing loop overhead
+```

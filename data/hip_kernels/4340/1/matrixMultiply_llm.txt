@@ -1,0 +1,7 @@
+```c
+// Use vectorized memory loads for A and B for coalesced access
+// Consider larger tile sizes to increase shared memory utilization
+// Minimize the use of __syncthreads() for better warp efficiency
+// Optimize the loop unrolling factor based on hardware architecture
+// Use constant memory if some matrices are constant throughout the computation
+```

@@ -1,0 +1,6 @@
+```
+// Use coalesced global memory access to improve memory throughput.
+// Ensure the grid size is sufficient to cover all data for better occupancy.
+// Consider batching operations if n is large to avoid excessive global memory transactions.
+// Use __syncthreads() to ensure all shared memory operations are completed before reading.
+```

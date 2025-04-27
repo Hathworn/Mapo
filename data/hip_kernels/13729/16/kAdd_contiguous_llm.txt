@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by using contiguous arrays
+// Assign each thread multiple elements to perform computation for better occupancy
+// Use shared memory if possible to reduce global memory accesses
+// Optimize block and grid size for the hardware to maximize occupancy
+// Consider loop unrolling to improve performance

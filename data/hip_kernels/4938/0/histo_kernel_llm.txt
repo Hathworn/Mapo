@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory access by coalescing global memory reads from 'buffer'
+// Utilize shared memory effectively by ensuring all threads contribute with atomic operations 
+// Minimize bank conflicts in shared memory by aligning 'temp' access patterns
+// Ensure 'temp' array is fully utilized by all threads within the block
+// Consider warp-synchronous programming for reducing overhead of __syncthreads()
+// Explore the use of vectorized loads from 'buffer' to improve memory throughput
+```

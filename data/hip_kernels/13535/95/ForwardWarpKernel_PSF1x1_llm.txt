@@ -1,0 +1,9 @@
+```
+// Use shared memory to improve memory access speed by reducing global memory access
+// Optimize memory coalescing by ensuring contiguous block data is accessed by contiguous threads
+// Use register tiling to minimize memory latency by working on smaller blocks of data at a time
+// Consider loop unrolling if applicable to increase instruction level parallelism
+// Ensure 128-bit memory transactions alignment to reduce transaction overhead
+// Minimize thread block divergence by ensuring consistent flow of execution paths
+// Consider using texture memory for read-only data to take advantage of caching mechanisms
+```

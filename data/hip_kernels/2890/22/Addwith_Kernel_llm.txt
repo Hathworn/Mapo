@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for better performance by aligning memory accesses of neighboring threads
+// Consider using shared memory for frequently accessed data within blocks to reduce global memory access latency
+// Unroll loops further if the number of channels is small to maximize throughput
+// Evaluate using vectorized operations to process multiple channels in parallel and reduce instruction overhead
+// Check alignment and padding to ensure memory accesses are efficient and avoid bank conflicts
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data like amplitude 
+// Coalesce memory access by ensuring consecutive threads access consecutive memory locations
+// Use warp-synchronous programming where applicable to optimize thread execution
+// Minimize data transfers between host and device by processing larger batches
+// Adjust grid and block dimensions to better fit the CUDA SM capabilities
+```

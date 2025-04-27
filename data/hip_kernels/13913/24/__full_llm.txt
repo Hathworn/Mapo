@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve global memory bandwidth.
+// Use shared memory for temporary storage to reduce global memory accesses.
+// Avoid bank conflicts in shared memory by ensuring that threads access data without striding.
+// Explore using texture memory for data that is frequently accessed, as it may improve cache hit rates.
+// Implement loop unrolling to reduce loop overhead and improve performance.
+```

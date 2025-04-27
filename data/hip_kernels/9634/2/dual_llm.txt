@@ -1,0 +1,3 @@
+// Consider using shared memory to store y1 and y2 for faster access, especially within the loop.
+// Try coalescing memory accesses for xn, xcur, and img to reduce memory transaction overhead.
+// Align thread blocks with warp size to ensure optimal memory transaction efficiency on the GPU.

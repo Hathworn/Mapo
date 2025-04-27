@@ -1,0 +1,4 @@
+// Ensure global memory access patterns are coalesced to maximize bandwidth
+// Avoid shared memory bank conflicts in the kernel design
+// Consider using vectorized data types for improved memory access efficiency
+// Minimize divergence among threads within a warp to enhance performance

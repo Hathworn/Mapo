@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning data in memory  
+// Consider using shared memory if reused data across threads  
+// Optimize block size to maximize occupancy  
+// Minimize warp divergence by ensuring threads within a warp follow the same execution path  
+// Prefetch data to registers if reused within the kernel  

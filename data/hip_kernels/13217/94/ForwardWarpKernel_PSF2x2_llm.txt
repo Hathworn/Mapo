@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for improved global memory efficiency.
+// Use shared memory to reduce redundant global memory read accesses.
+// Utilize vectorized loading (e.g., float4) to decrease memory transaction overhead.
+// Minimize the use of atomic operations by optimizing parallel reduction.
+// Evaluate using texture memory for read-only data to benefit from caching.
+// Test various block sizes to achieve optimal occupancy and performance.
+```

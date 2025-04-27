@@ -1,0 +1,3 @@
+// Use shared memory for biases to improve memory access pattern
+// Load biases into shared memory only once per block
+// Synchronize threads after loading biases into shared memory

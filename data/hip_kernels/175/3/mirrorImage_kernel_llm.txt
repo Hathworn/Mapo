@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for devInput to reduce global memory access.
+// Align memory accesses to increase coalescing and reduce memory transaction overhead.
+// Use texture memory for devInput if it offers better caching behavior.
+// Evaluate occupancy and adjust block size to improve resource utilization.
+```

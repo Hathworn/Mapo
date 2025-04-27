@@ -1,0 +1,5 @@
+// Load random value only when necessary to minimize memory access
+// Calculate col_offset once to reduce redundant calculations
+// Compute parent's starting offset outside conditional block for efficiency
+// Access parents memory only within bounds to avoid unnecessary synchronization
+// Directly store result by minimizing conditional check for col_offset

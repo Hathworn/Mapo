@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache points for coalesced access
+// Rearrange loop order to improve memory coalescing
+// Minimize bank conflicts in shared memory
+// Use float4 or float2 for vectorized loads/stores if possible
+// Ensure proper alignment for vectorized memory operations
+// Consider loop unrolling for fixed small dimension loops
+```

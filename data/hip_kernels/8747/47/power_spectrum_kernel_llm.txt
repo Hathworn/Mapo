@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve performance
+// Use __restrict__ to indicate no aliasing, which can help optimization
+// Prefer shared memory if data reuse among threads is required
+// Minimize global memory access by loading to registers
+// Consider using float4 for vectorized memory access
+// Reduce divergence by reorganizing conditional branches
+```

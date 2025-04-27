@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for d_in and d_out.
+// Ensure d_in and d_out are aligned to improve memory access speeds.
+// Use shared memory if there are repeated calculations or data reuse within the block.
+// Evaluate occupancy using shared memory and register usage per block.
+// Minimize divergent branches for optimal warp execution.
+```

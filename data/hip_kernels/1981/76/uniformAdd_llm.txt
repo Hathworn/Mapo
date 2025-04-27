@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory accesses
+// Load uniform values to shared memory using the first thread of each block for efficiency
+// Ensure all threads synchronize before accessing the shared memory
+// Use single instruction for updating g_data to minimize arithmetic operations
+// Conditional check to ensure thread operations do not exceed the array bounds

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Evaluate using the __ldg intrinsic for read-only data to improve cache behavior
+// Check for possible warp-level parallelism optimization for better execution efficiency
+// Experiment with increasing block size for better occupancy and performance
+```

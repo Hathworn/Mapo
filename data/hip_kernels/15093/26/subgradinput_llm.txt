@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to improve memory access speed and reduce redundant global memory loads.
+// Ensure coalesced memory access patterns for ptr_gradInput and ptr_gradOutput by optimizing thread indexing.
+// Minimize arithmetic operations inside the loop by pre-computing invariant expressions outside.
+// Reduce global memory transactions by considering efficient memory layout for gradInput and gradOutput.
+```

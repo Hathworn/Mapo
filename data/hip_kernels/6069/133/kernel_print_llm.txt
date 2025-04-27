@@ -1,0 +1,4 @@
+// Consider using shared memory for caching frequently accessed data to reduce global memory access latency.
+// Minimize the use of printf within the kernel as it can severely impact performance.
+// Evaluate if computing results outside the kernel can reduce workload within the kernel and enhance performance.
+// Ensure coalesced memory access patterns for optimizing global memory access.

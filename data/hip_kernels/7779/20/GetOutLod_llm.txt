@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache num_erased values for faster access
+// Coalesce memory accesses by ensuring threads access contiguous memory locations in out_lod0 and in_lod
+// Minimize memory latency by accessing num_erased and in_lod with a stride pattern
+// Use warp-synchronous programming for better utilization of the GPU's memory hierarchy
+```

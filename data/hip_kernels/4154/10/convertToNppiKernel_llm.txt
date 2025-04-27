@@ -1,0 +1,4 @@
+// Ensure memory accesses are coalesced by organizing threads appropriately
+// Consider using shared memory to store frequently accessed data like lookupTable
+// Optimize the loop unrolling factor considering the register pressure and occupancy
+// Ensure warp alignment to reduce branching and divergence

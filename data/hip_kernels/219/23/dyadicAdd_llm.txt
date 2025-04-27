@@ -1,0 +1,8 @@
+```
+// Consider memory coalescing by ensuring sequential threads access sequential memory locations.
+// Reduce memory access latency by using shared memory if multiple threads access the same data.
+// Optimize index calculations to minimize arithmetic operations within the loop.
+// Ensure warp divergence is minimized by ensuring all threads in a warp satisfy the boundary condition.
+// Consider loop unrolling if the loop has a predictable and fixed number of iterations.
+// Prefetch data to minimize waiting times for memory loads.
+```

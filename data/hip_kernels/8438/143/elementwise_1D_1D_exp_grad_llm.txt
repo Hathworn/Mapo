@@ -1,0 +1,4 @@
+// Consider using shared memory if threads within a block can reuse data to reduce global memory accesses.
+// Ensure proper alignment of memory accesses for coalesced reads and writes.
+// Strive to minimize warp divergence by aligning conditional checks and loop boundaries with warp size where possible.
+// Assess whether additional loop unrolling could further enhance performance without impacting resource usage negatively.

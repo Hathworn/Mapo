@@ -1,0 +1,5 @@
+// Use shared memory if loc_ data is reused to minimize global memory latency  
+// Ensure coalesced memory access for loc_, x, and y arrays  
+// Consider using float2 instead of short2 and scale together to reduce conversion overhead  
+// Use warp-level primitives or loops for further parallel memory access optimization  
+// Avoid thread divergence by restructuring the condition

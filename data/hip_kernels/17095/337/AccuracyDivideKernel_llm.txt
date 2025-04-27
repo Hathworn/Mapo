@@ -1,0 +1,5 @@
+```
+// Use shared memory for temporary storage to minimize global memory access
+// Employ warp shuffle operations if possible for reduction within a warp
+// Consider launching the kernel with a specific grid size to maximize warp efficiency
+```

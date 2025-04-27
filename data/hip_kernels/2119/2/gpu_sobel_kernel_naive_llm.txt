@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache Source values for each tile to reduce global memory loads.
+// Optimize the calculation of gx and gy by minimizing repeated memory accesses.
+// Experiment with coalesced memory access patterns for Source to improve memory bandwidth usage.
+// Preload shared memory before the computation loop to improve performance.
+```

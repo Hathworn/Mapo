@@ -1,0 +1,6 @@
+```
+// Consider using __shared__ memory for repetitive data access to reduce global memory loads.
+// Ensure coalesced memory accesses by aligning data structures and access patterns.
+// Avoid unnecessary synchronization barriers within the kernel to reduce overhead.
+// Minimize the usage of printf, as it can interfere with parallel execution and performance.
+```

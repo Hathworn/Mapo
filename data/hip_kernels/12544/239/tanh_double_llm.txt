@@ -1,0 +1,7 @@
+```
+// Coalesce memory access by ensuring dy[i] and result[i] are accessed sequentially
+// Reduce divergence by minimizing the conditional checks within the loop
+// Optimize thread utilization by ensuring stride-based access patterns
+// Consider using shared memory if dy is reused across threads
+// Adjust block and grid size to ensure optimal occupancy and memory bandwidth
+```

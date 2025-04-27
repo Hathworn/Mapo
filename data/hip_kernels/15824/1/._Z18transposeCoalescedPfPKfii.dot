@@ -1,0 +1,45 @@
+digraph "CFG for '_Z18transposeCoalescedPfPKfii' function" {
+	label="CFG for '_Z18transposeCoalescedPfPKfii' function";
+
+	Node0x644a190 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 5\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %10 = shl i32 %9, 5\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %12 = icmp slt i32 %8, %3\l  %13 = add i32 %11, %10\l  %14 = icmp slt i32 %13, %2\l  %15 = select i1 %14, i1 %12, i1 false\l  br i1 %15, label %16, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x644a190:s0 -> Node0x644c610;
+	Node0x644a190:s1 -> Node0x644c6a0;
+	Node0x644c610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = mul nsw i32 %13, %3\l  %18 = add nsw i32 %17, %8\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %1, i64 %19\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %22 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %11, i32 %7\l  store float %21, float addrspace(3)* %22, align 4, !tbaa !5\l  br label %23\l}"];
+	Node0x644c610 -> Node0x644c6a0;
+	Node0x644c6a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%23:\l23:                                               \l  %24 = add nuw nsw i32 %11, 8\l  %25 = add i32 %24, %10\l  %26 = icmp slt i32 %25, %2\l  %27 = select i1 %26, i1 %12, i1 false\l  br i1 %27, label %28, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x644c6a0:s0 -> Node0x644ce40;
+	Node0x644c6a0:s1 -> Node0x644d8e0;
+	Node0x644ce40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%28:\l28:                                               \l  %29 = mul nsw i32 %25, %3\l  %30 = add nsw i32 %29, %8\l  %31 = sext i32 %30 to i64\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %31\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %34 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %24, i32 %7\l  store float %33, float addrspace(3)* %34, align 4, !tbaa !5\l  br label %35\l}"];
+	Node0x644ce40 -> Node0x644d8e0;
+	Node0x644d8e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = add nuw nsw i32 %11, 16\l  %37 = add i32 %36, %10\l  %38 = icmp slt i32 %37, %2\l  %39 = select i1 %38, i1 %12, i1 false\l  br i1 %39, label %40, label %47\l|{<s0>T|<s1>F}}"];
+	Node0x644d8e0:s0 -> Node0x644c850;
+	Node0x644d8e0:s1 -> Node0x644e8b0;
+	Node0x644c850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%40:\l40:                                               \l  %41 = mul nsw i32 %37, %3\l  %42 = add nsw i32 %41, %8\l  %43 = sext i32 %42 to i64\l  %44 = getelementptr inbounds float, float addrspace(1)* %1, i64 %43\l  %45 = load float, float addrspace(1)* %44, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %46 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %36, i32 %7\l  store float %45, float addrspace(3)* %46, align 4, !tbaa !5\l  br label %47\l}"];
+	Node0x644c850 -> Node0x644e8b0;
+	Node0x644e8b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%47:\l47:                                               \l  %48 = add nuw nsw i32 %11, 24\l  %49 = add i32 %48, %10\l  %50 = icmp slt i32 %49, %2\l  %51 = select i1 %50, i1 %12, i1 false\l  br i1 %51, label %52, label %59\l|{<s0>T|<s1>F}}"];
+	Node0x644e8b0:s0 -> Node0x644ecc0;
+	Node0x644e8b0:s1 -> Node0x644f150;
+	Node0x644ecc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%52:\l52:                                               \l  %53 = mul nsw i32 %49, %3\l  %54 = add nsw i32 %53, %8\l  %55 = sext i32 %54 to i64\l  %56 = getelementptr inbounds float, float addrspace(1)* %1, i64 %55\l  %57 = load float, float addrspace(1)* %56, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %58 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %48, i32 %7\l  store float %57, float addrspace(3)* %58, align 4, !tbaa !5\l  br label %59\l}"];
+	Node0x644ecc0 -> Node0x644f150;
+	Node0x644f150 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%59:\l59:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %60 = add i32 %10, %7\l  %61 = icmp slt i32 %60, %2\l  %62 = add i32 %11, %6\l  %63 = icmp slt i32 %62, %3\l  %64 = select i1 %63, i1 %61, i1 false\l  br i1 %64, label %65, label %72\l|{<s0>T|<s1>F}}"];
+	Node0x644f150:s0 -> Node0x644dc50;
+	Node0x644f150:s1 -> Node0x644dce0;
+	Node0x644dc50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%65:\l65:                                               \l  %66 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %7, i32 %11\l  %67 = load float, float addrspace(3)* %66, align 4, !tbaa !5\l  %68 = mul nsw i32 %62, %2\l  %69 = add nsw i32 %68, %60\l  %70 = sext i32 %69 to i64\l  %71 = getelementptr inbounds float, float addrspace(1)* %0, i64 %70\l  store float %67, float addrspace(1)* %71, align 4, !tbaa !5\l  br label %72\l}"];
+	Node0x644dc50 -> Node0x644dce0;
+	Node0x644dce0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%72:\l72:                                               \l  %73 = add i32 %24, %6\l  %74 = icmp slt i32 %73, %3\l  %75 = select i1 %74, i1 %61, i1 false\l  br i1 %75, label %76, label %83\l|{<s0>T|<s1>F}}"];
+	Node0x644dce0:s0 -> Node0x6450120;
+	Node0x644dce0:s1 -> Node0x64507c0;
+	Node0x6450120 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%76:\l76:                                               \l  %77 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %7, i32 %24\l  %78 = load float, float addrspace(3)* %77, align 4, !tbaa !5\l  %79 = mul nsw i32 %73, %2\l  %80 = add nsw i32 %79, %60\l  %81 = sext i32 %80 to i64\l  %82 = getelementptr inbounds float, float addrspace(1)* %0, i64 %81\l  store float %78, float addrspace(1)* %82, align 4, !tbaa !5\l  br label %83\l}"];
+	Node0x6450120 -> Node0x64507c0;
+	Node0x64507c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%83:\l83:                                               \l  %84 = add i32 %36, %6\l  %85 = icmp slt i32 %84, %3\l  %86 = select i1 %85, i1 %61, i1 false\l  br i1 %86, label %87, label %94\l|{<s0>T|<s1>F}}"];
+	Node0x64507c0:s0 -> Node0x64508c0;
+	Node0x64507c0:s1 -> Node0x6450f60;
+	Node0x64508c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%87:\l87:                                               \l  %88 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %7, i32 %36\l  %89 = load float, float addrspace(3)* %88, align 4, !tbaa !5\l  %90 = mul nsw i32 %84, %2\l  %91 = add nsw i32 %90, %60\l  %92 = sext i32 %91 to i64\l  %93 = getelementptr inbounds float, float addrspace(1)* %0, i64 %92\l  store float %89, float addrspace(1)* %93, align 4, !tbaa !5\l  br label %94\l}"];
+	Node0x64508c0 -> Node0x6450f60;
+	Node0x6450f60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%94:\l94:                                               \l  %95 = add i32 %48, %6\l  %96 = icmp slt i32 %95, %3\l  %97 = select i1 %96, i1 %61, i1 false\l  br i1 %97, label %98, label %105\l|{<s0>T|<s1>F}}"];
+	Node0x6450f60:s0 -> Node0x6451060;
+	Node0x6450f60:s1 -> Node0x6451700;
+	Node0x6451060 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%98:\l98:                                               \l  %99 = getelementptr inbounds [32 x [33 x float]], [32 x [33 x float]]\l... addrspace(3)* @_ZZ18transposeCoalescedPfPKfiiE4tile, i32 0, i32 %7, i32 %48\l  %100 = load float, float addrspace(3)* %99, align 4, !tbaa !5\l  %101 = mul nsw i32 %95, %2\l  %102 = add nsw i32 %101, %60\l  %103 = sext i32 %102 to i64\l  %104 = getelementptr inbounds float, float addrspace(1)* %0, i64 %103\l  store float %100, float addrspace(1)* %104, align 4, !tbaa !5\l  br label %105\l}"];
+	Node0x6451060 -> Node0x6451700;
+	Node0x6451700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%105:\l105:                                              \l  ret void\l}"];
+}

@@ -1,0 +1,4 @@
+// Use shared memory for data accessed by multiple threads to minimize global memory access
+// Prefetch data to reduce latency
+// Consider coalescing memory access to improve bandwidth utilization
+// Optimize block and grid dimensions to maximize occupancy and minimize warp divergence

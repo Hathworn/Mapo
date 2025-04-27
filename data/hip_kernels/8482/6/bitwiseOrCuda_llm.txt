@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring rowSizeIn1, rowSizeIn2, and rowSizeOut are multiples of the warp size.
+// Minimize bank conflicts by aligning data accesses with cache line size.
+// Use shared memory if access patterns can be optimized for reuse within a block.
+// Check for memory alignment to reduce uncoalesced global memory transactions.
+```

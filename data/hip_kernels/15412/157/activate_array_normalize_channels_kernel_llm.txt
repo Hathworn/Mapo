@@ -1,0 +1,9 @@
+```
+// Cache values in shared memory to minimize global memory reads
+// Calculate indices outside of the loops to optimize computations
+// Use __syncthreads to ensure shared memory is fully populated before use
+// Replace multiple global memory accesses with shared memory reads
+// Optimize memory accesses by aligning shared memory usage with thread block size
+// Accumulate sum in shared rather than global memory
+// Combine calculation and normalization loops into fewer passes to reduce overhead
+```

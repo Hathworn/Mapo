@@ -1,0 +1,4 @@
+// Improve coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Leverage shared memory if possible to reduce redundant global memory accesses
+// Ensure that INCX is 1 for optimal memory access pattern to maximize throughput
+// Minimize warp divergence by ensuring all threads within a warp follow the same execution path

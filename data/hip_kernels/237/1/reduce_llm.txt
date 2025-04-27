@@ -1,0 +1,10 @@
+```
+// Consider using cooperative groups for finer control over thread synchronization
+// Use __shfl_sync instead of __shfl_down_sync if using older GPU architectures
+// Ensure memory access patterns are coalesced to optimize global memory bandwidth
+// Allocate enough shared memory to avoid bank conflicts
+// Consider using a loop unrolling technique for reducing latency
+// Make sure shared memory size is power of two for easier reduction logic
+// Check for potential warp divergence and minimize its impact
+// Ensure that compiler flags are set for maximum optimization levels
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory for repeated access patterns to reduce global memory reads.
+// Optimize memory access patterns to maximize coalesced memory access and reduce memory overhead.
+// Ensure that thread blocks are sized appropriately to achieve optimal warping and maximize occupancy.
+// Leverage data locality by ensuring continuous memory access within threads of the same block.
+// Remove redundant calculations to minimize unnecessary computations and memory access.

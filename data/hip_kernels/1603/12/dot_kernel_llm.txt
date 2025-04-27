@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store temporary results of sum, norm1, and norm2 to reduce global memory accesses.
+// Implement loop unrolling more aggressively in the loop for the size to minimize the overhead of loop control.
+// Use `__syncthreads()` appropriately if shared memory is used to ensure data consistency among threads.
+// Evaluate if cooperative matrix multiplication or tensor cores APIs can offer any performance improvement if applicable.
+// Consider using half precision if the algorithm tolerates it to reduce memory bandwidth and potentially increase performance.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses by accumulating local results before storing them.
+// Avoid divergent condition checks for better warp execution efficiency.
+// Utilize cooperative thread reduction to minimize synchronization overhead for shared memory usage.
+// Decorrelate loop iterations from block dimensions to prevent thread divergence.
+// Consider loop unrolling for the inner loop to reduce computation time.
+```

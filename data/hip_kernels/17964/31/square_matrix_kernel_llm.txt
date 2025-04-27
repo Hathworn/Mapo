@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to cache data and reduce global memory access latency
+// Ensure coalesced memory access for both reading 'feats' and writing 'feats_sq'
+// Optimize thread block size and grid size for better occupancy and performance
+// Explore loop unrolling if applicable for the square computation
+```

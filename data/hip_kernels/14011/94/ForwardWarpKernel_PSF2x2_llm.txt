@@ -1,0 +1,5 @@
+// Use shared memory for properties like flow_row_offset to reduce global memory access.
+// Consider rearranging threads to optimize coalesced memory access patterns.
+// Minimize atomic operations by restructuring data handling logic to accumulate values in registers first.
+// Use texture memory for accessing u and v arrays for better caching performance if applicable.
+// Ensure alignment of memory access for src and dst arrays to benefit from potential faster memory transactions.

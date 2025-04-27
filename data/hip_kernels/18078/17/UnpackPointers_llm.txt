@@ -1,0 +1,4 @@
+// Use shared memory or registers to reduce global memory accesses for minmax
+// Use warp level synchronization to minimize atomic operations
+// Consider unrolling the k loop for better performance
+// Ensure coalesced memory access by adjusting ptrs array indexing

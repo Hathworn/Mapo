@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access and improve memory bandwidth.
+// Ensure coalesced access to d_ts and d_ss for better memory throughput.
+// Optimize tmp_window indexing to reduce shared memory bank conflicts.
+// Consider loop unrolling for the inner loop to improve performance.
+// Ensure alignment of the memory accesses for d_mss, d_ts, and d_ss.
+```

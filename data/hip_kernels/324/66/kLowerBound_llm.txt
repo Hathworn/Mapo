@@ -1,0 +1,5 @@
+// Reduce global memory accesses by utilizing shared memory for mat1 and mat2
+// Load elements into shared memory to increase memory access efficiency
+// Use __syncthreads() after loading elements to ensure data consistency across threads
+// Compute target using shared memory values for better performance
+// Use __syncthreads() after computation to ensure all threads complete before the next iteration

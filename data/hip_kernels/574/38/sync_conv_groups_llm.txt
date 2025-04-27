@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data that can be reused within thread blocks
+// Ensure coalesced memory accesses for improved global memory throughput
+// Minimize memory access latency by preferring read-only cache or constant memory
+// Align data structures to benefit from memory coalescing and avoid bank conflicts
+// Evaluate warp-level primitives to reduce divergence and improve synchronization
+```

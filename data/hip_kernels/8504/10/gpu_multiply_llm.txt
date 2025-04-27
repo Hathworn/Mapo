@@ -1,0 +1,7 @@
+```cpp
+// Avoid unnecessary global memory access by using shared memory
+// Use coalesced memory access pattern for loading A and B into shared memory
+// Minimize synchronization by reducing thread divergence
+// Ensure data from shared memory is reused efficiently before next synchronization
+// Use tile-based computation to enhance data locality and reduce global memory bandwidth
+```

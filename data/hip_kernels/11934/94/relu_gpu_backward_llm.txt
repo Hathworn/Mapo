@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for better memory throughput
+// Evaluate whether shared memory can be utilized to minimize global memory access
+// Ensure no bank conflicts if shared memory is used
+// Prefer using __restrict__ qualifier in pointer arguments for potential compiler optimizations
+// Be mindful of warp divergence when using conditional logic
+```

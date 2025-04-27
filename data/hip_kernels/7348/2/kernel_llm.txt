@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses where applicable
+// Coalesce memory access patterns to improve bandwidth usage
+// Minimize divergence by ensuring threads within a warp follow similar execution paths
+// Consider loop unrolling for repeated operations to enhance performance
+// Optimize memory access by using texture memory if appropriate
+// Ensure sufficient occupancy by adjusting block and grid sizes
+```

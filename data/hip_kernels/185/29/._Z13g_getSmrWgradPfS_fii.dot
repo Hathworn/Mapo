@@ -1,0 +1,18 @@
+digraph "CFG for '_Z13g_getSmrWgradPfS_fii' function" {
+	label="CFG for '_Z13g_getSmrWgradPfS_fii' function";
+
+	Node0x4e37260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%5:\l  %6 = icmp sgt i32 %3, 0\l  br i1 %6, label %7, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x4e37260:s0 -> Node0x4e37200;
+	Node0x4e37260:s1 -> Node0x4e37990;
+	Node0x4e37200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%7:\l7:                                                \l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = sitofp i32 %4 to float\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !5, !invariant.load !6\l  %14 = zext i16 %13 to i32\l  br label %16\l}"];
+	Node0x4e37200 -> Node0x4e39000;
+	Node0x4e37990 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%15:\l15:                                               \l  ret void\l}"];
+	Node0x4e39000 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  %17 = phi i32 [ 0, %7 ], [ %30, %29 ]\l  %18 = add i32 %17, %8\l  %19 = icmp slt i32 %18, %3\l  br i1 %19, label %20, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4e39000:s0 -> Node0x4e39430;
+	Node0x4e39000:s1 -> Node0x4e38810;
+	Node0x4e39430 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%20:\l20:                                               \l  %21 = sext i32 %18 to i64\l  %22 = getelementptr inbounds float, float addrspace(1)* %1, i64 %21\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !7\l  %24 = fmul contract float %23, %2\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %21\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7\l  %27 = fdiv contract float %26, %9\l  %28 = fadd contract float %24, %27\l  store float %28, float addrspace(1)* %25, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x4e39430 -> Node0x4e38810;
+	Node0x4e38810 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = add i32 %17, %14\l  %31 = icmp slt i32 %30, %3\l  br i1 %31, label %16, label %15, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4e38810:s0 -> Node0x4e39000;
+	Node0x4e38810:s1 -> Node0x4e37990;
+}

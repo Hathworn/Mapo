@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for maxProbs and labelLogProbs
+// Prefetch data into shared memory using cooperative fetching to minimize latency
+// Unroll loop further if numOut is known at compile time to reduce branch overhead
+// Use vectorized memory loads where possible to improve memory throughput
+// Consider using texture memory for reading probs if access patterns are suitable
+```

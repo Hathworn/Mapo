@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced by checking data alignment
+// Minimize usage of global memory by utilizing shared memory if appropriate
+// Consider using texture memory for read-only data for cache benefits
+// Ensure __restrict__ pointers are used to inform the compiler of no aliasing
+// Optimize math operations by utilizing appropriate hardware functions
+// Balance block size and grid size to maximize occupancy
+```

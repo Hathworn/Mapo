@@ -1,0 +1,8 @@
+```c
+// Consider coalescing memory accesses for dev_pillar_count_histo to improve memory bandwidth utilization
+// Use shared memory for dev_pillar_count_histo to reduce global memory accesses
+// Use atomic operations sparingly to minimize synchronization overhead
+// Prefetch dev_num_points_per_pillar and dev_x_coors to registers before use
+// Consider restructuring dev_sparse_pillar_map access to improve memory access patterns
+// Regularly check memory usage and occupancy to ensure optimal utilization of GPU resources
+```

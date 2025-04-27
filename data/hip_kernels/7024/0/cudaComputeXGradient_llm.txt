@@ -1,0 +1,5 @@
+// Consider using 2D grid and block configuration for better spatial locality.
+// Optimize shared memory usage by minimizing kernel size and accesses.
+// Use __ldg() intrinsic for read-only data to exploit caching for better performance.
+// Ensure coalesced memory access for channel array to improve global memory throughput.
+// Consider loop unrolling for the convolution operation to reduce instruction overhead.

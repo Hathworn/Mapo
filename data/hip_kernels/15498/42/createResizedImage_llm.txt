@@ -1,0 +1,8 @@
+```
+// Coalesce global memory accesses by ensuring threads within the same warp access contiguous memory locations.
+// Use shared memory to cache frequently accessed data if possible to reduce redundant global memory accesses.
+// Consider adjusting block size and grid size to better match the GPU's architecture and ensure full occupancy.
+// Minimize divergence in warp execution by ensuring all threads in a warp follow the same execution path.
+// Opt for using `__ldg` to read from global memory (if using newer hardware and read-only data) to utilize cache efficiency.
+// Assess the impact of scale_factor on memory reads and try to precompute values where possible to minimize per-thread calculations.
+```

@@ -1,0 +1,7 @@
+```
+// Use memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Unroll loops where applicable to reduce loop control overhead
+// Consider using shared memory if data is reused within a block
+// Minimize costly global memory accesses by maximizing use of registers
+// Align data structures in a way that matches GPU architecture for better memory throughput
+```

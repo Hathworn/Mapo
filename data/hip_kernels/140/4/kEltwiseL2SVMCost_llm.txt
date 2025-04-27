@@ -1,0 +1,6 @@
+```
+// Precompute base_pos to reduce redundant index calculations in the loop
+// Cache yldata_diff as it is reused in each iteration
+// Consider using shared memory to further optimize global memory loading if beneficial
+// Ensure strided memory accesses in the loop to avoid memory divergence
+```

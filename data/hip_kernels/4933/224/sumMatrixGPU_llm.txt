@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider coalesced memory access patterns for improved throughput
+// Optimize block and grid dimensions to maximize occupancy
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path
+// Use asynchronous memory copies where applicable for overlapping computations and data transfers
+```

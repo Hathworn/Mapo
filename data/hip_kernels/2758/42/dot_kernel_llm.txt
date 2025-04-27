@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to buffer 'output' data and reduce global memory accesses
+// Ensure coalesced memory accesses when reading 'output' in the inner loop
+// Minimize the use of atomic operations or restructure code to reduce contention
+// Apply loop unrolling to the inner loops for potential performance gains
+// Investigate warp divergence caused by the 'if (f2 <= f1) continue;' condition and optimize
+```

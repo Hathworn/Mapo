@@ -1,0 +1,10 @@
+```
+// Consider using shared memory for temporary storage to reduce global memory access
+// Use vectorized memory access where possible to improve memory throughput
+// Prefetch data from global to local registers to hide memory latency
+// Ensure coalesced accesses for better memory throughput
+// Reduce bank conflicts in shared memory by padding
+// Load flow values in registers to minimize access overhead
+// Evaluate loop unrolling for performance enhancement
+// Minimize usage of atomic operations where feasible
+```

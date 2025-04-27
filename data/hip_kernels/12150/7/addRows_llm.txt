@@ -1,0 +1,7 @@
+```
+// Reduce global memory access by storing frequently accessed data in registers
+// Eliminate bank conflicts in shared memory access to optimize performance
+// Ensure coalesced memory access patterns for better memory throughput
+// Minimize the use of divergent branches inside the kernel
+// Use __syncthreads() judiciously to synchronize threads only when necessary
+```

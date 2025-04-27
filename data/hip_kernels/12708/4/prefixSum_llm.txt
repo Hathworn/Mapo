@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory to cache data accessed by multiple threads to reduce global memory accesses
+// Implement double buffering for shared memory loads to hide latency
+// Optimize shared memory usage by minimizing bank conflicts
+// Align data structures to natural boundaries to ensure efficient memory transactions
+// Avoid branch divergence within warp by restructuring conditional logic
+// Consider using faster math operations or intrinsic functions if applicable
+```

@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access and improve memory coherence
+// Initialize shared memory to begin accumulation
+// Unroll the loop to increase instruction level parallelism
+// Check boundary conditions to avoid invalid memory access
+// Accumulate values in local shared memory to reduce global memory accesses
+// Use atomic operations for shared memory reduction to ensure correct results
+// Compute mean efficiently by dividing the sum at the end
+```

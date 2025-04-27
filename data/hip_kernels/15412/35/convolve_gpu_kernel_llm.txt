@@ -1,0 +1,5 @@
+// Consider using shared memory to load portions of the input and weights to reduce global memory accesses.
+// Precompute and store frequently used indices to save redundant calculations inside the loops.
+// Check if using texture memory or constant memory for frequently accessed data can provide better performance.
+// Ensure coalesced memory accesses by organizing data structures to minimize memory access latency.
+// Optimize thread block size and grid size for best occupancy and performance balance, considering the hardware specifics.

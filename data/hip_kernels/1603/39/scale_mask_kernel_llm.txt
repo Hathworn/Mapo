@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache mask data and reduce global memory accesses
+// Ensure memory alignment for x and mask for coalesced access
+// Explore using __restrict__ qualifier for pointers to assume non-aliasing
+// Assess occupancy and adjust grid/block size for optimal performance
+// Consider loop unrolling to reduce instruction overhead in the for loop
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Load data into shared memory in chunks for coalesced access
+// Ensure shared memory usage does not exceed the limit per block
+// Consider unrolling loops for better performance
+// Synchronize threads after shared memory operations to avoid race conditions
+// Use __syncthreads() efficiently to minimize overhead
+```

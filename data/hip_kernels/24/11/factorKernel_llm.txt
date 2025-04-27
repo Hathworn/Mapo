@@ -1,0 +1,5 @@
+// Use of constant memory for storing pi can reduce access latency
+// Precompute aw outside the loop to minimize redundant calculations
+// Compute values within if boundary to avoid unnecessary calculations
+// Load and store values in shared memory where appropriate for faster access
+// Consider using __restrict__ keyword for pointer parameters to improve compiler optimizations

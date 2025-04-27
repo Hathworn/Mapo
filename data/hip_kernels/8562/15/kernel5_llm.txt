@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache frequently accessed data and reduce global memory accesses.
+// Consider coalesced memory access patterns to improve memory throughput.
+// Minimize bank conflicts when accessing shared memory if applicable.
+// Use loop unrolling for any repetitive computations within the kernel.
+// Ensure block size is a multiple of warp size for better performance.
+// Optimize thread blocks and grid size based on your specific hardware.
+```

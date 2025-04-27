@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory accesses for improved memory bandwidth
+// Ensure all threads of a warp access continuous memory locations
+// Consider using shared memory to further optimize repeated access
+// Implement loop unrolling if setting multiple adjacent elements
+// Prefer using __syncthreads() if synchronization is required after modifications
+```

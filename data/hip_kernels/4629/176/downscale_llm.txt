@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache data for translation indices
+// Align data accesses to improve coalesced memory access
+// Use __restrict__ keyword for pointer arguments if no aliasing occurs
+// Optimize loop unrolling further by using pragma unroll or manual unrolling
+// Consider using texture memory for read-only gradOutput_data
+// Optimize scale_factor calculation by ensuring it's a compile-time constant
+// Investigate potential warp divergence in loop
+```

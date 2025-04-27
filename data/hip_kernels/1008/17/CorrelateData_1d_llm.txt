@@ -1,0 +1,11 @@
+```
+// Use more optimal memory access patterns to reduce global memory latency.
+// Ensure coalesced memory accesses within the shared memory load loop.
+// Prefetch data if possible to hide memory latency.
+// Minimize shared memory usage by optimizing patch_data size if applicable.
+// Evaluate using constant memory for kernel constants for faster access.
+// Consider increasing warp occupancy for better utilization.
+// Analyze cache utilization and optimize memory access patterns for L1 cache.
+// Leverage asynchronous data loading with __builtin_assume_aligned where applicable.
+// Optimize thread block size and grid dimensions for better execution efficiency.
+```

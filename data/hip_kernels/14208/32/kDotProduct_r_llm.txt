@@ -1,0 +1,5 @@
+// Utilize shared memory to reduce repeated global memory access for faster data retrieval.
+// Implement loop unrolling within the for loop to improve computation efficiency.
+// Coalesce global memory accesses for arrays 'a' and 'b' to improve memory bandwidth utilization.
+// Prefer atomic operations or warp-level primitives for reduction to minimize synchronization overhead.
+// Avoid excessive synchronization by optimizing warp-level operations in the reduction phase.

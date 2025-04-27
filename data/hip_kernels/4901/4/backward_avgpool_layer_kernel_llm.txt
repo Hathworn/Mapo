@@ -1,0 +1,4 @@
+// Avoid redundant calculations by computing spatial_size once
+// Use direct division for batch index to minimize calculations
+// Compute delta_val once and reuse to minimize repetitive operations
+// Consider memory coalescing for in_delta and out_delta access patterns

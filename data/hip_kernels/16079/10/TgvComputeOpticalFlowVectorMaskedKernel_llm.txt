@@ -1,0 +1,7 @@
+```
+// Load mask value into a register to reduce global memory accesses
+// Coalesce global memory accesses for warpUV by processing data in contiguous blocks
+// Consider using shared memory for temporary variables like 'us' and 'tv2s' to minimize redundant global reads
+// Ensure memory access patterns are aligned to improve coalescing efficiency
+// Minimize divergent branching by redesigning the conditional logic if possible
+```

@@ -1,0 +1,8 @@
+```c
+// Optimize coalesced global memory access by aligning data structures accordingly
+// Minimize shared memory bank conflicts by properly padding shared memory 
+// Unroll inner loops for better performance by leveraging compiler optimizations
+// Utilize fast memory (shared memory) whenever possible to reduce global memory access
+// Ensure all threads in a block are executing concurrently by avoiding thread divergence 
+// Use float4 data type for loading multiple floats from global memory if applicable
+```

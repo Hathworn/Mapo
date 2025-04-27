@@ -1,0 +1,13 @@
+digraph "CFG for '_Z6reducePfii' function" {
+	label="CFG for '_Z6reducePfii' function";
+
+	Node0x518d1d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = add i32 %2, 1\l  %11 = icmp slt i32 %10, %1\l  br i1 %11, label %12, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x518d1d0:s0 -> Node0x518df70;
+	Node0x518d1d0:s1 -> Node0x518eed0;
+	Node0x518df70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%12:\l12:                                               \l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = add i32 %10, %13\l  %15 = mul nsw i32 %14, %1\l  %16 = add nsw i32 %15, %2\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %0, i64 %17\l  %19 = mul nsw i32 %2, %1\l  br label %20\l}"];
+	Node0x518df70 -> Node0x518f5a0;
+	Node0x518f5a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  %21 = phi i32 [ %10, %12 ], [ %34, %20 ]\l  %22 = add i32 %21, %4\l  %23 = add i32 %22, %15\l  %24 = sext i32 %23 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %24\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7\l  %27 = load float, float addrspace(1)* %18, align 4, !tbaa !7\l  %28 = add i32 %22, %19\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !7\l  %32 = fmul contract float %27, %31\l  %33 = fsub contract float %26, %32\l  store float %33, float addrspace(1)* %25, align 4, !tbaa !7\l  %34 = add nsw i32 %21, %9\l  %35 = icmp slt i32 %34, %1\l  br i1 %35, label %20, label %36, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x518f5a0:s0 -> Node0x518f5a0;
+	Node0x518f5a0:s1 -> Node0x518eed0;
+	Node0x518eed0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%36:\l36:                                               \l  ret void\l}"];
+}

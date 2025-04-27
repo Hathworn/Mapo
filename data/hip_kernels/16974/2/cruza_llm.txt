@@ -1,0 +1,7 @@
+```c
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory addresses in 'newPop'.
+// Consider using shared memory to minimize global memory access for frequently used data.
+// Reduce branching by streamlining the conditions for elite copying and mutation checks.
+// Minimize divergence by aligning warp execution paths, especially in crossover and mutation operations.
+// Ensure all memory accesses are aligned to reduce potential issues with misaligned data.
+```

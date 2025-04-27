@@ -1,0 +1,6 @@
+```cpp
+// Cache scale_factor squared to avoid recomputation in nested loops
+// Consider using shared memory to cache commonly used data for reduced global memory accesses
+// Ensure coalesced memory accesses by aligning data structures appropriately
+// Perform loop unrolling where applicable to optimize repeated computations
+```

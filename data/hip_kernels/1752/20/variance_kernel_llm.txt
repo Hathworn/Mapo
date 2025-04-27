@@ -1,0 +1,5 @@
+```
+// Precompute scale factor in registers to reduce redundant calculations
+// Use local variable 'var_sum' to accumulate variance to avoid shared memory contention
+// Unroll innermost loop to increase instruction-level parallelism
+```

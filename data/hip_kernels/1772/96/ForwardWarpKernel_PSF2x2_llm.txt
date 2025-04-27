@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by aligning thread blocks with memory layout.
+// Use shared memory to reduce global memory transactions.
+// Minimize the use of atomic operations by aggregating updates in shared memory first.
+// Evaluate whether using a texture memory would be beneficial for read-only data like `u` and `v`.
+// Prefetch data into registers to minimize latency of memory access.
+// Ensure that load instructions are issued for continuous segments of global memory.
+```

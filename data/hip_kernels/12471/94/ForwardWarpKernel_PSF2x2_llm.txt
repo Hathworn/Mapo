@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses to improve memory throughput
+// Use shared memory to store intermediate results if possible
+// Minimize the usage of _atomicAdd as they can serialize operations
+// Check if loop unrolling can reduce instruction overhead
+// Ensure threads access memory in a contiguous manner to use memory efficiently
+```

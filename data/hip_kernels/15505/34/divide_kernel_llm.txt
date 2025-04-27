@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to minimize global memory access latency
+// Coalesce global memory accesses for better performance
+// Use __ldg() for read-only cache to optimize memory loads if applicable
+// Ensure aligned memory access to maximize memory throughput
+// Check for bank conflicts in shared memory access
+// Optimize grid and block dimensions for occupancy
+```

@@ -1,0 +1,8 @@
+```c
+// Implement coalesced memory access patterns for optimal memory bandwidth utilization.
+// Consider using shared memory to minimize global memory accesses.
+// Use vectorized data types to load/store multiple data elements at a time.
+// Minimize the use of atomic operations if not strictly necessary as they can serialize execution.
+// Ensure threads within a warp access consecutive memory addresses to maximize cache efficiency.
+// Consider loop unrolling techniques within the kernel to enhance throughput.
+```

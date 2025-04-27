@@ -1,0 +1,4 @@
+// Consider using shared memory to cache hiprandState_t data and reduce global memory access.
+// Optimize memory coalescing by ensuring threads within a warp access contiguous memory locations.
+// Minimize thread divergence by structuring loops and conditions to align thread execution paths.
+// Evaluate using texture memory for reading frequently accessed data to reduce latency.

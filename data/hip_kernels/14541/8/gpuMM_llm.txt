@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced access patterns for A and B when loading into shared memory
+// Synchronize threads after loading data to guarantee all threads have completed loading
+// Optimize the tile size for better use of shared memory and to minimize bank conflicts
+// Include boundary checks for row and col during the C array write to avoid invalid memory access
+```

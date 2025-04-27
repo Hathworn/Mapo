@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for better memory bandwidth utilization.
+// Ensure that all threads in a warp access contiguous memory locations in global memory.
+// Optimize shared memory usage by minimizing bank conflicts when writing and reading.
+// Try to overlap data fetching into shared memory with computations to hide memory latency.
+// Use appropriate synchronization to ensure all threads have the correct shared memory data.
+```

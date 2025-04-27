@@ -1,0 +1,5 @@
+// Optimize memory access patterns for coalesced reads
+// Calculate memory offsets outside of conditional statements where possible
+// Consider using shared memory if multiple threads access the same data
+// Minimize divergent branching to enhance warp execution efficiency
+// Evaluate data reuse potential to reduce redundant memory access

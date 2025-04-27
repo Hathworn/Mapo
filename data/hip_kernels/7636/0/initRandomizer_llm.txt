@@ -1,0 +1,4 @@
+// Consider using shared memory for state storage to reduce global memory access
+// Ensure memory coalescing by accessing state elements sequentially
+// Use occupancy calculator to balance block size and register usage
+// Avoid divergence by controlling work within warp boundaries

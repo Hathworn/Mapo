@@ -1,0 +1,3 @@
+// Use memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Minimize the use of shared memory if it won't benefit performance
+// Consider increasing the block size to use more threads per block for better occupancy

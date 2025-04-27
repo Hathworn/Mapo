@@ -1,0 +1,8 @@
+```
+// Use shared memory to improve memory access latency
+// Align memory access to ensure coalesced reads and writes
+// Utilize warp-level primitives to further optimize the reduction
+// Consider padding shared memory to avoid bank conflicts
+// Ensure grid and block dimensions are optimized for the target GPU
+// Explore using tensor cores for further performance improvement
+```

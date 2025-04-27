@@ -1,0 +1,9 @@
+```
+// Consider ensuring coalesced memory access for ptr initialization
+// Use shared memory to reduce global memory access
+// Minimize usage of global memory by initializing shared_block with p2
+// Synchronize threads to ensure shared memory is fully initialized
+// Optimize loop to minimize thread divergence when writing p1
+// Synchronize threads before writing back to global memory to ensure data consistency
+// Coalesced memory access pattern when writing back to global memory
+```

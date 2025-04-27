@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Employ loop unrolling to minimize the number of iterations
+// Combine multiple reduction steps to decrease the need for synchronization
+// Minimize syncthreads by unrolling the last warp
+// Use volatile keyword to avoid memory caching issues in warp-level reduction
+```

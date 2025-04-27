@@ -1,0 +1,6 @@
+// Utilize shared memory to minimize global memory access
+// Perform unrolled loops to reduce loop overhead & increase instruction throughput
+// Ensure proper memory alignment to facilitate coalesced memory access
+// Favor minimal branching to reduce divergent threads
+// Optimize access patterns to maximize memory coalescing
+// Minimize bank conflicts by organizing shared memory access efficiently

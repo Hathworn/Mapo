@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory accesses
+// Ensure memory coalescing for float2 accesses to decrease latency
+// Precompute constants outside loops to minimize redundant calculations
+// Align memory access patterns to maximize throughput

@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to store row_sum[blockIdx.x] to minimize global memory accesses.
+// Use coalesced memory access patterns for writing to output to improve memory throughput.
+// Ensure that memory writes to output are properly aligned for improved performance.
+// Consider occupancy optimizations by adjusting block and grid sizes for maximum parallelism.
+```

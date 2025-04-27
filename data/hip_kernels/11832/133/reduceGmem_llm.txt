@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce the number of global memory accesses.
+// Applying loop unrolling can help decrease the number of iteration steps.
+// Use __restrict__ qualifiers on pointers to potentially improve memory access efficiency.
+// Evaluate using cooperative groups for more efficient synchronization.
+// Ensure memory coalescing by aligning data accesses within the warp.

@@ -1,0 +1,9 @@
+```
+// Consider using coalesced memory access patterns to improve global memory throughput
+// Use shared memory to minimize redundant global memory loads and improve data reuse
+// Pre-compute memory indices outside loops to reduce arithmetic overhead
+// Optimize shared memory usage for better occupancy and efficiency
+// Implement better loop unrolling strategies to minimize control overhead
+// Use warp-level primitives for reduction to improve performance
+// Balance the grid and block dimensions to maximize occupancy and efficient use of GPU resources
+```

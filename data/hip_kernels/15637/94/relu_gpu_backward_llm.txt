@@ -1,0 +1,7 @@
+```
+// Ensure optimal block size for better memory coalescing
+// Consider using shared memory if data reuse is possible
+// Align memory accesses to improve memory throughput
+// Reduce divergent branches by restructuring conditions if possible
+// Use __restrict__ keyword for ingrad, outgrad, and indata pointers to hint at non-aliasing
+```

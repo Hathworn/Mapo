@@ -1,0 +1,8 @@
+```
+// Consider unrolling the loop to increase instruction level parallelism and reduce loop overhead
+// Use the __restrict__ qualifier on pointers to improve memory bandwidth utilization
+// Check for coalesced memory access patterns to optimize global memory access
+// Minimize thread divergence within warp execution to improve performance
+// Optimize shared memory usage to fit into limited shared memory per block
+// Consider aligning data structures to improve memory access speed
+```

@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access patterns by coalescing global memory reads and writes
+// Use shared memory to reduce global memory accesses and latency
+// Ensure optimal block and thread dimensions to maximize occupancy
+// Align data on word boundaries to improve memory access efficiency
+// Reduce redundant __syncthreads() calls where synchronization is not necessary
+```

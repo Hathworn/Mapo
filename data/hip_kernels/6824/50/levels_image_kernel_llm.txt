@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier to help the compiler optimize memory access.
+// Use texture memory for reading image values to leverage caching.
+// Optimize memory coalescing by ensuring threads access contiguous memory.
+// Avoid bank conflicts by proper alignment of shared memory access.
+// Unroll loops to reduce instruction overhead within critical sections.
+```

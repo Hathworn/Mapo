@@ -1,0 +1,9 @@
+```
+// Precompute w_ratio_inv and h_ratio_inv outside the loop to reduce redundancy
+// Use shared memory to store intermediate calculations if re-used by multiple threads
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations
+// Align memory access to ensure optimal bandwidth utilization
+// Minimize branch divergence by organizing conditional statements
+// Leverage read-only cache for input data that does not change
+// Consider vectorizing memory loads and stores for improved throughput
+```

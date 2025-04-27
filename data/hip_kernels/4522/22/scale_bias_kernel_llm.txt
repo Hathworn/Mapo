@@ -1,0 +1,4 @@
+// Ensure coalesced access to memory by aligning data structures
+// Use shared memory to store biases if they are reused frequently
+// Consider using warp-level primitives for reductions if applicable
+// Minimize divergent branches by optimizing condition checks

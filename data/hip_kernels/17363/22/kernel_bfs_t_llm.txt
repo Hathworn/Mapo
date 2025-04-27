@@ -1,0 +1,7 @@
+```
+// Combine conditional checks into a single statement to reduce branching.
+// Use shared memory if possible to cache frequently accessed data like g_push_reser and g_sink_weight.
+// Consider aligning g_push_reser, g_sink_weight, and g_graph_height to avoid uncoalesced memory access.
+// Use vector types for data like g_graph_height to enhance memory throughput.
+// Ensure that g_pixel_mask is aligned to improve memory access efficiency.
+```

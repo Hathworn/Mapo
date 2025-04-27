@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access for gradOutput_k and output_k
+// Use appropriate memory access patterns to reduce bank conflicts within shared memory
+// Try to optimize register usage to reduce spilling to global memory
+// Use more efficient mathematical operations to reduce computational overhead
+// Ensure memory alignment for float operations to utilize hardware capabilities fully
+// Potentially replace the pow and exp functions with approximations if high precision is not critical
+```

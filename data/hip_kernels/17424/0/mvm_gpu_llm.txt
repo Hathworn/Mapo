@@ -1,0 +1,6 @@
+```cpp
+// Consider coalescing memory access patterns for A_cuda and X_cuda to improve memory bandwidth utilization.
+// Pre-fetch data for A_cuda and X_cuda into shared memory to reduce global memory accesses.
+// Use double buffering if the computation pattern allows, for further overlapping computation and memory access.
+// Ensure that the access to X_cuda[j] is within the same warp as much as possible to reduce memory divergence.
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access to improve bandwidth utilization
+// Minimize divergent threads to optimize warp execution
+// Precompute indices offset outside the loop to reduce redundant calculations
+// Align data access patterns with memory architecture for efficient caching
+// Use shared memory for frequently accessed data to decrease global memory access
+// Evaluate potential benefits of loop unrolling to reduce loop overhead
+```

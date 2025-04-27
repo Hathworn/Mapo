@@ -1,0 +1,10 @@
+```cpp
+// Consider using shared memory to reduce global memory access times.
+// Ensure memory coalescing by accessing consecutive global memory addresses.
+// Try to minimize bank conflicts when using shared memory.
+// Use __restrict__ qualifier to help the compiler with optimization.
+// Evaluate whether loop unrolling offers performance benefits in your context.
+// Consider using warp shuffle operations (__shfl_down_sync) to optimize warp reduction.
+// Ensure proper alignment for global memory accesses.
+// Avoid unnecessary memory operations by storing results only when needed.
+```

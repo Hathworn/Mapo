@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for reused data to reduce global memory access time.
+// Ensure coalesced memory access by aligning data on 32-byte boundaries.
+// Minimize divergence by using warp-synchronous programming.
+// Use __restrict__ keyword for pointer arguments to improve compiler optimization.
+```

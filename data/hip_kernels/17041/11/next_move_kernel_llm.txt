@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed node data such as rat counts to reduce global memory accesses.
+// Organize memory access patterns for neighbor and node_weight arrays to improve coalescing.
+// Consider vectorization for operations if applicable, but test the impact on performance.
+// Evaluate whether loop unrolling is beneficial given this specific use case and data size.
+// Balance atomic operations across multiple threads to minimize contention and maximize throughput.

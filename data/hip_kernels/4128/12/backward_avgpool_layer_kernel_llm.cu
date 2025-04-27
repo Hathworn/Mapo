@@ -1,0 +1,19 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void backward_avgpool_layer_kernel(int n, int w, int h, int c, float *in_delta, float *out_delta)
+{
+    int id = blockIdx.x * blockDim.x + threadIdx.x;
+    if(id >= n * c) return;  // Simplified boundary check
+
+    int b = id / c;  // Combine operations
+    int k = id % c;
+    int out_index = k + c * b;
+    
+    float out_val = out_delta[out_index] / (w * h);  // Calculate once to reuse
+
+    for(int i = 0; i < w * h; ++i){
+        int in_index = i + h * w * (k + b * c);
+        in_delta[in_index] += out_val;
+    }
+}

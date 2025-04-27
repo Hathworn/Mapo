@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache symbol vectors for reducing global memory access latency.
+// Coalesce global memory accesses where possible to improve memory bandwidth utilization.
+// Ensure that result vector accesses are aligned to enhance memory transaction efficiency.
+// Evaluate whether additional kernel launch parameter tweaking can improve occupancy and performance.
+```

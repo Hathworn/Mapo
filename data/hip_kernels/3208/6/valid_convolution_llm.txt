@@ -1,0 +1,7 @@
+```
+// Use shared memory to store a tile of d_matrix to reduce global memory accesses
+// Ensure coalesced memory access for d_matrix by having each thread access consecutive elements
+// Consider using loop unrolling to optimize the kernel loop execution
+// Minimize register usage by optimizing the sum calculation
+// Investigate the use of texture memory for d_kernel as it may offer better caching characteristics
+```

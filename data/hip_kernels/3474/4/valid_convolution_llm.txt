@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache d_kernel for faster access
+// Optimize data access patterns to minimize bank conflicts in shared memory
+// Consider loop unrolling to reduce branch overhead within convolution function
+// Prefetch d_matrix into registers to reduce repeated global memory accesses
+// Check memory alignment for better coalesced reads and writes
+```

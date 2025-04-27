@@ -1,0 +1,12 @@
+```
+// Avoid redundant recalculations of the same indices (x, y) by storing them in local variables.
+// Consider using texture memory for read-only data like image if it's beneficial to reduce memory fetch cost.
+// Coalesce memory access by ensuring threads access consecutive memory addresses where possible.
+// Beware of potential bank conflicts if accessing shared memory, even though it's not directly visible here.
+// Double-check alignment of memory accesses for better use of memory bandwidth.
+// Consider loop unrolling manually if the compiler doesn't optimize loops effectively.
+// Use __ldg() intrinsic for loading read-only global memory data, if applicable, to leverage the read-only cache.
+// Minimize the use of branching (if conditions) within the kernel for better warp execution efficiency.
+// Ensure that float operations are replaced with fma (fused multiply-add) where applicable for better precision and performance.
+// Evaluate usage of __syncthreads() judiciously when introducing shared memory to coordinate between threads.
+```

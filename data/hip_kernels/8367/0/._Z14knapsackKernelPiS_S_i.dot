@@ -1,0 +1,15 @@
+digraph "CFG for '_Z14knapsackKernelPiS_S_i' function" {
+	label="CFG for '_Z14knapsackKernelPiS_S_i' function";
+
+	Node0x47e8460 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = icmp eq i32 %3, 0\l  %7 = icmp eq i32 %5, 0\l  %8 = select i1 %6, i1 true, i1 %7\l  br i1 %8, label %35, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x47e8460:s0 -> Node0x47e84b0;
+	Node0x47e8460:s1 -> Node0x47e9af0;
+	Node0x47e9af0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%9:\l9:                                                \l  %10 = add nsw i32 %3, -1\l  %11 = sext i32 %10 to i64\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %11\l  %13 = load i32, i32 addrspace(1)* %12, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %14 = icmp slt i32 %5, %13\l  br i1 %14, label %29, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x47e9af0:s0 -> Node0x47ea1f0;
+	Node0x47e9af0:s1 -> Node0x47ea280;
+	Node0x47ea280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%15:\l15:                                               \l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %11\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %18 = mul nsw i32 %10, 100\l  %19 = add i32 %18, %5\l  %20 = sub i32 %19, %13\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %24 = add nsw i32 %23, %17\l  %25 = sext i32 %19 to i64\l  %26 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %25\l  %27 = load i32, i32 addrspace(1)* %26, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %28 = tail call i32 @llvm.smax.i32(i32 %24, i32 %27)\l  br label %35\l}"];
+	Node0x47ea280 -> Node0x47e84b0;
+	Node0x47ea1f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%29:\l29:                                               \l  %30 = mul nsw i32 %10, 100\l  %31 = add nsw i32 %30, %5\l  %32 = sext i32 %31 to i64\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %32\l  %34 = load i32, i32 addrspace(1)* %33, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  br label %35\l}"];
+	Node0x47ea1f0 -> Node0x47e84b0;
+	Node0x47e84b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = phi i32 [ %28, %15 ], [ %34, %29 ], [ 0, %4 ]\l  %37 = mul nsw i32 %3, 100\l  %38 = add nsw i32 %37, %5\l  %39 = sext i32 %38 to i64\l  %40 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %39\l  store i32 %36, i32 addrspace(1)* %40, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

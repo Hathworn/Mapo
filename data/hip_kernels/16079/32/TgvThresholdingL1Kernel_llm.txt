@@ -1,0 +1,7 @@
+
+// Improve memory coalescing by ensuring adjacent threads access contiguous memory locations
+// Use shared memory to cache frequently accessed data within a block
+// Minimize global memory accesses by using registers for intermediate calculations
+// Consider using texture memory for read-only data such as Iu and Iz to exploit spatial locality
+// Optimize conditional statements to avoid divergence and improve branch prediction
+// Align data structures to ensure efficient memory transactions and reduce misaligned accesses

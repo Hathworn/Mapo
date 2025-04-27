@@ -1,0 +1,8 @@
+```
+// Optimize memory access by coalescing global memory reads and writes where possible
+// Consider using asynchronous memory prefetch instructions for better data loading efficiency
+// Experiment with different block and grid sizes to find optimal configuration for workload
+// Use loop unrolling if applicable to reduce loop overhead and improve performance
+// Consider using __restrict__ keyword to indicate that pointers do not alias for better compiler optimizations
+// Ensure that shared memory usage does not exceed available on GPU to prevent spills to global memory
+```

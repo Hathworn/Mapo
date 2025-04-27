@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for d_rpt and d_col to optimize global memory reads
+// Prefetch data into shared memory to reduce global memory latency
+// Use warp-level primitives to reduce the number of atomic operations needed
+// Align seg_size and seg_num such that block accesses are optimized for cache coherence
+// Evaluate if changing block and grid dimensions reduces the execution time
+```

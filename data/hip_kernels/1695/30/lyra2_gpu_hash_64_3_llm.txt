@@ -1,0 +1,9 @@
+```cpp
+// Load data from global memory to shared memory to reduce global memory access time
+// Minimize global memory accesses by using local variables or shared memory
+// Ensure memory coalescing by organizing data access patterns
+// Avoid bank conflicts in shared memory accesses
+// Use appropriate block and grid sizes for maximum occupancy
+// Consider unrolling loops for improved performance if applicable
+// Utilize warp-level operations to reduce instruction overhead
+```

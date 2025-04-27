@@ -1,0 +1,5 @@
+// Use shared memory to cache data between threads and avoid redundant global memory accesses.
+// Consider using __ldg() intrinsic for read-only data to optimize global memory access.
+// Ensure coalesced memory access by aligning data and accessing consecutively.
+// Investigate loop unrolling to reduce loop overhead and improve performance.
+// Optimize divergence by aligning conditional checks and threads executing them.

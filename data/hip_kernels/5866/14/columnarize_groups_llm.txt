@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access by aligning columnar_buffer and rowwise_buffer
+// Examine possibility of shared memory use for frequently accessed data
+// Check if reducing thread divergence by processing rows with similar column widths together is viable
+// Explore loop unrolling for small col_count to reduce overhead
+// Assess potential of prefetching into registers to minimize global memory latency
+// Investigate alignment of memory accesses for col_base and read_ptr
+// Examine data types to ensure memory transactions are efficiently sized
+```

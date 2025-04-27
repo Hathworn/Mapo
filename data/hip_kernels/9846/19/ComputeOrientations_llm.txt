@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses when reading g_Data for better performance
+// Loop unrolling can be used to load shared memory more efficiently
+// Ensure sufficient shared memory resources to prevent bank conflicts
+// Minimize the use of atomic operations where possible to improve performance
+// Explore register usage optimization to improve throughput
+// Opt for warp-level operations over block-wide synchronization when applicable
+```

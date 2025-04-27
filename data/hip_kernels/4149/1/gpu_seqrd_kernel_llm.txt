@@ -1,0 +1,8 @@
+```
+// Consider tiling the memory access to improve cache efficiency
+// Experiment with vectorized loads beyond four elements to further optimize memory bandwidth
+// Use shared memory if possible to reduce global memory traffic
+// Assess if increasing the blockDim.x could improve coalesced memory access
+// Investigate using prefetching techniques to further hide memory latency
+// Optimize warp execution efficiency by aligning memory access across threads
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Improve memory throughput by using coalesced memory access patterns
+// Employ loop unrolling to minimize loop overhead and increase performance
+// Synchronize threads with __syncthreads() to safely share data in shared memory
+// Utilize #pragma unroll to force unrolling of loops for better performance
+```

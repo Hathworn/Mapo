@@ -1,0 +1,7 @@
+```
+// Consider aligning memory allocations to improve coalesced memory access.
+// Use shared memory to reduce global memory access if data reuse is possible within blocks.
+// Optimize block and grid size for maximum occupancy and minimal wasted threads.
+// Minimize divergent branches within the kernel to enhance performance.
+// Pre-fetch data to registers if possible to reduce latencies.
+```

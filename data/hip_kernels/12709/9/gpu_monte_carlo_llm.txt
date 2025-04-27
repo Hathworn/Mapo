@@ -1,0 +1,6 @@
+```cpp
+// Initialize CURAND only once outside the loop to save time
+// Use local variable register to cache state
+// Update state with hiprand_uniform to increase efficiency
+// Write back to global memory
+```

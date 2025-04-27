@@ -1,0 +1,8 @@
+```
+// Ensure that 'a' matrix is coalesced in memory by aligning threads with data access
+// Consider using shared memory to store portions of 'a' matrix for faster access
+// Minimize the divergence in the loop to ensure that all threads in a warp follow the same control path
+// Use loop unrolling to reduce loop overhead and improve performance
+// Ensure the input is well-aligned and within bounds to prevent unnecessary memory accesses
+// Evaluate if warp-level primitives can be used to optimize data sharing among threads
+```

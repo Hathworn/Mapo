@@ -1,0 +1,5 @@
+```
+// Consider coalesced accesses by ensuring sequential threads access consecutive memory locations in loc_.
+// Leverage shared memory more effectively by carefully managing the size and access pattern.
+// Use __syncthreads() only when necessary as it may cause performance overhead.
+```

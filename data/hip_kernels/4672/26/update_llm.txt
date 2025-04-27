@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access latency.
+// Ensure memory coalescing to optimize global memory transactions.
+// Prefer using __ldg to read data if read-only access is needed.
+// Adjust block and thread dimensions to maximize occupancy.

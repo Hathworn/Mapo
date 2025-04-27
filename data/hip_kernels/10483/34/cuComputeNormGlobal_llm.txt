@@ -1,0 +1,11 @@
+```c
+// Preload data into shared memory to reduce global memory access latency
+// Use shared memory to cache sub-matrices of A and B for faster access
+// Launch sufficient threads per block to hide memory latency
+// Ensure memory access coalescing by aligning data access patterns
+// Synchronize threads appropriately to ensure correct data usage
+// Use conditionals to avoid out-of-bound memory access
+// Perform computations using shared memory data to reduce global memory traffic
+// Consider using half precision if precision can be traded-off for performance
+// Optimize the loop unrolling factor to balance between instruction count and register pressure
+```

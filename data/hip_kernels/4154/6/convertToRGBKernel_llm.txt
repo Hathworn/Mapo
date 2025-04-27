@@ -1,0 +1,5 @@
+```c
+// Use coalesced memory access for pV210 to improve memory throughput.
+// Minimize the number of accesses to global memory by fetching multiple data points at once.
+// Utilize register reuse to store intermediate results and avoid redundant calculations.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory only when multiple accesses per element are needed
+// Ensure shared memory is correctly sized to avoid conflicts
+// Minimize global memory accesses by reducing the number of load/store operations
+// Prioritize coalesced memory accesses to improve memory utilization
+// Experiment with block size and grid size for optimal performance
+// Use __syncthreads() judiciously to avoid unnecessary usage when data dependency is not present
+```

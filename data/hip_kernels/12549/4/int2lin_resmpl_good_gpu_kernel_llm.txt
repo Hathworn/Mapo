@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for temporary arrays
+// Prefetch global memory data to shared memory when possible
+// Use texture memory for dev_in_img to exploit spatial locality
+// Align memory accesses by accessing consecutive memory locations
+// Consider coalescing memory accesses in loops where possible
+// Minimize usage of __syncthreads() to avoid performance bottlenecks
+```

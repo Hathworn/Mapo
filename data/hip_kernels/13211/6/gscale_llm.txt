@@ -1,0 +1,3 @@
+// Use coalesced memory accesses by ensuring each thread accesses consecutive memory locations.
+// Store the constant factor in a local variable to avoid repeated global memory reads.
+// Optimize memory access by reading a[0] once.

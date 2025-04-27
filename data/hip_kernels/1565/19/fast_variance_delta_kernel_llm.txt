@@ -1,0 +1,8 @@
+```
+// Loop unrolling by processing 4 elements at once to increase memory throughput
+// Initialize shared memory to reduce repeated global memory accesses
+// Use shared memory for partial sums to minimize global memory operations
+// Perform reduction within the block by using shared memory
+// Use __syncthreads() to ensure all threads have finished writing to shared memory
+// Accumulate results using a single atomic operation at the end of kernel execution
+```

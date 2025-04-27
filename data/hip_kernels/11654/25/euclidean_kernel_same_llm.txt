@@ -1,0 +1,4 @@
+// Consider using coalesced memory access patterns for vg_a to improve memory throughput.
+// Utilize shared memory more efficiently by minimizing bank conflicts during the binary reduction.
+// Ensure proper alignment and padding in shared memory to prevent uncoalesced access patterns.
+// Optimize global memory writes by ensuring output is written by the thread with zero offset in warp.

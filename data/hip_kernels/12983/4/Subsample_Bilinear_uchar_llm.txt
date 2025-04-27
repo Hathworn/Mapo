@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced access to the dst array.
+// Pre-calculate hscale and vscale outside the loop if possible.
+// Minimize branching by using conditional operators or moving conditions outside loops.
+// Utilize texture caching to improve performance for repetitive read accesses.

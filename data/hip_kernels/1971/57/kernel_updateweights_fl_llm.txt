@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory traffic.
+// Ensure coalesced memory access patterns to improve memory throughput.
+// Optimize block and grid size for better occupancy and performance.
+// Use __syncthreads() if data sharing among threads within a block is needed.
+// Apply loop unrolling if applicable to reduce instruction overhead.
+```

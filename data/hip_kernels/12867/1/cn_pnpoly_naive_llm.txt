@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache frequently accessed vertices to reduce global memory access.
+// Consider loop unrolling for the inner loop to reduce branch divergence.
+// Compute intermediate calculations outside the loop if possible to save redundant operations.
+// Merge conditions to minimize branching and improve pipeline efficiency.
+// Use warp shuffle operations to reduce the number of global memory accesses.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Ensure memory coalescing by accessing delta with a contiguous pattern per thread
+// Consider utilizing warp shuffle operations to efficiently reduce tmp across threads
+// Use __syncthreads() after accumulation if using shared memory for correctness
+// Avoid bank conflicts in shared memory access by ensuring padding if necessary
+// Improve scaling factor calculation to reduce redundant computations
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns to ensure coalesced global memory access
+// Use shared memory to reduce redundant global memory accesses
+// Perform boundary checks before accessing global memory to avoid out-of-bounds access
+// Ensure that __syncthreads() is used after loading data into shared memory to synchronize threads
+// Limit the use of __syncthreads() to only necessary points to reduce overhead
+```

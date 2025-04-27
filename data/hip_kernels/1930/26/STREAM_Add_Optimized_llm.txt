@@ -1,0 +1,3 @@
+// Consider using shared memory to reduce redundant global memory accesses.
+// Ensure memory coalescing by using consecutive threads accessing consecutive memory locations.
+// Double-check the choice of blockDim.x and gridDim.x to maximize occupancy.

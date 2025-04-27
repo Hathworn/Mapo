@@ -1,0 +1,6 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.  
+// Minimize the use of global variables inside kernel functions as registers are faster.  
+// Optimize block and grid sizes to achieve maximum occupancy and efficient hardware use.  
+// Benchmark different memory access patterns to identify the most efficient usage.  
+// Consider using memory coalescing by aligning memory access to warp size for optimal bandwidth.  
+// Profile memory usage to identify potential bottlenecks and optimize accordingly.

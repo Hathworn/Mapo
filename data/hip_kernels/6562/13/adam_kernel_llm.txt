@@ -1,0 +1,7 @@
+```c
+// Simplified index calculation
+// Precompute powf(B1, t) and powf(B2, t) as they are the same for each thread
+// Precompute eps constant addition outside the loop
+// Leverage reuse of powf computation
+// Save computation by reusing variables
+```

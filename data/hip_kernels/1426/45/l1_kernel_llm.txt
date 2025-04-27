@@ -1,0 +1,6 @@
+```
+// Optimize memory access by ensuring pred, truth, delta, and error arrays are coalesced
+// Use shared memory if multiple threads access overlapping regions of these arrays
+// Investigate potential benefits of loop unrolling for the main computation
+// Consider using __ldg() for loading read-only data like pred and truth if beneficial
+```

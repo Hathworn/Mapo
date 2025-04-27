@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory accesses by aligning input/output access patterns
+// Use shared memory to store partial sums for faster reduction
+// Consider employing warp-level primitives for efficient synchronization
+// Evaluate using half precision if precision requirements permit for better throughput
+// Explore possible loop unrolling to optimize for register usage and pipeline efficiency
+// Profile different block size configurations for maximum occupancy and performance
+```

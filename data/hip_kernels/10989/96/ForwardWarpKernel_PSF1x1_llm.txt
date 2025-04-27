@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses for 'u' and 'v' arrays.
+// Utilize shared memory to cache 'src' data and minimize global memory accesses.
+// Consider tiling approach to maximize shared memory utilization.
+// Optimize thread block size and shape to balance occupancy and memory access patterns.
+// Investigate warp specialization to enhance efficiency in atomic operations.

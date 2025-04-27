@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses within a block
+// Consider coalesced memory access by aligning threads with memory layout
+// Minimize __syncthreads() calls if possible and ensure necessary synchronizations are correct
+// Optimize access patterns to use sequential rather than strided global memory accesses
+```

@@ -1,0 +1,5 @@
+```cpp
+// Consider using __shared__ memory for frequently accessed shared variables to reduce global memory access latency.
+// Attempt memory coalescing by ensuring threads access contiguous memory addresses for gradOutput_data.
+// Pre-compute scale_factor multiplications outside of loops to reduce redundant calculations.
+```

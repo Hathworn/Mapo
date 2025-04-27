@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access to optimize global memory transactions
+// Minimize use of __syncthreads() to reduce thread synchronization overhead
+// Prefetch data into shared memory to improve memory access patterns
+// Reduce arithmetic redundancy by minimizing recalculations
+```

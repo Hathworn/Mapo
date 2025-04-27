@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced memory accesses
+// Consider using shared memory if data reuse within a block is present
+// Evaluate the occupancy to ensure maximum resource utilization
+// Use __restrict__ pointers if there are no pointer aliasing concerns
+// Check for potential use of vectorized instructions for erfc calculations
+```

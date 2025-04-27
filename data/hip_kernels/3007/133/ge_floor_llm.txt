@@ -1,0 +1,7 @@
+```
+// Use __restrict__ keyword for pointers to improve memory access efficiency
+// Consider coalesced memory access to optimize global memory throughput
+// Ensure memory access patterns are coalesced for both reading from 'a' and writing to 'b'
+// Explore using shared memory if there are redundant accesses to the same data
+// Ensure that the grid and block dimensions align with the data layout for optimal utilization
+```

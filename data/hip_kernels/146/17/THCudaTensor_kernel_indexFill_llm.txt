@@ -1,0 +1,7 @@
+```
+// Minimize thread divergence by ensuring all threads follow the same execution path.
+// Use shared memory to cache frequently accessed global memory values for stride.
+// Avoid recalculating index_stride_dim multiple times by storing it in a register.
+// Reduce memory transactions by accessing global memory coalesced when updating tensor values.
+// For each loop iteration, avoid redundant memory reads by storing index[i] to a local variable.
+```

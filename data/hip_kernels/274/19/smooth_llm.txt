@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access patterns by having consecutive threads access consecutive memory elements.
+// Use shared memory to store neighboring elements to reduce global memory access latency.
+// Consider using __ldg() intrinsic for read-only data to potentially optimize memory reads.
+// Optimize the grid and block dimensions to maximize occupancy and ensure efficient use of the GPU's resources.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Consider using asynchronous memory prefetching for better data throughput
+// Optimize memory alignment to ensure coalesced memory accesses
+// Ensure that the loop stride covers all data without divergence
+// Minimize memory access divergence by ensuring aligned memory patterns
+// Utilize warp-shuffle operations to reduce register pressure if applicable
+```

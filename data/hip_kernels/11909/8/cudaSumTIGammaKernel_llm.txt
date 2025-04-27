@@ -1,0 +1,6 @@
+```c
+// Use shared memory for commonly accessed data to reduce global memory access
+// Align data structures to 128 bits if possible to enable coalesced access
+// Consider using double4 for vectorized load/store to optimize memory transactions
+// Optimize block and grid sizes to maximize occupancy
+```

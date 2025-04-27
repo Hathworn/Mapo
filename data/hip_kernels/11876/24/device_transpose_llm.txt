@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Coalesce global memory access by loading blocks of data into shared memory
+// Avoid bank conflicts in shared memory by adding padding
+// Synchronize threads to ensure all data is loaded into shared memory before proceeding
+// Optimize thread and block indexing for improved memory access patterns

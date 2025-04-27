@@ -1,0 +1,4 @@
+// Use shared memory for chunk data to reduce global memory accesses
+// Coalesce memory accesses to d_array for better memory throughput
+// Consider loop unrolling in insertionSort for fewer branch instructions
+// Use atomic operations only if necessary to avoid synchronization overhead

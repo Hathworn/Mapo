@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses and improve data locality.
+// Unroll loops where beneficial to increase instruction throughput.
+// Minimize bank conflicts by ensuring shared memory access patterns are aligned.
+// Load data into shared memory with boundary checks to avoid conditional statements in critical code sections.
+// Utilize `__syncthreads()` after loading data into shared memory to synchronize threads.
+// Optimize the use of registers by avoiding unnecessary variable declarations inside loops.
+```

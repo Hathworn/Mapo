@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for better memory throughput
+// Ensure proper use of shared memory if data reuse occurs within the kernel
+// Evaluate occupancy and adjust grid/block dimensions for optimal compute utilization
+// Use __restrict__ for pointers if applicable to assist compiler optimizations
+// Inspect and minimize bank conflicts or warp divergences if shared memory is used
+```

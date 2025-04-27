@@ -1,0 +1,7 @@
+```
+// Use shared memory efficiently to avoid redundant global memory accesses
+// Coalesce global memory accesses by loading data in contiguous blocks
+// Optimize shared memory usage by minimizing padding and boundary checks
+// Utilize __syncthreads() to synchronize threads after loading shared memory
+// Ensure all global memory accesses are aligned for better performance
+```

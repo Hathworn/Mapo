@@ -1,0 +1,8 @@
+```cpp
+// Pre-compute scale factor outside of kernel loop for improved efficiency
+// Calculate global thread index for parallel processing
+// Use blockDim.y to distribute filters across multiple blocks if necessary
+// Combine nested loops into a single loop for better memory access patterns
+// Directly access flattened index for improved data locality
+// Utilize powf to leverage hardware acceleration for float operations
+```

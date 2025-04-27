@@ -1,0 +1,7 @@
+```
+// Consider using warp-level primitives for synchronization to reduce __syncthreads overhead.
+// Optimize global memory accesses by coalescing memory reads and writes.
+// Minimize divergent branches within warp execution by aligning control flow paths.
+// Use constant memory for frequently accessed data, like numCases and numOut, to reduce global memory traffic.
+// Evaluate if using texture memory can benefit uncoalesced accesses for probability values.
+```

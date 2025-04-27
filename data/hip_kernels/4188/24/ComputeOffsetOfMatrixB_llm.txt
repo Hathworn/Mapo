@@ -1,0 +1,5 @@
+```cpp
+// Ensure coalesced access to global memory by processing consecutive threads on consecutive elements of row_sum.
+// Use shared memory to cache row_sum[blockIdx.x] for reuse across threads within a block.
+// Consider using warp-level primitives for further optimization in accessing row_sum.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for tiles of A and B to reduce global memory access
+// Ensure coalesced access to global memory by allocating contiguous threads to contiguous memory addresses
+// Unroll loops where possible to decrease loop overhead and increase performance
+// Use __syncthreads() to synchronize threads for shared memory usage when implementing the tile optimization
+// Optimize the choice of block size and grid size to better match the hardware's computing capacity
+// Evaluate using half precision (FP16) arithmetic if accuracy requirements allow, to optimize performance
+```

@@ -1,0 +1,10 @@
+```cpp
+// Consider aligning shared memory allocation with memory coalescing.
+// Ensure that reading t2_d into shared memory is coalesced.
+// Check if t2_shm can be indexed in a way that maximizes warp efficiency.
+// Double-check boundary conditions for loop iteration on thread indices.
+// Reduce shared memory usage where possible to allow for more concurrent blocks.
+// Optimize index calculations to minimize division and modulus operations.
+// Ensure that global memory writes of t3d are coalesced.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization.
+```

@@ -1,0 +1,6 @@
+```
+// Consider memory coalescing by ensuring contiguous memory access for indexes and prev_delta.
+// Use shared memory if there are common access patterns to reduce global memory accesses.
+// Optimize thread block size for better utilization of GPU resources.
+// Load the indexes value into a local register before using it for faster access.
+```

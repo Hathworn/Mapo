@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory to cache d_spine_sums values for blocks
+// Check if reducing the number of global memory accesses can improve performance
+// Ensure memory alignment for d_spine_sums and d_off
+// Minimize memory divergence within warp when accessing d_spine_sums
+```

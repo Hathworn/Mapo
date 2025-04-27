@@ -1,0 +1,4 @@
+// Coalesce memory accesses for output writes
+// Consider using shared memory for block-level reuse of input data
+// Use texture memory for frequent access arrays like mask, target, and background
+// Evaluate using warp-level intrinsics for efficient synchronization

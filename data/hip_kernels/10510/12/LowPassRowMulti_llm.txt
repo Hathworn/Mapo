@@ -1,0 +1,5 @@
+// Consider using warp-level primitives for memory access to reduce bank conflicts.
+// Try to leverage memory coalescing by organizing shared memory access patterns.
+// Explore using __ldg() to optimize read-only memory accesses for global arrays.
+// Evaluate if loop unrolling can further improve performance for the kernel computation.
+// Assess if compiler flags can be adjusted for better scheduling of instructions.

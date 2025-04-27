@@ -1,0 +1,5 @@
+```cpp
+// Load indices once to reduce global memory accesses
+// Use a shared variable to minimize recalculation
+// Copy and transform adjacency in a single loop without unnecessary load/store
+```

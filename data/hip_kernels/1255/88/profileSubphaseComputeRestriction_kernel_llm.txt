@@ -1,0 +1,13 @@
+```cpp
+// Optimization: Allocate shared memory if necessary
+// Use shared memory to minimize global memory access
+// Ensure efficient use of allocated shared memory to overlap computation and data transfer
+
+// Optimization: Use threads efficiently
+// Optimize thread block size to achieve maximum occupancy
+// Use warp-level primitives if applicable for data reuse and coordination
+
+// Optimization: Reduce global memory access, use registers/shared memory
+// Cache frequently accessed data in registers for lower latency
+// Consider data layout transformations to achieve coalesced memory access
+```

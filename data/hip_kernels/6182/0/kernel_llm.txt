@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access
+// Ensure memory coalescing to improve memory access patterns
+// Prefer warp-level operations to optimize thread cooperation
+// Minimize divergent branching for better warp efficiency
+// Leverage asynchronous memory copy for hiding latency
+// Optimize block and grid size for better CUDA occupancy
+// Consider using texture memory for read-only data access
+```

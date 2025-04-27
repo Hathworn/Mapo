@@ -1,0 +1,3 @@
+// Use shared memory to store intermediate accuracy values to minimize global memory access
+// Use atomic operations to ensure correct division in a parallel environment
+// Use warp shuffle operations to reduce synchronization overheads

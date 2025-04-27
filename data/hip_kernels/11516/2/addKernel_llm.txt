@@ -1,0 +1,4 @@
+// Consider using shared memory for dev_a and dev_b to reduce global memory access
+// Implement coalesced memory access to improve performance
+// Minimize divergence by ensuring all threads within a block execute the same code
+// Use memory access patterns that align with the hardware's cache lines

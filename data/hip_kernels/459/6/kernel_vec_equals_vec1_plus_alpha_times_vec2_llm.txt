@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for vec1 and vec2 to reduce global memory access
+// Coalesce global memory accesses by ensuring vec1, vec2, and vec are accessed in a contiguous manner
+// Use restrict keyword for pointers if applicable to aid the compiler in optimization
+// Check if prefetching data for vec1 and vec2 can reduce memory latency
+// Analyze if loop unrolling can optimize computations for critical length sizes
+// Evaluate if using constant memory for frequently accessed constants can benefit performance
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data for threads within a block to reduce global memory access.
+// Ensure data alignment to improve memory access efficiency.
+// Minimize divergent branching within the kernel to optimize performance.
+// Use `const` keyword for variables that do not change to help compiler optimization.
+// Evaluate the use of vectorized data types (e.g., float4) for potential memory coalescing benefits.
+```

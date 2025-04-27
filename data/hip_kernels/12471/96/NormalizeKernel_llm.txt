@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing global memory with threads in the same warp
+// Minimize divergence by reducing conditional branches inside the kernel
+// Avoid warp divergence by processing data in a structured manner to ensure all threads in a warp follow the same path
+// Prefetch data to shared memory to reduce global memory bandwidth usage if data reuse is high
+// Use warp shuffle operations for better synchronization and data reuse instead of explicit shared memory when appropriate
+```

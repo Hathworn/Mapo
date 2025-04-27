@@ -1,0 +1,5 @@
+// Consider using shared memory to store intermediate sums for better memory access efficiency
+// Explore coalesced memory access patterns to minimize memory transaction overheads
+// Investigate warp-level primitives to further optimize loop unrolling and reduce redundant calculations
+// Evaluate the use of asynchronous copy to overlap computation and memory transfer
+// Assess the alignment of memory accesses to ensure peak bandwidth utilization

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache frequently accessed data.
+// Optimize memory access patterns to ensure coalesced memory access.
+// Utilize constant memory for any read-only data that doesn't change during execution.
+// Minimize register usage to enable better occupancy.
+// Leverage loop unrolling for iterations with a small, fixed count.
+// Avoid warp divergence by ensuring each thread of a warp follows the same execution path.
+```

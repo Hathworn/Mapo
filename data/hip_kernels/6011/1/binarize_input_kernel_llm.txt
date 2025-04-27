@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring that threads access consecutive memory locations.
+// Use __restrict__ qualifier for input and binary pointers to enable better compiler optimizations.
+// Reduce the number of redundant calculations and memory accesses by caching data in registers.
+// If the block size is not a multiple of warp size, consider using warp shuffles instead of shared memory for faster mean calculations.
+// Ensure the occupancy is optimized by adjusting block size and shared memory usage to maximize resource utilization.
+```

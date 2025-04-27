@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to store normalization_constant to minimize redundant calculations
+// Synchronize threads to ensure all have the updated normalization_constant
+// Use a single conditional for both shared memory initialization and array bounds check
+// Minimize global memory accesses by storing input_value and output_value in registers
+```

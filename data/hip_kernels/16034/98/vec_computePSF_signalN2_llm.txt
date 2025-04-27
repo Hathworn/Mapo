@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access
+// Consider using texture memory for read-only data
+// Optimize memory access patterns to minimize bank conflicts
+// Use loop unrolling as applicable to improve utilization
+// Ensure coalesced memory access for fft and psffft arrays
+// Minimize conditional statements inside the kernel
+// Investigate the use of stream or async operations for overlapping computation and data transfer
+```

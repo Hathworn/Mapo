@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns to optimize global memory reads for x and y
+// Prefetch data into shared memory if possible to reduce global memory latency
+// Minimize thread divergence by ensuring each thread follows similar execution paths
+// Consider using warp-level primitives to accelerate the reduction across threads
+// Avoid re-computation of globalId+i inside the loop by storing it in a local variable
+```

@@ -1,0 +1,7 @@
+```
+// Utilize grid-stride loop to maximize memory coalescing and parallel efficiency.
+// Consider using warp-level primitives for faster reduction within shared memory.
+// Ensure shared memory usage is minimized for better occupancy.
+// Optimize the calculation of index inside the loop to minimize redundant operations.
+// Use __syncthreads() judiciously to synchronize only when necessary to improve performance.
+```

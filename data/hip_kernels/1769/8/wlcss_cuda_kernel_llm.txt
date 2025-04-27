@@ -1,0 +1,11 @@
+```c
+// Use shared memory to minimize global memory access for temporary variables.
+// Allocate enough shared memory to eliminate bank conflicts.
+// Consider prefetching data to shared memory for reducing waiting time on memory loads.
+// Optimize the loop to minimize the number of calculations inside the nested loop.
+// Consolidate memory accesses to improve coalescing and reduce latency.
+// Implement loop unrolling for the inner loop to enhance performance.
+// Utilize __syncthreads() if necessary to prevent race conditions in shared memory.
+// Use constant memory for parameters that do not change, e.g., reward, penalty, accepteddist.
+// Use warp-level primitives to optimize thread divergence and synchronization.
+```

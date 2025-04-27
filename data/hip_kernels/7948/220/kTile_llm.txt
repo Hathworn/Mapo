@@ -1,0 +1,7 @@
+```c
+// Consider coalescing reads from src to optimize memory access patterns
+// Use shared memory to reduce global memory access if appropriate
+// Ensure warp divergence is minimized by aligning loop iterations with warp size
+// Implement loop unrolling if it benefits GPU computation efficiency
+// Consider adjusting block size and grid size for optimal occupancy
+```

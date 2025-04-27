@@ -1,0 +1,5 @@
+```
+// Utilize __syncthreads() to ensure all threads synchronize after shared memory load
+// Load next data into shared memory to enable coalesced memory access
+// Avoid global memory writes when not necessary
+```

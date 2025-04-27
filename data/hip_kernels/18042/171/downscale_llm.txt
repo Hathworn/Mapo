@@ -1,0 +1,5 @@
+// Consider using shared memory to cache gradOutput_data for minimizing repeated global memory access.
+// Optimize memory coalescing by aligning gradInput_data and gradOutput_data accesses to warp boundaries.
+// Examine bank conflicts in shared memory and resolve them if necessary.
+// Leverage asynchronous copies to move data more efficiently between global and shared memory.
+// Use texture memory or read-only cache for gradOutput_data to enhance performance.

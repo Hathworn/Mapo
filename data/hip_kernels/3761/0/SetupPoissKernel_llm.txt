@@ -1,0 +1,5 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Ensure that curand_state is aligned properly for efficient memory transactions.
+// Use __restrict__ keyword on pointer curand_state to increase compiler optimization opportunities.
+```

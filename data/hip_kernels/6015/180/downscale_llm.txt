@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by restructuring memory access patterns where possible
+// Utilize shared memory for temporary storage to reduce global memory accesses
+// Minimize the reuse of translated indices by storing computed values when feasible
+// Use __syncthreads() to synchronize threads when using shared memory
+// Optimize block and grid dimensions to maximize occupancy and minimize idle threads
+```

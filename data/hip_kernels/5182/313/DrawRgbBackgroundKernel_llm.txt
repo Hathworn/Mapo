@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for data reuse among threads to reduce global memory access.
+// Ensure memory coalescing by aligning memory accesses among threads in a warp.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+// Use constant memory for the values of r, g, and b if these do not change per kernel launch.
+```

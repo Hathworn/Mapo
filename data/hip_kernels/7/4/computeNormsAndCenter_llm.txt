@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for cent and totalmass to minimize global memory accesses
+// Optimize memory coalescing by ensuring contiguous access patterns for positions and masses arrays
+// Explore using __ldg() intrinsic for reading constant data to reduce global memory bandwidth
+// Assess the impact of using atomic operations for totalmass updates if needed in a multi-block context
+// Investigate potential benefits of adjusting block and thread sizes for better GPU utilization
+```

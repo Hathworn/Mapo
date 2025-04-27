@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access to improve throughput
+// Allocate memory in chunks of 256 bytes to use full cache lines
+// Align data to 128 bytes for optimal cache usage
+// Prefetch data to shared memory to minimize latency
+// Reduce global memory accesses by using registers when possible
+// Optimize loop unrolling for better performance
+```

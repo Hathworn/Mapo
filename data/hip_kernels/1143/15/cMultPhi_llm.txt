@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory if in1 and in2 data reuse occurs within the same block to reduce global memory access.
+// Consider using vectorized loads and stores for better memory coalescing.
+// Ensure the grid and block dimensions are configured to maximize occupancy.
+// Minimize divergent branches by structuring threads to follow similar execution paths.
+// Align data structures to ensure efficient memory access patterns, especially if the hardware prefers certain alignments.
+// Prefetch data into registers to hide memory latency if computation to memory access ratio allows it.
+// Opt for restricting pointers with __restrict__ if applicable to enable additional compiler optimizations.
+// Investigate the use of asynchronous memory prefetching to overlap computation with memory transfers.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and increase data reuse
+// Ensure non-overlapping shared memory allocation
+// Replace atomic operations with local aggregation to minimize contention
+// Utilize __syncthreads() to synchronize threads before updating global memory
+// Consider loop unrolling for reduced branch divergence
+```

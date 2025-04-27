@@ -1,0 +1,5 @@
+// Optimize the use of shared memory to minimize bank conflicts
+// Consider using warp shuffle to reduce shared memory usage
+// Reduce divergence by organizing threads to execute the same instruction path
+// Avoid redundant memory accesses by caching repeated data computations in registers
+// Efficiently balance workload among threads to maximize occupancy and minimize idle time

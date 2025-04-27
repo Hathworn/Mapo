@@ -1,0 +1,5 @@
+// Use shared memory to store frequently accessed data like d_cdf_norm for faster access
+// Pre-fetch data into registers to reduce global memory accesses
+// Optimize the calculation of image_index_1d to minimize arithmetic operations
+// Utilize vectorized access patterns to improve memory coalescing
+// Consider loop unrolling for repetitive operations within the kernel

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z14relabel2KernelPiiiiii' function" {
+	label="CFG for '_Z14relabel2KernelPiiiiii' function";
+
+	Node0x62f8300 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = getelementptr i8, i8 addrspace(4)* %8, i64 6\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 2, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = mul i32 %15, %19\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %22 = mul i32 %5, %4\l  %23 = add i32 %22, %14\l  %24 = add i32 %23, %13\l  %25 = mul i32 %24, %3\l  %26 = add i32 %20, %21\l  %27 = add i32 %26, %25\l  %28 = zext i32 %27 to i64\l  %29 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %28\l  %30 = load i32, i32 addrspace(1)* %29, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %31 = icmp eq i32 %30, %1\l  br i1 %31, label %32, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x62f8300:s0 -> Node0x62fc190;
+	Node0x62f8300:s1 -> Node0x62fc220;
+	Node0x62fc190 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%32:\l32:                                               \l  store i32 %2, i32 addrspace(1)* %29, align 4, !tbaa !7\l  br label %33\l}"];
+	Node0x62fc190 -> Node0x62fc220;
+	Node0x62fc220 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

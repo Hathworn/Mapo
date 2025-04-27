@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring that the data reads from d_C are contiguous
+// Prefer shared memory over global memory to reduce latency
+// Use warp shuffle operations to optimize reduction within each warp
+// Minimize memory access by reducing data dependencies and calculations within the loop
+// Ensure __syncthreads only where necessary to prevent data hazards
+```

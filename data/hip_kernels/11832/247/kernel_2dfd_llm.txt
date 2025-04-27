@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses.
+// Align memory accesses to improve coalescing.
+// Unroll loops to increase parallelism and reduce loop overhead.
+// Minimize use of __syncthreads() to avoid unnecessary synchronization.
+```

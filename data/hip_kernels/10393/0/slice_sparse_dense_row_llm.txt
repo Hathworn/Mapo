@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by aligning thread indices with data layout
+// Use shared memory to cache frequently accessed data and reduce global memory access
+// Apply loop unrolling for the inner loop to increase instruction throughput
+// Ensure memory operations are aligned and avoid bank conflicts in shared memory
+// Utilize warp-level primitives to efficiently manage divergent threads
+// Consider prefetching data into registers to hide memory latency
+```

@@ -1,0 +1,6 @@
+```
+// Consider memory coalescing by aligning data access patterns to improve global memory throughput.
+// Use shared memory to store intermediate results for reduction, which can minimize global memory access.
+// Consider using warp shuffle operations to reduce latency during intermediate calculations.
+// Prefetch data and use read-only cache for constant values like pi calculation factors to optimize read operations.
+```

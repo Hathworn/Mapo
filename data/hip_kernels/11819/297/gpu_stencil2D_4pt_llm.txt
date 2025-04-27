@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory access
+// Optimize shared memory loading to improve coalescing
+// Minimize use of __syncthreads() to reduce overhead
+// Avoid branch divergence in halo handling
+// Ensure memory accesses are aligned for better performance
+// Consider loop unrolling for TILE_SIZE loops if applicable
+```

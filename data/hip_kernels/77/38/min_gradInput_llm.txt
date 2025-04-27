@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache global memory data accessed multiple times.
+// Align memory access patterns to achieve coalescing.
+// Consider using float2 for loading and storing when applicable to increase memory throughput.
+// Employ loop unrolling techniques if applicable to reduce loop overhead.
+// Use half precision if accuracy allows to decrease data size and increase cache efficiency.
+```

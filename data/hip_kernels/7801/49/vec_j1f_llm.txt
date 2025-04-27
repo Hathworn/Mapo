@@ -1,0 +1,13 @@
+```
+// Consider using shared memory to store frequently accessed data within a block
+// Use coalesced memory accesses for better performance
+// Ensure data alignment for optimal memory access speed
+// Minimize register use to allow more threads per block
+// Consider loop unrolling for performance improvement
+// Optimize block and grid dimensions based on hardware specifications
+// Try to reduce the number of memory accesses inside the loop
+// Avoid using global memory when possible, prefer local memory
+// Use constant memory for values that don't change
+// Profile memory access patterns to identify bottlenecks
+// Avoid bank conflicts in shared memory usage
+```

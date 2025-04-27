@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure coalesced access patterns for better memory throughput.
+// Reduce the number of memory transactions by aligning data structures and using vector loads/stores.
+// Optimize block and grid dimensions to match the GPU's architecture for better occupancy and performance.
+// Precompute repeated expressions outside of loops to save computational resources if applicable.
+```

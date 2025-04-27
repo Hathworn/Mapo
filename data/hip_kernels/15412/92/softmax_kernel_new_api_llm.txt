@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache input data in blocks to reduce global memory access
+// Consider using warp-level primitives for reduction to improve efficiency
+// Ensure coalesced memory access by aligning input and output arrays to improve throughput
+// Optimize stride access patterns to prevent memory divergence and bank conflicts
+// Utilize loop unrolling to reduce loop overhead and latency
+// Balance workload among threads to prevent idle threads and improve occupancy
+```

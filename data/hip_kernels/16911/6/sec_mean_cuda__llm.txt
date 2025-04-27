@@ -1,0 +1,7 @@
+```
+// Reduce global memory accesses by leveraging shared memory for intermediate computations
+// Use __syncthreads() to ensure proper synchronization when updating or reading shared memory
+// Store computed means in shared memory before writing to global memory to minimize global writes
+// Allocate enough shared memory to handle all threads' intermediate data to avoid bank conflicts
+// Optimize loop execution by reducing warp divergence through balanced iterations across threads
+```

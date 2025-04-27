@@ -1,0 +1,11 @@
+```cpp
+// Ensure coalesced memory access patterns by aligning data access for u, v, and src.
+// Pre-calculate flow_row_offset and image_row_offset to avoid repetitive calculations.
+// Use modff function to split into integer and fractional parts, reducing compute overhead.
+// Minimize branching by arranging conditions from most to least likely.
+// Leverage shared memory if feasible to cache src inputs and reduce global memory traffic.
+// Explore usage of float4 for memory operations to decrease load/store instructions.
+// Consolidate atomic operations where possible to decrease contention.
+// Consider loop unrolling for pixel-filling operations to reduce loop overhead.
+// Analyze thread block size for optimal occupancy and memory throughput.
+```

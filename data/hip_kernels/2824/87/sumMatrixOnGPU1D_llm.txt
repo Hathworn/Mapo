@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for MatA and MatB to reduce global memory accesses
+// Ensure coalesced memory access by ordering threads such that consecutive thread IDs access consecutive memory locations
+// Explore using memory prefetching techniques to load data into cache before it's needed
+// Evaluate the benefits of using warp-level primitives for fine-grained synchronization and improved performance
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce global memory transactions
+// Ensure out1, out2, outt are aligned for coalesced access
+// Check if float4 vectorized loads/stores can be used for in1, in2, t, adj
+// Evaluate benefits of loop unrolling for better ILP
+// Ensure occupancy is maximized by adequate launch configuration
+```

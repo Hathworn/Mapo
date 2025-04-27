@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access by aligning memory reads and writes.
+// Consider using float4 or float2 loads/stores for better performance.
+// Investigate shared memory bank conflicts and optimize layout if necessary.
+// Minimize the number of reads and writes inside the loop for improved performance.
+// Optimize the reduction by using warp-level primitives if applicable.
+// Utilize loop unrolling effectively and ensure it matches the hardware capabilities.
+// Further optimize global syncthreads by minimizing its usage or using efficient alternatives.
+// Consider launching fewer threads or blocks if memory bandwidth is the bottleneck.
+```

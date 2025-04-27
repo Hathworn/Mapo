@@ -1,0 +1,4 @@
+// Use warp-level operations to reduce latency in accessing global memory
+// Prefer memory accesses that are coalesced into contiguous blocks
+// Minimize divergent branching by ensuring uniform control flow
+// Optimize loop unrolling further if the block size warrants it

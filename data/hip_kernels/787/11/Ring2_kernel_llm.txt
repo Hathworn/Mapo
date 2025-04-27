@@ -1,0 +1,7 @@
+```
+// Use shared memory for variables reused across threads
+// Consider coalesced memory access for A and BP array accesses
+// Use loop unrolling for the innermost loops if beneficial
+// Consider using warp-level primitives for synchronization
+// Optimize conditional statements to avoid divergence
+```

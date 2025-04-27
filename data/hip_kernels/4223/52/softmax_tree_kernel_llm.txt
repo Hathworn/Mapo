@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses as much as possible
+// Perform parallel reduction to efficiently find the largest element
+// Use __syncthreads() to ensure all threads complete operations before proceeding
+// Optimize memory access by coalescing global memory loads and stores
+// Use atomic operations to safely update shared variables in a parallel context
+```

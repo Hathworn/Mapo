@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache ghatmap if it is repeatedly accessed
+// Use shared memory or registers to cache scale if it is constant across threads
+// Ensure coalesced memory access pattern for pwcc and c arrays
+// Consider using a 2D grid if blockIdx.y is utilized, to fully exploit parallelism
+// Minimize latency issues by optimizing global memory access for index
+```

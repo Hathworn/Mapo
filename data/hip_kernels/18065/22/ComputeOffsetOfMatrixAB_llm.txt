@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for row_sum and col_sum to improve memory bandwidth utilization
+// Ensure output memory writes are coalesced by aligning idx calculation with warp boundaries
+// Use shared memory to cache row_sum and col_sum values within each block, reducing global memory accesses
+// Verify that the threadIdx.x access pattern does not cause memory bank conflicts when using shared memory
+// Explore double-buffering shared memory to overlap computation and memory transfers for better performance
+```

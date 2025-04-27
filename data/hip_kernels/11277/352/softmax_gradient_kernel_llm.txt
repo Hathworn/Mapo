@@ -1,0 +1,6 @@
+// Use shared memory efficiently to reduce global memory accesses
+// Leverage coalesced memory access patterns for Y and dY arrays
+// Consider loop unrolling to improve computational throughput
+// Optimize reduction by using warp shuffle operations where possible
+// Minimize thread divergence by aligning memory operations
+// Avoid redundant global memory writes by utilizing shared memory in compute phase

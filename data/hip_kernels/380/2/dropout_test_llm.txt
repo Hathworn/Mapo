@@ -1,0 +1,7 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access
+// Ensure proper memory coalescing by aligning data accesses among threads
+// Evaluate the possibility of using warp-level primitives for reduction operations if applicable
+// Avoid bank conflicts by distributing data among shared memory banks correctly
+// Check for opportunity to unroll loops to reduce control overhead and increase instruction throughput
+// Explore the usage of appropriate memory hierarchy, such as constant memory, for static data
+// Use asynchronous memory copy and compute overlap to hide latency

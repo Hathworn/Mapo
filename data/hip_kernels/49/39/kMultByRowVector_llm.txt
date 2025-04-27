@@ -1,0 +1,4 @@
+// Use shared memory to store vec values to reduce global memory accesses
+// Consider using a larger block size for better memory coalescing
+// Ensure mat and tgtMat are accessed in a coalesced manner
+// Check if vec can be loaded into registers for faster access

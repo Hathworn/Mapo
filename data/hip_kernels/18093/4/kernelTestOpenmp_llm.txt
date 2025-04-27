@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Ensure coalesced memory accesses for improved memory throughput
+// Utilize constant memory for read-only data that is accessed by all threads
+// Minimize divergent branches to improve warp execution performance
+// Use asynchronous memory copies where applicable to overlap computation and data transfer
+```

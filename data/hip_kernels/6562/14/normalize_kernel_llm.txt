@@ -1,0 +1,4 @@
+// Ensure coalesced memory accesses by aligning data to warp boundaries
+// Consider using shared memory for mean and variance to reduce repeated global memory accesses
+// Ensure that the memory for mean and variance is cached effectively using __ldg for read-only access
+// Evaluate occupancy and explore the use of appropriate grid and block dimensions to maximize utilization

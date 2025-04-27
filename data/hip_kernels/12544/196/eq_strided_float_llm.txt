@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data that will be accessed multiple times to reduce global memory access.
+// Ensure memory coalescing by organizing data access patterns to improve cache efficiency.
+// Minimize divergent branches in the conditional checks, possibly using a more uniform control flow.
+// Evaluate if atomic operations could be beneficial for combining results when multiple threads could write to the same memory location.
+```

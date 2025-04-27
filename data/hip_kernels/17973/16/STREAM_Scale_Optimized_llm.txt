@@ -1,0 +1,7 @@
+```
+// Consider increasing the number of threads per block to improve occupancy
+// Ensure shared memory size is sufficient for blockDim.x threads
+// Use __syncthreads() after loading data to ensure all threads have completed loading before proceeding
+// Reduce register usage if possible to allow more threads per block for better parallelism
+// Align memory accesses for a and b to minimize coalesced memory access overhead
+```

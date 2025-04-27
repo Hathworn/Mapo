@@ -1,0 +1,13 @@
+digraph "CFG for '_Z23kernel_updateFullMatrixPfS_S_S_S_S_fj' function" {
+	label="CFG for '_Z23kernel_updateFullMatrixPfS_S_S_S_S_fj' function";
+
+	Node0x4d8a470 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%8:\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = mul i32 %9, %7\l  %11 = icmp eq i32 %7, 0\l  br i1 %11, label %37, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x4d8a470:s0 -> Node0x4d8b980;
+	Node0x4d8a470:s1 -> Node0x4d8b9d0;
+	Node0x4d8b9d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%12:\l12:                                               \l  %13 = fpext float %6 to double\l  %14 = fmul contract double %13, 5.000000e-01\l  br label %15\l}"];
+	Node0x4d8b9d0 -> Node0x4d8c620;
+	Node0x4d8c620 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  %16 = phi i32 [ 0, %12 ], [ %35, %15 ]\l  %17 = add i32 %16, %10\l  %18 = zext i32 %17 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %2, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !5\l  %21 = getelementptr inbounds float, float addrspace(1)* %3, i64 %18\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !5\l  %23 = fmul contract float %20, %22\l  %24 = fpext float %23 to double\l  %25 = fdiv contract double %24, %14\l  %26 = getelementptr inbounds float, float addrspace(1)* %4, i64 %18\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !5\l  %28 = getelementptr inbounds float, float addrspace(1)* %5, i64 %18\l  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !5\l  %30 = fdiv contract float %27, %29\l  %31 = fpext float %30 to double\l  %32 = fadd contract double %25, %31\l  %33 = fptrunc double %32 to float\l  %34 = getelementptr inbounds float, float addrspace(1)* %1, i64 %18\l  store float %33, float addrspace(1)* %34, align 4, !tbaa !5\l  %35 = add nuw i32 %16, 1\l  %36 = icmp eq i32 %35, %7\l  br i1 %36, label %37, label %15, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x4d8c620:s0 -> Node0x4d8b980;
+	Node0x4d8c620:s1 -> Node0x4d8c620;
+	Node0x4d8b980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%37:\l37:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

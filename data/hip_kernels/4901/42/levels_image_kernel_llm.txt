@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for accessing the image data to reduce global memory loads.
+// Use texture memory for image data if possible to utilize cache efficiently.
+// Ensure that memory accesses are coalesced when reading and writing image data.
+// Merge value computation for similar operations to minimize redundant calculations.
+// Use float2 or float4 to fetch multiple float values at once if applicable.
+// Avoid branch divergence by restructuring control flow to minimize divergent branches.
+```

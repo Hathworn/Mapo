@@ -1,0 +1,5 @@
+// Use shared memory to optimize coalesced memory access
+// Ensure all thread memory loads are completed before proceeding with computation
+// Shared memory usage minimizes global memory access latency
+// Coalesced memory access can improve memory throughput and performance
+// Memory operations within shared memory are faster than global memory operations

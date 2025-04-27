@@ -1,0 +1,4 @@
+// Consider using shared memory for biases to reduce global memory access latency
+// Unroll the loop further if performance allows to minimize branch divergence
+// Check memory coalescing for output access to improve memory throughput
+// Profile memory access patterns to identify potential bank conflicts

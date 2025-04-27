@@ -1,0 +1,8 @@
+```
+// Use shared memory to store partial sums for faster access
+// Perform loop unrolling to reduce loop overhead
+// Ensure memory access is coalesced for delta
+// Implement optimized reduction using hierarchical parallel sum
+// Reduce the number of __syncthreads() by merging reduction steps
+// Use warp-level operations to minimize synchronization overhead
+```

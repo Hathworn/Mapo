@@ -1,0 +1,7 @@
+```
+// Precompute linear index to minimize index calculations
+// Improve memory access patterns for Vrad by using coalesced access with (i+1)*nsec
+// Reduce redundant calculations by precomputing ROmega for each i
+// Precompute DensRmed to avoid recalculating it for each ThetaMomP and ThetaMomM
+// Use modulo operation (j+1) % nsec to handle boundary conditions without explicit conditionals
+```

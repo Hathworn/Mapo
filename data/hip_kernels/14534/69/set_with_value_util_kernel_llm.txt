@@ -1,0 +1,6 @@
+```cpp
+// Ensure memory coalescing by aligning float4 structures with cache boundaries
+// Consider adjusting block size to achieve better occupancy and throughput
+// Use shared memory if the kernel involves complex calculations or data reuse
+// Minimize bank conflicts when using shared memory
+```

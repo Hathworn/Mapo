@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ to indicate non-aliasing pointers for better optimization
+// Coalesce global memory access by ensuring threads access consecutive memory locations
+// Minimize warp divergence by reducing conditional branches within the kernel
+// Use shared memory if the same data is read multiple times by threads
+// Consider launching a 1D grid if the second dimension is unnecessary to decrease overhead
+```

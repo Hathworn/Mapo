@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for temporary storage to minimize global memory accesses
+// Ensure memory coalescing by aligning memory accesses with warp size
+// Experiment with block and grid size to achieve better occupancy
+// Use __restrict__ qualifier to enable compiler optimizations if possible
+// Profile kernel to identify other potential memory bottlenecks
+```

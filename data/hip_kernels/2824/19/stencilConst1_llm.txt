@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for stencil weights if they are frequently accessed
+// Prefetch data into registers before entering the loop to improve memory access coalescing
+// Use warp shuffle operations to reduce global memory accesses if applicable
+// Align data access to improve memory transaction efficiency
+// Minimize divergent branches by ensuring that all threads within a warp follow the same execution path
+```

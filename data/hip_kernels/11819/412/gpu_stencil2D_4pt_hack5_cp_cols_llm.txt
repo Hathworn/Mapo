@@ -1,0 +1,6 @@
+```cpp
+// Preload reusable global data into shared memory to reduce global memory access
+// Group threads to perform coalesced memory access for improved bandwidth usage
+// Minimize boundary checks within the loop by performing them once
+// Use shared memory for temporary storage to accelerate access times
+```

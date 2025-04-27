@@ -1,0 +1,8 @@
+```c
+// Pre-calculate destination parameters to minimize repeated computations.
+// Ensure that shared memory or local memory is used effectively to cache data.
+// Minimize the divergence by ensuring threads within a warp follow the same execution path.
+// Use coalesced memory accesses to optimize global memory reads and writes.
+// Consider block size and grid size that best utilize the hardware for better performance.
+// Avoid using too many registers per thread to increase occupancy.
+```

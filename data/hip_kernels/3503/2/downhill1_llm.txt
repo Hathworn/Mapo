@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access for d_value to improve memory bandwidth
+// Use shared memory if possible to store d_value and reduce global memory transactions
+// Ensure d_key is accessed in a coalesced way to maximize memory throughput
+// Preload frequently accessed elements into registers to decrease memory latency
+```

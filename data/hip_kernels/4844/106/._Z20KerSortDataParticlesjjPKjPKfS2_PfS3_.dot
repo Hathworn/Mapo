@@ -1,0 +1,15 @@
+digraph "CFG for '_Z20KerSortDataParticlesjjPKjPKfS2_PfS3_' function" {
+	label="CFG for '_Z20KerSortDataParticlesjjPKjPKfS2_PfS3_' function";
+
+	Node0x4af2450 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = mul i32 %8, %13\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %16 = add i32 %14, %15\l  %17 = icmp ult i32 %16, %0\l  br i1 %17, label %18, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4af2450:s0 -> Node0x4af43c0;
+	Node0x4af2450:s1 -> Node0x4af4450;
+	Node0x4af43c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%18:\l18:                                               \l  %19 = icmp ult i32 %16, %1\l  %20 = zext i32 %16 to i64\l  br i1 %19, label %25, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x4af43c0:s0 -> Node0x4af4690;
+	Node0x4af43c0:s1 -> Node0x4af46e0;
+	Node0x4af46e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%21:\l21:                                               \l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %20\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %24 = zext i32 %23 to i64\l  br label %25\l}"];
+	Node0x4af46e0 -> Node0x4af4690;
+	Node0x4af4690 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%25:\l25:                                               \l  %26 = phi i64 [ %24, %21 ], [ %20, %18 ]\l  %27 = getelementptr inbounds float, float addrspace(1)* %3, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !11,\l... !amdgpu.noclobber !5\l  %29 = getelementptr inbounds float, float addrspace(1)* %5, i64 %20\l  store float %28, float addrspace(1)* %29, align 4, !tbaa !11\l  %30 = getelementptr inbounds float, float addrspace(1)* %4, i64 %26\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !11\l  %32 = getelementptr inbounds float, float addrspace(1)* %6, i64 %20\l  store float %31, float addrspace(1)* %32, align 4, !tbaa !11\l  br label %33\l}"];
+	Node0x4af4690 -> Node0x4af4450;
+	Node0x4af4450 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

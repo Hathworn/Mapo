@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory access
+// Align shared memory to a 32-byte boundary
+// Coalesce global memory accesses for dev_chunk
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Implement a loop unrolling technique for better performance
+```

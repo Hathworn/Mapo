@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for mean and variance to reduce global memory access latency.
+// Pre-calculate values like 1.f / sqrtf(variance[f] + .00001f) outside the loop to avoid repeated computation.
+// Ensure coalesced memory access pattern by aligning data reads with the warp size.
+```

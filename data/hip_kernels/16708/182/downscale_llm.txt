@@ -1,0 +1,6 @@
+// Cache the gradOutput value to reduce global memory access
+// Prefer shared memory or registers for temporary storage
+// Reduce stride-based memory access patterns
+// Consider loop unrolling for better performance
+// Minimize writes to global memory by computing results in registers first
+// Ensure memory coalescing of global memory accesses

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring contiguous threads access contiguous memory locations.
+// Consider using shared memory if multiple threads access the same data to reduce global memory accesses.
+// Ensure threads are not diverging in the bounds check to maximize warp efficiency.
+// Consider aligning data to ensure optimal access patterns for specific GPU architectures.
+// Use appropriate block and grid size configuration to maximize occupancy and minimize memory latency.
+```

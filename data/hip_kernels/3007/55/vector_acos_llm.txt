@@ -1,0 +1,8 @@
+```
+// Coalesce memory access by ensuring contiguous memory access patterns
+// Use shared memory to cache input data if reused by other threads in the block
+// Consider memory alignment for input and output arrays for optimal performance
+// Optimize the kernel launch configuration (e.g., block size) for better occupancy
+// Minimize global memory transactions by using registers efficiently
+// Attempt loop unrolling if applicable for the loop within the kernel
+```

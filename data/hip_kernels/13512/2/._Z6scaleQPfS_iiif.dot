@@ -1,0 +1,10 @@
+digraph "CFG for '_Z6scaleQPfS_iiif' function" {
+	label="CFG for '_Z6scaleQPfS_iiif' function";
+
+	Node0x54bded0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = shl i32 %7, 6\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = add i32 %8, %9\l  %11 = add i32 %10, 1\l  %12 = icmp sgt i32 %11, %2\l  br i1 %12, label %21, label %13\l|{<s0>T|<s1>F}}"];
+	Node0x54bded0:s0 -> Node0x54bf700;
+	Node0x54bded0:s1 -> Node0x54bf790;
+	Node0x54bf790 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%13:\l13:                                               \l  %14 = add nsw i32 %4, -1\l  %15 = mul nsw i32 %14, %2\l  %16 = add nsw i32 %15, %10\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %0, i64 %17\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %20 = fmul contract float %19, %5\l  store float %20, float addrspace(1)* %18, align 4, !tbaa !5\l  br label %21\l}"];
+	Node0x54bf790 -> Node0x54bf700;
+	Node0x54bf700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  ret void\l}"];
+}

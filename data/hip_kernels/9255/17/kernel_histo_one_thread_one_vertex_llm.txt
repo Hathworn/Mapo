@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Avoid bank conflicts in shared memory if used in further optimizations.
+// Ensure that the atomicAdd operations do not become a bottleneck.
+// Minimize divergent branches within the loop for better warp efficiency.
+// Consider using shared memory to stage data if possible.
+// Evaluate the impact of launching more threads per block to utilize device resources better.
+```

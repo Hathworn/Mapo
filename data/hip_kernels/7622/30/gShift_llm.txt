@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns in global memory reads and writes.
+// Use shared memory to reduce global memory access if the data fits.
+// Optimize block size to maximize occupancy while minimizing warp divergence.
+// Prefetch data into registers to minimize redundant global memory accesses.
+```

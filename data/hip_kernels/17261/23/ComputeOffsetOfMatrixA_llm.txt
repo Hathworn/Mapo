@@ -1,0 +1,3 @@
+// Consider using shared memory for col_sum to reduce global memory access
+// Ensure coalesced access of output by using idx
+// Optimize the loop increment to avoid calculating i % N multiple times

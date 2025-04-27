@@ -1,0 +1,9 @@
+```
+// Consider increasing MAX_SHARED_GPU_EVENTS to improve data locality and reduce global memory accesses.
+// Use __restrict__ qualifiers for pointers like gpuEventsX and gpuEventsY to hint the compiler about non-overlapping accesses.
+// Ensure coalesced access in loading events into shared memory by aligning globalEventIdx calculations.
+// Minimize the use of atomic operations by reducing contention on gpuBuffer; try a thread block-level strategy.
+// Prefetch data from global to shared memory with efficient access patterns to avoid memory divergence.
+// Align the shared memory usage optimally to avoid bank conflicts during memory reads/writes.
+// Investigate whether loop unrolling for eventReadsPerThread can further optimize performance.
+```

@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns for coalesced reads by aligning data access
+// Utilize shared memory if possible to reduce global memory accesses
+// Ensure that the memory indices are calculated to maximize memory coalescing
+// Consider using texture memory for potentially better read efficiency
+// Avoid divergent branches to maintain warp execution efficiency
+// Prefetch data to reduce latency if beneficial within the kernel
+```

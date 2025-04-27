@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to optimize global memory accesses
+// Minimize thread divergence by ensuring all threads in a warp execute the same path
+// Align memory access patterns to coalesce global memory reads and writes
+// Employ loop unrolling to reduce the loop overhead, especially for warp-level operations
+// Use __syncthreads() judiciously to synchronize threads only when necessary
+// Consider using the __shfl_xor_sync intrinsic for intra-warp communication in reduction
+```

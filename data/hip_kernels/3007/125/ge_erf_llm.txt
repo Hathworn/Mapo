@@ -1,0 +1,5 @@
+// Use __restrict__ pointers to minimize aliasing effects on memory access.
+// Ensure coalesced memory access patterns for both a and b arrays.
+// Consider using shared memory if reusing elements of a within the same block.
+// Optimize the memory stride by aligning memory accesses with warp boundaries.
+// Evaluate using vectorized data types such as float2 for better memory throughput.

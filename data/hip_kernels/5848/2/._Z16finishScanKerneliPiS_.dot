@@ -1,0 +1,10 @@
+digraph "CFG for '_Z16finishScanKerneliPiS_' function" {
+	label="CFG for '_Z16finishScanKerneliPiS_' function";
+
+	Node0x51a1ea0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl nsw i32 %5, 10\l  %7 = or i32 %6, %4\l  %8 = icmp slt i32 %7, %0\l  br i1 %8, label %9, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x51a1ea0:s0 -> Node0x51a2c30;
+	Node0x51a1ea0:s1 -> Node0x51a36f0;
+	Node0x51a2c30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%9:\l9:                                                \l  %10 = sext i32 %5 to i64\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %10\l  %12 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %13 = add nsw i32 %7, 1\l  %14 = sext i32 %13 to i64\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %14\l  %16 = load i32, i32 addrspace(1)* %15, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %17 = add nsw i32 %16, %12\l  store i32 %17, i32 addrspace(1)* %15, align 4, !tbaa !5\l  br label %18\l}"];
+	Node0x51a2c30 -> Node0x51a36f0;
+	Node0x51a36f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  ret void\l}"];
+}

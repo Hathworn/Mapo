@@ -1,0 +1,5 @@
+// Utilize shared memory to improve performance
+// Adjust size of shared memory based on maximum block size
+// Load normalization factor to shared memory to reduce global memory accesses
+// Synchronize threads to ensure all threads have loaded their data
+// Access normalization factor from shared memory to improve memory access efficiency

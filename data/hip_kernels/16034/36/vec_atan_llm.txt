@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store data shared among threads within a block if possible
+// Analyze memory access patterns to ensure coalesced global memory access
+// Verify if using half precision or lower precision arithmetic would suffice for performance gain
+// Check for potential loop unrolling if there are iterative operations
+// Aim to minimize the use of device memory by reusing thread local data where feasible
+// Potentially explore using register counts to limit resource contention
+```

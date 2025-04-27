@@ -1,0 +1,8 @@
+```
+// Use __restrict__ to ensure no aliasing occurs with pointers for better compiler optimization
+// Use const for gid_0 and gid_1 to enable compiler optimizations based on immutability
+// Combine conditional checks to reduce branching and improve warp execution efficiency
+// Pre-calculate indices idx_a and idx_b outside of the innermost loop to minimize arithmetic operations
+// Utilize shared memory if data reuse is possible, to reduce global memory transactions
+// Align data in memory to improve access speed and reduce cache misses
+```

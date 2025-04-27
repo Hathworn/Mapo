@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses for lifter coefficients
+// Ensure __syncthreads() is used after writing to shared memory to synchronize all threads
+// Load lifter coefficients into shared memory conditionally to minimize memory usage
+// Use a loop incremented by blockDim.x to allow for coalesced memory access pattern
+// Assign frame-specific energy only once per block by using threadIdx.x == 0
+```

@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache gradOutput if its size is small enough
+// Use shared memory to cache indices_x and indices_y to reduce global memory access
+// Consider coalesced access patterns for gradInput to maximize memory throughput
+// Ensure ptr_gradInput, ptr_gradOutput, ptr_ind_x, ptr_ind_y pointers are aligned for optimal access
+// Utilize loop unrolling to improve compute efficiency within the nested loops
+```

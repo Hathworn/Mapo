@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache dev_pillar_count_histo to reduce global memory accesses
+// Use shared memory for dev_counter to reduce contention and atomic operations
+// Consider loop unrolling if accessing num_points_at_this_pillar repeatedly
+// Prefetch data for dev_x_coors and dev_y_coors to hide memory latency
+// Minimize atomicAdd usage by aggregating results in shared memory where possible
+// Ensure coalesced memory access pattern for dev_sparse_pillar_map updates
+// Consider aligning data structures to improve memory access efficiency
+```

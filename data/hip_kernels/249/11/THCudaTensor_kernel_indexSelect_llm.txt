@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data for faster memory access
+// Utilize memory coalescing by ensuring adjacent threads access contiguous memory locations
+// Try to minimize divergence by aligning the warp paths
+// Evaluate the use of texture memory for read-only arrays
+// Use a single register to store temporary variables whenever possible to reduce register pressure
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to improve memory access time
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory
+// Minimize use of global memory by preferring register storage where possible
+// Align data structures to 128 bytes to ensure optimal memory access speed
+// Consider loop unrolling if applicable to reduce loop overhead
+```

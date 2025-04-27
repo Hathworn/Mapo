@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by organizing data for threads in a warp
+// Use shared memory to minimize global memory accesses when possible
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+// Consider using registers to reduce latency where appropriate
+// Optimize data access patterns to improve memory bandwidth utilization
+// Align memory accesses to avoid misaligned loads and stores
+```

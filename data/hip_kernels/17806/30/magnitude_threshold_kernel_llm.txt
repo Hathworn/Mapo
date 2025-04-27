@@ -1,0 +1,8 @@
+```cpp
+// Optimize global memory access by coalescing reads.
+// Reduce shared memory bank conflicts for improved performance.
+// Consider using vectorized loads for grad arrays for better memory bandwidth utilization.
+// Minimize __syncthreads() usage to reduce overhead where possible.
+// Use float3 for grad elements to exploit vectorization potential.
+// Ensure proper grid and block sizes are configured for occupancy maximization.
+```

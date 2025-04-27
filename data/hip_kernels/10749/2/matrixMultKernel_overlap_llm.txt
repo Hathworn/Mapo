@@ -1,0 +1,5 @@
+// Use shared memory effectively to minimize global memory accesses.
+// Ensure coalesced memory access patterns for Ad and Bd loads.
+// Avoid bank conflicts in shared memory for A_shared and B_shared access.
+// Optimize conditional checks to reduce warp divergence.
+// Prefetch global memory values into registers to further reduce global memory latency.

@@ -1,0 +1,4 @@
+// Consider using shared memory to store intermediate results to reduce global memory access.
+// Optimize memory coalescing by ensuring that threads access contiguous memory locations.
+// Use local variables to reduce repetitive global memory reads where applicable.
+// Leverage warp synchronous programming to further reduce warp divergence.

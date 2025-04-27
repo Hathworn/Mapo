@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Ensure all elements are loaded into shared memory to avoid bank conflicts.
+// Start computation from idx = 1 to skip non-essential calculation for thread 0.
+// Use float2 loads for efficient pair-wise access and computation.
+// Synchronize threads to ensure all shared data is available before use.
+// Avoid redundant computation by handling the first element separately.
+// Utilize vectorized operations when accessing and computing data in shared memory.
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data such as flow values.
+// Evaluate unrolling loops to reduce branch divergence and improve warp execution efficiency.
+// Opt for using vectorized loads/stores where possible to increase memory throughput efficiency.
+// Ensure memory accesses are coalesced to minimize memory transaction overhead.
+// Explore replacing atomic operations with other methods if contention from multiple threads is a concern for performance.

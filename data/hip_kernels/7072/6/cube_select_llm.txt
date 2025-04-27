@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using shared memory for xyz if multiple threads within a block work on the same batch
+// Consider coalesced memory access patterns for xyz and idx_out to improve throughput
+// Ensure temp_dist and idx_out updates minimize divergent branching
+// Use float3 for xyz coordinates to leverage vectorized memory access if applicable
+// Evaluate the use of warp-synchronous programming for shared calculations
+// Pre-fetch data to registers to reduce latency where possible
+```

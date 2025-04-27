@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache row_ind and col_ind for faster accesses
+// Consider padding shared memory to avoid bank conflicts
+// Pre-fetch values into registers to minimize global memory accesses
+// Strive to access global memory sequentially to maximize throughput
+// Use atomic operations wisely, consider warp-level synchronization if suitable
+```

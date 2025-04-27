@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory reads for 'in' and 'mask'.
+// Use constant memory for 'mask' if the size is small and read-only.
+// Apply loop unrolling to improve throughput for the loop iterating over width.
+// Ensure memory access patterns are coalesced for improved memory throughput.
+// Use warp-level optimization to reduce divergence when accessing 'in' and 'mask'.

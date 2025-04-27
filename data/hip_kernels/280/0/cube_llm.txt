@@ -1,0 +1,6 @@
+```
+// Add memory coalescing by ensuring that consecutive threads access consecutive memory locations to optimize memory throughput.
+// Consider using shared memory if there are data dependencies or if reusing data manipulated by threads to reduce global memory accesses.
+// Check if the data can be loaded using vectorized memory access for better performance in certain data layouts or use cases.
+// Implement loop unrolling if applicable to promote instruction-level parallelism and improve throughput.
+```

@@ -1,0 +1,7 @@
+// Optimize memory access by coalescing memory reads and writes
+// Minimize shared memory usage if possible to increase occupancy
+// Ensure shared memory size does not exceed the limit
+// Consider using float4 instead of float3 for better memory alignment
+// Check for bank conflicts in shared memory access and adjust if necessary
+// Consider loop unrolling to reduce control overhead
+// Use __restrict__ keyword for pointers to improve compiler optimization

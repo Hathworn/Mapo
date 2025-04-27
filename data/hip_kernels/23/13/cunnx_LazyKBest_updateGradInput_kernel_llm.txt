@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve cache efficiency and reduce global memory accesses
+// Pre-compute the index offset to simplify indexing calculations and minimize computation within loops
+// Synchronize threads after loading data into shared memory to ensure all threads have the correct data
+// Unroll loops to allow processing of multiple elements per thread, increasing computational throughput
+// Utilize thread boundary checks to prevent out-of-bounds memory access when unrolling loops
+```

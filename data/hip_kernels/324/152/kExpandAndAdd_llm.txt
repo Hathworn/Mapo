@@ -1,0 +1,10 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Consolidate global memory accesses to improve memory coalescing
+// Implement stride-based loop for workload balancing across threads
+// Replace conditional handling with branch-free operations if possible
+// Precompute indices and access patterns to optimize memory fetches
+// Consider increasing shared memory size if block dimensions exceed 256
+// Ensure shared memory is appropriately sized for varying blockDim.x values
+// Profile memory access pattern to further enhance coalescing and cache utilization
+```

@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to minimize global memory access for frequently reused data.
+// Consider coalescing global memory accesses by ensuring threads in a warp access contiguous memory locations.
+// Minimize branching within the inner loops to reduce warp divergence.
+// Use loop unrolling where beneficial to reduce loop overhead.
+```

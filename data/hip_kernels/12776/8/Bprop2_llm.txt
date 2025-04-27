@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for dsyn2 to improve bandwidth utilization
+// Use a different memory access pattern for 'out' data to ensure all threads access contiguous memory
+// Ensure shared memory is used optimally by checking if data fits within the allocated shared memory size
+// Evaluate the usage of warp-level primitives to further enhance performance
+// Avoid bank conflicts in shared memory by padding if necessary
+```

@@ -1,0 +1,5 @@
+// Consider coalescing memory access to improve memory throughput.
+// Use shared memory or memory padding to avoid bank conflicts.
+// Analyze occupancy and adjust block and grid sizes for efficient execution.
+// Use loop unrolling for frequent calculations to minimize divergent branches.
+// Minimize register usage to avoid spilling, which impacts performance.

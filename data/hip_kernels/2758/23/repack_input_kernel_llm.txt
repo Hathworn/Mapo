@@ -1,0 +1,10 @@
+```cpp
+// Ensure coalesced memory access by aligning reads and writes
+// Optimize memory access patterns for better throughput
+// Consider employing shared memory for reusing common data among threads
+// Pay attention to bank conflicts when using shared memory
+// Use __restrict__ to avoid potential aliasing issues
+// Consider loop unrolling for reducing instruction overhead
+// Analyze the possibility of warp-level primitives for better efficiency
+// Optimize occupancy by tuning block and grid sizes
+```

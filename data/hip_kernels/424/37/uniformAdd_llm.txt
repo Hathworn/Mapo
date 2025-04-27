@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently accessed uniform data within a block.
+// Ensure coalesced memory access by aligning data accesses to prevent bank conflicts.
+// Use __syncthreads() to minimize race conditions between threads in a block.
+// Reduce global memory access by loading frequently accessed data into shared memory.
+// Evaluate potential use of asynchronous data prefetching to further reduce latency.
+```

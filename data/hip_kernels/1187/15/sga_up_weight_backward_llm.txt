@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory access latency.
+// Load data into shared memory within the thread block to exploit data reuse.
+// Minimize index operation by pre-storing recurrent calculations.
+// Utilize local variable caching to reduce repeated memory accesses.
+```

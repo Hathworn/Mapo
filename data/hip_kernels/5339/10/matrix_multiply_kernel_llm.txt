@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Ensure shared memory access is coalesced to improve performance
+// Avoid bank conflicts by optimally mapping data in shared memory
+// Use __syncthreads() to synchronize threads and prevent data hazards
+// Optimize loop to leverage data locality and reduce redundant calculations
+// Align memory accesses to improve coalescing and throughput
+```

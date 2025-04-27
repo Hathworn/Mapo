@@ -1,0 +1,6 @@
+```
+// Ensure memory accesses are coalesced for better performance
+// Load 'loc_' into registers to reduce global memory accesses
+// Use shared memory for repeated data access in a block, if applicable
+// Consider using warp shuffle for operations across threads in a warp
+```

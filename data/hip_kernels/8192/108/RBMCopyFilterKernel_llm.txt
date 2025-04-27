@@ -1,0 +1,6 @@
+```
+// Consider coalesced accessing for filterPtr and weightPtr to enhance memory throughput.
+// Utilize shared memory to cache weights within blocks if accessed multiple times.
+// Opt for loop unrolling if applicable, to reduce the number of iterations and improve performance.
+// Ensure optimal block and grid size configuration to fully utilize the device.
+```

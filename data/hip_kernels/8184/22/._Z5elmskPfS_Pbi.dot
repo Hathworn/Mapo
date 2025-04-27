@@ -1,0 +1,15 @@
+digraph "CFG for '_Z5elmskPfS_Pbi' function" {
+	label="CFG for '_Z5elmskPfS_Pbi' function";
+
+	Node0x5a332a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add i32 %12, %5\l  %14 = icmp slt i32 %13, %3\l  br i1 %14, label %15, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x5a332a0:s0 -> Node0x5a35180;
+	Node0x5a332a0:s1 -> Node0x5a35210;
+	Node0x5a35180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%15:\l15:                                               \l  %16 = sext i32 %13 to i64\l  %17 = getelementptr inbounds i8, i8 addrspace(1)* %2, i64 %16\l  %18 = load i8, i8 addrspace(1)* %17, align 1, !tbaa !7, !range !11,\l... !amdgpu.noclobber !6\l  %19 = icmp eq i8 %18, 0\l  br i1 %19, label %26, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x5a35180:s0 -> Node0x5a35f00;
+	Node0x5a35180:s1 -> Node0x5a35f90;
+	Node0x5a35f90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%20:\l20:                                               \l  %21 = getelementptr inbounds float, float addrspace(1)* %1, i64 %16\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !12,\l... !amdgpu.noclobber !6\l  %23 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !12,\l... !amdgpu.noclobber !6\l  %25 = fmul contract float %22, %24\l  store float %25, float addrspace(1)* %23, align 4, !tbaa !12\l  br label %28\l}"];
+	Node0x5a35f90 -> Node0x5a35210;
+	Node0x5a35f00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%26:\l26:                                               \l  %27 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  store float 0.000000e+00, float addrspace(1)* %27, align 4, !tbaa !12\l  br label %28\l}"];
+	Node0x5a35f00 -> Node0x5a35210;
+	Node0x5a35210 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

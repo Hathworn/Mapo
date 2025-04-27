@@ -1,0 +1,6 @@
+// Use shared memory to store data for frequent access
+// Consider accessing global memory in a coalesced manner
+// Use asynchronous data copy and prefetching
+// Minimize conditional branches within the kernel
+// Use appropriate block and grid dimensions to maximize parallelism
+// Optimize memory access patterns to leverage memory hierarchy

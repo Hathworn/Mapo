@@ -1,0 +1,11 @@
+```
+// Optimize memory access by ensuring coalesced global memory reads and writes.
+// Use shared memory to reduce repeated global memory accesses.
+// Consider using warp shuffles to share data within a warp.
+// Minimize data dependencies between threads for better parallel efficiency.
+// Use appropriate memory hierarchy to reduce memory latency.
+// Ensure that memory accesses are aligned to improve memory access speed.
+// Avoid memory bank conflicts in shared memory.
+// Consider loop unrolling to reduce control overhead.
+// Use texture memory if spatial locality in memory access patterns is present.
+```

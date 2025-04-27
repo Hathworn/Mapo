@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring threads within a warp access consecutive memory addresses.
+// Use shared memory effectively to minimize global memory access latency.
+// Prefetch data to shared memory before computation to hide memory latency.
+// Align data access patterns to ensure maximum memory throughput.
+// Explore using float4 or other vectorized data types for potential increased memory bandwidth.
+// Minimize use of __syncthreads() calls within reduction by organizing thread work optimally.
+```

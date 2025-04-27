@@ -1,0 +1,5 @@
+// Consolidate memory accesses to cudaA and cudaResult for better coalescing
+// Utilize __shared__ memory to minimize global memory accesses and improve speed
+// Handle boundary conditions efficiently and prevent redundant checks
+// Ensure shared memory is used effectively and avoid bank conflicts
+// Consider loop unrolling for the kernel application loops for performance gains

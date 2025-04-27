@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses and improve memory coalescing.
+// Ensure that memory accesses are coalesced when reading from global memory into shared memory.
+// Consider increasing the number of threads per block to maximize the occupancy.
+// Align shared memory usage to avoid bank conflicts.
+// Optimize loop unrolling or consider using warp-level primitives for synchronization.
+```

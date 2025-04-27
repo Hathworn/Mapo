@@ -1,0 +1,9 @@
+```
+// Optimize memory access patterns by ensuring coalesced access for d_spikes_travelling_to_synapse
+// Consider using shared memory to buffer frequently accessed data such as synaptic_decay_id
+// Ensure that d_time_of_last_spike_to_reach_synapse is accessed in a coalesced manner
+// Reduce contention on atomic operations by minimizing the index range for neuron_wise_conductance_trace
+// Align data structures to cache line size to improve access speed
+// Pre-fetch data to registers before entering the while loop for faster access
+// Avoid bank conflicts in shared memory if introduced
+```

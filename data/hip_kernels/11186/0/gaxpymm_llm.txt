@@ -1,0 +1,9 @@
+```
+// Consider coalesced access for array a by transposing it
+// Use double buffering technique for shared memory usage
+// Adjust block size to fit the shared memory size limit
+// Minimize __syncthreads() calls by combining loops if possible
+// Align shared memory allocation size to avoid bank conflicts
+// Optimize reduction by unrolling the loop for stride accesses
+// Analyze if combining multiple kernel launches into one improves performance
+```

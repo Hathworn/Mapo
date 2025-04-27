@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifiers for imageIn and imageOut to hint at no aliasing.
+// Optimize memory access patterns by ensuring coalesced memory accesses to imageIn and imageOut.
+// Utilize shared memory if possible to reduce global memory accesses.
+// Ensure alignment of float2 data types for optimal memory throughput.
+// Use half-warp strategies or loop unrolling if applicable to increase computational throughput.
+// Consider adjusting block size for optimal occupancy based on the GPU architecture.
+```

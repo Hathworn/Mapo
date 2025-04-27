@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access latency.
+// Ensure memory coalescing by aligning memory accesses of contiguous threads for improved performance.
+// Avoid divergent branching by ensuring all threads within a warp follow the same execution path when possible.
+// Leverage vectorized memory operations if supported by the hardware to further improve memory throughput.
+```

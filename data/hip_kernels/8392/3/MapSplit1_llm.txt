@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Coalesce memory access by ensuring contiguous memory access patterns
+// Consider loop unrolling for potential performance improvement
+// Optimize block size for better utilization and performance
+// Evaluate using warp shuffle for potential reduction in divergent branches

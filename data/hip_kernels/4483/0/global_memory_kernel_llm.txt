@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Optimize the pitch calculation to minimize the overhead in GPU memory transactions.
+// Ensure all read operations are coalesced to improve memory access efficiency.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+```

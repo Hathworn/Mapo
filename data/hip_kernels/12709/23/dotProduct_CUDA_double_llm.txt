@@ -1,0 +1,7 @@
+```
+// Ensure that blockDim.x is a multiple of 32 to maximize memory coalescing
+// Use constant memory or texture memory if the data size is small and read-only
+// Minimize divergent branches by ensuring threadIdx.x < stride check has uniform execution across threads
+// Consider using warp shuffle functions to reduce synchronization overhead
+// Align data structures to memory boundaries to optimize memory access
+```

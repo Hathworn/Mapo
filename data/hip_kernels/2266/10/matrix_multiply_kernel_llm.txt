@@ -1,0 +1,5 @@
+// Use shared memory for reduced latency by loading vector_in once per block
+// Ensure proper synchronization using __syncthreads() after loading data
+// Avoid repeated global memory access by utilizing shared_vector_in
+// Adjust shared memory size according to blockDim.x to prevent overflow
+// Consider vectorization to improve memory fetch efficiency

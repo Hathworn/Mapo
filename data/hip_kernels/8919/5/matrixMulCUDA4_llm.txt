@@ -1,0 +1,4 @@
+// Consider using shared memory to store sub-blocks of matrices A and B to reduce global memory access.
+// Optimize loading of A and B elements into shared memory to achieve coalesced memory access.
+// Ensure that matrix dimensions are suitable for block size to maximize occupancy and performance.
+// Verify that the loop over k is parallelized if possible to further leverage the GPU's capabilities.

@@ -1,0 +1,7 @@
+// Use shared memory to cache frequently accessed data and reduce global memory access latency.  
+// Precompute repetitive calculations such as sqrt((double) T / N) to avoid redundant computations in the loop.  
+// Consider using double2 or vectorized operations for generating and using pairs of random numbers.  
+// Minimize warp divergence by ensuring loop iteration conditions are uniform.  
+// Evaluate the performance impact of generating two random numbers at once using hiprand_normal2_double.  
+// Optimize access by reordering memory layout to ensure coalesced memory access patterns during results updates.  
+// Investigate potential benefits of placing hiprandState_t in shared memory for faster access.  

@@ -1,0 +1,18 @@
+digraph "CFG for '_Z40cunn_CriterionFilter_updateOutput_kernelPfS_iiii' function" {
+	label="CFG for '_Z40cunn_CriterionFilter_updateOutput_kernelPfS_iiii' function";
+
+	Node0x472e4c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = freeze i32 %7\l  %9 = freeze i32 %5\l  %10 = udiv i32 %8, %9\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !4, !invariant.load !5\l  %15 = zext i16 %14 to i32\l  %16 = mul i32 %15, %5\l  %17 = mul nsw i32 %10, %4\l  %18 = mul i32 %10, %9\l  %19 = sub i32 %8, %18\l  %20 = mul i32 %19, %15\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %22 = add i32 %20, %21\l  %23 = icmp slt i32 %22, %4\l  br i1 %23, label %24, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x472e4c0:s0 -> Node0x4730780;
+	Node0x472e4c0:s1 -> Node0x4730810;
+	Node0x4730780 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%24:\l24:                                               \l  %25 = load float, float addrspace(1)* %1, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %26 = fptosi float %25 to i32\l  %27 = sitofp i32 %26 to float\l  %28 = sitofp i32 %2 to float\l  %29 = fadd contract float %28, 1.000000e+00\l  br label %30\l}"];
+	Node0x4730780 -> Node0x4731d80;
+	Node0x4731d80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  %31 = phi i32 [ %22, %24 ], [ %39, %38 ]\l  %32 = add nsw i32 %31, %17\l  %33 = sext i32 %32 to i64\l  %34 = getelementptr inbounds float, float addrspace(1)* %0, i64 %33\l  %35 = load float, float addrspace(1)* %34, align 4, !tbaa !7\l  %36 = fcmp contract oeq float %35, %27\l  br i1 %36, label %37, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x4731d80:s0 -> Node0x4732970;
+	Node0x4731d80:s1 -> Node0x4731e80;
+	Node0x4732970 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%37:\l37:                                               \l  store float %29, float addrspace(1)* %34, align 4, !tbaa !7\l  br label %38\l}"];
+	Node0x4732970 -> Node0x4731e80;
+	Node0x4731e80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%38:\l38:                                               \l  %39 = add nsw i32 %31, %16\l  %40 = icmp slt i32 %39, %4\l  br i1 %40, label %30, label %41, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4731e80:s0 -> Node0x4731d80;
+	Node0x4731e80:s1 -> Node0x4730810;
+	Node0x4730810 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%41:\l41:                                               \l  ret void\l}"];
+}

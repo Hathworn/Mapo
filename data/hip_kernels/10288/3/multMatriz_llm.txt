@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache tile submatrices of da and db to reduce global memory accesses.
+// Use loop unrolling to decrease the loop overhead when computing dot products.
+// Optimize thread and block indices to ensure coalesced memory access patterns.
+// Minimize bank conflicts when loading data into shared memory by using padding if necessary.
+// Ensure each thread writes to contiguous memory locations in dc to improve memory throughput.
+```

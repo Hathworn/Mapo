@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache frequently accessed data within each block
+// Coalesce global memory accesses by organizing data layout for better spatial locality
+// Reduce divergent branches caused by boundary checks if possible
+// Verify if bank conflicts are minimized when using shared memory
+// Optimize atomic operations by reducing their frequency or using advanced atomic functions
+// Ensure that usage of constants is optimized to leverage read-only cache
+```

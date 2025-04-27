@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns for src and dst arrays.
+// Minimize global memory transactions by using shared memory for frequently accessed data.
+// Reduce thread divergence by ensuring all threads in a warp follow the same execution path.
+// Prefetch data to registers to reduce latency when accessing global memory.
+// Ensure that memory access is aligned to improve memory throughput.
+// Consider loop unrolling if applicable to reduce loop overhead.
+// Use __ldg() intrinsic for read-only memory to utilize texture cache.
+```

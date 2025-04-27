@@ -1,0 +1,5 @@
+```
+// Use shared memory for entropy calculation to reduce global memory access
+// Consider loop unrolling for the reduction loop to improve performance
+// Avoid using printf in kernel; instead use atomic operations to accumulate results
+```

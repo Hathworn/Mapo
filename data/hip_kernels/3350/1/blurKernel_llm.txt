@@ -1,0 +1,4 @@
+// Use shared memory to store pixel values within the blur window to reduce global memory accesses.
+// Rearrange loops to ensure coalesced memory access patterns for d_inputArray.
+// Consider using texture memory which can provide cached memory access for repetitive read patterns.
+// Check for bank conflicts within shared memory usage if implemented.

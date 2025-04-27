@@ -1,0 +1,7 @@
+```
+// Use larger block sizes to improve occupancy if the GPU architecture allows
+// Consider using atomics for updates to shared memory to reduce synchronization overhead
+// Utilize vectorized memory accesses where possible for better memory throughput
+// Investigate if __ldg or other specialized memory access intrinsics can be used for read-only access
+// Assess using warp-synchronous programming to avoid syncthreads and reduce synchronization cost
+```

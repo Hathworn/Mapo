@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to buffer input tiles for better memory access patterns.
+// Use float4 or similar types for vectorized loads/stores to improve memory bandwidth utilization.
+// Optimize thread block size to maximize occupancy while considering registers and shared memory limits.
+// Unroll inner loops (j, i) to reduce loop overhead and increase ILP (Instruction Level Parallelism).
+// Align data access on float4 boundaries to improve memory coalescing.
+// Use __restrict__ qualifiers on pointer arguments to allow compiler optimizations.
+```

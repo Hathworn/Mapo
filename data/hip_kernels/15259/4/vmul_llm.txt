@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by using consecutive threads to access consecutive elements.
+// Use shared memory to store input data if performing further computations.
+// Minimize memory transactions by utilizing vectorized types if applicable, such as float4.
+// Consider kernel launch configuration to optimize warp utilization, balancing between block and grid size.
+```

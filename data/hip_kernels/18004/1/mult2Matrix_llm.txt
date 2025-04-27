@@ -1,0 +1,7 @@
+```cpp
+// Ensure shared memory usage efficiently by using __shared__ for tiles
+// For coalesced memory access, ensure Row's access in M and Col's in N are contiguous
+// Check boundary conditions for threads to prevent out-of-bounds memory access
+// Use __syncthreads() adequately to synchronize threads after loading tiles
+// Minimize global memory access by maximizing the use of shared memory
+```

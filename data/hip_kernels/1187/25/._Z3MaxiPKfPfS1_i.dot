@@ -1,0 +1,13 @@
+digraph "CFG for '_Z3MaxiPKfPfS1_i' function" {
+	label="CFG for '_Z3MaxiPKfPfS1_i' function";
+
+	Node0x4f32220 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %0\l  br i1 %15, label %16, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x4f32220:s0 -> Node0x4f340e0;
+	Node0x4f32220:s1 -> Node0x4f34170;
+	Node0x4f340e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%16:\l16:                                               \l  %17 = sext i32 %14 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %2, i64 %17\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %20 = getelementptr inbounds float, float addrspace(1)* %1, i64 %17\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %22 = fcmp contract olt float %19, %21\l  br i1 %22, label %23, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x4f340e0:s0 -> Node0x4f35450;
+	Node0x4f340e0:s1 -> Node0x4f34170;
+	Node0x4f35450 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%23:\l23:                                               \l  store float %21, float addrspace(1)* %18, align 4, !tbaa !7\l  %24 = sitofp i32 %4 to float\l  %25 = getelementptr inbounds float, float addrspace(1)* %3, i64 %17\l  store float %24, float addrspace(1)* %25, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x4f35450 -> Node0x4f34170;
+	Node0x4f34170 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

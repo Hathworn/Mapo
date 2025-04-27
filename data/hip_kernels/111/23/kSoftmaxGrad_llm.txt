@@ -1,0 +1,6 @@
+```
+// Cache y_l for repeated access to reduce global memory reads
+// Cache dE_dy_l for repeated access to reduce global memory reads
+// Avoid branching with ternary operator to improve control flow efficiency
+// Use cached value for dE_dx_l computation to minimize memory access
+```

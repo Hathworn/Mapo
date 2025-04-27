@@ -1,0 +1,9 @@
+```
+// Reduce memory access by storing reused calculations like stride
+// Ensure coalesced memory access in global memory operations
+// Use shared memory to cache frequently accessed elements if applicable
+// Consider vectorizing load and store operations where possible
+// Align data access to memory boundaries to enhance throughput
+// Optimize for occupancy by balancing block size and register usage
+// Investigate memory access patterns to minimize bank conflicts
+```

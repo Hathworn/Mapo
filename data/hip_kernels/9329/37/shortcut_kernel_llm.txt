@@ -1,0 +1,7 @@
+```cpp
+// Ensure memory access patterns are coalesced to improve memory throughput.
+// Consider using shared memory to cache frequently accessed data to reduce global memory loads.
+// Minimize divergent branching by restructuring any potential warp divergence.
+// Use appropriate block and grid sizes to maximize occupancy for better performance.
+// Avoid redundant calculations by precomputing and storing frequently used values.
+```

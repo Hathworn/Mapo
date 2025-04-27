@@ -1,0 +1,9 @@
+```
+// Consider optimizing global memory accesses by coalescing them.
+// Use shared memory to load image data within a block to reduce global memory access latency.
+// Perform arithmetic intensity operations such as scaling and shift adjustments after coalesced reads.
+// Apply loop unrolling if the process involves repeated operations on the image channel data.
+// Ensure that computation steps maintain their independence to minimize serialization among threads.
+// If possible, use texture memory for image data to benefit from cached reads.
+// Minimize divergent control flows, especially within the RGB to HSV conversion process.
+```

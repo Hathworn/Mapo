@@ -1,0 +1,5 @@
+digraph "CFG for '_Z6getqssPdS_ii' function" {
+	label="CFG for '_Z6getqssPdS_ii' function";
+
+	Node0x613bb40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = mul nsw i32 %2, 10\l  %6 = add nsw i32 %5, 10\l  %7 = sext i32 %6 to i64\l  %8 = getelementptr inbounds double, double addrspace(1)* %0, i64 %7\l  %9 = load double, double addrspace(1)* %8, align 8, !tbaa !4,\l... !amdgpu.noclobber !8\l  %10 = sext i32 %3 to i64\l  %11 = getelementptr inbounds double, double addrspace(1)* %1, i64 %10\l  store double %9, double addrspace(1)* %11, align 8, !tbaa !4\l  ret void\l}"];
+}

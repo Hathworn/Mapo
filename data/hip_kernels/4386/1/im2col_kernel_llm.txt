@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache data_im to reduce global memory access latency.
+// Ensure memory coalescing by aligning data_col accesses within each warp.
+// Prefetch data_im elements to registers if possible to decrease memory latency.
+// Minimize divergent branches in the conditional assignment for improved warp efficiency.
+// Evaluate loop unrolling on ksize_h and ksize_w to reduce loop overhead.
+```

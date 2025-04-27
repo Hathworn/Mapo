@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Optimize memory coalescing by accessing consecutive indices
+// Minimize divergent branches by ensuring threads within a warp follow similar control flows
+// Use loop unrolling for reducing instruction overhead if applicable
+// Pre-fetch data into registers to decrease memory latency
+```

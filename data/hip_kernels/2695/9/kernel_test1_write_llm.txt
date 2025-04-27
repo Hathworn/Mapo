@@ -1,0 +1,6 @@
+```
+// Ensure memory access is coalesced by aligning data structures and access patterns
+// Minimize divergent branching by ensuring condition checks are uniform across threads in a warp
+// Use shared memory when accessing frequently reused data to reduce global memory access latency
+// Consider loop unrolling for better instruction level parallelism
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently accessed data to reduce global memory access.
+// Fuse multiple kernel launches into a single kernel to minimize kernel overhead.
+// Ensure coalesced memory access patterns to improve memory bandwidth utilization.
+// Avoid branching inside the loops for better warp execution efficiency.
+// Explore the possibility of reducing atomic operations by using hierarchical parallel reduction.
+```

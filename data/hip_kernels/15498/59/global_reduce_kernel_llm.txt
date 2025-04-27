@@ -1,0 +1,5 @@
+// Consider coalescing global memory access for d_in array
+// Minimize the number of __syncthreads() for better performance
+// Ensure shared memory is efficiently used to avoid bank conflicts
+// Use warp shuffle instructions to further optimize the reduction
+// Align data to improve memory access patterns and reduce latency

@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses to improve global memory bandwidth efficiency
+// Adjust the shared memory size based on occupancy and block configuration for better performance
+// Ensure shared memory access patterns avoid bank conflicts for faster access
+// Use atomic operations carefully to prevent serialization and improve parallel efficiency
+// Investigate the potential for loop unrolling in the reduction phase to reduce overhead
+```

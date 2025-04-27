@@ -1,0 +1,3 @@
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Ensure all writes to shared memory are complete with __syncthreads() to prevent race conditions
+// Write result from shared memory to global memory efficiently

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for frequently accessed variables.
+// Utilize coalesced memory access patterns to improve memory throughput.
+// Consider prefetching data to shared memory to hide memory latency.
+// Minimize divergent branches inside the kernel to improve warp execution efficiency.
+// Evaluate the use of loop unrolling for any repetitive operations to reduce instruction overhead.
+// Verify occupancy and try optimizing the number of threads per block to maximize hardware utilization.
+```

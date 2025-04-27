@@ -1,0 +1,6 @@
+```
+// Consider unrolling the loop over 'loc_id' for increased ILP
+// Use shared memory to cache frequently accessed data like 'flip', 'width_offset', and 'height_offset'
+// Pre-fetch data into registers before conditional statements to hide memory latency
+// Group memory accesses to ensure coalesced access patterns
+```

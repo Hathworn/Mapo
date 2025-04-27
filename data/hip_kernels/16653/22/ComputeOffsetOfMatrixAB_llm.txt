@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache row_sum and col_sum for faster access
+// Minimize bank conflicts in shared memory by carefully aligning data
+// Ensure coalesced memory access for output array writes
+// Evaluate the warp size and block size for optimal occupancy
+// Use __restrict__ more consistently for all pointers to improve compiler optimizations
+```

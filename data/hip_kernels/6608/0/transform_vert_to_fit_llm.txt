@@ -1,0 +1,5 @@
+```
+// Consider memory coalescing by ensuring sequential threads access consecutive memory locations
+// Minimize divergent branches by ensuring that all threads within a warp follow the same execution path
+// Use __ldg() for read-only data that is likely to be cached to improve memory access efficiency
+```

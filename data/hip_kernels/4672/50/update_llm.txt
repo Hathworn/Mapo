@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for 'original', 'newTE', and 'current' arrays
+// Consider using shared memory if data reuse opportunities exist to reduce global memory reads
+// Minimize memory transactions by ensuring data alignment
+// Use float4 or similar vector types for potential vectorized memory access
+// Check occupancy and ensure optimal launch configuration to maximize resource utilization
+```

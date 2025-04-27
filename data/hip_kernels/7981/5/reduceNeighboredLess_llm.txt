@@ -1,0 +1,7 @@
+```c++
+// Consider coalescing global memory access for g_idata to improve memory throughput
+// Minimize idle threads by managing out-of-bounds threads more efficiently
+// Use shared memory to reduce the number of global memory reads for performance gains
+// Ensure balance of workload among threads to minimize divergence
+// Consider loop unrolling for the reduction loop to enhance performance
+```

@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing to improve global memory load efficiency
+// Utilize shared memory for intermediate sums to reduce global memory bandwidth usage
+// Avoid bank conflicts in shared memory access patterns
+// Investigate using __restrict__ for pointer parameters to improve memory access optimization
+// Ensure enough occupancy to hide latency associated with global memory accesses
+```

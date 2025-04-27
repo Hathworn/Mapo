@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8set_zeroPdii' function" {
+	label="CFG for '_Z8set_zeroPdii' function";
+
+	Node0x4a7e280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %14 = getelementptr i8, i8 addrspace(4)* %5, i64 6\l  %15 = bitcast i8 addrspace(4)* %14 to i16 addrspace(4)*\l  %16 = load i16, i16 addrspace(4)* %15, align 2, !range !4, !invariant.load !5\l  %17 = zext i16 %16 to i32\l  %18 = mul i32 %13, %17\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %20 = add i32 %18, %19\l  %21 = icmp slt i32 %12, %1\l  %22 = icmp slt i32 %20, %1\l  %23 = select i1 %21, i1 %22, i1 false\l  %24 = icmp ne i32 %12, %2\l  %25 = select i1 %23, i1 %24, i1 false\l  %26 = icmp eq i32 %20, %2\l  %27 = select i1 %25, i1 %26, i1 false\l  br i1 %27, label %28, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4a7e280:s0 -> Node0x4a81fc0;
+	Node0x4a7e280:s1 -> Node0x4a82050;
+	Node0x4a81fc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%28:\l28:                                               \l  %29 = mul nsw i32 %12, %1\l  %30 = add nsw i32 %29, %2\l  %31 = sext i32 %30 to i64\l  %32 = getelementptr inbounds double, double addrspace(1)* %0, i64 %31\l  store double 0.000000e+00, double addrspace(1)* %32, align 8, !tbaa !7\l  br label %33\l}"];
+	Node0x4a81fc0 -> Node0x4a82050;
+	Node0x4a82050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

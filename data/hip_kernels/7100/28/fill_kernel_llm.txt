@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if multiple threads access the same elements
+// Coalesce global memory access by ensuring X is accessed consecutively
+// Ensure ALPHA is stored in a register for faster access
+// Use multiple blocks with variable block sizes for better load balancing
+// Minimize divergence by ensuring threads within a warp follow the same path
+```

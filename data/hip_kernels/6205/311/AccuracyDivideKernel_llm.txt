@@ -1,0 +1,3 @@
+// Utilize shared memory to decrease global memory access frequency.
+// Ensure only one thread writes back to global memory to avoid race conditions.
+// Consider using warp-level primitives for reduction to optimize performance.

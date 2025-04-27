@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Minimize thread divergence by ensuring coalesced memory access
+// Optimize reduction with warp shuffle instructions if possible
+// Consider using float2 or float4 to coalesce memory loads if data alignment allows
+// Ensure that shared memory is used efficiently to prevent bank conflicts
+```

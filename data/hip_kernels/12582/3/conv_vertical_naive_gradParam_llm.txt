@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for dy and x arrays to improve bandwidth efficiency.
+// Consider using shared memory for the x array to reduce redundant global memory accesses.
+// Explore warp-level primitives for further optimizations in reduction operations.
+// Investigate double buffering to hide memory latency when accessing global memory.
+```

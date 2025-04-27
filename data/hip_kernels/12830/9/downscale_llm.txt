@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data for reduced global memory access
+// Align memory accesses for gradInput_data to improve coalesced memory access
+// Consider using texture memory for gradOutput_data to take advantage of caching
+// Opt for asynchronous memory copies if applicable to overlap computation with data movement
+// Minimize divergent branches, especially within the loop, to improve warp execution efficiency
+```

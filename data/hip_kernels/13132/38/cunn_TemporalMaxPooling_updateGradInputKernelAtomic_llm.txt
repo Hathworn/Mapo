@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for gradOutput and indices to improve memory bandwidth utilization.
+// Use shared memory to store per-block results to reduce global memory access and improve performance.
+// Optimize the loop to reduce the number of arithmetic operations inside it.
+// Ensure that atomic operations do not become a bottleneck by analyzing if warp divergence occurs.
+```

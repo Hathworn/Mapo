@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache gData elements if multiple threads access the same elements.
+// Coalesce global memory accesses by ensuring threads in a warp access contiguous memory addresses.
+// Adjust grid and block dimensions to maximize occupancy and hide memory latency.
+// Consider using float2 or similar structures for vectorized memory access to improve throughput.
+```

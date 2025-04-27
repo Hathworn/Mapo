@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns when loading inputs into shared memory.
+// Consider padding shared memory to avoid bank conflicts.
+// Ensure shared memory arrays are sized to avoid excessive usage, possibly use dynamic allocation if available.
+// Optimize the reduction loop by unrolling to improve performance.
+```

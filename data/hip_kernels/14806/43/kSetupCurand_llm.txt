@@ -1,0 +1,6 @@
+```cpp
+// Use __restrict__ qualifier if applicable to indicate no aliasing
+// Ensure memory alignment for state array to enable coalesced accesses
+// Consider using shared memory for frequently accessed data within the kernel
+// Optimize block and grid dimensions for better occupancy based on hardware specifics
+```

@@ -1,0 +1,6 @@
+```c
+// Consider coalescing memory accesses for the u and v arrays to improve memory bandwidth utilization.
+// Use shared memory to cache frequently accessed values like flow_row_offset and image_row_offset.
+// Avoid unnecessary recalculations by storing cx and cy computations in registers.
+// Ensure memory accesses for atomicAdd are coalesced for improved performance.
+```

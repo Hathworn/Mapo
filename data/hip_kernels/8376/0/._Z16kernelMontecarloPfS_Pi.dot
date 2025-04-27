@@ -1,0 +1,10 @@
+digraph "CFG for '_Z16kernelMontecarloPfS_Pi' function" {
+	label="CFG for '_Z16kernelMontecarloPfS_Pi' function";
+
+	Node0x60570f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = sext i32 %12 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %0, i64 %13\l  %15 = load float, float addrspace(1)* %14, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %16 = fmul contract float %15, %15\l  %17 = getelementptr inbounds float, float addrspace(1)* %1, i64 %13\l  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %19 = fmul contract float %18, %18\l  %20 = fadd contract float %16, %19\l  %21 = fcmp contract ugt float %20, 1.000000e+00\l  br i1 %21, label %24, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x60570f0:s0 -> Node0x605ad20;
+	Node0x60570f0:s1 -> Node0x605adb0;
+	Node0x605adb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%22:\l22:                                               \l  %23 = atomicrmw add i32 addrspace(1)* %2, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %24\l}"];
+	Node0x605adb0 -> Node0x605ad20;
+	Node0x605ad20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  ret void\l}"];
+}

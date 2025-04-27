@@ -1,0 +1,10 @@
+```cpp
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations in global memory.
+// Utilize shared memory to reduce global memory load when accessing gradInput, gradOutput, indices_x, and indices_y.
+// Minimize divergent threads by reordering calculations or using conditional statements efficiently.
+// Pre-calculate commonly used expressions to reduce redundant calculations within threads.
+// Consider using __ldg() or similar functions for efficient read-only memory access when applicable.
+// Ensure proper memory alignment to improve memory access speed and performance.
+// Review the block and grid size configuration to optimize for the specific GPU architecture being used.
+// Apply loop unrolling techniques if applicable to reduce loop overhead and increase instruction throughput.
+```

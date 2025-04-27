@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns for d_startArray and d_startSumArray
+// Ensure that d_bounary is written in a coalesced manner
+// Avoid warp divergence by ensuring consistent execution paths
+// Evaluate potential benefits of preloading data into shared memory
+// Optimize block and grid dimensions to maximize occupancy based on the hardware
+```

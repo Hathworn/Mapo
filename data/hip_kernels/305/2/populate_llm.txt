@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory if there is data reuse within the block
+// Initialize shared memory for operations if needed in future optimizations
+// Check coalesced memory access for better performance
+// Avoid branch divergence by minimizing conditional instructions
+// Ensure global memory accesses are coalesced
+// Use __syncthreads() for synchronization if shared memory is utilized later
+```

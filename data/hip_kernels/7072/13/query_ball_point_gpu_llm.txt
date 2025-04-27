@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for data accessed by multiple threads to reduce global memory accesses
+// Align memory access patterns through coalesced memory accesses for both xyz1 and xyz2
+// Reduce the use of sqrtf function by comparing squared values instead of actual distance
+// Ensure data preloading into shared memory for iterative processing within a block
+// Use float4 types for xyz coordinate loading to optimize memory transactions
+// Parallelize the initialization loop for indices to improve performance
+// Minimize branch divergence by restructuring conditional logic, if possible
+```

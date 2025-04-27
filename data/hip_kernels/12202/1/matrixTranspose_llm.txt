@@ -1,0 +1,5 @@
+// Use shared memory for tile-based optimization to improve memory access patterns.
+// Organize shared memory to avoid bank conflicts with an extra +1 in array dimensions.
+// Load data into shared memory to decrease global memory access latency.
+// Ensure synchronization with __syncthreads() before transposing in shared memory.
+// Transpose the block within shared memory which reduces redundant global memory access.

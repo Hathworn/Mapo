@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce repeated accesses to global memory for lifter coefficients
+// Employ __syncthreads() to ensure all threads have loaded lifter coefficients before using them
+// Use parallel processing by assigning different threads to different columns to increase throughput
+// Handle energy computation in thread 0 to minimize synchronization overhead
+// Utilize conditional logic to prevent unnecessary computations for energy-floor application
+```

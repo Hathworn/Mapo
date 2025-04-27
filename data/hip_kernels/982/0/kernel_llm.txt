@@ -1,0 +1,3 @@
+// Use shared memory to minimize global memory access.
+// Consider assigning threads to work on consecutive memory locations to improve coalescing.
+// Optimize block size to maximize the occupancy and minimize divergence.

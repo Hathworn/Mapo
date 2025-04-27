@@ -1,0 +1,4 @@
+// Consider using shared memory for pred and truth arrays to reduce global memory access latency.
+// Optimize memory coalescing by ensuring that consecutive threads access consecutive memory locations.
+// Ensure data alignment for pred and truth arrays to improve memory access speed.
+// Prefetch the data using texture cache if spatial locality is strong.

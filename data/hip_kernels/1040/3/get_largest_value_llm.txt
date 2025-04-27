@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access
+// Ensure coalesced memory access pattern for vec array
+// Minimize use of atomic operations by using shared memory first
+// Consider loop unrolling to increase performance if possible
+// Optimize memory access by ensuring words are aligned properly
+// Check for occupancy and adjust block and grid sizes accordingly
+```

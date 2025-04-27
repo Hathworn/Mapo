@@ -1,0 +1,4 @@
+// Consider coalesced memory access by ensuring threads access consecutive memory locations.
+// Use shared memory to reduce global memory accesses for frequently accessed data.
+// Optimize index calculations to minimize arithmetic operations within the kernel.
+// Ensure the indices array is read in a coalesced manner if possible.

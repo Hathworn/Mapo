@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce redundant access to global memory.
+// Ensure coalesced memory access by aligning data accesses to avoid bank conflicts.
+// Consider using constant memory if Size and Spacing arrays remain unchanged and are small enough.
+// Reduce printf usage or remove it in performance critical sections due to its overhead.
+```

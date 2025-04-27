@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using shared memory instead of global memory
+// Ensure coalesced memory access when loading weights into shared memory
+// Reduce the number of global memory accesses by using shared memory
+// Use __syncthreads() to ensure all threads have loaded data into shared memory
+// Avoid duplication of calculations by reusing shared memory for mean calculation
+// Consider using loop unrolling for the mean calculation to potentially increase efficiency
+```

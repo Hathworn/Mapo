@@ -1,0 +1,3 @@
+// Ensure memory accesses are coalesced for better performance.
+// Consider using shared memory if data reuse within a block is high.
+// Minimize divergence by ensuring all threads in a warp follow similar execution paths.

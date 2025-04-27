@@ -1,0 +1,7 @@
+```
+// Use shared memory to store values that are repeatedly accessed, reducing global memory access
+// Ensure coalesced memory access patterns to maximize memory throughput
+// Adjust shared memory size based on maximum `m` and `nsample` to minimize bank conflicts
+// Consider unrolling the innermost loop if `c` is small for better loop performance
+// Evaluate benefits of using atomic operations vs potential race conditions and serialization
+```

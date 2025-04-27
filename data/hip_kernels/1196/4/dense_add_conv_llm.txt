@@ -1,0 +1,5 @@
+```cpp
+// Consider using shared memory to store partial results if bias_dim is small to reduce global memory access
+// Ensure coalesced memory access by aligning src and dest arrays to memory boundaries if possible
+// Evaluate occupancy and adjust block size to maximize warps and achieve better memory throughput
+```

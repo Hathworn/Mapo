@@ -1,0 +1,8 @@
+```
+// Utilize shared memory for frequently accessed data to improve memory throughput
+// Coalesce memory accesses by ensuring continuous thread access to contiguous memory locations
+// Reduce bank conflicts in shared memory through proper memory alignment
+// Consider using read-only memory for input arrays a and b if they are not modified
+// Minimize use of global memory by maximizing data reuse
+// Optimize grid and block size configuration to achieve maximum occupancy
+```

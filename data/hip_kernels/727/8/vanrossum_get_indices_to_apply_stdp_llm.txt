@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for d_plastic_synapse_indices to improve memory bandwidth utilization
+// Ensure d_postsyns, d_time_of_last_spike_to_reach_synapse, d_index_of_last_afferent_synapse_to_spike, d_isindexed_ltd_synapse_spike, and d_index_of_first_synapse_spiked_after_postneuron are accessed with aligned memory patterns
+// Consider moving atomicExch operations to shared memory when possible to reduce contention and improve performance
+// Optimize the use of shared memory by loading frequently accessed global memory variables into shared memory if they are reused in multiple iterations
+// Minimize divergence by avoiding complex branching logic and combining conditional checks when possible
+```

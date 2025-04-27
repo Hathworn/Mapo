@@ -1,0 +1,19 @@
+digraph "CFG for '_Z9brickSortPiii' function" {
+	label="CFG for '_Z9brickSortPiii' function";
+
+	Node0x57f72c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = add nsw i32 %1, -1\l  %14 = icmp slt i32 %12, %13\l  br i1 %14, label %15, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x57f72c0:s0 -> Node0x57f9220;
+	Node0x57f72c0:s1 -> Node0x57f92b0;
+	Node0x57f9220 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e36c5570",label="{%15:\l15:                                               \l  %16 = srem i32 %2, 2\l  %17 = icmp eq i32 %16, 0\l  %18 = and i32 %12, -2147483647\l  %19 = icmp eq i32 %18, 1\l  %20 = select i1 %17, i1 %19, i1 false\l  br i1 %20, label %36, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x57f9220:s0 -> Node0x57f92b0;
+	Node0x57f9220:s1 -> Node0x57f9850;
+	Node0x57f9850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%21:\l21:                                               \l  %22 = icmp eq i32 %16, 1\l  %23 = and i32 %12, 1\l  %24 = icmp eq i32 %23, 0\l  %25 = select i1 %22, i1 %24, i1 false\l  br i1 %25, label %36, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x57f9850:s0 -> Node0x57f92b0;
+	Node0x57f9850:s1 -> Node0x57f9bb0;
+	Node0x57f9bb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%26:\l26:                                               \l  %27 = sext i32 %12 to i64\l  %28 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %27\l  %29 = load i32, i32 addrspace(1)* %28, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %30 = add nsw i32 %12, 1\l  %31 = sext i32 %30 to i64\l  %32 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %31\l  %33 = load i32, i32 addrspace(1)* %32, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %34 = icmp sgt i32 %29, %33\l  br i1 %34, label %35, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x57f9bb0:s0 -> Node0x57f9560;
+	Node0x57f9bb0:s1 -> Node0x57f92b0;
+	Node0x57f9560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%35:\l35:                                               \l  store i32 %29, i32 addrspace(1)* %32, align 4, !tbaa !7\l  store i32 %33, i32 addrspace(1)* %28, align 4, !tbaa !7\l  br label %36\l}"];
+	Node0x57f9560 -> Node0x57f92b0;
+	Node0x57f92b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

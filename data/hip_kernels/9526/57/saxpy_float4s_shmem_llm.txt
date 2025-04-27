@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns for global memory reads and writes
+// Utilize float4 loads and stores to maximize data throughput
+// Use shared memory efficiently to reduce global memory accesses
+// Minimize shared memory bank conflicts by ensuring proper indexing
+// Apply __syncthreads() to synchronize threads within a block to maintain data consistency
+```

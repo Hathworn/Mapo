@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve performance
+// Perform reductions within shared memory to minimize synchronization overhead
+// Ensure data is coalesced during global memory accesses to improve bandwidth utilization
+// Use __syncthreads() after writing to shared memory to maintain synchronization across threads

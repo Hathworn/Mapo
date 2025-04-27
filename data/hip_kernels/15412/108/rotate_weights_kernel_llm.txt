@@ -1,0 +1,5 @@
+// Consider coalesced memory accesses for src_weight_gpu and weight_deform_gpu to improve memory throughput
+// Use shared memory if possible to reduce redundant global memory accesses
+// Evaluate if increasing kernel launch dimensions could improve parallel execution and utilization
+// Check if more aggressive loop unrolling is feasible without exceeding register usage limits
+// Optimize use of stage_id determination and kernel_area computation to minimize redundant operations

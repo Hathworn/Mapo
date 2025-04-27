@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for vertexArray to reduce global memory latency if it is accessed multiple times
+// Coalesce memory accesses in neighbourArray and degreeCount to improve memory throughput
+// Minimize the use of atomic operations in the first kernel as they can be a bottleneck
+// Ensure memory alignment for better performance on global memory accesses
+```

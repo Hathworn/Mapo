@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for g_idata
+// Use shared memory to store reduction results to minimize global memory accesses
+// Ensure proper alignment of shared memory to improve access performance
+// Consider loop unrolling for further reduction of loop overhead
+// Exploit warp synchronous programming for optimization within a warp
+```

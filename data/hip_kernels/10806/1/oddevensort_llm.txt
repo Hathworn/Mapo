@@ -1,0 +1,6 @@
+// Consider reducing the number of __syncthreads() calls to improve performance.
+// Use shared memory more effectively by minimizing global memory accesses.
+// Ensure coalesced memory access patterns for optimal GPU performance.
+// Analyze the possibility of using warp-level primitives to reduce synchronization overhead.
+// Evaluate if loop unrolling could enhance the performance of the sorting algorithm.
+// Double-check thread divergence to ensure it is minimized where possible.

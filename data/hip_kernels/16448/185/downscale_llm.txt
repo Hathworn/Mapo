@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for gradOutput_data.
+// Ensure coalesced memory access patterns for gradInput_data.
+// Consider unrolling inner loops for better performance.
+// Utilize __restrict__ pointers to help with compiler optimizations.
+// Prefetch data into registers to minimize latency.
+```

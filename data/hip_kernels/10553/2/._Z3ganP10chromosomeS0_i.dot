@@ -1,0 +1,21 @@
+digraph "CFG for '_Z3ganP10chromosomeS0_i' function" {
+	label="CFG for '_Z3ganP10chromosomeS0_i' function";
+
+	Node0x4a520d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = icmp slt i32 %12, 50\l  br i1 %13, label %14, label %37\l|{<s0>T|<s1>F}}"];
+	Node0x4a520d0:s0 -> Node0x4a55c80;
+	Node0x4a520d0:s1 -> Node0x4a56e80;
+	Node0x4a55c80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%14:\l14:                                               \l  %15 = sext i32 %2 to i64\l  %16 = sext i32 %12 to i64\l  %17 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %0, i64 %16, i32 1\l  %18 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %0, i64 %16\l  %19 = bitcast %struct.chromosome addrspace(1)* %18 to i8 addrspace(1)*\l  br label %20\l}"];
+	Node0x4a55c80 -> Node0x4a57310;
+	Node0x4a57310 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  %21 = phi i32 [ %12, %14 ], [ %35, %34 ]\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %1, i64 %22\l  %24 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %23, i64 0, i32 0\l  %25 = load i64, i64 addrspace(1)* %24, align 8, !tbaa !7\l  %26 = icmp sgt i64 %25, %15\l  br i1 %26, label %34, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x4a57310:s0 -> Node0x4a57440;
+	Node0x4a57310:s1 -> Node0x4a57a20;
+	Node0x4a57a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%27:\l27:                                               \l  %28 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %1, i64 %22, i32 1\l  %29 = load i64, i64 addrspace(1)* %28, align 8, !tbaa !12\l  %30 = load i64, i64 addrspace(1)* %17, align 8, !tbaa !12\l  %31 = icmp sgt i64 %29, %30\l  br i1 %31, label %32, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x4a57a20:s0 -> Node0x4a584a0;
+	Node0x4a57a20:s1 -> Node0x4a57440;
+	Node0x4a584a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%32:\l32:                                               \l  %33 = bitcast %struct.chromosome addrspace(1)* %23 to i8 addrspace(1)*\l  tail call void @llvm.memcpy.p1i8.p1i8.i64(i8 addrspace(1)* noundef align 8\l... dereferenceable(100019) %19, i8 addrspace(1)* noundef align 8\l... dereferenceable(100019) %33, i64 100019, i1 false), !tbaa.struct !13\l  br label %34\l}"];
+	Node0x4a584a0 -> Node0x4a57440;
+	Node0x4a57440 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  %35 = add nsw i32 %21, 50\l  %36 = icmp slt i32 %21, 50\l  br i1 %36, label %20, label %37, !llvm.loop !16\l|{<s0>T|<s1>F}}"];
+	Node0x4a57440:s0 -> Node0x4a57310;
+	Node0x4a57440:s1 -> Node0x4a56e80;
+	Node0x4a56e80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%37:\l37:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,4 @@
+// Use shared memory to cache values for reuse, reducing global memory accesses.
+// Consider using texture memory for read-only data, which can be faster than global memory.
+// Optimize block and grid dimensions to achieve maximum occupancy.
+// Ensure coalesced memory access by aligning data structure to 128 bytes.

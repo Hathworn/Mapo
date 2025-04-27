@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Prefetch data into shared memory to minimize access time
+// Ensure best use of __syncthreads() to manage thread synchronization
+// Use local variables for frequently accessed data to decrease register pressure
+// Optimize loop to improve computation performance and control flow divergence
+// Consider adjusting block and grid size for better occupancy and performance
+// Utilize uchar4 type for storing color to align memory access and reduce size
+```

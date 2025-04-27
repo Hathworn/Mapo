@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store intermediate sums to reduce global memory accesses.
+// Apply loop unrolling to further improve memory access efficiency, as done in initial accumulation.
+// Minimize __syncthreads() usage, especially inside warp-level code, because threads within a warp are in sync.
+// Use volatile keyword judiciously to prevent compiler optimizations that could disrupt memory operations.
+// Ensure coalesced memory access patterns when fetching data from g_idata.
+// Use compiler flags to optimize instruction scheduling if targeting specific hardware.
+```

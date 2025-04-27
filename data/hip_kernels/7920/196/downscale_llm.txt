@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses to gradInput_data and gradOutput_data to improve bandwidth utilization.
+// Use shared memory to reduce repetitive global memory access, especially inside the loops.
+// Reorganize the data layout to ensure better memory access patterns and coalescing.
+// Avoid using non-coalesced access patterns by aligning data access with warp boundaries.
+// Minimize divergent warps by ensuring that all threads within a warp follow the same execution path.
+```

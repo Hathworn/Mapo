@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access for frequently used variables
+// Coalesce global memory accesses for spMmat, spBmat, and spTmat to improve memory bandwidth
+// Minimize branching by restructuring conditions to increase warp coherence
+// Use local variables instead of repeatedly accessing global memory locations like *nSpB or *nSpT
+// Prefetch necessary data into registers at the start of the loop to hide memory latency
+// Avoid shared memory bank conflicts by aligning shared memory accesses
+// Consider using unified memory to simplify data management and potentially reduce overhead
+```

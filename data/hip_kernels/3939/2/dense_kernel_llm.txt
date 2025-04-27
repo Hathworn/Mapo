@@ -1,0 +1,7 @@
+```
+// Unroll the loop to reduce the number of iterations and increase instruction-level parallelism
+// Use shared memory if possible to cache inputs or weights and reduce global memory accesses
+// Coalesce global memory accesses to improve memory bandwidth utilization
+// Ensure the kernel launch configurations (block size and grid size) are optimal for the GPU architecture
+// Consider using half-precision if accuracy allows, to reduce memory bandwidth and storage
+```

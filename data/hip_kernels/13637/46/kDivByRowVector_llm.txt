@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache the row vector for coalesced access
+// Optimize memory access patterns by ensuring linear memory access
+// Combine multiple small kernels if possible to reduce kernel launch overhead
+// Consider increasing block size if occupancy allows optimization
+// Avoid bank conflicts while accessing shared memory
+// Use constant memory for vec if it is read-only and fits in constant memory space
+```

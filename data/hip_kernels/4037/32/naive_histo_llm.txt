@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses for the bins
+// Initialize shared memory bins in parallel to reduce initialization time
+// Avoid race conditions during bin updates with atomic operations
+// Add computed values from shared memory to global memory bins using atomics

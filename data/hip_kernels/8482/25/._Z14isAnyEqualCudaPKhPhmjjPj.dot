@@ -1,0 +1,18 @@
+digraph "CFG for '_Z14isAnyEqualCudaPKhPhmjjPj' function" {
+	label="CFG for '_Z14isAnyEqualCudaPKhPhmjjPj' function";
+
+	Node0x5f38630 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%6:\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %8, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %17 = getelementptr i8, i8 addrspace(4)* %7, i64 6\l  %18 = bitcast i8 addrspace(4)* %17 to i16 addrspace(4)*\l  %19 = load i16, i16 addrspace(4)* %18, align 2, !range !4, !invariant.load !5\l  %20 = zext i16 %19 to i32\l  %21 = mul i32 %16, %20\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %23 = add i32 %21, %22\l  %24 = icmp uge i32 %15, %3\l  %25 = icmp uge i32 %23, %4\l  %26 = select i1 %24, i1 true, i1 %25\l  %27 = icmp eq i64 %2, 0\l  %28 = select i1 %26, i1 true, i1 %27\l  br i1 %28, label %46, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x5f38630:s0 -> Node0x5f3c220;
+	Node0x5f38630:s1 -> Node0x5f3c2b0;
+	Node0x5f3c2b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%29:\l29:                                               \l  %30 = mul i32 %23, %3\l  %31 = add i32 %30, %15\l  %32 = zext i32 %31 to i64\l  %33 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %32\l  %34 = load i8, i8 addrspace(1)* %33, align 1, !tbaa !7, !amdgpu.noclobber !5\l  br label %39\l}"];
+	Node0x5f3c2b0 -> Node0x5f3c940;
+	Node0x5f3ca40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%35:\l35:                                               \l  %36 = add nuw nsw i64 %40, 1\l  %37 = and i64 %36, 4294967295\l  %38 = icmp ult i64 %37, %2\l  br i1 %38, label %39, label %46, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x5f3ca40:s0 -> Node0x5f3c940;
+	Node0x5f3ca40:s1 -> Node0x5f3c220;
+	Node0x5f3c940 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%39:\l39:                                               \l  %40 = phi i64 [ 0, %29 ], [ %37, %35 ]\l  %41 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %40\l  %42 = load i8, i8 addrspace(1)* %41, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %43 = icmp eq i8 %34, %42\l  br i1 %43, label %44, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5f3c940:s0 -> Node0x5f3d760;
+	Node0x5f3c940:s1 -> Node0x5f3ca40;
+	Node0x5f3d760 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%44:\l44:                                               \l  %45 = atomicrmw add i32 addrspace(1)* %5, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %46\l}"];
+	Node0x5f3d760 -> Node0x5f3c220;
+	Node0x5f3c220 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%46:\l46:                                               \l  ret void\l}"];
+}

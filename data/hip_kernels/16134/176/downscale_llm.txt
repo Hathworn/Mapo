@@ -1,0 +1,7 @@
+```
+// Precompute frequently used values and store them in registers for faster access
+// Use __forceinline__ to suggest function inlining and reduce function call overhead
+// Accumulate results in registers to minimize global memory access
+// Store computed results to global memory once to reduce the number of writes
+// Consider optimizing shared memory usage if applicable to further reduce latency
+```

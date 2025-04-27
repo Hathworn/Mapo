@@ -1,0 +1,4 @@
+// Consider using shared memory for gpuData to reduce global memory reads.
+// Optimize memory access patterns by ensuring aligned accesses for gpuResults.
+// Minimize divergent branches in the loop to improve warp efficiency.
+// Further optimize the kernel configuration by exploring the balance between NUMTHREADS and THREADWORK.

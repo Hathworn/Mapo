@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve memory throughput
+// Use shared memory if accessing A and B repeatedly to reduce global memory accesses
+// Ensure grid and block sizes maximize occupancy
+// Use __restrict__ qualifier for pointers if applicable to allow compiler optimizations
+// Align data structures to 128-byte boundaries when possible for better performance
+```

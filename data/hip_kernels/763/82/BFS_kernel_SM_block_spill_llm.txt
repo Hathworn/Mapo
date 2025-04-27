@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for 'edgeArray' to reduce memory transaction overhead.
+// Utilize shared memory to cache 'edgeArrayAux' to decrease global memory access latency.
+// Use loop unrolling for the neighbors iteration to optimize the performance of small loops.
+// Implement warp-level primitives to minimize atomic operations on 'frontier_length'.
+// Leverage asynchronous memory prefetching to reduce latency in loading 'frontier' elements.
+```

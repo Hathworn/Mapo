@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access patterns to reduce global memory access latency by using shared memory for heatmap.
+// Improve memory coalescing for reading from desiredAgentsX and desiredAgentsY by ensuring threads access consecutive memory locations.
+// Utilize shared memory for frequently accessed data within each block to minimize global memory traffic.
+// Perform loop unrolling to increase instruction throughput and reduce loop overhead in the kernel.
+// Minimize usage of atomic operations as they can serialize memory accesses, potentially use parallel reduction if possible.
+```

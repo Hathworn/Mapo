@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data like call[bid]
+// Consider coalescing memory access patterns for uproj array
+// Minimize divergent branches by restructuring early exits in the loop
+// Experiment with loop unrolling for the loop over Nspikes
+// Balance the use of atomic operations to minimize serialization
+// Ensure optimal occupancy by adjusting block and grid dimensions
+// Evaluate the usage of registers per thread to prevent register spilling
+```

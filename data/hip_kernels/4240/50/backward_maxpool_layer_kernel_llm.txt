@@ -1,0 +1,8 @@
+```
+// Precompute constants outside of loop to reduce redundant calculations.
+// Compute global thread index for efficient parallel execution.
+// Check boundary conditions early to minimize unnecessary computations.
+// Unroll loops to enhance parallel performance by increasing instruction-level parallelism.
+// Avoid bank conflicts by ensuring access patterns are well-distributed among threads.
+// Use shared memory if possible to reduce global memory bottlenecks.
+```

@@ -1,0 +1,12 @@
+```
+// Load shared memory only once
+// Optimize global memory access pattern
+// Consider coalesced memory access for vectsa and vectsb
+// Utilizes shared memory to minimize global memory access
+// Use of shared memory to cache means and standard deviations
+// Simplified loop to accumulate scores
+// Exploit thread-level parallelism for sum calculation
+// Optimized reduction using warp synchronization
+// Minimize bank conflicts in shared memory usage
+// Write final result to output
+```

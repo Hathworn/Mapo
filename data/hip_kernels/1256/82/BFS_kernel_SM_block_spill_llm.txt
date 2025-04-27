@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for frontier and frontier2 arrays.
+// Use shared memory to cache edgeArray or edgeArrayAux for faster access.
+// Minimize divergent branches in conditional checks, especially with atomic operations.
+// Ensure proper alignment of data to maximize memory throughput.
+// Consider using __restrict__ qualifiers for pointer arguments to avoid unnecessary aliasing.
+```

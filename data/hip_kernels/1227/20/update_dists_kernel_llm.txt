@@ -1,0 +1,6 @@
+```
+// Cache 'update_dists[tid]' to reduce global memory accesses
+// Avoid unnecessary updates to 'dists' to save global memory writes
+// Mark 'mask[tid]' only when 'dists' is updated to minimize write operations
+// Synchronize 'update_dists' and 'dists' efficiently to reduce memory traffic
+```

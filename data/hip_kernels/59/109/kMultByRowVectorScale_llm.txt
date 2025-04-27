@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to temporarily store portions of 'mat' and 'vec' for faster access
+// Align memory access for 'mat', 'vec', and 'tgtMat' to reduce memory coalescing issues
+// Use vectorized operations for 'mat', 'vec', and 'tgtMat' to improve throughput
+// Allocate enough threads to fully utilize GPU resources by adjusting block and grid sizes
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache input data if reused across iterations
+// Coalesce memory accesses to outgrad and indata arrays for better performance
+// Consider increasing occupancy by adjusting block size or using launch bounds
+// Avoid warp divergence by processing boundary conditions uniformly
+```

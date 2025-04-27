@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for better performance.
+// Ensure __restrict__ pointers are used to indicate no overlap in pointer references.
+// Ensure aligned memory access to benefit from memory transactions.
+// Prefer float4 or similar for loading data when elements are contiguous.
+// Use warp-level primitives if applicable to reduce global memory transactions.
+```

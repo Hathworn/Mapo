@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache input data x to reduce global memory access
+// Consider using vectorized memory access if data alignment allows
+// Optimize memory access patterns by ensuring all threads in a warp access contiguous memory addresses
+// Reduce stride values to improve memory coalescing where possible
+// Pre-fetch data to registers to minimize repeated global memory access
+```

@@ -1,0 +1,6 @@
+```
+// Use coalesced memory accesses for d_a, d_b, and d_c
+// Ensure that n is a multiple of blockDim.x for optimal occupancy
+// Strive to align memory allocations to 128-byte boundaries
+// Consider using shared memory if accessing d_a and d_b has locality
+```

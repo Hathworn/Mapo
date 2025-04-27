@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data for threads in the same block
+// Ensure coalesced memory access patterns by aligning access to subsampled_mask
+// Minimize variable usage in register by reducing precision where applicable
+// Consider using constant memory for frequently accessed read-only data such as sigma
+// Optimize loops by unrolling where possible for better instruction-level parallelism
+```

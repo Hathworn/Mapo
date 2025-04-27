@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning data on 128-byte boundaries
+// Minimize register usage by reusing variables within the thread
+// Use shared memory if multiple threads need the same data value simultaneously
+// Consider using float4 to increase throughput if data can be packed
+```

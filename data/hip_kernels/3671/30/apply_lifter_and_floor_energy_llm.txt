@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for 'features' to improve memory throughput.
+// Consider using shared memory to cache 'lifter_coeffs' for reuse in each block.
+// Consider loop unrolling inside the for loop for applying lifter coefficients.
+// Reduce divergence by using a separate kernel if possible for different operations.
+// If possible, move 'log_energy_floor' out of thread 0 block to avoid recomputation.
+```

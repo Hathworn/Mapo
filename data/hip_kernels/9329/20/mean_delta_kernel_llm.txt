@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data within a block.
+// Minimize global memory access by reusing loaded data whenever possible.
+// Ensure memory access pattern is coalesced to achieve better performance.
+// Evaluate using loop unrolling techniques for improved compute efficiency.
+// Check if the number of threads per block can be optimized to match the warp size for maximum efficiency.

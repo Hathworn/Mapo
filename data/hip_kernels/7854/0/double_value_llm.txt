@@ -1,0 +1,8 @@
+```
+// Ensure data is coalesced for memory access by aligning data structures
+// Prefer using shared memory for frequently reused data to reduce global memory bandwidth
+// Minimize global memory accesses by indexing directly in calculations
+// Consider memory padding to avoid bank conflicts if shared memory is implemented
+// Utilize constant memory for any read-only data that all threads may use
+// Use proper memory access patterns to enhance effective memory bandwidth utilization
+```

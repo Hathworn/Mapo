@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for vg_a and vg_b
+// Use shared memory to cache vg_a and vg_b to minimize global memory access latency
+// Evaluate using float4 or float2 to load and process data in larger chunks
+// Use appropriate synchronization to ensure data coherency in shared memory
+// Aim for increased occupancy by optimizing shared memory usage and register usage
+// Ensure that pitch values are optimized for the specific architecture
+```

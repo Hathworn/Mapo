@@ -1,0 +1,9 @@
+```cpp
+// Consider using shared memory to cache frequently accessed data to reduce global memory access.
+// Ensure coalesced memory access patterns by verifying that threads in a warp access consecutive memory locations.
+// Minimize branch divergence by ensuring threads in the same warp follow the same execution path.
+// Use less arithmetic operations inside loops by factoring out constant calculations to before loops where possible.
+// Prefetch data to registers to hide memory latency and reduce repeated global memory reads.
+// Align data structures to improve memory access speed and reduce potential bank conflicts.
+// Consider loop unrolling to reduce loop overhead and increase instruction throughput.
+```

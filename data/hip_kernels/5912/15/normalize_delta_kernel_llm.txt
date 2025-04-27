@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache mean and variance if they are reused across multiple threads
+// Consider vectorizing the spatial dimension for better memory coalescing
+// Prefetch data for the next computation to hide memory latency
+```

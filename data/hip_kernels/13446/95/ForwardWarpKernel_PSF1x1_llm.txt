@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data appropriately
+// Consider using shared memory to reduce global memory access
+// Evaluate if texture memory can improve read performance
+// Use __ldg intrinsic for read-only data to potentially increase cache hits
+// Optimize grid and block dimensions for best occupancy and performance
+```

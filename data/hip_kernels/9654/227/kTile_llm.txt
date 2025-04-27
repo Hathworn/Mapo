@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for src to increase data reuse and reduce global memory access.
+// Ensure coalesced memory accesses by having threads read contiguous memory addresses.
+// Use loop unrolling inside the for-loop to reduce instruction overhead.
+// Employ warp-level primitives for more efficient data distribution within a warp.
+// Experiment with different block sizes to find the optimal configuration for your GPU.
+// Minimize the thread divergence inside the loop by aligning memory accesses.
+```

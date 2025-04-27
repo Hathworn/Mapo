@@ -1,0 +1,7 @@
+```
+// Use shared memory if possible to reduce global memory access latency
+// Consider loop unrolling to improve performance
+// Ensure coalesced access to global memory for better memory bandwidth usage
+// Prefetch data into registers to minimize memory latency
+// Evaluate the use of warp-level primitives to optimize reduction within warps
+```

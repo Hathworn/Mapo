@@ -1,0 +1,18 @@
+digraph "CFG for '_Z13detectChangesPfS_S_if' function" {
+	label="CFG for '_Z13detectChangesPfS_S_if' function";
+
+	Node0x5b24750 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = udiv i32 %13, %10\l  %17 = mul i32 %16, %10\l  %18 = icmp ugt i32 %13, %17\l  %19 = zext i1 %18 to i32\l  %20 = add i32 %16, %19\l  %21 = mul i32 %20, %15\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %23 = add i32 %21, %14\l  %24 = mul i32 %23, %10\l  %25 = add i32 %24, %22\l  %26 = icmp slt i32 %25, %3\l  br i1 %26, label %27, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x5b24750:s0 -> Node0x5b26f60;
+	Node0x5b24750:s1 -> Node0x5b26ff0;
+	Node0x5b26f60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%27:\l27:                                               \l  %28 = sext i32 %25 to i64\l  %29 = getelementptr inbounds float, float addrspace(1)* %0, i64 %28\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %31 = getelementptr inbounds float, float addrspace(1)* %1, i64 %28\l  %32 = load float, float addrspace(1)* %31, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %33 = fcmp contract ogt float %30, %32\l  br i1 %33, label %38, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x5b26f60:s0 -> Node0x5b266d0;
+	Node0x5b26f60:s1 -> Node0x5b283f0;
+	Node0x5b283f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%34:\l34:                                               \l  %35 = fcmp contract olt float %30, %32\l  br i1 %35, label %36, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x5b283f0:s0 -> Node0x5b285c0;
+	Node0x5b283f0:s1 -> Node0x5b266d0;
+	Node0x5b285c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%36:\l36:                                               \l  %37 = fneg contract float %4\l  br label %38\l}"];
+	Node0x5b285c0 -> Node0x5b266d0;
+	Node0x5b266d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%38:\l38:                                               \l  %39 = phi float [ %37, %36 ], [ %4, %27 ], [ 0.000000e+00, %34 ]\l  %40 = getelementptr inbounds float, float addrspace(1)* %2, i64 %28\l  store float %39, float addrspace(1)* %40, align 4, !tbaa !16\l  br label %41\l}"];
+	Node0x5b266d0 -> Node0x5b26ff0;
+	Node0x5b26ff0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  ret void\l}"];
+}

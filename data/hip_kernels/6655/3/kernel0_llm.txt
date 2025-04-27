@@ -1,0 +1,6 @@
+```
+// Use coalesced memory accesses to maximize memory bandwidth.
+// Consider using __restrict__ qualifier for pointers to aid compiler optimizations.
+// Ensure that 'n' is a multiple of 'stride' for avoiding divergent code paths.
+// Prefetch data to shared memory to reduce global memory latency if data reuse is possible.
+```

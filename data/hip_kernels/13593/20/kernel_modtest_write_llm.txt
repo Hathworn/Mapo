@@ -1,0 +1,9 @@
+```
+// Consider utilizing shared memory to cache data and reduce global memory access.
+// Align the data accesses to improve coalescing and minimize bank conflicts.
+// Ensure proper memory alignment for pointer operations to avoid misaligned accesses.
+// Unroll the loop for better throughput by leveraging compiler optimizations.
+// Use warp-level intrinsic functions where possible to optimize thread communication.
+// Pre-calculate invariant expressions outside of loops to decrease repetitive computations.
+// Consider using a more optimal thread and block configuration to maximize occupancy.
+```

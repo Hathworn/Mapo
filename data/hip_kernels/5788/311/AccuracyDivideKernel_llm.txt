@@ -1,0 +1,7 @@
+```cpp
+// Use __device__ or shared memory if appropriate for memory access patterns
+// Consider avoiding potential bank conflicts with shared memory
+// Optimize block and grid dimensions for better occupancy and parallelism
+// Validate the use of atomic operations if multiple threads contribute to a single variable
+// Ensure coalesced memory access patterns
+```

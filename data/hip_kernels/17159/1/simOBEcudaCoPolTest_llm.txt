@@ -1,0 +1,6 @@
+// Ensure coalesced memory access by aligning thread block size and data stride
+// Consider using shared memory for frequently accessed data like Delaylist
+// Optimize memory access patterns to minimize latency and maximize throughput
+// Analyze and reduce bank conflicts in shared memory usage
+// Evaluate the use of texture memory for one-dimensional data like Delaylist
+// Use constant memory for invariant values such as w, FWHM, G1, G2, G3, and t_min

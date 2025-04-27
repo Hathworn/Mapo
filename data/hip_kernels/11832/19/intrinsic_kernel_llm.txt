@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses
+// Perform computation using intrinsic functions for better performance
+// Reduce thread divergence by limiting warp divergence
+// Ensure single assignment to the output in critical section
+// Use synchronization to ensure memory consistency

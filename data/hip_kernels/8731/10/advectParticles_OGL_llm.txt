@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for caching frequently accessed data to reduce global memory access latency
+// Utilize coalesced memory access patterns for part and v arrays to improve memory throughput
+// Implement memory access alignment to ensure efficient usage of memory bandwidth
+// Optimize thread block size and grid dimensions to maximize occupancy and parallelism
+// Evaluate use of texture memory for potentially faster memory access compared to global memory
+// Reduce branching by restructuring the code to minimize divergent paths within warp execution
+```

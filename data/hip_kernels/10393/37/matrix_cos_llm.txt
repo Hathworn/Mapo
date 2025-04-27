@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access by ensuring A and C are accessed sequentially if possible.
+// Use shared memory to store data that is reused by multiple threads to minimize global memory accesses.
+// Explore using vectorized memory loads and stores if memory access patterns allow.
+// Ensure the kernel launch configuration (block size and grid size) is optimized for the target GPU architecture.
+// Check memory alignment to improve access times and consider padding if necessary.
+```

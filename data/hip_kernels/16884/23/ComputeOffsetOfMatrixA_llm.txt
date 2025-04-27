@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for col_sum if it is accessed multiple times
+// Ensure coalesced memory access by aligning output and col_sum properly
+// Minimize divergent branches for the if condition
+// Optimize block and grid size to utilize maximum GPU occupancy
+```

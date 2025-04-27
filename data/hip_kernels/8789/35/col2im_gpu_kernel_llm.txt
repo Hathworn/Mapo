@@ -1,0 +1,4 @@
+// Ensure coalesced memory access to data_col and data_im to improve memory bandwidth
+// Consider using shared memory to cache repeated access data and reduce global memory reads
+// Optimize the use of registers by minimizing redundant calculations within the loop
+// Explore loop unrolling to reduce loop overhead and enhance computational efficiency

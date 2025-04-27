@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using __ldg() for read-only source image data to leverage L1 cache.
+// Use shared memory for storing intermediate chroma values to reduce global memory accesses.
+// Consider using texture memory for 2D spatial locality and automatic data caching.
+// Align processingPitch to a multiple of 32 to improve coalesced memory accesses.
+// Reduce divergence by ensuring all threads in a warp follow the same execution path.
+// Increase threads per block to a multiple of 32 for better utilization of the GPU cores.
+```

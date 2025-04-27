@@ -1,0 +1,8 @@
+```
+// Use memory coalescing to improve bandwidth usage by ensuring threads access global memory in a contiguous manner.
+// Consider padding shared memory to avoid bank conflicts for optimal performance.
+// Utilize the L1/L2 cache by ensuring data access patterns are predictable and consistent.
+// Reduce global memory accesses by maximizing shared memory utilization.
+// Minimize thread divergence by ensuring all threads in a warp follow the same execution path.
+// Evaluate the shared memory size to avoid overuse, which can limit occupancy.
+```

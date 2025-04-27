@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced for better performance
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Use __restrict__ keyword to inform the compiler of non-aliasing pointers for possible optimization
+// Evaluate launching multiple kernels if N is significantly large to improve resource utilization
+// Fine-tune block and grid sizes based on hardware specifics for optimal execution
+```

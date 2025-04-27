@@ -1,0 +1,7 @@
+```c
+// Use shared memory for data that is reused by multiple threads to reduce global memory accesses.
+// Consider loading data into registers for each thread to minimize access latency.
+// Ensure coalesced access patterns to improve global memory read/write efficiency.
+// Avoid unnecessary synchronization where possible to increase kernel performance.
+// Profile the kernel to identify potential memory bottlenecks and adjust data layout accordingly.
+```

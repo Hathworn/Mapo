@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed variables like u_ and v_ to reduce global memory access.
+// Check if using constant memory would benefit the access pattern for read-only data like time_scale.
+// Ensure coalesced memory access by optimizing the thread block size and shape based on device architecture.
+// Evaluate the use of vectorized data types, such as float4, where appropriate for better throughput.
+// Minimize divergent branches in the code to improve overall warp efficiency.
+// Consider prefetching data to hide latency, especially for src and dst arrays.
+```

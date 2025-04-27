@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced memory access when fetching 'val' from 'minmax'
+// Consider using __ldg() for reading 'val' if 'minmax' is read-only and frequently accessed
+// Use shared memory to cache frequently accessed data to reduce global memory traffic
+// Ensure 'ptrs' updates are coalesced for improved memory throughput
+// Reduce warp divergence in the 'if (val)' and inner loop conditions
+// Suggest reducing the total number of global memory accesses by accumulating results in registers
+// Consider adjusting grid and block dimensions for optimal occupancy and memory bandwidth usage
+```

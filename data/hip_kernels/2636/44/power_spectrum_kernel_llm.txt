@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring threads access contiguous memory locations for Ar and Aw.
+// Use shared memory to store Ar values within a block to reduce global memory accesses.
+// Minimize conditional statements inside the loop to improve warp efficiency.
+// If possible, prefetch data to registers before processing to hide global memory latency.
+// Align data structures if applicable to enable more efficient memory transactions.
+```

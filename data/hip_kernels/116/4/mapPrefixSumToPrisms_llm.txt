@@ -1,0 +1,8 @@
+```
+// Consider using coalesced memory access patterns for raysPerPrism and prefixSum arrays to improve memory access efficiency.
+// Ensure __restrict__ keyword usage for pointers to potentially leverage compiler optimization.
+// Explore shared memory for commonly accessed data (if applicable) to reduce global memory traffic.
+// Investigate warp-level synchronization techniques to optimize atomic operations (if any) for indicesOfPrisms and numberOfReflections.
+// Analyze occupancy metrics to ensure optimal usage of available GPU resources, potentially tuning block size or grid configuration.
+// Evaluate if loop unrolling techniques can be applied for the parallel loop to reduce overhead.
+```

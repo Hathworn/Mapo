@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for dy, xval, and dw to improve memory bandwidth utilization.
+// Evaluate the use of shared memory to store frequently accessed data such as xval to reduce global memory traffic.
+// Investigate loop unrolling further for the inner loop over 'my' to improve instruction-level parallelism.
+// Analyze and optimize the grid and block sizes to ensure full occupancy and efficient resource utilization.
+// Explore potential benefit of using warp shuffle operations for inter-thread communication instead of global memory.
+```

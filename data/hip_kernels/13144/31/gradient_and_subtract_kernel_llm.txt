@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache values of 'in' for faster memory access
+// Coalesce memory accesses when reading from 'in' to improve bandwidth usage
+// Consider loop unrolling for gradient calculations to reduce instruction overhead
+// Align memory accesses to 32-byte boundaries to ensure optimal memory transactions
+// Minimize bank conflicts in shared memory accesses
+// Use texture memory for read-only data if spatial locality and cache coherency are expected
+```

@@ -1,0 +1,5 @@
+```
+// Avoid divergent branching by minimizing conditions within the global kernel
+// Use shared memory if multiple threads access the same data to reduce global memory accesses
+// Consider coalescing memory accesses to improve memory throughput
+```

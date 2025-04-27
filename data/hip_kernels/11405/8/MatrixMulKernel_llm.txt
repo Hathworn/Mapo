@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency and improve coalescing
+// Consider tiling to maximize data reuse and reduce redundant calculations
+// Adjust grid and block sizes for better occupancy based on your GPU's architecture
+// Ensure block size is a multiple of warp size for optimal performance
+```

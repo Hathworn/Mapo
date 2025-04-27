@@ -1,0 +1,8 @@
+```
+// Use shared memory for better memory access patterns.
+// Consider loop unrolling for processing multiple elements per thread.
+// Use warp-level primitives to optimize reduction operations if applicable.
+// Avoid bank conflicts in shared memory access.
+// Ensure memory access is coalesced for improved performance.
+// Consider memory prefetching strategies to hide latency.
+```

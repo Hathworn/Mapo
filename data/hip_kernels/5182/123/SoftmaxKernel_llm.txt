@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access and improve bandwidth usage.
+// Consider loop unrolling if the loop iterations are small and predictable.
+// Use memory coalescing for outputPtr to optimize data access patterns.
+// Ensure enough threads are in each block to maximize GPU utilization.

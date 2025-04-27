@@ -1,0 +1,17 @@
+digraph "CFG for '_Z15initializeSobelPfS_' function" {
+	label="CFG for '_Z15initializeSobelPfS_' function";
+
+	Node0x56b01c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %5 = icmp ult i32 %3, 5\l  %6 = icmp ult i32 %4, 5\l  %7 = select i1 %5, i1 %6, i1 false\l  br i1 %7, label %8, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x56b01c0:s0 -> Node0x56b1fa0;
+	Node0x56b01c0:s1 -> Node0x56b2030;
+	Node0x56b1fa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%8:\l8:                                                \l  %9 = mul nuw nsw i32 %4, 5\l  %10 = add nuw nsw i32 %9, %3\l  %11 = add nsw i32 %3, -2\l  %12 = sitofp i32 %11 to float\l  %13 = add nsw i32 %4, -2\l  %14 = sitofp i32 %13 to float\l  %15 = fmul contract float %12, %12\l  %16 = fmul contract float %14, %14\l  %17 = fadd contract float %15, %16\l  %18 = fcmp contract oeq float %17, 0.000000e+00\l  br i1 %18, label %19, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x56b1fa0:s0 -> Node0x56b1740;
+	Node0x56b1fa0:s1 -> Node0x56b3260;
+	Node0x56b1740 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%19:\l19:                                               \l  %20 = zext i32 %10 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %0, i64 %20\l  store float 0.000000e+00, float addrspace(1)* %21, align 4, !tbaa !5\l  br label %29\l}"];
+	Node0x56b1740 -> Node0x56b3670;
+	Node0x56b3260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%22:\l22:                                               \l  %23 = fmul contract float %12, 2.000000e+00\l  %24 = fdiv contract float %23, %17\l  %25 = zext i32 %10 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %25\l  store float %24, float addrspace(1)* %26, align 4, !tbaa !5\l  %27 = fmul contract float %14, 2.000000e+00\l  %28 = fdiv contract float %27, %17\l  br label %29\l}"];
+	Node0x56b3260 -> Node0x56b3670;
+	Node0x56b3670 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%29:\l29:                                               \l  %30 = phi i64 [ %20, %19 ], [ %25, %22 ]\l  %31 = phi float [ 0.000000e+00, %19 ], [ %28, %22 ]\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %30\l  store float %31, float addrspace(1)* %32, align 4, !tbaa !5\l  br label %33\l}"];
+	Node0x56b3670 -> Node0x56b2030;
+	Node0x56b2030 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

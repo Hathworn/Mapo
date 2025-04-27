@@ -1,0 +1,4 @@
+// Ensure that memory accesses are coalesced to improve performance
+// Consider using shared memory to reduce global memory access latency
+// Ensure that the block size is tuned for optimal memory coalescing
+// Avoid using if-statements within kernel if possible to reduce branch divergence

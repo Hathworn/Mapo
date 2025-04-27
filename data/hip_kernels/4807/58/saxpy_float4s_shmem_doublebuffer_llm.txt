@@ -1,0 +1,8 @@
+```c
+// Use float4 to improve memory coalescing
+// Use shared memory to reduce global memory access
+// Implement double buffering in shared memory to hide memory latency
+// Ensure __syncthreads() to synchronize threads before toggling buffers
+// Direct copy to shared memory for efficient data movement
+// Final writeback ensures no missed updates
+```

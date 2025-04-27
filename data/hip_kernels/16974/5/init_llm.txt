@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Optimize memory coalescing by ensuring threads access contiguous memory locations.
+// Minimize divergent threads by organizing threads in a warp-friendly manner.
+// Utilize asynchronous memory copies where possible to hide latency.
+// Ensure memory access patterns comply with the hardware-specific requirements for efficiency.
+// Assess block size and occupancy for optimal performance given the hardware architecture.
+```

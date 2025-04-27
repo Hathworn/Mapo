@@ -1,0 +1,4 @@
+// Coalesced memory access for predictions and target array
+// Use shared memory to reduce global memory reads
+// Consider using warp-level primitives for parallel computation within a block
+// Apply loop unrolling if applicable for repetitive calculations

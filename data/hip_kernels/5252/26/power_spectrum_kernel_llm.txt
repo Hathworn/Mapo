@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store Ar and Aw for faster access.
+// Unrolling the loop further if register pressure allows.
+// Utilize float2 to improve vectorized operations and coalesced memory access.
+// Prefetch data to shared memory or registers to hide memory latency.
+// Separate the handling of boundaries to reduce branch divergence.
+```

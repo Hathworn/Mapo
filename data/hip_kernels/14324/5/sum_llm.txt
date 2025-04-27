@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Ensure coalesced memory access patterns to optimize memory bandwidth usage
+// Check if using warp-level primitives (e.g., shuffle) can further optimize operations
+// Analyze occupancy by adjusting block size and grid size for better resource utilization
+// Use loop unrolling if applicable to reduce overhead and improve performance
+```

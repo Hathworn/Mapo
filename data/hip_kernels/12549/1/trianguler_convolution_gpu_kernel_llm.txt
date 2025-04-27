@@ -1,0 +1,4 @@
+// Consider using shared memory to cache the input data for better access speed.
+// Ensure that __syncthreads() is used appropriately to avoid race conditions.
+// Try to minimize global memory access by reusing register variables wherever possible.
+// Analyze memory access patterns to ensure coalesced reads and writes for dev_I and dev_O.

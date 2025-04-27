@@ -1,0 +1,4 @@
+// Ensure memory coalescing by checking alignment of vector and output
+// Consider using shared memory if vector and output are accessed multiple times
+// Ensure vector and output are allocated with fast memory type if available
+// Minimize memory access latency by ensuring contiguous allocation of vectors

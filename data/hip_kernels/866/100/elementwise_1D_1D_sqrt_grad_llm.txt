@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data between threads to reduce global memory access.
+// Coalesce global memory accesses by ensuring threads within a warp access consecutive memory locations.
+// Minimize divergence by avoiding warp-level branching and ensure branches are coherent across warps.
+// Choose an optimal block size to maximize occupancy and balance it with register and shared memory usage.
+// Prefetch data from global memory to registers for improved memory bandwidth usage.
+```

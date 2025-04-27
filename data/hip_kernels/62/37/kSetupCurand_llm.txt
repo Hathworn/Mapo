@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to reduce global memory access
+// Align data structures to improve coalesced memory access
+// Ensure grid and block dimensions are optimal for the hardware
+// Check for memory bank conflicts within shared memory, if used
+// Leverage warp shuffle operations to avoid unnecessary memory accesses
+```

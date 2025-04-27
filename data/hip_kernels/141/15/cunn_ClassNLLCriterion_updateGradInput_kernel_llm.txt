@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory
+// Minimize warp divergence by reducing conditional branching
+// Use __restrict__ keyword for pointers if applicable to aid compiler optimizations
+// Consider loop unrolling for the ntarget loop to improve performance
+```

@@ -1,0 +1,9 @@
+```
+// Pre-calculate constants outside the loop to reduce repeated computation
+// Use a local variable to avoid redundant global memory access
+// Assign the final result to the global memory
+// Consider coalesced memory access by properly aligning data
+// Minimize warp divergence within the loops
+// Ensure the memory access pattern is optimal for GPU architecture
+// Use shared memory if possible to further reduce global memory access
+```

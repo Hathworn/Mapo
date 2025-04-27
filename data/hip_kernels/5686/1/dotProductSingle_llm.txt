@@ -1,0 +1,4 @@
+// Consider using coalesced memory access for pValuesList to improve memory throughput.
+// Utilize shared memory efficiently to minimize global memory accesses.
+// Ensure warp divergence is minimized by having threads operate on contiguous memory regions.
+// Optimize the reduction step by utilizing warp shuffle instructions for better performance.

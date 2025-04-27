@@ -1,0 +1,6 @@
+```
+// Consider increasing block size to improve occupancy and throughput.
+// Use shared memory to store partial sums to reduce global memory traffic.
+// Optimize the warp execution efficiency by ensuring each warp processes contiguous data.
+// coalesce global memory accesses in the 'for' loop to enhance memory bandwidth usage.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for u and v arrays to improve memory bandwidth utilization
+// Evaluate aligning src, dst, and normalization_factor accesses to reduce memory transaction size
+// Investigate the impact of shared memory usage to cache frequently accessed data such as flow_row_offset
+// Analyze the trade-offs of using __ldg() for read-only data to leverage L1 cache if appropriate
+// Ensure branch divergence is minimized by restructuring conditional accumulation logic
+// Consider loop unrolling or further simplification in accumulate lambda to enhance compiler optimizations
+```

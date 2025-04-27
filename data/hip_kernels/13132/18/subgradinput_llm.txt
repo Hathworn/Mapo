@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache weight values if reused
+// Prefetch data into shared memory for gradOutput to reduce access latency
+// Use const/restrict qualifiers to help compiler optimize memory access
+// Consider using vectorized loads/stores for data alignment
+// Ensure coalesced memory access patterns for gradInput/gradOutput
+// Try loop unrolling for both ky and kx for better performance
+```

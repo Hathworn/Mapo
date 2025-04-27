@@ -1,0 +1,8 @@
+```
+// Consider using a single loop for input and gradOutput updates to minimize latency
+// Optimize kernel launch parameters for better memory coalescing
+// Explore using __restrict__ pointers for input and gradOutput to potentially increase performance
+// Evaluate using atomic operations for gradWeight and gradBias updates if race conditions are possible
+// Consider shared memory padding to avoid bank conflicts
+// Evaluate if using warp-level primitives could optimize reduction operations
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory for better memory access patterns.
+// Coalesce global memory access by ensuring sequential threads access sequential memory locations.
+// Optimize register usage to reduce the number of register spills.
+// Ensure memory access is aligned to 32-bit or 64-bit as appropriate.
+// Use __restrict__ qualifiers to enable the compiler to perform more aggressive optimizations.
+// Minimize warp divergence by structuring parallel loops efficiently.
+```

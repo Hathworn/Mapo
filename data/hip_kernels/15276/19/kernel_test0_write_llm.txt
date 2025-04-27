@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to improve access times when multiple threads access similar data
+// Ensure memory coalescing by aligning memory accesses with warp size
+// Avoid bank conflicts by ensuring threads access different memory banks concurrently
+// Optimize thread block and grid size for better occupancy
+// Evaluate the impact of different memory access patterns on performance
+```

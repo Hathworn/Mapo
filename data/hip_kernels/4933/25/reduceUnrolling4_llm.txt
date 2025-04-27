@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced for optimal performance
+// Consider using shared memory to reduce latency during intra-block reduction
+// Use loop unrolling to minimize overhead associated with branch instructions
+// Align memory access patterns with warp size for efficiency
+// Ensure __syncthreads() is correctly placed to prevent race conditions
+// Optimize block and grid dimensions to maximize occupancy
+```

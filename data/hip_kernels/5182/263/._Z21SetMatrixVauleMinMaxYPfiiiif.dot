@@ -1,0 +1,10 @@
+digraph "CFG for '_Z21SetMatrixVauleMinMaxYPfiiiif' function" {
+	label="CFG for '_Z21SetMatrixVauleMinMaxYPfiiiif' function";
+
+	Node0x4b75470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %17 = udiv i32 %14, %11\l  %18 = mul i32 %17, %11\l  %19 = icmp ugt i32 %14, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %16\l  %23 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %24 = add i32 %22, %15\l  %25 = mul i32 %24, %11\l  %26 = add i32 %25, %23\l  %27 = sdiv i32 %26, %1\l  %28 = icmp sge i32 %27, %3\l  %29 = icmp sle i32 %27, %4\l  %30 = select i1 %28, i1 %29, i1 false\l  %31 = icmp slt i32 %26, %2\l  %32 = select i1 %30, i1 %31, i1 false\l  br i1 %32, label %33, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x4b75470:s0 -> Node0x4b772e0;
+	Node0x4b75470:s1 -> Node0x4b77370;
+	Node0x4b772e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%33:\l33:                                               \l  %34 = sext i32 %26 to i64\l  %35 = getelementptr inbounds float, float addrspace(1)* %0, i64 %34\l  store float %5, float addrspace(1)* %35, align 4, !tbaa !16\l  br label %36\l}"];
+	Node0x4b772e0 -> Node0x4b77370;
+	Node0x4b77370 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

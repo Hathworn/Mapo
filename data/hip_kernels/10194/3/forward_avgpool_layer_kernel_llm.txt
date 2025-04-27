@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to load input data for coalesced access.
+// Minimize bank conflicts in shared memory access.
+// Consider loop unrolling for the inner loop to improve performance.
+// Optimize to maximize occupancy by balancing register and shared memory usage.
+// Reduce memory transactions by combining multiple loads into vectorized operations.
+// Explore asynchronous loads if supported and beneficial for this kernel architecture.
+```

@@ -1,0 +1,21 @@
+digraph "CFG for 'exp_float' function" {
+	label="CFG for 'exp_float' function";
+
+	Node0x605cb30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = icmp slt i32 %17, %0\l  br i1 %18, label %19, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x605cb30:s0 -> Node0x605eda0;
+	Node0x605cb30:s1 -> Node0x605ee30;
+	Node0x605eda0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = udiv i32 %14, %11\l  %21 = mul i32 %20, %11\l  %22 = icmp ugt i32 %14, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %11\l  br label %27\l}"];
+	Node0x605eda0 -> Node0x605f2b0;
+	Node0x605ee30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%26:\l26:                                               \l  ret void\l}"];
+	Node0x605f2b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ %17, %19 ], [ %53, %52 ]\l  %29 = icmp slt i32 %28, %1\l  br i1 %29, label %52, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x605f2b0:s0 -> Node0x605f3c0;
+	Node0x605f2b0:s1 -> Node0x605f550;
+	Node0x605f550 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%30:\l30:                                               \l  %31 = srem i32 %28, %3\l  %32 = icmp eq i32 %31, 0\l  br i1 %32, label %33, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x605f550:s0 -> Node0x605ec00;
+	Node0x605f550:s1 -> Node0x605f3c0;
+	Node0x605ec00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7af9170",label="{%33:\l33:                                               \l  %34 = sext i32 %28 to i64\l  %35 = getelementptr inbounds float, float addrspace(1)* %2, i64 %34\l  %36 = load float, float addrspace(1)* %35, align 4, !tbaa !16\l  %37 = fmul float %36, 0x3FF7154760000000\l  %38 = tail call float @llvm.rint.f32(float %37)\l  %39 = fcmp ogt float %36, 0x40562E4300000000\l  %40 = fcmp olt float %36, 0xC059D1DA00000000\l  %41 = fneg float %37\l  %42 = tail call float @llvm.fma.f32(float %36, float 0x3FF7154760000000,\l... float %41)\l  %43 = tail call float @llvm.fma.f32(float %36, float 0x3E54AE0BE0000000,\l... float %42)\l  %44 = fsub float %37, %38\l  %45 = fadd float %43, %44\l  %46 = tail call float @llvm.exp2.f32(float %45)\l  %47 = fptosi float %38 to i32\l  %48 = tail call float @llvm.amdgcn.ldexp.f32(float %46, i32 %47)\l  %49 = select i1 %40, float 0.000000e+00, float %48\l  %50 = select i1 %39, float 0x7FF0000000000000, float %49\l  %51 = getelementptr inbounds float, float addrspace(1)* %4, i64 %34\l  store float %50, float addrspace(1)* %51, align 4, !tbaa !16\l  br label %52\l}"];
+	Node0x605ec00 -> Node0x605f3c0;
+	Node0x605f3c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%52:\l52:                                               \l  %53 = add i32 %25, %28\l  %54 = icmp slt i32 %53, %0\l  br i1 %54, label %27, label %26, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x605f3c0:s0 -> Node0x605f2b0;
+	Node0x605f3c0:s1 -> Node0x605ee30;
+}

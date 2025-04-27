@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache small arrays like avgWeightGrad for reduced global memory access.
+// Consider loop unrolling for the inner loop iterating over prevLayerSize for performance benefits.
+// Align memory accesses for coalesced global memory access patterns.
+// Assess the possibility of using __ldg for read-only data to optimize cache usage.
+// Minimize bank conflicts by ensuring aligned access when using shared memory.
+```

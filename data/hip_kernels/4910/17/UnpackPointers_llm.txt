@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory access  
+// Preload thread-specific variables outside the loop for faster computation  
+// Reduce bank conflicts in shared memory access  
+// Avoid redundant __syncthreads() when not necessary  
+// Optimize loop conditions to minimize warp divergence  
+// Utilize coalesced global memory access patterns for ptrs array

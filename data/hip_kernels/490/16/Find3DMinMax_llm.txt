@@ -1,0 +1,10 @@
+```
+// Optimize memory coalescing for global memory loads and stores.
+// Consider minimizing divergent control paths in the kernel.
+// Evaluate using half-warp based loop unrolling to reduce branching.
+// Align shared memory accesses to minimize bank conflicts.
+// Preload thread-independent data to avoid redundant global memory accesses.
+// Optimize use of shared memory to reduce pressure and increase occupancy.
+// Explore the use of vectorized data types to increase memory throughput.
+// Ensure memory accesses are bounded and within valid range to avoid segmentation faults.
+```

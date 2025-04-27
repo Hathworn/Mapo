@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Increase coalesced memory access patterns by optimizing data layout
+// Experiment with kernel configuration to balance between occupancy and latency
+// Use constant memory for frequently used parameters if they do not change per kernel call
+// Reduce divergence by ensuring all threads within a warp follow similar code paths
+```

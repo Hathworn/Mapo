@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for cur_tot_weight to improve memory bandwidth utilization.
+// Align quadratic and linear arrays in memory to reduce cache conflicts.
+// Use shared memory to cache frequently accessed data for quadratic and linear arrays.
+// Increase occupancy by optimizing block and grid size based on the hardware's maximum thread capability.
+// Conduct thread-wise work aggregation to reduce the number of threads performing redundant operations.
+// Minimize global memory loads by storing prior_scale_change in a register within the loop.
+```

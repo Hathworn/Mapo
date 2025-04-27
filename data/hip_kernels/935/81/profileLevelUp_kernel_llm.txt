@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access if the data can be reused within the block.
+// Ensure coalesced accesses to global memory to improve performance.
+// Minimize conditional statements inside the kernel to avoid divergence.
+// Use appropriate grid and block dimensions to maximize occupancy and throughput.

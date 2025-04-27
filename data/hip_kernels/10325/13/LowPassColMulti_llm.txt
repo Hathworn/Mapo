@@ -1,0 +1,5 @@
+// Consider coalesced memory access for d_Data and d_Result to improve performance
+// Use vectorized loads if possible for d_Data to reduce memory transaction overhead
+// Minimize shared memory usage to avoid bank conflicts or consider padding
+// Consider loop unrolling for finer granularity in convolution calculations
+// Ensure proper alignment for kernel accesses to enhance memory access speeds

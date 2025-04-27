@@ -1,0 +1,4 @@
+// Consider using shared memory to store parts of A for faster access by threads within a block.
+// Ensure coalesced memory access for global memory reads and writes to optimize memory bandwidth.
+// Evaluate if loop unrolling is applicable for further optimization in heavier computations.
+// Check for possible occupancy improvements by adjusting block and grid size for balanced resource utilization.

@@ -1,0 +1,15 @@
+digraph "CFG for '_Z25transpose_uint32_kernel_2PjS_iiii' function" {
+	label="CFG for '_Z25transpose_uint32_kernel_2PjS_iiii' function";
+
+	Node0x5dec120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = srem i32 %3, 32\l  %8 = add i32 %3, 32\l  %9 = sub i32 %8, %7\l  %10 = sdiv i32 %9, 32\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %12 = and i32 %11, 31\l  %13 = lshr i32 %11, 5\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = freeze i32 %14\l  %16 = freeze i32 %10\l  %17 = sdiv i32 %15, %16\l  %18 = mul i32 %17, %16\l  %19 = sub i32 %15, %18\l  %20 = shl nsw i32 %19, 5\l  %21 = or i32 %20, %12\l  %22 = shl nsw i32 %17, 5\l  %23 = or i32 %22, %13\l  %24 = icmp slt i32 %21, %3\l  %25 = icmp slt i32 %23, %2\l  %26 = select i1 %24, i1 %25, i1 false\l  br i1 %26, label %27, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5dec120:s0 -> Node0x5dee200;
+	Node0x5dec120:s1 -> Node0x5dee290;
+	Node0x5dee200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%27:\l27:                                               \l  %28 = mul nsw i32 %23, %4\l  %29 = add nsw i32 %28, %21\l  %30 = sext i32 %29 to i64\l  %31 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %30\l  %32 = load i32, i32 addrspace(1)* %31, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  br label %33\l}"];
+	Node0x5dee200 -> Node0x5dee290;
+	Node0x5dee290 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi i32 [ %32, %27 ], [ 0, %6 ]\l  %35 = mul nuw nsw i32 %12, 33\l  %36 = add nuw nsw i32 %35, %13\l  %37 = getelementptr inbounds [1056 x i32], [1056 x i32] addrspace(3)*\l... @_ZZ25transpose_uint32_kernel_2PjS_iiiiE3tmp, i32 0, i32 %36\l  store i32 %34, i32 addrspace(3)* %37, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %38 = or i32 %22, %12\l  %39 = or i32 %20, %13\l  %40 = icmp slt i32 %38, %2\l  %41 = icmp slt i32 %39, %3\l  %42 = select i1 %40, i1 %41, i1 false\l  br i1 %42, label %43, label %53\l|{<s0>T|<s1>F}}"];
+	Node0x5dee290:s0 -> Node0x5defa50;
+	Node0x5dee290:s1 -> Node0x5defae0;
+	Node0x5defa50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%43:\l43:                                               \l  %44 = mul nuw nsw i32 %13, 33\l  %45 = add nuw nsw i32 %44, %12\l  %46 = getelementptr inbounds [1056 x i32], [1056 x i32] addrspace(3)*\l... @_ZZ25transpose_uint32_kernel_2PjS_iiiiE3tmp, i32 0, i32 %45\l  %47 = load i32, i32 addrspace(3)* %46, align 4, !tbaa !5\l  %48 = sdiv i32 %5, 32\l  %49 = mul nsw i32 %39, %48\l  %50 = add nsw i32 %49, %38\l  %51 = sext i32 %50 to i64\l  %52 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %51\l  store i32 %47, i32 addrspace(1)* %52, align 4, !tbaa !5\l  br label %53\l}"];
+	Node0x5defa50 -> Node0x5defae0;
+	Node0x5defae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%53:\l53:                                               \l  ret void\l}"];
+}

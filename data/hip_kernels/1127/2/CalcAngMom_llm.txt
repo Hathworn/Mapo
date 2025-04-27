@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data like func_r_d to reduce global memory accesses
+// Consider rearranging memory accesses to ensure coalesced memory patterns for arrays such as Mh_d and Rho_d
+// Investigate whether using the __restrict__ qualifier could help with caching and performance
+// Ensure that the thread work assignment is balanced to make use of all threads in a warp
+// Examine if loop unrolling or any compile-time optimizations could reduce instruction overhead
+// Evaluate the impact of floating-point precision and consider using intrinsic functions if applicable
+// Profile memory bandwidth usage to identify potential memory bottlenecks affecting performance
+```

@@ -1,0 +1,9 @@
+```cpp
+// Use __restrict__ qualifier for pointers a, b, target to improve compiler optimizations
+// Align data allocations for a, b, target to ensure coalesced memory accesses
+// Increase grid stride loop efficiency by using numElements / (gridDim.x * DP_BLOCKSIZE) directly
+// Prefetch data to shared memory to lower global memory access latency
+// Optimize shared memory stride patterns to avoid bank conflicts
+// Use __syncthreads() judiciously to minimize synchronization overhead
+// Implement loop unrolling for the main reduction loop to decrease loop control overhead
+```

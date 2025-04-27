@@ -1,0 +1,6 @@
+// Ensure the sharedInput array size is appropriate for the block size and number of channels
+// Use shared memory efficiently by minimizing bank conflicts
+// Consider loop unrolling for loading data into shared memory
+// Experiment with different block sizes for optimal performance
+// Minimize global memory access by fully utilizing shared memory
+// Sync threads only when necessary to minimize synchronization overhead

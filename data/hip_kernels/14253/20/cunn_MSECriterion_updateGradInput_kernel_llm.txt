@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when accessing gradInput, input, and target arrays
+// Optimize shared memory use if possible to reduce global memory access latency
+// Consider using texture memory for frequent read-only access to input and target arrays
+// Explore the use of warp shuffle operations for possibly reducing memory divergence
+// Assess the use of block-level synchronization to enhance memory access patterns
+```

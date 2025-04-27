@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access for float arrays (original, newTE, current)
+// Use shared memory to reduce global memory accesses where applicable
+// Ensure enough threads are launched to keep the GPU fully utilized
+// Consider padding to avoid bank conflicts in shared memory usage
+```

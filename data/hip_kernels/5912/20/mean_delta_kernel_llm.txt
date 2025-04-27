@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Consider increasing block size for better occupancy
+// Use shared memory to store delta values locally if beneficial
+// Apply loop unrolling techniques to reduce loop overhead
+// Minimize divergence by ensuring branches are consistent
+// Consider using texture memory if delta data exhibits 2D locality
+// Profile performance to determine if reducing precision (float -> half) is advantageous
+```

@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory access latency
+// Ensure shared memory is correctly sized for the block
+// Minimize __syncthreads usage to reduce warp divergence
+// Optimize the loading of shared memory to minimize memory transactions
+// Ensure correct boundaries when accessing shared memory
+// Consider coalescing memory access for d_qt000 and d_dtt000
+// Tune block size for optimal occupancy and performance

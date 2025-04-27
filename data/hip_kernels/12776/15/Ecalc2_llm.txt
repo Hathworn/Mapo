@@ -1,0 +1,6 @@
+// Ensure idx is within the bounds of the arrays to prevent out-of-bounds access
+// Coalesce memory access by ensuring threads access memory in a contiguous manner
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Use __restrict__ qualifiers if possible to help the compiler optimize memory access
+// Unroll loops if applicable to increase instruction-level parallelism
+// Consider using half precision if supported to reduce memory bandwidth and increase throughput

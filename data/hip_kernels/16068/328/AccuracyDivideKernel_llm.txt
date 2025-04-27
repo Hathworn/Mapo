@@ -1,0 +1,6 @@
+```cpp
+// Ensure the accuracy variable is accessed in a coalesced manner
+// Consider using shared memory if accuracy is used by multiple threads
+// Minimize the number of global memory accesses by working with registers
+// Adjust grid and block size for optimal occupancy based on N
+```

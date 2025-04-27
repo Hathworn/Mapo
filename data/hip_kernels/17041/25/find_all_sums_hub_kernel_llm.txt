@@ -1,0 +1,8 @@
+```cpp
+// Use registers to minimize global memory access and avoid repeated computations
+// Consider using shared memory if neighboring threads access overlapping data
+// Coalesce memory accesses to the node_weight array for better performance
+// Minimize branching inside loops to reduce divergence in warps
+// Ensure alignment of data structures for optimal memory access
+// Evaluate use of texture memory for potentially better cache utilization
+```

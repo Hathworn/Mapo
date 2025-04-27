@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if data is reused within a block
+// Ensure coalesced global memory access by properly aligning input/output arrays
+// Use __restrict__ qualifier for pointer arguments if no aliasing occurs
+// Check if loop unrolling provides performance benefits
+// Optimize memory bandwidth by minimizing global memory accesses
+```

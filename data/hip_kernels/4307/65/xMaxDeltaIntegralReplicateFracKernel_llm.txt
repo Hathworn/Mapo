@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data such as inData to reduce global memory accesses
+// Minimize condition checks within the main loop for better performance
+// Ensure coalesced access to global memory by aligning data structures properly
+// Consider using constant memory for read-only data such as xMax, yMin, and yMax
+// Optimize stride indices to ensure thread blocks access memory contiguously

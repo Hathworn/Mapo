@@ -1,0 +1,3 @@
+// Use shared memory for states to reduce global memory accesses.  
+// Coalesce writes to d_a by using shared memory and writing in chunks.
+// Consider using texture memory for random states for potentially faster access.

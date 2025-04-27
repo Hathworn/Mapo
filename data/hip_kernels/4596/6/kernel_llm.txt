@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access
+// Ensure coalesced memory access for efficient data reading
+// Avoid bank conflicts in shared memory access
+// Use appropriate thread synchronization with __syncthreads()
+// Avoid redundant memory reads by caching data into shared memory
+```

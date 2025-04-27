@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Ensure coalesced memory access patterns for pred and truth arrays to optimize throughput.
+// Utilize __restrict__ qualifier for pointers if there are no overlapping data accesses to enable better compiler optimizations.
+// Align data structures to natural boundaries to potentially improve memory access speed.
+```

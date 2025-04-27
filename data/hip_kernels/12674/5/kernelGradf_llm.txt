@@ -1,0 +1,7 @@
+```
+// Use shared memory to store tiles of A for improved memory access
+// Ensure coalesced global memory access for d_x and d_grad
+// Consider loop unrolling for the inner computation loop
+// Use __syncthreads() after writing to shared memory to avoid race conditions
+// Minimize divergent branches within the kernel
+```

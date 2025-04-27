@@ -1,0 +1,6 @@
+```
+// Optimize memory access by ensuring d-input, d-output, and d-predicates are in coalesced memory order
+// Cache read-only data like d_predicates and d_scanned using __ldg() for better memory access patterns
+// Consider using shared memory for d-scanned if it can fit within the shared memory limits to reduce global memory accesses
+// Ensure address calculations minimize divergence in memory access patterns
+```

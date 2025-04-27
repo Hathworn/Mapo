@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for frequently accessed data within each block to reduce global memory access.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Prefetch data into registers to minimize redundant memory loads within loops.
+// Unroll loops to increase instruction throughput, especially for small fixed-size loops.
+```

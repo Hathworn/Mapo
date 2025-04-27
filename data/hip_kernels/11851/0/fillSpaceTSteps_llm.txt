@@ -1,0 +1,7 @@
+```
+// Consider using coalesced access patterns for global memory reads and writes to improve memory bandwidth utilization.
+// Utilize shared memory effectively by loading neighboring elements to reduce global memory accesses within the tile.
+// Use a loop to load data into shared memory for greater flexibility and potentially larger block sizes.
+// Explore optimizing the grid and block dimensions to strike a balance between occupancy and memory access efficiency.
+// Minimize divergence by ensuring that all threads within a warp follow the same execution path.
+```

@@ -1,0 +1,5 @@
+// Precompute commonly used values outside of branches to reduce repetitive calculations
+// Use flattening to reduce if-else depth for performance improvement
+// Correct condition operator to logical OR to ensure proper boundary check
+// Ensure the correct size in surf2Dwrite to prevent misalignment
+// Consider shared memory usage for frequently accessed values to reduce global memory accesses

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed variables to reduce global memory accesses
+// Use coalesced memory access patterns to improve memory throughput
+// Minimize divergent branches for improved warp execution efficiency
+// Calculate frequently used indices or values once per thread and reuse to avoid redundant computations
+// Ensure proper memory alignment for better caching and memory operation efficiency
+// Consider launching a sufficient number of threads to fully occupy the GPU for increased parallel execution
+```

@@ -1,0 +1,6 @@
+```
+// Consider unrolling the loops to reduce branch overhead and improve parallelism
+// Use shared memory to cache gradOutput_data for faster access
+// Reduce the use of global memory access by using a local accumulator variable
+// Minimize bank conflicts by ensuring proper memory alignment in shared memory
+```

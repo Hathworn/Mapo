@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve memory bandwidth usage.
+// Ensure shared memory access patterns are coalesced for better performance.
+// Optimize reduction using warp-level primitives to minimize synchronization overhead.
+// Avoid unnecessary __syncthreads calls to reduce latency.
+//
+```

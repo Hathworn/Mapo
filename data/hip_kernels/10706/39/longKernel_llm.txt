@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Optimize thread block size for better memory coalescing.
+// Ensure data is aligned to improve memory throughput.
+// Consider using float4 for memory transactions if applicable.
+// Minimize divergence by ensuring threads in a warp follow the same execution path.
+```

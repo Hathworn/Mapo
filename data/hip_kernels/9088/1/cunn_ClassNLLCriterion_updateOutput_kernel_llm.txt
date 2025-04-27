@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Use shared memory to minimize global memory access latency
+// Reduce atomic operations by first accumulating in shared memory
+// Apply loop unrolling to the reduction phase if needed for performance
+// Optimize for warp divergence by ensuring all threads follow the same execution path
+```

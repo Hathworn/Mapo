@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to improve global memory bandwidth utilization.
+// Ensure dy and result are aligned to avoid misaligned memory accesses.
+// Use __restrict__ qualifiers on dy and result pointers for better compiler optimization.
+// Investigate if prefetching data into shared memory can provide performance benefits.
+// Analyze occupancy and adjust block size and grid size for optimal performance.
+// Evaluate the possibility of using half precision if applicable to reduce memory bandwidth usage.
+```

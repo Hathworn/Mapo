@@ -1,0 +1,7 @@
+```
+// Reuse shared memory for loaded gradOutput_data to reduce global memory access
+// Ensure threads read and write coalesced memory for increased performance
+// Use __syncthreads() to synchronize threads after loading shared memory
+// Minimize shared memory usage to avoid bank conflicts
+// Consider unrolling loops if scale_factor is small and known at compile-time
+```

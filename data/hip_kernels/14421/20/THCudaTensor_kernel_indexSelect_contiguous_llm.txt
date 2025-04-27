@@ -1,0 +1,5 @@
+// Use shared memory to cache index values for reducing global memory access.
+// Align data structures to 16 bytes to improve memory coalescing.
+// Leverage asynchronous copy for memory operations.
+// Consider using half-precision floats where applicable to reduce memory bandwidth demand.
+// Evaluate using texture memory for potentially faster reads.

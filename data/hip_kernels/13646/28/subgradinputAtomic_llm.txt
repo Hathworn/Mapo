@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently accessed data to reduce global memory read/write operations.
+// Minimize unnecessary calculations by reusing computed values within the kernel.
+// Implement coalesced memory access patterns to improve throughput on global memory reads and writes.
+// Fuse loops when possible to reduce the overhead associated with loop control.
+// Incorporate appropriate thread synchronization to avoid race conditions when using atomic operations.
+```

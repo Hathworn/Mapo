@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to optimize memory accesses
+// Coalesced memory accesses to improve global memory bandwidth
+// Minimize divergent branches within the kernel
+// Prefer to use __restrict__ keyword for pointers if applicable
+// Align data access patterns to warp boundaries for better performance
+```

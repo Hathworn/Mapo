@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache parts of origDist and normDistPrefixSum for better memory access efficiency.
+// Ensure coalesced memory accesses when reading from normDistPrefixSum and writing to dest.
+// Minimize redundant reads by caching frequently accessed values in local variables.
+```

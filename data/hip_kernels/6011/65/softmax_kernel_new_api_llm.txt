@@ -1,0 +1,11 @@
+```
+// Consider coalesced memory accesses by aligning data structures properly
+// Use shared memory to store intermediate results for thread blocks
+// Minimize use of global memory by computing within registers if possible
+// Optimize instruction count by avoiding redundant calculations
+// Employ loop unrolling to reduce loop overhead where applicable
+// Investigate potential warp divergence and optimize branching logic
+// Align memory access to boundary requirements for optimal performance
+// Use float2, float4 types if applicable for vectorized operations
+// Ensure grid and block dimensions are optimized for hardware occupancy
+```

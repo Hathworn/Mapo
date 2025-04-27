@@ -1,0 +1,5 @@
+```cpp
+// Cache the diagonal value outside the loop to reduce global memory accesses
+// Use shared memory if multiple threads access the same diagonal value
+// Consider coalescing memory accesses by adjusting thread block size
+```

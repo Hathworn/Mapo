@@ -1,0 +1,4 @@
+// Ensure coalesced global memory access for input data
+// Minimize shared memory bank conflicts during reduction
+// Consider unrolling for further reduction optimization
+// Use atomic operations for final output in larger reductions

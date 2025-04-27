@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory accesses for both loc_ and results in x, y
+// Minimize shared memory usage unless multiple threads are reusing data
+// Consider using vectorized loads or store if hardware supports for short2
+// Avoid unnecessary __syncthreads() if possible
+// Use __ldg() for constant memory access pattern if applicable
+```

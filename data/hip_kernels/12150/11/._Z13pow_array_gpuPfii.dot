@@ -1,0 +1,27 @@
+digraph "CFG for '_Z13pow_array_gpuPfii' function" {
+	label="CFG for '_Z13pow_array_gpuPfii' function";
+
+	Node0x56ef610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp slt i32 %12, %2\l  br i1 %13, label %14, label %50\l|{<s0>T|<s1>F}}"];
+	Node0x56ef610:s0 -> Node0x56f14e0;
+	Node0x56ef610:s1 -> Node0x56f1570;
+	Node0x56f14e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%14:\l14:                                               \l  %15 = icmp sgt i32 %1, 0\l  %16 = sext i32 %12 to i64\l  br i1 %15, label %17, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x56f14e0:s0 -> Node0x56f0f30;
+	Node0x56f14e0:s1 -> Node0x56f18c0;
+	Node0x56f0f30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%17:\l17:                                               \l  %18 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %20 = and i32 %1, 7\l  %21 = icmp ult i32 %1, 8\l  br i1 %21, label %24, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x56f0f30:s0 -> Node0x56f23e0;
+	Node0x56f0f30:s1 -> Node0x56f2470;
+	Node0x56f2470 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%22:\l22:                                               \l  %23 = and i32 %1, -8\l  br label %37\l}"];
+	Node0x56f2470 -> Node0x56f2670;
+	Node0x56f23e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%24:\l24:                                               \l  %25 = phi float [ undef, %17 ], [ %47, %37 ]\l  %26 = phi float [ 1.000000e+00, %17 ], [ %47, %37 ]\l  %27 = icmp eq i32 %20, 0\l  br i1 %27, label %34, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x56f23e0:s0 -> Node0x56f18c0;
+	Node0x56f23e0:s1 -> Node0x56f37c0;
+	Node0x56f37c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  %29 = phi float [ %31, %28 ], [ %26, %24 ]\l  %30 = phi i32 [ %32, %28 ], [ 0, %24 ]\l  %31 = fmul contract float %29, %19\l  %32 = add i32 %30, 1\l  %33 = icmp eq i32 %32, %20\l  br i1 %33, label %34, label %28, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x56f37c0:s0 -> Node0x56f18c0;
+	Node0x56f37c0:s1 -> Node0x56f37c0;
+	Node0x56f18c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%34:\l34:                                               \l  %35 = phi float [ 1.000000e+00, %14 ], [ %25, %24 ], [ %31, %28 ]\l  %36 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  store float %35, float addrspace(1)* %36, align 4, !tbaa !7\l  br label %50\l}"];
+	Node0x56f18c0 -> Node0x56f1570;
+	Node0x56f2670 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%37:\l37:                                               \l  %38 = phi float [ 1.000000e+00, %22 ], [ %47, %37 ]\l  %39 = phi i32 [ 0, %22 ], [ %48, %37 ]\l  %40 = fmul contract float %38, %19\l  %41 = fmul contract float %40, %19\l  %42 = fmul contract float %41, %19\l  %43 = fmul contract float %42, %19\l  %44 = fmul contract float %43, %19\l  %45 = fmul contract float %44, %19\l  %46 = fmul contract float %45, %19\l  %47 = fmul contract float %46, %19\l  %48 = add i32 %39, 8\l  %49 = icmp eq i32 %48, %23\l  br i1 %49, label %24, label %37, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x56f2670:s0 -> Node0x56f23e0;
+	Node0x56f2670:s1 -> Node0x56f2670;
+	Node0x56f1570 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%50:\l50:                                               \l  ret void\l}"];
+}

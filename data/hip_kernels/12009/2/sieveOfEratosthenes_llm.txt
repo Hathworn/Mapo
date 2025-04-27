@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data and reduce global memory access
+// Coalesce global memory accesses wherever possible for better memory throughput
+// Use __syncthreads() if shared memory is implemented to ensure data consistency
+// Minimize divergent branches to improve the performance of the kernel
+```

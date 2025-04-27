@@ -1,0 +1,10 @@
+digraph "CFG for '_Z17UpdateCostDrumuriP3NodPiS1_' function" {
+	label="CFG for '_Z17UpdateCostDrumuriP3NodPiS1_' function";
+
+	Node0x4a91890 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = zext i32 %4 to i64\l  %6 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %5\l  %7 = load i32, i32 addrspace(1)* %6, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %8 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %5\l  %9 = load i32, i32 addrspace(1)* %8, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %10 = icmp sgt i32 %7, %9\l  br i1 %10, label %11, label %13\l|{<s0>T|<s1>F}}"];
+	Node0x4a91890:s0 -> Node0x4a96110;
+	Node0x4a91890:s1 -> Node0x4a961a0;
+	Node0x4a96110 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%11:\l11:                                               \l  store i32 %9, i32 addrspace(1)* %6, align 4, !tbaa !5\l  %12 = getelementptr inbounds %struct.Nod, %struct.Nod addrspace(1)* %0, i64\l... %5, i32 1\l  store i8 0, i8 addrspace(1)* %12, align 4, !tbaa !10\l  br label %13\l}"];
+	Node0x4a96110 -> Node0x4a961a0;
+	Node0x4a961a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%13:\l13:                                               \l  %14 = phi i32 [ %9, %11 ], [ %7, %3 ]\l  store i32 %14, i32 addrspace(1)* %8, align 4, !tbaa !5\l  ret void\l}"];
+}

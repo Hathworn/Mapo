@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache input data to reduce global memory accesses.
+// Ensure coalesced global memory access by having consecutive thread indices access consecutive memory locations.
+// Consider using float4 for RGBA based operations to potentially exploit alignment optimizations.
+// Use __restrict__ qualifier for pointers if there is no aliasing to allow the compiler to make more aggressive optimizations.
+```

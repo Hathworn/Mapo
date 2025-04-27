@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses for XY1 and XY2 if possible by accessing consecutive memory locations
+// Utilize shared memory to reduce redundant global memory accesses for frequently used values like X4_X3 and Y4_Y3
+// Consider loop unrolling if there are any hidden loops to improve throughput
+// Minimize divergence by ensuring all threads in a warp follow the same execution path, especially in conditional statements
+// Prefetch data into shared memory to hide global memory latency where applicable
+```

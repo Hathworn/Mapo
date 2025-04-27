@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing for `recurrentWeights` and `previousInputWeightRTRLDerivatives` to improve global memory access efficiency.
+// Optimize shared memory usage by ensuring `D_HIDDEN_UNITS` fits within the available shared memory per block.
+// Implement double buffering or loop unrolling in the `for` loop to further reduce latency in shared memory access.
+// Minimize bank conflicts in shared memory access patterns for `sharedRecurrentWeights` and `sharedPreviousDerivatives` if possible.
+// Check thread divergence conditions, especially in the calculation of `unitId == to`, to avoid warp inefficiencies.
+```

@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access
+// Avoid bank conflicts in shared memory access
+// Ensure __syncthreads() is correctly used after shared memory writes
+// Consider loop unrolling if sequence generation pattern is predictable

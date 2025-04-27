@@ -1,0 +1,6 @@
+```
+// Consider reducing global memory accesses by caching frequently used data in registers.
+// Shared memory can be used to store random states to minimize global memory access.
+// Synchronize threads within a block using __syncthreads() after updating shared memory.
+// Pre-calculate scale factors for common expressions to reduce redundant computation.
+```

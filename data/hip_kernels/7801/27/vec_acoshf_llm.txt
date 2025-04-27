@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced by aligning thread accesses to consecutive memory locations
+// Use shared memory to cache frequently accessed data and minimize global memory accesses
+// Consider using vectorized operations for more efficient data processing
+// Adjust block and grid sizes for optimal occupancy and to match the hardware capabilities
+// Evaluate if using __restrict__ qualifiers can help the compiler optimize memory access
+// Minimize register usage to improve occupancy by optimizing variable storage and usage
+```

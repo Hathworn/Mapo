@@ -1,0 +1,6 @@
+// Use warp-shuffle to optimize memory access and reduce divergence  
+// Ensure aligned memory access for float4 types  
+// Consider shared memory to cache input data if reused frequently  
+// Minimize conditional branching to enhance warp execution efficiency  
+// Prefer using __restrict__ pointers to hint compiler for better optimization  
+// Use efficient block and grid sizes to maximize occupancy

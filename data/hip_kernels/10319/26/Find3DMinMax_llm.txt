@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Prefetch data into shared memory to improve memory coalescing.
+// Align shared memory access patterns to ensure coalescing.
+// Utilize `__syncthreads()` judiciously to synchronize threads and utilize shared memory effectively.
+// Minimize redundant calculations by storing intermediate results in shared memory.
+// Consider loop unrolling to reduce the overhead of loop control in repetitive tasks.
+// Reuse shared memory variables across loop iterations when possible.
+// Balance shared memory usage with register usage to avoid register spilling.
+```

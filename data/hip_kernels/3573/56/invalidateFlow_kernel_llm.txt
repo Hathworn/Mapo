@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store nearby flow values for reduced global memory accesses.
+// Coalesce global memory accesses by improving data layout, such as structuring data in SoA (Structure of Arrays) form.
+// Ensure grid and block dimensions are chosen to maximize occupancy and minimize divergence.
+// Use __ldg() for reading read-only global memory data to utilize texture caching, if applicable.
+// Evaluate the use of constant memory for cons_thres if it remains unchanged across kernel calls.
+```

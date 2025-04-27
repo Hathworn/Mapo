@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access
+// Avoid divergent branches by ensuring consistent execution paths
+// Optimize memory access patterns for coalesced reads and writes
+// Minimize __syncthreads() usage if possible to reduce warp serialization
+```

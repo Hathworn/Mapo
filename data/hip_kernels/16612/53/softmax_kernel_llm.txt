@@ -1,0 +1,12 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Use atomic operations for efficient reduction in shared memory
+// Ensure __syncthreads() is used correctly for synchronization
+// Minimize divergent branches within kernel
+// Optimize memory coalescing by adjusting stride and access pattern
+// Consider loop unrolling if the n dimension is known and small
+// Choose THREADS_PER_BLOCK value based on hardware specifics for occupancy
+// Check for potential warp divergence and adjust access patterns
+// Ensure that memory operations are coalesced to avoid bank conflicts
+// Profile and adjust grid/block configuration for best performance
+```

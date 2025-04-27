@@ -1,0 +1,4 @@
+// Use shared memory for coefficients to reduce global memory access
+// Minimize divergent branches by restructuring the conditional statement
+// Combine multiple small memory accesses into fewer larger accesses if possible
+// Ensure coalesced memory access by aligning data properly

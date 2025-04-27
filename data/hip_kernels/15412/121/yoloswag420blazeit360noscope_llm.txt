@@ -1,0 +1,10 @@
+```
+// Consider using __restrict__ to improve memory access patterns
+// Evaluate if shared memory usage is beneficial for this kernel
+// Assess if coalesced memory access is achievable for input and rand arrays
+// Investigate if launching fewer blocks with more threads increases occupancy
+// Check if utilizing warp-level primitives enhances performance
+// Analyze if loop unrolling improves throughput
+// Explore memory prefetching techniques for input and rand arrays
+// Verify alignment of input and rand arrays for optimal memory access
+```

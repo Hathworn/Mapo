@@ -1,0 +1,11 @@
+digraph "CFG for '_Z11countPrimesPcPyyyi' function" {
+	label="CFG for '_Z11countPrimesPcPyyyi' function";
+
+	Node0x4efa1f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = shl i32 %6, 10\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = or i32 %7, %8\l  %10 = mul i32 %9, %4\l  %11 = zext i32 %10 to i64\l  %12 = add i64 %11, %2\l  %13 = sext i32 %4 to i64\l  %14 = add i64 %12, %13\l  %15 = tail call i64 @llvm.umin.i64(i64 %14, i64 %3)\l  %16 = icmp eq i64 %12, 0\l  %17 = zext i1 %16 to i64\l  %18 = or i64 %12, 1\l  %19 = icmp ult i64 %18, %15\l  br i1 %19, label %24, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x4efa1f0:s0 -> Node0x4efc090;
+	Node0x4efa1f0:s1 -> Node0x4efc120;
+	Node0x4efc120 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%20:\l20:                                               \l  %21 = phi i64 [ %17, %5 ], [ %32, %24 ]\l  %22 = zext i32 %9 to i64\l  %23 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %22\l  store i64 %21, i64 addrspace(1)* %23, align 8, !tbaa !5\l  ret void\l}"];
+	Node0x4efc090 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i64 [ %33, %24 ], [ %18, %5 ]\l  %26 = phi i64 [ %32, %24 ], [ %17, %5 ]\l  %27 = sub i64 %25, %2\l  %28 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %27\l  %29 = load i8, i8 addrspace(1)* %28, align 1, !tbaa !9, !amdgpu.noclobber !10\l  %30 = icmp eq i8 %29, 1\l  %31 = zext i1 %30 to i64\l  %32 = add i64 %26, %31\l  %33 = add i64 %25, 2\l  %34 = icmp ult i64 %33, %15\l  br i1 %34, label %24, label %20, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4efc090:s0 -> Node0x4efc090;
+	Node0x4efc090:s1 -> Node0x4efc120;
+}

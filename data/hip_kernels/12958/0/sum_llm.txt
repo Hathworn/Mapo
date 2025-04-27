@@ -1,0 +1,4 @@
+// Use texture memory for read-only data to improve memory bandwidth
+// Consider using shared memory for elements that are frequently accessed
+// Ensure coalesced memory accesses for better performance
+// Avoid bank conflicts in shared memory by proper alignment

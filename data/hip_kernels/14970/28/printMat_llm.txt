@@ -1,0 +1,6 @@
+```
+// Use only one thread to reduce unnecessary launch overhead
+// Ensure memory access is coalesced for better performance
+// Consider padding memory accesses to prevent bank conflicts
+// Use shared memory if the data will be reused multiple times
+```

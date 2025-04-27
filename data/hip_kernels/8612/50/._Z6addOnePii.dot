@@ -1,0 +1,10 @@
+digraph "CFG for '_Z6addOnePii' function" {
+	label="CFG for '_Z6addOnePii' function";
+
+	Node0x5f82b80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = icmp ult i32 %3, %1\l  br i1 %4, label %5, label %10\l|{<s0>T|<s1>F}}"];
+	Node0x5f82b80:s0 -> Node0x5f82e80;
+	Node0x5f82b80:s1 -> Node0x5f82f10;
+	Node0x5f82e80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%5:\l5:                                                \l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %9 = add nsw i32 %8, 1\l  store i32 %9, i32 addrspace(1)* %7, align 4, !tbaa !4\l  br label %10\l}"];
+	Node0x5f82e80 -> Node0x5f82f10;
+	Node0x5f82f10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%10:\l10:                                               \l  ret void\l}"];
+}

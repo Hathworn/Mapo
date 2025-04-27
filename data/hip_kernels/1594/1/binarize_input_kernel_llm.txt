@@ -1,0 +1,8 @@
+```
+// Consider increasing the block size for better occupancy and performance
+// Use __syncthreads() only when necessary to minimize synchronization overhead
+// Optimize memory access by ensuring coalesced reads and writes to global memory
+// Preload data into shared memory in a coalesced manner to improve memory throughput
+// Reduce branch divergence by minimizing conditional statements within loops
+// Utilize vectorized memory operations if possible to enhance data throughput
+```

@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by using 1D index derived from 2D grid
+// Prioritize thread access patterns that enable coalesced reads/writes
+// Utilize warp-friendly conditional checks to minimize divergent branches
+// Leverage row-major order for memory access to optimize cache usage
+// Implement bounds check inside kernel to prevent out-of-bounds accesses
+// Consider prefetching or shared memory for frequently accessed data
+```

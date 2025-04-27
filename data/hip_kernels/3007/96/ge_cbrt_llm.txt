@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Ensure data in shared memory is coalesced for better memory bandwidth utilization.
+// Use __syncthreads to ensure all threads have completed copying to shared memory before use.
+// Use local thread indices to access shared memory efficiently.
+// Optimize block and grid dimensions based on shared memory size constraints.
+```

@@ -1,0 +1,2 @@
+// Use __shared__ memory to minimize global memory access latency.
+// Optimize for warp size by aligning shared memory size with blockDim.x.

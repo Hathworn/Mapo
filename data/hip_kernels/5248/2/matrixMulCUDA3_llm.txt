@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory accesses by loading tiles of A and B
+// Check bounds before loading tiles into shared memory to prevent out-of-bounds memory access
+// Synchronize threads with __syncthreads() after loading and calculating with shared memory
+// Shared memory allows reuse of data within a tile to reduce redundant global memory reads

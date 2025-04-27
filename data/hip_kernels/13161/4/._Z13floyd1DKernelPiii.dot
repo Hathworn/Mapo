@@ -1,0 +1,13 @@
+digraph "CFG for '_Z13floyd1DKernelPiii' function" {
+	label="CFG for '_Z13floyd1DKernelPiii' function";
+
+	Node0x47533d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = sdiv i32 %12, %1\l  %14 = mul nsw i32 %13, %1\l  %15 = sub nsw i32 %12, %14\l  %16 = icmp slt i32 %13, %1\l  %17 = icmp slt i32 %15, %1\l  %18 = select i1 %16, i1 %17, i1 false\l  br i1 %18, label %19, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x47533d0:s0 -> Node0x4755610;
+	Node0x47533d0:s1 -> Node0x47556a0;
+	Node0x4755610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%19:\l19:                                               \l  %20 = icmp eq i32 %13, %15\l  %21 = icmp eq i32 %13, %2\l  %22 = select i1 %20, i1 true, i1 %21\l  %23 = icmp eq i32 %15, %2\l  %24 = select i1 %22, i1 true, i1 %23\l  br i1 %24, label %40, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x4755610:s0 -> Node0x47556a0;
+	Node0x4755610:s1 -> Node0x4755b20;
+	Node0x4755b20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%25:\l25:                                               \l  %26 = mul nsw i32 %2, %1\l  %27 = add nsw i32 %15, %26\l  %28 = add nsw i32 %14, %2\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %29\l  %31 = load i32, i32 addrspace(1)* %30, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %32 = sext i32 %27 to i64\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %32\l  %34 = load i32, i32 addrspace(1)* %33, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %35 = add nsw i32 %34, %31\l  %36 = sext i32 %12 to i64\l  %37 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %36\l  %38 = load i32, i32 addrspace(1)* %37, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %39 = tail call i32 @llvm.smin.i32(i32 %35, i32 %38)\l  store i32 %39, i32 addrspace(1)* %37, align 4, !tbaa !7\l  br label %40\l}"];
+	Node0x4755b20 -> Node0x47556a0;
+	Node0x47556a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%40:\l40:                                               \l  ret void\l}"];
+}

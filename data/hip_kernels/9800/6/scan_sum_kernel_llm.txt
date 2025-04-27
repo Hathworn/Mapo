@@ -1,0 +1,7 @@
+```
+// Use shared memory for input_vals to reduce global memory access latency.
+// Ensure shared memory banks are accessed without conflicts.
+// Consider loop unrolling in the inclusive prefix sum computation for improved performance.
+// Coalescing global memory writes to output array for efficient memory access.
+// Use warp shuffle instructions if possible to optimize prefix sum operation.
+```

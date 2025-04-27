@@ -1,0 +1,4 @@
+// Ensure coalesced memory accesses by aligning threads for contiguous blocks
+// Use shared memory to reduce global memory accesses where possible
+// Prefetch data to avoid latency of memory access during computation
+// Minimize bank conflicts in shared memory usage by appropriate alignment

@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access to optimize memory bandwidth utilization
+// Utilize shared memory if multiple threads access the same data to minimize global memory access
+// Ensure aligned memory access for higher throughput
+// Experiment with different block sizes to balance between parallelism and memory access efficiency
+// Use read-only cache for input 'mat' if GPU architecture supports it
+// If possible, minimize divergent branching within warp for better performance
+// Evaluate reducing global memory access latency through asynchronous data copying if applicable
+```

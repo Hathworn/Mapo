@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses for loading d_pts1 and d_pts2 into shared memory
+// Consider using loop unrolling to optimize the memory loading process
+// Utilize shared memory to reduce global memory accesses for intermediate scores
+// Apply warp-level primitives to optimize reduction within the warp
+// Balance the register usage by adjusting the loop unrolling factor
+// Minimize __syncthreads to ensure synchronizations are used only when necessary
+```

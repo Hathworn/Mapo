@@ -1,0 +1,21 @@
+digraph "CFG for '_Z16roipool_bp_cuda_iiPfPiS0_S_' function" {
+	label="CFG for '_Z16roipool_bp_cuda_iiPfPiS0_S_' function";
+
+	Node0x4e39850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = icmp slt i32 %7, %0\l  br i1 %8, label %9, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x4e39850:s0 -> Node0x4e38a70;
+	Node0x4e39850:s1 -> Node0x4e39b60;
+	Node0x4e38a70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%9:\l9:                                                \l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %11 = icmp slt i32 %10, %1\l  %12 = tail call align 4 i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr()\l  %13 = getelementptr i8, i8 addrspace(4)* %12, i64 4\l  %14 = bitcast i8 addrspace(4)* %13 to i16 addrspace(4)*\l  %15 = getelementptr inbounds i8, i8 addrspace(4)* %12, i64 12\l  %16 = bitcast i8 addrspace(4)* %15 to i32 addrspace(4)*\l  %17 = load i32, i32 addrspace(4)* %16, align 4, !tbaa !5\l  %18 = load i16, i16 addrspace(4)* %14, align 4, !range !14, !invariant.load\l... !15\l  %19 = zext i16 %18 to i32\l  %20 = udiv i32 %17, %19\l  %21 = mul i32 %20, %19\l  %22 = icmp ugt i32 %17, %21\l  %23 = zext i1 %22 to i32\l  br label %25\l}"];
+	Node0x4e38a70 -> Node0x4e3bdb0;
+	Node0x4e39b60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%24:\l24:                                               \l  ret void\l}"];
+	Node0x4e3bdb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%25:\l25:                                               \l  %26 = phi i32 [ %7, %9 ], [ %31, %29 ]\l  br i1 %11, label %27, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4e3bdb0:s0 -> Node0x4e3c000;
+	Node0x4e3bdb0:s1 -> Node0x4e3bf00;
+	Node0x4e3c000 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%27:\l27:                                               \l  %28 = mul nsw i32 %26, %1\l  br label %33\l}"];
+	Node0x4e3c000 -> Node0x4e3c1d0;
+	Node0x4e3bf00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%29:\l29:                                               \l  %30 = add i32 %20, %26\l  %31 = add i32 %30, %23\l  %32 = icmp slt i32 %31, %0\l  br i1 %32, label %25, label %24, !llvm.loop !16\l|{<s0>T|<s1>F}}"];
+	Node0x4e3bf00:s0 -> Node0x4e3bdb0;
+	Node0x4e3bf00:s1 -> Node0x4e39b60;
+	Node0x4e3c1d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi i32 [ %10, %27 ], [ %46, %33 ]\l  %35 = add nsw i32 %34, %28\l  %36 = sext i32 %35 to i64\l  %37 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %36\l  %38 = load i32, i32 addrspace(1)* %37, align 4, !tbaa !18\l  %39 = mul nsw i32 %38, %1\l  %40 = add nsw i32 %39, %34\l  %41 = sext i32 %40 to i64\l  %42 = getelementptr inbounds float, float addrspace(1)* %2, i64 %41\l  %43 = getelementptr inbounds float, float addrspace(1)* %5, i64 %36\l  %44 = load float, float addrspace(1)* %43, align 4, !tbaa !22\l  %45 = atomicrmw fadd float addrspace(1)* %42, float %44\l... syncscope(\"agent-one-as\") monotonic, align 4\l  %46 = add i32 %34, %19\l  %47 = icmp slt i32 %46, %1\l  br i1 %47, label %33, label %29, !llvm.loop !24\l|{<s0>T|<s1>F}}"];
+	Node0x4e3c1d0:s0 -> Node0x4e3c1d0;
+	Node0x4e3c1d0:s1 -> Node0x4e3bf00;
+}

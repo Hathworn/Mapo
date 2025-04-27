@@ -1,0 +1,5 @@
+digraph "CFG for '_Z25kernel_initIntegrtalImagePjii' function" {
+	label="CFG for '_Z25kernel_initIntegrtalImagePjii' function";
+
+	Node0x4d1b550 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = mul nsw i32 %5, %1\l  %7 = add nsw i32 %6, %4\l  %8 = sext i32 %7 to i64\l  %9 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %8\l  store i32 0, i32 addrspace(1)* %9, align 4, !tbaa !5\l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access by coalescing loads from global memory
+// Minimize global memory writes by using shared memory for intermediate sums
+// Consider loop unrolling in the dimension loop for better performance
+// Use warp-level primitives (e.g., __shfl_down_sync) instead of shared memory for reduction
+```

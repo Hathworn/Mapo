@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory for frequently accessed data.
+// Load uniform value into shared memory to reduce global memory reads.
+// Ensure that __syncthreads() is used after loading into shared memory.
+// Use shared memory to minimize global memory bandwidth.
+// Minimize divergence by aligning operations within threads of the same warp.
+// Use coalesced memory access patterns by aligning the address.
+```

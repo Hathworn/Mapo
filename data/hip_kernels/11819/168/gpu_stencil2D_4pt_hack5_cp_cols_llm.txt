@@ -1,0 +1,6 @@
+```
+// Use local variables to reduce global memory accesses
+// Cache data in registers to minimize memory traffic
+// Write data to shared memory to leverage faster access within the block
+// Ensure __syncthreads() to synchronize data before use by other threads
+```

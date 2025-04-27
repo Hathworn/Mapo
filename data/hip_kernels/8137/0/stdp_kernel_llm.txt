@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses for frequently used data
+// Implement memory coalescing strategies for accessing weight and history arrays
+// Optimize thread block configuration to maximize SM occupancy and reduce warp divergence
+// Use texture memory for read-only arrays like weight and history if beneficial
+// Ensure alignment of data structures for better memory access performance
+// Use appropriate launch configuration to match the specific L1 cache settings for this kernel
+// Try using register blocking to improve data reuse within the kernel
+```

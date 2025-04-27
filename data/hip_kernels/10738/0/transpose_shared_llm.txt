@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses and improve performance
+// Ensure correct index calculation to prevent out-of-bound errors
+// Avoid bank conflicts by padding shared memory
+// Swap indices when reading and writing to improve coalescing
+// Employ __syncthreads() to synchronize threads within a block
+```

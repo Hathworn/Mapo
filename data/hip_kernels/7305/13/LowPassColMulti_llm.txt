@@ -1,0 +1,8 @@
+```
+// Consider using loop unrolling for the convolution computation loop for better performance.
+// Ensure coalesced memory access by aligning data in shared memory properly.
+// Minimize shared memory bank conflicts when accessing sdata.
+// Try to use the const __restrict__ qualifier for read-only memory pointers to optimize memory access.
+// Consider increasing the number of threads per block to better hide memory latency.
+// Evaluate using asynchronous copy to leverage parallel memory access and computation.
+```

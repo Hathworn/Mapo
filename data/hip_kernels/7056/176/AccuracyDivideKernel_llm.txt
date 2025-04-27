@@ -1,0 +1,6 @@
+```
+// Ensure accuracy variable is allocated in global memory for kernel access
+// Use shared memory if multiple blocks were needed to reduce global memory accesses
+// Consider using atomic operations if accuracy is updated by multiple kernels concurrently
+// Ensure accuracy resides in suitable memory space to utilize coalesced accesses
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache prior_scale_change for better performance
+// Cache shared_prior_scale_change to reduce global memory accesses
+// Use thread synchronization to ensure shared memory consistency
+// Parallelize loop efficiently with block and thread indices
+// Minimize branch divergence for better performance
+// Ensure atomicity when updating shared data across threads
+```

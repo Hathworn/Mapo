@@ -1,0 +1,4 @@
+// Use grid-stride loop for better occupancy and scalability
+// Ensure coalesced access by using contiguous threads to access contiguous memory locations
+// Consider using shared memory to cache frequently accessed data to reduce global memory access
+// Optimize loop unrolling for preventing pipeline stalls

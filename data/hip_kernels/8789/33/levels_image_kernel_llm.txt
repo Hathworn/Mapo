@@ -1,0 +1,6 @@
+// Consider using shared memory for image data within each block to reduce global memory accesses
+// Explore using texture memory for constant image data when image size is large
+// Minimize branching or conditional statements within the kernel for better runtime efficiency
+// Unroll loops, if any, for better performance benefit
+// Ensure coalesced memory access patterns to improve global memory throughput
+// Evaluate precision requirements and refactor to use half precision if suitable for further speedup

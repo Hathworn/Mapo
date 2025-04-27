@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Combine writes using vectorized data types for coalesced memory access
+// Ensure alignment of memory access to enhance bandwidth utilization
+// Use loop unrolling for reducing loop overhead
+// Use atomic operations for synchronization if required
+// Optimize the choice of BLOCKSIZE for better load balancing
+```

@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access by ensuring sequential threads access sequential memory locations.
+// Load data into shared memory to reduce global memory accesses, enhancing memory access efficiency.
+// Implement warp shuffle operations for intrawarp communication in place of shared memory usage for reduction.
+// Use __syncthreads() wisely only when necessary to minimize performance overhead.
+// Use atomic operations efficiently to avoid excessive serialization among threads.
+```

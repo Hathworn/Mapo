@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns to improve data coalescing.
+// Use shared memory efficiently to minimize global memory access.
+// Minimize thread divergence within warp execution.
+// Consider loop unrolling for j-loop to improve performance.
+// Load T array cooperatively using all threads to reduce redundant loads.
+// Ensure all threads participating in __syncthreads() have reached that point.
+```

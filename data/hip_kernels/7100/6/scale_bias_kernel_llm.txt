@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache biases for faster access
+// Ensure coalesced memory access patterns for output
+// Minimize thread divergence by aligning block size with size
+// Consider using loop unrolling for offset calculations
+```

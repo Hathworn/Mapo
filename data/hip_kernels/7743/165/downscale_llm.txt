@@ -1,0 +1,6 @@
+// Use shared memory to optimize data access and reduce global memory transactions
+// Coalesce memory accesses by ensuring adjacent threads access adjacent memory locations
+// Utilize vectorized loads/stores for better memory throughput
+// Reduce register pressure by minimizing usage of local variables and avoiding unnecessary computations
+// Consider using half precision if acceptable to further reduce memory bandwidth and increase arithmetic intensity
+// Implement loop unrolling to increase instruction level parallelism within the kernel

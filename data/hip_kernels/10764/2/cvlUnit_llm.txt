@@ -1,0 +1,4 @@
+// Utilize shared memory to reduce global memory accesses for the core and image data.
+// Consider loop unrolling for the convolution computation to improve performance.
+// Align memory access patterns to leverage coalesced memory access for imgR, imgG, and imgB. 
+// Use constant memory for the kernel 'core' if its size does not change, to exploit cache efficiently.

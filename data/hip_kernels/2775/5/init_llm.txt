@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Load val into shared memory to avoid redundant global memory reads
+// Ensure __syncthreads() is used for correct synchronization among threads
+// Move printf outside performance-critical sections, ideally completely remove it from device code
+// Investigate whether shared memory usage improves performance; if not, consider direct global memory writes
+// Optimize block size for better memory coalescing and GPU occupancy
+```

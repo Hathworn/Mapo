@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store data chunks of pred and truth to reduce global memory access
+// Optimize memory coalescing by ensuring pred and truth arrays are accessed in a sequential manner for each thread
+// Utilize __syncthreads() to coordinate memory reads/writes in shared memory, if shared memory is implemented
+// Ensure that the error and delta computations are executed with minimal branching to maintain warp efficiency
+// Investigate possible loop unrolling or vectorized operations for performance enhancement, if applicable
+```

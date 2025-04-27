@@ -1,0 +1,4 @@
+// Use shared memory for a and b to reduce global memory access latency
+// Consider coalescing memory access for a and b for better performance
+// Evaluate the use of half precision if precision allows
+// Minimize thread divergence by ensuring contiguous data access

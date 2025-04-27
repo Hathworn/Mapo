@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access to improve global memory load efficiency.
+// Use shared memory effectively to reduce global memory access.
+// Unroll loops in the reduction step to improve instruction level parallelism.
+// Ensure __syncthreads() is used after each memory operation to prevent race conditions.
+// Consider occupancy optimization by adjusting block size and shared memory usage.
+```

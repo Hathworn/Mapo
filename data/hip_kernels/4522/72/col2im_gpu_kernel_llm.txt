@@ -1,0 +1,6 @@
+// Use __restrict__ pointers to optimize data access patterns
+// Ensure data accesses are coalesced for better memory bandwidth utilization
+// Consider loop unrolling to decrease loop overhead and potentially increase throughput
+// Try using shared memory or registers to store frequently accessed data within the thread block
+// Use ldg intrinsic for read-only data for better cache utilization
+// Use atomic operations sparingly to reduce contention among threads

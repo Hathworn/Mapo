@@ -1,0 +1,10 @@
+```
+// Consider memory coalescing to optimize global memory access pattern.
+// Use shared memory to store intermediate values to reduce global memory accesses.
+// Utilize vectorized data types for better memory throughput.
+// Align data structures and memory allocations to avoid memory access penalties.
+// Minimize the use of atomic operations when possible to reduce contention.
+// Pre-fetch data into registers to minimize latency from global memory access.
+// Replace float division or multiplication in loops with pre-calculated values if constant.
+// Ensure proper grid and block configuration to achieve full GPU occupancy.
+```

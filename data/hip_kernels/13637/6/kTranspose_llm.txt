@@ -1,0 +1,4 @@
+// Use __shared__ memory to minimize global memory accesses and improve latency.
+// Prevent redundant calculations by moving index calculations out of boundary checks.
+// Ensure coalesced memory access for both input and output operations.
+// Synchronize threads after shared memory read to ensure correct data is written back.

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for dev_pillar_count_histo by reorganizing data layout.
+// Avoid bank conflicts in shared memory by padding or aligning data.
+// Utilize shared memory for frequently accessed data to reduce global memory access.
+// Prefetch data to shared memory before processing in threads.
+// Use warp-level primitives to minimize thread divergence in conditional statements.
+// Reduce atomic operations by batch processing or using warp-level reductions.
+```

@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to store output values to reduce global memory access.
+// Consider coalescing global memory access for inputs and kernel.
+// Perform loop unrolling to optimize inner loops for kernel computation.
+// Utilize bank conflict-free access patterns in shared memory.
+// Prefer arithmetic operations over global memory access when possible.
+// Implement block synchronization efficiently after shared memory operations.
+// Minimize redundant computation by intelligently mapping threads to data.
+```

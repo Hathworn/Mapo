@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for `distance` and `biasedDistance` arrays.
+// Ensure that data is aligned to avoid misaligned memory accesses.
+// Prefetch data into shared memory if reuse across threads is expected.
+// Consider using vectorized operations if supported by hardware.
+// Minimize thread divergence by ensuring workload per thread is balanced.
+```

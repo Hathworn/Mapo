@@ -1,0 +1,4 @@
+// Use shared memory for centroidMass and centroidCount to minimize global memory access latency
+// Preload centroidCount and centroidMass into registers for faster computations
+// Consider coalescing memory access patterns for centroids to improve bandwidth utilization
+// Evaluate warp-level optimizations to maximize parallel execution efficiency

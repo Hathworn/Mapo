@@ -1,0 +1,8 @@
+```
+// Optimize: Ensure coalesced memory access by accessing Var in a contiguous manner
+// Optimize: Utilize shared memory to cache data where possible for repeated access
+// Optimize: Minimize redundant calculations within the kernel by pre-calculating indices
+// Optimize: Adjust block size for optimal occupancy based on hardware specifics
+// Optimize: Consider using warp-level parallelism for fine-grained control
+// Optimize: Profile the kernel and look for any possible divergence in warp execution
+```

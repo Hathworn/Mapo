@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for da and db.
+// Unroll loops to minimize loop overhead.
+// Consider using warp-level primitives to optimize small matrix operations.
+// Optimize thread block size to maximize memory coalescing and minimize divergence.

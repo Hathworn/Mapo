@@ -1,0 +1,7 @@
+```c
+// Consider increasing the block size or using dynamic shared memory allocations
+// Use coalesced memory accesses by ensuring consecutive threads access consecutive memory locations
+// Minimize branch divergence by ensuring that all threads follow the same execution path
+// Use __syncthreads() carefully to avoid unnecessary synchronization barriers
+// Optimize shared memory bank conflicts by ensuring that accesses are ideally aligned
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory to avoid redundant global memory reads
+// Optimize memory access patterns to improve coalescing
+// Assess atomic operations to reduce contention if applicable
+// Use __restrict__ keyword for pointer arguments to improve compiler optimizations
+// Explore increasing block size if it doesn't exceed registers/shmem constraints

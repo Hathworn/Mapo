@@ -1,0 +1,11 @@
+digraph "CFG for '_Z9kBlockifyPfS_ii' function" {
+	label="CFG for '_Z9kBlockifyPfS_ii' function";
+
+	Node0x54cd140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = freeze i16 %9\l  %11 = zext i16 %10 to i32\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = mul i32 %12, %2\l  %14 = freeze i32 %5\l  %15 = icmp ult i32 %14, %2\l  br i1 %15, label %17, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x54cd140:s0 -> Node0x54cf060;
+	Node0x54cd140:s1 -> Node0x54cf0f0;
+	Node0x54cf0f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%16:\l16:                                               \l  ret void\l}"];
+	Node0x54cf060 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  %18 = phi i32 [ %27, %17 ], [ %14, %4 ]\l  %19 = urem i32 %18, %3\l  %20 = add i32 %18, %13\l  %21 = sub i32 %20, %19\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds float, float addrspace(1)* %0, i64 %22\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !7\l  %25 = zext i32 %20 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %1, i64 %25\l  store float %24, float addrspace(1)* %26, align 4, !tbaa !7\l  %27 = add i32 %18, %11\l  %28 = icmp ult i32 %27, %2\l  br i1 %28, label %17, label %16, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x54cf060:s0 -> Node0x54cf060;
+	Node0x54cf060:s1 -> Node0x54cf0f0;
+}

@@ -1,0 +1,5 @@
+// Consider coalesced access to global memory for in and out arrays to improve memory throughput.
+// Utilize shared memory effectively to reduce redundant global memory access, ensuring data is reused.
+// Ensure proper synchronization to prevent race conditions when accessing shared memory.
+// Analyze warp divergence to optimize control flow within the kernel function.
+// Assess the block size for optimally utilizing the GPU's computational resources and memory bandwidth.

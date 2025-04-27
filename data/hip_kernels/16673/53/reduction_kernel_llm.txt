@@ -1,0 +1,4 @@
+// Consider coalescing global memory accesses for better performance
+// Use shared memory to reduce global memory access latency
+// Ensure sufficient shared memory is allocated for the block
+// Minimize the number of __syncthreads() for efficient execution

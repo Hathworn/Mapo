@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring threads in a warp access consecutive memory locations
+// Align data structures to at least 32-byte boundaries to enhance cache utilization
+// Minimize global memory accesses by using shared memory where applicable
+// Consider using asynchronous memory prefetching to optimize memory throughput
+// Adjust block size to ensure maximum occupancy and efficient utilization of GPU resources
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for intermediate data to minimize global memory accesses.
+// Try coalescing memory accesses by aligning reads and writes to consecutive memory addresses.
+// Ensure memory transactions are aligned to warp boundaries to improve efficiency.
+// Evaluate using vectorized memory operations for copying multiple bytes at once.
+```

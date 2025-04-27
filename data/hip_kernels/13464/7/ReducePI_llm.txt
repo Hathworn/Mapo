@@ -1,0 +1,7 @@
+```c
+// Consider using float4 or float2 instead of float for vectorized operations
+// Ensure coalesced memory access for improved performance
+// Use multiple streams to overlap computation and data transfer
+// Optimize block and grid size based on hardware specifications
+// Minimize the use of __syncthreads() for better performance
+```

@@ -1,0 +1,5 @@
+digraph "CFG for '_Z7AddTo32PiS_PKi' function" {
+	label="CFG for '_Z7AddTo32PiS_PKi' function";
+
+	Node0x5401be0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = zext i32 %4 to i64\l  %6 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %5\l  %7 = load i32, i32 addrspace(1)* %2, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %8 = atomicrmw add i32 addrspace(1)* %6, i32 %7 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  ret void\l}"];
+}

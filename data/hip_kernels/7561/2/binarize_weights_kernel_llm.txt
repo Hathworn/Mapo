@@ -1,0 +1,4 @@
+// Use shared memory to cache weights for each thread block to reduce global memory access
+// Optimize loop to use vectorized data types for coalesced memory access where possible
+// Ensure all memory accesses are coalesced by aligning data structures and thread blocks 
+// Consider using a reduction kernel for mean calculation to parallelize this operation across threads 

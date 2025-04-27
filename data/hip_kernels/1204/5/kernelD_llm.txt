@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for global memory reads and writes
+// Consider using read-only cache for input data to improve bandwidth usage
+// Optimize shared memory allocation to minimize bank conflicts
+// Use __syncthreads() efficiently to avoid unnecessary synchronization barriers
+// Investigate warp-level primitives for further optimization in atomic operations
+```

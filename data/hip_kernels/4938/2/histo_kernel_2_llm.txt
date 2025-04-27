@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed histogram data within a block
+// Ensure coalesced memory access for buffer by aligning data and using continuous threads
+// Consider using warp-level primitives to reduce contention when updating the histogram
+// Evaluate the use of loop unrolling if accessing multiple elements per thread
+```

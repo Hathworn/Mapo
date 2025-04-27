@@ -1,0 +1,35 @@
+digraph "CFG for '_Z15myTextureKernelP13__hip_surfacemm' function" {
+	label="CFG for '_Z15myTextureKernelP13__hip_surfacemm' function";
+
+	Node0x60d66e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 6\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 2, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 16\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 8, !tbaa !6\l  %13 = mul i32 %4, %9\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !15\l  %15 = add i32 %13, %14\l  %16 = sext i32 %15 to i64\l  %17 = icmp ult i64 %16, %2\l  br i1 %17, label %18, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x60d66e0:s0 -> Node0x60d8390;
+	Node0x60d66e0:s1 -> Node0x60d8420;
+	Node0x60d8390 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%18:\l18:                                               \l  %19 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %20 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %21 = bitcast i8 addrspace(4)* %20 to i16 addrspace(4)*\l  %22 = load i16, i16 addrspace(4)* %21, align 4, !range !4, !invariant.load !5\l  %23 = zext i16 %22 to i32\l  %24 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %25 = bitcast i8 addrspace(4)* %24 to i32 addrspace(4)*\l  %26 = load i32, i32 addrspace(4)* %25, align 4, !tbaa !16\l  %27 = mul i32 %19, %23\l  %28 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %29 = add i32 %27, %28\l  %30 = sext i32 %29 to i64\l  %31 = icmp ult i64 %30, %1\l  %32 = bitcast %struct.__hip_surface addrspace(1)* %0 to i32 addrspace(1)*\l  %33 = addrspacecast i32 addrspace(1)* %32 to i32 addrspace(4)*\l  %34 = getelementptr inbounds i32, i32 addrspace(4)* %33, i64 8\l  %35 = getelementptr inbounds i32, i32 addrspace(4)* %33, i64 9\l  %36 = bitcast %struct.__hip_surface addrspace(1)* %0 to \<8 x i32\>\l... addrspace(1)*\l  %37 = addrspacecast \<8 x i32\> addrspace(1)* %36 to \<8 x i32\> addrspace(4)*\l  %38 = udiv i32 %12, %9\l  %39 = mul i32 %38, %9\l  %40 = icmp ugt i32 %12, %39\l  %41 = zext i1 %40 to i32\l  %42 = add i32 %38, %41\l  %43 = mul i32 %42, %9\l  br label %45\l}"];
+	Node0x60d8390 -> Node0x60db070;
+	Node0x60d8420 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%44:\l44:                                               \l  ret void\l}"];
+	Node0x60db070 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%45:\l45:                                               \l  %46 = phi i32 [ %15, %18 ], [ %66, %65 ]\l  br i1 %31, label %47, label %65\l|{<s0>T|<s1>F}}"];
+	Node0x60db070:s0 -> Node0x60db2f0;
+	Node0x60db070:s1 -> Node0x60db1f0;
+	Node0x60db2f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%47:\l47:                                               \l  %48 = load i32, i32 addrspace(4)* %34, align 4, !tbaa !17, !amdgpu.noclobber\l... !5\l  %49 = load i32, i32 addrspace(4)* %35, align 4, !tbaa !17, !amdgpu.noclobber\l... !5\l  %50 = icmp eq i32 %48, 4\l  %51 = sext i32 %48 to i64\l  %52 = getelementptr inbounds [16 x i32], [16 x i32] addrspace(4)*\l... @_ZZL17__hipGetPixelAddriiiE9FormatLUT, i64 0, i64 %51\l  %53 = sext i32 %49 to i64\l  %54 = lshr i64 4176, %53\l  %55 = and i64 %54, 1\l  %56 = icmp eq i64 %55, 0\l  %57 = getelementptr inbounds [20 x i32], [20 x i32] addrspace(4)*\l... @_ZZL17__hipGetPixelAddriiiE8OrderLUT, i64 0, i64 %53\l  %58 = load \<8 x i32\>, \<8 x i32\> addrspace(4)* %37, align 32, !tbaa !18,\l... !amdgpu.noclobber !5\l  %59 = udiv i32 %26, %23\l  %60 = mul i32 %59, %23\l  %61 = icmp ugt i32 %26, %60\l  %62 = zext i1 %61 to i32\l  %63 = add i32 %59, %62\l  %64 = mul i32 %63, %23\l  br label %69\l}"];
+	Node0x60db2f0 -> Node0x60dbe50;
+	Node0x60db1f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%65:\l65:                                               \l  %66 = add i32 %43, %46\l  %67 = sext i32 %66 to i64\l  %68 = icmp ult i64 %67, %2\l  br i1 %68, label %45, label %44, !llvm.loop !19\l|{<s0>T|<s1>F}}"];
+	Node0x60db1f0:s0 -> Node0x60db070;
+	Node0x60db1f0:s1 -> Node0x60d8420;
+	Node0x60dbe50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%69:\l69:                                               \l  %70 = phi i32 [ %29, %47 ], [ %86, %84 ]\l  %71 = shl i32 %70, 2\l  br i1 %50, label %72, label %74\l|{<s0>T|<s1>F}}"];
+	Node0x60dbe50:s0 -> Node0x60dcf90;
+	Node0x60dbe50:s1 -> Node0x60dd020;
+	Node0x60dcf90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d24b4070",label="{%72:\l72:                                               \l  %73 = sdiv i32 %71, 3\l  br label %77\l}"];
+	Node0x60dcf90 -> Node0x60dd1f0;
+	Node0x60dd020 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d24b4070",label="{%74:\l74:                                               \l  %75 = load i32, i32 addrspace(4)* %52, align 4, !tbaa !21\l  %76 = ashr i32 %71, %75\l  br label %77\l}"];
+	Node0x60dd020 -> Node0x60dd1f0;
+	Node0x60dd1f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%77:\l77:                                               \l  %78 = phi i32 [ %73, %72 ], [ %76, %74 ]\l  br i1 %56, label %81, label %79\l|{<s0>T|<s1>F}}"];
+	Node0x60dd1f0:s0 -> Node0x60dd5d0;
+	Node0x60dd1f0:s1 -> Node0x60dd620;
+	Node0x60dd620 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d24b4070",label="{%79:\l79:                                               \l  %80 = sdiv i32 %78, 3\l  br label %84\l}"];
+	Node0x60dd620 -> Node0x60dcdc0;
+	Node0x60dd5d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d24b4070",label="{%81:\l81:                                               \l  %82 = load i32, i32 addrspace(4)* %57, align 4, !tbaa !21\l  %83 = ashr i32 %78, %82\l  br label %84\l}"];
+	Node0x60dd5d0 -> Node0x60dcdc0;
+	Node0x60dcdc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%84:\l84:                                               \l  %85 = phi i32 [ %80, %79 ], [ %83, %81 ]\l  tail call void @llvm.amdgcn.image.store.2d.v4f32.i32(\<4 x float\> \<float\l... 0x371FE00000000000, float 0x371FE00000000000, float 0x371FE00000000000, float\l... 0x371FE00000000000\>, i32 15, i32 %85, i32 %46, \<8 x i32\> %58, i32 0, i32 0)\l  %86 = add i32 %64, %70\l  %87 = sext i32 %86 to i64\l  %88 = icmp ult i64 %87, %1\l  br i1 %88, label %69, label %65, !llvm.loop !25\l|{<s0>T|<s1>F}}"];
+	Node0x60dcdc0:s0 -> Node0x60dbe50;
+	Node0x60dcdc0:s1 -> Node0x60db1f0;
+}

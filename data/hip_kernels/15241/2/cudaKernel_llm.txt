@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses in gpuG and gpuTempGrid.
+// Use shared memory to reduce redundant reads from global memory.
+// Perform loop unrolling for reading the 24 neighbors to enhance performance.
+// Optimize atomic operations to minimize their performance impact.
+```

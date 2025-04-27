@@ -1,0 +1,6 @@
+```
+// Avoid atomic operations for shared variables when possible
+// Use warp-level primitives if reduction is required
+// Ensure global memory access is coalesced
+// Consider shared memory usage if multiple threads need access
+```

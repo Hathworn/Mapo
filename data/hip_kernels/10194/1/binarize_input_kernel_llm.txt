@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory loads when calculating means
+// Ensure coalesced memory access by having contiguous threads access contiguous memory addresses
+// Consider prefetching data into shared memory to hide memory latency
+// Ensure use of __syncthreads() after updating shared memory to maintain consistency
+// Utilize warp shuffle operations to optimize the reduction step without synchronization
+// Reduce divergent branches by utilizing a conditional move instead of if-else statements
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to optimize global memory bandwidth usage
+// Use shared memory to reduce redundant global memory reads for max, size, and maxOut if these values do not change across threads
+// Apply loop unrolling if possible for better instruction-level parallelism if size is large
+// Assess if a larger block size could improve performance leveraging GPU occupancy
+// Ensure CUDASTDOFFSET calculation does not introduce divergence or inefficiency 
+```

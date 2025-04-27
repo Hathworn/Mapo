@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by ensuring that global memory access is aligned
+// Consider adjusting block size for optimal shared memory utilization
+// Utilize more threads per block if shared memory size allows
+// Balance shared memory usage with register usage to avoid bank conflicts
+// Apply warp-level reductions to further optimize shared memory usage
+```

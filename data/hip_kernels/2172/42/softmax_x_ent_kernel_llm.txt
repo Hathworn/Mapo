@@ -1,0 +1,7 @@
+```
+// Optimize block size to maximize occupancy and ensure efficient utilization of shared memory
+// Use coalesced memory access for 'pred' and 'truth' arrays to improve global memory throughput
+// Minimize synchronization points by restructuring computations where possible
+// Ensure shared memory usage does not exceed hardware limits for larger datasets
+// Avoid branch divergence in conditional statements for better warp execution efficiency
+```

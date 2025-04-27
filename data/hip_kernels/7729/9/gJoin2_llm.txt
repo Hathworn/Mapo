@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for 'out' to reduce memory access latency
+// Evaluate aligning 'in1', 'in2' and 'out' to 128 bytes for better memory transaction efficiency
+// Assess potential use of shared memory to store 'rowIn1' and 'rowIn2' to improve access speed
+// Investigate loop unrolling in thread-level iteration to decrease instruction overhead
+// Examine use of warp-level primitives to optimize data exchange within blocks
+```

@@ -1,0 +1,4 @@
+// Coalesce global memory access by ensuring consecutive threads access consecutive memory locations.
+// Use "const restrict" qualifiers if aliasing is not an issue for improved compiler optimization.
+// Consider using shared memory if the same data is reused within the block to reduce global memory accesses.
+// Ensure memory accesses are aligned to improve memory transaction efficiency.

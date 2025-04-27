@@ -1,0 +1,7 @@
+```
+// Cache frequently accessed values to reduce global memory reads
+// Ensure coalesced memory access to maximize warp efficiency
+// Minimize divergent branching by ensuring uniform conditions in the kernel
+// Consider using shared memory for repeated data access within a block
+// Align data structures for better memory throughput
+```

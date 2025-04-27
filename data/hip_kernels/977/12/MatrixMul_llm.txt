@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency 
+// Ensure coalesced global memory access for improved performance
+// Minimize the number of __syncthreads() calls for better efficiency
+// Prefer to align data structures to avoid unaligned memory access 
+// Consider double buffering to overlap data loading and computation 
+// Optimize tile size for better occupancy and performance balance
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data loading for threads to improve memory access efficiency.
+// Ensure coalesced memory access patterns by aligning data loads to warp-sized chunks.
+// Consider loop unrolling for inner loops to increase instruction-level parallelism.
+// Apply vectorized loads and stores when possible for better throughput.
+// Reduce the number of atomic operations if feasible to enhance kernel performance.
+// Consider using warp-level primitives for reduction to utilize fast shared memory operations.
+```

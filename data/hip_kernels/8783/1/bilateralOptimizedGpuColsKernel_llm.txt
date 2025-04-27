@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache inputImage within each block to reduce global memory access.
+// Consider aligning memory access patterns for coalescing to improve memory bandwidth.
+// Recompute repeated expressions outside of loops when possible to minimize redundant calculations.
+// Utilize constant memory for frequently accessed constant variables like sigmaD and sigmaR.
+```

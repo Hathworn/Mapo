@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to store frequently accessed data and reduce global memory accesses.
+// Coalesce memory accesses by ensuring threads access consecutive memory addresses.
+// Use appropriate stride to minimize bank conflicts when using shared memory.
+// Avoid using unnecessary __syncthreads() to reduce synchronization overhead.
+// Ensure aligned memory accesses to benefit from coalesced memory transactions.
+```

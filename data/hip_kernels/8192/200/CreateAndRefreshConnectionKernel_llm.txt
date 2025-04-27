@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for repeated access to reduce global memory traffic.
+// Minimize branching by ensuring only essential conditional logic within kernel.
+// Ensure coalesced memory access patterns for improved performance.
+// Use __syncthreads() if necessary to prevent race conditions with shared memory.
+```

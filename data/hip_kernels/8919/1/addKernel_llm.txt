@@ -1,0 +1,8 @@
+```
+// Ensure vectorSize is a multiple of warpSize for optimal memory access
+// Use shared memory for intermediate results if multiple operations follow
+// Consider using __restrict__ qualifier for input pointers to improve optimization
+// Align data structures for coalesced memory access
+// Remove or minimize unnecessary branching for consistent execution speed
+// Prefetch data into registers if a and b are reused across iterations
+```

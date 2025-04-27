@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for d_bins to reduce global memory access latency
+// Minimize bank conflicts in shared memory by proper memory alignment
+// Optimize memory coalescing by adjusting data access patterns in d_in
+// Use multiple threads to increase parallelism for updating bins
+// Check if loop unrolling can enhance performance for atomic operations
+```

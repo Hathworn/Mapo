@@ -1,0 +1,7 @@
+```
+// Attempt to coalesce memory accesses by ensuring data is accessed in a contiguous block
+// Consider using shared memory if multiple threads access shared data to reduce redundant global memory accesses
+// Ensure stride is set to optimize memory access pattern and avoid bank conflicts in memory access
+// Assess impact of loop unrolling to ensure performance benefits outweigh the increased register usage
+// Review occupancy and grid configuration to ensure enough threads are used for full device utilization
+```

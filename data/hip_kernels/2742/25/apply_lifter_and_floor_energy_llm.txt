@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for lifter_coeffs if it is accessed multiple times
+// Ensure memory access patterns for feats are coalesced for better performance
+// Avoid branch divergence by ensuring threads within a warp follow the same execution path
+// Consider prefetching data if there is latency in memory access
+```

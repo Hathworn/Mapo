@@ -1,0 +1,6 @@
+```
+// Use shared memory to store 'nnz_num' values accessed by multiple threads
+// Consider using coalesced memory access to optimize global memory usage
+// Ensure 'pad_M' is a multiple of 'chunk' to avoid thread divergence
+// Experiment with different block and grid sizes to optimize performance
+```

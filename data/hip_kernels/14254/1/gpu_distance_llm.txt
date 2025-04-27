@@ -1,0 +1,4 @@
+// Consider optimizing memory access by using shared memory for point array.
+// Use constant memory for point data if it does not change.
+// Attempt loop unrolling further if dim is too small.
+// Use vectorized memory operations for data if dim is a multiple of warp size.

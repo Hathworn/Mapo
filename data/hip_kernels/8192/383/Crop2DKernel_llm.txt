@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for tiles to optimize data reuse and reduce global memory accesses.
+// Ensure coalesced memory access patterns by aligning memory access with warp size.
+// Use __restrict__ qualifiers for input and output pointers to assert no aliasing and enable additional compiler optimizations.
+// Evaluate if using texture memory might provide performance benefits for 2D image data access.
+```

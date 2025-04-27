@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory for repetitive data to reduce global memory access latency
+// Coalesce memory access to IN array for improving bandwidth utilization
+// Ensure IN and qss arrays are aligned to allow coalesced access
+// Consider loop unrolling techniques if applicable to reduce overhead
+```

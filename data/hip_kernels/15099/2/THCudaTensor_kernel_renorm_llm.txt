@@ -1,0 +1,7 @@
+```
+// Consider using floating point precision that matches your compute capability to enhance performance
+// Ensure data is coalesced by aligning data access patterns to memory architecture
+// Avoid bank conflicts in shared memory by ensuring each thread accesses different bank
+// Optimize the number of threads to ensure best occupancy while avoiding idle resources
+// Use a larger block size if possible to increase parallel processing capabilities
+```

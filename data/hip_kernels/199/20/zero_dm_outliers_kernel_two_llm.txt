@@ -1,0 +1,4 @@
+// Consider using shared memory caching for d_input to reduce global memory access.
+// Optimize the memory access pattern by using coalesced access when reading from d_input.
+// Investigate the usage of atomic operations for accumulating sums to potentially improve performance.
+// Consider unrolling the loop over nsamp to reduce loop overhead.

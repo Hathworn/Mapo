@@ -1,0 +1,9 @@
+```
+// Load data efficiently utilizing coalesced memory access
+// Minimize bank conflicts by using shared memory
+// Use __syncthreads() to synchronize threads within a block
+// Reduce global memory transactions by accessing data from shared memory
+// Optimize for warp execution by ensuring enough parallel threads
+// Consider loop unrolling for the data load/store operations
+// Ensure TILE_DIM and BLOCK_ROWS are optimal for target hardware
+```

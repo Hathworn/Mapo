@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access for wptr to improve memory bandwidth utilization.
+// Use __ldg() for read-only data like tipX1 to leverage read-only data cache on newer architectures.
+// Align x2 and tipVector accesses to 128-byte boundaries to improve global memory throughput.
+// Consider using shared memory for diagptable if it is beneficial to reduce redundant global memory accesses.
+// Use __syncthreads() carefully to avoid unnecessary synchronization overhead when accessing shared resources.
+```

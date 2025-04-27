@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access.
+// Ensure all accesses are coalesced for optimal performance.
+// Check if using half-warp reductions can further optimize warp-level operations.
+// Assess if loop unrolling beyond 8 gives additional performance benefits.

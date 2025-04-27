@@ -1,0 +1,3 @@
+// Use shared memory to store partial sums from each thread block and then reduce them
+// Optimize memory access patterns to ensure coalesced global reads from the delta array
+// Consider using warp shuffle techniques to reduce the need for shared memory usage

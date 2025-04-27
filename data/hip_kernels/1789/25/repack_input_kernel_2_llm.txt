@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to reduce global memory access latency.
+// Consider coalescing memory accesses for better bandwidth utilization.
+// Use __ldg() intrinsic for reading input array if access pattern is suitable.
+// Optimize grid and block dimensions for maximum occupancy.
+// Ensure warp-aligned memory access to improve efficiency.
+// Minimize divergence by aligning conditional checks.
+// Strive to align memory to power-of-two boundaries to utilize padded accesses.
+```

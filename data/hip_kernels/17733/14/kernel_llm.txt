@@ -1,0 +1,4 @@
+// Avoid redundant calculations by storing intermediate results in registers.
+// Minimize global memory accesses by computing the grey value once and using it for all channels.
+// Optimize memory access pattern by ensuring coalesced writes to global memory.
+// Use shared memory for frequently accessed data to reduce latency when feasible.

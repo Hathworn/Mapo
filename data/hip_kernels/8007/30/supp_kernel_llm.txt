@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to further reduce global memory access latency
+// Align memory access patterns to improve coalesced reads and writes
+// Evaluate occupancy and adjust block size for improved utilization of compute units
+// Use __restrict__ qualifiers if applicable to help the compiler optimize memory access
+```

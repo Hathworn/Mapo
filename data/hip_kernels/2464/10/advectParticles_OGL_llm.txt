@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data used across multiple threads to reduce global memory accesses
+// Use float2's coalesced memory access pattern to improve memory bandwidth utilization
+// Minimize accesses to global memory inside the loop by storing frequently used values in registers
+// Reorder computations to place memory accesses close together to improve coalescing
+// Check if using texture memory could optimize read access patterns and caching behavior
+```

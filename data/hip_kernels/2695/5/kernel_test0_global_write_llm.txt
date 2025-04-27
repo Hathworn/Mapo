@@ -1,0 +1,9 @@
+```
+// Consider increasing memory coalescing by aligning accesses for consecutive threads.
+// Reduce memory bank conflicts by ensuring accesses are spread evenly across memory banks.
+// Use shared memory to reduce global memory accesses if patterns allow data reuse.
+// Prefetch data into registers to hide memory latency.
+// Use loop unrolling if possible to reduce loop overhead and increase instruction throughput.
+// Ensure that any mask calculation minimizes warp divergence.
+// Consider using atomic operations if memory write order matters and to avoid races.
+```

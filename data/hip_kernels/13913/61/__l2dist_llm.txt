@@ -1,0 +1,4 @@
+// Use shared memory to store chunks of A and B to reduce global memory access.
+// Prefer using float for distances if precision can be compromised to increase performance.
+// Allocate memory coalesced in C to improve write efficiency.
+// Try increasing block size to maximize parallel compute units utilization.

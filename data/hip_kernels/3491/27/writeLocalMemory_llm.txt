@@ -1,0 +1,8 @@
+```
+// Unroll loop to increase instruction level parallelism
+// Use shared memory to reduce global memory access latency
+// Align shared memory array size to power of two for bank conflict avoidance
+// Ensure __syncthreads is used after writing to shared memory to avoid race condition
+// Move litems declaration closer to its usage to optimize register use
+// Minimize redundant writes to global memory to reduce the number of write operations
+```

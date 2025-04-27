@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for input to improve memory throughput.
+// Use texture memory for inputImage if the access pattern benefits from caching.
+// Ensure outputImage is aligned to float4 boundaries for efficient memory writes.
+// Minimize divergent branches inside kernels for improved warp execution efficiency.
+```

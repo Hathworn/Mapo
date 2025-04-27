@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory access latency
+// Optimize loop stride to improve memory coalescing
+// Reduce warp divergence by ensuring the same number of iterations for all threads
+// Apply warp-level reduction to decrease the number of synchronization points
+// Ensure only one thread writes the result to the global memory to prevent race conditions
+```

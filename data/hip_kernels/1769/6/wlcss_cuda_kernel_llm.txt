@@ -1,0 +1,12 @@
+```
+// Move frequently accessed data to shared memory to reduce global memory access
+// Use __syncthreads() to ensure proper synchronization of shared memory data
+// Optimize use of registers by storing intermediate values in shared memory
+// Use a stride loop for loading initial tmp_window into shared memory to balance load
+// Minimize synchronization overhead by reorganizing shared memory updates
+// Consider coalescing memory accesses for improved performance
+// Use __shared__ memory for temporary storage to avoid redundant global reads
+// Ensure data consistency by synchronizing threads before accessing shared data
+// Write back results to global memory only after necessary computations are complete
+// Clear shared memory to prepare for the next iteration and prevent stale data usage
+```

@@ -1,0 +1,5 @@
+// Avoid unaligned memory accesses by using float2 pointers for d_XY_in
+// Ensure coalesced memory access by aligning data properly
+// Use shared memory for frequently accessed data to reduce global memory access time
+// Optimize pitch calculations to minimize integer arithmetic overhead
+// Consider using loop unrolling for the pixel processing if the loop is large enough

@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to globalState for better memory throughput
+// Preload globalState[i] into a register to minimize repeated accesses
+// Move hiprandState initialization outside the main loop if possible
+// Consider using shared memory if the kernel reuses the same random numbers
+// Ensure that accesses to degreeCount are aligned for better performance
+```

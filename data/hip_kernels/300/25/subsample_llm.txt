@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store block-wide reused input data to reduce global memory accesses
+// Use loop unrolling techniques to minimize loop overhead within the kernel
+// Evaluate the potential benefit of increasing the block size for better occupancy and further optimization
+// Ensure memory coalescing for global memory reads and writes by aligning access patterns
+// Leverage memory prefetching by utilizing nearby data during computation
+```

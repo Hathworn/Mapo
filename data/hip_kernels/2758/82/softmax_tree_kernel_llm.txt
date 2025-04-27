@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses by organizing data layout to align with memory warp
+// Optimize by using shared memory to store intermediate results for reduction in softmax_device_new_api
+// Use shuffle operations or warp intrinsics for reduction within the softmax_device_new_api to minimize bank conflicts
+// Minimize global memory access by storing and reusing computation results in registers within the softmax_device_new_api
+// Implement loop unrolling in the softmax_device_new_api for operations over n to reduce instruction overhead
+```

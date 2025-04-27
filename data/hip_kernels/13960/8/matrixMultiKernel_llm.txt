@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced access patterns for A and B.
+// Ensure that sub_a and sub_b fit into shared memory by limiting BLOCK_SIZE appropriately.
+// Use __syncthreads() to synchronize threads within the block to prevent race conditions.
+// Apply loop unrolling (#pragma unroll) to enhance performance for fixed-size iterations within the inner loop.
+// Make sure to balance the workload across threads within the block for optimal performance.
+```

@@ -1,0 +1,7 @@
+```
+// Use grid-stride loop to improve GPU occupancy and ensure scalability
+// Optimize memory access patterns to leverage coalesced reads from global memory
+// Consider using shared memory if data reuse across threads within a block is observed
+// Use float2 or vectorized loads if possible to improve memory bandwidth utilization
+// Optimize thread and block dimensions for better hardware efficiency
+```

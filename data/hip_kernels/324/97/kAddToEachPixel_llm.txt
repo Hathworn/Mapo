@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access to improve memory bandwidth
+// Optimize shared memory usage if necessary to reduce global memory accesses
+// Ensure the usage of an appropriate number of threads per block for GPU occupancy
+// Use __ldg() for reading input arrays if mat1 and mat2 are read-only to utilize read-only memory cache
+```

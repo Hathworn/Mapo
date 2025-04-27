@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache input and weights tiles for better memory access patterns.
+// Optimize by coalescing global memory accesses to improve memory bandwidth utilization.
+// Use loop unrolling for inner loops to enhance instruction-level parallelism and reduce loop overhead.
+// Evaluate using half precision (FP16) if precision requirements allow to improve performance on supported hardware.
+// Investigate potential benefits of using warp-level primitives for reduction operations.
+```

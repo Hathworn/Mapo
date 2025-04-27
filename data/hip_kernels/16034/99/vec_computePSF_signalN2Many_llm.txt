@@ -1,0 +1,9 @@
+```
+// Use shared memory optimally; adjust shared memory size dynamically if `sizePart` varies significantly
+// Reduce shared memory bank conflicts by ensuring threads access different memory banks
+// Favor coalesced global memory accesses by aligning `sparseIndexEvenShiftOutput` and `sparseIndexOddShiftOutput` data structures
+// Minimize use of __syncthreads() by restructuring data dependencies if possible
+// Optimize grid and block dimensions for better occupancy and reduced warp divergence
+// Prefetch data into shared memory in chunks to minimize global memory access latency
+// Use constant memory for `divide` and other invariant parameters to decrease memory access latency
+```

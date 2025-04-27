@@ -1,0 +1,10 @@
+digraph "CFG for '_Z2k5PiS_' function" {
+	label="CFG for '_Z2k5PiS_' function";
+
+	Node0x5c64ca0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = icmp eq i32 %3, 0\l  br i1 %4, label %13, label %5\l|{<s0>T|<s1>F}}"];
+	Node0x5c64ca0:s0 -> Node0x5c66160;
+	Node0x5c64ca0:s1 -> Node0x5c661f0;
+	Node0x5c661f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%5:\l5:                                                \l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %9 = shl nuw nsw i32 %3, 5\l  %10 = add nuw nsw i32 %9, 31\l  %11 = zext i32 %10 to i64\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %11\l  store i32 %8, i32 addrspace(1)* %12, align 4, !tbaa !5\l  br label %13\l}"];
+	Node0x5c661f0 -> Node0x5c66160;
+	Node0x5c66160 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%13:\l13:                                               \l  ret void\l}"];
+}

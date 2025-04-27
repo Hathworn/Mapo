@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to load inputs for common access, reducing global memory access latency.
+// Ensure alignment of memory accesses to coalesce reads/writes in global memory.
+// Minimize divergent branches within the kernel to maximize warp execution efficiency.
+// Evaluate if loop unrolling could benefit performance by reducing loop control overhead.
+```

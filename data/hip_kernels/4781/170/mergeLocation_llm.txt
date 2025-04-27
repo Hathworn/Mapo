@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifiers for loc_, x, and y pointers to improve memory access performance
+// Ensure loc_ is properly aligned to enable coalesced memory access
+// Use constant memory if the scale value remains constant over kernel launches
+// Utilize shared memory for loc_ if possible to reduce global memory access latency
+// Experiment with different block sizes to find the optimal one for your hardware and input size
+// If possible, avoid branching by restructuring logic or using bitwise operations
+```

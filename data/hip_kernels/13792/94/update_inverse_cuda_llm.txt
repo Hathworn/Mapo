@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure threads in a block are synchronized using __syncthreads().
+// Leverage shared memory to store intermediate results for A_k.
+// Perform reduction in shared memory to optimize memory bandwidth.
+// Minimize global memory writes by batched updates using shared memory.
+// Reduce the number of syncthreads within loops to minimize overhead.
+// Ensure data loading into shared memory is coalesced.
+```

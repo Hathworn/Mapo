@@ -1,0 +1,12 @@
+```
+// Use shared memory to reduce global memory access times
+// Load data into shared memory efficiently with coalesced access
+// Ensure boundary checks when loading data to avoid out-of-bounds errors
+// Precompute constant values outside of loops where possible to save computation
+// Use fast intrinsic functions (e.g., __sinf, __cosf) for trigonometric calculations
+// Replace division with multiplication by reciprocal for performance improvement
+// Unroll loops where feasible to reduce loop overhead
+// Use warp-level reductions for efficient parallel reduction
+// Employ thread collaboration for sorting and reducing operations
+// Minimize shared memory bank conflicts by accessing memory in a pattern that avoids conflicts
+```

@@ -1,0 +1,10 @@
+```
+// Use __restrict__ pointers to give compiler more optimization opportunities.
+// Ensure memory coalescing by accessing global memory with sequential thread indices.
+// Prefetch data from global to shared memory to hide global memory latency.
+// Optimize shared memory usage by minimizing the size of shared memory arrays if possible.
+// Align data structures to improve memory access efficiency.
+// Use loop unrolling to maximize arithmetic intensity and parallel compute efficiency.
+// Ensure __syncthreads() is used correctly to avoid data hazards.
+// Consider using half or smaller block size if shared memory usage is high.
+```

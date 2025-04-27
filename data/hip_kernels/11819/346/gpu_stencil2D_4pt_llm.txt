@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce repeated global memory accesses in stencil computation
+// Consider using memory coalescing techniques for better global memory access patterns
+// Load halo regions into shared memory once to reduce redundant memory operations
+// Ensure that shared memory loads and computation follow after synchronization points
+// Favor inline computation of indices to reduce overhead in loop iterations
+// Opt for using warp-level primitives where applicable to improve synchronization and reduce latency
+```

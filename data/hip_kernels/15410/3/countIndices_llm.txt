@@ -1,0 +1,8 @@
+```c
+// Consider coalescing global memory accesses to improve memory throughput
+// Use shared memory to reduce global memory access latency
+// Ensure thread blocks contain a sufficient number of threads to fully utilize the GPU's resources
+// Implement efficient thread synchronization to avoid serialization within the warp
+// Optimize shared memory usage to avoid bank conflicts for higher access speed
+// Check if the optimal block size is being used to maximize occupancy
+```

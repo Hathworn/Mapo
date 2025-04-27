@@ -1,0 +1,5 @@
+// Consider using shared memory to cache blocks of the input matrices 'a' and 'b' to reduce global memory access.  
+// Optimize block size and dimensions to increase the number of active warps, maximizing resource utilization.  
+// Ensure memory coalescing by aligning memory access patterns, particularly for global loads and stores.  
+// Experiment with loop unrolling the innermost loop to reduce loop overhead and increase instruction level parallelism.  
+// Check for bank conflicts when using shared memory and adjust indexing where necessary to avoid them.  

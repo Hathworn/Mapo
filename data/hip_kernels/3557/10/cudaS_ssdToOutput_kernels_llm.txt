@@ -1,0 +1,10 @@
+```
+// Optimize memory access patterns to improve coalescing.
+// Consider using shared memory for frequently reused data.
+// Minimize divergent branches within warps.
+// Ensure proper memory alignment for efficient memory access.
+// Experiment with loop unrolling for small fixed-size loops.
+// Consider splitting the kernel if occupancy is low due to high register usage.
+// Use constant memory for read-only static data that is accessed by all threads.
+// Analyze warp occupancy and balance computation and memory operations.
+```

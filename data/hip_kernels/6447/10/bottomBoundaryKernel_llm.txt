@@ -1,0 +1,3 @@
+// Consider using shared memory to store intermediate results for more efficient access.
+// Ensure that memory accesses are coalesced to reduce latency and improve throughput.
+// Minimize divergence by ensuring that threads within the same warp follow the same execution path.

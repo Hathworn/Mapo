@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses  
+// Check for memory alignment for optimal coalesced access  
+// Utilize warp-level primitives to minimize divergence  
+// Ensure the grid size is chosen to fully utilize the GPU resources  
+// Consider loop unrolling if applicable for kernel workload  

@@ -1,0 +1,3 @@
+// Use shared memory to cache frequently accessed data to reduce global memory access latency
+// Consider coalescing memory accesses by ensuring threads in the same warp access consecutive memory locations
+// Minimize divergent branches within the kernel by restructuring conditionals or using predication

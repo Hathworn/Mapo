@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access to improve performance when accessing devInput and devOutput.
+// Ensure proper synchronization and avoid warp divergence for threads with border checks.
+// Utilize shared memory where possible to reduce repeated global memory accesses for devInput.
+// Align data to avoid uncoalesced memory accesses and potential bank conflicts.
+```

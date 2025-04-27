@@ -1,0 +1,7 @@
+```
+// Unroll the loop to increase memory throughput and reduce loop overhead.
+// Use texture memory for coalesced memory access and to leverage cache benefits.
+// Ensure that memory accesses are coalesced by aligning data structures appropriately.
+// Consider using shared memory for intermediate results to further reduce global memory accesses.
+// Ensure that the occupancy of the kernel is maximized by adjusting thread block and grid dimensions.
+```

@@ -1,0 +1,3 @@
+// Use shared memory to cache matrix rows if possible to reduce global memory accesses
+// Consider coalescing memory accesses when updating matrices I and A
+// Ensure proper use of __syncthreads() if shared memory is used to avoid data hazards

@@ -1,0 +1,7 @@
+```c
+// Use shared memory for gradOutput_data to reduce global memory access latency
+// Ensure coalesced memory access for gradOutput_data during reads
+// Consider using texture memory for gradOutput_data if data access pattern is random
+// Align gradInput_data writes for coalesced memory access
+// Reduce the number of arithmetic operations in translate_idx_inv by pre-computing repeated terms
+```

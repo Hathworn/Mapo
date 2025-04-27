@@ -1,0 +1,10 @@
+```c
+// Utilize shared memory to reduce global memory access
+// Coalesce memory accesses by reordering threads or data
+// Minimize bank conflicts in shared memory usage
+// Consider using __restrict__ to avoid unnecessary memory aliasing
+// Enable loop unrolling for the outer loop explicitly for better performance
+// Prefetch data into registers to reduce memory latency
+// Optimize block size and grid size for maximum occupancy
+// Align data structures to enable faster memory access
+```

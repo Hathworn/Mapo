@@ -1,0 +1,10 @@
+digraph "CFG for '_Z16kernel_vecDoublePiS_i' function" {
+	label="CFG for '_Z16kernel_vecDoublePiS_i' function";
+
+	Node0x51f4d30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = icmp slt i32 %4, %2\l  br i1 %5, label %6, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x51f4d30:s0 -> Node0x51f5ba0;
+	Node0x51f4d30:s1 -> Node0x51f5c30;
+	Node0x51f5ba0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%6:\l6:                                                \l  %7 = zext i32 %4 to i64\l  %8 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %7\l  %9 = load i32, i32 addrspace(1)* %8, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %10 = shl nsw i32 %9, 1\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %7\l  store i32 %10, i32 addrspace(1)* %11, align 4, !tbaa !5\l  br label %12\l}"];
+	Node0x51f5ba0 -> Node0x51f5c30;
+	Node0x51f5c30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%12:\l12:                                               \l  ret void\l}"];
+}

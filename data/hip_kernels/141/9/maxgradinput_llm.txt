@@ -1,0 +1,7 @@
+```c
+// Consider aligning memory access to reduce cache misses.
+// Use shared memory to store data that is reused within a block to reduce global memory accesses.
+// Explore the use of warp-level primitives to optimize data transformation across threads.
+// Ensure coalesced memory access by checking that threads read and write contiguous memory segments.
+// Minimize use of atomic operations where possible as they can be a potential bottleneck.
+```

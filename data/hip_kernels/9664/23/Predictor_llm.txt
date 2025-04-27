@@ -1,0 +1,4 @@
+// Try to coalesce memory accesses to improve throughput.
+// Consider using shared memory to reduce redundant global memory reads.
+// Prefetch data from global memory to registers if possible to reduce latency.
+// Minimize long-lived register usage to allow more concurrent threads.

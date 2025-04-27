@@ -1,0 +1,47 @@
+digraph "CFG for '_Z27imperviousness_change_largePKhS0_jjPii' function" {
+	label="CFG for '_Z27imperviousness_change_largePKhS0_jjPii' function";
+
+	Node0x5e202c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f2cab570",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = zext i32 %7 to i64\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = zext i16 %12 to i64\l  %15 = zext i32 %13 to i64\l  %16 = mul nuw nsw i64 %14, %15\l  %17 = add nuw nsw i64 %16, %8\l  %18 = sext i32 %5 to i64\l  %19 = mul i64 %17, %18\l  %20 = mul i64 %16, %18\l  %21 = mul i32 %3, %2\l  %22 = zext i32 %21 to i64\l  %23 = icmp ult i64 %20, %22\l  %24 = icmp sgt i32 %5, 0\l  %25 = and i1 %23, %24\l  br i1 %25, label %26, label %109\l|{<s0>T|<s1>F}}"];
+	Node0x5e202c0:s0 -> Node0x5e22690;
+	Node0x5e202c0:s1 -> Node0x5e22720;
+	Node0x5e22690 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%26:\l26:                                               \l  %27 = and i64 %18, 3\l  %28 = icmp ult i32 %5, 4\l  br i1 %28, label %88, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x5e22690:s0 -> Node0x5e229e0;
+	Node0x5e22690:s1 -> Node0x5e22a30;
+	Node0x5e22a30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%29:\l29:                                               \l  %30 = and i64 %18, -4\l  br label %31\l}"];
+	Node0x5e22a30 -> Node0x5e22c30;
+	Node0x5e22c30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%31:\l31:                                               \l  %32 = phi i64 [ 0, %29 ], [ %85, %84 ]\l  %33 = phi i64 [ 0, %29 ], [ %86, %84 ]\l  %34 = add i64 %32, %19\l  %35 = icmp ult i64 %34, %22\l  br i1 %35, label %36, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x5e22c30:s0 -> Node0x5e22200;
+	Node0x5e22c30:s1 -> Node0x5e23260;
+	Node0x5e22200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%36:\l36:                                               \l  %37 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %34\l  %38 = load i8, i8 addrspace(1)* %37, align 1, !tbaa !7\l  %39 = zext i8 %38 to i32\l  %40 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %34\l  %41 = load i8, i8 addrspace(1)* %40, align 1, !tbaa !7\l  %42 = zext i8 %41 to i32\l  %43 = sub nsw i32 %39, %42\l  %44 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %34\l  store i32 %43, i32 addrspace(1)* %44, align 4, !tbaa !10\l  br label %45\l}"];
+	Node0x5e22200 -> Node0x5e23260;
+	Node0x5e23260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%45:\l45:                                               \l  %46 = or i64 %32, 1\l  %47 = add i64 %46, %19\l  %48 = icmp ult i64 %47, %22\l  br i1 %48, label %49, label %58\l|{<s0>T|<s1>F}}"];
+	Node0x5e23260:s0 -> Node0x5e24330;
+	Node0x5e23260:s1 -> Node0x5e24380;
+	Node0x5e24330 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%49:\l49:                                               \l  %50 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %47\l  %51 = load i8, i8 addrspace(1)* %50, align 1, !tbaa !7\l  %52 = zext i8 %51 to i32\l  %53 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %47\l  %54 = load i8, i8 addrspace(1)* %53, align 1, !tbaa !7\l  %55 = zext i8 %54 to i32\l  %56 = sub nsw i32 %52, %55\l  %57 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %47\l  store i32 %56, i32 addrspace(1)* %57, align 4, !tbaa !10\l  br label %58\l}"];
+	Node0x5e24330 -> Node0x5e24380;
+	Node0x5e24380 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%58:\l58:                                               \l  %59 = or i64 %32, 2\l  %60 = add i64 %59, %19\l  %61 = icmp ult i64 %60, %22\l  br i1 %61, label %62, label %71\l|{<s0>T|<s1>F}}"];
+	Node0x5e24380:s0 -> Node0x5e251e0;
+	Node0x5e24380:s1 -> Node0x5e25230;
+	Node0x5e251e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%62:\l62:                                               \l  %63 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %60\l  %64 = load i8, i8 addrspace(1)* %63, align 1, !tbaa !7\l  %65 = zext i8 %64 to i32\l  %66 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %60\l  %67 = load i8, i8 addrspace(1)* %66, align 1, !tbaa !7\l  %68 = zext i8 %67 to i32\l  %69 = sub nsw i32 %65, %68\l  %70 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %60\l  store i32 %69, i32 addrspace(1)* %70, align 4, !tbaa !10\l  br label %71\l}"];
+	Node0x5e251e0 -> Node0x5e25230;
+	Node0x5e25230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%71:\l71:                                               \l  %72 = or i64 %32, 3\l  %73 = add i64 %72, %19\l  %74 = icmp ult i64 %73, %22\l  br i1 %74, label %75, label %84\l|{<s0>T|<s1>F}}"];
+	Node0x5e25230:s0 -> Node0x5e23040;
+	Node0x5e25230:s1 -> Node0x5e22d50;
+	Node0x5e23040 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%75:\l75:                                               \l  %76 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %73\l  %77 = load i8, i8 addrspace(1)* %76, align 1, !tbaa !7\l  %78 = zext i8 %77 to i32\l  %79 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %73\l  %80 = load i8, i8 addrspace(1)* %79, align 1, !tbaa !7\l  %81 = zext i8 %80 to i32\l  %82 = sub nsw i32 %78, %81\l  %83 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %73\l  store i32 %82, i32 addrspace(1)* %83, align 4, !tbaa !10\l  br label %84\l}"];
+	Node0x5e23040 -> Node0x5e22d50;
+	Node0x5e22d50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%84:\l84:                                               \l  %85 = add nuw nsw i64 %32, 4\l  %86 = add i64 %33, 4\l  %87 = icmp eq i64 %86, %30\l  br i1 %87, label %88, label %31, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x5e22d50:s0 -> Node0x5e229e0;
+	Node0x5e22d50:s1 -> Node0x5e22c30;
+	Node0x5e229e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%88:\l88:                                               \l  %89 = phi i64 [ 0, %26 ], [ %85, %84 ]\l  %90 = icmp eq i64 %27, 0\l  br i1 %90, label %109, label %91\l|{<s0>T|<s1>F}}"];
+	Node0x5e229e0:s0 -> Node0x5e22720;
+	Node0x5e229e0:s1 -> Node0x5e266a0;
+	Node0x5e266a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%91:\l91:                                               \l  %92 = phi i64 [ %106, %105 ], [ %89, %88 ]\l  %93 = phi i64 [ %107, %105 ], [ 0, %88 ]\l  %94 = add i64 %92, %19\l  %95 = icmp ult i64 %94, %22\l  br i1 %95, label %96, label %105\l|{<s0>T|<s1>F}}"];
+	Node0x5e266a0:s0 -> Node0x5e26a70;
+	Node0x5e266a0:s1 -> Node0x5e267a0;
+	Node0x5e26a70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%96:\l96:                                               \l  %97 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %94\l  %98 = load i8, i8 addrspace(1)* %97, align 1, !tbaa !7\l  %99 = zext i8 %98 to i32\l  %100 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %94\l  %101 = load i8, i8 addrspace(1)* %100, align 1, !tbaa !7\l  %102 = zext i8 %101 to i32\l  %103 = sub nsw i32 %99, %102\l  %104 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %94\l  store i32 %103, i32 addrspace(1)* %104, align 4, !tbaa !10\l  br label %105\l}"];
+	Node0x5e26a70 -> Node0x5e267a0;
+	Node0x5e267a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%105:\l105:                                              \l  %106 = add nuw nsw i64 %92, 1\l  %107 = add i64 %93, 1\l  %108 = icmp eq i64 %107, %27\l  br i1 %108, label %109, label %91, !llvm.loop !14\l|{<s0>T|<s1>F}}"];
+	Node0x5e267a0:s0 -> Node0x5e22720;
+	Node0x5e267a0:s1 -> Node0x5e266a0;
+	Node0x5e22720 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f2cab570",label="{%109:\l109:                                              \l  ret void\l}"];
+}

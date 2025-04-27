@@ -1,0 +1,7 @@
+```c
+// Consider coalescing global memory accesses for VecA and VecB
+// Minimize the use of shared memory by maximizing data reuse
+// Ensure shared memory usage aligns with warp size for better efficiency
+// Use __syncthreads() judiciously to avoid unnecessary synchronization
+// Evaluate if using shared memory provides a measurable performance gain
+```

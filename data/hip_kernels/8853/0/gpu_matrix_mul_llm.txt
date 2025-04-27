@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache sub-matrix tiles and reduce global memory accesses.
+// Loop unrolling can be applied to the innermost loop to potentially increase data throughput.
+// Ensure memory coalescing by accessing global memory in a linear, contiguous access pattern.
+// Consider using __syncthreads() for synchronizing threads when using shared memory.
+```

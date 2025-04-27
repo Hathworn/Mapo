@@ -1,0 +1,5 @@
+```
+// Consider using shared memory if multiple threads access the same data to reduce global memory access.
+// Use coalesced memory access by ensuring that consecutive threads access consecutive memory locations.
+// Minimize divergent warps by structuring control flow to ensure all threads within a warp follow the same execution path.
+```

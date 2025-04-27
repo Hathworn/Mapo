@@ -1,0 +1,13 @@
+digraph "CFG for '_Z12randControlsiiiPfPi' function" {
+	label="CFG for '_Z12randControlsiiiPfPi' function";
+
+	Node0x4bc8220 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = mul nsw i32 %1, %0\l  %16 = icmp slt i32 %14, %15\l  br i1 %16, label %17, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4bc8220:s0 -> Node0x4bc8d10;
+	Node0x4bc8220:s1 -> Node0x4bca280;
+	Node0x4bc8d10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%17:\l17:                                               \l  %18 = sext i32 %14 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %3, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %21 = sitofp i32 %2 to float\l  %22 = fmul contract float %20, %21\l  %23 = fptosi float %22 to i32\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %18\l  store i32 %23, i32 addrspace(1)* %24, align 4, !tbaa !11\l  %25 = icmp eq i32 %23, %2\l  br i1 %25, label %26, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4bc8d10:s0 -> Node0x4bcb140;
+	Node0x4bc8d10:s1 -> Node0x4bca280;
+	Node0x4bcb140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%26:\l26:                                               \l  %27 = add nsw i32 %2, -1\l  store i32 %27, i32 addrspace(1)* %24, align 4, !tbaa !11\l  br label %28\l}"];
+	Node0x4bcb140 -> Node0x4bca280;
+	Node0x4bca280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

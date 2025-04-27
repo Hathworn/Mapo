@@ -1,0 +1,3 @@
+// Use shared memory to cache normalization_factor for faster access.
+// Avoid redundant calculations by pre-computing invScale outside the loop.
+// Coalesce memory accesses by ensuring threads access consecutive memory locations.

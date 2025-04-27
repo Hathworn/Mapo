@@ -1,0 +1,9 @@
+```c
+// Ensure shared memory is sufficiently utilized for coalesced access.
+// Minimize the number of atomic operations for better performance.
+// Use persistent threads for load balancing in the frontier expansion.
+// Consider loop unrolling for the inner loop to increase throughput.
+// Align data types and memory accesses to prevent bank conflicts.
+// Explore memory prefetching techniques for the next iteration's accesses.
+// Balance workload by distributing the copy operations evenly across threads.
+```

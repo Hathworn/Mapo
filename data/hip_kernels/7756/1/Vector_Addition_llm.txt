@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring adjacent threads access adjacent memory locations.
+// Ensure memory alignments to avoid misaligned access penalties.
+// Investigate shared memory usage to store frequently accessed data and reduce global memory accesses.
+// Optimize block and grid sizes to ensure maximum GPU occupancy.
+// Utilize constant memory for any read-only data to speed up access.
+```

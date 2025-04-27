@@ -1,0 +1,3 @@
+// Use shared memory for faster access to the 'accuracy' variable
+// To minimize global memory access, perform division using shared memory
+// Ensure synchronized writes back to global memory using thread index condition

@@ -1,0 +1,6 @@
+```
+// Load velocity data into shared memory to minimize global memory access
+// Ensure synchronization after loading to shared memory to avoid race conditions
+// Consider coalesced access patterns for better memory throughput
+// Avoid warp divergence by keeping control flow uniform across threads
+```

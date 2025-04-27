@@ -1,0 +1,35 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+// Optimized kernel function
+__global__ void THCudaTensor_kernel_indexAdd(float *res, float *src, long* res_stride, float *index, long res_nDim, int dim, long idx_size, long src_size, long size_dim) {
+    int thread_idx = blockIdx.x * blockDim.x * blockDim.y + threadIdx.y * blockDim.x + threadIdx.x;
+
+    long flat_size = src_size / idx_size;
+
+    // Thread block will process contiguous sections of data
+    if (thread_idx < flat_size) {
+        for (int i = 0; i < idx_size; i++) {
+            int leftover = thread_idx;
+            int targetIdx = 0;
+            int resIdx = 0;
+            #pragma unroll
+            for (int d = 0; d < res_nDim; d++) {
+                if (d < dim) {
+                    long stride_d = res_stride[d] / size_dim;
+                    long coeff = leftover / stride_d;
+                    leftover -= coeff * stride_d;
+                    targetIdx += coeff * stride_d * idx_size;
+                    resIdx += coeff * res_stride[d];
+                } else if (d > dim) {
+                    long coeff = leftover / res_stride[d];
+                    leftover -= coeff * res_stride[d];
+                    targetIdx += coeff * res_stride[d];
+                    resIdx += coeff * res_stride[d];
+                }
+            }
+            // Use atomic operation for addition to prevent race conditions
+            atomicAdd(&res[resIdx + ((long)(index[i]) - 1) * res_stride[dim]], src[targetIdx + i * res_stride[dim]]);
+        }
+    }
+}

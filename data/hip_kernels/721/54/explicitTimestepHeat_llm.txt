@@ -1,0 +1,5 @@
+// Ensure memory coalescing by accessing consecutive memory locations
+// Use __restrict__ pointers to hint the compiler about non-aliasing
+// Consider using shared memory for frequently accessed data
+// Explore using vectorized memory operations for improved throughput
+// Optimize memory allocation and deallocation to avoid overheads

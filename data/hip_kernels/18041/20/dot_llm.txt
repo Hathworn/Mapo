@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing for global memory access
+// Avoid bank conflicts in shared memory
+// Consider using __ldg for global memory reads if data is read-only
+// Optimize shared memory usage by minimizing shared memory allocation
+// Unroll the loop for parallel reduction to reduce synchronization overhead
+```

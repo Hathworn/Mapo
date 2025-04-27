@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache portions of curr_corr for reduced global memory access
+// Use float variables for ratios to prevent repeated type casting
+// Ensure coalesced memory access by aligning data structures 
+// Utilize loop unrolling if applicable for better pipeline efficiency 
+```

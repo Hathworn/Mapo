@@ -1,0 +1,7 @@
+```
+// Use shared memory to coalesce memory accesses for better performance.
+// Apply sigmoid function when loading to minimize the computation in the critical path.
+// Add padding to shared memory to prevent bank conflicts during access.
+// Sync threads after loading data to guarantee all data is available before transposing.
+// Perform transposed writes to global memory to minimize memory access latency.
+```

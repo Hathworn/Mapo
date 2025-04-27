@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce redundant calculations and improve performance
+// Ensure coalesced memory access by aligning data access patterns with warp memory layout
+// Use threadIdx.x and threadIdx.y efficiently for independent memory accesses
+// Minimize synchronization overhead by calculating offsets before the shared memory synchronization
+// Reduce global memory accesses by caching values in shared memory
+// Optimize data reuse by loading pixel values once and using them across multiple iterations
+// Consider leveraging texture memory for better cache locality for input image pixel values
+```

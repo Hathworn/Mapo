@@ -1,0 +1,5 @@
+// Unroll the loop where possible to improve performance.
+// Use shared memory for frequently accessed data to reduce global memory reads.
+// Coalesce memory accesses for better utilization of memory bandwidth.
+// Avoid using modff in favor of integer operations to reduce computation overhead.
+// Use __ldg() for read-only data to improve memory read efficiency.

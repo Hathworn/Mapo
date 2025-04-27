@@ -1,0 +1,7 @@
+// Use shared memory to cache data and reduce global memory accesses.
+// Load data conditionally, reducing load/store divergence.
+// Utilize max and min functions to handle boundary conditions effectively.
+// Use __syncthreads() to ensure all threads have loaded data before proceeding.
+// Unroll the loop to improve performance by reducing the loop overhead.
+// Compute results conditionally to avoid unnecessary calculations.
+// Write results back to global memory efficiently only when conditions are met.

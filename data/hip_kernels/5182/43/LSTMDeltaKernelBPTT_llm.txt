@@ -1,0 +1,8 @@
+```
+// Minimize global memory accesses by using shared memory for frequently accessed data within block.
+// Optimize memory coalescing by aligning access patterns where possible.
+// Reduce register usage by leveraging shared memory and loop unrolling.
+// Consider using warp-level primitives to enhance performance for reduction operations.
+// Evaluate using half-precision arithmetic if the precision requirements allow, for improved throughput.
+// Use asynchronous memory prefetching to overlap computation and data transfer.
+```

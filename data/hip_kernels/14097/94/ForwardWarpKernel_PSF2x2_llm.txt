@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store src values to reduce global memory accesses.
+// Precompute index offsets outside of conditionals to minimize repetitive calculations.
+// Group atomicAdd operations to potentially improve performance by reducing contention.
+// Consider using a different memory access pattern to coalesce reads from global memory.
+```

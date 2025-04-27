@@ -1,0 +1,12 @@
+```
+// Optimize shared memory usage by ensuring data structures fit within shared memory limits.
+// Consider improving memory coalescing by reorganizing data access patterns.
+// Ensure proper alignment for memory access to minimize uncoalesced access.
+// Minimize shared memory usage to avoid bank conflicts and improve access efficiency.
+// Preload frequently accessed data into shared memory to reduce global memory access.
+// Ensure optimal usage of shared memory by adjusting block and grid sizes accordingly.
+// Efficient use of __syncthreads() to avoid unnecessary synchronization overhead.
+// Consider loop unrolling or other compiler optimizations for frequently used calculations.
+// Optimize access patterns to ensure alignment with cache and memory transaction sizes.
+// Use constant memory for frequently accessed constants to improve access speed.
+```

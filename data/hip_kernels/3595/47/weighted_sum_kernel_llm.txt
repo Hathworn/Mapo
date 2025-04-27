@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access by using a[i], b[i], and s[i] in contiguous memory regions.
+// Ensure b is non-null before accessing its elements to prevent undefined behavior.
+// Use shared memory if s[i] is reused multiple times for better latency hiding.
+// Optimize grid and block configuration for maximum warp occupancy.
+// Assess if the use of texture or constant memory could benefit s if it's a constant or frequently accessed.
+```

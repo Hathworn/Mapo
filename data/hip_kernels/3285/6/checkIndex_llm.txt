@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses when possible
+// Avoid branch divergence to ensure all threads in a warp execute the same instruction
+// Ensure coalesced memory access to reduce memory access latency and increase bandwidth
+// Prefer arithmetic operations over memory operations when feasible
+// Check for occupancy and adjust kernel configuration to improve utilization of resources
+```

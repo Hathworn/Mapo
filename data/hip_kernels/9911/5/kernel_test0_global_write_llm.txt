@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses.
+// Initialize the pattern in shared memory once.
+// Ensure all threads have the initialized pattern with syncthreads.
+// Write pattern from shared memory.
+// Update shared pattern with synchronization to ensure all threads see the updated value.

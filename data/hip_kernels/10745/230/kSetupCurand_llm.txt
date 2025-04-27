@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider larger block sizes to improve memory access coalescing
+// Minimize divergence by ensuring threads within a warp execute similar instructions
+// Prefer vectorized data access to increase bandwidth utilization
+// Profile memory bandwidth to identify bottlenecks and optimize access patterns
+```

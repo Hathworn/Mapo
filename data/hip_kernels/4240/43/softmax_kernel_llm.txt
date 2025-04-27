@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for input[] to improve memory access patterns
+// Use shared memory for intermediate computations in softmax_device to reduce global memory access
+// Ensure input and output pointers are aligned properly for efficient memory transactions
+// Optimize register usage by ensuring variables are efficiently managed and accessed
+// Evaluate the possibility of using more threads per block to hide memory latency effectively
+// Minimize control divergence by ensuring threads in the same warp follow the same execution path
+```

@@ -1,0 +1,8 @@
+```
+// Align memory access patterns to improve coalescing
+// Minimize pointer arithmetic by calculating offsets outside the loop
+// Increase data locality by using shared memory where possible
+// Unroll inner loops to enhance instruction-level parallelism
+// Prefetch gradOutput data to registers to minimize global memory access latency
+// Ensure thread block dimensions are optimal for the target architecture
+```

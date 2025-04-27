@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory accesses to improve global memory performance
+// Align partial histogram reads to avoid bank conflicts in shared memory
+// Consider using warp-level primitives for more optimized reduction
+// Ensure optimal grid and block size to maximize occupancy and efficiency
+// Minimize shared memory usage to allow more blocks per SM
+```

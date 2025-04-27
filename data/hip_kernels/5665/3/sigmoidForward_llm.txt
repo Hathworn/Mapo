@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ pointers to help the compiler with aliasing optimizations
+// Ensure the V array is coalesced for global memory access to optimize bandwidth
+// Use shared memory if multiple threads in the block access the same data from V
+// Increase occupancy by adjusting block size or using __launch_bounds__ if needed
+// Test for optimal launch configuration to maximize hardware utilization
+// Explore using vectorized types like float4 for potential memory access improvements
+```

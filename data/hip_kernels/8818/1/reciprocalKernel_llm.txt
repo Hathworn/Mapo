@@ -1,0 +1,7 @@
+```
+// Consider reducing shared memory size if possible to improve occupancy
+// Ensure coalesced memory access patterns to maximize bandwidth usage
+// Avoid unnecessary __syncthreads() calls to reduce synchronization overhead
+// Opt for using vectorized data types (e.g., float4) for improved data throughput
+// Assess the need for using __ldg() for loading data from read-only cache
+```

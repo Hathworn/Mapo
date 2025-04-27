@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for matrix to improve memory bandwidth utilization
+// Consider using double buffering in shared memory to hide latency and improve throughput
+// Optimize block size to ensure maximum occupancy and minimize idle threads
+// Minimize the size of shared memory to fit more blocks per multiprocessor
+// Implement loop unrolling for the matrix-vector multiplication loop to reduce loop overhead
+// Profile kernel execution to find the optimal number of threads per block
+```

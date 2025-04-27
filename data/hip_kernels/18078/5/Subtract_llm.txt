@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access by ensuring linear access patterns
+// Ensure threads access contiguous memory locations for efficiency
+// Avoid bank conflicts by aligning memory accesses on boundaries
+// Try using shared memory for often reused data within a block
+// Minimize memory access latency by maximizing arithmetic intensity
+// Consider using multiple warps to hide memory latency
+// Apply loop unrolling if applicable to increase instruction level parallelism
+// Experiment with varying block sizes to improve occupancy and efficiency
+```

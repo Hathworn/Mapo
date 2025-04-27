@@ -1,0 +1,3 @@
+// Consider using shared memory for frequently accessed data within a block to reduce global memory access.
+// Use texture or constant memory for d_cdf_norm if the data is read-only and accessed frequently.
+// Ensure coalesced memory access patterns by organizing data structures for linear access.

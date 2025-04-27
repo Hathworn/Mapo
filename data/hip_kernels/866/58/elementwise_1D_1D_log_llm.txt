@@ -1,0 +1,4 @@
+// Consider aligning input data in memory for coalesced access
+// Utilize shared memory to reduce global memory reads
+// Optimize block and grid dimensions based on hardware specifics to maximize occupancy
+// Minimize divergent code paths within the kernel execution

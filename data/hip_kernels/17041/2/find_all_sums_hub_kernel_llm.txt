@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache node_weight values to reduce global memory access.
+// Ensure coalesced access to the neighbor and node_weight arrays for better performance.
+// Consider increasing block size to optimize occupancy and throughput.
+// Apply data prefetching techniques to hide memory latency.
+```

@@ -1,0 +1,6 @@
+```
+// Move fixed index calculations outside the loop to optimize memory access
+// Use shared memory to minimize global memory access, ensuring data locality
+// Unroll inner loop to reduce loop overhead and improve instruction throughput
+// Adjust TILE_WIDTH according to GPU's warp size to maximize efficiency
+```

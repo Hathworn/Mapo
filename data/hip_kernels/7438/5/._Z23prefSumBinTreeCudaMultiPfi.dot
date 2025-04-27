@@ -1,0 +1,47 @@
+digraph "CFG for '_Z23prefSumBinTreeCudaMultiPfi' function" {
+	label="CFG for '_Z23prefSumBinTreeCudaMultiPfi' function";
+
+	Node0x51ffbd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5d8d170",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = add nuw nsw i32 %3, 1\l  %6 = and i32 %5, 1\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x51ffbd0:s0 -> Node0x5201380;
+	Node0x51ffbd0:s1 -> Node0x5201410;
+	Node0x5201380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%8:\l8:                                                \l  %9 = shl nsw i32 %4, 10\l  %10 = or i32 %9, %3\l  %11 = sext i32 %10 to i64\l  %12 = getelementptr inbounds float, float addrspace(1)* %0, i64 %11\l  %13 = load float, float addrspace(1)* %12, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %14 = add nsw i32 %10, -1\l  %15 = sext i32 %14 to i64\l  %16 = getelementptr inbounds float, float addrspace(1)* %0, i64 %15\l  %17 = load float, float addrspace(1)* %16, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %18 = fadd contract float %13, %17\l  %19 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %3\l  store float %18, float addrspace(3)* %19, align 4, !tbaa !5\l  br label %20\l}"];
+	Node0x5201380 -> Node0x5201410;
+	Node0x5201410 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5d8d170",label="{%20:\l20:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %21 = icmp slt i32 %1, 4\l  br i1 %21, label %24, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x5201410:s0 -> Node0x5203090;
+	Node0x5201410:s1 -> Node0x52030e0;
+	Node0x52030e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%22:\l22:                                               \l  %23 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %3\l  br label %27\l}"];
+	Node0x52030e0 -> Node0x5203270;
+	Node0x5203090 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5d8d170",label="{%24:\l24:                                               \l  %25 = phi i32 [ 4, %20 ], [ %40, %39 ]\l  %26 = icmp ugt i32 %25, 5\l  br i1 %26, label %42, label %62\l|{<s0>T|<s1>F}}"];
+	Node0x5203090:s0 -> Node0x52035f0;
+	Node0x5203090:s1 -> Node0x5203680;
+	Node0x5203270 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ 4, %22 ], [ %40, %39 ]\l  %29 = add nsw i32 %28, -1\l  %30 = and i32 %29, %5\l  %31 = icmp eq i32 %30, 0\l  br i1 %31, label %32, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x5203270:s0 -> Node0x5203a20;
+	Node0x5203270:s1 -> Node0x52033f0;
+	Node0x5203a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%32:\l32:                                               \l  %33 = load float, float addrspace(3)* %23, align 4, !tbaa !5\l  %34 = ashr exact i32 %28, 1\l  %35 = sub nsw i32 %3, %34\l  %36 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %35\l  %37 = load float, float addrspace(3)* %36, align 4, !tbaa !5\l  %38 = fadd contract float %33, %37\l  store float %38, float addrspace(3)* %23, align 4, !tbaa !5\l  br label %39\l}"];
+	Node0x5203a20 -> Node0x52033f0;
+	Node0x52033f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%39:\l39:                                               \l  %40 = shl nsw i32 %28, 1\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %41 = icmp sgt i32 %40, %1\l  br i1 %41, label %24, label %27, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x52033f0:s0 -> Node0x5203090;
+	Node0x52033f0:s1 -> Node0x5203270;
+	Node0x52035f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = phi i32 [ %44, %60 ], [ %25, %24 ]\l  %44 = lshr i32 %43, 1\l  %45 = add nsw i32 %44, -1\l  %46 = and i32 %45, %5\l  %47 = icmp eq i32 %46, 0\l  br i1 %47, label %48, label %60\l|{<s0>T|<s1>F}}"];
+	Node0x52035f0:s0 -> Node0x5204800;
+	Node0x52035f0:s1 -> Node0x5204480;
+	Node0x5204800 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%48:\l48:                                               \l  %49 = udiv i32 %5, %44\l  %50 = icmp eq i32 %49, 1\l  br i1 %50, label %60, label %51\l|{<s0>T|<s1>F}}"];
+	Node0x5204800:s0 -> Node0x5204480;
+	Node0x5204800:s1 -> Node0x5204a20;
+	Node0x5204a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%51:\l51:                                               \l  %52 = lshr i32 %43, 2\l  %53 = sub nsw i32 %3, %52\l  %54 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %53\l  %55 = load float, float addrspace(3)* %54, align 4, !tbaa !5\l  %56 = sub nsw i32 %3, %44\l  %57 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %56\l  %58 = load float, float addrspace(3)* %57, align 4, !tbaa !5\l  %59 = fadd contract float %55, %58\l  store float %59, float addrspace(3)* %54, align 4, !tbaa !5\l  br label %60\l}"];
+	Node0x5204a20 -> Node0x5204480;
+	Node0x5204480 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%60:\l60:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %61 = icmp ugt i32 %43, 11\l  br i1 %61, label %42, label %62, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x5204480:s0 -> Node0x52035f0;
+	Node0x5204480:s1 -> Node0x5203680;
+	Node0x5203680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5d8d170",label="{%62:\l62:                                               \l  br i1 %7, label %63, label %70\l|{<s0>T|<s1>F}}"];
+	Node0x5203680:s0 -> Node0x5205460;
+	Node0x5203680:s1 -> Node0x52054b0;
+	Node0x5205460 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%63:\l63:                                               \l  %64 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %3\l  %65 = load float, float addrspace(3)* %64, align 4, !tbaa !5\l  %66 = shl nsw i32 %4, 10\l  %67 = or i32 %66, %3\l  %68 = sext i32 %67 to i64\l  %69 = getelementptr inbounds float, float addrspace(1)* %0, i64 %68\l  store float %65, float addrspace(1)* %69, align 4, !tbaa !5\l  br label %82\l}"];
+	Node0x5205460 -> Node0x52055f0;
+	Node0x52054b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%70:\l70:                                               \l  %71 = icmp eq i32 %3, 0\l  br i1 %71, label %82, label %72\l|{<s0>T|<s1>F}}"];
+	Node0x52054b0:s0 -> Node0x52055f0;
+	Node0x52054b0:s1 -> Node0x5205d40;
+	Node0x5205d40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#aec9fc70",label="{%72:\l72:                                               \l  %73 = shl nsw i32 %4, 10\l  %74 = or i32 %73, %3\l  %75 = sext i32 %74 to i64\l  %76 = getelementptr inbounds float, float addrspace(1)* %0, i64 %75\l  %77 = load float, float addrspace(1)* %76, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %78 = add nsw i32 %3, -1\l  %79 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ23prefSumBinTreeCudaMultiPfiE3shm, i32 0, i32 %78\l  %80 = load float, float addrspace(3)* %79, align 4, !tbaa !5\l  %81 = fadd contract float %77, %80\l  store float %81, float addrspace(1)* %76, align 4, !tbaa !5\l  br label %82\l}"];
+	Node0x5205d40 -> Node0x52055f0;
+	Node0x52055f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e5d8d170",label="{%82:\l82:                                               \l  ret void\l}"];
+}

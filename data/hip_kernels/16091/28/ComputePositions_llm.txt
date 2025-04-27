@@ -1,0 +1,6 @@
+```
+// Use standard operations instead of __mul24
+// Prefetch common memory accesses and avoid repeated indexing
+// Avoid recalculating inverses, reduced duplicate floats
+// Inline compare and clamp using intrinsics, minimizing branching overhead
+```

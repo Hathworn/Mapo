@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to minimize global memory access and improve performance
+// Accumulate intermediate results in shared memory before writing back to global memory
+// Ensure proper synchronization with __syncthreads() to coordinate shared memory usage
+// Limit global memory writes by consolidating shared memory results before storage
+```

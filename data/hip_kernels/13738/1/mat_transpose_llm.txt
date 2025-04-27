@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve access patterns and reduce global memory accesses
+// Ensure coalesced global memory reads by loading data in tiles
+// Ensure that out-of-bounds checks are performed to avoid memory access violations
+// Use __syncthreads() to ensure all threads have completed writing to shared memory before reading
+// Transpose operation benefits from shared memory as it provides fast access to data
+```

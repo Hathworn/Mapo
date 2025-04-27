@@ -1,0 +1,8 @@
+```
+// Consider using cooperative groups for better synchronization control
+// Ensure the variable accuracy is in shared memory if accessed by multiple threads
+// Minimize use of global memory by caching important data in registers
+// Avoid warp divergence by having uniform execution paths
+// Optimize thread block size for maximum occupancy
+// If N is constant, consider using __constant__ memory for better performance
+```

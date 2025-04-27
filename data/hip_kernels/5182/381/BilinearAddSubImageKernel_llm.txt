@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for opImage to improve memory bandwidth usage.
+// Preload subImageDefs into shared memory to reduce redundant global memory accesses.
+// Use shared memory to preload input values if they are reused, reducing global memory access latency.
+// Optimize thread block and grid size for better occupancy and balancing computation with memory bandwidth.
+// Ensure atomicAdd operations are necessary; if possible, eliminate them by using shared memory reduction.
+```

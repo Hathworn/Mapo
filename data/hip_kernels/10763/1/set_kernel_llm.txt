@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if multiple threads access the same data
+// Ensure memory access patterns are coalesced for better performance
+// Use __syncthreads() if threads need to wait for each other at specific points
+// Evaluate the use of texture memory for better cache locality
+```

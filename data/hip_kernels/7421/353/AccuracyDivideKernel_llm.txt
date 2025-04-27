@@ -1,0 +1,3 @@
+// Consider using shared memory to reduce global memory access latency
+// Use warp-level primitives to optimize the division operation if applicable
+// Ensure that N is loaded into a register to avoid repeated global memory reads

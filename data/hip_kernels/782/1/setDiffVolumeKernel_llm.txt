@@ -1,0 +1,12 @@
+```
+// Optimize memory access by coalescing loads from global memory where possible
+// Ensure that threads within a warp access contiguous memory to improve memory coalescing
+// Consider using more shared memory if it helps to reduce global memory accesses
+// Check if reducing the size of shared memory chunks can lead to better occupancy
+// Streamline thread indexing calculations to minimize arithmetic compute overhead
+// Ensure that the use of shared memory does not lead to bank conflicts
+// Evaluate aligning data in shared memory to match warp memory access patterns
+// Consider loop unrolling for small fixed-size loops to improve execution efficiency
+// Evaluate the grid and block size configuration for better SM occupancy and efficiency
+// Ensure boundary checks do not introduce unnecessary divergent branching within warps
+```

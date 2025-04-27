@@ -1,0 +1,6 @@
+```
+// Consider using __restrict__ qualifier for pointers to reduce pointer aliasing
+// Leverage warp-level primitives such as __shfl_sync for cross-thread data sharing if applicable
+// Utilize shared memory effectively for any array data reused within the block
+// Ensure all memory accesses are coalesced for optimal performance
+```

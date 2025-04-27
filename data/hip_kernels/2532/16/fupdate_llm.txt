@@ -1,0 +1,8 @@
+```
+// Pre-calculate indices to reduce redundant computations
+// Coalesce memory accesses to improve memory bandwidth
+// Use shared memory if applicable to reduce global memory accesses
+// Align memory accesses to ensure proper coalescing in all cases
+// Consider using texture memory for read-only data to utilize caching
+// Minimize divergence in warp execution for efficiency
+```

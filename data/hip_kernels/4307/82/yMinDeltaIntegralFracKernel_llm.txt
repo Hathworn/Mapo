@@ -1,0 +1,8 @@
+```
+// Avoid calculating indices and bounds checks multiple times, compute them once and reuse.
+// Use shared memory to cache data for fast access within a block.
+// Minimize conditional statements inside the kernel to reduce divergence.
+// Prefer registers over local memory for frequently accessed variables.
+// Coalesce global memory accesses to optimize bandwidth utilization.
+// Ensure data alignment for efficient memory access.
+```

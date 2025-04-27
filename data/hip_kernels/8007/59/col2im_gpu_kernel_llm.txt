@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput
+// Use shared memory to reduce repeated global memory accesses within the loop
+// Minimize bank conflicts by properly aligning shared memory usage
+// Ensure that stride and padding are optimized to maximize memory access patterns
+// Analyze thread block size and dimensions for optimal occupancy and performance
+// Avoid divergent branching by refactoring conditions where possible
+// Prefetch data into registers when used multiple times in the loop
+```

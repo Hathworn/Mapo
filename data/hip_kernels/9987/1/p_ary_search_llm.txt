@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for faster access to frequently accessed data
+// Minimize synchronization by reorganizing logic to reduce __syncthreads() calls
+// Coalesce memory access by aligning consecutive threads to contiguous memory locations
+// Ensure atomic operations are minimized to reduce contention
+// Consider using streams or other methods to increase concurrency if the problem size is large
+```

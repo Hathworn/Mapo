@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access patterns for frontier and edgeArrayAux arrays to improve read efficiency.
+// Optimize atomic operations by minimizing their usage or using warp-level primitives if available.
+// Ensure edgeArray accesses are coalesced and aligned to reduce global memory transaction overhead.
+// Investigate possibility of shared memory usage for frontier and visited arrays to decrease latency.
+// Analyze use of atomic operations for frontier_length increment; explore alternative methods for less contention.
+// Evaluate potential for loop unrolling in the adjacency iteration to enhance parallel execution efficiency.
+```

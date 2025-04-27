@@ -1,0 +1,4 @@
+// Ensure memory accesses are coalesced by using consecutive indices.
+// Consider using shared memory if multiple threads access the same data fragment.
+// Use vectorized operations if suitable to process multiple data elements per thread.
+// Adjust block and grid dimensions for optimal occupancy based on the specific GPU architecture.

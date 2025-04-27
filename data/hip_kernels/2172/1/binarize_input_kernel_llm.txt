@@ -1,0 +1,7 @@
+```
+// Consider using faster atomic operations if applicable to reduce threads waiting time.
+// Optimize shared memory usage by minimizing bank conflicts.
+// Preload data in shared memory to decrease global memory latency.
+// Reduce the number of synchronizations within the shared memory block.
+// Ensure efficient computation to keep all threads in a warp busy.
+```

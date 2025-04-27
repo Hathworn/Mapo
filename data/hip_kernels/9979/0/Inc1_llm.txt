@@ -1,0 +1,6 @@
+// Cache Ad[tx] value to reduce global memory accesses.
+// Perform computation on cached value to minimize global memory usage.
+// Reduce redundant global memory updates in the inner loop.
+// Consider using __shared__ memory for frequent updates within the loop.
+// Minimize the number of threads performing memory access checks for better performance scalability.
+// Optimize memory coalescing for Ad and Bd access patterns.

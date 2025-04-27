@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for better memory bandwidth utilization.
+// Use shared memory to store block-specific data to reduce global memory access.
+// Ensure that the number of threads per block is optimal for memory access efficiency.
+// Evaluate the use of __restrict__ keyword to potentially reduce pointer aliasing.

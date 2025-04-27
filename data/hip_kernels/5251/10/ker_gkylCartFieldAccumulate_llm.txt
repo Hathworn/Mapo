@@ -1,0 +1,4 @@
+// Use shared memory to cache frequently accessed elements of 'inp' for improved access speed.
+// Consider coalescing memory access for 'inp' and 'out' to reduce memory transaction overhead.
+// Ensure that memory access patterns are optimized for contiguous access to utilize warp efficiency fully.
+// Evaluate using atomic operations if simultaneous updates to 'out' are causing race conditions.

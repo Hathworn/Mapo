@@ -1,0 +1,7 @@
+```
+// Minimize global memory accesses by using shared memory if possible.
+// Ensure coalesced memory access to X and Y for improved performance.
+// Consider using warp-level primitives to optimize the reduction across OUT.
+// Implement occupancy checks to ensure maximum kernel resource utilization.
+// Profile memory usage to identify and eliminate any unnecessary memory transactions.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses when loading input data into shared memory
+// Optimize block size to better match hardware capabilities for increased performance
+// Minimize use of shared memory per block to allow more blocks to be resident on the SM
+// Use appropriate synchronization to ensure all threads have loaded data into shared memory before computation
+// Evaluate usage of __restrict__ qualifiers to aid compiler optimizations in memory access
+// Experiment with vectorized types to potentially increase memory throughput
+```

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for arrays a and b to improve memory bandwidth utilization.
+// Increase the occupancy by choosing an appropriate block size (DP_BLOCKSIZE) that maximizes the use of shared memory and CUDA cores.
+// Consider using asynchronous memory prefetching to hide global memory latency.
+/// Ensure that any read-write accesses to shared memory (shmem) are properly aligned and minimized to prevent bank conflicts.
+// Use atomic operations or a separate kernel for final reduction across blocks if target array will be further reduced.
+```

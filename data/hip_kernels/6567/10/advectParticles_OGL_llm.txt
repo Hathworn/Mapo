@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring contiguous memory access in both x and y directions.
+// Looking into vectorized data types to load and store multiple particles can significantly reduce memory access time.
+// Consider reducing pitch to facilitate more aligned memory access if not affecting other accesses.
+// If possible, ensure stride_x and stride_y maximize the use of shared memory within a warp.
+// Unroll for loops further if shared memory allows it to increase throughput.
+```

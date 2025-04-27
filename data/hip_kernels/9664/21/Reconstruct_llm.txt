@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for arrays like nex and pva3 to improve memory bandwidth utilization.
+// Evaluate whether shared memory can be utilized to store frequently accessed data to reduce global memory access time.
+// Ensure that data accessed by threads in a warp are contiguous to fully utilize memory coalescing.
+// Minimize divergent branching in the switch-case construct to improve warp execution efficiency.
+```

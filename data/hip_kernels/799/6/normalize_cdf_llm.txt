@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache portions of d_input_cdf to reduce global memory accesses.
+// Prefetch data for next iterations to hide memory latency and improve data locality.
+// Ensure coalesced memory accesses when loading input_value from d_input_cdf.
+// Consider loop unrolling if the kernel is not memory bound to reduce instruction overhead.
+```

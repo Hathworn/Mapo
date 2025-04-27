@@ -1,0 +1,6 @@
+// Consider coalescing global memory accesses by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to minimize redundant global memory accesses and improve data reuse
+// Load variable 'x' to shared memory only once per block to avoid redundant loads
+// Ensure proper synchronization using __syncthreads() to avoid race conditions when accessing shared memory
+// Optimize shared memory usage by calculating the correct size allocation to prevent memory overflow
+// Ensure computations are performed after all data is loaded into shared memory to improve correctness

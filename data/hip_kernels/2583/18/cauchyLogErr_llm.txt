@@ -1,0 +1,4 @@
+// Use shared memory to cache frequently accessed data if possible  
+// Coalesce global memory access to improve memory bandwidth  
+// Increase thread block size while ensuring enough registers and shared memory per thread  
+// Minimize divergence in threads by restructuring conditional operations

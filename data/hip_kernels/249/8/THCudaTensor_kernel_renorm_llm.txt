@@ -1,0 +1,8 @@
+```
+// Consider increasing the shared memory usage if buffer size needs adjustment based on block size
+// Optimize memory access patterns by ensuring coalesced access in global memory
+// Reduce bank conflicts within shared memory by ensuring data alignment
+// Explore using warp shuffle operations for faster reduction instead of shared memory
+// Leverage asynchronous memory operations to overlap computation and memory transfer
+// Evaluate occupancy and adjust block size to maximize parallelism and resource utilization
+```

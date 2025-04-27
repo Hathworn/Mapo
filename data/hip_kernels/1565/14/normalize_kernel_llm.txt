@@ -1,0 +1,7 @@
+```
+// Consider preloading mean[f] and variance[f] into registers to reduce memory access latency.
+// Optimize memory access by using coalesced memory access patterns for x.
+// Minimize divergence by ensuring all threads follow the same execution path to the extent possible.
+// Experiment with different block and grid sizes to achieve better occupancy and performance.
+// Use shared memory if possible to cache frequently accessed data for faster compute.
+```

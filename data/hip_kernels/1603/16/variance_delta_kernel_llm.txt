@@ -1,0 +1,7 @@
+```
+// Use shared memory for reduction to minimize global memory access
+// Consider asynchronous memory copy to mitigate latency
+// Utilize warp-level parallelism for reduction operations
+// Optimize block and thread configuration to improve warp occupancy
+// Preload variance and mean values into registers to reduce redundant global memory accesses
+```

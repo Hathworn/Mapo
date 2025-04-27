@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing by ensuring adjacent threads access adjacent memory locations in dy for better performance.
+// Use shared memory if possible to minimize global memory accesses, especially if there are repeated accesses to the same data.
+// Ensure that the grid and block dimensions are optimally chosen to fully utilize the GPU's resources, minimizing idle threads.
+// Prefetch data into registers when beneficial to reduce the overhead of accessing global memory.
+// Consider unrolling loops to increase instruction-level parallelism and hide latency.
+```

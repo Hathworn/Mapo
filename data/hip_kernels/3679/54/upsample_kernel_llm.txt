@@ -1,0 +1,6 @@
+// Simplify 1D index calculation
+// Use shared memory to minimize global memory access
+// Coalesce memory access patterns for better memory performance
+// Consider loop unrolling for the out_c and b calculations
+// Align atomic operations to prevent bank conflicts
+// Ensure correct memory alignment for optimal performance

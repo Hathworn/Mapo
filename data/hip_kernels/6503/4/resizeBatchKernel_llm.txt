@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory accesses
+// Optimize memory access patterns to enable coalesced memory accesses
+// Use appropriate data alignment to avoid misaligned memory accesses
+// Minimize divergence in warp execution by ensuring uniform branching conditions
+// Unroll loops where possible to reduce loop overhead
+// Balance the workload across threads to avoid idle threads
+// Consider using vectorized types or operations for better memory throughput
+```

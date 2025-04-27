@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access
+// Align data access patterns to coalesced memory reads and writes
+// Ensure proper synchronization using __syncthreads to avoid race conditions
+// Optimize block and grid dimensions for better occupancy and memory efficiency
+```

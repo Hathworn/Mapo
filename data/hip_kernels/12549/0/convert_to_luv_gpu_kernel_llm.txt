@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Leverage shared memory to reduce global memory reads for repetitive calculations.
+// Use loop unrolling if an operation is repeated across multiple elements.
+// Avoid divergent branches within the warp to maintain efficiency.
+// Overlap computation with memory accesses to hide latency.
+```

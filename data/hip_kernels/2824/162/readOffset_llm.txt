@@ -1,0 +1,8 @@
+```
+// Consider using a larger shared memory buffer for block-wide data caching
+// Load multiple elements into shared memory to reduce global memory access within each block
+// Utilize coalesced memory access to improve memory throughput
+// Ensure synchronization barriers are matched appropriately to prevent race conditions
+// Optimize shared memory usage to avoid bank conflicts
+// Experiment with different block and grid sizes to achieve optimal occupancy and performance
+```

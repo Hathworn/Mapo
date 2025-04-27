@@ -1,0 +1,4 @@
+// Use __restrict__ to indicate non-aliasing pointers to improve memory access optimization
+// Utilize __ldg() for input read to leverage beneficial memory caching
+// Consider using fmaf for arithmetic optimization potential
+// Ensure computation limits within elem_count boundaries to optimize memory access and avoid overflows

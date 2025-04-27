@@ -1,0 +1,9 @@
+```
+// Use shared memory to store input values to reduce global memory access
+// Consider using warp-level primitives like warp shuffle to find the largest value
+// Accumulate sum using shared memory and parallel reduction to avoid atomic operations
+// Use separate kernel launches for different computational parts if needed for better parallelization
+// Ensure proper memory alignment for faster access and coalescing
+// Minimize use of atomic operations as they can serialize execution and reduce performance
+// Consider using fast math functions for quicker computation
+```

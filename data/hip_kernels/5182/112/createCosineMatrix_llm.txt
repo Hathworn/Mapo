@@ -1,0 +1,6 @@
+```
+// Use shared memory to store intermediate results and minimize global memory access.
+// Coalesce memory access by ensuring consecutive threads access consecutive memory locations.
+// Reduce divergent branches by consolidating conditions where possible.
+// Precompute and store frequently used values in registers to reduce redundant calculations.
+```

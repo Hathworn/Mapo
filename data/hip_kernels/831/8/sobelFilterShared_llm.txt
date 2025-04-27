@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve performance.
+// Ensure boundary checks are performed to prevent invalid memory accesses.
+// Load data into shared memory in parallel by surrounding threads to minimize latency.
+// Synchronize threads with __syncthreads() after loading data to ensure all threads have updated shared memory before computation.

@@ -1,0 +1,7 @@
+```
+// Consider loading Y and dY into shared memory to minimize global memory access.
+// Use const __restrict__ qualifiers for input pointers to aid compiler optimizations.
+// Investigate using cooperative groups for more efficient warp-level reductions.
+// Ensure alignment of pointers Y, dY, and dX to improve memory throughput.
+// Adjust blockDim.x to match a multiple of warp size for full warp utilization.
+```

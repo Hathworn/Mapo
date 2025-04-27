@@ -1,0 +1,6 @@
+```
+// Consider using __restrict__ keyword if accuracy is read-only for better memory access optimization
+// Utilize shared memory if data needs to be accessed multiple times by threads within the same block
+// Ensure coalesced memory access if accuracy is accessed by multiple threads
+// Check if compiling with -O3 optimization flag for more aggressive optimizations
+```

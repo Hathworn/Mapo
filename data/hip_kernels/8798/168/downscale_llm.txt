@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for gradOutput_data to reduce global memory accesses
+// Ensure coalesced memory accesses to gradOutput_data for improved memory throughput
+// Optimize thread block size and shape for better occupancy and warp efficiency
+// Evaluate the impact of using vectorized loads/stores for gradOutput_data if applicable
+// Consider merging small kernels if kernel launch overhead is significant
+```

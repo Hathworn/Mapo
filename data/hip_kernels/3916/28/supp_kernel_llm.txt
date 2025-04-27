@@ -1,0 +1,8 @@
+```
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Reduce global memory accesses by using shared memory if possible
+// Use warp-level primitives for better performance and memory access
+// Ensure INCX is 1 to enable effective memory coalescing
+// Consider using texture or cache memory for repeated data access
+// Tune block size and grid size for optimal occupancy and performance
+```

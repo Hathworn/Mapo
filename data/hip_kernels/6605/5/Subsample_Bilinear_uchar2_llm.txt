@@ -1,0 +1,4 @@
+// Precompute scale factors outside the loop to avoid repeating calculations
+// Use texture fetch with reduced function calls for faster memory access
+// Simplify averaging using bit shifts for optimized computation
+// Reuse calculations by storing them in variables to minimize redundant operations

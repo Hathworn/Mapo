@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for maxProbs, labelLogProbs, and correctProbs to reduce global memory access.
+// Consider using __shfl_sync for efficiency in reduction operations within a warp.
+// Use vectorized memory access patterns where possible to improve memory throughput.
+// Check if __syncthreads_or can be replaced with warp-level primitives for performance gain.
+// Align data structures to reduce memory access latency and improve coalescing.
+// Minimize branching conditions within the warp for better performance.
+```

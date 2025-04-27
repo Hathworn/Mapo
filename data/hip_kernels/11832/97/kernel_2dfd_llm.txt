@@ -1,0 +1,9 @@
+```cpp
+// Utilize shared memory to minimize global memory access.
+// Ensure that memory accesses are coalesced for optimal performance.
+// Utilize __syncthreads to synchronize threads before accessing shared memory.
+// Use register to minimize redundant global memory access for yval.
+// Unroll loops to reduce loop overhead and improve performance.
+// Use conditional execution to avoid unnecessary computations on boundary threads.
+// Ensure shared memory is aligned to avoid bank conflicts.
+```

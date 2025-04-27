@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access, improving bandwidth utilization.
+// Load data into shared memory once and perform computations locally to minimize global reads.
+// Handle boundary conditions with zero padding to avoid memory out-of-bounds errors.
+// Implement reduction using shared memory to decrease latency and enhance performance.
+// Synchronize threads with __syncthreads to ensure data consistency during reduction.
+// Only write the final result from block 0 to global memory, optimizing memory writes.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store `input` values for threads within the same block to reduce global memory access.
+// Use coalesced memory access patterns when accessing `input` and `grad` arrays to minimize memory transaction overhead.
+// Align memory access to ensure that as many threads as possible read inputs simultaneously to maximize bandwidth usage.
+// Minimize branch divergence in the binary search section by ensuring consistent execution paths across threads.
+// Ensure that `CSR_rowIdx`, `CSR_colIdx`, and `CSR_val` accesses are coalesced wherever possible to improve memory throughput.
+// Precompute or cache invariant calculations outside of loops to reduce redundant computations within the kernel.
+```

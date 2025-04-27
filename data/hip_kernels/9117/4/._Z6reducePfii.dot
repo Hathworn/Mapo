@@ -1,0 +1,13 @@
+digraph "CFG for '_Z6reducePfii' function" {
+	label="CFG for '_Z6reducePfii' function";
+
+	Node0x5e2ef10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = add nsw i32 %2, 1\l  %5 = icmp slt i32 %4, %1\l  br i1 %5, label %6, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x5e2ef10:s0 -> Node0x5e2f6e0;
+	Node0x5e2ef10:s1 -> Node0x5e2f770;
+	Node0x5e2f6e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%6:\l6:                                                \l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = add i32 %7, 1\l  %9 = add i32 %8, %2\l  %10 = mul nsw i32 %9, %1\l  %11 = add nsw i32 %10, %2\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %14 = mul nsw i32 %2, %1\l  br label %15\l}"];
+	Node0x5e2f6e0 -> Node0x5e2f600;
+	Node0x5e2f600 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  %16 = phi i32 [ %4, %6 ], [ %28, %15 ]\l  %17 = add nsw i32 %16, %10\l  %18 = sext i32 %17 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !4\l  %21 = load float, float addrspace(1)* %13, align 4, !tbaa !4\l  %22 = add nsw i32 %16, %14\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds float, float addrspace(1)* %0, i64 %23\l  %25 = load float, float addrspace(1)* %24, align 4, !tbaa !4\l  %26 = fmul contract float %21, %25\l  %27 = fsub contract float %20, %26\l  store float %27, float addrspace(1)* %19, align 4, !tbaa !4\l  %28 = add nsw i32 %16, 1\l  %29 = icmp slt i32 %28, %1\l  br i1 %29, label %15, label %30, !llvm.loop !8\l|{<s0>T|<s1>F}}"];
+	Node0x5e2f600:s0 -> Node0x5e2f600;
+	Node0x5e2f600:s1 -> Node0x5e2f770;
+	Node0x5e2f770 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%30:\l30:                                               \l  ret void\l}"];
+}

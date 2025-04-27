@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to buffer grad_out for improved read efficiency.
+// Optimize the memory access pattern to ensure coalesced access for grad_out and grad_points.
+// Ensure idx is accessed in a coalesced manner by aligning thread assignment properly.
+// Minimize the use of atomic operations by reducing contention on grad_points updates.
+```

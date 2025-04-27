@@ -1,0 +1,5 @@
+```c
+// Use 2D grid indexing to calculate global thread ID efficiently.
+// Precompute new row index once per thread to avoid redundant calculations.
+// Use __ldg() intrinsic for potentially faster memory loads.
+```

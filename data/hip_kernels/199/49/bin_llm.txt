@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache frequently accessed data to reduce global memory reads.
+// Consider coalescing memory accesses to improve memory throughput and bandwidth utilization.
+// Explore occupancy and ensure high utilization of execution units by launching sufficient threads.
+// Minimize register usage per thread to avoid limiting the number of active threads per multiprocessor.
+// Align data structures to natural boundaries to leverage hardware capabilities for efficient memory transactions.
+```

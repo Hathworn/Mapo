@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access patterns when copying to shared memory.
+// Utilize a more optimal thread block size for better warp utilization.
+// Minimize shared memory bank conflicts when accessing shared memory.
+// Potentially use loop unrolling for the loops iterating over tiles.
+// Evaluate the use of padding to avoid shared memory bank conflicts.
+// Analyze the balance between computation and memory access operations.
+```

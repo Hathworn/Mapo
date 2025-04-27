@@ -1,0 +1,7 @@
+```
+// Use shared memory efficiently by loading filter in one warp
+// Consider coalescing memory accesses for better performance
+// Avoid redundant synchronization by minimizing __syncthreads() usage
+// Optimize for warp size to reduce underutilization and improve occupancy
+// Use __restrict__ qualifier for pointers to hint non-aliasing
+```

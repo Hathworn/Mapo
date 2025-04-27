@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns for d_in and d_out
+// Consider using shared memory for intermediate computations if needed
+// Minimize bank conflicts by utilizing aligned memory accesses
+// Use __restrict__ keyword to enable compiler optimizations regarding pointer aliasing
+// Exploit warp-level primitives or intrinsics for further speedup in reduction tasks
+```

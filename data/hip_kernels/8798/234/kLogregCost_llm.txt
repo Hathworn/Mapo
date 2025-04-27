@@ -1,0 +1,7 @@
+```
+// Optimize: Use __ldg() to load labels[tx], maxProbs[tx], and probs for improved memory access
+// Optimize: Apply loop unrolling on the iteration over numOut for potential performance gain
+// Optimize: Use shared memory if multiple threads access the same elements of probs
+// Optimize: Consider using warp shuffle instructions to calculate numMax more efficiently
+// Optimize: Minimize use of branch conditions with branchless code or predication
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access pattern within the kernel.
+// Consider storing intermediate results to shared memory to reduce global memory traffic.
+// Optimize nested loops to minimize branch divergence.
+// Unroll inner loops, if possible, to increase performance.
+// Minimize usage of global memory by utilizing registers where appropriate.
+// Align memory accesses to benefit from memory coalescing.
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory for 'weights', 'parameters', and 'otherp' to minimize global memory accesses.
+// Ensure coalesced memory access to 'weights' and 'parameters' for increased bandwidth.
+// Align data structures to memory boundaries for efficient access.

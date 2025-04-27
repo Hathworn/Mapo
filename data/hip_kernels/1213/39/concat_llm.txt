@@ -1,0 +1,9 @@
+```
+// Consider aligning memory accesses to enhance coalescing
+// Analyze warp divergence due to conditional branches and manage accordingly
+// Ensure memory access patterns leverage sequential access when possible
+// Evaluate usage of shared memory to minimize global memory traffic
+// Examine the kernel launch configuration for better occupancy
+// Optimize stride calculation for more efficient loop execution
+// Review batch index calculation to avoid potential redundant computations
+```

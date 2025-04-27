@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for 'x' and 'binary' to improve memory throughput
+// Ensure 'x' and 'binary' arrays are aligned to facilitate efficient memory transactions
+// Minimize divergent branching by ensuring warp threads follow the same execution path
+// Explore using shared memory to load chunks of 'x' if device memory bandwidth becomes a bottleneck
+```

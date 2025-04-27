@@ -1,0 +1,6 @@
+```
+// Consider loading r_squared and p_sum into shared memory for faster access
+// Ensure memory access coalescing by aligning data read/writes
+// Minimize warp divergence by having warp threads execute the same operations
+// Use const memory if r_squared and p_sum are read-only and constant across threads
+```

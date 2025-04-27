@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory access patterns by ensuring coalesced global memory access
+// Utilize shared memory fully by minimizing redundant data copies and maximizing data reuse
+// Ensure boundary conditions in shared memory copying to minimize global memory reads
+// Optimize halo copying by consolidating shared memory operations to avoid thread divergence
+// Tweak block and tile dimensions to match hardware capabilities and optimize for occupancy
+// Remove unnecessary __syncthreads() after the last operation to improve performance
+```

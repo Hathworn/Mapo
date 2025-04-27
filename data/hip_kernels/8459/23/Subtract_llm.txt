@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for d_Data1 and d_Data2 to improve memory bandwidth usage.
+// Use shared memory to store tiles of d_Data1 and d_Data2 to reduce global memory access latency.
+// Ensure that the thread block size is a multiple of warp size for efficient execution.
+// Minimize bank conflicts in shared memory by aligning access patterns.
+// Consider using __restrict__ keyword for d_Result, d_Data1, and d_Data2 to help the compiler with optimization.
+// Ensure data is accessed in a memory-aligned manner for better performance.
+```

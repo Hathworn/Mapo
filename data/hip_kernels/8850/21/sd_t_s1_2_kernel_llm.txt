@@ -1,0 +1,7 @@
+```
+// Load t2_d into shared memory to improve access speed
+// Use shared memory to reduce global memory accesses
+// Synchronize threads to ensure shared memory loads are complete
+// Use registers to minimize local computation overhead
+// Ensure all memory operations are finished with __syncthreads()
+```

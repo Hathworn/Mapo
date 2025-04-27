@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access to improve memory throughput.
+// Align memory access patterns with warp size to minimize bank conflicts.
+// Consider using shared memory for frequently accessed data to reduce global memory traffic.
+// Ensure proper memory alignment for efficient memory access.
+// Minimize divergence by ensuring threads within a warp follow the same execution path.
+// Utilize vectorized data types when possible to improve memory access efficiency.
+```

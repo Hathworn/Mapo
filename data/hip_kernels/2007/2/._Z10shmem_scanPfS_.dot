@@ -1,0 +1,37 @@
+digraph "CFG for '_Z10shmem_scanPfS_' function" {
+	label="CFG for '_Z10shmem_scanPfS_' function";
+
+	Node0x63ea0b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds float, float addrspace(1)* %1, i64 %4\l  %6 = load float, float addrspace(1)* %5, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %7 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %3\l  store float %6, float addrspace(3)* %7, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %8 = icmp eq i32 %3, 0\l  br i1 %8, label %17, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x63ea0b0:s0 -> Node0x63eaee0;
+	Node0x63ea0b0:s1 -> Node0x63ec4f0;
+	Node0x63ec4f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e97a5f70",label="{%9:\l9:                                                \l  %10 = add nsw i32 %3, -1\l  %11 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %10\l  %12 = bitcast float addrspace(3)* %11 to \<2 x float\> addrspace(3)*\l  %13 = load \<2 x float\>, \<2 x float\> addrspace(3)* %12, align 4, !tbaa !5\l  %14 = extractelement \<2 x float\> %13, i64 0\l  %15 = extractelement \<2 x float\> %13, i64 1\l  %16 = fadd contract float %15, %14\l  br label %17\l}"];
+	Node0x63ec4f0 -> Node0x63eaee0;
+	Node0x63eaee0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  %18 = phi float [ %16, %9 ], [ 0.000000e+00, %2 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %8, label %20, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x63eaee0:s0 -> Node0x63ede40;
+	Node0x63eaee0:s1 -> Node0x63ede90;
+	Node0x63ede90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e97a5f70",label="{%19:\l19:                                               \l  store float %18, float addrspace(3)* %7, align 4, !tbaa !5\l  br label %20\l}"];
+	Node0x63ede90 -> Node0x63ede40;
+	Node0x63ede40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  %21 = phi float [ 0.000000e+00, %19 ], [ %18, %17 ]\l  %22 = icmp ugt i32 %3, 1\l  br i1 %22, label %23, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x63ede40:s0 -> Node0x63ee210;
+	Node0x63ede40:s1 -> Node0x63ee260;
+	Node0x63ee210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%23:\l23:                                               \l  %24 = add nsw i32 %3, -2\l  %25 = load float, float addrspace(3)* %7, align 4, !tbaa !5\l  %26 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %24\l  %27 = load float, float addrspace(3)* %26, align 4, !tbaa !5\l  %28 = fadd contract float %25, %27\l  br label %29\l}"];
+	Node0x63ee210 -> Node0x63ee260;
+	Node0x63ee260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi float [ %28, %23 ], [ %21, %20 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %22, label %31, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x63ee260:s0 -> Node0x63ee8e0;
+	Node0x63ee260:s1 -> Node0x63ee930;
+	Node0x63ee8e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%31:\l31:                                               \l  store float %30, float addrspace(3)* %7, align 4, !tbaa !5\l  br label %32\l}"];
+	Node0x63ee8e0 -> Node0x63ee930;
+	Node0x63ee930 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  %33 = phi float [ 0.000000e+00, %31 ], [ %30, %29 ]\l  %34 = icmp ugt i32 %3, 3\l  br i1 %34, label %35, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x63ee930:s0 -> Node0x63ed100;
+	Node0x63ee930:s1 -> Node0x63eedd0;
+	Node0x63ed100 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%35:\l35:                                               \l  %36 = add nsw i32 %3, -4\l  %37 = load float, float addrspace(3)* %7, align 4, !tbaa !5\l  %38 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %36\l  %39 = load float, float addrspace(3)* %38, align 4, !tbaa !5\l  %40 = fadd contract float %37, %39\l  br label %41\l}"];
+	Node0x63ed100 -> Node0x63eedd0;
+	Node0x63eedd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  %42 = phi float [ %40, %35 ], [ %33, %32 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %34, label %45, label %43\l|{<s0>T|<s1>F}}"];
+	Node0x63eedd0:s0 -> Node0x63ef480;
+	Node0x63eedd0:s1 -> Node0x63ef4d0;
+	Node0x63ef4d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%43:\l43:                                               \l  %44 = load float, float addrspace(3)* %7, align 4, !tbaa !5\l  br label %46\l}"];
+	Node0x63ef4d0 -> Node0x63ef640;
+	Node0x63ef480 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%45:\l45:                                               \l  store float %42, float addrspace(3)* %7, align 4, !tbaa !5\l  br label %46\l}"];
+	Node0x63ef480 -> Node0x63ef640;
+	Node0x63ef640 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%46:\l46:                                               \l  %47 = phi float [ %44, %43 ], [ %42, %45 ]\l  %48 = getelementptr inbounds float, float addrspace(1)* %0, i64 %4\l  store float %47, float addrspace(1)* %48, align 4, !tbaa !5\l  ret void\l}"];
+}

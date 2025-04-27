@@ -1,0 +1,12 @@
+```
+// Consider optimizing memory coalescing by aligning data access patterns to avoid bank conflicts.
+// Use __builtin_assumed_aligned to ensure data pointers are properly aligned for coalesced access.
+// Verify the dimensions of the shared memory arrays to ensure they match the memory warp size for better performance.
+// Evaluate using float4 or float2 data types for vectorized memory operations to enhance throughput.
+// Ensure that memory transactions are minimized by loading and storing data in a coalesced manner.
+// Investigate the possibility of loop unrolling for additional performance gains in the kernel.
+// Analyze and optimize register usage to prevent register spilling and maximize occupancy.
+// Exploit any available shared memory to reduce global memory access frequency wherever possible.
+// Consider using __syncthreads() judiciously to synchronize threads only when necessary to optimize performance.
+// Re-evaluate boundary condition calculations to improve the efficiency of edge-case handling.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for src_gpu and dst_gpu to improve performance.
+// Minimize bank conflicts and avoid shared memory access if not necessary.
+// Utilize fast math functions available in HIP for operations like powf.
+// Ensure that the number of threads per block is chosen to maximize GPU occupancy.
+// Use __powf for single-precision floating-point performance improvement.
+```

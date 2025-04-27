@@ -1,0 +1,9 @@
+```
+// Reduce shared memory usage by using warp-level memory operations.
+// Optimize memory access by ensuring aligned memory loads.
+// Utilize memory coalescing to improve global memory access patterns.
+// Prefetch weights_shared to reduce redundant memory reads.
+// Use atomic operations sparingly to prevent performance bottlenecks.
+// Consider loop unrolling for the innermost loops to enhance performance.
+// Ensure memory access is contiguous to maximize bandwidth utilization.
+```

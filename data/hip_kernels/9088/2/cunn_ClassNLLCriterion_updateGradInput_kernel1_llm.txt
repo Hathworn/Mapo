@@ -1,0 +1,4 @@
+// Consider using shared memory for weights to optimize memory access.
+// Ensure coalesced memory access by aligning data structures.
+// Use __restrict__ keyword on pointer arguments if no aliasing occurs.
+// Explore loop unrolling techniques if loops are present.

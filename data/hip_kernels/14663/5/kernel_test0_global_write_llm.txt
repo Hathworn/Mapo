@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory transactions
+// Initialize shared variables outside the loop to reduce repetitive execution
+// Use __syncthreads() to ensure all threads have updated shared values before use
+// Reduce global memory access by storing frequently used variables in registers

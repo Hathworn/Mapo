@@ -1,0 +1,6 @@
+// Optimize memory access by ensuring memory coalescing for components array access  
+// Use shared memory to reduce global memory access latency if possible  
+// Leverage warp-level primitives to reduce divergence in the conditional branch  
+// Minimize bank conflicts in shared memory during data handling  
+// Preload components into registers to further decrease global memory accesses  
+// Consider loop unrolling if idx has a repetitive pattern

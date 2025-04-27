@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for reading x to improve memory throughput.
+// Consider loading x into shared memory if n is small and reusing it within the block.
+// Use warp shuffle instructions to reduce the need for global memory access.
+// Minimize stride access to improve cache efficiency.
+// Consider loop unrolling to reduce loop overhead.
+```

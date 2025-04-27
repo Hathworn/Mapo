@@ -1,0 +1,3 @@
+// Use shared memory for frequently accessed data to reduce global memory accesses.
+// Coalesce global memory accesses by ensuring sequential threads access sequential memory locations.
+// Minimize divergent branching for better performance.

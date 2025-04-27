@@ -1,0 +1,8 @@
+```cpp
+// Load data into registers to minimize global memory access
+// Use shared memory to store partial reductions
+// Perform warp reduction to decrease synchronization overhead
+// Synchronize threads after reduction to ensure data consistency
+// Use first warp for final reduction to minimize synchronization
+// Minimize load/store to global memory by using registers and shared memory
+```

@@ -1,0 +1,5 @@
+// Consider using read-only cache for constant memory access patterns.
+// Ensure coalesced global memory access by aligning data structures.
+// Use __syncthreads() efficiently to reduce warp divergence.
+// Minimize the use of shared memory when possible and prefer registers.
+// Adjust block and grid dimensions for better workload distribution.

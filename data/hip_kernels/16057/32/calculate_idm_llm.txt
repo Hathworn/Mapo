@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access patterns for better global memory performance.
+// Utilize shared memory to store intermediate results and reduce redundant global memory access.
+// Align data types where possible to ensure optimal memory transaction size.
+// Leverage warp-level primitives, like __shfl_down_sync, for optimization in reduction step.
+// Avoid unnecessary synchronization when possible to reduce overhead.
+```

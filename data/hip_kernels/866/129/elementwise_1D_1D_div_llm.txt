@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to temporarily store data for coalesced access to global memory
+// Align memory accesses to 32 bytes to ensure best memory throughput
+// Minimize divergent warps by ensuring each thread in a warp executes the same instruction
+```

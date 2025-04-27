@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to prefetch pred and truth values to reduce global memory accesses.
+// Use vectorized memory loads (e.g., float2 or float4) if n is large and access patterns allow it.
+// Increase the block size to improve occupancy and better utilize available compute resources.
+```

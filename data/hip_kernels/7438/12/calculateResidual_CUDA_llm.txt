@@ -1,0 +1,6 @@
+// Consider aligning memory accesses for 'a', 'b', to improve coalesced memory access
+// Use __restrict__ keyword for pointer arguments to help compiler optimization
+// Evaluate if loop unrolling could be beneficial in the reduction phase
+// Explore using half precision if the data does not require full precision for performance boost
+// Verify the performance impact of using shared memory size, adjust if needed
+// Analyze blocks and shared memory usage, tune block size for maximizing occupancy and performance

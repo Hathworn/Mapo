@@ -1,0 +1,10 @@
+```
+// Improved memory access pattern: coalesced access for idata
+// Use __shared__ memory to minimize global memory access latency
+// Ensure stride-based access for idata to exploit memory coalescing
+// Unrolled loop for better performance to reduce loop overhead and increase throughput
+// Increase thread block size to maximize resource utilization and parallelism
+// Ensure proper synchronization with __syncthreads() before processing shared memory
+// Check boundary conditions to prevent out-of-bounds memory access
+// Consider using warp-synchronous programming for further optimization
+```

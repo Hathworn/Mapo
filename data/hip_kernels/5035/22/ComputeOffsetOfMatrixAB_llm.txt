@@ -1,0 +1,5 @@
+```cpp
+// Utilize shared memory to cache row_sum[blockIdx.x] for faster access
+// Consider memory coalescing by ensuring col_sum[i] accesses are contiguous
+// Check if using atomic operations can reduce memory latency
+```

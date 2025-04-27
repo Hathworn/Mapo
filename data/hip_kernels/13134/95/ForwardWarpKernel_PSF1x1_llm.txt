@@ -1,0 +1,4 @@
+// Consider using shared memory to cache source data for faster access.
+// Prefetch u, v, and src values to avoid multiple global memory accesses.
+// Optimize alignment of memory accesses to ensure coalesced reads.
+// Minimize branch divergence by reorganizing conditional checks.

@@ -1,0 +1,6 @@
+```
+// Load data into shared memory if possible to reduce global memory accesses.
+// Coalesce global memory accesses to maximize memory bandwidth.
+// Use __restrict__ keyword for pointers if data is not aliased to enable better compiler optimizations.
+// Ensure that the kernel is launched with appropriate block sizes to fully utilize the GPU.
+```

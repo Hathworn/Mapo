@@ -1,0 +1,6 @@
+```
+// Consider using memory coalescing for accessing Y, dY, and dX arrays to improve memory access efficiency.
+// Optimize shared memory usage by minimizing bank conflicts during reduction operations.
+// Ensure that the dimension 'dim' is a multiple of SOFTMAX_NUM_THREADS to fully utilize threads and avoid divergence.
+// Evaluate if reducing synchronization points (__syncthreads) can be achieved without affecting correctness.
+```

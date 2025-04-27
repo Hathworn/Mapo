@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Preload rand array values into registers to minimize latency
+// Unroll loops to decrease overhead and enhance pipeline efficiency
+// Consider using atomic operations if race conditions are possible with input array

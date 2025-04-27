@@ -1,0 +1,5 @@
+// Consider using warp-level primitives to optimize reduction phase further.
+// Use coalesced memory accesses to improve memory bandwidth utilization.
+// Investigate padding shared memory to prevent bank conflicts during reduction.
+// Ensure block size is optimized for target GPU architecture for best occupancy.
+// Utilize CUDA streams if multiple kernels are involved to overlap computation and data transfers.

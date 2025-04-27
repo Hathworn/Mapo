@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring input and rand arrays are accessed sequentially.
+// Leverage shared memory if any repeated computations or data reuse are needed in future extensions.
+// Evaluate occupancy and adjust block size for potential warp-level optimizations.
+// Ensure memory access patterns minimize bank conflicts when using shared memory.
+// Reduce register pressure by minimizing the use of temporary variables if possible.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses.
+// Load tiles of A and B into shared memory collaboratively.
+// Ensure memory coalescing by accessing consecutive global memory locations.
+// Use __syncthreads() to synchronize threads after loading tiles.
+// Perform computation using shared memory to reduce global memory usage.
+// Ensure computation completes before next tile loading with __syncthreads().
+```

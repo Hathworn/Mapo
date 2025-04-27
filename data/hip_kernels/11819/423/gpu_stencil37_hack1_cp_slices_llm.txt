@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory accesses.
+// Consolidate condition checks to reduce control flow divergence.
+// Reuse calculated base index to minimize redundant calculations.
+// Use __syncthreads() to ensure shared memory is safely updated before proceeding.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Consider coalescing memory accesses by aligning data structure with warp size
+// Minimize thread divergence by ensuring uniform loop execution paths
+// Limit the number of registers used per thread for better occupancy
+// Balance the workload among blocks and threads for optimal hardware utilization
+```

@@ -1,0 +1,7 @@
+```
+// Consider moving powf computations for B1 and B2 outside of the kernel for efficiency
+// Optimize memory access by ensuring coalesced reads and writes for x, m, and v
+// Evaluate whether using shared memory for frequently accessed values like B1 and B2 can reduce redundant global memory access
+// Check if using warp-level operations can help in reducing redundant computations across threads
+// Investigate if loop unrolling for block-wise operations may improve performance
+```

@@ -1,0 +1,5 @@
+```
+// Consider loading blocks of d_arr into shared memory for reduced global memory access
+// Ensure coalesced access to global memory for d_arr to improve performance
+// Use __syncthreads() carefully to avoid unnecessary synch points and maximize parallelism
+```

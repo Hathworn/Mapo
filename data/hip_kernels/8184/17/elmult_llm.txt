@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by aligning data properly in global memory
+// Use shared memory for temporary storage to reduce global memory accesses
+// Consider loop unrolling inside the grid-stride loop for better performance
+// Adjust block and grid sizes to fully occupy the GPU and maximize throughput
+// Profile kernel execution using performance counters to identify bottlenecks
+```

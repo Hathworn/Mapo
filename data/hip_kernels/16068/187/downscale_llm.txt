@@ -1,0 +1,9 @@
+```
+// Optimize data locality by using shared memory for gradOutput_data
+// Use warp-level primitives to further optimize reduction in sum
+// Minimize integer division by replacing with bitwise operations where possible
+// Ensure coalesced memory access for gradOutput_data and gradInput_data
+// Increase block size for better occupancy if register count allows
+// Consider using texture memory for gradOutput_data to improve cache hit rate
+// Unroll inner loops for better instruction-level parallelism
+```

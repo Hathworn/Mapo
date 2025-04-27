@@ -1,0 +1,10 @@
+digraph "CFG for '_Z5RoundPfS_i' function" {
+	label="CFG for '_Z5RoundPfS_i' function";
+
+	Node0x5e643c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = getelementptr inbounds i8, i8 addrspace(4)* %4, i64 12\l  %10 = bitcast i8 addrspace(4)* %9 to i32 addrspace(4)*\l  %11 = load i32, i32 addrspace(4)* %10, align 4, !tbaa !6\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %14 = udiv i32 %11, %8\l  %15 = mul i32 %14, %8\l  %16 = icmp ugt i32 %11, %15\l  %17 = zext i1 %16 to i32\l  %18 = add i32 %14, %17\l  %19 = mul i32 %18, %13\l  %20 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %21 = add i32 %19, %12\l  %22 = mul i32 %21, %8\l  %23 = add i32 %22, %20\l  %24 = icmp slt i32 %23, %2\l  br i1 %24, label %25, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5e643c0:s0 -> Node0x5e66c40;
+	Node0x5e643c0:s1 -> Node0x5e66cd0;
+	Node0x5e66c40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%25:\l25:                                               \l  %26 = sext i32 %23 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %1, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %29 = fpext float %28 to double\l  %30 = fadd contract double %29, 5.000000e-01\l  %31 = fptosi double %30 to i32\l  %32 = sitofp i32 %31 to float\l  store float %32, float addrspace(1)* %27, align 4, !tbaa !16\l  br label %33\l}"];
+	Node0x5e66c40 -> Node0x5e66cd0;
+	Node0x5e66cd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

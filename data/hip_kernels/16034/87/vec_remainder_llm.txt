@@ -1,0 +1,7 @@
+```
+// Coalesce memory accesses for better efficiency by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to reduce repetitive global memory accesses if the data is reused within the block.
+// Consider using __ldg intrinsic for read-only data to utilize texture cache.
+// Optimize grid and block dimensions to maximize occupancy and minimize idle threads.
+// Minimize the use of conditional statements within the kernel to prevent divergence.
+```

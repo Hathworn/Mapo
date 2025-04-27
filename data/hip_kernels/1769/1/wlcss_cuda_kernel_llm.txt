@@ -1,0 +1,8 @@
+```c
+// Optimize memory access patterns by ensuring coalesced access to global memory
+// Ensure proper alignment for shared memory for optimal performance
+// Consider using constant memory for d_params if it doesn't change and fits in the cache
+// Reduce redundant calculations such as penalty * distance by storing the result in a variable
+// Balance workload between threads to prevent some threads from idling
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead
+```

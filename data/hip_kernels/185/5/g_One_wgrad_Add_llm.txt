@@ -1,0 +1,6 @@
+```
+// Use shared memory to accumulate partial sums and reduce global memory transactions
+// Apply parallel reduction to improve the efficiency of summing operations
+// Optimize memory access pattern to ensure coalesced access during _WgradTmp loading
+// Reduce the frequency of synchronizations by using fewer __syncthreads()
+```

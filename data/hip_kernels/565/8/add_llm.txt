@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses to improve memory throughput
+// Ensure that arrays 'a', 'b', and 'c' are aligned to improve memory access efficiency
+// Maximize occupancy by tuning block size relative to the number of GPU resources
+// Avoid bank conflicts by aligning shared memory access if shared memory is used
+// Experiment with pre-loading data into shared memory if applicable to reduce global memory latency
+// Use __restrict__ keyword for pointers if possible to enable compiler optimizations
+// Utilize vectorized data types if applicable to optimize memory transactions
+```

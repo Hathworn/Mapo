@@ -1,0 +1,4 @@
+// Use shared memory for frequent memory access to reduce global memory transactions.
+// Ensure all threads synchronize after memory transfer for data consistency.
+// Adjust shared memory size according to the windowStride to optimize space usage.
+// Synchronize threads after computation to ensure shared memory consistency.

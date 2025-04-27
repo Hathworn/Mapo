@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Try coalesced memory accesses for efficient memory bandwidth usage.
+// Ensure threads in a warp access sequential memory locations to improve performance.
+// Minimize the number of global memory accesses by loading data to shared memory once.
+// Use __syncthreads() to synchronize threads after loading data into shared memory.
+```

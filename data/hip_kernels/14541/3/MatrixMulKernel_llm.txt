@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Employ coalesced memory accesses for reading input matrices
+// Ensure synchronization with __syncthreads() to prevent data hazards
+// Consider tuning BLOCK_SIZE for different architectures
+// Avoid bank conflicts in shared memory usage where possible
+```

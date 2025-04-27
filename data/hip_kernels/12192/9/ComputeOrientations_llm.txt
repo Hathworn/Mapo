@@ -1,0 +1,9 @@
+```
+// Use __shared__ memory to reduce global memory access
+// Clamp xi and yi to avoid accessing out of bounds memory
+// Avoid divergent branches by using shared memory efficiently
+// Precompute Gaussian weights to reduce repetitive computations
+// Use atomic operations if concurrent writes to shared memory are possible 
+// Use loop unrolling for combining histogram values to improve performance
+// Use __syncthreads() wisely to ensure all threads have finished computations before further processing
+```

@@ -1,0 +1,8 @@
+```
+// Ensure shared memory access patterns are coalesced to improve memory bandwidth utilization.
+// Align data loading into shared memory to prevent bank conflicts.
+// Use the constant memory where possible for often accessed data that does not change per thread.
+// Optimize the block and thread configuration to fully utilize the GPU's processing capabilities.
+// Avoid unnecessary synchronization by minimizing __syncthreads calls where possible.
+// Hoist invariant calculations out of loops when applicable.
+```

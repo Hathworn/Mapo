@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for d_x to improve memory throughput
+// Use shared memory if multiple threads within the block access the same data
+// Try loop unrolling if applicable to improve instruction throughput
+// Ensure d_y is aligned and consider using atomic operations if required for parallel writes
+// Consider vectorized loads and stores for better memory operation efficiency
+```

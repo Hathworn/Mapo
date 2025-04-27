@@ -1,0 +1,21 @@
+digraph "CFG for '_Z23gpu_histo_kernel_sharedPhPijj' function" {
+	label="CFG for '_Z23gpu_histo_kernel_sharedPhPijj' function";
+
+	Node0x62ac4f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %15 = getelementptr i8, i8 addrspace(4)* %6, i64 6\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 2, !range !4, !invariant.load !5\l  %18 = zext i16 %17 to i32\l  %19 = mul i32 %14, %18\l  %20 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %21 = add i32 %19, %20\l  %22 = mul nuw nsw i32 %12, 24\l  %23 = add nuw nsw i32 %22, %20\l  %24 = icmp ult i32 %23, 256\l  br i1 %24, label %25, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x62ac4f0:s0 -> Node0x62affe0;
+	Node0x62ac4f0:s1 -> Node0x62b0070;
+	Node0x62affe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%25:\l25:                                               \l  %26 = getelementptr inbounds [256 x i32], [256 x i32] addrspace(3)*\l... @_ZZ23gpu_histo_kernel_sharedPhPijjE4hist, i32 0, i32 %23\l  store i32 0, i32 addrspace(3)* %26, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x62affe0 -> Node0x62b0070;
+	Node0x62b0070 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %28 = icmp slt i32 %21, 0\l  br i1 %28, label %50, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x62b0070:s0 -> Node0x62b0810;
+	Node0x62b0070:s1 -> Node0x62b08a0;
+	Node0x62b08a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#de614d70",label="{%29:\l29:                                               \l  %30 = icmp ult i32 %21, %2\l  %31 = icmp sgt i32 %13, -1\l  %32 = select i1 %30, i1 %31, i1 false\l  %33 = icmp ult i32 %13, %3\l  %34 = select i1 %32, i1 %33, i1 false\l  br i1 %34, label %35, label %50\l|{<s0>T|<s1>F}}"];
+	Node0x62b08a0:s0 -> Node0x62ae730;
+	Node0x62b08a0:s1 -> Node0x62b0810;
+	Node0x62ae730 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%35:\l35:                                               \l  %36 = mul i32 %21, %3\l  %37 = add i32 %36, %13\l  %38 = zext i32 %37 to i64\l  %39 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %38\l  %40 = load i8, i8 addrspace(1)* %39, align 1, !tbaa !11, !amdgpu.noclobber !5\l  %41 = zext i8 %40 to i32\l  %42 = getelementptr inbounds [256 x i32], [256 x i32] addrspace(3)*\l... @_ZZ23gpu_histo_kernel_sharedPhPijjE4hist, i32 0, i32 %41\l  %43 = atomicrmw add i32 addrspace(3)* %42, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %24, label %44, label %50\l|{<s0>T|<s1>F}}"];
+	Node0x62ae730:s0 -> Node0x62b1750;
+	Node0x62ae730:s1 -> Node0x62b0810;
+	Node0x62b1750 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%44:\l44:                                               \l  %45 = zext i32 %23 to i64\l  %46 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %45\l  %47 = getelementptr inbounds [256 x i32], [256 x i32] addrspace(3)*\l... @_ZZ23gpu_histo_kernel_sharedPhPijjE4hist, i32 0, i32 %23\l  %48 = load i32, i32 addrspace(3)* %47, align 4, !tbaa !7\l  %49 = atomicrmw add i32 addrspace(1)* %46, i32 %48 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %50\l}"];
+	Node0x62b1750 -> Node0x62b0810;
+	Node0x62b0810 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%50:\l50:                                               \l  ret void\l}"];
+}

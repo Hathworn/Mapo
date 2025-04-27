@@ -1,0 +1,27 @@
+digraph "CFG for '_Z12getMeanImagePKdPdmm' function" {
+	label="CFG for '_Z12getMeanImagePKdPdmm' function";
+
+	Node0x5aebbb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = zext i32 %13 to i64\l  %15 = icmp ult i64 %14, %3\l  br i1 %15, label %16, label %75\l|{<s0>T|<s1>F}}"];
+	Node0x5aebbb0:s0 -> Node0x5aedb30;
+	Node0x5aebbb0:s1 -> Node0x5aedbc0;
+	Node0x5aedb30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%16:\l16:                                               \l  %17 = getelementptr inbounds double, double addrspace(1)* %1, i64 %14\l  store double 0.000000e+00, double addrspace(1)* %17, align 8, !tbaa !7\l  %18 = icmp eq i64 %2, 0\l  br i1 %18, label %41, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x5aedb30:s0 -> Node0x5aeea90;
+	Node0x5aedb30:s1 -> Node0x5aeeb20;
+	Node0x5aeeb20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%19:\l19:                                               \l  %20 = and i64 %2, 3\l  %21 = icmp ult i64 %2, 4\l  br i1 %21, label %24, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x5aeeb20:s0 -> Node0x5aeedb0;
+	Node0x5aeeb20:s1 -> Node0x5aeee00;
+	Node0x5aeee00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%22:\l22:                                               \l  %23 = and i64 %2, -4\l  br label %45\l}"];
+	Node0x5aeee00 -> Node0x5aef000;
+	Node0x5aeedb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%24:\l24:                                               \l  %25 = phi double [ undef, %19 ], [ %71, %45 ]\l  %26 = phi double [ 0.000000e+00, %19 ], [ %71, %45 ]\l  %27 = phi i64 [ 0, %19 ], [ %72, %45 ]\l  %28 = icmp eq i64 %20, 0\l  br i1 %28, label %41, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x5aeedb0:s0 -> Node0x5aeea90;
+	Node0x5aeedb0:s1 -> Node0x5aef820;
+	Node0x5aef820 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi double [ %37, %29 ], [ %26, %24 ]\l  %31 = phi i64 [ %38, %29 ], [ %27, %24 ]\l  %32 = phi i64 [ %39, %29 ], [ 0, %24 ]\l  %33 = mul i64 %31, %3\l  %34 = add i64 %33, %14\l  %35 = getelementptr inbounds double, double addrspace(1)* %0, i64 %34\l  %36 = load double, double addrspace(1)* %35, align 8, !tbaa !7\l  %37 = fadd contract double %36, %30\l  store double %37, double addrspace(1)* %17, align 8, !tbaa !7\l  %38 = add nuw i64 %31, 1\l  %39 = add i64 %32, 1\l  %40 = icmp eq i64 %39, %20\l  br i1 %40, label %41, label %29, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5aef820:s0 -> Node0x5aeea90;
+	Node0x5aef820:s1 -> Node0x5aef820;
+	Node0x5aeea90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%41:\l41:                                               \l  %42 = phi double [ 0.000000e+00, %16 ], [ %25, %24 ], [ %37, %29 ]\l  %43 = uitofp i64 %2 to double\l  %44 = fdiv contract double %42, %43\l  store double %44, double addrspace(1)* %17, align 8, !tbaa !7\l  br label %75\l}"];
+	Node0x5aeea90 -> Node0x5aedbc0;
+	Node0x5aef000 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%45:\l45:                                               \l  %46 = phi double [ 0.000000e+00, %22 ], [ %71, %45 ]\l  %47 = phi i64 [ 0, %22 ], [ %72, %45 ]\l  %48 = phi i64 [ 0, %22 ], [ %73, %45 ]\l  %49 = mul i64 %47, %3\l  %50 = add i64 %49, %14\l  %51 = getelementptr inbounds double, double addrspace(1)* %0, i64 %50\l  %52 = load double, double addrspace(1)* %51, align 8, !tbaa !7\l  %53 = fadd contract double %52, %46\l  store double %53, double addrspace(1)* %17, align 8, !tbaa !7\l  %54 = or i64 %47, 1\l  %55 = mul i64 %54, %3\l  %56 = add i64 %55, %14\l  %57 = getelementptr inbounds double, double addrspace(1)* %0, i64 %56\l  %58 = load double, double addrspace(1)* %57, align 8, !tbaa !7\l  %59 = fadd contract double %58, %53\l  store double %59, double addrspace(1)* %17, align 8, !tbaa !7\l  %60 = or i64 %47, 2\l  %61 = mul i64 %60, %3\l  %62 = add i64 %61, %14\l  %63 = getelementptr inbounds double, double addrspace(1)* %0, i64 %62\l  %64 = load double, double addrspace(1)* %63, align 8, !tbaa !7\l  %65 = fadd contract double %64, %59\l  store double %65, double addrspace(1)* %17, align 8, !tbaa !7\l  %66 = or i64 %47, 3\l  %67 = mul i64 %66, %3\l  %68 = add i64 %67, %14\l  %69 = getelementptr inbounds double, double addrspace(1)* %0, i64 %68\l  %70 = load double, double addrspace(1)* %69, align 8, !tbaa !7\l  %71 = fadd contract double %70, %65\l  store double %71, double addrspace(1)* %17, align 8, !tbaa !7\l  %72 = add nuw i64 %47, 4\l  %73 = add i64 %48, 4\l  %74 = icmp eq i64 %73, %23\l  br i1 %74, label %24, label %45, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x5aef000:s0 -> Node0x5aeedb0;
+	Node0x5aef000:s1 -> Node0x5aef000;
+	Node0x5aedbc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%75:\l75:                                               \l  ret void\l}"];
+}

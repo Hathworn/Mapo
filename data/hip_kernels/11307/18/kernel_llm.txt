@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed variables
+// Minimize divergence by ensuring uniform execution paths for threads
+// Consider coalesced memory access patterns for ptr array
+// Optimize redundant calculations by using pre-computed constants
+// Avoid atomic operations where consistent thread execution can be expected

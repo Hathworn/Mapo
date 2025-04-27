@@ -1,0 +1,5 @@
+// Use __restrict__ pointers to ensure compiler optimizes memory access
+// Ensure coalesced memory access patterns to improve memory throughput
+// Align data access to avoid potential bank conflicts in shared memory
+// Consider using shared memory for data reuse and minimize global memory accesses
+// Evaluate occupancy and optimize block and grid dimensions for maximum throughput

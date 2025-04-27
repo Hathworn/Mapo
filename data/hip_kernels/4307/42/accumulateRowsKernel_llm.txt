@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory access by aligning input and output pointers
+// Use shared memory for frequently accessed data to reduce global memory traffic
+// Use __syncthreads() to prevent data hazards when accessing shared memory
+// Consider loop unrolling for the loop iterating over 'w' to improve performance
+// Allocate and use shared memory efficiently to prevent bank conflicts
+// Optimize global memory access by ensuring memory accesses are coalesced
+```

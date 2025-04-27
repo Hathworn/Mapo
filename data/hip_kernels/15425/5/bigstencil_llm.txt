@@ -1,0 +1,6 @@
+```
+// Consider using memory coalescing for improved global memory access
+// Ensure blockDim.x is a multiple of the warp size for optimal performance
+// Use __syncthreads() only if necessary to avoid unnecessary synchronization overhead
+// Optimize shared memory usage by minimizing its size and reuse it if possible
+```

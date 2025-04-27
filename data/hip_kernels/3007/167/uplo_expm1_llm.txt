@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced memory access for global memory reads from `a` and writes to `b`.
+// Consider using shared memory or registers to reduce global memory access latency if applicable.
+// Minimize bank conflicts when using shared memory by properly aligning data access patterns.
+// Evaluate the use of warp-level primitives to reduce divergence in the condition checks if possible.
+// Ensure that the use of `CAST(expm1)` is efficient in terms of potential function call overhead.
+```

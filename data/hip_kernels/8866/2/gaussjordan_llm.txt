@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses.
+// Load entire row into shared memory to leverage its faster access times.
+// Ensure synchronization with __syncthreads() after loading to shared memory.
+// Aim to minimize branch divergence by consolidating conditions.

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache recurrentWeights and improve memory access speed
+// Consider optimizing alignment of memory accesses for coalesced reads
+// Evaluate opportunities to reduce global memory accesses by using registers
+// Optimize memory access patterns for hiddenActivationDerivatives
+// Use __restrict__ to inform the compiler of non-aliasing pointers
+// Check if using texture memory could improve performance for read-only data
+```

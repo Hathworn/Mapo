@@ -1,0 +1,4 @@
+// Consider using shared memory for weight_data to reduce global memory access latency
+// Use memory coalescing techniques for src_grad and dst_grad access to improve memory throughput
+// Optimize thread block size to utilize GPU resources better while maintaining high occupancy
+// Ensure alignment of data structures in memory for efficient memory access patterns

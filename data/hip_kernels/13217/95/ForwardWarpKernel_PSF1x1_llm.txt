@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache frequently accessed data and reduce global memory accesses
+// Align data structures for coalesced memory access to improve memory throughput
+// Ensure memory accesses are coalesced when reading from both 'u' and 'v' arrays
+// Use loop unrolling if there are any loops that can be unrolled to enhance performance
+// Investigate the usage of the __restrict__ qualifier to improve memory access patterns
+// Inspect whether using read-only data caches (__ldg) for constant data is beneficial
+```

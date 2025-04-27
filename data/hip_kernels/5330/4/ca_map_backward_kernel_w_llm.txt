@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for 'dout' and 'g' to reduce global memory accesses.
+// Unroll the inner loop over 'plane' to improve instruction throughput.
+// Optimize the memory access pattern for 'dout' and 'g' for better cache efficiency.
+// Analyze if atomic operations can be reduced or eliminated to minimize serialization.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory for block data to reduce global memory accesses
+// Load data into shared memory to minimize global reads
+// Use __syncthreads() to synchronize threads after shared memory update
+// Minimize memory access by computing gradient using shared memory
+```

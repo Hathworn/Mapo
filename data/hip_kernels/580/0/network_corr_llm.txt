@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses for templates to improve memory access efficiency.
+// Use `__restrict__` keyword for pointers if they do not overlap to help compiler optimize memory loads.
+// Allocate shared memory more intelligently to fit precisely the needed portion, reducing bank conflicts.
+// Attempt to minimize the use of atomic operations if present.
+// Optimize load instructions by accessing global memory in a strided pattern if applicable.
+// Consider using `warpShuffle` functions to optimize reductions within a warp.
+// Ensure that shared memory usage remains within the hardware limits to avoid performance bottlenecks.
+// Analyze whether using register blocking can help in further optimizing memory accesses.
+```

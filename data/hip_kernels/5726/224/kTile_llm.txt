@@ -1,0 +1,4 @@
+// Precompute numEls to reduce redundant computation
+// Use __restrict__ keyword to hint compiler for potential optimizations
+// Ensure memory access patterns are coalesced for src and tgt
+// Consider using shared memory for repeated access to src data

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for the input array.
+// Use __restrict__ keyword if possible to allow more compiler optimizations.
+// Prefetch input values to shared memory to reduce global memory access.
+// Minimize divergent branches in the binarization step.
+// Ensure that `s` is calculated using efficient block and grid dimensions.
+```

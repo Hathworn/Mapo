@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for pointsCoordinates to reduce global memory access latency.
+// Optimize memory coalescing by ensuring that consecutive threads access consecutive memory locations for pointsCoordinates.
+// Explore the use of restrict keyword to provide compiler optimization hints regarding pointer aliasing.
+// Assess if loop unrolling could be applied here to improve instruction-level parallelism.
+```

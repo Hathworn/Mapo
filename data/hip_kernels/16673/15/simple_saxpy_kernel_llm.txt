@@ -1,0 +1,6 @@
+```
+// Move memory-intensive calculations outside the conditional to reduce branch divergence.
+// Use shared memory for frequently accessed data to minimize global memory access latency.
+// Ensure contiguous memory access patterns to leverage memory coalescing.
+// Consider using vectorized operations for improved bandwidth utilization.
+```

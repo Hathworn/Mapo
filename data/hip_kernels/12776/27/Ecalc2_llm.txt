@@ -1,0 +1,4 @@
+// Use shared memory to cache label data if reused frequently
+// Consider coalesced memory access for optimal memory bandwidth utilization
+// Check occupancy and adjust block size if necessary for better performance
+// Minimize memory divergence by ensuring all threads within a warp follow the same execution path

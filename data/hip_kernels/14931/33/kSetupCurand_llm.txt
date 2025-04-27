@@ -1,0 +1,4 @@
+```c
+// Ensure coalesced memory access by having consecutive threads access consecutive elements.
+// Avoid divergent branching by checking if tidx is within bounds before executing hiprand_init.
+```

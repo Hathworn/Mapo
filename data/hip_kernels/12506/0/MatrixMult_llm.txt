@@ -1,0 +1,8 @@
+```c
+// Optimize memory access by using shared memory for tiles
+// Ensure coalesced global memory access to improve performance
+// Consider loop unrolling for better ILP (Instruction Level Parallelism)
+// Reduce thread divergence by aligning block and grid sizes
+// Minimize global memory access by reusing data in registers
+// Avoid bank conflicts by proper alignment in shared memory
+```

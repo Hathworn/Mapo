@@ -1,0 +1,8 @@
+```cpp
+// Load cur_weight into a register to minimize global memory access.
+// Use fmaxf for performance to optimize floating-point max operation.
+// Combine operations with new_scale to reduce redundant memory access.
+// Use blockDim.x and gridDim.x for efficient looping through data.
+// Implement atomicAdd for concurrent access to quadratic array to ensure thread safety.
+// Update linear only once by checking if idx is 0 to avoid race conditions.
+```

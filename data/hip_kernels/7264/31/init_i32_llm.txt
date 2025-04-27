@@ -1,0 +1,6 @@
+```
+// Use grid-stride loop to efficiently handle large data by maximizing GPU utilization
+// Ensure memory coalescing by having threads access contiguous memory locations
+// Consider using __restrict__ pointers if applicable to help the compiler with optimization
+// Check if shared memory could be utilized for better performance in more complex kernels
+```

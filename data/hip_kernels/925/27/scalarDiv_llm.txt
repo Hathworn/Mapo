@@ -1,0 +1,6 @@
+```
+// Coalesce global memory accesses by ensuring data is read/written in contiguous blocks.
+// Use shared memory to reduce redundant global memory accesses and improve memory bandwidth.
+// Ensure that loads and stores are aligned to avoid bank conflicts and uncoalesced accesses.
+// Optimize for memory coalescing by ensuring threads access contiguous memory locations.
+```

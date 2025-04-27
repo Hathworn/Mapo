@@ -1,0 +1,67 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <hip/hip_runtime.h>
+#include "blending_pairs_llm.cu"
+#include <chrono>
+#include <iostream>
+using namespace std;
+using namespace std::chrono;
+int main(int argc, char **argv) {
+hipSetDevice(0);
+
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    float *a = NULL;
+hipMalloc(&a, XSIZE*YSIZE);
+float *b = NULL;
+hipMalloc(&b, XSIZE*YSIZE);
+float *c = NULL;
+hipMalloc(&c, XSIZE*YSIZE);
+float *d = NULL;
+hipMalloc(&d, XSIZE*YSIZE);
+float *wei = NULL;
+hipMalloc(&wei, XSIZE*YSIZE);
+int width = XSIZE;
+int height = YSIZE;
+int w = XSIZE;
+float A = 2;
+float error_lm = 1;
+float error_mm = 1;
+int class_num = 1;
+int iXSIZE= XSIZE;
+int iYSIZE= YSIZE;
+while(iXSIZE%BLOCKX!=0) {
+iXSIZE++;
+}
+while(iYSIZE%BLOCKY!=0) {
+iYSIZE++;
+}
+dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
+dim3 threadBlock(BLOCKX, BLOCKY);
+hipFree(0);
+blending_pairs<<<gridBlock, threadBlock>>>(a,b,c,d,wei,width,height,w,A,error_lm,error_mm,class_num);
+hipDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+blending_pairs<<<gridBlock, threadBlock>>>(a,b,c,d,wei,width,height,w,A,error_lm,error_mm,class_num);
+}
+hipDeviceSynchronize();
+auto start = steady_clock::now();
+for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+blending_pairs<<<gridBlock, threadBlock>>>(a,b,c,d,wei,width,height,w,A,error_lm,error_mm,class_num);
+}
+hipDeviceSynchronize();
+auto end = steady_clock::now();
+auto usecs = duration_cast<duration<float, microseconds::period>>(end - start);
+cout << '[' << usecs.count() << ',' << '(' << BLOCKX << ',' << BLOCKY << ')' << ',' << '(' << XSIZE << ',' << YSIZE << ')' << ']' << endl;
+}

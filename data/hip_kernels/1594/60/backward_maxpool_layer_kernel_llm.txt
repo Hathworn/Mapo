@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory accesses.
+// Consider loop unrolling to optimize the innermost loops.
+// Ensure coalesced memory access when reading from delta and writing to prev_delta.
+// Consider using const memory for frequently accessed read-only data such as indexes. 
+// Ensure occupancy is maximized by adjusting block dimensions appropriately.
+```

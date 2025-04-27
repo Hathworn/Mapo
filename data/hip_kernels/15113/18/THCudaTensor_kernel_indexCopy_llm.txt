@@ -1,0 +1,9 @@
+```
+// Optimize memory access patterns to coalesce global memory access.
+// Use shared memory to cache frequently accessed data and reduce memory traffic.
+// Consider block size and grid configuration for better occupancy and performance balance.
+// Use __syncthreads() carefully to synchronize threads without causing unnecessary overhead.
+// Ensure data alignment for faster memory access and operations.
+// Minimize branching and divergence within kernels to maintain efficiency.
+// Reduce register usage per thread to maximize occupancy and parallel execution.
+```

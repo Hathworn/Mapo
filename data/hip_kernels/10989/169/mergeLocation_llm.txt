@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifiers on pointers to help the compiler optimize memory access.
+// Ensure data alignment for loc_ access to benefit from coalesced memory reads.
+// Use float2 for x and y to exploit vectorized memory operations, if applicable.
+// Evaluate increasing block size to improve occupancy and throughput on the GPU.
+// Minimize branching by ensuring ptidx is processed in consecutive order if possible.
+```

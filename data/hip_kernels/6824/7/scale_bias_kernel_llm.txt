@@ -1,0 +1,4 @@
+// Consider optimizing the blockDim.x size to maximize occupancy.
+// Ensure bias size fits within shared memory limit to avoid bank conflicts.
+// Use __syncthreads() to ensure all threads have loaded shared_biases before use.
+// Check memory coalescing for the output array for efficient access.

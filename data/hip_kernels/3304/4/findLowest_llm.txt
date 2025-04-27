@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access for array_val.
+// Ensure coalesced memory access by organizing array_val for stride-appropriate memory layouts.
+// Benchmark __syncthreads() usage to assess its necessity in current context.
+// Evaluate atomic operations if multiple writes to cudaResult can be optimized.

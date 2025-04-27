@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Leverage shared memory to further reduce global memory traffic
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Use warp shuffle functions to optimize within-warp reduction instead of volatile memory
+// Align memory accesses to eliminate bank conflicts in shared memory
+```

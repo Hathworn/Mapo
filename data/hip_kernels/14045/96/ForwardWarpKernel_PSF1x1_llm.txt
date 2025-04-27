@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for caching flow values to reduce global memory accesses
+// Utilize texture memory for source image to optimize read access patterns
+// Ensure coalesced memory access for all global memory reads and writes
+// Minimize bank conflicts if using shared memory
+// Evaluate the use of __restrict__ keywords for pointer arguments to enable additional compiler optimizations
+```

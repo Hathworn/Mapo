@@ -1,0 +1,8 @@
+```
+// Use float4 to reduce global memory transactions
+// Unroll loop to enhance instruction-level parallelism
+// Access memory in a coalesced pattern
+// Check boundary conditions outside the loop to reduce divergence
+// Minimize global memory access by using registers
+// Write output in burst mode to take advantage of memory coalescing
+```

@@ -1,0 +1,9 @@
+```
+// Use __ldg intrinsic to improve global memory read performance for 'features'
+// Use __ldg intrinsic to improve global memory read performance for 'conditions'
+// Use __ldg intrinsic to improve global memory read performance for 'splits'
+// Consider using shared memory to cache 'features' for each batch to reduce global memory accesses
+// Consider using shared memory to cache 'conditions' for each depth iteration to reduce global memory accesses
+// Consider using shared memory to cache 'splits' for each depth iteration to reduce global memory accesses
+// Ensure coalesced memory access patterns for 'features', 'conditions', and 'splits' to maximize bandwidth
+```

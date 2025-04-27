@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory access for 'vel' to optimize memory transactions
+// Ensure that 'velmod' is allocated in a coalesced manner to improve memory access efficiency
+// Consider using shared memory if 'vel' data will be reused among threads
+// Check memory alignment for 'vel' and 'velmod' to avoid misaligned access penalties
+```

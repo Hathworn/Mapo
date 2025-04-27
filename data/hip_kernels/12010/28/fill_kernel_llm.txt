@@ -1,0 +1,3 @@
+// Consider using shared memory if threads access overlapping data to reduce global memory access.
+// Ensure global memory accesses are coalesced by accessing contiguous memory.
+// Reduce the number of memory accesses by using registers.

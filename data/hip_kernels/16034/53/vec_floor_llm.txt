@@ -1,0 +1,3 @@
+// Ensure memory coalescing by accessing consecutive elements
+// Minimize warp divergence for better performance
+// Avoid unnecessary memory reads by checking if id < n before accessing x[id]

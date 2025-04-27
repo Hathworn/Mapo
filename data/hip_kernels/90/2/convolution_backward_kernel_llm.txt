@@ -1,0 +1,8 @@
+```
+// Optimize the usage of shared memory by minimizing bank conflicts.
+// Ensure coalesced memory access when loading data into shared memory.
+// Preload shared memory to reduce global memory access during convolution.
+// Use padding to align loads and avoid uncoalesced global memory accesses.
+// Consider loop unrolling for the convolution computation for better performance.
+// Use fewer __syncthreads() to reduce synchronization overhead, only when necessary.
+```

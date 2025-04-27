@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to cache the data accessed in a coalesced manner.
+// Ensure that global memory accesses are coalesced to increase memory throughput.
+// Limit the number of memory transactions per thread by using efficient memory access patterns.
+// Minimize the use of conditional statements within the loop to reduce control divergence.
+// Optimize the calculation of indices to avoid redundant operations and improve efficiency.
+// Consider loop unrolling if the compiler does not automatically optimize it.
+```

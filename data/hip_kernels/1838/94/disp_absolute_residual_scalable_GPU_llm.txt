@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access patterns for global memory reads
+// Consider caching repeated calculations to reduce computational load
+// Optimize occupancy by ensuring adequate blocks and threads per block
+// Use shared memory to minimize redundant global memory access
+// Avoid bank conflicts when using shared memory by proper index alignment
+// Unroll loops where applicable to enhance performance
+// Minimize divergent branches within kernels for optimal warp execution
+```

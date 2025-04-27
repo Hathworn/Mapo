@@ -1,0 +1,6 @@
+```c
+// Consider coalescing global memory accesses for inputWeights and inputWeightDeltas
+// Use shared memory for inputWeightRTRLDerivatives if possible to reduce global memory access
+// Minimize thread divergence by ensuring all threads in a warp follow the same execution path
+// Optimize use of __syncthreads() to avoid unnecessary synchronization overhead
+```

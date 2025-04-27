@@ -1,0 +1,5 @@
+// Combine index calculation and bounds check to reduce branching  
+// Use shared memory for in_image and label to improve memory access speed  
+// Consider loop unrolling for critical sections  
+// Align data structures to reduce memory access overhead  
+// Use warp shuffle or cooperative groups if possible for reduction tasks

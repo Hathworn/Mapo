@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by using global ID calculation for threads
+// Consider using shared memory if data reuse occurs within blocks
+// Use loop unrolling to enhance throughput
+// Assess if memory padding can mitigate alignment issues

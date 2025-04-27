@@ -1,0 +1,4 @@
+// Use shared memory for elements of y to reduce global memory accesses
+// Load elements of y into shared memory at the beginning of the kernel
+// Synchronize threads to ensure all elements of y are loaded before use
+// Reduce global memory bandwidth by using shared memory for repeated accesses

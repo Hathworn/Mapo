@@ -1,0 +1,6 @@
+// Optimize memory access patterns by aligning accesses and reducing bank conflicts.
+// Consider using more shared memory to minimize global memory accesses.
+// Ensure loop unrolling is effectively used to reduce instruction overhead.
+// Avoid redundant memory accesses by reusing loaded values where possible.
+// Check for potential warp divergence and structure code to minimize it.
+// Evaluate the benefits of cooperative groups or block-level shared reductions.

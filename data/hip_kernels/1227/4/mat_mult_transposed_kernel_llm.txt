@@ -1,0 +1,5 @@
+// Consider increasing shared memory size if matrix dimensions require more space.
+// Optimize memory access by favoring coalesced loads from global memory.
+// Avoid unnecessary calculations by leveraging warp-level operations for reduction.
+// Utilize the __ldg() intrinsic for read-only global memory access to improve cache usage.
+// Care may be needed to ensure all shared memory accesses are within bounds to prevent bank conflicts.

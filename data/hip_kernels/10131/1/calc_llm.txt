@@ -1,0 +1,7 @@
+```c
+// Optimize shared memory bank conflicts by ensuring data access patterns avoid conflicts
+// Consider increasing block size if it improves occupancy and reduces global memory transactions
+// Utilize __restrict__ to provide compiler additional information to optimize memory access
+// Experiment with loop unrolling if applicable for better instruction throughput
+// Analyze memory access pattern for coalescing opportunities
+```

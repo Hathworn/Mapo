@@ -1,0 +1,3 @@
+// Consider coalesced memory access by ensuring threads access continuous memory locations
+// Use shared memory if bias data is frequently reused across threads within the block
+// Minimize divergent execution by avoiding branch within the main computation loop

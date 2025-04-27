@@ -1,0 +1,5 @@
+digraph "CFG for '_Z14y_batch_kernelPdS_Pii' function" {
+	label="CFG for '_Z14y_batch_kernelPdS_Pii' function";
+
+	Node0x5b29d70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = sext i32 %5 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %9 = sext i32 %8 to i64\l  %10 = getelementptr inbounds double, double addrspace(1)* %1, i64 %9\l  %11 = load double, double addrspace(1)* %10, align 8, !tbaa !9,\l... !amdgpu.noclobber !8\l  %12 = getelementptr inbounds double, double addrspace(1)* %0, i64 %6\l  store double %11, double addrspace(1)* %12, align 8, !tbaa !9\l  ret void\l}"];
+}

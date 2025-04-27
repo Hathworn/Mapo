@@ -1,0 +1,9 @@
+```
+// Consider optimizing memory access by using shared memory for gradOutput_data within each block.
+// Minimize bank conflicts when using shared memory.
+// Use __restrict__ qualifiers for input and output pointers to help the compiler optimize memory access.
+// Ensure coalesced memory access patterns to improve memory bandwidth utilization.
+// Reduce the number of arithmetic operations where possible.
+// Fuse kernels if possible to reduce overall memory traffic.
+// Limit the use of scalar variables in favor of warp shuffle operations.
+```

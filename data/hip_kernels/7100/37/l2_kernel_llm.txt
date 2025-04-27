@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache common data and reduce global memory accesses
+// Optimize memory access patterns by ensuring coalesced memory accesses
+// Evaluate loop unrolling further if beneficial by processing multiple iterations in a single pass
+// Minimize bank conflicts when utilizing shared memory by careful indexing
+// Ensure memory alignment for better performance and reduced latency
+// Consider kernel fusion if there are subsequent dependent operations
+// Balance the workload across threads to maximize GPU occupancy
+```

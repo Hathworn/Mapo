@@ -1,0 +1,7 @@
+```c
+// Utilize shared memory for frequently accessed data to reduce global memory access time.
+// Ensure memory access is coalesced for improved performance.
+// Prefetch data into shared memory for pipeline optimization.
+// Consider using vectorized memory access for A and C for better throughput.
+// Optimize grid and block size to maximize occupancy while minimizing warp divergence.
+```

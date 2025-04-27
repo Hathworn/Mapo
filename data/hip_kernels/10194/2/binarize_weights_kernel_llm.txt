@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access
+// Load entire block of weights into shared memory to minimize global memory transactions
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Compute mean once in shared memory to avoid redundant calculations
+// Use shared memory to efficiently set and store binary weights
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache lifter coefficients, minimizing global memory access.
+// Ensure memory alignment for better coalesced memory access.
+// Consider using a stride loop for better cache usage within the apply lifter loop.
+// Synchronize threads after shared memory load to prevent data hazards.
+// Use at least 256 threads per block for maximizing occupancy and distribution of workload.
+// Check if better partition parameters can maximize shared memory utilization and reduce bank conflicts.
+```

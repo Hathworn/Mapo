@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns by ensuring consecutive threads access consecutive memory locations.
+// Minimize memory divergence by aligning input and output arrays to warp boundaries if possible.
+// Consider using shared memory to reduce global memory accesses where feasible.
+// Avoid bank conflicts in shared memory by ensuring no two threads in the same warp access the same memory bank simultaneously.
+// Optimize grid and block dimensions to fully utilize the hardware capabilities and ensure maximum occupancy.
+```

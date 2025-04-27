@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce repetitive global memory access
+// Optimize memory access patterns by ensuring consecutive threads access consecutive memory addresses
+// Ensure memory coalescing by aligning data access with warp boundaries
+// Investigate using vectorized data types (e.g., float4) to reduce the number of memory accesses
+// Consider using memory padding to avoid bank conflicts in shared memory
+```

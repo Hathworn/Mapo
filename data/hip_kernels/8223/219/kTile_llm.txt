@@ -1,0 +1,7 @@
+```
+// Use shared memory for caching src matrix elements to reduce global memory access
+// Ensure memory coalescing by accessing src array elements contiguously
+// Consider loop unrolling for the inner assignment loop to reduce loop overhead
+// Optimize block and grid dimensions to maximize occupancy based on target matrix size
+// Remove redundant calculations inside the loop by calculating srcY*srcWidth prior to the loop
+```

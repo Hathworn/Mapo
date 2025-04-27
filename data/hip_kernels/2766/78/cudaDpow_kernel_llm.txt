@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if each thread requires repeated access to the same data
+// Stride loop allows coalesced memory access which is preferred for better performance
+// Ensure power is not recalculated repeatedly within the loop by loading it into a register
+// Ensure x and y pointers are aligned for optimal memory access efficiency
+// Minimize divergent branches and ensure the grid is fully occupied for best performance
+```

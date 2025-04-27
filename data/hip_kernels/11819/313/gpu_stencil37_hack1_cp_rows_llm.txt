@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning shared memory copies.
+// Use __syncthreads() to avoid race conditions when writing to shared memory.
+// Combine conditions to reduce conditional checks and improve pipeline utilization.
+// Consider using double buffering for 'shared_rows' to hide memory latency.
+// Check if loop unrolling can benefit performance for 'tz' loop.
+```

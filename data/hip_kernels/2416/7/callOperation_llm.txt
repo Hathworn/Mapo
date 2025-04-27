@@ -1,0 +1,6 @@
+```
+// Ensure data is coalesced to improve global memory access efficiency
+// Consider using shared memory if accessing b[tid] * x repeatedly across threads
+// Minimize divergence by maintaining consistent operation paths within warp
+// Check if loop unrolling could benefit performance for small fixed sizes
+```

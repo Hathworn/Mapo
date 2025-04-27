@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Minimize memory divergence by ensuring coalesced access to global memory.
+// Use warp-level primitives where applicable to further optimize parallel processing.
+// Ensure that the loop stride is maintained to cover the entire data set efficiently.
+// Ensure that the size of grid and block is optimized for the hardware being used.
+```

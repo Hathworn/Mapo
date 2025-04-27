@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache pointsCoordinates to reduce global memory accesses
+// Use constant memory for frequently accessed values like 'cubeSide' and 'textureWidth' to optimize performance
+// Check memory alignment of vertexBaseIdx and textureBaseIdx to ensure coalesced accesses
+// Combine multiple assignments into fewer operations where possible to reduce memory transfer overhead
+// Precompute repetitive calculations like 'threadId * 3' outside the main loop for efficiency
+// Utilize loop unrolling to potentially reduce loop overhead in setting vertex and texture data
+```

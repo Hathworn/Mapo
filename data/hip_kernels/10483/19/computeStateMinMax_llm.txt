@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize global memory access.
+// Minimize divergence by aligning loops with thread dimensions.
+// Utilize atomic operations to ensure consistency across threads.
+// Synchronize threads to ensure shared memory operations complete before subsequent steps.
+// Replace atomic operations if possible to reduce contention and improve performance.
+// Align memory accesses when reading from xvals to increase coalescing.
+// Consider padding shared memory to avoid bank conflicts.
+// Optimize grid-size and block-size to ensure maximum utilization of available resources.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory for intermediate calculations to reduce global memory access
+// Ensure efficient memory coalescing by aligning memory access patterns
+// Optimize the local memory usage to minimize bank conflicts and maximize throughput
+// Consider unrolling loops if possible to improve instruction-level parallelism
+// Reduce syncthreads usage by carefully managing thread dependencies
+```

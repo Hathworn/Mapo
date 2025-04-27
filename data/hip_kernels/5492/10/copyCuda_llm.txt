@@ -1,0 +1,6 @@
+// Consider coalesced memory access by ensuring sequential threads access consecutive memory locations.  
+// Use shared memory if multiple threads access the same data to reduce redundant global memory accesses.  
+// Minimize divergence by ensuring that all threads in a warp follow the same execution path whenever possible.  
+// Align memory accesses to optimize global memory transactions speed.  
+// Check for read/write conflicts and consider employing atomic operations or avoiding them for better performance.  
+// Experiment with different block sizes to find the optimal execution configuration for your specific hardware.

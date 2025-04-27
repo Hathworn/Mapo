@@ -1,0 +1,8 @@
+```c
+// Use __ldg() intrinsic to cache global memory loads
+// Ensure dst array accesses are coalesced to optimize memory throughput
+// Consider replacing tex2D() with direct texture object sampling for performance
+// Optimize memory access patterns to take advantage of "memory reuse" in shared memory
+// Balance register usage to avoid spills and reduce warp divergence
+// Consider using loop unrolling if texture fetching involves consistent pattern
+```

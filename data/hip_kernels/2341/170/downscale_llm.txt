@@ -1,0 +1,10 @@
+```
+// Leverage memory coalescing by structuring accesses to use continuous memory addresses.
+// Consider using shared memory to reduce repetitive global memory accesses.
+// Utilize texture memory for read-only data to exploit hardware caching benefits.
+// Minimize divergent branches by reordering condition checks to favor the common case.
+// Pre-compute constant expressions outside of loops to reduce redundant calculations.
+// Optimize thread block size for the best balance between occupancy and latency hiding.
+// Align data structures to ensure coalesced memory accesses for improved performance.
+// Use __restrict__ keyword if applicable to provide the compiler with aliasing information.
+```

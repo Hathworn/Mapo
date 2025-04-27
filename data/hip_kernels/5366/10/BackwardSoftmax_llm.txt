@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier to possibly enable additional optimizations
+// Optimize shared memory usage by ensuring the kernel launch parameters fit within shared memory limits
+// Unroll loops where applicable to increase instruction-level parallelism
+// Ensure coalesced memory access patterns for global memory reads and writes
+// Evaluate if increasing block size could lead to better occupancy and performance
+```

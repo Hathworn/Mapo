@@ -1,0 +1,7 @@
+```
+// Ensure global memory reads are coalesced by accessing consecutive threads
+// Avoid bank conflicts in shared memory by ensuring proper alignment
+// Use shared memory to reduce repeated global memory access
+// Synchronize threads after loading to shared memory for consistency
+// Leverage registers for frequently accessed data
+```

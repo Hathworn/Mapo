@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access and improve bandwidth utilization.
+// Ensure warp-wide operations on shared memory to minimize bank conflicts.
+// Perform atomic operations on shared memory for reduced contention compared to global memory.
+// Combine synchronization points to minimize redundant __syncthreads calls.
+// Minimize index calculations by leveraging loop unrolling techniques.
+// Optimize atomic operations by ensuring contiguous memory access patterns.
+```

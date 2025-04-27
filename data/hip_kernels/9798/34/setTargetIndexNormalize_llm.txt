@@ -1,0 +1,8 @@
+```
+// Optimize memory access by utilizing shared memory to reduce global memory traffic
+// Ensure shared memory usage is within hardware limits to prevent bank conflicts
+// Use __syncthreads() to synchronize threads after shared memory load
+// Consider unrolling loop for j to optimize performance further
+// Check boundary conditions to prevent accessing out-of-bound indices
+// Use atomic operations carefully to handle potential race conditions
+```

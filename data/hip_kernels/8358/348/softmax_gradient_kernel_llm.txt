@@ -1,0 +1,4 @@
+// Prefetch Y, dY, and dX into shared memory for better memory coalescing
+// Ensure reduction_buffer is aligned for better memory access patterns
+// Use warp-level primitives for reduction to optimize synchronization overhead
+// Minimize shared memory usage by storing intermediate results in registers

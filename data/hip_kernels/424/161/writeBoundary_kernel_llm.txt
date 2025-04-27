@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache d_startArray for coalesced reads.
+// Consider loop unrolling for the if-statement to reduce branching.
+// Align d_startSumArray accesses to improve memory access patterns.
+// Check for bank conflicts when using shared memory.
+// Consider minimizing register usage for better occupancy.
+```

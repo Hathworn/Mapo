@@ -1,0 +1,5 @@
+// Ensure coalesced memory access for vector indexing
+// Use shared memory to reduce global memory accesses where possible
+// Consider using texture memory for potentially better cache performance
+// Optimize data layout to enhance memory access patterns and reduce stride impact
+// Explore prefetching scalar/vector data to hide memory latency

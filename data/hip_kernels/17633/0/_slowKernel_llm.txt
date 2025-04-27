@@ -1,0 +1,8 @@
+```
+// Use shared memory to further reduce global memory accesses if possible
+// Consider aligning data to reduce misaligned memory accesses
+// Try to improve memory coalescing for better memory access patterns
+// Consider using __restrict__ qualifiers for pointer arguments to help compiler optimizations
+// Explore if using warp-level primitives like __shfl_xor can optimize accumulations
+// Profile and determine if occupancy can be improved by adjusting block sizes or shared memory usage
+```

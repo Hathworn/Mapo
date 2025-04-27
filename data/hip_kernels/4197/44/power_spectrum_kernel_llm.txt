@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to reduce global memory access within the loop.
+// Prefetch data to registers to minimize latency and improve memory bandwidth.
+// Consider using __ldg() for reading constant data to enhance data locality.
+// Unroll the loop to maximize pipeline performance and decrease control overhead.
+```

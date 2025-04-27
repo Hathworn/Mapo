@@ -1,0 +1,3 @@
+// Consider coalesced memory accesses for better global memory throughput.
+// Use shared memory to reduce redundant global memory accesses.
+// Evaluate using warp shuffle operations for better performance instead of __syncthreads().

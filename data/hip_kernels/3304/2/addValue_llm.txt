@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for array_val for better memory throughput.
+// Ensure shared memory usage effectively reduces redundant global memory accesses.
+// Optimize synchronization by minimizing the number of __syncthreads() calls.
+// Consider using warp-level primitives for reduction to decrease synchronization overhead.
+// Ensure the shared memory size is adequate but not excessive to avoid resource contention.
+```

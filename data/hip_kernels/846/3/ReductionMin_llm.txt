@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory accesses
+// Employ warp-level primitives where possible to reduce sync overhead
+// Ensure memory access coalescing by having contiguous threads access contiguous memory locations
+// Consider adjusting block size to match warp size to minimize thread divergence
+// Leverage shuffle operations for warp reduction to improve efficiency
+// Optimize data reuse patterns within shared memory to reduce latency
+```

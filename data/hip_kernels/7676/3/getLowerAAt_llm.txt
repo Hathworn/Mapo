@@ -1,0 +1,4 @@
+// Use shared memory to cache data per block for faster access  
+// Optimize thread synchronization to reduce overhead  
+// Consider using warp shuffles for data exchange between threads for reducing shared memory usage  
+// Pre-fetch data to shared memory before they're needed to minimize global memory latency

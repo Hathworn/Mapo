@@ -1,0 +1,5 @@
+// Consider using shared memory for temporary storage to further reduce global memory access.
+// Ensure enough threads per block to fully utilize memory coalescing.
+// Validate that data alignment is correct for double2 usage to avoid misalignment penalties.
+// Check whether loop unrolling could benefit performance in case of repeated operations.
+// Monitor memory throughput to ensure the bottleneck is addressed by this coalesced access methodology.

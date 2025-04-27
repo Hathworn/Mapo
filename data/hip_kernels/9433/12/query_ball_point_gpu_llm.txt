@@ -1,0 +1,7 @@
+```
+// Consider using shared memory more effectively to minimize redundant global memory accesses
+// Evaluate if preloading xyz1 data into shared memory can help reduce memory traffic
+// Investigate the potential for thread-level parallel reduction in calculating 'd' to improve performance
+// Check if there's an opportunity to leverage texture memory for xyz1 and xyz2 for faster reads
+// Make sure memory coalescing is achieved when reading from and writing to global memory
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if there's reuse in values to reduce global memory access
+// Optimize memory coalescing by ensuring X[i * INCX] accesses are aligned
+// Evaluate the potential benefits of loop unrolling for the critical section
+// Check for occupancy and adjust block size to make full use of the hardware
+// Use __restrict__ qualifier for pointers if possible to aid the compiler in optimization
+```

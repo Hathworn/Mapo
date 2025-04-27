@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for 'src' to improve memory bandwidth utilization.
+// Use shared memory to cache 'trg' data if there are multiple updates per block.
+// Consider using warp-level primitives to reduce contention when accessing the 'trg' array.
+// Optimize atomic operations by reducing their frequency or by using warp-aggregated atomics.
+// Align 'src' and 'trg' pointers to improve memory access efficiency and reduce bank conflicts.
+```

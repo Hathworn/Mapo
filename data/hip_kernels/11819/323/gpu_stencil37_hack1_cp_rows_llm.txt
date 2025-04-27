@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access.
+// Coalesce memory access by ensuring threads access consecutive memory locations.
+// Use `__syncthreads()` to synchronize threads after writing to shared memory.
+// Consider increasing thread block size or tile size for better occupancy.
+// Avoid duplicate memory access by storing reused data in registers.
+```

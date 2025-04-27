@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Coalesce memory accesses to improve memory throughput.
+// Launch kernel with optimal block size for better occupancy.
+// Minimize divergent branches to enhance warp execution efficiency.
+// Use __syncthreads() to synchronize threads when necessary to avoid race conditions.
+// Consider using float instead of double if precision requirements allow it for faster computation.
+```

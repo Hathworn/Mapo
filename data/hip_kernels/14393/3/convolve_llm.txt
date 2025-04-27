@@ -1,0 +1,8 @@
+```cpp
+// Consider using texture memory for source data to improve memory access patterns
+// Ensure sharedKernel is fully loaded by all threads before synchronization
+// Minimize global memory accesses by accessing coalesced data
+// Utilize warp shuffling techniques to eliminate shared memory usage when possible
+// Avoid bank conflicts in shared memory access
+// Ensure grid and block dimensions match the image size for optimal usage
+```

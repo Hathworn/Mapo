@@ -1,0 +1,10 @@
+```
+// Use coalesced memory accesses by aligning data structures to warp size
+// Minimize divergent branches within warp for better performance
+// Utilize shared memory to cache frequently accessed data and reduce global memory access latency
+// Balance thread work load to maximize occupancy and efficiency
+// Consider loop unrolling for the 'k' loop to increase instruction level parallelism
+// Use __restrict__ on pointers to help the compiler optimize memory access
+// Explore using shuffle instructions for inter-warp communication to decrease global memory dependence
+// Profile and fine-tune yStride and xStride values for optimal loop performance
+```

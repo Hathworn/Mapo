@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses for frequently used data.
+// Optimize memory access patterns to ensure coalesced reads and writes.
+// Consider using __ldg() intrinsic for read-only data to improve cache efficiency.
+// Avoid bank conflicts when using shared memory by properly aligning access patterns.
+// Use loop unrolling to reduce loop overhead and improve parallel efficiency.
+// Minimize register usage to allow for higher occupancy in the kernel.
+// Remove redundant calculations by precomputing constant values outside the loop.
+```

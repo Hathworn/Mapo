@@ -1,0 +1,7 @@
+```
+// Load x_sub in coalesced manner for better memory access efficiency
+// Consider using warp-level operations for atomicAdd to reduce contention
+// Utilize shared memory to minimize global memory accesses for commonly used data
+// Investigate usage of vectorized operations to optimize data movement
+// Ensure memory alignment for shared_mem to take advantage of hardware capabilities
+```

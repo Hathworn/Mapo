@@ -1,0 +1,6 @@
+```
+// Ensure __restrict__ keyword is used on pointer arguments for potential pointer aliasing benefits
+// Consider using shared memory to temporarily store frequently accessed data to reduce global memory access
+// Optimize memory access pattern by ensuring threads access memory in a coalesced manner
+// Avoid branching within threads as much as possible to maintain warp efficiency
+```

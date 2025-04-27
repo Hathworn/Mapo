@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by ensuring continuous threads access continuous memory locations.
+// Evaluate using shared memory to reduce the number of global memory accesses and enhance performance.
+// Ensure that input arrays are aligned to avoid misaligned memory accesses that can degrade performance.
+// Explore loop unrolling if the width and height dimensions are fixed and known at compile time.
+// Confirm that all accessed memory is within allocated bounds to prevent undefined behavior.
+```

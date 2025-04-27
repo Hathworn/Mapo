@@ -1,0 +1,8 @@
+```c
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory locations
+// Consider using shared memory if there's reuse of x or out values within a block
+// Reduce global memory accesses by loading data into registers when possible
+// Minimize divergent branching or conditionals within kernel
+// Align data structures to optimal memory boundary for better access speed
+// Consider loop unrolling if iterative patterns are present
+```

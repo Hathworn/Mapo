@@ -1,0 +1,7 @@
+```
+// Use shared memory for vector to reduce global memory access
+// Ensure proper synchronization using __syncthreads() after loading shared memory
+// Align shared memory size to ensure best memory transactions
+// Consider coalesced access pattern for reading from mat and writing to tgtMat
+// Optimize grid and block dimensions to maximize device occupancy
+```

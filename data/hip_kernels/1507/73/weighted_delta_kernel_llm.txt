@@ -1,0 +1,7 @@
+```
+// Reduce global memory access by storing dc[i] and s[i] into local variables
+// Leverage data reuse by accessing cached dc_val and s_val instead of global memory
+// Ensure operations occur on local variables to minimize global memory interaction
+// Check validity of pointers (e.g., da) before performing operations to prevent unnecessary reads
+// Optimize calculation by minimizing redundant loading of data from memory
+```

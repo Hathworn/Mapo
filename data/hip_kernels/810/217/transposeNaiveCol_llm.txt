@@ -1,0 +1,8 @@
+```
+// Consider aligning memory access to warp boundaries for better coalescing
+// Use shared memory to minimize global memory access latency
+// Try increasing thread block sizes to improve occupancy
+// Experiment with using more threads per block for better utilization
+// Prefetch data to registers to reduce latency
+// Consider loop unrolling techniques if applicable
+```

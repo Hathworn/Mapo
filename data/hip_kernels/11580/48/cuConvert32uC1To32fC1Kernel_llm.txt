@@ -1,0 +1,5 @@
+// Use shared memory for strided access to reduce global memory transaction count
+// Optimize memory coalescing by ensuring aligned shared memory access for both src and dst
+// Ensure synchronization (__syncthreads) occurs to prevent data races in shared memory
+// Minimize branch divergence by limiting conditional statements within critical paths
+// Adjust shared memory size (32x32) if necessary to match hardware constraints

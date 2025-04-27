@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by organizing threads to match data layout in memory
+// Consider using shared memory to reduce global memory bandwidth if data reuse occurs
+// Align pitch parameter to the memory access pattern for better performance
+// Use __ldg() for read-only data if memory is read multiple times to utilize texture cache
+// Minimize divergent branches to keep warp execution efficient
+```

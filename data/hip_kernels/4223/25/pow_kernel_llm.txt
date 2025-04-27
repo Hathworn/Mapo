@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve global memory throughput
+// Ensure INCX and INCY lead to contiguous memory accesses for better caching
+// Evaluate using shared memory to store intermediate results and reduce global memory accesses
+// Use block size that is a multiple of the warp size to maximize warp occupancy
+// Minimize divergent execution with uniform thread workloads within a warp
+```

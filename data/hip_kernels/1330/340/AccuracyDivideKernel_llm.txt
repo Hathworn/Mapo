@@ -1,0 +1,6 @@
+```
+// Ensure the kernel is launched with only one block to minimize warp divergence.
+// Consider loading 'accuracy' into a register before the division for faster access.
+// Make sure 'accuracy' is not accessed by other operations in parallel to avoid race conditions.
+// Evaluate if using hipMemcpy for transferring 'accuracy' between host and device is optimal.
+```

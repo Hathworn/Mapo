@@ -1,0 +1,7 @@
+```
+// Unroll inner loop to improve data access patterns and reduce loop overhead
+// Use shared memory to cache dense_data for reuse within a block
+// Consider coalescing memory accesses to dense_data for improved memory bandwidth utilization
+// Evaluate use of warp-level primitives for reduction in inner loop
+// Opt for aligning data structures to avoid unaligned memory accesses
+```

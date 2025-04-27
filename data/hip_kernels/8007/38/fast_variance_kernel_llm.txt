@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for loaded x and mean data to reduce global memory access
+// Employ loop unrolling for the batch loop to enhance instruction-level parallelism
+// Increase the number of threads per block if possible to improve occupancy
+// Prefetch data into shared memory to hide memory latency
+// Use float4 operations if data alignment allows
+```

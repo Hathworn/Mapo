@@ -1,0 +1,5 @@
+// Consider using shared memory for copying dist to out to reduce global memory access.
+// Minimize divergent branches by ensuring all threads follow the same execution path during sort.
+// Use memory coalescing when accessing dist and outi to increase memory read efficiency.
+// Investigate using warp shuffle functions for more efficient parallel data exchange among threads.
+// Explore loop unrolling to improve iteration efficiency in the innermost loops.

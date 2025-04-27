@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ to increase the potential for compiler optimizations.
+// Ensure __restrict__ is used correctly to indicate that pointers do not alias other pointers.
+// Use early exit to reduce time on unnecessary computations for threads outside the range.
+// Leverage float4 to minimize memory transactions and take advantage of vectorized operations.
+// Perform computation and assignment in a single step to reduce latency and improve performance.
+// Ensure memory accesses are coalesced to maximize memory throughput.
+```

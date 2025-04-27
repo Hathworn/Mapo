@@ -1,0 +1,8 @@
+```
+// Use shared memory to store partial results and reduce global memory access
+// Ensure coalesced memory access to improve bandwidth
+// Minimize bank conflicts by ensuring proper memory alignment
+// Consider additional loop unrolling for further performance gains
+// Optimize thread block size for occupancy and performance balance
+// Use __syncthreads() to synchronize threads and prevent race conditions
+```

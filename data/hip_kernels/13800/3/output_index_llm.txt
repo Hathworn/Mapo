@@ -1,0 +1,8 @@
+```cpp
+// Use registers to reduce the number of global memory accesses, improving latency
+// Unroll loops to decrease loop overhead and increase memory access coalescing
+// Store frequently accessed data in shared memory to reduce global memory bandwidth
+// Use __syncthreads() to ensure all threads have completed memory operations before proceeding
+// Align memory accesses to warp boundaries to optimize coalescing and decrease bank conflicts
+// Consider further unrolling if registers are available, to improve instruction parallelism
+```

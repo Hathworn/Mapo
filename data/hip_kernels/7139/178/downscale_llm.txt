@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to gradOutput_data for efficiency.
+// Use shared memory to store temporary data to reduce repeated global memory accesses.
+// Optimize the loop order to improve memory access patterns and cache utilization.
+// Ensure __device__ functions have __forceinline__ to encourage inlining and reduce function call overhead.
+// Consider using texture memory for read-only gradOutput_data if beneficial.
+// Implement a warp-synchronized reduction to minimize atomic operations on gradInput_data updates.
+```

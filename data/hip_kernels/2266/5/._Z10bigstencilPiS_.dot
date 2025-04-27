@@ -1,0 +1,5 @@
+digraph "CFG for '_Z10bigstencilPiS_' function" {
+	label="CFG for '_Z10bigstencilPiS_' function";
+
+	Node0x5833eb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %12\l  %14 = load i32, i32 addrspace(1)* %13, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %15 = add nsw i32 %14, 2\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %12\l  store i32 %15, i32 addrspace(1)* %16, align 4, !tbaa !7\l  ret void\l}"];
+}

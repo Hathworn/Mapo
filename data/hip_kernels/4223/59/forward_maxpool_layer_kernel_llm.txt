@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for input data to improve memory access speed.
+// Pre-load relevant input data block into shared memory before processing.
+// Align memory accesses for both input and output to improve coalescing.
+// Unroll loops where possible to increase instruction throughput.
+// Minimize divergence by ensuring similar execution paths within warp.
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory for accumulation to reduce global memory accesses
+// Reuse translate_idx_inv computation by storing results in local variables to save redundant calculations
+// Ensure coalesced memory access for gradOutput_data and gradInput_data arrays
+// Use __restrict__ qualifier for pointer arguments to inform the compiler of non-overlapping memory access
+// Balance thread workloads by optimizing block and grid dimensions for maximum occupancy

@@ -1,0 +1,9 @@
+```
+// Optimize memory coalescing by ensuring all threads access contiguous memory addresses.
+// Consider using __restrict__ qualifier to indicate that pointers do not alias,
+// potentially allowing for further compiler optimizations.
+// Minimize divergent branching by using linear indexing calculations.
+// Utilize shared memory to cache frequently accessed data for reduced global memory access.
+// Unroll loops to decrease overhead and increase execution efficiency if loop iterations are known at compile time.
+// Prefetch data to hide global memory latency by overlapping computation with memory access.
+```

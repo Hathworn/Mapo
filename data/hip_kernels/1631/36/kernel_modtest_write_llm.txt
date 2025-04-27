@@ -1,0 +1,5 @@
+// Use shared memory or registers to minimize global memory access
+// Align memory accesses to maximize coalescing
+// Consider loop unrolling to decrease the number of executed instructions
+// Avoid divergent branches for better warp execution efficiency
+// Ensure that the memory addresses are within valid bounds to prevent undefined behavior

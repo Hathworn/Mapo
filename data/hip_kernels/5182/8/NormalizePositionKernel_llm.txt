@@ -1,0 +1,5 @@
+// Use shared memory if possible to reduce global memory access overhead  
+// Improve data parallelism by removing the threadId==0 condition and distributing work across more threads  
+// Minimize conditional statements to improve warp execution efficiency  
+// Consider coalescing memory accesses for better performance  
+// Use __restrict__ keyword for pointers to allow compiler optimizations

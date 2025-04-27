@@ -1,0 +1,6 @@
+```c
+// Consider coalesced memory access for d_coordinates to improve global memory throughput.
+// Ensure d_r_output writes are coalesced for improved memory performance.
+// Minimize divergence in loops by ensuring boundaries are handled outside the loop.
+// Consider using shared memory to store frequently accessed data within the template region.
+```

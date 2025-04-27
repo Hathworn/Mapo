@@ -1,0 +1,10 @@
+```
+// Use shared memory efficiently by reducing its footprint with the help of registers.
+// Minimize global memory access by using local registers for temporary storage.
+// Use warp-level primitives such as __shfl or __ballot for intra-warp communication to reduce __syncthreads frequency.
+// Avoid bank conflicts in shared memory by appropriately indexing and aligning data.
+// Reduce the usage of shared memory to optimize bandwidth by relying on registers where possible.
+// Limit the use of __syncthreads to points where absolutely necessary.
+// Ensure coalesced access to global memory to improve memory throughput.
+// Optimize the thread block size to fully utilize GPU cores and memory bandwidth.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure memory accesses are coalesced for better efficiency.
+// Utilize shared memory to minimize redundant reads from global memory.
+// Synchronize threads after shared memory operations to ensure data consistency.
+// Write to global memory after verifying all conditions to reduce unnecessary writes.

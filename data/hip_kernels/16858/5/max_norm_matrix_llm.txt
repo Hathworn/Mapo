@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory access by coalescing global reads from mat1
+// Use shared memory to reduce the number of global atomic operations
+// Try using warp-level primitives to minimize synchronization overhead
+// Explore double-buffering techniques for efficient shared memory usage
+// Ensure bank conflict-free access patterns in shared memory
+// Utilize the first thread of the block more effectively for final computations
+```

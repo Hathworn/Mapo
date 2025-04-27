@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for frequently accessed variables to reduce global memory access.
+// Try coalescing global memory accesses for better memory throughput.
+// Ensure memory access patterns are coalesced by aligning and padding data if necessary.
+// Evaluate the use of __restrict__ keyword for pointers to potentially optimize memory access.
+// Assess the potential benefits of prefetching data if memory latency is a bottleneck.
+// Investigate if loop unrolling can improve performance by reducing loop control overhead.
+// Evaluate occupancy and adjust block size to optimize performance and resource usage.
+```

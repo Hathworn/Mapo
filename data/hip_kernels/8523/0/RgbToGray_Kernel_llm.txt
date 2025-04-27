@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses by ensuring RGB_Image is accessed in a contiguous manner for different threads
+// Use shared memory if possible to stage RGB data before processing to reduce global memory access latency
+// Investigate whether using texture memory could benefit frequent read access patterns such as those in image processing
+// Explore loop unrolling or other techniques to minimize arithmetic operations for RGB to grayscale conversion
+```

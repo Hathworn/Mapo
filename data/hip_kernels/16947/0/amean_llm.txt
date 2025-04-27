@@ -1,0 +1,3 @@
+// Use warp shuffle for reduction to minimize synchronization
+// Prefer coalesced access to global memory for faster reads
+// Consider using atomic operations to update global memory efficiently

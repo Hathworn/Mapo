@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by aligning data accesses along column-major order.
+// Use shared memory to store data tiles to reduce global memory access latency.
+// Unroll inner loop for potential performance improvement.
+// Avoid divergent branches by restructuring conditional statements.
+// Consider using warp shuffle to reduce unnecessary global memory operations.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory accesses for A and B
+// Optimize memory coalescing by aligning data accesses for matrices A and B
+// Ensure that the lda, ldb, and ldc parameters support memory coalescing
+// Use loop unrolling techniques to reduce the overhead of loop control for 'i' loop
+// Verify if reducing the loop unrolling factor can lead to better warp utilization
+```

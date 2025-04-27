@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access within the inner loop
+// Avoid repeated calculations of idx + jj * countlength for efficient memory access
+// Consider memory coalescing techniques for segcounter and counter arrays

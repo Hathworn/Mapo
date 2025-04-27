@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access for arrays B, G, and R to reduce memory transaction overhead.
+// Explore shared memory usage for the convolution kernel K to reduce redundant global memory accesses.
+// Evaluate loop unrolling for the inner loops to increase instruction throughput.
+// Assess the impact of increasing block size for better usage of thread resources and occupancy.
+// Check the use of constant memory for the kernel array K if it fits within the constant memory limit.
+// Optimize boundary checks to minimize unnecessary control divergence within warps.
+```

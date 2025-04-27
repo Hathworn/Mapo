@@ -1,0 +1,6 @@
+```
+// Prefetch global memory into shared memory to reduce global memory access latency
+// Use __syncthreads() to ensure all threads have written their data to shared memory before it is used
+// Utilize effective thread usage by unrolling loops over potential threads
+// Direct indexing in computations to avoid additional arithmetic operations
+```

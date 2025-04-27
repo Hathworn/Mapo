@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Implement bounds checking to avoid out-of-bound memory accesses
+// Initialize shared memory elements to zero for safe out-of-bound handling
+// Utilize __syncthreads() to ensure all threads have loaded the data into shared memory
+// Utilize pragma unroll to improve the loop performance

@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data such as dp and cost_image to reduce global memory accesses.
+// Consider coalescing accesses to dp and dp_criteria to improve memory throughput.
+// Prefetch data into registers for variables like dp[ind] and cost_image[current_ind] to minimize memory latency.
+// Use warp-level primitives to reduce redundant calculations and improve efficiency.
+// Consider increasing the block size to better utilize GPU resources if registers and shared memory permit it.
+// Optimize thread and block dimensions to minimize warp divergences especially in conditional branches.
+// Evaluate removing some floating point operations if they are redundant and duplicate values can be reused.
+```

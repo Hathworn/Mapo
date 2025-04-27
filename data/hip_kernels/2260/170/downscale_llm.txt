@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory access by using shared memory to store blocks of gradOutput_data temporarily.
+// Minimize global memory transactions by accumulating results in registers before writing to global memory.
+// Unroll the loop to reduce loop overhead and improve performance.
+// Use __syncthreads() to ensure all threads have completed their operations on shared memory before proceeding.
+// Consider coalescing memory accesses to gradOutput_data for better memory throughput.
+// Align memory accesses to improve global memory access efficiency.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifier for input pointers to help the compiler optimize memory access
+// Use shared memory for frequently accessed data to reduce global memory access time
+// Minimize divergent branching in the kernel for better warp execution efficiency
+// Ensure coalesced memory access by aligning data structures according to warp size
+// Investigate using pinned memory or memory pools for faster host-device memory transfers
+// Implement more aggressive loop unrolling and vectorization where applicable
+```

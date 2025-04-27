@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to store xyz1 and xyz2 to reduce global memory access
+// Implement coalesced memory access patterns to improve memory throughput
+// Ensure that memory access is aligned to avoid unnecessary memory transactions
+// Avoid recomputing shared values, like d; store intermediate results
+// Use loop unrolling to reduce loop overhead and increase instruction-level parallelism
+// Explore reducing branch divergence by reorganizing conditional statements
+// Profile GPU occupancy and adjust block size or grid size for better utilization
+```

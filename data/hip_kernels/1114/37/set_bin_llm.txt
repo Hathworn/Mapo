@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache sections of d_row_nz to reduce global memory accesses.
+// Evaluate if using warp-level primitives can further reduce atomic operations.
+// Ensure coalesced memory access patterns to optimize bandwidth utilization.
+// Analyze potential benefits of using local memory for repeated small data access.
+```

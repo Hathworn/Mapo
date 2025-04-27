@@ -1,0 +1,5 @@
+// Use coalesced memory access when reading from and writing to global memory.  
+// Consider using shared memory to avoid redundant global memory accesses.  
+// Ensure kernel launch parameters maximize occupancy for better throughput.  
+// Check for memory bank conflicts if using shared memory.  
+// Minimize register usage inside the loop to encourage better compiler optimization.

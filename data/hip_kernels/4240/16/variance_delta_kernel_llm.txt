@@ -1,0 +1,4 @@
+// Consider using shared memory to optimize access to variables like `mean[i]` and `variance[i]`.
+// Avoid redundant calculations by precomputing `variance[i] + .000001f` before the loop.
+// Optimize memory access patterns by coalescing reads and writes where possible.
+// Explore loop unrolling techniques for the nested loops to reduce overhead.

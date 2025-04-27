@@ -1,0 +1,3 @@
+// Unroll loops to reduce loop overhead and improve instruction-level parallelism.
+// Use shared memory to accumulate partial sums for improved memory access efficiency.
+// Apply atomicAdd for thread-safe accumulation to avoid race conditions.

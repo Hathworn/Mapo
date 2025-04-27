@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for ptr_input by aligning data access patterns
+// Consider coalesced memory access for ptr_gradOutput by aligning data access patterns
+// Use shared memory to store input data slice that is reused across threads 
+// Minimize global memory access by loading gradOutput values per block
+// Consider preloading gradOutput values to registers for repeated use
+// Optimize shared memory usage to avoid bank conflicts
+// Use warp-synchronous reduction to reduce shared memory accesses for partial sum reduction
+```

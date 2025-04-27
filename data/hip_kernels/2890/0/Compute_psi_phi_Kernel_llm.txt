@@ -1,0 +1,5 @@
+// Consider using __ldg() for read-only gAbsIx and gAbsIy to optimize memory access
+// Prefetch data into shared memory if reused multiple times to reduce global memory access
+// Ensure memory coalescing by verifying contiguous memory access patterns for gAbsIx and gAbsIy
+// Use fast math intrinsics such as __fmul_rn() for multiplication to enhance computational efficiency
+// Prevent potential bank conflicts when using shared memory by ensuring proper alignment

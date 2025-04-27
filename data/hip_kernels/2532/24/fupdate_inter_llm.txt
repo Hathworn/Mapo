@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses for z and g arrays to improve memory efficiency.
+// Use shared memory to cache frequently accessed data and reduce global memory accesses.
+// Reduce divergence by ensuring warp execution paths converge.
+// Explore loop unrolling techniques for horizontal and vertical divergence computations.
+// Consider using float4 for z array to exploit vectorized computations.
+// Optimize conditional checks to minimize branching within the kernel.
+// If possible, align data structures for better memory alignment and access patterns.
+```

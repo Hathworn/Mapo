@@ -1,0 +1,8 @@
+```
+// Optimize prefix sum using parallel scan algorithm
+// Use shared memory for prefix sum computation to enhance performance
+// Ensure data is properly aligned for coalesced memory access
+// Load multiple elements in a single transaction if possible
+// Minimize thread divergence within warps
+// Use __syncthreads() to synchronize threads after shared memory operations
+```

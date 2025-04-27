@@ -1,0 +1,13 @@
+digraph "CFG for '_Z23cudaNoConversion_kernelPfS_S_fjjj' function" {
+	label="CFG for '_Z23cudaNoConversion_kernelPfS_S_fjjj' function";
+
+	Node0x53c8390 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%7:\l  %8 = mul i32 %5, %4\l  %9 = mul i32 %8, %6\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = mul i32 %9, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %13 = icmp ult i32 %12, %9\l  br i1 %13, label %14, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x53c8390:s0 -> Node0x53c95c0;
+	Node0x53c8390:s1 -> Node0x53c9650;
+	Node0x53c95c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%14:\l14:                                               \l  %15 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %16 = getelementptr i8, i8 addrspace(4)* %15, i64 4\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 4, !range !5, !invariant.load !6\l  %19 = zext i16 %18 to i32\l  br label %21\l}"];
+	Node0x53c95c0 -> Node0x53ca540;
+	Node0x53c9650 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%20:\l20:                                               \l  ret void\l}"];
+	Node0x53ca540 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = phi i32 [ %12, %14 ], [ %32, %21 ]\l  %23 = add i32 %22, %11\l  %24 = zext i32 %23 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %24\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7\l  %27 = fmul contract float %26, %3\l  %28 = getelementptr inbounds float, float addrspace(1)* %1, i64 %24\l  store float %27, float addrspace(1)* %28, align 4, !tbaa !7\l  %29 = getelementptr inbounds float, float addrspace(1)* %2, i64 %24\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !7\l  %31 = fadd contract float %27, %30\l  store float %31, float addrspace(1)* %29, align 4, !tbaa !7\l  %32 = add i32 %22, %19\l  %33 = icmp ult i32 %32, %9\l  br i1 %33, label %21, label %20, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x53ca540:s0 -> Node0x53ca540;
+	Node0x53ca540:s1 -> Node0x53c9650;
+}

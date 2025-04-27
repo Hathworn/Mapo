@@ -1,0 +1,6 @@
+```
+// Consider using multiple shared memory elements to reduce contention.
+// Use a warp reduction to accumulate values within shared memory.
+// Ensure coalesced memory access by adjusting the array layout or access pattern.
+// Avoid using atomic operations in a loop to enhance performance if possible.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory if accessing overlapping regions frequently
+// Align memory access to improve coalescing
+// Consider using texture memory for read-only data
+// Optimize block size to match warp size for maximum occupancy
+// Minimize divergent branches to improve warp execution efficiency
+// Prefetch data to registers if reuse is high
+```

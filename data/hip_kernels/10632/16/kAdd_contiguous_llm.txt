@@ -1,0 +1,7 @@
+```cpp
+// Align memory access with coalesced memory patterns
+// Ensure memory accesses are within the same warp for optimized throughput
+// Consider caching frequently accessed data in shared memory if possible
+// Minimize memory access latency by using strided access patterns
+// Assess the use of __restrict__ to improve compiler optimizations
+```

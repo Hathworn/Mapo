@@ -1,0 +1,10 @@
+```c
+// Use shared memory to reduce global memory accesses for frequently used data.
+// Ensure coalesced global memory access patterns to enhance memory throughput.
+// Consider loading data into registers to minimize shared memory bank conflicts.
+// Apply loop unrolling in the computation section to improve instruction-level parallelism.
+// Employ __syncthreads() appropriately to prevent race conditions when accessing shared memory.
+// Align data in shared memory to reduce latency from misaligned memory access.
+// Explore using constant memory for frequently accessed relatively small data like kernel coefficients.
+// Adjust block and grid sizes to improve occupancy while balancing memory bandwidth usage.
+```

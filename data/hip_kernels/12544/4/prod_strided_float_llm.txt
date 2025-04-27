@@ -1,0 +1,9 @@
+// Use shared memory to reduce memory access latencies  
+// Avoid atomic operations when possible to optimize memory contention  
+// Prefetch data into local variables to reduce repeated global memory access  
+// Reduce divergence by minimizing conditional statements inside loops  
+// Optimize block and thread configurations for better memory coalescing  
+// Consider loop unrolling to decrease loop overhead  
+// Align data access to maximize memory coalescing effectiveness  
+// Evaluate warp-level synchronization for granular control instead of block-level  
+// Promote variable usage to registers for higher local cache efficiency  

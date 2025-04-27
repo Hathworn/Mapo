@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed input indices like i, j, k, b, and mask within the block.
+// Optimize memory access by accessing global memory in coalesced patterns for inputs and outputs.
+// Precompute offsets to reduce redundant calculations within the kernel.
+// Align memory access with warp size boundaries to improve memory access efficiency.

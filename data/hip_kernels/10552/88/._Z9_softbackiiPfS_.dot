@@ -1,0 +1,31 @@
+digraph "CFG for '_Z9_softbackiiPfS_' function" {
+	label="CFG for '_Z9_softbackiiPfS_' function";
+
+	Node0x566d1f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a7c5fe70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !5, !invariant.load !6\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !7\l  %15 = mul i32 %6, %11\l  %16 = add i32 %15, %5\l  %17 = icmp slt i32 %16, %1\l  br i1 %17, label %18, label %84\l|{<s0>T|<s1>F}}"];
+	Node0x566d1f0:s0 -> Node0x566d240;
+	Node0x566d1f0:s1 -> Node0x566f4c0;
+	Node0x566d240 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8caffe70",label="{%18:\l18:                                               \l  %19 = sitofp i32 %1 to float\l  %20 = udiv i32 %14, %11\l  %21 = mul i32 %20, %11\l  %22 = icmp ugt i32 %14, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %11\l  %26 = icmp sgt i32 %0, 0\l  br label %27\l}"];
+	Node0x566d240 -> Node0x566fa40;
+	Node0x566fa40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%27:\l27:                                               \l  %28 = phi i32 [ %16, %18 ], [ %70, %69 ]\l  %29 = mul nsw i32 %28, %0\l  %30 = add nsw i32 %29, %0\l  br i1 %26, label %33, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x566fa40:s0 -> Node0x566fd90;
+	Node0x566fa40:s1 -> Node0x566fe20;
+	Node0x566fe20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%31:\l31:                                               \l  %32 = phi float [ 0xFFF0000000000000, %27 ], [ %40, %33 ]\l  br i1 %26, label %45, label %43\l|{<s0>T|<s1>F}}"];
+	Node0x566fe20:s0 -> Node0x566f370;
+	Node0x566fe20:s1 -> Node0x566f400;
+	Node0x566fd90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi i32 [ %41, %33 ], [ %29, %27 ]\l  %35 = phi float [ %40, %33 ], [ 0xFFF0000000000000, %27 ]\l  %36 = sext i32 %34 to i64\l  %37 = getelementptr inbounds float, float addrspace(1)* %2, i64 %36\l  %38 = load float, float addrspace(1)* %37, align 4, !tbaa !16\l  %39 = fcmp contract ogt float %38, %35\l  %40 = select i1 %39, float %38, float %35\l  %41 = add nsw i32 %34, 1\l  %42 = icmp slt i32 %41, %30\l  br i1 %42, label %33, label %31, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x566fd90:s0 -> Node0x566fd90;
+	Node0x566fd90:s1 -> Node0x566fe20;
+	Node0x566f400 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%43:\l43:                                               \l  %44 = phi float [ 0.000000e+00, %31 ], [ %66, %45 ]\l  br i1 %26, label %72, label %69\l|{<s0>T|<s1>F}}"];
+	Node0x566f400:s0 -> Node0x56716a0;
+	Node0x566f400:s1 -> Node0x566fb30;
+	Node0x566f370 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%45:\l45:                                               \l  %46 = phi i32 [ %67, %45 ], [ %29, %31 ]\l  %47 = phi float [ %66, %45 ], [ 0.000000e+00, %31 ]\l  %48 = sext i32 %46 to i64\l  %49 = getelementptr inbounds float, float addrspace(1)* %2, i64 %48\l  %50 = load float, float addrspace(1)* %49, align 4, !tbaa !16\l  %51 = fsub contract float %50, %32\l  %52 = fmul float %51, 0x3FF7154760000000\l  %53 = tail call float @llvm.rint.f32(float %52)\l  %54 = fcmp ogt float %51, 0x40562E4300000000\l  %55 = fcmp olt float %51, 0xC059D1DA00000000\l  %56 = fneg float %52\l  %57 = tail call float @llvm.fma.f32(float %51, float 0x3FF7154760000000,\l... float %56)\l  %58 = tail call float @llvm.fma.f32(float %51, float 0x3E54AE0BE0000000,\l... float %57)\l  %59 = fsub float %52, %53\l  %60 = fadd float %58, %59\l  %61 = tail call float @llvm.exp2.f32(float %60)\l  %62 = fptosi float %53 to i32\l  %63 = tail call float @llvm.amdgcn.ldexp.f32(float %61, i32 %62)\l  %64 = select i1 %55, float 0.000000e+00, float %63\l  %65 = select i1 %54, float 0x7FF0000000000000, float %64\l  store float %65, float addrspace(1)* %49, align 4, !tbaa !16\l  %66 = fadd contract float %47, %65\l  %67 = add nsw i32 %46, 1\l  %68 = icmp slt i32 %67, %30\l  br i1 %68, label %45, label %43, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x566f370:s0 -> Node0x566f370;
+	Node0x566f370:s1 -> Node0x566f400;
+	Node0x566fb30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%69:\l69:                                               \l  %70 = add i32 %25, %28\l  %71 = icmp slt i32 %70, %1\l  br i1 %71, label %27, label %84, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x566fb30:s0 -> Node0x566fa40;
+	Node0x566fb30:s1 -> Node0x566f4c0;
+	Node0x56716a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%72:\l72:                                               \l  %73 = phi i32 [ %82, %72 ], [ %29, %43 ]\l  %74 = sext i32 %73 to i64\l  %75 = getelementptr inbounds float, float addrspace(1)* %2, i64 %74\l  %76 = load float, float addrspace(1)* %75, align 4, !tbaa !16\l  %77 = fdiv contract float %76, %44\l  store float %77, float addrspace(1)* %75, align 4, !tbaa !16\l  %78 = getelementptr inbounds float, float addrspace(1)* %3, i64 %74\l  %79 = load float, float addrspace(1)* %78, align 4, !tbaa !16\l  %80 = fsub contract float %77, %79\l  %81 = fdiv contract float %80, %19\l  store float %81, float addrspace(1)* %78, align 4, !tbaa !16\l  %82 = add nsw i32 %73, 1\l  %83 = icmp slt i32 %82, %30\l  br i1 %83, label %72, label %69, !llvm.loop !24\l|{<s0>T|<s1>F}}"];
+	Node0x56716a0:s0 -> Node0x56716a0;
+	Node0x56716a0:s1 -> Node0x566fb30;
+	Node0x566f4c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a7c5fe70",label="{%84:\l84:                                               \l  ret void\l}"];
+}

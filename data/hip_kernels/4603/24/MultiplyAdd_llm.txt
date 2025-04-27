@@ -1,0 +1,5 @@
+// Use coalesced memory accesses by ensuring that memory access patterns align with warp size  
+// Cache invariant values like d_ConstantA[0] and d_ConstantB[0] in register space  
+// Consider using shared memory to reduce global memory access in cases of redundant data usage  
+// Prefer __restrict__ pointers for better compiler optimization  
+// Ensure grid and block sizes are optimized for device capability  

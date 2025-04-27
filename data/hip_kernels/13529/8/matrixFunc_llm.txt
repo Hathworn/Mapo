@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data within a block to reduce global memory accesses.
+// Ensure memory accesses are coalesced for better performance.
+// Use vectorized loads and stores if possible to optimize memory transactions.
+// Explore asynchronous memory transfers to hide latency if applicable.
+// Analyze occupancy and adjust the number of threads per block for optimal resource usage.
+```

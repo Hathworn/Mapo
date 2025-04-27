@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses by reading d_Data in a pattern that minimizes memory transaction size.
+// Use shared memory efficiently to reduce the number of global memory accesses.
+// Optimize the reduction process by ensuring threads access memory in a conflict-free pattern.
+// Ensure that shared memory usage is limited to reduce bank conflicts during reads and writes.
+// Consider avoiding warp divergence by ensuring that conditional statements are aligned with warp execution.
+```

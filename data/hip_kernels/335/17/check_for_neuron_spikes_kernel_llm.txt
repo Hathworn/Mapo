@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring coalesced access to global memory.
+// Consider using shared memory to store neuron data for faster access within a block.
+// Evaluate if loop unrolling could benefit performance by reducing loop overhead.
+// Examine if the current memory access pattern can be improved by transposing data layout.
+// Ensure __syncthreads() is necessary for synchronization, otherwise remove for potential efficiency gain.
+// Use const memory for d_thresholds_for_action_potential_spikes and d_resting_potentials if they are read-only.
+```

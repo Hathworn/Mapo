@@ -1,0 +1,4 @@
+// Ensure coalesced memory access for optimal performance
+// Use shared memory for frequently accessed data to reduce global memory traffic
+// Minimize thread divergence by aligning control structures
+// Use warp-level primitives for synchronization instead of block-level when possible

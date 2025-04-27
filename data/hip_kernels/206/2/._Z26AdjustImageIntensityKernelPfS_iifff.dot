@@ -1,0 +1,10 @@
+digraph "CFG for '_Z26AdjustImageIntensityKernelPfS_iifff' function" {
+	label="CFG for '_Z26AdjustImageIntensityKernelPfS_iifff' function";
+
+	Node0x46c1d90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = shl i32 %8, 9\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = mul nsw i32 %3, %2\l  %14 = icmp slt i32 %11, %13\l  br i1 %14, label %15, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x46c1d90:s0 -> Node0x46c3690;
+	Node0x46c1d90:s1 -> Node0x46c3720;
+	Node0x46c3690 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = getelementptr inbounds float, float addrspace(1)* %1, i64 %12\l  %17 = load float, float addrspace(1)* %16, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %18 = fsub contract float %17, %4\l  %19 = fmul contract float %18, %6\l  %20 = fadd contract float %19, %5\l  %21 = fcmp contract olt float %20, 0.000000e+00\l  %22 = fcmp contract ogt float %20, 1.000000e+00\l  %23 = select i1 %22, float 1.000000e+00, float %20\l  %24 = select i1 %21, float 0.000000e+00, float %23\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  store float %24, float addrspace(1)* %25, align 4, !tbaa !5\l  br label %26\l}"];
+	Node0x46c3690 -> Node0x46c3720;
+	Node0x46c3720 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

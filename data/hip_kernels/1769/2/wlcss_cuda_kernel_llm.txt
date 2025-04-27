@@ -1,0 +1,9 @@
+```
+// Consider prefetching data to shared memory to reduce global memory accesses.
+// Ensure coalesced memory accesses by aligning data structures in global memory.
+// Utilize warp-level primitives to minimize divergence and latency.
+// Optimize the use of register variables to store frequently accessed values.
+// Use loop unrolling for innermost loops to improve instruction throughput.
+// Align memory access patterns to match the architecture's requirements.
+// Balance thread workload by optimizing block and grid dimensions. 
+```

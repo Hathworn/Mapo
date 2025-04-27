@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for 'shift_amount' and 'alphabet_max' to reduce repeated global memory access.
+// Utilize memory coalescing by ensuring 'input_array' and 'output_array' are accessed sequentially.
+// Align the accesses of 'input_array' and 'output_array' to avoid non-coalesced memory transactions.
+// Check if 'shift_amount' and 'alphabet_max' are constants, potentially reducing register pressure by using `__constant__` memory.
+// If possible, increase thread block size to maximize occupancy and minimize warp divergence.
+```

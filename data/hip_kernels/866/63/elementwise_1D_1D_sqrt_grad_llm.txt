@@ -1,0 +1,7 @@
+// Consider using shared memory to cache commonly accessed data for faster access.  
+// Align memory accesses to avoid bank conflicts and improve coalescing.  
+// Ensure that data types are optimally aligned for vectorized accesses.  
+// Minimize divergence within warp by streamlining condition checks.  
+// Reduce the number of memory accesses by fetching and storing data in registers when possible.  
+// Test different block and grid sizes to identify optimal configurations for memory throughput.  
+// Ensure that data is accessed in contiguous memory patterns to leverage coalescing.

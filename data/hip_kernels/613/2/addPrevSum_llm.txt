@@ -1,0 +1,6 @@
+```
+// Use shared memory for blkSumsScan if reuse across threads to reduce global memory access latency
+// Consider using warp shuffle operations for prefix sums within blocks for faster processing
+// Minimize divergent branches by ensuring condition checks are warp-friendly
+// Avoid bank conflicts in shared memory accesses for better memory throughput
+```

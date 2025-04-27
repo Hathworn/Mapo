@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Load sub-matrix tiles into shared memory to optimize memory coalescing
+// Ensure alignment of shared memory allocations to maximize bandwidth
+// Minimize shared memory bank conflicts by adjusting tile dimensions if necessary
+// Exploit loop unrolling in the tile computation loop for better performance
+// Consider occupancy and register usage for optimal block size selection
+```

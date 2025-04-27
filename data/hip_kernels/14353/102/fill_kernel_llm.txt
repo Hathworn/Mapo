@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by using a simple 1D access pattern for X[] if INCX is 1.
+// Launch a sufficient number of blocks to fully utilize the GPU and ensure all threads are active.
+// Use shared memory if there's a possibility of thread block level data re-use to reduce global memory accesses.
+// Optimize grid and block size to reach a balance between kernel execution efficiency and resource utilization.

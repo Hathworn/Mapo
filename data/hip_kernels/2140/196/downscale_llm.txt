@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory coalescing for gradOutput_data accesses
+// Exploit memory access patterns for gradInput_data updates
+// Evaluate using __restrict__ qualifiers to avoid pointer aliasing
+// Test various block size configurations for better occupancy
+```

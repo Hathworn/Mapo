@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Minimize divergent warps by ensuring conditional statements are minimized inside the loop
+// Utilize shared memory if needed for frequently accessed data
+// Ensure sufficient occupancy by choosing an appropriate block size
+// Consider prefetching data to reduce load latency
+```

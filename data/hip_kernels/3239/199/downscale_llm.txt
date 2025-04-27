@@ -1,0 +1,7 @@
+```
+// Precompute offset indices outside of the inner loops to improve memory access efficiency
+// Ensure coalesced memory access by aligning thread data access
+// Consider using shared memory to reduce redundant global memory access
+// Optimize thread block size to ensure maximum occupancy and minimize idle threads
+// Minimize divergent branching to improve warp execution efficiency
+```

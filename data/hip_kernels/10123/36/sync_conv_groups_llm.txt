@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access
+// Minimize thread divergence within the kernel
+// Ensure memory coalescing for better memory access patterns
+// Analyze whether warp-level primitives can enhance synchronization efficiency

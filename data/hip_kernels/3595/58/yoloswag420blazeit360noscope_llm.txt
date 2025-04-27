@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access patterns to maximize memory bandwidth utilization
+// Use shared memory if multiple threads access the same data to reduce global memory transactions
+// Prefetch data to registers to minimize latency in memory access
+// Ensure the usage of __restrict__ qualifier on pointers if applicable for better compiler optimization
+// Adjust grid and block dimensions for optimal occupancy and resource utilization
+```

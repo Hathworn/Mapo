@@ -1,0 +1,6 @@
+// Use register for partial sum to reduce global memory accesses
+// Unroll loop to improve memory access and increase throughput
+// Utilize shared memory for intra-block reduction to minimize global memory usage
+// Employ __syncthreads() to ensure all threads have written to shared memory
+// Optimize reduction using warp-level operations for final steps to improve performance
+// Minimize divergence by ensuring synchronized reduction across threads

@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses by aligning `u`, `v`, and `src` with warp boundaries.
+// Explore using shared memory to buffer frequently accessed data for better caching and reuse.
+// Ensure `atomicAdd` operations are minimized by organizing threads to reduce contention on the same memory location.
+// Evaluate the usage of texture memory for `src` if there are spatial locality patterns in memory access.
+// Optimize thread block size (i.e., blockDim) for better hardware occupancy and memory throughput.
+// Investigate the potential benefits of loop unrolling for the flow and image stride calculation.
+// Review alignment and padding strategies for `dst` to prevent bank conflicts in memory accesses.
+```

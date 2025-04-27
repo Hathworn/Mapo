@@ -1,0 +1,4 @@
+// Ensure coalesced memory access to vg_a and vg_b by considering alignment or using shared memory.
+// Utilize shared memory effectively to minimize redundant global memory access.
+// Optimize the reduction step to avoid unnecessary __syncthreads() calls when possible.
+// Consider memory bank conflicts in shared memory and ensure stride is optimal for memory coalescence.

@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to re-use data across threads and reduce global memory access
+// Optimize memory transactions by aligning data to memory boundary
+// Consider using warp-level parallelism to optimize loop unrolling
+// Ensure coalesced memory accesses for gradOutput_data
+// Minimize branch divergence by aligning condition-bound threads
+// Profile memory bandwidth usage and reduce redundant data fetch
+// Utilize __ldg() for read-only data to improve cache usage
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Ensure coalesced access to global memory by aligning data structures
+// Use __restrict__ keyword to potentially improve load/store efficiency
+// Explore the use of loop unrolling for better performance if applicable
+// Evaluate occupancy to ensure maximum number of threads are running
+```

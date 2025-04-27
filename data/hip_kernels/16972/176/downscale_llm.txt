@@ -1,0 +1,7 @@
+```
+// Unrolling the inner loop can enhance instruction level parallelism
+// Use __restrict__ keyword to suggest that memory pointers do not overlap
+// Consider optimizing memory access patterns for better coalescing
+// Ensure the grid and block dimensions maximize occupancy
+// Use shared memory for frequently accessed data to reduce global memory traffic
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider increasing block size for better occupancy if the shared memory allows
+// Ensure memory access is coalesced by aligning input data properly
+// Use __syncthreads() only when necessary to reduce overhead
+// Consider using registers instead of shared memory for the 'val' variable if it improves performance
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory if possible to store intermediate values like maxProbs to reduce global memory accesses.
+// Consider using __syncthreads() after shared memory writes to synchronize threads before reading.
+// Use vectorized memory loads/stores if applicable to improve memory bandwidth utilization.
+// Ensure coalesced memory accesses by organizing data in memory so that threads access consecutive memory addresses.
+// Assess if using texture memory for reading probs or labels could offer performance benefits due to caching.
+```

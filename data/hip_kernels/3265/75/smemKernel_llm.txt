@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Resetting output array once can save unnecessary write operations during iterations
+// Load data into shared memory in chunks to improve memory coalescing and access efficiency
+// Normalize final output outside of the loop to minimize redundant calculations
+// Ensure synchronization with __syncthreads() to handle shared memory correctly
+```

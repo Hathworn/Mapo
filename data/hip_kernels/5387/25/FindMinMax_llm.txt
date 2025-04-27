@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to d_Data to improve global memory throughput.
+// Use float2 instead of separate minvals and maxvals arrays for potential optimization.
+// Experiment with loop unrolling for binary reduction pattern for further performance gain.
+// Evaluate occupancy and shared memory usage for optimal block size adjustments.
+// Ensure __syncthreads() is used optimally to avoid unnecessary latency.
+```

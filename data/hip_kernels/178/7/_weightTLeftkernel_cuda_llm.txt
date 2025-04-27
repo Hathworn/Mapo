@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access latency.
+// Ensure proper memory alignment for coalesced access when reading from or writing to global memory.
+// Use '__restrict__' qualifier for pointers to enable better compiler optimizations by avoiding pointer aliasing.
+// Check if the size of dynamically allocated shared memory is adequate for target hardware to prevent resource contention.
+```

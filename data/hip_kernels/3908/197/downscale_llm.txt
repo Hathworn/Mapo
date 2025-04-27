@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache gradOutput_data if data reuse is significant
+// Align data access to 32-byte boundaries if possible to improve memory coalescing
+// Ensure global memory access is coalesced for gradOutput_data
+// Group threads processing nearby data to leverage L2 cache
+// Reduce bank conflicts when using shared memory
+// Minimize divergence in the warp when accessing gradOutput_data
+```

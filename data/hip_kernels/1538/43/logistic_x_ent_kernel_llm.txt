@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data for repeated access within a block if applicable
+// Adjust block size to ensure maximum occupancy and efficient use of GPU resources
+// Use loop unrolling to reduce loop overhead for better performance
+// Consider using texture memory for read-only data to exploit cache
+// Ensure aligned memory access for pred and truth arrays for coalesced reads
+```

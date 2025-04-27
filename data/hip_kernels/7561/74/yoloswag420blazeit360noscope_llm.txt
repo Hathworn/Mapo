@@ -1,0 +1,4 @@
+// Consider using __restrict__ for the pointers if their access patterns are non-overlapping to improve memory access efficiency.
+// Use shared memory if there are overlapping data patterns or frequent reuse of data within a block to minimize global memory latency.
+// Optimize stride handling by ensuring coalesced access patterns for 'input' and 'rand' to maximize memory throughput.
+// Consider adjusting block size to achieve optimum occupancy and memory bandwidth utilization.

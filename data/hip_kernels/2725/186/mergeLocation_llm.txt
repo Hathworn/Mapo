@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache loc_ data within a block to reduce global memory access.
+// Use memory coalescing by ensuring loc_ and output arrays x, y are accessed in a contiguous manner.
+// Evaluate if launching more threads per block (considering occupancy) would improve performance.
+// Check if loop unrolling beyond a single iteration could further optimize warp efficiency.
+```

@@ -1,0 +1,7 @@
+```
+// Load entry variable into registers to minimize memory access.
+// Utilize shared memory to cache input data to optimize block-level memory access.
+// Ensure that the size of shared memory allocation considers maximum possible values from batchSize and numberEntries to avoid overflow.
+// Employ __syncthreads() to ensure all threads have loaded data into shared memory before proceeding.
+// Align access patterns to shared and global memory to improve coalescing and reduce memory access latency.
+```

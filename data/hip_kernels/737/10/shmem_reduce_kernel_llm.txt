@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for d_in to improve memory throughput
+// Consider using warp-level primitives to reduce __syncthreads() usage
+// Minimize global memory accesses by keeping temporary results in shared memory
+// Optimize synchronization points to reduce thread divergence
+```

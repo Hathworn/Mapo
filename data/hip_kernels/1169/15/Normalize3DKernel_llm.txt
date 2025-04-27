@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for d_src, d_erosion, and d_dilation to reduce global memory accesses
+// Implement memory coalescing strategies for better memory access patterns
+// Explore using texture memory for read-only data like d_src, d_erosion, and d_dilation for cache efficiency
+// Ensure memory accesses are aligned to improve memory access speed
+// Use asynchronous memory prefetching if applicable to hide memory latency
+```

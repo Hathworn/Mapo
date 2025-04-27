@@ -1,0 +1,9 @@
+```
+// Ensure memory coalescing by aligning memory access patterns for array
+// Use appropriate memory hierarchy by utilizing __shared__ memory efficiently
+// Avoid redundant __syncthreads() to minimize synchronization overhead
+// Optimize loop unrolling for the reduction loop to enhance performance
+// Consider using warp-level primitives for reduction to reduce divergence
+// Minimize bank conflicts in __shared__ memory access
+// Adjust BLOCK_WIDTH and grid dimensions based on the target architecture
+```

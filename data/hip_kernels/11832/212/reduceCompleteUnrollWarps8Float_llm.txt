@@ -1,0 +1,9 @@
+```
+// Use memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Utilize shared memory efficiently to reduce global memory accesses.
+// Implement loop unrolling to minimize loop overhead and improve performance.
+// Balance the workload among threads to avoid performance bottlenecks.
+// Minimize bank conflicts when accessing shared memory.
+// Use volatile keyword to avoid optimizations that may hinder warp-level parallelism.
+// Prefer thread synchronization over atomic operations for better performance.
+```

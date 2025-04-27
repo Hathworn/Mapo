@@ -1,0 +1,10 @@
+```
+// Ensure data alignment for improved memory access efficiency
+// Use __restrict__ qualifiers for pointers to enable better compiler optimizations
+// Consider using shared memory if data reuse within a block is possible
+// Optimize memory access patterns to achieve coalesced memory access
+// Minimize the use of global memory access inside the computation loop
+// Evaluate using larger thread blocks to improve parallel efficiency
+// Ensure grid and block sizes are optimized for the specific hardware architecture
+// If possible, use higher precision arithmetic for accumulated operations
+```

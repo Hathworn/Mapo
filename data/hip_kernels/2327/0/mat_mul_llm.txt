@@ -1,0 +1,4 @@
+// Use shared memory to cache tile portions of matrices A and B to reduce global memory access.
+// Ensure coalesced memory access for A and B by using proper indexing patterns.
+// Consider loop unrolling in the accumulation loop to improve arithmetic computation efficiency.
+// Optimize block and grid sizes to maximize GPU occupancy and parallel execution efficiency.

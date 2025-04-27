@@ -1,0 +1,7 @@
+```cpp
+// Consider reordering data access to achieve coalesced global memory access for better performance.
+// Optimize shared memory usage to minimize bank conflicts during shared memory access.
+// Prefetch data into shared memory to reduce global memory access latency.
+// Use warp shuffle operations to reduce syncthreads overhead where possible.
+// Tune block size and shape for better occupancy/utilization of GPU resources.
+```

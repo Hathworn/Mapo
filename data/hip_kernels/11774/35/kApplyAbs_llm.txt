@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if data reuse within blocks is possible
+// Align memory accesses to achieve coalesced memory access
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path
+// Ensure occupancy is maximized by using the optimal number of threads per block
+```

@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory coalescing for global memory access.
+// Utilize shared memory to store rows or sections of matrix to minimize access latency.
+// Reduce the number of redundant global memory accesses by introducing temporary variables.
+// Ensure loop unrolling is applied where feasible to increase registers usage efficiency.
+// Make use of constant memory for values that do not change during kernel execution.
+// Evaluate the use of texture memory for potential faster read access patterns.
+```

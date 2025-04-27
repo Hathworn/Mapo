@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for devDiff
+// Ensure coalesced access patterns for devDiff to improve bandwidth utilization
+// Consider loop unrolling for small nClusters for performance boost
+// Optimize memory access patterns by aligning diffPitchInFloats for better cache usage
+// Minimize use of atomic operations by restructuring logic if possible
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency if input arrays are accessed multiple times
+// Consider coalescing memory access patterns to improve memory throughput
+// Evaluate occupancy and adjust block size to maximize utilization of GPU resources
+// Minimize divergent branches within warp to improve execution efficiency
+// Consider using texture memory or read-only memory cache for read-only data access patterns
+```

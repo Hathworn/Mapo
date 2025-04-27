@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access
+// Use __syncthreads() to synchronize threads after loading biases into shared memory
+// Load biases into shared memory only once per block to reduce repeated global memory access
+// Ensure only one thread per block loads the biases into shared memory

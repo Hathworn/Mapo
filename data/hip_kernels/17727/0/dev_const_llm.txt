@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns for px array
+// Minimize global memory accesses by computing necessary values in registers
+// Consider using shared memory for intermediate computation if needed
+// Ensure grid and block dimensions are optimal for target GPU architecture
+// Use memory prefetching techniques if applicable to reduce memory latency
+// Explore using __restrict__ qualifier for pointers if no aliasing occurs
+```

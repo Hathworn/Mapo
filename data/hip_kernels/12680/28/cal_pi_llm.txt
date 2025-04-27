@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory accesses when writing results to global memory for better performance.
+// Use shared memory to reduce the number of global memory accesses.
+// Ensure sufficient occupancy by adjusting block size and number of registers used.
+// Avoid bank conflicts in shared memory by using padding if necessary.
+// Profile the kernel to identify memory bandwidth usage and adjust the memory access pattern accordingly.
+```

@@ -1,0 +1,5 @@
+```c
+// Ensure to coalesce memory access for d_neuron_outputs and d_weighted_sums.
+// Use shared memory to reduce global memory access if possible.
+// Align data structures to avoid memory bank conflicts.
+```

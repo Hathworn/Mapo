@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access by checking memory alignment
+// Optimize memory access patterns to reduce bank conflicts
+// Minimize divergent branches for better warp efficiency
+// Use shared memory for frequently accessed data to reduce global memory traffic
+// Explore the use of float4 for coalesced access in cases with contiguous memory
+// Consider loop unrolling to optimize the loop execution
+// Adjust grid and block sizes based on hardware architecture for improved performance
+// Use asynchronous memory transfers where applicable to hide memory latency
+```

@@ -1,0 +1,4 @@
+// Use shared memory to store intermediate results for hash computation
+// Optimize data locality by minimizing global memory accesses
+// Consider coalesced accesses to global memory for better performance
+// Investigate using CUDA streams for overlapping memory transfer and computation

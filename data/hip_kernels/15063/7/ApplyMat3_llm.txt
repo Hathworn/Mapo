@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses
+// Ensure data is coalesced by accessing consecutive memory positions
+// Favor using smaller data types or precision if possible for reduced bandwidth
+// Consider optimizing thread block size for better occupancy
+// Implement loop unrolling for inner loops when relevant
+```

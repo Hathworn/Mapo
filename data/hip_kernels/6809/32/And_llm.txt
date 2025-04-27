@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory coalescing by ensuring sequential threads access consecutive memory locations
+// Unroll the loop to reduce loop control overhead and increase instruction-level parallelism
+// Ensure stride is a multiple of warp size to avoid warp divergence
+```

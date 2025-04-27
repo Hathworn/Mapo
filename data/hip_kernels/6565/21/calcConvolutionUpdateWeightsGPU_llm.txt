@@ -1,0 +1,3 @@
+// Use shared memory for filter_grads to reduce global memory access latency.
+// Consider loop unrolling to reduce the overhead of multiple kernel size computations.
+// Ensure data is aligned to avoid misaligned memory access, improving access speed.

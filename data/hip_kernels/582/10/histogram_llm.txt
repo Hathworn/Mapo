@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Coalesce global memory reads by ensuring d_in accesses are contiguous.
+// Ensure that d_out writes are contiguous to improve memory coalescing.
+// Minimize divergent branches by checking conditions that affect larger warps.
+// Preload repeated values, like lumRange and numBins, to local variables.
+```

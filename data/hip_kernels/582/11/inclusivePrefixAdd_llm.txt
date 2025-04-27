@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses and improve memory access pattern
+// Perform in-block synchronization using __syncthreads() to ensure data consistency during scan
+// Use shared memory for Hillis-Steele scan to minimize global memory access latency
+// Synchronize threads to ensure previous step's data availability before writing new values
+// Manage carry-over between blocks by using values computed in previous blocks
+// Reduce redundant syncs by evaluating necessity and removing any unnecessary __syncthreads()

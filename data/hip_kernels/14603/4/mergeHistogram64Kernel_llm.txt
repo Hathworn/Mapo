@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for d_PartialHistograms to improve memory bandwidth
+// Examine bank conflicts occurring in shared memory and address them if necessary
+// Ensure __syncthreads() is correctly placed to avoid race conditions
+// Evaluate the impact of loop unrolling and adjust the unrolling factor if needed
+// Assess the grid and block configuration for optimal occupancy
+```

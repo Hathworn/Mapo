@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for frequently used data
+// Consider coalescing global memory accesses for d_bidx, d_sums, d_xi4, d_pxi4
+// Minimize divergence by aligning branches with warp boundaries
+// Evaluate if loop unrolling could improve performance given the access patterns
+// Consider reducing stride if the number of particles is less than optimal for current grid configuration
+```

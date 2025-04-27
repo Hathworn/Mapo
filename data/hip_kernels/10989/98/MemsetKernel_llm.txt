@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning memory access patterns  
+// Replace scalar operations with vector operations if applicable  
+// Use shared memory for frequently accessed data to minimize global memory access  
+// Consider loop unrolling for operations within the kernel  
+// Optimize occupancy by adjusting block size according to GPU architecture

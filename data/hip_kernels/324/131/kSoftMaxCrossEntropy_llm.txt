@@ -1,0 +1,4 @@
+// Use shared memory if reused data within a block
+// Ensure coalesced memory access for mat and labels
+// Consider loop unrolling for stride loop
+// Evaluate occupancy and adjust block size accordingly

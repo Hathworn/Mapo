@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns to optimize global memory transactions
+// Ensure sparseIndices are stored in shared memory to reduce repetitive global memory reads
+// Consider double-buffering technique to mask latencies associated with memory transfers
+// Optimize thread block size for better occupancy, possibly using performance heuristics
+```

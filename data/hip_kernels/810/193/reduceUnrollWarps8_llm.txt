@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring g_idata is accessed sequentially within a warp for improved memory bandwidth.
+// Use shared memory to reduce global memory access during the reduction phase to improve performance.
+// Avoid use of volatile keyword if not necessary, as it can lead to inefficient memory operations.
+// Utilize __shfl_down_sync for warp-level primitives instead of manual unrolling to achieve better performance on newer architectures.
+// Evaluate using float instead of int for g_idata and g_odata, if application benefits from reduced precision and might leverage throughput.
+```

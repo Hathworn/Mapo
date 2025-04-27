@@ -1,0 +1,7 @@
+```
+// Consider using float4 or float2 to load multiple elements at once for better memory coalescing.
+// Ensure the data is properly aligned to improve the memory access pattern.
+// Implement loop unrolling in the accumulation loop to reduce the number of iterations and improve performance.
+// Consider using asynchronous memory prefetching to hide memory latency.
+// Avoid bank conflicts in shared memory by ensuring proper access patterns.
+```

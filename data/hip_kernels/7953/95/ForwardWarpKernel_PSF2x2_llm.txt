@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access for frequent data use.
+// Optimize flow_stride and image_stride access patterns to improve coalescing.
+// Minimize atomic operations where possible to enhance parallel efficiency.
+// Investigate using warp-level optimizations for more efficient reductions.
+// Ensure memory alignment for the u, v arrays to prevent access penalties.
+// Review the use of __forceinline__ for potential over-utilization impacts.
+```

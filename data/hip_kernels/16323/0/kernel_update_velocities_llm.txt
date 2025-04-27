@@ -1,0 +1,5 @@
+// Consider using shared memory if multiple threads access the same data to reduce global memory access.
+// Coalesce memory access by ensuring threads within a warp access consecutive memory locations.
+// Use inline functions for operations that are repetitive to reduce kernel execution overhead.
+// Ensure data alignment for float4 data types to maximize memory access efficiency.
+// Consider using asynchronous memory copy and page-locked host memory for faster data transfer between host and device.

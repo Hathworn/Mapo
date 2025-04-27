@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access.
+// Ensure memory coalescing by organizing data in the struct of arrays format.
+// Consider using texture memory for read-only access to `loc_`.
+// Optimize scale calculation by storing `scale` in a register.

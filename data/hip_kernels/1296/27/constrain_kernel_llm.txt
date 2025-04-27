@@ -1,0 +1,6 @@
+```cpp
+// Consider coalescing memory accesses to improve memory throughput
+// Use shared memory if data is reused by multiple threads to reduce global memory access
+// Ensure INCX is aligned with warp size for coalescing benefits
+// Use __restrict__ keyword for pointer parameters if applicable to improve compiler optimizations
+```

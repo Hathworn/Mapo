@@ -1,0 +1,7 @@
+```
+// Suggest using shared memory for frequently accessed data to reduce global memory latency
+// Consider coalescing memory accesses to improve memory transaction efficiency
+// Evaluate using loop unrolling if the vectorSize is large and predictable to enhance performance
+// Utilize asynchronous memory operations where applicable to overlap computation with memory transfers
+// Profile the application to identify bottlenecks and focus optimizations on memory-bound sections
+```

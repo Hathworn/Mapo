@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache input and weight data to reduce global memory access latency.
+// Organize memory access to ensure coalesced loads and stores, which can improve performance on GPUs.
+// Consider using warp-level primitives if possible for collective operations to improve efficiency.
+// Ensure that the atomic operations are minimized as they can cause serialization and reduce performance.
+// Evaluate the possibility of using half-precision arithmetic if applicable for improving performance and reducing memory usage.
+```

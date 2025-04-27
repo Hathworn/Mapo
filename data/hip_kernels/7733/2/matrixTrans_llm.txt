@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by adjusting row-major or column-major order based on GPU architecture
+// Consider using shared memory to further optimize memory throughput
+// If the matrix is large, consider tiling to maximize data reuse in the cache
+// Ensure that grid and block dimensions are configured to fully utilize GPU resources
+// Try loop unrolling manually or use compiler hints if applicable for repetitive memory operations
+```

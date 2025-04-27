@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns for B and I
+// Consider using shared memory to store indices I for improved access times
+// Minimize frequent memory accesses by caching A in a register
+// Consider vectorizing access to B if possible to take advantage of memory bandwidth
+// Optimize block and grid sizes for specific GPU architecture for better occupancy
+```

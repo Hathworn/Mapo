@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses
+// Unroll loops to minimize loop overhead
+// Employ memory coalescing to increase throughput
+// Use __restrict__ qualifier for pointer arguments to prevent aliasing
+// Optimize with warp-level parallelism to utilize the full power of GPU
+// Implement asynchronous copy of data into shared memory to hide latency

@@ -1,0 +1,13 @@
+digraph "CFG for '_Z23ComputeOffsetOfMatrixABPKiS0_Piii' function" {
+	label="CFG for '_Z23ComputeOffsetOfMatrixABPKiS0_Piii' function";
+
+	Node0x59152a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = icmp slt i32 %6, %4\l  br i1 %7, label %8, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x59152a0:s0 -> Node0x59160d0;
+	Node0x59152a0:s1 -> Node0x5916160;
+	Node0x59160d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%8:\l8:                                                \l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = zext i32 %9 to i64\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %10\l  %12 = mul i32 %9, %4\l  %13 = zext i32 %12 to i64\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %13\l  %15 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %16 = getelementptr i8, i8 addrspace(4)* %15, i64 4\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 4, !range !5, !invariant.load !6\l  %19 = zext i16 %18 to i32\l  br label %21\l}"];
+	Node0x59160d0 -> Node0x5917550;
+	Node0x5916160 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%20:\l20:                                               \l  ret void\l}"];
+	Node0x5917550 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = phi i32 [ %6, %8 ], [ %30, %21 ]\l  %23 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !7\l  %24 = sext i32 %22 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %24\l  %26 = load i32, i32 addrspace(1)* %25, align 4, !tbaa !7\l  %27 = add i32 %23, %26\l  %28 = sub i32 %3, %27\l  %29 = getelementptr inbounds i32, i32 addrspace(1)* %14, i64 %24\l  store i32 %28, i32 addrspace(1)* %29, align 4, !tbaa !7\l  %30 = add i32 %22, %19\l  %31 = icmp slt i32 %30, %4\l  br i1 %31, label %21, label %20, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5917550:s0 -> Node0x5917550;
+	Node0x5917550:s1 -> Node0x5916160;
+}

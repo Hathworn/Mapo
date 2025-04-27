@@ -1,0 +1,4 @@
+// Use shared memory effectively to minimize global memory access.
+// Ensure proper synchronization with __syncthreads() after loading data to shared memory.
+// Implement loop unrolling to reduce the number of loop iterations and increase execution speed.
+// Consider the memory access pattern to maximize coalescing for referencePoints array.

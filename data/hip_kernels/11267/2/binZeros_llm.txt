@@ -1,0 +1,6 @@
+```
+// Utilize loop unrolling to minimize loop overhead and increase instruction-level parallelism
+// Ensure that the grid and block dimensions are set such that bin_size is a multiple of 4 * blockDim.x for full efficiency
+// Consider using shared memory if multiple threads access similar data to reduce global memory bandwidth
+// Align data structures to cache line boundaries to reduce cache misses
+```

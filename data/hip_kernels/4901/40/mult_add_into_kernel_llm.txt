@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses
+// Use vectorized loads/stores for better performance on modern GPUs
+// Employ loop unrolling techniques to enhance instruction throughput
+// Ensure memory access patterns are coalesced for efficient parallelism
+// Evaluate using warp-level primitives for processing multiple elements

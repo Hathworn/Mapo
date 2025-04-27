@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache bias values for better memory access efficiency.
+// Explore the use of __ldg() for read-only access to bias values to leverage cache.
+// Ensure coalesced memory access pattern by aligning data structures.
+// If possible, adjust the grid and block sizes to match the warp size for optimal occupancy.
+```

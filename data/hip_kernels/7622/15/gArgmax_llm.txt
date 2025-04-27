@@ -1,0 +1,4 @@
+// Ensure coalesced memory access for reading 'data' by having consecutive threads access consecutive elements
+// Use shared memory to cache 'data' for threads in the same block to reduce global memory accesses
+// Consider using loop unrolling for the for-loop over 'cols' to minimize instruction overhead
+// Optimize warp divergence by ensuring condition checks minimize thread divergence within warps

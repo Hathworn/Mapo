@@ -1,0 +1,5 @@
+// Consider using shared memory for data reuse if applicable to reduce global memory access.
+// Ensure memory access is coalesced for optimal performance.
+// Avoid bank conflicts when using shared memory for further optimization.
+// Utilize __restrict__ keyword for pointer arguments if there is no aliasing to aid compiler optimizations.
+// Use loop unrolling techniques if computation allows for better execution efficiency.

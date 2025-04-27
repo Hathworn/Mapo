@@ -1,0 +1,3 @@
+// Use shared memory to store segments of keys within a block to reduce global memory access.
+// Consider coalesced accesses to global memory for the keys array.
+// Avoid warp divergence by ensuring all threads follow the same code path.

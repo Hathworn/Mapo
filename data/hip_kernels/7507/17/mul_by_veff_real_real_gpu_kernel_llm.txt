@@ -1,0 +1,6 @@
+```cpp
+// Ensure block and grid sizes are configured for optimal occupancy
+// Consider using shared memory for buf__ if multiple threads access nearby elements
+// Use vectorized memory load/store operations if possible
+// Minimize divergent branches by ensuring idx calculation logic is efficient
+```

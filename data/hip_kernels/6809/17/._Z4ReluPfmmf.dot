@@ -1,0 +1,13 @@
+digraph "CFG for '_Z4ReluPfmmf' function" {
+	label="CFG for '_Z4ReluPfmmf' function";
+
+	Node0x4928430 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add i32 %14, %15\l  %17 = sext i32 %16 to i64\l  %18 = icmp ult i64 %17, %2\l  br i1 %18, label %19, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4928430:s0 -> Node0x492a750;
+	Node0x4928430:s1 -> Node0x492a7e0;
+	Node0x492a750 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = add i64 %1, -1\l  %21 = mul i64 %20, %2\l  %22 = udiv i32 %13, %10\l  %23 = mul i32 %22, %10\l  %24 = icmp ugt i32 %13, %23\l  %25 = zext i1 %24 to i32\l  %26 = add i32 %22, %25\l  %27 = mul i32 %26, %10\l  br label %29\l}"];
+	Node0x492a750 -> Node0x492ad80;
+	Node0x492a7e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%28:\l28:                                               \l  ret void\l}"];
+	Node0x492ad80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi i64 [ %17, %19 ], [ %39, %29 ]\l  %31 = trunc i64 %30 to i32\l  %32 = add i64 %30, %21\l  %33 = getelementptr inbounds float, float addrspace(1)* %0, i64 %32\l  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !16\l  %35 = fmul contract float %34, %3\l  %36 = fcmp contract ogt float %35, 0.000000e+00\l  %37 = select i1 %36, float %35, float 0x3F847AE140000000\l  store float %37, float addrspace(1)* %33, align 4, !tbaa !16\l  %38 = add i32 %27, %31\l  %39 = sext i32 %38 to i64\l  %40 = icmp ult i64 %39, %2\l  br i1 %40, label %29, label %28, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x492ad80:s0 -> Node0x492ad80;
+	Node0x492ad80:s1 -> Node0x492a7e0;
+}

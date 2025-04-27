@@ -1,0 +1,7 @@
+```c
+// Optimize memory access by using __ldg() for reading vg_a to leverage the cache
+// Consider coalesced memory access patterns for vg_a to minimize memory transaction overhead
+// Avoid bank conflicts by aligning shared memory access in temp array
+// Use warp-level primitives like __shfl_down_sync() for faster reduction instead of shared memory
+// Minimize global memory accesses by storing temporary results only after complete reduction
+```

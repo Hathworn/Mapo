@@ -1,0 +1,4 @@
+// Consider using shared memory to cache repeated accesses to col_widths and init_vals.
+// Optimize coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Investigate the impact of different block sizes on kernel performance to improve occupancy.
+// Utilize __restrict__ qualifiers if possible to hint the compiler about exclusive data access.

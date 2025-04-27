@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for 'b' to improve memory throughput.
+// Consider using shared memory if multiple threads need access to shared data.
+// Minimize divergence by reordering conditions or calculations within the kernel.
+// Consider unrolling loops if applicable for performance gains.
+// Use appropriate memory access patterns to improve cache efficiency.
+// Evaluate the use of __restrict__ keyword to optimize pointer aliasing.
+```

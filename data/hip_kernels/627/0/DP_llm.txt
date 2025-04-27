@@ -1,0 +1,9 @@
+```
+// Use __restrict__ pointers for dT_seq, dTrace, and dScore to improve memory access speed
+// Consider using coalesced memory access patterns for dT_seq to improve performance
+// Evaluate the use of shared memory to cache frequently accessed data from global memory
+// Pre-load necessary data into registers to reduce global memory access
+// Consider loop unrolling techniques to optimize the for loop iterations
+// Minimize __syncthreads() calls to reduce synchronization overhead
+// Use warp shuffle instructions to reduce the need for shared memory where applicable
+```

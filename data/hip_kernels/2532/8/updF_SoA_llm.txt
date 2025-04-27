@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory access for z1 and z2.
+// Unroll loops to enhance instruction throughput.
+// Coalesce global memory accesses for f, z1, z2, and g arrays.
+// Apply memory padding to avoid bank conflicts in shared memory.
+// Use __restrict__ qualifiers for pointers to aid the compiler in optimization.
+// Align data structures to match memory transaction sizes.
+```

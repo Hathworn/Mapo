@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Avoid bank conflicts in shared memory by padding or reordering data.
+// Utilize warp shuffle operations for intra-warp communication to minimize __syncthreads().
+```

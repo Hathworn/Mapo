@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache frequently accessed data
+// Minimize divergent branching within the warp
+// Ensure coalesced accesses to the gradOutput_data
+// Preload data into registers to minimize latency
+// Optimize loop unrolling if necessary
+```

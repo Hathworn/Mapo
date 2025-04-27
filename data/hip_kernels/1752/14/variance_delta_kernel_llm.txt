@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to minimize global memory access
+// Move invariant data like mean and variance to shared memory
+// Use __syncthreads() to ensure all threads have copied data to shared memory
+// Calculate indices locally to reduce repeated global memory access
+// Optimize memory access patterns by coalescing accesses in inner loops
+```

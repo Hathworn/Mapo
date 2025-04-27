@@ -1,0 +1,5 @@
+digraph "CFG for '_Z9rand_initPll' function" {
+	label="CFG for '_Z9rand_initPll' function";
+
+	Node0x4d8bdc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = add i32 %10, %3\l  %12 = sext i32 %11 to i64\l  %13 = add nsw i64 %12, %1\l  %14 = getelementptr inbounds i64, i64 addrspace(1)* %0, i64 %12\l  store i64 %13, i64 addrspace(1)* %14, align 8, !tbaa !7\l  ret void\l}"];
+}

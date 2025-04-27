@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure that numElements is a multiple of stride for coalesced memory accesses.
+// Consider using float2 or float4 to improve throughput with vectorized operations.
+// Use loop unrolling to minimize loop overhead.
+// Check if gData and target can be padded and aligned for better memory operation efficiency.
+```

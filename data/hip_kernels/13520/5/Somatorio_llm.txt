@@ -1,0 +1,4 @@
+// Consider using coalesced memory accesses for input array to maximize memory throughput.
+// Use warp divergence reduction techniques to optimize the performance of reduction.
+// Minimize the use of __syncthreads by restructuring code logic, if possible.
+// Ensure memory access patterns are aligned to reduce bank conflicts in shared memory.

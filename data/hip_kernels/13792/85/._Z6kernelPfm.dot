@@ -1,0 +1,38 @@
+digraph "CFG for '_Z6kernelPfm' function" {
+	label="CFG for '_Z6kernelPfm' function";
+
+	Node0x58dc6f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = add i64 %1, 15\l  %5 = lshr i64 %4, 4\l  %6 = trunc i64 %5 to i32\l  %7 = icmp sgt i32 %6, 0\l  br i1 %7, label %8, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x58dc6f0:s0 -> Node0x58ddd70;
+	Node0x58dc6f0:s1 -> Node0x58dde00;
+	Node0x58ddd70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%8:\l8:                                                \l  %9 = getelementptr inbounds [16 x float], [16 x float] addrspace(3)*\l... @_ZZ6kernelPfmE1s, i32 0, i32 %3\l  %10 = add nuw nsw i32 %3, 16\l  %11 = zext i32 %10 to i64\l  %12 = icmp ult i64 %11, %1\l  %13 = icmp ult i32 %3, 16\l  %14 = select i1 %12, i1 %13, i1 false\l  %15 = getelementptr inbounds [16 x float], [16 x float] addrspace(3)*\l... @_ZZ6kernelPfmE1s, i32 0, i32 %10\l  %16 = add nuw nsw i32 %3, 8\l  %17 = zext i32 %16 to i64\l  %18 = icmp ult i64 %17, %1\l  %19 = icmp ult i32 %3, 8\l  %20 = select i1 %18, i1 %19, i1 false\l  %21 = getelementptr inbounds [16 x float], [16 x float] addrspace(3)*\l... @_ZZ6kernelPfmE1s, i32 0, i32 %16\l  %22 = add nuw nsw i32 %3, 4\l  %23 = zext i32 %22 to i64\l  %24 = icmp ult i64 %23, %1\l  %25 = icmp ult i32 %3, 4\l  %26 = select i1 %24, i1 %25, i1 false\l  %27 = getelementptr inbounds [16 x float], [16 x float] addrspace(3)*\l... @_ZZ6kernelPfmE1s, i32 0, i32 %22\l  %28 = add nuw nsw i32 %3, 2\l  %29 = zext i32 %28 to i64\l  %30 = icmp ult i64 %29, %1\l  %31 = icmp ult i32 %3, 2\l  %32 = select i1 %30, i1 %31, i1 false\l  %33 = getelementptr inbounds [16 x float], [16 x float] addrspace(3)*\l... @_ZZ6kernelPfmE1s, i32 0, i32 %28\l  %34 = add nuw nsw i32 %3, 1\l  %35 = zext i32 %34 to i64\l  %36 = icmp ult i64 %35, %1\l  %37 = icmp eq i32 %3, 0\l  %38 = select i1 %36, i1 %37, i1 false\l  %39 = getelementptr inbounds [16 x float], [16 x float] addrspace(3)*\l... @_ZZ6kernelPfmE1s, i32 0, i32 %34\l  br label %42\l}"];
+	Node0x58ddd70 -> Node0x58ddb60;
+	Node0x58dde00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%40:\l40:                                               \l  %41 = phi float [ 0.000000e+00, %2 ], [ %75, %73 ]\l  store float %41, float addrspace(1)* %0, align 4, !tbaa !5\l  ret void\l}"];
+	Node0x58ddb60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = phi float [ 0.000000e+00, %8 ], [ %75, %73 ]\l  %44 = phi i32 [ 0, %8 ], [ %76, %73 ]\l  %45 = shl nsw i32 %44, 4\l  %46 = add nuw nsw i32 %45, %3\l  %47 = zext i32 %46 to i64\l  %48 = getelementptr inbounds float, float addrspace(1)* %0, i64 %47\l  %49 = load float, float addrspace(1)* %48, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  store float %49, float addrspace(3)* %9, align 4, !tbaa !5\l  br i1 %14, label %50, label %53\l|{<s0>T|<s1>F}}"];
+	Node0x58ddb60:s0 -> Node0x58e1050;
+	Node0x58ddb60:s1 -> Node0x58e10e0;
+	Node0x58e1050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%50:\l50:                                               \l  %51 = load float, float addrspace(3)* %15, align 4, !tbaa !5\l  %52 = fadd contract float %51, %49\l  store float %52, float addrspace(3)* %9, align 4, !tbaa !5\l  br label %53\l}"];
+	Node0x58e1050 -> Node0x58e10e0;
+	Node0x58e10e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%53:\l53:                                               \l  %54 = phi float [ %49, %42 ], [ %52, %50 ]\l  br i1 %20, label %55, label %58\l|{<s0>T|<s1>F}}"];
+	Node0x58e10e0:s0 -> Node0x58e14d0;
+	Node0x58e10e0:s1 -> Node0x58e1520;
+	Node0x58e14d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%55:\l55:                                               \l  %56 = load float, float addrspace(3)* %21, align 4, !tbaa !5\l  %57 = fadd contract float %56, %54\l  store float %57, float addrspace(3)* %9, align 4, !tbaa !5\l  br label %58\l}"];
+	Node0x58e14d0 -> Node0x58e1520;
+	Node0x58e1520 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%58:\l58:                                               \l  %59 = phi float [ %57, %55 ], [ %54, %53 ]\l  br i1 %26, label %60, label %63\l|{<s0>T|<s1>F}}"];
+	Node0x58e1520:s0 -> Node0x58e18d0;
+	Node0x58e1520:s1 -> Node0x58e1920;
+	Node0x58e18d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%60:\l60:                                               \l  %61 = load float, float addrspace(3)* %27, align 4, !tbaa !5\l  %62 = fadd contract float %61, %59\l  store float %62, float addrspace(3)* %9, align 4, !tbaa !5\l  br label %63\l}"];
+	Node0x58e18d0 -> Node0x58e1920;
+	Node0x58e1920 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%63:\l63:                                               \l  %64 = phi float [ %62, %60 ], [ %59, %58 ]\l  br i1 %32, label %65, label %68\l|{<s0>T|<s1>F}}"];
+	Node0x58e1920:s0 -> Node0x58defb0;
+	Node0x58e1920:s1 -> Node0x58df000;
+	Node0x58defb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%65:\l65:                                               \l  %66 = load float, float addrspace(3)* %33, align 4, !tbaa !5\l  %67 = fadd contract float %66, %64\l  store float %67, float addrspace(3)* %9, align 4, !tbaa !5\l  br label %68\l}"];
+	Node0x58defb0 -> Node0x58df000;
+	Node0x58df000 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%68:\l68:                                               \l  %69 = phi float [ %67, %65 ], [ %64, %63 ]\l  br i1 %38, label %70, label %73\l|{<s0>T|<s1>F}}"];
+	Node0x58df000:s0 -> Node0x58e22d0;
+	Node0x58df000:s1 -> Node0x58e0040;
+	Node0x58e22d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%70:\l70:                                               \l  %71 = load float, float addrspace(3)* %39, align 4, !tbaa !5\l  %72 = fadd contract float %71, %69\l  store float %72, float addrspace(3)* %9, align 4, !tbaa !5\l  br label %73\l}"];
+	Node0x58e22d0 -> Node0x58e0040;
+	Node0x58e0040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%73:\l73:                                               \l  %74 = load float, float addrspace(3)* getelementptr inbounds ([16 x float],\l... [16 x float] addrspace(3)* @_ZZ6kernelPfmE1s, i32 0, i32 0), align 16, !tbaa\l... !5\l  %75 = fadd contract float %43, %74\l  %76 = add nuw nsw i32 %44, 1\l  %77 = icmp eq i32 %76, %6\l  br i1 %77, label %40, label %42, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x58e0040:s0 -> Node0x58dde00;
+	Node0x58e0040:s1 -> Node0x58ddb60;
+}

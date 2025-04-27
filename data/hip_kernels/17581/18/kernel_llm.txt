@@ -1,0 +1,4 @@
+// Use shared memory if possible to reduce global memory access.
+// Ensure memory coalescing by organizing data accessed by adjacent threads.
+// Minimize the use of global atomic operations to reduce memory contention.
+// Consider using padding to avoid bank conflicts in shared memory.

@@ -1,0 +1,7 @@
+```c
+// Consider aligning data access with memory coalescing
+// Use shared memory to minimize global memory transactions
+// Reduce bank conflicts in shared memory access
+// Ensure __syncthreads() is placed correctly to avoid race conditions
+// Optimize load/store operations to maximize memory throughput
+```

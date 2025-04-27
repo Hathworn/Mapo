@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for 'delta' and 'x' arrays
+// Consider using texture memory for read-only data like 'x'
+// Coalesce global memory accesses by aligning data structure
+// Minimize the number of arithmetic operations in kernel by precomputing repetitive terms
+// Adjust block size and grid size for maximum occupancy
+```

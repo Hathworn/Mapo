@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache data that is frequently accessed.
+// Minimize the number of global memory accesses by reusing data.
+// Collaborate between threads using shared memory when accessing identical data.
+// Ensure coalesced memory access patterns for all global memory reads and writes.
+// Evaluate the use of __restrict__ keyword to help the compiler optimize memory access.
+// Seek opportunities to reduce divergent branches to improve warp execution efficiency.
+// Re-access arrays in a coalesced manner for optimal memory bandwidth usage.
+```

@@ -1,0 +1,4 @@
+// Use shared memory for input matrices A and W to optimize memory access patterns
+// Use coalesced memory access for storing results back into matrix hcp
+// Consider splitting the work between multiple kernel launches to reduce register pressure
+// Reduce redundant memory operations by caching frequently accessed values in local variables

@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to store tile of A and B matrices for each block to reduce global memory access
+// Ensure coalesced memory access patterns by aligning block and grid dimensions properly
+// Use __ldg() intrinsic for read-only data to benefit from hardware caching
+// Optimize the loop unrolling factor for the innermost loop for better instruction-level parallelism
+// Ensure memory alignment of input matrices A, B, and C to improve memory access time
+```

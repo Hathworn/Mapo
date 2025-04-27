@@ -1,0 +1,3 @@
+// Ensure coalesced memory access by using consecutive thread IDs for memory operations
+// Avoid divergent branching by minimizing conditional statements within the warps
+// Consider using shared memory to cache frequently accessed mask data if applicable

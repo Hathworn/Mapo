@@ -1,0 +1,11 @@
+```
+// Optimize the use of shared memory according to actual data size
+// Consider merging shared memory declarations if beneficial
+// Adjust shared memory allocation based on expected occupancy & blockDim
+// Avoid bank conflicts in shared memory accesses
+// Ensure coalesced accesses to global memory for filter_responses
+// Consider loop unrolling for accumulating local responses and count
+// Use cooperative groups for more efficient intra-block reductions
+// Regularly check if shared memory size exceeds hardware limits
+// Optimize pixel_end calculation to reduce branch divergence
+```

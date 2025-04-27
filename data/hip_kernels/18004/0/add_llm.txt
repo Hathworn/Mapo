@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for a, b, and c
+// Minimize warp divergence by ensuring SIZE is a multiple of the block size
+// Use shared memory if the data is reused within the block
+// Use __restrict__ qualifiers for pointers if no aliasing occurs
+// Experiment with different block sizes to optimize occupancy and performance
+```

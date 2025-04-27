@@ -1,0 +1,8 @@
+```
+// Use shared memory to hold partial results and reduce atomic operations
+// Unroll loops to maximize memory coalescing and reduce loop overhead
+// Use shared memory to store intermediate results to reduce global memory access
+// Parallel reduction within block to minimize thread synchronization
+// Reduce the number of synchronization points by optimizing reduction steps
+// Avoid branches for better warp efficiency and performance
+```

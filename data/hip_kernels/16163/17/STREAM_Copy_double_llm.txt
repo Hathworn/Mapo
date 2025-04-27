@@ -1,0 +1,6 @@
+```
+// Unroll loop for better parallelism and memory access pattern
+// Improve memory coalescing by ensuring contiguous threads access consecutive memory addresses
+// Consider using shared memory if there are frequent accesses to the same data by multiple threads
+// Optimize launch configuration by balancing between block size and number of blocks for the given hardware
+```

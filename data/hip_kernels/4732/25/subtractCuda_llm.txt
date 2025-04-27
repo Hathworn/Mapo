@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory to store row data if possible
+// Ensure coalesced global memory access for better performance
+// Reduce the number of instructions in shared memory computation
+// Consider loop unrolling if applicable to minimize instruction overhead
+// Prefetch data into registers when the pattern of access is predictable

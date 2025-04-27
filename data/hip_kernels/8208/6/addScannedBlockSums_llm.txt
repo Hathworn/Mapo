@@ -1,0 +1,4 @@
+// Use shared memory to store the block sums for faster access
+// Coalesce memory accesses by aligning data structures
+// Use float4 loads if possible to reduce number of transactions
+// Reduce divergence by ensuring conditional statements are minimized

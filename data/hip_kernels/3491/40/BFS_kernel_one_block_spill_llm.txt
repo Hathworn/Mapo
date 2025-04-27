@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for the edgeArrayAux to improve memory bandwidth utilization.
+// Use shared memory for frequently accessed data to reduce global memory load/stores.
+// Prefer atomic operations when updating cost and visited arrays to minimize race conditions.
+// Reduce the number of __syncthreads() calls if possible to improve kernel performance.
+// Ensure optimal use of shared memory to avoid bank conflicts.
+```

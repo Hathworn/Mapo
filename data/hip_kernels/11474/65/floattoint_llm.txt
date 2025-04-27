@@ -1,0 +1,8 @@
+```
+// Ensure enough threads are launched to utilize full GPU resources
+// Avoid using conditional statements inside the kernel for better performance
+// Consider using shared memory for repeated access data to reduce global memory latency
+// Align data access patterns to coalesced global memory reads
+// Evaluate use of vectorized memory operations for efficiency
+// Consider loop unrolling techniques if applicable
+```

@@ -1,0 +1,4 @@
+// Consider employing shared memory for data reuse within the block to reduce global memory access.  
+// Coalesce global memory access for better performance by ensuring threads access contiguous memory locations.  
+// Optimize block and grid sizes based on hardware architecture to maximize occupancy and efficiency.  
+// Pre-fetch data into registers to decrease repeated global memory reads where possible.  

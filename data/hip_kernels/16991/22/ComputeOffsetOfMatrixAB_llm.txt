@@ -1,0 +1,3 @@
+// Consider using shared memory to cache col_sum values to reduce global memory accesses.
+// Check if using atomic operations can help in reducing contention on output writes.
+// Evaluate if loop unrolling could provide performance benefits for iterating over N.

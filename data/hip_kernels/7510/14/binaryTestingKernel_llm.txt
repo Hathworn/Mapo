@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to memory for predictions and targets arrays to improve throughput
+// Employ shared memory if multiple threads within a block access the same data
+// Explore using the __restrict__ keyword to provide compiler hints for pointer aliasing
+// Assess the impact of loop unrolling for the for-loop to reduce overhead per iteration
+// Evaluate using atomic operations if reduction or accumulation is needed within threads
+```

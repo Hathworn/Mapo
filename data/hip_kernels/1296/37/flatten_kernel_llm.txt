@@ -1,0 +1,6 @@
+```c
+// Use shared memory to minimize redundant recalculations of spatial and layer indices.
+// Precompute indices used for data access to enhance data locality and reduce computation time.
+// Leverage conditional statements efficiently to control data access patterns and flow.
+// Ensure blockDim.x is properly set to avoid overusing shared memory.
+```

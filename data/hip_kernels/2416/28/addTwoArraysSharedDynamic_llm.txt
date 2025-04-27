@@ -1,0 +1,5 @@
+// Optimize: Ensure the thread ID is within the boundaries to prevent out-of-bounds memory access
+// Optimize: Use extern __shared__ for dynamic shared memory allocation to enable flexible memory usage
+// Optimize: Combine the loading of v1 and v2 into shared memory to reduce global memory accesses
+// Optimize: Minimize shared memory size by storing each input array consecutively in shared memory
+// Optimize: Access shared memory using threadIdx.x to benefit from the fast access speeds of shared memory

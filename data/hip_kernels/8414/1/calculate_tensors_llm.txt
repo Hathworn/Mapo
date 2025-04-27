@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for fields to improve global memory throughput
+// Consider using shared memory to reduce redundant global memory accesses
+// Use loop unrolling if Nx is a small, fixed size to increase instruction-level parallelism
+// Avoid bank conflicts when using shared memory, if implemented
+```

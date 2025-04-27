@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by accessing consecutive memory locations
+// Use shared memory to reduce global memory accesses if multiple threads require the same data
+// Consider using atomic operations if updates to 'result' need to be synchronized across threads
+// Adjust block and grid sizes to optimize occupancy and reduce warp divergence
+// Use inlining functions where appropriate to reduce function call overhead
+// Avoid unnecessary conditions inside the loop, perform such checks outside if possible
+```

@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory accesses and improve performance
+// Ensure proper synchronization with __syncthreads() when using shared memory
+// Adjust shared memory size to fit data and avoid unnecessary wastage
+// Consider using coalesced memory access patterns for global memory reads/writes
+// Utilize more threads per block if occupancy allows to hide memory latency
+// Check shared memory bank conflicts and adjust indices to avoid them
+```

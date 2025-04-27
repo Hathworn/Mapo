@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if multiple threads access the same data to reduce global memory traffic.
+// Ensure memory coalescing by having consecutive threads access consecutive memory locations.
+// Minimize divergent branches in the kernel to enhance warp execution efficiency.
+// Using a conditional statement for just one thread (idx == 0) is inefficient; consider using atomic operations.
+```

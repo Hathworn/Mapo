@@ -1,0 +1,8 @@
+```
+// For better memory coalescing, ensure that threads access consecutive memory addresses in global memory.
+// Experiment with loop unrolling to enhance performance where applicable.
+// Consider using shared memory or registers to cache frequently accessed data like biases, reducing global memory access.
+// Evaluate using the __restrict__ keyword to potentially enhance memory access by providing the compiler with more optimization opportunities.
+// Verify that using a two-dimensional grid indeed provides better load balancing and distribution for the problem size.
+// Review occupancy metrics to adjust block and grid dimensions for optimal thread utilization.
+```

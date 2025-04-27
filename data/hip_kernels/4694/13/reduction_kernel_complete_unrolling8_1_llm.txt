@@ -1,0 +1,8 @@
+```
+// Use shared memory to increase data locality and reduce global memory access.
+// Prefetch data to reduce memory latency by overlapping computation and data transfer.
+// Coalesce memory accesses to maximize memory throughput.
+// Unroll loops completely to minimize the loop overhead and increase parallel execution.
+// Consider using atomic operations to avoid __syncthreads overhead in some cases.
+// Use warp-level operations to reduce execution divergence and improve efficiency.
+```

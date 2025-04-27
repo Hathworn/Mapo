@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Leverage __syncthreads to ensure all threads have loaded the necessary data to shared memory
+// Unroll loops to enhance instruction-level parallelism
+// Precompute terms to avoid redundant calculations within the loop
+// Use atomic operations cautiously, as they can introduce serialization
+```

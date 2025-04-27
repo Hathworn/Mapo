@@ -1,0 +1,14 @@
+```
+// Ensure proper memory coalescing for global memory accesses to splitting, aggregation, aggMapAdjIndices, and aggMapAdjacency.
+// Use a tiled approach for adjacency range traversal and neighbor identification to reduce global memory accesses.
+// Space for neighbors array should be carefully assessed to avoid spilling into global memory.
+// Minimize branching in the binary search loop by eliminating redundant conditions.
+// Consider reducing __syncthreads() calls where thread dependency is minimal to improve performance.
+// Replace atomicAdd operations with warp-synchronous programming techniques where possible to reduce contention.
+// Use shared memory judiciously for frequently accessed data like nodeIds and avoid bank conflicts.
+// Optimize distance calculation loop to reduce redundant global memory loads of adjIndices and adjacency.
+// Adopt streaming multiprocessor utilization strategies to improve thread-block to multiprocessor mapping.
+// Verify and adjust thread-block size to fully utilize registers and shared memory without excessive oversubscription.
+// Explore dual-path warp divergence strategies to mitigate performance penalties caused by branch conditions.
+// Replace atomic counters with warp-level primitives for reduction where possible.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store parts of a and b for better memory access patterns
+// Ensure memory coalescing by accessing global memory in a contiguous fashion
+// Minimize divergent branching in the loop by aligning the bounds with warp size
+// Explore the use of read-only data cache to improve memory bandwidth utilization 
+```

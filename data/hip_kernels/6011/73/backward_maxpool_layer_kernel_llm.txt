@@ -1,0 +1,8 @@
+```
+// Minimize shared memory bank conflicts by careful allocation of shared resources
+// Align data accesses to 128-byte boundaries for better memory coalescing
+// Use __restrict__ qualifier for pointer arguments to optimize memory access
+// Use loop unrolling to eliminate unnecessary iterations and improve performance
+// Consider using texture memory for read-only data access to improve cache hits
+// Optimize index calculations to reduce computational overhead in loops
+```

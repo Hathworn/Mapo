@@ -1,0 +1,8 @@
+```
+// Consider using warp-level primitives to reduce bank conflicts in shared memory.
+// Optimize global memory access by ensuring coalesced reads in the loop.
+// Use shared memory efficiently to minimize access to global memory.
+// Reduce the number of atomic operations by accumulating in local/shared memory.
+// Optimize the loop unrolling factor to balance between latency and computation.
+// Explore using __ldg for read-only data to improve cache efficiency.
+```

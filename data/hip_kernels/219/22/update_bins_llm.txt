@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory reads
+// Minimize divergent branches by reordering conditional statements
+// Pre-calculate commonly used values such as intercept * 0.000001f outside of kernel
+// Merge conditional checks to reduce code branching where possible
+// Utilize vectorized memory operations if applicable to improve memory throughput
+// Group atomic operations and minimize usage if possible for performance improvement
+```

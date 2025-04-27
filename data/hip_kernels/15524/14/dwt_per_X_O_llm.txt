@@ -1,0 +1,7 @@
+```
+// Consider optimizing global memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory more effectively to minimize global memory accesses.
+// Increase data locality by optimizing the way data is loaded into shared memory.
+// Ensure correct usage of __syncthreads() to avoid bank conflicts and ensure complete shared memory writes.
+// Further loop unrolling can be applied to optimize memory access patterns and arithmetic operations.
+```

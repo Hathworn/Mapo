@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for weightPtr
+// Use shared memory to reduce global memory accesses for inputPtr
+// Avoid branch divergence by reconsidering the use of if conditionals
+// Optimize memory reads by ensuring continuous access patterns for outputPtr
+// Align memory accesses to improve coalescing benefits
+// Utilize loop unrolling to minimize loop overhead in the summation operation
+// Prefer accessing __constant__ memory for frequently accessed constants like sigma
+```

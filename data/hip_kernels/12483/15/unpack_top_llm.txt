@@ -1,0 +1,9 @@
+```
+// Use __ldg to load buffer into cache
+// Consider coalesced memory access pattern for field and buffer
+// Assess impact of using shared memory if applicable
+// Verify alignment of memory accesses for optimal performance
+// Measure thread block size to maximize occupancy
+// Analyze possible warp divergence within the kernel
+// Evaluate benefit of loop unrolling if any loops are present
+```

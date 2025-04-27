@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access when loading d_in
+// Use shared memory to reduce global memory transactions
+// Consider Occupancy: Balance the number of threads per block
+// Avoid bank conflicts in shared memory access
+// Reduce the number of __syncthreads() if possible
+// Ensure minimal global memory access for results
+```

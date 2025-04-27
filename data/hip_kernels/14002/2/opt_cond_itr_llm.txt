@@ -1,0 +1,5 @@
+```
+// Consider precomputing kernel_val_mat offsets to reduce index calculations within the loop
+// Explore using shared memory to cache kernel_val_mat values local to a block for reduced global memory access
+// If num_train_cases is constant, evaluate unrolling loop for global memory access optimization
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Ensure coalesced memory access patterns for x, d, and m arrays.
+// Align data on 128-byte boundaries to optimize for memory transactions.
+// Minimize divergence by ensuring uniformity in conditional execution paths.
+// Assess if vectorized loads can be applied for further memory throughput enhancement.
+```

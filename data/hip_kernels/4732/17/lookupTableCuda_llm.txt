@@ -1,0 +1,4 @@
+// Use shared memory to store the lookup table to reduce global memory access.
+// Optimize memory access patterns to enable coalesced reads from global memory.
+// Ensure that the memory accesses align with warp boundaries for better efficiency.
+// Use loop unrolling if applicable to improve throughput in the kernel.

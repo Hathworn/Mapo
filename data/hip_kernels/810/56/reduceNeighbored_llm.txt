@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for reduction to minimize global memory access.
+// Perform the reduction in shared memory and copy the final result to global memory.
+// Minimize thread divergence by ensuring warp-wide synchronization.
+```

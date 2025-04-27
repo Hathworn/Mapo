@@ -1,0 +1,4 @@
+// Use shared memory to optimize data access and reduce global memory transactions
+// Ensure proper synchronization with __syncthreads() to avoid race conditions
+// Minimize conditional checks in kernel to streamline computations
+// Consider optimizing block size to maximize occupancy and performance

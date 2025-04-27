@@ -1,0 +1,6 @@
+```
+// Optimize memory coalescing by ensuring sequential threads access consecutive memory addresses.
+// Consider using shared memory if there are data reuse opportunities within threads of a block.
+// Ensure proper memory alignment to maximize memory throughput.
+// Use __restrict__ keyword if safe to help the compiler optimize pointer aliasing.
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses by ensuring threads access contiguous memory locations.
+// Use shared memory if possible to store input and intermediate values for reduced global memory accesses.
+// Minimize register usage and avoid spilling to improve thread execution efficiency.
+// Optimize thread divergence by ensuring logical conditions lead to uniform branching within the warp.
+```

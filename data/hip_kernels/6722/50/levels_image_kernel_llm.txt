@@ -1,0 +1,10 @@
+```
+// Consider using shared memory for batch level data to minimize global memory access.
+// Optimize memory access patterns by ensuring coalesced access for image and random data.
+// Consider using texture memory for read-only image data to leverage caching benefits.
+// Explore loop unrolling options for RGB values processing to improve performance.
+// Use local memory for frequently accessed variables such as 'r', 'g', 'b' to reduce register pressure.
+// Reduce conditional logic and use inline functions for improved thread utilization.
+// Prefetch rand values to prevent latency in accessing float values during computation.
+// Adjust grid and block dimensions to maximize occupancy and reduce warp divergence.
+```

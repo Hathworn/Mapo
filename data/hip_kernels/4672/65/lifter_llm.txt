@@ -1,0 +1,8 @@
+```
+// Minimize global memory accesses by reusing calculated values.
+// Ensure coalesced memory access by organizing data layout if possible.
+// Use shared memory if the same data needs to be accessed by multiple threads.
+// Consider loop unrolling for operations within each thread, if applicable.
+// Optimize grid and block dimensions for maximum occupancy and performance.
+// Prefetch data into registers to reduce memory access latency.
+```

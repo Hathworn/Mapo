@@ -1,0 +1,6 @@
+// Consider using coalesced memory access for loading data into shared memory.
+// Use a loop unrolling technique to improve the efficiency of histogram initialization.
+// Evaluate if asynchronous memory copy could reduce wait times during synchronization.
+// Investigate using fewer synchronization points, potentially by rearranging data operations.
+// Use shared memory efficiently by ensuring the memory layout reduces bank conflicts.
+// Reevaluate constant memory use or shared memory overlaps for frequently accessed values like `gauss`.

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for xGrad by using a contiguous memory layout
+// Use shared memory if multiple threads access the same yGrad values
+// Consider aligning data types to improve memory alignment and access speed
+// Evaluate the benefit of increasing block size to maximize occupancy
+// Check for thread divergence in 'if' condition to improve performance
+```

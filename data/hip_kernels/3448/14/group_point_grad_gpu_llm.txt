@@ -1,0 +1,8 @@
+```
+// Load `grad_out` into shared memory to reduce global memory access
+// Use blockIdx.y to improve parallel processing with more grid dimensions
+// Utilize grid-stride loop for better occupancy and performance
+// Spread workload across z-dimension threads to better utilize GPU resources
+// Employ __syncthreads() to ensure shared memory loading is complete before use
+// Use atomicAdd to ensure correct accumulation in global memory
+```

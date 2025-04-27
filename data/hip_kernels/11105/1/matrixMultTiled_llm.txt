@@ -1,0 +1,6 @@
+```
+// Use __restrict__ pointers for d_A, d_B, and d_C to help the compiler with aliasing.
+// Consider using vectorized types (e.g., float4) for loading tiles to reduce memory transactions.
+// Ensure data is aligned to the alignment requirement of vectorized types if used.
+// Try using loop unrolling inside the computation loop for potential speedup.
+```

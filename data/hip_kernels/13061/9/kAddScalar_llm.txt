@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Consider coalesced memory access patterns for gData and target
+// Optimize shared memory size to avoid bank conflicts
+// Ensure efficient use of thread synchronization with __syncthreads()

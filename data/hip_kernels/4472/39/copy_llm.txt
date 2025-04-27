@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access to improve memory throughput
+// Align memory accesses within the same warp to prevent bank conflicts
+// Consider adjusting TILE_DIM and BLOCK_ROWS for optimal performance on specific hardware
+// Ensure __syncthreads() is used correctly to synchronize threads within the block
+// Check for optimal grid and block size configurations to maximize occupancy
+```

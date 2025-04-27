@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for intermediate results to reduce global memory accesses.
+// Ensure memory accesses are coalesced by adjusting data structures if necessary.
+// Use warp-level primitives to optimize performance for operations like sqrtf.
+// Check if lowerLim and upperLim can be loaded once into shared memory to save repeated loads.
+```

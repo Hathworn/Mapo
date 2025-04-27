@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access to improve memory bandwidth utilization.
+// Optimize shared memory usage by limiting the amount of data per block, ensuring shared memory is not over-allocated.
+// Consider using loop unrolling pragmatically, specifically when valueCount is known and relatively small for better performance.
+// Ensure atomic operations are minimized in scenarios where they may cause significant serialization.
+// Avoid bank conflicts in shared memory accesses to ensure efficient shared memory utilization.
+```

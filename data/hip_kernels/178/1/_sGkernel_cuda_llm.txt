@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to cache dev_suma accesses for better memory efficiency.
+// Optimize global memory accesses by ensuring aligned memory access patterns.
+// Try reducing global memory traffic by reusing data already loaded in registers when possible.
+// Consider loop unrolling if the loop inside the kernel exhibits a small, fixed trip count.
+// Aim to minimize memory divergence by ensuring coalesced memory access patterns for dev_G.
+// Check if merging loops could reduce redundant memory access and help in better cache utilization.
+```

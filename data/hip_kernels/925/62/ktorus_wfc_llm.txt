@@ -1,0 +1,7 @@
+```
+// Optimize global memory access patterns by coalescing reads/writes to x, y, z, and wfc arrays.
+// Consider padding shared memory for phi and items to avoid bank conflicts and reduce latency.
+// Minimize divergence in gid calculation by ensuring consistent access patterns across threads.
+// Load items array into shared memory prior to use, as it is accessed multiple times by threads.
+// Pre-compute constant expressions and store them in registers to reduce redundant calculations.
+```

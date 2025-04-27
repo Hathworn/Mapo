@@ -1,0 +1,6 @@
+// Ensure data access patterns are coalesced for efficient memory reads
+// Optimize dense_data access by aligning and coalescing
+// Consider using shared memory for data and dense_data if space allows
+// Avoid bank conflicts when accessing shared memory
+// Use loop unrolling in critical sections to reduce instruction overhead
+// Implement fmaf to reduce floating-point operation latency

@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced memory access in the kernel.
+// Consider using shared memory to reduce redundant calculations and improve performance.
+// Use __restrict__ keyword for pointers to hint the compiler about no aliasing.
+// Minimize the number of operations within the if condition for efficiency.
+// Explore loop unrolling strategies for repeated operations.
+// Try reducing precision where possible to optimize throughput.
+// Ensure enough occupancy by tuning block size and memory usage appropriately.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache normalization_factor for reduced global memory access
+// Optimize thread divergence by ensuring all threads within a warp follow the same execution path
+// Coalesce global memory accesses by ensuring image and normalization_factor are accessed in a linear pattern
+// Prefetch the normalization_factor into a register to minimize latency
+```

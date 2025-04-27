@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by ensuring outputDeltas and hiddenActivations arrays are accessed in a pattern that allows for sequential memory reads.
+// Use shared memory to store frequently accessed values like hiddenActivations[from] to reduce global memory access latency.
+// Balance the workload across threads/blocks to ensure all threads are utilized efficiently, avoiding idle threads.
+// Minimize the usage of division operations like weightId / D_HIDDEN_UNITS if possible to enhance performance.
+```

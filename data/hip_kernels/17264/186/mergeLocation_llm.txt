@@ -1,0 +1,7 @@
+```
+// Use shared memory if multiple threads access the same data to reduce global memory traffic
+// Ensure coalesced access to global memory when writing to x and y
+// Minimize branching in the main kernel execution path
+// Consider using a different approach to handle boundary conditions for ptidx < npoints
+// Utilize registers effectively to hold intermediate results
+```

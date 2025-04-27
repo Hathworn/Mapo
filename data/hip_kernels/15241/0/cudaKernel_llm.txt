@@ -1,0 +1,7 @@
+```
+// Consider loading frequently accessed global data into shared memory to reduce global memory reads
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations
+// Use texture memory or read-only data cache for constant or read-only data to optimize memory bandwidth
+// Evaluate using loop unrolling to reduce loop overhead and improve performance
+// Experiment with different block and grid sizes to fully utilize the GPU's compute capability and memory bandwidth
+```

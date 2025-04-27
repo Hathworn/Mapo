@@ -1,0 +1,5 @@
+// Use shared memory to optimize data access and reduce global memory traffic
+// Use atomic operations to avoid race conditions and achieve parallel reductions
+// Store partial sums in shared memory to minimize global memory accesses
+// Use __syncthreads() to synchronize threads and ensure correct shared memory utilization
+// Simplify grid index calculation to reduce computational overhead

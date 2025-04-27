@@ -1,0 +1,9 @@
+```
+// Prefetch data to shared memory for coalesced memory access
+// Use constant memory for frequently used variables like B1 and B2
+// Unroll the loop for better performance
+// Minimize the use of pow() function by precomputing values outside the kernel
+// Consider using half precision for eligible variables to reduce memory bandwidth
+// Optimize the use of sqrt() by using fast math functions
+// Ensure thread index doesn't exceed the array bounds
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency
+// Load frequently accessed data into shared memory at the beginning
+// Ensure __syncthreads() is used to complete loading data before processing
+// Perform boundary check to avoid unnecessary operations
+// Reduce memory access within loop to improve efficiency
+```

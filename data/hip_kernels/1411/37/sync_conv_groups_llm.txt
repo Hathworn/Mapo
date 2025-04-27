@@ -1,0 +1,7 @@
+```
+// Consider increasing the block size for better occupancy
+// Use shared memory to reduce global memory accesses
+// Leverage warp shuffle functions to minimize syncthreads
+// Avoid branch divergence within the kernel
+// Prefetch data to shared memory before processing
+```

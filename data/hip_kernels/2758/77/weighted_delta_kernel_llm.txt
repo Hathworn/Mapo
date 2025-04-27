@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache s[i], a[i], b[i], and dc[i] to reduce global memory access
+// Consider loop unrolling if n is a multiple of a power of two for performance improvement
+// Use __syncthreads() if shared memory is used to avoid race conditions
+// Ensure coalesced memory access for arrays a, b, s, dc, da, db, and ds
+```

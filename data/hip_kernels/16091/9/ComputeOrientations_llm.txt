@@ -1,0 +1,12 @@
+```
+// Optimize memory access patterns by coalescing reads from global memory.
+// Use shared memory efficiently by minimizing bank conflicts in accessing `data` array.
+// Precompute Gaussian values outside the critical path to reduce redundant computations.
+// Align memory accesses to improve bandwidth utilization when loading data into shared memory.
+// Consider using loop unrolling techniques to further optimize the gradient calculations.
+// Reduce the number of __syncthreads() calls where possible to decrease synchronization overhead.
+// Ensure proper alignment of shared memory size with hardware warp size to maximize efficiency.
+// Explore vectorized memory operations for loading data when possible to reduce load instructions.
+// Optimize the reduction operation in histogram consolidation to minimize shuttle store interactions.
+// Consider using texture or read-only cache for `g_Data` to leverage caching benefits.
+```

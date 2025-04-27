@@ -1,0 +1,3 @@
+// Calculate stride outside loop to reduce repeated calculations in the loop.
+// Precompute offset as it doesn't change inside loop to minimize redundant calculations.
+// Compute index only once within the loop to avoid repeated computation.

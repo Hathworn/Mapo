@@ -1,0 +1,7 @@
+```cpp
+// Use __restrict__ qualifiers for input and target pointers to optimize memory access
+// Ensure coalesced access by examining memory access patterns for input and target arrays
+// Consider loop unrolling inside the inner loop for small ntarget
+// Use warp-level primitives like __shfl_down_sync for reduction instead of shared memory
+// Minimize shared memory usage by using warp-level reduction techniques
+```

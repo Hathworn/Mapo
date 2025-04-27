@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for input_cuda to optimize global memory bandwidth
+// Explore use of float2, float4 types for input_node to utilize vectorized memory operations
+// Investigate the possibility of using shared memory for hidden_partial_sum in partial reduction
+// Ensure coalesced access for input_hidden_cuda to improve access speed
+// Optimize shared memory usage by minimizing bank conflicts in weight_matrix
+// Utilize thread-level parallelism effectively during the reduction process
+// Use __syncthreads() judiciously to prevent unnecessary synchronization overhead
+```

@@ -1,0 +1,3 @@
+// Cache Ad[tx] to reduce global memory access
+// Use shared variable to avoid redundant writes
+// Write back to global memory after loop

@@ -1,0 +1,7 @@
+```
+// Use __restrict__ to ensure no aliasing and enable better memory optimization.
+// Inline the tangent operation to reduce the function call overhead if applicable.
+// Ensure coalesced memory access by aligning data with warp boundaries.
+// Consider using shared memory if there are multiple accesses to the same data.
+// Ensure optimal block and grid dimensions for full GPU occupancy.
+```

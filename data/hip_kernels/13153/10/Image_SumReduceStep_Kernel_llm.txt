@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access
+// Initialize shared memory with global memory reads to optimize memory access
+// Prefer contiguous memory access patterns to ensure coalesced memory access
+// Use a single shared memory array for reduction to reduce shared memory usage
+// Reduce synchronization overhead by synchronizing threads only when necessary
+// Leverage warp-level reduction to minimize divergent branching
+// Write results to global memory in a single, coalesced write
+```

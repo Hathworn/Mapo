@@ -1,0 +1,4 @@
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory locations.
+// Use shared memory where possible to reduce global memory accesses.
+// Minimize use of registers to avoid spilling. 
+// Optimize the loop unrolling to reduce control overhead.

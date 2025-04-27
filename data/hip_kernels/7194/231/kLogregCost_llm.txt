@@ -1,0 +1,4 @@
+// Use fast float-to-int conversion for improved performance.
+// Avoid branching, use boolean arithmetic to reduce warp divergence.
+// Initialize variables outside of conditions to avoid repeated computations.
+// Assign values once to minimize unnecessary writes to memory.

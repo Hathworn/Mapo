@@ -1,0 +1,4 @@
+// Load elements into shared memory to minimize global memory access.
+// Use bitshift for multiplication to optimize arithmetic operations.
+// Ensure __syncthreads() is placed to coordinate the computation and memory access.
+// Unroll loop for sum updates to improve performance.

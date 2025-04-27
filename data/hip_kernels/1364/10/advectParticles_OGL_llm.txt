@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache frequently accessed data such as 'v' to reduce global memory access latency.
+// Perform loop unrolling in the 'for' loop to increase instruction-level parallelism.
+// Optimize address calculation with pre-computed variables to reduce computation time.
+// Use __ldg() for read-only data like 'vterm' to take advantage of GPU read-only data cache.
+// Investigate coalesced memory access patterns for accessing 'part' and 'v' to enhance memory throughput.
+```

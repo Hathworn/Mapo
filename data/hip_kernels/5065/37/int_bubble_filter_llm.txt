@@ -1,0 +1,7 @@
+```
+// Use shared memory to store input data for improved memory access speed
+// Minimize the use of __syncthreads() by organizing threads to avoid conflicts
+// Consider using warp shuffle operations to replace some __syncthreads() calls
+// Reorganize data access to ensure coalesced memory transactions
+// Avoid frequent global memory accesses by caching repetitive data in registers
+```

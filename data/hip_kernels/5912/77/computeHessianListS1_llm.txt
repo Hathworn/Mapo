@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for trans_x, trans_y, and trans_z to improve memory throughput.
+// Cache gauss_d2_neg outside the loop to reduce redundant computations.
+// Cache tmp_hessian and tmp_ex to minimize repeated global memory accesses.
+// Use shared memory for centroid_x, centroid_y, and centroid_z if accesses are within a block scope to reduce global memory latency.
+// Optimize access patterns for point_gradients to ensure memory coalescing.
+// Prefetch data or unroll loops where applicable to reduce control overhead and improve load balance.
+```

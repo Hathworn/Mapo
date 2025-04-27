@@ -1,0 +1,10 @@
+```
+// Consider using __ldg() for reading uniform global memory data like d_focal_length, d_nodal_point_x, etc.
+// Optimize shared memory usage by avoiding bank conflicts during accesses.
+// Utilize warp shuffle operations to reduce the need for shared memory.
+// Use float2 instead of separate float variables for operations on u to enhance parallelism.
+// Coalesce global memory accesses for d_flow_compact and d_Zbuffer_flow_compact.
+// Perform loop unrolling on the loop iterating over in_ind for better performance.
+// Implement atomic additions to shared memory to avoid race conditions.
+// Align memory accesses for d_ind_flow_Zbuffer to ensure efficient cache usage.
+```

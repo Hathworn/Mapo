@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for gradInput and gradOutput to improve memory bandwidth.
+// Minimize shared memory bank conflicts if shared memory is used for intermediate calculations.
+// Evaluate if weight can be stored in shared memory to reduce repetitive global memory access.
+// Assess if loop unrolling or other loop optimizations could reduce control overhead.

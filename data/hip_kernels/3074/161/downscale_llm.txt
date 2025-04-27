@@ -1,0 +1,8 @@
+```
+// Consider coalesced access to gradInput_data and gradOutput_data for improved memory throughput.
+// Use shared memory to store gradOutput_data values accessed by multiple threads to reduce global memory bandwidth.
+// Ensure all accesses to gradInput_data and gradOutput_data are aligned where possible for performance benefits.
+// Minimize register pressure by evaluating if some local variables can be reused or eliminated.
+// Assess whether loop unrolling could be beneficial for the loop to potentially expose more parallelism.
+// Analyze workload balance among threads to prevent idle threads especially when no_elements is not a multiple of block size.
+```

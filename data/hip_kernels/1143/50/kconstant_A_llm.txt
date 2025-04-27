@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to A by ensuring gid follows a contiguous pattern
+// Use shared memory to reduce global memory access latency, especially for frequently accessed variables
+// Align data structures to ensure that memory accesses are cache-friendly
+// Prefetch data to registers for thread usage to minimize repeated global memory access
+// Minimize bank conflicts by ensuring thread accesses to shared memory are staggered
+// If possible, employ loop unrolling for any loops within computations to reduce overhead
+```

@@ -1,0 +1,15 @@
+digraph "CFG for '_Z31gpu_stencil2D_4pt_hack5_cp_rowsPdS_S_iii' function" {
+	label="CFG for '_Z31gpu_stencil2D_4pt_hack5_cp_rowsPdS_S_iii' function";
+
+	Node0x5716700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %8 = mul i32 %7, %3\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = mul i32 %14, %13\l  %16 = mul nsw i32 %8, %5\l  %17 = add nsw i32 %15, %16\l  %18 = add nsw i32 %8, 1\l  %19 = icmp sge i32 %18, %4\l  %20 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %21 = add i32 %15, %20\l  %22 = icmp sge i32 %21, %5\l  %23 = sdiv i32 %8, %3\l  %24 = shl i32 %5, 1\l  %25 = mul i32 %24, %23\l  %26 = add i32 %21, %25\l  %27 = add nsw i32 %26, %5\l  br i1 %22, label %35, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x5716700:s0 -> Node0x5718e20;
+	Node0x5716700:s1 -> Node0x5718eb0;
+	Node0x5718eb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%28:\l28:                                               \l  %29 = add nsw i32 %17, %20\l  %30 = sext i32 %29 to i64\l  %31 = getelementptr inbounds double, double addrspace(1)* %0, i64 %30\l  %32 = load double, double addrspace(1)* %31, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %33 = sext i32 %26 to i64\l  %34 = getelementptr inbounds double, double addrspace(1)* %2, i64 %33\l  store double %32, double addrspace(1)* %34, align 8, !tbaa !7\l  br label %35\l}"];
+	Node0x5718eb0 -> Node0x5718e20;
+	Node0x5718e20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = select i1 %19, i1 true, i1 %22\l  br i1 %36, label %45, label %37\l|{<s0>T|<s1>F}}"];
+	Node0x5718e20:s0 -> Node0x571a360;
+	Node0x5718e20:s1 -> Node0x571a3b0;
+	Node0x571a3b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%37:\l37:                                               \l  %38 = add i32 %17, %20\l  %39 = add i32 %38, %5\l  %40 = sext i32 %39 to i64\l  %41 = getelementptr inbounds double, double addrspace(1)* %0, i64 %40\l  %42 = load double, double addrspace(1)* %41, align 8, !tbaa !7\l  %43 = sext i32 %27 to i64\l  %44 = getelementptr inbounds double, double addrspace(1)* %2, i64 %43\l  store double %42, double addrspace(1)* %44, align 8, !tbaa !7\l  br label %45\l}"];
+	Node0x571a3b0 -> Node0x571a360;
+	Node0x571a360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%45:\l45:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access and increase performance
+// Boundary checks prevent unnecessary global memory access
+// Implement loop unrolling to minimize __syncthreads overhead after each step
+// Exploit warp-level primitives to reduce __syncthreads calls
+// Store intermediate results in shared memory for faster atomic operations
+// Use volatile keyword to prevent compiler optimization issues in warp unrolling
+// Reduce global memory writes by storing partial sums in shared memory
+```

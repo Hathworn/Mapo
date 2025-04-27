@@ -1,0 +1,8 @@
+```c
+// Consider improving memory coalescing for better global memory access efficiency.
+// Ensure that hiprandState objects are used with proper alignment or caching strategies.
+// Investigate the possibility of using local memory to store temporary variables like x, y, and l2norm2 if register pressure is not high.
+// Look into optimizing shared memory usage by minimizing access and ensuring proper bank conflicts are avoided.
+// Evaluate whether using more blocks with fewer threads per block could lead to better occupancy.
+// Consider padding shared memory to avoid bank conflicts during the reduction phase.
+```

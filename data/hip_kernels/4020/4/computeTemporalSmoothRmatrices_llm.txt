@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for Rmatrices to improve memory bandwidth utilization
+// Use shared memory for temporal accumulation of R matrices to reduce global memory access
+// Minimize divergence within warps by ensuring consistent control flow amongst threads
+// Ensure that data is aligned to achieve better memory access patterns
+// Use appropriate memory prefetching techniques if possible
+// Check for opportunities to unroll loops for increasing arithmetic intensity
+```

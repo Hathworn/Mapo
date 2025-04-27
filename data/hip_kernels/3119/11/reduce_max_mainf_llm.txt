@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses to optimize global memory reads
+// Ensure shared memory is utilized effectively to reduce global memory bandwidth
+// Consider loop unrolling for further performance improvement in reduction
+// Prefer warp synchronous programming for warp-level reductions to avoid __syncthreads overhead
+// Avoid bank conflicts in shared memory by ensuring correct memory access patterns
+// Minimize divergent branches in warp-level operations
+```

@@ -1,0 +1,4 @@
+// Consider coalesced memory access to improve bandwidth utilization
+// Avoid out-of-bound access to prevent unintended memory access errors
+// Use shared memory wisely to mitigate bank conflicts during reduction
+// Atomic operations are necessary for safely accumulating results across blocks

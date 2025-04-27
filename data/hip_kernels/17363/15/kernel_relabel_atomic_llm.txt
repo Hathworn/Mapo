@@ -1,0 +1,12 @@
+```
+// Consider reducing global memory accesses by using additional shared memory for more variables
+// Ensure coalesced memory access patterns to optimize global memory transactions
+// Check the possibility of using texture memory for read-only data
+// Use warp shuffle functions instead of shared memory to reduce __syncthreads() overhead
+// Optimize the load/store pattern for g_relabel_mask to minimize redundant writes
+// Fuse conditional branches where possible to improve warp execution efficiency
+// Implement loop unrolling for any repetitive sections of the code
+// Exploit asynchronous memory prefetching for data needed in subsequent operations
+// Investigate bank conflicts in shared memory and align accesses to prevent them
+// Analyze thread divergence and realign data access patterns to reduce it
+```

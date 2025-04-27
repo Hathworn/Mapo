@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing for global memory access
+// Consider using texture memory for read-only data
+// Ensure proper synchronization to prevent race conditions
+// Avoid unnecessary computations by skipping idx == 0 early
+// Leverage warp shuffles to reduce dependency on shared memory if possible
+```

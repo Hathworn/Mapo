@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns by considering reordering of idx
+// Make use of shared memory if idx access patterns exhibit spatial or temporal locality
+// Ensure src and trg are aligned on 128-bit boundaries to leverage vectorized memory operations
+// Evaluate the impact of using __restrict__ pointers for src, trg, and idx to increase compiler optimization
+```

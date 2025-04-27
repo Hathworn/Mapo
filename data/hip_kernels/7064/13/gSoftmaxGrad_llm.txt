@@ -1,0 +1,5 @@
+// Use shared memory for reduction to minimize global memory access
+// Optimize the loop to reduce warp divergence
+// Use __syncthreads() to ensure shared memory consistency
+// Implement loop unrolling for further reduction in overhead
+// Leverage constant memory if the valRow or adjRow data does not change frequently

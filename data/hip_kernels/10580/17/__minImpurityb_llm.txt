@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory accesses for 'keys' and 'counts' arrays to improve memory throughput.
+// Evaluate the use of shared memory for frequently accessed data to reduce global memory traffic.
+// Investigate unrolling loops or using warp-level parallelism to enhance computational efficiency.
+// Ensure __syncthreads() is necessary; otherwise, remove it to avoid unnecessary synchronization.
+// Consider aligning data structures to natural boundaries to improve memory access speed.
+```

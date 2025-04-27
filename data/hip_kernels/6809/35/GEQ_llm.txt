@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to minimize global memory reads
+// Ensure memory accesses are coalesced for better throughput
+// Prefetch data into registers when possible to reduce global memory latency
+// Use warp shuffle operations to avoid redundant memory accesses if applicable
+```

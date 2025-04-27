@@ -1,0 +1,8 @@
+```c
+// Use coalesced memory access to maximize memory bandwidth utilization.
+// Store frequently accessed data in shared memory to reduce global memory access.
+// Minimize thread divergence by ensuring consistent control flow across warps.
+// Optimize memory accesses by aligning data with cache line boundaries, if possible.
+// Ensure enough threads are used to keep the GPU fully occupied.
+// Use __syncthreads() to synchronize threads and ensure data consistency.
+```

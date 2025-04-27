@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for rowSize elements to reduce repeated global memory access
+// Pre-compute rowSize-related offsets outside of conditional to minimize operations inside the loop
+// Optimize totalSize calculation by using constant memory if it's invariant across kernels
+```

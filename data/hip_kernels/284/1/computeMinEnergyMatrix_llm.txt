@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns when loading energy into shared_row_energy to reduce memory latency.
+// Optimize shared memory utilization by minimizing bank conflicts during parallel access by threads.
+// Consider using a different thread block size for better occupancy and shared memory usage efficiency.
+// Minimize synchronization overhead by organizing  computations to use fewer __syncthreads() calls when possible.
+```

@@ -1,0 +1,3 @@
+// Ensure memory coalescing for global memory accesses in 'mat' and 'tgtMat'.
+// Consider using shared memory for caching partial 'vec' values to reduce redundant accesses to global memory.
+// Optimize the modulo operation 'i % width' by precomputing row indices if possible to avoid repetitive calculations.

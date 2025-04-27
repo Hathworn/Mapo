@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for arrays a, b, and c
+// Ensure that data types are properly aligned to avoid misaligned accesses
+// Utilize shared memory if frequent access to specific data elements is needed
+// Explore vectorized operations if the compiler and hardware support such operations
+// Minimize the use of global memory by maximizing the use of registers and shared memory
+// Avoid warp divergence by ensuring all threads within a warp follow the same execution path
+// Experiment with different block sizes for optimal performance on the target GPU
+```

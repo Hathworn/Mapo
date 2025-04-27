@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache frequently accessed data to reduce global memory access latency
+// Ensure coalesced memory access patterns by organizing data access in a sequential manner
+// Consider using vectorized data types to enhance memory throughput efficiency
+// Minimize divergent branches in the kernel to maintain warp execution efficiency
+// Adjust block size and grid size to maximize occupancy and balance memory bandwidth utilization
+```

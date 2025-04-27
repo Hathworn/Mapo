@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access for output1 and output2 to improve memory throughput.
+// Use shared memory effectively by minimizing bank conflicts.
+// Reduce global memory access by having each thread load from global memory only once when possible.
+// Ensure shared memory is aligned to prevent bank conflicts.
+// Minimize warp divergence by ensuring all threads within a warp follow the same execution path.
+```

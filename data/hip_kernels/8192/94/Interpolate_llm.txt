@@ -1,0 +1,7 @@
+```
+// Ensure inputs are coalesced by aligning data to SIMD width
+// Minimize divergent branches by using more arithmetic operations
+// Employ __restrict__ keyword for input and output pointers to avoid pointer aliasing
+// Prefetch data into registers for the access pattern before the interpolation
+// Consider using shared memory for data reuse to reduce global memory access
+```

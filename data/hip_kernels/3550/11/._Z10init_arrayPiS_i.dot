@@ -1,0 +1,22 @@
+digraph "CFG for '_Z10init_arrayPiS_i' function" {
+	label="CFG for '_Z10init_arrayPiS_i' function";
+
+	Node0x4b34810 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%3:\l  %4 = icmp sgt i32 %2, 0\l  br i1 %4, label %5, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x4b34810:s0 -> Node0x4b34f50;
+	Node0x4b34810:s1 -> Node0x4b34fe0;
+	Node0x4b34f50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%5:\l5:                                                \l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = sext i32 %14 to i64\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %18 = and i32 %2, 7\l  %19 = icmp ult i32 %2, 8\l  br i1 %19, label %22, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x4b34f50:s0 -> Node0x4b36d70;
+	Node0x4b34f50:s1 -> Node0x4b36e00;
+	Node0x4b36e00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%20:\l20:                                               \l  %21 = and i32 %2, -8\l  br label %33\l}"];
+	Node0x4b36e00 -> Node0x4b37000;
+	Node0x4b36d70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%22:\l22:                                               \l  %23 = phi i32 [ %17, %5 ], [ %51, %33 ]\l  %24 = icmp eq i32 %18, 0\l  br i1 %24, label %32, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x4b36d70:s0 -> Node0x4b34fe0;
+	Node0x4b36d70:s1 -> Node0x4b37230;
+	Node0x4b37230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = phi i32 [ %29, %25 ], [ %23, %22 ]\l  %27 = phi i32 [ %30, %25 ], [ 0, %22 ]\l  %28 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %29 = add nsw i32 %26, %28\l  store i32 %29, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %30 = add i32 %27, 1\l  %31 = icmp eq i32 %30, %18\l  br i1 %31, label %32, label %25, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4b37230:s0 -> Node0x4b34fe0;
+	Node0x4b37230:s1 -> Node0x4b37230;
+	Node0x4b34fe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%32:\l32:                                               \l  ret void\l}"];
+	Node0x4b37000 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%33:\l33:                                               \l  %34 = phi i32 [ %17, %20 ], [ %51, %33 ]\l  %35 = phi i32 [ 0, %20 ], [ %52, %33 ]\l  %36 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %37 = add nsw i32 %34, %36\l  store i32 %37, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %38 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %39 = add nsw i32 %37, %38\l  store i32 %39, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %40 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %41 = add nsw i32 %39, %40\l  store i32 %41, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %42 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %43 = add nsw i32 %41, %42\l  store i32 %43, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %44 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %45 = add nsw i32 %43, %44\l  store i32 %45, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %46 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %47 = add nsw i32 %45, %46\l  store i32 %47, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %48 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %49 = add nsw i32 %47, %48\l  store i32 %49, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %50 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !7\l  %51 = add nsw i32 %49, %50\l  store i32 %51, i32 addrspace(1)* %16, align 4, !tbaa !7\l  %52 = add i32 %35, 8\l  %53 = icmp eq i32 %52, %21\l  br i1 %53, label %22, label %33, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x4b37000:s0 -> Node0x4b36d70;
+	Node0x4b37000:s1 -> Node0x4b37000;
+}

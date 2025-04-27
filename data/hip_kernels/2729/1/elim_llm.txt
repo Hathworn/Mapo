@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses to improve read efficiency
+// Ensure all threads in a block are active and avoid warp divergence
+// Minimize global memory accesses by using shared memory where possible
+// Align shared memory access for optimal performance
+// Prefetch necessary data into shared memory to reduce access latency
+// Use streaming stores to optimize write-back to global memory
+// Double-check shared memory boundaries to prevent bank conflicts
+// Evaluate if loop unrolling could provide performance benefits
+```

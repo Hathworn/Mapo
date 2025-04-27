@@ -1,0 +1,10 @@
+digraph "CFG for 'invertVectorElements' function" {
+	label="CFG for 'invertVectorElements' function";
+
+	Node0x5a8dc70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = icmp slt i32 %3, %1\l  br i1 %4, label %5, label %10\l|{<s0>T|<s1>F}}"];
+	Node0x5a8dc70:s0 -> Node0x5a8eae0;
+	Node0x5a8dc70:s1 -> Node0x5a8eb70;
+	Node0x5a8eae0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%5:\l5:                                                \l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds float, float addrspace(1)* %0, i64 %6\l  %8 = load float, float addrspace(1)* %7, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %9 = fdiv contract float 1.000000e+00, %8\l  store float %9, float addrspace(1)* %7, align 4, !tbaa !5\l  br label %10\l}"];
+	Node0x5a8eae0 -> Node0x5a8eb70;
+	Node0x5a8eb70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%10:\l10:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data from global memory that is accessed multiple times.
+// Ensure coalesced memory accesses to global memory for better memory throughput.
+// Minimize divergent branches to maintain consistent and efficient execution within warps.
+// Utilize __restrict__ qualifiers to aid the compiler in optimizations by indicating no-pointer aliasing.
+```

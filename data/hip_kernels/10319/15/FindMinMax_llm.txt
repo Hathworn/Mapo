@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Minimize divergence by iterating in shared memory
+// Unroll loops to increase warp execution efficiency
+// Optimize reduction using warp-level primitives for synchronization
+// Store final results from shared memory to global memory at blocks' level
+```

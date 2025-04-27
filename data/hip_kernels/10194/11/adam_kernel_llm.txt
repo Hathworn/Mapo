@@ -1,0 +1,5 @@
+// Avoid redundant computation of "sqrtf(v_val) + eps" by using registers  
+// Perform memory coalescing for better global memory access pattern  
+// Use shared memory for frequently accessed values like "m[index]" and "v[index]"  
+// Use loop unrolling for processing multiple indices in a single thread  
+// Optimize grid and block dimensions to maximize warp utilization  

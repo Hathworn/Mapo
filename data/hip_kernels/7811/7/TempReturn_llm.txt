@@ -1,0 +1,6 @@
+```
+// Use shared memory to store p_Temp values for faster access by threads within the same block.
+// Ensure coalesced memory access patterns when reading/writing from/to global memory.
+// Minimize divergent branches by restructuring conditions where possible.
+// Explore loop unrolling for potential performance gains in repetitive calculations.
+```

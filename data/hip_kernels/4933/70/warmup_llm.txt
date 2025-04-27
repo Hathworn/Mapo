@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure proper memory coalescing to improve bandwidth utilization.
+// Use __syncthreads() to synchronize threads after shared memory loading.

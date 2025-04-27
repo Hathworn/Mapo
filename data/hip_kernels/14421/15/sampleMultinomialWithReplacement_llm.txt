@@ -1,0 +1,8 @@
+```
+// Use shared memory efficiently by minimizing its occupancy to necessary threads
+// Explore coalesced memory access for normDistPrefixSum to optimize data retrieval
+// Use warp-level synchronization to reduce latency in binary search execution
+// Limit the use of __syncthreads() to necessary synchronizations within warps
+// Assess use of __shared__ memory to avoid bank conflicts during operations
+// Reduce warp divergence by aligning thread operations within warp allocations
+```

@@ -1,0 +1,7 @@
+```
+// Ensure alignment of input and output arrays for coalesced memory access
+// Prefer using float4 or float2 for loading/storing when possible to reduce memory transactions
+// Consider loop unrolling to increase instruction throughput
+// Optimize stride to avoid bank conflicts in shared memory scenarios
+// Implement prefetching if memory access latency is a bottleneck
+```

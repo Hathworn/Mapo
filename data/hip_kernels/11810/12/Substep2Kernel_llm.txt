@@ -1,0 +1,4 @@
+// Consider minimizing global memory access by using shared memory for reusable data like VradInt and VthetaInt
+// Optimize thread index calculations to reduce redundant operations and improve readability 
+// Employ coalesced memory access patterns for DensInt and TemperInt data structures to optimize cache usage 
+// Use warp-level primitives to optimize calculations like radial and azimuthal velocity differences

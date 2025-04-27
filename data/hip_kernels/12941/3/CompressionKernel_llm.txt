@@ -1,0 +1,13 @@
+```
+// Consider using __launch_bounds__ to optimize kernel launch for specific hardware
+// Use __restrict__ qualifier for kernel arguments to improve memory access performance
+// Align shared memory usage to 32-byte boundaries to avoid bank conflicts
+// Explore using cooperative groups' thread synchronization for better performance control
+// Ensure shared memory usage does not exceed hardware limits to prevent occupancy reduction
+// Cache frequently accessed data in registers when possible
+// Minimize divergent branches within the warp to improve execution efficiency
+// Consider using built-in functions for bit manipulation to improve performance
+// Merge warp synchronous operations to reduce instruction count and increase performance
+// Prefetch or reorder memory accesses to minimize memory latency
+// Evaluate if using local memory could better utilize hardware resources
+```

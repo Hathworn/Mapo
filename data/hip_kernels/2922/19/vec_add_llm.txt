@@ -1,0 +1,4 @@
+// Use shared memory to cache A and B if there is data reuse by each block
+// Consider coalesced memory access patterns to optimize memory bandwidth usage
+// Minimize divergent branches within the kernel
+// Ensure enough work per thread to improve occupancy and hide memory latency

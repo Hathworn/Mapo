@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory access by coalescing global memory reads.
+// Evaluate if using texture memory for g_Data would improve cache usage.
+// Reduce shared memory bank conflicts by padding shared memory arrays if necessary.
+// Reuse shared memory for overlapping read and computation phases to optimize space.
+// Use warp-level intrinsics where applicable to further optimize reduction operations.
+// Avoid frequent use of __syncthreads() by reorganizing the computation where possible.
+```

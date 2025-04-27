@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to temporarily store filtered_box and box_for_nms values
+// Prefetch data to avoid cache misses and improve memory access patterns
+// Ensure coalesced memory access by ensuring threads read sequentially from global memory
+// Minimize use of global memory wherever possible to reduce latency
+```

@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced reads from global memory.
+// Consider utilizing vectorized memory access to increase load efficiency.
+// Use __syncthreads() only when necessary to minimize synchronization overhead.
+// Minimize usage of shared memory to prevent bank conflicts.
+// Prefer loop unrolling for the reduction loop to improve performance.
+// Ensure conditional statements are minimized within loops for better divergence handling.
+// Evaluate using warp shuffle operations for reduction of warp-level synchronization.
+```

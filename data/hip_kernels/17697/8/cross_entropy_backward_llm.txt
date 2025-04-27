@@ -1,0 +1,8 @@
+```
+// Use __restrict__ to help the compiler with memory access optimizations.
+// Consider coalesced memory access patterns for x, dx, and t arrays.
+// Ensure all memory accesses are coalesced to improve bandwidth.
+// Use shared memory to reduce redundant global memory accesses if necessary.
+// Ensure dx[tid], x[tid], and t[tid] are accessed in a cache-friendly manner.
+// Consider vectorized operations if architecture supports it.
+```

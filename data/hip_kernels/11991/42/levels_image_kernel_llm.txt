@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ to provide compiler hints for potential optimizations
+// Use cooperative matrix layout to optimize global memory accesses
+// Ensure 64-byte aligned memory access for efficient loading
+// Prefer using float4 over float3 for better memory alignment
+// Unroll loops where possible to reduce loop overhead
+// Optimize grid and block dimensions for better occupancy
+```

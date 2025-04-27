@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache input and kernel to reduce global memory accesses
+// Use coalesced global memory accesses for input and kernel to improve memory throughput
+// Consider loop unrolling in the convolution loops to reduce loop overhead and improve ILP
+// Ensure shared memory usage does not exceed hardware limits to avoid bank conflicts
+// Utilize __syncthreads() efficiently to ensure memory operations are synchronized across threads
+```

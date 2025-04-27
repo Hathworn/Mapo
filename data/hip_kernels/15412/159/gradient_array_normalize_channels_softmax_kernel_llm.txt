@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by keeping consecutive threads accessing consecutive memory locations
+// Utilize shared memory for frequently accessed data to minimize global memory access latency
+// Reduce divergent branches within the kernel by rearranging code logic where possible
+// Consider loop unrolling to improve performance by reducing loop overhead

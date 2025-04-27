@@ -1,0 +1,5 @@
+```
+// Optimize memory access by utilizing shared memory if mask or x data can be reused
+// Consider using __ldg() built-in function to optimize read-only data like mask
+// Ensure memory alignment to improve coalesced access for both x and mask arrays
+```

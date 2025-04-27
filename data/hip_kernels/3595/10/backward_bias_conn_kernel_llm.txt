@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to store delta values within a block to reduce global memory access
+// Implement loop unrolling for the batch loop to increase instruction throughput
+// Consider adjusting the block size to maximize occupancy and minimize warp divergence
+// Ensure proper memory alignment for bias_updates and delta to improve memory access speed
+// Evaluate using coalesced memory access to further optimize memory access patterns
+```

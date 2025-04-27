@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache g_Data2 data for better memory access patterns
+// Ensure g_Data2 access is coalesced by organizing data layout appropriately
+// Load data elements into registers once and reuse them to reduce global memory access
+// Perform bounds checking before accessing g_Data2 to avoid unnecessary computations
+// Avoid divergent branches by ensuring all threads in a warp have similar logical flow
+// Store results in d_Sift with aligned memory accesses to enhance coalescing
+```

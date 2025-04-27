@@ -1,0 +1,7 @@
+```
+// Consider increasing block size for better occupancy
+// Reuse data loaded in registers where possible to reduce global memory access
+// Align memory access patterns to leverage coalesced memory transactions
+// Use shared memory to reduce redundant global memory reads within the warp
+// Ensure data alignment for optimal memory throughput
+```

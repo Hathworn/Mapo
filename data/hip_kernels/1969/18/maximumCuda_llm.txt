@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory for frequently accessed data within a block.
+// Coalesce global memory access to reduce memory transaction overhead.
+// Use loop unrolling techniques, if applicable, inside the conditional statements.
+// Consider using texture memory for read-only data to benefit from cached access patterns.
+// Use asynchronous copy and operations where possible to overlap computation with data transfer.

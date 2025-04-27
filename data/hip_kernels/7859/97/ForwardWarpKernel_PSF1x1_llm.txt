@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache flow and src values to reduce global memory access latency.
+// Ensure coalesced memory access by having threads access continuous chunks of memory.
+// Consider loop unrolling for potential performance gain in critical loops.
+// Evaluate the effectiveness of different atomic operations to optimize performance.
+// Utilize vectorized data types for better throughput where applicable.
+// Optimize grid and block dimensions to maximize occupancy based on the target GPU architecture.
+// Profile and adjust memory access patterns to minimize bank conflicts.
+```

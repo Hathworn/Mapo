@@ -1,0 +1,10 @@
+```cpp
+// Consider coalescing global memory accesses to 'lifter_coeffs' and 'features'.
+// Use shared memory to reduce redundant loads of 'lifter_coeffs' within a block.
+// Ensure 'blockDim.x' is optimized for available GPU hardware (e.g., warp size).
+// Vectorize reads/writes to 'feats' when possible to improve memory bandwidth.
+// Confirm memory alignment for best performance, especially with 'features' array.
+// Evaluate the benefit of loop unrolling for the lifter coefficients application.
+// Optimize 'log_energy' access pattern to reduce global memory latency.
+// Minimize branch divergence in 'if' condition checks for thread consistency.
+```

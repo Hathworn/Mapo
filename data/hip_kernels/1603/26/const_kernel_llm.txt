@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data.  
+// Use coalesced memory access by ensuring thread indices access consecutive memory locations.  
+// Optimize INCX handling to avoid unnecessary multiplications in the thread loop.  
+// Check for warp divergence caused by the conditional statement and refactor if possible.

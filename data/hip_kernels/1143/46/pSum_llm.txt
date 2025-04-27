@@ -1,0 +1,5 @@
+// Use coalesced memory access patterns for loading in1[gid] into shared memory.
+// Minimize bank conflicts when accessing sdata2 within shared memory.
+// Consider padding shared memory to avoid bank conflicts during the reduction loop.
+// Ensure __syncthreads() is used only where absolutely necessary to avoid unnecessary synchronization overhead.
+// Consider unrolling the reduction loop to improve performance.

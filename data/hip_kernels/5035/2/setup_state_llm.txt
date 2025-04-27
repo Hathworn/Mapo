@@ -1,0 +1,8 @@
+```
+// Use __restrict__ keyword for pointers to improve memory access efficiency
+// Ensure seed is different for each launch to maintain randomness
+// Consider aligning state array to improve memory coalescing
+// Optimize block and grid size for better GPU utilization
+// Use __constant__ memory for frequently accessed constant data
+// Profile the kernel to identify and reduce bank conflicts
+```

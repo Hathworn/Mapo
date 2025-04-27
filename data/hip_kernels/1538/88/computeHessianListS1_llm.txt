@@ -1,0 +1,7 @@
+```
+// Use id and stride efficiently for loop iteration to maximize parallelism.
+// Improve loop by calculating transformed coordinates only once.
+// Use a more efficient condition check for tmp_ex validity.
+// Consider coalescing memory access for point_gradients and cov_dxd_pi arrays.
+// Optimize memory access by minimizing the number of reads, especially those dependent on valid_points_num.
+```

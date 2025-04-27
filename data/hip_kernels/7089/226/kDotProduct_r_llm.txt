@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory accesses by aligning data structures and accesses
+// Consider increasing shared memory usage to hide global memory latency
+// Optimize loop unrolling to enhance parallelism
+// Utilize warp shuffle functions for reduction to minimize shared memory use
+// Consider occupancy tuning by adjusting DP_BLOCKSIZE and grid configuration
+```

@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory to cache pointsCoordinates data to reduce global memory access
+// Use __restrict__ qualifiers for pointers to improve memory access optimization
+// Unroll loops if possible to increase instruction level parallelism
+// Consider aligning memory accesses to 128 bytes to improve coalescing
+// Minimize divergence by ensuring all threads in a warp follow the same execution path
+// Consider splitting the kernel if it leads to better load balancing across SMs
+// Optimize the use of registers by limiting the number of variables in the kernel
+// Use padding or alignment for better memory coalescing
+```

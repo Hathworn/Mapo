@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to stage data before writing to global memory
+// Ensure appropriate thread block size for maximizing occupancy
+// Use __restrict__ to advise the compiler of non-aliasing pointers
+// Prefetch data to registers to reduce memory access latency
+```

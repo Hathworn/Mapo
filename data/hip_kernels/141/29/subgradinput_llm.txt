@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access patterns to reduce misaligned reads.
+// Investigate the potential benefits of using shared memory for frequently accessed values.
+// Examine whether loop unrolling could optimize performance for inner loops.
+// Analyze the possibility of employing prefetching techniques for ptr_gradOutput and ptr_gradInput.
+// Explore using __restrict__ keyword for gradInput and gradOutput pointers to enhance optimization.
+// Optimize the computation of indices by minimizing arithmetic operations within the loops.
+```

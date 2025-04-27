@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for csum if the values can be reused across threads in the same block to reduce global memory accesses
+// Ensure coalesced memory access patterns for fsum and csum to improve memory bandwidth utilization
+// Use __restrict__ qualifier for pointers if there's no aliasing, which may enable further compiler optimizations
+```

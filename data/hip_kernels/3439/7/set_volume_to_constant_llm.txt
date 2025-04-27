@@ -1,0 +1,5 @@
+// Align data access to memory coalescing to improve performance
+// Use shared memory if multiple threads access the same data to reduce global memory access
+// Minimize divergence in control flow by ensuring all threads follow the same execution path
+// Consider using a constant cache for frequently accessed invariant data
+// Optimize block and grid size configuration for maximum occupancy and efficiency

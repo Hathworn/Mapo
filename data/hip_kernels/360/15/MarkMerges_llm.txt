@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache desiredMerges data to reduce global memory access
+// Consider coalescing global memory accesses to improve memory bandwidth utilization
+// Use __syncthreads() to ensure all threads have consistent view of shared data
+```

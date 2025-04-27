@@ -1,0 +1,7 @@
+```c
+// Align memory access if possible for coalesced reads/writes to accuracy
+// Ensure N is a multiple of the warp size for optimal performance
+// Utilize shared memory if multiple threads access overlapping data
+// Consider using __restrict__ keyword to suggest non-aliasing of pointers
+// Implement loop unrolling for potential performance gain
+```

@@ -1,0 +1,9 @@
+```
+// Consider loading data in coalesced access patterns for better memory usage.
+// Use shared memory efficiently by minimizing bank conflicts during reduction.
+// Unroll loops to increase throughput and reduce computation time.
+// Use __shared__ memory to reduce global memory access.
+// Ensure synchronization with __syncthreads to safely share data among threads.
+// Optimize memory coalescing by aligning accesses and reducing stride.
+// Use volatile qualifier wisely to prevent compiler optimizations which may affect shared memory results.
+```

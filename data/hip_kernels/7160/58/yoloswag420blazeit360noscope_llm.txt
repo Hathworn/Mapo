@@ -1,0 +1,7 @@
+```
+// Avoid divergent branching by minimizing warp divergence
+// Prefetch rand[id] and input[id] to reduce memory latency
+// Use shared memory if possible for rand[id] to speed up access
+// Consider loop unrolling if applicable to utilize GPU cores more efficiently
+// Align memory accesses to improve coalescing
+```

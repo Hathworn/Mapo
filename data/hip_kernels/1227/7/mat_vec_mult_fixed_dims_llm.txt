@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory padding to avoid bank conflicts.
+// Optimize memory access patterns for coalesced global memory loads.
+// Reduce syncthreads usage by unrolling the loop for parallel reduction.
+// Use warp-level primitives for reductions to minimize syncthreads overhead.
+```

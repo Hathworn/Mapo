@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access for psi_rg__ and density_rg__ to improve memory bandwidth utilization
+// Consider using shared memory if there are further calculations to reduce global memory accesses
+// Ensure that the size__ parameter is always a multiple of blockDim.x for optimal occupancy
+// Check if further reducing the floating-point precision (if possible) can provide performance gains
+```

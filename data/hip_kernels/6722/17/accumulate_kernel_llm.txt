@@ -1,0 +1,4 @@
+// Consider using shared memory for data that is accessed multiple times to reduce global memory access.
+// Ensure memory access coalescing by verifying that threads access contiguous memory locations.
+// Minimize the use of atomic operations; use reductions within blocks first if possible.
+// Profile the memory bandwidth and latency to determine impact and optimize accordingly.

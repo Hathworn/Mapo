@@ -1,0 +1,6 @@
+
+// Consider using shared memory to cache output values for f1 and f2 to reduce global memory accesses
+// Evaluate the benefit of loop unrolling within batch and size loops for performance improvement
+// Test pre-computing repetitive calculations like (b * size * n) before inner loops to save computation time
+// Assess the practicality of minimizing atomic operations through data reduction strategies
+// Explore using float4 or float2 vectorized data types for packed operations if hardware supports it

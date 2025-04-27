@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Use __ldg() for read-only data if possible to leverage texture cache benefits.
+// Coalesce global memory accesses by aligning j and i computations if possible.
+// Minimize divergent branches by reorganizing conditions or computations.
+// Ensure that atomic operations are used only when necessary as they can serialize writes.
+```

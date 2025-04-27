@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for gradOutput_data when there are data reuse patterns.
+// Minimize global memory accesses by caching frequently reused values in registers.
+// Align memory accesses to the warp size to reduce memory transaction overhead.
+// Ensure coalesced memory access patterns when reading from gradOutput_data.
+// Avoid bank conflicts when using shared memory for better performance.
+// Evaluate if loop unrolling can improve performance by reducing loop overhead.
+```

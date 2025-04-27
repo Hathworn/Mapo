@@ -1,0 +1,9 @@
+```cpp
+// Consider increasing block size for better occupancy and throughput
+// Prefetch data into shared memory to reduce global memory access latency
+// Use shared memory to minimize redundant global memory access for overlapping sub-regions
+// Ensure coalesced memory access in loading input data to shared memory
+// Avoid bank conflicts in shared memory access by properly aligning data
+// Consider double buffering shared memory for improved data overlap
+// Optimize synchronization to minimize warp divergence and improve performance
+```

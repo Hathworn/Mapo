@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses to improve memory bandwidth utilization.
+// Utilize shared memory to reduce global memory accesses, especially for 'p_dist' within each thread block.
+// Minimize divergent branches within warp for the selection sort process.
+// Ensure aligned memory access patterns to maximize throughput.
+// Evaluate the use of warp-level primitives to optimize reduction operations for finding minimum.

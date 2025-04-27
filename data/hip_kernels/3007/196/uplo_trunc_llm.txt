@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache elements of 'a' for coalesced reads and reduce global memory accesses.
+// Employ vectorized types like float2 or float4 for loading and storing data to enhance memory throughput.
+// Consider using a loop unrolling technique for any potential loops inside the kernel to increase instruction-level parallelism.
+// Opt for __syncthreads() only if necessary after loading data into shared memory to prevent unnecessary overhead.
+// Align memory accesses to facilitate coalesced memory accesses and optimize performance.
+```

@@ -1,0 +1,8 @@
+```
+// Align memory accesses where possible by ensuring data is contiguous
+// Use shared memory to cache rowptr and col if enough shared memory is available
+// Minimize the use of global memory where possible by storing intermediate values in registers
+// Consider loop unrolling if the number of iterations is known at compile time
+// Ensure memory coalescing for accesses to the col array
+// Merge conditional statements into a single check if applicable to reduce instruction counts
+```

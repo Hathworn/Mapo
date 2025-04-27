@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce redundant global memory access.
+// Use loop unrolling to increase instruction level parallelism.
+// Minimize use of slow operations like sqrt by precomputing if possible.
+// Try coalescing memory accesses to improve memory throughput.
+// Use warp-level primitives for reduction instead of sequential accumulation.
+// Ensure enough thread blocks for full GPU occupancy to hide memory latency.
+```

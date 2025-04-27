@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for better performance
+// Consider using __shared__ memory for frequently accessed data to reduce global memory traffic
+// Minimize divergence by ensuring threads within a warp have similar execution paths
+// Use warp shuffle or parallel reduction techniques to optimize intra-warp operations
+```

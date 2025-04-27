@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Consider using more threads to achieve better occupancy if necessary.
+// Ensure coalesced memory access for improved memory performance.
+// Consider loop unrolling if applicable for the kernel operations.
+// Evaluate if utilizing warp shuffling can help reduce synchronization.
+```

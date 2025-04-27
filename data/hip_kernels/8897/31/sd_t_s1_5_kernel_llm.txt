@@ -1,0 +1,8 @@
+```c
+// Optimize shared memory usage to avoid bank conflicts.
+// Consider using loop unrolling for nested loops to improve performance.
+// Minimize divergence by ensuring threads within a warp follow the same execution path.
+// Optimize data layout in memory to ensure coalesced access patterns.
+// Ensure efficient use of registers by reducing the number of live variables within the inner loops.
+// Consider using asynchronous data copy operations between global and shared memory, if applicable.
+```

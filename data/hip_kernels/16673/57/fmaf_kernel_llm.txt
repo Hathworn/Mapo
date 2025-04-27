@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to minimize global memory access if d_x and d_y are reused
+// Consider aligning shared memory size to warp size for coalesced access
+// Ensure that shared memory usage fits within limit per block
+```

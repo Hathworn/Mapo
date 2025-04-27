@@ -1,0 +1,8 @@
+```
+// Ensure shared memory usage is optimal for the number of threads per block
+// Reduce bank conflicts in shared memory by padding sharedSrc if needed
+// Consider coalesced global memory access during initial src loading to shared memory
+// Evaluate if loop unrolling would benefit the preload and copy process
+// Use constant memory for any read-only data that multiple blocks require
+// Employ occupancy calculator tool to tune block and grid sizes for performance
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store data for threads within the same block to increase memory access efficiency.
+// Ensure the grid and block dimensions optimally cover the desired computational domain to minimize unused threads.
+// Optimize the memory layout for consecutive threads to access contiguous memory locations and improve memory coalescing.
+// Use constant memory for data that doesn't change during kernel execution and is accessed repeatedly by threads.
+// Evaluate if loop unrolling could be applicable for operations within the kernel to reduce loop overhead.
+// Assess if any computations can be precomputed outside the kernel and passed as arguments to the kernel.
+```

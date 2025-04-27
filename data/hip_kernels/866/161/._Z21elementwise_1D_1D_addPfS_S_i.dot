@@ -1,0 +1,11 @@
+digraph "CFG for '_Z21elementwise_1D_1D_addPfS_S_i' function" {
+	label="CFG for '_Z21elementwise_1D_1D_addPfS_S_i' function";
+
+	Node0x606a4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add i32 %14, %15\l  %17 = udiv i32 %13, %10\l  %18 = mul i32 %17, %10\l  %19 = icmp ugt i32 %13, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %10\l  %23 = icmp slt i32 %16, %3\l  br i1 %23, label %24, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x606a4a0:s0 -> Node0x606caa0;
+	Node0x606a4a0:s1 -> Node0x606cb30;
+	Node0x606caa0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %33, %24 ], [ %16, %4 ]\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %0, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !16\l  %29 = getelementptr inbounds float, float addrspace(1)* %1, i64 %26\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !16\l  %31 = fadd contract float %28, %30\l  %32 = getelementptr inbounds float, float addrspace(1)* %2, i64 %26\l  store float %31, float addrspace(1)* %32, align 4, !tbaa !16\l  %33 = add nsw i32 %25, %22\l  %34 = icmp slt i32 %33, %3\l  br i1 %34, label %24, label %35, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x606caa0:s0 -> Node0x606caa0;
+	Node0x606caa0:s1 -> Node0x606cb30;
+	Node0x606cb30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%35:\l35:                                               \l  ret void\l}"];
+}

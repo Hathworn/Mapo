@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses for X and Y.
+// Perform loop unrolling if constants NX, NY, and B are known at compile time for potential performance improvement.
+// Use __restrict__ keyword for pointers to help the compiler optimize memory access.
+// Ensure proper memory alignment for variables and arrays accessed in global memory.
+// Evaluate the potential for using half precision if applicable to decrease memory bandwidth usage.
+```

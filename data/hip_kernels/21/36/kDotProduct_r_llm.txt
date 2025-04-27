@@ -1,0 +1,4 @@
+// Use loop unrolling to reduce loop overhead for better performance
+// Align shared memory accesses to avoid bank conflicts
+// Perform warp-level reduction without __syncthreads() to optimize synchronization
+// Utilize volatile keyword in warp reduction to ensure value visibility across threads

@@ -1,0 +1,6 @@
+```
+// Use __restrict__ to indicate that pointers do not alias for better compiler optimization.
+// Ensure coalesced memory accesses by aligning data properly in memory.
+// Consider using shared memory to reduce global memory access latency.
+// Ensure threads are fully occupied by adjusting block size.
+```

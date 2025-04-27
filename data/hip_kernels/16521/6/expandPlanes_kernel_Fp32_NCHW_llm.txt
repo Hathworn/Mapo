@@ -1,0 +1,8 @@
+```
+// Consider unrolling the loop for loading inputs into shared memory to reduce loop overhead.
+// Ensure coalesced global memory access by adjusting how masks and values are loaded.
+// Minimize thread divergence by ensuring conditional branches are as uniform as possible.
+// Preload shared memory and perform operations while minimizing bank conflicts.
+// Benchmark impact of increasing shared memory usage to reduce global memory access frequency.
+// Analyze occupancy for improving performance, potentially by tuning block size.
+```

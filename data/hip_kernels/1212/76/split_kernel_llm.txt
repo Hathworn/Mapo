@@ -1,0 +1,3 @@
+// Return early if the thread index exceeds the length to avoid unnecessary computations
+// Use a predicate check to minimize branching and improve memory coalescing
+// Ensure memory coalescing by accessing contiguous memory addresses in d_scanned and d_predicates

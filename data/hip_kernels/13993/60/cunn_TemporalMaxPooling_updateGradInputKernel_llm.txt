@@ -1,0 +1,7 @@
+```
+// Consider coalesced global memory access patterns for gradInput_data, gradOutput_data, and indices_data to improve memory efficiency.
+// Investigate possibilities for shared memory usage to minimize global memory latency during kernel execution.
+// Evaluate the necessity of atomic operations and check if redesigning data access can avoid atomics while maintaining correctness.
+// Examine potential benefits of adjusting block and grid dimensions for improved workload distribution and reduced warp divergence.
+// Profile the kernel performance to identify any unoptimized memory transaction bottlenecks.
+```

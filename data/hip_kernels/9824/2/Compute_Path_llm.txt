@@ -1,0 +1,9 @@
+```
+// Precompute index calculations to reduce repeated arithmetic operations
+// Combine multiple accesses to global memory into fewer variable loads
+// Ensure that memory accesses are coalesced where possible
+// Optimize loop bounds checks to avoid redundant checks within the loop
+// Fetch global memory values into registers early to allow reuse
+// Minimize divergent branches by checking less frequently
+// Consider using shared memory if applicable for repeated access to the same data
+```

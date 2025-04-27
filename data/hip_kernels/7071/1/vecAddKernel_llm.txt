@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for arrays A, B, and C
+// Ensure all threads in a warp access consecutive memory locations to improve performance
+// Align data structures on memory boundaries to optimize memory throughput
+// Utilize shared memory for frequently accessed data to decrease global memory traffic
+// Consider loop unrolling if applicable to reduce loop overhead and branch divergence
+// Optimize launch configuration (block size and grid size) to fully utilize GPU resources
+```

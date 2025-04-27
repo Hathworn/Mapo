@@ -1,0 +1,6 @@
+```
+// Use shared memory for outputActivations and outputActivationDerivatives to reduce global memory access.
+// Ensure coalesced access to global memory by organizing data in a structure of arrays.
+// Consider prefetching data from global to shared memory to hide memory latency.
+// Optimize grid and block dimensions to ensure maximum occupancy and minimize idle threads.
+```

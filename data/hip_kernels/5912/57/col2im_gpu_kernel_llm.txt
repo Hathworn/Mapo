@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses and improve performance.
+// Ensure shared memory size (col_cache) is sufficient and adjust accordingly.
+// Consider padding shared memory to avoid bank conflicts.
+// Optimize loop with unrolling where applicable for better performance.
+// Assess the possibility of coalescing global memory accesses, particularly in col_cache loading.

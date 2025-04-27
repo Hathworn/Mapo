@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Load data into shared memory to improve access efficiency.
+// Ensure synchronization using __syncthreads to avoid race conditions.
+// Perform calculations using data in shared memory to utilize caching and reduce redundant global memory access.

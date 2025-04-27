@@ -1,0 +1,6 @@
+// Use shared memory to optimize memory access patterns and reduce global memory access latency
+// Consider using atomic operations if needed to safely update shared memory variables
+// Use warp-level primitives to optimize reduction operations for mean and standard deviation calculations
+// Reduce the number of sqrt operations by computing sigma using squared deviations only once per column
+// Optimize memory access by coalescing memory reads and writes within the warp
+// Avoid branch divergence by ensuring conditional checks are minimized within the critical sections

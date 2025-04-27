@@ -1,0 +1,5 @@
+// Consider optimizing memory accesses by utilizing shared memory for frequently accessed data.
+// Ensure coalesced memory access patterns to improve data throughput.
+// Use __syncthreads() to synchronize threads when needed for shared memory usage.
+// Analyze warp divergence and minimize it by aligning control flow paths.
+// If possible, fuse multiple operations to reduce kernel launch overhead.

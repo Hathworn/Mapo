@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data for the current image to improve memory access performance.
+// Use all threads in the block by iterating over width in steps of blockDim.x to maximize data processing.
+// Store partial sum in shared memory to utilize faster memory access compared to global memory.
+// Ensure all threads have written their partial sums using __syncthreads to maintain data consistency.
+// Reduce partial sums within block using shared memory to minimize global memory transactions.
+// Update target value only when threadIdx.x is 0 to avoid race conditions and ensure correct results.
+```

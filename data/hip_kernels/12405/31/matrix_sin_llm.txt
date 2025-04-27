@@ -1,0 +1,4 @@
+// Use coalesced memory access patterns by ensuring C[index] and A[index] are accessed in sequence.
+// Employ shared memory to cache frequently accessed data and reduce global memory bandwidth usage.
+// Optimize block and grid dimensions to maximize parallelism and occupancy.
+// Ensure index calculations avoid redundant computations outside the if-check.

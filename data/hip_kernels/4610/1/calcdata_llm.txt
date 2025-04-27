@@ -1,0 +1,4 @@
+// Optimize memory access using shared memory.
+// Limit check to N to reduce unnecessary computations.
+// Utilize shared memory to store mean values for reduced global memory access latency.
+// Ensure synchronization among threads with __syncthreads() for shared memory consistency.

@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory if data reuse occurs within a block
+// Optimize grid and block dimensions according to the problem size and architecture
+// Minimize divergent code for better warp execution efficiency
+// Measure the performance and occupancy to identify further optimization points
+```

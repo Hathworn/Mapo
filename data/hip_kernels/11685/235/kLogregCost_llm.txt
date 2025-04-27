@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns for probs and labels arrays
+// Use __restrict__ qualifiers to help the compiler optimize memory loads
+// Align probs, labels, maxProbs, labelLogProbs, and correctProbs in memory
+// Ensure that the number of threads per block is a multiple of warp size
+```

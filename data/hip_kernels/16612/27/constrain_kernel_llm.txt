@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access pattern by using contiguous memory
+// Minimize divergence by avoiding conditional statements in loop
+// Optimize occupancy by choosing the right block size
+// Leverage shared memory if possible to reduce global memory access
+// Ensure that N is a multiple of blockDim.x for optimal performance
+```

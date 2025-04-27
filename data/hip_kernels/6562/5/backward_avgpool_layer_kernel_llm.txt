@@ -1,0 +1,8 @@
+```
+// Consider using vectorized loads/stores for in_delta for potential memory coalescing.
+// Ensure that in_delta and out_delta are aligned to enable coalesced memory access.
+// Use shared memory to cache out_delta data if bandwidth is a concern.
+// Prefetch out_delta[out_index] into a register to reduce global memory access.
+// Check if the loop can be unrolled to reduce instruction overhead.
+// Align access patterns to ensure global memory transactions are optimized.
+```

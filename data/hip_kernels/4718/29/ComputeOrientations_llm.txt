@@ -1,0 +1,7 @@
+```
+// Consider using float4 to load four float elements at once for coalesced memory access
+// Ensure Gaussian weights are precomputed outside of loops for better efficiency
+// Use __restrict__ qualifiers for pointers to potentially improve compiler optimizations
+// Consider using warp-level primitives instead of block-wide synchronization for reductions
+// Use shared memory efficiently by reducing loading redundancies in shared memory based on thread access patterns
+```

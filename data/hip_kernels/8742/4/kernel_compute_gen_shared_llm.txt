@@ -1,0 +1,8 @@
+```c
+// Use shared memory to minimize global memory accesses.
+// Optimize shared memory usage by minimizing the number of redundant loads.
+// Preload boundary data to reduce conditional checks within threads.
+// Ensure threadIdx.x-based conditions are minimized to improve warp execution efficiency.
+// Use __syncthreads() to synchronize threads after loading shared memory.
+// Prevent memory bank conflicts by carefully aligning shared memory accesses.
+```

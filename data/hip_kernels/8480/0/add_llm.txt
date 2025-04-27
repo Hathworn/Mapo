@@ -1,0 +1,4 @@
+// Consider using shared memory for efficient memory access
+// Ensure global memory access is coalesced
+// Align data inputs/outputs to improve access patterns
+// Minimize the use of __syncthreads() to reduce warp serializations

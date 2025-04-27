@@ -1,0 +1,5 @@
+// Consider coalesced access to global memory for input loading
+// Use shared memory efficiently by minimizing bank conflicts
+// Prefetch input data into shared memory to reduce global memory access latencies
+// Align shared memory accesses to reduce bank conflicts
+// Use loop unrolling if applicable to optimize the mean calculation loop

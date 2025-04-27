@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache tiles of matrices A and B.
+// This will reduce global memory accesses significantly.
+// Ensure that threads within a block collaboratively load data into shared memory.
+// Implement loop unrolling to increase instruction throughput.
+// Verify memory coalescing for optimal access patterns.
+// Optimize thread block size to fully utilize GPU resources.
+```

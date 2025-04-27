@@ -1,0 +1,7 @@
+```
+// Consider organizing shared memory access to ensure coalesced reads and writes
+// Optimize bank conflicts in shared memory by ensuring proper alignment
+// Check if reducing shared memory size could improve occupancy and performance
+// Ensure that __syncthreads() usage is necessary and does not incur unnecessary synchronization overhead
+// Evaluate if tiling techniques or further partitioning work could enhance performance
+```

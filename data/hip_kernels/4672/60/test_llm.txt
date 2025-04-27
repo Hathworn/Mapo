@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for frequently accessed data like smoothed[i] to reduce global memory access.
+// Use coalesced memory accesses by organizing data access patterns for nonSmoothed and smoothed arrays.
+// Ensure that the data type sizes used match the hardware's native word size for improved performance.
+// Evaluate the usage of const memory for nhalf if it remains constant throughout the kernel execution.
+```

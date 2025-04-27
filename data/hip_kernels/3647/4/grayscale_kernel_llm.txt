@@ -1,0 +1,9 @@
+```cpp
+// Consider aligning memory accesses for double-precision data (e.g., using double2)
+// Use __ldg() for potentially caching read-only data like z_min and z_max on newer architectures
+// Consider optimizing the stride based on hardware occupancy and warp size
+// Ensure shared memory does not exceed the per-block limit
+// Use more shared memory or registers to store frequently accessed values
+// Reduce branching by using arithmetic operations if possible
+// Make use of the fma() function to improve floating-point operations
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve memory coalescing
+// Ensure proper use of __syncthreads() to prevent race conditions during reduction
+// Align shared memory usage to allow for better bank conflict management
+// Consider using warp shuffle operations to further optimize intra-block communication
+// Assess block size configuration for optimal occupancy and resource utilization
+```

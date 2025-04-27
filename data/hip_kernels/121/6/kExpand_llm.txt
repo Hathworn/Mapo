@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for kernel sizes that result in excessive loads to reduce global memory accesses
+// Use warp divergence carefully to avoid excessive branching which can degrade performance
+// For better memory coalescence, ensure consecutive threads access consecutive memory locations
+// Potentially improve performance by unrolling loops to reduce loop overhead
+```

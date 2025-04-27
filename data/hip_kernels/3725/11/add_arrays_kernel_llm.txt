@@ -1,0 +1,3 @@
+// Ensure coalesced memory accesses for both arrays
+// Consider using shared memory for better cache utilization if `array_count` is small
+// Adjust block and grid size to maximize occupancy while avoiding register spilling

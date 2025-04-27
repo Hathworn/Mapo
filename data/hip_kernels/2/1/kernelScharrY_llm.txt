@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access for neighboring pixels
+// Minimize branch divergence by restructuring boundary checks
+// Utilize texture memory for read-only data to optimize access patterns
+// Ensure coalesced memory accesses when possible for in and out arrays
+// Consider loop unrolling for fixed-size iterations (e.g., for kernel computations)
+```

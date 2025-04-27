@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access by using contiguous memory regions
+// Use shared memory to minimize global memory accesses if necessary
+// Unrolling can reduce loop overhead, but ensure it matches the data alignment for optimization
+// Using registers to store intermediate results minimizes global memory access time
+// Adjust grid and block size to maximize memory throughput and occupancy
+```

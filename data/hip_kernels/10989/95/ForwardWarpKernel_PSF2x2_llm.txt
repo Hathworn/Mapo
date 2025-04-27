@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access patterns for better performance.
+// Avoid unnecessary arithmetic operations inside loops to reduce overhead.
+// Consider using shared memory for frequently accessed data to decrease global memory accesses.
+// Minimize divergence by ensuring threads process contiguous data where possible.
+// Use __ldg() for reading data that remains constant within each kernel invocation for potential caching benefits.
+```

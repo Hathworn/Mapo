@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to store partial sums for improved memory access speed
+// Apply loop unrolling to reduce loop overhead and enhance pipeline efficiency
+// Use __syncthreads to ensure all threads have completed updates to shared memory
+// Perform reduction within the block to accumulate values in shared memory
+```

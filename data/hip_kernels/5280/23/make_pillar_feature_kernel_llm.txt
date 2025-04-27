@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for frequently accessed data like dev_num_points_per_pillar for reduced global memory access.
+// Ensure coalesced access to dev_pillar_point_feature_in_coors for improved memory access efficiency.
+// Evaluate use of memory access pattern for dev_x_coors and dev_y_coors to optimize latency.
+```

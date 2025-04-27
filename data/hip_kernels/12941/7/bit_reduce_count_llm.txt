@@ -1,0 +1,8 @@
+```
+// Optimize memory access by coalescing the input_array reads
+// Use __syncthreads() only where absolutely necessary to decrease warp divergence
+// Implement block-level data reuse to reduce global memory access
+// Consider using warp-level primitives for prefix sum to increase parallelism
+// Minimize shared memory usage by using registers when possible
+// Evaluate the possibility of using atomic operations for countBuf accumulator
+```

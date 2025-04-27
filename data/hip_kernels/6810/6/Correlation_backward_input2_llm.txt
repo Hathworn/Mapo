@@ -1,0 +1,6 @@
+// Reuse common index calculations to reduce redundant operations
+// Use shared memory to accumulate results and minimize global memory writes
+// Prefetch data to shared memory to reduce global memory latency
+// Combine nested loops into a single loop to improve warp execution efficiency
+// Reduce number of global memory access by using shared memory for reduction
+// Avoid branching with max/min functions to help with warp execution efficiency

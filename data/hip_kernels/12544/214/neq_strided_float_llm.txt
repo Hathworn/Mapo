@@ -1,0 +1,4 @@
+// Consider using shared memory for `dx` and `dy` to reduce global memory access latency.
+// Ensure coalesced memory accesses by aligning data structures and accessing consecutive elements.
+// Explore loop unrolling further for better instruction-level parallelism.
+// Investigate if using warp-level primitives could enhance synchronization and reduce divergence.

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses where possible to improve memory throughput.
+// Consider using shared memory for frequently accessed data to reduce global memory latency.
+// Explore warp-level primitives to minimize the need for atomic operations across threads.
+// Align data structures to memory boundaries to optimize memory access.
+// Test different block and grid sizes to find the optimal configuration for specific hardware.
+```

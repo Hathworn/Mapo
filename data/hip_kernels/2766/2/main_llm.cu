@@ -1,0 +1,68 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <hip/hip_runtime.h>
+#include "cudaUpdateActivity_kernel_llm.cu"
+#include <chrono>
+#include <iostream>
+using namespace std;
+using namespace std::chrono;
+int main(int argc, char **argv) {
+hipSetDevice(0);
+
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    int *inputs = NULL;
+hipMalloc(&inputs, XSIZE*YSIZE);
+char *activity = NULL;
+hipMalloc(&activity, XSIZE*YSIZE);
+unsigned int *firingRate = NULL;
+hipMalloc(&firingRate, XSIZE*YSIZE);
+unsigned int *exampleFiringRate = NULL;
+hipMalloc(&exampleFiringRate, XSIZE*YSIZE);
+int *totalOutput = NULL;
+hipMalloc(&totalOutput, XSIZE*YSIZE);
+unsigned long long int *firstEventTime = NULL;
+hipMalloc(&firstEventTime, XSIZE*YSIZE);
+unsigned long long int *lastEventTime = NULL;
+hipMalloc(&lastEventTime, XSIZE*YSIZE);
+unsigned int inputsDimX = 1;
+unsigned int inputsDimY = 1;
+unsigned int inputsDimZ = 1;
+unsigned int long long timestamp = 1;
+int iXSIZE= XSIZE;
+int iYSIZE= YSIZE;
+while(iXSIZE%BLOCKX!=0) {
+iXSIZE++;
+}
+while(iYSIZE%BLOCKY!=0) {
+iYSIZE++;
+}
+dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
+dim3 threadBlock(BLOCKX, BLOCKY);
+hipFree(0);
+cudaUpdateActivity_kernel<<<gridBlock, threadBlock>>>(inputs,activity,firingRate,exampleFiringRate,totalOutput,firstEventTime,lastEventTime,inputsDimX,inputsDimY,inputsDimZ,timestamp);
+hipDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+cudaUpdateActivity_kernel<<<gridBlock, threadBlock>>>(inputs,activity,firingRate,exampleFiringRate,totalOutput,firstEventTime,lastEventTime,inputsDimX,inputsDimY,inputsDimZ,timestamp);
+}
+hipDeviceSynchronize();
+auto start = steady_clock::now();
+for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+cudaUpdateActivity_kernel<<<gridBlock, threadBlock>>>(inputs,activity,firingRate,exampleFiringRate,totalOutput,firstEventTime,lastEventTime,inputsDimX,inputsDimY,inputsDimZ,timestamp);
+}
+hipDeviceSynchronize();
+auto end = steady_clock::now();
+auto usecs = duration_cast<duration<float, microseconds::period>>(end - start);
+cout << '[' << usecs.count() << ',' << '(' << BLOCKX << ',' << BLOCKY << ')' << ',' << '(' << XSIZE << ',' << YSIZE << ')' << ']' << endl;
+}

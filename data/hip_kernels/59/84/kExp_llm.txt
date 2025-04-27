@@ -1,0 +1,8 @@
+```
+// Ensure the shared memory size accounts for the number of threads in the block
+// Prefetch data into shared memory in coalesced manner
+// Consider using vectorized loads and stores where possible
+// Minimize the use of __syncthreads() to optimize synchronization overhead
+// Use __expf for faster single-precision computation compared to exp
+// Optimize block and grid dimensions for maximum occupancy
+```

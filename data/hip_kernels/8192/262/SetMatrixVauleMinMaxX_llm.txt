@@ -1,0 +1,5 @@
+// Optimize memory access patterns for better coalescing
+// Avoid branching by using arithmetic logic for boundary checks
+// Consider using shared memory for frequently accessed data within a block
+// Minimize divergence by ensuring warp-wide uniform control flow
+// Use occupancy calculator to maximize resource utilization on target hardware

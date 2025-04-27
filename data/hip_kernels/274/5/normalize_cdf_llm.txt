@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache input data within the block for faster access
+// Ensure coalesced memory access by organizing input data in contiguous blocks
+// Consider using atomic operations if reduction across threads is needed
+// Review warp divergence and potential overuse of if conditions
+```

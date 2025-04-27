@@ -1,0 +1,6 @@
+```
+// Consider increasing the thread block size to better utilize GPU resources.
+// Use __ldg() to load global memory as read-only cache loading for x[idx] and y[idx].
+// Align shared memory allocations to a multiple of warp size for optimized memory access.
+// Unroll the loop to reduce loop control overhead and increase throughput.
+```

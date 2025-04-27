@@ -1,0 +1,6 @@
+```
+// Use __ldg() to access labels, probs, and maxProbs to leverage read-only cache
+// Consider aligning data for coalesced memory access
+// Employ shared memory for labelProbs and correctProbs if reuse is high
+// Use warp shuffle operations to reduce shared memory use for small reductions
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache data if there are repeated accesses to global memory
+// Consider coalesced memory access patterns to improve memory bandwidth utilization
+// Adjust grid and block dimensions for optimal occupancy and workload balance
+// Use __restrict__ keyword for pointers if no aliasing is guaranteed
+// Evaluate the use of warp-level primitives like __shfl_down for data sharing across threads in a warp
+```

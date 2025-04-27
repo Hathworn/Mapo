@@ -1,0 +1,10 @@
+```
+// Use improved block size calculations to optimize load balancing and reduce thread divergence.
+// Exit early when bounds are exceeded, reducing unnecessary computations.
+// Avoid processing already processed input values, reducing redundant calculations.
+// Precalculate constants to prevent recalculations in the kernel.
+// Employ shared memory to cache values, avoiding repeated global memory accesses.
+// Use loop unrolling to optimize memory accesses and calculations.
+// Implement conflict-free memory access patterns to shared memory.
+// Ensure early termination of loops for inputs with duplicate values.
+```

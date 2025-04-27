@@ -1,0 +1,6 @@
+```
+// Ensure that *accuracy is read from global memory before use
+// Consider using shared memory if multiple threads need to access the value of *accuracy
+// Use synchronization if moving to shared memory or if multiple threads write to *accuracy in the future
+// Verify if atomic operations are required if *accuracy is updated by multiple threads in other scenarios
+```

@@ -1,0 +1,33 @@
+digraph "CFG for '_Z6kerneliPbP12hiprandState' function" {
+	label="CFG for '_Z6kerneliPbP12hiprandState' function";
+
+	Node0x4dc5560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = load i8, i8 addrspace(1)* %1, align 1, !tbaa !4, !range !8\l  %6 = icmp ne i8 %5, 0\l  %7 = icmp slt i32 %4, 10000\l  %8 = select i1 %6, i1 %7, i1 false\l  br i1 %8, label %9, label %79\l|{<s0>T|<s1>F}}"];
+	Node0x4dc5560:s0 -> Node0x4dc5790;
+	Node0x4dc5560:s1 -> Node0x4dc6db0;
+	Node0x4dc5790 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%9:\l9:                                                \l  %10 = add nsw i32 %0, -1\l  %11 = sext i32 %10 to i64\l  %12 = sext i32 %0 to i64\l  %13 = icmp slt i32 %0, 2\l  %14 = add nsw i32 %0, -2\l  %15 = sitofp i32 %14 to float\l  br label %16\l}"];
+	Node0x4dc5790 -> Node0x4dc7280;
+	Node0x4dc7280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%16:\l16:                                               \l  %17 = phi i32 [ %4, %9 ], [ %75, %73 ]\l  %18 = srem i32 %17, 4096\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds %struct.hiprandState, %struct.hiprandState\l... addrspace(1)* %2, i64 %19, i32 0, i32 0, i32 0\l  %21 = load i32, i32 addrspace(1)* %20, align 8\l  %22 = getelementptr inbounds %struct.hiprandState, %struct.hiprandState\l... addrspace(1)* %2, i64 %19, i32 0, i32 0, i32 5, i64 0\l  %23 = load i32, i32 addrspace(1)* %22, align 8\l  %24 = getelementptr inbounds %struct.hiprandState, %struct.hiprandState\l... addrspace(1)* %2, i64 %19, i32 0, i32 0, i32 5, i64 1\l  %25 = load i32, i32 addrspace(1)* %24, align 4\l  %26 = getelementptr inbounds %struct.hiprandState, %struct.hiprandState\l... addrspace(1)* %2, i64 %19, i32 0, i32 0, i32 5, i64 2\l  %27 = load i32, i32 addrspace(1)* %26, align 8\l  %28 = getelementptr inbounds %struct.hiprandState, %struct.hiprandState\l... addrspace(1)* %2, i64 %19, i32 0, i32 0, i32 5, i64 3\l  %29 = load i32, i32 addrspace(1)* %28, align 4\l  %30 = getelementptr inbounds %struct.hiprandState, %struct.hiprandState\l... addrspace(1)* %2, i64 %19, i32 0, i32 0, i32 5, i64 4\l  %31 = load i32, i32 addrspace(1)* %30, align 8\l  %32 = lshr i32 %23, 2\l  %33 = xor i32 %32, %23\l  %34 = shl i32 %31, 4\l  %35 = shl i32 %33, 1\l  %36 = xor i32 %35, %34\l  %37 = xor i32 %36, %33\l  %38 = xor i32 %37, %31\l  %39 = add i32 %21, 362437\l  store i32 %39, i32 addrspace(1)* %20, align 8\l  store i32 %25, i32 addrspace(1)* %22, align 8\l  store i32 %27, i32 addrspace(1)* %24, align 4\l  store i32 %29, i32 addrspace(1)* %26, align 8\l  store i32 %31, i32 addrspace(1)* %28, align 4\l  store i32 %38, i32 addrspace(1)* %30, align 8\l  br i1 %13, label %65, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x4dc7280:s0 -> Node0x4dc8aa0;
+	Node0x4dc7280:s1 -> Node0x4dc8b30;
+	Node0x4dc8b30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%40:\l40:                                               \l  %41 = add i32 %38, %39\l  %42 = uitofp i32 %41 to float\l  %43 = fmul contract float %42, 0x3DF0000000000000\l  %44 = fadd contract float %43, 0x3DF0000000000000\l  %45 = fmul contract float %44, %15\l  %46 = fadd contract float %45, 1.000000e+00\l  %47 = fptosi float %46 to i32\l  %48 = sext i32 %47 to i64\l  %49 = srem i64 %48, %12\l  br label %50\l}"];
+	Node0x4dc8b30 -> Node0x4dc9b70;
+	Node0x4dc9b70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%50:\l50:                                               \l  %51 = phi i64 [ %62, %60 ], [ %49, %40 ]\l  %52 = phi i64 [ %61, %60 ], [ 1, %40 ]\l  %53 = phi i64 [ %63, %60 ], [ 1, %40 ]\l  %54 = srem i64 %51, %12\l  %55 = and i64 %53, %11\l  %56 = icmp eq i64 %55, 0\l  br i1 %56, label %60, label %57\l|{<s0>T|<s1>F}}"];
+	Node0x4dc9b70:s0 -> Node0x4dc9ca0;
+	Node0x4dc9b70:s1 -> Node0x4dca1d0;
+	Node0x4dca1d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#cc403a70",label="{%57:\l57:                                               \l  %58 = mul nsw i64 %54, %52\l  %59 = srem i64 %58, %12\l  br label %60\l}"];
+	Node0x4dca1d0 -> Node0x4dc9ca0;
+	Node0x4dc9ca0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%60:\l60:                                               \l  %61 = phi i64 [ %59, %57 ], [ %52, %50 ]\l  %62 = mul nsw i64 %54, %54\l  %63 = shl i64 %53, 1\l  %64 = icmp sgt i64 %63, %11\l  br i1 %64, label %65, label %50, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x4dc9ca0:s0 -> Node0x4dc8aa0;
+	Node0x4dc9ca0:s1 -> Node0x4dc9b70;
+	Node0x4dc8aa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%65:\l65:                                               \l  %66 = phi i64 [ 1, %16 ], [ %61, %60 ]\l  %67 = and i64 %66, 4294967295\l  %68 = icmp eq i64 %67, 1\l  br i1 %68, label %69, label %72\l|{<s0>T|<s1>F}}"];
+	Node0x4dc8aa0:s0 -> Node0x4dc9f00;
+	Node0x4dc8aa0:s1 -> Node0x4dc9de0;
+	Node0x4dc9f00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%69:\l69:                                               \l  %70 = add nsw i32 %17, 4096\l  %71 = load i8, i8 addrspace(1)* %1, align 1, !tbaa !4, !range !8\l  br label %73\l}"];
+	Node0x4dc9f00 -> Node0x4dc6d10;
+	Node0x4dc9de0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%72:\l72:                                               \l  store i8 0, i8 addrspace(1)* %1, align 1, !tbaa !4\l  br label %73\l}"];
+	Node0x4dc9de0 -> Node0x4dc6d10;
+	Node0x4dc6d10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%73:\l73:                                               \l  %74 = phi i8 [ %71, %69 ], [ 0, %72 ]\l  %75 = phi i32 [ %70, %69 ], [ %17, %72 ]\l  %76 = icmp ne i8 %74, 0\l  %77 = icmp slt i32 %75, 10000\l  %78 = select i1 %76, i1 %77, i1 false\l  br i1 %78, label %16, label %79, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4dc6d10:s0 -> Node0x4dc7280;
+	Node0x4dc6d10:s1 -> Node0x4dc6db0;
+	Node0x4dc6db0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%79:\l79:                                               \l  ret void\l}"];
+}

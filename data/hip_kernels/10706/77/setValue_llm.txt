@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to improve memory throughput
+// Place frequently accessed data in shared memory to reduce global memory access latency
+// Use __syncthreads() to synchronize threads if necessary
+// Ensure that idx lies within the valid range to prevent out-of-bound memory access
+// Unroll loops where applicable within the kernel to enhance performance
+```

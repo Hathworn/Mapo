@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses for both input and output arrays
+// Align input and output arrays to avoid unaligned accesses
+// Leverage shared memory to cache portions of the input image
+// Minimize bank conflicts when using shared memory
+// Preload input values into registers for frequently accessed data
+// Ensure the use of 32-bit variables for index calculations to exploit hardware capabilities
+// Unroll loops where applicable to reduce loop overhead and enhance pipeline utilization
+```

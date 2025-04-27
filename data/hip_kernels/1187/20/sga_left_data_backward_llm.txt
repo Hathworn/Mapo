@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access for top_diff and bottom_diff.
+// Use shared memory to store frequently accessed data like filters.
+// Reduce redundant calculations for indices like base and fbase.
+// Minimize divergent branches in warp execution by rearranging conditions.
+// Investigate potential loop unrolling to reduce loop overhead.
+// Ensure memory access patterns are optimized for the memory hierarchy.
+```

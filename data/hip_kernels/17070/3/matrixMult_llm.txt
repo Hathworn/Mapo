@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store sub-matrices of m and n to reduce global memory access latency.
+// Optimize the thread collaboration to maximize memory coalescing, improving global memory access patterns.
+// Use loop unrolling to reduce the loop overhead and improve execution speed.
+// Ensure that the matrix dimensions are multiples of the block size to avoid warp divergence.
+```

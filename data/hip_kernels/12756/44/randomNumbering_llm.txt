@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for degreeCount if accessed frequently across threads
+// Ensure memory coalescing by aligning access patterns for globalState
+// Prefetch globalState[i] into registers if reused multiple times
+// Consider using __ldg() for globalState if read-only to benefit from cache
+// Investigate warp-level primitives for potential reduction in divergence
+// Batch read-write operations to reduce global memory transactions
+```

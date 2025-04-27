@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for data and n_xy_coords to improve memory throughput.
+// Minimize bank conflicts in shared memory when accessing n_xy_coords.
+// Use shared memory to load blocks of data if there are reuse opportunities across threads.
+// Optimize index computations to reduce redundant arithmetic operations.
+// Ensure memory accesses are within bounds to prevent out-of-bounds errors.
+// Use __ldg() for read-only data to take advantage of cache for frequently accessed data.
+```

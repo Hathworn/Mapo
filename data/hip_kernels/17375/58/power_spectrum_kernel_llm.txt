@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing global memory in a contiguous manner
+// Use __restrict__ keyword for pointers if applicable to help compiler optimize for potential aliasing
+// Consider using shared memory for frequently accessed data to reduce global memory traffic
+// Optimize thread block size for maximum occupancy on the specific GPU architecture
+// Explore using float4 or other vectorized data types for better memory throughput if applicable
+```

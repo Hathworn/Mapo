@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to gradOutput array for improved performance
+// Optimize access pattern for gradInput to ensure memory coalescing
+// Reduce the number of atomicAdd operations where possible to increase efficiency
+// Align thread and block dimensions with memory hierarchy to fully utilize bandwidth
+// Minimize the use of global memory accesses by reusing data if possible
+// Look into reducing grid and block dimensions if the workload per block is small
+```

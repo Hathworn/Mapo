@@ -1,0 +1,4 @@
+// Utilize shared memory for A and d_x to reduce global memory access
+// Prefetch data for A and d_x to shared memory outside the loop
+// Reduce memory transaction size by using float4 for vectorized memory access
+// Ensure coalesced memory access for d_x and d_grad arrays

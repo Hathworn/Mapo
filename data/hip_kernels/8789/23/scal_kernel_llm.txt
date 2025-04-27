@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses to improve memory throughput.
+// Ensure ALPHA is loaded into a register to minimize repeated global memory accesses.
+// Use shared memory if multiple warps in a block access the same data.
+// Assess launch configuration to maximize occupancy and hide memory latency.
+```

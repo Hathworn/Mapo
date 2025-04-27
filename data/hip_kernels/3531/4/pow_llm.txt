@@ -1,0 +1,8 @@
+// Use coalesced memory access patterns for better performance
+// Ensure shared memory usage fits within hardware constraints
+// Avoid bank conflicts in shared memory access
+// Consider launching sufficient blocks to keep the GPU busy
+// Minimize latency by optimizing register and thread usage
+// Use single precision math functions specific to GPU
+// Evaluate the benefits of using constant memory for frequently accessed variables
+// Profile and benchmark to find optimal block and grid dimensions

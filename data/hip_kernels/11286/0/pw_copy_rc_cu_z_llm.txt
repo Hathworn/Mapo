@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency.
+// Ensure memory coalescing by aligning data accesses.
+// Use __restrict__ pointers to potentially improve compiler optimizations.
+// Evaluate if loop unrolling can improve performance for this copy operation.
+// Check if using half precision for 'zout' where imaginary parts are zero can save memory bandwidth.

@@ -1,0 +1,10 @@
+```
+// Consider using memory coalescing for improved memory access patterns.
+// Utilize shared memory to reduce global memory accesses.
+// Loop unrolling is applied to increase performance by reducing loop overhead.
+// Use warp-level primitives to minimize synchronization between threads.
+// Ensure alignment of data to improve memory transaction efficiency.
+// Use volatile keyword for shared memory variables to prevent optimization issues.
+// Optimize data transfer by utilizing pinned memory for host-device communications.
+// Consider increasing block size for better occupancy, if beneficial for workload.
+```

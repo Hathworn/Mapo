@@ -1,0 +1,8 @@
+```
+// Use shared memory for increased performance
+// Use conditional operator to reduce branch divergence
+// Minimize global memory accesses by using shared_db[]
+// Synchronize threads to ensure all threads have completed before proceeding
+// Iterate height reduces multiple accesses and operations
+// Store result in shared memory to limit global writes
+```

@@ -1,0 +1,7 @@
+```
+// Consider utilizing shared memory to load data, reducing redundant global memory accesses.
+// Ensure coalesced memory access patterns for both input and output arrays to maximize throughput.
+// If applicable, use float4 or larger data types for vectorized operations to optimize memory bandwidth usage.
+// Minimize divergent branching to maintain high warp efficiency.
+// Assess whether adjusting the block size could better utilize the GPU resources.
+```

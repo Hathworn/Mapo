@@ -1,0 +1,4 @@
+// Ensure data is coalesced for better memory throughput
+// Minimize shared memory usage, prioritize register use
+// Consider padding to avoid bank conflicts in shared memory
+// Evaluate using warp-shuffle operations for data exchange between threads

@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access by ensuring threads in a warp access consecutive memory locations
+// Use shared memory to reduce redundant global memory accesses within the block
+// Apply further loop unrolling if register usage and performance allow
+// Optimize thread divergence by ensuring uniform execution paths for all threads
+// Evaluate the benefit of using float2 data type to load two float values at once
+```

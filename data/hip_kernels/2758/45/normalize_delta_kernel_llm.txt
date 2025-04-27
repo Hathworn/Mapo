@@ -1,0 +1,3 @@
+// Use faster rsqrtf for reciprocal square root computation to improve performance.
+// Simplify 1D grid calculation to align threads better with data access patterns.
+// Consider coalescing global memory access by ensuring proper data alignment.

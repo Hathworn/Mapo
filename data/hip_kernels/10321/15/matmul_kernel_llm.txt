@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by aligning data access patterns
+// Use shared memory to reduce global memory bandwidth
+// Unroll loops to exploit instruction-level parallelism
+// Employ __syncthreads() to synchronize threads after each shared memory load
+// Adjust block_size_x and block_size_y for optimal occupancy and performance
+```

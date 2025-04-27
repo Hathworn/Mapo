@@ -1,0 +1,7 @@
+```
+// Consider using texture memory for imgIn for efficient read access
+// Replace powf with faster approximations if precision allows
+// Ensure blocks cover the entire image dimensions for full parallel execution
+// Avoid redundant calculations outside critical functions like powf
+// Use warp-level operations to optimize data movement between threads within the block
+```

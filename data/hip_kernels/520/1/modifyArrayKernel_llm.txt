@@ -1,0 +1,7 @@
+```
+// Use shared memory for better memory access patterns
+// Consider using texture memory if access to arr is spatially coherent
+// Coalesce memory access to improve bandwidth utilization
+// Reduce divergence by ensuring thread execution paths are similar
+// Use atomic operations cautiously to avoid performance bottlenecks
+```

@@ -1,0 +1,36 @@
+```c
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void reduceNeighbored(int *g_idata, int *g_odata, unsigned int n)
+{
+    // Set thread ID
+    unsigned int tid = threadIdx.x;
+    unsigned int idx = blockIdx.x * blockDim.x + threadIdx.x;
+
+    // Convert global data pointer to the local pointer of this block
+    int *idata = g_idata + blockIdx.x * blockDim.x;
+
+    // Boundary check
+    if (idx >= n) return;
+
+    // Use shared memory for in-place reduction to minimize global memory access
+    extern __shared__ int s_idata[];
+    s_idata[tid] = idata[tid];
+    __syncthreads();
+
+    // In-place reduction in shared memory
+    for (int stride = 1; stride < blockDim.x; stride *= 2)
+    {
+        if ((tid % (2 * stride)) == 0)
+        {
+            s_idata[tid] += s_idata[tid + stride];
+        }
+
+        // Synchronize within threadblock
+        __syncthreads();
+    }
+
+    // Write result for this block to global mem
+    if (tid == 0) g_odata[blockIdx.x] = s_idata[0];
+}

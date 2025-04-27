@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to accumulate histogram counts before writing to global memory
+// Employ coalesced memory access for d_in and d_bins arrays
+// Consider loop unrolling for the histogram accumulation when possible
+// Try using warp shuffle to reduce atomic operations in shared memory
+```

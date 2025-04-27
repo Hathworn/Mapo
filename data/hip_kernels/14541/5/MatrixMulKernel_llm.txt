@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure coalesced global memory access for Md and Nd while loading to shared memory.
+// Consider logical usage of __syncthreads to optimize synchronization frequency.

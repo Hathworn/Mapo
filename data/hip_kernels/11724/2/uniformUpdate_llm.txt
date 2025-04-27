@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access while reading from d_Buffer to improve memory efficiency.
+// Use shared memory to store d_Buffer values for reducing global memory accesses.
+// Optimize __syncthreads() placement to minimize thread divergence and overhead.
+// Prefetch d_Buffer values to shared memory for all threads in advance to improve data locality.
+// Consider aligning d_Data access to reduce memory transaction overhead if possible.
+// Explore double-buffering or pipelining techniques for overlapping memory operations and calculations.
+```

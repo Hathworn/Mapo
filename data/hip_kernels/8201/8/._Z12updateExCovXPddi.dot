@@ -1,0 +1,11 @@
+digraph "CFG for '_Z12updateExCovXPddi' function" {
+	label="CFG for '_Z12updateExCovXPddi' function";
+
+	Node0x5762360 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !7\l  %14 = mul i32 %5, %10\l  %15 = add i32 %14, %4\l  %16 = udiv i32 %13, %10\l  %17 = mul i32 %16, %10\l  %18 = icmp ugt i32 %13, %17\l  %19 = zext i1 %18 to i32\l  %20 = add i32 %16, %19\l  %21 = mul i32 %20, %10\l  %22 = icmp slt i32 %15, %2\l  br i1 %22, label %24, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x5762360:s0 -> Node0x57630c0;
+	Node0x5762360:s1 -> Node0x5764970;
+	Node0x5764970 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%23:\l23:                                               \l  ret void\l}"];
+	Node0x57630c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %30, %24 ], [ %15, %3 ]\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds double, double addrspace(1)* %0, i64 %26\l  %28 = load double, double addrspace(1)* %27, align 8, !tbaa !16\l  %29 = fmul contract double %28, %1\l  store double %29, double addrspace(1)* %27, align 8, !tbaa !16\l  %30 = add nsw i32 %25, %21\l  %31 = icmp slt i32 %30, %2\l  br i1 %31, label %24, label %23, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x57630c0:s0 -> Node0x57630c0;
+	Node0x57630c0:s1 -> Node0x5764970;
+}

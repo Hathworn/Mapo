@@ -1,0 +1,7 @@
+```
+// Use shared memory to temporarily store data and reduce global memory access.
+// Consider coalescing global memory accesses for gradOutput_data and gradInput_data.
+// Minimize divergence within warp by aligning the loop and addressing structures.
+// Prefetch data to shared memory in a coalesced manner to improve memory access patterns.
+// Align kernel execution configuration with data layout for optimal memory throughput.
+```

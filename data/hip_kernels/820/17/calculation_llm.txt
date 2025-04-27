@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to global memory for improved throughput
+// Utilize shared memory effectively to minimize global memory bandwidth usage
+// Ensure shared memory utilization matches the available capacity of each block
+// Optimize the use of __syncthreads() to prevent unnecessary synchronization overhead
+// Avoid control flow divergence within each warp for improved performance
+```

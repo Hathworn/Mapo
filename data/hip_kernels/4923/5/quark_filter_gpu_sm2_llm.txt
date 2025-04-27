@@ -1,0 +1,5 @@
+```
+// Use shared memory to store hash values temporarily before writing to global memory
+// Consider coalescing global memory accesses for d_branch2 and d_NonceBranch
+// Evaluate usage of `__syncthreads()` if there is shared data dependency
+```

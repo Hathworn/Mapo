@@ -1,0 +1,10 @@
+```c
+// Consider coalesced memory access by aligning data accesses to warp boundaries.
+// Utilize shared memory efficiently to minimize global memory reads/writes.
+// Reduce the number of synchronizations; ensure __syncthreads() is necessary.
+// Consider loop unrolling for improved performance in up_sweep_512 and down_sweep_512.
+// Evaluate using bank conflict-free memory access patterns in shared memory.
+// Balance computation and memory access within block to enhance efficiency.
+// Optimize global memory access patterns by accessing data in strided manner.
+// Align memory allocations to power of 2 to improve memory access speed.
+```

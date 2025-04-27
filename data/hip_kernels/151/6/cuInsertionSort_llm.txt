@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to minimize global memory accesses.
+// Pre-load the first k elements into shared memory for faster access.
+// Use coalesced memory access patterns by ensuring memory access within a warp is contiguous.
+// Ensure bank conflicts are avoided when using shared memory.
+// Reduce branching within the binary search section by utilizing warp-synchronous programming if possible.
+// Use registers to store variables like max_dist for each thread to reduce repeated global memory access.
+```

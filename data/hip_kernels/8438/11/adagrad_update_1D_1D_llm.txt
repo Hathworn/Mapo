@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access and improve performance.
+// Ensure shared memory usage does not exceed the limit based on block size.
+// Ensure proper synchronization with __syncthreads to avoid race conditions.
+// Consider optimizing stride calculations for better memory access patterns.

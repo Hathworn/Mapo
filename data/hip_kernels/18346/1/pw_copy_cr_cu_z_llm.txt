@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access by ensuring contiguous threads access contiguous memory
+// Avoid unnecessary operations inside the loop to ensure better performance
+// Consider using shared memory if access patterns are repetitive and data can be reused
+// If possible, eliminate any divergence in control flow to ensure warp efficiency
+```

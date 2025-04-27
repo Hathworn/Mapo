@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to improve memory bandwidth utilization.
+// Use __shfl_sync to reduce exchange overhead instead of shared memory where possible.
+// Avoid divergent threads by ensuring all threads participate in warp-level operations.
+// Use parallel reductions for sum computations to minimize time complexity.
+// Minimize use of global memory by preferring shared memory for temporary storage and reduction.
+```

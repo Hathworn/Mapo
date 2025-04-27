@@ -1,0 +1,7 @@
+// Optimize memory access patterns to ensure coalesced reads and writes in softmax_device
+// Consider using shared memory to store input data and reduce redundant global memory accesses
+// Optimize the loop to find the largest element by unrolling for better performance
+// Minimize global memory writes by writing normalized output in a single pass
+// Explore using __ldg intrinsic for read-only data like input elements to leverage read-only cache
+// Adjust the block and grid dimensions to ensure full GPU occupancy in softmax_tree_kernel
+// Optimize spatial, batch, and group index calculations to minimize redundant computations in softmax_tree_kernel

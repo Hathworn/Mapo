@@ -1,0 +1,6 @@
+// Consider using shared memory for mean and variance to reduce global memory access
+// Re-check block size and grid size for optimal occupancy and minimizing latency
+// Evaluate the loop unrolling techniques to enhance instruction-level parallelism
+// Ensure memory access patterns are coalesced for better performance
+// Experiment with different memory banks to reduce possible conflicts
+// Consider data prefetching strategies to hide memory latency

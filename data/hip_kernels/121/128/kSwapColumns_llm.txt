@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache source and target data to reduce global memory accesses
+// Consider coalesced memory access patterns for source and target arrays
+// Minimize the use of __float2int_rd by precalculating indices outside the loop if possible
+// Ensure memory load/store operations are within coalesced bounds for better performance
+// Optimize the loop to avoid redundant calculations of column and row indices
+```

@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for reading `probs`, `labels`, and `maxProbs` to improve memory access efficiency
+// Consider minimizing divergent branches within warps for better performance
+// Optimize the warp reduction process by using warp intrinsics like __shfl_down_sync
+// Utilize shared memory efficiently to reduce global memory accesses
+// Consider using an optimized parallel reduction pattern for calculating `numMax`
+// Ensure proper use of `__syncthreads()` to avoid race conditions
+```

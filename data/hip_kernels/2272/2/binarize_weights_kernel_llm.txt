@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for weights and binary arrays to improve memory bandwidth utilization.
+// Utilize asynchronous memory copies where possible to hide data transfer latency.
+// Optimize shared memory usage by ensuring no bank conflicts for shared_mean.
+// Try employing warp-level primitives for reduction instead of shared memory to optimize parallelism.
+// Evaluate the effect of different block and grid sizes to maximize occupancy and minimize warp divergence.
+```

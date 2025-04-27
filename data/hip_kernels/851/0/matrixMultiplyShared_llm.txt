@@ -1,0 +1,8 @@
+```
+// Consider increasing tile size for higher data re-use in shared memory
+// Align memory accesses to ensure coalesced memory access
+// Minimize shared memory bank conflicts by ensuring memory accesses are well-aligned
+// Use __syncthreads() efficiently to reduce synchronization overhead
+// Use unrolling to improve instruction-level parallelism
+// Optimize loop bounds and conditions for reducing overhead
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Load part of repeated data into shared memory to leverage faster access.
+// Use atomic operations to prevent race conditions during updates.
+// Ensure synchronization after shared memory operations with __syncthreads().
+```

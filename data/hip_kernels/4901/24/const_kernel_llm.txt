@@ -1,0 +1,4 @@
+// Consider using shared memory for frequent data reuse to reduce global memory access.
+// Ensure coalesced memory access patterns for X[i * INCX] for optimal throughput.
+// Investigate warp-level primitives for additional performance optimizations.
+// Evaluate the benefits of using asynchronous data copy if applicable.

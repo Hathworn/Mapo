@@ -1,0 +1,7 @@
+```
+// Consider using `atomicAdd` to avoid race conditions when updating `mean_delta`.
+// Optimize shared memory usage by reducing unnecessary storage or increasing shared memory per block.
+// Try to reduce memory divergence by ensuring access patterns are aligned for contiguous memory access.
+// Consider loop unrolling for the `for` loop iterating over `batch` to reduce loop overhead and enhance instruction level parallelism.
+// Evaluate thread/block configurations to ensure optimal occupancy based on available registers and memory.
+```

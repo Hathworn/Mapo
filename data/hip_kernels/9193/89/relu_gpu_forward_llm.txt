@@ -1,0 +1,6 @@
+```
+// Utilize coalesced memory access by ensuring consecutive threads access consecutive memory positions
+// Consider employing shared memory to cache input data to reduce global memory access latency
+// Ensure enough threads per block to hide latency and maximize occupancy
+// Use vectorized operations if aligned memory accesses are guaranteed for further optimization
+```

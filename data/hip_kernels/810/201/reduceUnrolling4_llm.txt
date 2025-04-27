@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory access by aligning data fetch with warp.
+// Minimize memory latency by fetching continuous data for unrolled loops.
+// Use shared memory to reduce global memory accesses within the block.
+// Perform in-place reduction using shared memory for efficient data reuse.
+// Avoid bank conflicts in shared memory by ensuring memory accesses are well-aligned.
+// Make sure to synchronize threads within the block to ensure correctness.
+```

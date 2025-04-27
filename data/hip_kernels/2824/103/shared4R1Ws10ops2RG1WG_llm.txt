@@ -1,0 +1,9 @@
+```c
+// Consider prefetching data to shared memory for coalesced access.
+// Optimize memory access pattern to minimize bank conflicts.
+// Use vectorized memory loads if possible to improve throughput.
+// Reuse shared memory data across multiple operations if applicable.
+// Investigate possible loop unrolling for threads working in a loop.
+// Ensure memory accesses are aligned for better performance.
+// Assess if additional shared memory is beneficial for larger data sharing.
+```

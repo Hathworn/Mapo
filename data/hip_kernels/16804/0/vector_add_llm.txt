@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning data structures with warp size
+// Consider using shared memory for frequently accessed data within the warp
+// Optimize block and grid dimensions to fully utilize GPU resources
+// Employ loop unrolling to reduce overhead and improve performance
+// Minimize divergence by ensuring uniform execution paths per thread block

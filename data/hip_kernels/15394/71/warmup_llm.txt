@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for data that is reused by multiple threads
+// Ensure memory accesses are coalesced when possible
+// Optimize block and grid dimensions based on hardware and problem size
+// Use __syncthreads() to synchronize threads when necessary
+```

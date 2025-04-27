@@ -1,0 +1,7 @@
+```
+// Optimize accessing memory by minimizing thread divergence and improving coalesced memory access
+// Ensure m1 and m2 are stored in contiguous memory for best performance
+// Consider using shared memory if matrices are accessed multiple times within the kernel
+// If applicable, adjust grid and block size to match the hardware for maximum occupancy
+// Ensure output data is accessed in a coalesced manner
+```

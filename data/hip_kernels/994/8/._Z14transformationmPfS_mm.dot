@@ -1,0 +1,10 @@
+digraph "CFG for '_Z14transformationmPfS_mm' function" {
+	label="CFG for '_Z14transformationmPfS_mm' function";
+
+	Node0x559b180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = freeze i32 %14\l  %16 = zext i32 %15 to i64\l  %17 = icmp ult i64 %16, %0\l  br i1 %17, label %18, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x559b180:s0 -> Node0x559d1a0;
+	Node0x559b180:s1 -> Node0x559d230;
+	Node0x559d1a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%18:\l18:                                               \l  %19 = urem i64 %16, %3\l  %20 = sub nuw nsw i64 %16, %19\l  %21 = and i64 %19, 7\l  %22 = mul i64 %21, %4\l  %23 = lshr i64 %19, 3\l  %24 = add nuw nsw i64 %20, %23\l  %25 = add i64 %24, %22\l  %26 = getelementptr inbounds float, float addrspace(1)* %1, i64 %16\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %28 = getelementptr inbounds float, float addrspace(1)* %2, i64 %25\l  store float %27, float addrspace(1)* %28, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x559d1a0 -> Node0x559d230;
+	Node0x559d230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,9 @@
+```cpp
+// Leverage memory coalescing by ensuring consecutive threads access consecutive memory addresses
+// Use shared memory to reduce global memory accesses during reduction
+// Consider using half-warp striding to improve memory bandwidth utilization
+// Ensure synchronization after memory updates to avoid race conditions
+// Minimize bank conflicts in shared memory by proper data placement
+// Reduce the amount of global memory updates by using atomic operations if applicable
+// Use loop unrolling pragmas to improve loop performance through compiler optimization
+```

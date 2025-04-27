@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses to improve throughput.
+// Minimize memory divergence by ensuring threads access contiguous memory addresses.
+// Use shared memory to reduce global memory access frequency.
+// Ensure __syncthreads() is not in a divergent code path.
+```

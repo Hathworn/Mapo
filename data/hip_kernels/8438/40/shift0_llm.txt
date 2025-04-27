@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for better cache utilization if input data is frequently reused.
+// Ensure coalesced global memory access for optimal memory bandwidth usage.
+// Minimize global memory access by maximizing data reuse within a thread block.
+// Verify out-of-bound checks to prevent unnecessary calculations and potential memory issues.
+// Optimize thread block and grid sizes based on the specific hardware architecture for best performance.
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access.
+// Synchronize threads after loading data to ensure all threads have the required data.
+// Consider optimizing the block size for better performance based on hardware capability.
+// Minimize global memory writes by performing more operations in registers or shared memory.

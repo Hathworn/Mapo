@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access.
+// Unroll loops to increase warp efficiency.
+// Precompute indices to reduce redundant calculations.
+// Optimize memory access patterns for coalesced reads.
+// Ensure proper usage of __syncthreads() for synchronization.
+// Consider using half-warp calculations to enhance performance.
+// Potentially adjust _UNROLL_ factor based on hardware architecture.
+```

@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to store R and I for faster access within a block
+// Pre-compute and store trigonometric values in shared memory for reuse
+// Minimize divergent branching by restructuring loop divisions
+// Align memory accesses to coalesced patterns for R and I arrays
+// Use loop unrolling for the computation loop to increase arithmetic throughput
+```

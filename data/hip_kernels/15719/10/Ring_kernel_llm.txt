@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access for often-used data
+// Optimize memory coalescing by arranging data access patterns to be more sequential
+// Minimize repeated calculations by computing invariants outside of loops
+// Align data in memory to ensure optimal access patterns, reducing bank conflicts
+// Use warp-shuffle instructions to reduce redundant loading of BP values
+```

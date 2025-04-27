@@ -1,0 +1,5 @@
+// Consider coalesced memory access for global reads and writes to X.
+// Use occupancy analysis to determine optimal block size for better performance.
+// Minimize use of __syncthreads() by restructuring computation.
+// Evaluate if loop unrolling in the height loop can improve performance.
+// Ensure shared memory usage is within the limits to avoid bank conflicts.

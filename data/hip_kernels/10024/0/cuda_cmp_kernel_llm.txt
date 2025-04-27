@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access for aptr and bptr
+// Use shared memory to reduce global memory traffic if beneficial
+// Consider loop unrolling if n is significantly larger than blockDim.x
+// Minimize thread divergence by reordering conditions
+```

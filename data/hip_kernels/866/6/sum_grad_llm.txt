@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses where possible
+// Ensure data is loaded in a coalesced manner to improve memory throughput
+// Minimize use of atomic operations to prevent serialization
+// Consider using a hierarchical parallel reduction for the sum to enhance efficiency
+// The use of loop unrolling should be considered for all inner loops to decrease control overhead
+```

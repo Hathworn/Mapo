@@ -1,0 +1,4 @@
+// Cache src values in registers to reduce global memory accesses
+// Use shared memory for intermediate results if necessary for further reduction of memory latency
+// Consider coalescing memory accesses to improve memory throughput
+// Ensure enough parallel work to hide memory latency by using a sufficient number of threads per block

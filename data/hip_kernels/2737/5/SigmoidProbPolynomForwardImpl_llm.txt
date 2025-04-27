@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by reorganizing data layout of 'probs' and 'values' for better access patterns.
+// Use shared memory to cache frequently accessed data like 'probs' and 'values' to reduce global memory accesses.
+// Prefetch data into registers for 'polynomProb' and 'valueOut' to minimize latency with __ldg().
+// Optimize the grid and block dimensions to balance workload and avoid thread divergence in loops.
+// Consider loop unrolling further for small 'polynomCount' to improve instruction throughput.
+// Use __restrict__ pointers for 'probs', 'values', and 'out' to enable compiler optimizations.
+```

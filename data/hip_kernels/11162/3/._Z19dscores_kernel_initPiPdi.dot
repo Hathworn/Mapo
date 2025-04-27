@@ -1,0 +1,5 @@
+digraph "CFG for '_Z19dscores_kernel_initPiPdi' function" {
+	label="CFG for '_Z19dscores_kernel_initPiPdi' function";
+
+	Node0x5e8dd40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = mul nsw i32 %4, %2\l  %6 = sext i32 %4 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %9 = add nsw i32 %8, %5\l  %10 = sext i32 %9 to i64\l  %11 = getelementptr inbounds double, double addrspace(1)* %1, i64 %10\l  %12 = load double, double addrspace(1)* %11, align 8, !tbaa !9,\l... !amdgpu.noclobber !8\l  %13 = fadd contract double %12, -1.000000e+00\l  store double %13, double addrspace(1)* %11, align 8, !tbaa !9\l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+```
+// Consider increasing the size of data processed per thread to reduce global memory accesses
+// Ensure memory coalescing by having consecutive threads access consecutive memory locations
+// Use shared memory effectively to minimize global memory accesses and thus improve performance
+// Use volatile keyword for accessing shared memory during warp unrolling to hint compiler for faster access
+```

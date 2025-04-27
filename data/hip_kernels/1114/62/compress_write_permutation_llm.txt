@@ -1,0 +1,5 @@
+```
+// Cache d_gcs[chunk_id] to reduce global memory accesses
+// Use cached value 'offset' to avoid repeated global memory loads
+// Minimize arithmetic calculations in the write operation
+```

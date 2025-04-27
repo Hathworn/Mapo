@@ -1,0 +1,6 @@
+// Use shared memory for temporary results to reduce global memory access.
+// Calculate global index once to minimize redundant calculations.
+// Ensure dim_idx is within bounds to prevent out-of-bounds memory access.
+// Correct precision errors to avoid inaccuracies in angle calculations.
+// Use atomic operations to safely update shared memory in a parallel environment.
+// Synchronize threads to ensure all computations on shared memory are complete before accessing global memory.

@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for better throughput, if possible.
+// Review any potential for shared memory usage to minimize global memory access latency.
+// Assess whether loop unrolling could yield performance benefits for small computations within the kernel.
+// Ensure alignment of data to optimize memory transactions and avoid potential bank conflicts.

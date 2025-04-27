@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for reading buffer to improve memory bandwidth utilization.
+// Ensure memory alignment for buffer to leverage vectorized loads if possible.
+// Apply loop unrolling for the gid loop to reduce loop overhead.
+// Minimize register usage by considering compiler flags or pragmas.
+// Use shared memory for buffer if possible to reduce global memory access latency.
+// Consider using asynchronous memory transfers to overlap computation with data movement.
+```

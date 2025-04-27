@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses when reading probs and maxProbs.
+// Use shared memory if possible to store probs to reduce global memory accesses.
+// Check if loop unrolling can improve performance in the inner loop over numOut.
+// Ensure all memory writes are coalesced to optimize memory bandwidth.
+// Use atomic operations if multiple threads write to the same memory location.
+```

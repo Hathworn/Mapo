@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to cache poly coefficients and reduce global memory access
+// Consider using warp shuffle to reduce use of shared memory for poly coefficients
+// Minimize access to array[index] by storing it in a register variable if possible
+// Use loop unrolling technique to optimize polynomial computation
+```

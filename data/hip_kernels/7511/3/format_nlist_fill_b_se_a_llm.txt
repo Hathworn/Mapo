@@ -1,0 +1,6 @@
+```
+// Use shared memory to store jrange and jlist to reduce global memory accesses
+// Coalesce global memory accesses to nlist, nei_iter_dev, and key for better performance
+// Consider using warp-level primitives for synchronization when updating row_nlist
+// Optimize access patterns to sec_a to increase memory throughput
+```

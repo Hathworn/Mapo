@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access
+// Ensure coalesced memory access for pos_buff and count_buff
+// Minimize divergent branches by ensuring idx < entry_count is the first condition checked
+// Optimize for occupancy by tuning blockDim.x and gridDim.x
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache data for x1, x2, and diagptable to reduce global memory access latency.
+// Increase memory coalescing by ensuring that consecutive threads access consecutive memory locations in global memory.
+// Consider using float instead of double if precision allows, to take advantage of faster computation.
+// Implement loop unrolling techniques for mathematical operations to minimize overhead.
+// Explore using asynchronous memory prefetching to overlap memory transfer and computation.
+```

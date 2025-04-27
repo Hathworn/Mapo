@@ -1,0 +1,6 @@
+```
+// Cache biases in shared memory for faster access
+// Adjust shared memory size to fit the maximum number of filters
+// Use __syncthreads() to ensure all threads have the updated shared_biases
+// Ensure valid offset before performing calculation to avoid memory access errors
+```

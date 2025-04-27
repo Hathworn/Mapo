@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access for `x` and `result` by ensuring data is contiguous.
+// Minimize the use of global memory and prefer shared memory if applicable.
+// Consider preloading `x` values into shared memory to reduce global memory access.
+// Evaluate the occupancy and ensure block size is optimized for the GPU architecture.
+// Use the `__restrict__` keyword to indicate non-overlapping data for potential compiler optimizations.
+// Check alignment of `result` and `x` for potential vectorization of loads/stores.
+// Balance the workload by ensuring an optimal number of threads per block is configured.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache weights if heavily used
+// Ensure coalesced memory access by structuring gradInput access
+// Minimize divergent branches within loops for better warp efficiency
+// Test varying block sizes to find optimal occupancy and performance
+// Utilize __restrict__ keyword to help compiler optimize memory access
+```

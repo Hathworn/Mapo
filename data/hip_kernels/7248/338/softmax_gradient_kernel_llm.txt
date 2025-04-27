@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for pointers to improve memory access optimization
+// Ensure coalesced global memory accesses by checking alignment of Y, dY, and dX
+// Use shared memory efficiently by limiting the size of reduction_buffer
+// Consider avoiding unnecessary synchronizations if possible
+// Balance computations between threads to maximize occupancy
+```

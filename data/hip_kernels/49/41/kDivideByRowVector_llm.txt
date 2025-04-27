@@ -1,0 +1,4 @@
+// Consider using shared memory for vec array to reduce global memory access and improve performance.
+// Ensure coalesced memory access by organizing access patterns to mat and tgtMat arrays.
+// Optimize thread block size for better utilization of GPU resources and reduce warp divergence.
+// Align memory access to 32-byte boundaries for optimal throughput.

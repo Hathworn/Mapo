@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache data_x_d, data_y_d, and data_z_d to reduce global memory access.
+// Coalesce global memory accesses for data_x_d, data_y_d, and data_z_d by ensuring contiguous thread indices access contiguous memory addresses.
+// Consider using register or shared memory for frequently accessed variables such as point_x, point_y, and point_z to reduce redundant global memory accesses.
+```

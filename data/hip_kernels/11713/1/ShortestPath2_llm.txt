@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory reads to improve memory throughput.
+// Use vectorized loading if possible, especially when CELLS_PER_THREAD is more than 1.
+// Optimize shared memory usage by reducing shared memory footprint if possible.
+// Prefetch data from global to shared memory to hide memory latency.
+// Ensure shared memory usage fits within the capacity, otherwise adjust BLOCKSIZE or CELLS_PER_THREAD.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+```

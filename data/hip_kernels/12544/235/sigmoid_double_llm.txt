@@ -1,0 +1,5 @@
+// Consider using constant memory for any read-only data to reduce global memory access.
+// Optimize memory coalescing by ensuring result[i] accesses are contiguous.
+// Check if __restrict__ qualifiers can be used to optimize pointer accesses.
+// Evaluate if shared memory can be utilized to cache intermediate results.
+// Verify if loop unrolling would benefit performance by reducing overhead.

@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache dense_data values accessed repeatedly to improve memory efficiency
+// Consider using texture memory for dense_data if it enhances memory access patterns
+// Prefer use of atomic operations in case of concurrent updates to target array to prevent race conditions
+// Optimize thread block size to balance between occupancy and memory coalescing
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by aligning global memory accesses for better performance.
+// Use shared memory to store repeated calculations for Gaussian values to reduce global memory accesses.
+// Eliminate bank conflicts in shared memory accesses for enhanced performance.
+// Consider using loop unrolling for the normalization loop to improve execution speed.
+// Normalize using parallel reduction to prevent bottlenecking in serial summation.
+// Ensure balanced thread blocks to avoid divergence and idle resources.
+```

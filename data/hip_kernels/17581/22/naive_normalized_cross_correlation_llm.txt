@@ -1,0 +1,5 @@
+// Ensure shared memory usage is optimal by minimizing bank conflicts.
+// Preload data into shared memory outside of the loop to reduce global memory access.
+// Use __syncthreads() efficiently to synchronize threads only when necessary.
+// Aggregate computations within loops before synchronization to improve parallelism.
+// Consider loop unrolling for performance enhancement where possible.

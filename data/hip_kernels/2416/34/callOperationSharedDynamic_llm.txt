@@ -1,0 +1,7 @@
+```
+// Consider coalesced global memory access by using contiguous threads to access contiguous data
+// Minimize synchronization points when possible by optimizing thread cooperation
+// Evaluate if loop unrolling can apply if there are repetitive operations to reduce overhead
+// Ensure that shared memory size is adequately allocated and used efficiently to avoid bank conflicts
+// Where applicable, consider using warp-level primitives for reduction operations
+```

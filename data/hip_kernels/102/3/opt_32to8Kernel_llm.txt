@@ -1,0 +1,5 @@
+```cpp
+// Use coalesced memory access by ensuring contiguous threads access contiguous memory locations
+// Consider using shared memory if multiple threads access the same data to reduce global memory accesses
+// Avoid unnecessary __syncthreads() for operations without inter-thread dependencies
+```

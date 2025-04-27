@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for improved memory throughput
+// Place __syncthreads() carefully to minimize synchronization overhead
+// Optimize shared memory usage to prevent bank conflicts
+// Utilize warp-level primitives if possible to reduce synchronization
+// Ensure memory alignment to fully utilize float4 operations
+```

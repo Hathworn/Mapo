@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory access
+// Ensure shared memory size does not exceed 48KB per block
+// Optimize stride access to shared memory to improve coalescing
+// Leverage loop unrolling to reduce loop overhead in selection sort
+// Consider warp-level primitives for more efficient sorting of small arrays
+// Balance between kernel launch configuration and GPU occupancy
+```

@@ -1,0 +1,6 @@
+```
+// Unroll the loop to reduce the loop overhead and increase instruction level parallelism
+// Ensure memory coalescing by accessing global memory using continuous threads in each warp
+// Consider using shared memory to store the matrix tiles for further optimization
+// Optimize the thread block dimensions to match the GPU architecture for better occupancy
+```

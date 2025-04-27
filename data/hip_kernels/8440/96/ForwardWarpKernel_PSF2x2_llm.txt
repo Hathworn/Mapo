@@ -1,0 +1,8 @@
+```
+// Optimize global memory access by ensuring coalesced access patterns.
+// Consider using shared memory to reduce repeated global memory access for common values like 'u', 'v', and 'src'.
+// Minimize the usage of atomicAdd by accumulating results within registers first, then perform a single atomicAdd.
+// Reduce thread divergence by reordering conditional statements within the loop.
+// Avoid unnecessary recalculations like tx and ty by calculating them once per thread.
+// Consider separating address calculations and boundary checks to improve efficiency.
+```

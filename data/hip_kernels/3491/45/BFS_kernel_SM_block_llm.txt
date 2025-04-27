@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access for the edge data
+// Implement coalesced memory access patterns for frontier and edge arrays
+// Consider using warp-level operations to optimize neighbor exploration
+// Reduce contention in atomic operations by minimizing concurrent accesses
+// Evaluate the use of texture or constant memory for frequently accessed arrays like visited
+// Assess loop unrolling or other compiler optimizations for the neighbor exploration loop

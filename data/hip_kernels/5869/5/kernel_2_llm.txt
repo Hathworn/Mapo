@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access latency.
+// Ensure that shared memory access is coalesced by properly aligning indices.
+// Reduce memory divergence by synchronizing threads after accessing shared memory.
+// Maximize warp occupancy by optimizing loop iterations with power of two strides.
+// Minimize the number of __syncthreads() calls to avoid unnecessary barriers.

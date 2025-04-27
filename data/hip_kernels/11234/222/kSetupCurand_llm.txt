@@ -1,0 +1,3 @@
+// Avoid recomputation: global thread index calculated once and reused
+// Align thread memory access to improve coalescing
+// Use warp shuffle operations to reduce global memory access

@@ -1,0 +1,3 @@
+// Consider reducing block size if filter count is lower than 1024 to avoid shared memory wastage.
+// Use a loop unrolling technique in the calculation section for better performance.
+// Reduce bank conflicts by ensuring that shared memory accesses are evenly distributed.

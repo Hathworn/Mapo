@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for filters to reduce global memory accesses.
+// Use loop unrolling for the inner loop to enhance performance and reduce loop overhead.
+// Check if the use of texture memory can improve read speed for top_data.
+// Minimize branch divergence by restructuring conditional statements if possible.
+// Ensure coalesced memory accesses for top_data to improve memory transaction efficiency.
+// Prefetch data into registers to reduce repeated memory accesses.
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using shared memory for RGB values if possible
+// Use float3 data type to load and store RGB values simultaneously
+// Avoid redundant calculations by storing var_max and var_min in shared memory
+// Consider loop unrolling for hue calculation to improve performance
+// Ensure coalesced memory access for reading RGB values and writing HSL values
+```

@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Consider using shared memory to reduce global memory access if there are repeated patterns
+// Prefetch global memory into local variables to hide latency
+// Minimize use of if statements to avoid warp divergence
+```

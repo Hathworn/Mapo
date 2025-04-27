@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Load d_coordarray into shared memory at the beginning for faster access.
+// For larger arrays, consider tiling the grid to cache values in shared memory.
+// Use loop unrolling to increase instruction-level parallelism within loops.
+// Consider merging x and y loops where feasible to minimize control overhead.
+// Ensure kernel launches enough blocks to avoid idle compute units.
+```

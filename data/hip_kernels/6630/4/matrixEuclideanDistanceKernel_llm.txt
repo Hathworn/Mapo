@@ -1,0 +1,9 @@
+```
+// Unroll the shared memory load loop to reduce latency
+// Utilize shared memory to cache input data and minimize global memory access
+// Use loop unrolling to optimize the inner loop operations
+// Ensure coalesced access patterns for better memory throughput
+// Implement block synchronization appropriately to prevent race conditions
+// Minimize the use of __syncthreads() to reduce overhead
+// Ensure that the block size is determined based on hardware occupancy
+```

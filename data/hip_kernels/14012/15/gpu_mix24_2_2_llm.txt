@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory load latency.
+// Evaluate coalesced memory access patterns for `ip` to enhance bandwidth.
+// Use `__ldg()` intrinsic for read-only data to leverage read-only cache.
+// Ensure thread block size is optimal for the hardware to maximize occupancy.
+```

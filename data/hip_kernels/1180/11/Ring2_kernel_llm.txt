@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by aligning thread operations with data layout
+// Consider utilizing texture memory for read-only data like corrAB to improve bandwidth
+// Use shared memory efficiently to store frequent data temporally for faster access
+// Avoid bank conflicts in shared memory by ensuring proper indexing patterns
+// Minimize atomic operations in favor of shared reductions or other strategies
+```

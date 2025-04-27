@@ -1,0 +1,8 @@
+```
+// Consider using __shared__ memory to reduce global memory accesses.
+// Ensure coalesced memory access patterns to improve memory bandwidth.
+// Minimize divergent branches to enhance warp execution efficiency.
+// Prefer using float4 instead of float for vectorized operations when applicable.
+// Utilize __restrict__ keyword to improve compiler optimization opportunities.
+// Align data structures to ensure memory alignment and improve access speed.
+```

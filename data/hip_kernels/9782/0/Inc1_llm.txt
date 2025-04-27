@@ -1,0 +1,6 @@
+// Load Ad[tx] into register to reduce memory accesses
+// Perform arithmetic in register
+// Ensure all threads are synchronized if needed
+// Write the final result back to global memory once
+// Ensure Ad[tx] is updated before copying to Bd
+// Assign updated A_temp to Bd[tx]

@@ -1,0 +1,5 @@
+// Consider using shared memory if the same data is accessed multiple times by threads
+// Coalesce memory accesses by ensuring continuous threads access continuous memory locations
+// Avoid warp divergence by ensuring uniform execution path for threads in a warp
+// Ensure data alignment for optimized memory access
+// Consider loop unrolling if applicable and beneficial

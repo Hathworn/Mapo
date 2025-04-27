@@ -1,0 +1,6 @@
+```
+// Reduce global memory accesses by using shared memory
+// Calculate global index outside the loop for efficiency
+// Use shared memory with an offset to load halo elements
+// Use __syncthreads() to ensure all threads have completed shared memory loading
+```

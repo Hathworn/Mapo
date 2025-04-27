@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache data input for faster access
+// Move weights to shared memory for reduced global memory accesses
+// Implement unrolling to eliminate loop overhead and improve instruction-level parallelism
+// Use auto lambda to reduce redundant code and enhance readability
+// Synchronize threads after loading data to ensure shared memory consistency
+// Combine computation and synchronization strategically to maximize resource utilization
+// Ensure global memory writes occur after all computations are finalized
+```

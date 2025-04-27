@@ -1,0 +1,7 @@
+```
+// Optimize global memory access by ensuring coalesced reads and writes.
+// Consider using texture memory for read-only data (ptm_g) to optimize caching.
+// Ensure shared memory usage is efficient and fits within the hardware limits.
+// Reduce bank conflicts in shared memory by ensuring appropriate alignment.
+// Minimize the arithmetic intensity inside the kernel to improve performance.
+```

@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache x and y values to reduce global memory access.
+// Consider using coalesced memory access patterns for xadv and yadv reads.
+// Optimize memory access by using warp size aligned tile sizes.
+// Consider using atomic operations if updating tracker in concurrent situations.
+// Evaluate usage of __restrict__ pointers to minimize pointer aliasing overhead.
+```

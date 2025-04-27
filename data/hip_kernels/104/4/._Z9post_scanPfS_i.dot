@@ -1,0 +1,18 @@
+digraph "CFG for '_Z9post_scanPfS_i' function" {
+	label="CFG for '_Z9post_scanPfS_i' function";
+
+	Node0x64ac1e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 11\l  %7 = icmp eq i32 %5, 0\l  br i1 %7, label %33, label %8\l|{<s0>T|<s1>F}}"];
+	Node0x64ac1e0:s0 -> Node0x64ad8d0;
+	Node0x64ac1e0:s1 -> Node0x64ad960;
+	Node0x64ad960 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{%8:\l8:                                                \l  %9 = or i32 %6, %4\l  %10 = icmp ult i32 %9, %2\l  br i1 %10, label %11, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x64ad960:s0 -> Node0x64acf70;
+	Node0x64ad960:s1 -> Node0x64adc50;
+	Node0x64acf70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%11:\l11:                                               \l  %12 = add i32 %5, -1\l  %13 = zext i32 %12 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %1, i64 %13\l  %15 = load float, float addrspace(1)* %14, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %16 = zext i32 %9 to i64\l  %17 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %19 = fadd contract float %15, %18\l  store float %19, float addrspace(1)* %17, align 4, !tbaa !5\l  br label %20\l}"];
+	Node0x64acf70 -> Node0x64adc50;
+	Node0x64adc50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{%20:\l20:                                               \l  %21 = add nuw nsw i32 %6, 1024\l  %22 = or i32 %21, %4\l  %23 = icmp ult i32 %22, %2\l  br i1 %23, label %24, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x64adc50:s0 -> Node0x64af4b0;
+	Node0x64adc50:s1 -> Node0x64ad8d0;
+	Node0x64af4b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%24:\l24:                                               \l  %25 = add i32 %5, -1\l  %26 = zext i32 %25 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %1, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !5\l  %29 = zext i32 %22 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !5\l  %32 = fadd contract float %28, %31\l  store float %32, float addrspace(1)* %30, align 4, !tbaa !5\l  br label %33\l}"];
+	Node0x64af4b0 -> Node0x64ad8d0;
+	Node0x64ad8d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,8 @@
+```cpp
+// Utilize shared memory for frequently accessed variables if possible to reduce global memory access
+// Minimize the use of pow() by precomputing and storing results if they are reused
+// Consider loop unrolling where noDims is known to be small to enhance performance
+// Align memory access when accessing `regression` to avoid bank conflicts
+// Avoid branch divergence by ensuring similar execution paths within warps
+// Prefetch `regCoeffs` into registers before using them in computation loops
+```

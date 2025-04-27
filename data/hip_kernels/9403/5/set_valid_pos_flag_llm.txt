@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ keyword for pointers to help the compiler optimize memory access
+// Use shared memory to reduce redundant global memory reads in block scope
+// Ensure proper alignment of memory to achieve coalesced accesses
+// Prefetch data into registers for repeated use within the kernel
+// Minimize the use of device-wide atomic functions
+// Try loop unrolling techniques for predictable iteration patterns
+// Balance workload among threads to prevent divergence
+```

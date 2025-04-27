@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce redundant global memory access for `bias` array.
+// Reorganize data access patterns to improve memory coalescing.
+// Launch kernel with optimal block and grid dimensions for your specific workload.
+// Ensure memory alignment for `input`, `bias`, and `ret` arrays to enhance performance.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for reducedEigenvectors to reduce global memory access
+// Use loop unrolling to optimize the loop calculation
+// Ensure coalesced memory access patterns when accessing meanSubtractedImages
+// Preload data to registers where possible to reduce repeated global memory access
+// Align data structures to memory boundaries for better memory access efficiency
+```

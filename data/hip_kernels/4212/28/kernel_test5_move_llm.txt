@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency
+// Load data in chunks to minimize latency
+// Use shared memory efficiently to reduce thread divergence
+// Align memory access to avoid bank conflicts
+// Avoid warp divergence by ensuring threads follow a predictable path
+// Optimize loop by unrolling critical sections

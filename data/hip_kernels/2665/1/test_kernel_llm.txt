@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for B[i * N + k]
+// Use shared memory to store temporary results within each block
+// Minimize index calculation in nested loops
+// Ensure all memory accesses within the loop are coalesced
+// Consider unrolling the inner loop for better performance
+```

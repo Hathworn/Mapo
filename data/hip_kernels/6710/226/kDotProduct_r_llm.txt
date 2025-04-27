@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Use warp shuffle to optimize reduction in shared memory
+// Avoid excessive synchronization points to minimize latency
+// Ensure coalesced memory accesses for a and b arrays
+// Minimize global memory writes, perform them only once per block

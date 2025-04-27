@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure coalesced memory access by aligning data properly
+// Use appropriate block and grid sizes to maximize occupancy
+// Check for bank conflicts in shared memory access if shared memory is used
+// Optimize memory access patterns to reduce latency
+// Use __restrict__ keyword for pointer arguments to help the compiler optimize memory accesses
+```

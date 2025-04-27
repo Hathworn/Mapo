@@ -1,0 +1,9 @@
+```
+// Consider padding shared memory arrays to avoid bank conflicts.
+// Align shared memory access to warp boundaries to improve performance.
+// Utilize coalesced global memory access by aligning data to the warp size.
+// Avoid divergent branching to improve warp execution efficiency.
+// Reduce shared memory usage where possible to increase occupancy.
+// Load data into shared memory in a coalesced manner to improve memory bandwidth.
+// Evaluate if shared memory double buffering can be used for overlapping computation with memory transfers.
+```

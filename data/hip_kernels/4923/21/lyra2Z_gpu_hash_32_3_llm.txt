@@ -1,0 +1,5 @@
+// Utilize shared memory to reduce global memory access.
+// Consider loop unrolling to improve computational throughput.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory addresses.
+// Minimize use of expensive operations and leverage hardware intrinsics where possible.
+// Avoid divergent branching to maximize warp efficiency.

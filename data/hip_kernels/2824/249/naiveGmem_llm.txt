@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Avoid bank conflicts by padding shared memory
+// Load data into shared memory in coalesced manner
+// Synchronize threads to ensure all data is loaded
+// Write back to global memory after transposing the data
+// Ensure boundary checks to prevent out-of-bounds access
+```

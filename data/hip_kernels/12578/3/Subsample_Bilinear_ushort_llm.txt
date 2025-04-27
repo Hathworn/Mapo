@@ -1,0 +1,4 @@
+// Use __fdividef for faster division and minimize precision loss  
+// Use __saturatef for clamping to ensure no overflow or underflow  
+// Prefetch texture results into registers to hide latency  
+// Improved memory access coalescing for better performance  

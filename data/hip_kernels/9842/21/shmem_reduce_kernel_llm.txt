@@ -1,0 +1,7 @@
+```
+// Use coalesced global memory access when loading data into shared memory to improve memory throughput.
+// Ensure that the number of threads per block is a power of two for optimal performance in the reduction loop.
+// Minimize the number of __syncthreads() calls to decrease synchronization overhead.
+// Consider loop unrolling for the reduction loop to potentially enhance performance.
+// Use appropriate block size to balance between occupancy and performance for the specific GPU architecture.
+```

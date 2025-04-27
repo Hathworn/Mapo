@@ -1,0 +1,4 @@
+// Use coalesced memory access for better memory bandwidth utilization
+// Consider optimizing block size based on the architecture for maximum occupancy
+// Reduce memory latency by ensuring 'p' is aligned with warp size boundaries
+// Avoid bank conflicts by ensuring 'p' is accessed in a coalesced manner

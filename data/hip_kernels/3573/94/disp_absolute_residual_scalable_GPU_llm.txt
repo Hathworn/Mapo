@@ -1,0 +1,11 @@
+```
+// Use shared memory to reduce global memory accesses
+// Load transformation matrix into shared memory
+// Only process valid indices
+// Fetch disparity, Zbuffer, and normal from global memory
+// Compute coordinates
+// Reconstruct 3D point from disparity
+// Arbitrary use of fx for now
+// Reconstruct 3D point from model
+// Compute absolute residual (weighted by disparity vs flow importance)
+```

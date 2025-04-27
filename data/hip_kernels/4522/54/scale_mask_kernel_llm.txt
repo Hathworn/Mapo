@@ -1,0 +1,6 @@
+```plaintext
+// Consider aligning data in memory for coalesced access to improve memory throughput
+// Use shared memory to load chunks of mask and x to reduce global memory transactions
+// Minimize divergent branches by ensuring mask values are either very rare or frequent
+// Experiment with different block sizes to find the optimal configuration per device architecture
+```

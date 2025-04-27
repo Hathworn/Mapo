@@ -1,0 +1,6 @@
+```cpp
+// Consider aligning memory accesses to improve coalescing
+// Ensure outputDeltas, target, and outputActivations are stored in global memory in a coalesced manner
+// Minimize memory transactions by using shared memory if possible
+// Strive for warp divergence minimization by checking if D_OUTPUT_UNITS is a multiple of threads per block
+```

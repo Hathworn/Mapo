@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for more data elements to reduce global memory accesses
+// Implement double buffering to overlap computation and data transfer
+// Use coalesced memory accesses to improve memory throughput
+// Optimize for warp divergence by minimizing branching within warps
+// Experiment with loop unrolling for performance improvement
+// Profile the kernel to identify additional hotspots for optimization
+```

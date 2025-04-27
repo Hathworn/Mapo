@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses.
+// Ensure TILE_WIDTH is properly defined to match kernel dimensions.
+// Implement loop unrolling to enhance parallelism and reduce branching overhead.
+// Unrolling the inner loop can improve memory access efficiency and instruction throughput.
+// Synchronization points (__syncthreads) are crucial to ensure data consistency within shared memory.

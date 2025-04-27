@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce global memory accesses
+// Avoid repeated division for pitch calculations by caching pitch values in registers
+// Minimize divergent branches by simplifying boundary conditions and loop unrolling
+// Merge common expressions to reduce the number of operations
+// Ensure data alignment to reduce access latency
+// Use coalesced memory accesses to improve memory bandwidth

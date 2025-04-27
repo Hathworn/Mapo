@@ -1,0 +1,6 @@
+```
+// Avoid recomputation by storing frequently accessed values in registers.
+// Ensure memory accesses are coalesced to improve memory bandwidth utilization.
+// Utilize shared memory if multiple threads in the block need to read the same data.
+// Ensure that global memory writes are coalesced for the array A.
+```

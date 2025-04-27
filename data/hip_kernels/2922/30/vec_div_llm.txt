@@ -1,0 +1,3 @@
+// Ensure memory coalescing by aligning data access for A, B, and C
+// Use shared memory if there is reuse of A[i] or B[i] within a block
+// Consider using memory prefetching for A, B, and C if supported

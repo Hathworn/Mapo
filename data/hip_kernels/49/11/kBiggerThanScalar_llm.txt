@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed data within the block
+// Consider coalescing memory accesses for gData and target arrays
+// Optimize the number of threads per block and the number of blocks to balance load
+// Minimize warp divergence by ensuring all threads within a warp follow the same execution path
+```

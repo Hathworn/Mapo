@@ -1,0 +1,6 @@
+```c
+// Ensure that data is aligned and coalesced for better memory access efficiency.
+// Minimize divergence by ensuring that all threads within a warp follow the same execution path.
+// Consider using shared memory if multiple accesses to the same data occur within a block.
+// Reduce the number of memory accesses by using registers to store intermediate values if possible.
+```

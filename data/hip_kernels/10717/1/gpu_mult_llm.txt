@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Optimize block size to match shared memory capacity and to maximize warp occupancy
+// Ensure __syncthreads() is used appropriately to avoid race conditions
+// Minimize conditional branching inside the kernel for better performance

@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory accesses by checking memory alignment
+// Consider using shared memory to reduce global memory accesses
+// Unroll loop further if resources permit for enhanced parallelism
+// Optimize grid and block dimensions for maximum occupancy
+// Avoid divergent branches within the loop
+// Use __restrict__ keyword for pointer parameters if applicable
+```

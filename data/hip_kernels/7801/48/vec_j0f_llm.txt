@@ -1,0 +1,8 @@
+```
+// Use __restrict__ keyword for result and x pointers to indicate no aliasing for better optimization
+// Utilize shared memory if possible to load data used multiple times by threads
+// Consider coalesced memory access to improve global memory throughput
+// Ensure result and x arrays are aligned for better memory access pattern
+// Unroll the loop for small values of stride to reduce loop overhead
+// Consider using texture memory for read-only data for potential caching benefits
+```

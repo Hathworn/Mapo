@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data during computation to reduce global memory access
+// Consider employing loop unrolling for the inner loops to improve performance
+// Optimize thread block size to maximize occupancy and improve load balancing
+// Ensure memory accesses are coalesced for both gradInput_data and gradOutput_data arrays
+// Use appropriate compiler flags for further performance optimization (e.g., -O3)
+```

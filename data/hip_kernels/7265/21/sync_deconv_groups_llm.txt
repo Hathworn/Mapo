@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache inputs for the deconvolution operation
+// Ensure coalesced memory access patterns to optimize global memory reads
+// Attempt to minimize divergence in control flow within threads
+// Use __syncthreads() judiciously to reduce unnecessary synchronisations
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses for 'a' and 'b'
+// Ensure shared memory usage is within hardware limits
+// Reduce the number of __syncthreads() calls for efficiency
+// Align shared memory allocation to warp size if possible
+// Assess using vectorized memory operations for a, b, and dest arrays
+// Profile memory bandwidth utilization and optimize accordingly
+```

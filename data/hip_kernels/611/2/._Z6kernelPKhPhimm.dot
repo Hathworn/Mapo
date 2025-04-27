@@ -1,0 +1,15 @@
+digraph "CFG for '_Z6kernelPKhPhimm' function" {
+	label="CFG for '_Z6kernelPKhPhimm' function";
+
+	Node0x648a460 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = zext i32 %14 to i64\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %17 = getelementptr i8, i8 addrspace(4)* %7, i64 6\l  %18 = bitcast i8 addrspace(4)* %17 to i16 addrspace(4)*\l  %19 = load i16, i16 addrspace(4)* %18, align 2, !range !4, !invariant.load !5\l  %20 = zext i16 %19 to i32\l  %21 = mul i32 %16, %20\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %23 = add i32 %21, %22\l  %24 = zext i32 %23 to i64\l  %25 = icmp ult i64 %15, %3\l  %26 = icmp ult i64 %24, %4\l  %27 = select i1 %25, i1 %26, i1 false\l  br i1 %27, label %28, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x648a460:s0 -> Node0x648dfb0;
+	Node0x648a460:s1 -> Node0x648e040;
+	Node0x648dfb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%28:\l28:                                               \l  %29 = mul i64 %24, %3\l  %30 = add i64 %29, %15\l  %31 = icmp eq i32 %2, 256\l  br i1 %31, label %38, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x648dfb0:s0 -> Node0x648e360;
+	Node0x648dfb0:s1 -> Node0x648e3b0;
+	Node0x648e3b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%32:\l32:                                               \l  %33 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %30\l  %34 = load i8, i8 addrspace(1)* %33, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %35 = zext i8 %34 to i32\l  %36 = icmp sge i32 %35, %2\l  %37 = sext i1 %36 to i8\l  br label %38\l}"];
+	Node0x648e3b0 -> Node0x648e360;
+	Node0x648e360 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%38:\l38:                                               \l  %39 = phi i8 [ %37, %32 ], [ 0, %28 ]\l  %40 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %30\l  store i8 %39, i8 addrspace(1)* %40, align 1, !tbaa !7\l  br label %41\l}"];
+	Node0x648e360 -> Node0x648e040;
+	Node0x648e040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  ret void\l}"];
+}

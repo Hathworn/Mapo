@@ -1,0 +1,9 @@
+```
+// Consider using coalesced memory accesses when copying data to shared memory to optimize memory bandwidth usage.
+// Ensure optimal block and grid sizes for effective use of shared memory and minimizing shared memory bank conflicts.
+// Evaluate the use of loop unrolling for the inner loops to potentially reduce loop overhead and enhance performance.
+// Look into double buffering techniques to overlap computation with memory operations, reducing wait times.
+// Investigate padding shared memory to avoid bank conflicts during concurrent memory accesses.
+// Consider using warp-synchronous programming to better synchronize threads and increase kernel efficiency.
+// Optimize the balance between shared memory usage and register pressure, ensuring high occupancy and efficient execution.
+```

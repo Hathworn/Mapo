@@ -1,0 +1,8 @@
+```
+// Optimize memory coalescing by aligning data access patterns
+// Utilize float2 to minimize memory transactions
+// Consider increasing block size for better occupancy
+// Ensure shared memory is efficiently allocated to avoid bank conflicts
+// Pre-compute indices for memory access to reduce arithmetic operations
+// Use __syncthreads() wisely to prevent unnecessary synchronization
+```

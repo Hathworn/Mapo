@@ -1,0 +1,11 @@
+```c
+// Ensure coalesced memory access by aligning data structures properly.
+// Use shared memory to temporarily store values that are accessed multiple times.
+// Preload data into registers to minimize global memory access latency.
+// Use vectorized memory operations if possible to reduce the number of transactions.
+// Ensure data alignment to avoid misaligned memory access penalties.
+// Use memory access patterns that maximize the use of L2 cache.
+// Reduce divergent branches, especially within conditional assignments.
+// Ensure that thread blocks are of optimal size to fully utilize the GPU's execution resources.
+// If applicable, explore using persistent threads to improve occupancy.
+```

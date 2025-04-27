@@ -1,0 +1,5 @@
+```
+// Consider using __restrict__ qualifiers for a, b, and c to indicate that pointers do not alias
+// Ensure coalesced memory access by properly aligning data in memory
+// Prefetch data to L1 cache if possible using __ldg() for read-only data
+```

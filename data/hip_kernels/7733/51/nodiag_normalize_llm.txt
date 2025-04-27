@@ -1,0 +1,6 @@
+```cpp
+// Consider coalescing memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to cache diag if multiple accesses occur, to reduce global memory reads.
+// Minimize branching or divergent code in kernels for better warp execution efficiency.
+// Evaluate the use of __restrict__ qualifiers to help the compiler optimize memory accesses.
+```

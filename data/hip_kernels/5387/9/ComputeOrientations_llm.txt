@@ -1,0 +1,9 @@
+```cpp
+// Consider using float2 for loading g_Data to reduce memory transactions
+// Use __ldg() if data is mostly read-only and fits in the L1 cache
+// Ensure alignment of shared memory arrays to prevent bank conflicts
+// Prefetch data into shared memory in a coalesced manner
+// Reduce shared memory usage by recycling arrays after use
+// Apply loop unrolling for histogram reduction for better performance
+// Optimize branch divergence by rearranging conditional statements
+```

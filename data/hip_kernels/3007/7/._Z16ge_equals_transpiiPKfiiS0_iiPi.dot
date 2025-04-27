@@ -1,0 +1,13 @@
+digraph "CFG for '_Z16ge_equals_transpiiPKfiiS0_iiPi' function" {
+	label="CFG for '_Z16ge_equals_transpiiPKfiiS0_iiPi' function";
+
+	Node0x60e5b40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%9:\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !4, !invariant.load !5\l  %15 = zext i16 %14 to i32\l  %16 = mul i32 %10, %15\l  %17 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %18 = add i32 %16, %17\l  %19 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %20 = getelementptr i8, i8 addrspace(4)* %11, i64 6\l  %21 = bitcast i8 addrspace(4)* %20 to i16 addrspace(4)*\l  %22 = load i16, i16 addrspace(4)* %21, align 2, !range !4, !invariant.load !5\l  %23 = zext i16 %22 to i32\l  %24 = mul i32 %19, %23\l  %25 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %26 = add i32 %24, %25\l  %27 = icmp slt i32 %18, %0\l  %28 = icmp slt i32 %26, %1\l  %29 = select i1 %27, i1 %28, i1 false\l  br i1 %29, label %30, label %47\l|{<s0>T|<s1>F}}"];
+	Node0x60e5b40:s0 -> Node0x60ea100;
+	Node0x60e5b40:s1 -> Node0x60ea190;
+	Node0x60ea100 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%30:\l30:                                               \l  %31 = add nsw i32 %18, %3\l  %32 = mul nsw i32 %26, %4\l  %33 = add nsw i32 %31, %32\l  %34 = add nsw i32 %26, %6\l  %35 = mul nsw i32 %18, %7\l  %36 = add nsw i32 %34, %35\l  %37 = sext i32 %33 to i64\l  %38 = getelementptr inbounds float, float addrspace(1)* %2, i64 %37\l  %39 = load float, float addrspace(1)* %38, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %40 = sext i32 %36 to i64\l  %41 = getelementptr inbounds float, float addrspace(1)* %5, i64 %40\l  %42 = load float, float addrspace(1)* %41, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %43 = fcmp contract une float %39, %42\l  br i1 %43, label %44, label %47\l|{<s0>T|<s1>F}}"];
+	Node0x60ea100:s0 -> Node0x60eb2d0;
+	Node0x60ea100:s1 -> Node0x60ea190;
+	Node0x60eb2d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%44:\l44:                                               \l  %45 = load i32, i32 addrspace(1)* %8, align 4, !tbaa !11, !amdgpu.noclobber\l... !5\l  %46 = add nsw i32 %45, 1\l  store i32 %46, i32 addrspace(1)* %8, align 4, !tbaa !11\l  br label %47\l}"];
+	Node0x60eb2d0 -> Node0x60ea190;
+	Node0x60ea190 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%47:\l47:                                               \l  ret void\l}"];
+}

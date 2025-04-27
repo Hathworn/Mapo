@@ -1,0 +1,5 @@
+// Use shared memory for variables used by multiple threads to reduce global memory accesses  
+// Use coalesced memory access patterns for cmap, oldd, and newd to improve access efficiency  
+// Consider using texture memory for cmap if access patterns remain mostly read-only for better caching  
+// Ensure alignment of data structures in memory to utilize memory bandwidth efficiently  
+// Consider loop unrolling in the inner loop to decrease loop overhead and improve performance

@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory access for points data.
+// Minimize the number of accesses to idx by loading it into registers.
+// Consider loop unrolling for loops iterating over nsample and c for reduced overhead.
+// Ensure memory access patterns are coalesced for optimal bandwidth utilization.

@@ -1,0 +1,5 @@
+// Consider memory coalescing for better memory access patterns
+// Minimize the use of global memory and prefer shared memory when possible
+// Ensure that all threads in a warp access contiguous memory locations
+// Align memory allocations to 128-byte boundaries to maximize throughput
+// Utilize __restrict__ qualifiers to avoid pointer aliasing issues

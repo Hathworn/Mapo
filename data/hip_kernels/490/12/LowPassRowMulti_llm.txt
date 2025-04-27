@@ -1,0 +1,8 @@
+```
+// Load data in coalesced memory access pattern for improved performance.
+// Use shared memory to reduce global memory access for kernel and data.
+// Prefetch data to avoid waiting for memory access during computation.
+// Minimize warp divergence by using min/max for boundary checks.
+// Align shared memory allocation to ensure full memory coalescing.
+// Consider unrolling loops to reduce overhead and improve throughput.
+```

@@ -1,0 +1,6 @@
+```
+// Improve memory coalescing by ensuring adjacent threads access consecutive memory locations
+// Consider using shared memory to reduce global memory accesses for reused data
+// Use __restrict__ qualifiers on pointer arguments to help the compiler optimize memory access
+// Ensure sufficient occupancy by tuning block size and grid size
+```

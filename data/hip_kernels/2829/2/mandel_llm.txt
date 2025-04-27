@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access for writing to the buffer by using sequential thread indices.
+// Consider padding to avoid bank conflicts in shared memory if shared memory optimizations are added.
+// Minimize divergent branches by aligning warp operations where possible.
+// Explore the use of cached memory or shared memory to store repetitive values like dx and dy if leveraged multiple times.
+// Analyze the register usage to minimize spills and optimize performance.
+```

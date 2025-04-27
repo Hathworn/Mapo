@@ -1,0 +1,5 @@
+// Consider using shared memory for weightMemBlock if it is accessed frequently
+// Avoid branching by using a single computation formula: output = (1 - weight) * input1 + weight * input2
+// Ensure memory coalescing by aligning input and output arrays in global memory
+// Use __restrict__ qualifier for pointers if applicable to aid in compiler optimizations
+// Explore using __ldg() function to load input data if they are read-only and frequently accessed

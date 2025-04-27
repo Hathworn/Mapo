@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store intermediate results and reduce global memory access.
+// Perform memory coalescing by ensuring threads access contiguous memory locations.
+// Consider using the hipMemcpyAsync function for asynchronous data transfer if applicable.
+// Optimize memory access patterns to leverage the L2 cache effectively.
+```

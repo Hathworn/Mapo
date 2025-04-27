@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access patterns to improve global memory access efficiency.
+// Increase the size of shared memory arrays if there are more than 128 threads per block.
+// Ensure that the data loading from d_Data to shared memory is optimized for memory bandwidth.
+// Consider using warp-level primitives like __shfl_xor_sync for faster reduction within a warp.
+// Investigate reducing the number of __syncthreads() calls to minimize synchronization overhead.
+// Explore using loop unrolling techniques to reduce iteration overhead in the reduction phase.
+// Assess the possibility of minimizing redundant calculations and branches within the kernel.
+```

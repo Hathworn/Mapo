@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing memory accesses by aligning data structures.
+// Minimize divergent branches within warps for better efficiency.
+// Use __restrict__ qualifier for pointer parameters to avoid redundant loads.
+// Exploit shared memory usage by blocking copy data in chunks.
+// Consider data prefetching to hide memory latency.
+// Use half precision if tolerable for smaller memory footprint and increased bandwidth.
+```

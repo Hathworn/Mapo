@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store gradOutput_data tiles to reduce global memory accesses
+// Consider loop unrolling for the inner loops to improve performance
+// Ensure gradInput_data[idx] write is coalesced for better memory bandwidth utilization
+// Use __restrict__ for gradInput_data and gradOutput_data pointers to avoid potential aliasing issues
+```

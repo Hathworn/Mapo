@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store topVertices for better cache efficiency.
+// Reuse computed indices like patchX and patchY to minimize redundant calculations.
+// Unroll small loops like those for assigning topVertices to improve performance.
+// Ensure coalesced memory accesses while reading and writing vertexData for better performance.
+// Avoid recalculating 'size' in multiple locations by storing it in a shared variable.
+// Use a constant memory for frequently accessed read-only data like maxValue.
+```

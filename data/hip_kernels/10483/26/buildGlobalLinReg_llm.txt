@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data such as xmins and xmaxes to reduce global memory access.
+// Precompute expressions like powf(dimRes, noDims - ii - 1) outside the loop for efficiency.
+// Evaluate if the loop for deconstructing index could be optimized or unrolled for fixed noDims values.
+// Ensure coalesced memory access pattern to improve bandwidth utilization by accessing regression array linearly.
+// Minimize conditional operations inside the kernel by refactoring logic to reduce branching.
+```

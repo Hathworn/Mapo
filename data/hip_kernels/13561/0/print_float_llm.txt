@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by using contiguous threads for accessing x
+// Minimize branching inside the kernel to prevent warp divergence
+// Consider using shared memory if further memory access optimization is needed
+// Evaluate if using printf affects kernel performance on your specific hardware
+```

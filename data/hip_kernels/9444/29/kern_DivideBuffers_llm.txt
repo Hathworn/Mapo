@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access for both src and dst arrays to improve memory throughput
+// Consider using shared memory if the data will be reused by multiple threads
+// Ensure proper alignment and padding for data structures to avoid bank conflicts
+// Optimize loop unrolling if applicable to reduce the loop overhead
+// Utilize asynchronous computation and memory transfer for overlapping operations
+```

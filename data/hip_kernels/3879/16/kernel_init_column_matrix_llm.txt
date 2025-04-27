@@ -1,0 +1,9 @@
+```
+// Ensure memory access is coalesced by using strided access patterns
+// Use shared memory if appropriate to reduce global memory access latency
+// Consider using warp-level primitives to further optimize memory access and reduce divergence
+// Avoid bank conflicts in shared memory if shared memory is introduced
+// Minimize divergence by ensuring threads within a warp follow similar execution paths
+// Consider using vectorized loads/stores if SIMD instructions are available
+// Profile the kernel to identify any additional memory access bottlenecks
+```

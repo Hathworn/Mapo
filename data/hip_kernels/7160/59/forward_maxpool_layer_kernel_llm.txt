@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory accesses to improve memory throughput.
+// Use shared memory to store partial results for each block.
+// Reduce bank conflicts by avoiding simultaneous access to the same bank by multiple threads.
+// Optimize the thread block size to match the GPU architecture for better occupancy.
+// Unroll the inner loops to minimize loop overhead and increase ILP (Instruction-Level Parallelism).
+// Use fast math operations where precision can be traded off for performance.
+```

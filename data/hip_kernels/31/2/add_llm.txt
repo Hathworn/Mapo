@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifiers to maximize memory bandwidth
+// Explore using shared memory if there is data reuse across threads
+// Ensure proper alignment of data for coalesced memory access
+// Check bank conflicts in shared memory if implemented
+// Evaluate the use of memory prefetching for larger data sets
+// Assess if loop unrolling could enhance performance
+```

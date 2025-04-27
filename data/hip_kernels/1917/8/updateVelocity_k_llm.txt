@@ -1,0 +1,8 @@
+```
+// Combine loads of vx and vy for coalesced memory access
+// Use shared memory to store intermediate results for better memory efficiency
+// Apply loop unrolling to reduce loop overhead and improve performance
+// Consider using warp-level primitives like __shfl_xor for better data exchange
+// Ensure memory accesses are aligned to avoid expensive misaligned accesses
+// Prefetch data when possible to hide global memory latency
+```

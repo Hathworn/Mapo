@@ -1,0 +1,10 @@
+```
+// Consider using cooperative groups for synchronization to avoid unnecessary __syncthreads().
+// Use cooperative shared memory to increase parallelism when accumulating sum.
+// Consider using block-wide reductions in shared memory to compute sum and entropy more efficiently.
+// Prefetch data to shared memory to reduce global memory access latency.
+// Use float4 or float2 operations for coalesced memory access to float_image_in.
+// Align memory accesses to avoid bank conflicts in shared memory.
+// Experiment with different block sizes for optimal performance on the specific GPU architecture.
+// Consider minimizing the use of atomic operations when possible to improve performance.
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory for data reuse and reducing global memory transactions.
+// Ensure coalesced memory access by aligning data access patterns with warp size.
+// Prefer float4 loads over single float loads to fully utilize memory bandwidth.

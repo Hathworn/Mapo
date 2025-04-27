@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to cache values from the global density_map to reduce global memory access latency.
+// Organize threads into blocks sized as multiples of warp sizes to maximize coalesced memory access.
+// Minimize use of `tex2D` calls by pre-fetching surrounding texture data into shared memory.
+// Ensure that `__syncthreads()` is used correctly to synchronize between reading to and using shared memory.
+// Consider loop unrolling for the inner loop to reduce loop overhead and increase instruction throughput.
+// Optimize calculation of `this_weight` by calculating constant expressions outside of loops when possible.
+```

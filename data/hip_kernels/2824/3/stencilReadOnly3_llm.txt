@@ -1,0 +1,6 @@
+```
+// Prefetch stencil weights to shared memory for faster access
+// Adjust shared memory size to match stencil width for better memory usage
+// Utilize __restrict__ keyword for pointer variables to improve compiler optimizations
+// Apply #pragma unroll to loop for potential performance increase through loop unrolling
+```

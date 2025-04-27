@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data and reduce global memory accesses
+// Ensure coalesced memory access by checking memory alignment with INCX and INCY
+// Explore loop unrolling if INCX or INCY is a compile-time constant
+// Evaluate occupancy and grid size to maximize parallelism and resource utilization
+// Profile and align data accesses to take advantage of memory burst coalescing
+```

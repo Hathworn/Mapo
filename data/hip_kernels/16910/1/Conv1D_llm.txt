@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory access latency
+// Unroll loops to improve instruction-level parallelism
+// Ensure all threads in the block reach __syncthreads() to avoid deadlock
+// Avoid bank conflicts in shared memory access
+// Optimize memory access patterns to ensure coalesced access
+```

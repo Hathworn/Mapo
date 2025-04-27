@@ -1,0 +1,7 @@
+```
+// Use shared memory to store variance and mean to reduce global memory accesses
+// Consider using __restrict__ keyword for input pointers to help the compiler with optimization
+// Use loop unrolling for computations involving spatial or batch if applicable
+// Align data accessed by threads to ensure coalesced memory access patterns
+// Evaluate alternative memory access patterns to ensure better caching and locality
+```

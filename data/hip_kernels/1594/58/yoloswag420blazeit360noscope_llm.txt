@@ -1,0 +1,5 @@
+// Consider coalescing memory access by ensuring contiguous threads access contiguous memory locations
+// Utilize shared memory if there are common access patterns to reduce global memory bandwidth consumption
+// Examine if using half-precision operations would be beneficial to improve performance
+// Assess if reducing the scope of variables like "stride" can optimize register usage
+// Ensure memory access patterns are aligned to prevent excessive bank conflicts on GCN architectures

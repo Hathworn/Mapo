@@ -1,0 +1,6 @@
+// Use __forceinline__ to reduce function call overhead
+// Pre-calculate coordinates and weights for reuse to minimize redundant computations
+// Use modff for efficient float decomposition instead of multiple division/mod operations
+// Use #pragma unroll to unroll loops and improve memory access patterns
+// Use atomic operations for concurrent updates to prevent race conditions
+// Reduce global memory usage by minimizing thread divergence and redundant calculations

@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by aligning data structures to be accessed by consecutive threads.
+// Consider using shared memory to cache frequently accessed data for improved bandwidth.
+// Minimize conditional checks in the kernel to reduce divergence and ensure warp efficiency.
+// Evaluate thread block dimensions for optimal occupancy and resource utilization.
+// Analyze if texture memory can be beneficial for read-only data accesses.
+```

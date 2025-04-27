@@ -1,0 +1,3 @@
+// Move division operation outside kernel to reduce sync overhead
+// Consider using atomic operations for accuracy update for thread safety
+// Use shared memory if multiple threads need to access accuracy variable frequently

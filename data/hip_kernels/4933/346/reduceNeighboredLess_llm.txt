@@ -1,0 +1,4 @@
+// Consider using shared memory to minimize global memory access
+// Avoid boundary checks if n is guaranteed to be a multiple of blockDim.x
+// Use atomic operations if necessary to ensure data consistency
+// Ensure that volatile use is justified to avoid unnecessary performance overhead

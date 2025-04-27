@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for optimal memory bandwidth
+// Ensure idx is calculated to avoid bank conflicts
+// Consider padding shared memory to avoid conflicts
+// Maximize occupancy by adjusting block and grid size
+// Avoid branches within kernel to improve warp efficiency
+```

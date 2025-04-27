@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses by ensuring each thread accesses contiguous memory locations in global memory.
+// Use __restrict__ keyword for the pointers to improve memory access efficiency by informing the compiler about non-aliasing.
+// Load Y, dY, and dX into shared memory if the problem size is within the limits, to reduce global memory traffic.
+// Consider unrolling the loop manually through #pragma unroll to improve loop performance.
+// Ensure that the shared memory usage is optimized to avoid bank conflicts.
+```

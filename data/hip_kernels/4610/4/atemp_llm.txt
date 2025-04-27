@@ -1,0 +1,4 @@
+// Use shared memory for `A` within a block to reduce global memory accesses
+// Coalesce memory accesses to improve memory bandwidth utilization
+// Ensure `A` is stored in column-major order to optimize for memory access patterns
+// Consider using a loop unrolling technique to avoid loop overhead

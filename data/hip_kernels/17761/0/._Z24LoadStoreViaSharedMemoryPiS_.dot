@@ -1,0 +1,17 @@
+digraph "CFG for '_Z24LoadStoreViaSharedMemoryPiS_' function" {
+	label="CFG for '_Z24LoadStoreViaSharedMemoryPiS_' function";
+
+	Node0x584ffa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !invariant.load !4\l  %7 = udiv i16 2048, %6\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !5\l  %10 = mul nuw nsw i32 %9, %8\l  %11 = add nuw nsw i32 %10, %8\l  %12 = icmp ugt i16 %6, 2048\l  br i1 %12, label %21, label %13\l|{<s0>T|<s1>F}}"];
+	Node0x584ffa0:s0 -> Node0x5851c40;
+	Node0x584ffa0:s1 -> Node0x5851cd0;
+	Node0x5851cd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%13:\l13:                                               \l  %14 = phi i32 [ %19, %13 ], [ %10, %2 ]\l  %15 = zext i32 %14 to i64\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !6, !amdgpu.noclobber\l... !4\l  %18 = getelementptr inbounds [2048 x i32], [2048 x i32] addrspace(3)*\l... @_ZZ24LoadStoreViaSharedMemoryPiS_E12SharedMemory, i32 0, i32 %14\l  store i32 %17, i32 addrspace(3)* %18, align 4, !tbaa !6\l  %19 = add nuw nsw i32 %14, 1\l  %20 = icmp ult i32 %19, %11\l  br i1 %20, label %13, label %21, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x5851cd0:s0 -> Node0x5851cd0;
+	Node0x5851cd0:s1 -> Node0x5851c40;
+	Node0x5851c40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%21:\l21:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %12, label %30, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x5851c40:s0 -> Node0x5853620;
+	Node0x5851c40:s1 -> Node0x58536b0;
+	Node0x58536b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  %23 = phi i32 [ %28, %22 ], [ %10, %21 ]\l  %24 = zext i32 %23 to i64\l  %25 = getelementptr inbounds [2048 x i32], [2048 x i32] addrspace(3)*\l... @_ZZ24LoadStoreViaSharedMemoryPiS_E12SharedMemory, i32 0, i32 %23\l  %26 = load i32, i32 addrspace(3)* %25, align 4, !tbaa !6\l  %27 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %24\l  store i32 %26, i32 addrspace(1)* %27, align 4, !tbaa !6\l  %28 = add nuw nsw i32 %23, 1\l  %29 = icmp ult i32 %28, %11\l  br i1 %29, label %22, label %30, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x58536b0:s0 -> Node0x58536b0;
+	Node0x58536b0:s1 -> Node0x5853620;
+	Node0x5853620 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%30:\l30:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

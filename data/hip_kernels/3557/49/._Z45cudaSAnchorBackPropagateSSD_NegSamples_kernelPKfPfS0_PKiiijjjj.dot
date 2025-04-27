@@ -1,0 +1,10 @@
+digraph "CFG for '_Z45cudaSAnchorBackPropagateSSD_NegSamples_kernelPKfPfS0_PKiiijjjj' function" {
+	label="CFG for '_Z45cudaSAnchorBackPropagateSSD_NegSamples_kernelPKfPfS0_PKiiijjjj' function";
+
+	Node0x4def870 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%10:\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %12 = and i32 %11, 31\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %15 = getelementptr i8, i8 addrspace(4)* %14, i64 4\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 4, !range !5, !invariant.load !6\l  %18 = zext i16 %17 to i32\l  %19 = mul i32 %13, %18\l  %20 = add i32 %19, %12\l  %21 = icmp slt i32 %20, %4\l  br i1 %21, label %22, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4def870:s0 -> Node0x4df2490;
+	Node0x4def870:s1 -> Node0x4df2520;
+	Node0x4df2490 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%22:\l22:                                               \l  %23 = sext i32 %20 to i64\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %23\l  %25 = load i32, i32 addrspace(1)* %24, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %0, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !11,\l... !amdgpu.noclobber !6\l  %29 = fneg contract float %28\l  %30 = sitofp i32 %5 to float\l  %31 = fdiv contract float %29, %30\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %26\l  store float %31, float addrspace(1)* %32, align 4, !tbaa !11\l  br label %33\l}"];
+	Node0x4df2490 -> Node0x4df2520;
+	Node0x4df2520 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

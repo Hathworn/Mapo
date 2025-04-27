@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache portions of minmax array
+// Maximize coalesced memory accesses by aligning threads' memory requests
+// Consider pre-fetching values to registers and minimizing redundant calculations
+// Ensure memory access patterns are suitable for hardware prefetching
+// Consider using a tile-based algorithm to improve cache utilization
+// Explore warp-level primitives like __shfl_sync for efficient data sharing
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access for 'array' and 'norm' to improve memory bandwidth.
+// Optimize shared memory usage by minimizing the size of 'sharedData' based on block configuration.
+// Consider unrolling loops where possible to improve pipeline throughput and reduce the overhead of loop control.
+// Ensure the number of blocks and threads are optimized for the specific GPU to maximize occupancy.
+// Investigate the use of warp-level primitives to further optimize reductions.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory efficiently to reduce memory latency
+// Ensure coalesced memory access for input arrays Y and dY
+// Avoid bank conflicts in shared memory access
+// Minimize the use of __syncthreads() to avoid synchronization overhead
+// Utilize warp-level intrinsic operations for reduction
+```

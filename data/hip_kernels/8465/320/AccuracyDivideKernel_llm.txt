@@ -1,0 +1,3 @@
+// Ensure that the memory access for 'accuracy' is coalesced
+// Consider using shared memory for frequent access to 'accuracy' within the block
+// Avoid unnecessary synchronization by using atomic operations if extending logic

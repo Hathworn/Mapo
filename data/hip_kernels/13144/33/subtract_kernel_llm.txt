@@ -1,0 +1,5 @@
+// Use shared memory for data loading to reduce global memory access latency
+// Use warp-level primitives to synchronize threads for efficient data sharing
+// Unroll loops to maximize the utilization of computational units
+// Align memory accesses to prevent bank conflicts and improve performance
+// Employ coalesced access patterns for in1, in2, and out arrays for better memory throughput

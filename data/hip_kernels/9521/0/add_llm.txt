@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to minimize global memory access
+// Load data into shared memory
+// Ensure all threads have loaded data
+// No need for further __syncthreads() as only one thread updates *ans
+```

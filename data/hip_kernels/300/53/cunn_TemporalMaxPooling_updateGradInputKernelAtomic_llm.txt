@@ -1,0 +1,5 @@
+// Use shared memory to prefetch data for gradOutput_base and indices_base to reduce global memory accesses
+// Minimize atomic operations by accumulating results in registers or shared memory before performing atomicAdd
+// Consider using cooperative thread groups to optimize memory access and computation
+// Align memory accesses in gradOutput_base and indices_base to be coalesced
+// Implement loop unrolling for the feature loop to enhance performance and reduce loop overhead

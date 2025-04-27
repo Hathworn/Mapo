@@ -1,0 +1,4 @@
+// Consider increasing thread block size to maximize occupancy
+// Cache Ad[tx] to reduce the number of global memory accesses
+// Store computed values in temporary variables to minimize repeated calculations and memory access
+// Optimize loop by caching values to reduce redundant memory loads inside inner loops

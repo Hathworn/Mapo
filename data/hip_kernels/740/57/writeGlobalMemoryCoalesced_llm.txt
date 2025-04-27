@@ -1,0 +1,6 @@
+```
+// Ensure global memory accesses are coalesced by aligning threads within a warp
+// Use a power-of-two size for modulo operations to improve performance
+// Consider increasing loop unrolling factor if register usage allows
+// Verify that the stride does not cause memory bank conflicts
+```

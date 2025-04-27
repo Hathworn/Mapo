@@ -1,0 +1,8 @@
+```
+// Consider using coalesced memory access for ptr_input and ptr_gradOutput to improve cache utilization.
+// Implement shared memory buffering to reduce redundant global memory accesses.
+// Apply loop unrolling in the inner loops (kx, ky) to decrease the loop overhead and increase instruction throughput.
+// Analyze the possibility of using more threads per block to increase parallelism and fully utilize hardware resources.
+// Review memory access patterns to minimize bank conflicts and achieve better utilization of shared memory.
+// Evaluate the use of texture memory for input data when beneficial, as it can offer cached read-only access.
+```

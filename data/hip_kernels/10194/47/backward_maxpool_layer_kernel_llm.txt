@@ -1,0 +1,4 @@
+// Use shared memory for indexes and delta to reduce global memory access.
+// Coalesce memory access by ensuring that consecutive threads access consecutive memory locations.
+// Minimize memory divergence by optimizing access patterns within the unrolled loops.
+// Use texture or surface memory for read-only data to optimize bandwidth.

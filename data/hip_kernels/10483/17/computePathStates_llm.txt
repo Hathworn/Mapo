@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Ensure efficient use of shared memory by minimizing bank conflicts
+// Coordinate thread synchronization with __syncthreads to avoid race conditions
+// Optimize loop unrolling for predictable loop patterns
+// Consider coalesced access patterns for global memory reads and writes
+// Align memory allocations to facilitate efficient memory access
+```

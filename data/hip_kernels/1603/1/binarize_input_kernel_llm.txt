@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce redundant global memory accesses
+// Synchronize all threads to ensure shared memory is fully populated
+// Broadcast the calculated mean to all threads in the block
+// Synchronize to ensure all threads have the correct mean value
+```

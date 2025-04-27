@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for grad_out by having threads access consecutive locations
+// Optimize idx memory access while ensuring coalesced access patterns
+// Ensure grad_points memory writes are coalesced as much as possible
+// Utilize shared memory to speed up repetitive reads when accessing idx and grad_out
+// Reduce the use of atomic operations to minimize contention and improve performance
+```

@@ -1,0 +1,4 @@
+// Consider aligning memory accesses for better coalescing.
+// Use __syncthreads() efficiently to avoid unnecessary synchronization.
+// Consider using warp shuffle functions for more efficient reductions.
+// Use shared memory wisely to minimize bank conflicts during reduction.

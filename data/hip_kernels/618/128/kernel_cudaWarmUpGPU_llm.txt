@@ -1,0 +1,4 @@
+// Consider using shared memory for small data shared between threads
+// Ensure memory accesses are coalesced for optimal performance
+// Minimize memory divergence by accessing sequential addresses
+// Use __syncthreads() to avoid race conditions when accessing shared resources

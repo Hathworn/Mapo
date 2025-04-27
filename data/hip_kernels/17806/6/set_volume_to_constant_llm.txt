@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant reads and improve memory access efficiency.
+// Consider coalesced memory access to optimize memory bandwidth.
+// Avoid uncoalesced global memory access by rearranging data or thread indices if possible.
+// Minimize divergent branches to ensure higher thread utilization.

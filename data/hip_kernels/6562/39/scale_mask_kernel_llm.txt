@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache data for reuse and reduce global memory access.
+// Ensure coalesced memory access by aligning data access patterns.
+// Experiment with different block sizes for improved occupancy and execution efficiency.
+// Use __restrict__ keyword if applicable to inform compiler about non-aliasing pointers.
+```

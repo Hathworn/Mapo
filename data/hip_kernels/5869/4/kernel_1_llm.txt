@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access by aligning d_data_in index calculations
+// Use __restrict__ qualifier to help the compiler with optimization
+// Consider using larger block sizes if data size permits, to improve occupancy
+// Prefetch data to shared memory in a loop if possible
+```

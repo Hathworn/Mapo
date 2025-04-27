@@ -1,0 +1,4 @@
+// Consider using shared memory to cache data and reduce global memory access latency.
+// Ensure coalesced memory access by adjusting INCX to access contiguous memory locations.
+// Evaluate warp-level parallelism to further optimize access patterns.
+// Check if additional loop unrolling could benefit the performance, depending on the iteration count and stride.

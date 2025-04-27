@@ -1,0 +1,5 @@
+// Use shared memory to cache data for better memory access patterns
+// Consider using warp-level primitives for further optimization
+// Minimize divergence by ensuring all warps are doing similar work
+// Align memory accesses to avoid potential bank conflicts
+// Use coalesced memory accesses to maximize memory throughput

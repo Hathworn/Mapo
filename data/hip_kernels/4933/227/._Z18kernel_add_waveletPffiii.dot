@@ -1,0 +1,10 @@
+digraph "CFG for '_Z18kernel_add_waveletPffiii' function" {
+	label="CFG for '_Z18kernel_add_waveletPffiii' function";
+
+	Node0x5b250e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = sdiv i32 %2, 2\l  %16 = icmp eq i32 %14, %15\l  br i1 %16, label %17, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x5b250e0:s0 -> Node0x5b25ba0;
+	Node0x5b250e0:s1 -> Node0x5b27110;
+	Node0x5b25ba0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = icmp eq i32 %4, 2\l  %19 = sdiv i32 %3, 2\l  %20 = select i1 %18, i32 %3, i32 %19\l  %21 = add nsw i32 %20, -10\l  %22 = mul nsw i32 %21, %2\l  %23 = add i32 %14, %22\l  %24 = zext i32 %23 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %24\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %27 = fadd contract float %26, %1\l  store float %27, float addrspace(1)* %25, align 4, !tbaa !7\l  br label %28\l}"];
+	Node0x5b25ba0 -> Node0x5b27110;
+	Node0x5b27110 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses for d_in and d_out to improve memory bandwidth utilization.
+// Align d_in and d_out pointers to prevent misaligned memory access penalties.
+// Use shared memory if there are frequent data reuses within a block to reduce global memory accesses.
+// Ensure optimal thread block size for better occupancy and performance.
+// Minimize memory divergence by ensuring contiguous threads process contiguous data.
+// Check if using vectorized loads/stores enhances throughput for your data patterns.
+```

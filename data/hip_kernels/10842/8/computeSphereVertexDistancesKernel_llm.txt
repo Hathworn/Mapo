@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to reduce global memory accesses
+// Prefetch vertex data into shared memory for faster access during computation
+// Avoid redundant recomputation by caching frequently accessed data in shared memory
+// Ensure synchronization among threads after loading data into shared memory
+// Minimize thread divergence by standardizing block processing patterns
+// Implement memory coalescing to enhance memory access efficiency
+// Exploit register usage for intermediate calculations to reduce memory accesses
+```

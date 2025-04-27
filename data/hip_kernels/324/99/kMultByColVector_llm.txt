@@ -1,0 +1,7 @@
+```
+// Use shared memory to load vector elements to reduce global memory accesses
+// Minimize bank conflicts when using shared memory by ensuring padding as necessary
+// Consider loop unrolling if applicable to enhance instruction-level parallelism
+// Ensure coalesced memory accesses for the mat and tgtMat arrays
+// Optimize block and grid size configurations for better occupancy and throughput
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for d_vessxyz for further performance improvement
+// Consider coalescing global memory accesses for d_tissxyz and d_pt000
+// Minimize bank conflicts by ensuring proper memory access patterns in shared memory
+// Evaluate using texture memory if access patterns are suitable for often-used input data
+// Optimize register usage by balancing between available registers and occupancy 
+```

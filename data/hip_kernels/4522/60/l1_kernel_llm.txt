@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data that is accessed multiple times
+// Ensure coalesced memory accesses for pred and truth arrays
+// Use __restrict__ pointer qualifiers to help the compiler optimize memory access
+// Adjust block size for better occupancy and performance
+```

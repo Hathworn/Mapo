@@ -1,0 +1,6 @@
+```
+// Optimize data loading by using coalesced memory access
+// Minimize global memory access by fully utilizing shared memory
+// Use appropriate shared memory size to fit data without exceeding limits
+// Ensure __syncthreads() is used to avoid race conditions in shared memory
+```

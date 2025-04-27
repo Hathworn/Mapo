@@ -1,0 +1,10 @@
+```
+// Consider using a vectorized load/store pattern to optimize memory coalescing.
+// Explore using shared memory more efficiently by minimizing bank conflicts.
+// Investigate loop unrolling techniques for `kernel_size` loops to reduce instruction overhead.
+// Optimize the patch loading by using `pragma unroll` for fixed-size loops.
+// Experiment with reducing shared memory usage by computing directly in registers when feasible.
+// Assess utilizing warp-synchronous programming methods to reduce synchronization overhead.
+// Evaluate reducing divergence by ensuring all threads within a warp follow the same execution path.
+// Consider leveraging asynchronous memory operations for overlapping computation and data transfer.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory accesses where possible
+// Minimize bank conflicts by proper thread index calculations
+// Ensure enough threads per block to hide latency
+// Consider memory alignment and padding for better performance
+// Use shared memory if data reuse across threads is possible
+```

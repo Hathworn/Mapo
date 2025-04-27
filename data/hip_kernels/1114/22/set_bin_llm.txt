@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for d_row_nz to improve memory bandwidth utilization
+// Minimize the use of atomic operations if possible to reduce contention and improve performance
+// Use shared memory for commonly accessed data within the block to reduce global memory access
+// Explore warp-level primitives to handle bin assignment more efficiently
+```

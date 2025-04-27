@@ -1,0 +1,6 @@
+```
+// Ensure alignment of float* accuracy to optimize memory access
+// Consider using shared memory if *accuracy is used frequently within a block
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// If the kernel is part of a larger computation, consider fusing kernels to reduce global memory traffic
+```

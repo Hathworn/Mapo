@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for data accessed multiple times by threads
+// Minimize bank conflicts when using shared memory
+// Ensure memory accesses are coalesced when reading from x, y, and z arrays
+// Consider using __restrict__ qualifier to allow better compiler optimization
+```

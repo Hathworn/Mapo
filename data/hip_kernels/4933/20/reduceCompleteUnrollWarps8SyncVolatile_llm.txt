@@ -1,0 +1,3 @@
+// Unroll loops to reduce branch divergence and improve performance.
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory and volatile keyword to prevent compiler optimizations that can rearrange code.

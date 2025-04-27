@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access by ensuring contiguous threads access contiguous memory locations.
+// Optimize shared memory usage if applicable for reuse of gradOutput_data within a thread block.
+// Minimize branch divergence in loops by ensuring scale_factor-induced paths are consistent across threads.
+// Consider using __restrict__ keyword for gradOutput_data and gradInput_data pointers for better memory access patterns.
+// Optionally, use faster memory (e.g., registers or shared memory) for frequently accessed data within compute loops.
+// Ensure that idx calculations inside translate functions are optimized for minimizing division and modulo operations.
+```

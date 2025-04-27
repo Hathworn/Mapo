@@ -1,0 +1,10 @@
+```
+// Consider using coalesced memory access patterns for device_mapOcc
+// Use __ldg() for reading device_mapOcc to take advantage of texture cache
+// Consider aligning shared memory accesses to improve bandwidth
+// Reduce shared memory bank conflicts using padding if necessary
+// Use warp shuffle operations instead of shared memory for intra-block reductions
+// Optimize shared memory writes to avoid redundant write operations
+// Ensure kernel config (block size) is optimal for target architecture
+// Minimize shared memory usage to increase occupancy if possible
+```

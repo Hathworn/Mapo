@@ -1,0 +1,6 @@
+```
+// Consider reducing redundant digamma_fl computation by storing intermediate results.
+// Optimize memory access by ensuring coalesced memory access to the q array.
+// Use shared memory to cache qsum if it is a frequently accessed value, to minimize global memory reads.
+// Minimize the number of operations inside the loop to improve kernel performance.
+```

@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Prefer coalesced memory access patterns to enhance memory throughput
+// Minimize branch divergence by simplifying conditional logic where possible
+// Consider loop unrolling for small loops to reduce overhead and improve throughput

@@ -1,0 +1,6 @@
+```c
+// Precompute offsets for probabilities and values to reduce index calculations inside the loop.
+// Use __ldg to load constant/global memory efficiently for read-only data (probs and values).
+// Iterate over polynomId using gridDim.x to balance workloads across blocks.
+// Use atomicAdd to safely accumulate results for each thread across different blocks and dimensions.
+```

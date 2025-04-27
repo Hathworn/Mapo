@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache kernel data for improved memory efficiency.
+// Optimize global memory access by ensuring coalesced reads from 'random' array.
+// Implement loop unrolling for the for-loop iterating over 'i' to improve performance.
+// Use __syncthreads() after loading data into shared memory to ensure proper synchronization.
+// Consider adjusting block size to improve occupancy and memory throughput.
+```

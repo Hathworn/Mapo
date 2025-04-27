@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access patterns for probs, labels, and maxProbs.
+// Consider using shared memory to cache probs for each case if numOut is large.
+// Avoid accessing global memory inside the for loop by using shared memory.
+// Evaluate whether loop unrolling could benefit the for loop iterating over numOut.
+```

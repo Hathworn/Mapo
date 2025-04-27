@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifiers for result and y pointers for better memory access optimization
+// Ensure coalesced memory access for y by checking memory alignment and stride
+// Avoid using branches inside the kernel for improved warp execution efficiency
+// Consider using shared memory if there are opportunities to reuse data within a block
+// Minimize register pressure by reducing unnecessary variables or using vectorization
+```

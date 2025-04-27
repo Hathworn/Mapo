@@ -1,0 +1,9 @@
+```
+// Ensure memory accesses are coalesced for better performance.
+// Consider padding or alignment strategies to avoid memory bank conflicts.
+// Use shared memory if possible to reduce global memory accesses.
+// Optimize loop unrolling factors for the specific target GPU architecture.
+// Explore asynchronous memory operations to hide memory latency.
+// Use warp-level primitives to reduce divergence and synchronize threads effectively.
+// Profile the kernel to identify bottlenecks and adjust block and grid sizes accordingly.
+```

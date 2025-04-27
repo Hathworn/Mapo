@@ -1,0 +1,7 @@
+```
+// Optimize memory access pattern to ensure coalescing for d_spine_sums.
+// Consider using shared memory if d_spine_sums exhibits spatial locality.
+// Ensure alignment of d_spine_sums to guarantee efficient memory transactions.
+// Minimize use of __ldg unless beneficial due to conflicting memory access patterns.
+// Evaluate reducing global memory access by utilizing warp-level primitives when possible.
+```

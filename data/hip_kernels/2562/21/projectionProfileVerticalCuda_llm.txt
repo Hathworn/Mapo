@@ -1,0 +1,2 @@
+// Use shared memory to minimize global memory access and improve data locality
+// Avoid atomic operations if possible by using block-level reductions and combining results in a single atomic operation after computing block-level sums

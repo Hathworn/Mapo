@@ -1,0 +1,6 @@
+// Consider using warp-level primitives to reduce synchronization overhead and improve access patterns.
+// Load data in coalesced manner to optimize global memory access.
+// Minimize bank conflicts when accessing shared memory.
+// Use loop unrolling within the partial matrix product computation for efficiency.
+// Evaluate using mixed precision to potentially increase throughput on hardware that supports it.
+// Investigate asynchronous copy operations to overlap computation and data transfer.

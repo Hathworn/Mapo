@@ -1,0 +1,12 @@
+```
+// Use shared memory for storing image data to reduce global memory access.
+// Use a 2D grid of blocks to improve coalesced memory access.
+// Avoid redundant calculations by precomputing offsets where possible.
+// Consider using texture memory for read-only image data to leverage caching.
+// Optimize bank conflicts in shared memory by ensuring memory alignment.
+// Reduce register pressure by minimizing intermediate variable usage.
+// Ensure warp divergence is minimized by optimizing conditional branches.
+// Optimize memory transaction efficiency by ensuring data accesses are coalesced.
+// Use half precision floats if computational precision allows to reduce memory and bandwidth usage.
+// Ensure occupancy is maximized by optimizing block and grid dimensions.
+```

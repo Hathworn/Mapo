@@ -1,0 +1,4 @@
+// Use shared memory to store intermediate values for reduced memory access.
+// Improve memory coalescing by ensuring access to global memory is contiguous.
+// Consider unrolling the loop for better performance on architectures with fewer registers.
+// Use atomic operations to reduce synchronization overhead and potential bank conflicts.

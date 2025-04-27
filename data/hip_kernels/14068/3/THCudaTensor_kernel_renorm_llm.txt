@@ -1,0 +1,10 @@
+```
+// Consider increasing block size to optimize memory bandwidth usage
+// Use float4 for coalesced memory access in unrolled loop
+// Evaluate if shared memory usage impacts occupancy and consider optimization
+// Use __restrict__ keyword to indicate non-aliasing pointers for potential compiler optimizations
+// Investigate if using more registers per thread improves performance through hipOccupancyMaxPotentialBlockSize
+// Ensure memory access pattern is coalesced for best performance
+// Review usage of __syncthreads() to ensure it is necessary and minimize its use
+// Use warp-level primitives for reduction instead of full __syncthreads where possible
+```

@@ -1,0 +1,8 @@
+```
+// Unroll loop to improve memory coalescing
+// Use temporary variables for repeated calculations
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Align data structures to allow coalesced global memory accesses
+// Minimize divergent branches by ensuring threads in a warp follow the same execution path
+// Evaluate if using vectorized memory operations could improve data transfer throughput
+```

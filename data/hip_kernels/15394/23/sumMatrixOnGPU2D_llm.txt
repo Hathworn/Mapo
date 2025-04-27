@@ -1,0 +1,6 @@
+```cpp
+// Consider aligning data access patterns for coalesced memory access
+// Double-check if tile size matches typical warp size for optimal performance
+// Use __syncthreads() only when necessary to avoid unnecessary synchronization
+// Ensure shared memory is efficiently utilized without bank conflicts
+```

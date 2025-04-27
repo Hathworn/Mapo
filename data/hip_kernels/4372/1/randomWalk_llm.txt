@@ -1,0 +1,5 @@
+// Precompute sqrt(T/N) to minimize repetitive calculations and enhance memory access efficiency
+// Initialize random state with enhanced seeding for better random number quality and independent streams
+// Use a single hiprand call within the loop to reduce overhead and improve performance
+// Ensure aligned memory access patterns to optimize memory throughput
+// Minimize condition checks inside the loop to reduce branching and improve pipeline efficiency

@@ -1,0 +1,6 @@
+```
+// Use shared memory to load inputs if data reuse is possible to reduce global memory access.
+// Align data loads to warp size for coalesced memory access and improved performance.
+// Consider using texture memory or constant memory for data that is read-only and often accessed.
+// Minimize bank conflicts by appropriately using shared memory and considering its alignment.
+```

@@ -1,0 +1,6 @@
+```c
+// Use shared memory for temporary data storage to reduce global memory accesses
+// Ensure memory coalescing by accessing data[] with continuous indices when possible
+// Consider optimizing block and grid size for the target GPU architecture
+// Minimize use of global memory to improve kernel performance
+```

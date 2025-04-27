@@ -1,0 +1,9 @@
+```
+// Consider using __ldg to exploit read-only data cache for constant memory accesses.
+// Ensure sufficient occupancy to mask memory latency effectively.
+// Minimize global memory accesses by maximizing the use of shared memory.
+// Use data prefetching to hide global memory access latency.
+// Avoid bank conflicts in shared memory access.
+// Ensure memory coalescing when accessing global memory arrays.
+// Reduce synchronization overhead by optimizing reduction operations.
+```

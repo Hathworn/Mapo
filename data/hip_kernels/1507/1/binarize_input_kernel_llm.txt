@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses for mean calculation
+// Perform thread synchronization carefully to ensure data consistency
+// Optimize and unroll loops where possible for better performance
+// Ensure coalesced memory accesses for improved bandwidth utilization
+// Consider using atomic operations if needed during reduction
+// Minimize thread divergence by avoiding branches where possible
+```

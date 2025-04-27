@@ -1,0 +1,9 @@
+```c
+// Ensure memory coalescing by accessing contiguous memory locations per thread
+// Consider using shared memory if multiple threads access overlapping data
+// Optimize global memory access patterns to minimize memory transaction overhead
+// Use __restrict__ keyword to indicate that pointer arguments do not alias
+// Investigate potential use of pinned memory for faster data transfer
+// Minimize divergent branching to improve warp efficiency
+// Evaluate occupancy and adjust block size for better hardware utilization
+```

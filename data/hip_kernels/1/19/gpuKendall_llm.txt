@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing global memory loads
+// Consider aligning data to improve cache performance
+// Use shared memory efficiently to reduce global memory access
+// Reduce thread divergence by ensuring warp-friendly conditions
+// Minimize the use of __syncthreads to improve performance
+// Use loop unrolling to reduce loop overhead
+// Ensure threads per block are a multiple of the warp size to maximize occupancy
+```

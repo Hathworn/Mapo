@@ -1,0 +1,6 @@
+// Ensure coalesced memory access by aligning data structures in memory  
+// Use shared memory to reduce global memory access latency  
+// Minimize divergent warps by ensuring condition statements are executed by all threads  
+// Leverage constant memory for frequently accessed data  
+// Apply loop unrolling techniques for better performance if applicable  
+// Consider using asynchronous memory copies for efficient data transfer between host and device

@@ -1,0 +1,8 @@
+```
+// Optimize memory coalescing by ensuring sweeper_pos_v and mine_pos_v are accessed in sequence
+// Minimize branch divergence by re-evaluating conditionals
+// Use __ldg() for read-only data to leverage texture cache
+// Consider loop unrolling if iterative processes are present
+// Use warp shuffle operations to reduce use of shared memory
+// Align data structures to improve coalesced access patterns
+```

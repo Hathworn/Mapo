@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data for better memory access patterns
+// Ensure memory coalescing by aligning memory accesses
+// Consider using vectorized loads for improved throughput
+// Minimize divergence by ensuring threads in a warp follow similar execution paths
+// Tune block and grid sizes to maximize GPU occupancy
+```

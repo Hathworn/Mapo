@@ -1,0 +1,17 @@
+digraph "CFG for '_Z10stencil_ldPjS_ii' function" {
+	label="CFG for '_Z10stencil_ldPjS_ii' function";
+
+	Node0x5935580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %6 = shl i32 %5, 5\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = shl i32 %7, 5\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %11 = add i32 %6, %9\l  %12 = mul i32 %11, %2\l  %13 = add i32 %8, %10\l  %14 = add i32 %13, %12\l  %15 = sub nsw i32 %14, %2\l  %16 = sext i32 %15 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %19 = add nsw i32 %14, -1\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %23 = sext i32 %14 to i64\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %23\l  %25 = load i32, i32 addrspace(1)* %24, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %26 = mul i32 %25, 5\l  %27 = add nsw i32 %14, 1\l  %28 = sext i32 %27 to i64\l  %29 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %28\l  %30 = load i32, i32 addrspace(1)* %29, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %31 = add i32 %19, %2\l  %32 = sext i32 %31 to i64\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %32\l  %34 = load i32, i32 addrspace(1)* %33, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %35 = add i32 %22, %18\l  %36 = add i32 %35, %30\l  %37 = add i32 %36, %34\l  %38 = sub i32 %26, %37\l  %39 = icmp slt i32 %38, 0\l  br i1 %39, label %40, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x5935580:s0 -> Node0x5939890;
+	Node0x5935580:s1 -> Node0x5939920;
+	Node0x5939890 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%40:\l40:                                               \l  %41 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %23\l  store i32 0, i32 addrspace(1)* %41, align 4, !tbaa !5\l  br label %47\l}"];
+	Node0x5939890 -> Node0x5939bc0;
+	Node0x5939920 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{%42:\l42:                                               \l  %43 = icmp ugt i32 %38, 255\l  %44 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %23\l  br i1 %43, label %45, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x5939920:s0 -> Node0x5939db0;
+	Node0x5939920:s1 -> Node0x5939e00;
+	Node0x5939db0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%45:\l45:                                               \l  store i32 255, i32 addrspace(1)* %44, align 4, !tbaa !5\l  br label %47\l}"];
+	Node0x5939db0 -> Node0x5939bc0;
+	Node0x5939e00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%46:\l46:                                               \l  store i32 %38, i32 addrspace(1)* %44, align 4, !tbaa !5\l  br label %47\l}"];
+	Node0x5939e00 -> Node0x5939bc0;
+	Node0x5939bc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%47:\l47:                                               \l  ret void\l}"];
+}

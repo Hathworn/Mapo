@@ -1,0 +1,12 @@
+```
+// Ensure weights are loaded into shared memory to reduce global memory accesses
+// Use __syncthreads() after loading weights to synchronize threads
+// Calculate global position 'pos' for each thread to enable parallel processing
+// Use padding to simplify SAME padding calculations, avoiding unnecessary input checks
+// Ensure shared memory for weights is large enough to accommodate all kernel loading
+// Atomic operations used should ensure no race conditions occur during thread execution
+// Consider unrolling loops for further optimization if necessary
+// Limit the number of 'if' statements involving direct memory accesses
+// Check for opportunities to reduce memory consumptions and enhance data locality
+// Profile the kernel execution to identify bottlenecks specific to memory bandwidth
+```

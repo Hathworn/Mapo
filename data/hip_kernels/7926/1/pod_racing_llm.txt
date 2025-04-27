@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses for iter
+// Consider coalescing global memory accesses for d_rand, win, and loss
+// Minimize bank conflicts in shared memory access for shared_iter
+// Avoid warp divergence by ensuring all threads in a warp take the same path
+```

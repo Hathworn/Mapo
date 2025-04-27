@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache xyz2 to reduce global memory access latency
+// Process multiple points per thread to reduce the number of kernel invocations
+// Consider unrolling loops to increase instruction-level parallelism
+// Check memory alignment for coalesced access patterns
+// Evaluate using texture memory for frequent read-only access to xyz1 or xyz2
+// Consider using atomic operations if writes to idx or pts_cnt need serialization
+```

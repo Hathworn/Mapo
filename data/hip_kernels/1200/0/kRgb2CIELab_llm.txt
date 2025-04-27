@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses to improve memory bandwidth utilization
+// Use texture cache for efficient read-only data access to texFrameBGRA
+// Leverage shared memory for intermediate calculations if possible
+// Avoid using printf or other methods that cause thread divergence
+// Ensure all global memory writes (surf2Dwrite) are coalesced
+```

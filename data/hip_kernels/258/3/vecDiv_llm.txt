@@ -1,0 +1,7 @@
+```cpp
+// Suggest using coalesced memory access for a[]
+// Consider aligning shared memory allocation for better performance
+// Use __syncthreads() to ensure all threads have loaded data into shared memory
+// Opt to use warp-level primitives for reducing __syncthreads() overhead
+// Recommend minimizing shared memory usage if bandwidth is not a limiting factor
+```

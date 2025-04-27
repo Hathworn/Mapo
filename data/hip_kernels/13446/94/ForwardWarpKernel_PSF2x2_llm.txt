@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses for u and v arrays to improve memory throughput.
+// Prefetch values of u, v, and src to shared memory to reduce global memory accesses.
+// Ensure dst and normalization_factor are accessed in coalesced manner for better memory efficiency.
+// Utilize warp-level atomic operations if possible to enhance performance with concurrent writes.
+// Avoid recalculating stride offsets multiple times inside the loop by computing them once.
+```

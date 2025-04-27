@@ -1,0 +1,6 @@
+```cpp
+// Ensure that data reads and writes are coalesced for better memory access patterns
+// Minimize thread divergence to improve warp execution efficiency
+// Consider using shared memory if the data reuse within the block is possible
+// Align memory allocations to ensure better performance
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns by coalescing global memory accesses where possible.
+// Use shared memory to reduce redundant global memory accesses and increase memory throughput.
+// Ensure memory accesses are aligned to prevent memory bank conflicts.
+// Consider increasing the block size to better utilize the GPU's SMs, if possible.
+// Minimize divergence by ensuring all threads within a warp execute the same code paths.
+```

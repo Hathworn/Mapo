@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access for vertexArray to improve bandwidth.
+// Optimize shared memory usage by reducing bank conflicts.
+// Use warp-level primitives like __shfl_down_sync for faster reduction.
+// Avoid unnecessary __syncthreads if threads are guaranteed not to diverge.
+// Use __restrict__ qualifiers if applicable to indicate non-overlapping memory.
+```

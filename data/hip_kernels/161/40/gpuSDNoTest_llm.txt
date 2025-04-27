@@ -1,0 +1,8 @@
+```
+// Use shared memory to store intermediate results for meanA, meanB, and n for faster access.
+// Move means and numPairs global memory reads to shared memory once per block to reduce memory bandwidth usage.
+// Use shared memory for threadSumsA and threadSumsB for fast access during reduction.
+// Use parallel reduction to compute the sum of squares within shared memory to minimize global memory accesses.
+// Optimize memory access patterns to ensure coalesced accesses to vectsA and vectsB to improve memory throughput.
+// Consider using float2 data structure to load data from vectsA and vectsB to take advantage of vectorized memory operations.
+```

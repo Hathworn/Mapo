@@ -1,0 +1,5 @@
+// Adjust shared memory size based on blockDim.x to match the number of active threads.
+// Utilize shared memory to reduce global memory access latency.
+// Syncthreads to ensure all threads have loaded data into shared memory.
+// Optimize memory access by using shared memory.
+// Employ loop unrolling to minimize overhead and increase performance.

@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to reduce global memory access.
+// Ensure memory coalescing to optimize memory bandwidth usage.
+// Use __restrict__ qualifier if applicable to improve compiler optimizations.
+// Check for warp divergence and minimize conditional statements within the kernel.
+// Ensure aligned memory access to maximize throughput.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache recently accessed data, reducing global memory access.
+// Employ coalesced global memory access by reorganizing data structures if possible.
+// Use warp-level primitives for better control of thread execution and reduction of divergence.
+// Minimize use of conditional statements where possible to enhance warp efficiency.
+// Precompute values outside of the kernel if they are constant across threads to save computations.
+```

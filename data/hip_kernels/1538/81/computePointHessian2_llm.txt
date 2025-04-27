@@ -1,0 +1,6 @@
+```
+// Consider preloading shared memory data outside of the loop for better memory cache utilization.
+// Ensure coalesced memory access patterns for 'x', 'y', 'z', and 'valid_points' to reduce global memory access latency.
+// Optimize stride access in the loop to improve parallel efficiency and eliminate any potential warp divergence.
+// Utilize constant memory if 'dh_ang' is immutable and resides across multiple blocks for faster access compared to global memory.
+```

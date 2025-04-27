@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory accesses when loading tiles into shared memory.
+// Optimize shared memory usage by carefully placing __syncthreads() to minimize stalls.
+// Ensure that all threads have completed computation before moving to the next tile.
+// Profile kernel execution to determine if further loop unrolling can benefit performance.
+// Adjust TILE_SIZE for optimal occupancy based on target GPU architecture.
+```

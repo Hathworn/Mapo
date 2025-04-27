@@ -1,0 +1,7 @@
+```
+// Use shared memory to store gradOutput_data and indices_data to reduce global memory accesses
+// Consider using warp-level primitives for atomic operations to reduce contention
+// Optimize memory coalescing for gradInput_data by aligning data accesses
+// Evaluate using asynchronous copy for gradInput_data if applicable
+// Investigate using fewer atomicAdd operations by restructuring data layout
+```

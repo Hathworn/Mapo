@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses
+// Align shared memory width to avoid bank conflicts
+// Ensure memory coalescing by organizing global memory accesses by warp
+// Use __syncthreads() to synchronize threads before accessing shared memory
+// Optimize shared memory access pattern to reduce warp serialization

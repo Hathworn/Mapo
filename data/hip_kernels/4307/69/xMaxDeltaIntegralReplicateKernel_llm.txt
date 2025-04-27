@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider using texture memory for better cache performance on read-heavy data
+// Coalesce memory access patterns to improve bandwidth utilization
+// Prefetch data to minimize latency
+// Align data to 128-byte boundaries for efficient memory transactions
+// Use fewer divergent branches to optimize warp execution
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to store partial results for efficient data access
+// Avoid race conditions by using atomic operations for critical sections
+// Use a grid-stride loop for more efficient iteration over data
+// Reduce redundant calculations by computing start and stop only once outside the loop
+// Consider vectorized loads and stores if possible for coalesced memory accesses
+// Ensure memory access patterns are optimized for all threads within the warp
+```

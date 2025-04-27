@@ -1,0 +1,6 @@
+```
+// Ensure memory accesses are coalesced by having threads access sequential floats in dz_in
+// Consider using shared memory to accumulate sum locally before writing back to dB
+// Optimize for memory bandwidth by minimizing the number of global memory writes
+// Utilize warp-level primitives to further optimize accumulation within a warp
+```

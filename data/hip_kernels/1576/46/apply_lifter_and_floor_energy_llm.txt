@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve performance.
+// Load lifter coefficients into shared memory to improve access times.
+// Synchronize threads to ensure all data is loaded into shared memory before use.
+// Use a loop to distribute work across threads efficiently.
+// Assign thread 0 to handle special operations to avoid warp divergence.
+```

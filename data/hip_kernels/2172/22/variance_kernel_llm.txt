@@ -1,0 +1,9 @@
+```
+// Move scale calculation outside of kernel for better reuse.
+// Calculate global index once to reduce redundant operations.
+// Use a condition to exit the kernel early when out of bounds.
+// Reduce repetitive float multiplication by precalculating scale.
+// Use shared memory or registers to hold intermediate results.
+// Replace powf operation with simpler arithmetic to improve performance.
+// Consider loop unrolling or using vectorized loads for memory access.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access
+// Coalesce memory accesses for better bandwidth utilization
+// Avoid bank conflicts in shared memory usage
+// Prefer warp-level synchronization to reduce overhead
+// Consider using texture memory for read-only data to leverage caching

@@ -1,0 +1,6 @@
+```
+// Enhance memory coalescing by ensuring sequential thread access to global memory
+// Consider using shared memory to store intermediate results for better data reuse
+// Streamline condition checks to reduce divergent branches
+// Use __syncthreads to synchronize threads after writing to shared memory
+```

@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency
+// Improve parallel reduction by avoiding bank conflicts in shared memory
+// Utilize loop unrolling for faster iteration over spatial elements
+// Consider coalesced memory access patterns for x, delta, and variance arrays
+// Leverage warp level primitives to optimize parallel reduction further
+// Reduce branching divergence within loops for improved execution efficiency

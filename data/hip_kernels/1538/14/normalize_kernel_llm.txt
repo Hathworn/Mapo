@@ -1,0 +1,5 @@
+// Consider adjusting launch parameters to improve memory access patterns.
+// Precompute repetitive values outside the loop where possible to minimize computation.
+// Ensure coalesced memory access for the x array to improve memory bandwidth.
+// Use shared memory if there are opportunities to reuse variance or mean values across threads in a block.
+// Check for underutilization of threads and blocks to maximize parallel efficiency.

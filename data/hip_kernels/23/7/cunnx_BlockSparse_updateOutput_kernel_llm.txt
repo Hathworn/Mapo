@@ -1,0 +1,9 @@
+```
+// Utilize shared memory effectively to reduce global memory accesses
+// Preload biases into shared memory to decrease repetitive global memory reads
+// Unroll inner loop to increase instruction level parallelism
+// Align memory accesses to prevent uncoalesced access patterns
+// Consider using double buffering with shared memory to overlap computation and memory loads
+// Minimize bank conflicts in shared memory accesses by structuring data layout appropriately
+// Utilize warp-level primitives for reduction operations to improve efficiency
+```

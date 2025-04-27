@@ -1,0 +1,8 @@
+```c
+// Consider coalescing memory accesses to x_bin_scores and y_bin_scores for better performance.
+// Explore using shared memory to store data from x_bins and y_bins to reduce global memory accesses.
+// Check the efficiency of the nested loops and look for opportunities to unroll them if beneficial.
+// Evaluate the use of FMA (fused multiply-add) to enhance both accuracy and performance.
+// Use texture or constant memory for frequently accessed data that changes infrequently.
+// Ensure all memory transactions are aligned to maximize throughput on the GPU.
+```

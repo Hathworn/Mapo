@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access by ensuring that thread access to global memory is contiguous.
+// Consider using shared memory to reduce global memory access latency.
+// Minimize use of division in kernel by computing inverse outside and multiplying inside.
+// Ensure optimal occupancy by adjusting block size according to the hardware limitations.
+```

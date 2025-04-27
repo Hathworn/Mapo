@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data for better memory access efficiency.
+// Consider coalescing memory access patterns to optimize global memory bandwidth utilization.
+// Avoid redundant calculations by computing once and reusing results if needed.
+// Minimize atomic operations if possible, as they can serialize performance and increase latency.
+// Analyze threads that aren't utilizing shared or global memory effectively and optimize their memory transactions.

@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by ensuring threads access consecutive elements in global memory.
+// Use loop unrolling to optimize the inner loop for better performance.
+// Reduce global memory accesses by loading redundant or shared data only once per tile.
+// Consider increasing TILE_SIZE for better compute and memory utilization, if occupancy allows.
+// Check if accessing a or b matrices goes beyond boundaries and add boundary checks only if necessary.
+```

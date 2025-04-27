@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for d_nnz_num and d_check_nnz to improve memory throughput.
+// Ensure d_nnz_num and d_check_nnz are allocated and accessed efficiently in device memory.
+// Check if multiple threads are accessing the same element in d_check_nnz, which may lead to contention.
+// Explore using shared memory if multiple threads in a block access common elements in d_nnz_num or d_check_nnz.
+// Align data structures and thread access patterns to reduce uncoalesced global memory access.
+```

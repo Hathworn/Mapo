@@ -1,0 +1,4 @@
+// Consider using 64-bit atomic operations for histogram updates when possible to reduce memory transaction overhead.
+// Use memory coalescing techniques to improve global memory access efficiency by aligning access patterns.
+// Explore using register-level optimizations for frequently accessed data to minimize shared memory bank conflicts.
+// Consider using warp-wide operations (such as shuffle) for histogram reduction to avoid shared memory conflicts.

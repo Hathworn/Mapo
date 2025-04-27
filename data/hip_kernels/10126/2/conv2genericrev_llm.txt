@@ -1,0 +1,8 @@
+```
+// Use shared memory for storing intermediate results to reduce global memory accesses.
+// Align memory access patterns to enable coalesced memory access.
+// Use loop unrolling to improve instruction-level parallelism.
+// Minimize thread divergence and synchronize threads efficiently with __syncthreads().
+// Optimize for shared memory usage to prevent bank conflicts.
+// Ensure alignment of input data to enable vectorized loads and stores.
+```

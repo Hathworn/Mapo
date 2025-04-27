@@ -1,0 +1,6 @@
+```
+// Precompute constants outside of loop to improve performance
+// Use shared memory to reduce the number of global memory accesses
+// Ensure weights are loaded in shared memory for faster access
+// Use __syncthreads() to synchronize threads before accessing shared memory
+```

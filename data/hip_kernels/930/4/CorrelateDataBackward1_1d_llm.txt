@@ -1,0 +1,5 @@
+// Reduce global memory access by using shared memory for frequently accessed data.
+// Consider reorganizing data transfers to improve coalesced memory access.
+// Minimize bank conflicts in shared memory by rearranging data layout or using padding.
+// Use loop unrolling to maximize throughput in inner loop calculations.
+// Assess the use of register variables to reduce redundant memory accesses.

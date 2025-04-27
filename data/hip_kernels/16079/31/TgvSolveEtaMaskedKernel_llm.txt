@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for etau, etav1, and etav2 to improve memory throughput.
+// Use shared memory to reduce redundant access to global memory for reused variables like alpha1_sq and alpha0_sq_4.
+// Consider loop unrolling for computations involving etau, etav1, and etav2 to maximize performance.
+// Ensure data alignment to optimize memory access and reduce memory transaction overhead.
+```

@@ -1,0 +1,5 @@
+// Use shared memory if possible to reduce global memory access latency
+// Optimize block dimensions to maximize occupancy and reduce warp divergence
+// Consider using a coalescing access pattern for the input array
+// Ensure memory access is aligned to improve data throughput
+// Minimize data transfer between device and host, if applicable

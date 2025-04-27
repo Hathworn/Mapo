@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data for threads within the same block to reduce global memory access.
+// Use coalesced memory access patterns for better global memory bandwidth utilization.
+// Optimize thread block size and grid size for better occupancy.
+// Avoid warp divergence by ensuring all threads execute the same control flow path as much as possible.
+// Explore loop unrolling techniques to potentially improve performance.
+```

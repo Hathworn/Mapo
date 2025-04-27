@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to d_input by ensuring threads within the warp access consecutive memory locations.
+// Evaluate the potential benefit of using shared memory to store a tile of d_input.
+// Each thread computes its own index based on block and thread indices only once, avoiding redundant calculations.
+// Unroll the inner loop further to reduce loop overhead, consider pragma unroll to aid the compiler.
+// Ensure data alignment for the d_input and d_output arrays to improve access efficiency and eliminate memory padding issues.
+// Analyze the current occupancy and see if increasing the block size beyond 16x16 might improve throughput, based on register and shared memory usage.
+```

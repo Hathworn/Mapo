@@ -1,0 +1,6 @@
+// Optimize memory access patterns by ensuring coalesced memory reads for adjRow and valRow.
+// Consider using atomic operations for sum to avoid the explicit synchronization barriers.
+// Use shared memory efficiently and limit its usage if possible to free up resources for other operations.
+// Ensure that the memory allocation and usage for _share is optimal for performance and not exceeding shared memory limits.
+// Check if loop unrolling can be applied for the inner loops to enhance performance.
+// Explore the possibility of using warp-level primitives for reduction to optimize performance further.

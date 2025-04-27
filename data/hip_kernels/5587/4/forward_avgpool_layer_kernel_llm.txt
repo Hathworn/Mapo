@@ -1,0 +1,4 @@
+// Consider memory coalescing by accessing input and output arrays in a stride order that maximizes efficiency.
+// Utilize shared memory to store blocks of input data temporarily, which can reduce global memory access.
+// Optimize loop unrolling further by applying techniques such as loop tiling for better cache usage.
+// Use warp-level primitives to perform reductions more efficiently within each block.

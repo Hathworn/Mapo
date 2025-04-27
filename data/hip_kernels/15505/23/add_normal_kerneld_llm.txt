@@ -1,0 +1,3 @@
+// Ensure coalesced memory access by aligning data access order with thread IDs
+// Minimize divergence by using consistent control flow paths for all threads within a warp
+// Consider using shared memory to cache common data if repeatedly accessed by threads

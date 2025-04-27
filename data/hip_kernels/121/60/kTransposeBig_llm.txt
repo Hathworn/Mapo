@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory accesses for improved performance.
+// Ensure tile dimensions (32x33) to prevent bank conflicts and improve memory coalescing.
+// Synchronize threads to ensure all loads to shared memory are complete before proceeding.
+// Minimize global memory accesses and efficiently organize the computational pattern.
+```

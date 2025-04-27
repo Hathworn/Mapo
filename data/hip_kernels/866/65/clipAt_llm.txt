@@ -1,0 +1,4 @@
+// Utilize shared memory if multiple accesses to 'in' are needed for different threads
+// Avoid branching by using intrinsic functions for conditional checks
+// Prefetch data to help hide memory latency
+// Consider using warp-level programming for better execution efficiency

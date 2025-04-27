@@ -1,0 +1,8 @@
+```
+// Use shared memory to store frequently accessed data and reduce global memory access
+// Consider loop unrolling to improve instruction level parallelism
+// Utilize coalesced memory access patterns for fxh, fyh, fzh arrays to improve memory throughput
+// Avoid bank conflicts when accessing shared memory
+// Prefetch data to registers to minimize latency during arithmetic operations
+// Opt for warp-synchronous programming to optimize reduction within blocks
+```

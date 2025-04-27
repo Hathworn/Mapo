@@ -1,0 +1,6 @@
+```
+// Use __ldg() to utilize read-only data cache for d_in accesses
+// Consider loop unrolling to optimize the reduction operations
+// Optimize memory coalescing for better memory throughput
+// Use threadfence with atomic operations if the result is needed across blocks
+```

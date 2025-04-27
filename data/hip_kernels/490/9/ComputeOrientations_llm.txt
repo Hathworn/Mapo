@@ -1,0 +1,7 @@
+// Leverage shared memory to reduce access times to global memory
+// Use atomic operations to avoid race conditions in shared memory updates
+// Preload frequently used values into shared memory to minimize redundant global memory accesses
+// Optimize memory access patterns by aligning data to warp boundaries when possible
+// Consider reorganizing data structures to increase coalesced memory access
+// Reduce divergent branches among threads to improve memory access efficiency
+// Utilize __syncthreads() to ensure all threads have completed necessary operations before next steps

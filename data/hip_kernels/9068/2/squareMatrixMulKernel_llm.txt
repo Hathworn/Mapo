@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache rows of matrix A and columns of matrix B to reduce global memory accesses.
+// Optimize the loop by unrolling if arrayWidth is known and small.
+// Use __restrict__ qualifiers on pointer parameters to enable better compiler optimizations.
+// Consider increasing block size for better occupancy, depending on GPU architecture.
+```

@@ -1,0 +1,5 @@
+// Avoid repeated calculations to enhance memory access efficiency
+// Implement shared memory for repeated data access within a block
+// Use loop unrolling if applicable to further optimize execution performance
+// Ensure coalesced memory access for global data pointers like intData and inData
+// Consider using vectorized data types like float4 for accessing multiple data points simultaneously

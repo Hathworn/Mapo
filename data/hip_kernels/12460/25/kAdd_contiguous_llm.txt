@@ -1,0 +1,5 @@
+// Ensure shared memory size does not exceed block size
+// Reuse shared memory for different computation steps within the loop
+// Consider aligning data for more efficient memory access
+// Investigate potential benefits of cooperative thread group usage
+// Analyze and minimize bank conflicts in shared memory access

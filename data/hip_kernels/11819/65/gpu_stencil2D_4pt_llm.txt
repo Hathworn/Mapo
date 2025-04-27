@@ -1,0 +1,11 @@
+```
+// Use shared memory to reduce global memory accesses during stencil computation.
+// Copy data from global memory to shared memory in smaller chunks to improve coalescence.
+// Align global memory accesses by ensuring that data is copied in a pattern that reduces warp divergence.
+// Ensure the computation using shared memory is optimized to avoid frequent global memory access.
+// Use shared memory to store neighbor values and reduce redundant calculations.
+// Increase shared memory dimensions appropriately to accommodate halos efficiently.
+// Perform halo exchanges efficiently to limit the synchronization overhead.
+// Ensure that data loading and computation are balanced to maximize GPU utilization.
+// Minimize thread divergence by allowing boundary checks to be centrally managed.
+```

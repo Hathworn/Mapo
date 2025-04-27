@@ -1,0 +1,4 @@
+// Use warp-wide reduction for better efficiency
+// Use shared memory to reduce global memory accesses
+// Optimize memory access patterns to avoid bank conflicts in shared memory
+// Minimize divergence by controlling flow paths in warp execution

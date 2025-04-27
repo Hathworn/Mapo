@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize uniform value retrieval overhead.
+// Ensure coalesced memory access by addressing consecutive threads to adjacent data.
+// Use __syncthreads() to synchronize threads after shared memory load.
+// Remove unnecessary operations like multiplication to reduce computational load.
+// Ensure boundary checks to avoid accessing out-of-bounds memory.
+```

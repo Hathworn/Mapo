@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns to enhance memory throughput.
+// Consider using shared memory to store common data accessed by multiple threads within the block.
+// Minimize memory divergence by organizing data structures to align with warp operations.
+// Use __syncthreads() prudently to prevent race conditions and ensure synchronization.
+// Explore loop unrolling for repetitive computations to reduce loop overhead.
+// Profile memory bound operations to identify bottlenecks and optimize them.
+```

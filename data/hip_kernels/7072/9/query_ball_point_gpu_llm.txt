@@ -1,0 +1,8 @@
+```cpp
+// Coalesce memory accesses by organizing xyz1 and xyz2 in Structure of Arrays (SoA) format
+// Use shared memory to cache xyz1 data within a block to reduce global memory loads
+// Adjust block size to ensure optimal occupancy and maximize warp utilization
+// Consider using __restrict__ qualifier for xyz1, xyz2, idx, and pts_cnt pointers
+// Pre-compute and reuse distance calculations to minimize redundant operations
+// Experiment with different data layouts for idx to improve cache efficiency
+```

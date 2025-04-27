@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed variables to reduce redundant access to global memory.
+// Coalesce global memory access by ensuring threads in the same warp access contiguous memory locations.
+// Consider using atomic operations or warp-level primitives for reduction instead of individual per-thread memory writes.
+// Utilize fewer writes to global memory by combining `localCount` updates across multiple threads before storing.

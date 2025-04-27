@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access
+// Ensure coalesced memory access patterns for better performance
+// Avoid bank conflicts in shared memory if shared memory is utilized
+// Consider using warp-level primitives or functions for further optimization

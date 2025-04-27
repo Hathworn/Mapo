@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Consider unrolling loops for better performance
+// Optimize memory access patterns to reduce bank conflicts in shared memory
+// Ensure kernel launches are configured for maximum occupancy
+// Reduce the number of __syncthreads() calls where possible

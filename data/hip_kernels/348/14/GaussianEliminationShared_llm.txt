@@ -1,0 +1,10 @@
+```
+// Consider merging loops to reduce kernel launch overhead.
+// Use loop unrolling to optimize fixed-size loops.
+// Ensure coalesced memory accesses when reading diagonal_values and non_diagonal_values.
+// Use shared memory efficiently by reusing it for different data when possible.
+// Minimize bank conflicts in shared memory usage.
+// Prefetch data to registers to reduce redundant memory accesses.
+// Ensure __syncthreads() is used correctly to prevent race conditions.
+// Use warp-level primitives to reduce synchronization overhead during reduction.
+```

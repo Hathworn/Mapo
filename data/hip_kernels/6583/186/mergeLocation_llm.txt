@@ -1,0 +1,3 @@
+// Use shared memory to minimize global memory access and improve performance.
+// Optimize shared memory size based on the number of threads to maximize usage and avoid wasted space.
+// Ensure __syncthreads() to synchronize threads after loading shared memory data.

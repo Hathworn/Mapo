@@ -1,0 +1,5 @@
+```
+// Consider coalescing global memory accesses by using a single hiprandState variable per block.
+// Use shared memory to store state for each block to reduce global memory accesses.
+// Use __syncthreads() to ensure all threads have initialized their states before use.
+```

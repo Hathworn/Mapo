@@ -1,0 +1,6 @@
+```
+// Ensure global memory accesses are coalesced by using proper strides.
+// Minimize the stride size to maintain memory coalescing in global accesses.
+// Utilize __restrict__ to help the compiler with optimization by indicating no aliasing.
+// Apply boundary check early to prevent unnecessary calculations.
+```

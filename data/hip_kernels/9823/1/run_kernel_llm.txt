@@ -1,0 +1,3 @@
+// Load state memory once per thread to optimize memory access
+// Store the updated state back at the end to minimize memory writes
+// Perform all calculations on registers instead of global memory for better performance

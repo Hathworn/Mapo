@@ -1,0 +1,5 @@
+// Use loop unrolling to reduce instruction overhead in the spatial loop.
+// Consider coalescing global memory accesses to optimize bandwidth.
+// Use shared memory efficiently by reducing bank conflicts.
+// Apply warp-level reduction to optimize final reduction steps.
+// Minimize __syncthreads usage by leveraging warp shuffle instructions for reduction.

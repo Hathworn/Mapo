@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced accesses to global memory for MatA and MatB
+// Avoid bank conflicts when accessing shared memory sMatC
+// Ensure synchronization with __syncthreads() after loading data into shared memory
+// Optimize block size for better occupancy and memory throughput
+```

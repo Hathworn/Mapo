@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve memory bandwidth utilization
+// Use shared memory to minimize global memory accesses if possible
+// Optimize data reuse by loading X[i * INCX] once when possible
+// Ensure enough threads per block to fully utilize the GPU's computational resources
+// Consider vectorized data access methods to increase throughput
+// Ensure INCX is set to 1 where possible for better performance
+```

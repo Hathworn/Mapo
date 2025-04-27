@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced accesses when loading data into shared memory
+// Use __syncthreads() to synchronize threads after loading data
+// Use atomic operations to update partIndices safely
+// Consider optimizing the condition and accessing array[idx + 1] only when necessary
+// Minimize the number of atomic operations by checking conditions first
+```

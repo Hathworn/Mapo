@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses during stencil computation.
+// Ensure coalesced memory access patterns by organizing global and shared memory indices.
+// The use of shared memory reduces redundant memory fetching for neighboring values.
+// Remember to minimize bank conflicts in shared memory access through optimal alignment.
+// Adjust block and tile dimensions to maximize memory throughput and minimize idle threads.
+// Consider double buffering for shared memory to improve computational efficiency.
+```

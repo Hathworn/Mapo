@@ -1,0 +1,4 @@
+// Consider aligning accesses to memory using coalesced memory access patterns.
+// Use shared memory to reduce global memory accesses and improve performance.
+// Ensure the use of __syncthreads() to avoid race conditions when loading tiles.
+// Consider loop unrolling in inner multiplication loop for further performance improvements.

@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to reduce global memory accesses if possible
+// Ensure coalesced memory access patterns to improve data throughput
+// Minimize use of shared variables to avoid bank conflicts in shared memory
+// Use warp-level primitives to further reduce branch divergence within warps
+// Optimize block and grid sizes for maximum occupancy and efficiency
+```

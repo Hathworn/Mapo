@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access
+// Check the alignment of memory accesses to improve coalescing
+// Minimize divergence by ensuring all threads within a warp execute the same instruction
+// Optimize block and grid sizes to better utilize GPU resources
+```

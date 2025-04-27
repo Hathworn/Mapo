@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for input loads
+// Use offset variables to simplify indexing expressions
+// Ensure shared memory usage is within limits to avoid bank conflicts
+// Prefetch data to sharedRow only when necessary
+// Minimize number of __syncthreads calls
+```

@@ -1,0 +1,5 @@
+// Optimize thread indexing for coalesced memory access
+// Use shared memory to reduce global memory access for data_a and data_b
+// Apply loop unrolling for reduced iteration overhead in critical sections
+// Ensure memory alignment for faster global memory transactions
+// Explore warp-level primitives for further reduction in sum computation overhead

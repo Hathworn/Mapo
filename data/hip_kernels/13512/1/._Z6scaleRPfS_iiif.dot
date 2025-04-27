@@ -1,0 +1,10 @@
+digraph "CFG for '_Z6scaleRPfS_iiif' function" {
+	label="CFG for '_Z6scaleRPfS_iiif' function";
+
+	Node0x4b64f30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = shl i32 %7, 6\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = add i32 %8, %9\l  %11 = add i32 %10, %4\l  %12 = icmp slt i32 %11, %4\l  %13 = icmp sgt i32 %11, %3\l  %14 = select i1 %12, i1 true, i1 %13\l  br i1 %14, label %24, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x4b64f30:s0 -> Node0x4b668a0;
+	Node0x4b64f30:s1 -> Node0x4b66930;
+	Node0x4b66930 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = add nsw i32 %11, -1\l  %17 = mul nsw i32 %16, %3\l  %18 = add nsw i32 %4, -1\l  %19 = add nsw i32 %18, %17\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %1, i64 %20\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %23 = fmul contract float %22, %5\l  store float %23, float addrspace(1)* %21, align 4, !tbaa !5\l  br label %24\l}"];
+	Node0x4b66930 -> Node0x4b668a0;
+	Node0x4b668a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  ret void\l}"];
+}

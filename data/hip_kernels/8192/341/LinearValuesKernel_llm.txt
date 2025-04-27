@@ -1,0 +1,5 @@
+// Consider using compile-time constants for repeated expressions (e.g., fmaxf(size - 1, 1)) to reduce computation overhead.
+// Evaluate potential bank conflicts within shared memory access.
+// Check if accessing output using (id + shift) % size could be optimized to prevent frequent modulus operations.
+// Ensure memory coalescing in output array access for improved bandwidth usage.
+// Investigate if prefetching techniques could further optimize memory reads.

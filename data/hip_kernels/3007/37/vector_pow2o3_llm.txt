@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Coalesce memory access by ensuring stride is divisible by warp size
+// Use vectorized data types like float2 or float4 for better memory throughput
+// Minimize the use of pow function by using simpler arithmetic if possible
+// Implement loop unrolling if multiple operations are performed per thread
+```

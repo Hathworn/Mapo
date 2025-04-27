@@ -1,0 +1,6 @@
+// Ensure coalesced memory access when loading kernel into shared memory for improved memory efficiency.
+// Consider using shared memory for input data tile to reduce memory bandwidth usage during filtering.
+// Optimize shared memory allocation by calculating its size based on block dimensions and kernel size.
+// Minimize divergence by ensuring threads operate on valid data through boundary checks.
+// Avoid excessive synchronization and consider optimizing thread communication within warps for better parallelization efficiency.
+// Utilize register memory for temporary calculation results to improve access speed over shared or global memory.

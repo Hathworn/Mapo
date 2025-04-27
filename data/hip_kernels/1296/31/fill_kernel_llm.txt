@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for temporary storage if data reuse occurs
+// Ensure coalesced memory access by keeping data contiguous
+// Minimize bank conflicts by aligning data appropriately
+// Make sure to use the __restrict__ qualifier for pointer arguments if aliasing is not a concern
+// Explore using vectorized memory access if INCX is constant and allows
+// Evaluate the use of warp shuffles to reduce divergence
+```

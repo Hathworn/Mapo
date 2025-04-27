@@ -1,0 +1,6 @@
+```c
+// Utilize shared memory to cache blocks of the data_col for faster access
+// Consider using __restrict__ qualifiers for pointer arguments to reduce aliasing
+// Use cooperative matrix to improve memory coalescing and reduce contention
+// Ensure global memory accesses are aligned and coalesced
+```

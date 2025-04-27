@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Coalesce global memory accesses to improve memory throughput.
+// Reduce branching by ensuring conditions minimize divergence among threads in a warp.
+// Consider padding shared memory to avoid bank conflicts in case of data reuse.

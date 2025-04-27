@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to store intermediate results for faster accumulation
+// Unroll loops to exploit instruction-level parallelism
+// Use warp-level reduction to minimize synchronization overhead
+// Avoid redundant global memory accesses by storing results directly in shared memory
+// Ensure coalesced memory access patterns wherever possible
+```

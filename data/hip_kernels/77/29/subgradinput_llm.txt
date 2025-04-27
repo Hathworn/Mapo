@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store a tile of gradOutput elements to reduce global memory accesses
+// Align the memory accesses of ptr_gradInput and ptr_gradOutput for coalesced memory access
+// Replace the divide operation in the inner loop with a pre-computed reciprocal to improve performance
+```

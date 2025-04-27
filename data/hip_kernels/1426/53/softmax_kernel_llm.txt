@@ -1,0 +1,8 @@
+```
+// Use shared memory efficiently to minimize global memory access
+// Ensure coalesced memory access patterns to improve memory bandwidth
+// Consider loop unrolling if 'n' is known at compile time for reduced overhead
+// Pre-compute 'largest' using warp reduction to optimize performance
+// Reduce number of division operations in normalization by using reciprocal
+// Adjust block and grid sizes based on kernel launch configuration for optimal performance
+```

@@ -1,0 +1,5 @@
+// Consider reducing global memory accesses by using shared memory efficiently.
+// Ensure shared memory is being used to minimize global memory reads and writes.
+// Check if further mapping to shared memory can reduce bank conflicts.
+// Evaluate the number of threads per block to ensure optimal shared memory allocation.
+// Ensure coalesced accesses to global memory for improved memory throughput.

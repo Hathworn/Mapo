@@ -1,0 +1,4 @@
+// Precompute commonly used values outside the loop to reduce redundant calculations
+// Unroll loop for better performance if iterations are small, enhancing instruction-level parallelism
+// Compute write index outside conditional checks for potential reuse and reduced overhead
+// Perform memory sharing efficiently to optimize memory access patterns and enhance coalesced access

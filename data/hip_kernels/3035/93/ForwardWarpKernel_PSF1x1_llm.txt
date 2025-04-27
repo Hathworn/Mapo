@@ -1,0 +1,6 @@
+// Use shared memory to cache input values for each thread block and reduce global memory accesses.
+// Employ loop unrolling if applicable to minimize loop overhead.
+// Optimize memory access patterns to ensure coalescing wherever possible.
+// Consider using texture or surface memory for read-only data to optimize cache usage.
+// Align data structures to maximize memory access efficiency and minimize bank conflicts.
+// Use asynchronous copies and memory prefetching to hide data transfer latency.

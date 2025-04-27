@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing for gradInput_data and gradOutput_data access patterns
+// Explore shared memory usage for repetitive access of gradOutput_data[ipidx]
+// Evaluate loop unrolling effectiveness in terms of memory access latency reduction
+// Investigate possible warp divergence due to conditional loops within kernel
+// Verify alignment of data structures with respect to memory transaction size
+```

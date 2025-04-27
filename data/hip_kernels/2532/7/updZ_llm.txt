@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access patterns for `f` to improve memory throughput.
+// Use shared memory to temporarily store data close to `idx` for parallel threads.
+// Consider loop unrolling for operations that compute gradients for better performance.
+// Analyze memory access patterns to reduce bank conflicts in accessing `z`.
+// Explore using texture memory for read-only data `f` to optimize cache usage.
+// Implement asynchronous memory prefetching if applicable to hide latency.
+```

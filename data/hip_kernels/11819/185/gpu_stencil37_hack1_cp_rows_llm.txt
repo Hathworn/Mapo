@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses to improve memory throughput.
+// Use __restrict__ qualifier for pointers to potentially enhance compiler optimization.
+// Prefetch data to shared memory to reduce global memory access latency.
+// Apply loop unrolling further, if appropriate, to increase utilization.
+// Examine and possibly optimize index calculation to minimize arithmetic operations.
+// Avoiding bank conflicts in shared memory may improve shared memory access speed.
+// Assess if applying constant memory could speed up repeated accesses.
+```

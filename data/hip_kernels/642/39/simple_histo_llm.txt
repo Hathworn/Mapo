@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory accesses
+// Reduce atomic operation contention by using localBins
+// Ensure reduction across thread blocks if needed
+// Optimize initial load of input data from global to local
+// Consider reducing shared memory usage if BIN_COUNT is small
+// Explore using warp level primitives for bin updates
+// Check if coalesced memory access is feasible for d_in
+```

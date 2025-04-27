@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access for matrix_data and in_vector to improve memory throughput.
+// Use shared memory to store in_vector values accessed multiple times within the same warp.
+// Optimize memory usage by aligning shared memory access to prevent bank conflicts.
+// Unroll the loop further with a templated approach for different warp sizes.
+// Check if using more warps per block increases occupancy, leading to better performance.
+```

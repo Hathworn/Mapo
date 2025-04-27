@@ -1,0 +1,7 @@
+```c
+// Increase block size to utilize more threads
+// Ensure memory access is coalesced
+// Use shared memory if applicable to reduce global memory access
+// Consider using warp-level primitives for reduction if large data
+// Profiling needed to identify memory bottlenecks
+```

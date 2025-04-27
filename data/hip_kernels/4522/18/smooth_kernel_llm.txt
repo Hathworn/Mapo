@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access patterns for improved global memory access efficiency.
+// Use shared memory to cache tiles of data to reduce global memory access latency.
+// Consider loop unrolling to reduce the number of iterations and improve instruction throughput.
+// Optimize index calculations to minimize repeated arithmetic within the loop.
+// Leverage occupancy calculators to select optimal block size settings for the kernel launch.
+// Evaluate different warp sizes to identify configurations that maximize memory throughput.
+```

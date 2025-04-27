@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning memory reads and writes with warp boundaries.
+// Minimize bank conflicts in shared memory by organizing data access patterns.
+// Use shared memory efficiently by ensuring the size of sharedSource is appropriately dimensioned.
+// Avoid unnecessary __syncthreads() calls to improve performance.
+// Consider using loop unrolling for loops to reduce loop overhead.
+// Check for warp divergence in conditionals and refactor if possible.
+// Align data structures in memory to reduce padding and improve cache utilization.
+```

@@ -1,0 +1,6 @@
+// Optimize memory access by using shared memory for width_offset, height_offset, and flip arrays.
+// Minimize global memory accesses by using shared memory for frequently accessed variables.
+// Align memory access patterns to ensure coalesced global memory reads and writes.
+// Use warp-level primitives to reduce divergence in image flipping computation.
+// Pre-calculate image-related offsets outside the grid-stride loop for better efficiency.
+// Consider tuning block and grid dimensions to achieve better thread utilization.

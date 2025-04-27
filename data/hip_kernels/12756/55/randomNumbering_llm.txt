@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store random states for better memory access pattern.
+// Coalesce global memory accesses for globalState and degreeCount arrays.
+// Minimize use of shared local variables to avoid register pressure.
+// Consider loop unrolling if applicable for further warp efficiency.
+```

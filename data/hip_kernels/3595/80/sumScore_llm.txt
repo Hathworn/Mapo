@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure coalesced memory accesses for better performance.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Consider optimizing the strided loop for better cache utilization.
+// Align data structures to facilitate memory coalescing.
+```

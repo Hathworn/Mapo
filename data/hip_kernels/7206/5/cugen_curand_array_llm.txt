@@ -1,0 +1,3 @@
+// Use __ldg to load state for potential cache performance improvement
+// Consider using shared memory if thread blocks reuse state information frequently
+// Optimize memory access patterns to ensure coalesced reads and writes

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Load boundary data into shared memory to avoid redundant global memory reads
+// Ensure efficient coalesced memory access patterns for global memory
+// Synchronize threads after loading data to shared memory to prevent data hazards
+// Optimize for boundary threads by minimizing conditional checks
+```

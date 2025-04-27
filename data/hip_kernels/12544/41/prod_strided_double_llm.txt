@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by using contiguous threads accessing contiguous memory locations
+// Avoid conditional statements within the loop for optimal performance
+// Consider using shared memory to accumulate local results before performing atomic operation
+// Use `__device__` function cautiously if atomic operation contention is expected
+// Minimize the frequency of atomic operations by reducing data beforehand
+```

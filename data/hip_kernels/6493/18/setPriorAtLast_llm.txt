@@ -1,0 +1,4 @@
+// Consider coalesced memory access pattern for `lst` and `prr` arrays to enhance memory bandwidth utilization.
+// Minimize divergent warps by ensuring all threads within a warp follow similar execution paths.
+// Utilize shared memory if possible to minimize repeated global memory accesses in loop.
+// Assess loop unrolling options for better instruction throughput by reducing the overhead of loop control.

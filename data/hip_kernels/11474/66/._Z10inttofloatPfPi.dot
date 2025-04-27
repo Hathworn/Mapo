@@ -1,0 +1,5 @@
+digraph "CFG for '_Z10inttofloatPfPi' function" {
+	label="CFG for '_Z10inttofloatPfPi' function";
+
+	Node0x5156a40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = bitcast i32 addrspace(1)* %1 to float addrspace(1)*\l  %4 = load float, float addrspace(1)* %3, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  store float %4, float addrspace(1)* %0, align 4, !tbaa !4\l  ret void\l}"];
+}

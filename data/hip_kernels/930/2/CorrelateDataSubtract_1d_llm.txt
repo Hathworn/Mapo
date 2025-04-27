@@ -1,0 +1,5 @@
+// Consider using shared memory for bottom data to reduce global memory access latency.
+// Optimize memory access patterns to coalesce memory reads and writes.
+// Use loop unrolling for small fixed-size loops to reduce loop overhead.
+// Consider pre-fetching data to registers for frequently accessed elements in inner loops.
+// Ensure all memory accesses are aligned for optimal throughput.

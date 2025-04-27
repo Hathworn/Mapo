@@ -1,0 +1,3 @@
+// Use shared memory for frequently accessed variables like normalization_constant.
+// Ensure coalesced memory access pattern by aligning blocks and threads with data elements.
+// Avoid unnecessary __syncthreads() if possible; evaluate if it's truly needed for synchronization.

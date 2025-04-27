@@ -1,0 +1,13 @@
+digraph "CFG for '_Z6calcpiilPd' function" {
+	label="CFG for '_Z6calcpiilPd' function";
+
+	Node0x4c56f40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = zext i32 %4 to i64\l  %6 = getelementptr inbounds double, double addrspace(1)* %2, i64 %5\l  store double 0.000000e+00, double addrspace(1)* %6, align 8, !tbaa !5\l  %7 = sitofp i64 %1 to double\l  %8 = fdiv contract double 1.000000e+00, %7\l  %9 = mul nsw i64 %5, %1\l  %10 = sext i32 %0 to i64\l  %11 = sdiv i64 %9, %10\l  %12 = add nuw nsw i32 %4, 1\l  %13 = zext i32 %12 to i64\l  %14 = mul nsw i64 %13, %1\l  %15 = sdiv i64 %14, %10\l  %16 = icmp slt i64 %11, %15\l  br i1 %16, label %19, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x4c56f40:s0 -> Node0x4c57ce0;
+	Node0x4c56f40:s1 -> Node0x4c58be0;
+	Node0x4c59880 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%17:\l17:                                               \l  store double %28, double addrspace(1)* %6, align 8, !tbaa !5\l  br label %18\l}"];
+	Node0x4c59880 -> Node0x4c58be0;
+	Node0x4c58be0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%18:\l18:                                               \l  ret void\l}"];
+	Node0x4c57ce0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  %20 = phi double [ %28, %19 ], [ 0.000000e+00, %3 ]\l  %21 = phi i64 [ %29, %19 ], [ %11, %3 ]\l  %22 = sitofp i64 %21 to double\l  %23 = fadd contract double %22, 5.000000e-01\l  %24 = fmul contract double %8, %23\l  %25 = fmul contract double %24, %24\l  %26 = fadd contract double %25, 1.000000e+00\l  %27 = fdiv contract double 4.000000e+00, %26\l  %28 = fadd contract double %27, %20\l  %29 = add nsw i64 %21, 1\l  %30 = icmp slt i64 %29, %15\l  br i1 %30, label %19, label %17, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x4c57ce0:s0 -> Node0x4c57ce0;
+	Node0x4c57ce0:s1 -> Node0x4c59880;
+}

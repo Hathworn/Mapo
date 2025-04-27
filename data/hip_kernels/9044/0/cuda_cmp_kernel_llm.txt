@@ -1,0 +1,6 @@
+```
+// Consider optimizing memory access patterns by ensuring data is coalesced for aptr and bptr
+// Evaluate the use of shared memory; might not be necessary for small data sizes
+// Use warp-level primitives if applicable for better performance over atomic operations
+// Check if reduction operations can take advantage of warp intrinsics
+```

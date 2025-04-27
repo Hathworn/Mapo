@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access patterns to ensure coalesced memory accesses.
+// Use shared memory efficiently to reduce global memory bandwidth requirements.
+// Consider loop unrolling techniques to optimize the inner while loop performance.
+// Ensure that __syncthreads() is used correctly to prevent race conditions.
+// Reduce bank conflicts by accessing shared memory in a coalesced manner.
+// Consider using warp shuffle functions for intra-warp reduction to minimize shared memory usage.
+// Ensure that shared memory usage does not exceed available shared memory per block.
+// Use volatile keyword judiciously to prevent compiler optimization from disregarding required memory reads.
+```

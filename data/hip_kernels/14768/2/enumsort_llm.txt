@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access.
+// Load data into shared memory to minimize memory latency.
+// Ensure __syncthreads() is used after loading data into shared memory for synchronization.
+// Avoid warp divergence by simplifying conditional statements.

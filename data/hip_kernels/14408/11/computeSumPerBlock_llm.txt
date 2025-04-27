@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access for global memory reads
+// Reduce shared memory bank conflicts
+// Minimize synchronization by optimizing memory access patterns
+// Use atomic operations if there's contention on global memory writes
+// Evaluate if using warp-level primitives could improve performance
+// Ensure thread divergence is minimized during reduction
+```

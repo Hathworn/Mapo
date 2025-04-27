@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to maximize bandwidth utilization.
+// Minimize divergent branches to maintain warp efficiency.
+// Explore increasing thread block size for better SM occupancy.
+// Use shared memory to reduce global memory access latency, if applicable.
+// Ensure aligned memory accesses to take advantage of memory coalescing.
+// Optimize grid and block dimensions to match the hardware configuration.
+```

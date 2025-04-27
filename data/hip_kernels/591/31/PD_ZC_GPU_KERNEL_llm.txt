@@ -1,0 +1,8 @@
+```
+// Move y_r calculation inside loop if dynamic and dependent on f
+// Ensure x_r_base is coalesced for global memory read
+// Align x_w_base to maximize memory throughput
+// Reduce register pressure by simplifying x_w calculation
+// Consider using shared memory for repeated data access
+// Evaluate warp divergence from condition and optimize
+```

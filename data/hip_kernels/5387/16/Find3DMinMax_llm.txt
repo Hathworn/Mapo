@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses by ensuring contiguous threads access contiguous memory locations.
+// Use shared memory to minimize global memory accesses and maximize reuse in inner loops.
+// Preload data into shared memory to increase memory bandwidth utilization.
+// Manage bank conflicts in shared memory by padding arrays if necessary.
+// Consider using memory access patterns that reduce memory divergence.
+// Reduce register pressure by minimizing temporary variable usage.
+// Ensure warp divergence is minimized to achieve optimal performance.
+// Consider loop unrolling to minimize loop overhead if loop count is known at compile time.
+```

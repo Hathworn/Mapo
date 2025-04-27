@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for better data reuse and reduce global memory access
+// Ensure data alignment to minimize memory access latency
+// Optimize block and grid size to maximize hardware occupancy
+// Use __restrict__ keyword on pointers to optimize memory access
+```

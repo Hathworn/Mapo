@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses for better memory coalescing.
+// Load data into shared memory once per block to reduce redundant global memory reads.
+// Ensure all required padding is loaded in shared memory to prevent out-of-bound accesses.
+// Utilize __syncthreads() to guarantee all shared memory writes are completed before proceeding with computation.
+// Optimize memory accesses in the convolution part by reducing complex index calculations.

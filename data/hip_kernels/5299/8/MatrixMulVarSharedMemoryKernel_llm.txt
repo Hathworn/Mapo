@@ -1,0 +1,8 @@
+```
+// Use loop-specific conditions directly to minimize branching
+// Prefetch data into shared memory to reduce global memory access latency
+// Reduce use of conditional instructions by simplifying control flow
+// Aggressively use shared memory for caching block data
+// Consider loop unrolling for the innermost loop for potential performance gains
+// Ensure coalesced access for both reads from global memory and writes to global memory
+```

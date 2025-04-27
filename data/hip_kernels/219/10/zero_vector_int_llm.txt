@@ -1,0 +1,6 @@
+```c
+// Consider aligning memory accesses to 16 bytes for int4 operations.
+// Reduce divergent branching by processing multiple elements per thread.
+// Ensure vec is allocated with enough space for four-element access.
+// Avoid uncoalesced memory accesses by using int4 type.
+```

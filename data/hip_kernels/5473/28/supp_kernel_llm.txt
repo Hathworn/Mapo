@@ -1,0 +1,6 @@
+```
+// Consider aligning data access to ensure coalesced memory transactions.
+// Use shared memory if multiple threads access the same memory region to reduce global memory transactions.
+// Employ grid-stride loops to process larger data sizes beyond the block size.
+// Pre-compute any reusable values outside of the main loop to minimize recomputations.
+```

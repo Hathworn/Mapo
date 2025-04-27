@@ -1,0 +1,5 @@
+// Ensure memory access is aligned for better coalescing
+// Consider using shared memory to reduce global memory bandwidth
+// Combine memory operations to minimize load instructions
+// Reuse loaded values when performing multiple computations
+// Avoid divergent branches for boundary handling operations

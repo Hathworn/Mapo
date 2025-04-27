@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access by loading 'variance' into shared memory
+// Reduce thread divergence by ensuring all threads within a warp execute the same branches
+// Consider using loop unrolling to reduce loop overhead and increase throughput
+// Use memory coalescing by ensuring sequential threads access sequential memory addresses
+// Prefetch data to hide memory latency: load data into registers before they are needed
+// Reduce memory dependency by using non-blocking memory operations when available
+```

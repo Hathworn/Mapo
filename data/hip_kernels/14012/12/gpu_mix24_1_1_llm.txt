@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for `ip` by ensuring threads access contiguous elements.
+// Use `__restrict__` keyword for pointer parameters to suggest compiler optimizations.
+// Consider using shared memory to reduce global memory access and enhance data reuse.
+// Ensure `ipCurrent` pointer is aligned optimally for better performance on certain GPUs.
+// Consider loop unrolling if applicable for operations involving `l` and `r` to reduce loop overhead.
+// Minimize data type conversions to reduce extra instructions and improve throughput.
+```

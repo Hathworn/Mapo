@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access for d_startArray and d_startSumArray.
+// Ensure all memory accesses are aligned to increase memory throughput.
+// Minimize shared memory bank conflicts for better performance.
+// Adjust the block size to maximize the hardware capabilities.
+// Utilize __syncthreads() only if necessary, as it can incur performance penalties.
+// Optimize register usage to avoid spilling into local memory.
+```

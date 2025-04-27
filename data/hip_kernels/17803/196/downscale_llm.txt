@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to temporarily store gradOutput_data for better memory access patterns
+// Use __restrict__ pointers for gradInput_data and gradOutput_data to improve compiler optimizations
+// Ensure memory coalescing by organizing data access patterns for gradOutput_data
+// Minimize divergence by ensuring all threads in a warp execute the same branches when possible
+// Use int instead of long for loop variables to harmonize with the scale_factor type and potentially save memory bandwidth
+```

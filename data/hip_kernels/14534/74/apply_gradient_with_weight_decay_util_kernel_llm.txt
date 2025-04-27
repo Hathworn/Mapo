@@ -1,0 +1,6 @@
+```
+//Use shared memory to reduce global memory access latency
+//Consider aligning data structures to 128-bit boundaries for coalesced memory access
+//Prefetch data to reduce stall cycles, if register usage allows
+//Aggregate memory accesses by potentially operating on larger data sizes
+```

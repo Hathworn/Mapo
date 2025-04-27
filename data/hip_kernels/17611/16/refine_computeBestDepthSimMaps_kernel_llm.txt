@@ -1,0 +1,8 @@
+```
+// Consider coalesced access for isims and idpts to improve global memory access efficiency.
+// Ensure alignment of output buffers osim and odpt to guarantee optimal memory transactions.
+// Utilize shared memory to cache neighboring elements, reducing redundant global memory accesses.
+// Assess the occupancy level and maximize the use of available registers to improve performance.
+// Minimize divergent branches within the kernel to ensure warp execution efficiency.
+// Evaluate tiling strategies for processing data in blocks for potential performance benefits.
+```

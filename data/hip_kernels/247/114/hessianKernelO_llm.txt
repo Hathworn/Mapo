@@ -1,0 +1,4 @@
+// Use shared memory to cache d_gxx, d_gxy, d_gxz, d_gyy, d_gyz, d_gzz values to reduce global memory accesses.
+// Optimize memory coalescing by organizing data access patterns to be sequential.
+// Cache frequently reused calculations like sqrt(p) to reduce redundant computation and improve performance.
+// Consider using texture memory for read-only data arrays to decrease memory latency.

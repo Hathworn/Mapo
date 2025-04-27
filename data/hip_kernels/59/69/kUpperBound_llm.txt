@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifiers if mat1, mat2, and target are guaranteed not to alias
+// Align memory addresses of mat1, mat2, and target to improve coalesced memory access
+// Consider using float4 or float2 to load/store data for increased memory throughput
+// Optimize block and grid dimensions based on hardware specifications for occupancy
+// Ensure sufficient occupancy to hide memory latency and achieve better performance
+```

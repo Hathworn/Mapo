@@ -1,0 +1,6 @@
+```
+// Use shared memory to hold portions of mat1 and mat2 to reduce global memory access latency
+// Consider coalescing memory accesses by ensuring mat1, mat2, and target are accessed sequentially
+// Optimize thread block size to match the GPU architecture for maximum occupancy
+// Use half2 or float4 data types if supported to reduce the number of instructions
+```

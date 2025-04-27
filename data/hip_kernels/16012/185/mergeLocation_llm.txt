@@ -1,0 +1,3 @@
+// Use shared memory for common repeated computations to reduce global memory access
+// Avoid branch divergence by ensuring conditions are met for all threads in warp
+// Coalesce memory accesses by ensuring that consecutive threads access consecutive memory locations

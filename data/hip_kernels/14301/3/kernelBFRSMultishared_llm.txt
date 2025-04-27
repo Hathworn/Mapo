@@ -1,0 +1,8 @@
+```
+// Align memory accesses for better coalescing
+// Consider using shared memory for g_uquery if applicable
+// Use __ldg to take advantage of read-only cache if possible
+// Consider double-buffering for s_npointsrange for better bandwidth utilization
+// Reduce the number of synchronizations where possible
+// Consider using warp-level primitives to reduce synchronization overhead
+```

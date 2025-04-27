@@ -1,0 +1,4 @@
+// Consider using shared memory for d_2d_cost_matrix to improve memory access efficiency.
+// Optimize the sequential accesses to tmp_window to improve parallelism.
+// Ensure coalesced access when reading d_ss and d_ts by adjusting memory access pattern.
+// Align accesses to d_params to minimize bank conflicts in shared memory.

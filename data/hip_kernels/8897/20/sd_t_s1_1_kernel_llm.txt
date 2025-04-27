@@ -1,0 +1,7 @@
+```
+// Use shared memory to load t2_d to improve memory access efficiency
+// Ensure appropriate synchronization with __syncthreads() to prevent data races
+// Consider strided access patterns for t2_shm to optimize memory coalescing
+// Minimize redundant calculations by identifying the specific indices within loops
+// Perform boundary checks when using array indices to prevent out-of-bounds memory access
+```

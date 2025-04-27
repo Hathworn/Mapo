@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Optimize memory access patterns by ensuring coalesced access where possible
+// Minimize bank conflicts in shared memory by aligning shared memory access
+// Consider using _ldg() for read-only data to enhance cache efficiency
+// Load data into shared memory in a coalesced manner to improve performance
+// Reduce redundant calculations by precomputing indices for faster access
+```

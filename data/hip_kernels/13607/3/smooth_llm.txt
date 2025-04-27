@@ -1,0 +1,4 @@
+// Use shared memory for storing elements to reduce global memory access latency.
+// Preload data into registers to minimize memory access during computations.
+// Consider using vectorized memory operations if applicable for better data throughput.
+// Ensure memory coalescing by aligning data accesses with warp boundaries.

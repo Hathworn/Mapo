@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for dY, Y, and dX to enhance memory throughput.
+// Use shared memory to minimize redundant global memory accesses for frequently accessed data.
+// Ensure optimal occupancy by choosing the number of threads per block that best fits the GPU's architecture.
+// Examine using warp-level primitives to reduce synchronization overhead where applicable.
+// Utilize memory prefetching strategies to hide memory latencies.
+```

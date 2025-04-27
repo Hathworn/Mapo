@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses if shared memory size permits
+// Consider coalesced memory accesses to improve data throughput
+// Optimize block size for better occupancy while considering shared memory usage
+// Consider loop unrolling if iterations are predictable and unrolled sizes fit in register count
+```

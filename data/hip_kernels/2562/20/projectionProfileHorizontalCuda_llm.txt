@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access and atomic operations
+// Align shared memory size with block dimensions for optimal utilization
+// Atomic operations on shared memory are generally faster than on global memory
+// Ensure shared memory size (e.g., 256) adequately matches blockDim for efficiency
+```

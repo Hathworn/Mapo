@@ -1,0 +1,9 @@
+```
+// Consider increasing data loading coalescence in shared memory by adjusting tid calculations.
+// Analyze memory access patterns to minimize bank conflicts in shared memory access.
+// Avoid redundant loading by ensuring each data element goes into shared memory just once.
+// Use an appropriate loop unrolling factor to balance between optimization and register usage.
+// Balance the shared memory usage with available resources to prevent overconsumption.
+// Evaluate if additional prefetching strategies could further hide global memory latency.
+// Minimize conditional statements within performance-critical loop constructs.
+```

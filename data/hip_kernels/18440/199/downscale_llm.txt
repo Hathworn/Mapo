@@ -1,0 +1,6 @@
+```c
+// Use shared memory to cache gradOutput_data for better memory access patterns
+// Optimize global memory access by coalescing memory reads from gradOutput_data
+// Consider indexing threads for optimal memory bandwidth utilization
+// Evaluate the use of texture memory if access patterns are suited for it
+```

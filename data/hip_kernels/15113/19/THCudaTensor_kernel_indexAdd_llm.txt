@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access for res_stride.
+// Ensure thread blocks are fully utilized for better performance.
+// Consider aligning data accesses for coalesced memory transactions.
+// Reduce the number of atomic operations when possible to minimize contention.
+// Use constant memory for index array if dimensions are known beforehand.

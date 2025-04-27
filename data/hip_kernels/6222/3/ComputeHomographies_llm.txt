@@ -1,0 +1,6 @@
+```
+// Use shared memory to store the a and ia matrices to reduce global memory access latency.
+// Use coalesced memory access for the coord array to improve memory throughput.
+// Consider using float4 or similar types for coord fetching to take advantage of vectorized loads.
+// Reduce the use of __syncthreads() where possible to minimize warp divergence.
+```

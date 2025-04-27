@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by aligning data to the warp size
+// Use shared memory to cache submatrix tiles used by multiple threads
+// Optimize global memory access patterns to improve memory bandwidth usage
+// Consider loop unrolling further or using vectorized loads/stores if beneficial
+// Evaluate use of constant memory if weight values don't change often
+```

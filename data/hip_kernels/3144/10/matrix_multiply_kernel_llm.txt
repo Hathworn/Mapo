@@ -1,0 +1,6 @@
+// Consider coalesced memory access to improve global memory throughput
+// Evaluate the use of shared memory to reduce global memory access latency
+// Add prefetching to hide memory latency for vector_in
+// Explore using warp shuffle to reduce the need for memory accesses during the reduction
+// Ensure memory alignment to take advantage of memory access patterns
+// Evaluate using asynchronous memory copy if applicable

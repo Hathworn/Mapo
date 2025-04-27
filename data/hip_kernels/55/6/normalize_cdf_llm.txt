@@ -1,0 +1,6 @@
+```
+// Consider using __restrict__ pointers to improve memory access efficiency
+// Ensure memory alignment for d_input_cdf and d_output_cdf for coalesced access
+// Use shared memory if there are repeated accesses to d_input_cdf to reduce global memory traffic
+// Optimize thread and block dimensions for better occupancy and performance
+```

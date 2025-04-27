@@ -1,0 +1,7 @@
+```cpp
+// Consider aligning data structures to memory boundaries to enhance coalesced memory accesses.
+// Use more shared memory to store weights if resources allow, reducing global memory reads.
+// Consider using warp shuffle operations to reduce the need for __syncthreads() where applicable.
+// Attempt to minimize atomic operations by using parallel reduction where possible.
+// Investigate the usage of texture memory for read-only data like g_graph_height to improve cache hits.
+```

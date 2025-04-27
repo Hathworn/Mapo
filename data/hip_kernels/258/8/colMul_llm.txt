@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Use memory coalescing by accessing contiguous memory locations.
+// Optimize block and grid size to ensure high occupancy and minimize execution divergence.
+// Evaluate the use of `__restrict__` to reflect memory aliasing and potentially improve performance.
+```

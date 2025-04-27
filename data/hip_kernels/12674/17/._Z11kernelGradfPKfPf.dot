@@ -1,0 +1,5 @@
+digraph "CFG for '_Z11kernelGradfPKfPf' function" {
+	label="CFG for '_Z11kernelGradfPKfPf' function";
+
+	Node0x5e6dc60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = load float, float addrspace(1)* %0, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %4 = getelementptr inbounds float, float addrspace(1)* %0, i64 1\l  %5 = load float, float addrspace(1)* %4, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %6 = fsub contract float 1.000000e+00, %3\l  %7 = fmul contract float %6, -2.000000e+00\l  %8 = fmul contract float %3, 4.000000e+02\l  %9 = fmul contract float %3, %3\l  %10 = fsub contract float %5, %9\l  %11 = fmul contract float %8, %10\l  %12 = fsub contract float %7, %11\l  store float %12, float addrspace(1)* %1, align 4, !tbaa !4\l  %13 = fmul contract float %10, 2.000000e+02\l  %14 = getelementptr inbounds float, float addrspace(1)* %1, i64 1\l  store float %13, float addrspace(1)* %14, align 4, !tbaa !4\l  ret void\l}"];
+}

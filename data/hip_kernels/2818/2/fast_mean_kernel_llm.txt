@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access by ensuring coalesced memory access for x array
+// Consider prefetching data to shared memory to further reduce global memory latency
+// Use warp-level reduction to reduce shared memory bank conflicts
+// Ensure that stride over spatial dimension results in minimal bank conflicts
+```

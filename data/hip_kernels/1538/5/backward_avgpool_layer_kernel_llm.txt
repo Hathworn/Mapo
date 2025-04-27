@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Fuse loop to minimize kernel launch overhead and improve memory access pattern
+// Consider using vectorized memory operations for coalesced access
+// Minimize thread divergence by aligning loops with warp boundaries
+// Use __restrict__ qualifiers for pointer arguments to enable better compiler optimizations
+```

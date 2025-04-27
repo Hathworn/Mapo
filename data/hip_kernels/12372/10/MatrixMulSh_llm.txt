@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses for global memory reads and writes.
+// Avoid bank conflicts in shared memory accesses.
+// Maximize occupancy to ensure better use of GPU resources.
+// Ensure that TILE_WIDTH divides WIDTH evenly, or handle edge cases properly.
+// Optimize synchronizations by minimizing __syncthreads() calls.
+```

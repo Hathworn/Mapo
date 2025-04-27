@@ -1,0 +1,6 @@
+```
+// Use shared memory to store a tile of the data to reduce global memory accesses.
+// Ensure coalesced memory access by having each thread access consecutive memory locations.
+// Consider loop unrolling if applicable to reduce loop overhead.
+// Align thread block size to warp size to take full advantage of the hardware.
+```

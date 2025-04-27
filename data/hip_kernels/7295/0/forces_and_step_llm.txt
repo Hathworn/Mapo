@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store body data within a block to reduce global memory accesses.
+// Load multiple bodies' data at once to take advantage of coalesced memory access.
+// Employ loop unrolling in the inner loop to minimize loop control overhead and increase ILP.
+// Ensure that memory access patterns are coalesced to maximize bandwidth utilization.
+// Evaluate the use of prefetching data to reduce the impact of memory latency.
+```

@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency
+// Optimize memory coalescing by aligning column reads to warp size
+// Minimize conditional statements in the memory loop for better warp execution
+// Preload kernel values into registers for faster access
+// Use local variables to minimize shared memory reads and improve thread-level performance
+// Add loop unrolling where applicable to enhance computational efficiency

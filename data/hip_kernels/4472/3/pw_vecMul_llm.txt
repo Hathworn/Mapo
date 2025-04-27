@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if the input arrays have any reuse within threads
+// Ensure memory accesses are coalesced to improve memory bandwidth utilization
+// Check the memory alignment of input/output arrays for potential optimizations
+// Use __restrict__ keyword for pointers if there are no aliasing issues
+// Consider loop unrolling techniques for further computation optimization
+```

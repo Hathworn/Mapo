@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory access patterns to improve coalescing
+// Use shared memory to hold tile data for A_d and B_d for more efficient reuse
+// Reduce global memory accesses by using local variables inside loops
+// Ensure enough registers are available to accommodate the increased register usage
+// Experiment with different TILE_WIDTH values to maximize performance
+// Align data structures to improve memory access speeds
+```

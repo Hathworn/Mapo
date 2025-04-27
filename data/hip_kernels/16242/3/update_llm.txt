@@ -1,0 +1,4 @@
+// Consider coalesced memory access for U, F, d, and del arrays.  
+// Use shared memory to cache del[0] for faster access.  
+// Minimize divergent branches for better warp execution efficiency.  
+// Ensure memory access patterns are optimal for sequential access by threads.  

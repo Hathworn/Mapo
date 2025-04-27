@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for the row_sum array
+// Use shared memory to cache row_sum values within a block
+// Minimize global memory reads by loading row_sum[matrixRow] into a register
+// Avoid unaligned memory access for the output array
+```

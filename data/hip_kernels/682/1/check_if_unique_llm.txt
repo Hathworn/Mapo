@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for better performance
+// Use shared memory to reduce global memory accesses
+// Employ warp-level primitives to minimize branch divergence
+// Align 'keys' and 'is_unique' arrays to 128 bytes if possible for efficient memory transactions
+// Prefetch data into registers to reduce global memory latency
+// Optimize block size to maximize occupancy and resource utilization
+```

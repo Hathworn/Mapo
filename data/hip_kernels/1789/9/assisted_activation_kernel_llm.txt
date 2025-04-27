@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store gt_gpu and a_avg_gpu values that are reused.
+// Optimize memory access patterns by ensuring coalesced access for output and input arrays.
+// Employ loop unrolling for the channel loop to reduce loop overhead.
+```

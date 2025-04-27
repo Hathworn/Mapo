@@ -1,0 +1,4 @@
+// Use shared memory to store parts of d_Src for faster access within threads
+// Coalesced memory accesses for d_Src and d_Dst arrays
+// Check if filter kernel can be optimized to fit into registers
+// Consider loop unrolling for accessing d_Filter and d_Src segments

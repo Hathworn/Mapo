@@ -1,0 +1,7 @@
+```
+// Use shared memory for intermediate storage to reduce redundant global memory access
+// Consider using memory coalescing techniques to improve the access pattern of global memory
+// Investigate the possibility of loop unrolling for reducing instruction overhead
+// Ensure proper use of __syncthreads() if shared memory is utilized to avoid race conditions
+// Analyze if texture memory can be leveraged for read-only data access for improved cache efficiency
+```

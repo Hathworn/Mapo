@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses to prefixed_mask, to_carry, and outindex arrays.
+// Use shared memory to reduce global memory access latency if data reuse is possible.
+// Check alignment and possible utilization of vectorized memory access to improve bandwidth.
+// Evaluate thread occupancy and block size to ensure maximum hardware utilization.
+```

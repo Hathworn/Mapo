@@ -1,0 +1,5 @@
+// Ensure coalesced memory access to improve memory throughput
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Utilize warp-level primitives for efficient reduction operations if needed
+// Optimize math functions by possibly using intrinsic functions for faster computation
+// Assess need for precision and consider single-precision where applicable to enhance performance

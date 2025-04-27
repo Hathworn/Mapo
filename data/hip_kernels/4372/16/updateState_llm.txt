@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access patterns for B by ensuring coalesced reads and writes.
+// Explore using shared memory for frequently accessed data like lamBeta to reduce global memory accesses.
+// Investigate the impact of using __ldg() intrinsic for reading external and lamBeta to potentially leverage texture cache.
+// Ensure hiprand_init does not introduce performance bottlenecks; pre-initializing states in a setup kernel could be beneficial.
+// Evaluate usage of constant memory for lamBeta if it fits within the mid-term storage constraints.
+```

@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring memory coalescing in global reads from Ar.
+// Consider using shared memory for intermediate results to reduce global memory traffic.
+// Ensure that Aw writes are coalesced to maximize memory throughput.
+// Use float2 for complex number operations to utilize paired loads and stores.
+// Investigate potential for loop unrolling to reduce control overhead.
+// Consider banking conflict avoidance in shared memory, if applied.
+// Profile different block and grid dimensions to find optimal occupancy.
+```

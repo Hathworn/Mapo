@@ -1,0 +1,9 @@
+```c
+// Consider coalescing global memory accesses for optimal performance
+// Use shared memory to reduce global memory access latency
+// Ensure boundary conditions are correctly handled to avoid invalid memory access
+// Utilize __syncthreads() appropriately to prevent data hazards
+// Maximize block occupancy by choosing an appropriate BLOCK_SIZE
+// Consider overlapping computation with memory loading where possible
+// Optimize the use of shared memory to minimize bank conflicts
+```

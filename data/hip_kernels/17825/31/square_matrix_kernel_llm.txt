@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to reduce global memory access latency if multiple threads access the same data.
+// Optimize data alignment for memory access; consider using float4 types for higher throughput.
+// Use loop unrolling if there's a repeated computational pattern to reduce loop overhead.
+// Evaluate occupancy and ensure enough threads per block to utilize GPU resources fully.
+```

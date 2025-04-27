@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced reads from d_depth_image_millimeter.
+// Use shared memory if multiple threads access overlapping data to reduce global memory access.
+// Consider using float4 or similar data types to increase throughput by vectorizing operations.
+// Minimize divergence by checking bounds before calculating the global index.
+// Ensure appropriate grid and block dimensions for maximal occupancy and minimal latency.
+```

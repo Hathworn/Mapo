@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if multiple threads access the same data to reduce global memory traffic.
+// Optimize loop iteration by ensuring stride access to avoid warp divergence.
+// Prefetch data to registers before the loop to optimize access latency.
+// Ensure coalesced memory access by aligning data accesses with warp size.
+```

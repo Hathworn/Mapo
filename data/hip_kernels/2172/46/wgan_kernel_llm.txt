@@ -1,0 +1,7 @@
+```
+// Increase the size of shared memory to improve parallel data access efficiency.
+// Align the shared memory access pattern with coalesced memory access for pred and truth.
+// Consider looping to handle cases where n exceeds the size of shared memory.
+// Optimize the syncthreads usage to reduce unnecessary synchronization and potential warp divergence.
+// Use vectorized memory operations for pred and truth to improve memory throughput.
+```

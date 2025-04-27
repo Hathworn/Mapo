@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses when loading data into shared memory
+// Minimize the use of __syncthreads() for improved performance
+// Consider loop unrolling further to optimize reduction steps
+// Optimize shared memory usage by ensuring BANK CONFLICT is avoided
+// Use warp-level primitives if targeting newer architectures for additional speedup
+```

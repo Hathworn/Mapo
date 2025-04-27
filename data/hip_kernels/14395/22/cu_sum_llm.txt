@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Utilize __syncthreads() efficiently to ensure memory coherence
+// Minimize conditional statements like ternary operators in performance-critical kernels
+// Aim for coalesced memory access patterns in global memory operations
+// Avoid excessive __syncthreads() calls outside necessary synchronization points

@@ -1,0 +1,7 @@
+```c
+// Precompute stride to reduce redundant calculations
+// Maintain memory coalescence by processing contiguous indices
+// Ensure stride is a multiple of warp size to maximize occupancy
+// Use __restrict__ keyword on pointer if no aliasing occurs
+// Consider using shared memory for frequently accessed data
+```

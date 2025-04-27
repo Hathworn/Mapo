@@ -1,0 +1,4 @@
+// Consider using shared memory to store tiles of matrices for faster access.
+// Minimize global memory accesses by loading blocks of data into shared memory.
+// Employ loop unrolling techniques to reduce instruction overhead inside loops.
+// Evaluate using warp level primitives for inter-thread communication.

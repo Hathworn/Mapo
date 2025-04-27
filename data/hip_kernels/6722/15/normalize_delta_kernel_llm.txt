@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for mean and variance if repeatedly accessed
+// Optimize global memory access patterns for better coalescing
+// Investigate using loop unrolling techniques if applicable for index calculations
+// Ensure memory alignment for float4 or float2 where possible for better throughput
+// Leverage warp shuffle operations for improved performance on reduction operations
+```

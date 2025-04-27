@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data that is reused within a block to reduce global memory accesses.
+// Optimize memory access patterns to ensure coalesced reads from global memory.
+// Ensure the kernel is configured with an appropriate number of threads per block to maximize occupancy.
+// Utilize vectorized loads/stores if applicable to increase memory bandwidth utilization.
+// Minimize divergence by ensuring that branches are uniform across warp execution.
+```

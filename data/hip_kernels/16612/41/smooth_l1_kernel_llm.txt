@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data
+// Minimize global memory accesses by reusing loaded values in the calculation
+// Make sure to use coalesced memory access patterns for pred and truth arrays
+// Use appropriate launch dimensions to ensure maximum occupancy

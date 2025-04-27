@@ -1,0 +1,8 @@
+```
+// Use shared memory effectively to minimize global memory access
+// Employ atomic functions cautiously to prevent performance bottlenecks
+// Consider replacing atomicMax and atomicAdd with parallel reduction for performance improvement
+// Ensure coalesced memory access by appropriately aligning input and output data
+// Balance workload among threads to maximize resource utilization
+// Minimize synchronization overhead by optimizing __syncthreads usage
+```

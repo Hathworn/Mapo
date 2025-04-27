@@ -1,0 +1,5 @@
+// Consider coalesced memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to reduce global memory access latency where possible.
+// Avoid unnecessary load by directly calculating results without storing intermediate values in global memory.
+// Optimize thread ID calculation by using constant expressions and minimizing redundant operations.
+// Explore using texture memory for data with more spatial locality to possibly speed up accesses.

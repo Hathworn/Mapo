@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access
+// Ensure all threads are synchronized after loading data into shared memory
+// Reduce the number of __syncthreads() by maximizing computation between synchronizations
+// Consider warp-level primitives to further optimize synchronization costs
+```

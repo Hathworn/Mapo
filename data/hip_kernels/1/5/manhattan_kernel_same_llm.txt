@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access for temp array
+// Use thread synchronization (__syncthreads()) to ensure correct results during parallel reduction
+// Minimize the use of global memory by using shared memory for intermediate results
+// Ensure stride reduction loop efficiently combines results from shared memory
+// Write final results to global memory only once computations are complete

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory traffic
+// Reduce memory divergence by ensuring that threads within a warp access consecutive memory locations
+// Coalesce global memory accesses to improve memory throughput
+// Use __syncthreads() to synchronize threads after shared memory operations
+```

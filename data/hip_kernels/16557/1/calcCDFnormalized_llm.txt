@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses for histogram accumulation
+// Initialize shared memory to leverage faster memory access
+// Perform inclusive scan in shared memory to optimize memory bandwidth
+// Normalize CDF in shared memory to minimize global memory writes
+```

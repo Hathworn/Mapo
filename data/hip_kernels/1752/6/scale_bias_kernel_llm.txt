@@ -1,0 +1,4 @@
+// Use shared memory for biases to reduce global memory accesses
+// Optimize block dimensions for better occupancy and performance
+// Ensure memory coalescing by aligning data structures appropriately
+// Consider loop unrolling for operations within each thread to enhance throughput

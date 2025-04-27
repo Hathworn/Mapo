@@ -1,0 +1,6 @@
+// Consider optimizing memory access by using shared or read-only memory for frequent accesses.
+// Use coalesced memory access for reading and writing image pixel values to improve memory throughput.
+// Implement proper stride and alignment to minimize bank conflicts in shared memory.
+// Consider using atomic operations or reduction techniques if the kernel has parallel writes to the same memory location.
+// Explore using texture memory for potentially faster, cached access to image data in certain scenarios.
+// Investigate if loop unrolling could provide performance benefits in any part of the kernel.

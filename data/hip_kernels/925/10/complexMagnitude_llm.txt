@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for better memory throughput
+// Use shared memory to store input data temporarily to reduce global memory accesses
+// Prefetch data into registers to minimize latency
+// Ensure kernel launches with a configuration that maximizes occupancy
+// Check for proper memory alignment to avoid uncoalesced accesses
+// Assess the need for loop unrolling if applicable
+```

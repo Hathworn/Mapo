@@ -1,0 +1,6 @@
+// Consider coalescing global memory accesses to spMmat, spBmat, and spTmat for better memory bandwidth utilization.
+// Optimize shared memory usage by ensuring alignment to avoid bank conflicts.
+// Use warp-level primitives instead of atomic operations where applicable to reduce synchronization overhead.
+// Prefetch data for spBmat and spTmat into shared memory to reduce global memory latency.
+// Evaluate if __syncthreads() calls can be minimized while maintaining correctness for better performance.
+// Investigate potential loop unrolling opportunities for iterations over offset to increase throughput.

@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ pointers to potentially increase memory access performance
+// Optimize memory access by ensuring input and result arrays are aligned
+// Use shared memory if data reuse across threads within the same block is beneficial
+// Prefetch next chunk of data while processing current data to hide memory latency
+// Evaluate potential use of warp-aggregated atomic operations if applicable
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently used data such as bias values and reduce repeated global memory access.
+// Use vectorized loads from global memory to amortize the cost of memory transactions.
+// Optimize memory access patterns to ensure coalesced memory access for improved global memory bandwidth utilization.
+// Explore loop unrolling for the accumulation loop to reduce branch overhead and improve performance.
+// Align data structures as best as possible to allow for optimal memory transactions.
+```

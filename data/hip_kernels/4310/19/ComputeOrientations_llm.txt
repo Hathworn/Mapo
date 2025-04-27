@@ -1,0 +1,8 @@
+```
+// Consider using loop unrolling for small fixed-size loops for efficiency.
+// Optimize memory access patterns to reduce divergent accesses within warps.
+// Prefetch shared memory loads to minimize access contention.
+// Align data structures to improve coalesced accesses.
+// Use local variables for invariant computations within kernels.
+// Consider vectorized operations to reduce the number of instructions.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data for faster memory access.
+// Consider coalescing memory accesses to minimize global memory load latency.
+// Ensure alignment of global memory accesses to improve memory throughput.
+// Evaluate the use of texture memory for read-only data to reduce latency.
+// Minimize divergent branches for better warp execution efficiency.

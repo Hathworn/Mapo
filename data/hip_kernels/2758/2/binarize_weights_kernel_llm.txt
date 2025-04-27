@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory accesses by reordering data layout if possible
+// Minimize thread divergence by reducing conditional branches
+// Consider optimizing shared memory usage to avoid bank conflicts
+// Use warp-level primitives for reduction to reduce synchronization overhead
+// Evaluate the use of float4 or float2 for vectorized loading if applicable
+// Align data on memory boundaries to optimize access patterns
+// Reduce redundant memory accesses by caching frequently used data locally
+// Consider loop unrolling for reducing loop overhead
+```

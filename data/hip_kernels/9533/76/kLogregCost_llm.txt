@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for probs array
+// Consider using shared memory for maxp and labelp computations to reduce global memory access
+// Evaluate bank conflicts in shared memory operations if shared memory is implemented
+// Use __syncthreads() if shared memory and block-level operations are added for accuracy and consistency

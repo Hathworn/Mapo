@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring threads within a warp access consecutive memory addresses
+// Consider increasing block size for better latency hiding 
+// Ensure enough occupancy to hide memory latency by organizing sufficient thread blocks
+// Avoid branch divergence by minimizing condition checks within the kernel
+// Utilize shared memory if multiple threads require access to the same data
+```

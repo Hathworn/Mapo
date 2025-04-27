@@ -1,0 +1,7 @@
+```
+// Consider using shared memory efficiently to minimize global memory access.
+// Ensure coalesced memory access patterns for loading xyz2 into shared memory.
+// Utilize __syncthreads() properly to avoid race conditions when accessing shared memory.
+// Unroll loops when processing buf data to reduce loop overhead and increase instruction-level parallelism.
+// Reduce the number of branches by optimizing condition checks.
+```

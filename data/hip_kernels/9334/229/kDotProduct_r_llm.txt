@@ -1,0 +1,8 @@
+```
+// Unroll loops to increase memory access efficiency
+// Use shared memory to store partial results for reduction
+// Use __syncthreads() to ensure all threads have completed their computation
+// Reduce bandwidth by using shared memory for intermediate steps
+// Optimize reduction by unrolling the last warp
+// Minimize global memory access by storing block results in shared memory first
+```

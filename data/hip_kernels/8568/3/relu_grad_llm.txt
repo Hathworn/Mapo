@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Minimize bank conflicts in shared memory accesses
+// Ensure coalesced access in global memory for output and pre_grad arrays
+// Synchronize threads to ensure shared memory loading is completed
+// Leverage loop unrolling if applicable for further performance improvement
+```

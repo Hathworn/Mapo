@@ -1,0 +1,8 @@
+```
+// Boundary check for early exit // Avoid unnecessary processing
+// Improve loop efficiency // Use pragma unroll to optimize loop execution
+// Consider coalesced access to bbox and label arrays for better memory access patterns // Optimize memory access
+// Avoid bank conflicts in shared memory access if applicable //Optimize shared memory usage
+// Potential for employing shared memory for bbox and label arrays if they fit into shared memory capacity // Investigate shared memory usage
+// Minimize divergent checks in blockIdx calculations for reduced warp divergence // Optimize warp efficiency
+```

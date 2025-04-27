@@ -1,0 +1,4 @@
+// Consider using shared memory to cache input data and avoid redundant global memory access.
+// Optimize memory coalescing by ensuring input and output pointers are aligned.
+// Evaluate reducing multiple grid dimensions to simplify indexing calculations.
+// Use warp-level primitives for possible optimization in cases of divergent threads.

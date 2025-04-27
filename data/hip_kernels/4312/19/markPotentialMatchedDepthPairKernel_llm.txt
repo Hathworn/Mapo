@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure coalescing of global memory accesses by maintaining continuous memory patterns.
+// Minimize divergent branching by arranging threads with similar control flows together.
+// Utilize texture cache for read-only data to decrease cache misses and accelerate access times.
+// Tune block size to achieve optimal occupancy and throughput based on the GPU architecture.
+```

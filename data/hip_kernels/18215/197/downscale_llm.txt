@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache gradOutput_data in order to reduce global memory accesses
+// Optimize memory access patterns by adjusting thread block configurations for better coalescing
+// Reduce redundant calculations of scale_d2 and scale_d3 by caching them outside of the loops
+// Utilize the __restrict__ keyword in pointers for more efficient memory access
+```

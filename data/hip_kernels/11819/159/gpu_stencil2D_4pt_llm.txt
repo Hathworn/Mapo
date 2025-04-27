@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Minimize memory transactions by coalescing global loads
+// Organize threads to ensure memory alignment
+// Maximize occupancy by adjusting TILE_SIZE and blockDim
+// Use __syncthreads() to synchronize threads before accessing shared memory
+// Prefetch data into shared memory for faster access
+```

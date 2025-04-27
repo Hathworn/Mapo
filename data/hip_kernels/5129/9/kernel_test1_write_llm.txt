@@ -1,0 +1,6 @@
+```
+// Consider aligning memory accesses to improve coalescing and reduce warp divergence
+// Ensure that memory addresses accessed by threads in a warp are contiguous to optimize global memory throughput
+// Use shared memory to reduce repetitive global memory accesses when possible
+// Prefetch data into registers to hide global memory latency
+```

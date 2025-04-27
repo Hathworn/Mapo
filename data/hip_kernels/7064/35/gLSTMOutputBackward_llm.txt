@@ -1,0 +1,10 @@
+```
+// Utilize shared memory to reduce global memory accesses for frequently used data
+// Coalesce global memory accesses for improved memory throughput
+// Avoid bank conflicts when using shared memory
+// Minimize thread divergence within the warp when possible
+// Consider loop unrolling for performance enhancement in the while loop
+// Use atomic operations judiciously to avoid performance bottlenecks
+// Profile to find warp serialization points and address them
+// Ensure that grid and block dimensions are optimized for maximum occupancy
+```

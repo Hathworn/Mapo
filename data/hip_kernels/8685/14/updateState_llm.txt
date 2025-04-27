@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing to optimize global memory access patterns
+// Use __restrict__ qualifier for pointer arguments B, external to potentially aid compiler optimizations
+// Evaluate using local memory to reduce frequent global memory accesses if applicable
+// Ensure shared memory is not excessively used to prevent bank conflicts
+// Explore using loop unrolling if iterations are predictable and beneficial
+```

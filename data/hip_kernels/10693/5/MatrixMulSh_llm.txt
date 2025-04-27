@@ -1,0 +1,8 @@
+```
+// Consider using loop unrolling for the tile multiplication loops to improve performance.
+// Ensure TILE_WIDTH is defined appropriately to maximize shared memory utilization.
+// Explore using memory coalescing techniques to improve global memory access patterns.
+// Optimize for register usage by minimizing the number of variables declared inside the kernel.
+// Check if the use of shared memory is optimal for the tile size used; consider smaller or larger tiles.
+// Verify if synchronization points are necessary or can be minimized to reduce latency.
+```

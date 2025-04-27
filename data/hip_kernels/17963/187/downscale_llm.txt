@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for gradOutput_data to reduce global memory accesses
+// Align data to improve coalesced memory access
+// Prefetch data to registers to minimize memory latency
+// Exploit memory access patterns to increase cache hits
+// Experiment with varying block and grid sizes for optimal occupancy
+// Use __restrict__ keyword to improve compiler optimization
+```

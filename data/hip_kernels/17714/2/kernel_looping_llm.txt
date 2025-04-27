@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to store frequently accessed data to reduce global memory access.
+// Consider using vectorized operations if accessing multiple contiguous elements.
+// Ensure memory coalescing by aligning thread accesses to contiguous memory segments.
+// Optimize loop unrolling based on the hardware's warp size.
+// Minimize divergent branching within the loop to enhance warp execution efficiency.
+```

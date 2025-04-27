@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to buffer frequently accessed data to reduce global memory traffic.
+// Consider using warp-level primitives for intra-warp cooperation to further reduce memory access overhead.
+// Optimize memory access patterns to coalesce global memory transactions when accessing gradOutput_data.
+// Ensure that the grid and block dimensions are chosen to maximize occupancy while minimizing idle threads.
+```

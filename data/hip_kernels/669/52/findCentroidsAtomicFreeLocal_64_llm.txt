@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for filter_responses to improve memory bandwidth utilization.
+// Ensure that filter_responses is accessed in a contiguous manner to benefit from coalesced memory access.
+// Consider using shared memory if possible to cache frequently accessed data and reduce global memory accesses.
+// Evaluate if loop unrolling can be applied to the pixel iteration for reduced loop overhead.
+// Ensure that write operations to centroidMass and centroidCount avoid bank conflicts for optimal throughput.
+```

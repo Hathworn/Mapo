@@ -1,0 +1,7 @@
+```
+// Consider using float4 data type to leverage coalesced memory access
+// Preload data into shared memory to reduce global memory transactions
+// Ensure the use of __syncthreads() is minimized but correctly placed
+// Consider doubling block size for higher occupancy if resource usage allows
+// Avoid bank conflicts by ensuring appropriate shared memory access patterns
+```

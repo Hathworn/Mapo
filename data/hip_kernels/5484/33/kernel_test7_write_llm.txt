@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced access to global memory wherever possible
+// Avoid bank conflicts in shared memory access within warps
+// Minimize the number of instructions inside critical loops
+// Optimize thread-block dimensions based on shared memory limitations

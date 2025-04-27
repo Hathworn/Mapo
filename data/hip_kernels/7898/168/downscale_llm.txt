@@ -1,0 +1,4 @@
+// Ensure coalesced memory accesses for gradOutput_data.
+// Consider using shared memory for gradOutput_data in smaller blocks.
+// Minimize the number of arithmetic calculations inside loops.
+// Check if scale_factor is a compile-time constant to simplify calculations.

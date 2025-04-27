@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for sin and cos calculations to minimize redundant computations.
+// Ensure coalesced memory access by using contiguous threads to access contiguous memory addresses.
+// Avoid bank conflicts by aligning shared memory usage to warp boundaries.
+// Utilize loop unrolling techniques if processing multiple elements per thread to enhance throughput.
+// Explore the feasibility of using half precision if precision requirements allow, to reduce memory bandwidth.
+```

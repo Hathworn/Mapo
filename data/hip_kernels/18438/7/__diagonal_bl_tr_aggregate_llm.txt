@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access for better memory throughput
+// Use shared memory to store cost_image and dp to reduce global memory access
+// Align memory access patterns to avoid bank conflicts in shared memory
+// Consider using warp-level primitives for reduction of prev_min
+// Minimize divergent code within the kernel to optimize performance
+// Balance compute and memory operations to avoid bottlenecks
+// Consider fusing multiple kernel launches if data reuse is high
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache portions of the channel array for faster access
+// Ensure coalesced memory access by organizing memory accesses in a sequential order
+// Consider unrolling the loop for smaller loop body and improved performance
+// Minimize thread divergence by ensuring all threads in a block follow the same execution path
+```

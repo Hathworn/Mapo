@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache repeated global memory accesses
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory locations
+// Minimize divergent branches within the kernel
+// Ensure the grid size is a multiple of the warp size for efficient memory utilization
+// Use __restrict__ qualifier for pointers if aliasing is not an issue
+```

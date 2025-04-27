@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring v is accessed in a sequence to minimize memory transaction overhead.
+// Align data structures or use float2 or float4 if applicable to achieve more efficient memory access patterns.
+// Minimize divergent branches within threads in the same warp to improve performance.
+// Ensure sufficient occupancy by choosing appropriate block size for better utilization of GPU resources.
+// Use shared memory if possible to further optimize memory access time, especially if repeated access patterns are detected.
+```

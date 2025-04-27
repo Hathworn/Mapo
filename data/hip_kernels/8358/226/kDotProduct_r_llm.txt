@@ -1,0 +1,8 @@
+```cpp
+// Use loop unrolling to improve memory coalescing and reduce memory access overhead
+// Optimize for memory access patterns by ensuring sequential threads access sequential memory locations
+// Exploit shared memory for parallel reduction to minimize global memory access
+// Utilize warp-level synchronization to avoid unnecessary __syncthreads calls
+// Ensure shared memory is declared as volatile for warp-level operations to prevent compiler optimizations
+// Adopt efficient reduction patterns to reduce shared memory bank conflicts
+```

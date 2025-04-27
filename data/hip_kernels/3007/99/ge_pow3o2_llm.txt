@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache a subset of global memory reads if data reuse allows
+// Coalesce global memory accesses to a and b by ensuring gid_0 and gid_1 increment regularly
+// Minimize divergent branching by reducing conditional checks and ensuring warp-wide execution paths
+// Consider using half precision if precision requirements allow to enhance memory bandwidth usage
+```

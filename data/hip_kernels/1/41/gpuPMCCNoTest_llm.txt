@@ -1,0 +1,6 @@
+```
+// Use shared memory to store means and standard deviations for better memory access speed.
+// Ensure coalesced memory access when loading vectsa and vectsb.
+// Minimize the number of accesses to global memory by using shared memory for intermediate results.
+// Perform loop unrolling for the second reduction loop to improve performance.
+```

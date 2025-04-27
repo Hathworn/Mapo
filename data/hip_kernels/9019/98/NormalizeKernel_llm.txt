@@ -1,0 +1,6 @@
+// Use shared memory for normalization_factor to reduce global memory access
+// Prefetch data to registers to hide latency
+// Optimize block dimensions to maximize occupancy and reduce divergence
+// Consider vectorization for load/store if applicable
+// Ensure coalesced memory access for image and normalization_factor arrays
+// Align data structures for better memory access patterns

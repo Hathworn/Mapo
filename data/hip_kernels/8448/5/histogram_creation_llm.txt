@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns for global memory access to A[i]
+// Consider using warp shuffle operations to minimize atomic operations in local histogram update
+// Use persistent threads or thread blocks to reduce overhead for global histogram update
+// Explore using parallel reduction to optimize merging local histogram into global histogram
+```

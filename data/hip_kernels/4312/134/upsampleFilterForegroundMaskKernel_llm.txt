@@ -1,0 +1,9 @@
+```
+// Precompute constants outside the loops to reduce redundant calculations
+// Use shared memory for common calculations to reduce repeated global memory access
+// Adjust shared memory size based on block dimensions to optimize memory utilization
+// Unroll loops to improve instruction throughput and reduce branching
+// Avoid division by zero with proper checks to ensure numerical stability
+// Minimize tex2D calls by caching frequently accessed values within the scope
+// Ensure memory coalescing for surf2Dwrite operations where possible
+```

@@ -1,0 +1,5 @@
+```
+// Coalesce global memory accesses if possible.
+// Use fewer __syncthreads() calls in the reduction loop by leveraging warp-level primitives (if applicable).
+// Ensure that accesses to shared memory are coalesced to avoid bank conflicts.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to store submatrices of A and B to reduce global memory accesses
+// Consider coalesced memory access patterns for A and B to improve performance
+// Employ loop unrolling techniques within the 'for' loop to reduce loop overhead
+// Ensure computation of pow and abs functions are compiled efficiently, possibly using intrinsic functions
+// Ensure threads in a warp access contiguous memory locations to utilize memory throughput efficiently
+```

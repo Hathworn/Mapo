@@ -1,0 +1,5 @@
+// Use shared memory to cache data_im to reduce global memory access latency
+// Optimize thread indexing to minimize warp divergence
+// Use vectorized memory access where possible (e.g., float2, float4) for better bandwidth utilization
+// Avoid repeated calculation of index terms (e.g., precompute (channel_out * height_col + h_out) * width_col)
+// Consider loop unrolling for better instruction-level parallelism

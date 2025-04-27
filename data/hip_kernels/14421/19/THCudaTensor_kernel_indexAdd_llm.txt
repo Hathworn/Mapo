@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Use coalesced memory access patterns for better memory bandwidth
+// Minimize bank conflicts by carefully arranging shared memory access
+// Ensure warp divergence is minimized within the loop for better efficiency
+// Optimize use of registers by limiting the number of variables used
+// Align data structures to 256 bytes to benefit from memory coalescing
+// Use larger tiles for processing data to reduce overhead
+// Consider using loop unrolling for outer loops to enhance performance
+```

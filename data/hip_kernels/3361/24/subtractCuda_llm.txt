@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache input tiles for better memory access patterns.
+// Use loop unrolling to increase instruction-level parallelism.
+// Ensure coalesced memory accesses by aligning data structures according to warp size.
+// Avoid bank conflicts in shared memory accesses by using padding if necessary.
+// Use read-only memory caches for input arrays if supported by the architecture.
+```

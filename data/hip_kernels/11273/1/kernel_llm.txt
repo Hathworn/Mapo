@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to improve performance.
+// Use shared memory wisely to exploit fast on-chip memory for thread collaboration.
+// Ensure proper utilization of __syncthreads() to avoid race conditions.
+// Evaluate the use of atomic operations and their impact on performance, potentially reducing them.
+// Optimize block size to ensure efficient use of GPU resources and occupancy.
+```

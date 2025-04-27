@@ -1,0 +1,7 @@
+```
+// Use __hip_divider and __hip_remainder to replace division and modulus for efficient index calculation
+// Ensure memory accesses are coalesced by iterating over target elements in steps of numThreads
+// Prefetching data from global memory to shared memory could be considered to improve memory access latency
+// Evaluate if using constant memory for certain inputs can optimize memory bandwidth usage
+// Adjust block and grid sizes to maximize occupancy while ensuring sufficient memory bandwidth utilization
+```

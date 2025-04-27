@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache e_x_cov_x values to reduce global memory access latency.
+// Unroll loops further if the number of iterations is small and known to improve execution speed.
+// Align memory accesses to improve memory coalescing and throughput.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for d_Rin and d_sum to improve memory throughput.
+// Ensure memory alignment for char *source and char *dest to leverage memory coalescing.
+// Use shared memory for frequently accessed data to reduce global memory latency.
+// Evaluate bank conflicts in shared memory (if added) and mitigate using padding if necessary.
+// Optimize unrolled loop for better memory access patterns based on hardware-specific analysis.
+```

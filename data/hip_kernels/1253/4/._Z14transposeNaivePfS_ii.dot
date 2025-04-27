@@ -1,0 +1,5 @@
+digraph "CFG for '_Z14transposeNaivePfS_ii' function" {
+	label="CFG for '_Z14transposeNaivePfS_ii' function";
+
+	Node0x45eef60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 4\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %10 = shl i32 %9, 4\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %12 = add i32 %10, %11\l  %13 = mul nsw i32 %8, %3\l  %14 = add nsw i32 %13, %12\l  %15 = mul i32 %12, %2\l  %16 = add i32 %15, %8\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %1, i64 %17\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !5\l  %20 = sext i32 %14 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %0, i64 %20\l  store float %19, float addrspace(1)* %21, align 4, !tbaa !5\l  ret void\l}"];
+}

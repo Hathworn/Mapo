@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory access to improve memory throughput
+// Use shared memory to reduce global memory accesses if possible
+// Ensure memory access patterns are optimal by examining stride patterns
+// Check if increasing block size can lead to better utilization of SMs
+// Avoid bank conflicts when using shared memory by padding if necessary
+// Consider memory alignment to improve performance
+// Use __restrict__ keyword on pointers to hint compiler about non-aliasing
+```

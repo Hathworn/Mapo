@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for improved memory throughput.
+// Optimize shared memory usage by reducing size, if not all elements are frequently used.
+// Use vectorized loads/stores if possible to benefit from wider memory transactions.
+// Ensure proper memory alignment to enhance global memory access patterns.
+// Minimize __syncthreads() usage when not strictly necessary to reduce warp divergence.
+```

@@ -1,0 +1,4 @@
+// Use memory coalescing by aligning data accesses with warp boundaries
+// Ensure proper use of shared memory if applicable
+// Minimize conditional checks within the kernel loop
+// Promote the use of constant memory for mask_num if it's not changing

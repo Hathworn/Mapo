@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for the cumulativeOffspring and ancestor arrays to improve performance.
+// Minimize redundant access to cumulativeOffspring by storing accesses in registers.
+// Ensure threads within a warp access consecutive memory addresses to utilize memory coalescing.
+// Check if shared memory could be utilized to store temporary variables to reduce global memory traffic.
+// Evaluate if loop unrolling can enhance performance in the inner loop over numCurrentOffspring.
+// Profile and adjust block and grid sizes to maximize occupancy and balance between computation and memory access.
+```

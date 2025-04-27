@@ -1,0 +1,7 @@
+```cpp
+// Use blockDim.x for better coalesced memory access in the loop
+// Consider reducing the number of __syncthreads calls for performance
+// Use shared memory to reduce global memory transactions if possible
+// Ensure memory access patterns are coalesced for better performance
+// Optimize the memory access of 'log_energy' and 'lifter_coeffs' for caching
+```

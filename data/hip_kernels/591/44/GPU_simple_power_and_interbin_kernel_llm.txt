@@ -1,0 +1,7 @@
+```
+// Use shared memory to store d_input_complex for coalesced access
+// Consider loop unrolling for operations involving A
+// Minimize repeated calculations for d_output_power index using precomputed variables
+// Balance thread blocks for optimal occupancy
+// Prefetch data into registers to reduce global memory access latency
+```

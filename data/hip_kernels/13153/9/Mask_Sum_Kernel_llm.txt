@@ -1,0 +1,8 @@
+```
+// Avoid bank conflicts by ensuring stride sizes do not overlap in shared memory
+// Implement memory coalescing by ensuring contiguous threads access contiguous memory addresses
+// Minimize synchronization overhead by reducing unnecessary syncthreads()
+// Use shared memory to store intermediate results to reduce global memory access
+// Consider using warp-level primitives to avoid full block synchronization
+// Reduce divergence by ensuring all threads execute similar instructions
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache idp values for faster access.
+// Consider loop unrolling for better instruction throughput.
+// Ensure memory accesses are coalesced for optimal performance.
+// Minimize divergent branches by reorganizing conditional statements.
+// Utilize warp-level primitives to reduce atomic operations.

@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by using appropriate block size and indexing
+// Minimize shared memory conflicts by ensuring block size is a multiple of warp size
+// Consider using __restrict__ qualifier for pointer arguments to aid compiler optimizations
+// Ensure memory alignment for VthetaRes, VMed, and Vtheta to improve access speed
+// Utilize shared memory if possible to minimize repeated global memory reads
+```

@@ -1,0 +1,7 @@
+// Use shared memory to reduce redundant accesses to global memory  
+// Ensure data access patterns are coalesced  
+// Consider loop unrolling for better instruction throughput  
+// Optimize memory access by using faster memory (e.g., vectorized loads/stores)  
+// Ensure global memory access is aligned  
+// Consider using texture memory for read-only data access  
+// Minimize divergent branching to improve warp efficiency

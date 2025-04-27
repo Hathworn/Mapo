@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache repeated reads from global memory for d_x, d_y, and d_log_Y.
+// Coalesce global memory accesses to d_r_new, d_g_new, and d_b_new for improved memory throughput.
+// Utilize texture memory for d_cdf_norm if it exhibits spatial locality.
+// Apply loop unrolling if there are any potential loops for optimization.
+// Reduce arithmetic precision where possible to utilize hardware more efficiently.
+```

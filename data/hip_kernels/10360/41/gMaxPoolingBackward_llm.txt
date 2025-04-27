@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing memory access for 'adj' as it's accessed with a row-major pattern
+// Optimize memory access pattern for 'in' and 'adjIn' to improve cache usage
+// Ensure 'mask' memory access is coalesced to maximize memory bandwidth
+// Evaluate shared memory for temporary storage to reduce global memory access
+// Utilize vectorized loads if applicable for 'b' and 'localMask'
+// Consider loop unrolling within the for-loop to reduce loop overhead
+```

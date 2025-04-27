@@ -1,0 +1,8 @@
+```
+// Use shared memory to decrease global memory access latency
+// Adjust the size of shared memory arrays based on block dimensions to maximize usage
+// Ensure shared memory is used for data that will be accessed multiple times within a block
+// Optimize loop unrolling for better performance in accessing shared memory
+// Consider alignment and padding of shared memory to avoid bank conflicts
+// Use __syncthreads() to synchronize threads after loading into shared memory
+```

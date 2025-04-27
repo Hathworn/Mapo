@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access when copying pA to shared_pA to improve memory throughput.
+// Ensure shared_pA size does not exceed the block size for optimal shared memory usage.
+// If the kernel is memory-bound, try vectorizing to increase memory bandwidth utilization.
+// Check for occupancy limitations to potentially increase active thread blocks per SM.
+```

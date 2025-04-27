@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to further reduce global memory access latency.
+// Ensure coalesced access to global memory for optimal performance.
+// Use __syncthreads() only when necessary to minimize synchronization overhead.
+// Explore using __shfl_xor_sync for warp-level primitives to replace volatile memory operations.
+// Profile and adjust grid and block dimensions to maximize occupancy and hide memory latency.
+```

@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using shared memory for temporary storage.
+// Consider increasing block width for better utilization of memory bandwidth.
+// Reduce synchronization overhead by minimizing __syncthreads() calls.
+// Ensure coalesced memory access for d_input and d_cdf arrays.
+// Use bank conflict-free access patterns in shared memory.
+// Investigate use of warp shuffle instructions for further optimization.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory access for group_offset and group_size
+// Consider loop unrolling for softmax_device calculations to enhance performance
+// Align memory accesses to natural vector sizes for better coalescing
+// Minimize arithmetic operations by storing intermediate results when possible
+// Optimize memory access patterns to maximize bandwidth utilization

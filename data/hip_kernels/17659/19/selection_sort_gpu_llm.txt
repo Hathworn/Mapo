@@ -1,0 +1,7 @@
+```
+// Pre-fetch data to shared memory for faster access
+// Ensure coalesced memory access by distributing load across threads
+// Minimize shared memory bank conflicts by padding if necessary
+// Perform all computations in shared memory to reduce global memory access
+// Ensure all threads have committed changes with __syncthreads()
+```

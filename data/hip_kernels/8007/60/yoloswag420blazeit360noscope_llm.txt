@@ -1,0 +1,7 @@
+```
+// Use memory coalescing for accessing input and rand arrays to improve memory access efficiency.
+// Consider using shared memory to store data that is frequently accessed by threads to reduce global memory access.
+// Use warp-level primitives like __shfl_sync to optimize the reduction operations within a warp.
+// Optimize the launching configuration to ensure maximum Occupancy and utilize as many cores as possible.
+// Explore using asynchronous memory prefetching to hide memory latency.
+```

@@ -1,0 +1,4 @@
+// Ensure coalesced memory accesses by using contiguous data layout
+// Leverage shared memory if applicable for frequently reused data
+// Consider employing async copy operations for overlapping data transfer with computation
+// Optimize the launch configuration by checking occupancy and adjusting block size

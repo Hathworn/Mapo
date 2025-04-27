@@ -1,0 +1,7 @@
+```
+// Coalesce memory access for improved global memory bandwidth utilization
+// Ensure hiprandState is initialized with unique seeds for each thread to avoid correlation
+// Use shared memory to temporarily store results within the block before writing to global memory
+// Minimize divergent branching by restructuring control flow if possible
+// Consider using atomic operations for global memory updates to avoid race conditions if necessary
+```

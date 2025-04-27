@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access patterns for gradOutput, indices_x, and indices_y
+// Use shared memory to improve access patterns for gradOutput and gradInput
+// Minimize divergent branches by ensuring a consistent control flow
+// Use float4 or vectorized loads/store if memory alignment allows
+// Consider loop unrolling to reduce loop overhead
+// Optimize global memory access patterns for cache efficiency
+```

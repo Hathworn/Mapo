@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to d_C for reduction
+// Utilize shared memory effectively to minimize global memory reads
+// Use warp-level primitives to optimize warp synchronization
+// Ensure use of __syncthreads() is minimal to reduce latency
+// Optimize stride access pattern for shuffling to minimize warp divergence
+```

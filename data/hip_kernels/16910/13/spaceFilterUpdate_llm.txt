@@ -1,0 +1,5 @@
+// Consider using memory coalescing for accessing the data array to reduce global memory access latency.
+// Preload more data from global memory to shared memory to minimize redundant accesses.
+// Optimize the calculation of indices to avoid unnecessary computations inside the loop.
+// Ensure aligned memory access to global memory for iC and iW to improve bandwidth.
+// Reduce synchronization overhead by reviewing the necessity of __syncthreads within the kernel.

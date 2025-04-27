@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses for optimal global memory throughput.
+// Leverage shared memory to reduce redundant global memory loads.
+// Align the data access patterns to memory boundaries for better performance.
+// Utilize vectorized data types for loading and storing complex numbers.
+// Minimize divergent branches within the warp to ensure all threads follow the same execution path.
+// Consider using parallel reductions for any global summation or accumulation tasks.
+```

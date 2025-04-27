@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Ensure memory coalescing by aligning data structures optimally
+// Investigate loop unrolling for minimal loop overhead and improved performance
+// Evaluate using pinned memory for faster host-device memory transfer
+// Profile the kernel to identify specific bottlenecks and optimize accordingly

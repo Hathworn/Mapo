@@ -1,0 +1,5 @@
+```cpp
+// Consider using __shared__ memory for frequently accessed data to reduce global memory transactions.
+// Ensure that N is a constant if possible to allow the compiler to optimize division operations.
+// Use atomic operations if multiple blocks are intended to modify the same global memory address.
+```

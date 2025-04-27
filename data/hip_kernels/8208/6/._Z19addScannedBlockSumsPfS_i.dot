@@ -1,0 +1,18 @@
+digraph "CFG for '_Z19addScannedBlockSumsPfS_i' function" {
+	label="CFG for '_Z19addScannedBlockSumsPfS_i' function";
+
+	Node0x6036400 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = shl nsw i32 %5, 1\l  %12 = mul nsw i32 %11, %10\l  %13 = add nsw i32 %12, %4\l  %14 = icmp sgt i32 %5, 0\l  br i1 %14, label %15, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x6036400:s0 -> Node0x6037190;
+	Node0x6036400:s1 -> Node0x6038450;
+	Node0x6037190 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{%15:\l15:                                               \l  %16 = icmp slt i32 %13, %2\l  br i1 %16, label %17, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x6037190:s0 -> Node0x6037d10;
+	Node0x6037190:s1 -> Node0x6038730;
+	Node0x6037d10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%17:\l17:                                               \l  %18 = add nsw i32 %5, -1\l  %19 = zext i32 %18 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %0, i64 %19\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %22 = sext i32 %13 to i64\l  %23 = getelementptr inbounds float, float addrspace(1)* %1, i64 %22\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %25 = fadd contract float %21, %24\l  store float %25, float addrspace(1)* %23, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x6037d10 -> Node0x6038730;
+	Node0x6038730 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{%26:\l26:                                               \l  %27 = add nsw i32 %13, %10\l  %28 = icmp slt i32 %27, %2\l  br i1 %28, label %29, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x6038730:s0 -> Node0x6039cb0;
+	Node0x6038730:s1 -> Node0x6038450;
+	Node0x6039cb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%29:\l29:                                               \l  %30 = add nsw i32 %5, -1\l  %31 = zext i32 %30 to i64\l  %32 = getelementptr inbounds float, float addrspace(1)* %0, i64 %31\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !7\l  %34 = sext i32 %27 to i64\l  %35 = getelementptr inbounds float, float addrspace(1)* %1, i64 %34\l  %36 = load float, float addrspace(1)* %35, align 4, !tbaa !7\l  %37 = fadd contract float %33, %36\l  store float %37, float addrspace(1)* %35, align 4, !tbaa !7\l  br label %38\l}"];
+	Node0x6039cb0 -> Node0x6038450;
+	Node0x6038450 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%38:\l38:                                               \l  ret void\l}"];
+}

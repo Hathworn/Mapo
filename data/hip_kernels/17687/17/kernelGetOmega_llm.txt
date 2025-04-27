@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory loads for kSqr to improve memory access patterns
+// Use shared memory to store kSqr values if reused, to reduce global memory access
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Ensure memory accesses are aligned for best performance
+// Prefetch kSqr[i] into a register before use to improve memory access efficiency
+```

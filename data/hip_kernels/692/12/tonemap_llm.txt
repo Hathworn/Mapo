@@ -1,0 +1,5 @@
+```
+// Use shared memory for 'cdf_norm_shared' to reduce global memory accesses.
+// Ensure 'cdf_norm_shared' is used after thread synchronization (__syncthreads()).
+// Ensure threads are coalesced for optimal global memory access in d_r_new, d_g_new, d_b_new.
+```

@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifiers if applicable to tell the compiler that pointers do not alias
+// Consider aligning data structures to allow for coalesced memory accesses
+// Use shared memory to store locally reused data to reduce global memory access
+// Ensure that kernel launch settings (block and grid sizes) are optimized for hardware
+// Use texture memory for read-only data if access patterns align with its benefits
+```

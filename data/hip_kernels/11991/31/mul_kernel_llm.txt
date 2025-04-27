@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data to reduce global memory access latency.
+// Ensure that INCX and INCY are causing coalesced memory accesses for better memory throughput.
+// Profile memory access patterns to identify if any bank conflicts are occurring and optimize accordingly.
+// Experiment with different block and grid dimensions to optimize for maximum occupancy and efficiency.

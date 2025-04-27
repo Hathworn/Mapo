@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory access
+// Ensure enough threads to prevent thread divergence and enhance memory coalescing
+// Avoid bank conflicts when accessing shared memory for optimal performance
+// Prefetch data using shared memory to overlap computation with memory access
+// Align shared memory access patterns for efficient utilization
+// Minimize register usage within computation loops

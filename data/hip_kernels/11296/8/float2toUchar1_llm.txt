@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses
+// Use coalesced memory accesses for input and output
+// Ensure no bank conflicts when using shared memory
+// Minimize divergent branches in kernel execution
+// Pre-calculate and store common expressions outside the loop

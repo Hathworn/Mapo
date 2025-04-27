@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13callOperationPiS_S_iii' function" {
+	label="CFG for '_Z13callOperationPiS_S_iii' function";
+
+	Node0x5aa41f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = mul i32 %12, %11\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = icmp slt i32 %15, %5\l  br i1 %16, label %17, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5aa41f0:s0 -> Node0x5aa4ad0;
+	Node0x5aa41f0:s1 -> Node0x5aa61c0;
+	Node0x5aa4ad0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %18\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %23 = sub nsw i32 %20, %22\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %25 = icmp slt i32 %23, %3\l  %26 = select i1 %25, i32 %4, i32 %23\l  store i32 %26, i32 addrspace(1)* %24, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x5aa4ad0 -> Node0x5aa61c0;
+	Node0x5aa61c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

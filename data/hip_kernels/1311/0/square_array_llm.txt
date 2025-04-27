@@ -1,0 +1,7 @@
+```
+// Consider aligning data to cache line size for better memory coalescing
+// Evaluate potential benefits of loop unrolling if computation becomes heavier
+// Ensure that block and grid sizes are optimized for target GPU architecture
+// Minimize divergence within warps by ensuring uniformity in execution paths
+// Use shared memory to optimize data access if applicable for more complex kernels
+```

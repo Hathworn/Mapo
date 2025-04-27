@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns to improve memory read/write efficiency.
+// Reduce divergent branching by organizing condition checks to minimize warp divergence.
+// Consider loop unrolling for the inner loops to decrease loop overhead and enhance performance.
+// Optimize shared memory usage by preloading frequently accessed data to reduce global memory access.
+// Use vectorized data types for data_im_ptr and data_col_ptr to enable more efficient data handling.
+// Ensure thread-level parallelism is maximized by appropriately sizing grid and block dimensions.
+```

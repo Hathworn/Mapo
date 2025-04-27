@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache src data for better memory coalescing
+// Minimize global memory accesses by utilizing registers
+// Consider using vectorized loads for src data
+// Optimize block size to ensure maximum occupancy
+// Align memory accesses to improve coalescing
+// Prefetch src data to registers or shared memory
+```

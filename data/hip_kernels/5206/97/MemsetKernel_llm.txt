@@ -1,0 +1,5 @@
+// Utilize shared memory to minimize global memory access latency
+// Ensure memory coalescing by organizing threads to access consecutive memory locations
+// Consider using warp shuffle to optimize intra-warp communication
+// Evaluate use of asynchronous memcpy for potential performance gains
+// Implement loop unrolling to reduce loop control overhead

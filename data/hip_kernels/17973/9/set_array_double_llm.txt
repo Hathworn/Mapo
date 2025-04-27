@@ -1,0 +1,4 @@
+// Use grid-stride loop to optimize memory access pattern
+// Ensure coalesced memory access by using contiguous threads to access contiguous data elements
+// Consider using shared memory if multiple threads access the same data frequently
+// Minimize divergence by ensuring uniform control flow across threads

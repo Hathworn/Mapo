@@ -1,0 +1,4 @@
+// Consider using shared memory to cache repeated reads from global memory for better performance.
+// Use memory coalescing by ensuring continuous memory access for threads in the same warp.
+// Optimize loop unrolling further or apply warp-level primitives for reducing branch divergence.
+// Evaluate the use of vectorized memory loads (e.g., float4) to reduce memory transactions.

@@ -1,0 +1,5 @@
+```
+// Cache zs[threadIdx.x] value to reduce memory access
+// Calculate sigmoid(z) once and reuse for derivative
+// Update delta_nabla_b using precomputed sigmoid value
+```

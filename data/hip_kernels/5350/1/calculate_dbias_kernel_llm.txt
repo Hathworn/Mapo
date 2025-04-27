@@ -1,0 +1,5 @@
+```cpp
+// Consider coalescing memory access for grad_output and grad_bias to improve memory throughput
+// Verify optimal block size and grid size to maximize occupancy without resource constraint
+// Minimize the use of atomic operations if possible, as they can serialize execution
+```

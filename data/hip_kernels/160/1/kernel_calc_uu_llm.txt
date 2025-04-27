@@ -1,0 +1,6 @@
+```
+// Coalesced memory access is achieved since threads within a warp access consecutive memory locations.
+// Ensure proper alignment of data in global memory to optimize memory transactions.
+// Consider using shared memory if multiple threads need to access the same data to reduce global memory access.
+// Minimize divergent branching by ensuring threads within the same warp follow the same execution path.
+```

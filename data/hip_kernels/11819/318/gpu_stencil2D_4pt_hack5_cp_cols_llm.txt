@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for repeated data access to reduce global memory fetches.
+// Optimize thread block dimensions to maximize memory coalescing.
+// Ensure synchronization barriers are strategically placed after all required shared memory writes.
+// Minimize divergence in control flow to improve memory latency hiding.
+// Evaluate prefetching data into shared memory before compute operations.
+```

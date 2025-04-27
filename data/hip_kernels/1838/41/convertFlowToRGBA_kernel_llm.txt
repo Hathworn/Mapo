@@ -1,0 +1,10 @@
+```
+// Use direct arithmetic for indexing to reduce computation overhead.
+// Avoid sqrtf and direct calculation if possible to enhance performance.
+// Avoid sqrtf by comparing squared magnitudes to reduce computation.
+// Use make_uchar4 for compact assignment to save register space.
+// Ensure that arithmetic operations are kept within manageable limits to avoid overflow.
+// Consider memory coalescing by structuring data accesses in a contiguous manner.
+// Minimize use of conditional branching to improve warp execution efficiency.
+// Use texture memory or shared memory if data access patterns become problematic.
+```

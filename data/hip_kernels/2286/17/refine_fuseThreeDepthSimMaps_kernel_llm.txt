@@ -1,0 +1,5 @@
+// Consider optimizing memory access by using shared memory for common data across threads.
+// Evaluate the use of texture memory for read-only data to improve cache efficiency.
+// Inspect data alignment to enable coalesced global memory accesses.
+// Check if bank conflicts in shared memory access can be minimized.
+// Consider using warp shuffle operations for efficient reductions.

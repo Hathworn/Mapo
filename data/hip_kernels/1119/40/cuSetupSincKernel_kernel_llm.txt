@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently accessed data to reduce global memory traffic.
+// Utilize registers for frequently used variables to avoid repeated global memory access.
+// Ensure memory access patterns are coalesced to enhance memory throughput.
+// Explore the use of loop unrolling if applicable to reduce the overhead of loop control.
+// Assess the use of __syncthreads() if shared data is introduced to avoid race conditions.
+```

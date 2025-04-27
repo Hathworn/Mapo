@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory access by ensuring coalesced access patterns
+// Use shared memory if possible to further improve memory access times
+// Consider using __restrict__ keyword to reduce pointer aliasing overhead
+// Verify if using warp shuffles could improve performance for this specific operation
+// Ensure that the launch configuration (blocks and threads) matches the hardware for optimal occupancy
+```

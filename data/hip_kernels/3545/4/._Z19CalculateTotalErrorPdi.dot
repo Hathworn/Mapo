@@ -1,0 +1,30 @@
+digraph "CFG for '_Z19CalculateTotalErrorPdi' function" {
+	label="CFG for '_Z19CalculateTotalErrorPdi' function";
+
+	Node0x635c4e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = shl nuw nsw i32 %8, 1\l  %11 = mul i32 %10, %9\l  %12 = add i32 %11, %3\l  %13 = icmp ult i32 %12, %1\l  br i1 %13, label %14, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x635c4e0:s0 -> Node0x635e470;
+	Node0x635c4e0:s1 -> Node0x635e500;
+	Node0x635e470 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%14:\l14:                                               \l  %15 = zext i32 %12 to i64\l  %16 = getelementptr inbounds double, double addrspace(1)* %0, i64 %15\l  %17 = load double, double addrspace(1)* %16, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  br label %18\l}"];
+	Node0x635e470 -> Node0x635e500;
+	Node0x635e500 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%18:\l18:                                               \l  %19 = phi double [ %17, %14 ], [ 0.000000e+00, %2 ]\l  %20 = getelementptr inbounds [512 x double], [512 x double] addrspace(3)*\l... @_ZZ19CalculateTotalErrorPdiE7error_s, i32 0, i32 %3\l  store double %19, double addrspace(3)* %20, align 8\l  %21 = add nuw nsw i32 %3, %8\l  %22 = add i32 %21, %11\l  %23 = icmp ult i32 %22, %1\l  br i1 %23, label %24, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x635e500:s0 -> Node0x635fba0;
+	Node0x635e500:s1 -> Node0x635ff20;
+	Node0x635fba0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%24:\l24:                                               \l  %25 = zext i32 %22 to i64\l  %26 = getelementptr inbounds double, double addrspace(1)* %0, i64 %25\l  %27 = load double, double addrspace(1)* %26, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  br label %28\l}"];
+	Node0x635fba0 -> Node0x635ff20;
+	Node0x635ff20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%28:\l28:                                               \l  %29 = phi double [ %27, %24 ], [ 0.000000e+00, %18 ]\l  %30 = getelementptr inbounds [512 x double], [512 x double] addrspace(3)*\l... @_ZZ19CalculateTotalErrorPdiE7error_s, i32 0, i32 %21\l  store double %29, double addrspace(3)* %30, align 8, !tbaa !7\l  br label %33\l}"];
+	Node0x635ff20 -> Node0x6360910;
+	Node0x6360b50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%31:\l31:                                               \l  %32 = icmp eq i32 %3, 0\l  br i1 %32, label %45, label %49\l|{<s0>T|<s1>F}}"];
+	Node0x6360b50:s0 -> Node0x635e750;
+	Node0x6360b50:s1 -> Node0x635e7a0;
+	Node0x6360910 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi i32 [ %8, %28 ], [ %43, %42 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %35 = icmp ult i32 %3, %34\l  br i1 %35, label %36, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x6360910:s0 -> Node0x63613d0;
+	Node0x6360910:s1 -> Node0x6360f30;
+	Node0x63613d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dc5d4a70",label="{%36:\l36:                                               \l  %37 = add nuw nsw i32 %34, %3\l  %38 = getelementptr inbounds [512 x double], [512 x double] addrspace(3)*\l... @_ZZ19CalculateTotalErrorPdiE7error_s, i32 0, i32 %37\l  %39 = load double, double addrspace(3)* %38, align 8, !tbaa !7\l  %40 = load double, double addrspace(3)* %20, align 8, !tbaa !7\l  %41 = fadd contract double %39, %40\l  store double %41, double addrspace(3)* %20, align 8, !tbaa !7\l  br label %42\l}"];
+	Node0x63613d0 -> Node0x6360f30;
+	Node0x6360f30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = lshr i32 %34, 1\l  %44 = icmp ult i32 %34, 2\l  br i1 %44, label %31, label %33, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x6360f30:s0 -> Node0x6360b50;
+	Node0x6360f30:s1 -> Node0x6360910;
+	Node0x635e750 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a7c5fe70",label="{%45:\l45:                                               \l  %46 = load double, double addrspace(3)* getelementptr inbounds ([512 x\l... double], [512 x double] addrspace(3)* @_ZZ19CalculateTotalErrorPdiE7error_s,\l... i32 0, i32 0), align 16, !tbaa !7\l  %47 = zext i32 %9 to i64\l  %48 = getelementptr inbounds double, double addrspace(1)* %0, i64 %47\l  store double %46, double addrspace(1)* %48, align 8, !tbaa !7\l  br label %49\l}"];
+	Node0x635e750 -> Node0x635e7a0;
+	Node0x635e7a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%49:\l49:                                               \l  ret void\l}"];
+}

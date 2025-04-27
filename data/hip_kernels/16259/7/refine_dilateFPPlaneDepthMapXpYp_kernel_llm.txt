@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory accesses for fpPlaneDepthMap and maskMap
+// Consider the use of texture memory for maskMap if there's spatial locality
+// Avoid warp divergence by ensuring threads within a warp take the same execution path
+```

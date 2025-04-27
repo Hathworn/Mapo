@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns to maximize coalesced reads from global memory.
+// Use shared memory to store intermediate values if multiple threads access the same data.
+// Prefer `__restrict__` keyword for pointers to allow the compiler to assume no aliasing.
+// Minimize divergent branches, especially within the main computation loop of the kernel.
+// Ensure alignment of data structures to prevent inefficient memory access.
+// Consider using texture memory if the access pattern demonstrates spatial locality.
+```

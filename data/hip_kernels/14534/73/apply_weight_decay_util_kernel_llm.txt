@@ -1,0 +1,8 @@
+```
+// Use __ldg() to optimize read access from global memory
+// Combine multiple float4 operations into a single operation if possible
+// Consider loop unrolling for repetitive operations
+// Ensure coalesced memory access to maximize memory throughput
+// Consider using shared memory if data reuse is possible to reduce global memory access
+// Investigate if adjusting block size improves performance based on device occupancy analysis
+```

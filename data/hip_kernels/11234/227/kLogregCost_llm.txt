@@ -1,0 +1,10 @@
+```
+// Consider using __restrict__ qualifiers for pointers to improve memory access patterns.
+// Align data access to enable coalesced memory transactions for arrays 'probs' and 'labels'.
+// Use shared memory to store intermediate results if the computation pattern involves reuse.
+// Ensure that the access to 'probs' inside the loop is coalesced by accessing continuous indices.
+// Minimize usage of shared memory bank conflicts by padding shared arrays.
+// Prefetch data into registers to reduce latency of global memory access.
+// Evaluate unrolling the loop to decrease loop overhead and potentially increase performance.
+// Consider using warp shuffle operations for reductions like counting 'numMax'.
+```

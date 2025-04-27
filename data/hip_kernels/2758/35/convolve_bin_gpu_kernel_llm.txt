@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing to improve global memory access for the input and weights arrays.
+// Utilize shared memory to store tile data for input and weights to reduce global memory access.
+// Unroll the inner loops to increase ILP (Instruction Level Parallelism) and reduce loop overhead.
+// Align the input and weights data to improve read/write efficiency and avoid bank conflicts.
+// Prefetch data if possible to overlap data transfer with computations.
+```

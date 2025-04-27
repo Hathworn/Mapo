@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed variables to reduce global memory accesses
+// Prefetch data into local registers before looping to minimize memory latency
+// Use warp-level primitives for efficient data sharing between threads
+// Consider vectorized operations for parallel processing within threads

@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Avoid warp divergence by minimizing conditional statements within the kernel
+// Optimize memory bandwidth by using shared memory if possible
+// Use appropriate block and grid dimensions for maximum occupancy
+// Consider using vectorized data types for better memory throughput
+```

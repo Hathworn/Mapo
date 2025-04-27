@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to reduce global memory accesses if data is reused.
+// Ensure that memory coalescing is achieved by accessing global memory in a sequential manner.
+// If atomic operations or synchronization are needed, ensure they are efficiently placed.
+// Assess the need for loop unrolling to maximize throughput when applicable.
+// Minimize bank conflicts when accessing shared memory to improve performance.
+// Align data structures and memory accesses to cache line boundaries to improve access times.
+```

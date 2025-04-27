@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory accesses.
+// Utilize texture or surface memory for read-only data that is spatially coherent.
+// Coalesce memory access patterns for `src`, `u`, and `v` arrays to enhance memory throughput.
+// Avoid warp divergence by ensuring all threads in the warp follow the same execution path when possible.
+// Consider loop unrolling techniques for optimization when applicable.
+// Analyze and optimize atomic operations usage as they may cause significant serialization.

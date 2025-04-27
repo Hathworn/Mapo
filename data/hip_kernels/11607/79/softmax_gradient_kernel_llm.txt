@@ -1,0 +1,7 @@
+```
+// Unroll loop for better performance by reducing branch divergence
+// Use shared memory to minimize global memory accesses and improve bandwidth utilization
+// Perform reduction using shared memory, ensuring coalesced accesses to reduce contention
+// Synchronize threads effectively to prevent race conditions during reduction
+// Optimize memory access patterns for gradient computation to maintain coalesced reads and writes
+```

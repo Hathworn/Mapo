@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Ensure that hiprand_init is only called once per thread to minimize initialization overhead.
+// Optimize the loop stride to ensure coalesced memory access.
+```

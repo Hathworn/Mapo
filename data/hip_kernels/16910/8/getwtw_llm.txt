@@ -1,0 +1,8 @@
+```
+// Convert to int using a more optimal method
+// Increment by blockDim.y for better utilization
+// Prefetching data into shared memory if possible to reduce global memory access
+// Consider using vectorized types to improve memory bandwidth utilization
+// Minimize redundant calculations within the loop, such as calculating index
+// Use unrolling techniques to reduce loop overhead and improve memory coalescing
+```

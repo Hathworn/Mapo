@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword on pointers to help the compiler with optimizations
+// Ensure memory coalescing by aligning data and accessing global memory efficiently
+// Try to minimize branch divergence by avoiding conditional statements in the kernel
+// Use shared memory to reduce global memory accesses if beneficial
+// Explore increasing the block size for potentially better performance
+// Evaluate the use of different memory spaces and synchronization techniques
+```

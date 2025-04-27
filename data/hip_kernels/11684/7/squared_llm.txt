@@ -1,0 +1,5 @@
+// Consider increasing the shared memory size for better utilization if blockDim.x > 256
+// Ensure proper memory alignment of shared memory for better access speed
+// Evaluate using a stride loop if n is much larger than blockDim.x for better parallelism
+// Minimize the use of __syncthreads() if possible to reduce synchronization overhead
+// Check bank conflicts in shared memory access to improve efficiency

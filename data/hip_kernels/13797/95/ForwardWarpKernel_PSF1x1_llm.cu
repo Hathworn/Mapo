@@ -1,0 +1,32 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__device__ __forceinline__ float imag(const float2& val) {
+    return val.y;
+}
+
+__global__ void ForwardWarpKernel_PSF1x1(const float *u, const float *v, const float *src, const int w, const int h, const int flow_stride, const int image_stride, const float time_scale, float *dst) {
+    int j = threadIdx.x + blockDim.x * blockIdx.x;
+    int i = threadIdx.y + blockDim.y * blockIdx.y;
+
+    // Early return for out-of-bounds threads
+    if (i >= h || j >= w) return;
+    
+    int flow_offset = i * flow_stride + j;
+    int image_offset = i * image_stride + j;
+
+    float u_ = u[flow_offset];
+    float v_ = v[flow_offset];
+
+    // Calculate the target position with precomputed scaling addition
+    float cx = u_ * time_scale + j + 1.0f;
+    float cy = v_ * time_scale + i + 1.0f;
+
+    int tx = __float2int_rn(cx);
+    int ty = __float2int_rn(cy);
+
+    // Safely add value to destination if the target is within bounds
+    if (tx >= 0 && tx < w && ty >= 0 && ty < h) {
+        atomicAdd(dst + ty * image_stride + tx, src[image_offset]);
+    }
+}

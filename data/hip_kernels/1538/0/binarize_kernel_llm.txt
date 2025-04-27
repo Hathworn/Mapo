@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if input data is reused by multiple threads
+// Use constant memory if input data is read-only and fits within size limits
+// Ensure coalesced memory access to improve global memory throughput
+// Minimize divergence by grouping threads with similar execution paths
+```

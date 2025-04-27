@@ -1,0 +1,9 @@
+```
+// Consider using texture memory for source image access patterns.
+// Load kernel into shared memory outside of thread blocks to reduce redundant loads.
+// Tune block size to maximize occupancy and memory throughput.
+// Align memory access by coalescing reads/writes to dst using float4 operations.
+// Minimize if-condition checks during the computation for better performance.
+// Ensure kernel memory is loaded in a coalesced manner and fits in shared memory efficiently.
+// Consider loop unrolling for 5x5 kernel convolution to reduce loop overhead.
+```

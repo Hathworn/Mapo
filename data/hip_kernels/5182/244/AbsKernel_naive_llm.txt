@@ -1,0 +1,8 @@
+```cpp
+// Use strided loop for better memory coalescing
+// Ensure that grid and block dimensions are balanced to maximize device utilization
+// Consider using shared memory if additional operations require intermediate storage
+// Prefetch next data elements if possible to hide latency
+// Ensure proper alignment of data in global memory for efficient access
+// Analyze occupancy to ensure that the kernel efficiently uses available resources
+```

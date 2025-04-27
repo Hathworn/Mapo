@@ -1,0 +1,3 @@
+// Optimize memory access by using shared memory for frequently accessed vectors v and b.
+// Ensure shared memory size is sufficient, adjust if n > 256.
+// Consider using warp-level primitives to further reduce synchronization overhead.

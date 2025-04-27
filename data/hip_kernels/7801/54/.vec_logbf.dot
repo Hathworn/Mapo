@@ -1,0 +1,10 @@
+digraph "CFG for 'vec_logbf' function" {
+	label="CFG for 'vec_logbf' function";
+
+	Node0x58cd350 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = sext i32 %12 to i64\l  %14 = icmp ult i64 %13, %0\l  br i1 %14, label %15, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x58cd350:s0 -> Node0x58ce0f0;
+	Node0x58cd350:s1 -> Node0x58cf360;
+	Node0x58ce0f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = getelementptr inbounds float, float addrspace(1)* %2, i64 %13\l  %17 = load float, float addrspace(1)* %16, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %18 = tail call i32 @llvm.amdgcn.frexp.exp.i32.f32(float %17)\l  %19 = add nsw i32 %18, -1\l  %20 = sitofp i32 %19 to float\l  %21 = tail call float @llvm.fabs.f32(float %17)\l  %22 = tail call i1 @llvm.amdgcn.class.f32(float %21, i32 504)\l  %23 = select i1 %22, float %20, float %21\l  %24 = fcmp oeq float %17, 0.000000e+00\l  %25 = select i1 %24, float 0xFFF0000000000000, float %23\l  %26 = getelementptr inbounds float, float addrspace(1)* %1, i64 %13\l  store float %25, float addrspace(1)* %26, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x58ce0f0 -> Node0x58cf360;
+	Node0x58cf360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

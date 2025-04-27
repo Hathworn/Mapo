@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for better performance
+// Use shared memory if multiple threads access the same data to reduce global memory traffic
+// Attempt loop unrolling if `size` and workload warrant it to improve computational throughput
+// Align data on 128-bit boundaries if possible to enhance memory access efficiency
+// Check for potential warp divergence and minimize it in conditional checks
+// Use `__ldg()` for read-only data to leverage texture cache on supported devices
+```

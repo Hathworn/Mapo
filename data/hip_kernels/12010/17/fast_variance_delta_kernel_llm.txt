@@ -1,0 +1,6 @@
+```
+// Utilize dynamic shared memory to reduce global memory access frequency.
+// Implement loop stride to improve data access patterns and increase coalescing.
+// Use __syncthreads() to ensure all threads complete local memory updates before reduction.
+// Perform reduction within a block for efficient accumulation of results.
+```

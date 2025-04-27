@@ -1,0 +1,8 @@
+```
+// Optimize global memory access by minimizing the number of transactions
+// Consider coalesced memory access pattern for gradOutput_data
+// Use shared memory to cache frequently accessed data if possible
+// Ensure alignment of data structures for optimal memory access
+// Explore vectorized access if data is allocated accordingly
+// Consider loop unrolling for accessing gradOutput_data inside nested loops
+```

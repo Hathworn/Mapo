@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize repetitive global memory accesses.
+// Consider coalesced accesses to global memory when possible.
+// Pre-compute repetitive index calculations and store them in registers.
+// Ensure optimal block and thread dimensions to maximize GPU occupancy.
+// Minimize divergent branching within warp execution to improve performance.
+// Check for effective memory alignment on accesses to optimize throughput.
+```

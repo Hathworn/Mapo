@@ -1,0 +1,7 @@
+```cpp
+// Consider using a larger tile size if shared memory allows, to increase data reuse.
+// Optimize memory coalescing by ensuring sequential threads access sequential memory locations.
+// Check occupancy and adjust block size to maximize execution efficiency.
+// Explore further unrolling opportunities in the inner loop to potentially enhance performance.
+// Evaluate the possibility of using float4 to load/store multiple values at once, to exploit more bandwidth.
+```

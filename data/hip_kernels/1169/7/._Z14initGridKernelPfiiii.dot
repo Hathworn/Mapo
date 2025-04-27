@@ -1,0 +1,13 @@
+digraph "CFG for '_Z14initGridKernelPfiiii' function" {
+	label="CFG for '_Z14initGridKernelPfiiii' function";
+
+	Node0x4a44230 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = shl i32 %6, 3\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = add i32 %7, %8\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %11 = shl i32 %10, 3\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %13 = add i32 %11, %12\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.z()\l  %15 = shl i32 %14, 3\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.z(), !range !4\l  %17 = add i32 %15, %16\l  switch i32 %1, label %19 [\l    i32 0, label %20\l    i32 1, label %18\l  ]\l|{<s0>def|<s1>0|<s2>1}}"];
+	Node0x4a44230:s0 -> Node0x4a46a20;
+	Node0x4a44230:s1 -> Node0x4a46ab0;
+	Node0x4a44230:s2 -> Node0x4a46b70;
+	Node0x4a46b70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7bca170",label="{%18:\l18:                                               \l  br label %20\l}"];
+	Node0x4a46b70 -> Node0x4a46ab0;
+	Node0x4a46a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%19:\l19:                                               \l  br label %20\l}"];
+	Node0x4a46a20 -> Node0x4a46ab0;
+	Node0x4a46ab0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  %21 = phi i32 [ %13, %18 ], [ %17, %19 ], [ %9, %5 ]\l  %22 = mul nsw i32 %17, %3\l  %23 = add nsw i32 %22, %13\l  %24 = mul nsw i32 %23, %2\l  %25 = add nsw i32 %24, %9\l  %26 = sitofp i32 %21 to float\l  %27 = sext i32 %25 to i64\l  %28 = getelementptr inbounds float, float addrspace(1)* %0, i64 %27\l  store float %26, float addrspace(1)* %28, align 4, !tbaa !5\l  ret void\l}"];
+}

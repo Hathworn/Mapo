@@ -1,0 +1,7 @@
+```c
+// Ensure memory access is coalesced by checking memory alignment
+// Consider using shared memory to reduce global memory access
+// Optimize for memory bandwidth by minimizing atomic operations when possible
+// Explore loop unrolling if BIN_COUNT is small and known at compile time
+// Ensure d_in and d_bins are allocated with cudaMallocManaged or similar for optimal performance
+```

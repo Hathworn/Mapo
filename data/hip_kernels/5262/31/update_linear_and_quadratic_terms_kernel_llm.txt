@@ -1,0 +1,3 @@
+// Use shared memory to load cur_tot_weight to reduce global memory access.
+// Consider using loop unrolling for memory-bound operations.
+// Make use of warp-level primitives to reduce divergence and optimize memory access patterns.

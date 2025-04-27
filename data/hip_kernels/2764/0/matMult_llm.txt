@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache tiles of matrices A and B to reduce global memory accesses.
+// Ensure coalesced memory access by aligning data fetches with warp execution.
+// Consider padding BLOCK_SIZE to avoid shared memory bank conflicts.
+// Allocate registers for frequently used variables to reduce repeated memory accesses.
+// Minimize use of __syncthreads() to necessary points to optimize synchronization overhead.
+// Optimize loop unrolling for the inner product computation to decrease loop control overhead.
+```

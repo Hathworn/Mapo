@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by reordering memory access patterns for mask_diff and buffer_diff.
+// Minimize divergence in mask loop by flattening h and w levels into a single loop.
+// Use shared memory to cache frequently accessed values from buffer_diff.
+// Consider splitting the mask computation into smaller tiles to improve cache utilization.
+// Reduce redundant calculations for mask_idx and buffer_idx by precomputing common terms.
+```

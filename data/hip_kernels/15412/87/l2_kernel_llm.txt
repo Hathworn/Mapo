@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to minimize global memory access latency
+// Preload data into registers to reduce repeated global memory access
+// Explore warp-level primitives to handle divergence more efficiently
+// Assess if memory coalescing is achievable by reorganizing data access pattern
+// Investigate occupancy and adjust block size to better utilize GPU resources
+```

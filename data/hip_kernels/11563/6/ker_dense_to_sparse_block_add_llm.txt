@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access for block-specific calculations.
+// Use vectorized memory operations if applicable to improve bandwidth utilization.
+// Optimize block and grid dimensions to fit the GPU architecture for better warp execution efficiency.
+// Investigate coalesced memory access patterns for the idx array to reduce memory latency.

@@ -1,0 +1,12 @@
+```
+// Consider reducing shared memory usage by compressing data structures if possible.
+// Reorganize data loading for better coalesced memory access patterns.
+// Consider loop unrolling in 'Load data' and 'Compute histogram' for efficiency.
+// Check if __syncthreads() can be optimized or merged to reduce synchronization overhead.
+// Evaluate performance impact of using texture or constant memory for g_Data.
+// Consider using atomic operations if needed to avoid race conditions in histogram computation.
+// Assess if using fewer threads per block could help improve memory bandwidth usage.
+// Explore using warp-level operations (e.g., __shfl_down) for histogram reduction to enhance performance.
+// Minimize branch divergence in orientation peaks computation by restructuring control flow if needed.
+// Evaluate if more precise Gaussian function computation can be traded for speed if tolerated.
+```

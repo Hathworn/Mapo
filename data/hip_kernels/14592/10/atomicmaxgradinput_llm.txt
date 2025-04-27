@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses when loading gradOutput, indices_x, and indices_y
+// Use shared memory to reduce redundant global memory accesses for recurrent data
+// Utilize loop unrolling for better performance when accessing neighboring elements
+// Ensure alignment of data structures for memory access to improve bandwidth efficiency
+```

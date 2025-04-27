@@ -1,0 +1,12 @@
+```
+// Use shared memory to temporarily store local contributions for each thread.
+// Implement thread-stride loop to distribute workload evenly across threads.
+// Ensure coalesced memory access for 'delta' and 'x' to improve bandwidth usage.
+// Utilize reduction pattern to efficiently aggregate results in shared memory.
+// Optimize reduction using loop unrolling techniques where possible.
+// Favor low register pressure by minimizing variable usage within critical loops.
+// Compute variance_delta in the first thread of each block to avoid warp divergence.
+// Reduce memory access latency by maintaining spatial locality within each batch loop.
+// Apply constant memory for frequently used values if applicable to boost cache efficiency.
+// Consider loop fusion or array padding strategies to enhance memory access patterns.
+```

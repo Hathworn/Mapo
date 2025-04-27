@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access by aligning memory allocation for float arrays
+// Consider using shared memory if multiple threads access the same mask data
+// Minimize bank conflicts by ensuring data in shared memory is accessed in a coalesced manner
+// Optimize grid and block dimensions to balance the workload across GPUs
+```

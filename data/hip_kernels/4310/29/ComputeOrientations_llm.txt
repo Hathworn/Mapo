@@ -1,0 +1,10 @@
+```c
+// Use shared memory to reduce global memory accesses.
+// Ensure Gaussian weights are precomputed and stored in shared memory for efficient reuse.
+// Minimize the boundary checks in the main computation loop.
+// Utilize shared memory to store local data and intermediate histogram results.
+// Apply loop unrolling in the reduction step to improve performance.
+// Consider using warp-level primitives to optimize histogram reductions.
+// Ensure bank conflicts are minimized when accessing shared memory.
+// Use early exits when possible to reduce unnecessary computations.
+```

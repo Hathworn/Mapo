@@ -1,0 +1,8 @@
+```
+// Use __restrict__ to hint compiler for no aliasing
+// Compute global thread index for efficiency
+// Consider coalesced memory access to optimize memory throughput
+// Minimize the use of printf as it can cause serialization of threads
+// Align data structures to cache line size for better caching
+// Use shared memory to reduce global memory access latency
+```

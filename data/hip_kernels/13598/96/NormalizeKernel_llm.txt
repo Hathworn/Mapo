@@ -1,0 +1,7 @@
+```
+// Load normalization factor for each thread to maximize memory coalescing
+// Use fast approximate reciprocal for division to reduce computation latency
+// Ensure all threads within a warp follow the same execution path for efficiency
+// Minimize conditional branches to avoid divergent warps
+// Store and access image data in a memory-friendly way to enhance cache usage
+```

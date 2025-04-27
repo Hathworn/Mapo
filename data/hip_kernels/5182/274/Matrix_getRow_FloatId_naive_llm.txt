@@ -1,0 +1,6 @@
+```
+// Use shared memory to store portions of A to reduce global memory access
+// Ensure coalesced memory access by aligning data access patterns
+// Use asynchronous copy if available to overlap data transfer with computation
+// Consider loop unrolling if the number of columns is known at compile-time
+```

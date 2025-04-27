@@ -1,0 +1,7 @@
+```cpp
+// Consider unrolling loops further to expose more parallelism.
+// Coalesced memory access is achieved by loading data into shared memory in contiguous blocks.
+// Ensure that shared memory usage is within the limits for the targeted GPU to maximize occupancy.
+// Thread divergence is minimized by restricting operations to valid thread indices.
+// Aligning data access patterns with the warp size may yield performance benefits.
+```

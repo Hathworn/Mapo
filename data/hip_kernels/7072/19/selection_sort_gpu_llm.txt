@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access pattern for dist and out to improve global memory throughput
+// Use shared memory to store current thread block data temporarily during sorting to minimize global memory access
+// Ensure all data used frequently is stored in registers to reduce redundant access to global memory
+// Optimize by reducing branch divergence within warp, especially in the find min operation
+```

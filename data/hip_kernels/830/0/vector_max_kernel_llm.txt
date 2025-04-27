@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by aligning data access patterns.
+// Consider using larger block sizes if the GPU architecture allows it.
+// Optimize shared memory usage to reduce occupancy limitations.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Evaluate whether loop unrolling is beneficial for reduction loop.
+// Assess the benefits of using warp-level primitives for reduction.
+```

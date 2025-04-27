@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache gradOutput_data for reuse by multiple threads
+// Ensure coalesced access to global memory for gradInput, gradOutput, and indices
+// Unrolling the loop improves instruction-level parallelism and reduces loop overhead
+// Consider using vectorized loads/stores to optimize memory access
+```

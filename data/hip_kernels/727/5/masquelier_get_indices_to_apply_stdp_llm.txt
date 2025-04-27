@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring d_plastic_synapse_indices is accessed in a sequential pattern.
+// Use shared memory to store frequently accessed data like d_postsyns to reduce global memory accesses.
+// Avoid warp divergence by restructuring conditional statements to ensure threads within a warp follow the same path.
+// Prefetch data from global to shared memory to reduce access latency.
+// Use __restrict__ qualifier for pointer arguments to indicate no overlapping, improving optimization.
+```

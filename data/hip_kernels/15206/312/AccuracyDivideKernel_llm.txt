@@ -1,0 +1,7 @@
+```cpp
+// Consider using coalesced memory access
+// Minimize global memory accesses by using shared memory
+// Use __syncthreads() to ensure all threads have completed their operations before proceeding
+// Optimize shared memory usage by limiting the number of threads accessing it
+// Ensure that shared memory is only updated by a single thread to avoid race conditions
+```

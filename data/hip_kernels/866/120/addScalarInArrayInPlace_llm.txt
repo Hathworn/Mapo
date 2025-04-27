@@ -1,0 +1,5 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory to store the 'add[0]' value since it's used by all threads, reducing global memory access
+// Optimize global memory access by fetching 'add[0] * scale' outside the loop
+```

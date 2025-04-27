@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory efficiently to minimize memory access from global memory.
+// Optimize access patterns to shared memory to reduce bank conflicts.
+// Ensure all threads in a warp reach __syncthreads() for better performance.
+// Consider launching kernels with a sufficient number of blocks to keep the GPU occupied.
+```

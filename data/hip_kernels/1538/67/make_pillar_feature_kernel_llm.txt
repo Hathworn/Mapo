@@ -1,0 +1,8 @@
+```
+// Use shared memory for frequently accessed data like num_points_at_this_pillar
+// Ensure coalesced memory access to improve bandwidth utilization
+// Utilize __syncthreads() to synchronize threads after loading shared memory
+// Exit early for threads exceeding num_points_at_this_pillar to save resources
+// Compute indices outside of memory access loops to minimize calculations
+// Align memory accesses to facilitate coalescing
+```

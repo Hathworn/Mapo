@@ -1,0 +1,5 @@
+// Consider using shared memory if data reuse exists to reduce global memory accesses
+// Align memory accesses to minimize memory latency
+// Use memory coalescing by ensuring all threads within a warp access consecutive memory locations
+// Avoid bank conflicts in shared memory when implementing optimizations
+// Check for thread divergence and avoid unnecessary calculations

@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory accesses
+// Avoid branch divergence by ensuring all threads in a warp take the same execution path
+// Prefetch data to shared memory to hide memory latency
+// Align shared memory accesses to improve bandwidth
+// Use loop unrolling if it improves performance on target architecture
+// Optimize tile size (blocksize) for better occupancy and resource usage
+```

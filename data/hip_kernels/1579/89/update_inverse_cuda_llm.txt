@@ -1,0 +1,8 @@
+```
+// Consider using cooperative groups for more flexible synchronization patterns.
+// Use persistent threads to reduce kernel launch overhead.
+// Optimize shared memory usage to prevent bank conflicts.
+// Efficiently utilize vectorized memory accesses if possible.
+// Review warp divergence and ensure memory accesses are coalesced.
+// Look into doubling blockDim size to enhance parallelism.
+```

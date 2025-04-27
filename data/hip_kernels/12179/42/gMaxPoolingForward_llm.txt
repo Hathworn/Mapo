@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data
+// Opt for memory coalescing by ensuring that consecutive threads access consecutive memory addresses
+// Use loop unrolling in the for-loop to reduce workload per thread
+// Consider using mixed precision if accuracy allows for it to increase throughput
+// Ensure the use of restrict keyword for pointers if applicable to avoid aliasing overhead

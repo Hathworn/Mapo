@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if N is used frequently to reduce global memory access
+// Ensure that *accuracy is properly aligned to avoid misaligned memory access
+// Evaluate whether atomic operation is necessary if only one thread updates *accuracy
+// Investigate opportunities for parallel reduction for better scalability
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache data chunks to reduce global memory accesses.
+// Align data to improve memory coalescing and access pattern.
+// Use texture memory for read-only data if applicable to improve cache hits.
+// Ensure the size is a power of two for better compatibility with modular operations.
+// Experiment with different block sizes to find the optimal configuration for the hardware.
+// Consider using wider data types (e.g., float4) for data access to reduce the number of memory transactions.
+```

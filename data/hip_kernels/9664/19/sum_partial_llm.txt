@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access by aligning data structures properly
+// Minimize shared memory usage to allow more active threads per block
+// Consider using vectorized loads/stores for improved memory throughput
+// Profile the kernel to identify and alleviate memory bottlenecks
+// Use __ldg() intrinsic to leverage read-only cache for input data if possible
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access to global memory.
+// Use shared memory to reduce global memory access and improve performance.
+// Consider using warp shuffle instructions to optimize within-warp reductions.
+// Check for out-of-bounds access to avoid redundant calculations.
+// Minimize synchronizations by optimizing the reduction loop.
+```

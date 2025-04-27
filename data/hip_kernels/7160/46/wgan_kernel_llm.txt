@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data like 'truth_val' if possible to reduce global memory access.
+// Consider adjusting the grid and block dimensions to better utilize the GPU's resources and improve occupancy.
+// Unroll loops if there are any to enable more efficient execution by minimizing loop overhead.
+// Evaluate if using __restrict__ keyword could help in reducing pointer aliasing issues for 'pred', 'truth', 'delta', and 'error' pointers.
+// Experiment with using texture memory if the 'truth' data does not change frequently to accelerate memory reads.
+```

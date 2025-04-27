@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for texture data to reduce global memory access
+// Minimize thread divergence by ensuring aligned memory accesses
+// Use texture cache for accessing the texture array to improve memory read efficiency
+// Prefetch texture data to registers to optimize memory access latency
+// Ensure coalesced memory accesses for both texture and target arrays
+// Group multiple operations to reduce arithmetic operations and improve performance
+```

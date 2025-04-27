@@ -1,0 +1,7 @@
+```
+// Use shared memory to store input data for better memory access patterns
+// Implement memory coalescing to minimize global memory transactions
+// Consider loop unrolling for computations within the kernel to reduce overhead
+// Use constant memory for stride and c/(stride*stride) values to optimize access times
+// Optimize boundary condition checks to reduce divergent branches
+```

@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access by ensuring threads access consecutive memory locations.
+// Minimize bank conflicts by using padding in shared memory if applicable.
+// Use shared memory to reduce global memory accesses for frequent data access.
+// Check for opportunities to use the __restrict__ qualifier for pointer parameters to improve optimization.
+// Ensure the global memory accesses are aligned, which can lead to a significant speedup.
+// Evaluate whether doing additional work per thread can reduce overall execution time by reducing the number of threads.
+// Use loop unrolling techniques if the loop count can be determined at compile time to reduce control overhead.
+// Minimize the use of expensive arithmetic operations inside the critical path of the kernel.
+```

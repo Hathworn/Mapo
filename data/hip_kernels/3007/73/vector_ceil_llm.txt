@@ -1,0 +1,9 @@
+```c
+// Use coalesced memory accesses to improve memory throughput.
+// Prefetch data to shared memory when appropriate.
+// Ensure alignment of memory accesses for better performance.
+// Minimize the number of divergent branches within a warp.
+// Consider increasing block size if the kernel is under-utilizing the GPU.
+// Profile the kernel to identify and minimize bottlenecks.
+// Utilize asynchronous memory transfers if applicable.
+```

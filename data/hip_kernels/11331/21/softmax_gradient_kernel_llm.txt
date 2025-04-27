@@ -1,0 +1,6 @@
+// Use loop unrolling to minimize thread divergence and improve memory access patterns
+// Consider using warp level primitives for reduction instead of atomic operations
+// Optimize memory access by ensuring coalesced memory accesses across threads in a warp
+// Ensure shared memory usage is within limits to prevent bank conflicts
+// Experiment with different block sizes for better performance depending on hardware constraints
+// Evaluate if using texture memory could provide benefits over global memory for frequent reads

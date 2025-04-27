@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to cache 'p' values accessed frequently within threads
+// Consider coalesced memory access for 'u', 'u_bar', and 'u_diff'
+// Merge kernel calls if possible to reduce kernel launch overhead
+// Leverage constant memory for read-only data like 'scalar_op' and 'f'
+// Optimize thread block size for specific GPU architecture to maximize occupancy
+// Align memory allocations to improve access speed on multi-dimensional arrays
+// Avoid redundant computations within loops, such as recalculating 'i'
+```

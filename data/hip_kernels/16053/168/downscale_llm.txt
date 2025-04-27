@@ -1,0 +1,7 @@
+```
+// Perform memory coalescing by accessing gradOutput_data in a pattern that avoids strided access.
+// Use shared memory to store data that is repeatedly used by multiple threads within the same block.
+// Reduce register pressure by minimizing the use of temporary variables or storing intermediate results in shared memory.
+// Consider loop unrolling in the accumulation loop to reduce the number of loop iterations and improve ILP (Instruction Level Parallelism).
+// Optimize the calculation of translate_idx_inv by precomputing repeated arithmetic operations outside the loop.
+```

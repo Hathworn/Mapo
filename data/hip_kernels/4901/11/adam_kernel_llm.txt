@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data like bias corrections if block-level reuse is possible.
+// Optimize memory access by ensuring data alignment and avoiding bank conflicts.
+// Use constant memory for fixed parameters like B1, B2, rate, eps, and t if they don't change during kernel execution.
+// Evaluate whether loop unrolling for computing powers or using mathematical approximations can improve performance.

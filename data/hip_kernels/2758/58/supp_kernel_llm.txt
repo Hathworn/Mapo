@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses if possible.
+// Consider coalesced memory access to improve memory bandwidth utilization.
+// Make use of vectorized loads/stores if applicable for float data.
+// Ensure that INCX is aligned to avoid uncoalesced access patterns.
+// Analyze occupancy and consider adjusting block and grid sizes for optimal performance.
+```

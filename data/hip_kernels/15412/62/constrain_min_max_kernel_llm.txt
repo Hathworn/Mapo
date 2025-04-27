@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Combine comparisons to reduce the number of conditional operations
+// Use warp-level primitives if applicable to increase efficiency
+// Optimize INCX handling if it remains constant across multiple kernel launches
+// Ensure coalesced memory access by adjusting INCX or data layout
+```

@@ -1,0 +1,6 @@
+// Consider coalescing memory accesses by ensuring continuous memory access for threads in each warp.
+// Optimize memory access patterns by using shared memory for frequently accessed data.
+// Ensure proper memory alignment to leverage memory coalescing efficiently.
+// Consider using loop unrolling techniques to reduce loop overhead.
+// Evaluate the use of cache by rearranging computations to improve cache locality.
+// Minimize divergent branching to reduce the overhead of non-coalesced execution paths.

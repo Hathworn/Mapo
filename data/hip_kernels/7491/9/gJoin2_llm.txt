@@ -1,0 +1,4 @@
+// Optimize memory access for better coalescing.
+// Consider using shared memory for rowIn1 and rowIn2 to reduce global memory access.
+// Investigate if reducing the use of conditional statements inside the loop can improve performance.
+// Ensure outStride, inStride1, and inStride2 are correctly aligned for optimal memory access.

@@ -1,0 +1,6 @@
+```
+// Optimize warp divergence by using even-odd division directly
+// Ensure coalesced memory access to downCh1 and downCh2 to improve memory throughput
+// Consider using shared memory to cache frequently accessed data and reduce global memory traffic
+// Minimize the use of branching logic to enhance warp execution efficiency
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Use memory padding if necessary to align data in global memory
+// Ensure all memory allocations and transfers are done asynchronously if possible
+// Explore using texture memory for d_Data if beneficial for memory access patterns
+```

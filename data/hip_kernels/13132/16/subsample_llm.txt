@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce redundant global memory accesses for input data.
+// Consider loop unrolling to improve performance for small kernel sizes.
+// Align memory accesses to optimize coalesced memory access patterns.
+// Prefetch data to hide memory latency through pipelining.
+// Minimize register pressure by optimizing the number of registers used per thread.
+```

@@ -1,0 +1,3 @@
+// Use shared memory to cache d_input values within each block to reduce global memory accesses.
+// Consider using a vectorized data type like float4 if data alignment and conditions permit for coalesced memory access.
+// Tune block size and grid size based on the GPU architecture to ensure optimal occupancy and performance.

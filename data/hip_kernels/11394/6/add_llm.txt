@@ -1,0 +1,7 @@
+```
+// Consider increasing grid and block sizes for better occupancy
+// Use shared memory if the data is reused by multiple threads
+// Ensure data coalescing for global memory access
+// Use asynchronous memory copy to overlap computation with data transfer
+// Minimize branch divergence within warps
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory accesses.
+// Coalesce global memory accesses to improve memory bandwidth utilization.
+// Consider loop unrolling for the main computation for increased instruction-level parallelism.
+// Ensure memory access patterns minimize bank conflicts in shared memory.
+// Verify if using float2 or float4 can improve memory coalescing by accessing multiple float values at once.
+```

@@ -1,0 +1,4 @@
+// Use shared memory for commonly accessed data to reduce global memory access.
+// Ensure all read and write operations are coalesced for better memory performance.
+// Utilize loop unrolling if applicable to reduce loop overhead and increase performance.
+// Consider using __restrict__ keyword for pointers to prevent pointer aliasing and optimize memory access.

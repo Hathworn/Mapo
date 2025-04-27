@@ -1,0 +1,17 @@
+digraph "CFG for '_Z12detect_edgesPhS_' function" {
+	label="CFG for '_Z12detect_edgesPhS_' function";
+
+	Node0x4c2f470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = mul i32 %3, 72\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = add i32 %4, %5\l  %7 = freeze i32 %6\l  %8 = srem i32 %7, 100\l  %9 = icmp eq i32 %8, 0\l  %10 = add i32 %7, 99\l  %11 = icmp ult i32 %10, 199\l  %12 = or i1 %9, %11\l  %13 = icmp eq i32 %8, 99\l  %14 = or i1 %13, %12\l  %15 = add i32 %7, -7100\l  %16 = icmp ult i32 %15, 100\l  %17 = or i1 %16, %14\l  br i1 %17, label %18, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x4c2f470:s0 -> Node0x4c2fd50;
+	Node0x4c2f470:s1 -> Node0x4c313e0;
+	Node0x4c2fd50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%18:\l18:                                               \l  %19 = sext i32 %7 to i64\l  %20 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %19\l  store i8 0, i8 addrspace(1)* %20, align 1, !tbaa !5\l  br label %54\l}"];
+	Node0x4c2fd50 -> Node0x4c31820;
+	Node0x4c313e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%21:\l21:                                               \l  %22 = add nsw i32 %7, 100\l  %23 = add nsw i32 %7, -1\l  %24 = add nuw nsw i32 %7, 1\l  %25 = add nsw i32 %7, -100\l  %26 = sext i32 %7 to i64\l  %27 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %26\l  %28 = load i8, i8 addrspace(1)* %27, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %29 = zext i8 %28 to i32\l  %30 = shl nuw nsw i32 %29, 2\l  %31 = sext i32 %22 to i64\l  %32 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %31\l  %33 = load i8, i8 addrspace(1)* %32, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %34 = zext i8 %33 to i32\l  %35 = sext i32 %23 to i64\l  %36 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %35\l  %37 = load i8, i8 addrspace(1)* %36, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %38 = zext i8 %37 to i32\l  %39 = add nuw nsw i32 %38, %34\l  %40 = sext i32 %24 to i64\l  %41 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %40\l  %42 = load i8, i8 addrspace(1)* %41, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %43 = zext i8 %42 to i32\l  %44 = add nuw nsw i32 %39, %43\l  %45 = sext i32 %25 to i64\l  %46 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %45\l  %47 = load i8, i8 addrspace(1)* %46, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %48 = zext i8 %47 to i32\l  %49 = add nuw nsw i32 %44, %48\l  %50 = icmp ult i32 %30, %49\l  %51 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %26\l  br i1 %50, label %53, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x4c313e0:s0 -> Node0x4c33910;
+	Node0x4c313e0:s1 -> Node0x4c339a0;
+	Node0x4c339a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%52:\l52:                                               \l  store i8 -1, i8 addrspace(1)* %51, align 1, !tbaa !5\l  br label %54\l}"];
+	Node0x4c339a0 -> Node0x4c31820;
+	Node0x4c33910 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%53:\l53:                                               \l  store i8 0, i8 addrspace(1)* %51, align 1, !tbaa !5\l  br label %54\l}"];
+	Node0x4c33910 -> Node0x4c31820;
+	Node0x4c31820 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%54:\l54:                                               \l  ret void\l}"];
+}

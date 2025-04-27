@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced access to global memory for improved memory throughput
+// Use warp-level primitives like __shfl_down_sync() to optimize reduction phase
+// Consider using atomic operations if data precision requirements are relaxed
+// Minimize the use of __syncthreads() for reducing synchronization overhead
+// Explore using half precision data type if applicable to reduce memory bandwidth
+```

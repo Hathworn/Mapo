@@ -1,0 +1,6 @@
+```c
+// Use shared memory for frequently accessed data like mask_num.
+// Ensure coalesced memory access for x and mask arrays.
+// Consider loop unrolling if applicable for further optimization.
+// Use __syncthreads() to ensure all threads have updated shared data.
+```

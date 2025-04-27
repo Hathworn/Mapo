@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for intermediate calculations to reduce global memory access
+// Ensure proper memory alignment to achieve higher memory bandwidth
+// Use float2 or float4 if possible to enhance memory coalescing
+// Avoid branch divergence by ensuring all threads in a warp follow the same execution path
+// Minimize atomic operations by using warp-level primitives
+```

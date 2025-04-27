@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce redundant global memory accesses for input data.
+// Ensure coalesced memory access for input[] and re_packed_input[] to maximize memory bandwidth.
+// Consider using warp-level primitives to optimize the computation of indices.
+// Avoid divergent branching in the conditional check by restructuring the loop or reordering threads.
+// Preload frequently used variables like items_per_channel into registers to minimize memory latency.
+```

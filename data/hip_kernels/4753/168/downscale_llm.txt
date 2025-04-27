@@ -1,0 +1,4 @@
+// Consider using shared memory to cache gradOutput_data data block
+// Ensure coalesced memory access for gradInput_data and gradOutput_data
+// Minimize divergence by ensuring all threads execute the same branch
+// Align data accesses to improve memory access efficiency

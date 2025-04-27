@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency
+// Optimize memory coalescing by aligning memory accesses with warp boundaries
+// Ensure the memory accesses are coalesced by using contiguous threads for sequential data
+// Evaluate the use of larger blocks to increase parallelism and reduce overhead
+// Consider loop unrolling to increase the instruction throughput

@@ -1,0 +1,7 @@
+```
+// Reduce global memory accesses by using shared memory if data can be reused by multiple threads.
+// Ensure memory coalescing by accessing consecutive memory locations across threads.
+// Minimize divergent branches within the kernel.
+// Consider loop unrolling for small fixed-size loops if applicable.
+// Assess whether more complex prefetching strategies could enhance performance.
+```

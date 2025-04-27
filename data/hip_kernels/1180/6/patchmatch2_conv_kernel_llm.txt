@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache frequently accessed data from global memory.
+// Consider loop unrolling to reduce loop overhead within kernel computations.
+// Optimize memory access patterns for coalesced reads/writes.
+// Minimize divergent branches in the kernel to improve warp efficiency.
+// Use constant memory for kernel arguments that do not change across threads such as 's_size' or 'patch'.
+```

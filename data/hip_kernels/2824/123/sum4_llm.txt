@@ -1,0 +1,7 @@
+```
+// Use float4 to reduce four-element vector operations to single instructions, optimizing coalesced memory access.
+// Ensure memory allocation aligns with float4 operations to optimize memory throughput.
+// Utilize shared memory if repeatedly accessing the same elements within a block for improved memory efficiency.
+// Consider loop unrolling or other instruction-level optimizations for further potential speed increases.
+// Verify memory access patterns to ensure alignment and coalescing for optimal memory bandwidth usage.
+```

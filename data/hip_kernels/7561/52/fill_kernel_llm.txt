@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses by ensuring INCX is 1 or a small stride
+// Utilize shared memory to reduce global memory access if repeated reads occur
+// Consider using warp shuffle functions to reduce memory traffic when updating X
+// Ensure ALPHA is stored in a register to speed up accesses
+// Adjust block and grid dimensions to maximize occupancy based on hardware specifications
+```

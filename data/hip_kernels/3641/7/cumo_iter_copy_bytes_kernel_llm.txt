@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for p1 and p2 to improve global memory bandwidth utilization.
+// Utilize shared memory to minimize redundant global memory access if idx1 or idx2 has repeating patterns.
+// Check if elmsz is a multiple of 4 or 8 to use float or double4 for larger and more efficient memory transactions.
+// Ensure proper alignment of p1, p2, p1_, and p2_ to maximize memory transaction efficiency.
+// Use asynchronous memory transfers or prefetching techniques where possible to hide memory latency.
+```

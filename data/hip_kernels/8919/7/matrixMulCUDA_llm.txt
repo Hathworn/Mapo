@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache submatrices of A and B to reduce global memory accesses.
+// Use coalesced memory access patterns by ensuring that threads within the same warp access contiguous memory locations.
+// Evaluate the block size configuration to balance between multiprocessor occupancy and the amount of shared memory usage.
+// Ensure memory access alignment for optimal memory throughput, particularly when loading A and B to shared memory.
+```

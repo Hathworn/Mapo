@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access.
+// Ensure coalesced memory access for A and B when loading into shared memory.
+// Consider using float4 for loading and storing to improve memory throughput.

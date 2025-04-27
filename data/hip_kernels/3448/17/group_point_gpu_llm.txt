@@ -1,0 +1,4 @@
+// Move pointers outside of the batch loop to reduce memory overhead.
+// Unroll the innermost loop by a factor of 4 for better performance.
+// Ensure access to idx and out are coalesced to optimize memory access patterns.
+// Consider shared memory usage if idx and points accesses are not coalesced.

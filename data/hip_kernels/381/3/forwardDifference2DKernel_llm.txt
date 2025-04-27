@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for data array.
+// Consider memory coalescing to improve access patterns of dx and dy arrays.
+// Optimize block and grid dimensions for better occupancy and load balancing.
+// Use loop unrolling to enhance computation efficiency if logical operations permit.

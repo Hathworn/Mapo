@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by ensuring that threads in the same warp access consecutive memory locations.
+// Ensure all operations within the kernel are designed to avoid unnecessary memory traffic.
+// Evaluate the use of shared memory for the neighborhood data to increase reuse and reduce global memory bandwidth.
+// Double-check the loading of x[out_index] into a register to avoid redundant global memory accesses.
+// Minimize divergence in condition checks to ensure warp efficiency, especially in boundary checks.
+// Assess the benefit of loop unrolling for the inner loop over 'm' to improve performance.
+```

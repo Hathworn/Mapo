@@ -1,0 +1,8 @@
+```
+// Use shared memory for faster access and lower latency.
+// Optimize block size to improve memory coalescing and reduce cache misses.
+// Reduce global memory accesses by storing intermediate results in shared memory.
+// Use loop unrolling to decrease loop overhead and increase instruction throughput.
+// Avoid warp divergence by ensuring consistent conditional execution within warps.
+// Perform binary reduction to minimize the number of operations and improve efficiency.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache portions of dx and dy to reduce global memory access latency.
+// Coalesce global memory accesses by ensuring threads access consecutive data elements.
+// Align data structures to memory boundaries to enable vectorized loads and stores.
+// Consider pre-fetching data into registers to hide memory latency.
+// Optimize grid and block dimensions for better occupancy and memory throughput.

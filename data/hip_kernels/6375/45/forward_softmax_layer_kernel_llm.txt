@@ -1,0 +1,4 @@
+// Consider optimizing the loop to avoid atomic operations for larger arrays in shared memory.
+// Use warp-level primitives to perform reduction operations to minimize thread divergence.
+// Double-check shared memory usage to ensure it doesn't exceed the available limit per block.
+// Implement cooperative groups or warp shuffle to optimize reduction within a block.

@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory accesses  
+// Ensure memory coalescing for d_input_cdf accesses 
+// Avoid bank conflicts in shared memory 
+// Consider tiled memory access for large arrays

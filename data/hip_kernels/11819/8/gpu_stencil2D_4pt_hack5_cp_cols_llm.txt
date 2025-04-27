@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for better global memory bandwidth utilization.
+// Use shared memory wisely and ensure threads access contiguous memory segments.
+// Minimize divergent branching to improve warp execution efficiency.
+// Ensure __syncthreads() is placed correctly to avoid unnecessary synchronization overhead.
+// Ensure that memory access patterns are optimal and avoid uncoalesced accesses.
+```

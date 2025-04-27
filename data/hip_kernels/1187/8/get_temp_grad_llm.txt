@@ -1,0 +1,5 @@
+```
+// Use shared memory for `gradOutput` and `mask` to reduce global memory access latency
+// Consider using warp shuffle operations to optimize the reduction of threads
+// Minimize the use of atomic operations where possible to improve performance
+```

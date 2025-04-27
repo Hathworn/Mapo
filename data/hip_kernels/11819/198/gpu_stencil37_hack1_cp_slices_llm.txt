@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns.
+// Use shared memory to reduce global memory bandwidth.
+// Apply loop unrolling to enhance performance by reducing loop overhead.
+// Ensure memory accesses by all threads within a warp are contiguous.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization.
+```

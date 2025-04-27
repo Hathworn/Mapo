@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns when loading data from global memory
+// Ensure data is stored in shared memory to reduce redundant global memory accesses
+// Leverage __syncthreads() to synchronize threads to ensure data consistency in shared memory
+// Utilize loop unrolling pragmas to enhance instruction-level parallelism
+// Optimize tile size for the best occupancy and usage of shared memory
+```

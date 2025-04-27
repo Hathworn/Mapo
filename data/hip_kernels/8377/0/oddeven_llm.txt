@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by loading even and odd elements together
+// Minimize global memory access by using shared memory efficiently
+// Use __syncthreads() to synchronize threads to prevent race conditions
+// Consider reducing shared memory usage for larger thread blocks
+// Ensure that threads do not access shared memory out of bounds
+// Optimize block size to achieve better parallelism and occupancy
+```

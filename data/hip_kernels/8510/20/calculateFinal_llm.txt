@@ -1,0 +1,6 @@
+```
+// Ensure only the first block processes data to avoid redundant calculations
+// Cache blockDim and threadIdx values in registers to reduce repeated memory accesses
+// Unroll loops to reduce index calculation overhead and improve performance
+// Use pointer arithmetic to efficiently traverse data and improve memory access patterns
+```

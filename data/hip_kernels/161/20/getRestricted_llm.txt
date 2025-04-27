@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access for frequently accessed data
+// Explore memory coalescing techniques for accessing mX, vY, mQ, and mR arrays
+// Unroll loops further or use warp-level primitives to optimize computation
+// Investigate using float4 or other vector types to optimize memory bandwidth usage
+// Apply register blocking to enhance data reuse within a thread
+// Minimize data dependencies where possible to improve parallel execution efficiency
+// Consider using asynchronous copy mechanisms to overlap computation and data transfer
+```

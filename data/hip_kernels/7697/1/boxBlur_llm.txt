@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory accesses by using shared memory to cache data for each block.
+// Minimize divergence by ensuring threads in a warp follow the same execution path.
+// Coalesce global memory accesses by ensuring threads access sequential memory addresses.
+// Consider using texture memory for improved cache utilization on read-heavy workloads.
+// Prefetch data into registers to reduce the number of global memory accesses.
+```

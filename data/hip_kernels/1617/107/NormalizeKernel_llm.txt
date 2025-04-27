@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Reduce memory access latency by pre-fetching normalization_factor[pos] if possible
+// Utilize shared memory for frequently accessed data within a block to decrease global memory accesses
+// Optimize conditional checks inside the kernel for branch divergence reduction
+// Explore memory alignment techniques for optimal memory transaction efficiency
+// Consider loop unrolling for potential performance improvements if within a loop context
+```

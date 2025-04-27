@@ -1,0 +1,4 @@
+// Use shared memory to cache input data to reduce global memory access latency
+// Consider coalesced memory access patterns to increase bandwidth efficiency
+// Check if using vectorized data types (e.g., float4) improves performance
+// Ensure there is no bank conflict in shared memory usage for better performance

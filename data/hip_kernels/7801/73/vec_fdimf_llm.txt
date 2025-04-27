@@ -1,0 +1,5 @@
+// Use shared memory to reduce access to global memory
+// Make sure shared memory is large enough for all threads in a block
+// Use __syncthreads() to ensure all threads have loaded data before proceeding
+// Align data access patterns to coalesce memory accesses
+// Consider padding shared memory to avoid bank conflicts

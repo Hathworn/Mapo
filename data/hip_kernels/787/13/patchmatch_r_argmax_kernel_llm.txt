@@ -1,0 +1,9 @@
+```
+// Early exit to avoid processing threads out of bounds
+// Consolidate computation of x2 and y2 to minimize arithmetic operations
+// Consider loop unrolling to enhance performance further
+// Avoid redundant computations of size1 and size2 outside of kernel logic
+// Use shared memory to buffer `conv` inputs during patch matching for improved memory access
+// Use warp-level primitives to reduce branching and enhance data coherence
+// Reduce repeated index calculations for accessing `correspondence` and `match`
+```

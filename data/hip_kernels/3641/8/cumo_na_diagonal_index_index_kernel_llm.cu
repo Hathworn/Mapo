@@ -1,0 +1,15 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void cumo_na_diagonal_index_index_kernel(size_t *idx, size_t *idx0, size_t *idx1, size_t k0, size_t k1, uint64_t n)
+{
+    // Calculate global index once and reuse
+    uint64_t i = blockIdx.x * blockDim.x + threadIdx.x;
+    uint64_t gridSize = blockDim.x * gridDim.x;
+
+    // Use grid-stride loop to optimize kernel execution
+    while (i < n) {
+        idx[i] = idx0[i + k0] + idx1[i + k1];
+        i += gridSize;
+    }
+}

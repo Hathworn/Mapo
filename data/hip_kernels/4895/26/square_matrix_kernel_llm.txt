@@ -1,0 +1,6 @@
+```
+// Use shared memory if data reuse occurs per thread block to reduce global memory access
+// Consider coalesced access patterns for the 'feats' array to optimize global memory bandwidth
+// Apply loop unrolling if kernel's computation is limited by arithmetic throughput
+// Ensure memory alignment of 'feats' and 'feats_sq' for better memory access performance
+```

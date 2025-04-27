@@ -1,0 +1,7 @@
+```
+// Launch kernel with optimal block size for memory coalescing
+// Consider using shared memory for repeated access to reduce global memory reads
+// Ensure memory access patterns are aligned to improve throughput
+// Minimize branch divergence by clamping coordinates outside the conditional checks
+// Utilize texture memory for more efficient cached reads if data access is random
+```

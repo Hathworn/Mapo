@@ -1,0 +1,5 @@
+```
+// Use __ldg to load data from global memory to utilize read-only data cache
+// Ensure that index calculation does not lead to bank conflicts
+// Consider using shared memory if multiple threads access the same drop_blocks_scale[b]
+```

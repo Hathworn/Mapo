@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to store biases for better cache utilization
+// Coalesce memory accesses by ensuring output and biases are accessed sequentially
+// Consider using warp-level primitives for reducing divergence
+```

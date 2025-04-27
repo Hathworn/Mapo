@@ -1,0 +1,8 @@
+```
+// Use __restrict__ pointers to help compiler optimize memory access patterns.
+// Ensure that loc_ is accessed in a coalesced manner to optimize memory bandwidth.
+// Consider using shared memory if loc_ is repeatedly accessed by contiguous threads.
+// Prefetch loc_ values into registers to reduce global memory latency.
+// Minimize register usage by using short data types where applicable.
+// Use the minimum number of registers to hold intermediate values.
+```

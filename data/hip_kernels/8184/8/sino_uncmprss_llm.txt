@@ -1,0 +1,7 @@
+```
+// Consider using __ldg to load dsino for potential read-only memory benefits
+// Ensure coalesced access by verifying that consecutive threads access consecutive elements of dsino
+// Use shared memory if there are repeated accesses to dsino for multiple kernel launches
+// Align data structures to ensure natural word accesses and minimize memory bank conflicts
+// Evaluate if loop unrolling could improve performance for this specific memory access pattern
+```

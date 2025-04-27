@@ -1,0 +1,6 @@
+// Ensure shared memory is used efficiently to load data for multiple channels
+// Use coalesced memory access for bottom0 and bottom1 arrays
+// Implement loop unrolling in kernel_size loops to improve performance
+// Consider using memory prefetching techniques to hide latency
+// Optimize the use of shared memory to minimize bank conflicts
+// Check if using atomic operations can reduce reduction overhead in sum array

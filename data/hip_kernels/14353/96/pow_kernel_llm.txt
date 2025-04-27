@@ -1,0 +1,8 @@
+```c
+// Prefetch data into shared memory to exploit data locality and reduce global memory access latency
+// Align data accesses to avoid uncoalesced global memory transactions
+// Consider using float4 instead of float for vectorized memory operations
+// Ensure INCX and INCY are set to 1 to maintain coalesced accesses, if possible
+// Balance the grid and block dimensions based on the GPU architecture for optimal occupancy
+// Use __restrict__ qualifiers if applicable to optimize memory access patterns
+```

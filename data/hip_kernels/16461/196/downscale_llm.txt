@@ -1,0 +1,7 @@
+```
+// Consider implementing shared memory usage to cache repeated data reads from global memory
+// Optimize with loop unrolling to increase pipelining efficiency in the inner loop for 'j'
+// Use __restrict__ qualifier on pointer arguments to help the compiler optimize memory access
+// Evaluate benefits of using warp synchronous methods for reduction of `sum` variable
+// Analyze if coalesced memory access patterns can be applied for gradOutput_data read operations
+```

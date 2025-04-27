@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses for _d_isdescriptor and _d_vdescriptor arrays for better cache utilization.
+// Use shared memory to store _X, _Y, _Z arrays if necessary to reduce repeated computation.
+// Precompute common expressions involving _scale and powers of two to optimize computation within loops.
+// Use constant memory for frequently accessed constants such as pi to reduce global memory bandwidth use.
+// Reduce divergent branching by consolidating threads with similar control flow paths.
+// Align data structures to the memory access patterns to improve memory coalescing.
+// Minimize the use of __syncthreads() if not required to increase warp occupancy.
+// Utilize vectorized operations where applicable for data packing and unpacking.
+```

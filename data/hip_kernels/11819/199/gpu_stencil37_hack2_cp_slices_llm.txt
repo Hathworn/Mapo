@@ -1,0 +1,8 @@
+```
+// Use shared memory to store slices and reduce global memory access within the loop.
+// Ensure coalesced memory access by aligning threads to contiguous memory segments.
+// Minimize redundant calculations by computing indices outside of loops where possible.
+// Implement loop unrolling where feasible to increase instruction-level parallelism.
+// Prefetch data into shared memory if subsequent operations reuse the same data.
+// Use __syncthreads() to synchronize threads after shared memory usage for consistency.
+```

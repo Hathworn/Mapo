@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache weight values to reduce global memory access.
+// Ensure coalesced memory access patterns for both gradInput and gradOutput arrays to improve bandwidth utilization.
+// Minimize divergences by ensuring warp-friendly control flows, especially in conditional statements.
+// Explore loop unrolling techniques for the inner loops to reduce the loop overhead and improve efficiency.
+// Align memory accesses to take advantage of memory coalescing for ptr_gradInput and ptr_gradOutput.
+// Avoid unnecessary recalculations, such as redundant calculation of the_weight for each thread.
+```

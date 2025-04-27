@@ -1,0 +1,7 @@
+```
+// Use shared memory to store crop of input data for better memory access patterns
+// Coalesce memory access by ensuring consecutive threads access consecutive memory locations
+// Consider loop unrolling for operations within the inner bounds check to reduce instruction overhead
+// Minimize divergent branching by restructuring conditions or using predicated operations where possible
+// Pre-fetch data to registers if repeatedly accessed within a loop or calculation
+```

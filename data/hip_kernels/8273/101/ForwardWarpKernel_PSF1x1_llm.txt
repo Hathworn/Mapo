@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access for u, v, and src arrays
+// Use shared memory to reduce global memory access latency
+// Prefetch data for u, v, and src to reduce latency
+// Consider optimizing register usage to reduce pressure
+// Minimize bank conflicts in shared memory usage
+// Evaluate the potential benefit of loop unrolling for performance
+// Review use of float precision, consider if half precision is viable
+// Investigate occupancy to ensure optimal warps are active
+```

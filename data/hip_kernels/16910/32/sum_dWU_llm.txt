@@ -1,0 +1,10 @@
+
+```cpp
+// Consider using shared memory to cache frequently used data and reduce global memory access.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations in bigArray.
+// Utilize vectorized memory access if applicable to improve memory throughput.
+// Ensure that data types (double vs. float) are used consistently as required by precision needs.
+// Evaluate aligning data structures to improve memory access patterns.
+// Minimize branching within warps to prevent warp divergence.
+// Consider loop unrolling for the innermost loop to improve instruction-level parallelism.
+```

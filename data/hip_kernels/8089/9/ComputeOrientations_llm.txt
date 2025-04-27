@@ -1,0 +1,4 @@
+// Use shared memory to store 'data' and 'hist' for reduced global memory accesses.
+// Unroll loops where possible to minimize loop overhead and branch divergence.
+// Minimize atomic operations as they can be costly; consider alternate reduction strategies.
+// Align memory access patterns in 'g_Data' to reduce access latency.

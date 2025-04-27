@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access for better memory access patterns
+// Utilize shared memory for intermediate computations to reduce global memory bandwidth
+// Minimize bank conflicts when using shared memory
+// Align data loads and stores to widths of 32, 64, or 128 bytes for improved performance
+// Use memory prefetch techniques if applicable
+// Consider thread block size adjustments for maximizing occupancy and reducing idle threads
+// Review unroll factors to ensure they're optimal for current hardware architecture
+// Ensure correct usage of volatile keyword if necessary to avoid stale data issues in register usage
+```

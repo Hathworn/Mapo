@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve data access patterns and reduce global memory accesses
+// Coalesce global memory accesses when reading from src and writing to dst
+// Ensure alignment of data structures to improve memory access efficiency
+// Consider using asynchronous data transfers for overlapping computation and memory operations
+// Reduce arithmetic operations inside kernel by calculating padding offset once before the loop
+```

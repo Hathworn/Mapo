@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache input data for faster access
+// Ensure memory coalescing by aligning INCX and INCY appropriately
+// Prefer using float2 or float4 types for vectorized memory operations
+// Minimize global memory access by loading data into registers
+// Employ loop unrolling to increase instruction-level parallelism
+```

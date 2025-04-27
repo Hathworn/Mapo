@@ -1,0 +1,7 @@
+```
+// Consider storing subArraySize * subArraySize as a local variable for reuse.
+// Fetch diagEntry once before the loop to reduce global memory reads.
+// Compute matrixIdx using shared memory if patterns are repetitive.
+// Use coalesced access patterns when possible for Rmatrices.
+// Optimize loop increment by calculating blockDim.x * blockDim.y once outside the loop.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when loading from global to shared memory.
+// Consider minimizing bank conflicts in shared memory access.
+// Use double-buffering to overlap computation with memory access if applicable.
+// Assess the impact of warp divergence and try to minimize it.
+// Use a larger block size to better utilize the GPU if shared memory allows.
+```

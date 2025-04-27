@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data if multiple threads access the same heap location
+// Use __syncthreads() to ensure all threads have the initialized heap pointer value
+// Consider unrolling the loop if applicable for larger heaps to reduce instruction overhead
+// Prefetch data to reduce global memory latency if there are predictable data patterns
+// Ensure memory coalescing by aligning data access patterns to warp size
+```

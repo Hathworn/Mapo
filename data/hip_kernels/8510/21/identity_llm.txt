@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for recurrent data access to reduce global memory traffic.
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Ensure the input and output arrays are aligned for improved coalesced memory access.
+// Utilize appropriate block and grid sizes to maximize occupancy and minimize warp divergence.
+// Avoid branching within critical global function parts to improve performance.
+```

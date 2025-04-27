@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by aligning data with warp boundaries.
+// Minimize bank conflicts in shared memory by ensuring proper access patterns.
+// Use __ldg() intrinsic for potential cache benefits when accessing read-only data.
+// Minimize usage of __syncthreads by ensuring all threads in a warp execute in lockstep.
+```

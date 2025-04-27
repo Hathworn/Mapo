@@ -1,0 +1,7 @@
+```
+// Consider using vectorized loads and stores for the image and results to improve memory coalescing.
+// Use asynchronous memory prefetching to reduce memory latency for psf data.
+// Evaluate the use of texture memory for read-only psf data to take advantage of caching.
+// Optimize shared memory use by minimizing shared memory size or using double buffering if necessary.
+// Unroll loops where beneficial to reduce loop overhead and improve instruction-level parallelism.
+```

@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for frequently accessed data to reduce global memory reads.
+// Merge adjacent threads' memory accesses for coalesced global memory access.
+// Calculate powers of B1 and B2 on the host and pass as parameters to the kernel to avoid redundant computations.
+// Minimize use of `powf` within the kernel for constant values to reduce computational overhead.
+```

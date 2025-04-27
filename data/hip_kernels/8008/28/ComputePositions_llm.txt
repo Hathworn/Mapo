@@ -1,0 +1,6 @@
+```cpp
+// Load neighbor elements into shared memory for data reuse and reduced global memory accesses
+// Use shared memory to cache frequently accessed data and reduce latency
+// Ensure all threads have loaded their data into shared memory before further computation
+// Minimize global memory access by reusing data in shared memory
+```

@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory coalescing by aligning input data properly
+// Minimize global memory access by utilizing shared memory effectively
+// Use __syncthreads() to avoid race conditions between threads
+// Utilize loop unrolling for the reduction process if blockDim.x is a compile-time constant
+// Consider increasing block size for better occupancy and performance, if possible
+// Ensure proper handling for edge cases when nb is not a multiple of blockDim.x
+```

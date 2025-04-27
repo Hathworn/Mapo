@@ -1,0 +1,5 @@
+// Precompute the global thread index to reduce repeated calculations
+// Check thread indices against bounds early to minimize unnecessary computations
+// Use precomputed indices for memory access to improve memory coalescence
+// Prefetch data when calculating vector index base to increase cache efficiency
+// Optimize printf for conditional execution if possible, as printing can be costly in global kernels

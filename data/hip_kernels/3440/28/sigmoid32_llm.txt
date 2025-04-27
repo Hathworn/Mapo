@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by having contiguous threads access contiguous data
+// Use __restrict__ qualifier if applicable to improve compiler optimizations
+// Consider using shared memory for frequently accessed data within a block
+// Explore loop unrolling to increase throughput for larger data sizes
+// Evaluate use of float4 or float2 for vectorized operations if memory alignment allows
+```

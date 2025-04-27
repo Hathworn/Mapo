@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve memory throughput.
+// Minimize the usage of global memory in favor of shared memory when possible.
+// Ensure that the data accessed by consecutive threads is contiguous in memory.
+// Avoid bank conflicts in shared memory access if shared memory is utilized.
+// Prefetch data into registers to reduce global memory latency.
+```

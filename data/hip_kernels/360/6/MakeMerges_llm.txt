@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to cache frequently accessed data such as 'offsets' to reduce global memory accesses.
+// Opt for warp-level primitives where applicable to enhance data access efficiency.
+// Implement loop unrolling techniques if applicable to minimize loop overhead and further optimize kernel execution.

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring INCX is 1
+// Minimize warp divergence by ensuring that the conditional branch is optimized
+// Use shared memory to reduce global memory access if multiple threads access similar data
+// Prefetch data to registers before processing to reduce memory latency
+// Ensure that the grid and block dimensions are optimized for maximum occupancy
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access by aligning d_input and d_output in a manner that optimizes global memory reads
+// Use shared memory for intermediate values if there are opportunities to use the same data across threads
+// Explore using float4 or int4 data types if applicable to reduce the number of memory transactions
+// Ensure memory accesses are aligned based on hardware specifications for optimal performance
+// Evaluate if loop unrolling can be applied to this section of code for performance gains
+```

@@ -1,0 +1,10 @@
+```
+// Ensure memory accesses are coalesced within warp.
+// Optimize the grid and block dimensions to maximize warp occupancy.
+// Use shared memory to reduce global memory accesses if possible.
+// Check if the memory can be accessed in a more cache-friendly pattern.
+// Consider memory alignment to improve access speed.
+// Analyze if memory access patterns can be improved for locality.
+// Use __restrict__ for pointer parameters if aliasing can be ruled out.
+// Consider loop unrolling to increase instruction throughput.
+```

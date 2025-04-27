@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data, such as u_ and v_ values near the current thread.
+// Pre-calculate common expressions like alpha1_sigma_eta_p and alpha0_sigma_eta_q before the main computation loop.
+// Use texture memory for read-only data access, like u_, to take advantage of texture caching.
+// Avoid warp divergence by ensuring that all threads in a warp execute the same path in conditional statements when possible.
+// Consider using coalesced memory access patterns when reading from u_ and writing to p and q arrays.
+```

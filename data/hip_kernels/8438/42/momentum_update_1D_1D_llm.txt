@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for x, d, and m arrays
+// Ensure arrays are aligned for better memory access patterns
+// Consider using shared memory for frequently accessed variables like temp
+// Use loop unrolling for the while loop to improve performance
+// Optimize for memory bottleneck by reducing the number of global memory accesses
+// Ensure warp divergence is minimized in conditions like gradient clipping checks
+```

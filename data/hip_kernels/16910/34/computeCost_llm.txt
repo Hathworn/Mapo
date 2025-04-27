@@ -1,0 +1,8 @@
+```
+// Use registers instead of global memory for frequently accessed variables.
+// Precompute and store base index calculations outside the innermost loop.
+// Consider using shared memory for intra-block data reuse to reduce global memory accesses.
+// Ensure memory coalescing when accessing global memory arrays Ws and W.
+// Minimize branching and divergence within the thread block.
+// Consider rearranging data layout for unit-stride memory access.
+```

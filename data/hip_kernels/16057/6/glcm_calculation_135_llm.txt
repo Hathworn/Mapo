@@ -1,0 +1,6 @@
+```
+// Use shared memory to store parts of array A for faster access
+// Minimize usage of __syncthreads() as it can introduce overhead
+// Consider coalescing memory access for A and glcm to improve performance
+// Optimize the block size to match the GPU architecture's warp size
+```

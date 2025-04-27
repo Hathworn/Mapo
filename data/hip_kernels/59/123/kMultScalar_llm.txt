@@ -1,0 +1,6 @@
+```
+// Move scale_targets calculation outside the loop to reduce redundant computations
+// Utilize shared memory if possible to improve memory access latency
+// Ensure coalesced memory access by aligning data for the GPU's memory architecture
+// Consider possible register utilization optimization to reduce shared memory pressure
+```

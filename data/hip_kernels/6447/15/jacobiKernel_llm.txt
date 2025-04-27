@@ -1,0 +1,7 @@
+```
+// Precompute global indices if accessed multiple times
+// Use shared memory to store tile data and reduce global memory access
+// Coalesce memory access by ensuring temperature accesses are aligned
+// Avoid bank conflicts in shared memory usage
+// Ensure grid and block dimensions optimize for the GPU architecture
+```

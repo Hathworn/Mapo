@@ -1,0 +1,3 @@
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory locations for 'div0', 'div', and 'g' arrays.
+// Investigate using shared memory for storing 'div0', 'div', and 'g' values within a block if memory bandwidth is a bottleneck.
+// Evaluate the potential benefits of loop unrolling for complex operations in the kernel to improve latency.

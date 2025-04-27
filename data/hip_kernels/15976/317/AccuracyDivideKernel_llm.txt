@@ -1,0 +1,5 @@
+// Consider using warp-level primitives for reduction to optimize memory access
+// Use `atomicAdd` on global memory cautiously as it may lead to performance bottlenecks
+// Use shared memory efficiently to minimize global memory access
+// Avoid bank conflicts by aligning shared memory accesses
+// Evaluate if `atomicAdd` can be replaced by more efficient reduction techniques

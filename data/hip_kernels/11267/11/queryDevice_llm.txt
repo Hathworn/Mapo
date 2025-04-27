@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache 'bucket_start' for faster access
+// Ensure coalesced access patterns to 'bucket_start' to reduce memory transactions
+// Consider loop unrolling if accessing multiple elements of 'bucket_start'
+// Evaluate warp divergence at conditional statements to enhance performance
+// Use __restrict__ qualifier for memory pointers if applicable to optimize memory access
+```

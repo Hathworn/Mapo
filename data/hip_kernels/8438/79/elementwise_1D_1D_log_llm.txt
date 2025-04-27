@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access to improve memory throughput
+// Ensure all threads in a warp access consecutive memory locations
+// Consider using shared memory for commonly accessed data to reduce global memory accesses
+// Optimize block and grid dimensions to achieve peak occupancy
+// Minimize conditional statements within the kernel
+```

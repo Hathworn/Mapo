@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns to optimize memory bandwidth utilization.
+// Explore the use of vectorized loads and stores to improve memory access efficiency.
+// Minimize the use of shared memory if possible to reduce the resource pressure on streaming multiprocessors.
+// Check if using warp-level primitives could reduce divergence and improve performance.
+// Investigate loop unrolling for the inner loop to reduce loop control overhead.
+// Ensure that the use of atomic operations does not become a bottleneck at high contention.
+// Utilize bank conflict-free access patterns for shared memory to maximize efficiency.
+```

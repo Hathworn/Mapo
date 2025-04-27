@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for data frequently accessed by threads
+// Align memory access patterns to exploit coalesced memory access
+// Use memory prefetching to hide latency from global memory access
+// Investigate if using warp-level primitives can optimize reductions or broadcasts
+// Evaluate if reducing precision beyond half can provide performance benefits
+```

@@ -1,0 +1,3 @@
+// Use shared memory for input data to reduce global memory access.
+// Ensure __syncthreads() is used after loading data into shared memory.
+// Consider using warp-level primitives to reduce __syncthreads() overhead.

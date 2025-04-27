@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory accesses to enhance memory throughput.
+// Ensure all threads within a warp access contiguous memory locations.
+// Avoid warp divergence by restructuring control flow if possible.
+// Use shared memory to minimize global memory access latency.
+// Reduce bank conflicts while accessing shared memory for better performance.
+// Optimize the kernel launch configuration according to the hardware capabilities.
+```

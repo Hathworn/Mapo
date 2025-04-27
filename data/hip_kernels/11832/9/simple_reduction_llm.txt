@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to input_values to improve memory bandwidth efficiency.
+// Use warp shuffle operations to reduce shared memory usage and improve performance for reductions.
+// Check if more shared memory is available, and adjust block size to utilize it effectively.
+// Evaluate if loop unrolling could help in reducing loop overhead in the iterative reduction step.
+// Consider using __restrict__ keyword on pointer parameters to help the compiler optimize loads.
+```

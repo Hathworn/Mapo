@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory access for 'minmax' to improve memory throughput
+// Utilize shared memory to reduce repeated global memory access for 'minmax'
+// Prefetch 'minmax' data into shared memory to minimize latency
+// Ensure 'ptrs' writes are coalesced for better memory performance
+// Limit divergence in the if block to maintain warp efficiency
+```

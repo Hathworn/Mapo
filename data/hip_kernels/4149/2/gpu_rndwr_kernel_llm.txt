@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure velocity is different for each warp to improve caching
+// Early exit for threads outside valid range to save computational resources
+// Cache data from global to shared memory for improved performance
+// Maintain warp convergence to reduce divergence and improve efficiency
+```

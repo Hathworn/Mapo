@@ -1,0 +1,4 @@
+// Use shared memory wisely to cache data and minimize global memory access.
+// Ensure memory accesses are coalesced for improved memory throughput.
+// Fine-tune block and grid sizes to maximize GPU utilization and minimize warp divergence.
+// Consider using __restrict__ qualifiers for pointers to improve compiler optimizations.

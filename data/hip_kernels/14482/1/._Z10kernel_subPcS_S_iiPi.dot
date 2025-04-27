@@ -1,0 +1,30 @@
+digraph "CFG for '_Z10kernel_subPcS_S_iiPi' function" {
+	label="CFG for '_Z10kernel_subPcS_S_iiPi' function";
+
+	Node0x5f5d580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = icmp eq i32 %7, 0\l  br i1 %8, label %46, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x5f5d580:s0 -> Node0x5f5c7a0;
+	Node0x5f5d580:s1 -> Node0x5f5ea10;
+	Node0x5f5ea10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#dc5d4a70",label="{%9:\l9:                                                \l  %10 = add nsw i32 %7, -1\l  %11 = sub nsw i32 %10, %4\l  %12 = icmp sgt i32 %11, -1\l  br i1 %12, label %13, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x5f5ea10:s0 -> Node0x5f5ed30;
+	Node0x5f5ea10:s1 -> Node0x5f5ed80;
+	Node0x5f5ed30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%13:\l13:                                               \l  %14 = zext i32 %11 to i64\l  %15 = getelementptr inbounds i8, i8 addrspace(1)* %2, i64 %14\l  %16 = load i8, i8 addrspace(1)* %15, align 1, !tbaa !5, !amdgpu.noclobber !8\l  switch i8 %16, label %17 [\l    i8 43, label %24\l    i8 45, label %24\l  ]\l|{<s0>def|<s1>43|<s2>45}}"];
+	Node0x5f5ed30:s0 -> Node0x5f5e980;
+	Node0x5f5ed30:s1 -> Node0x5f5ed80;
+	Node0x5f5ed30:s2 -> Node0x5f5ed80;
+	Node0x5f5e980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%17:\l17:                                               \l  %18 = sext i8 %16 to i32\l  %19 = zext i32 %10 to i64\l  %20 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %19\l  %21 = load i8, i8 addrspace(1)* %20, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %22 = sext i8 %21 to i32\l  %23 = sub nsw i32 %22, %18\l  br label %30\l}"];
+	Node0x5f5e980 -> Node0x5f604a0;
+	Node0x5f5ed80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e97a5f70",label="{%24:\l24:                                               \l  %25 = zext i32 %10 to i64\l  %26 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %25\l  %27 = load i8, i8 addrspace(1)* %26, align 1, !tbaa !5, !amdgpu.noclobber !8\l  switch i8 %27, label %28 [\l    i8 43, label %30\l    i8 45, label %30\l  ]\l|{<s0>def|<s1>43|<s2>45}}"];
+	Node0x5f5ed80:s0 -> Node0x5f60750;
+	Node0x5f5ed80:s1 -> Node0x5f604a0;
+	Node0x5f5ed80:s2 -> Node0x5f604a0;
+	Node0x5f60750 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%28:\l28:                                               \l  %29 = sext i8 %27 to i32\l  br label %30\l}"];
+	Node0x5f60750 -> Node0x5f604a0;
+	Node0x5f604a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#dc5d4a70",label="{%30:\l30:                                               \l  %31 = phi i32 [ %23, %17 ], [ %29, %28 ], [ 0, %24 ], [ 0, %24 ]\l  %32 = icmp slt i32 %31, 0\l  br i1 %32, label %33, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x5f604a0:s0 -> Node0x5f5f330;
+	Node0x5f604a0:s1 -> Node0x5f5f380;
+	Node0x5f5f330 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%33:\l33:                                               \l  %34 = zext i32 %10 to i64\l  %35 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %34\l  %36 = load i8, i8 addrspace(1)* %35, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %37 = add i8 %36, -1\l  store i8 %37, i8 addrspace(1)* %35, align 1, !tbaa !5\l  %38 = add nsw i32 %31, 10\l  br label %39\l}"];
+	Node0x5f5f330 -> Node0x5f5f380;
+	Node0x5f5f380 [shape=record,color="#b70d28ff", style=filled, fillcolor="#dc5d4a70",label="{%39:\l39:                                               \l  %40 = phi i32 [ %38, %33 ], [ %31, %30 ]\l  %41 = zext i32 %7 to i64\l  %42 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %41\l  %43 = load i8, i8 addrspace(1)* %42, align 1, !tbaa !5\l  %44 = trunc i32 %40 to i8\l  %45 = add i8 %43, %44\l  store i8 %45, i8 addrspace(1)* %42, align 1, !tbaa !5\l  br label %46\l}"];
+	Node0x5f5f380 -> Node0x5f5c7a0;
+	Node0x5f5c7a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%46:\l46:                                               \l  ret void\l}"];
+}

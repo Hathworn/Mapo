@@ -1,0 +1,24 @@
+digraph "CFG for '_Z32Max_Sequential_Addressing_SharedPfi' function" {
+	label="CFG for '_Z32Max_Sequential_Addressing_SharedPfi' function";
+
+	Node0x5a62210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = mul i32 %8, %7\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp slt i32 %11, %1\l  br i1 %12, label %13, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x5a62210:s0 -> Node0x5a64180;
+	Node0x5a62210:s1 -> Node0x5a64210;
+	Node0x5a64180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%13:\l13:                                               \l  %14 = sext i32 %11 to i64\l  %15 = getelementptr inbounds float, float addrspace(1)* %0, i64 %14\l  %16 = load float, float addrspace(1)* %15, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %17 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ32Max_Sequential_Addressing_SharedPfiE5sdata, i32 0, i32 %10\l  store float %16, float addrspace(3)* %17, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %18 = icmp ult i16 %6, 2\l  br i1 %18, label %32, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x5a64180:s0 -> Node0x5a64210;
+	Node0x5a64180:s1 -> Node0x5a65800;
+	Node0x5a65800 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  %20 = phi i32 [ %21, %30 ], [ %7, %13 ]\l  %21 = lshr i32 %20, 1\l  %22 = icmp ult i32 %10, %21\l  br i1 %22, label %23, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x5a65800:s0 -> Node0x5a65c00;
+	Node0x5a65800:s1 -> Node0x5a65970;
+	Node0x5a65c00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e1675170",label="{%23:\l23:                                               \l  %24 = load float, float addrspace(3)* %17, align 4, !tbaa !7\l  %25 = add nuw nsw i32 %21, %10\l  %26 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ32Max_Sequential_Addressing_SharedPfiE5sdata, i32 0, i32 %25\l  %27 = load float, float addrspace(3)* %26, align 4, !tbaa !7\l  %28 = fcmp contract olt float %24, %27\l  %29 = select contract i1 %28, float %27, float %24\l  store float %29, float addrspace(3)* %17, align 4, !tbaa !7\l  br label %30\l}"];
+	Node0x5a65c00 -> Node0x5a65970;
+	Node0x5a65970 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %31 = icmp ult i32 %20, 4\l  br i1 %31, label %32, label %19, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5a65970:s0 -> Node0x5a64210;
+	Node0x5a65970:s1 -> Node0x5a65800;
+	Node0x5a64210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%32:\l32:                                               \l  %33 = icmp eq i32 %11, 0\l  br i1 %33, label %34, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x5a64210:s0 -> Node0x5a64cf0;
+	Node0x5a64210:s1 -> Node0x5a667a0;
+	Node0x5a64cf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c1d4f470",label="{%34:\l34:                                               \l  %35 = load float, float addrspace(3)* getelementptr inbounds ([1024 x\l... float], [1024 x float] addrspace(3)*\l... @_ZZ32Max_Sequential_Addressing_SharedPfiE5sdata, i32 0, i32 0), align 16,\l... !tbaa !7\l  store float %35, float addrspace(1)* %0, align 4, !tbaa !7\l  br label %36\l}"];
+	Node0x5a64cf0 -> Node0x5a667a0;
+	Node0x5a667a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

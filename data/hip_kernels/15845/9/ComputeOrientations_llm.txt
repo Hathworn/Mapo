@@ -1,0 +1,9 @@
+```
+// Use shared memory effectively to reduce global memory accesses, which are slower.
+// Leverage the atomicAdd function to handle concurrent modifications of shared variables.
+// Consider unrolling the loops to enhance performance in the inner loop computations.
+// Use __syncthreads() to ensure all threads have completed the operations before proceeding.
+// Optimize shared memory access patterns to minimize bank conflicts.
+// Reduce the number of branches and ensure coalesced access patterns in memory operations.
+// Evaluate the use of constant memory for frequently accessed values like Gaussian weights.
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory to cache normalization_factor to reduce global memory accesses.
+// Optimize stride loop to ensure coalesced memory access for improved performance.
+// Evaluate use of warp-level primitives to minimize divergence and increase efficiency.

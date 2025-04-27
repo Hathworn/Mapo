@@ -1,0 +1,7 @@
+```cpp
+// Consider merging meansum and sdsum into single shared memory to reduce shared memory usage.
+// Use loop unrolling technique to improve memory access patterns.
+// Utilize atomic operations more efficiently where possible to avoid unnecessary synchronizations.
+// Optimize the block and grid size for better memory coalescing and reduction of warp divergence.
+// Minimize bank conflicts by adjusting the shared memory access patterns.
+```

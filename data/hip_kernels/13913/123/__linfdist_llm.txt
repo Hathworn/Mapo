@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for matrices A, B, and C to improve memory throughput.
+// Use shared memory to cache B elements accessed within the loop to reduce global memory access.
+// Ensure that lda, ldb, and ldc are aligned to facilitate faster memory transactions.
+// Consider loop unrolling to reduce loop overhead and enhance performance.
+// Use float4 loads/stores if memory alignment permits for improved memory bandwidth.
+```

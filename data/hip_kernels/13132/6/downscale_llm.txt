@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory access
+// Coalesce memory access by organizing data in a memory-friendly order
+// Use read-only cache for gradOutput_data to speed up access
+// Optimize translate_idx_inv to reduce register usage
+// Consider loop unrolling manually for sf_iter loop for performance gain
+```

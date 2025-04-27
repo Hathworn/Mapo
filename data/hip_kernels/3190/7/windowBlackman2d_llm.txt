@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for idata within each block to reduce global memory access latency.
+// Precompute constants like 0.74 / 2 and 0.16 / 2 outside the loop to minimize redundant calculations.
+// Use __restrict__ keyword for idata pointer if data does not alias to potentially improve compiler optimizations.
+// Ensure memory coalescing by verifying idata access pattern aligns with warp structure.
+```

@@ -1,0 +1,8 @@
+```c
+// Ensure all threads within a block finish initialization of shared memory before proceeding
+// Minimize bank conflicts when accessing shared memory by using offset indexing if possible
+// Avoid using atomic operations in high-contention scenarios, explore warp-level primitives as alternatives
+// Ensure __syncthreads() usage correctly reflects synchronization needs after shared memory writes
+// Consider padding shared memory to prevent bank conflicts in the shared memory histogram update
+// Use coalesced accesses to global memory when writing shared memory results back to global memory
+```

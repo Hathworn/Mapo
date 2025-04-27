@@ -1,0 +1,8 @@
+```cpp
+// Align data access to coalesce global memory access
+// Ensure 'a' and 'b' are accessed in a memory-efficient pattern
+// Consider loading 'b[blockIdx.x]' into shared memory to reduce repeated global memory accesses
+// Optimize grid and block dimensions for better warp utilization
+// Minimize unnecessary global memory accesses for better performance
+// Assess the potential benefits of using float4 where applicable
+```

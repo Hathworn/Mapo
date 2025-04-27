@@ -1,0 +1,7 @@
+```
+// Consider optimizing shared memory usage to reduce global memory accesses.
+// Use memory coalescing techniques to access global memory in a more efficient manner.
+// Re-use loaded data in registers to minimize repeated fetching from global memory.
+// Ensure that memory accesses are aligned to enhance coalescing and reduce transaction overhead.
+// Minimize branch divergence within the warp by ensuring all threads follow similar execution paths.
+```

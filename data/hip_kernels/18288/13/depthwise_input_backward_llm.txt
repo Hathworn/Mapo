@@ -1,0 +1,8 @@
+```c
+// Precompute common expressions outside the loop to reduce redundant calculations.
+// Use shared memory to store frequently accessed data like filter values if possible.
+// Optimize atomic operation by minimizing its usage or using warp-level reductions.
+// Ensure memory coalescing for loading gradOutput and filter values to maximize memory throughput.
+// Consider loop unrolling techniques to handle nnSize loop efficiently.
+// Adjust block and grid size to fully utilize the GPU resources based on problem constraints.
+```

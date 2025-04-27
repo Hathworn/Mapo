@@ -1,0 +1,4 @@
+// Consider coalesced memory access for better throughput
+// Use shared memory to reduce redundant global memory access
+// Adjust block size to align with warp size for better occupancy
+// Use constant memory for frequently accessed values like nCropRows and nCropCols

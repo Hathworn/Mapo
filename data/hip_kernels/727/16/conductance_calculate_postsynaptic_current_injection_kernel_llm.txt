@@ -1,0 +1,3 @@
+// Use shared memory for frequently accessed arrays like neuron_wise_conductance_traces to reduce global memory access.
+// Use register variables for constants such as decay_term_values and reversal_values to minimize repeated memory fetching.
+// Consider using texture memory for read-only data like decay_term_values when it provides performance benefits.

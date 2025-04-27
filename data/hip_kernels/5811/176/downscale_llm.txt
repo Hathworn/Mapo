@@ -1,0 +1,4 @@
+// Utilize shared memory to cache gradOutput_data for repeated access
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Consider using warp-level primitives for optimization in reduction operations
+// Explore loop unrolling techniques to improve performance of innermost loops

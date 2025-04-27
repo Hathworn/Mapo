@@ -1,0 +1,9 @@
+```
+// Consider aligning data to improve memory coalescing
+// Ensure input arrays are at least aligned to 128-byte boundaries
+// Use shared memory to store elements accessed multiple times
+// Preload input data to registers if it will be reused
+// Consider loop unrolling to reduce instruction overhead
+// Optimize block and grid dimensions for better occupancy
+// Ensure kernel launch configurations maximize the use of threads
+```

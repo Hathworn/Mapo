@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access time
+// Ensure coalesced access to global memory when loading data
+// Minimize the use of __syncthreads() to avoid performance bottlenecks
+// Consider increasing block size for better parallelism
+// Try to maintain occupancy by adjusting block dimensions
+```

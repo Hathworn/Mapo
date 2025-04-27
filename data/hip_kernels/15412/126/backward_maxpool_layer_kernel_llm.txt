@@ -1,0 +1,8 @@
+```cpp
+// Minimize thread divergence by merging condition checks in nested loops.
+// Coalesce global memory accesses for 'delta' and 'indexes' to improve throughput.
+// Use shared memory if data reuse between threads is possible to reduce global memory access.
+// Eliminate bank conflicts for accessing shared memory by appropriate memory padding if used.
+// Employ register blocking to minimize frequent global memory accesses.
+// Launch kernel with optimal block size based on target GPU architecture.
+```

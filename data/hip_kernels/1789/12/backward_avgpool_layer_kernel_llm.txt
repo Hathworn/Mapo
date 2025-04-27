@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by having threads access sequential memory locations within a warp
+// Use shared memory to reduce global memory access and improve memory bandwidth
+// Minimize bank conflicts in shared memory by ensuring proper memory alignment
+// Utilize loop unrolling to reduce the loop overhead in computing in_index
+// Optimize the thread block dimensions to ensure maximum GPU occupancy and minimize warp divergence
+// Use prefetching techniques where applicable to hide memory latency
+```

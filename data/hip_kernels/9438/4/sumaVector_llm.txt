@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce memory access by ensuring data is contiguous for each thread
+// Ensure TAM_V is a multiple of blockDim.x * gridDim.x for complete loop unrolling
+// Avoid bank conflicts while accessing shared memory
+// Consider prefetching data to registers if applicable
+```

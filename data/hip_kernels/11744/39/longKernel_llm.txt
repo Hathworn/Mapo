@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve bandwidth usage
+// Use shared memory to reduce global memory accesses if the kernel does multiple reads
+// Ensure all memory accesses are correctly aligned for better performance
+// Optimize the kernel launch configuration (block size and grid size) to maximize occupancy
+// Avoid divergent warps by ensuring all threads follow the same execution path
+```

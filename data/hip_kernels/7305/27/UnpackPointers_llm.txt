@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache minmax values for improved data access speed.
+// Avoid bank conflicts when accessing shared memory by ensuring proper alignment.
+// Consider loop unrolling for the k-loop to reduce loop overhead and improve performance.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations in ptrs.
+// Use __syncthreads() to synchronize threads after updating shared memory to avoid race conditions.
+```

@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache frequently accessed data, such as `gradOutput` and `indices_x/indices_y`, to reduce global memory traffic.
+// Coalesce memory access for `gradInput` and `gradOutput` by aligning access patterns for threads in a warp.
+// Use loop unrolling for `for` loops to improve instruction-level parallelism.
+// Avoid redundant calculations of indices by computing them once and storing them in registers or shared memory.
+// Ensure proper memory alignment of input arrays to maximize memory bandwidth efficiency.
+// Minimize bank conflicts in shared memory usage to improve performance.
+// Consider reducing the number of floating-point operations by precomputing constants such as `1/output_h`, `1/output_w`, `1/input_h`, and `1/input_w`.
+// Use `__restrict__` keyword on pointer declarations if aliasing of pointers can be guaranteed to improve compiler optimizations.
+```

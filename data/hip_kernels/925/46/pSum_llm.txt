@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning input array access with warp
+// Use shared memory to reduce global memory access latency
+// Reduce synchronization by reorganizing the reduction pattern
+// Minimize thread divergence for optimized performance
+// Consider using warp shuffle for further reduction optimization

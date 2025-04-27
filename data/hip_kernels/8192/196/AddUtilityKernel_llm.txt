@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for storing intermediate values to reduce global memory access
+// Check if the threadIdx condition can be optimized to avoid divergent branching
+// Ensure data is coalesced when accessing the distance and utility arrays
+// Verify that memory access patterns are optimal with respect to cache line utilization
+// Explore using atomic operations if utility[s1] could be updated by multiple threads
+// If possible, eliminate or optimize synchronization points in the code
+```

@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory accesses and improve performance.
+// Ensure coalesced global memory access patterns for src and dst arrays.
+// Use double-buffering in shared memory to overlap computation and data transfer.
+// Optimize shared memory banking to avoid bank conflicts.
+// Examine whether more non-overlapping threads can be used to further improve memory access efficiency.
+// Profile memory operations to identify potential bottlenecks and adjust your memory access patterns accordingly.
+// Explore the usage of the HIP occupancy calculator tool to maximize thread-level parallelism.
+```

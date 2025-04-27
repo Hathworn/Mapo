@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access to the bottom0 and bottom1 arrays.
+// Consider using vectorized loads/stores for bottom0 and bottom1.
+// Minimize bank conflicts in shared memory usage.
+// Evaluate if using texture memory can improve access times for bottom0 and bottom1.
+// Assess potential benefits of using a two-dimensional grid layout for blocks.
+// If applicable, optimize kernel launch parameters for better warp utilization.
+// Investigate the use of shared memory for more elements if occupancy allows.
+```

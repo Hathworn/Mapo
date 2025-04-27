@@ -1,0 +1,10 @@
+```
+// Consider using __restrict__ keyword for pointers to enable compiler optimizations
+// Prefetch data into shared memory to reduce latency during access
+// Use atomic operations cautiously to avoid serialization and performance bottlenecks
+// Arrange threads in a way that minimizes bank conflicts in shared memory access
+// Investigate usage of __syncthreads() and remove if unnecessary, as it can introduce stalls
+// Optimize conditional branches to reduce divergent behavior among threads
+// Analyze warp execution for possible optimizations to prevent warp divergence
+// Ensure data alignment to improve memory transaction efficiency
+```

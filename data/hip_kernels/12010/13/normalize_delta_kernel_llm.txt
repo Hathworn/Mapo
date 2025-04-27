@@ -1,0 +1,7 @@
+```
+// Pre-calculate square root of variance outside of the loop if possible
+// Consider using shared memory for variance and mean if they are frequently accessed and reused
+// Use vectorized loads for reading input data if data alignment allows
+// Ensure memory accesses are coalesced to improve bandwidth utilization
+// Evaluate the use of __restrict__ qualifier for pointers to improve memory access efficiency
+```

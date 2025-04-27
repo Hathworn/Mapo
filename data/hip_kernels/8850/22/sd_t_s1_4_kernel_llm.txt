@@ -1,0 +1,8 @@
+```
+// Load t2 data into shared memory in parallel to reduce global memory access
+// Ensure synchronization after loading data to shared memory to avoid data races
+// Use shared memory for t2 data to minimize global memory loads in computation
+// Optimize thread mapping to maximize memory coalescing for global memory access
+// Minimize conditional checks within loops to reduce control overhead
+// Synchronize threads after main loop if shared memory is reused
+```

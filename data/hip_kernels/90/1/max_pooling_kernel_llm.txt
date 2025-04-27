@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to load feature map data to reduce global memory access latency.
+// Consider memory coalescing for fm and probs accesses to maximize throughput.
+// Avoid bounds checks inside loops for better performance.
+// Use a single division to calculate the reciprocal of sum, to reduce computational overhead.
+// Avoid recalculating rnd_index multiple times; calculate it once per thread.
+// Vectorize innermost loops if possible to take advantage of SIMD units.
+```

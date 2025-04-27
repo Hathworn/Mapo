@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Prefetch data into registers to minimize latency
+// Optimize memory coalescing by ensuring threads access consecutive addresses
+// Consider loop unrolling for improved performance
+// Minimize bank conflicts by aligning data properly in shared memory
+// Use warp-wise operations to enhance parallel efficiency
+```

@@ -1,0 +1,24 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+#define tileSize 32
+
+//function for data initialization
+void initialization( double *M,  double *N, int arow, int acol, int brow, int bcol);
+//(for Debugging) prints out the input data
+void printInput( double *M,  double *N, int arow, int acol, int brow,  int bcol);
+//(for Debugging) prints out the output data
+void printOutput( double *P_C,  double *P_G, int arow, int bcol);
+
+// GPU kernels
+
+__global__ void vectorScaling(const double *A, double s, double *C, int numElements)
+{
+    int index = blockIdx.x * blockDim.x + threadIdx.x;
+
+    // Use a single loop with proper stride
+    if (index < numElements)
+    {
+        C[index] = A[index] * s;
+    }
+}

@@ -1,0 +1,13 @@
+digraph "CFG for '_Z4swapPdjjj' function" {
+	label="CFG for '_Z4swapPdjjj' function";
+
+	Node0x523b210 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add i32 %12, %5\l  %14 = shl i32 %3, 1\l  %15 = lshr i32 %13, %14\l  %16 = icmp eq i32 %15, 0\l  br i1 %16, label %17, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x523b210:s0 -> Node0x523c920;
+	Node0x523b210:s1 -> Node0x523d350;
+	Node0x523c920 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5a08170",label="{%17:\l17:                                               \l  %18 = shl i32 %1, 1\l  %19 = shl i32 3, %18\l  %20 = shl i32 %2, 1\l  %21 = shl i32 3, %20\l  %22 = or i32 %21, %19\l  %23 = xor i32 %22, -1\l  %24 = and i32 %13, %23\l  %25 = and i32 %13, %19\l  %26 = sub i32 %2, %1\l  %27 = shl i32 %26, 1\l  %28 = shl i32 %25, %27\l  %29 = or i32 %28, %24\l  %30 = and i32 %13, %21\l  %31 = lshr i32 %30, %27\l  %32 = or i32 %29, %31\l  %33 = icmp ugt i32 %13, %32\l  br i1 %33, label %34, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x523c920:s0 -> Node0x523d2d0;
+	Node0x523c920:s1 -> Node0x523d350;
+	Node0x523d2d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%34:\l34:                                               \l  %35 = zext i32 %32 to i64\l  %36 = getelementptr inbounds double, double addrspace(1)* %0, i64 %35\l  %37 = load double, double addrspace(1)* %36, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %38 = zext i32 %13 to i64\l  %39 = getelementptr inbounds double, double addrspace(1)* %0, i64 %38\l  %40 = load double, double addrspace(1)* %39, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  store double %40, double addrspace(1)* %36, align 8, !tbaa !7\l  store double %37, double addrspace(1)* %39, align 8, !tbaa !7\l  br label %41\l}"];
+	Node0x523d2d0 -> Node0x523d350;
+	Node0x523d350 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ to improve compiler optimization on pointers d_Src and d_Dst
+// Use cooperative groups for more flexible and efficient synchronization
+// Ensure the kernel is read into shared memory using optimal memory coalescing
+// Consider loop unrolling factors for better performance in nested loops
+// Utilize vectorized loads/store if applicable to increase memory throughput
+// Analyze warp divergence to ensure threads' workload is evenly distributed
+// Exploit occupancy calculator to choose optimal block dimensions for the given hardware
+```

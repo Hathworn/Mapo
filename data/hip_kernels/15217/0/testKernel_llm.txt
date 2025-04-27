@@ -1,0 +1,4 @@
+// Ensure printf doesn't rely on synchronization for better performance
+// Consider reducing printf usage to minimize impact on kernel execution speed
+// Explore atomic operations to replace mutex where stdout synchronization isn't critical
+// Use shared memory to reduce global memory access latency

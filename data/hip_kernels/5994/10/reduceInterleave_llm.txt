@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory locations to improve bandwidth.
+// Avoid bank conflicts in shared memory by ensuring threads access distinct memory banks.
+// Use shared memory to cache intermediate results to minimize global memory accesses.
+// Implement loop unrolling for reducing stride to improve throughput.
+```

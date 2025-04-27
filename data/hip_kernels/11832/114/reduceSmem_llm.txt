@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ pointers to inform the compiler about non-overlapping data accesses
+// Align shared memory data types to maximize memory coalescing
+// Load data using vectorized loads to optimize memory bandwidth
+// Use __syncthreads() only when necessary to minimize synchronization overhead
+// Apply loop unrolling more aggressively for small block size reductions
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Initialize shared memory outside of the loop for efficiency
+// Use atomic operations in shared memory to minimize contention
+// Aggregate shared memory data in a single thread for efficient global memory update
+// Avoid frequent global memory accesses by using a single atomic operation per block
+```

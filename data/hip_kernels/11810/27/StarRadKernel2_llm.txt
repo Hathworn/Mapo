@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for Vrad, Qbase2, and QStar arrays
+// Utilize shared memory to cache Rmed and dq values shared by multiple threads
+// Ensure memory access patterns maintain coalescence, especially for QStar updates
+// Minimize divergent branching by structuring conditional logic uniformly
+```

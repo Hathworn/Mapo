@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data like g_Data1, g_Data2, and g_Data3 to reduce global memory reads
+// Avoid repeated access to the same memory locations by caching values in registers if possible
+// Investigate the usage of __ldg() to take advantage of texture cache for read-only data
+// Use loop unrolling for operations involving small, fixed-number matrices or vectors
+// Ensure memory coalescing by checking alignment and partition of d_Sift and other arrays
+// Consider fusing kernels if there are dependent kernels executed sequentially to reduce kernel launch overhead
+```

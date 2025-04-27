@@ -1,0 +1,8 @@
+```
+// Ensure A, B, and C pointers are aligned to facilitate coalesced memory access
+// Consider using __restrict__ qualifier for pointers to allow for compiler optimizations
+// Use shared memory if repeated access to a section of global memory is necessary
+// Optimize block size based on hardware specifics to fully utilize available resources
+// Ensure grid size is set to cover the entire data set for effective parallel execution
+// Minimize divergent branching within the kernel
+```

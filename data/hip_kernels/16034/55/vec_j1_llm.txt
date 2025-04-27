@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store data that will be reused across threads
+// Ensure memory access patterns are coalesced for global memory reads
+// Explore the use of texture memory for read-only data that benefits from cache hi rates
+// Check if the use of registers can be optimized to reduce register pressure
+// Evaluate whether the kernel launch configuration maximizes occupancy
+```

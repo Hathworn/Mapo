@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring input and indices arrays are accessed in a coalesced manner.
+// Consider using shared memory to store intermediate results like gradient and weight to reduce global memory access.
+// Use loop unrolling to enhance memory access efficiency in the weight update section.
+// Reduce divergence by optimizing the condition inside the main loop.
+// Ensure that memory access patterns are aligned to improve memory throughput.
+```

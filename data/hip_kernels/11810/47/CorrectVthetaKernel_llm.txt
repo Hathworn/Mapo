@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses by aligning memory and ensuring sequential accesses for consecutive threads
+// Evaluate the use of shared memory for frequently accessed data, such as Rmed, to minimize global memory accesses
+// Check if loop unrolling could be beneficial for the main operation to increase instruction-level parallelism
+// Analyze occupancy and adjust block size for better utilization of GPU resources
+```

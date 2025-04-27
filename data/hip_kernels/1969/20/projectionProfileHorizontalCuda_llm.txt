@@ -1,0 +1,7 @@
+```
+// Optimize: Use only y-dimension for block index to reduce grid configuration complexity
+// Optimize: Process multiple rows per thread to improve memory access pattern
+// Optimize: Use atomicAdd after processing all rows to reduce contention
+// Optimize: Consider using shared memory to reduce global memory access if the number of rows processed by each thread is small
+// Optimize: Ensure coalesced memory access when reading 'image' data by ensuring x accesses are sequential
+```

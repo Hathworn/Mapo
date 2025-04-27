@@ -1,0 +1,18 @@
+digraph "CFG for '_Z17check_done_kernelPbiS_' function" {
+	label="CFG for '_Z17check_done_kernelPbiS_' function";
+
+	Node0x63bb5c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 4, !tbaa !6\l  %13 = mul i32 %4, %9\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %15 = add i32 %13, %14\l  %16 = load i8, i8 addrspace(1)* %2, align 1, !tbaa !16, !range !20\l  %17 = icmp ne i8 %16, 0\l  %18 = icmp slt i32 %15, %1\l  %19 = select i1 %17, i1 %18, i1 false\l  br i1 %19, label %20, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x63bb5c0:s0 -> Node0x63bdcd0;
+	Node0x63bb5c0:s1 -> Node0x63bdd60;
+	Node0x63bdcd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%20:\l20:                                               \l  %21 = udiv i32 %12, %9\l  %22 = mul i32 %21, %9\l  %23 = icmp ugt i32 %12, %22\l  %24 = zext i1 %23 to i32\l  %25 = add i32 %21, %24\l  %26 = mul i32 %25, %9\l  br label %27\l}"];
+	Node0x63bdcd0 -> Node0x63be1e0;
+	Node0x63be1e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i8 [ 1, %20 ], [ %36, %35 ]\l  %29 = phi i32 [ %15, %20 ], [ %37, %35 ]\l  %30 = sext i32 %29 to i64\l  %31 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %30\l  %32 = load i8, i8 addrspace(1)* %31, align 1, !tbaa !16, !range !20\l  %33 = icmp eq i8 %32, 0\l  br i1 %33, label %35, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x63be1e0:s0 -> Node0x63be300;
+	Node0x63be1e0:s1 -> Node0x63bdae0;
+	Node0x63bdae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%34:\l34:                                               \l  store i8 0, i8 addrspace(1)* %2, align 1, !tbaa !16\l  br label %35\l}"];
+	Node0x63bdae0 -> Node0x63be300;
+	Node0x63be300 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = phi i8 [ 0, %34 ], [ %28, %27 ]\l  %37 = add i32 %26, %29\l  %38 = icmp ne i8 %36, 0\l  %39 = icmp slt i32 %37, %1\l  %40 = select i1 %38, i1 %39, i1 false\l  br i1 %40, label %27, label %41, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x63be300:s0 -> Node0x63be1e0;
+	Node0x63be300:s1 -> Node0x63bdd60;
+	Node0x63bdd60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%41:\l41:                                               \l  ret void\l}"];
+}

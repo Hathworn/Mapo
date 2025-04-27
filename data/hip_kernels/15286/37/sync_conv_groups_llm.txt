@@ -1,0 +1,6 @@
+```
+// Consider using __syncthreads() with warp-level functions to reduce latency.
+// Ensure shared memory access is coalesced for better performance.
+// Minimize divergence by ensuring all threads reach the synchronization point.
+// Optimize __threadfence() usage to avoid performance bottlenecks.
+```

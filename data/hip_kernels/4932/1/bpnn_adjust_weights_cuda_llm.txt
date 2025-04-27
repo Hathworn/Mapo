@@ -1,0 +1,9 @@
+```c
+// Consider coalescing global memory accesses for delta and ly arrays.
+// Ensure BLOCK_DIM_X and BLOCK_DIM_Y are optimal for your hardware.
+// Use shared memory effectively to minimize global memory latency.
+// Evaluate moving oldw and w accesses to shared memory if frequently accessed.
+// Be cautious of bank conflicts in shared memory operations.
+// Test for optimal thread block size for maximum hardware occupancy.
+// Ensure stride accesses are minimized for global memory bandwidth optimization.
+```

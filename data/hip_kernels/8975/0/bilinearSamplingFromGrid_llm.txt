@@ -1,0 +1,8 @@
+```
+// Optimize shared memory access by using warp-level parallelism for better memory coalescing.
+// Pre-compute indices reused in loops to reduce redundant calculations in the kernel.
+// Utilize constant memory for frequently accessed variables like stride parameters.
+// Consider loop unrolling for the loop iterating over inputImages_channels to enhance performance.
+// Use vectorized memory access patterns to improve throughput if possible.
+// Ensure that the blocks are well-sized to keep high occupancy on the GPU.
+```

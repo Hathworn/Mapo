@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory access for `col` to enhance memory throughput.
+// Prefetch data into shared memory if columns are accessed repeatedly.
+// Ensure use of __restrict__ qualifier to avoid pointer aliasing pitfalls.
+```

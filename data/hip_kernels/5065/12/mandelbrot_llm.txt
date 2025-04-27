@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed values to reduce global memory accesses.
+// Use memory coalescing by ensuring that consecutive threads access consecutive memory locations.
+// Evaluate using __syncthreads() to sync threads if shared memory is utilized.
+// Explore registering variables that are repeatedly used to optimize register usage.
+// Investigate launching with optimal block size to fully utilize the GPU resources.
+```

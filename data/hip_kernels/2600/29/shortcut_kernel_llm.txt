@@ -1,0 +1,7 @@
+```
+// Ensure data is aligned for coalesced memory accesses
+// Consider using shared memory for repeated accesses to the same data
+// Optimize thread block size to maximize occupancy and memory throughput
+// Use float4 or other vectorized loads/stores if applicable
+// Minimize bank conflicts in shared memory if adopted
+```

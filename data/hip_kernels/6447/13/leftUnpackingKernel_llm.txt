@@ -1,0 +1,6 @@
+```cpp
+// Ensure memory coalescing when accessing the ghost array
+// Consider using shared memory if the ghost data is reused multiple times
+// Minimize conditional branch divergence within the warp
+// Align the loop and data accesses to improve memory throughput
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if data accessed by multiple threads can be reused
+// Optimize memory access patterns by ensuring coalesced access to the arrays
+// Evaluate if using texture memory could provide performance benefits for read-only data
+// Use __syncthreads() appropriately when modifying shared memory to avoid race conditions
+// Ensure kernel launch dimensions efficiently cover the entire dataset without underutilization
+```

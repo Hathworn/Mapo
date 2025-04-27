@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by aligning access patterns to warp size.
+// Use shared memory effectively to reduce global memory access latency.
+// Apply warp-level parallel reduction via shuffle operations for efficient summation.
+// Use syncthreads efficiently to avoid unnecessary synchronization overhead.
+// Minimize redundant calculations by restructuring the reduction.
+```

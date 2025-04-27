@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for random state across block threads
+// Ensure the use of __syncthreads() to synchronize shared memory access
+// Optimize global memory access by minimizing redundancy
+// Evaluate if multiple threads can reuse the same random state
+```

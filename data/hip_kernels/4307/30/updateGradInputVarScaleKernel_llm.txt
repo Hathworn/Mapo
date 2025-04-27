@@ -1,0 +1,7 @@
+```c
+// Use shared memory for commonly accessed arrays like xMin, xMax, yMin, yMax to reduce global memory access.
+// Ensure coalesced access to gradOutputIntData by optimizing the order of operations and memory pattern.
+// Consider loop unrolling for the windowIdx loop if number of windows is known and small to improve performance.
+// Use register variables for frequently accessed data points within the loop to minimize redundant memory reads.
+// Evaluate moving gradOutputIntData increment outside the loop if possible to reduce redundant operations.
+```

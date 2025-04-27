@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Ensure coalesced memory access patterns for better performance.
+// Prefetch data for next iteration if applicable, improving memory throughput.
+// Use vectorized loads/stores if supported by hardware for higher efficiency.
+// Minimize divergent branches by ensuring threads within a warp follow the same execution path.
+// Explore using asynchronous data transfers for overlapping computation and communication.
+```

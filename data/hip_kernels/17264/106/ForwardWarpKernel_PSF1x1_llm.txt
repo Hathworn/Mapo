@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to cache u, v, and src data to improve memory access patterns
+// Optimize global memory access by coalescing reads from u, v, and src
+// Consider using texture memory for read-only data like src for better caching
+// Minimize the number of atomic operations or use warp-level reduction if possible
+// Evaluate the use of float4 for loading/storing multiple values at once
+// Align data structures to 128 bits for potential memory bandwidth improvement
+// Ensure optimal block size and grid size to maximize SM occupancy
+```

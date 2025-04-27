@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory accesses for improved efficiency.
+// Use shared memory to reduce repeated global memory reads.
+// Ensure all required halo elements are loaded into shared memory to avoid conditional branches.
+// Use __syncthreads() to ensure all threads have loaded shared memory before computations begin.
+// Optimize shared memory usage by minimizing its size with precise indexing.
+```

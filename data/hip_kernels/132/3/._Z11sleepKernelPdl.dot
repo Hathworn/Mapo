@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11sleepKernelPdl' function" {
+	label="CFG for '_Z11sleepKernelPdl' function";
+
+	Node0x5f1cb70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%2:\l  %3 = tail call i64 @llvm.amdgcn.s.memtime()\l  br label %4\l}"];
+	Node0x5f1cb70 -> Node0x5f1cd50;
+	Node0x5f1cd50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l4:                                                \l  %5 = tail call i64 @llvm.amdgcn.s.memtime()\l  %6 = sub nsw i64 %5, %3\l  %7 = icmp slt i64 %6, %1\l  br i1 %7, label %4, label %8\l|{<s0>T|<s1>F}}"];
+	Node0x5f1cd50:s0 -> Node0x5f1cd50;
+	Node0x5f1cd50:s1 -> Node0x5f1d0d0;
+	Node0x5f1d0d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%8:\l8:                                                \l  %9 = tail call i64 @llvm.amdgcn.s.memtime()\l  %10 = sub nsw i64 %9, %3\l  %11 = sitofp i64 %10 to double\l  store double %11, double addrspace(1)* %0, align 8, !tbaa !4\l  ret void\l}"];
+}

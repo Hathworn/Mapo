@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for improved bandwidth utilization
+// Consider using shared memory to reduce global memory access latency
+// Optimize thread block size to match warp size for better occupancy
+// Minimize divergent branches within the kernel to enhance efficiency
+// Consider prefetching data to L1/L2 caches where applicable
+// Align data for optimal memory transactions when accessing arrays
+```

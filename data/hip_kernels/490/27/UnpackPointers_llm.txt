@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory
+// Use __syncthreads() to synchronize threads and avoid race conditions
+// Optimize loop unrolling to improve performance and reduce loop overhead
+// Ensure memory alignment for optimal access patterns
+```

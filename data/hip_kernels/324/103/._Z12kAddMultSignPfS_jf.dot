@@ -1,0 +1,13 @@
+digraph "CFG for '_Z12kAddMultSignPfS_jf' function" {
+	label="CFG for '_Z12kAddMultSignPfS_jf' function";
+
+	Node0x52305a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add i32 %14, %15\l  %17 = udiv i32 %13, %10\l  %18 = mul i32 %17, %10\l  %19 = icmp ugt i32 %13, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %10\l  %23 = icmp ult i32 %16, %2\l  br i1 %23, label %24, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x52305a0:s0 -> Node0x5232b60;
+	Node0x52305a0:s1 -> Node0x5232bf0;
+	Node0x5232b60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%24:\l24:                                               \l  %25 = fneg contract float %3\l  br label %27\l}"];
+	Node0x5232b60 -> Node0x5232da0;
+	Node0x5232bf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%26:\l26:                                               \l  ret void\l}"];
+	Node0x5232da0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ %16, %24 ], [ %39, %27 ]\l  %29 = zext i32 %28 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !16\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %29\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !16\l  %34 = fcmp contract ogt float %33, 0.000000e+00\l  %35 = fcmp contract olt float %33, 0.000000e+00\l  %36 = select contract i1 %35, float %25, float 0.000000e+00\l  %37 = select contract i1 %34, float %3, float %36\l  %38 = fadd contract float %31, %37\l  store float %38, float addrspace(1)* %30, align 4, !tbaa !16\l  %39 = add i32 %28, %22\l  %40 = icmp ult i32 %39, %2\l  br i1 %40, label %27, label %26, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5232da0:s0 -> Node0x5232da0;
+	Node0x5232da0:s1 -> Node0x5232bf0;
+}

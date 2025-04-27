@@ -1,0 +1,4 @@
+// Consider using shared memory to cache `target` and `mask` data for better memory access patterns.
+// Ensure memory coalescing in accessing `mask[curt]` and `target[curt * 3 + i]` for improved performance.
+// Prefetch data to registers when possible for reduced memory latency.
+// Optimize the loop copying target pixels to output by avoiding repeated calculations for indices.

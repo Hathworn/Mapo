@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory for reduced global memory access and improved data locality
+// Ensure coalesced global memory access by contiguous thread index
+// Consider additional shared memory padding to avoid bank conflicts
+// Maintain thread block dimensions for optimal occupancy and efficiency
+```

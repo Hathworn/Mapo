@@ -1,0 +1,10 @@
+digraph "CFG for 'matrix_sign' function" {
+	label="CFG for 'matrix_sign' function";
+
+	Node0x50bc190 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp ult i32 %12, %2\l  br i1 %13, label %14, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x50bc190:s0 -> Node0x50be0a0;
+	Node0x50bc190:s1 -> Node0x50be130;
+	Node0x50be0a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = sext i32 %12 to i64\l  %16 = getelementptr inbounds double, double addrspace(1)* %0, i64 %15\l  %17 = load double, double addrspace(1)* %16, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %18 = fcmp contract oeq double %17, 0.000000e+00\l  %19 = tail call double @llvm.copysign.f64(double 1.000000e+00, double %17)\l  %20 = select i1 %18, double 0.000000e+00, double %19\l  %21 = getelementptr inbounds double, double addrspace(1)* %1, i64 %15\l  store double %20, double addrspace(1)* %21, align 8, !tbaa !7\l  br label %22\l}"];
+	Node0x50be0a0 -> Node0x50be130;
+	Node0x50be130 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

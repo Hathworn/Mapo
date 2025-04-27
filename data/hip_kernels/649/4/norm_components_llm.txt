@@ -1,0 +1,6 @@
+```
+// Use coalesced memory accesses by ensuring N is accessed in contiguous blocks
+// Consider using __restrict__ qualifier on pointers to prevent aliasing and enable better optimizations
+// Occupy shared memory if calculations can be reused by multiple threads to reduce global memory accesses
+// Ensure loop unrolling by the compiler for performance gains
+```

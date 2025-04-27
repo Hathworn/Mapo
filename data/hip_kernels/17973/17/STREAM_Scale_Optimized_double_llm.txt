@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning data structures.
+// Use shared memory if data reuse is possible within a block.
+// Consider loop unrolling to reduce overhead from loop control.
+// Optimize memory access patterns to minimize global memory reads and writes.
+// Prefer warp-level primitives if applicable for further optimization.

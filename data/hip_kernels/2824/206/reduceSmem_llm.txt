@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifiers for g_idata and g_odata to aid compiler optimization
+// Explore the use of loop unrolling manually or using compiler hints for further reduction steps
+// Investigate the impact of different block sizes on performance to ensure optimal occupancy
+// Avoid excessive __syncthreads() by leveraging warp level operations where possible
+// Ensure smem usage is within desired limits to avoid spilling into global memory
+// Consider using cooperative groups library for more fine-grained synchronization
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for frequently accessed variables
+// Consider loop unrolling if any loops are present for minimizing overhead
+// Ensure memory accesses are coalesced for improved performance
+// Explore using texture memory for read-only data to enhance cache efficiency
+// Evaluate warp-level primitives to reduce divergence in conditional statements
+```

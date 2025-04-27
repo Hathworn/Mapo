@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced global memory access by using X[i * INCX]
+// Consider using shared memory if data reuse can be beneficial
+// Optimize the loop by minimizing divergence and unnecessary calculations
+// Adjust block size and grid size for improved occupancy
+// Utilize vectorized loads/stores if applicable
+```

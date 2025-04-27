@@ -1,0 +1,6 @@
+// Use shared memory for frequently accessed data like u, v, and src to reduce global memory access.
+// Minimize divergent branches by avoiding redundant calculations inside loops.
+// Consider using texture memory for read-only access to data such as src for improved cache efficiency.
+// Optimize memory access patterns by aligning data and ensuring coalesced accesses.
+// Use compile-time unrolling pragmas to reduce loop overhead and improve parallelization efficiency.
+// Evaluate performance considerations of atomic operations and potential alternatives where applicable.

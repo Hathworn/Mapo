@@ -1,0 +1,10 @@
+digraph "CFG for '_Z12mapPredicatePjS_S_jm' function" {
+	label="CFG for '_Z12mapPredicatePjS_S_jm' function";
+
+	Node0x5cc7fa0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = shl nsw i32 %7, 2\l  %9 = add nsw i32 %8, %6\l  %10 = sext i32 %9 to i64\l  %11 = icmp ult i64 %10, %4\l  br i1 %11, label %12, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x5cc7fa0:s0 -> Node0x5cc7200;
+	Node0x5cc7fa0:s1 -> Node0x5cc97e0;
+	Node0x5cc7200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%12:\l12:                                               \l  %13 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %10\l  %14 = load i32, i32 addrspace(1)* %13, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %15 = lshr i32 %14, %3\l  %16 = and i32 %15, 1\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %10\l  store i32 %16, i32 addrspace(1)* %17, align 4, !tbaa !5\l  %18 = xor i32 %16, 1\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %10\l  store i32 %18, i32 addrspace(1)* %19, align 4, !tbaa !5\l  br label %20\l}"];
+	Node0x5cc7200 -> Node0x5cc97e0;
+	Node0x5cc97e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

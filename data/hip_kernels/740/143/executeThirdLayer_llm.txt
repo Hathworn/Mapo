@@ -1,0 +1,6 @@
+```
+// Use shared memory for Layer3_Neurons to reduce global memory access
+// Calculate a single offset for Layer3 neurons to avoid repeated calculations
+// Use threadID to unroll the loop and parallelize computations
+// Use warp shuffle to reduce the results across the thread block
+```

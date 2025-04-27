@@ -1,0 +1,6 @@
+```c
+// Use coalesced memory access by ensuring threads read contiguous memory locations.
+// Ensure the blocks and threads are configured based on the architecture to maximize occupancy.
+// Consider using shared memory if the kernel accesses the mat array multiple times per thread.
+// Utilize asynchronous memory fetching if appropriate to overlap computation and data transfer.
+```

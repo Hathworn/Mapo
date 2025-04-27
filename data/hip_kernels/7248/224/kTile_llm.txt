@@ -1,0 +1,4 @@
+// Ensure the shared memory tile size fits to prevent bank conflicts
+// Consider coalesced memory access for loading data into shared memory
+// Optimize the block size to match shared memory utilization
+// Implement loop unrolling for small tiles to reduce loop overhead

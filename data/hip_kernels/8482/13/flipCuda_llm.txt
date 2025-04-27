@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Consider coalesced memory access patterns for in and out arrays.
+// Memory access could be optimized by aligning row sizes to memory boundaries.
+// Use loop unrolling if the pixel processing can benefit from it.
+// Prefetch data from global memory to shared memory if reusable within the kernel.
+```

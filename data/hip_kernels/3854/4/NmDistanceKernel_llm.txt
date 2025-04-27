@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access when loading data into shared memory
+// Use loop unrolling to enhance the performance of innermost loops
+// Use __syncthreads() to synchronize threads after shared memory is updated
+// Optimize calculations to minimize divergent branching
+```

@@ -1,0 +1,8 @@
+```
+// Consider increasing block size for better occupancy and performance
+// Use shared memory to minimize redundant global memory accesses
+// Ensure coalesced accesses by aligning data structures in memory
+// Use `__syncthreads()` to synchronize threads when using shared memory
+// Prefetch data to shared memory outside of loops for improved efficiency
+// Consider loop unrolling to reduce control overhead and improve performance
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to increase memory access speed and reduce global memory access
+// Consider coalesced memory access for in1 and in2 for better performance
+// Avoid redundant calculations by storing frequently used expressions in local variables
+// Ensure warp divergence is minimized by structuring if conditions to favor the common case
+```

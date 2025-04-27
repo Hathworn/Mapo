@@ -1,0 +1,8 @@
+```
+// Consider coalesced access patterns for d_adjList and d_sizeAdj to improve memory access efficiency.
+// Use shared memory if possible for frequently accessed data to reduce global memory bandwidth.
+// Ensure memory coalescing for writes to d_lcmMatrix for better throughput.
+// Remove __syncthreads() if not necessary, as it can cause performance bottlenecks.
+// Explore the use of warp-level primitives to reduce synchronization overhead.
+// Minimize control divergence in loops to maintain high warp efficiency.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache d_boundary if accessed multiple times
+// Coalesce global memory access for d_boundary and d_boundaryRange
+// Ensure blocks have enough threads to fully occupy the multiprocessor
+// Avoid warp divergence by minimizing conditional branches
+// Optimize grid and block dimensions for maximum occupancy
+```

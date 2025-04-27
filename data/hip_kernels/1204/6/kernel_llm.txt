@@ -1,0 +1,7 @@
+```
+// Suggest using __restrict__ keyword to improve memory access optimization.
+// Suggest increasing block size if occupancy is not maximized.
+// Ensure coalesced memory accesses within a warp.
+// Use shared memory if operations on array elements within a block are dependent.
+// Ensure optimal grid size for the device being used.
+```

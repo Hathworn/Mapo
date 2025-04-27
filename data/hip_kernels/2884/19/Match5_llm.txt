@@ -1,0 +1,8 @@
+```
+// Optimize shared memory bank conflicts by adjusting memory access patterns.
+// Consider using loop unrolling for better performance in tight loops.
+// Use float4 to load/store multiple data points simultaneously for better memory bandwidth utilization.
+// Minimize __syncthreads() usage where possible to reduce synchronization overhead.
+// Ensure memory access is coalesced for both global and shared memory operations.
+// Align data structures to the warp size to maximize the efficiency of memory operations.
+```

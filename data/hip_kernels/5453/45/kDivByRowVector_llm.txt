@@ -1,0 +1,4 @@
+// Consider coalesced memory access for improved performance by ensuring consecutive threads access consecutive memory locations.
+// Utilize shared memory to store row vector if it fits, reducing repetitive global memory accesses.
+// Explore loop unrolling to minimize loop overhead and improve data throughput.
+// Ensure that conditional checks (e.g., if statements) minimize warp divergence for efficient execution.

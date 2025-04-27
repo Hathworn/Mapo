@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory accesses within the loop
+// Optimize memory coalescing by ensuring adjacent threads access contiguous memory locations
+// Leverage vectorized operations if possible for faster memory access
+// Reduce divergent branches to improve warp execution efficiency

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache index calculations for repeated use
+// Consider using __syncthreads() to ensure shared memory is synchronized across threads
+// Unroll the copy_c and add_c loops further if significant C loop iterations are observed
+// Minimize diverged branches in kernel launch configurations
+// Align data access patterns for better coalesced memory access
+```

@@ -1,0 +1,8 @@
+```
+// Consider increasing memory coalescing by aligning memory access patterns for gradOutput
+// Explore using vectorized loads and stores to enhance memory throughput
+// Utilize shared memory more extensively by loading a block of gradOutput into shared memory
+// Investigate loop unrolling to reduce loop overhead in iterating over kernel dimensions
+// Look into using texture or surface memory for gradOutput to benefit from cached reads
+// Optimize thread block size to ensure maximum occupancy and better utilization of the GPU
+```

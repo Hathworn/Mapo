@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data such as dev_recon[ind0] and dev_wg3, reducing global memory accesses.
+// Minimize the number of times you access dev_recon and dev_wg3 by storing reused values in registers.
+// Ensure memory coalescing by aligning data structures so that continuous threads access continuous memory locations.
+// Explore using loop unrolling for the q loop to increase instruction level parallelism.
+```

@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce redundant global memory accesses
+// Use __restrict__ pointer qualifiers to help the compiler with optimizations
+// Increase block size if resource limits allow for more parallelism
+// Minimize divergence by handling boundary conditions outside the main loop
+```

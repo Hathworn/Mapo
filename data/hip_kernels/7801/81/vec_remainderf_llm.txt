@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring x, y, and result are contiguous in global memory.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+// Use shared memory to cache frequently accessed data if appropriate.
+// Optimize memory loads with vectorized data types if possible.
+```

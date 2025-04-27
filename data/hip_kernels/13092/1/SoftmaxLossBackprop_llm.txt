@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache frequently accessed data
+// Minimize memory accesses by using registers where possible
+// Consider loop unrolling if applicable for repeated tasks
+// Align data structures for coalesced memory access
+// Reduce global memory access by consolidating atomic operations
+// Ensure that the number of threads per block is a multiple of the warp size
+```

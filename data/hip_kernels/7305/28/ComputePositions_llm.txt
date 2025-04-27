@@ -1,0 +1,11 @@
+```
+// Consider using shared memory to load neighboring elements rather than repeated calls to __ldg() to reduce global memory traffic.
+// Ensure coalesced access pattern for loading data into registers.
+// Verify that preloaded values can be stored in registers effectively to minimize redundant use of global memory.
+// Address thread divergence in "if" statements to improve warp efficiency.
+// Explore loop unrolling techniques in case of repetitive patterns for better performance.
+// Optimize calculation of pdx, pdy, and pds by avoiding division operations or replacing them with reciprocal multiplication where possible.
+// Reassess the conditions for fallback computation of pdx, pdy, pds to enhance control flow consistency.
+// Evaluate the potential use of warp shuffle instructions for inter-thread data sharing.
+// Prioritize constraints that can simplify the determinant calculation and reduce arithmetic operations.
+```

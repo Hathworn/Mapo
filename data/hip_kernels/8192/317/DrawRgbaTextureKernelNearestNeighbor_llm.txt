@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access, especially for texture data.
+// Optimize the memory access pattern by coalescing reads from global memory.
+// Explore using constant memory if texture data does not change frequently.
+// Ensure global memory access is aligned to improve load and store efficiency.
+// Minimize divergent branches, particularly around condition checks.
+```

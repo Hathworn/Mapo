@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses where possible
+// Employ memory coalescing to optimize memory bandwidth
+// Consider loop unrolling if applicable to reduce loop overhead
+// Minimize divergent branching to enhance warp execution efficiency
+// Prefetch data into registers or shared memory to hide global memory latency

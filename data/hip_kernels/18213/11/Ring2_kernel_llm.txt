@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed values such as corrAB and mask to reduce global memory access latency.
+// Consider using texture memory for read-only data that exhibits spatial locality.
+// Implement loop unrolling techniques for inner loops to minimize loop overhead.
+// Use appropriate data types to ensure coalesced memory accesses and minimize memory transactions.
+// Optimize strided memory access patterns by rearranging data or using different memory layouts.

@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory for mask and maskNewIds loading to reduce global memory access latency
+// Align the data access to coalesce memory transactions for mask and maskNewIds
+// Employ vectorized memory access for mask and maskNewIds if possible
+// Use shared memory instead of local arrays to store center_updates to improve memory performance
+// Combine atomic operations if possible to reduce overhead and contention on centers
+// Tune block and grid dimensions to balance load and reduce warp divergence
+```

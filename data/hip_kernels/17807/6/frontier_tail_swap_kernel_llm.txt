@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword to indicate pointers do not alias
+// Ensure memory accesses are coalesced for better memory throughput
+// Use shared memory if multiple threads need to access same data
+// Minimize use of global memory operations within the kernel
+// Evaluate if atomics are needed if there are concurrent accesses
+```

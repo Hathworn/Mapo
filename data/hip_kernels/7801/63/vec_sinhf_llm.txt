@@ -1,0 +1,9 @@
+```
+// Cache frequently accessed values to reduce global memory accesses.
+// Consider using shared memory for coalesced memory access patterns.
+// Ensure all threads are synchronized if shared memory is employed.
+// Optimize use of registers by minimizing the number of variables.
+// Explore using warp shuffle to efficiently reuse data in registers.
+// Profile different block sizes to find optimal configuration for latency.
+// Avoid bank conflicts if shared memory is used in future optimization.
+```

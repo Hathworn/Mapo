@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses to gradOutput_data for better memory bandwidth utilization.
+// Use shared memory to store intermediate results to reduce global memory accesses.
+// Employ loop unrolling in the accumulation loop to maximize throughput.
+// Ensure all threads in a warp access consecutive memory locations to benefit from cached reads.
+```

@@ -1,0 +1,6 @@
+```
+// Consider increasing the number of threads per block to better utilize the GPU
+// Load input elements to shared memory in coalesced manner for better memory access performance
+// Minimize __syncthreads() usage for optimizing synchronization overhead
+// Ensure global memory accesses are coalesced to improve memory throughput
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store MatA and MatB tiles for coalesced access
+// Optimize memory access by ensuring all threads in a warp access consecutive memory locations
+// Ensure each thread block covers a continuous block of memory in both MatA and MatB
+// Leverage memory coalescing by ensuring MatA, MatB, and MatC are aligned and accessed in the same pattern
+// Adjust block size to match the GPU's specifications for optimal occupancy and memory bandwidth utilization
+```

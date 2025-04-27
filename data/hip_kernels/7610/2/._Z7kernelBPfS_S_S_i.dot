@@ -1,0 +1,13 @@
+digraph "CFG for '_Z7kernelBPfS_S_S_i' function" {
+	label="CFG for '_Z7kernelBPfS_S_S_i' function";
+
+	Node0x55b51d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = icmp slt i32 %6, %4\l  br i1 %7, label %8, label %14\l|{<s0>T|<s1>F}}"];
+	Node0x55b51d0:s0 -> Node0x55b5fc0;
+	Node0x55b51d0:s1 -> Node0x55b6050;
+	Node0x55b5fc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%8:\l8:                                                \l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = zext i16 %12 to i32\l  br label %15\l}"];
+	Node0x55b5fc0 -> Node0x55b6ee0;
+	Node0x55b6050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%14:\l14:                                               \l  ret void\l}"];
+	Node0x55b6ee0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  %16 = phi i32 [ %6, %8 ], [ %27, %15 ]\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %1, i64 %17\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !7\l  %20 = getelementptr inbounds float, float addrspace(1)* %2, i64 %17\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !7\l  %22 = fmul contract float %19, %21\l  %23 = getelementptr inbounds float, float addrspace(1)* %3, i64 %17\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !7\l  %25 = fadd contract float %22, %24\l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %17\l  store float %25, float addrspace(1)* %26, align 4, !tbaa !7\l  %27 = add i32 %16, %13\l  %28 = icmp slt i32 %27, %4\l  br i1 %28, label %15, label %14, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x55b6ee0:s0 -> Node0x55b6ee0;
+	Node0x55b6ee0:s1 -> Node0x55b6050;
+}

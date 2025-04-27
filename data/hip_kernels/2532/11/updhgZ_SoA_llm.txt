@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for f[idx] when accessed multiple times to reduce global memory accesses.
+// Using vectorized operations for f[idx_px1] and f[idx_py1] could further enhance memory access efficiency.
+// Ensure proper alignment of z1 and z2 accesses to improve memory coalescing and reduce latency.
+```

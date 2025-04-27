@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store data already fetched from global memory for each block.
+// Employ coalesced memory accesses by ensuring threads within a warp access consecutive memory locations.
+// Ensure proper memory alignment to improve memory bandwidth utilization.
+// Analyze if utilizing texture memory or read-only cache improves access patterns.
+// Experiment with different numbers of threads per block to find optimal configuration for memory access patterns.
+```

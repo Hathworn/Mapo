@@ -1,0 +1,7 @@
+```
+// Use shared memory for cache-friendly access to frequently used data
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive elements
+// Consider loop unrolling to reduce loop overhead within the if condition
+// Align memory accesses to improve data-fetching efficiency
+// Minimize divergent branches to improve warp execution efficiency
+```

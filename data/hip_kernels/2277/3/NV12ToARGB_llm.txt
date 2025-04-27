@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access patterns in reading/writing to global memory.
+// Use shared memory to reduce redundant global memory accesses.
+// Optimize thread block size to improve memory access patterns.
+// Minimize divergent branches within warp execution.
+// Prefetch data where possible, especially for source image reads.
+// Reduce the number of memory transactions by processing multiple pixels per thread.
+// Use constants or __restrict__ pointers to optimize memory access.
+// Ensure alignment of data structures for optimal global memory access.
+```

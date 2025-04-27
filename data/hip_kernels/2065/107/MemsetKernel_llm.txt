@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Ensure coalesced memory access by organizing threads properly
+// Use __restrict__ pointers to hint at non-aliasing for compiler optimization
+// Consider loop unrolling if loops are present in the kernel
+// Avoid bank conflicts if shared memory usage is implemented
+```

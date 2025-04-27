@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring state array is accessed by contiguous threads
+// Use __restrict__ keyword if state array is not aliased to improve compiler optimization
+// Prefetch data to shared memory if multiple accesses are needed by threads based on further requirements
+// Align memory allocations to cache line size for better memory throughput if applicable
+```

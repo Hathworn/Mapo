@@ -1,0 +1,4 @@
+// Consider coalesced memory access for 'pred' and 'truth' arrays.
+// Use shared memory if appropriate to reduce global memory bandwidth.
+// Minimize use of 'log' function by pre-calculating values outside of kernel if possible.
+// Check if reducing precision (e.g., from float to half) can help improve memory throughput.

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access and improve cache hit rate
+// Consider using texture memory for out_delta if spatial locality of access pattern is high
+// Ensure the kernel is launched with enough threads to fully utilize GPU resources
+// Investigate possibility of using atomic operations if concurrent writes to in_delta become an issue

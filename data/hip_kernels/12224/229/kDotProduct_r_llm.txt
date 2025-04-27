@@ -1,0 +1,6 @@
+```
+// Reduce memory access by using shared memory for intermediate results
+// Minimize warp divergence by iterating over elements with a stride-based approach
+// Optimize reductions by reducing the number of synchronization barriers
+// Use a single thread to write final block results to global memory to avoid redundant access
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to enhance memory access for quadratic array updates
+// Consider coalesced memory access patterns for cur_tot_weight and quadratic
+// Align memory accesses to use vectorized loads/stores where feasible
+// Utilize __restrict__ keyword for pointer arguments to aid compiler optimizations
+// Consider loop unrolling techniques to reduce loop overhead
+// Minimize use of __syncthreads() by restructuring logic if possible
+```

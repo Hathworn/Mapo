@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by arranging data in a manner that threads in a warp access consecutive memory locations
+// Minimize divergent branches caused by the boundary condition check by using techniques like padding
+// Optimize memory access patterns to fully utilize memory bandwidth
+// Utilize shared memory if possible to reduce redundant global memory accesses within warp

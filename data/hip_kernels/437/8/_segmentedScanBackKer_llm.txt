@@ -1,0 +1,4 @@
+// Consider using __ldg() for read-only data to optimize memory bandwidth by utilizing texture cache.
+// Use warp shuffle operations for efficient data exchange within a warp to minimize shared memory usage and synchronization overhead.
+// Investigate using cooperative groups to perform synchronization across blocks if necessary for fine-grained parallelism.
+// Ensure coalesced memory access patterns by aligning data structures appropriately to maximize memory throughput.

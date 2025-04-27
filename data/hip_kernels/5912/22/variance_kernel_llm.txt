@@ -1,0 +1,8 @@
+```c
+// Precompute scale factor outside of loops to reduce redundant calculations
+// Replace repeated index calculations with a temp variable to improve efficiency
+// Utilize shared memory if appropriate to optimally cache frequently accessed data
+// Check if loop unrolling can be applied for better performance
+// Ensure coalesced memory access to maximize memory throughput
+// Consider using float4 for loading data if alignment allows to reduce memory transactions
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Ensure to use __syncthreads() to synchronize threads after loading to shared memory.
+// Consider adjusting shared memory size for different block dimensions.
+// Ensure coalesced memory access patterns for optimal performance.
+// Check boundary conditions carefully to avoid out-of-bounds memory access.
+```

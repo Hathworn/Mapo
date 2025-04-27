@@ -1,0 +1,6 @@
+// Consider using shared memory to cache d_mapping, d_reduction, and old_d_ij_buf for faster access.  
+// Align data structures to improve coalesced memory access and increase bandwidth utilization.
+// Reduce global memory writes by using registers for frequently accessed variables like i and j.
+// Use warp-level primitives to reduce divergence and synchronize threads efficiently.  
+// Minimize register usage by avoiding unnecessary temporary variables when possible.  
+// Investigate loop unrolling to reduce instruction overhead in computations.

@@ -1,0 +1,7 @@
+```c
+// Use loop unrolling to increase instruction-level parallelism
+// Ensure data alignment to exploit memory coalescing
+// Prefetch data to shared memory if reuse is high to reduce global memory accesses
+// Optimize block and grid dimensions for higher occupancy
+// Avoid bank conflicts in shared memory by using padding if shared memory is used
+```

@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by aligning memory access patterns
+// Use shared memory to reduce global memory accesses
+// Avoid bank conflicts in shared memory accesses
+// Minimize the use of __syncthreads() by combining operations
+// Unroll loops if the loop count is known at compile-time
+// Optimize occupancy by choosing appropriate block size
+```

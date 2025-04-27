@@ -1,0 +1,8 @@
+```
+// Consider using shared memory if multiple threads access adjacent elements frequently
+// Check for memory coalescing to optimize access patterns
+// Evaluate the impact of L2 cache usage to improve access latency
+// Use __restrict__ keyword if applicable to reduce pointer aliasing overhead
+// Verify alignment of float3 structures to ensure efficient memory transaction
+// Minimize data transfers between host and device where possible
+```

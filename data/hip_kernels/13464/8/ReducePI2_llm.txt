@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns for shared memory usage
+// Minimize thread divergence within warp-synchronous reduction
+// Consider unrolling the loop for the reduction phase
+// Ensure coalesced access to global memory while loading data into shared memory
+// Use atomic operations judiciously if needed for the final reduction step
+```

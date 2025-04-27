@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache weight data for better memory access speeds
+// Use __restrict__ pointer qualifiers to potentially improve memory access patterns
+// Optimize loops with unrolling if nnSize is typically small to enhance performance
+// Compute indices outside of loops when feasible to reduce redundant calculations
+// Ensure coalesced memory access by reorganizing data if possible
+```

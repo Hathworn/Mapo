@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Investigate coalesced memory accesses for index array
+// Optimize thread block size to maximize occupancy and minimize warp divergence
+// Potentially use a texture cache for read-only data to speed up memory access

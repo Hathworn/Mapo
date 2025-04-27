@@ -1,0 +1,9 @@
+```c
+// Consider using coalesced memory accesses for vg_a within the loop
+// Align shared memory accesses to avoid bank conflicts
+// Use loop unrolling to minimize loop overhead when summing absolute differences
+// Explore employing vectorized loads if hardware supports it for vg_a access
+// Consider using __half precision calculations if sufficient and supported
+// Attempt to reduce __syncthreads() calls if possible to optimize synchronization overhead
+// Explore warp shuffle operations to perform the reduction instead of shared memory
+```

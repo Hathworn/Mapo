@@ -1,0 +1,6 @@
+```c
+// Use shared memory to accumulate partial sums before writing to global memory
+// Store step in register to reduce redundant global memory accesses
+// Consider loop unrolling for better performance by reducing loop overhead
+// Utilize constant memory for any constant data used across all threads
+```

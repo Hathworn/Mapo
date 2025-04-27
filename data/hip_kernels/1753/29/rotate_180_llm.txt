@@ -1,0 +1,7 @@
+```
+// Consider increasing the block size to improve performance through greater parallelization.
+// Align data access within shared memory to improve coalesced memory access.
+// Consider using vectorized data types like float2 or float4 for improved memory throughput.
+// Ensure memory accesses within coalesced blocks are contiguous to maximize memory bandwidth.
+// Verify that shared memory usage is optimal and does not exceed limits for larger grids.
+```

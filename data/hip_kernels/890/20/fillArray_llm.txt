@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifier if dest is not aliased to improve memory access
+// Ensure dest is aligned to improve memory access efficiency
+// Consider using shared memory if index locality allows to reduce global memory load
+// Ensure loop variable unroll if possible to increase performance
+// Consider using warp-level primitives for better memory access patterns
+```

@@ -1,0 +1,9 @@
+```
+// Unroll the loop for better memory coalescing
+// Use shared memory effectively to store intermediate results
+// Avoid bank conflicts in shared memory by ensuring optimal data layout
+// Minimize divergence by simplifying conditionals
+// Perform reduction using warp shuffles for intra-warp communication efficiency
+// Use constant memory for read-only data like mean and variance if possible
+// Consider loop fusion to decrease global memory accesses
+```

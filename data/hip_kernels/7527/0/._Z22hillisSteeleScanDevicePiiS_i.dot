@@ -1,0 +1,13 @@
+digraph "CFG for '_Z22hillisSteeleScanDevicePiiS_i' function" {
+	label="CFG for '_Z22hillisSteeleScanDevicePiiS_i' function";
+
+	Node0x4edd1b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add i32 %12, %5\l  %14 = icmp sgt i32 %13, %1\l  br i1 %14, label %27, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x4edd1b0:s0 -> Node0x4edf0c0;
+	Node0x4edd1b0:s1 -> Node0x4edf150;
+	Node0x4edf150 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%15:\l15:                                               \l  %16 = sub nsw i32 %13, %3\l  %17 = icmp sgt i32 %16, -1\l  br i1 %17, label %18, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x4edf150:s0 -> Node0x4edf430;
+	Node0x4edf150:s1 -> Node0x4edf0c0;
+	Node0x4edf430 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%18:\l18:                                               \l  %19 = sext i32 %13 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %19\l  store i32 %21, i32 addrspace(1)* %22, align 4, !tbaa !7\l  %23 = zext i32 %16 to i64\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %23\l  %25 = load i32, i32 addrspace(1)* %24, align 4, !tbaa !7\l  %26 = add nsw i32 %25, %21\l  store i32 %26, i32 addrspace(1)* %22, align 4, !tbaa !7\l  store i32 %26, i32 addrspace(1)* %20, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x4edf430 -> Node0x4edf0c0;
+	Node0x4edf0c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

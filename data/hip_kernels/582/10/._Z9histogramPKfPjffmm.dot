@@ -1,0 +1,10 @@
+digraph "CFG for '_Z9histogramPKfPjffmm' function" {
+	label="CFG for '_Z9histogramPKfPjffmm' function";
+
+	Node0x51d9170 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !5, !invariant.load !6\l  %12 = zext i16 %11 to i32\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = mul i32 %13, %12\l  %15 = add i32 %14, %7\l  %16 = sext i32 %15 to i64\l  %17 = icmp ugt i64 %16, %5\l  br i1 %17, label %29, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x51d9170:s0 -> Node0x51db100;
+	Node0x51d9170:s1 -> Node0x51db190;
+	Node0x51db190 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%18:\l18:                                               \l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %21 = fsub contract float %20, %2\l  %22 = fdiv contract float %21, %3\l  %23 = uitofp i64 %4 to float\l  %24 = fmul contract float %22, %23\l  %25 = fptosi float %24 to i32\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %26\l  %28 = atomicrmw add i32 addrspace(1)* %27, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %29\l}"];
+	Node0x51db190 -> Node0x51db100;
+	Node0x51db100 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

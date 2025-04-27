@@ -1,0 +1,4 @@
+// Use parallel reduction to improve memory access efficiency during summation.
+// Utilize shared memory to reduce redundant global memory accesses for Aq calculation.
+// Reduce synchronization overhead by grouping operations and using shared memory.
+// Ensure coalesced memory access for f_ptxc, f_ptyc, and f_ptzc by aligning data access patterns.

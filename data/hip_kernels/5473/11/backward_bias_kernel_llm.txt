@@ -1,0 +1,7 @@
+```
+// Use shared memory effectively to reduce global memory accesses
+// Consider loop unrolling to improve instruction throughput
+// Minimize shared memory bank conflicts during accumulation
+// Implement warp-level parallel reduction to optimize shared memory use
+// Use atomic operations for final bias update to ensure threads' correct write-back
+```

@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access by aligning thread indices with memory layout
+// Consider using shared memory to store layer1 values if reused across multiple operations
+// Minimize divergent branches by organizing code that reduces condition checks
+// Use warp-level primitives for efficient synchronization if threads within a warp share data
+```

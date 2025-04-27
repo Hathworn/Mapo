@@ -1,0 +1,5 @@
+// Use coalesced memory accesses to improve global memory throughput
+// Ensure vertexArray is aligned to reduce memory access times
+// Consider using shared memory to reduce global memory traffic
+// Ensure kernel launch parameters (blocks, threads) are optimized for your device
+// Utilize memory prefetching techniques for neighbourArray to optimize access patterns

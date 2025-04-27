@@ -1,0 +1,9 @@
+```
+// Use __restrict__ qualifier for pointers to help the compiler optimize memory access
+// Consider using shared memory to cache frequently accessed data
+// Prefetch data into registers to reduce global memory latency
+// Minimize divergent branches within the kernel
+// Coalesce memory accesses where possible for efficient global memory utilization
+// Align data structures to improve memory access patterns
+// Adjust block size for optimal occupancy and resource utilization
+```

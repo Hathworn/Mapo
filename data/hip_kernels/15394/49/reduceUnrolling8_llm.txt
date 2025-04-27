@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Coalesce global memory accesses to improve throughput
+// Minimize memory divergence by ensuring all threads within a warp access sequential elements
+// Implement memory padding if necessary to avoid bank conflicts in shared memory
+// Consider using warp-shuffle operations for further optimization
+```

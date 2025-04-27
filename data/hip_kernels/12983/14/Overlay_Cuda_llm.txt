@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache frequently accessed data from global memory and reduce global memory access latency.
+// Minimize the number of conditional statements to improve thread coherence and avoid divergent execution paths.
+// Align the memory accesses to 32-byte boundaries to optimize for coalesced memory access patterns.
+// Consider using texture memory for the overlay image to benefit from hardware-accelerated linear filtering and caching.
+// Check if alpha values can be precomputed or stored in a more cache-friendly manner to reduce per-thread computations.
+// Adjust block and grid sizes based on the GPU architecture for better occupancy and load balancing among available resources.
+```

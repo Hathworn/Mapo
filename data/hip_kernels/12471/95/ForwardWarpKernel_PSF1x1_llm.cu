@@ -1,0 +1,32 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__device__ __forceinline__ float imag(const float2& val) {
+    return val.y;
+}
+
+__global__ void ForwardWarpKernel_PSF1x1(const float *u, const float *v, const float *src, const int w, const int h, const int flow_stride, const int image_stride, const float time_scale, float *dst) {
+    int j = blockIdx.x * blockDim.x + threadIdx.x;
+    int i = blockIdx.y * blockDim.y + threadIdx.y;
+
+    if (i >= h || j >= w) return;
+
+    int flow_row_offset = i * flow_stride + j;
+    int image_row_offset = i * image_stride + j;
+
+    float u_ = u[flow_row_offset];
+    float v_ = v[flow_row_offset];
+
+    // Compute target positions
+    float cx = fmaf(u_, time_scale, (float)j + 1.0f); // Optimized computation of cx
+    float cy = fmaf(v_, time_scale, (float)i + 1.0f); // Optimized computation of cy
+    
+    // Convert to integer pixel positions
+    int tx = __float2int_rn(cx);
+    int ty = __float2int_rn(cy);
+
+    // Check bounds and perform atomic addition
+    if (tx >= 0 && tx < w && ty >= 0 && ty < h) {
+        atomicAdd(dst + ty * image_stride + tx, src[image_row_offset]);
+    }
+}

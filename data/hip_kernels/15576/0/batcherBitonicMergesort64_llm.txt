@@ -1,0 +1,8 @@
+```
+// Consider aligning memory access for coalesced reads and writes.
+// Reduce shared memory bank conflicts.
+// Unroll the inner loops for better performance.
+// Minimize the use of __syncthreads() where possible.
+// Optimize data reuse by keeping frequently accessed data in registers.
+// Analyze occupancy and adjust block size if necessary.
+```

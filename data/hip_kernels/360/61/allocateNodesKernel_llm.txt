@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses in adjIndexes during initialization
+// Prefetch adjacency data into registers for reduced global memory accesses
+// Optimize candidate search loop by avoiding repeated candidate assignments
+// Use atomic operations or intra-warp reduction for counting candidates
+// Increase the size of shared memory if blockDim.x allows for better computation distribution
+// Minimize the use of __syncthreads() by optimizing initialization logic
+// Ensure partOut[idx] writes are coalesced for improved global memory performance
+```

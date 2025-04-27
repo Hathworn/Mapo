@@ -1,0 +1,7 @@
+```
+// Use shared memory to store frequently accessed data within the kernel for reduced global memory access
+// Combine multiple conditional checks on 'scale' into a single condition using thread indexing for efficiency
+// Prefetch data into registers for the current thread before the loop to minimize access delay during computation
+// Consider using loop unrolling techniques for the main computation loop to reduce branch overhead
+// Optimize data[i] access pattern by ensuring coalesced memory access across threads
+```

@@ -1,0 +1,9 @@
+```
+// Use shared memory for improved memory access performance
+// Load global memory to shared memory to reduce global memory access times
+// Ensure synchronization with __syncthreads()
+// Optimize shared memory usage based on blockDim
+// Perform computation in shared memory
+// Avoid excessive __syncthreads() if possible
+// Write data from shared memory back to global memory
+```

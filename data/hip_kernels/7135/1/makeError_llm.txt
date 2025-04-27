@@ -1,0 +1,8 @@
+```
+// Consider using shared memory if possible to reduce repeated global memory accesses
+// Ensure memory coalescing by aligning global memory accesses
+// Employ vectorized loads/stores if data alignment permits
+// Optimize grid and block dimensions for maximum occupancy
+// Use asynchronous memory prefetching for overlapping computation with data transfer
+// Evaluate thread block size to balance occupancy and SIMD efficiency
+```

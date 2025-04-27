@@ -1,0 +1,7 @@
+```
+// Use shared memory for activeConnections to reduce global memory access
+// Minimize divergent branches by combining similar conditions
+// Consider coalesced memory accesses for connection and age arrays
+// Use loop unrolling to increase pipeline efficiency for the inner loop
+// Pad data structures to ensure memory alignment for coalesced access
+```

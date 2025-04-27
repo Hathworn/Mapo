@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if data reuse is possible between threads to reduce global memory accesses.
+// Ensure a[i] and b[i] are coalesced by aligning memory accesses with warp size for better performance.
+// Use __restrict__ qualifiers if a, b, and c pointers do not overlap to allow the compiler more optimization opportunities.
+// Check if loop unrolling could benefit performance by allowing more instructions to be executed in parallel.
+```

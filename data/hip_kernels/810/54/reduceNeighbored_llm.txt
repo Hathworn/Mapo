@@ -1,0 +1,7 @@
+```
+// Use warp shuffle to avoid shared memory and synchronization
+// improve performance: avoid unnecessary synchronization in warp
+// Consider accessing idata using coalesced memory access patterns
+// Evaluate using shared memory for reduction to minimize global memory access
+// Ensure boundary checks are minimized for efficiency
+```

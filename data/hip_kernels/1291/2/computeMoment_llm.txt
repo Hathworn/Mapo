@@ -1,0 +1,8 @@
+```
+// Consider using more threads to load weightArr to shared memory to reduce serialization.
+// Ensure memory coalescing by accessing consecutive elements for readArr.
+// Check if MIN_MARGIN boundaries can be expanded to reduce edge case handling overhead.
+// Evaluate if using float for influence can be optimized to reduce precision issues or overhead.
+// Investigate potential for loop unrolling in the nested loops to increase pipeline efficiency.
+// Assess if usage of warp shuffle instructions could benefit the influence calculation.
+```

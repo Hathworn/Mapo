@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced global memory access for input matrix 'a'
+// Use shared memory for tiling to improve access patterns
+// Synchronize threads to ensure shared memory is fully populated
+// Ensure coalesced global memory access for output matrix 'b'
+// Optimize register usage by reusing loaded values
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to store adjIndexes and adjacency for better memory access patterns.
+// Coalesced memory access can be improved for originIn and bestSeenIn arrays.
+// Evaluate the possibility of using warp-level primitives for reductions on neighbor loops.
+// Avoid bank conflicts by aligning accesses within shared memory if implemented.

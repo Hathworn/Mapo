@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses for pred and truth arrays
+// Coalesce memory accesses by aligning data structures properly
+// Minimize thread divergence by ensuring every thread executes the same path

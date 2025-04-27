@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Minimize divergence by ensuring contiguous threads follow similar execution paths.
+// Use memory coalescing to improve global memory bandwidth by grouping accesses to contiguous memory.
+// Optimize register usage to prevent excessive spilling into local memory.

@@ -1,0 +1,4 @@
+// Consider optimizing the size of shared memory arrays based on actual block size used
+// Avoid bank conflicts in shared memory access by ensuring proper memory alignment
+// Minimize use of __syncthreads for efficiency; use only when necessary
+// Ensure loop unrolling if applicable for better throughput

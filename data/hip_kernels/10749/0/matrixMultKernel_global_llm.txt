@@ -1,0 +1,4 @@
+// Optimize memory access by using shared memory for tiled matrix multiplication
+// Reduce global memory accesses by loading tiles into shared memory before computation
+// Use coalesced memory access to improve memory bandwidth utilization
+// Minimize bank conflicts in shared memory by appropriate tiling and padding

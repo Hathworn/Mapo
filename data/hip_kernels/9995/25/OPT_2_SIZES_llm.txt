@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword to optimize memory access patterns
+// Ensure coalesced memory accesses to d_adjList and d_sizeAdj
+// Consider reducing global memory accesses by storing reused values in registers
+// Utilize shared memory for frequently accessed data if beneficial
+// Strive for occupancy optimization by choosing optimal block size
+```

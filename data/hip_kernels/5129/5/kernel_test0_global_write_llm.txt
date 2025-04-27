@@ -1,0 +1,6 @@
+```
+// Reduce global memory access by using shared memory where possible
+// Minimize warp divergence by structuring code to avoid conditional branching
+// Optimize pointer arithmetic to align with memory boundaries for coalesced access
+// Use larger mask increments within loop to decrease iterations
+```

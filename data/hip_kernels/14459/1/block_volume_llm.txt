@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache image_p elements to reduce redundant global memory access
+// Coalesce global memory access for image_p to improve memory throughput
+// Replace 3-level nested loop with a more compact and performant structure if possible
+// Use constant memory for frequently accessed data like srcWidth, srcHeight, srcDepth
+// Optimize thread block and grid dimensions for better occupancy and L2 cache utilization
+// Pre-compute indices used inside the innermost loop to reduce arithmetic overhead
+// Evaluate warp-level primitives or cooperative groups for further optimization
+// Use inline functions instead of __device__ for single-line operations like myMAX
+```

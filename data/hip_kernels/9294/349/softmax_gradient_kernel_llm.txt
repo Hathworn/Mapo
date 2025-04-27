@@ -1,0 +1,5 @@
+// Use shared memory for reduction to minimize global memory accesses.
+// Leverage warp-level primitives for reduction to improve efficiency.
+// Consider unrolling loops to reduce overhead in the warp-level reduction.
+// Ensure coalesced global memory access when computing partial_sum.
+// Align memory access patterns of dX, dY, and Y for better coalescing.

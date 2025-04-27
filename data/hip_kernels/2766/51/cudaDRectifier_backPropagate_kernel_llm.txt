@@ -1,0 +1,6 @@
+// Precompute shifting factors outside the loop to avoid redundant calculations
+// Apply shifting factor directly to reduce register usage
+// Combine conditional statements to reduce branch divergence
+// Use a constant memory for commonly used small values like leakSlope to improve memory access time if needed
+// Consider using shared memory for any data reused within a thread block if applicable
+// Optimize memory pattern access by ensuring coalesced access if possible

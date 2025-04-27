@@ -1,0 +1,4 @@
+// Use grid stride loop for efficient parallelization across threads and blocks
+// Ensure coalesced memory access by iterating linearly through env array
+// Consider using shared memory if multiple accesses to env[i] are needed within the loop
+// Ensure optimal block size to maximize occupancy and minimize memory latency

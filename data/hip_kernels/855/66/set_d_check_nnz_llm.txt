@@ -1,0 +1,4 @@
+// Consider reorganizing memory accesses to ensure coalesced memory access.
+// Use shared memory to reduce the number of global memory accesses.
+// Ensure aligned memory access where possible to maximize throughput.
+// Minimize divergence within warps to improve performance.

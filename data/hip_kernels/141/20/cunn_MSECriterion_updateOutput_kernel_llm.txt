@@ -1,0 +1,7 @@
+```
+// Ensure coalesced global memory access by aligning input and target arrays
+// Consider using float4 or float2 for input and target to improve memory efficiency
+// Use cooperative groups for more efficient synchronization
+// Experiment with different block sizes for optimal shared memory utilization
+// Minimize the use of __syncthreads() by optimizing the reduction algorithm
+```

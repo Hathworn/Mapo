@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory access to optimize d_PartialHistograms reads.
+// Minimize __syncthreads() usage to reduce synchronization overhead.
+// Consider double-buffering shared memory for improved parallelism.
+// Align data structures to ensure better memory access patterns.
+```

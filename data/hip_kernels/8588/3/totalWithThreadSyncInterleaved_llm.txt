@@ -1,0 +1,4 @@
+// Consider aligning input and output memory for coalesced access.
+// Use shared memory efficiently by limiting access within active threads.
+// Reduce the number of __syncthreads calls by organizing memory operations effectively.
+// Implement warp-level reduction to minimize synchronization overhead.

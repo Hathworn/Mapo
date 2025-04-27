@@ -1,0 +1,5 @@
+// Use shared memory to cache data accessed by multiple threads to reduce global memory accesses.
+// Align global memory accesses to ensure coalescence for improved memory bandwidth.
+// Avoid redundant computations for bounds checking by computing them outside the nested loops.
+// Reuse intermediate computation results within the kernel to minimize redundant calculations.
+// Minimize divergent branches related to boundary checks by re-structuring the logic.

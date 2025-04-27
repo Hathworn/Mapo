@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns for bottom_data and temp_diff.
+// Use shared memory to store frequently accessed data for bottom_data and temp_diff.
+// Consider using vectorized operations if applicable to improve memory throughput.
+// Ensure that filters_diff is written with minimal warp divergence.
+// Attempt to reduce the number of calculations inside the loop by using pre-computed variables.
+// Evaluate loop unrolling further to optimize for different GPU architectures.
+```

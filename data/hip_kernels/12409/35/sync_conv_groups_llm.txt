@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Check if coalesced memory access patterns can be applied for better performance.
+// Utilize vectorized loads/stores if applicable for higher throughput.
+// Minimize bank conflicts in shared memory by ensuring memory accesses stride is not a multiple of shared memory banks.
+// If applicable, use constant memory for values that remain unchanged throughout the kernel execution.
+// Assess the occupancy of the kernel and optimize the block size to maximize it.
+// Ensure kernel uses enough threads to keep all cores busy for maximizing performance.
+```

@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses for y[idx]
+// Ensure x and y are aligned in memory for optimal access
+// Avoiding bank conflicts in shared memory access, if utilized
+// Employ __restrict__ pointers if aliasing can be ruled out
+// Use constant memory for any constant data access within the kernel
+```

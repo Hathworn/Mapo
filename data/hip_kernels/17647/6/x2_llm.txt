@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses if data reuse is possible.
+// Consider coalescing memory accesses to improve global memory efficiency.
+// Optimize the number of threads per block to achieve maximum hardware throughput.
+// Ensure each thread in a warp accesses consecutive memory addresses to avoid bank conflicts.
+```

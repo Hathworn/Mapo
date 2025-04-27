@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for 'levels', 'edgeArray', and 'edgeArrayAux'.
+// Use shared memory to buffer frequently accessed data to reduce global memory traffic.
+// Optimize warp divergence by ensuring all lanes complete tasks concurrently, without branching.
+// Use __shfl_sync or similar functions to share data between threads within a warp.
+// Reduce redundant memory accesses by caching vertex edge indices when possible.
+// Consider splitting large memory accesses into smaller coalesced accesses for improved throughput.
+```

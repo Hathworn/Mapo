@@ -1,0 +1,5 @@
+// Suggest using loop unrolling in cpu_applyFilter to reduce loop overhead.
+// Consider coalesced memory access in gpu_gaussian for image array reads and writes.
+// Use shared memory efficiently by loading blocks in a coalesced manner.
+// Preload constants (e.g., filter weights) into registers for faster access.
+// Optimize thread allocation to minimize warp divergences.

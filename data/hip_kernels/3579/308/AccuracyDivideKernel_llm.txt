@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access if N is large.
+// Ensure memory is coalesced for better performance if accessing global memory.
+// Explore using atomic operations if this operation is part of a larger kernel.
+// Verify if N can be precomputed outside the kernel to save computation inside.
+```

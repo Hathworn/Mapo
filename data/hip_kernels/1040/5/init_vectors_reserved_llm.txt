@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Minimize data movement between host and device to decrease overhead and improve performance
+// Merge initialization of vec with kernel launch to reduce synchronization overhead
+// Consider using vectorized memory access to improve memory throughput, if applicable
+// Optimize thread block size for better occupancy and efficiency in memory access patterns
+```

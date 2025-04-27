@@ -1,0 +1,5 @@
+// Pre-calculate indices to avoid repeated computation in the loop
+// Use temporary variables to minimize repeated memory access
+// Avoid redundant global memory accesses by storing repeated values in local variables
+// Ensure all accesses are coalesced by using continuous block access patterns where possible
+// Reduce the number of global memory writes by combining operations where applicable

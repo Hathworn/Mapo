@@ -1,0 +1,6 @@
+// Load frequently used values into registers to minimize global memory access
+// Use shared memory for comb_prefix to reduce memory latency and bank conflicts
+// Minimize the divergence by ensuring all threads follow the same control path
+// Align data access patterns with memory alignment for better coalescing
+// Prefetch data into registers when possible to hide memory latency
+// Ensure optimal block and grid dimensions for maximum occupancy

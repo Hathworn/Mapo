@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to store devL, devA, and devB data for better memory access patterns.
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Minimize global memory access by loading data into registers when used in computations.
+// Validate memory alignment to ensure efficient memory transactions.
+```

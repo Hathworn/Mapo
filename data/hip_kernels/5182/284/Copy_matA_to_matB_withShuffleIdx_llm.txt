@@ -1,0 +1,4 @@
+// Use shared memory to cache portions of A to reduce global memory access
+// Leverage memory coalescing by aligning accesses within warps
+// Minimize divergent threads by ensuring uniform control paths
+// Use __syncthreads() to synchronize threads when accessing shared memory

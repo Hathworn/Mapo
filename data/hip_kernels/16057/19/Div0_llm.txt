@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure memory accesses are coalesced to improve throughput.
+// Reduce thread divergence by structuring control flow to predict branches better.
+// Consider loop unrolling for the for-loop to minimize overhead in loop control.

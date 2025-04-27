@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8blockXORiPKcPcl' function" {
+	label="CFG for '_Z8blockXORiPKcPcl' function";
+
+	Node0x5c9f100 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = zext i32 %5 to i64\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = zext i32 %7 to i64\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = zext i16 %12 to i64\l  %14 = mul nuw nsw i64 %13, %8\l  %15 = add nuw nsw i64 %14, %6\l  %16 = shl nuw nsw i64 %15, 3\l  %17 = sext i32 %0 to i64\l  %18 = icmp slt i64 %16, %17\l  br i1 %18, label %19, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x5c9f100:s0 -> Node0x5ca1280;
+	Node0x5c9f100:s1 -> Node0x5ca1310;
+	Node0x5ca1280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%19:\l19:                                               \l  %20 = bitcast i8 addrspace(1)* %1 to i64 addrspace(1)*\l  %21 = getelementptr inbounds i64, i64 addrspace(1)* %20, i64 %15\l  %22 = load i64, i64 addrspace(1)* %21, align 8, !tbaa !7, !amdgpu.noclobber\l... !6\l  %23 = xor i64 %22, %3\l  %24 = bitcast i8 addrspace(1)* %2 to i64 addrspace(1)*\l  %25 = getelementptr inbounds i64, i64 addrspace(1)* %24, i64 %15\l  store i64 %23, i64 addrspace(1)* %25, align 8, !tbaa !7\l  br label %26\l}"];
+	Node0x5ca1280 -> Node0x5ca1310;
+	Node0x5ca1310 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

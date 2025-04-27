@@ -1,0 +1,7 @@
+```
+// Use shared memory if multiple threads access the same data to minimize global memory access
+// Consider coalesced memory access patterns for a, b, and sum arrays to improve memory bandwidth
+// Align data structures to cache line sizes if applicable for better cache performance
+// Experiment with different block and grid sizes to match the hardware capabilities
+// Utilize asynchronous memory operations if host-device transfer time is a bottleneck
+```

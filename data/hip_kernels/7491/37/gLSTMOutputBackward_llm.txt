@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for temporary storage to reduce global memory accesses
+// Consider coalescing memory accesses for xW, sU, and adj to improve memory throughput
+// Optimize the use of registers by using local variables for frequently accessed data within each loop iteration
+// Use warp-level synchronization to avoid redundant calculations within the same warp
+// Consider using atomic operations only when necessary to avoid synchronization overhead
+```

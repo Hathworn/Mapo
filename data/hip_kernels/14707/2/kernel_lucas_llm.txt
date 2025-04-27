@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses by checking if nArray, dArray, and rArray are aligned
+// Consider using shared memory for frequently accessed data to reduce global memory access
+// Minimize divergent branches in the loop for better warp utilization
+// Consider loop unrolling to decrease instruction overhead
+```

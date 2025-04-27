@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce access time for frequently accessed data
+// Ensure shared memory usage is within limits for better performance
+// Consider using coalesced access patterns for global memory operations
+// Optimize stride for better warp utilization when accessing shared memory
+// Balance shared and global memory usage depending on data size
+// Evaluate shared memory layout for potential bank conflicts
+// Minimize thread divergence by aligning control structures
+```

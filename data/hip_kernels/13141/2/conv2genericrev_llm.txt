@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure coalesced memory access patterns in the main loop.
+// Consider padding shared memory to avoid bank conflicts.
+// Loop unrolling could be applied to improve performance.
+// Pre-load kernel values into shared memory if possible.
+// Ensure proper synchronization with __syncthreads().
+```

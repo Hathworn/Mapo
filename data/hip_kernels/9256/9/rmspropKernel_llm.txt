@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access times for gradients
+// Ensure __syncthreads() is placed correctly to synchronize shared memory loading
+// Optimize global memory access by coalescing wherever possible
+// Consider increasing memory access patterns to fully utilize available memory bandwidth
+// Minimize divergence in control flow statements for better warp execution
+// Utilize shared memory effectively to store frequently accessed data
+// Align data structures in memory to benefit from coalesced access
+```

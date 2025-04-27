@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory to cache data for reducing global memory accesses.
+// Ensure coalesced memory access pattern for loading data into shared memory.
+// Consider loop unrolling for the inner loop to improve performance.
+// Avoid bank conflicts by properly striding accesses to shared memory.
+// Optimize use of registers to avoid spilling variables to local memory.
+// Minimize use of __syncthreads to reduce synchronizing overhead.
+// Consider use of float2 or float4 for vectorized operations on points and results.
+// Precompute expressions like sqr(dt) outside the loop if reused multiple times.
+```

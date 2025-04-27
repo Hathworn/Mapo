@@ -1,0 +1,3 @@
+// Consider using shared memory for matrix 'a' and matrix 'b' to reduce global memory access.
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path.
+// Optimize memory coalescing by aligning memory access patterns for matrix 'b'.

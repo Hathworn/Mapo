@@ -1,0 +1,9 @@
+```
+// Consider memory coalescing to improve access patterns for device memory.
+// Optimize shared memory usage by ensuring sufficient allocation for each thread block.
+// Use atomic operations cautiously to avoid serialization and ensure correct parallel execution.
+// Aim for optimal block and grid configuration to fully utilize the GPU parallel processing capabilities.
+// Evaluate the use of constant or texture memory for frequently accessed read-only data.
+// Minimize divergent branching within warp execution by refining conditional statements.
+// Reduce global memory accesses by caching frequently accessed values in shared memory or registers.
+```

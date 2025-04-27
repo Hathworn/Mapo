@@ -1,0 +1,4 @@
+// Avoid redundant memory accesses by reading in_lod[index] only once
+// Consider using shared memory to reduce global memory access latency for num_erased array
+// Ensure coalesced memory access by aligning data structures if possible
+// Utilize warp-level programming techniques to optimize memory utilization

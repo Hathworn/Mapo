@@ -1,0 +1,4 @@
+// Consider using shared memory to minimize global memory access latency
+// Experiment with different block and grid sizes for optimal occupancy
+// Ensure memory alignment for better coalesced memory access
+// Use __syncthreads() if shared memory is utilized to prevent data hazards

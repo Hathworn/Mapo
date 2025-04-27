@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize memory access latency
+// Coalesce global memory accesses by ensuring adjacent threads access consecutive memory locations
+// Use vectorized memory operations if the hardware supports it for better memory bandwidth utilization
+// Ensure INCX does not lead to non-coalesced memory accesses, adjust if necessary
+// Consider using occupancy metrics to determine optimal block and grid sizes for GPU utilization
+```

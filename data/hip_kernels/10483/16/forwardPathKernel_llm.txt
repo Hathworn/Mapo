@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory access latency for species parameters.
+// Use coalesced memory access patterns by linearizing the multidimensional index into a single offset.
+// Reduce loop bounds checks by unrolling the inner loops where applicable.
+// Align shared memory access to improve shared memory bandwidth utilization.
+// Minimize warp divergence by restructuring conditional branches when calculating 'jump' factors.
+// Reduce bank conflicts in shared memory by ensuring shared memory accesses are aligned.
+// Prefetch data into registers where possible to avoid repeated memory accesses.
+// Optimize reduction operations by parallelizing them and using warp shuffle for intra-warp reductions.
+```

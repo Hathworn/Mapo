@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for 'a' and 'r' to improve memory access patterns.
+// Unrolling the loop might improve parallelism and reduce instruction overhead.
+// Ensure 'index' calculations avoid bank conflicts by aligning with memory boundaries.
+// Consider using a smaller shared memory size for better occupancy if possible.
+// Optimize shared memory usage to prevent excessive bank conflicts.
+// Minimize barriers such as __syncthreads() when possible by restructuring reduction logic.
+```

@@ -1,0 +1,7 @@
+```
+// Prefetch data into shared memory to reduce global memory access latency
+// Optimize memory coalescing by ensuring contiguous memory access patterns
+// Implement loop unrolling to minimize loop overhead
+// Utilize volatile keyword for warp-level reductions to prevent register optimization issues
+// Use __syncthreads() after each reduction step to maintain memory consistency across threads
+```

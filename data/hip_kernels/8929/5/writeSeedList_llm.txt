@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for target_IDArray and target_indexArray
+// Investigate the use of shared memory for cellSizeArray to reduce global memory traffic
+// Analyze potential bank conflicts when accessing qIDArray and qIndexArray
+// Ensure data alignment for more efficient memory access patterns
+// Explore additional loop unrolling techniques for the main for loop
+// Assess if using texture memory could benefit read-heavy arrays such as indexArray
+```

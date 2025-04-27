@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access for frequently accessed data.
+// Consider using texture memory if data will benefit from cache locality.
+// Optimize loop unrolling more aggressively if index calculations are simple.
+// Pre-calculate common index expressions outside the nested loops to save on redundant computation.
+// Ensure coalesced memory access when updating the output and indexes arrays.
+```

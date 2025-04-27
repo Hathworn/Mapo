@@ -1,0 +1,10 @@
+digraph "CFG for '_Z16shared1R8C1W8C1GPfS_S_i' function" {
+	label="CFG for '_Z16shared1R8C1W8C1GPfS_S_i' function";
+
+	Node0x6294d60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp slt i32 %13, %3\l  br i1 %14, label %15, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x6294d60:s0 -> Node0x6296c70;
+	Node0x6294d60:s1 -> Node0x6296d00;
+	Node0x6296c70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = sitofp i32 %13 to float\l  %17 = shl nuw nsw i32 %12, 3\l  %18 = add nuw nsw i32 %17, 8\l  %19 = and i32 %18, 504\l  %20 = getelementptr inbounds [512 x float], [512 x float] addrspace(3)*\l... @_ZZ16shared1R8C1W8C1GPfS_S_iE4Smem, i32 0, i32 %19\l  store float %16, float addrspace(3)* %20, align 16, !tbaa !7\l  %21 = and i32 %17, 504\l  %22 = getelementptr inbounds [512 x float], [512 x float] addrspace(3)*\l... @_ZZ16shared1R8C1W8C1GPfS_S_iE4Smem, i32 0, i32 %21\l  %23 = load float, float addrspace(3)* %22, align 16, !tbaa !7\l  %24 = sext i32 %13 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %2, i64 %24\l  store float %23, float addrspace(1)* %25, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x6296c70 -> Node0x6296d00;
+	Node0x6296d00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

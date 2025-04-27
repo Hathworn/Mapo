@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Prefetch data to shared memory before computation.
+// Consider using vectorized operations to optimize memory reads/writes.
+// Align memory access patterns to improve coalescing.
+// Optimize the use of __syncthreads to reduce synchronization overhead.
+// Explore further optimization by using warp-level primitives where applicable.
+```

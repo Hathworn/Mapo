@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store partial results for faster access.
+// Use coalesced memory accesses to improve global memory performance.
+// Minimize the divergence in the reduction loops.
+// Precompute more indices and coefficients outside of inner loops.
+// Evaluate if loop unrolling could benefit the accumulation loop.
+// Consider aligning memory accesses to CUDA warp boundaries.
+```

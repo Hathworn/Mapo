@@ -1,0 +1,3 @@
+// Use shared memory for faster access to frequently used data
+// Adjust size based on blockDim.x
+// Access shared memory for P to reduce global memory access latency

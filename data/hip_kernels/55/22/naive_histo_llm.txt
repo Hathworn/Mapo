@@ -1,0 +1,4 @@
+// Use shared memory for bin increments to reduce global memory updates
+// Initialize shared memory bins efficiently
+// Perform atomic operations on shared memory instead of global memory for better performance
+// Transfer results to global memory only once per block for reduced write operations

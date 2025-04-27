@@ -1,0 +1,3 @@
+// Consider using shared memory explicitly to increase coalescing for better memory access efficiency.
+// If the memory access pattern supports, explore the use of warp shuffle for data exchange to reduce reliance on shared memory.
+// Investigate the use of memory prefetching to reduce memory latency impacts further.

@@ -1,0 +1,4 @@
+// Optimize memory access by aligning data for vectorized loads and stores
+// Use float2 for loading and storing to reduce memory transactions
+// Ensure global memory accesses are coalesced for efficient data transfer
+// Consider using shared memory for frequently accessed values to further reduce global memory traffic

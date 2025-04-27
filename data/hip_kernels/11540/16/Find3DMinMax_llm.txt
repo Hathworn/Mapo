@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and increase memory bandwidth.
+// Minimize divergence by ensuring threads within the same warp follow the same execution path.
+// Align memory access patterns to improve coalesced memory reads and writes.
+// Consider preloading data into registers for frequently accessed variables.
+// Use __syncthreads() to synchronize threads to prevent race conditions.
+```

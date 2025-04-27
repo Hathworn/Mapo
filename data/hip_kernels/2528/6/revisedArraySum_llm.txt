@@ -1,0 +1,5 @@
+// Consider using warp-level primitives to optimize reduction computation.
+// Reduce memory divergence by coalescing global memory writes.
+// Use multiple blocks to sum larger arrays and reduce block-level synchronization overhead.
+// Ensure memory access patterns are coalesced for better memory bandwidth utilization.
+// Explore using atomic operations for reduction across multiple blocks.

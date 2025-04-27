@@ -1,0 +1,7 @@
+```
+// Use stride for better coalescing and efficiency
+// Consider aligning data on 128-bit boundaries for optimal memory access
+// Use __restrict__ keyword to enhance compiler optimization by indicating no overlap in data pointers
+// Employ shared memory if multiple accesses to the same data occur within the block
+// Adjust block and grid dimensions to maximize occupancy and data throughput
+```

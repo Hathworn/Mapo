@@ -1,0 +1,8 @@
+```cpp
+// Coalesce global memory accesses by ensuring threads in the same warp access contiguous memory locations.
+// Consider storing intermediate color values in shared memory to reduce repeated computation.
+// Use low-latency shared memory for bin_index calculation to reduce global memory access.
+// Adjust kernel configurations to maximize occupancy and minimize thread divergence.
+// Ensure proper memory alignment for optimal performance on global memory reads and writes.
+// Use __restrict__ keyword for pointers if applicable to aid compiler optimizations.
+```

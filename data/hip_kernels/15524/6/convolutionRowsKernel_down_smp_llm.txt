@@ -1,0 +1,9 @@
+```
+// Ensure shared memory data loading is coalesced to optimize memory access patterns.
+// Consider padding shared memory to avoid bank conflicts during access.
+// Utilize #pragma unroll to maximize loop unrolling and instruction level parallelism.
+// Minimize divergent branches within threads by consolidating condition checks.
+// Prefer using constant memory for frequent read-only kernels to leverage cache benefits.
+// Optimize thread block size selection to maximize occupancy and hide memory latency.
+// Align data loading with warp size for efficient memory transactions.
+```

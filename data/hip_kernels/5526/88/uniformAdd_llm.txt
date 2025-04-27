@@ -1,0 +1,6 @@
+```
+// Load uniform value into shared memory to reduce redundant global memory accesses.
+// Use shared memory to minimize global memory latency.
+// Synchronize threads to ensure all have access to the uniform data before computation.
+// Double buffer within the block to increase utilization of shared memory.
+```

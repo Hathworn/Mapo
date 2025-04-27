@@ -1,0 +1,10 @@
+digraph "CFG for '_Z10count_binsPiS_ii' function" {
+	label="CFG for '_Z10count_binsPiS_ii' function";
+
+	Node0x4f31040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = mul i32 %10, %9\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp ult i32 %13, %3\l  %15 = zext i32 %13 to i64\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %18 = icmp slt i32 %17, %2\l  %19 = and i1 %18, %14\l  br i1 %19, label %20, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x4f31040:s0 -> Node0x4f33a50;
+	Node0x4f31040:s1 -> Node0x4f33ae0;
+	Node0x4f33a50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%20:\l20:                                               \l  %21 = sext i32 %17 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %21\l  %23 = atomicrmw add i32 addrspace(1)* %22, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %24\l}"];
+	Node0x4f33a50 -> Node0x4f33ae0;
+	Node0x4f33ae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  ret void\l}"];
+}

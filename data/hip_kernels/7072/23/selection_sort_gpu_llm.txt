@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve memory access patterns
+// Ensure that shared memory reads and writes are coalesced
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Consider utilizing warp shuffle functions for efficient data exchange
+// Explore loop unrolling in critical loops to enhance performance
+```

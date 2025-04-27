@@ -1,0 +1,5 @@
+// Use coalesced memory access for gradOutput_data
+// Minimize thread divergence by ensuring thread workload is uniform
+// Consider using shared memory for reducing repeated access to global memory
+// Use atomic operations if accumulation might lead to race conditions in more complex scenarios
+// Optimize with correct choice of block and grid dimensions based on hardware architecture

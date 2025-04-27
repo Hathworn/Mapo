@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory accesses and improve memory coalescing.
+// Load xyz data into shared memory within each block to speed up access times.
+// Ensure synchronization after loading data into shared memory to prevent race conditions.
+// Unroll inner loops to reduce loop overhead and enable more efficient pipeline execution.
+// Consider optimizing the indexing logic and memory access patterns for better memory access efficiency.
+```

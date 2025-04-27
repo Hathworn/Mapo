@@ -1,0 +1,8 @@
+```
+// Reorganize data accesses for better memory coalescing
+// Combine loops for contiguous memory access to improve cache efficiency
+// Use shared memory if possible to reduce global memory access latency
+// Ensure starting and ending indices are correctly utilized to avoid out-of-bounds access
+// Utilize all threads for the given number of valid points for maximum performance
+// Optimize stride pattern for accessing 'point_gradients' to prevent memory divergence
+```

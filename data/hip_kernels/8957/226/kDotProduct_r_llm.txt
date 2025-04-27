@@ -1,0 +1,6 @@
+// Optimize memory access patterns by coalescing global memory accesses for a, b arrays.
+// Minimize shared memory bank conflicts during reduction phase.
+// Consider loading data into shared memory in smaller chunks to improve efficiency.
+// Use loop unrolling for the final warp-level reduction to maximize performance.
+// Evaluate vectorized memory access if data alignment permits to enhance throughput.
+// Examine register usage and push to limit to reduce shared memory pressure.

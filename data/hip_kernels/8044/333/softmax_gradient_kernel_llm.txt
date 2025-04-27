@@ -1,0 +1,7 @@
+```
+// Consider reducing global memory transactions by coalescing memory accesses for Y, dY, and dX.
+// Restructure the loop to ensure continuous memory access which may improve performance.
+// Use proper data alignment and padding to avoid bank conflicts in shared memory.
+// Consider using loop unrolling to further minimize the loop overhead.
+// Ensure __syncthreads() is placed correctly to synchronize threads effectively.
+```

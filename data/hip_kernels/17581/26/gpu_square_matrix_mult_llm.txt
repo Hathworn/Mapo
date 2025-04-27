@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced access patterns by loading entire row/column
+// Synchronize threads after loading to avoid race conditions
+// Avoid bank conflicts while accessing shared memory
+// Minimize use of temporary variables in the compute loop
+// Ensure global memory writes are coalesced
+```

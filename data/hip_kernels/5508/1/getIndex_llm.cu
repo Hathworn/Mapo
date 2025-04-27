@@ -1,0 +1,14 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void getIndex(unsigned int *d_index, unsigned int *d_scan, unsigned int *d_mask, unsigned int in_size, unsigned int total_pre) {
+    unsigned int index = threadIdx.x + blockDim.x * blockIdx.x;
+    
+    // Ensure index is within bounds before proceeding
+    if (index >= in_size) return;
+
+    // Only proceed if the mask value is 1
+    if (d_mask[index] == 1) {
+        d_index[index] = total_pre + d_scan[index];
+    }
+}

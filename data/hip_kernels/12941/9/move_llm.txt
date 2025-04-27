@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to global memory for better performance.
+// Ensure shared memory usage is within the hardware limit to prevent overflows.
+// Use __syncthreads() to synchronize threads before reading from shared memory.
+// Avoid zeroing out data in global memory unless necessary to save time.
+// Consider optimizing the number of threads per block to utilize more parallelism.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory coalescing by checking data alignment
+// Use __restrict__ keyword to suggest non-aliasing for pointer arguments
+// Consider using warp-level primitives to optimize execution
+// Use shared memory to store rows temporarily for better performance
+// Prefetch min_in_rows into shared memory for faster access
+// Combine atomic operations if possible to reduce overhead
+```

@@ -1,0 +1,6 @@
+```
+// Optimize memory coalescing by ensuring contiguous threads access contiguous memory locations.
+// Consider increasing block size for better occupancy while ensuring enough shared memory is available.
+// Ensure the WIDTH and block_size parameters are multiples of warp size to avoid divergence.
+// Ensure shared memory is used effectively to minimize global memory accesses.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data and reduce global memory access.
+// Employ loop unrolling for further reduction in loop overhead.
+// Consider using warp shuffle operations for efficient data exchange.
+// Align memory accesses to avoid bank conflicts and improve coalescing.
+// Reorder arithmetic operations to maximize instruction-level parallelism.
+// Optimize usage of __syncthreads() to prevent unnecessary synchronization overhead.
+```

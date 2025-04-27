@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for better throughput
+// Utilize shared memory to minimize global memory access latency
+// Ensure memory accesses are aligned to avoid performance penalties
+// Reduce divergent branching within the kernel
+// Avoid bank conflicts in shared memory access patterns
+// Minimize the use of barrier synchronizations to improve performance
+// Load data into registers when reused multiple times to save memory bandwidth
+```

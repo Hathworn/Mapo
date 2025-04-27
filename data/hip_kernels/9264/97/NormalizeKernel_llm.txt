@@ -1,0 +1,6 @@
+```
+// Use shared memory to store tile segments of normalization_factor to reduce global memory access
+// Consider coalesced memory access patterns for reading normalization_factor
+// Use loop unrolling techniques for potential performance gains
+// Minimize usage of division by multiplying with precomputed reciprocal instead
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory for commonly accessed data to reduce global memory access latency.
+// Coalesce memory access by ensuring contiguous threads access contiguous memory locations for optimal performance.
+// Minimize warp divergence by preventing conditional statements within the kernel where possible.

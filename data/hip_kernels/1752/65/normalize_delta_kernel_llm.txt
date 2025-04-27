@@ -1,0 +1,5 @@
+// Improve memory access patterns for higher coalescing.
+// Consider using shared memory to cache frequently accessed data like variance and mean.
+// Use a larger tile size where possible to increase data locality.
+// Avoid redundant boundary checks by structuring loops efficiently.
+// Investigate use of texture memory for read-only data to take advantage of caching.

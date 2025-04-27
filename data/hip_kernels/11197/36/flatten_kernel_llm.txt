@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce redundant global memory access
+// Coalesce global memory access for better memory throughput
+// Ensure memory alignment to improve access speed
+// Consider using vectorized types for memory operations to leverage SIMD
+// Experiment with different block sizes to find optimal parallelism
+// Minimize the amount of data transferred between global memory and registers
+// Evaluate the use of warp-synchronous programming where applicable
+```

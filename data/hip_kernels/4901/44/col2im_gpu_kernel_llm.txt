@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses where possible
+// Ensure coalesced global memory access for data_col
+// Utilize constant memory for variables like ksize, pad, stride, height_col, width_col if they don't change
+// Consider loop unrolling for the inner loops to decrease loop overhead
+```

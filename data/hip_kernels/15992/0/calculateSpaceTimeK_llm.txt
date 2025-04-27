@@ -1,0 +1,8 @@
+```
+// Reduce global memory access by using shared memory for frequently accessed data like 'blackHole' array
+// Optimize index calculation by storing frequently used components like 'i * nCols' in a variable
+// Coalesce memory accesses for 'SPBox' to improve global memory throughput
+// Use loop unrolling to decrease the overhead of loop control
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Consider using functors for calculations to enhance inline expansion by the compiler
+```

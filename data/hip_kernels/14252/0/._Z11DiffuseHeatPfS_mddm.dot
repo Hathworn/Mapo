@@ -1,0 +1,19 @@
+digraph "CFG for '_Z11DiffuseHeatPfS_mddm' function" {
+	label="CFG for '_Z11DiffuseHeatPfS_mddm' function";
+
+	Node0x5e40770 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !5, !invariant.load !6\l  %12 = zext i16 %11 to i32\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = mul i32 %13, %12\l  %15 = add i32 %14, %7\l  %16 = add i32 %15, 1\l  %17 = icmp eq i32 %16, 0\l  br i1 %17, label %49, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x5e40770:s0 -> Node0x5e416f0;
+	Node0x5e40770:s1 -> Node0x5e427b0;
+	Node0x5e427b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%18:\l18:                                               \l  %19 = zext i32 %16 to i64\l  %20 = add i64 %2, -1\l  %21 = icmp ugt i64 %20, %19\l  br i1 %21, label %22, label %49\l|{<s0>T|<s1>F}}"];
+	Node0x5e427b0:s0 -> Node0x5e42ab0;
+	Node0x5e427b0:s1 -> Node0x5e416f0;
+	Node0x5e42ab0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%22:\l22:                                               \l  %23 = uitofp i64 %5 to double\l  %24 = icmp eq i64 %5, 0\l  br i1 %24, label %49, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x5e42ab0:s0 -> Node0x5e416f0;
+	Node0x5e42ab0:s1 -> Node0x5e42ce0;
+	Node0x5e42ce0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%25:\l25:                                               \l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %19\l  %27 = add i32 %15, 2\l  %28 = zext i32 %27 to i64\l  %29 = getelementptr inbounds float, float addrspace(1)* %0, i64 %28\l  %30 = zext i32 %15 to i64\l  %31 = getelementptr inbounds float, float addrspace(1)* %0, i64 %30\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %19\l  br label %33\l}"];
+	Node0x5e42ce0 -> Node0x5e425d0;
+	Node0x5e425d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi double [ 0.000000e+00, %25 ], [ %47, %33 ]\l  %35 = load float, float addrspace(1)* %26, align 4, !tbaa !7\l  %36 = fpext float %35 to double\l  %37 = load float, float addrspace(1)* %29, align 4, !tbaa !7\l  %38 = fmul contract float %35, 2.000000e+00\l  %39 = fsub contract float %37, %38\l  %40 = load float, float addrspace(1)* %31, align 4, !tbaa !7\l  %41 = fadd contract float %39, %40\l  %42 = fpext float %41 to double\l  %43 = fmul contract double %42, 2.500000e-01\l  %44 = fadd contract double %43, %36\l  %45 = fptrunc double %44 to float\l  store float %45, float addrspace(1)* %32, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %46 = load float, float addrspace(1)* %32, align 4, !tbaa !7\l  store float %46, float addrspace(1)* %26, align 4, !tbaa !7\l  %47 = fadd contract double %34, %4\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %48 = fcmp contract olt double %47, %23\l  br i1 %48, label %33, label %49, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5e425d0:s0 -> Node0x5e425d0;
+	Node0x5e425d0:s1 -> Node0x5e416f0;
+	Node0x5e416f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%49:\l49:                                               \l  ret void\l}"];
+}

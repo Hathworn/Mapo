@@ -1,0 +1,4 @@
+// Prefetch dx exponentiation and index computation outside the conditional to reduce computation
+// Use simple range checks to minimize branches and improve performance
+// Use conditional expression without multiplication to simplify calculations
+// Avoid uninitialized assignments by explicitly setting payoff to zero when condition is not met

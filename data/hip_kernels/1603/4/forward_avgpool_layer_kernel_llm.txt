@@ -1,0 +1,5 @@
+// Calculate spatial size outside loop to reduce redundant computation
+// Use a local variable for sum to optimize register usage
+// Precompute input offset to avoid repeated calculations
+// Use offset in accessing input to improve memory access pattern
+// Store the result directly to avoid unnecessary temporary variables

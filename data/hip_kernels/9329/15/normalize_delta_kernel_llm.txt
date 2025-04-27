@@ -1,0 +1,5 @@
+```c
+// Consider using shared memory to store per-block mean and variance for faster memory access
+// Use coalesced memory access patterns for the x, mean, variance, mean_delta, variance_delta, and delta arrays
+// Preload frequently accessed data into registers to minimize global memory accesses
+```

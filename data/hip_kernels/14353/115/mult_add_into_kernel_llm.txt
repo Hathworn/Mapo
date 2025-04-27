@@ -1,0 +1,7 @@
+```
+// Ensure global memory accesses are coalesced for better performance
+// Use shared memory to cache data if there are frequently reused values
+// Optimize loop unrolling for improved instruction-level parallelism
+// Utilize '__restrict__' pointers if pointers do not alias for better compiler optimization
+// Consider using warp size (e.g., 32 in most GPUs) aligned data access for further optimization
+```

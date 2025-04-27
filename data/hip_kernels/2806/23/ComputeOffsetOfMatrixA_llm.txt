@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory accesses  
+// Ensure data is loaded in shared memory before computation  
+// Synchronize threads before accessing shared memory  
+// Minimize thread divergence by using consistent loop bounds

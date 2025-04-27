@@ -1,0 +1,7 @@
+```
+// Use memory coalescing by accessing consecutive memory locations
+// Consider using shared memory to reduce global memory accesses if data reuse exists
+// Ensure grid and block dimensions are optimized for the GPU architecture
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Double-check for optimal use of registers to avoid spilling to local memory
+```

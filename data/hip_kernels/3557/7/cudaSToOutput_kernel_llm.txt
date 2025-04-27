@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses for inputs and outputs to improve memory bandwidth utilization.
+// Investigate using shared memory for frequently accessed data like numPartsPerClass and numTemplatesPerClass.
+// Minimize redundant calculation in conditions to streamline execution.
+// Use constant or __restrict__ pointers for data that doesn't change to optimize cache hit rates.
+// Explore loop unrolling techniques for small fixed-size loops to reduce overhead and improve throughput.
+// Check alignment of inputs and outputs for better efficiency in memory transactions.
+// Profile memory footprint impact and data dependencies to synchronize threads effectively.
+```

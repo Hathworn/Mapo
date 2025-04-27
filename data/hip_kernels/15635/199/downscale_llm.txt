@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Consider coalescing memory accesses in gradOutput_data by optimizing translate_idx_inv calculations
+// Utilize vectorized loads and stores if applicable to further enhance memory throughput
+// Check for bank conflicts in shared memory access patterns
+// Ensure enough threads per block to fully utilize available memory bandwidth
+```

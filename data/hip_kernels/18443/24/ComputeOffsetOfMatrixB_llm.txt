@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for block-level cache of row_sum to reduce global memory accesses.
+// Ensure coalesced global memory access for the output array by successive threads.
+// Use __syncthreads() to synchronize threads in a block if shared memory is utilized.
+// Optimize block size based on the device's compute capability and workload characteristics.
+```

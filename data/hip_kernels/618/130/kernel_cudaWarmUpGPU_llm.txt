@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed data to reduce global memory access
+// Consider using warp-level primitives for better data handling and synchronization
+// Minimize branch divergence by organizing code to reduce conditional statements
+// Coalesce global memory accesses for better memory throughput
+// Avoid bank conflicts by carefully aligning shared memory usage

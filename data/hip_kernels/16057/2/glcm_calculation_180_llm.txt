@@ -1,0 +1,7 @@
+```
+// Use shared memory to store frequently accessed GLCM values to reduce global memory access
+// Use coalesced memory access pattern for loading data from global memory to improve bandwidth
+// Consider loop unrolling to increase instruction-level parallelism
+// Evaluate if increasing the number of threads per block can improve occupancy and performance
+// Avoid unnecessary conditional statements within the loop to reduce divergent branching
+```

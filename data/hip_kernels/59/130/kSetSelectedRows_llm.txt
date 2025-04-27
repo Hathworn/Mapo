@@ -1,0 +1,8 @@
+```cpp
+// Consider using coalesced memory access for source and target data.
+// Ensure indices are accessed in a coalesced manner when loading into shared memory.
+// Utilize shared memory effectively to minimize global memory access.
+// Unroll loops further if occupancy allows to reduce loop overhead.
+// Consider increasing the block size if registers and shared memory permit for better occupancy.
+// Align data structures for optimal memory transactions where possible.
+```

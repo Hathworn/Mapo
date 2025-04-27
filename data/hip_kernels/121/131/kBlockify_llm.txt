@@ -1,0 +1,4 @@
+// Use shared memory to cache the block of source data for faster access
+// Coalesce memory accesses by having contiguous threads access contiguous memory locations
+// Ensure memory accesses are aligned to reduce access time
+// Consider using warp-level primitives to further optimize memory access patterns if needed

@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier to reduce pointer aliasing and improve performance
+// Align data to warp size for coalesced memory access
+// Use shared memory to cache frequently accessed data and reduce global memory access
+// Optimize loop bounds to minimize divergence and improve load balancing across threads
+// Ensure memory access patterns are coalesced to maximize memory bandwidth
+```

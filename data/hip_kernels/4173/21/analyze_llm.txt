@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access and improve performance
+// Consider padding cache to avoid bank conflicts in shared memory
+// Ensure the input size is a multiple of blockDim.x to avoid handling out-of-bounds threads
+// Use atomic operations cautiously to minimize serialization and contention
+```

@@ -1,0 +1,5 @@
+// Consider increasing the shared memory size if necessary to accommodate more data
+// Align shared memory access by ensuring shared_out_idx matches the warp size
+// Employ loop unrolling to optimize the for loop and reduce instruction overhead
+// Use coalesced memory access pattern for in and out arrays to improve memory bandwidth usage
+// Avoid bank conflicts in shared memory by ensuring proper alignment and padding

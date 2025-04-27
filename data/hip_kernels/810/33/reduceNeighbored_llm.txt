@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses for g_idata and g_odata.
+// Consider shared memory usage to reduce global memory traffic.
+// Ensure all active threads contribute early before synchronization.
+// Unroll the last few iterations of the reduction loop to reduce overhead.
+// Align memory accesses to improve throughput.
+```

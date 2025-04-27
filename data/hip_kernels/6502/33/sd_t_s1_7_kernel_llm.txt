@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache inputs like t2_d to reduce global memory accesses
+// Implement coalesced global memory access pattern for v2_d to improve throughput
+// Use grid-stride loop to enhance parallel execution 
+// Optimize loop order for better memory access pattern and cache utilization
+// Synchronize threads after loading shared memory to ensure all threads have consistent data
+```

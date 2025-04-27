@@ -1,0 +1,8 @@
+```
+// Use shared memory to store reusable data and reduce global memory access.
+// Coalesce memory accesses by aligning threads with consecutive memory locations.
+// Ensure memory accesses are aligned to improve access speed.
+// Minimize the use of atomic operations where possible due to potential contention and delays.
+// Consider loop unrolling for smaller loop trip counts to reduce loop overhead.
+// Use vectorized memory operations for memory reads/writes where data layout allows.
+```

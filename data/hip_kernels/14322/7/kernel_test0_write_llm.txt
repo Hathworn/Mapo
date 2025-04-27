@@ -1,0 +1,5 @@
+// Use shared memory or registers to cache data to reduce global memory accesses.
+// Loop unrolling can be applied to reduce branch overhead and improve pipeline throughput.
+// Ensure coalesced memory accesses to optimize read/write operations on global memory.
+// Adjust the granularity of memory accesses to match the warp size for better efficiency.
+// Consider using atomic operations for synchronization to enhance parallel processing.

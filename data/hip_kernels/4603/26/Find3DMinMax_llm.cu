@@ -1,0 +1,90 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void Find3DMinMax(int *d_Result, float *d_Data1, float *d_Data2, float *d_Data3, int width, int height) {
+    // Data cache
+    __shared__ float data1[3 * (MINMAX_SIZE + 2)];
+    __shared__ float data2[3 * (MINMAX_SIZE + 2)];
+    __shared__ float data3[3 * (MINMAX_SIZE + 2)];
+    __shared__ float ymin1[(MINMAX_SIZE + 2)];
+    __shared__ float ymin2[(MINMAX_SIZE + 2)];
+    __shared__ float ymin3[(MINMAX_SIZE + 2)];
+    __shared__ float ymax1[(MINMAX_SIZE + 2)];
+    __shared__ float ymax2[(MINMAX_SIZE + 2)];
+    __shared__ float ymax3[(MINMAX_SIZE + 2)];
+
+    // Current tile and apron limits, relative to row start
+    const int tx = threadIdx.x;
+    const int xStart = blockIdx.x * MINMAX_SIZE;
+    const int xEnd = xStart + MINMAX_SIZE - 1;
+    const int xReadPos = xStart + tx - WARP_SIZE;
+    const int xWritePos = xStart + tx;
+    const int xEndClamped = min(xEnd, width - 1);
+    const int memWid = MINMAX_SIZE + 2;
+
+    int memPos0 = 0, memPos1 = 0, yq = 0;
+    unsigned int output = 0;
+    for (int y = 0; y < 34; y++) {
+        output >>= 1;
+        int memPos = yq * memWid + tx;
+        int yp = 32 * blockIdx.y + y - 1;
+        yp = max(yp, 0);
+        yp = min(yp, height - 1);
+        int readStart = yp * width;
+
+        // Load data into shared memory
+        if (tx >= (WARP_SIZE - 1) && xReadPos < width) {
+            float d1 = (xReadPos >= 0) ? d_Data1[readStart + xReadPos] : 0.0f;
+            float d2 = (xReadPos >= 0) ? d_Data2[readStart + xReadPos] : 0.0f;
+            float d3 = (xReadPos >= 0) ? d_Data3[readStart + xReadPos] : 0.0f;
+            data1[memPos] = d1;
+            data2[memPos] = d2;
+            data3[memPos] = d3;
+        }
+        __syncthreads();
+
+        // Compute min and max
+        if (y > 1 && tx < memWid) {
+            float min1 = fminf(data1[memPos0], fminf(data1[memPos1], data1[memPos]));
+            float min2 = fminf(data2[memPos0], fminf(data2[memPos1], data2[memPos]));
+            float min3 = fminf(data3[memPos0], fminf(data3[memPos1], data3[memPos]));
+            float max1 = fmaxf(data1[memPos0], fmaxf(data1[memPos1], data1[memPos]));
+            float max2 = fmaxf(data2[memPos0], fmaxf(data2[memPos1], data2[memPos]));
+            float max3 = fmaxf(data3[memPos0], fmaxf(data3[memPos1], data3[memPos]));
+
+            ymin1[tx] = min1;
+            ymin2[tx] = fminf(min1, fminf(min2, min3));
+            ymin3[tx] = min3;
+            ymax1[tx] = max1;
+            ymax2[tx] = fmaxf(max1, fmaxf(max2, max3));
+            ymax3[tx] = max3;
+        }
+        __syncthreads();
+
+        // Final result computation
+        if (y > 1 && tx < MINMAX_SIZE && xWritePos <= xEndClamped) {
+            float minv = fminf(ymin2[tx], fminf(ymin2[tx + 2], ymin1[tx + 1]));
+            minv = fminf(minv, fminf(ymin3[tx + 1], fminf(data2[memPos0 + 1], data2[memPos + 1])));
+            minv = fminf(minv, d_ConstantA[1]);
+
+            float maxv = fmaxf(ymax2[tx], fmaxf(ymax2[tx + 2], ymax1[tx + 1]));
+            maxv = fmaxf(maxv, fmaxf(ymax3[tx + 1], fmaxf(data2[memPos0 + 1], data2[memPos + 1])));
+            maxv = fmaxf(maxv, d_ConstantA[0]);
+
+            if (data2[memPos1 + 1] < minv || data2[memPos1 + 1] > maxv)
+                output |= 0x80000000;
+        }
+        __syncthreads();
+
+        // Update memory positions
+        memPos0 = memPos1;
+        memPos1 = memPos;
+        yq = (yq < 2) ? yq + 1 : 0;
+    }
+
+    // Write output
+    if (tx < MINMAX_SIZE && xWritePos < width) {
+        int writeStart = blockIdx.y * width + xWritePos;
+        d_Result[writeStart] = output;
+    }
+}

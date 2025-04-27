@@ -1,0 +1,9 @@
+```
+// Use coalesced accesses to load from global memory into shared memory.
+// Pad shared memory allocation to prevent bank conflicts where possible.
+// Consider using __device__ functions for repeated boundary condition logic.
+// Evaluate if loop unrolling can provide performance benefits.
+// If N is not a multiple of block size, handle edge cases to avoid out-of-bounds access.
+// Optimize shared memory usage to minimize __syncthreads overhead.
+// Ensure global memory writes in c[idx] are coalesced for improved performance.
+```

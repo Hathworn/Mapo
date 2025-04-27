@@ -1,0 +1,5 @@
+// Consider using __restrict__ keyword for pointers to enable compiler optimizations
+// Use shared memory to cache frequently accessed inputs or diffInputs
+// Access memory in coalesced fashion to minimize latency
+// Explore using warp-level primitives for reduction where applicable
+// Ensure memory alignment for float to reduce unaligned access penalties

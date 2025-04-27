@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to minimize global memory transactions
+// Use shared memory if further optimization is needed for reuse of input data
+// Consider loop unrolling if the logic inside the if branch can be refactored to reduce branch divergence
+// Make use of constant memory for 'gray_value' if it is not frequently modified and is accessed by many threads
+// Align data to 128-bit boundaries if possible to improve memory throughput
+```

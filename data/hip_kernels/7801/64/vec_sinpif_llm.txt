@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Ensure data fit into shared memory to avoid bank conflicts
+// Use __syncthreads() to synchronize threads after loading to shared memory
+// Consider adjusting block size to optimize shared memory usage
+// Consider padding in shared memory to avoid bank conflicts
+```

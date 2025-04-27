@@ -1,0 +1,6 @@
+// Optimize global memory access by calculating index using 3D thread/block index for efficient coalescing
+// Ensure input and output data are aligned to improve memory access patterns
+// Consider leveraging shared memory for frequently accessed data within a block
+// Minimize divergent branches for warp efficiency
+// Prefetch data to reduce latency
+// Optimize memory access and reduce bank conflicts

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Load data into shared memory to minimize redundant global memory accesses
+// Use __syncthreads() to ensure all threads complete shared memory loading before computation
+// Perform computation using shared memory to maximize data reuse
+// Write result back to global memory once computation is complete
+```

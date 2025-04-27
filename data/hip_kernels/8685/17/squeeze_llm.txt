@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring B[index] is aligned
+// Utilize shared memory to reduce global memory latency
+// Pre-fetch B[index] into a register for repeated usage
+// Ensure warp divergence is minimized by having uniform conditions
+```

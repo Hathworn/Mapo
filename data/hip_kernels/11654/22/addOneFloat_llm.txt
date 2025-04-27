@@ -1,0 +1,5 @@
+// Consider coalesced memory access for vals array 
+// Avoid type conversion inside the kernel 
+// Use shared memory if data reuse is high 
+// Ensure enough occupancy by adjusting block and grid sizes 
+// Check for bank conflicts if using shared memory

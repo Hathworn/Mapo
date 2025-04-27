@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Utilize shared memory to store data locally within blocks for faster access.
+// Minimize bank conflicts by ensuring proper access patterns when using shared memory.
+// Consider loop unrolling in the for-loops to reduce loop overhead and enhance performance.
+// Use the __restrict__ keyword for pointer parameters if aliasing can be ruled out to enable further compiler optimizations.
+// Ensure occupancy is optimized by balancing the number of threads per block with the available shared memory and registers.
+// Reduce thread divergence by avoiding branches that separate threads within the same warp.
+```

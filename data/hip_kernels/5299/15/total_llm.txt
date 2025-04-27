@@ -1,0 +1,8 @@
+```c
+// Consider using coalesced memory access by aligning input data to warp boundaries
+// Use bank conflict-free access patterns for shared memory
+// Optimize block size to maximize occupancy based on device-specific characteristics
+// Prefetch data where possible to hide global memory latency
+// Minimize unnecessary __syncthreads() calls to reduce synchronization overhead
+// Evaluate performance impact of using atomic operations for final output reduction
+```

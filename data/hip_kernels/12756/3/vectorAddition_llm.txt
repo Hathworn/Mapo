@@ -1,0 +1,7 @@
+```c
+// Consider increasing shared memory usage when the block allows more threads
+// Use __ldg() to load global memory more efficiently if data usage patterns allow
+// Make sure the shared memory arrays are optimally sized to avoid bank conflicts
+// Ensure __syncthreads() is used appropriately to prevent race conditions
+// Adopt larger blockSize if shared memory usage limits are not exceeded
+```

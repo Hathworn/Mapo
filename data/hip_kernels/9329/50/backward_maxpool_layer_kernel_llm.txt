@@ -1,0 +1,10 @@
+```cpp
+// Consider using shared memory more effectively by minimizing bank conflicts
+// Optimize memory coalescing by aligning data access patterns to memory boundaries
+// Ensure minimal divergence within warp execution to optimize throughput
+// Reduce the use of atomic operations where possible to decrease contention
+// Implement loop unrolling to improve performance through reduced loop overhead
+// Investigate using double buffering techniques for overlapping computation and data transfer
+// Prefetch data in registers to decrease latency and increase computational density
+// Consider split-k strategies for better load balancing across threads
+```

@@ -1,0 +1,6 @@
+```
+// Use coalesced access for reading from g_idata to improve memory throughput
+// Consider padding shared memory to avoid bank conflicts in temp array
+// Ensure that global memory writes to g_odata are coalesced
+// Evaluate loop unrolling for the scan loop to potentially improve performance
+```

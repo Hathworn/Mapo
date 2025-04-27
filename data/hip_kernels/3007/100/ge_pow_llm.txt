@@ -1,0 +1,6 @@
+// Ensure coalesced memory access by aligning data structures appropriately
+// Use shared memory if possible to reduce global memory access time
+// Minimize warp divergence by ensuring control structures are aligned with warp boundaries
+// Prefer using registers for frequently accessed variables to reduce memory latency
+// Consider loop unrolling for loops within the kernel to improve instruction throughput
+// Use memory prefetching techniques to hide memory latency where applicable

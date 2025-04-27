@@ -1,0 +1,8 @@
+```
+// Load frequently accessed data into shared memory to reduce global memory access latency
+// Consider using vectorized loads if data is aligned to maximize memory throughput
+// Use __ldg() to cache read-only global memory accesses for better performance
+// Evaluate using warp shuffle operations to reduce shared memory usage when possible
+// Check for memory coalescing opportunities to optimize global memory accesses
+// Experiment with different block sizes to find the best trade-off between parallelism and memory bandwidth usage
+```

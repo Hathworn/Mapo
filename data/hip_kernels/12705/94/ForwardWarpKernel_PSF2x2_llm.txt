@@ -1,0 +1,8 @@
+```
+// Optimize memory access by coalescing reads from arrays u, v, and src
+// Consider using shared memory to buffer local tiles of input data for coalesced access
+// Use __syncthreads() to synchronize threads when necessary
+// Combine operations to reduce redundant calculations, especially for weights and offsets
+// Experiment with different block and grid sizes to achieve better occupancy and performance
+// Minimize use of atomic operations where possible, explore warp-based reduction techniques
+```

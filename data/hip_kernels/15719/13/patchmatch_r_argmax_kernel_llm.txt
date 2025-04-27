@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory accesses for frequently used data.
+// Preload data from global memory to registers or shared memory where appropriate.
+// Align data structures in memory to optimize memory bandwidth and reduce cache line splits.
+// Employ loop unrolling techniques to minimize loop overhead and improve instruction throughput.
+// Use warp-synchronous programming to take advantage of warp-wide operations.
+// Ensure memory coalescing by aligning memory accesses within the same warp.
+// Avoid bank conflicts when using shared memory to maximize efficiency.
+```

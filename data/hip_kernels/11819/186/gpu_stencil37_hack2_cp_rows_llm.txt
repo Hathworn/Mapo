@@ -1,0 +1,9 @@
+```
+// Optimize memory coalescing by ensuring global memory accesses are contiguous for each warp
+// Use shared memory to reduce frequent global memory access within the kernel
+// Minimize register pressure by reducing the number of variables and optimizing their use
+// Consider loop unrolling for the for loop to improve performance by reducing loop overhead
+// Avoid divergent branching by ensuring conditions are warp-friendly
+// Ensure __syncthreads() is used effectively to synchronize threads when necessary
+// Optimize memory accesses such that they follow the principles of memory hierarchy for faster access
+```

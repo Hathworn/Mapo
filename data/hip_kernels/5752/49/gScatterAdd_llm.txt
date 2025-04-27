@@ -1,0 +1,9 @@
+```
+// Use shared memory for sparse indices to minimize global memory access
+// Load data into shared memory in a coalesced manner if possible
+// Optimize shared memory usage to avoid bank conflicts
+// Use __syncthreads() to ensure all threads have loaded data before proceeding
+// Place condition checks to avoid unnecessary branching
+// Consider loop unrolling if indices are accessed in a predictable pattern
+// Ensure the atomic operation is essential to prevent write conflicts
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory for better memory coalescing and reducing global memory access latency
+// Load entire working set into shared memory before processing to optimize reads
+// Utilize __syncthreads() to ensure all threads have loaded data into shared memory before use
+// Exit loop early when condition is met to reduce unnecessary computations
+```

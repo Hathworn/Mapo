@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns for gradInput_data and gradOutput_data
+// Explore shared memory to cache repeated reads from global memory
+// Implement double buffering for hiding memory latency
+// Ensure alignment of data to improve memory access efficiency
+// Use vectorized data types for memory operations
+// Minimize bank conflicts when utilizing shared memory
+// Prefetch data to reduce access latency where possible
+```

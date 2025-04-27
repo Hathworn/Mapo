@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory for input windows as well to increase data reuse.
+// Minimize global memory accesses in the loop summing weighted inputs by using shared memory.
+// Use warp-level primitives for parallel reduction to improve efficiency.
+// Ensure proper memory alignment for coalesced accesses when reading from input and writing to output.
+// Align computation of indices and centroids to reduce divergence.
+// Consider using float2 or float4 for loading/writing to further optimize memory access patterns.
+```

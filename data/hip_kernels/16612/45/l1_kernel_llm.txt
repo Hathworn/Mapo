@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive elements in 'pred', 'truth', 'delta', and 'error'
+// Avoid branching where possible to enhance performance; consider using intrinsics and arithmetic operations
+// Utilize shared memory if data reuse within a block is needed to further improve access times
+// Ensure memory accesses are properly aligned to improve cache utilization and bandwidth efficiency
+// Check occupancy and ensure the number of threads per block is optimal for the specific GPU architecture
+// Consider loop unrolling if the operation involves repetitive instructions on data
+```

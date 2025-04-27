@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses if possible
+// Consider using warp shuffle functions to optimize intra-warp communication
+// Evaluate if using a bigger block size would enhance memory throughput
+// Profile memory accesses to ensure optimal coalescing

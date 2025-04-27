@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access for z1, z2, and f to improve memory bandwidth utilization.
+// Use shared memory to load blocks of f into shared memory to reduce global memory accesses.
+// Examine if loop unrolling would benefit the computation of a and b when calculating the gradient.
+// Ensure the index calculations (px, py, idx) are optimal to avoid redundant computations.
+// Consider using texture memory for read-only data like f to take advantage of cached reads.
+```

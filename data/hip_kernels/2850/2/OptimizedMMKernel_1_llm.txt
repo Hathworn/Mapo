@@ -1,0 +1,6 @@
+```c
+// Align data access patterns to optimize for memory coalescing
+// Use __syncthreads() to ensure all threads have completed loading tiles
+// Unroll loops to enhance performance by reducing loop overhead
+// Ensure synchronization after computation to maintain data consistency
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to point_cloud to improve memory throughput.
+// Optimize transformation calculations by using shared memory if possible to cache R and T matrices for reuse among threads.
+// Suggest using __ldg for constant memory access to R and T matrices to improve read efficiency.
+// Check for opportunities to minimize bank conflicts when using shared memory.
+// Ensure depth_image is allocated to avoid bank conflicts and optimize atomic operations.
+```

@@ -1,0 +1,6 @@
+```
+// Ensure global memory is accessed coalesced by using contiguous INCX values
+// Use shared memory for frequently accessed data to reduce global memory access
+// Consider warp-level reductions if ALPHA is computed or modified within the kernel
+// Optimize occupancy by adjusting block size and grid size based on the GPU architecture
+```

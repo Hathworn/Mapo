@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory accesses
+// Consider using warp-level primitives for better parallel reduction
+// Optimize block size to ensure full occupancy of GPU hardware
+// Use asynchronous data transfer to hide memory latency for input/binary arrays

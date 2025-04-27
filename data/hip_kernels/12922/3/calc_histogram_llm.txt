@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses.
+// Minimize atomic operations by accumulating results in shared memory first.
+// Ensure proper initialization of shared memory to avoid race conditions.
+// Consider unrolling loops if the number of colors (COLORS) is known and small.
+// Align memory accesses to increase coalescing and reduce bank conflicts.

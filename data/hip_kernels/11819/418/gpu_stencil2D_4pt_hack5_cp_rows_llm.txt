@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring threads access contiguous memory addresses.
+// Ensure memory alignment for global memory accesses to improve performance.
+// Use shared memory effectively to minimize global memory accesses within the kernel.
+// Ensure shared memory access patterns minimize bank conflicts.
+// Opt for fewer __syncthreads() calls, only when necessary for synchronizing thread progress.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses by storing submatrices.
+// Ensure enough threads per block to efficiently utilize shared memory.
+// Synchronize threads after loading shared memory to ensure data consistency.
+// Consider optimizing BLOCK_SIZE for maximum occupancy on the target GPU.
+// Minimize bank conflicts in shared memory by adjusting memory access patterns.
+// Ensure memory coalescing by aligning global memory accesses.
+```

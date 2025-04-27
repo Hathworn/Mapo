@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses to improve memory bandwidth utilization.
+// Consider using float2 or float4 loads for aligned data to reduce load instructions.
+// Optimize shared memory usage by minimizing bank conflicts.
+// Try to reduce the __syncthreads() calls where possible to improve warp efficiency.
+// Align data structures to match memory architecture for better performance.
+```

@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access to improve global memory throughput.
+// Minimize stride in memory access patterns to reduce memory divergence.
+// Use shared memory to lower global memory access latency if data reuse is possible.
+// Check alignment of writes to prevent performance penalties.
+// Optimize block size to ensure a good balance between occupancy and latency hiding.
+// Avoid bank conflicts for shared memory if applied.
+```

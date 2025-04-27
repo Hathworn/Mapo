@@ -1,0 +1,6 @@
+```cpp
+// Use x instead of tx for boundary check to minimize warp divergence
+// For unaligned memory access, manually setting memory should be handled efficiently
+// Reduce loop iterations, use d >>= 1 for efficient block-wide reduction
+// Consider using warp-level primitives for faster reductions
+```

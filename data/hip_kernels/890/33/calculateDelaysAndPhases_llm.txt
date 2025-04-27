@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory access by coalescing reads and writes where possible.
+// Utilize shared memory if multiple threads access the same data to reduce global memory transactions.
+// Minimize divergence by ensuring threads within a warp follow the same execution path as much as possible.
+// Consider using constant memory for any parameters that are read-only and frequently accessed.
+// Ensure proper memory alignment for floating-point operations to improve access speed and efficiency.
+// Avoid type conversions in performance-critical sections to minimize overhead.
+```

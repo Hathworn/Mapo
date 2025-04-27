@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced access patterns
+// Use __restrict__ pointers to help the compiler with alias analysis
+// Consider using float4 or float2 for vectorized memory operations
+// Ensure shared memory usage is within the resource limits
+// Utilize more warps for faster reduction to improve occupancy
+```

@@ -1,0 +1,8 @@
+```
+// Use optimized memory access patterns for better cache utilization
+// Consider using shared memory to reduce global memory accesses
+// Align data structures to warp boundaries to enhance coalescing
+// Minimize divergent branches to reduce warp execution penalties
+// Use loop unrolling if applicable to improve instruction throughput
+// Analyze the impact of varying block size and grid size for performance tuning
+```

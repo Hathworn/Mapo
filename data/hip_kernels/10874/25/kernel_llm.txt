@@ -1,0 +1,7 @@
+```
+// Use a shared memory buffer for intermediate calculations if possible to minimize global memory access.
+// Consider using texture or surface memory for read-only data to leverage caching benefits.
+// Ensure coalesced memory access by aligning memory accesses with warp boundaries.
+// Avoid bank conflicts in shared memory access by ensuring memory access patterns are optimal.
+// Use asynchronous memory copies where applicable to overlap data transfer and computation.
+```

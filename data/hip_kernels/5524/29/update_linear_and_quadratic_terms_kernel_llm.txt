@@ -1,0 +1,8 @@
+```
+// Prefetch cur_weight to reduce global memory access
+// Compute new_scale outside the loop to avoid redundant calculations
+// Use the ternary operator to simplify new_scale computation
+// Optimize loop unrolling with a consistent increment pattern
+// Simplify quadratic index calculation with precalculated common expressions
+// Minimize divergence by reducing condition checks for atomic operations
+```

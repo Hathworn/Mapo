@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for initial loads to reduce global memory transactions
+// Ensure coalesced global memory accesses by aligning data accesses to the warp size
+// Use '__syncthreads()' only when necessary to minimize synchronization overhead
+// Leverage shared memory bank conflicts to optimize memory access patterns
+// Evaluate the need to use 'volatile' for warp-level reduction to guarantee correct memory access behaviour
+```

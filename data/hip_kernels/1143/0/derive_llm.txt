@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data blocks to reduce global memory access cost.
+// Coalesce global memory access by ensuring that threadId.x accesses contiguous memory locations.
+// Use loop unrolling techniques if suitable to optimize arithmetic operations within the kernel.
+// Ensure memory alignment to enhance memory access efficiency if data sizes and alignments allow.
+// Minimize branch divergence by structuring conditions that ensure threads within a warp follow the same execution path.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access
+// Minimize divergence by ensuring each warp processes contiguous elements
+// Allocate and use registers efficiently for scalar comparison
+// Employ vectorized memory loads if applicable to improve bandwidth utilization
+// Unroll loop to better utilize resources and improve throughput
+// Ensure memory alignment to maximize coalescing and reduce latency
+```

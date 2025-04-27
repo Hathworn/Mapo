@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to reduce global memory accesses for partial sums.
+// Implement loop unrolling to reduce loop overhead and improve performance.
+// Use warp-level primitives like __shfl_down to optimize reduction within a warp.
+```

@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by having consecutive threads access consecutive memory addresses.
+// Use shared memory if data is reused by multiple threads to reduce global memory bandwidth.
+// Minimize divergent branches within the kernel by ensuring that 'if' conditions are uniformly met by threads within a warp.
+// Consider using texture memory if there are spatial locality and data reuse, which can provide caching benefits.
+```

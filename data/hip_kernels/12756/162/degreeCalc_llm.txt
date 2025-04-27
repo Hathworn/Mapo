@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for reading array elements
+// Use vectorized loads if possible for the array
+// Minimize branch divergence in the loops
+// Pre-fetch data to registers when loading vertexArray and neighbourArray
+// Use shared memory for neighbourArray to optimize memory access
+// Explore loop unrolling for degreeCount calculation
+// Align memory accesses to improve warp efficiency when accessing degreeCount
+```

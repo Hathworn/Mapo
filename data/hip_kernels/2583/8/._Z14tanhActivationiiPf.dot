@@ -1,0 +1,18 @@
+digraph "CFG for '_Z14tanhActivationiiPf' function" {
+	label="CFG for '_Z14tanhActivationiiPf' function";
+
+	Node0x5e2d800 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %14 = getelementptr i8, i8 addrspace(4)* %5, i64 6\l  %15 = bitcast i8 addrspace(4)* %14 to i16 addrspace(4)*\l  %16 = load i16, i16 addrspace(4)* %15, align 2, !range !4, !invariant.load !5\l  %17 = zext i16 %16 to i32\l  %18 = mul i32 %13, %17\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %20 = add i32 %18, %19\l  %21 = icmp slt i32 %12, %0\l  %22 = icmp slt i32 %20, %1\l  %23 = select i1 %21, i1 %22, i1 false\l  br i1 %23, label %24, label %48\l|{<s0>T|<s1>F}}"];
+	Node0x5e2d800:s0 -> Node0x5e31280;
+	Node0x5e2d800:s1 -> Node0x5e31310;
+	Node0x5e31280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%24:\l24:                                               \l  %25 = mul nsw i32 %20, %0\l  %26 = add nsw i32 %25, %12\l  %27 = sext i32 %26 to i64\l  %28 = getelementptr inbounds float, float addrspace(1)* %2, i64 %27\l  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %30 = fmul contract float %29, 0x3FE5555560000000\l  %31 = fpext float %30 to double\l  %32 = fcmp contract ogt double %31, 4.970000e+00\l  br i1 %32, label %46, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5e31280:s0 -> Node0x5e30660;
+	Node0x5e31280:s1 -> Node0x5e306f0;
+	Node0x5e306f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%33:\l33:                                               \l  %34 = fcmp contract olt double %31, -4.970000e+00\l  br i1 %34, label %46, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5e306f0:s0 -> Node0x5e30660;
+	Node0x5e306f0:s1 -> Node0x5e32850;
+	Node0x5e32850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  %36 = fmul contract float %30, %30\l  %37 = fadd contract float %36, 3.780000e+02\l  %38 = tail call float @llvm.fma.f32(float %36, float %37, float 1.723500e+04)\l  %39 = tail call float @llvm.fma.f32(float %36, float %38, float 1.351350e+05)\l  %40 = fmul contract float %30, %39\l  %41 = tail call float @llvm.fma.f32(float %36, float 2.800000e+01, float\l... 3.150000e+03)\l  %42 = tail call float @llvm.fma.f32(float %36, float %41, float 6.237000e+04)\l  %43 = tail call float @llvm.fma.f32(float %36, float %42, float 1.351350e+05)\l  %44 = fdiv contract float %40, %43\l  %45 = fmul contract float %44, 0x3FFB745380000000\l  br label %46\l}"];
+	Node0x5e32850 -> Node0x5e30660;
+	Node0x5e30660 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%46:\l46:                                               \l  %47 = phi float [ %45, %35 ], [ 0x3FFB745380000000, %24 ], [\l... 0xBFFB745380000000, %33 ]\l  store float %47, float addrspace(1)* %28, align 4, !tbaa !7\l  br label %48\l}"];
+	Node0x5e30660 -> Node0x5e31310;
+	Node0x5e31310 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%48:\l48:                                               \l  ret void\l}"];
+}

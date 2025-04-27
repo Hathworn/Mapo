@@ -1,0 +1,9 @@
+```cpp
+// Consider coalescing global memory access to optimize memory bandwidth utilization
+// Use float2 or float4 types to load or store multiple values in a single transaction
+// Check for shared memory bank conflicts, as NUMTHREADS is a power of two
+// Register usage can be balanced with shared memory usage to optimize performance
+// Examine the use of __syncthreads() for possible optimizations or elimination if safe
+// Assess potential use of warp-level primitives to optimize reduction
+// Analyze na and nb to ensure efficient grid size configuration for full occupancy
+```

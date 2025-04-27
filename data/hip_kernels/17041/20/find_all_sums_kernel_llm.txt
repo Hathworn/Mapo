@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for neighbor and node_weight arrays to optimize bandwidth utilization.
+// Use shared memory for temporary storage to reduce redundant global memory accesses.
+// Opt for loop unrolling in the accumulation loop to optimize arithmetic operations.
+// Try reducing synchronization overhead by grouping threads that have active nodes.
+// Analyze and minimize divergent executions paths especially with conditional checks.
+```

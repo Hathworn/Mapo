@@ -1,0 +1,9 @@
+```cpp
+// Consider increasing the unrolling factor if register usage allows
+// Use __restrict__ to potentially enable memory optimizations if applicable
+// Ensure coalesced access by striding threads through memory
+// Investigate the use of wider types (such as float4) for memory transactions
+// Align shared memory accesses to avoid bank conflicts
+// Optimize the reduction with warp-level primitives if possible
+// Consider occupancy settings to balance between resource utilization
+```

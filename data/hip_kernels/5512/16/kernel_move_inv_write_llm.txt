@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to improve bandwidth utilization
+// Ensure ptr is aligned to 4 bytes to prevent misaligned memory accesses
+// Use shared memory to reduce redundant global memory accesses if pattern is used repetitively
+// Minimize branching by reordering code to improve warp execution efficiency
+// Evaluate if memory access patterns are optimal for cache utilization
+// Adjust block size and thread count for optimal occupancy and throughput
+```

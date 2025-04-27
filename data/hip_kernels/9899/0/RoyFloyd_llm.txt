@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache matrix[k * N + j] within each block for improved access speed.
+// Use __restrict__ qualifier for the matrix pointer to potentially help the compiler with optimizations.
+// Minimize divergent branching by ensuring warp-aligned thread execution when checking boundaries.
+// Increase the number of threads per block to maximize occupancy if the current configuration allows.
+```

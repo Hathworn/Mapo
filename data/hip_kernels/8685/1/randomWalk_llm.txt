@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Initialize hiprand state outside the loop to avoid redundant operations
+// Precompute sqrtFactor and driftFactor to reduce calculations in the loop
+// Use crossTimeIndex directly without additional calculations for starting index
+// Reduce branching by checking thresholds only when necessary
+```

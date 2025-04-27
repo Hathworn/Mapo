@@ -1,0 +1,4 @@
+// Efficient boundary check to reduce thread divergence.
+// Skip masked elements to avoid unnecessary computation.
+// Precompute division for inv_eta_p to save computation time in the loop.
+// Precompute division for ase to save computation time in the loop.

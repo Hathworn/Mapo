@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve memory access patterns and reduce global memory latency
+// Coalesce global memory access for the arrays 'a', 'b', and 'c' to improve bandwidth utilization
+// Consider using vectorized loads and stores if data alignment permits
+// Ensure that memory access is aligned to avoid performance penalties
+// Minimize divergent branches within warps for optimal parallel execution
+```

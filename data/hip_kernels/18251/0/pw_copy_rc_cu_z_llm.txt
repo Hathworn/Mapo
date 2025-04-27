@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory reads.
+// Try coalescing memory accesses to improve memory bandwidth utilization.
+// Ensure that 'n' is a multiple of blockDim.x for optimal performance.
+// Use __restrict__ keyword for pointers if the data does not alias.
+// Experiment with different block sizes to optimize performance for hardware.
+```

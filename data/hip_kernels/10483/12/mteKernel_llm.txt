@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory locations.
+// Minimize shared memory usage and bank conflicts to optimize memory performance.
+// Reduce the number of calls to __syncthreads() to improve performance.
+// Ensure that memory reads and writes are coalesced to improve global memory access efficiency.
+// Use loop unrolling techniques to reduce loop overheads where possible.
+// Optimize the use of registers by minimizing live variables at any given time.
+// Consider the use of constant memory for speciesParams to leverage broadcast efficiency.
+// Align data structures to avoid misaligned memory accesses which can reduce memory bandwidth efficiency.
+```

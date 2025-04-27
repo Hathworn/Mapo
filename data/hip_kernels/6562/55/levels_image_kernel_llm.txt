@@ -1,0 +1,6 @@
+```
+// Coalesce global memory accesses for the image array to improve memory bandwidth utilization.
+// Minimize the use of pow and fmax/fmin by precomputing values where possible to reduce computational overhead.
+// Consider replacing branches in hsv_to_rgb_kernel with a lookup table if the range of h is finite and small.
+// Use shared memory for repeated accesses to rand array values to reduce global memory traffic.
+```

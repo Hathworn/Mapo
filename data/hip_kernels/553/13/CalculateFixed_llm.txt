@@ -1,0 +1,8 @@
+```c
+// Use float4 for vectorized memory access to reduce memory transactions
+// Preload mask and target values into shared memory if possible to reduce global memory access
+// Consider coalescing global memory access for target and background arrays
+// Use texture memory for read-only data like background and mask when possible 
+// Ensure occupancy is maximized by choosing appropriate block size based on GPU capabilities
+// Optimize register usage by minimizing temporary variables
+```

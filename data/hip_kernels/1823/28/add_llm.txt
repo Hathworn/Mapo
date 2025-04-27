@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access
+// Consider coalescing memory access for `a[tid]` and `b[tid]`
+// Optimize for occupancy by adjusting block and grid dimensions

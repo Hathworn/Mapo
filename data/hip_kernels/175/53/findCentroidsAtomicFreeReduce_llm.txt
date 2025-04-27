@@ -1,0 +1,8 @@
+```
+// Consider aligning memory access to avoid misaligned reads and writes for better performance.
+// Use coalesced memory accesses when reading centroidMass and centroidCount to maximize memory throughput.
+// Minimize the use of atomic operations by employing warp-level or block-level reduction patterns.
+// Avoid redundant synchronization barriers (__syncthreads()) to reduce overhead and improve performance.
+// Prefer shared memory for intermediate operations to reduce global memory traffic.
+// Evaluate grid and block dimensions to maximize warp utilization and ensure efficient thread usage.
+```

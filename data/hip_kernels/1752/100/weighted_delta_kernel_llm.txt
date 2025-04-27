@@ -1,0 +1,4 @@
+// Consider using shared memory for s[i] to reduce global memory access latency
+// Ensure all data structures are accessed in a coalesced manner to optimize memory bandwidth
+// Prefetch data into registers to minimize global memory access latencies
+// Adjust grid and block dimensions to optimize occupancy and minimize warp divergence

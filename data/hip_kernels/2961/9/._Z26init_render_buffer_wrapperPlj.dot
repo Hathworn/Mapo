@@ -1,0 +1,11 @@
+digraph "CFG for '_Z26init_render_buffer_wrapperPlj' function" {
+	label="CFG for '_Z26init_render_buffer_wrapperPlj' function";
+
+	Node0x4672280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = getelementptr inbounds i8, i8 addrspace(4)* %4, i64 12\l  %10 = bitcast i8 addrspace(4)* %9 to i32 addrspace(4)*\l  %11 = load i32, i32 addrspace(4)* %10, align 4, !tbaa !6\l  %12 = mul i32 %3, %8\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %14 = add i32 %12, %13\l  %15 = udiv i32 %11, %8\l  %16 = mul i32 %15, %8\l  %17 = icmp ugt i32 %11, %16\l  %18 = zext i1 %17 to i32\l  %19 = add i32 %15, %18\l  %20 = mul i32 %19, %8\l  %21 = icmp ult i32 %14, %1\l  br i1 %21, label %22, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4672280:s0 -> Node0x46748a0;
+	Node0x4672280:s1 -> Node0x4674930;
+	Node0x46748a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  %23 = phi i32 [ %26, %22 ], [ %14, %2 ]\l  %24 = zext i32 %23 to i64\l  %25 = getelementptr inbounds i64, i64 addrspace(1)* %0, i64 %24\l  store i64 9223372036854775807, i64 addrspace(1)* %25, align 8, !tbaa !16\l  %26 = add i32 %23, %20\l  %27 = icmp ult i32 %26, %1\l  br i1 %27, label %22, label %28, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x46748a0:s0 -> Node0x46748a0;
+	Node0x46748a0:s1 -> Node0x4674930;
+	Node0x4674930 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%28:\l28:                                               \l  ret void\l}"];
+}

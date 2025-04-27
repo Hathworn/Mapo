@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring sparseIndices is accessed sequentially
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Ensure that denseData is aligned to improve memory bandwidth utilization
+// Minimize divergence by restructuring the branches if possible
+// Use a higher occupancy configuration to fully utilize GPU resources
+```

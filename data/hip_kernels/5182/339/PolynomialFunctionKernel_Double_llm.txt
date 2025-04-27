@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns to optimize global memory transactions
+// Use shared memory to cache input data if multiple accesses are needed, reducing global memory bandwidth
+// Ensure that the number of threads per block is a multiple of 32 to maximize warp efficiency
+// Avoid branch divergence by ensuring all threads within a warp take the same execution path
+```

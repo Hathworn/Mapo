@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring that threads access contiguous memory locations.
+// Use shared memory to store Arr1 data that is repeatedly accessed by threads to reduce global memory accesses.
+// Use __restrict__ keyword for Arr1 and Arr2 pointers to enhance compiler optimization by indicating no aliasing.
+// Ensure the compiler can unroll the loop for better performance by providing possible unroll hints.
+```

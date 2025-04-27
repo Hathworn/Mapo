@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access for t2_d.
+// Ensure coalesced access when loading data into shared memory.
+// Use efficient modular arithmetic for index calculations to save computation.
+// Distribute work among multiple blocks to ensure balanced workload.
+// Loop stride is gridDim.x * blockDim.x to allow each thread to handle multiple indices.
+// Employ conditional statements to prevent out-of-bound memory access.
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced memory access for 'delta'. 
+// Consider using shared memory to store parts of 'delta' that are frequently accessed.
+// Avoid bank conflicts in shared memory if using shared memory for 'delta'.
+// Prefetch 'variance[i]' and 'mean_delta[i]' into registers to minimize global memory access latency.
+// Ensure the 'blockDim.x' is chosen such that it maximizes occupancy while avoiding excessive register usage.
+```

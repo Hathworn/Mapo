@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for dev_chunk if memory access is not coalesced
+// Use __restrict__ for pointers to aid compiler optimizations
+// Unroll the loop to increase instruction throughput
+// Ensure memory accesses are aligned to improve memory access patterns
+// Prefetch data into registers for faster access within the loop
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory for vector_in to reduce global memory access latency.
+// Ensure the shared memory size does not exceed the maximum limit.
+// Consider coalesced access for loading matrix data into the threads.
+// Optimize access pattern to ensure maximum memory coalescing.
+// Reduce unnecessary synchronizations where possible.
+```

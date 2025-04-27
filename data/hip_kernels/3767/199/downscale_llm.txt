@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses to gradInput_data and gradOutput_data for better performance
+// Use shared memory to reduce repeated global memory accesses and minimize memory latency
+// Ensure warp divergence is minimized by aligning loop iterations with warp size
+// Evaluate potential use of asynchronous memory prefetching to optimize memory access patterns
+```

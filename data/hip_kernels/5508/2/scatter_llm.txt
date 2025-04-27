@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for d_in and d_index arrays to improve bandwidth utilization
+// Ensure d_out writes are coalesced to reduce memory transaction overhead
+// Utilize shared memory to further reduce global memory access if applicable
+// Minimize bank conflicts if shared memory is used
+```

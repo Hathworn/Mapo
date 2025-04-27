@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by using thread and block indices efficiently
+// Utilize shared memory if possible to store intermediate values for reduction in global memory accesses
+// Precompute and reuse common expressions within the kernel to reduce redundant calculations
+// Use appropriate mathematical functions to minimize precision errors
+// Leverage stream or asynchronous memory operations for overlapping computations and data transfers

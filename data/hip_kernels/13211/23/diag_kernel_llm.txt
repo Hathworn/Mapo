@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache elements during kernel execution
+// Consider coalesced memory access to improve memory throughput
+// Optimize block size for optimal occupancy and performance
+// Use __restrict__ keyword to potentially improve load/store efficiency
+// Prefetch data into registers to reduce memory latency
+// Minimize branch divergence by restructuring the control flow if necessary
+```

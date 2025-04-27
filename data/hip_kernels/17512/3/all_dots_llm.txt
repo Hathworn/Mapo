@@ -1,0 +1,7 @@
+```
+// Consider coalesced global memory accesses to improve memory throughput
+// Minimize shared memory usage if possible to increase occupancy
+// Ensure memory accesses do not exceed 32 threads per warp to avoid bank conflicts
+// Check the possibility of using vectorized loads/stores for data_dots and centroid_dots
+// Adjust block and grid dimensions for optimal occupancy and performance
+```

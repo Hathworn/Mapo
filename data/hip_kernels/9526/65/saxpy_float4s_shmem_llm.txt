@@ -1,0 +1,8 @@
+```
+// Optimize access pattern using float4 shared memory
+// Use __syncthreads() to ensure shared memory is ready
+// Coalesced memory access for reading from global memory
+// Ensure all threads have loaded their data with __syncthreads()
+// Perform SAXPY operation using vectorized computation
+// Coalesced memory write to global memory
+```

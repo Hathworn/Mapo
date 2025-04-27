@@ -1,0 +1,9 @@
+```cpp
+// Cache scale factor to reduce repeated calculations
+// Use registers for loop invariants for efficiency
+// Consider coalesced memory accesses for gradOutput_data
+// Minimize global memory accesses by using shared memory if applicable
+// Ensure memory access patterns are optimized for the GPU architecture
+// Utilize __restrict__ keyword for pointer declarations if applicable
+// Optimize thread block size to hide latency and maximize occupancy
+```

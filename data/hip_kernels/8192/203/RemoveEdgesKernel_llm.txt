@@ -1,0 +1,4 @@
+// Consider using shared memory to cache connection and age data
+// Use atomic operations to safely increment activityFlag across threads
+// Minimize divergence by restructuring conditional statements for activeConnections checks
+// Opt for coalesced memory access pattern for connection and age arrays

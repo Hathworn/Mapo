@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Allocate shared memory with padding to avoid bank conflicts
+// Ensure indices are correctly transposed for output
+// Check bounds to prevent out-of-range memory access
+// Synchronize threads before accessing shared memory to ensure data consistency

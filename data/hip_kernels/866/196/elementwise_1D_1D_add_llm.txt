@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache input data for faster access
+// Consider increasing the block size for better occupancy
+// Use __restrict__ qualifiers for pointers to aid compiler optimization
+// Align memory access patterns to improve coalesced memory access
+// Prefetch data into registers if possible to minimize latency
+```

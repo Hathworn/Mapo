@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ pointers to improve memory access efficiency.
+// Ensure shared memory allocation size matches the required number of elements.
+// Try partitioning shared memory usage to reduce bank conflicts.
+// Use __ldg() for read-only global memory reads to optimize cache use.
+// Use loop unrolling in warp-level reduction for better performance.
+```

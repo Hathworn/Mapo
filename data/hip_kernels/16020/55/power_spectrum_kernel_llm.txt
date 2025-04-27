@@ -1,0 +1,7 @@
+```
+// Avoid branch divergence by removing 'if (idx == 0) continue;' statement
+// Use shared memory effectively for coalesced memory accesses
+// Consider increasing the block size to utilize more shared memory
+// Ensure data alignment for float2 load/store operations for efficiency
+// Implement loop unrolling to decrease loop overhead and increase performance
+```

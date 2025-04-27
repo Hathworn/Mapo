@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning memory allocation for dist arrays.
+// Utilize shared memory to cache normDistPrefixSum for faster access within warps.
+// Minimize use of global memory transactions by optimizing memory access patterns.
+// Leverage warp-level primitives to reduce redundant computation across threads.
+```

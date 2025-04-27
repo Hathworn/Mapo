@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing for global memory access to improve bandwidth.
+// Use shared memory to buffer data and reduce global memory traffic.
+// Align memory accesses by ensuring the starting address is 32-byte aligned.
+// Explore vectorized loads/stores for increasing throughput.
+// Evaluate divergent branches to minimize warp divergence.
+```

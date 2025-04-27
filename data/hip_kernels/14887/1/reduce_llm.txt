@@ -1,0 +1,8 @@
+```c
+// Consider unrolling the reduction loop to improve performance.
+// Utilize memory coalescing by accessing global memory in a stride pattern.
+// Prefer using register variables for frequently accessed data.
+// Avoid bank conflicts in shared memory by padding shared memory arrays.
+// Optimize the use of __syncthreads() to minimize unnecessary synchronization.
+// Use warp-level primitives like __shfl_down_sync for better reduction performance.
+```

@@ -1,0 +1,4 @@
+// Consider using larger block sizes to increase memory coalescing and improve performance
+// Utilize shared memory for temporary storage to reduce repeated global memory accesses
+// Ensure proper alignment of memory accesses to maximize memory throughput
+// Explore using warp shuffle operations for faster intra-warp communication

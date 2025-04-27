@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider coalesced memory accesses for gradOutput_data
+// Align memory accesses to 64-byte boundaries for better performance
+// Utilize warp-level primitives to optimize reduction in loop
+// Ensure loop unrolling is optimal to maximize instruction throughput
+// Prefetch gradOutput_data to reduce latency during loop operations
+```

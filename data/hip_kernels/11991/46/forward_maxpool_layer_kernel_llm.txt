@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache input data for coalesced access
+// Ensure dimensions are valid and avoid unnecessary calculations within kernels
+// Optimize loop unrolling if possible to reduce overhead
+// Use __restrict__ qualifier to pointers if no aliasing occurs to improve compiler optimizations
+// Minimize divergent branches by reorganizing conditional checks
+// Prefetch data into registers to minimize read latency
+```

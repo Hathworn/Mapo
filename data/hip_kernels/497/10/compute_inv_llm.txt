@@ -1,0 +1,8 @@
+```c
+// Use shared memory to cache destination_offsets for coalesced access
+// Prefetch source_indices into registers to reduce global memory access
+// Utilize warp shuffle operations for parallel reduction within a warp
+// Improve thread occupancy by choosing a suitable block size
+// Ensure __restrict__ pointers are used for all memory pointers to enable better compiler optimizations
+// Balance load among threads to minimize thread divergence
+```

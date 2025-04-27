@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to mitigate the high latency of global memory accesses.
+// Accumulate results in localHist to reduce the number of atomic operations on global memory.
+// Initialize sharedHist to zero within the first 256 threads to prepare for partial histogram reduction.
+// Ensure synchronization with __syncthreads() to prevent race conditions.
+// Final reduction step by atomic adding sharedHist to the global histogram.
+```

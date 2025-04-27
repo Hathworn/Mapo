@@ -1,0 +1,5 @@
+// Use shared memory to cache gradOutput_data for faster access
+// Consider coalesced memory access patterns for gradInput_data
+// Minimize shared memory bank conflicts to improve performance
+// Consider using warp-level primitives for better efficiency
+// Optimize thread block size to match the memory bandwidth and compute capacity

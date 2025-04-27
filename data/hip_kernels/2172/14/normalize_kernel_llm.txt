@@ -1,0 +1,7 @@
+```
+// Optimize memory access by coalescing reads from global memory
+// Use shared memory to store mean and variance if they are reused across multiple threads
+// Consider padding to ensure coalesced access patterns
+// Minimize divergence by reducing conditional statements inside the kernel
+// Ensure continuous memory access within each warp for better performance
+```

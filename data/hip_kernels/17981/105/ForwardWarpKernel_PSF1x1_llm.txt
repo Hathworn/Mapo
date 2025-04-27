@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access in fetching flow values
+// Use texture memory for read-only image data to improve memory access patterns
+// Group threads into warps that access memory locations contiguously to utilize coalesced memory access
+// Preload frequently accessed variables into registers to minimize repeated global memory access
+// Ensure blocks are sized appropriately to maximize occupancy and hide memory latency
+```

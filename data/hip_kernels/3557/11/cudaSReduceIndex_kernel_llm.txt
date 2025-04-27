@@ -1,0 +1,8 @@
+```
+// Consider reducing shared memory usage to improve performance
+// Use more registers for frequently accessed variables to minimize memory latency
+// Ensure memory alignment for input and output data to maximize coalesced memory access
+// Evaluate using texture memory or constant memory for valueThreshold if it doesn't change often
+// Experiment with different block and grid sizes for optimal kernel performance
+// Minimize conditional branching within the kernel to increase warp efficiency
+```

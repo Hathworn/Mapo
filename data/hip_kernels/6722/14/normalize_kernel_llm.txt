@@ -1,0 +1,4 @@
+// Use shared memory to cache mean and variance for repeated access
+// Consider using coalesced memory access for 'x' to improve global memory throughput
+// Minimize thread divergence by optimizing conditional checks
+// Tune block and grid dimensions for better theoretical occupancy and warp utilization

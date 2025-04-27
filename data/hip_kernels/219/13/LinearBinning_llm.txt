@@ -1,0 +1,8 @@
+```
+// Consider unrolling loops if applicable to increase parallel efficiency
+// Utilize shared memory to reduce global memory accesses where possible
+// Minimize use of atomic operations to reduce contention and improve throughput
+// Align memory accesses to optimize coalescing
+// Ensure memory accesses are within the same cache line to improve cache efficiency
+// Consider prefetching data to hide memory latency
+```

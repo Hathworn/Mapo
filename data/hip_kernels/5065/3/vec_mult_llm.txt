@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to load data from A and B to reduce global memory accesses.
+// Optimize the memory access patterns to achieve coalesced memory access.
+// Evaluate the usage of texture memory for potentially faster read-only data access.
+// Align data structures for better memory alignment if applicable.
+// Check if N is always a multiple of blockDim.x for better CUDA utilization.
+```

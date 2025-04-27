@@ -1,0 +1,6 @@
+```
+// Precompute new d2 and d3 to minimize index calculation overhead
+// Consider using shared memory for gradOutput_data to reduce global memory access latency
+// Define BLOCK_SIZE based on resource limits to maximize shared memory utilization
+// Avoid redundant computation by storing gradOutput_data in shared memory if applicable
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring each thread accesses consecutive elements.
+// Use shared memory to cache col_sum if there's data reuse within the block.
+// Check if loop unrolling is applicable to further enhance performance.
+// Ensure the grid and block size configuration maximizes occupancy while minimizing warp divergence.
+```

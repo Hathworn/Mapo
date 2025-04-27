@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Consider coalesced memory accesses to optimize throughput
+// Ensure memory access is aligned to achieve better performance
+// Reduce the number of __syncthreads() calls if possible
+// Use more shared memory space if TILE_DIM size allows for greater data reuse
+```

@@ -1,0 +1,5 @@
+```
+// Cache normalization factor in shared memory to reduce global memory access
+// Use __syncthreads() to ensure all threads have loaded the normalization factor
+// Optimize read access from shared memory to improve memory bandwidth
+```

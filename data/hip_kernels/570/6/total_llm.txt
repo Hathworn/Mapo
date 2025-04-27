@@ -1,0 +1,7 @@
+```c
+// Reduce global memory transactions by loading two elements per thread
+// Use shared memory to store partial sums and minimize global memory access
+// Implement loop unrolling for the reduction phase to enhance performance
+// Consider using warp-level primitives for reduction to improve efficiency
+// Align shared memory accesses to avoid bank conflicts
+```

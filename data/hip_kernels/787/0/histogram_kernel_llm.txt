@@ -1,0 +1,7 @@
+```
+// Use shared memory to store minI and maxI for each channel to reduce global memory access.
+// Consider load coalesced access pattern for input array I to improve memory throughput.
+// Use shared memory to store partial histogram results for reduction before writing to global memory.
+// Coalesce writes to the histogram by ensuring contiguous threads write to contiguous memory locations.
+// Check if loop unrolling optimizations can be applied to the value checks and calculations for efficiency.
+```

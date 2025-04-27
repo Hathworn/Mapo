@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure memory coalescing by accessing consecutive threads to consecutive memory locations
+// Consider using vectorized loads/stores if operations are on contiguous memory and data supports it
+// Minimize thread divergence by avoiding warp-conditional execution paths
+// Use loop unrolling if applicable to reduce loop overhead
+// Consider using __restrict__ keyword for pointer arguments to help compiler optimize memory accesses
+```

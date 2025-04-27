@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access for energyTempor
+// Minimize memory access by using registers for temporary storage in the loop
+// Ensure coalesced memory access pattern within the loops
+// Use __restrict__ keyword for pointers to improve compiler optimizations

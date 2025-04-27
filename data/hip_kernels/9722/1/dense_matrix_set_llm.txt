@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequent data reuse to reduce global memory access.
+// Align data access patterns for coalesced memory access for better performance.
+// Minimize conditional branches inside the kernel to improve execution efficiency.
+// Increase block size to maximize use of available threads and improve occupancy.
+// Use asynchronous memory copies and kernel launches for overlapped execution.
+```

@@ -1,0 +1,4 @@
+// Consider accessing x in a coalesced manner to improve memory access speed.
+// Use shared memory to store intermediate sums for each block.
+// Consider using a loop unrolling technique to reduce loop overhead.
+// Use atomic operations if multiple threads are updating the same mean element to ensure correct results.

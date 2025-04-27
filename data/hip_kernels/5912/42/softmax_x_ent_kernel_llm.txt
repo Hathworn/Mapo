@@ -1,0 +1,8 @@
+```
+// Use __restrict__ keyword for pred, truth, delta, and error pointers to indicate no aliasing for better optimization
+// Align memory access to 128 bytes boundary for coalesced global memory access
+// Consider using shared memory for frequently accessed data to decrease global memory access latency
+// Optimize the conditional statement to reduce branch divergence by using warp-level primitives
+// Use atomic operations if required to update shared or global states to avoid race conditions
+// Minimize register usage by optimizing local variable usage and favor using float data type
+```

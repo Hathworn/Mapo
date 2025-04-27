@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access latency.
+// Ensure coalesced memory access by assigning consecutive threads to consecutive memory addresses.
+// Use asynchronous copy operations to overlap computation and memory transfers.
+// Minimize bank conflicts by ensuring aligned access within shared memory banks.
+// Leverage warp-level primitives to reduce unnecessary serialization in memory access.
+```

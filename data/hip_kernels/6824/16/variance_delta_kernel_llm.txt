@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency for mean and variance
+// Ensure synchronization after loading mean and variance into shared memory
+// Avoid redundant calculations by reusing shared_mean and shared_variance
+// Consider optimizing thread blocks and grid dimensions to maximize occupancy
+```

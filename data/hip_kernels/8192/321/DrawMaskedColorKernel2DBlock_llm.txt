@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache texture data to reduce global memory access latency.
+// Ensure coalesced memory access by accessing global memory in a contiguous manner within warps.
+// Utilize the constant memory for static kernel input parameters to reduce redundant global memory accesses.
+// Optimize divergent branches by minimizing conditional statements within warps.
+```

@@ -1,0 +1,26 @@
+digraph "CFG for '_Z23Kogge_Stone_scan_kernelPfS_i' function" {
+	label="CFG for '_Z23Kogge_Stone_scan_kernelPfS_i' function";
+
+	Node0x5d18300 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp sge i32 %12, %2\l  %14 = icmp eq i32 %11, 0\l  %15 = or i1 %14, %13\l  br i1 %15, label %21, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x5d18300:s0 -> Node0x5d1a360;
+	Node0x5d18300:s1 -> Node0x5d1a3f0;
+	Node0x5d1a3f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%16:\l16:                                               \l  %17 = add nsw i32 %12, -1\l  %18 = sext i32 %17 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  br label %21\l}"];
+	Node0x5d1a3f0 -> Node0x5d1a360;
+	Node0x5d1a360 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%21:\l21:                                               \l  %22 = phi float [ %20, %16 ], [ 0.000000e+00, %3 ]\l  %23 = getelementptr inbounds [2048 x float], [2048 x float] addrspace(3)*\l... @_ZZ23Kogge_Stone_scan_kernelPfS_iE2XY, i32 0, i32 %11\l  store float %22, float addrspace(3)* %23, align 4\l  %24 = icmp ult i32 %11, %2\l  br i1 %24, label %25, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x5d1a360:s0 -> Node0x5d1bb20;
+	Node0x5d1a360:s1 -> Node0x5d1bd50;
+	Node0x5d1bb20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%25:\l25:                                               \l  %26 = icmp ugt i16 %8, 1\l  br i1 %26, label %31, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5d1bb20:s0 -> Node0x5d1bf50;
+	Node0x5d1bb20:s1 -> Node0x5d1bfa0;
+	Node0x5d1bfa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%27:\l27:                                               \l  %28 = phi float [ %22, %25 ], [ %42, %41 ]\l  %29 = sext i32 %12 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %1, i64 %29\l  store float %28, float addrspace(1)* %30, align 4, !tbaa !7\l  br label %45\l}"];
+	Node0x5d1bfa0 -> Node0x5d1bd50;
+	Node0x5d1bf50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  %32 = phi float [ %42, %41 ], [ %22, %25 ]\l  %33 = phi i32 [ %43, %41 ], [ 1, %25 ]\l  %34 = icmp ult i32 %11, %33\l  br i1 %34, label %41, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5d1bf50:s0 -> Node0x5d1c110;
+	Node0x5d1bf50:s1 -> Node0x5d1cdc0;
+	Node0x5d1cdc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e36c5570",label="{%35:\l35:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %36 = sub i32 %11, %33\l  %37 = getelementptr inbounds [2048 x float], [2048 x float] addrspace(3)*\l... @_ZZ23Kogge_Stone_scan_kernelPfS_iE2XY, i32 0, i32 %36\l  %38 = load float, float addrspace(3)* %37, align 4, !tbaa !7\l  %39 = load float, float addrspace(3)* %23, align 4, !tbaa !7\l  %40 = fadd contract float %38, %39\l  store float %40, float addrspace(3)* %23, align 4, !tbaa !7\l  br label %41\l}"];
+	Node0x5d1cdc0 -> Node0x5d1c110;
+	Node0x5d1c110 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  %42 = phi float [ %32, %31 ], [ %40, %35 ]\l  %43 = shl i32 %33, 1\l  %44 = icmp ult i32 %43, %9\l  br i1 %44, label %31, label %27, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5d1c110:s0 -> Node0x5d1bf50;
+	Node0x5d1c110:s1 -> Node0x5d1bfa0;
+	Node0x5d1bd50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%45:\l45:                                               \l  ret void\l}"];
+}

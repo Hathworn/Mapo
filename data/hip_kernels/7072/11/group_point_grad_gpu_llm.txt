@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache idx and grad_out for reduced global memory access.
+// Coalesce global memory access to improve memory bandwidth.
+// Consider loop unrolling for the innermost loop to reduce loop overhead.
+// Check for potential bank conflicts in shared memory usage.
+// Explore the use of warp-level primitives for better synchronization and efficiency.
+```

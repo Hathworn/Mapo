@@ -1,0 +1,10 @@
+```c
+// Leverage shared memory to reduce global memory accesses for reference values 
+// Only transfer necessary boundary values to shared memory to minimize redundant data movement 
+// Ensure coalesced global memory accesses for reading matrix_cuda elements 
+// Maintain memory access pattern alignment with block size for efficient memory use 
+// Limit synchronization barriers to necessary computation boundaries to optimize parallel execution 
+// Accumulate shared memory values iteratively to manage block-local data dependencies 
+// Apply parallel reduction strategies for triangle computations to balance workloads 
+// Optimize write-back phase to preserve memory bandwidth and reduce latency 
+```

@@ -1,0 +1,7 @@
+```
+//Minimize global memory access by caching frequently used data in shared memory.
+//Use __syncthreads() to ensure the correct timing for reading shared memory.
+//Avoid recalculating indices inside loops or conditional branches to reduce computational overhead.
+//Align memory access patterns to coalesced accesses for better performance.
+//Consider using memory prefetching techniques for better data load performance.
+```

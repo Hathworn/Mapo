@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Consider coalesced memory accesses to improve bandwidth utilization
+// Minimize divergence by ensuring uniform execution paths within warps
+// Use compile-time constants for block and grid dimensions when possible
+// Optimize for liveness and register pressure to improve occupancy
+```

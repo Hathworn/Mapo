@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to optimize access to shared elements like Altitudeh_d and areasT
+// Use coalesced memory access patterns for Rho_d, Mass_d, and GlobalMass_d to utilize memory bandwidth efficiently
+// Minimize the use of ternary operators within critical sections if they can cause divergence
+// Consider loop unrolling techniques for the loop over levels if applicable and if it leads to performance gains
+// Ensure memory alignment to take advantage of vectorized memory access (e.g., double4 instead of double)
+```

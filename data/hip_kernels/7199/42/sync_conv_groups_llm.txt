@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to reduce memory latency
+// Use shared memory to cache frequently accessed data and reduce global memory bandwidth
+// Apply loop unrolling to reduce loop overhead and increase instruction-level parallelism
+// Utilize warp-level synchronization functions like __shfl_sync for intra-warp communication
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead
+```

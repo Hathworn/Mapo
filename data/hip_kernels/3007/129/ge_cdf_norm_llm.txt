@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory for frequently accessed data.
+// Ensure coalesced memory access patterns for both reads and writes.
+// Minimize thread divergence by structuring branching conditions appropriately.
+// Use vectorized operations if the hardware supports it, e.g., processing multiple elements per thread.
+// Consider using loop unrolling techniques where applicable to minimize loop overhead.
+// Try to avoid bank conflicts when accessing shared memory.
+```

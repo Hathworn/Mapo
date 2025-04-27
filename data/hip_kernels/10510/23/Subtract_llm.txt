@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses
+// Use memory coalescing by ensuring contiguous threads access contiguous memory locations
+// Minimize divergent branches by handling boundary checks efficiently
+// Experiment with different block sizes for optimal occupancy
+// Prefetch data to registers for reuse within loops to reduce memory latency

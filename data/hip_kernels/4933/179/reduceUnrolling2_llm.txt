@@ -1,0 +1,6 @@
+```
+// Unroll loop operations to reduce number of iterations and improve memory access efficiency.
+// Use shared memory for reduction to minimize global memory accesses and improve performance.
+// Ensure memory coalescing by accessing adjacent elements in global memory.
+// Use __syncthreads() to ensure data consistency among threads in the block.
+```

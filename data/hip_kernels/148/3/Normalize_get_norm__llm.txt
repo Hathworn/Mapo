@@ -1,0 +1,7 @@
+```
+// Use float4 vectorization if possible for faster memory access
+// Consider aligning input pointer to 16 bytes to maximize throughput
+// Evaluate whether shared memory can be utilized for partial sum accumulation
+// Ensure proper coalesced memory accesses to leverage global memory bandwidth fully
+// Investigate bank conflicts in shared memory and adjust indices to avoid them
+```

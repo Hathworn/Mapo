@@ -1,0 +1,6 @@
+```
+// Optimize memory coalescing by ensuring contiguous memory access patterns for d_data and feature_probs
+// Consider using shared memory to cache values accessed repeatedly within the loop
+// Minimize the use of atomic operations by redesigning data update strategy if possible
+// Use warp-level primitives to improve synchronization and reduce global memory access
+```

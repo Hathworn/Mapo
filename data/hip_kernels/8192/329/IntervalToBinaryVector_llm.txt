@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by using consecutive threads accessing consecutive memory locations
+// Consider using __restrict__ keyword for input and outputs pointers to help the compiler with aliasing assumptions
+// Use shared memory if further optimization is needed for repeated data access across threads
+// Minimize divergence by structuring conditions to reduce branch disparities among threads
+// Double-check the memory alignment for outputs to maximize memory transaction throughput
+// If possible, precompute 1.0f / steps once outside the kernel to save computation at each thread
+```

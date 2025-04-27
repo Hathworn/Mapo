@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access by aligning data structures in memory.
+// Ensure 'N' is a multiple of block size to avoid thread divergence.
+// Use shared memory if there are common data access patterns for faster access.
+// Minimize the use of global memory by reusing values in registers where possible.
+// Consider restructuring data to improve memory access patterns.
+```

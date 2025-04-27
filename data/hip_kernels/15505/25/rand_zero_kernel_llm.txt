@@ -1,0 +1,10 @@
+```
+// Ensure that each thread accesses memory in a coalesced manner
+// Consider using shared memory if multiple threads access the same data
+// Make sure to exploit memory coalescing to minimize global memory transactions
+// Use divergent conditions cautiously to avoid warp divergence
+// Evaluate memory access patterns for alignment and efficiency
+// Use manual loop unrolling cautiously to improve performance
+// Avoid unnecessary recalculation of indices and reuse calculated values
+// Verify memory accesses are properly aligned to prevent performance degradation
+```

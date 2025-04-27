@@ -1,0 +1,7 @@
+```cpp
+// Optimize: use shared memory for frequently accessed data to reduce global memory access
+// Optimize: coalesce memory accesses for the boxes array to improve memory throughput
+// Optimize: consider using texture memory for width_offset, height_offset, and flip arrays if they are mostly read-only
+// Optimize: ensure that warp divergence is minimized by organizing condition checks outside the loop if possible
+// Optimize: utilize vectorized operations for floating-point arithmetic if supported
+```

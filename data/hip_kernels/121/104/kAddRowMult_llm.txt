@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to store portions of 'vec' for faster access
+// Consider coalesced memory access by aligning 'mat' and 'tgtMat' accesses
+// Leverage vectorized loads/stores if architecture supports for 'mat', 'vec', and 'tgtMat'
+// Ensure 'stride' is optimal to minimize uncoalesced accesses
+// Reduce arithmetic operations by pre-computing repeated expressions outside the loop
+// Use profiling tools to identify if memory bandwidth is a bottleneck
+```

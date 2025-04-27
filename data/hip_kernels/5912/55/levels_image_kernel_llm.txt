@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory access patterns for coalescing
+// Consider loop unrolling for the main loop to reduce overhead
+// If overflow checks can be guaranteed, consider removing redundant conditionals
+// Use __restrict__ keyword for pointers to hint the compiler about non-aliasing memory
+// Consider using texture memory for access patterns with spatial locality
+```

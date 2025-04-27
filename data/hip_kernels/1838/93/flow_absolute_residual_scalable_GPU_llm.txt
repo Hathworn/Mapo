@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize redundant global memory accesses for d_dTR
+// Use __syncthreads() to ensure proper synchronization across threads
+// Use __fdividef() for faster approximate division operations
+// Avoid bank conflicts in shared memory by using 32-bit data types
+// Ensure coalesced memory access patterns for d_flow_compact and d_Zbuffer_flow_compact
+// Align global memory access by arranging data in contiguous blocks
+```

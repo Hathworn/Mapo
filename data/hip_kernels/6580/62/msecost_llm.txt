@@ -1,0 +1,7 @@
+```
+// Use shared memory optimally by minimizing bank conflicts
+// Ensure coalesced memory accesses for predictions and target arrays
+// Consider larger block size for fewer blocks and better occupancy
+// Explore loop unrolling to accelerate reduction
+// Use float4 to load data if predictions and target are large and aligned
+```

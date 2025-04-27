@@ -1,0 +1,9 @@
+```c
+// Ensure the grid and block dimensions allow for full utilization of available SMs
+// Use __restrict__ to aid the compiler in optimizing memory accesses
+// Consider using shared memory if there are repeated accesses to the same src data
+// Ensure memory accesses are coalesced for tgt by aligning thread indices with linear memory layout
+// Reduce memory divergence by ensuring access patterns are uniform across threads
+// Balance the workload across threads to maximize parallel efficiency
+// Double-check to make sure no bank conflicts occur when shared memory is used
+```

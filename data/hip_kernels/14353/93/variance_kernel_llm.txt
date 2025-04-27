@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access latency
+// Load frequently accessed data into shared memory to reduce repeated global reads
+// Ensure proper synchronization when using shared memory to avoid race conditions
+// Calculate indices efficiently to avoid redundant calculations within loops

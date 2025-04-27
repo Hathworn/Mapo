@@ -1,0 +1,6 @@
+```
+// Optimization: Use constant memory if kernel size is fixed
+// Optimization: Consider using shared memory for the input tiles to reduce repeated global memory accesses
+// Optimization: Align memory accesses if possible for better coalescing
+// Optimization: Reduce divergence by avoiding branches inside loops if possible
+```

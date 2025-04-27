@@ -1,0 +1,7 @@
+```
+// Use shared memory for data common to multiple threads to reduce global memory access.
+// Try coalesced memory access patterns to improve memory bandwidth utilization.
+// Minimize divergent branches by organizing conditional checks efficiently.
+// Ensure the memory allocation size is a multiple of warp size for better memory alignment.
+// Use __restrict__ keyword for pointers if aliasing is not expected to enable compiler optimizations.
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalesced global memory access for probs to improve memory bandwidth efficiency
+// Use shared memory to cache maxProbs and reduce redundant global memory reads
+// Minimize the use of __logf by pre-computing and caching frequently used values
+// Use warp shuffle functions to reduce divergent branches when calculating numMax
+```

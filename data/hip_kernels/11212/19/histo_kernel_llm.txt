@@ -1,0 +1,6 @@
+// Consider using cooperative groups for more efficient synchronization.
+// Explore using a larger shared memory size if array size changes.
+// Reduce divergent paths by aligning threads to stride boundary.
+// Ensure proper alignment for the atomic operations to avoid bank conflicts.
+// Evaluate buffer size to minimize global memory access and maximize shared memory use.
+// Investigate reduction techniques to further optimize shared memory updates.

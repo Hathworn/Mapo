@@ -1,0 +1,7 @@
+```
+// Load zs into shared memory to reduce global memory access
+// Use __syncthreads() to ensure all threads have loaded zs into shared memory
+// Calculate the sigmoid once and reuse to avoid redundant calculations
+// Utilize shared memory for storing intermediate values to improve memory access speed
+// Minimize use of global memory access by operating on data in shared memory
+```

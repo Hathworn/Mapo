@@ -1,0 +1,4 @@
+// Consider using shared memory for faster data access
+// Use coalesced memory access patterns for better memory bandwidth
+// Minimize divergent warps by ensuring all threads within a warp follow the same execution path
+// Ensure memory accesses are aligned on 128-byte boundaries for optimal throughput

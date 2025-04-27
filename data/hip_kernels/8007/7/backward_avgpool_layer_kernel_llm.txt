@@ -1,0 +1,7 @@
+```
+// Preload values to registers to reduce global memory access latency
+// Consider coalescing memory accesses for in_delta by organizing threads accordingly
+// Optimize stride patterns for better memory access coalescing
+// Avoid unnecessary recomputation of expressions within the loop (e.g., w * h)
+// Consider using shared memory if possible to reduce redundant global memory access
+```

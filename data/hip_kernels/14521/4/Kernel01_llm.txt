@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access latency
+// Load tiles into shared memory for coalesced global memory access
+// Synchronize threads after loading to ensure all threads are ready for computation
+// Perform computation using data in shared memory to maximize reuse
+// Synchronize threads after computation to avoid race conditions in next iteration
+```

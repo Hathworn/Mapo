@@ -1,0 +1,6 @@
+```
+// Consider aligning data to optimize memory coalescing
+// Use shared memory if accessed elements exhibit spatial locality
+// Ensure that len is a multiple of (blockDim.x * gridDim.x) for full efficiency 
+// Optimize the choice of blockDim.x and gridDim.x based on GPU architecture 
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads to contiguous memory blocks
+// Use shared memory if applicable to reduce repeated global memory accesses
+// Minimize divergence by organizing data processing to avoid conditional branches
+// Consider using vectorized types to process multiple elements per thread
+// Check for bank conflicts in shared memory usage and adjust indexing accordingly
+```

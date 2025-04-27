@@ -1,0 +1,8 @@
+```
+// Avoid recalculating block ID and thread ID within the kernel scope by using crossTimeIndex.
+// Pre-calculate constant expressions to avoid repeated computation inside loops (e.g., sqrt(T / N)).
+// Use early exits to reduce unnecessary computations when crossing is achieved or index is out of bounds.
+// Optimize memory access by maintaining data locality and reducing divergence.
+// Use hiprand_init optimally to enhance randomness while considering seed variability.
+// Use atomic operations prudently to reduce overhead, ensuring they are only applied when necessary.
+```

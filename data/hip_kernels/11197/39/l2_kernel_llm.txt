@@ -1,0 +1,4 @@
+// Use shared memory for pred and truth arrays to reduce global memory accesses
+// Coalesce memory accesses for pred and truth arrays for better memory performance
+// Consider loop unrolling to improve computation efficiency within the kernel
+// Avoid branching by using ternary operators instead of if-statements when possible

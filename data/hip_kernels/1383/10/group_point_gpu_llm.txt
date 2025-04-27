@@ -1,0 +1,6 @@
+```cpp
+// Utilize shared memory to cache points data for coalesced access.
+// Ensure idx array access is coalesced for improved memory throughput.
+// Consider loop unrolling factor to match warp size for better ILP.
+// Evaluate using a dynamic parallelism approach if potential speedup is identified.
+```

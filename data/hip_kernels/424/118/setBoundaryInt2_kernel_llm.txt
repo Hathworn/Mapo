@@ -1,0 +1,5 @@
+// Consider using shared memory for d_boundary to reduce global memory access
+// Use vectorized memory access if possible to improve bandwidth usage
+// Ensure memory coalescing by aligning data access patterns across threads in a warp
+// Minimize conditional statements within the kernel to reduce divergence
+// Assess grid and block size configuration for maximizing occupancy and throughput

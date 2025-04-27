@@ -1,0 +1,5 @@
+```c
+// Consider using shared memory to store intermediate results for blocksum to reduce global memory accesses.
+// Ensure coalesced memory access patterns for both output and blocksum arrays to improve memory throughput.
+// Minimize branching within the kernel to enhance warp divergence performance.
+```

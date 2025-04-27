@@ -1,0 +1,5 @@
+// Use shared memory to buffer weight values for reduction, reducing global memory accesses.
+// Ensure memory coalescing by organizing shared memory access.
+// Synchronize threads efficiently, minimizing __syncthreads() calls where possible.
+// Consider loop unrolling for the reduction process to enhance performance.
+// Optimize block and grid dimensions for maximum occupancy and efficient memory usage.

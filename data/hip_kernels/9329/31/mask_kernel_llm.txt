@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by checking memory alignment
+// Consider using shared memory for frequently accessed data
+// Avoid bank conflicts in shared memory
+// Use warp-level functions to reduce divergence
+// Minimize register usage and optimize occupancy

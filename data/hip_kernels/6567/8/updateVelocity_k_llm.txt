@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Ensure memory coalescing by accessing memory in contiguous threads
+// Use fewer registers by optimizing variable declarations
+// Reduce memory latency by minimizing access divergence
+// Optimize block size to fit the specific architecture of the target GPU
+// Use loop unrolling to reduce the overhead of loop control
+// Align data structures for better memory alignment
+// Use compiler flags to favor aggressive optimization levels
+```

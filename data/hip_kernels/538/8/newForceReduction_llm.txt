@@ -1,0 +1,7 @@
+```cpp
+// Consider using float4 to load/store data for better memory coalescing
+// Ensure that input array is properly aligned for coalesced access
+// Check if BLOCK_SIZE is optimized for the architecture's warp size
+// Use __restrict__ qualifiers for input and output parameters to assist compiler optimization
+// Prefetch data into shared memory if access is predictable and repetitive
+```

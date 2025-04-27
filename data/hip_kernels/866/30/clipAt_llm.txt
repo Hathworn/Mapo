@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access latency
+// Ensure memory access is coalesced to improve performance
+// Use constant memory for 'bound' if it's read-only across threads
+// Optimize thread block size to maximize hardware utilization

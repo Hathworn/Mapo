@@ -1,0 +1,18 @@
+digraph "CFG for '_Z15revisedArraySumPfS_' function" {
+	label="CFG for '_Z15revisedArraySumPfS_' function";
+
+	Node0x4644f00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = icmp ugt i16 %7, 1\l  br i1 %9, label %10, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x4644f00:s0 -> Node0x4645ef0;
+	Node0x4644f00:s1 -> Node0x4646b90;
+	Node0x4645ef0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%10:\l10:                                               \l  %11 = getelementptr inbounds [256 x float], [256 x float] addrspace(3)*\l... @_ZZ15revisedArraySumPfS_E10partialSum, i32 0, i32 %3\l  br label %14\l}"];
+	Node0x4645ef0 -> Node0x4646d20;
+	Node0x4646b90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%12:\l12:                                               \l  %13 = load float, float addrspace(3)* getelementptr inbounds ([256 x float],\l... [256 x float] addrspace(3)* @_ZZ15revisedArraySumPfS_E10partialSum, i32 0,\l... i32 0), align 16, !tbaa !7\l  store float %13, float addrspace(1)* %1, align 4, !tbaa !7\l  ret void\l}"];
+	Node0x4646d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%14:\l14:                                               \l  %15 = phi i32 [ 1, %10 ], [ %16, %26 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %16 = shl nsw i32 %15, 1\l  %17 = add i32 %16, 1023\l  %18 = and i32 %17, %3\l  %19 = icmp eq i32 %18, 0\l  br i1 %19, label %20, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x4646d20:s0 -> Node0x4648100;
+	Node0x4646d20:s1 -> Node0x4647a00;
+	Node0x4648100 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%20:\l20:                                               \l  %21 = add nsw i32 %15, %3\l  %22 = getelementptr inbounds [256 x float], [256 x float] addrspace(3)*\l... @_ZZ15revisedArraySumPfS_E10partialSum, i32 0, i32 %21\l  %23 = load float, float addrspace(3)* %22, align 4, !tbaa !7\l  %24 = load float, float addrspace(3)* %11, align 4, !tbaa !7\l  %25 = fadd contract float %23, %24\l  store float %25, float addrspace(3)* %11, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x4648100 -> Node0x4647a00;
+	Node0x4647a00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = icmp ult i32 %16, %8\l  br i1 %27, label %14, label %12, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4647a00:s0 -> Node0x4646d20;
+	Node0x4647a00:s1 -> Node0x4646b90;
+}

@@ -1,0 +1,8 @@
+```
+// Use warp-level parallelism to minimize divergence
+// Avoid redundant memory operations by checking input indices
+// Set grain size to 4 for efficient memory access
+// Unroll loops to improve memory access patterns and computation
+// Leverage shared memory if possible to cache weight/gradient data
+// Optimize memory coalescing by ensuring contiguous memory access
+```

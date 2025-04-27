@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to A by aligning 'gid' correctly
+// Use shared memory for frequently accessed variables like xMax, yMax, zMax
+// Calculate repeated expressions outside the loop to save computation
+// Prefetch data for x into shared memory to reduce global memory reads
+// Consider loop unrolling if applicable to further exploit instruction level parallelism
+```

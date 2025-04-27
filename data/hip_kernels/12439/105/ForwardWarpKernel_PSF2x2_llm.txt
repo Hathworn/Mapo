@@ -1,0 +1,3 @@
+// Use shared memory to store flow and image data for faster access.
+// Reduce the number of atomic operations by accumulating values in shared memory before writing to global memory.
+// Consider using texture memory for read-only data like src to take advantage of cached access.

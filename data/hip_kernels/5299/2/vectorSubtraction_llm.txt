@@ -1,0 +1,4 @@
+// Consider coalesced memory accesses by ensuring contiguous memory access for thread blocks.
+// Use shared memory for repetitive access data to reduce global memory bandwidth.
+// Balance the workload across the threads to ensure efficient utilization.
+// Optimize block and grid size to maximize GPU occupancy.

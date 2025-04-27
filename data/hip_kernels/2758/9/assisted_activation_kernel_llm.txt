@@ -1,0 +1,7 @@
+```
+// Consider increasing block size for higher occupancy
+// Utilize shared memory to reduce global memory access times
+// Implement coalesced memory access for gt_gpu and a_avg_gpu
+// Synchronize threads with __syncthreads to avoid race conditions
+// Ensure enough shared memory allocation to fit the data
+```

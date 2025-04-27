@@ -1,0 +1,7 @@
+```
+// Use shared memory to store state if possible to reduce global memory accesses
+// Coalesce writes to dRand by ensuring contiguous threads write to contiguous memory locations
+// Consider using vectorized loads/stores to improve memory throughput
+// Increase occupancy by adjusting block size or using more lightweight data structures
+// Experiment with loop unrolling to reduce loop overhead and improve performance
+```

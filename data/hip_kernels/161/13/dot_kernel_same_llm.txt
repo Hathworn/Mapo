@@ -1,0 +1,9 @@
+```c
+// Consider coalesced memory access for vg_a and vg_b to improve throughput
+// Utilize shared memory efficiently by minimizing bank conflicts
+// Consider using larger block sizes if resources permit to increase occupancy
+// Avoid warp divergence by ensuring consistent control flow
+// Optimize the unroll factor based on the hardware generation for balanced performance
+// Minimize synchronizations by optimizing data sharing among threads
+// Use half precision or tensor cores if applicable for performance boost
+```

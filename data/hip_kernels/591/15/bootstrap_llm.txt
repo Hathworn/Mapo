@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Ensure each thread loads data into shared memory only once
+// Avoid bank conflicts in shared memory access
+// Minimize divergent branches for better warp efficiency
+// Align access to g_irand to coalesce memory loads

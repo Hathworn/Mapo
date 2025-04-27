@@ -1,0 +1,10 @@
+digraph "CFG for '_Z17topBoundaryKernelPdi' function" {
+	label="CFG for '_Z17topBoundaryKernelPdi' function";
+
+	Node0x48d4f10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = mul i32 %8, %7\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp slt i32 %11, %1\l  br i1 %12, label %13, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x48d4f10:s0 -> Node0x48d6e10;
+	Node0x48d4f10:s1 -> Node0x48d6ea0;
+	Node0x48d6e10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%13:\l13:                                               \l  %14 = add nsw i32 %11, 1\l  %15 = sext i32 %14 to i64\l  %16 = getelementptr inbounds double, double addrspace(1)* %0, i64 %15\l  store double 1.000000e+00, double addrspace(1)* %16, align 8, !tbaa !7\l  br label %17\l}"];
+	Node0x48d6e10 -> Node0x48d6ea0;
+	Node0x48d6ea0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  ret void\l}"];
+}

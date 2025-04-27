@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to increase memory bandwidth utilization.
+// Use shared memory to load data in tiles, reducing the number of global memory accesses.
+// Ensure all threads within a warp are accessing consecutive memory locations where possible.
+// Optimize the usage of shared memory by minimizing the allocated size, if possible.
+// Minimize synchronization points within the kernel to improve performance.
+// Consider using texture memory for read-only data to benefit from caching.
+```

@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access for g_idata to utilize memory bandwidth effectively.
+// Unroll loop further for idx computation to reduce loop overhead.
+// Use __ldg() for read-only access to global memory to leverage L1 cache.
+// Consider increasing shared memory usage to avoid global memory dependency within the block.
+// Align block dimension and size with hardware warp size for maximum efficiency.
+// Reduce __syncthreads() where possible to minimize thread synchronization overhead.
+// Use vectorized loads (e.g., int4) to further optimize memory transactions.
+// Evaluate using shuffle instructions (e.g., __shfl_down_sync) instead of shared memory for reductions.
+```

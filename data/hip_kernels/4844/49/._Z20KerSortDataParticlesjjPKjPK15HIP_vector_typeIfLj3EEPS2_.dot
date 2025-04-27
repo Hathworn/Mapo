@@ -1,0 +1,15 @@
+digraph "CFG for '_Z20KerSortDataParticlesjjPKjPK15HIP_vector_typeIfLj3EEPS2_' function" {
+	label="CFG for '_Z20KerSortDataParticlesjjPKjPK15HIP_vector_typeIfLj3EEPS2_' function";
+
+	Node0x5a75fd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp ult i32 %14, %0\l  br i1 %15, label %16, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x5a75fd0:s0 -> Node0x5a77db0;
+	Node0x5a75fd0:s1 -> Node0x5a77e40;
+	Node0x5a77db0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%16:\l16:                                               \l  %17 = icmp ult i32 %14, %1\l  %18 = zext i32 %14 to i64\l  br i1 %17, label %23, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x5a77db0:s0 -> Node0x5a78100;
+	Node0x5a77db0:s1 -> Node0x5a78150;
+	Node0x5a78150 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%19:\l19:                                               \l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %22 = zext i32 %21 to i64\l  br label %23\l}"];
+	Node0x5a78150 -> Node0x5a78100;
+	Node0x5a78100 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%23:\l23:                                               \l  %24 = phi i64 [ %22, %19 ], [ %18, %16 ]\l  %25 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %3, i64 %24\l  %26 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %4, i64 %18\l  %27 = bitcast %struct.HIP_vector_type addrspace(1)* %26 to i8 addrspace(1)*\l  %28 = bitcast %struct.HIP_vector_type addrspace(1)* %25 to i8 addrspace(1)*\l  tail call void @llvm.memcpy.p1i8.p1i8.i64(i8 addrspace(1)* noundef align 4\l... dereferenceable(12) %27, i8 addrspace(1)* noundef align 4 dereferenceable(12)\l... %28, i64 12, i1 false)\l  br label %29\l}"];
+	Node0x5a78100 -> Node0x5a77e40;
+	Node0x5a77e40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

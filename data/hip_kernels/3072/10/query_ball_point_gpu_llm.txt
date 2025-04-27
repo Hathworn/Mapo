@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory accesses for xyz1 and xyz2
+// Optimize memory access by using shared memory for xyz1 and xyz2
+// Minimize divergence by handling the cnt == nsample condition externally
+// Use float3 for xyz1 and xyz2 to reduce indexing overhead
+// Preload xyz2 values to registers to reduce repeated global memory access
+```

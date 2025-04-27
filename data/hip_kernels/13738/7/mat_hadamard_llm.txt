@@ -1,0 +1,4 @@
+// Ensure memory accesses in kernels are coalesced for better performance
+// Consider using shared memory if multiple threads access the same data frequently
+// Re-examine grid and block dimensions for better load balancing across SMs
+// Ensure data alignment for optimal memory access speed

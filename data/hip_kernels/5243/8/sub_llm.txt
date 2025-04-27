@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced by aligning fData, sData, and oData appropriately
+// Minimize memory transactions by storing frequently accessed data in shared or local memory
+// Opt for using __restrict__ pointers if aliasing is not an issue to help the compiler optimize
+// Consider using constant memory for frequently read constants if applicable
+// Ensure optimal block and thread configuration to maximize occupancy
+```

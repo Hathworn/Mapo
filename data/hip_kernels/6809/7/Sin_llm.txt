@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to store parts of array 'x' for faster access
+// Ensure coalesced memory access patterns by aligning data with warp size
+// Consider using __syncthreads() if needed to synchronize threads in a block
+// Investigate the use of register memory for frequently accessed variables
+```

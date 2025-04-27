@@ -1,0 +1,13 @@
+digraph "CFG for '_Z18STREAM_Copy_doublePdS_m' function" {
+	label="CFG for '_Z18STREAM_Copy_doublePdS_m' function";
+
+	Node0x4e90450 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !7\l  %14 = mul i32 %5, %10\l  %15 = add i32 %14, %4\l  %16 = zext i32 %15 to i64\l  %17 = icmp ult i64 %16, %2\l  br i1 %17, label %18, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4e90450:s0 -> Node0x4e911e0;
+	Node0x4e90450:s1 -> Node0x4e927c0;
+	Node0x4e911e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%18:\l18:                                               \l  %19 = udiv i32 %13, %10\l  %20 = mul i32 %19, %10\l  %21 = icmp ugt i32 %13, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %10\l  %25 = zext i32 %24 to i64\l  br label %26\l}"];
+	Node0x4e911e0 -> Node0x4e92cb0;
+	Node0x4e92cb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i64 [ %16, %18 ], [ %31, %26 ]\l  %28 = getelementptr inbounds double, double addrspace(1)* %0, i64 %27\l  %29 = load double, double addrspace(1)* %28, align 8, !tbaa !16\l  %30 = getelementptr inbounds double, double addrspace(1)* %1, i64 %27\l  store double %29, double addrspace(1)* %30, align 8, !tbaa !16\l  %31 = add i64 %27, %25\l  %32 = icmp ult i64 %31, %2\l  br i1 %32, label %26, label %33, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x4e92cb0:s0 -> Node0x4e92cb0;
+	Node0x4e92cb0:s1 -> Node0x4e927c0;
+	Node0x4e927c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%33:\l33:                                               \l  ret void\l}"];
+}

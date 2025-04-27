@@ -1,0 +1,4 @@
+// Ensure memory access patterns are optimized for coalescing by using 1D traversal
+// Utilize shared memory if multiple accesses to same data occur within the block
+// Minimize access to global memory by optimizing thread-block assignments for efficient workload distribution
+// Consider using asynchronous memory operations to hide latency during memory transfer

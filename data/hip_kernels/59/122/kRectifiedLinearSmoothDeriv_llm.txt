@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by aligning data structures on 32-byte boundaries.
+// Use shared memory to reduce global memory transactions, if applicable.
+// Consider using asynchronous memory copy to overlap computation and data transfer.
+// Minimize divergence by ensuring all threads follow similar execution paths.

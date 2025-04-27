@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory fetches.
+// Coalesce memory accesses by ensuring threads access consecutive memory locations.
+// Prefetch data into registers to reduce repeated global memory loads.
+// Optimize memory stride access patterns to further enhance memory coalescing.
+// Reduce divergent branching by ensuring threads within a warp follow similar execution paths.
+// Explore using texture memory for read-only data that is repeatedly accessed.
+// Minimize use of double precision arithmetic in favor of single precision where possible for better performance.
+```

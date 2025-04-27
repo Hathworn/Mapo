@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to data array for improved bandwidth utilization
+// Use shared memory to store data from global memory for better access patterns in the kernel
+// Evaluate loop unrolling for the for-loop iterating over Nfilt to reduce dynamic indexing overhead
+// Ensure memory accesses are aligned to 32 bytes for optimal performance on modern GPUs
+// Check if const qualifier can be added to pointers such as mu, lam, and nu that do not change
+// Assess if prefetching data for tid0 +/-1 indices can be beneficial to hide memory latency
+```

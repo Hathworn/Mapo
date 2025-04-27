@@ -1,0 +1,7 @@
+```c
+// Use shared memory to minimize global memory access latency
+// Align shared memory allocation to avoid bank conflicts
+// Load data in stripes to improve coalesced access pattern
+// Reduce conditional checks within the local loops
+// Use __syncthreads() to synchronize threads after data load
+```

@@ -1,0 +1,3 @@
+// Cache common terms like sqrtDtSigma and dtMu outside of the main computation loop to reduce redundant calculations.
+// Use thread id calculation to minimize complexity in accessing and calculating the index.
+// Ensure memory coalescing by accessing d_a[i] in a contiguous manner within the loop.

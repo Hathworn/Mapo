@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by adjusting row size
+// Use shared memory to cache input data and reduce global memory access
+// Prefer warp size for block dimensions to maximize occupancy
+// Ensure memory alignment to improve throughput
+// Minimize conditional statements inside the kernel for better performance
+```

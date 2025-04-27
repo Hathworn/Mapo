@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache src data for improved memory access patterns.
+// Adjust grid and block dimensions to maximize occupancy and minimize warp divergence.
+// Consider coalesced memory access for src to improve memory bandwidth utilization.
+// Prefetch data when possible to hide memory latency and improve performance.
+// Ensure that memory accesses are aligned to improve efficiency.
+// Explore using vectorized operations for copying data if supported by the hardware.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for X and Y to improve memory bandwidth.
+// Prefetch data into shared memory if data reuse is possible to reduce global memory access latency.
+// Ensure INCX and INCY are set to promote coalesced access patterns for higher performance.
+// Explore usage of __restrict__ qualifier to enable better compiler optimizations.
+// Make sure grid and block dimensions are chosen to maximize occupancy and hide memory latency.
+// Use native vector types if appropriate for this operation to enhance throughput.
+```

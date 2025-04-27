@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory accesses.
+// Ensure coalesced global memory access pattern for `input` and `binary`.
+// Minimize the divergent branches in the computation.
+// Optimize warp-level synchronizations for better parallel reduction efficiency.
+// Consider realigning data structures to improve memory access throughput.

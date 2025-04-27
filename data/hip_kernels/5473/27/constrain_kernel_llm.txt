@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by aligning INCX to the warp size
+// Consider using shared memory to reduce the number of global memory accesses
+// Optimize block and grid sizes to maximize occupancy and minimize divergence
+// Use pointer arithmetic instead of multiplication in the access pattern for X

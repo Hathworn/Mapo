@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access
+// Use texture memory for read-only image data to benefit from caching
+// Ensure memory accesses are coalesced to improve bandwidth
+// Prefer warp-level operations to avoid divergent branches

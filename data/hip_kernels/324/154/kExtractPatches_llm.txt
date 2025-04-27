@@ -1,0 +1,8 @@
+```
+// Consider increasing block size for better occupancy
+// Coalesce memory accesses to images array for improved memory throughput
+// Ensure width_offset and height_offset are accessed in a coalesced manner
+// Verify indices array is accessed in a coalesced pattern
+// Use shared memory to store width_offset and height_offset for faster access
+// Check if loop unrolling can be further optimized based on iteration count
+```

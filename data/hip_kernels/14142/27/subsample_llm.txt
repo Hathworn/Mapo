@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns for input and output.
+// Use shared memory to cache input subregions to reduce global memory reads.
+// Use loop unrolling for the inner loops to increase instruction throughput.
+// Align memory accesses to 32-byte boundaries to optimize memory transactions.
+// Precompute stride offsets to minimize arithmetic operations inside loops.
+```

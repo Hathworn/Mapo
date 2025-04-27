@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses.
+// Optimize block and thread layout to match data access patterns.
+// Align data accesses to improve memory coalescing.
+// Minimize divergence within warp for better execution efficiency.
+// Reduce number of synchronization barriers if possible.

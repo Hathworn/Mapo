@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store frequently accessed values like currptr, prevptr and nextptr, reducing redundant loads from global memory.
+// Use texture memory for reading data if the access pattern has spatial locality and can benefit from hardware caching.
+// Ensure coalesced accesses when reading from pd and pgpyr arrays to improve memory transaction efficiency.
+// Minimize use of printf to reduce performance impact from atomic operations and synchronization points.
+```

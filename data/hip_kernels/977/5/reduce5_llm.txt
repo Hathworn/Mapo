@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache data and reduce global memory accesses
+// Double the blockDim.x for better bandwidth utilization
+// Handle edge cases to prevent out of bounds memory access
+// Unrolling loops to reduce the overhead of loop control
+// Use __syncthreads() for thread synchronization after each step
+// Apply warp reduction to further reduce synchronization overhead
+// Ensure result is stored back to global memory by primary thread
+```

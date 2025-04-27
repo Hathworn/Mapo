@@ -1,0 +1,4 @@
+// Avoid redundant index calculation by storing in a variable
+// Use shared memory to reduce global memory accesses if applicable
+// Ensure coalesced memory access for better performance
+// Consider loop unrolling for calculation of gray pixel values

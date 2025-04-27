@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Ensure TILE size fits within shared memory limits for optimal performance
+// Consider memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Use __syncthreads() effectively to avoid race conditions and ensure correct execution order
+// Utilize loop unrolling for improved performance on repeated access patterns

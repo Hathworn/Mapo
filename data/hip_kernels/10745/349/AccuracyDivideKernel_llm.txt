@@ -1,0 +1,5 @@
+```cpp
+// Consider using shared memory for reduction if N is very large
+// Ensure memory coalescing by accessing contiguous memory
+// Use __syncthreads() if expanding kernel logic beyond a single thread
+```

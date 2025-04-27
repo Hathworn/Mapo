@@ -1,0 +1,7 @@
+```
+// Ensure block size matches shared memory tile size for optimal memory access
+// Use shared memory to reduce global memory access latency
+// Minimize warp divergence by ensuring all threads in a warp execute similarly
+// Consider coalesced memory access patterns for improved bandwidth utilization
+// Optimize shared memory usage by minimizing bank conflicts
+```

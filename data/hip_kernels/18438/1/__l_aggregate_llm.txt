@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses by aligning data structures and memory access patterns.
+// Minimize global memory accesses by increasing the use of shared memory where applicable.
+// Use __syncthreads() efficiently to synchronize only when necessary, reducing idle time.
+// Try increasing the use of registers by optimizing variable storage at the register level.
+// Balance the workload among threads to avoid divergence and ensure efficient warp execution.
+// Optimize loop unrolling where appropriate to enhance throughput and reduce branching.
+// Align data through padding or memory alignment techniques to improve memory bandwidth.
+// Ensure shared memory is accessed in a coalesced fashion to take full advantage of memory bandwidth.
+```

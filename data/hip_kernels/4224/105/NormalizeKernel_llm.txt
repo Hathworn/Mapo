@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Combine conditions for efficiency
+// Load normalization factor into shared memory
+// Ensure all threads have loaded data with __syncthreads
+// Avoid branch, use conditional in calculation
+```

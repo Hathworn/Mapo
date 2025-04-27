@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for inverse_covariance to reduce global memory access latency
+// Optimize memory coalescing by ensuring that voxel_id is accessed in a coalesced manner
+// Ensure starting_voxel_id is structured to enhance memory access patterns
+// Profile and align cov_dxd_pi access to improve memory transaction efficiency
+```

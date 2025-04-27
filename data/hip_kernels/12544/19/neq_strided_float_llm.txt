@@ -1,0 +1,4 @@
+// Ensure memory coalescing by accessing contiguous memory locations
+// Reduce divergent branching for better warp execution efficiency
+// Consider using shared memory for repeated data access within a block
+// Minimize use of bool variables for condition checking to reduce register pressure

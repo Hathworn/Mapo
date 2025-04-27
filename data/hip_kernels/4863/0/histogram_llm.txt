@@ -1,0 +1,8 @@
+```c
+// Ensure shared memory usage is within limits to avoid bank conflicts
+// Optimize usage of shared memory for better occupancy
+// Consider unrolling the loop for initializing shared histogram if block size is known
+// Consider using warp-level primitives to reduce synchronization overhead
+// Ensure global memory access is aligned for better bandwidth utilization
+// Use __restrict__ keyword if applicable to pointers for better optimization
+```

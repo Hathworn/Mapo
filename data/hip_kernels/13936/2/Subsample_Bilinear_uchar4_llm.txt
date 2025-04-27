@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache neighboring pixels for better memory coalescing
+// Minimize the number of texture fetches by reusing fetched data
+// Consider loop unrolling if iterations are fixed and small
+// Ensure grid and block dimensions optimize occupancy and memory access patterns
+```

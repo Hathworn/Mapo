@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data and accessing memory sequentially
+// Utilize shared memory if reuse of certain data is significant, especially for large arrays
+// Consider loop unrolling if the loop body involves complex calculations to improve instruction level parallelism
+// Optimize register usage to reduce register pressure and maintain efficient use of GPU resources
+// Assess if memory access patterns can benefit from using texture or constant memory for frequently accessed read-only data
+// Experiment with adjusting block size and grid size for optimal occupancy and efficiency
+```

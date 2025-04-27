@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if the data access pattern allows it to reduce global memory traffic.
+// Ensure memory coalescing by checking if consecutive threads access consecutive memory addresses.
+// Evaluate if prefetching data to registers can benefit performance by reducing memory latency.
+// Check if the use of __restrict__ for pointers helps the compiler with additional optimizations.
+// Assess the grid and block size configurations to achieve maximum occupancy and hide memory latencies.
+```

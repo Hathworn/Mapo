@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ qualifier to improve compiler optimization
+// Use coalesced memory accesses when accessing normDistPrefixSum to reduce memory latency
+// Minimize the use of __syncthreads where possible to reduce synchronization overhead
+// Load prefix sums into shared memory in a coalesced manner to maximize bandwidth utilization
+// Ensure sharedPrefixSum is accessed in a coalesced manner to improve memory throughput
+// Consider double buffering if accessing shared memory becomes a bottleneck
+// Utilize warp-level primitives to optimize reduction operations for multinomial sampling
+```

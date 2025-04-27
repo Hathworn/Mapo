@@ -1,0 +1,6 @@
+```
+// Ensure coalesced access to global memory for mask and value loading
+// Minimize the use of shared memory to only necessary elements
+// Reduce branch divergence through conditional operator usage
+// Use __syncthreads() to avoid race conditions with shared memory usage
+```

@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by using global stride loop
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Minimize register pressure by limiting the number of variables in the kernel
+// Use appropriate block and grid size to maximize GPU occupancy
+// Avoid bank conflicts when using shared memory by proper indexing

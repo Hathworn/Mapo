@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses for matrices A and B
+// Ensure all threads in a warp access contiguous memory locations
+// Increase the tile size if shared memory allows for it
+// Minimize shared memory bank conflicts
+// Utilize vectorized memory accesses where possible
+// Explore using float4 loads to reduce memory transactions
+// Double-buffer shared memory to overlap computation and data transfer
+// Investigate use of warp-level primitives to balance usage and reduce delay
+```

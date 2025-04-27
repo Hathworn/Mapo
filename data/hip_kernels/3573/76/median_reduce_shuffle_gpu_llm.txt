@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by adjusting sample indices for optimal performance.
+// Prefetch data to shared memory in chunks to minimize global memory access latency.
+// Use loop unrolling if the loop's trip count is known at compile time to reduce control overhead.
+// Reduce bank conflicts in shared memory by adjusting data storage layout.
+// Utilize warp shuffle instructions to replace some synchronization barriers with warp-level operations.
+```

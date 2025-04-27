@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access to improve global memory throughput
+// Consider using texture memory for read-only data like `original` for better caching
+// Evaluate potential use of atomic operations if concurrent writes occur
+// Assess possibility to loop unroll if beneficial for performance
+```

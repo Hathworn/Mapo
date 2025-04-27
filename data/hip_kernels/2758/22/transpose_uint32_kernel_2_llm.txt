@@ -1,0 +1,7 @@
+```
+// Ensure shared memory is optimally sized to reduce bank conflicts and improve memory access efficiency
+// To avoid unnecessary data transfers, check boundary conditions before accessing global memory
+// Switch global memory access pattern to coalesce accesses and maximize memory throughput
+// Minimize the use of __syncthreads() where possible to avoid unnecessary synchronization overhead
+// Store results in global memory in a manner that maximizes coalesced writes
+```

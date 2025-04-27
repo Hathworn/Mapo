@@ -1,0 +1,6 @@
+```
+// Consider aligning data to warp size for coalesced accesses
+// Use shared memory to reduce redundant global memory accesses
+// Load pred and truth values into registers to minimize global memory reads
+// Ensure error and delta arrays are written to sequentially to optimize write patterns
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to store frequently accessed form factors, reducing global memory accesses.
+// Calculate hydration outside the loop to avoid redundant computation.
+// Instead of using global memory for block index, use a local variable to reduce register pressure.
+// Use __syncthreads() to ensure all threads have loaded data into shared memory before proceeding.
+// Optimize atomic form factor calculation by using conditional indexing, minimizing branching.
+// Distribute work across threads to ensure perfect coalescing and maximize memory throughput.
+```

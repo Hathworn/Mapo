@@ -1,0 +1,12 @@
+```
+// Optimize memory access by using shared memory to store Ar and Aw portions.
+// Minimize bank conflicts by aligning shared memory usage.
+// Prefetch global memory data to registers to reduce latency.
+// Use more uniform and coalesced memory access patterns.
+// Ensure data is being accessed with aligned memory operations.
+// Employ loop unrolling to optimize the iteration over global thread ID.
+// Consider using __syncthreads for synchronizing threads effectively.
+// Use warp-level primitives to optimize reduction operations if needed.
+// Ensure thread-block dimensions are optimized for the GPU architecture.
+// Tune grid and block dimensions based on kernel performance analysis.
+```

@@ -1,0 +1,9 @@
+```c
+// Use shared memory to reduce global memory access for img_r, img_g, img_b
+// Use float3 for coalesced memory access instead of separate R, G, B arrays
+// Precompute 1/255.0f for performance improvement
+// Consider using half precision if precision can be traded for performance
+// Reduce if-statements by computing H value conditionally and using mathematical operations
+// Ensure memory stores (img_h, img_s, img_l) are aligned and coalesced
+// Use warp-level intrinsics for min/max calculation to improve performance
+```

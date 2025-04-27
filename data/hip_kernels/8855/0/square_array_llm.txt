@@ -1,0 +1,8 @@
+```
+// Use coalesced global memory accesses to improve memory throughput
+// Ensure data is aligned for better memory access efficiency
+// Minimize global memory accesses by maximizing use of shared memory
+// Avoid bank conflicts in shared memory for optimal performance
+// Reduce synchronization by structuring the code to minimize __syncthreads() usage
+// Consider loop unrolling for additional performance improvement
+```

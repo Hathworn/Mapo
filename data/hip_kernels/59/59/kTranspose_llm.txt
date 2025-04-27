@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Align COPY_BLOCK_SIZE with warp size to optimize memory access patterns
+// Add padding to avoid bank conflicts in shared memory access
+// Ensure global memory access is coalesced by following a linear access pattern
+// Consider splitting the kernel if COPY_BLOCK_SIZE becomes too large to handle within shared memory limits
+// Use __syncthreads() to ensure all threads complete data loading before writing to global memory
+```

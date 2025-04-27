@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache frequently accessed data
+// Minimize warp divergence by ensuring threads in a block follow the same execution path
+// Try loop unrolling to enhance performance inside the nested loop
+// Ensure coalesced memory access by aligning data structure for PointType_BestN
+// Employ prefetching to hide memory latency for PointType_BestN and ConnectStatus
+// Consider merging reads/writes to global memory to minimize transaction overhead
+```

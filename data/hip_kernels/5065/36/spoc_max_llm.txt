@@ -1,0 +1,8 @@
+```
+// Reduce the number of global memory accesses by using shared memory
+// Ensure coalesced memory access by having each thread in a warp access consecutive memory locations
+// Minimize bank conflicts in shared memory by ensuring proper data alignment
+// Use __syncthreads() judiciously to synchronize threads after shared memory loading and reduction steps
+// Optimize block size and grid size to achieve maximum occupancy and minimize latency
+// Consider using warp-level primitives like __shfl_down_sync for better reduction within warps
+```

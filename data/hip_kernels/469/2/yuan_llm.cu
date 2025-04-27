@@ -1,0 +1,14 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void yuan(const char *text, int *pos, int text_size) {
+    int textP = blockIdx.x * blockDim.x + threadIdx.x;
+    if (textP >= text_size) return;
+
+    // Calculate start position efficiently
+    const char *start = text + textP;
+    while (start > text && *(start - 1) > ' ') {
+        start--;
+    }
+    pos[textP] = textP - (start - text);
+}

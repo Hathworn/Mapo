@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to store intermediate computations for faster access.
+// Ensure memory accesses are coalesced for optimal global memory bandwidth utilization.
+// Minimize divergence by ensuring if conditions minimize warp divergence.
+// Reuse registers to lower register usage if possible, improving performance on devices with limited register count.
+```

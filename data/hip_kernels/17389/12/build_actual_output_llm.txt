@@ -1,0 +1,6 @@
+```c
+// Use shared memory if possible to cache idx_labels for repeated access
+// Ensure optimal block size for better memory coalescing
+// Consider using __ldg() for reading idx_labels if beneficial on the target GPU
+// Align data structures to 128 bytes for better memory transaction efficiency
+```

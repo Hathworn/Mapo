@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses within each block
+// Ensure coalesced memory access patterns by aligning data accesses within warps
+// Consider loop unrolling for the reduction loop to reduce branching and improve performance
+// Use early exit strategy if unnecessary computations are detected based on data size
+```

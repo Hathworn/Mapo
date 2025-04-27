@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for v_norme if subsequent operations are performed to reduce global memory access.
+// Use a temporary variable to store VN[i] for reuse in both diff computation and assignment to reduce global memory reads.
+// Ensure proper alignment of memory accesses to improve coalesced memory access.
+```

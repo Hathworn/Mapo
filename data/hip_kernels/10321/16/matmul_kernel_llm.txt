@@ -1,0 +1,9 @@
+```
+// Load elements from global to shared memory using coalesced access patterns.
+// Increase tile size to allow more data reuse in shared memory.
+// Unroll loops to improve instruction-level parallelism and increase throughput.
+// Use a blocking mechanism to divide workloads and maximize shared memory usage.
+// Avoid bank conflicts in shared memory by ensuring data is accessed contiguously.
+// Prefetch data into shared memory to hide global memory latency.
+// Balance computation and memory access to optimize for latency and throughput.
+```

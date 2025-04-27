@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve bandwidth usage
+// Ensure d_bins is allocated in fast memory, e.g., shared memory, if possible
+// Try to minimize bank conflicts in shared memory
+// Explore using warp-level primitives for better warp utilization
+// Profile and analyze memory access patterns for optimization areas
+```

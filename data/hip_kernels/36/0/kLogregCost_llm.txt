@@ -1,0 +1,7 @@
+```
+// Use __ldg for global memory read on constant data for better cache usage
+// Use blockDim for thread index calculation to leverage built-in variable
+// Employ __logf for improved performance with logarithmic calculations
+// Utilize conditional operator to replace if-else statements for conditional checks
+// Consider using thrust::device for reduction to improve parallelism and efficiency
+```

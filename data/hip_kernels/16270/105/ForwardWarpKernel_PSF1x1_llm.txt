@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache portions of 'u', 'v', and 'src' for faster access in each block.
+// Align memory access patterns of 'u', 'v', and 'src' to take advantage of coalesced memory accesses.
+// Precompute 'flow_row_offset' and 'image_row_offset' outside of the conditional to reduce computations in the loop.
+// If possible, minimize the usage of atomic operations as they can serialize access and degrade performance.
+```

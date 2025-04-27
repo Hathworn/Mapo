@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring float* annd and unsigned char* bgr are coalesced.
+// Minimize divergent branches by ensuring (x < w && y < h) condition is uniformly met.
+// Reduce redundant calculations by hoisting (maxval - minval) outside the loop if constant.
+// Ensure the use of __restrict__ keyword if applicable for pointer arguments to enhance compiler optimizations.

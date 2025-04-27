@@ -1,0 +1,7 @@
+```c
+// Reduce global memory access by using shared memory for the 'uni' variable.
+// Calculate address using blockDim.x for coalesced memory access.
+// Use __syncthreads() to ensure all threads have loaded 'uni' before proceeding.
+// Use local variable 'local_uni' to minimize redundant accesses to shared memory.
+// Perform operations on data in a coalesced manner to improve memory throughput.
+```

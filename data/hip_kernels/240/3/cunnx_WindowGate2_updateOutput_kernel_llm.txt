@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache inputs, reducing global memory accesses.
+// Prefer coalesced memory accesses to improve access patterns.
+// Use loop unrolling to maximize data throughput.
+// Ensure all memory operations are fully coalesced.
+// Evaluate using warp-level primitives to reduce __syncthreads overhead.
+```

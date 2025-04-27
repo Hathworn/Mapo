@@ -1,0 +1,7 @@
+```
+// Avoid accessing mask array multiple times, cache mask[curt] value
+// Consider using shared memory for input and mask if there is sufficient space
+// Ensure coalesced memory access by aligning data structures appropriately
+// Avoid divergent branches by minimizing condition checks inside loop
+// Utilize vectorized loads/stores if data alignment permits
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for Global_Mask to reduce global memory reads.
+// Evaluate the benefit of temporary storage in registers for the intermediate Value result.
+// Aim to minimize the number of runtime boundary checks for neighborIndex within the loop.
+// Use loop unrolling to reduce loop overhead and improve performance.

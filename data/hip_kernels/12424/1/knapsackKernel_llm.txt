@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Align data accesses to warp size to optimize memory transactions.
+// Coalesce global memory accesses to improve throughput.
+// Minimize divergent branches within the kernel for better performance.
+// Preload frequently accessed data into registers to speed up computation.
+// Ensure memory access patterns allow for effective caching.
+```

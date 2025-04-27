@@ -1,0 +1,5 @@
+// Use shared memory if possible to reduce global memory accesses.
+// Ensure memory coalescing by accessing consecutive elements among threads.
+// Consider using float4 for vectorized operations to improve throughput.
+// Evaluate the use of atomic operations if race conditions are possible.
+// Experiment with different block and grid sizes to achieve optimal performance.

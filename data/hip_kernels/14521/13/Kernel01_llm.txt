@@ -1,0 +1,7 @@
+```
+// Ensure coalesced global memory access for A and B
+// Use shared memory effectively to reduce global memory bandwidth
+// Avoid bank conflicts in shared memory access
+// Minimize divergent threads within the warp
+// Use __syncthreads() efficiently to avoid unnecessary synchronization
+```

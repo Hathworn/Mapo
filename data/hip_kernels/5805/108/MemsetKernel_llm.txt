@@ -1,0 +1,3 @@
+// Use shared memory to enhance memory access speed by reducing global memory accesses
+// Utilize __syncthreads() to ensure all threads have written before copying to global memory
+// Check thread within bounds using i < h && j < w to prevent out-of-bounds memory access

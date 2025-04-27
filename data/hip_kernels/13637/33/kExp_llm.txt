@@ -1,0 +1,7 @@
+```cpp
+// Use a stride loop and shared memory for coalesced access
+// Ensure grid and block size are optimized for GPU occupancy
+// Utilize shared memory to minimize global memory access
+// Consider using __expf for faster computation if high precision is not required
+// Align data access to warp size for coalesced memory transactions
+```

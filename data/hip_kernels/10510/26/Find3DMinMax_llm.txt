@@ -1,0 +1,6 @@
+// Optimize memory access by using shared memory caches effectively
+// Minimize global memory access by reading input data into shared memory
+// Ensure coalesced access patterns to improve memory throughput
+// Use shared memory to store intermediate min/max values for faster computation
+// Reduce usage of __syncthreads() to minimize synchronization overhead
+// Consider overlapping computation and memory transfer if applicable

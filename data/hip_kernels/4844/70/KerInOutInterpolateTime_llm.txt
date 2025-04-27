@@ -1,0 +1,6 @@
+```c
+// Consider coalescing memory accesses for vel0 and vel1 for improved memory access patterns.
+// Ensure that the accessed memory is aligned, which could improve memory transaction efficiency.
+// Prefetch the data from global memory to registers to reduce latency.
+// Use shared memory if there are repeated accesses to the same data by multiple threads.
+```

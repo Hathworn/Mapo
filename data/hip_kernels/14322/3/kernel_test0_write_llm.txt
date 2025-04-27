@@ -1,0 +1,9 @@
+```
+// Ensure coalesced accesses by aligning data structures and memory access patterns
+// Minimize the use of shared memory barring necessity to reduce latency
+// Align memory access to a multiple of the warp size to reduce bank conflicts
+// Consider using __restrict__ keyword to indicate that pointer arguments do not alias
+// Leverage texture or read-only data cache for frequent read-only accesses
+// Evaluate the use of faster local or register memory for frequently accessed data
+// Optimize block and grid dimensions to maximize occupancy and efficient memory access
+```

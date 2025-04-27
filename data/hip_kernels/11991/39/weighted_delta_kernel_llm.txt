@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for frequently accessed data
+// Ensure __syncthreads() is used to synchronize thread data in shared memory
+// Minimize condition checks within the loop for better performance
+// Align memory access to optimize coalescing patterns where possible
+// Use indexed access for shared memory to improve data retrieval speed
+// Consider possible bank conflicts in shared memory usage and optimize accordingly
+```

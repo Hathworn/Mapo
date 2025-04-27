@@ -1,0 +1,6 @@
+```
+// Load column offsets into shared memory to reduce global memory access
+// Synchronize threads to ensure shared memory is fully initialized before use
+// Use shared memory to store the start and end offsets for faster access
+// Each thread calculates a unique column ID to optimize workload distribution
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed variables to minimize global memory reads.
+// Ensure coalesced memory accesses by aligning data structures with warp size on 32-bit boundaries.
+// Minimize conditional checks within the kernel loop to improve execution efficiency.
+// Eliminate potential warp divergence by minimizing conditional branches among threads.

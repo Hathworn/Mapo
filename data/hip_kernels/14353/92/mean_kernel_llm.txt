@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory accesses
+// Ensure memory coalescing by aligning memory access patterns
+// Utilize loop unrolling further, especially for known fixed sizes
+// Explore using warp shuffles to minimize shared memory usage for partial sums
+// Check if more complex techniques like prefetching could be applicable
+```

@@ -1,0 +1,2 @@
+// Ensure coalesced access for d_input_cdf to maximize memory throughput
+// Consider using shared memory if the values of d_input_cdf are reused across threads in a block

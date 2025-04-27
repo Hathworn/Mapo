@@ -1,0 +1,4 @@
+// Consider using shared memory to minimize global memory accesses.
+// Precompute values outside the loop if possible to reduce redundant calculations.
+// Use __device__ functions for mathematical operations when performance is critical.
+// Ensure coalesced memory access by checking memory alignment.

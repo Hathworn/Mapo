@@ -1,0 +1,7 @@
+```
+// Use shared memory effectively to reduce global memory accesses.
+// Ensure memory coalescing when accessing global memory (g_idata and g_odata).
+// Minimize shared memory bank conflicts during accesses.
+// Avoid unnecessary boundary checks by optimizing grid and block configurations.
+// Use warp-aware reduction techniques to minimize thread divergence for better performance.
+```

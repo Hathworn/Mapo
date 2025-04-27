@@ -1,0 +1,7 @@
+```
+// Load data in coalesced manner to improve memory bandwidth
+// Ensure proper memory alignment for increased performance
+// Consider using shared memory to minimize access to global memory
+// Use warp shuffle functions instead of volatile for warp reductions
+// Minimize divergent branches within the warp to maximize efficiency
+```

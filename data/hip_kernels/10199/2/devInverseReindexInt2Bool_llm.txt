@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache parts of srcArray for faster access
+// Explore coalesced memory access patterns for both srcArray and destArray
+// Minimize divergent branches by reorganizing condition checks
+// Ensure that reindex is stored in faster memory, like constant or shared memory, if possible
+// Consider using atomic operations for updating parts of destArray if required
+// Evaluate the possibility of loop unrolling for the performance-critical sections
+```

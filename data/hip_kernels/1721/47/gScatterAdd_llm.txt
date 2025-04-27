@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache sparse data and indices for coalesced access
+// Align memory access patterns for sparseIndices to avoid bank conflicts
+// Consider using warp-level primitives for more efficient synchronization
+// Optimize block size and grid size based on hardware constraints and data size
+```

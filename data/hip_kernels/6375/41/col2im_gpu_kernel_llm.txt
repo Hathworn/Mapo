@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to cache key data_col elements for faster access
+// Use register variables for frequently accessed variables such as val
+// Implement thread coarsening by handling multiple pixels per thread where applicable
+// Consider using texture memory for read-only data_col to reduce global memory bandwidth
+// Ensure memory access patterns are optimized for coalescing to maximize throughput
+// Reduce warp divergence by ensuring uniform control flow across threads
+```

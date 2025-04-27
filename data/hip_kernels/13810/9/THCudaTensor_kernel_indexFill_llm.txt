@@ -1,0 +1,6 @@
+```
+// Optimize global memory access by using shared memory for stride and index data.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+// Consider coalesced memory accesses to improve memory bandwidth utilization.
+// Evaluate loop unrolling to decrease overhead in the update loop.
+```

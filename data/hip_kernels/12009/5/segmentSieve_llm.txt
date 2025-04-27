@@ -1,0 +1,10 @@
+```c
+// Consider increasing the size of sharedPrimes if maxRoot exceeds 1024.
+// Ensure that global memory accesses coalesce properly for better throughput.
+// Use constant memory if certain values are reused frequently and do not change.
+// Minimize the use of __syncthreads() if threads can be synchronized more efficiently.
+// Perform loop unrolling manually to reduce the overhead of loop control.
+// Optimize index calculations to minimize computational load within the kernel.
+// Consider larger block sizes if occupancy and register usage allow.
+// Ensure that branching is minimized for better warp execution.
+```

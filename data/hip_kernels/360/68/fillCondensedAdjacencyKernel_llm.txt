@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses for permutedAdjIndexesIn and permutedAdjacencyIn
+// Use shared memory to minimize global memory access latency
+// Avoid bank conflicts in shared memory access
+// Reduce global memory write latency by coalescing writes to adjacencyOut
+```

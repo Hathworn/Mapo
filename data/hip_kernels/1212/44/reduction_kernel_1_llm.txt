@@ -1,0 +1,5 @@
+// Consider using memory coalescing for global memory accesses to improve throughput.
+// Ensure shared memory usage is optimized by minimizing bank conflicts.
+// Utilize warp-level reductions to minimize the number of __syncthreads() calls.
+// Use volatile to prevent unintended optimizations that may lead to incorrect results in warp-level operations.
+// Consider unrolling loops for warp-level operations to reduce divergence and increase efficiency.

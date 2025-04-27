@@ -1,0 +1,5 @@
+// Minimize redundant calculations by precomputing invariant values outside the loop
+// Use shared memory for commonly accessed variables to reduce global memory access
+// Coalesce memory access patterns for improved cache efficiency
+// Employ loop unrolling techniques where applicable to enhance performance
+// Reduce thread divergence by ensuring consistent condition checks across threads

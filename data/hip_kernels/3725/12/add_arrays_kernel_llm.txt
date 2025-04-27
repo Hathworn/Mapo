@@ -1,0 +1,3 @@
+// Align data access to cache lines to improve memory throughput
+// Use __ldg() for read-only data to leverage texture cache
+// Use shared memory to reduce global memory access where possible

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and latency.
+// Ensure all threads within a block synchronize after loading shared memory using __syncthreads().
+// Consider coalesced access and alignment for efficient memory bandwidth utilization.
+// Optimize shared memory usage to avoid bank conflicts and contention.
+// Evaluate if the grid and block dimensions maximize occupancy and minimize divergence.
+```

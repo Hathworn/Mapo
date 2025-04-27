@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for data frequently accessed by threads in the same block to reduce global memory access.
+// Minimize printf statements inside kernels for performance; use them sparingly for debugging only.
+// Optimize memory access patterns to achieve coalesced memory access and avoid bank conflicts.
+```

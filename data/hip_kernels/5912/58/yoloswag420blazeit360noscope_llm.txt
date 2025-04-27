@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access to global memory for better memory throughput.
+// Consider using shared memory to cache data and reduce global memory accesses.
+// Align data processing per warp to take advantage of memory coalescing.
+// Minimize divergent branches to enhance warp execution efficiency.
+// Optimize grid and block dimensions to maximize occupancy.
+```

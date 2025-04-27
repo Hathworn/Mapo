@@ -1,0 +1,6 @@
+```
+// Use shared memory if possible to reduce global memory access latency
+// Consider memory coalescing for gpu_sumRnew, gpu_sumInew, gpu_prefact, and gpu_energyRecip
+// Use warp-level primitives if applicable for further optimization
+// Evaluate if prefetching data could improve performance
+```

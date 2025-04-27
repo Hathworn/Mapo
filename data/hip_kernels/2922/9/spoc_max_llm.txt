@@ -1,0 +1,9 @@
+```
+// Consider aligning memory accesses to improve coalescing.
+// Recommend loading multiple elements per thread if possible to utilize bandwidth.
+// Ensure properly sized shared memory allocation for reduction.
+// Maximize occupancy by experimenting with different block sizes.
+// Use `__shared__` keyword efficiently to minimize bank conflicts.
+// Evaluate using `HIP_DYNAMIC_SHARED` for dynamic shared memory allocation.
+// Utilize warp-level primitives for further reduction optimization.
+```

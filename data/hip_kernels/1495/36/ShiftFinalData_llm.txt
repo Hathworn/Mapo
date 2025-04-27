@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory access for AfterFFTData to improve memory throughput.
+// Use shared memory to reduce redundant global memory accesses if possible.
+// Ensure that memory accesses are aligned to maximize memory bandwidth.
+// Avoid divergent branches to maintain warp efficiency.
+// Evaluate the potential use of vectorized memory instructions for further optimization.
+```

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for caching frequently accessed values like maxProbs to reduce global memory accesses.
+// Coalesced memory access patterns can be achieved by ensuring threads access contiguous memory locations.
+// Evaluate the possibility of using atomic operations to update shared variables, if multiple threads need to modify them.
+```

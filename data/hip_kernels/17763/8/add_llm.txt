@@ -1,0 +1,6 @@
+```
+// Consider using separate indices for each thread to maximize parallelism
+// Ensure coalesced memory access for better performance
+// Avoid using shared memory for single value unless it's repeatedly accessed
+// Reduce printf usage in GPU kernel for performance
+```

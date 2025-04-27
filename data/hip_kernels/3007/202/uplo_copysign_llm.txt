@@ -1,0 +1,7 @@
+```
+// Consider coalesced access for 'a', 'b', and 'c' by ensuring gid_0 maps to consecutive memory locations
+// Use shared memory to cache parts of 'a', 'b', and 'c' to reduce global memory access latency
+// Ensure that memory accesses for 'a', 'b', and 'c' are aligned to improve memory access efficiency
+// Minimize the use of branching by restructuring the logic to reduce divergent warps
+// Evaluate the usage of texture memory for read-only accesses to 'a' and 'b' for potentially better performance
+```

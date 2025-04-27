@@ -1,0 +1,6 @@
+```
+// Consider using a grid-stride loop for better load balancing across threads.
+// Ensure coalesced memory access by checking memory alignment of globalState and degreeCount.
+// Limit the use of atomic operations if applicable to reduce contention and improve throughput.
+// Minimize the state storage overhead by updating localState within the grid-stride loop.
+```

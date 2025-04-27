@@ -1,0 +1,4 @@
+// Use grid-stride loop to ensure all elements in large datasets are processed
+// Optimize memory access by calculating indices outside of main computation
+// Load mean and variance values into shared memory to reduce global memory accesses
+// Consider loop unrolling to enhance performance

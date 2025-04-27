@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache input data if access patterns align to reduce global memory traffic
+// Consider coalescing memory accesses for X and Y for better memory throughput
+// Check for occupancy to ensure full utilization of the GPU SMs
+// Unroll the loop if the number of iterations is small enough to fit within the register usage limits
+// Align memory for X and Y arrays to improve alignment and reduce bank conflicts
+```

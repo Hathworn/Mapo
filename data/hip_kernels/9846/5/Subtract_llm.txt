@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses if data can be reused across threads
+// Ensure memory coalescing when accessing global memory for optimal performance
+// Remove __syncthreads() as it is not needed without shared memory synchronization

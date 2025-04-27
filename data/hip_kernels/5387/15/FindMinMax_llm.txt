@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for d_Data by ensuring consecutive threads access consecutive elements
+// Utilize shared memory to minimize global memory access latency
+// Use early return to avoid unnecessary computations for out-of-bound threads
+// Unroll reduction loop to further enhance performance
+// Implement instruction-level parallelism within warp for better utilization
+```

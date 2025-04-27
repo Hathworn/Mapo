@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache frequently accessed data like 'comb_count' and 'comb_sum' to reduce global memory access.
+// Consider using texture memory if the access patterns of 'hashes' show spatial locality to improve memory throughput.
+// Coalesce memory accesses for 'sort_indices' and 'comb_prefix' to minimize global memory access latency.
+// Group threads to access consecutive memory locations by aligning block size to ensure effective coalescing of 'hashes' accesses.
+// Utilize warp-level primitives to reduce divergence within warps when accessing 'comb_prefix'.
+```

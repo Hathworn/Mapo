@@ -1,0 +1,7 @@
+```
+// Consider using shared memory and strided access to enhance memory coalescing.
+// Minimize thread divergence within the reduction loop by ensuring all threads reach synchronization points.
+// To optimize bank conflicts in shared memory, utilize padding or align data appropriately.
+// Evaluate the use of atomic operations for reduction to allow finer granularity in parallel accumulation.
+// Restrict calculations inside conditionals to the warp level to maintain coherence in execution.
+```

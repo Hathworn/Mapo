@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache small chunks of gradOutput_data to reduce global memory reads.
+// Exploit memory coalescing by ensuring threads in a warp access contiguous memory locations.
+// Consider increasing TILE_SIZE to improve data reuse and reduce effective memory bandwidth.
+// Investigate if reducing bank conflicts in the use of shared memory can provide performance gains.
+// Experiment with different block sizes and grid configurations to optimize balance between computation and memory access.
+```

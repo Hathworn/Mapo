@@ -1,0 +1,8 @@
+```
+// Consider using vectorized memory loads for A and B to improve memory coalescing.
+// Reorder data loading to maintain read patterns for increased memory throughput.
+// Minimize divergence by ensuring all threads follow the same execution path.
+// Use __builtin_assume_aligned for A, B, and C to inform compiler about alignment.
+// Optimize shared memory usage by ensuring TILE_WIDTH fits within the hardware's shared memory size.
+// Use loop unrolling for the inner accumulation loop to enhance instruction-level parallelism.
+```

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z20compareWithOneKernelPfPKd' function" {
+	label="CFG for '_Z20compareWithOneKernelPfPKd' function";
+
+	Node0x546cdd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds double, double addrspace(1)* %1, i64 %4\l  %6 = load double, double addrspace(1)* %5, align 8, !tbaa !5,\l... !amdgpu.noclobber !9\l  %7 = fcmp contract oeq double %6, 1.000000e+00\l  br i1 %7, label %8, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x546cdd0:s0 -> Node0x546ead0;
+	Node0x546cdd0:s1 -> Node0x546eb60;
+	Node0x546ead0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%8:\l8:                                                \l  %9 = getelementptr inbounds float, float addrspace(1)* %0, i64 %4\l  %10 = load float, float addrspace(1)* %9, align 4, !tbaa !10,\l... !amdgpu.noclobber !9\l  %11 = fadd contract float %10, 1.000000e+00\l  store float %11, float addrspace(1)* %9, align 4, !tbaa !10\l  br label %12\l}"];
+	Node0x546ead0 -> Node0x546eb60;
+	Node0x546eb60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%12:\l12:                                               \l  ret void\l}"];
+}

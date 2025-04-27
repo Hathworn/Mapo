@@ -1,0 +1,8 @@
+```
+// Use shared memory to store normalization_factor in blocks to reduce global memory accesses
+// Consider using float4 loads if data is aligned to enhance memory coalescing
+// Group reads and writes to encourage memory coalescing
+// Employ loop unrolling technique for better performance
+// Check if using a different memory layout improves cache utilization
+// Ensure optimal block size to maximize occupancy
+```

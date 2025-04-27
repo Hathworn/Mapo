@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache input data for better memory access patterns
+// Consider coalesced memory accesses for output data
+// Ensure enough threads are launched to fully utilize GPU resources
+// Align memory accesses to ensure optimal bandwidth utilization
+// Use __restrict__ qualifier for input and output pointers to improve compiler optimizations
+```

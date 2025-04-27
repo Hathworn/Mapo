@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency.
+// Ensure coalesced memory access to improve bandwidth utilization.
+// Use appropriate data alignment for efficient memory transactions.
+// Explore loop unrolling for reduced instruction count in critical sections.
+// Minimize divergence by ensuring threads within a warp follow similar execution paths.

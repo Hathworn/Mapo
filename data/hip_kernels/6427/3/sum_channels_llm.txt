@@ -1,0 +1,5 @@
+// Consider using shared memory to cache src data to reduce global memory access latency  
+// Ensure memory accesses are coalesced by aligning src and dest data  
+// Optimize loop by unrolling to reduce instruction overhead  
+// Use __restrict__ keyword for pointers to help compiler with more aggressive optimizations  
+// Evaluate use of warp shuffle to aggregate results more efficiently

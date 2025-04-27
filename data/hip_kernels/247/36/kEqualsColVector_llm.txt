@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for 'mat' and 'tgtMat' to improve memory bandwidth utilization.
+// Use shared memory if 'vec' is reused multiple times within a block to reduce global memory accesses.
+// Ensure the kernel is launched with a multiple of the warp size for optimal performance.
+// Minimize divergent branches by ensuring uniform execution paths within warps.
+// Use pragma unroll to unroll the loop for better instruction-level parallelism if the stride condition is known at compile time.
+```

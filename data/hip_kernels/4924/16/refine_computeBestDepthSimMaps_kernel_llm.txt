@@ -1,0 +1,7 @@
+// Consider unrolling loops in the refineDepthSubPixel function to minimize branch divergence.
+// Use shared memory in refine_computeBestDepthSimMaps_kernel to store reused temporary values like depths and sims.
+// Evaluate using texture or surface memory for accessing read-only input arrays isims and idpts for better caching efficiency.
+// Employ coalesced memory access patterns while reading and writing osim and odpt to reduce global memory latency.
+// Leverage __ldg() intrinsic for read-only data like idpts and isims to optimize device memory access.
+// Use warp-level primitives to perform reductions or comparisons for sims to minimize thread divergence within a warp.
+// Optimize idpts and isims memory layout for 3D vector alignment to better utilize vectorized memory access.

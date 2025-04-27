@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Ensure kernel launch configuration (block size and grid size) is optimized for the GPU architecture used.
+// Experiment with different block sizes for optimal performance, respecting the hardware limitations.
+// Use shared memory if necessary to reduce global memory accesses for improved performance.
+// Ensure to check for memory bank conflicts if shared memory is utilized.
+// Validate if writing once to const_ptr within the kernel is optimal or if changes outside the kernel are needed.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to temporarily store d_n_recv_by_block to further reduce global memory access
+// Consider loop unrolling if appropriate to improve performance for this specific case
+// Ensure proper alignment of memory access to enhance coalescing
+// Analyze and adjust block size for optimal occupancy and performance
+```

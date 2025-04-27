@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by indexing state array with id calculated using block and thread indices.
+// Optimize memory access patterns by setting block dimensions to be a multiple of the warp size.
+// Consider using shared memory if multiple threads in the same block require access to the same data.
+// Minimize use of global memory within kernel to reduce latency.
+```

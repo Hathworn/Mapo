@@ -1,0 +1,8 @@
+```
+// Ensure that data is coalesced for optimal memory access.
+// Consider using __ldg() for read-only data in future architectures.
+// Use shared memory effectively to minimize global memory access.
+// Check for bank conflicts in shared memory and try to minimize them.
+// Optimize thread block size for maximum occupancy.
+// Consider using float4 for memory access to increase throughput.
+```

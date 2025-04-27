@@ -1,0 +1,4 @@
+// Consider using shared memory to cache data and reduce global memory access
+// Ensure coalesced memory access by organizing data to minimize memory transaction overhead
+// Use __syncthreads() appropriately to avoid race conditions when shared memory is used
+// Evaluate warp occupancy and adjust grid/block size for optimal GPU utilization

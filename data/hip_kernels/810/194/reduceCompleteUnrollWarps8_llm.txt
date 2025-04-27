@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access frequency.
+// Consider coalesced memory access to optimize data reads.
+// Unroll loops to increase instruction throughput and reduce loop overhead.
+// Ensure synchronization after global memory writes to maintain data integrity.
+// Implement loop unrolling inside warp execution for efficiency.
+// Utilize volatile pointers for warp-synchronous programming within a warp.
+// Optimize reduction pattern for warp shuffle instruction support.
+```

@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory access
+// Calculate row and col indices to map threads to matrix elements
+// Load data into shared memory in tiles to optimize memory usage
+// Use conditional checks to avoid out-of-bounds memory access
+// Synchronize threads to ensure all data loaded before computation
+// Multiply tiles in shared memory to lower global memory latency
+// Synchronize threads again before loading next tile for correctness
+// Combine partial results using alpha and beta for final output
+```

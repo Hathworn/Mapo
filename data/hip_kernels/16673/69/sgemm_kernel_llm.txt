@@ -1,0 +1,4 @@
+// Consider using shared memory to store submatrices of A and B, reducing global memory accesses.
+// Ensure memory coalescing by having consecutive threads access consecutive memory addresses.
+// Evaluate unrolling the loop for better ILP (Instruction Level Parallelism).
+// Utilizing half-precision floats could improve performance on supporting architecture.

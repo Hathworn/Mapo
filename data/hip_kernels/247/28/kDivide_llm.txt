@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure memory access patterns are coalesced for better memory throughput.
+// Verify that gridDim.x and blockDim.x are chosen to maximize GPU occupancy.
+// Check if loop unrolling can further optimize the stride loop execution.

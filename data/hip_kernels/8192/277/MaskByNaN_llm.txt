@@ -1,0 +1,8 @@
+```cpp
+// Ensure that inputImage, mask, and outputImage are allocated in global memory for optimal data access
+// Consider coalesced memory accesses by ensuring adjacent threads access consecutive memory positions
+// Use shared memory if applicable, but assess whether it suits the current memory access pattern
+// Profile the kernel to determine if there is any bank conflict or uncoalesced memory access bottleneck
+// Check if using float data type is optimal or if half-precision can be utilized for specific use cases
+// Evaluate the occupancy to make sure block and grid sizes are optimized for the specific GPU architecture
+```

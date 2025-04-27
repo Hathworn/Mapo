@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when loading data into shared memory
+// Consider using a loop to handle cases when size > blockDim.x for loading data
+// Minimize warp divergence by ensuring all threads participate in reduction
+// Use volatile keyword if necessary to avoid compiler optimization issues with shared memory
+// Align shared memory allocation to avoid bank conflicts
+```

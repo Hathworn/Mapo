@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access by aligning data structures appropriately
+// Consider using float4 for better cache utilization if data alignment allows
+// Minimize shared memory usage when possible for higher occupancy
+// Adjust block size (16x16) based on compute capabilities and memory constraints
+// Unroll loops to reduce overhead and improve ILP
+// Prefetch shared memory data to register for reuse and reduce shared memory bank conflicts
+// Ensure blocks are evenly distributed across SMs for balanced workload
+// Optimize register usage to avoid register spilling into local memory
+```

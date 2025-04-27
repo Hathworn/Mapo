@@ -1,0 +1,7 @@
+```c
+// Load loc_ into register to reduce global memory access
+// Use registers for loc.x and loc.y for efficient computation
+// Use shared memory if repeated access to nearby elements is needed
+// Ensure memory access patterns are coalesced for loc_ array
+// Optimize block size and grid size for better occupancy
+```

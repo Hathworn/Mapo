@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access to ensure contiguous memory access patterns
+// Minimize divergence by ensuring conditional statements are aligned across threads
+// Consider using shared memory if neighboring thread data is frequently accessed
+// Optimize arithmetic operations within performance-critical sections, such as err calculation
+// Align data structures to cache line size to maximize cache efficiency
+// Consider using texture or surface memory for read-only data to improve cache hit rates
+```

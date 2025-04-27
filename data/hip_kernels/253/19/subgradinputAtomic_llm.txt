@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for gradOutput to reduce global memory access latency.
+// Ensure coalesced memory access for gradOutput to increase memory throughput.
+// Verify that the use of atomics does not cause performance bottlenecks due to contention.
+// Explore loop unrolling for inner loops (kH, kW) to enhance instruction level parallelism.
+// Check if rearranging thread block dimensions improves cache utilization.
+```

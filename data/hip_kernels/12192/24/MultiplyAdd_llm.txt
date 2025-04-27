@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory accesses by aligning data structures if possible.
+// Consider using shared memory to store intermediate results for better reuse.
+// Load constants into registers if possible to reduce global memory access.
+// Remove excessive use of __syncthreads if not required for inter-thread communication.
+```

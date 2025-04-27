@@ -1,0 +1,5 @@
+// Avoid divergent branching to maximize warp efficiency.
+// Coalesce memory access to minimize memory transaction.
+// Utilize shared memory to reduce global memory access latency.
+// Optimize computation to reduce redundant operations.
+// Align data structures to match memory bank width for efficient access.

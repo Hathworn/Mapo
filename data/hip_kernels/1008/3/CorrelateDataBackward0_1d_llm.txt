@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory access by ensuring bottom1 and topdiff are coalesced
+// Utilize shared memory to reduce redundant access to bottom1 and topdiff within loops
+// Unroll loops for improved performance in accessing topdiff
+// Minimize divergent branching by rearranging condition checks
+// Reduce arithmetic operations by caching repeated calculations
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring x and y are contiguous
+// Minimize warp divergence by maintaining consistent control flow within a block
+// Ensure the usage of shared memory if multiple threads access the same data simultaneously
+// Try using memory prefetching if supported, to reduce memory latency
+// Align memory allocations to memory boundaries for faster global memory access
+```

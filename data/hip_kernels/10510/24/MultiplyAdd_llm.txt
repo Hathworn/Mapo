@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache d_ConstantA and d_ConstantB for faster access
+// Ensure coalesced memory access patterns for d_Data and d_Result
+// Use restrict qualifier on pointers to avoid unnecessary aliasing checks
+// Evaluate using half precision if reduced precision is acceptable for your use case
+```

@@ -1,0 +1,6 @@
+// Consider using shared memory to cache frequently accessed data like maxProbs and labelLogProbs.
+// Minimize bank conflicts by accessing shared memory in a coalesced manner.
+// Investigate use of texture memory for read-only access to probs and labels.
+// Evaluate warp-level primitives to optimize reduction operations like numMax calculation.
+// Prefetch data from global memory to registers when possible to minimize latency.
+// Ensure global memory accesses are coalesced to increase memory throughput.

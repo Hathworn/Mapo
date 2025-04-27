@@ -1,0 +1,9 @@
+```
+// Unroll loops to enhance performance and improve memory access patterns.
+// Use shared memory effectively to minimize global memory accesses.
+// Perform boundary checks within loops to prevent invalid memory accesses.
+// Use thread synchronization (e.g., __syncthreads) efficiently to ensure data integrity.
+// Accumulate partial results in shared memory before final reduction to minimize global memory transactions.
+// Implement parallel reduction efficiently, where the intermediate results are computed in shared memory before a final write to global memory.
+// Optimize memory coalescing by ensuring threads access contiguous memory segments when possible.
+```

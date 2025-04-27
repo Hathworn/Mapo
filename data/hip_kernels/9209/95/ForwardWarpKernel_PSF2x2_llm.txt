@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for cache to reduce global memory accesses.
+// Coalesce global memory access when reading 'u', 'v', and 'src'.
+// Ensure proper memory alignment when accessing global memory.
+// Prefetch data for future threads to hide memory latency.
+// Minimize _atomicAdd operation by reducing the number of atomic transactions.
+```

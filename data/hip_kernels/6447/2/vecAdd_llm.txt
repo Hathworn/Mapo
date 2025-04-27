@@ -1,0 +1,3 @@
+// Use shared memory for better efficiency in memory bandwidth
+// Ensure synchronization with __syncthreads() after loading data to shared memory
+// Avoid branch divergence with boundary checks using if (id < n)

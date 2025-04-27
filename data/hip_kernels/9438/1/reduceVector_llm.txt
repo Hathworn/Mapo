@@ -1,0 +1,5 @@
+// Ensure optimal block size for memory coalescing
+// Minimize global memory access by using shared memory
+// Synchronize threads to avoid race conditions when accessing shared memory
+// Consider using warp-level primitives for further reduction optimization
+// Avoid bank conflicts in shared memory accesses

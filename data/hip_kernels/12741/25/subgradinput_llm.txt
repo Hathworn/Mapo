@@ -1,0 +1,8 @@
+```cpp
+// Consider optimizing shared memory size based on actual usage.
+// Evaluate if pre-fetching gradOutput using shared memory improves performance.
+// Use __syncthreads() to ensure all threads have loaded data to sharedGradOutput.
+// Investigate if using float4 or float2 types for memory transactions increases coalescing.
+// Evaluate the loop unrolling for maximum performance on nested loops.
+// Consider align memory accesses for gradInput to prevent bank conflicts.
+```

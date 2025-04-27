@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory accesses when copying pheroReal to phero to improve memory throughput.
+// Ensure __syncthreads() is used correctly to avoid race conditions among threads.
+// Reorganize the loops to improve load balance among threads.
+// Consider using shared memory if the size of phero or parts of it can fit into it to reduce global memory traffic.
+// Evaluate fusing loops to decrease kernel launch overhead.
+// Perform bounds checking to prevent out-of-bounds errors and potential race conditions.
+// Use atomic operations cautiously and evaluate if they can be minimized for better performance.
+// Consider loop unrolling to improve performance of the inner loop operations.
+```

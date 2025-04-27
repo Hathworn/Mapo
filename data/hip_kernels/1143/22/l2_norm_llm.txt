@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access by ensuring threads in a warp access neighboring elements
+// Store intermediate computations in registers to reduce global memory access
+// Prefetch data to shared memory to reduce global memory access latency
+// Consider loop unrolling for computations if applicable
+```

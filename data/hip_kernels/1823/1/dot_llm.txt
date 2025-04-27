@@ -1,0 +1,5 @@
+// Use shared memory to store partial results to reduce global memory accesses.
+// Unroll loop to process two elements per iteration to improve performance.
+// Ensure efficient memory accesses by accessing contiguous memory locations.
+// Optimize reduction step using loop unrolling to minimize synchronization overhead.
+// Store only partial results in global memory after accumulating in shared memory.

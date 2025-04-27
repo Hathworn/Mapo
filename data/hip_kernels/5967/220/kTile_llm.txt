@@ -1,0 +1,6 @@
+```
+// Consider increasing the size of the shared memory if needed
+// Ensure that `__syncthreads()` is used after loading data into shared memory to avoid race conditions
+// Optimize the size of blockDim.x to maximize occupancy and balance between shared memory usage and register usage
+// Ensure that data loading into shared memory is efficient and coalesced
+```

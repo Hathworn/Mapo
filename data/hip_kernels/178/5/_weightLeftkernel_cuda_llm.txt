@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache dev_recon and reduce global memory accesses.
+// Consider using texture memory for dev_recon to take advantage of caching for repeated reads.
+// Ensure memory coalescing by aligning dev_F and dev_G accesses along warp boundaries.
+// Explore occupancy optimizations by adjusting block size to better fit shared memory limits.
+// Investigate potential benefits of using asynchronous memory prefetches to hide latency.
+// Examine if reducing precision from float to half could improve throughput without precision loss.
+// Balance between computational complexity and memory bandwidth to ensure kernel efficiency.
+```

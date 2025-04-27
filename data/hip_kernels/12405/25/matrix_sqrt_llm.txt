@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache data for threads within a block to reduce global memory access.
+// Ensure coalesced memory access by having consecutive threads access consecutive memory addresses.
+// Consider using multiple streams if kernel latency is a bottleneck to overlap computation with memory transfers.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access for row processing
+// Check memory alignment for coalesced access
+// Increase occupancy by optimizing block size for the given GPU architecture
+// Use __restrict__ keyword to hint compiler for independent memory accesses
+// Analyze if loop unrolling could improve performance
+```

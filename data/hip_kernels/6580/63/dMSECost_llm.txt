@@ -1,0 +1,9 @@
+```
+// Align memory access to avoid bank conflicts
+// Use shared memory for data reuse if multiple threads access the same data
+// Use coalesced memory access patterns for predictions and target arrays
+// Consider loop unrolling for repeated computations inside if block
+// Utilize vectorized memory operations if applicable
+// Ensure optimal block size for given hardware to maximize occupancy
+// Minimize the use of atomic operations where possible
+```

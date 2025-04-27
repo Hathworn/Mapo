@@ -1,0 +1,16 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void sumMatrixOnGPU2D(float *MatA, float *MatB, float *MatC, int nx, int ny)
+{
+    // Compute x and y indices
+    unsigned int ix = threadIdx.x + blockIdx.x * blockDim.x;
+    unsigned int iy = threadIdx.y + blockIdx.y * blockDim.y;
+
+    // Ensure indices are within bounds and compute linear index
+    if (ix < nx && iy < ny) {
+        unsigned int idx = iy * nx + ix;
+        // Perform matrix addition
+        MatC[idx] = MatA[idx] + MatB[idx];
+    }
+}

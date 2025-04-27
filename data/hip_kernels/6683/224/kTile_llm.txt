@@ -1,0 +1,4 @@
+// Load srcWidth and srcHeight into shared memory for faster access.
+// Use shared memory to store src elements as needed to minimize global memory accesses.
+// Coalesce global memory accesses to optimize bandwidth usage.
+// Consider using multiple warps to maximize warp occupancy in each block.

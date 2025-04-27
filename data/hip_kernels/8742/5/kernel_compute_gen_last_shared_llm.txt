@@ -1,0 +1,4 @@
+// Utilize shared memory for block-wise computations to reduce global memory access.
+// Ensure proper memory alignment for optimal memory transactions.
+// Use shared memory to create a tile and synchronize threads to reduce data dependency.
+// Limit redundant global memory accesses by storing intermediate results in registers.

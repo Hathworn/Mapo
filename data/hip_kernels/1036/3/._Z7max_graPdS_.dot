@@ -1,0 +1,23 @@
+digraph "CFG for '_Z7max_graPdS_' function" {
+	label="CFG for '_Z7max_graPdS_' function";
+
+	Node0x47d94b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = icmp ugt i16 %7, 1\l  br i1 %9, label %10, label %13\l|{<s0>T|<s1>F}}"];
+	Node0x47d94b0:s0 -> Node0x47da4b0;
+	Node0x47d94b0:s1 -> Node0x47db150;
+	Node0x47da4b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%10:\l10:                                               \l  %11 = zext i32 %3 to i64\l  %12 = getelementptr inbounds double, double addrspace(1)* %0, i64 %11\l  br label %15\l}"];
+	Node0x47da4b0 -> Node0x47db3a0;
+	Node0x47db150 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%13:\l13:                                               \l  %14 = icmp eq i32 %3, 0\l  br i1 %14, label %32, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x47db150:s0 -> Node0x47db520;
+	Node0x47db150:s1 -> Node0x47db570;
+	Node0x47db3a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  %16 = phi i32 [ 1, %10 ], [ %17, %30 ]\l  %17 = shl i32 %16, 1\l  %18 = srem i32 %3, %17\l  %19 = icmp eq i32 %18, %16\l  br i1 %19, label %20, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x47db3a0:s0 -> Node0x47dba80;
+	Node0x47db3a0:s1 -> Node0x47db710;
+	Node0x47dba80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%20:\l20:                                               \l  %21 = sub nsw i32 %3, %16\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds double, double addrspace(1)* %0, i64 %22\l  %24 = load double, double addrspace(1)* %23, align 8, !tbaa !7\l  %25 = load double, double addrspace(1)* %12, align 8, !tbaa !7\l  %26 = tail call double @llvm.fabs.f64(double %24)\l  %27 = tail call double @llvm.fabs.f64(double %25)\l  %28 = fcmp contract ogt double %26, %27\l  %29 = select contract i1 %28, double %26, double %27\l  store double %29, double addrspace(1)* %23, align 8, !tbaa !7\l  br label %30\l}"];
+	Node0x47dba80 -> Node0x47db710;
+	Node0x47db710 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %31 = icmp ult i32 %17, %8\l  br i1 %31, label %15, label %13, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x47db710:s0 -> Node0x47db3a0;
+	Node0x47db710:s1 -> Node0x47db150;
+	Node0x47db520 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%32:\l32:                                               \l  %33 = load double, double addrspace(1)* %0, align 8, !tbaa !7\l  store double %33, double addrspace(1)* %1, align 8, !tbaa !7\l  br label %34\l}"];
+	Node0x47db520 -> Node0x47db570;
+	Node0x47db570 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%34:\l34:                                               \l  ret void\l}"];
+}

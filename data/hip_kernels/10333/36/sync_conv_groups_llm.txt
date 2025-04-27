@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access within the kernel for optimal global memory performance.
+// Minimize shared memory bank conflicts for improved shared memory access timings.
+// Consider using asynchronous copy functions where appropriate to overlap data transfer and computation.
+// Optimize data placement to reduce the number of global memory transactions.
+// Utilize warp-level primitives to optimize divergent execution paths.
+```

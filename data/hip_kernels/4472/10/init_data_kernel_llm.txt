@@ -1,0 +1,7 @@
+```c
+// Using a stride loop improves memory access patterns
+// Ensures coalesced memory access by distributing threads across data
+// Reduces thread divergence by maintaining uniform workload per thread
+// Memory access is more predictable, leading to better cache utilization
+// Minimize bank conflicts by structuring data access patterns appropriately
+```

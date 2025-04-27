@@ -1,0 +1,9 @@
+```cpp
+// Consider memory coalescing by ensuring threads access contiguous memory
+// Ensure that shared memory is used efficiently to reduce global memory accesses
+// Optimize memory access patterns to minimize bank conflicts
+// Explore using warp shuffles to reduce shared memory usage where possible
+// Consider use of texture memory for cache-efficient reads of gradOutput_data
+// Utilize __restrict__ qualifiers for gradInput_data and gradOutput_data pointers
+// Ensure that global memory accesses are coalesced for gradInput_data updates
+```

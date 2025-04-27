@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing by accessing sequential memory locations
+// Consider using shared memory to reduce global memory access for frequently used data
+// Use atomicAdd for updating outputPtr to avoid race conditions
+// Evaluate using warp-level primitives to reduce divergence and increase throughput
+```

@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access patterns for better throughput
+// Ensure memory accesses are within a single warp's scope to avoid divergence
+// Consider using shared memory for frequently accessed data to reduce global memory bandwidth
+// Experiment with different block and grid sizes to find optimal occupancy
+// Check for memory alignment to exploit potential coalesced access further
+```

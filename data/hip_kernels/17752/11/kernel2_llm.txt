@@ -1,0 +1,4 @@
+// Consider increasing the size of shared memory allocation based on maximum k for better utilization.
+// Use shared memory for sub_searchPoints to reduce global memory access latency.
+// Ensure synchronization after loading data into shared memory to avoid race conditions.
+// Review memory coalescing, ensure referencePoints access is optimized for contiguous memory access.

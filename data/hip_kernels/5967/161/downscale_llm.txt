@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access for gradOutput_data to improve memory bandwidth utilization
+// Use shared memory to cache gradOutput_data inside the loop to reduce global memory accesses
+// Align data structures and pointers for optimal memory access patterns
+// Minimize divergent branching by optimizing the control flow inside the loop
+// Use multiple threads per element to parallelize atomicAdd operations if possible
+```

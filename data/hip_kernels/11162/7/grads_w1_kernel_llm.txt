@@ -1,0 +1,5 @@
+```
+// Consider using shared memory if W1 is accessed multiple times to reduce global memory latency.
+// Ensure coalesced memory access by verifying that threads access sequential memory locations.
+// Align the size of the memory accesses with warp size to avoid bank conflicts.
+```

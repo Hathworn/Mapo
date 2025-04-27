@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory accesses.
+// Initialize shared memory in parallel by distributing work across threads.
+// Synchronize threads to ensure shared memory is fully initialized before use.
+// Use atomic operations carefully to avoid memory contention.
+// Synchronize threads again before writing accumulated results to global memory.
+// Write back to global memory after accumulation to reduce global memory writes.
+```

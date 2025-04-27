@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory access per iteration
+// Ensure proper loading by checking memory bounds before loading into shared memory
+// Initialize shared memory with zeros for unused locations to avoid incorrect calculations
+// Consider loop unrolling in the innermost loop for potential performance gains
+// Ensure synchronization with __syncthreads() to avoid race conditions in shared memory
+// Write computation results to global memory only when within bounds
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data for threads within the same block
+// Coalesce global memory accesses by ensuring data is accessed in sequential and aligned manner
+// Reduce the number of global memory accesses by using registers for temporary variables
+// Use `__restrict__` qualifiers for pointers if memory accesses do not overlap
+```

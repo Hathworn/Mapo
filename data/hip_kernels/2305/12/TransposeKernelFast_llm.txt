@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Minimize padding in shared memory to prevent bank conflicts
+// Ensure memory coalescing by structuring memory access patterns
+// Avoid divergence in warp execution by aligning condition checks

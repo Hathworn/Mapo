@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for frequent access variables to reduce global memory transactions
+// Ensure coalesced memory access patterns to improve memory bandwidth utilization
+// Avoid warp divergence by ensuring that all threads within a warp follow the same execution path
+```

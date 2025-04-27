@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache activations and weights to reduce global memory reads.
+// Analyze memory coalescing to ensure sequential threads access sequential memory locations.
+// Evaluate using vectorized loads and stores for activations and weights for better memory throughput.
+// Profile memory bandwidth and adjust block and grid dimensions for optimal utilization.
+```

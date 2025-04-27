@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access for arrays 'a' and 'b' to improve memory bandwidth utilization.
+// Ensure that 'THREADS_PER_BLOCK' is an optimal value based on target GPU architecture for best performance.
+// Use __restrict__ qualifiers for pointers 'a', 'b', and 'c' to enable compiler optimizations.
+// Use a warp-level reduction to optimize the sum aggregation operation before performing atomic addition.
+// Minimize the use of __syncthreads() as synchronization can introduce performance penalties.
+```

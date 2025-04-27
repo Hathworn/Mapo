@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to cache gradOutput_data for reduced global memory access
+// Consider loop unrolling for the scale_factor loops for better performance
+// Ensure coalesced memory access pattern for gradInput_data
+```

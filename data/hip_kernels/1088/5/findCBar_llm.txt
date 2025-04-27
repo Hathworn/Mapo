@@ -1,0 +1,6 @@
+// Increase memory coalescing by ensuring threads access consecutive memory locations
+// Use shared memory to reduce global memory accesses for repeated calculations
+// Consider loop unrolling for arithmetic operations if applicable
+// Check if vectorization is possible to improve throughput
+// Minimize divergence by ensuring aligned grid and block sizes
+// Prefetch or cache data that is accessed multiple times

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for 'regression' to improve memory access efficiency.
+// Access contiguous memory to leverage caching and reduce global memory access time.
+// Align data structures and access patterns to avoid bank conflicts.
+// Utilize shared memory if possible to reduce redundant reads from global memory.
+// Use loop unrolling if applicable to increase instruction throughput.
+// Optimize block and grid sizes to maximize GPU occupancy and reduce warp divergence.
+```

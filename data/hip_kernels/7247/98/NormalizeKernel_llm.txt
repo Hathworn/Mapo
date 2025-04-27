@@ -1,0 +1,6 @@
+// Use __restrict__ qualifiers to help the compiler optimize memory accesses
+// Ensure that normalization_factor and image arrays are coalesced to maximize memory throughput
+// Consider using shared memory for normalization_factor if multiple threads in a block will access nearby values
+// Adjust block and grid size for optimal occupancy and memory access pattern
+// Profile memory access with different strides to find the best s value
+// Explore asynchronous data transfers and kernel launches to hide latency

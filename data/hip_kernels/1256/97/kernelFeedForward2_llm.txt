@@ -1,0 +1,9 @@
+```
+// Ensure memory coalescing by having contiguous threads access contiguous memory locations
+// Consider using shared memory to reduce global memory access latency
+// Prefetch data into shared memory to leverage data reuse when possible
+// Ensure proper alignment of data to maximize memory throughput
+// Consider loop unrolling if the loop iteration count is known and fixed
+// Reduce the number of expensive mathematical operations if possible
+// Ensure the number of threads per block is a multiple of the warp size for optimal performance
+```

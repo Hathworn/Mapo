@@ -1,0 +1,8 @@
+```
+// Consider improving memory access patterns by coalescing global memory reads and writes.
+// Ensure that random number generation accesses are aligned and non-divergent.
+// Utilize shared memory if possible to reduce redundant global memory accesses.
+// Investigate if using registers could help in reducing memory bandwidth requirements.
+// Review if loop unrolling further benefits SIMD performance in this context.
+// Explore optimizing `hiprand` state initialization if multiple threads perform similar computations.
+```

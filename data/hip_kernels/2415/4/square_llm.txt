@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to reduce global memory accesses and increase memory bandwidth usage
+// Ensure efficient use of registers by minimizing variable usage within the kernel
+// Optimize block and grid dimensions for better occupancy and load balance
+// Use __restrict__ keyword if applicable to indicate no aliasing for pointer parameters
+// Consider loop unrolling for instances where operations within loops need optimization
+// Use appropriate compiler flags for better performance optimization
+```

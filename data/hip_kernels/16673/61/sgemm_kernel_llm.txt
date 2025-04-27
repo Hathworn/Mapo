@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses.
+// Ensure data dependencies are respected using __syncthreads().
+// Optimize memory coalescing for A and B accesses.
+// Tile size should match warp size to maximize efficiency.
+// Consider preferring large block sizes for better occupancy.
+```

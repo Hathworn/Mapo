@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses
+// Optimize for coalesced memory access when reading from or writing to global memory
+// Consider adjusting shared_data size based on the actual blockDim.x to avoid unused memory
+// Ensure __syncthreads() is correctly placed after writing to shared_data for accurate synchronization
+// Consider loop unrolling to enhance instruction-level parallelism for the for loop
+// Use atomic operations sparingly to minimize serialization and performance bottlenecks
+// Evaluate the impact of different block sizes on performance, balance between occupancy and memory bandwidth
+// Profile memory access patterns to identify and minimize bank conflicts in shared memory
+```

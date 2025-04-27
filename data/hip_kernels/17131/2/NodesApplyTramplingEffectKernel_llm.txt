@@ -1,0 +1,6 @@
+```
+// Combine global memory reads for distanceToPath and pathThickness to coalesce memory access
+// Consider using shared memory to cache distanceToPath values for the block
+// Ensure atomicAdd is justified due to potential contention from multiple threads
+// Align data structures to ensure memory access is within a single transaction when possible
+```

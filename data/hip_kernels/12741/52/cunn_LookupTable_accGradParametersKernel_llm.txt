@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache gradient and weight for repeated accesses
+// Consider coalesced memory access for gradOutput and gradWeight reads and writes
+// Use atomic operations if there are concurrent updates to gradWeight
+```

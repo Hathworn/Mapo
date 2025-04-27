@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access for g_idata to improve performance
+// Minimize __syncthreads calls by using loop unrolling effectively
+// Optimize warp divergence by handling warp unrolling carefully
+// Replace dynamic shared memory allocation with fixed size if possible for performance boost
+// Investigate effects of using 'volatile' on shared memory only at necessary points
+```

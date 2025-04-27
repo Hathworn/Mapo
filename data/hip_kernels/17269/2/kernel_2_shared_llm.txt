@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory to reduce global memory accesses.
+// Ensure only necessary initialization in shared memory.
+// Limit atomic operations to minimize performance bottlenecks.
+// Reduce thread divergence by organizing memory access patterns.
+// Avoid excessive synchronization where not necessary.
+// Balance shared memory usage to prevent bank conflicts.
+// Consider coalesced memory access for global memory efficiency.
+// Ensure efficient block and grid configurations for optimal performance.
+```

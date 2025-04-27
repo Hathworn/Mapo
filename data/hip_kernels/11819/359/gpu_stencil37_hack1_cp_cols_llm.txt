@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize global memory access within threads.
+// Leverage __syncthreads() effectively to ensure data consistency.
+// Implement coalesced memory access patterns to optimize global memory throughput.
+// Consider splitting the kernel into smaller tasks if warp occupancy is low.
+// Explore using vectorized operations to reduce instruction count.
+// Ensure loop unrolling where applicable to minimize loop overhead.
+// Verify that all memory accesses are within bounds and optimize conditional checks.
+// Consider using memory prefetching techniques to improve data availability.
+```

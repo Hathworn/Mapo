@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Optimize memory coalescing by ensuring sequential memory access
+// Minimize thread divergence by handling boundary conditions
+// Ensure that shared memory is utilized effectively to store tile sub-matrices
+// Use __syncthreads() to synchronize threads after loading shared memory
+```

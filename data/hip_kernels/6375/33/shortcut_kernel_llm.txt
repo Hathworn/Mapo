@@ -1,0 +1,5 @@
+// Pre-compute common multiplications outside the index calculations to reduce redundant computations
+// Optimize memory access patterns by aligning data structures
+// Use shared memory if possible to reduce global memory accesses
+// Coalesce memory accesses by ensuring threads access consecutive memory locations
+// Evaluate the use of texture memory for read-only data to improve memory bandwidth

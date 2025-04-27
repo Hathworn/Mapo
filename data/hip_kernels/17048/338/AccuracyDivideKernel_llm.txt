@@ -1,0 +1,4 @@
+```
+// Consider using Warp Shuffle to avoid __syncthreads(), which can help reduce synchronization overhead.
+// Use atomic operations for updating accuracy if there's potential for concurrent kernel launches.
+```

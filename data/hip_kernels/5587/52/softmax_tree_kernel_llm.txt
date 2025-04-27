@@ -1,0 +1,8 @@
+```
+// Use shared memory access patterns to avoid frequent global memory access.
+// Minimize synchronization overhead by reducing the number of __syncthreads() calls.
+// Ensure coalesced memory access patterns for input and output arrays.
+// Evaluate if atomic operations can be replaced or minimized for performance gains.
+// Consider using warp-level primitives for reduction operations instead of block-level atomic operations.
+// Assess potential performance improvements by experimenting with different block and grid dimensions.
+```

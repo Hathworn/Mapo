@@ -1,0 +1,4 @@
+// Utilize shared memory to reduce global memory accesses.
+// Ensure memory coalescing by loading elements into shared memory.
+// Use __syncthreads() to synchronize before performing computations.
+// Optimize block size to match shared memory capacity and warp size.

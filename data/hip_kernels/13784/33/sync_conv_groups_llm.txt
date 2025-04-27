@@ -1,0 +1,8 @@
+```
+// Consider using __threadfence_system for stronger memory ordering if needed.
+// Evaluate if __syncthreads() is necessary for your specific use case.
+// Analyze if there is potential shared memory usage and optimize accordingly.
+// Ensure optimal block and grid size for maximum occupancy.
+// Check for coalesced memory access patterns to improve performance.
+// Investigate possible use of warp shuffle instructions to reduce memory access.
+```

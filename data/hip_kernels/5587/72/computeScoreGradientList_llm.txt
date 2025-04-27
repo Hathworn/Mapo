@@ -1,0 +1,7 @@
+```cpp
+// Cache centroid_x, centroid_y, centroid_z for each thread to reduce repetitive global memory accesses
+// Use shared memory to store frequently accessed data such as e_x_cov_x and cov_dxd_pi to decrease global memory latency
+// Consider loop unrolling to improve instruction level parallelism in the inner loop
+// Minimize conditional checks inside the loop by handling them outside if possible
+// Align memory access patterns to improve coalescing for trans_x, trans_y, trans_z, and valid_points
+```

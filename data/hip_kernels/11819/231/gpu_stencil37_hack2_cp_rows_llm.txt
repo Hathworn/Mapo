@@ -1,0 +1,8 @@
+// Use coalesced memory access patterns for `dst` to improve global memory throughput.
+// Ensure `shared_rows` alignment with `shared memory bank` to avoid bank conflicts.
+// Prefetch data into shared memory outside the critical path to reduce latency.
+// Optimize the use of shared memory by minimizing redundant data storage.
+// Reduce shared memory read usage by reusing values loaded in registers wherever possible.
+// Consider increasing `blockDim.x` as long as shared memory limits allow for better occupancy.
+// Use compile-time constants instead of variables within oft-executed code when possible.
+// Avoid unnecessary __syncthreads() calls if no thread communication occurs.

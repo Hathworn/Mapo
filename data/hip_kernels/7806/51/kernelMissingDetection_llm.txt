@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access.
+// Ensure memory coalescing by accessing contiguous global memory to improve throughput.
+// Consider allocating cactive and cvertarr in a single linear memory segment to avoid memory allocation overhead.
+// Use __restrict__ qualifier if possible, to provide hints to the compiler about non-aliasing data for optimization.
+```

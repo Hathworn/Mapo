@@ -1,0 +1,5 @@
+// Use shared memory for partial sums to reduce global memory access
+// Consider loop unrolling to minimize loop overhead
+// Ensure memory coalescing by aligning memory access patterns
+// Pay attention to bank conflicts when using shared memory
+// Consider using vectorized loads if possible

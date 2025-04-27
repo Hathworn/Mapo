@@ -1,0 +1,4 @@
+// Use shared memory to cache grad_out data for faster access.
+// Minimize the stride access patterns to improve coalesced memory access.
+// Utilize warp shuffle operations to reduce atomic operations where possible.
+// Consider loop unrolling for the innermost loop to reduce loop overhead.

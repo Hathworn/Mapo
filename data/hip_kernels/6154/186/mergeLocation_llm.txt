@@ -1,0 +1,6 @@
+```
+// Load loc_[ptidx] into local variable 'loc' to reduce global memory access
+// Compute scaled values in registers before writing to global memory
+// Minimize global memory access by calculating scaled_x and scaled_y before storing
+// Ensure coalesced memory access by accessing contiguous elements in arrays x and y
+```

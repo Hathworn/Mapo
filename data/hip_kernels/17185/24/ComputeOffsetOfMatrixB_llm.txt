@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache row_sum values to reduce global memory access.
+// Avoid branching in the loop by computing the initial offset outside the loop.
+// Move invariant calculations outside the loop where possible to enhance performance.
+// Consider loop unrolling to reduce overhead and increase throughput.
+```

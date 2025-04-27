@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11downsample_PfS_iii' function" {
+	label="CFG for '_Z11downsample_PfS_iii' function";
+
+	Node0x5f971f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %4\l  br i1 %15, label %16, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x5f971f0:s0 -> Node0x5f990b0;
+	Node0x5f971f0:s1 -> Node0x5f99140;
+	Node0x5f990b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = freeze i32 %14\l  %18 = freeze i32 %3\l  %19 = sdiv i32 %17, %18\l  %20 = mul i32 %19, %18\l  %21 = sub i32 %17, %20\l  %22 = sdiv i32 %19, %2\l  %23 = sdiv i32 %3, %2\l  %24 = mul nsw i32 %23, %22\l  %25 = sdiv i32 %21, %2\l  %26 = add nsw i32 %24, %25\l  %27 = sext i32 %26 to i64\l  %28 = getelementptr inbounds float, float addrspace(1)* %1, i64 %27\l  %29 = sext i32 %14 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %32 = mul nsw i32 %2, %2\l  %33 = sitofp i32 %32 to float\l  %34 = fdiv contract float %31, %33\l  %35 = atomicrmw fadd float addrspace(1)* %28, float %34\l... syncscope(\"agent-one-as\") monotonic, align 4\l  br label %36\l}"];
+	Node0x5f990b0 -> Node0x5f99140;
+	Node0x5f99140 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

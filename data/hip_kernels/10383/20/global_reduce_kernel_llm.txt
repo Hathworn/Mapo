@@ -1,0 +1,7 @@
+```c
+// Utilize shared memory to reduce global memory access
+// Ensure coalesced memory accesses when loading to shared memory
+// Ensure proper memory synchronization to prevent race conditions
+// Reduce the number of __syncthreads() to improve performance
+// Consider unrolling the loop to reduce loop overhead
+```

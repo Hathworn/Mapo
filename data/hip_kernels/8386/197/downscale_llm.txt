@@ -1,0 +1,7 @@
+// Consider using shared memory to cache frequently accessed gradOutput_data
+// Use coalesced memory access for both gradInput_data and gradOutput_data
+// Minimize thread divergence by reorganizing loop iterations or conditional statements 
+// Implement warp-level memory optimizations using __shfl_sync or similar techniques
+// Align data access to minimize unaligned memory reads and writes
+// Optimize 1D indexing to ensure better utilization of GPU resources 
+// Reduce loop overhead by unrolling the inner loop

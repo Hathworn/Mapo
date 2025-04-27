@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory access for means, sds, and numPairs
+// Ensure coalesced memory access by unrolling the loop
+// Minimize bank conflicts in shared memory access
+// Consider adjusting grid and block sizes for better occupancy
+// To improve performance, consider using float4 for vectorized operations if applicable
+// Optimize loop unrolling factors for better instruction throughput
+```

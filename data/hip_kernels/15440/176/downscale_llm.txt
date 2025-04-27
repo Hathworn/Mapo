@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses when accumulating 'sum'.
+// Coalesce global memory accesses to 'gradOutput_data' to improve memory throughput.
+// Consider using half precision if lower precision is acceptable for performance gains.
+// Minimize divergent branches by ensuring 'ii < no_elements' check is streamlined.
+// Utilize warp shuffle operations if applicable, to reduce memory latency.
+// Ensure alignment of global memory accesses to reduce potential memory throttling.
+// Optimize block and grid dimensions to ensure maximum SM occupancy and warp efficiency.
+```

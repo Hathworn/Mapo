@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access patterns to improve coalescing.
+// Minimize shared memory bank conflicts during partial sum accumulation.
+// Ensure that numElements is a multiple of blockDim.x * gridDim.x for full utilization.
+// Use double buffering in shared memory to optimize reduction step.
+// Try increasing block size if hardware allows to reduce loop iterations.
+```

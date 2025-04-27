@@ -1,0 +1,3 @@
+// Ensure coalesced memory access for predictions array
+// Use shared memory if possible for cost calculation to reduce global memory accesses
+// Consider looping through multiple elements per thread to decrease overhead

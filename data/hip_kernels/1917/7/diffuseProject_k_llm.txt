@@ -1,0 +1,9 @@
+```c
+// Use shared memory to minimize global memory access
+// Consider loop unrolling to reduce loop overhead
+// Optimize memory access patterns to coalesced access in global memory
+// Ensure alignment and padding of vectors for better memory access
+// Use registers for frequently accessed and computed values within threads
+// Evaluate the use of texture memory for potential cache benefits
+// Minimize conditionals within the critical performance loop
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Ensure memory coalescing in accessing the array X for better performance.
+// Try to align data structures to warp size to minimize bank conflicts.
+// Optimize kernel launch parameters by adjusting block and grid sizes according to the hardware capabilities.

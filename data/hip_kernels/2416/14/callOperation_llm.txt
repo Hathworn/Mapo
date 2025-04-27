@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store intermediate data for better memory access patterns.
+// Use vectorized loads/stores if possible to enhance memory throughput.
+// Ensure memory accesses are coalesced to maximize bandwidth utilization.
+// Consider loop unrolling if further iterations are required inside the kernel.
+// Use asynchronous memory copies if data transfer is a bottleneck.
+```

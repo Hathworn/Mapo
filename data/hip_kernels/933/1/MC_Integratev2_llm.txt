@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by ensuring degrees_g is accessed sequentially and aligned to improve throughput.
+// Consider padding shared memory to avoid bank conflicts during access to degrees.
+// Use hiprand_init wisely to avoid redundant initializations across threads.
+// Consider using warp-level primitives like __shfl_* for efficiency when performing reductions.
+// Explore using native functions for exponentiation for potential performance improvement.
+// Ensure atomic operations are minimized to decrease contention and serialization effects.
+```

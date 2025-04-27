@@ -1,0 +1,6 @@
+// Use shared memory for repeated ALPHA accesses  
+// Ensure coalesced memory access by proper alignment of X  
+// Optimize thread block size to improve occupancy  
+// Consider using atomic operations if concurrent updates occur  
+// Profile memory bandwidth usage to identify bottlenecks  
+// Experiment with different memory access patterns for best performance  

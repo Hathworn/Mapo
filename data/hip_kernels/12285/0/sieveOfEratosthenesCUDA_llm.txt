@@ -1,0 +1,7 @@
+```
+// Coalesce memory accesses by ensuring threads access consecutive memory locations.
+// Use shared memory to store data frequently accessed by threads in a block.
+// Minimize branching to improve warp execution efficiency.
+// Align memory allocations to improve memory access speed.
+// Launch kernels with an optimal number of threads per block for better utilization.
+```

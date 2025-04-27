@@ -1,0 +1,5 @@
+// Use shared memory for tmp_window to reduce global memory access
+// Consider coalesced memory access pattern for d_ts and d_ss arrays
+// Minimize penalties calculation to avoid redundant computations
+// Use loop unrolling for the inner loop to enhance performance
+// Optimize the abs function by using bitwise manipulation for faster execution

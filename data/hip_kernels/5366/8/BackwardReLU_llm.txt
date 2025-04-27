@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for dA and dZ arrays.
+// Align memory accesses to warp size to minimize memory transaction overhead.
+// Consider using shared memory for frequently accessed data within a block.
+// Utilize vectorized data types if applicable to increase memory bandwidth utilization.
+// Optimize block size to maximize occupancy and fully utilize the GPU cores.
+// Balance the workload among blocks to ensure consistent execution time across the grid.
+```

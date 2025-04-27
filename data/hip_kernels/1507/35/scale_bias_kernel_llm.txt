@@ -1,0 +1,5 @@
+```c
+// Load biases into shared memory to decrease global memory accesses
+// Ensure all threads have loaded shared memory via __syncthreads()
+// Limit the use of global memory by reusing shared biases
+```

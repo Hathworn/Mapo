@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for mask to reduce global memory access.
+// Ensure coalesced memory access patterns for better performance.
+// Minimize divergence by ensuring threads within a warp follow the same path.
+// Optimize block and grid dimensions based on specific GPU architecture.
+```

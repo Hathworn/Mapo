@@ -1,0 +1,10 @@
+```
+// Consider aligning data to optimal boundaries to improve memory access efficiency. 
+// Utilize coalesced memory accesses when loading from global memory into shared memory.
+// Ensure shared memory usage is minimized by only loading the necessary halo values.
+// Employ loop unrolling for inner loops to enhance throughput via instruction-level parallelism.
+// Minimize bank conflicts in shared memory accesses by ensuring proper padding/alignment.
+// Pre-fetch data into registers to hide access latency and avoid repeated global memory accesses.
+// Optimize the computation of 'tmp' by reordering operations to improve data dependencies.
+// Use high occupancy settings, ensuring sufficient active warps to hide memory latency.
+```

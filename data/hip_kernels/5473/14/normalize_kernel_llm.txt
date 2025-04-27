@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for 'mean' and 'variance' to reduce global memory access latency.
+// Preload 'mean[f]' and 'variance[f]' into registers to reduce repetitive memory access in the loop.
+// Optimize memory access patterns to ensure coalesced access for 'x[index]'.
+// Experiment with different block sizes to ensure kernel execution efficiency.
+```

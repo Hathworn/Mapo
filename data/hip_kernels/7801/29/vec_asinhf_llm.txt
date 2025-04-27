@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache data for coalesced access.
+// Ensure alignment of memory accesses to optimize coalescing.
+// Optimize the occupancy by adjusting the block size and grid dimensions.
+// Use __restrict__ keyword for pointers to help the compiler with aliasing optimization.
+// Minimize register usage by simplifying calculations where possible.
+// Consider using float2 or float4 to load data in chunks for better memory throughput.
+// Use memory padding if necessary to avoid bank conflicts.
+```

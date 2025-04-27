@@ -1,0 +1,4 @@
+// Ensure optimal memory coalescing by using continuous memory accesses
+// Consider shared memory for frequently accessed data to reduce latency
+// Check for bank conflicts in shared memory usage, optimize if necessary
+// Minimize divergent threads within warp to improve performance

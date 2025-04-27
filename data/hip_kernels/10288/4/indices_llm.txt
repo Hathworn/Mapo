@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory only if data reuse among threads in the block is possible
+// Minimize the use of printf in kernels for performance reasons
+// This kernel is memory-bound; consider improving data locality
+// If applicable, ensure coalesced memory accesses for optimal performance
+```

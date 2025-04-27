@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory bandwidth
+// Use __restrict__ qualifier to help the compiler optimize memory accesses
+// Unroll the loop to increase instruction throughput
+// Minimize __syncthreads() usage by restructuring code if possible
+```

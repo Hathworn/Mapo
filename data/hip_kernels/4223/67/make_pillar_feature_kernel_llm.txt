@@ -1,0 +1,6 @@
+```cpp
+// Consider coalescing global memory accesses to dev_num_points_per_pillar
+// Use shared memory to cache dev_x_coors and dev_y_coors
+// Align memory accesses to dev_pillar_x and similar arrays
+// Minimize divergent branches in the early exit condition
+```

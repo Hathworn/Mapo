@@ -1,0 +1,7 @@
+```
+// Use a stride loop for better memory coalescing and efficient utilization of GPU threads
+// Ensure all memory accesses are coalesced for better performance
+// Consider using shared memory if the data reuse can be identified within a block
+// Optimize the number of blocks and threads to fully utilize the GPU
+// Use appropriate scale factor calculation to prevent redundant computations
+```

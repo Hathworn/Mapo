@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Ensure correct indexing to avoid out-of-bound accesses
+// Utilize __syncthreads() to coordinate shared memory usage
+// Load partial results to shared memory for faster access

@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache portions of 'in' or 'mask' for repeated use
+// Consider coalescing memory accesses for 'adj' and 'adjIn'
+// Ensure aligned memory access to improve cache utilization
+// Minimize divergent branching within the loop for 'currentMaxIdx'
+// Use loop unrolling strategically to balance instruction overhead and memory latency
+```

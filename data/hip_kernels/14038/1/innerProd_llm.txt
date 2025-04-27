@@ -1,0 +1,5 @@
+// Consider optimizing memory access patterns for coalesced access
+// Reduce thread divergence by ensuring consistent paths for all threads in a warp
+// Utilize shared memory efficiently to minimize global memory access
+// Implement loop unrolling in the reduction phase for faster execution
+// Explore warp level primitives for reduction to increase performance

@@ -1,0 +1,27 @@
+digraph "CFG for '_Z9gCopyRowsPfPKfmPKmm' function" {
+	label="CFG for '_Z9gCopyRowsPfPKfmPKmm' function";
+
+	Node0x568b920 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a5c3fe70",label="{%5:\l  %6 = icmp eq i64 %4, 0\l  br i1 %6, label %23, label %7\l|{<s0>T|<s1>F}}"];
+	Node0x568b920:s0 -> Node0x568c010;
+	Node0x568b920:s1 -> Node0x568c060;
+	Node0x568c060 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#93b5fe70",label="{%7:\l7:                                                \l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = icmp eq i64 %2, 0\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x()\l  %11 = tail call align 4 i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = getelementptr inbounds i8, i8 addrspace(4)* %11, i64 12\l  %15 = bitcast i8 addrspace(4)* %14 to i32 addrspace(4)*\l  %16 = load i32, i32 addrspace(4)* %15, align 4, !tbaa !4\l  %17 = load i16, i16 addrspace(4)* %13, align 4, !range !13, !invariant.load\l... !14\l  %18 = zext i16 %17 to i32\l  %19 = udiv i32 %16, %18\l  %20 = mul i32 %19, %18\l  %21 = icmp ugt i32 %16, %20\l  %22 = zext i1 %21 to i32\l  br label %24\l}"];
+	Node0x568c060 -> Node0x568dda0;
+	Node0x568c010 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a5c3fe70",label="{%23:\l23:                                               \l  ret void\l}"];
+	Node0x568dda0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%24:\l24:                                               \l  %25 = phi i32 [ 0, %7 ], [ %51, %49 ]\l  %26 = add i32 %25, %8\l  %27 = sext i32 %26 to i64\l  %28 = icmp ult i64 %27, %4\l  br i1 %28, label %29, label %49\l|{<s0>T|<s1>F}}"];
+	Node0x568dda0:s0 -> Node0x568e180;
+	Node0x568dda0:s1 -> Node0x568def0;
+	Node0x568e180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%29:\l29:                                               \l  %30 = getelementptr inbounds i64, i64 addrspace(1)* %3, i64 %27\l  %31 = load i64, i64 addrspace(1)* %30, align 8, !tbaa !15, !amdgpu.noclobber\l... !14\l  %32 = mul i64 %27, %2\l  %33 = getelementptr inbounds float, float addrspace(1)* %0, i64 %32\l  %34 = mul i64 %31, %2\l  %35 = getelementptr inbounds float, float addrspace(1)* %1, i64 %34\l  br i1 %9, label %49, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x568e180:s0 -> Node0x568def0;
+	Node0x568e180:s1 -> Node0x568d7a0;
+	Node0x568d7a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  %37 = phi i32 [ %46, %45 ], [ 0, %29 ]\l  %38 = add i32 %37, %10\l  %39 = sext i32 %38 to i64\l  %40 = icmp ult i64 %39, %2\l  br i1 %40, label %41, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x568d7a0:s0 -> Node0x568f310;
+	Node0x568d7a0:s1 -> Node0x568f040;
+	Node0x568f310 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d6524470",label="{%41:\l41:                                               \l  %42 = getelementptr inbounds float, float addrspace(1)* %35, i64 %39\l  %43 = load float, float addrspace(1)* %42, align 4, !tbaa !19\l  %44 = getelementptr inbounds float, float addrspace(1)* %33, i64 %39\l  store float %43, float addrspace(1)* %44, align 4, !tbaa !19\l  br label %45\l}"];
+	Node0x568f310 -> Node0x568f040;
+	Node0x568f040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%45:\l45:                                               \l  %46 = add i32 %37, %18\l  %47 = sext i32 %46 to i64\l  %48 = icmp ult i64 %47, %2\l  br i1 %48, label %36, label %49, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x568f040:s0 -> Node0x568d7a0;
+	Node0x568f040:s1 -> Node0x568def0;
+	Node0x568def0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%49:\l49:                                               \l  %50 = add i32 %19, %25\l  %51 = add i32 %50, %22\l  %52 = sext i32 %51 to i64\l  %53 = icmp ult i64 %52, %4\l  br i1 %53, label %24, label %23, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x568def0:s0 -> Node0x568dda0;
+	Node0x568def0:s1 -> Node0x568c010;
+}

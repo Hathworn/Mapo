@@ -1,0 +1,4 @@
+// Use coalesced memory access pattern for improved bandwidth utilization
+// Prefer using shared memory for data frequently accessed by threads within the same block
+// Consider using loop unrolling if operations inside the if statement are complex
+// Minimize conditional branching in kernel to reduce warp divergence

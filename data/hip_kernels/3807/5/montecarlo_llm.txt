@@ -1,0 +1,7 @@
+```c
+// Use __constant__ memory for constants if they are frequently used by all threads.
+// Consider optimizing hiprand_init to use precomputed sequences to reduce setup time.
+// Ensure single-warp execution to minimize __syncthreads() overhead.
+// Use coalesced memory accesses when writing to d_out to improve memory throughput.
+// Evaluate if reducing global memory reads is possible by recalculating values within the loop.
+```

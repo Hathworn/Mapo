@@ -1,0 +1,8 @@
+```c
+// Consider coalescing memory accesses to improve memory throughput.
+// Ensure __forceinline__ is used for the addWeight lambda to minimize function call overhead.
+// Use shared memory to reduce global memory accesses, especially for image_row_offset based computations.
+// Optimize access patterns to utilize the spatial locality of source data.
+// Minimize atomic operations, potentially replacing them with warp-level operations if possible.
+// Consider loop unrolling for the pixel processing to improve performance.
+```

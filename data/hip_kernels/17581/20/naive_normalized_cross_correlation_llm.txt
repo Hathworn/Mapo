@@ -1,0 +1,8 @@
+```
+// Cache image data in shared memory if possible to reduce global memory access
+// Use texture memory for accessing image data for improved cache utilization
+// Unroll inner loops to reduce overhead and increase performance
+// Use warp shuffle operations to compute sums across threads for better performance
+// Minimize divergent branches within the kernel by restructuring conditionals
+// Consider using half precision if precision requirements allow to increase throughput
+```

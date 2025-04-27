@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access for lifter_coeffs to improve memory bandwidth usage.
+// Evaluate using shared memory for lifter_coeffs to reduce global memory access latency.
+// Ensure that the lifter coefficients are pre-fetched and reside in L1 cache for faster access.
+// Optimize the use of __syncthreads() to minimize unnecessary synchronization overhead.
+// Consider unrolling the loop for lifter coefficient application to improve instruction throughput.
+// Use of threadIdx.x should ensure optimal per-thread workload distribution.
+// Ensure memory alignment for float arrays to facilitate efficient memory transactions.
+// Evaluate if combined loops or fused operations can further reduce kernel execution time.
+```

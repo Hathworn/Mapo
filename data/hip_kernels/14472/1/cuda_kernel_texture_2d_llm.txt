@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache pixel values and reduce global memory access
+// Optimize memory coalescing by ensuring contiguous threads access contiguous memory
+// Prefetch data into registers to minimize latency in computation
+// Ensure warp divergence is minimized by having threads process similar workload
+// Leverage arithmetic intensity by doing more computation per memory load
+```

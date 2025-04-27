@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to store frequently accessed data for reduced global memory access
+// Consider coalesced memory access pattern for 'probs' to improve bandwidth utilization
+// Apply loop unrolling to 'for' loop to minimize loop overhead and enhance pipelining
+// Leverage warp shuffle operations for reduction instead of manual loop to decrease execution time
+// Optimize register usage by reducing unnecessary variable declarations
+// Avoid bank conflicts in shared memory by padding or restructuring data
+// Maximize occupancy by tuning grid and block dimensions for optimal resource usage
+```

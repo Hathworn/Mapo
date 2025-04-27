@@ -1,0 +1,8 @@
+```c
+// Prefetch data into shared memory to reduce global memory access.
+// Minimize bank conflicts in shared memory access.
+// Optimize data access patterns to utilize coalesced memory reads.
+// Use __syncthreads() efficiently to avoid unnecessary synchronization.
+// Balance the number of threads per block for optimal memory bandwidth utilization.
+// Consider loop unrolling to maximize instruction-level parallelism.
+```

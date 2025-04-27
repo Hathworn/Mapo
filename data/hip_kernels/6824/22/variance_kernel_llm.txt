@@ -1,0 +1,8 @@
+```
+// Calculate scale factor once per thread to minimize redundant computation
+// Use block and thread-specific indices for efficient access patterns
+// Exit early if global index exceeds the number of filters to avoid unnecessary computation
+// Initialize accumulation variables outside of the loops to maintain consistent data values
+// Unroll loops where possible to enhance memory coalescing and reduce loop overhead
+// Minimize calculation within the loops by precomputing reusable values
+```

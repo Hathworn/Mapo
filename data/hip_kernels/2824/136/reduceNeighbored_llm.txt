@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Align memory accesses to improve coalescing
+// Minimize __syncthreads() usage to reduce synchronization overhead
+// Implement warp-level primitives for intra-warp reduction
+// Evaluate if loop unrolling could further enhance performance
+// Ensure memory transactions are optimized for bandwidth
+```

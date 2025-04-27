@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access for repeated biases[j] reads
+// Ensure coalesced memory access by aligning data structures or adjusting access patterns
+// Optimize step by utilizing warp-level primitives to handle more elements concurrently
+// Investigate occupancy to ensure maximum utilization of GPU resources
+```

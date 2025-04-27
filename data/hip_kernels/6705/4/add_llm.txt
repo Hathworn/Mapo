@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Compute sum in a single thread to minimize thread divergence
+// Ensure all threads see the updated shared memory value
+// Write result from shared memory back to global memory

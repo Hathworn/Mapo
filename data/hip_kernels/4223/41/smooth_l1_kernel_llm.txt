@@ -1,0 +1,8 @@
+```cpp
+// Use memory coalescing by accessing consecutive elements within a warp
+// Minimize shared memory usage and try to fit data into L1 cache if applicable
+// Consider using __restrict__ pointers for pred, truth, delta, and error for potential compiler optimizations
+// Evaluate the possibility of using float4 or float2 types for vectorized loading and storing
+// Ensure that data being read and written is aligned to avoid uncoalesced memory access penalties
+// Investigate if precomputing common expressions can reduce redundant calculations within the loop
+```

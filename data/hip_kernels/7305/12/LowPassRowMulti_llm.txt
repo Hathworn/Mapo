@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Load and clamp data using ternary operators to minimize branch instructions
+// Ensure threads are synchronized after loading data into shared memory
+// Avoid out-of-bounds writes by checking thread index against block size
+// Balance workload by adjusting thread block size and grid configuration
+```

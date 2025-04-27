@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for data that is reused across threads to reduce global memory accesses.
+// Coalesced memory access could be ensured by checking the alignment and stride of A, B, and C.
+// Prefetch data to registers if the data is reused frequently to minimize latency.
+```

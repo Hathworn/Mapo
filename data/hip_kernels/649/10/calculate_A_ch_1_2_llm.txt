@@ -1,0 +1,4 @@
+// Consider using shared memory to cache repeated data such as rho and dz to reduce redundant global memory accesses.
+// Ensure that the thread block dimensions are optimal for memory coalescing to improve global memory access efficiency.
+// Evaluate the potential benefits of using texture memory for read-only data to further enhance memory access patterns.
+// Minimize divergent branches within conditional statements to ensure warp execution efficiency.

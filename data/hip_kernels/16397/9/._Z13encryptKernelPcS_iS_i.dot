@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13encryptKernelPcS_iS_i' function" {
+	label="CFG for '_Z13encryptKernelPcS_iS_i' function";
+
+	Node0x56c2170 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp ult i32 %14, %2\l  br i1 %15, label %16, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x56c2170:s0 -> Node0x56c4030;
+	Node0x56c2170:s1 -> Node0x56c40c0;
+	Node0x56c4030 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = zext i32 %14 to i64\l  %18 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %17\l  %19 = load i8, i8 addrspace(1)* %18, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %20 = urem i32 %14, %4\l  %21 = zext i32 %20 to i64\l  %22 = getelementptr inbounds i8, i8 addrspace(1)* %3, i64 %21\l  %23 = load i8, i8 addrspace(1)* %22, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %24 = add i8 %23, %19\l  %25 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %17\l  store i8 %24, i8 addrspace(1)* %25, align 1, !tbaa !7\l  br label %26\l}"];
+	Node0x56c4030 -> Node0x56c40c0;
+	Node0x56c40c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

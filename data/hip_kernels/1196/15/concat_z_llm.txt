@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access and improve memory coalescing
+// Ensure that src, dest, and z pointers are properly aligned for better memory access patterns
+// Utilize loop unrolling if applicable to increase instruction-level parallelism
+// Check for potential bank conflicts in shared memory access if shared memory is used
+// Verify occupancy and adjust block size and grid size for optimal utilization of streaming multiprocessors
+```

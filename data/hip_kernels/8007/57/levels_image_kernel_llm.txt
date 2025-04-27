@@ -1,0 +1,10 @@
+```cpp
+// Minimize global memory reads by loading input data into shared memory if possible.
+// Consider using texture memory for reading the image data for improved cache performance.
+// Unroll loops to improve instruction throughput and reduce branch divergence.
+// Optimize memory access patterns to achieve coalesced memory accesses.
+// Align data structures to ensure proper memory alignment and avoid bank conflicts.
+// Reduce the number of arithmetic operations inside conditional statements.
+// Use __ldg() intrinsic to cache read-only data when shared memory is not applicable.
+// Consider using FP16 precision where possible to improve performance on supported hardware.
+```

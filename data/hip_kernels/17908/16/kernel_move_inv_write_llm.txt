@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to minimize global memory access inside the loop
+// Ensure memory accesses are coalesced to improve memory throughput
+// Use __restrict__ qualifier if possible to enable additional compiler optimizations
+// Align data to 128 bytes to exploit memory coalescing fully
+// Evaluate if using asynchronous memory prefetching can improve performance
+```

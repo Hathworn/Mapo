@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access to global memory for d_input and d_output
+// Minimize use of __syncthreads to reduce synchronization overhead
+// Use shared memory effectively to reduce global memory access latency
+// Avoid unnecessary conditional statements to prevent thread divergence
+// Opt for loop unrolling in forward and backward passes to enhance performance
+```

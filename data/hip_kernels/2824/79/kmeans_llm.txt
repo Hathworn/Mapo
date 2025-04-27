@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache centroids for faster access
+// Unroll loops if applicable for better instruction-level parallelism
+// Consider using float or double if more precision is needed to reduce rounding errors
+// Ensure that atomic operations do not lead to significant contention, consider using warp-level primitives if feasible
+```

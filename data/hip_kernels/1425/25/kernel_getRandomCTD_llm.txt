@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to dev_nt and dev_nr to improve performance.
+// Align memory accesses to improve cache efficiency and reduce divergence.
+// Evaluate the use of shared memory to buffer dev_nt and dev_nr for repeated accesses by threads in a block.
+// Minimize divergent control flow within blocks to optimize warp execution efficiency.
+// Consider using texture memory for potentially better caching of random read accesses.
+```

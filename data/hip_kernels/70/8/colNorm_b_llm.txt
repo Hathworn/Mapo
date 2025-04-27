@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by accessing X, v, and b in a pattern that groups consecutive threads on consecutive memory locations.
+// Reduce divergent branches by ensuring each thread in a warp follows the same control flow.
+// Consider using shared memory to cache frequently accessed data like normalization factors if there's enough shared memory availability.
+// Minimize memory transactions by ensuring v[col] and b[col] are loaded once per column and reused.
+```

@@ -1,0 +1,5 @@
+digraph "CFG for '_Z19boundaryCondition_kPfmf' function" {
+	label="CFG for '_Z19boundaryCondition_kPfmf' function";
+
+	Node0x6272c90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = zext i32 %4 to i64\l  %6 = fmul contract float %2, 2.000000e+00\l  %7 = add i64 %1, -1\l  %8 = mul i64 %5, %1\l  %9 = add i64 %7, %8\l  %10 = getelementptr inbounds float, float addrspace(1)* %0, i64 %9\l  store float %6, float addrspace(1)* %10, align 4, !tbaa !5\l  %11 = getelementptr inbounds float, float addrspace(1)* %0, i64 %8\l  store float 0.000000e+00, float addrspace(1)* %11, align 4, !tbaa !5\l  ret void\l}"];
+}

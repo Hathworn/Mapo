@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access for faster data accumulation.
+// Avoid redundant global memory access by using shared memory to store intermediate results.
+// If possible, consider using atomic operations to simplify the reduction process.
+// Align memory accesses for predict and target arrays to optimize throughput.
+// Consider pre-fetching data into registers to reduce latency caused by memory accesses.
+// Use warp-level primitives like warp shuffle to improve reduction performance within the block.

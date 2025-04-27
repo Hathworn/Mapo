@@ -1,0 +1,6 @@
+```
+// Use shared memory for 'in' and 'evolution_type' to reduce global memory access latency.
+// Ensure coalesced access to global memory for 'in', 'evolution_type', and 'out'.
+// Increase block size for better workload distribution and higher occupancy.
+// Minimize divergent branches in 'make_complex' by restructuring conditional logic.
+```

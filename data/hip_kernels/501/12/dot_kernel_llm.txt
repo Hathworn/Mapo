@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for vg_a and vg_b to improve bandwidth utilization.
+// Use shared memory effectively by ensuring that it fits into available space and reduces global memory accesses.
+// Ensure that memory access patterns are coalesced in the x and y dimensions to avoid bank conflicts.
+// Optimize the stride loop to ensure warp efficiency and reduce thread divergence.
+// Evaluate the use of atomic operations in global memory writes to improve concurrency.
+// Investigate the possible use of occupancy calculators to configure optimal block sizes given hardware limitations.
+```

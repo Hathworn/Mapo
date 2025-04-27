@@ -1,0 +1,22 @@
+digraph "CFG for '_Z4elimPdiii' function" {
+	label="CFG for '_Z4elimPdiii' function";
+
+	Node0x58b0c10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = icmp eq i32 %5, 0\l  %8 = icmp slt i32 %2, %1\l  %9 = select i1 %7, i1 %8, i1 false\l  %10 = mul nsw i32 %2, %1\l  br i1 %9, label %11, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x58b0c10:s0 -> Node0x58b0ca0;
+	Node0x58b0c10:s1 -> Node0x58b2520;
+	Node0x58b0ca0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%11:\l11:                                               \l  %12 = phi i32 [ %18, %11 ], [ %2, %4 ]\l  %13 = add nsw i32 %12, %10\l  %14 = sext i32 %13 to i64\l  %15 = getelementptr inbounds double, double addrspace(1)* %0, i64 %14\l  %16 = load double, double addrspace(1)* %15, align 8, !tbaa !5,\l... !amdgpu.noclobber !9\l  %17 = getelementptr inbounds [0 x double], [0 x double] addrspace(3)*\l... @pivot, i32 0, i32 %12\l  store double %16, double addrspace(3)* %17, align 8, !tbaa !5\l  %18 = add nsw i32 %12, 1\l  %19 = icmp slt i32 %18, %1\l  br i1 %19, label %11, label %20, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x58b0ca0:s0 -> Node0x58b0ca0;
+	Node0x58b0ca0:s1 -> Node0x58b2520;
+	Node0x58b2520 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%20:\l20:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %21 = mul nsw i32 %6, %3\l  %22 = add nsw i32 %21, %5\l  %23 = mul nsw i32 %22, %1\l  %24 = add nsw i32 %23, %2\l  %25 = add nsw i32 %23, %1\l  %26 = icmp sgt i32 %23, %10\l  br i1 %26, label %27, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x58b2520:s0 -> Node0x58b3da0;
+	Node0x58b2520:s1 -> Node0x58b3df0;
+	Node0x58b3da0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%27:\l27:                                               \l  %28 = add nsw i32 %24, 1\l  %29 = icmp slt i32 %28, %25\l  br i1 %29, label %30, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x58b3da0:s0 -> Node0x58b4050;
+	Node0x58b3da0:s1 -> Node0x58b3df0;
+	Node0x58b4050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%30:\l30:                                               \l  %31 = sext i32 %24 to i64\l  %32 = getelementptr inbounds double, double addrspace(1)* %0, i64 %31\l  br label %33\l}"];
+	Node0x58b4050 -> Node0x58b2cb0;
+	Node0x58b2cb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dc5d4a70",label="{%33:\l33:                                               \l  %34 = phi i32 [ %28, %30 ], [ %44, %33 ]\l  %35 = sext i32 %34 to i64\l  %36 = getelementptr inbounds double, double addrspace(1)* %0, i64 %35\l  %37 = load double, double addrspace(1)* %36, align 8, !tbaa !5\l  %38 = load double, double addrspace(1)* %32, align 8, !tbaa !5\l  %39 = sub nsw i32 %34, %23\l  %40 = getelementptr inbounds [0 x double], [0 x double] addrspace(3)*\l... @pivot, i32 0, i32 %39\l  %41 = load double, double addrspace(3)* %40, align 8, !tbaa !5\l  %42 = fmul contract double %38, %41\l  %43 = fsub contract double %37, %42\l  store double %43, double addrspace(1)* %36, align 8, !tbaa !5\l  %44 = add nsw i32 %34, 1\l  %45 = icmp slt i32 %44, %25\l  br i1 %45, label %33, label %46, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x58b2cb0:s0 -> Node0x58b2cb0;
+	Node0x58b2cb0:s1 -> Node0x58b3df0;
+	Node0x58b3df0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%46:\l46:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,5 @@
+// Consider using shared memory to cache gradOutput_data for reduced global memory access.
+// Perform loop unrolling within the nested loops to increase instruction-level parallelism.
+// Optimize translate_idx_inv by minimizing repeated calculations of scale_factor-derived values.
+// Ensure memory access is coalesced; align gradOutput_data accesses for improved bandwidth utilization.
+// Use atomic operations cautiously to avoid race conditions when updating gradInput_data.

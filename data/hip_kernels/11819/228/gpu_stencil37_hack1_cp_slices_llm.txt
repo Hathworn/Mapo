@@ -1,0 +1,8 @@
+```
+// Prefetch data to shared memory to minimize global memory accesses.
+// Ensure coalesced global memory accesses by aligning thread data accesses.
+// Use shared memory to share data within a block and reduce redundant memory access.
+// Apply loop unrolling for the inner loop to enhance performance through instruction-level parallelism.
+// Ensure boundary check conditions are placed outside of loops for efficiency.
+// Use __syncthreads() to synchronize threads after shared memory operations to avoid data hazards.
+```

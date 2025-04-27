@@ -1,0 +1,6 @@
+```
+// Consider using atomic operations for writing partial block sums to global memory to avoid race conditions.
+// Adjust block size to be a multiple of warp size for better memory access coalescing.
+// Ensure memory access pattern aligns for coalesced access in shared memory.
+// Reduce conditional operations within the loop for faster execution.
+```

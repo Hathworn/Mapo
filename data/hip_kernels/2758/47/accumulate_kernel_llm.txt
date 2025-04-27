@@ -1,0 +1,5 @@
+// Use shared memory for partial sums to reduce access to global memory
+// Ensure shared memory is properly initialized to prevent garbage values
+// Check array bounds early to avoid unnecessary computation
+// Try to coalesce global memory access in the loop for better performance
+// Consider using atomic operations if race conditions are detected

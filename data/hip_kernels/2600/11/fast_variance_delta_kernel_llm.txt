@@ -1,0 +1,9 @@
+```
+// Consider unrolling loops to increase instruction-level parallelism
+// Optimize memory access by ensuring coalesced reads from global memory
+// Use shared memory effectively by loading data in chunks
+// Use warp-level primitives for reduction instead of __syncthreads
+// Ensure that warp divergence is minimized
+// Consider aligning data structures for better memory access patterns
+// Use __restrict__ keyword for pointer parameters if applicable
+```

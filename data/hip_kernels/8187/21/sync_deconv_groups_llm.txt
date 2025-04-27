@@ -1,0 +1,4 @@
+// Consider coalesced memory accesses to optimize data fetching
+// Use warp-level primitives to reduce synchronization overhead
+// Minimize divergence by ensuring threads follow the same execution path
+// Explore using atomics to reduce shared memory contention for sum calculation

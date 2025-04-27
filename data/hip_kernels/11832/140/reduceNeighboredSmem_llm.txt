@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory accesses
+// Perform in-place reduction within shared memory to enhance memory coalescing
+// Ensure boundary checks to prevent out-of-bounds memory access
+// Leverage __syncthreads() for synchronization within block during reduction steps

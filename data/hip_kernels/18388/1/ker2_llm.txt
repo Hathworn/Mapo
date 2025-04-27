@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Use coalesced memory access patterns for upper[] and cormat[]
+// Experiment with different block sizes to find optimal configuration
+// Consider loop unrolling for further optimization within if conditions
+// Ensure memory alignment for efficient access

@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory accesses by aligning thread indices with memory layout
+// Use shared memory to reduce global memory accesses if encountering bank conflicts
+// Implement loop unrolling to decrease loop overhead and improve performance
+// Consider using vectorized loads/stores for better memory bandwidth utilization
+// Minimize thread divergence to maintain warp execution efficiency
+```

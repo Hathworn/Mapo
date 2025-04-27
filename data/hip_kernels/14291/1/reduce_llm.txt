@@ -1,0 +1,4 @@
+// Use warp-level functions to minimize memory access overhead during reduction
+// Prefer shared memory as a means to reduce global memory accesses
+// Ensure aligned memory access for coalescing and performance improvement
+// Pipeline data transfer to hide latency effects from global memory access

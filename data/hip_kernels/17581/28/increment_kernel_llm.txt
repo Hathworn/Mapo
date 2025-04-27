@@ -1,0 +1,6 @@
+```
+// Consider data coalescing by ensuring g_data is accessed sequentially
+// Use shared memory if multiple threads access the same data to reduce global memory reads
+// Minimize inc_value access by storing it in a register before the loop
+// Check and unroll loops if applicable for reducing instruction overhead
+```

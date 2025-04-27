@@ -1,0 +1,9 @@
+```cpp
+// Prefetch data into shared memory to mask global memory latency
+// Utilize shared memory efficiently with double buffering to hide memory latency
+// Balance computation and memory accesses for optimal performance
+// Ensure proper synchronization between threads using __syncthreads()
+// Optimize loop unrolling factor for NUM_ITERS for better performance
+// Align data structure to float4 for coalesced memory access
+// Minimize shared memory bank conflicts by using float4 access patterns
+```

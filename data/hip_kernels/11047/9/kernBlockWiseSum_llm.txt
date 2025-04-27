@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when reading from global memory for `dest`
+// Consider using loop unrolling to reduce redundant synchronization
+// Utilize warp-level primitives for reduction to minimize synchronization overhead
+// Prefer smaller block sizes for better load balancing on some architectures
+// Choose an optimal blockDim.x size that is a power of 2 for efficient reduction
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for 'rand' as it is accessed multiple times
+// Utilize __restrict__ pointers to reduce pointer aliasing
+// Ensure coalesced memory access for 'image' array by aligning and structuring data
+// Preload common variables such as 'offset' and 'idx' to reduce recomputation latency
+// Optimize operations with constant values like '0.5f' using precalculation
+// Utilize warp-level primitives for potential shared computations among threads
+```

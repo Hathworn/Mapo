@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for improved memory throughput.
+// Ensure 'result' array is aligned to help with memory transactions.
+// Consider using shared memory for frequent access data to reduce global memory reads.
+// Use __restrict__ qualifier for pointers to help the compiler with optimization.
+// Consider loop unrolling if applicable to reduce loop overhead.
+```

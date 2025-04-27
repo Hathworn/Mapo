@@ -1,0 +1,4 @@
+// Consider using shared memory for the biases to reduce global memory access latency
+// Ensure proper memory coalescing for output to improve memory bandwidth usage
+// Leverage vectorized operations if possible to process multiple elements per thread
+// Double-check occupancy settings to ensure maximum warp utilization

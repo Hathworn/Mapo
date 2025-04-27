@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory access latency
+// Ensure coalesced global memory access to improve bandwidth utilization
+// Prefer loop unrolling to reduce loop overhead and improve performance
+// Utilize __syncthreads() for synchronizing threads within the block
+// Use pitch for 2D array alignment to improve memory access patterns
+```

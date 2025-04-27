@@ -1,0 +1,7 @@
+```
+// Use shared memory to optimize memory accesses.
+// Make sure COPY_BLOCK_SIZE matches with hardware constraints to avoid bank conflicts.
+// Ensure coalesced reads by accessing idata in row-major order.
+// Ensure coalesced writes by accessing odata in column-major order.
+// Avoid excessive synchronization; __syncthreads() is used efficiently.
+```

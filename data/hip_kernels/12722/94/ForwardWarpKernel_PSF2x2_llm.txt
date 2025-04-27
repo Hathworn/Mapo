@@ -1,0 +1,4 @@
+// Consider coalescing memory access for u, v, and src arrays to improve memory bandwidth utilization.
+// Assess the potential of using shared memory to temporarily store values for normalization_factor and dst to reduce global memory traffic.
+// Evaluate if using __ldg intrinsic for read-only data could enhance memory read performance.
+// Explore whether loop unrolling could reduce overhead in boundary checking conditions.

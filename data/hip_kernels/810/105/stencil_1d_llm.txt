@@ -1,0 +1,5 @@
+// Consider increasing block size to maximize shared memory utilization
+// Use __restrict__ for pointers to improve compiler optimization
+// Preload coefficients into local variables for faster access
+// Ensure memory accesses are coalesced for optimal global memory bandwidth utilization
+// Evaluate use of warp shuffle functions for potential speedup

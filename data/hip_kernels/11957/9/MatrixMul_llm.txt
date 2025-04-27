@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory loads for tiles of Md and Nd
+// Handle boundary conditions to prevent out-of-bounds memory access
+// Use __syncthreads() to ensure all threads in the block have completed loading tiles
+// Accumulate results from tile computations into Pvalue inside the loop
+// Write the computed values back to global memory only after all computations
+```

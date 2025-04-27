@@ -1,0 +1,4 @@
+// Consider using shared memory for storing hiprandState to reduce register pressure
+// Align data access to maximize memory coalescing and minimize memory transfer costs
+// Preload values and compute random value in registers to optimize cache usage
+// Adjust block size or grid configuration to ensure efficient execution and reduced latency

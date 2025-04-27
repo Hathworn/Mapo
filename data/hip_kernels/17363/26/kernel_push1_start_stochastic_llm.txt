@@ -1,0 +1,12 @@
+```
+// Consider using __restrict__ for pointer parameters to improve memory access optimization.
+// Explore thread parameter configurations for efficient resource utilization.
+// Check for coalesced memory accesses in shared memory operations.
+// Review data movement between device memory and shared memory for overlap in kernels.
+// Investigate the use of atomic operations further to assess contention and performance impact.
+// Evaluate potential benefits from loop unrolling in structured conditions.
+// Verify alignment in shared memory allocation for height_fn.
+// Analyze ways to minimize branch divergence within thread blocks.
+// Consider asynchronous operation compatibility and audit __syncthreads() usage for optimal synchronization.
+// Evaluate warp size utilization for calculating thread indices for efficient parallelism.
+```

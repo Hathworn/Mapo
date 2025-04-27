@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache `a[0]` to decrease global memory access
+// Ensure coalesced access to the `c` array for improved memory throughput
+// Consider using `__restrict__` qualifiers for pointers if no aliasing occurs
+```

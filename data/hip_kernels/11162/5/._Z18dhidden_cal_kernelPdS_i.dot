@@ -1,0 +1,10 @@
+digraph "CFG for '_Z18dhidden_cal_kernelPdS_i' function" {
+	label="CFG for '_Z18dhidden_cal_kernelPdS_i' function";
+
+	Node0x4e6ee50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = mul nsw i32 %4, %2\l  %7 = add nsw i32 %6, %5\l  %8 = sext i32 %7 to i64\l  %9 = getelementptr inbounds double, double addrspace(1)* %0, i64 %8\l  %10 = load double, double addrspace(1)* %9, align 8, !tbaa !5,\l... !amdgpu.noclobber !9\l  %11 = fcmp contract ugt double %10, 0.000000e+00\l  br i1 %11, label %14, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x4e6ee50:s0 -> Node0x4e70ee0;
+	Node0x4e6ee50:s1 -> Node0x4e70f70;
+	Node0x4e70f70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%12:\l12:                                               \l  %13 = getelementptr inbounds double, double addrspace(1)* %1, i64 %8\l  store double 0.000000e+00, double addrspace(1)* %13, align 8, !tbaa !5\l  br label %14\l}"];
+	Node0x4e70f70 -> Node0x4e70ee0;
+	Node0x4e70ee0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%14:\l14:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to store frequently accessed variables for faster access
+// Coalesce global memory access when reading inputs like d_x, d_y, and d_log_Y
+// Group consecutive threads to access contiguous memory locations to improve memory coalescing
+// Minimize the usage of global memory by reusing variables and using shared/local memory
+// Ensure data alignment in global memory to leverage memory coalescing efficiently
+```

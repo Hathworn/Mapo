@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for input array reads to improve memory throughput
+// Consider using occupancy API to choose optimal block size for more efficient resource utilization
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Use vectorized loads if possible by reading multiple elements per thread
+// Evaluate load balancing to ensure even work distribution across threads
+```

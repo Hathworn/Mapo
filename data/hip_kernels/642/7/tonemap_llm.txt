@@ -1,0 +1,7 @@
+```c
+// Use shared memory to store frequently accessed variables to reduce global memory access.
+// Consider coalescing memory accesses by using aligned memory patterns.
+// Minimize the use of division operations and replace them with multiplication where possible.
+// Ensure the thread block size is optimal for the target GPU architecture to maximize control flow efficiency.
+// Use float3 or similar structures for operations on r_new, g_new, and b_new for potential vectorization benefits.
+```

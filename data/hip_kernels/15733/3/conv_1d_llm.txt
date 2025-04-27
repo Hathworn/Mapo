@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for array a to optimize memory transactions.
+// Consider increasing block size for better occupancy.
+// Prefetch data to registers for array a within the valid range before processing.
+// Reduce bank conflicts in shared memory access by ensuring shared_b is accessed uniformly.
+// Use warp-synchronous programming techniques to reduce the need for __syncthreads().
+```

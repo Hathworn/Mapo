@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses in stencil computation.
+// Coalesced memory access for efficient global memory reads into shared memory.
+// Each thread block loads a tile of the input matrix, including a halo border, into shared memory.
+// Prevent bank conflicts by ensuring memory indices in shared memory align with warp boundaries.
+// Synchronize threads before stencil computation to ensure all data is loaded into shared memory.
+// Use a single thread to load halo regions to reduce redundant operations.
+// Ensure synchronization after loading halos to maintain data consistency.
+```

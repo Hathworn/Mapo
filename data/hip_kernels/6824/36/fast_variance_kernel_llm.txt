@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Stride the spatial access across threads to increase parallelism
+// Prefetch mean[filter] to avoid repeated global memory accesses
+// Use __syncthreads() to ensure correct reduction in shared memory
+// Accumulate results using shared memory rather than atomic operations
+```

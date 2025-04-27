@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to store 'largest' and 'sum' for each block to reduce global memory accesses.
+// Ensure coalesced memory access by accessing elements within warp boundaries when reading from 'input'.
+// Minimize the usage of the exp() function by storing intermediate results and reusing them.
+// Reduce redundant calculations inside the loops, such as reusing computed values of 'input[i + b * n]'.
+// Use loop unrolling to reduce loop overhead for fixed size loops where applicable.
+// Ensure that 'output' is written in a coalesced manner for optimal memory performance.
+// Consider using vectorized operations if the hardware supports it for 'input' and 'output'.
+```

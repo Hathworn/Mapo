@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses to A for improved memory throughput
+// Ensure the leading dimension (lda) supports coalesced accesses
+// Prefetch data from global memory to shared memory to reduce latency
+// Optimize loop unroll factor for better performance with pragma unroll
+// Evaluate potential benefits of increasing block size for better utilization
+// Align data structures to facilitate coalesced accesses if possible
+// Consider using vectorized loads or stores
+```

@@ -1,0 +1,7 @@
+```
+// Load count_buff into shared memory to reduce global memory access
+// Use __syncthreads() to synchronize threads after loading into shared memory
+// Ensure all shared memory operations are complete before proceeding
+// Optimize valid position computation using shared memory
+// Use __syncthreads() again to finalize shared memory updates
+```

@@ -1,0 +1,6 @@
+// Consider using shared memory to store the largest value per block for faster access.
+// Use `blockDim.x * blockDim.y` to calculate thread index if using 2D blocks for better parallelization.
+// Prefetch data into registers before using them in calculations to reduce memory latency.
+// Implement loop unrolling in the for loop where possible to optimize computation.
+// Use atomic operations if threads need to update shared state to avoid race conditions.
+// Consider using warp-level primitives to efficiently compute sums across threads.

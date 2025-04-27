@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for better performance by organizing threads to access sequential memory.
+// Minimize divergent branches to improve the execution efficiency of the warps.
+// Use shared memory to reduce redundant global memory access if multiple threads access the same data.
+// Consider using asynchronous copy if the data can be preloaded before computation.
+// Avoid atomic operations if possible as they can become a serialization point in the kernel.
+```

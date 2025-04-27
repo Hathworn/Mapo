@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access
+// Initialize shared memory with global variable accuracy only once
+// Ensure that all threads complete division before writing back to global memory
+// Only one thread should perform the write back to minimize global memory bandwidth usage
+```

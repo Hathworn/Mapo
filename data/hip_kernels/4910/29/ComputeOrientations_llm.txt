@@ -1,0 +1,9 @@
+```
+// Use shared memory to store data to reduce global memory accesses.
+// Ensure warp-aligned memory accesses where possible to maximize coalescing.
+// Minimize bank conflicts by ensuring memory accesses are as linear as possible in shared memory.
+// Reduce shared memory usage by optimizing access patterns, especially during histogram calculations.
+// Consider loop unrolling in sections with fixed iteration counts to improve performance.
+// Inline the computation for Gaussian values to avoid unnecessary repeated calculations.
+// Optimize the use of __syncthreads() to minimize synchronization overhead.
+```

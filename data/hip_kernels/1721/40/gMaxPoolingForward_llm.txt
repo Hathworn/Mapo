@@ -1,0 +1,9 @@
+```c
+// Ensure coalesced memory access for improved read/write efficiency
+// Avoid bank conflicts by ensuring aligned memory access
+// Minimize data types to reduce memory bandwidth
+// Apply shared memory for frequently accessed data if applicable
+// Consider using half precision if precision allows
+// Ensure memory access pattern is consistent within warp
+// Reduce divergent branches by restructuring conditionals
+```

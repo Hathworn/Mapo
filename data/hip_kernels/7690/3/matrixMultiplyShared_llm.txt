@@ -1,0 +1,7 @@
+```
+// Consider increasing BLOCK_SIZE to leverage higher computational capacity if hardware supports it.
+// Ensure appropriate use of __syncthreads() to avoid race conditions while accessing shared memory.
+// Flatten memory accesses to global arrays A and B to improve memory coalescing.
+// Minimize bank conflicts when accessing shared memory by adjusting array indices if possible.
+// Ensure the matrices' dimensions are optimal for the chosen BLOCK_SIZE to maximize occupancy.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data if threads access nearby elements
+// Ensure memory coalescing by aligning data access patterns
+// Consider using __restrict__ to inform the compiler about non-aliasing pointers
+// Optimize loop by unrolling to enhance performance
+// Validate block size and grid size for optimal occupancy
+```

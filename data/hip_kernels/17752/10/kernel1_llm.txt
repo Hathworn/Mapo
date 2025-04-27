@@ -1,0 +1,8 @@
+```
+// Load searchPoints into shared memory to reduce repetitive global memory access
+// Consider coalescing global memory access to improve memory throughput
+// Ensure shared memory is efficiently utilized and avoid bank conflicts
+// Early exit when possible to reduce unnecessary computations
+// Prefer loop unrolling for the innermost loops to enhance performance
+// Optimize data access patterns within loops for better cache utilization
+```

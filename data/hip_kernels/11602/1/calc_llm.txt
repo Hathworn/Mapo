@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access to optimize global memory reads and writes
+// Consider increasing block size for better occupancy and resource utilization
+// Prefetch data to shared memory to reduce global memory access latency
+// Consider loop unrolling for operations within fixed iteration counts
+// Use warp-level synchronization if possible to reduce synchronization overhead
+```

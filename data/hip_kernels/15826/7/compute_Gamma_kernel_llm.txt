@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for Gamma and other arrays
+// Use shared memory for frequently accessed small data like exp_V 
+// Minimize global memory accesses by storing intermediate results in registers
+// Prefer staggered memory access patterns to reduce bank conflicts
+// Load N and G values into shared memory if they are reused multiple times
+```

@@ -1,0 +1,5 @@
+// Ensure memory coalescing for global memory access in d_in and d_out
+// Consider loading data into shared memory in larger chunks to minimize latency
+// Investigate if using warp shuffle operations could enhance data exchange efficiency
+// Explore loop unrolling techniques to reduce branch divergence in the sorting stages
+// Optimize synchronization points to minimize their overhead

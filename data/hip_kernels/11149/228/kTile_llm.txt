@@ -1,0 +1,5 @@
+// Consider using shared memory to cache portions of src used by multiple threads (memory locality)
+// Evaluate whether coalesced memory accesses are being achieved
+// Analyze if warp divergence can be minimized in the loop structure
+// Examine if the loop unrolling could provide performance benefits
+// Check if the thread assignments can be optimized for warp efficiency

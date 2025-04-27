@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data access patterns
+// Minimize global memory access in the kernel by using shared memory if possible
+// Consider using asynchronous memory prefetching to hide latency
+// Balance grid and block dimensions for optimal occupancy
+// Ensure the loop stripe covers the whole data length for efficient computation
+```

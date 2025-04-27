@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses when loading elements from mat into the loop.
+// Ensure coalesced memory accesses by accessing mat and target in strides of height.
+// Consider using memory prefetching techniques to overlap memory transfer latency with computation.
+// Pay attention to bank conflicts in shared memory if added, using padding if necessary.
+// Optimize the use of registers by limiting the number of variables declared within loops.
+```

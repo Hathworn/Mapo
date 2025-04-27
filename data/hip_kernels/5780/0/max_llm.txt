@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory for intermediate max values to reduce global memory accesses
+// Minimize atomic operations where possible, as they can serialize performance
+// Ensure the use of coalesced memory accesses for optimal performance
+// Evaluate if reducing printf calls can improve kernel performance
+// Use loop unrolling only if it results in tangible performance gains
+```

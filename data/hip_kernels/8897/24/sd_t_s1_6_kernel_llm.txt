@@ -1,0 +1,7 @@
+```c
+// Utilize shared memory to reduce redundant global memory accesses
+// Ensure coalesced memory access patterns for improved access efficiency
+// Consider loop unrolling for inner loops to enhance performance
+// Apply memory padding to avoid bank conflicts in shared memory
+// Leverage use of __syncthreads to ensure all data is properly initialized in shared memory
+```

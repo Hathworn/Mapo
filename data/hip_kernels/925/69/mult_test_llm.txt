@@ -1,0 +1,4 @@
+// Ensure memory alignment for optimal coalescing
+// Utilize shared memory if multiple threads access the same elements frequently
+// Prefetch data to registers to reduce global memory access latency
+// Use vectorized memory operations to handle multiple data items at once

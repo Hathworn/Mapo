@@ -1,0 +1,6 @@
+```
+// Use registers to store the values of start_x, end_x, start_y, and end_y to reduce memory access.
+// Minimize redundant calculations in loop boundaries by computing them once and using them directly.
+// Use clamped_y and clamped_x to avoid recalculating min/max for each iteration.
+// Use coalesced memory access patterns by ensuring d_g, d_b, and d_r_output are accessed sequentially.
+```

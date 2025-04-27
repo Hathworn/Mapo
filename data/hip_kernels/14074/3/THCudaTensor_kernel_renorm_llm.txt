@@ -1,0 +1,3 @@
+// Consider increasing the size of shared memory buffer to match blockDim.x for better memory utilization.
+// Ensure data alignment for buffer usage to optimize memory transaction efficiency. 
+// Use atomic operations for reduction if race conditions occur in large blocks.

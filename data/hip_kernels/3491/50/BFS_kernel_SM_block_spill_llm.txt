@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data like visited and cost to reduce global memory access.
+// Use coalesced memory accesses when reading from edgeArray and edgeArrayAux to improve memory throughput.
+// Ensure atomicAdd operations on frontier_length are minimized to reduce contention.
+// Organize data access patterns to maintain write coalescing to frontier2 for efficiency.

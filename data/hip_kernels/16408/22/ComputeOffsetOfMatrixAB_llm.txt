@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access for better memory throughput.
+// Use shared memory to store row_sum and col_sum within each block for faster access.
+// Ensure memory accesses are aligned to improve memory efficiency.
+// Minimize divergent branching by reordering conditions if possible.
+// Prefetch data to registers to reduce memory latency.
+```

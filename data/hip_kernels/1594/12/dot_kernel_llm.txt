@@ -1,0 +1,5 @@
+// Coalesce memory accesses to `output` and `delta` to improve memory bandwidth utilization.
+// Minimize use of atomic operations to reduce contention and improve parallelism.
+// Use shared memory or registers to cache `output` values for the inner loops.
+// Calculate `norm1`, `norm2`, and `sum` using fewer operations where possible.
+// Explore loop unrolling in the inner `for` loops to improve loop performance.

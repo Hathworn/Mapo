@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure the block size matches the shared memory size for optimal performance.
+// Avoid bank conflicts by properly structuring shared memory access patterns.
+// Ensure __syncthreads() is used appropriately to synchronize threads within a block.

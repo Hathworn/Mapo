@@ -1,0 +1,6 @@
+```cpp
+// Consider using __shared__ memory for intermediate calculations to optimize memory access.
+// Evaluate if the operation needs to be contained within a warp or can be expanded for parallel execution.
+// Keep data in registers when possible to reduce global memory access time.
+// Ensure coalesced memory access patterns to improve memory bandwidth utilization.
+```

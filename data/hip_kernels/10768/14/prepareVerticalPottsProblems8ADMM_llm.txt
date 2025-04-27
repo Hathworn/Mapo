@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses by aligning memory access patterns to reduce bank conflicts.
+// Explore using shared memory for frequently accessed data to minimize global memory latency.
+// Check if loop unrolling in the kernel could improve performance by reducing control overhead.
+// Investigate the use of warp shuffle functions for efficient intra-warp communication.
+// Evaluate if vectorized data loads/store can be utilized for memory throughput optimization.
+// Assess memory access alignment to maximize throughput on the memory transaction level.
+// Analyze if using constant memory for read-only data can reduce global memory access time.
+```

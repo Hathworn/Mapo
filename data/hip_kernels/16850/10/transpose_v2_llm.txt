@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses for global memory
+// Use aligned memory access to avoid bank conflicts in shared memory
+// Ensure data prefetching to hide memory latency
+// Optimize the grid and block size for optimal occupancy
+// Use double buffering to overlap computation with memory operations
+// Minimize bank conflicts in shared memory by adjusting data layout
+// Perform boundary checks after loading data into registers
+```

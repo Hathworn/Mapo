@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses for lifter_coeffs and features arrays
+// Use shared memory to store lifter coefficients for faster access among threads
+// Ensure features array is accessed in a pattern that maximizes memory coalescing
+// Consider implementing loop unrolling for the lifter application loop
+// Review the usage of __syncthreads() to ensure optimal parallel execution
+// Optimize the condition check for applying energy floor to minimize divergence
+```

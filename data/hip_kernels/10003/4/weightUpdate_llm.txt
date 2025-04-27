@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache d_D and d_N for coalesced access.
+// Use loop unrolling if the dimensions of d_D and d_N are known and fixed.
+// Maximize occupancy by optimizing block size and utilizing more threads per block.
+// Align d_W, d_D, and d_N to 128 bytes to improve memory transaction efficiency.
+// Implement double buffering technique if applicable to hide memory latency.
+```

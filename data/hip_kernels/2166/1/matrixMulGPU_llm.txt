@@ -1,0 +1,7 @@
+```
+// Use shared memory to optimize memory access for matrices A and B
+// Ensure coalesced memory access when loading data into shared memory
+// Pad tiles with zero where necessary to handle boundary conditions
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Avoid bank conflicts in shared memory access by organizing data properly
+```

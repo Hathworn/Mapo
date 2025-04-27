@@ -1,0 +1,5 @@
+// Consider using shared memory for arrays xh, yh, zh, xt, yt, zt to further reduce global memory accesses.
+// Use texture memory for constant read-only data like field_m if applicable for better memory access patterns.
+// Evaluate the possibility of loop unrolling in the inner loop for better instruction throughput.
+// Check alignment of memory accesses to ensure coalesced accesses for better memory bandwidth utilization.
+// Consider using warp synchronization where possible to reduce synchronization overhead.

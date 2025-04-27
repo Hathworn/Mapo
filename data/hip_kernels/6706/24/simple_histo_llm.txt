@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access to d_in for improved memory access patterns
+// Ensure that d_bins accesses are within L2 cache line to reduce global memory transactions
+// Use shared memory to accumulate histogram counts locally before writing to global memory
+// Ensure use of warp reductions to optimize the accumulation process in shared memory
+```

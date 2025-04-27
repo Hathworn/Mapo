@@ -1,0 +1,8 @@
+```cpp
+// Utilize shared memory to minimize global memory accesses for improved memory access efficiency.
+// Use memory coalescing in global memory loads and stores to maximize bandwidth.
+// Leverage loop unrolling to enhance instruction-level parallelism and reduce loop overhead.
+// Implement efficient synchronization with __syncthreads() to ensure correct data sharing among threads.
+// Optimize thread index calculations to improve memory access patterns and reduce computation.
+// Apply constant memory for frequently accessed data that does not change to increase cache efficiency.
+```

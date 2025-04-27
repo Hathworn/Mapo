@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Tune the size of shared_annd to match the specific block size requirements.
+// Ensure shared memory coherency with __syncthreads() after loading data.
+// Optimize the size of shared memory to maximize occupancy.
+```

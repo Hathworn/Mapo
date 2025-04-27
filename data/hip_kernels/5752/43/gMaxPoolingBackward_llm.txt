@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory accesses for better bandwidth usage
+// Minimize thread divergence by aligning loop iterations and calculations
+// Replace atomic operations if possible, consider reduction techniques or warp shuffle
+// Use loop unrolling to increase throughput if applicable
+```

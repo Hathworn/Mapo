@@ -1,0 +1,4 @@
+// Ensure coalesced memory access for better performance.
+// Consider using shared memory for frequently accessed data.
+// Avoid divergence by ensuring aligned access within warp.
+// Optimize block and grid dimensions to match specific GPU architecture.

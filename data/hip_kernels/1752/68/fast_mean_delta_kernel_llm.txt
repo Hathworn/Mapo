@@ -1,0 +1,6 @@
+```
+// Use shared memory to store intermediate results to minimize global memory accesses
+// Loop unrolling in the spatial dimension to improve memory access pattern
+// Utilize parallel reduction to efficiently sum values in shared memory
+// Unroll final reduction step to maintain full warp utilization for optimization
+```

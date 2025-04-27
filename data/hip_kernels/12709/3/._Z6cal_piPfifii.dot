@@ -1,0 +1,15 @@
+digraph "CFG for '_Z6cal_piPfifii' function" {
+	label="CFG for '_Z6cal_piPfifii' function";
+
+	Node0x57492a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %1\l  br i1 %15, label %16, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x57492a0:s0 -> Node0x574b1a0;
+	Node0x57492a0:s1 -> Node0x574b230;
+	Node0x574b1a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%16:\l16:                                               \l  %17 = fpext float %2 to double\l  %18 = sext i32 %14 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = mul nsw i32 %4, %3\l  %21 = load float, float addrspace(1)* %19, align 4, !tbaa !7\l  br label %22\l}"];
+	Node0x574b1a0 -> Node0x574b790;
+	Node0x574b790 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  %23 = phi float [ %21, %16 ], [ %35, %22 ]\l  %24 = phi i32 [ %14, %16 ], [ %36, %22 ]\l  %25 = sitofp i32 %24 to double\l  %26 = fadd contract double %25, 5.000000e-01\l  %27 = fmul contract double %26, %17\l  %28 = fptrunc double %27 to float\l  %29 = fmul contract float %28, %28\l  %30 = fpext float %29 to double\l  %31 = fadd contract double %30, 1.000000e+00\l  %32 = fdiv contract double 4.000000e+00, %31\l  %33 = fpext float %23 to double\l  %34 = fadd contract double %32, %33\l  %35 = fptrunc double %34 to float\l  %36 = add nsw i32 %24, %20\l  %37 = icmp slt i32 %36, %1\l  br i1 %37, label %22, label %38, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x574b790:s0 -> Node0x574b790;
+	Node0x574b790:s1 -> Node0x574ccf0;
+	Node0x574ccf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%38:\l38:                                               \l  store float %35, float addrspace(1)* %19, align 4, !tbaa !7\l  br label %39\l}"];
+	Node0x574ccf0 -> Node0x574b230;
+	Node0x574b230 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%39:\l39:                                               \l  ret void\l}"];
+}

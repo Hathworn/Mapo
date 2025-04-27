@@ -1,0 +1,5 @@
+// Consider using float4 data types for coalesced memory access.
+// Optimize memory access patterns to minimize bank conflicts within shared memory.
+// Align shared memory accesses to avoid misaligned memory transactions.
+// Ensure kernel accesses are coalesced for improved throughput.
+// Use __syncthreads() wisely to avoid unnecessary synchronization points.

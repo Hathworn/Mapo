@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for outputPtr to improve memory bandwidth utilization
+// Review thread block size to ensure optimal occupancy and performance regarding the target device
+// Use shared memory if possible for intermediate calculations to minimize global memory access
+// Ensure alignment of memory accesses to reduce potential memory access penalties
+// Check if asynchronous memory copy can overlap with computations for improved efficiency
+```

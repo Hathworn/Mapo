@@ -1,0 +1,7 @@
+```
+// Precompute index to minimize repeated calculations
+// Load data into shared memory to reduce global memory access
+// Use __syncthreads() to ensure all thread computations are complete before reduction
+// Use a single thread for reduction to minimize thread divergence
+// Write results back to global memory in a coalesced manner
+```

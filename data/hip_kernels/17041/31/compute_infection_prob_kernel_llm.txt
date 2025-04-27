@@ -1,0 +1,6 @@
+```
+// Use shared memory to store rat_counts for better memory access patterns.
+// Consider memory coalescing for accessing infectious_rat_count and exposed_rat_count.
+// Minimize arithmetic and division by precalculating constants that do not change per iteration.
+// Use __ldg() for read-only data to utilize the texture cache for infectious_rat_count and exposed_rat_count.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Precompute constant kernel coefficient for reuse
+// Store intermediate results in shared memory to minimize repeated calculations
+// Synchronize threads to ensure shared memory consistency
+// Use faster device function __expf for exponential calculation
+```

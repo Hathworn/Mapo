@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for d_Rin and d_sum to leverage faster memory access patterns
+// Consider using shared memory if multiple threads need to access the same data within the block
+// Minimize conditional checks within device code to reduce thread divergence
+// Align memory accesses to optimize data transfer sizes between global and shared memory
+// Reduce pointer arithmetic by pre-calculating shared positions outside the loop
+// Investigate the use of vectorized loads/stores to enhance memory throughput
+```

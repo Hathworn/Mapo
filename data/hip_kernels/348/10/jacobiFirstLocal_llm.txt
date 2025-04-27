@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for storing local_non_diagonal_values to reduce global memory access.
+// Use loop unrolling for reducing the number of iterations and improving parallel efficiency.
+// Consider using a different convergence criterion for quicker termination.
+// Optimize memory coalescing by ensuring that threads access contiguous memory locations.
+// Use warp-level primitives to reduce synchronization overhead.
+```

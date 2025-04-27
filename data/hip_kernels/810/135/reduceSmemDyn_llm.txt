@@ -1,0 +1,5 @@
+```
+// Consider padding shared memory to avoid bank conflicts.
+// Use __restrict__ to potentially improve memory access efficiency.
+// Align g_idata and g_odata to 128 bytes to improve coalesced access.
+```

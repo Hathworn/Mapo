@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Utilize shared memory effectively to reduce global memory accesses.
+// Implement loop unrolling in the local sum computation to enhance instruction throughput.
+// Ensure that the access pattern of gradOutput_k[i * stride] and output_k[i * stride] is optimized for memory coalescing.
+```

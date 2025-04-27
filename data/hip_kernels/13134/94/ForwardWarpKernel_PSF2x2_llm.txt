@@ -1,0 +1,7 @@
+```
+// Coalesce memory access for u and v to minimize global memory transactions
+// Minimize bank conflicts for shared memory access, consider padding if needed
+// Merge updatePixel calls to reduce the number of condition checks and atomic operations
+// Consider loop unrolling for updatePixel if compiler does not automatically handle it
+// Use CUDA __restrict__ qualifiers for pointers if data access allows it to enable better compiler optimization
+```

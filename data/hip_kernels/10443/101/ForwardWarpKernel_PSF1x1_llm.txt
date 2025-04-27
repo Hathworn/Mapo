@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory reads.
+// Ensure coalesced memory access patterns when reading u, v, and src arrays.
+// Consider loop unrolling for any significant repetitive computation within the kernel.
+// Profile the kernel for warp divergence to ensure optimal branching.
+// Consider using a larger block size for better occupancy based on device specifications.
+```

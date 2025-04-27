@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Initialize shared memory to prevent unnecessary global memory reads.
+// Unroll loop to improve performance by reducing the loop control overhead.
+// Apply warp-level primitives to reduce synchronization overhead.
+// Ensure a single thread writes the final result to global memory to avoid race conditions.
+```

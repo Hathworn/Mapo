@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses for flow and src arrays.
+// Evaluate thread occupancy and adjust block size for optimal performance given current GPU architecture.
+// Consider using texture memory for read-only data to leverage caching mechanisms.
+// Avoid branching by using conditional moves or select functions where applicable.
+// Minimize atomic operations by accumulating results into a local register before updating global memory.
+```

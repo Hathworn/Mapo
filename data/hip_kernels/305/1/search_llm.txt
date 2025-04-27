@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning data structures
+// Use shared memory to store frequently accessed data
+// Consider loop unrolling for repetitive conditions
+// Minimize divergent branching to improve warp execution
+// Use const memory for frequently accessed read-only data like 'largest'

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Optimize warps divergence by ensuring all threads within a warp follow the same execution path
+// Align data structures to improve coalesced memory accesses
+// Experiment with different block sizes to find the optimal configuration for your hardware
+// Ensure memory accesses are contiguous for improved cache performance
+```

@@ -1,0 +1,9 @@
+```
+// Use shared memory to optimize memory access patterns.
+// Minimize global memory transactions by loading data into shared memory.
+// Ensure coalesced memory accesses to improve performance.
+// Use __syncthreads() to prevent race conditions and ensure data consistency.
+// Only load legal indices to avoid unnecessary memory operations.
+// Maximize the use of shared memory within tile dimensions constraints.
+// For higher efficiency, consider occupancy and thread block sizing.
+```

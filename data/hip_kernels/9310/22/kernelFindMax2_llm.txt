@@ -1,0 +1,5 @@
+// Optimize shared memory allocation size to reduce memory usage
+// Load elements into cache with bounds checking to avoid out-of-bound memory access
+// Use __syncthreads() to ensure all threads have written to shared memory before proceeding
+// Implement warp-synchronous reduction to minimize synchronization overhead
+// Utilize atomic operations for updating the global maximum to ensure thread safety

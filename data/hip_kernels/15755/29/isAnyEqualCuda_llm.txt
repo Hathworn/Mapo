@@ -1,0 +1,8 @@
+```
+// Use shared memory for value array to reduce global memory access latency
+// Only load value array into shared memory once per block to minimize redundant global memory accesses
+// Employ early exit strategy for threads outside the image bounds to save computation
+// Consider using warp-synchronous programming for more efficient synchronization, if applicable
+// Optimize search loop in shared memory to potentially use binary search if values are sorted
+// Limit the use of atomic operations as they can be a bottleneck; consider alternative reduction methods if feasible
+```

@@ -1,0 +1,8 @@
+```
+// Consider aligning memory accesses to achieve coalesced memory access patterns
+// Utilize shared memory to reduce global memory accesses, which are more costly
+// Unroll loops further when beneficial to leverage parallel execution
+// Use warp-level primitives for the last warp to minimize synchronization overhead
+// Ensure memory access patterns are coalesced to optimize global memory bandwidth
+// Assess if bank conflicts in shared memory are present and align data accordingly
+```

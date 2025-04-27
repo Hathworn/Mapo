@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store mean and reduce global memory access
+// Ensure proper alignment of memory accesses for better coalescing
+// Optimize loop unrolling for the inner loop to improve performance
+// Utilize vectorized loads if architecture supports it for higher throughput
+// Consider increasing block size if occupancy is not at its maximum
+// Explore using asynchronous memory copies for mean if appropriate
+```

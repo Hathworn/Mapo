@@ -1,0 +1,6 @@
+```
+// Use coalesced global memory access patterns for loc_ array
+// Consider shared memory usage if multiple threads access same loc_[ptidx]
+// Minimize divergence with careful index checking conditions
+// Optimize scale computation by pre-loading scale value in shared or constant memory
+```

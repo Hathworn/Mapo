@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Utilize a local sum variable to minimize shared memory accesses
+// Implement a stride access pattern to improve coalescing
+// Apply warp-level operations for efficient parallel reduction
+// Perform final reduction using warp shuffle for intrawarp communication
+// Avoid excessive synchronizations by using warp-level operations
+// Ensure volatile keyword for shared memory access in warp shuffle 
+```

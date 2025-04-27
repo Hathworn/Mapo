@@ -1,0 +1,5 @@
+// Precompute constants outside inner loops to minimize redundant calculations
+// Use local variables to reduce global memory access
+// Consider using shared memory for frequently accessed data to reduce latency
+// Ensure coalesced memory access patterns to improve bandwidth utilization
+// Minimize divergent branching to optimize warp execution efficiency

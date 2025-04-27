@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access for pDataA, pDataB, and pResult
+// Minimize arithmetic operations by combining multiplication and division
+// Consider using shared memory if reuse of data between threads is possible
+// Prefetch data into registers to reduce global memory latency
+// Optimize usage of transcendentals like sqrt() and sin() by precomputing if possible
+// Avoid redundant memory accesses by storing intermediate results in registers
+// Ensure grid and block dimensions maximize occupancy and are multiples of warp size
+```

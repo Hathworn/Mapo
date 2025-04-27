@@ -1,0 +1,8 @@
+```
+// Consider coalescing access to input and output arrays
+// Use __restrict__ qualifiers for input and output pointers if applicable
+// Place delta in shared memory to reduce redundant calculations
+// Ensure delta computation occurs only once per block
+// Reduce branching where possible, specifically in switch-case
+// Ensure memory reads and writes are contiguous to improve throughput
+```

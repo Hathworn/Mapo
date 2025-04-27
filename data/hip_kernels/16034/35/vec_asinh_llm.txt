@@ -1,0 +1,7 @@
+```
+// Use shared memory if possible to reduce global memory accesses
+// Ensure memory coalescing by accessing global memory in a contiguous manner
+// Consider loop unrolling to improve throughput if applicable
+// Minimize divergent branching by ensuring conditions are uniformly true or false for thread warps
+// Profile the kernel to identify bottlenecks and focus optimization efforts there
+```

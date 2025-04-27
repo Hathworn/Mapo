@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13SubtractMultiPfS_iii' function" {
+	label="CFG for '_Z13SubtractMultiPfS_iii' function";
+
+	Node0x61a83e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = shl i32 %6, 5\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = add i32 %7, %8\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %12 = add i32 %10, %11\l  %13 = mul nsw i32 %4, %3\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.z(), !range !4\l  %15 = mul i32 %13, %14\l  %16 = mul nsw i32 %12, %3\l  %17 = add i32 %16, %9\l  %18 = add i32 %17, %15\l  %19 = icmp slt i32 %9, %2\l  %20 = icmp slt i32 %12, %4\l  %21 = select i1 %19, i1 %20, i1 false\l  br i1 %21, label %22, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x61a83e0:s0 -> Node0x61aace0;
+	Node0x61a83e0:s1 -> Node0x61aad70;
+	Node0x61aace0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%22:\l22:                                               \l  %23 = sext i32 %18 to i64\l  %24 = getelementptr inbounds float, float addrspace(1)* %1, i64 %23\l  %25 = load float, float addrspace(1)* %24, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %26 = add nsw i32 %18, %13\l  %27 = sext i32 %26 to i64\l  %28 = getelementptr inbounds float, float addrspace(1)* %1, i64 %27\l  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %30 = fsub contract float %25, %29\l  %31 = getelementptr inbounds float, float addrspace(1)* %0, i64 %23\l  store float %30, float addrspace(1)* %31, align 4, !tbaa !5\l  br label %32\l}"];
+	Node0x61aace0 -> Node0x61aad70;
+	Node0x61aad70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

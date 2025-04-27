@@ -1,0 +1,7 @@
+```
+// Use shared memory to store partial results to reduce global memory accesses
+// Consider coalesced memory accesses to improve memory bandwidth utilization
+// Use warp-level primitives to reduce latency in reduction operations
+// Investigate using half precision for storage if precision allows
+// Align accesses to ensure proper cache line usage
+```

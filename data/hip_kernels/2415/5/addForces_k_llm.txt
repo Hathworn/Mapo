@@ -1,0 +1,7 @@
+```c
+// Consider coalesced access by aligning threads with memory to improve memory access patterns.
+// Use shared memory to store commonly accessed values like tx_r4 and ty_r4 to reduce redundant calculations.
+// Minimize divergent branches and ensure all threads within a warp follow the same execution path.
+// Prefetch data to shared memory to reduce global memory access latency.
+// Optimize memory access patterns by ensuring proper alignment of data structures in memory.
+```

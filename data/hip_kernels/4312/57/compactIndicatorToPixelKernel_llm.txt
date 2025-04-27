@@ -1,0 +1,7 @@
+```
+// Combine global memory accesses to reduce the number of transactions
+// Align memory accesses to improve coalescing and avoid misaligned access
+// Ensure warp divergence is minimized by ensuring all threads in a warp take the same execution path
+// Prefetch data into shared memory to reduce global memory latency if access pattern allows
+// Use vectorized data types if multiple elements are accessed together for better throughput
+```

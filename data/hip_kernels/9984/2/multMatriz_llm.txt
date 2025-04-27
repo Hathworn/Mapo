@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced access to global memory by aligning threads with data layout
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Minimize bank conflicts by ensuring data accesses are within separate memory banks
+// Utilize shared memory efficiently by reusing loaded data for multiple computations
+// Optimize loop unrolling to maximize data reuse within shared memory
+// Balance computation and memory access to optimize overall performance
+```

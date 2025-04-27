@@ -1,0 +1,6 @@
+```
+// Change data types from uint32_t to uint8_t for srcImage to save memory bandwidth
+// Use shared memory to store srcImage data for the threads to reduce global memory access
+// Unroll loops if any to increase parallelism and reduce overhead
+// Explore use of texture or surface memory to take advantage of hardware caching for srcImage
+```

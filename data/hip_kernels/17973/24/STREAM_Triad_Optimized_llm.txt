@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data access patterns
+// Use shared memory if data reuse is possible within the block
+// Adjust block and grid dimensions to maximize the use of available SMs
+// Consider vectorized loads/stores if the hardware supports it
+// Prefetch data if kernel execution is memory-bound to hide latency
+// Minimize divergence within warp execution to maintain efficiency
+```

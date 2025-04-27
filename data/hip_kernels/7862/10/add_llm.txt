@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access to improve memory bandwidth.
+// Use shared memory for frequently accessed data to reduce global memory access.
+// Ensure proper occupancy by selecting optimal block size for better parallelism.
+// Minimize divergence by ensuring that threads within a warp follow similar code paths.
+// Analyze memory access patterns to reduce cache misses.
+```

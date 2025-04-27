@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory traffic.
+// Ensure proper memory alignment for optimal coalesced memory access.
+// Evaluate kernel grid and block size for best utilization of computational resources.
+// Aim to minimize branching within the kernel function for improved performance.
+// Make use of the __restrict__ qualifier for pointers in kernels to aid compiler optimizations.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory if applicable to store part of the src matrix for faster access.
+// Ensure coalesced memory access patterns for both loading from src and storing to tgt.
+// Evaluate the use of texture memory for src if there's significant reuse of data.
+// Consider launching with thread block dimensions that match the warp size for efficiency.
+```

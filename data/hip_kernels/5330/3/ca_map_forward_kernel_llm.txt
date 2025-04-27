@@ -1,0 +1,6 @@
+// Use shared memory for frequently accessed variables to reduce global memory accesses
+// Ensure loop indexing allows for coalesced memory access of g and weight arrays
+// Try loop unrolling for the innermost loops to enhance performance
+// Consider using float4 or similar for vectorized memory access with g and weight
+// Optimize conditional checks to minimize divergence in thread execution
+// Align data structures to 128 bytes for optimal memory transactions

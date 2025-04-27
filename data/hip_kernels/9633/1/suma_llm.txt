@@ -1,0 +1,4 @@
+```
+// Use temp variable for result to minimize global memory access
+// Ensure only one thread modifies *c to avoid data race if multiple blocks are used
+```

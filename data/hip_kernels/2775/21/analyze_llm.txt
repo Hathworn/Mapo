@@ -1,0 +1,7 @@
+```
+// Load data into shared memory to reduce global memory access
+// Ensure all threads synchronize after initializing shared memory
+// Use shared memory reduction to minimize global memory usage
+// Begin reduction with blockDim.x/2 strides for efficiency
+// Use atomic operations to safely update global memory
+```

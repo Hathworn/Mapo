@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for input and kernel arrays
+// Utilize padding to ensure aligned memory access, minimizing bank conflicts
+// Optimize loop unrolling for the inner loop over kx to increase instruction-level parallelism
+// Evaluate use of half-precision if accuracy permits to reduce bandwidth and increase performance
+// Ensure proper use of shared memory to maximize occupancy and minimize memory latency
+// Analyze register usage to avoid spilling over to local memory, reducing access time
+```

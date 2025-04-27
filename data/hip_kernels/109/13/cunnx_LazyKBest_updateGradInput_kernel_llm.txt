@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to minimize global memory accesses
+// Use coalesced access pattern for gradOutput and indice loading
+// Use synchronization to ensure correct data loading into shared memory
+// Optimize reduction pattern using shared memory for gradInput updates
+```

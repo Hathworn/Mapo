@@ -1,0 +1,4 @@
+// Ensure data is aligned for coalesced memory access
+// Use shared memory for frequently accessed data to reduce global memory access
+// Optimize thread block size for better occupancy and memory throughput
+// Consider launching multiple streams for overlapping computation and data transfer

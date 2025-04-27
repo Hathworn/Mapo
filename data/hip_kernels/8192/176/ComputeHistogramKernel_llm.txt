@@ -1,0 +1,8 @@
+```
+// Consider using warp level primitives to reduce sync overhead.
+// Optimize memory access patterns to reduce bank conflicts in shared memory.
+// Use vectorized loads/stores if applicable for global memory accesses.
+// Investigate using __ldg for read-only data from global memory if appropriate.
+// Evaluate if loop unrolling could benefit performance in any sections.
+// Assess if larger blocks would improve performance by increasing parallel work.
+```

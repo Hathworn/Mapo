@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory if possible to reduce global memory accesses.
+// Optimize memory access patterns to ensure coalesced memory accesses.
+// Check if "mask" can be stored in shared memory for faster access.
+// Consider prefetching data to hide memory latency.
+// Ensure that all access to global memory is necessary and unavoidable.
+// Strive for occupancy by ensuring the grid size and block size are optimal.
+```

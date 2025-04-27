@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache srcImage data for reducing global memory accesses
+// Optimize memory coalescing by ensuring that consecutive threads access consecutive memory addresses
+// Reduce bank conflicts in shared memory by padding the shared memory array if necessary
+// Ensure that the kernel launch configuration is optimal for the target GPU architecture
+// Leverage loop unrolling where possible to improve throughput
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and improve memory bandwidth utilization
+// Ensure coalesced global memory access by aligning block and grid dimensions with memory layout
+// Synchronize threads after loading data to avoid race conditions and ensure data consistency
+// Utilize shared memory effectively to store tiled sections of the image for local computation
+// Leverage block and thread indexing to maximize parallelism and occupancy
+```

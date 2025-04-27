@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Load Y, U, V components into shared memory to minimize repeated accesses.
+// Reduce the number of arithmetic operations by reusing computed values.
+// Align memory accesses with warp size to improve coalescence.
+// Ensure lookupTable is cached for faster access.
+```

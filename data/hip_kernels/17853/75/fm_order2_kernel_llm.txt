@@ -1,0 +1,7 @@
+// Consider using __restrict__ qualifiers for the pointers to help the compiler with optimization
+// Ensure coalesced memory access patterns by checking alignment and data structure layout
+// Minimize divergent branching by ensuring uniform execution across threads in a warp
+// Consider loop unrolling for the slot_num loop for increased performance
+// Utilize shared memory for storing intermediate values like emb_sum if possible
+// Optimize block and grid dimensions for maximum occupancy and performance
+// Profile and analyze the kernel to identify any bottlenecks in memory access or computation

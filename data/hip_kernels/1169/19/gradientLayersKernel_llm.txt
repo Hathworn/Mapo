@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses and improve data locality
+// Employ unrolling to decrease the overhead of loop control
+// Align shared memory accesses along warp to maximize coalescing
+// Load data in coalesced manner by adjusting the pointer arithmetic
+// Synchronize threads to ensure all data is loaded into shared memory before computation
+// Avoid bank conflicts by padding shared memory appropriately if needed
+// Ensure boundary checks are minimal to reduce conditional branching
+```

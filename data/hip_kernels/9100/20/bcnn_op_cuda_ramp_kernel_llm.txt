@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing contiguous elements
+// Use shared memory if accessing x[i] multiple times to reduce global memory accesses
+// Consider loop unrolling if 'n' is guaranteed to be large for further performance gain
+// Minimize divergent branches by structuring conditions favorably
+// Adjust block size to match the GPU architecture for optimal performance
+```

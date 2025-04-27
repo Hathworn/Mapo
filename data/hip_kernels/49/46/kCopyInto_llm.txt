@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory to reduce global memory access latency
+// Ensure memory accesses are coalesced to improve bandwidth utilization
+// Implement double buffering to overlap computation and data transfer
+// Align data structures to achieve aligned memory access
+// Evaluate the use of texture memory for read-only data
+// Unroll inner loops more aggressively if register pressure allows
+```

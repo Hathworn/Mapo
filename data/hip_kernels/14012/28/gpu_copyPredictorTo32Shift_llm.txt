@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for both 'in' and 'shift' arrays.
+// Use shared memory to store relevant data from 'in' or 'shift' for reducing global memory bandwidth usage.
+// Ensure memory access patterns are aligned for 'op' writes to avoid performance penalties.
+// Consider using faster intrinsic functions if available for shift and bitwise operations.
+// Pre-load data into registers when possible to reduce memory latency.
+// Reduce the use of division operations in index calculations whenever possible.
+```

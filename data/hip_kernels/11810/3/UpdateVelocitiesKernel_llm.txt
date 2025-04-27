@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data like TAURP and TAUPP to reduce global memory access.
+// Pre-compute constant values such as invRmed[i] and invdiffRsup[i] in registers to optimize memory access.
+// Evaluate potential loop unrolling to reduce branch divergence and improve warp efficiency.
+// Leverage data locality by structuring memory access patterns to maximize coalesced memory access.

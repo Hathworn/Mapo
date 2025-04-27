@@ -1,0 +1,4 @@
+// Calculate normalization constant once for the entire kernel to avoid redundant operations
+// Use grid-stride loop for better performance and more flexibility in the number of threads
+// Minimize memory accesses by calculating normalization constant outside the loop
+// Maximize global memory throughput using coalesced memory accesses with a grid-stride loop

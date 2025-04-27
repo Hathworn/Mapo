@@ -1,0 +1,7 @@
+```
+// Consider reducing the shared memory usage if occupancy is low
+// Ensure coalesced memory access when reading minmax values
+// Check for bank conflicts in shared memory access
+// Use warp-level primitives to avoid unnecessary syncs within a warp
+// Optimize loop unrolling for the inner loop if possible
+```

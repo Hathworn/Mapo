@@ -1,0 +1,18 @@
+digraph "CFG for '_Z10MarkMergesiPiS_S_S_' function" {
+	label="CFG for '_Z10MarkMergesiPiS_S_S_' function";
+
+	Node0x597f540 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %0\l  br i1 %15, label %16, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x597f540:s0 -> Node0x5981400;
+	Node0x597f540:s1 -> Node0x5981490;
+	Node0x5981400 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%16:\l16:                                               \l  %17 = sext i32 %14 to i64\l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %17\l  %19 = load i32, i32 addrspace(1)* %18, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %20 = icmp sgt i32 %19, -1\l  br i1 %20, label %21, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5981400:s0 -> Node0x5982010;
+	Node0x5981400:s1 -> Node0x5981490;
+	Node0x5982010 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%21:\l21:                                               \l  %22 = zext i32 %19 to i64\l  %23 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %22\l  %24 = load i32, i32 addrspace(1)* %23, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %25 = icmp eq i32 %24, %14\l  br i1 %25, label %26, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5982010:s0 -> Node0x5982970;
+	Node0x5982010:s1 -> Node0x5982a00;
+	Node0x5982970 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%26:\l26:                                               \l  %27 = icmp sgt i32 %19, %14\l  %28 = select i1 %27, i64 %22, i64 %17\l  %29 = tail call i32 @llvm.smin.i32(i32 %19, i32 %14)\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %28\l  store i32 %29, i32 addrspace(1)* %30, align 4, !tbaa !7\l  %31 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %17\l  store i32 1, i32 addrspace(1)* %31, align 4, !tbaa !7\l  %32 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %22\l  br label %33\l}"];
+	Node0x5982970 -> Node0x5982a00;
+	Node0x5982a00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%33:\l33:                                               \l  %34 = phi i32 addrspace(1)* [ %32, %26 ], [ %4, %21 ]\l  store i32 1, i32 addrspace(1)* %34, align 4, !tbaa !7\l  br label %35\l}"];
+	Node0x5982a00 -> Node0x5981490;
+	Node0x5981490 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  ret void\l}"];
+}

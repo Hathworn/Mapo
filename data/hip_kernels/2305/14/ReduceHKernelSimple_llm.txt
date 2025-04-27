@@ -1,0 +1,4 @@
+// Use shared memory to cache data for reducing global memory access latency.
+// Consider using warp-level reduction to enhance computational efficiency.
+// Ensure full coalescing of global memory accesses to improve throughput.
+// Use atomic operations if necessary to handle data races in concurrent writes.

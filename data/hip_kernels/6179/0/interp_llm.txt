@@ -1,0 +1,7 @@
+```cpp
+// Use __ldg() for reading data that is used multiple times to increase cache efficiency
+// Consider using shared memory to store frequently accessed data for faster access
+// Ensure coalesced memory access patterns to improve memory throughput
+// Minimize branch divergence by structuring conditions efficiently
+// Evaluate the use of __restrict__ qualifiers for pointer arguments to enable additional compiler optimizations
+```

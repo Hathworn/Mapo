@@ -1,0 +1,6 @@
+```
+// Use shared memory efficiently to minimize global memory access
+// Optimize bin iteration using blockDim.x for better parallelism 
+// Simplified reduction within the warp
+// Use __syncthreads() to ensure all threads have completed their writes to shared memory before proceeding
+```

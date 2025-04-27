@@ -1,0 +1,7 @@
+```
+// Use shared memory to buffer input data and reduce global memory reads
+// Limit thread divergence by ensuring all threads in a warp follow the same execution path
+// Consider coalescing memory accesses to improve memory throughput
+// Optimize for L1 cache utilization by organizing data and threads efficiently
+// Use vectorized operations if possible to load/store multiple elements at once
+```

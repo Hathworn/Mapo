@@ -1,0 +1,11 @@
+digraph "CFG for '_Z26timeDomainConvolutionNaivePfS_S_xxif' function" {
+	label="CFG for '_Z26timeDomainConvolutionNaivePfS_S_xxif' function";
+
+	Node0x60fb420 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = mul i32 %8, %13\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %16 = add i32 %14, %15\l  %17 = icmp sgt i64 %4, 0\l  br i1 %17, label %25, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x60fb420:s0 -> Node0x60fd390;
+	Node0x60fb420:s1 -> Node0x60fd420;
+	Node0x60fd420 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%18:\l18:                                               \l  %19 = phi float [ 0.000000e+00, %7 ], [ %36, %25 ]\l  %20 = fmul contract float %19, %6\l  %21 = shl nsw i32 %16, 1\l  %22 = add nsw i32 %21, %5\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds float, float addrspace(1)* %2, i64 %23\l  store float %20, float addrspace(1)* %24, align 4, !tbaa !7\l  ret void\l}"];
+	Node0x60fd390 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = phi i64 [ %38, %25 ], [ 0, %7 ]\l  %27 = phi float [ %36, %25 ], [ 0.000000e+00, %7 ]\l  %28 = trunc i64 %26 to i32\l  %29 = sub nsw i32 %16, %28\l  %30 = sext i32 %29 to i64\l  %31 = getelementptr inbounds float, float addrspace(1)* %0, i64 %30\l  %32 = load float, float addrspace(1)* %31, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %33 = getelementptr inbounds float, float addrspace(1)* %1, i64 %26\l  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %35 = fmul contract float %32, %34\l  %36 = fadd contract float %27, %35\l  %37 = add nuw nsw i64 %26, 1\l  %38 = and i64 %37, 4294967295\l  %39 = icmp slt i64 %38, %4\l  br i1 %39, label %25, label %18, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x60fd390:s0 -> Node0x60fd390;
+	Node0x60fd390:s1 -> Node0x60fd420;
+}

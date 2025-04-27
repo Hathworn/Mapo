@@ -1,0 +1,5 @@
+```
+// Consider coalescing memory access to maskPtr by ensuring maskPtr is accessed in sequential order.
+// Investigate if shared memory can be utilized to temporarily store mask values to reduce global memory access.
+// Ensure memory access patterns align with warp boundaries to prevent serialization of memory transactions.
+```

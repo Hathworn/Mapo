@@ -1,0 +1,7 @@
+```c
+// Consider coalescing global memory accesses by ensuring data is stored in linear thread order.
+// Use shared memory to reduce redundant global memory accesses for the same data across threads.
+// Optimize boundary check logic to minimize divergent threads and enhance warp efficiency.
+// Preload values from global to registers to reduce global memory instructions.
+// Evaluate fusing the kernel with adjacent computation steps to minimize global memory traffic.
+```

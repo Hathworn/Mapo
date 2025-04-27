@@ -1,0 +1,7 @@
+```cpp
+// Ensure memory access patterns are coalesced to improve performance.
+// Consider using shared memory if there is data reuse among threads.
+// Reduce divergent branches by reorganizing conditional logic.
+// Minimize atomic operations to essential cases to decrease contention.
+// Leverage warp-level primitives for synchronization within a block.
+```

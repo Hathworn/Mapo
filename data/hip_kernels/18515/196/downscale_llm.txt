@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache gradOutput_data to reduce global memory access.
+// Optimize thread indexing for better coalesced memory access.
+// Consider loop unrolling approaches to enhance performance further.
+// Use __restrict__ keyword to potentially aid the compiler with aliasing information.
+// Evaluate if reducing the precision of operations improves performance.
+```

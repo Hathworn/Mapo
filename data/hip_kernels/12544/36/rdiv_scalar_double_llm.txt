@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for dy to improve memory bandwidth
+// Prefetch data from dy to shared memory if possible
+// Use __ldg() for reading from global memory if memory is read-only
+// Ensure alignment of dy and result for potential vectorized reads/writes
+// Optimize dx usage by making it a constant or shared variable if applicable
+```

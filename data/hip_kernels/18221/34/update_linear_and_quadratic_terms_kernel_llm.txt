@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for quadratic and linear values to reduce global memory access
+// Ensure coalesced memory access patterns to optimize memory bandwidth usage
+// Prefetch data to reduce latency, especially for large n
+// Try loop unrolling techniques in the for-loop to enhance performance
+// Minimize use of if statements within compute loops to avoid divergent warps on GPU
+```

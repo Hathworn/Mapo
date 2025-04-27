@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by ensuring threads access contiguous elements
+// Minimize bank conflicts by aligning data accesses to avoid shared memory conflicts
+// Use shared memory to store frequently accessed values to reduce global memory accesses
+// Vectorize operations where possible to utilize memory bandwidth efficiently
+// Optimize memory access patterns to increase cache hit rates
+// Ensure warp divergence is minimized by using conditional checks efficiently
+```

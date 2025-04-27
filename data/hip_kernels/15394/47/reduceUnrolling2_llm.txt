@@ -1,0 +1,4 @@
+// Consider using shared memory for initial data load to reduce global memory accesses.
+// Avoid unaligned memory access by ensuring g_idata[idx] and g_idata[idx + blockDim.x] are within bounds.
+// Use loop unrolling techniques for further optimization of reduction in shared memory.
+// Watch for warp divergence when using conditional statements within threads.

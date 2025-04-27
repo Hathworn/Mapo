@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if the data is accessed multiple times by threads within the block to reduce global memory access.
+// Coalesce global memory accesses for better performance by ensuring threads in a warp access consecutive memory locations.
+// Use __restrict__ qualifier for pointers if applicable to inform the compiler about non-aliasing to improve optimization.
+// Consider adjusting block size to maximize occupancy and ensure load is balanced across SMs.
+// Investigate if texture memory could provide benefits for 1D access patterns if caching behavior is beneficial.
+```

@@ -1,0 +1,7 @@
+```
+// Avoid uncoalesced global memory access by ensuring consecutive threads access consecutive memory locations
+// Use __syncthreads() to synchronize threads before starting the reduction
+// Optimize shared memory usage by minimizing the amount of data stored per block
+// Consider reducing the number of synchronization points if possible to improve performance
+// Ensure that shared memory usage fits within the limits of the GPU being used to avoid spills into global memory
+```

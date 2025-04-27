@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed variables to reduce global memory accesses
+// Unrolling the loop can improve the performance by reducing loop control overhead
+// Use fminf and fmaxf functions for fast operations on floating-point numbers
+// Temporarily store d[index] in a register to minimize memory accesses
+// Consider aligning memory accesses to improve coalescing
+// Initialize d[index] to 0.0f efficiently after usage to reuse the same register
+```

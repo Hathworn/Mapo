@@ -1,0 +1,7 @@
+```
+// Use shared memory for counters to reduce global memory access.
+// Ensure coalesced memory access patterns for vec and bin to maximize memory throughput.
+// Consider loop unrolling in MakeCountSegment_sharedAtomic to improve execution efficiency.
+// Ensure proper synchronization using __syncthreads() after initializing shared memory.
+// Evaluate memory bank conflicts in shared memory access to avoid serialization.
+```

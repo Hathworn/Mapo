@@ -1,0 +1,4 @@
+// Use shared memory to cache frequently accessed data to reduce global memory access  
+// Ensure memory coalescing by having threads access consecutive elements  
+// Minimize warp divergence by ensuring all threads follow similar execution paths  
+// Consider loop unrolling for performance improvement if applicable

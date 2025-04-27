@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory access
+// Perform loop unrolling to minimize branch divergence
+// Use warp-level reduction to optimize parallel aggregation
+// Optimize memory coalescing by improving access patterns
+// Ensure sufficient occupancy by balancing block size and grid size
+// Prefer registers for temporary variables to reduce memory latency
+// Adjust DP_BLOCKSIZE for architecture-specific performance tuning

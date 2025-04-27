@@ -1,0 +1,7 @@
+```
+// Move stride_col calculation outside of the loop to reduce redundant calculations.
+// Use __restrict__ keyword effectively to improve data access patterns and reduce aliasing.
+// Consider using shared memory for better memory access latencies if applicable.
+// Ensure optimal grid and block size configuration for full GPU utilization.
+// Unroll inner loops further for maximizing throughput where applicable.
+```

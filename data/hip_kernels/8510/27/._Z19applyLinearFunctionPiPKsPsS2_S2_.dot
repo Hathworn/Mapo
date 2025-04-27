@@ -1,0 +1,10 @@
+digraph "CFG for '_Z19applyLinearFunctionPiPKsPsS2_S2_' function" {
+	label="CFG for '_Z19applyLinearFunctionPiPKsPsS2_S2_' function";
+
+	Node0x4ea8280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = zext i32 %6 to i64\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = zext i32 %8 to i64\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !5, !invariant.load !6\l  %14 = zext i16 %13 to i64\l  %15 = mul nuw nsw i64 %14, %9\l  %16 = add nuw nsw i64 %15, %7\l  %17 = load i32, i32 addrspace(1)* %0, align 4, !tbaa !7, !amdgpu.noclobber !6\l  %18 = sext i32 %17 to i64\l  %19 = icmp slt i64 %16, %18\l  br i1 %19, label %20, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4ea8280:s0 -> Node0x4eaaba0;
+	Node0x4ea8280:s1 -> Node0x4eaac30;
+	Node0x4eaaba0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%20:\l20:                                               \l  %21 = load i16, i16 addrspace(1)* %3, align 2, !tbaa !11, !amdgpu.noclobber\l... !6\l  %22 = load i16, i16 addrspace(1)* %4, align 2, !tbaa !11, !amdgpu.noclobber\l... !6\l  %23 = getelementptr inbounds i16, i16 addrspace(1)* %1, i64 %16\l  %24 = load i16, i16 addrspace(1)* %23, align 2, !tbaa !11, !amdgpu.noclobber\l... !6\l  %25 = mul i16 %24, %22\l  %26 = add i16 %25, %21\l  %27 = getelementptr inbounds i16, i16 addrspace(1)* %2, i64 %16\l  store i16 %26, i16 addrspace(1)* %27, align 2, !tbaa !11\l  br label %28\l}"];
+	Node0x4eaaba0 -> Node0x4eaac30;
+	Node0x4eaac30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

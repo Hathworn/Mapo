@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store parts of the vector to reduce global memory accesses.
+// Coalesce global memory accesses to improve memory throughput.
+// Ensure warp-level synchronization to effectively utilize shared memory.
+// Ensure that the grid and block dimensions utilize hardware resources efficiently.
+// Explore loop unrolling techniques for operations within warp-synchronous conditions.
+```

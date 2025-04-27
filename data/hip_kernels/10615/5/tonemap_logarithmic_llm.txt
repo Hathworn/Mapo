@@ -1,0 +1,6 @@
+```cpp
+// Consider loading imageIn values to shared memory for reduced global memory access
+// Ensure memory access is coalesced by proper thread configuration
+// Minimize bank conflicts in shared memory if used
+// Evaluate the use of loop unrolling for processing each pixel
+```

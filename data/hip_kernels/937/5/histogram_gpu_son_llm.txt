@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to mitigate global memory access latency
+// Prioritize initialization of shared memory to minimize global memory traffic
+// Ensure threads process distinct portions of data to enhance parallel efficiency
+// Leverage shared memory for intermediate histogram data collection
+// Perform block-level reduction in shared memory to consolidate partial results
+// Atomic operations on global memory should be minimized and batched after reduction
+```

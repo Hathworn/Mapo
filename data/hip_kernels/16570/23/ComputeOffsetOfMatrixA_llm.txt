@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce redundant global memory access for col_sum
+// Ensure coalesced memory access for output for better performance
+// Consider loop unrolling for performance improvement
+// Evaluate using __restrict__ pointers to aid compiler optimization
+```

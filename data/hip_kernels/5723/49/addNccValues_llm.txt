@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for commonly accessed data to reduce global memory access latency.
+// Ensure coalesced memory access by aligning data structures in a way that groups threads access contiguous memory.
+// Explore launching more threads or increasing thread block size to better utilize GPU resources.
+// Apply loop unrolling for the loop inside the kernel, if applicable, for further optimization.
+```

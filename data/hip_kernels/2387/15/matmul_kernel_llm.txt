@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access patterns to global memory
+// Synchronize threads to ensure all data is loaded before computation
+// Minimize shared memory bank conflicts
+// Pre-fetch data to hide global memory latency
+// Balance workload among threads to avoid divergent execution
+```

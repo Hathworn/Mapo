@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache data locally to reduce global memory access.
+// Consider loop unrolling for the loop iterating over numOut to minimize loop overhead.
+// Optimize memory access patterns to ensure coalesced reads from global memory.
+// Evaluate the usage of __syncthreads carefully to avoid unnecessary synchronization overhead.
+```

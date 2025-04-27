@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing the reads from global memory.
+// Use shared memory to store the necessary portions of the data to reduce global memory bandwidth.
+// Ensure enough threads are launched to hide latency through occupancy.
+// Consider using float4 for loading multiple floats at once from global memory.
+// Preload data into shared memory to minimize data movement within inner loops.
+// Align shared memory usage for optimal bank access to prevent bank conflicts.
+// Consider loop unrolling if there's potential for increased performance.
+```

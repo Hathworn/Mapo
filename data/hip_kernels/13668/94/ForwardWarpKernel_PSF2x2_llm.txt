@@ -1,0 +1,8 @@
+```
+// Utilize shared memory effectively to minimize redundant boundary checks.
+// Avoid unnecessary boundary checks for pixels by pre-calculating their validity.
+// Use __forceinline__ keyword for functions to suggest inlining, reducing call overhead.
+// Optimize memory access patterns to improve coalescence and reduce bank conflicts.
+// Consider unrolling loops when possible for increased performance.
+// Reduce the number of __syncthreads() calls to minimize warp synchronization overhead.
+```

@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to reduce global memory accesses
+// Ensure each block collaborates on shared memory usage
+// Load data in tiles to maximize shared memory utilization
+// Synchronize threads after loading data into shared memory
+// Avoid unnecessary calculations when i equals idx
+// Regularly synchronize to prepare for next data load
+// Consider loop unrolling for the innermost loop
+```

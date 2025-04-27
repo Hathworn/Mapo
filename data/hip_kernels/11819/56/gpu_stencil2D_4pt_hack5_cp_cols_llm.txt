@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for global memory reads to optimize memory bandwidth usage.
+// Use __ldg() intrinsic for reading global memory if the data is read-only to exploit texture cache.
+// Minimize shared memory bank conflicts by ensuring access patterns avoid multiple threads accessing the same bank.
+// Verify if __syncthreads() is essential in the current context to reduce potential synchronization overhead.
+```

@@ -1,0 +1,5 @@
+```c
+// Consider using float4 for coalesced memory access
+// Employ shared memory to store 'mean' and 'variance' for faster access
+// Use __syncthreads to ensure all threads have loaded the shared data before proceeding
+```

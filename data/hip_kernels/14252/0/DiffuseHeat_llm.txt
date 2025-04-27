@@ -1,0 +1,7 @@
+```
+// Avoid using non-coalesced memory accesses for currentPoints and nextPoints
+// Consider using shared memory for better data locality and reduce global memory access
+// Minimize the use of __syncthreads() as it can cause performance penalties
+// Consider loop unrolling techniques in the while loop for performance improvement
+// Ensure the data types used are optimized for the GPU architecture to maximize bandwidth
+```

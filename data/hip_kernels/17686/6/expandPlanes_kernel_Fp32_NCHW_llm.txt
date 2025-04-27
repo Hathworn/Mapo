@@ -1,0 +1,9 @@
+```
+// Consider increasing parallelism by adjusting the block size to better match the device's capabilities.
+// Ensure that memory coalescing is maximized for both reading masks and values, and for writing to output.
+// To improve cache efficiency, consider rearranging data accesses to be more sequential.
+// Evaluate the effectiveness of the shared memory usage; ensure it reduces global memory accesses significantly.
+// If the memory access pattern is not optimal, explore alternative strategies such as loop unrolling.
+// If contention on shared memory is observed, adjust kNumShmemElements or explore bank conflict resolution strategies.
+// Utilize asynchronous copy operations if available to hide latency of shared memory loads.
+```

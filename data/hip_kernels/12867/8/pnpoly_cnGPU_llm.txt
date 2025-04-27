@@ -1,0 +1,3 @@
+// Use shared memory for vertices for faster access compared to global memory  
+// Load vertices into shared memory only once by the first thread to minimize redundant memory access  
+// Ensure all threads have completed loading vertices into shared memory using __syncthreads() for synchronization

@@ -1,0 +1,3 @@
+// Consider using __restrict__ qualifiers for d_out and d_in pointers to improve memory access efficiency.
+// Use a non-temporal store for d_out to avoid caching issues and improve store efficiency.
+// Optimize shared memory access by using a memory coalescing pattern when loading data from global memory.

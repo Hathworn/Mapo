@@ -1,0 +1,4 @@
+// Reduce global memory access by using shared memory for data exchange
+// Optimize memory coalescing by aligning shared memory access with threadIdx.x
+// Synchronize threads correctly to ensure data consistency across shared memory
+// Consider double buffering in shared memory for overlapping compute and data transfer

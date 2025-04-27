@@ -1,0 +1,4 @@
+// Use local variables to reduce global memory access
+// Compute difference outside innermost loop to minimize redundant calculations
+// Efficiently use thread index to avoid memory divergence
+// Ensure coalesced memory access for variance storage

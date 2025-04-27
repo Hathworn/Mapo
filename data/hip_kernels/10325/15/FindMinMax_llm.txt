@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access when loading data into shared memory
+// Consider using float2 for loading and storing two values at once
+// Align shared memory access to avoid bank conflicts
+// Minimize global memory writes by reducing results within shared memory
+// Optimize synchronization to reduce idle threads
+```

@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to improve coalesced access to src.
+// Minimize divisions and modulus operations within the kernel by precomputing where possible.
+// Ensure alignment of memory accesses for both src and dest.
+// Use appropriate block and grid sizes to fully utilize the GPU's parallel resources.
+// Consider using texture memory for better cached access in read-intensive operations.
+```

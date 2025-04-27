@@ -1,0 +1,5 @@
+// Ensure coalesced memory access patterns for better performance
+// Minimize shared memory usage by relying on registers for temporary storage
+// Ensure proper alignment for memory accesses
+// Use __syncthreads() only if necessary to avoid serialization overhead
+// Consider loop unrolling for better utilization of compute resources

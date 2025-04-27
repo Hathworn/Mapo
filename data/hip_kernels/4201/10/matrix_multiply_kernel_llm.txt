@@ -1,0 +1,5 @@
+// Consider using cooperative groups for finer synchronization and handling multidimensional arrays
+// Use thread coarsening to increase the computational work per thread
+// Try to ensure that vector_in size does not exceed shared memory limits to avoid bank conflicts
+// Optimize memory access patterns to achieve coalesced memory accesses
+// Consider loop unrolling in the matrix-vector multiplication section

@@ -1,0 +1,7 @@
+```cpp
+// Precompute log_energy_floor outside of loop for efficiency to avoid redundant calculations
+// Use blockDim.x instead of CU1DBLOCK for better clarity and maintainability
+// Direct multiply for optimized assignment to improve memory access efficiency
+// Consider using cooperative groups for more fine-grained parallelism and synchronization
+// Thread 0 for each frame applies energy to reduce branching and improve performance
+```

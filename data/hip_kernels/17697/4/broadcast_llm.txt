@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache elements from `x` to reduce global memory access.
+// Prefetch `x` elements into shared memory for coalesced memory access.
+// Ensure that block sizes are optimized for the GPU architecture for better occupancy.
+// Consider using loop unrolling to improve performance if `c` is a compile-time constant.
+// Avoid bank conflicts when using shared memory for optimal performance.
+```

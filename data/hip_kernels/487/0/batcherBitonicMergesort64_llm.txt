@@ -1,0 +1,6 @@
+```cpp
+// Consider using coalesced access for d_in and d_out to improve memory throughput
+// Explore the use of shared memory efficiently to reduce global memory access
+// Investigate using warp shuffle operations to reduce the need for shared memory synchronization
+// Assess the necessity of __syncthreads() to minimize synchronization overhead
+```

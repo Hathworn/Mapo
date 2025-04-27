@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory when possible to reduce global memory accesses
+// Minimize the use of printf in kernels as it can slow down execution
+// Ensure coalesced memory access patterns for better performance
+// Consider using __restrict__ pointers to help the compiler optimize memory access
+// Optimize the launch configuration for maximum occupancy and performance
+```

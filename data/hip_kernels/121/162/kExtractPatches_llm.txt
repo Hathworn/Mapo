@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Try to minimize the calculation within the loop by precomputing constant expressions.
+// Use shared memory to store frequently accessed data like width_offset and height_offset.
+// Ensure memory accesses for 'images' are sequential to leverage coalesced access patterns.
+// Consider splitting the work into smaller pieces to leverage higher occupancy and balanced load.
+// Minimize the use of __float2int_rn by calculating it outside the loop if the offset does not change.
+```

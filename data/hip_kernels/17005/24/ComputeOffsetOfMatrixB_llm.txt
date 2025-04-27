@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache row_sum[blockIdx.x] to reduce global memory accesses
+// Consider coalesced memory accesses for both input and output arrays
+// Ensure N is a multiple of blockDim.x for efficient memory access and avoid conditional branches
+// Optimize block and grid dimensions for the specific hardware being used to maximize occupancy
+// Prefetch data if possible to hide memory latency
+```

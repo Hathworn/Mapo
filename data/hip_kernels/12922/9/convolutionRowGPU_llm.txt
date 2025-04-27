@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache h_Src data to reduce global memory accesses.
+// Ensure coalesced memory access patterns for h_Src and h_Dst arrays.
+// Minimize bank conflicts when using shared memory.
+// Assess the occupancy rate of the kernel and adjust block dimensions for optimal performance.
+```

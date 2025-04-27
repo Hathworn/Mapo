@@ -1,0 +1,10 @@
+digraph "CFG for '_Z9plusMinusiPKdPKfPdPf' function" {
+	label="CFG for '_Z9plusMinusiPKdPKfPdPf' function";
+
+	Node0x551c360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = zext i32 %6 to i64\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = zext i32 %8 to i64\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !5, !invariant.load !6\l  %14 = zext i16 %13 to i64\l  %15 = mul nuw nsw i64 %14, %9\l  %16 = add nuw nsw i64 %15, %7\l  %17 = sext i32 %0 to i64\l  %18 = icmp slt i64 %16, %17\l  br i1 %18, label %19, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x551c360:s0 -> Node0x551e400;
+	Node0x551c360:s1 -> Node0x551e490;
+	Node0x551e400 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%19:\l19:                                               \l  %20 = getelementptr inbounds double, double addrspace(1)* %1, i64 %16\l  %21 = load double, double addrspace(1)* %20, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %22 = getelementptr inbounds float, float addrspace(1)* %2, i64 %16\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !11,\l... !amdgpu.noclobber !6\l  %24 = fpext float %23 to double\l  %25 = fsub contract double %21, %24\l  %26 = getelementptr inbounds double, double addrspace(1)* %3, i64 %16\l  store double %25, double addrspace(1)* %26, align 8, !tbaa !7\l  %27 = load double, double addrspace(1)* %20, align 8, !tbaa !7\l  %28 = fadd contract double %27, %24\l  %29 = fptrunc double %28 to float\l  %30 = getelementptr inbounds float, float addrspace(1)* %4, i64 %16\l  store float %29, float addrspace(1)* %30, align 4, !tbaa !11\l  br label %31\l}"];
+	Node0x551e400 -> Node0x551e490;
+	Node0x551e490 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

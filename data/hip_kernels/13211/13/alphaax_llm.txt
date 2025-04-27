@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache b[i] for threads within the same block to reduce global memory access.
+// Ensure coalesced memory access for b[i] by aligning data for better memory bandwidth utilization.
+// Preload a shared copy of a[0] for all threads to further optimize the preload of a constant value.
+// Check for any redundant global memory reads and attempt to minimize them.
+// Ensure that memory is aligned with warp boundaries to optimize throughput.
+```

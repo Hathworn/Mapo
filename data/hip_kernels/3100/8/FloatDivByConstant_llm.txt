@@ -1,0 +1,3 @@
+// Use shared memory if the divisor is frequently accessed to reduce global memory load.
+// Avoid division by using reciprocal multiplication for improved arithmetic efficiency.
+// Ensure memory coalescing by confirming sequential threads access sequential memory.

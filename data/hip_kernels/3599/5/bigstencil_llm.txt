@@ -1,0 +1,6 @@
+```
+// Consider larger loop unrolling if the input size allows it for further performance gain
+// Ensure memory coalescing by accessing consecutive memory locations
+// Utilize shared memory if multiple threads access the same data to reduce global memory accesses
+// Minimize divergent branches within the loop for optimal warp execution efficiency
+```

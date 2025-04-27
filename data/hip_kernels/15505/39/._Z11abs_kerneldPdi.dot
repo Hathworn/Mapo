@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11abs_kerneldPdi' function" {
+	label="CFG for '_Z11abs_kerneldPdi' function";
+
+	Node0x5be3030 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = add i32 %10, %3\l  %12 = icmp slt i32 %11, %1\l  br i1 %12, label %13, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x5be3030:s0 -> Node0x5be4f00;
+	Node0x5be3030:s1 -> Node0x5be4f90;
+	Node0x5be4f00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%13:\l13:                                               \l  %14 = sext i32 %11 to i64\l  %15 = getelementptr inbounds double, double addrspace(1)* %0, i64 %14\l  %16 = load double, double addrspace(1)* %15, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %17 = tail call double @llvm.fabs.f64(double %16)\l  store double %17, double addrspace(1)* %15, align 8, !tbaa !7\l  br label %18\l}"];
+	Node0x5be4f00 -> Node0x5be4f90;
+	Node0x5be4f90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  ret void\l}"];
+}

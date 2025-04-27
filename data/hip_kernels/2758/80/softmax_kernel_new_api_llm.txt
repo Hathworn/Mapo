@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store intermediate results of input and output for reducing global memory accesses.
+// Optimize memory access patterns by ensuring coalesced access through proper indexing.
+// Try to minimize divergence within warp by ensuring all threads perform similar operations.
+// Use more blocks for better occupancy if the number of threads per block is small.
+// Evaluate whether the use of texture memory could provide performance benefits for frequently accessed data.
+```

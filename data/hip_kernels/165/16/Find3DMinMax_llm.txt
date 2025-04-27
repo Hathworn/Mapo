@@ -1,0 +1,10 @@
+```
+// Use shared memory to store data for coalesced memory access and reduce global memory traffic
+// Ensure all shared memory accesses are properly aligned and coalesced
+// Prefetch boundary elements for efficient memory access
+// Use __syncthreads() to ensure all threads complete operations on shared data before next phase
+// Perform data reduction in parallel to minimize warp divergence
+// Use vectorized operations for min/max calculations to optimize throughput
+// Consider leveraging available warp shuffles for further performance gains if applicable
+// Minimize use of thread synchronizations to reduce overhead
+```

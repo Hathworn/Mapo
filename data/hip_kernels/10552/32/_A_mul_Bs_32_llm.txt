@@ -1,0 +1,9 @@
+```c
+// Reduce shared memory usage for better occupancy if variables are shared
+// Consider using __restrict__ keyword for pointers to improve compiler optimizations
+// Prefetch data to avoid memory latency and improve data locality
+// Align data to improve coalesced memory access patterns
+// Unroll inner loops where vector operations occur for better instruction-level parallelism
+// Use constant memory for values that do not change to optimize cache usage
+// Use shared memory for frequently accessed data to reduce global memory accesses
+```

@@ -1,0 +1,6 @@
+```
+// Use memory coalescing for optimal global memory access
+// Consider loop blocking to increase data reuse and reduce memory latency
+// Utilize warp shuffling to reduce the need for __syncthreads()
+// Evaluate the possibility of using atomic operations for fast reduction
+```

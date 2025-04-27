@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for hiprandState array.
+// Check alignment of hiprandState to optimize memory throughput.
+// Use shared memory if possible to reduce global memory accesses.
+// Ensure the kernel launch configuration utilizes the GPU fully.
+// Avoid unnecessary condition checks inside the kernel loop.
+```

@@ -1,0 +1,4 @@
+// Use shared memory for intermediate results to reduce global memory access.
+// Unroll loops to reduce the number of loop iterations and improve performance.
+// Use warp-level primitive operations to efficiently perform reductions.
+// Use __syncthreads() to ensure all threads have reached the same execution point.

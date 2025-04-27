@@ -1,0 +1,4 @@
+// Consider using shared memory for 'temp_sum' to reduce global memory access.  
+// Optimize memory access by using coalesced reads when accessing 'x'.  
+// Avoid branch divergence by ensuring threads within a warp follow the same execution path.  
+// Ensure the number of threads per block is a multiple of warp size for better efficiency.

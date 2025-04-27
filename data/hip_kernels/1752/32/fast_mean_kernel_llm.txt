@@ -1,0 +1,4 @@
+// Utilize shared memory to minimize global memory access
+// Reduce memory latency by ensuring contiguous memory access patterns
+// Minimize conditional branching within the loops for better execution efficiency
+// Aggregate data on thread 0 to avoid redundant atomic operations

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory access for frequently used variables
+// Use loop unrolling to increase computational efficiency
+// Consider vectorizing global memory loads to improve memory throughput
+// Use __ldg intrinsic for read-only data to utilize caching mechanism
+```

@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce global memory access latency.
+// Use __restrict__ qualifiers for pointers to enable better compiler optimizations.
+// Optimize memory access by ensuring coalesced reads from gradOutput_data.
+// Consider alignment of data types to improve memory access efficiency.
+// Use constant memory for any values that remain unchanged throughout the kernel execution.
+// Verify if reducing the precision of floats can speed up the computation without affecting accuracy.

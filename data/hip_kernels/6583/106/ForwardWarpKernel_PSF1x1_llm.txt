@@ -1,0 +1,7 @@
+```
+// Reuse precomputed offsets to reduce redundant calculations.
+// Minimize global memory accesses by loading flow values once.
+// Consider coalescing memory accesses for better global memory performance.
+// Use shared memory when possible to reduce global memory bandwidth.
+// Optimize boundary checks and atomic operations to minimize warp divergence.
+```

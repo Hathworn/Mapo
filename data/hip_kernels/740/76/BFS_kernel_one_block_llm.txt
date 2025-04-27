@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store frontier and edge data to reduce global memory accesses.
+// Use coalesced memory access patterns when accessing edgeArray and edgeArrayAux.
+// Apply loop unrolling for the edge iteration loop to improve performance.
+// Use warp-level primitives to reduce divergence when checking the visited array.
+// Prefetch data into registers where possible to hide memory latency.
+// Explore using cooperative groups to synchronize threads more effectively for frontier update.
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to store frequently accessed data within a block.
+// Ensure coalesced memory access to optimize memory bandwidth.
+// Utilize loop unrolling for the inner loop to potentially increase performance.
+// Minimize the use of conditionals within loop to reduce warp divergence.

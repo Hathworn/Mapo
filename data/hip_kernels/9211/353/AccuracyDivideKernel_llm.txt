@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access frequency
+// Only one thread loads the global value to avoid redundant reads
+// Synchronize to ensure all threads access the updated shared value
+// Performing division on one thread to minimize computation overhead
+// Reduce global memory writes by updating only once from shared memory

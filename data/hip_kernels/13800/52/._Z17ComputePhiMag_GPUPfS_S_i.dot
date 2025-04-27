@@ -1,0 +1,10 @@
+digraph "CFG for '_Z17ComputePhiMag_GPUPfS_S_i' function" {
+	label="CFG for '_Z17ComputePhiMag_GPUPfS_S_i' function";
+
+	Node0x48dbf80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 9\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = icmp slt i32 %8, %3\l  br i1 %9, label %10, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x48dbf80:s0 -> Node0x48dbfd0;
+	Node0x48dbf80:s1 -> Node0x48dd800;
+	Node0x48dbfd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%10:\l10:                                               \l  %11 = sext i32 %8 to i64\l  %12 = getelementptr inbounds float, float addrspace(1)* %0, i64 %11\l  %13 = load float, float addrspace(1)* %12, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %14 = getelementptr inbounds float, float addrspace(1)* %1, i64 %11\l  %15 = load float, float addrspace(1)* %14, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %16 = fmul contract float %13, %13\l  %17 = fmul contract float %15, %15\l  %18 = fadd contract float %16, %17\l  %19 = getelementptr inbounds float, float addrspace(1)* %2, i64 %11\l  store float %18, float addrspace(1)* %19, align 4, !tbaa !5\l  br label %20\l}"];
+	Node0x48dbfd0 -> Node0x48dd800;
+	Node0x48dd800 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

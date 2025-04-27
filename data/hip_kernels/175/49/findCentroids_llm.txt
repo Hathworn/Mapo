@@ -1,0 +1,7 @@
+```cpp
+// Consider increasing the number of threads per block to maximize occupancy
+// Use shared memory to reduce global memory accesses for localMasses and localCounts
+// Avoid using atomic functions in a loop to minimize contention and improve performance
+// Use coalesced memory accesses for the 'responses' and 'cluster' arrays
+// Eliminate unnecessary __syncthreads() if there's no data dependency
+```

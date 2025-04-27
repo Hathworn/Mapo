@@ -1,0 +1,13 @@
+digraph "CFG for '_Z4sortPiib' function" {
+	label="CFG for '_Z4sortPiib' function";
+
+	Node0x538ae20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = shl nuw nsw i32 %4, 1\l  %6 = xor i1 %2, true\l  %7 = zext i1 %6 to i32\l  %8 = or i32 %5, %7\l  %9 = add nsw i32 %1, -1\l  %10 = icmp slt i32 %8, %9\l  br i1 %10, label %11, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x538ae20:s0 -> Node0x538bbc0;
+	Node0x538ae20:s1 -> Node0x538c660;
+	Node0x538bbc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%11:\l11:                                               \l  %12 = zext i32 %8 to i64\l  %13 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %12\l  %14 = bitcast i32 addrspace(1)* %13 to \<2 x i32\> addrspace(1)*\l  %15 = load \<2 x i32\>, \<2 x i32\> addrspace(1)* %14, align 4, !tbaa !5\l  %16 = extractelement \<2 x i32\> %15, i64 0\l  %17 = extractelement \<2 x i32\> %15, i64 1\l  %18 = icmp sgt i32 %16, %17\l  br i1 %18, label %19, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x538bbc0:s0 -> Node0x538c470;
+	Node0x538bbc0:s1 -> Node0x538c660;
+	Node0x538c470 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%19:\l19:                                               \l  %20 = add nuw nsw i32 %8, 1\l  %21 = zext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %21\l  store i32 %17, i32 addrspace(1)* %13, align 4, !tbaa !5\l  store i32 %16, i32 addrspace(1)* %22, align 4, !tbaa !5\l  br label %23\l}"];
+	Node0x538c470 -> Node0x538c660;
+	Node0x538c660 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%23:\l23:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory access for gradOutput, mask, and top_grad arrays.
+// Use shared memory to reduce global memory access if multiple threads need the same data.
+// Minimize divergent warps by ensuring consistent branching across threads.
+```

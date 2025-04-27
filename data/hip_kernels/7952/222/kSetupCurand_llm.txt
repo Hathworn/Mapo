@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce repeated accesses to global memory
+// Ensure coalesced memory access by choosing optimal block size and aligning data
+// Minimize divergence in warp execution for better performance
+// Investigate if caching strategy can further optimize CURAND state initialization
+```

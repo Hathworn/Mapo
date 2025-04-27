@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access to improve memory throughput
+// Use shared memory for frequently accessed data to reduce global memory access
+// Ensure aligned memory access to prevent costly misaligned access
+// Minimize thread divergence by ensuring warp branches uniformly
+// Optimize block size for best occupancy and performance
+// Prefetch data if possible to hide memory latency
+```

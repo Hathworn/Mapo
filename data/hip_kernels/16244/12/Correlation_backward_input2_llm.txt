@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing global memory reads
+// Use shared memory to reduce the number of global memory accesses
+// Reduce bank conflicts in shared memory utilization
+// Ensure all threads contribute in parallel reduction to minimize thread divergence
+// Leverage loop unrolling to increase throughput in inner loops
+// Align data to 128 bytes if possible to utilize memory coalescing
+// Ensure occupancy is maximized by considering block size and shared memory usage
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced reads and writes from/to input and output arrays.
+// Consider splitting the loop body for numerical stability computations for better instruction-level parallelism.
+// Evaluate if shared memory can be used to offload some computation from registers.
+// Utilize shared memory for data reuse within the warp for better memory throughput.
+// Check whether pre-fetching input data into registers can reduce latency.
+```

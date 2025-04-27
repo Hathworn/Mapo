@@ -1,0 +1,5 @@
+// Use grid-stride loops for efficient handling of large data sizes
+// Ensure coalesced memory accesses for better memory throughput
+// Consider using shared memory if multiple threads access the same data
+// Use asynchronous data transfers to overlap computation with communication
+// Avoid divergent branches within the kernel for better warp execution efficiency

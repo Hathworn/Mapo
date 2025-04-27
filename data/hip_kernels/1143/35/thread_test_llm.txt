@@ -1,0 +1,4 @@
+```
+// Moved threadIdx.z earlier for better coalescing
+// Use direct store for single transaction. Avoid direct computation to reduce warp divergence.
+```

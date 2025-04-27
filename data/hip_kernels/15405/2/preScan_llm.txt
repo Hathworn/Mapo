@@ -1,0 +1,9 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Double buffering can be applied to hide global memory latency
+// Optimize block size to achieve maximum occupancy
+// Ensure efficient memory coalescing when accessing deviceInput and deviceOutput
+// Avoid bank conflicts in shared memory access
+// Consider loop unrolling for small loop counts
+// Maximize independent thread computation to hide latency
+```

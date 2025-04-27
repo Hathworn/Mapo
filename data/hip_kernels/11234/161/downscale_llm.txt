@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing global memory reads in translate_idx_inv
+// Use shared memory to buffer commonly accessed gradOutput_data elements
+// Avoid bank conflicts in shared memory by padding if necessary
+// Minimize arithmetic operations in loop by precomputing indices outside loops if possible
+// Ensure sufficient occupancy to hide latency and maximize throughput
+// Consider loop unrolling if scale_factor is a compile-time constant
+// Align gradInput_data and gradOutput_data pointers to improve memory transaction efficiency
+```

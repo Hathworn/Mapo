@@ -1,0 +1,8 @@
+```c
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to reduce global memory accesses and latency
+// Use atomic operations sparingly to avoid contention and ensure correctness
+// Perform data loading and computation in the same step to maximize resource utilization
+// Balance workload across threads to ensure efficient use of computational resources
+// Consider occupancy and adjust block size for better performance
+```

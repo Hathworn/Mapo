@@ -1,0 +1,7 @@
+```
+// Consider using float4 data type for coalesced memory access
+// Utilize __syncthreads() only when necessary to reduce overhead
+// Ensure shared memory is accessed in coalesced pattern to maximize bandwidth
+// Evaluate use of __launch_bounds__ for better kernel configuration
+// Use compiler flags for additional optimization during compilation
+```

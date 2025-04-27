@@ -1,0 +1,11 @@
+```cpp
+// Consider coalescing memory access by accessing continuous memory addresses.
+// Optimize memory access by ensuring alignment with warp size.
+// Utilize shared memory to cache values that are reused by multiple threads.
+// Use __shfl_down_sync for inter-thread communication to reduce global memory access.
+// Ensure that warp divergence is minimized by restructuring branches or loops.
+// Balance the workload among threads to avoid idle threads and ensure high occupancy.
+// Consider using __restrict__ keyword to provide additional compiler hints for optimization.
+// Profile the kernel to identify bottlenecks and optimize memory bandwidth usage.
+// Increase computational intensity by batching multiple operations within the same kernel.
+```

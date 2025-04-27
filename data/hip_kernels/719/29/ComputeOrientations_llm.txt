@@ -1,0 +1,10 @@
+```cpp
+// Consider using float4 or float2 types for coalesced memory access
+// Preload Gaussian values to avoid recalculating each iteration
+// Align memory accesses to maximize shared memory throughput
+// Consider avoiding bank conflicts in shared memory usage
+// Use __syncthreads() to ensure all threads complete shared operations before proceeding
+// Use loop unrolling for the loop where gradient is calculated to improve performance
+// Ensure atomicAdd does not introduce significant bottlenecks on histogram update
+// Evaluate if atomic functions can be replaced with warp shuffle-based reduction for better performance
+```

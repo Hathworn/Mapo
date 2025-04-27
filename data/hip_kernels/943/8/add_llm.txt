@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce atomic operations on global memory
+// Ensure optimal block size to fully utilize shared memory
+// Load data into shared memory coalesced to improve bandwidth
+// Reduce the number of synchronizations by loop unrolling if possible
+// Avoid branching by ensuring uniform control flow
+```

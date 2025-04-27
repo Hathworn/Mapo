@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache commonly accessed data within a block
+// Minimize global memory accesses by using register variables
+// Utilize coalesced memory access patterns where possible
+// Ensure warp execution efficiency by minimizing thread divergence
+// Use __ldg() for read-only data to utilize the texture cache
+```

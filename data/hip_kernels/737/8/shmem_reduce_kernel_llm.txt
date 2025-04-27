@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure boundary checks to avoid illegal memory access.
+// Use __syncthreads() to synchronize threads during shared memory operations.
+// Reduce bank conflicts in shared memory by aligning memory access patterns.
+// Minimize global memory access within the kernel by loading data into shared memory buffer once.

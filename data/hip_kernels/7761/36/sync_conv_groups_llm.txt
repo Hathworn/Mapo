@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access.
+// Ensure coalesced memory access patterns.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Optimize for memory banks to avoid bank conflicts.
+// Adjust block and grid sizes to maximize occupancy.
+```

@@ -1,0 +1,5 @@
+```
+// Ensure coalesced memory access for arrays a, b, s, and c
+// Use shared memory to cache s[i] if it is accessed multiple times
+// Consider using warp-level primitives for reducing divergent branching within the warp
+```

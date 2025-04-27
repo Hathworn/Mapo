@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory accesses to global memory for performance
+// Minimize shared memory usage and prioritize registers where applicable
+// Reduce atomic operations on global memory to decrease contention
+// Leverage warp-level primitives to reduce synchronization overhead
+// Use efficient synchronization techniques with atomic operations cautiously
+// Balance between shared memory usage and register pressure
+// Investigate potential for loop unrolling for performance gains
+// Avoid divergent branches within warps for better performance
+```

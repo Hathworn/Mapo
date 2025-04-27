@@ -1,0 +1,12 @@
+```
+// Consider coalesced memory accesses for g_Data loading to improve memory bandwidth utilization.
+// Use loop unrolling techniques for the histogram initialization to minimize loop overhead.
+// Improve data reusability by preferring shared memory for gauss and localized data storage to reduce global memory accesses.
+// Optimize the kernel by minimizing divergent branches within loop constructs especially in histogram calculations.
+// Apply warp-level primitives or cooperative thread arrays for efficient reduction operations.
+// Utilize constant memory for frequently accessed data like i2sigma2 if it remains constant across kernels.
+// Prefer templating or passing necessary constants through kernel arguments to avoid recalculating them within the kernel.
+// Consider using the fast math library functions for mathematical operations like exp, sqrt, and atan2f to enhance performance.
+// Experiment with different block sizes and numbers to find optimal occupancy and performance balance.
+// Utilize shared memory efficiently, avoiding bank conflicts especially during histogram updates and reductions.
+```

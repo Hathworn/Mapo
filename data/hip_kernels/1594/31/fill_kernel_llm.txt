@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for better memory efficiency
+// Use __restrict__ keyword for pointer X if no aliasing is involved
+// Consider using shared memory if X is reused heavily in the kernel
+// Experiment with different block sizes for better occupancy
+```

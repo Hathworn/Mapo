@@ -1,0 +1,4 @@
+// Use shared memory to cache data blocks and reduce global memory access frequency
+// Adopt coalesced memory access patterns for A_in and A_out to enhance memory throughput
+// Minimize use of __syncthreads(); consider alternative synchronization methods if possible
+// Adjust grid and block dimensions to improve occupancy and execution efficiency

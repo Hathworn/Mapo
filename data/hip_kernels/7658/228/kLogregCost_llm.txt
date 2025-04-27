@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring that probs and labels are accessed in a stride pattern that matches the memory layout.
+// Use shared memory to reduce redundant global memory accesses for maxProbs and possibly for probs if memory size permits.
+// Opt for loop unrolling when iterating over numOut to enhance performance, especially if numOut is a small constant.
+// Evaluate bank conflicts in shared memory access if shared memory is utilized and optimize accordingly.
+// Prefer using warp-synchronous programming or intrinsics such as __shfl_xor for potential optimization in reductions or conditions.
+```

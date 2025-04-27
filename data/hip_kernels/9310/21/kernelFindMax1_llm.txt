@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access latency
+// Initialize shared memory with boundary checks to avoid out-of-bound access
+// Perform reduction using shared memory to efficiently compute block max
+// Use atomic operations on global memory only once per block to minimize contention
+```

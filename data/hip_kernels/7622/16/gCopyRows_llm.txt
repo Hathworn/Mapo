@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access to improve memory throughput
+// Ensure that the number of threads per block matches the number of columns for optimal performance
+// Use shared memory if there are potential bank conflicts in row operations
+// Re-evaluate the grid and block dimensions to balance the workload across streaming multiprocessors
+// Check if merging multiple kernel launches can reduce overall kernel launch overhead
+```

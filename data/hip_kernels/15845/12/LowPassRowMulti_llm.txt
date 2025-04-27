@@ -1,0 +1,8 @@
+```c
+// Consider optimizing shared memory usage to maximize occupancy
+// Leverage memory coalescing by ensuring all threads access consecutive memory locations
+// Use constant memory for kernel coefficients to speed up access
+// Reduce memory bank conflicts in shared memory by understanding memory layout
+// Check load balancing among threads for efficient use of computation resources
+// Investigate potential for loop unrolling in the accumulation loop
+```

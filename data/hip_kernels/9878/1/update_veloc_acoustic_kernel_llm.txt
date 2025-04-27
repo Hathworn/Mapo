@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses by ensuring warp-friendly data alignment.
+// Use shared memory to reduce global memory accesses if the same data is accessed multiple times.
+// Increase block size if the occupancy is not optimal, balancing with register usage.
+// Use vectorized loads/stores to improve memory throughput if appropriate for data layout.
+// Explore using asynchronous memory prefetching to hide memory latency.
+// If applicable, consider loop unrolling for the velocity update operation.
+```

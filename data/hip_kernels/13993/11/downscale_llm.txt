@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory accesses by aligning memory allocation
+// Use shared memory to cache repeated data accesses within blocks
+// Minimize the use of __device__ functions to avoid extra overhead
+// Apply loop unrolling for the nested loops for better performance
+// Consider using atomic operations if data races are detected
+// Optimize the kernel launch configuration to maximize occupancy
+```

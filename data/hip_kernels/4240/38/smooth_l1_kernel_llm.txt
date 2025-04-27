@@ -1,0 +1,5 @@
+// Consider using shared memory to load inputs for memory access optimization
+// Use __restrict__ qualifiers on pointers to help with memory access speedup
+// Unroll loops if possible for further optimization in larger grids
+// Align data accesses to 128 bytes boundary for coalesced access in global memory
+// Evaluate the use of inline functions for math operations to reduce function call overhead

@@ -1,0 +1,8 @@
+```
+// Coalesce memory access by ensuring consecutive threads access sequential memory locations.
+// Minimize branching by reducing the number of conditional statements within the kernel.
+// Use shared memory to store frequently accessed data and reduce global memory accesses.
+// Align memory accesses to warp boundaries for improved performance.
+// Employ loop unrolling if applicable to increase instruction-level parallelism.
+// Ensure sufficient thread block size to maximize GPU occupancy.
+```

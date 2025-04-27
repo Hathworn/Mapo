@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory access patterns for float arrays a, oA, x
+// Minimize memory access by storing totalSize / n in a variable
+// Consider using shared memory if accessing totalSize is causing a bottleneck
+// Ensure that the number of threads per block is a multiple of warp size for better efficiency
+```

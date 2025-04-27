@@ -1,0 +1,4 @@
+// Consider using shared memory for xyz1 and xyz2 to reduce repetitive global memory accesses.
+// Optimize thread and block indexing to improve memory coalescing.
+// Use const memory for read-only data like grad_dist1 and idx1 to reduce memory latency.
+// Explore vectorized memory operations for xyz1 and xyz2 data to maximize throughput.

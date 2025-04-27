@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to avoid repeated global memory accesses for 'normDistPrefixSum'.
+// Ensure __syncthreads() is called to synchronize threads after shared memory load.
+// Perform binary search in shared memory to reduce latency.
+// Set 'origDist' to 0.0f after selection to ensure no repeated sampling.
+```

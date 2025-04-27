@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Use __restrict__ qualifiers if aliasing is not occurring
+// Consider using shared memory for frequently accessed data
+// Ensure the grid and block sizes maximize the warp occupancy
+// Assess if loop unrolling can benefit performance further
+```

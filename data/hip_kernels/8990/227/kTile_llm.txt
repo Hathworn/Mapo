@@ -1,0 +1,7 @@
+```
+// Utilize shared memory if possible to reduce global memory access latency
+// Ensure coalesced memory access by aligning data structures
+// Consider using compiler hints like __restrict__ to optimize memory access
+// Unroll loops manually if compiler is unable to do it efficiently
+// Try to maximize occupancy by tweaking block size and grid size
+```

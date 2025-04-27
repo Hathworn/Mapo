@@ -1,0 +1,9 @@
+// Consider coalesced memory access for g_Data
+// Use vectorized loads for g_Data if possible
+// Optimize shared memory usage, ensure data and hist arrays are fully utilized
+// Avoid redundant synchronization, check if __syncthreads() can be reduced
+// Balance load between threads, ensure warp efficiency
+// Consider using constant memory for gauss array
+// Precompute repeated mathematical calculations outside loop if possible
+// Use atomic operations for histogram reduction if race conditions occur
+// Explore occupancy metrics to maximize parallel execution

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses.
+// Use __syncthreads() to ensure all threads have completed updates to shared memory.
+// Perform reduction using warp-level shuffling for better efficiency.
+// Adjust loop stride for threads to enhance parallel execution.

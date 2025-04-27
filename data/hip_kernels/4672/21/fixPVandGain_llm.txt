@@ -1,0 +1,5 @@
+// Use local memory to store temporary results to reduce global memory access
+// Consider coalescing memory access patterns to maximize bandwidth utilization
+// Check for memory access alignment to improve access speed
+// Evaluate if __builtin_isnan can be replaced with a device-specific variant for optimization
+// Utilize shared memory for output data if multiple threads access the same data

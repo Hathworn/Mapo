@@ -1,0 +1,8 @@
+```
+// Ensure TILE_SIZE is chosen to maximize occupancy and utilize available shared memory
+// Use coalesced memory access patterns by ensuring global memory access is contiguous
+// Minimize repeated global memory accesses by utilizing shared memory efficiently
+// Avoid bank conflicts in shared memory by carefully addressing shared memory arrays
+// Consider loop unrolling inside the kernel to reduce loop overhead
+// Avoid unnecessary synchronizations for performance improvement
+```

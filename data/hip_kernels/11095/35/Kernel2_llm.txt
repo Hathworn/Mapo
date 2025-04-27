@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory accesses if g_updating_graph_mask size is small enough
+// Coalesce memory accesses to g_updating_graph_mask, g_graph_mask, and g_graph_visited for better memory throughput
+// Ensure all threads within a warp follow the same execution path to minimize branch divergence
+```

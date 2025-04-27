@@ -1,0 +1,6 @@
+```
+// Use shared memory for W to reduce global memory access latency.
+// Unroll loops to improve performance by reducing control dependencies.
+// Utilize __syncthreads() to ensure all threads have loaded the necessary data.
+// Prefetch data into shared memory to minimize latency during kernel execution.
+```

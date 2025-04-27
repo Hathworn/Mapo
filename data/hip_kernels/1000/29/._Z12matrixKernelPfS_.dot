@@ -1,0 +1,5 @@
+digraph "CFG for '_Z12matrixKernelPfS_' function" {
+	label="CFG for '_Z12matrixKernelPfS_' function";
+
+	Node0x4dc3f90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %7 = shl nsw i32 %4, 3\l  %8 = shl nsw i32 %3, 1\l  %9 = add i32 %7, %8\l  %10 = sext i32 %9 to i64\l  %11 = getelementptr inbounds float, float addrspace(1)* %0, i64 %10\l  %12 = load float, float addrspace(1)* %11, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %13 = shl nuw nsw i32 %6, 2\l  %14 = add i32 %9, %5\l  %15 = add i32 %14, %13\l  %16 = sext i32 %15 to i64\l  %17 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %19 = fdiv contract float %12, %18\l  %20 = getelementptr inbounds float, float addrspace(1)* %1, i64 %16\l  store float %19, float addrspace(1)* %20, align 4, !tbaa !5\l  ret void\l}"];
+}

@@ -1,0 +1,4 @@
+// Increase blockDim.x to maximize occupancy and match shared memory size.
+// Use shared memory for intermediate values to reduce global memory access.
+// Consider using warp intrinsics for reduction to optimize shared memory bandwidth.
+// Reduce the number of threads if shared memory usage is too high.

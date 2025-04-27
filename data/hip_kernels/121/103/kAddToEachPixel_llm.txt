@@ -1,0 +1,7 @@
+```
+// Cache heightMult to prevent recalculating height * num_pix within the loop
+// Optimize row and col index calculations to minimize expensive division and modulo operations
+// Use loop unrolling if applicable to reduce loop overhead and improve performance
+// Consider memory coalescing by ensuring global memory access patterns are optimal
+// Use shared memory to reduce global memory traffic if data reuse is high within the block
+```

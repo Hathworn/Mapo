@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Avoid bank conflicts by aligning memory accesses in warp
+// Use shared memory where possible to reduce global memory access time
+// Minimize divergent branches within warps for better warp execution efficiency
+// Consider loop unrolling to reduce loop control overhead and increase ILP
+```

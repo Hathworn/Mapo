@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning d_PartialHistograms access patterns.
+// Use shared memory effectively to reduce global memory transactions.
+// Synchronize threads within the block to ensure completeness of shared memory operations.
+// Minimize global memory writes by reducing them to a single operation per block.
+```

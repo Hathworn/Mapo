@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring d_predicateArray, d_scanArray, and d_array are accessed in a sequential manner.
+// Optimize memory access by using shared memory where possible for commonly accessed global memory.
+// Use fewer conditional branches inside loops for improved warp execution efficiency.
+// Minimize the number of arithmetic operations, such as d_scanArray[index] - 1 + offset.
+// Ensure d_scatteredArray is aligned for optimal memory transaction efficiency.
+```

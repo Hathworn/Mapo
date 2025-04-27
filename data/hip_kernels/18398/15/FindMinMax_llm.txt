@@ -1,0 +1,9 @@
+```
+// Use shared memory judiciously to minimize global memory accesses.
+// Consider coalesced memory access patterns for reading d_Data to reduce access latency.
+// Implement loop unrolling for the inner loop to potentially reduce instruction overhead.
+// Ensure warp divergence is minimized by handling conditional statements carefully.
+// Optimize the reduction using warp-level primitives if possible for better performance.
+// Avoid bank conflicts in shared memory accesses by ensuring data alignment.
+// Consider prefetching data when applicable to hide global memory latency.
+```

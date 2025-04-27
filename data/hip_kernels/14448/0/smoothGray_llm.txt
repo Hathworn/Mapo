@@ -1,0 +1,6 @@
+```cpp
+// Coalesced global memory access can improve memory bandwidth utilization.
+// Consider using shared memory for the smoothing window to reduce repeated global memory accesses.
+// Optimize integer division by replacing it with bitwise operations if possible, particularly for power of two sizes.
+// Ensure that boundary checks inside the loops do not lead to divergence across threads in a warp.
+```

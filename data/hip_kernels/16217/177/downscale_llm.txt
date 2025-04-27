@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses for gradOutput_data
+// Minimize thread divergence in the loop over scale_factor
+// Consider using shared memory for gradOutput_data reads
+// Reduce arithmetic operations in translate_idx_inv function
+```

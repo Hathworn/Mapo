@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access
+// Use memory coalescing to ensure that threads access contiguous memory locations to improve throughput
+// Ensure that the number of threads per block is a multiple of the warp size for optimal performance
+// Avoid bank conflicts when using shared memory by appropriately aligning data
+// Consider using constant memory for frequently accessed scalar constants to reduce global memory load latency
+```

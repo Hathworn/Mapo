@@ -1,0 +1,3 @@
+// Streamline memory accesses by ensuring coalesced reads from global memory.
+// Minimize branching within the kernel to improve warp execution efficiency.
+// Consider using shared memory if data needs to be reused by multiple threads within the same block.

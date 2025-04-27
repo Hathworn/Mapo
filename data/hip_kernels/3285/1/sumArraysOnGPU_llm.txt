@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns by ensuring A, B, and C are allocated and accessed in a contiguous manner.
+// Consider using shared memory to reduce global memory accesses within threads of the same block.
+// Minimize thread divergence, ensure block dimensions are appropriate for the dataset size.
+// Employ proper grid and block dimensions to fully utilize the GPU resources.
+```

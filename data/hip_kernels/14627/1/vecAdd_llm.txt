@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Consider using vectorized memory operations for better coalescence
+// Minimize thread divergence by ensuring data size is divisible by block size
+// Optimize block and grid size for better occupancy and workload distribution
+// Experiment with different memory access patterns for improved cache utilization
+```

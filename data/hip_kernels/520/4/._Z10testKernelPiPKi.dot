@@ -1,0 +1,10 @@
+digraph "CFG for '_Z10testKernelPiPKi' function" {
+	label="CFG for '_Z10testKernelPiPKi' function";
+
+	Node0x6120410 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %4\l  %6 = load i32, i32 addrspace(1)* %5, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %7 = icmp sgt i32 %6, -1\l  %8 = load i32, i32 addrspace(3)* @_ZZ10testKernelPiPKiE4temp.0, align 4\l  %9 = icmp slt i32 %6, %8\l  %10 = select i1 %7, i1 %9, i1 false\l  br i1 %10, label %11, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x6120410:s0 -> Node0x6121240;
+	Node0x6120410:s1 -> Node0x6121fd0;
+	Node0x6121240 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%11:\l11:                                               \l  store i32 %6, i32 addrspace(3)* @_ZZ10testKernelPiPKiE4temp.0, align 4,\l... !tbaa !5\l  br label %12\l}"];
+	Node0x6121240 -> Node0x6121fd0;
+	Node0x6121fd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%12:\l12:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %13 = load i32, i32 addrspace(3)* @_ZZ10testKernelPiPKiE4temp.0, align 4,\l... !tbaa !5\l  store i32 %13, i32 addrspace(1)* %0, align 4, !tbaa !5\l  ret void\l}"];
+}

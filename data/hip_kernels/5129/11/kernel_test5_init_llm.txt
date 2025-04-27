@@ -1,0 +1,7 @@
+```
+// Consider aligning memory access to ensure coalesced memory transactions
+// Check if the BLOCKSIZE is an appropriate multiple of warp size for optimal performance
+// Ensure shared memory usage if data reuse patterns exist to reduce global memory access
+// Look for opportunities to use vectorized operations for better memory throughput
+// Review loop unrolling factors to better match data access patterns to cache line sizes
+```

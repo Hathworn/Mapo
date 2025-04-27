@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency during pixel position calculations.
+// Consider using vectorized data access patterns to improve memory bandwidth utilization.
+// Optimize memory coalescing by ensuring threads access continuous memory locations for src and dst arrays.
+// Avoid branching where possible by using bitwise operations for simplified bounds checks.
+/

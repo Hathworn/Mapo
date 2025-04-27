@@ -1,0 +1,10 @@
+```
+// Use __shared__ memory to reduce global memory accesses
+// Reorganize the thread computations to ensure coalesced global memory access
+// Consider using memory padding to ensure 32-byte alignment
+// Optimize the loop bounds to improve performance
+// Combine conditional statements to reduce branching
+// Use the bitwise AND operation for modulo calculation to enhance performance
+// Unroll loops or replace loops with arithmetic operations if possible
+// Use warp-level primitives for reduction operations to improve efficiency
+```

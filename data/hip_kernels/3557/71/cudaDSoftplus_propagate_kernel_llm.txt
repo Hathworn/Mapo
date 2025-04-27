@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access
+// Adjust blockDim.x and shared memory size to optimize memory usage
+// Avoid bank conflicts when accessing shared memory
+// Use synchronization to ensure all threads have updated shared memory values
+// Consider using loop unrolling for better performance

@@ -1,0 +1,7 @@
+```
+// Use unrolling to reduce the number of memory accesses.
+// Ensure all threads within a block load data into shared memory to optimize memory access patterns.
+// Use shared memory to store intermediate results for reducing global memory accesses.
+// Minimize thread divergence through uniform workload distribution.
+// Use __syncthreads() efficiently to avoid unnecessary synchronizations.
+```

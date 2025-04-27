@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory reads.
+// Ensure coalesced memory access by aligning Z, dA, dZ to warp boundaries.
+// Adjust block size to ensure maximum occupancy and hide memory latency.
+```

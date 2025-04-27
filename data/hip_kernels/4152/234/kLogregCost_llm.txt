@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache frequently accessed data like 'probs' and 'maxProbs' to reduce global memory access.
+// Align memory accesses to 'probs' and 'labels' for increased coalescing and reduced memory transaction overhead.
+// Consider loop unrolling further in the 'for' loop with 'numOut' to reduce branch divergence.
+// Early exit in the 'if (labelp != maxp)' condition is beneficial for warp efficiency and can reduce overall computation.
+// Evaluate if using 'float2' or vectorized loads improves memory bandwidth utilization, especially for 'probs'.
+// Minimize bank conflicts if shared memory is introduced for 'probs' or 'maxProbs' caching.
+// Avoid redundant computation of 'probs[label * numCases + tx]' by reusing its value in multiple places.
+// Replace if-else in 'correctProbs' assignment with a ternary operator to improve warp coherence.
+```

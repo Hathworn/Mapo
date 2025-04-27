@@ -1,0 +1,5 @@
+```c
+// Consider using __ldg() to cache reads from global memory for u, v and src if data is read multiple times.
+// Align data access to cache line size to improve coalesced memory access.
+// Use shared memory to tile data for better access patterns if applicable.
+```

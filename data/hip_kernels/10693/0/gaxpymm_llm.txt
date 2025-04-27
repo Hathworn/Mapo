@@ -1,0 +1,9 @@
+```cpp
+// Optimize memory coalescing by aligning data access patterns
+// Use shared memory to reduce global memory access latency
+// Ensure all threads have completed their operations with __syncthreads()
+// Consider larger block sizes to improve occupancy and resource utilization
+// Ensure shared memory is efficiently used for data reuse between threads
+// Reduce synchronization overhead by minimizing __syncthreads() usage
+// Align global memory accesses to improve memory throughput
+```

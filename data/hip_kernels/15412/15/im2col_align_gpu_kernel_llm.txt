@@ -1,0 +1,8 @@
+```
+// Minimize conditional checks within kernel to improve control flow
+// Optimize memory access patterns for coalesced reads and writes
+// Employ shared memory if possible to reduce global memory access latency
+// Ensure data alignment to improve memory bandwidth utilization
+// Consider loop unrolling for the innermost loops to reduce loop overhead
+// Prefer __ldg() for read-only memory accesses to utilize texture cache
+```

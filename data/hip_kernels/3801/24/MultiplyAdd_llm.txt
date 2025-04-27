@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for intermediate calculations to reduce global memory access
+// Ensure coalesced memory access by optimizing data layout
+// Prefetch data to registers for improved memory access speed
+// Use loop unrolling techniques if the operation involves iterative processes
+// Make use of warp-level primitives for reducing instruction overhead
+// Adjust block and grid size to ensure optimal occupancy and performance
+```

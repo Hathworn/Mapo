@@ -28,7 +28,7 @@
 #include <stdio.h>
 
 // headers in CUDA
-#include <cuda_runtime_api.h>
+#include "cuda_runtime_api.h"
 
 //using MACRO to allocate memory inside CUDA kernel
 #define NUM_3D_BOX_CORNERS_MACRO 8

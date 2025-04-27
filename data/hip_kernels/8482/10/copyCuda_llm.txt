@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by aligning data so consecutive threads access consecutive memory addresses.
+// Use shared memory to store chunks of data that multiple threads within the same block will access.
+// Experiment with different block sizes to determine the optimal configuration for memory throughput.
+// Minimize divergence by ensuring that most threads in the same warp follow the same execution path.
+```

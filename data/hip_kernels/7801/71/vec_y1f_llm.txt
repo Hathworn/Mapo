@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data
+// Coalesce memory accesses by ensuring threads access contiguous memory locations
+// Evaluate if loop unrolling improves performance for small critical sections
+// Investigate usage of atomic operations if data race conditions occur
+// Ensure proper alignment for memory accesses to avoid fragmentation

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using shared memory
+// Use __syncthreads to ensure all threads have loaded data into shared memory
+// Minimize global memory access by reading data into shared memory first
+// Ensure coalesced access by aligning data properly
+// Use shared memory to reduce latency and increase throughput
+```

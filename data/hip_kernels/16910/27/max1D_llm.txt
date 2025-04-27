@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and improve performance
+// Ensure coalesced memory access patterns to improve global memory throughput
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Unroll the loop to improve instruction-level parallelism and reduce loop overhead
+// Avoid writing back unnecessary results to global memory to reduce memory traffic
+```

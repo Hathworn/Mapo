@@ -1,0 +1,8 @@
+```
+// Use shared memory to optimize memory access
+// Load elements in a coalesced manner to improve memory bandwidth
+// Perform computation in shared memory to minimize global memory access
+// Use interleaved addressing to avoid bank conflicts in shared memory
+// Utilize unrolling within shared memory to reduce synchronization overhead
+// Write only the block result to global memory to reduce global memory writes
+```

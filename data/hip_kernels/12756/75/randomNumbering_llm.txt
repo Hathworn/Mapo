@@ -1,0 +1,7 @@
+```
+// Optimize memory access by coalescing global memory reads/writes.
+// Consider using shared memory for often accessed data within a block.
+// Ensure aligned memory access patterns to improve memory throughput.
+// Minimize use of local variables to reduce register pressure.
+// Ensure limited divergence by aligning block size with warp size.
+```

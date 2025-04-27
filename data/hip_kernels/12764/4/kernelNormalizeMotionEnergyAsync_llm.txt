@@ -1,0 +1,9 @@
+```cpp
+// Consider increasing the size of shared memory to better handle overlaps
+// Ensure coalesced memory access when loading data into shared memory
+// Use warp-shuffle operations to reduce syncthreads overhead within the block
+// Precompute indices to shared memory to avoid repetitive calculations
+// Use loop unrolling for calculating q_i to reduce loop overhead
+// Minimize the number of conditional checks inside the loop
+// Consider using texture memory for read-only access patterns
+```

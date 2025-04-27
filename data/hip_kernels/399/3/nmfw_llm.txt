@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store parts of 'a' and 'h' to reduce global memory accesses.
+// Perform loop unrolling in the innermost loops to reduce loop overhead and increase instruction throughput.
+// Ensure that memory accesses are coalesced for optimal memory bandwidth utilization.
+// Use warp-synchronous programming if applicable to further optimize parallel reductions.
+// Preload frequently accessed data into registers to minimize memory latency.
+```

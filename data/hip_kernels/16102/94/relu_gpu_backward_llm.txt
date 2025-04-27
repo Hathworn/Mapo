@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for ingrad, outgrad, and indata arrays
+// Use shared memory to cache data within each block if possible
+// Ensure that data access patterns reduce memory bank conflicts
+// Maximize occupancy by adjusting block size and grid size
+// Validate memory alignment for potential coalescing benefits
+```

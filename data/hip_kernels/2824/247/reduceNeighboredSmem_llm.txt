@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for g_idata by aligning array access patterns.
+// Increase shared memory usage to reduce traffic from global memory.
+// Optimize the use of __syncthreads() by minimizing its frequency and strategically placing it.
+// Experiment with different block sizes to find the optimal configuration for your specific hardware.
+// Consider using warp-level primitives to optimize intra-warp reductions.
+```

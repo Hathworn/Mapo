@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for `u`, `v`, and `src` by adjusting the memory layout
+// Align memory accesses for `dst` to improve write throughput
+// Use shared memory to store `u`, `v`, and `src` values if possible to leverage faster memory access
+// Ensure `atomicAdd` usage is minimized by accumulating values in shared memory if feasible
+// Explore loop unrolling for threads accessing consecutive indices to increase instruction-level parallelism
+```

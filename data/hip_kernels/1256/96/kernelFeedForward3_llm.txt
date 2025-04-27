@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifiers for pointers to improve memory access optimization.
+// Ensure that data is aligned optimally for coalesced memory accesses.
+// Check for warp divergence and consider reducing it if it impacts performance.
+// Evaluate if loading biases into shared memory might improve data locality and performance.
+// Consider loop unrolling techniques if processing is done inside loops for further optimization.
+```

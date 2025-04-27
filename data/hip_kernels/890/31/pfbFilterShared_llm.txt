@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for loading taps into shared memory
+// Consider increasing block size if shared memory allows, to improve occupancy and performance
+// Ensure that the shared memory allocation is optimal for the hardware architecture
+// Align shared memory access to avoid bank conflicts
+// Avoid redundant calculations by pre-computing repeatable values outside loops if possible
+```

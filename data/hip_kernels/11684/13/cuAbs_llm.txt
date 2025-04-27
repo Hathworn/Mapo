@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for pointers if no aliasing occurs to help the compiler optimize memory access.
+// Utilize shared memory for storing temporary results to reduce global memory accesses.
+// Experiment with increasing work per thread to improve memory coalescing.
+// Ensure that the memory layout allows for coalesced memory access patterns.
+// Evaluate if loop unrolling could be applied to increase instruction-level parallelism.
+// Align arrays to 128/256 bytes if possible to enhance memory access efficiency.
+```

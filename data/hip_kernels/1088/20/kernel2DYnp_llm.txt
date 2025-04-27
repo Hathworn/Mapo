@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory access latency.
+// Move weight data into shared memory once per block to minimize memory traffic.
+// Use thread synchronization to ensure data consistency in shared memory.
+// Unroll loops to improve instruction level parallelism.
+// Avoid repeated calculations by hoisting invariant expressions outside loops.
+// Ensure non-coalesced memory access patterns are minimized.
+```

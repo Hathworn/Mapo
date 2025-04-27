@@ -1,0 +1,8 @@
+```
+// Precalculate row and column to reduce redundant calculations
+// Use linearized index to access input array to utilize coalesced memory access
+// Larger block size could be used for better occupancy depending on hardware constraints
+// Avoid branch divergence by simplifying output selection logic if possible
+// Ensure that memory accesses are coalesced for optimal read/write performance
+// Consider shared memory for buffering if required and beneficial
+```

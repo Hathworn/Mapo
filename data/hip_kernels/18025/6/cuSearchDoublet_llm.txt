@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store frequently accessed variables like rM and zM to reduce global memory reads
+// Ensure coalesced memory access pattern by using contiguous threads to access contiguous data in memory
+// Use loop unrolling within the 'while' loop to reduce loop overhead and improve instruction throughput
+// Avoid shared memory bank conflicts by appropriately aligning shared memory accesses
+// Use atomic operations sparingly as they can serialize execution; consider alternative reduction methods if possible
+```

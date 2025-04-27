@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory access and store frequently accessed variables
+// Minimize divergence by combining conditions where possible
+// Use __syncthreads() to ensure all threads update shared memory before any global writes
+// Implement atomic operations or reductions to efficiently update shared variables
+```

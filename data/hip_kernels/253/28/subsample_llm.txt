@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache input data blocks for better performance.
+// Try to minimize memory bank conflicts when using shared memory.
+// Ensure coalesced memory access by organizing input and output data appropriately.
+// Use loop unrolling for the innermost loops if kH and kW are compile-time constants.
+// Optimize thread block dimensions to ensure maximum occupancy and minimize warp divergence.
+```

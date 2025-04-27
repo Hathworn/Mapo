@@ -1,0 +1,9 @@
+```cpp
+// Use __ldg() for reading gdata to utilize read-only cache
+// Ensure that gdata is aligned to improve memory coalescing
+// Consider increasing granularity of parallelism by processing multiple elements per thread
+// Unroll the loop to reduce branching and increase instruction-level parallelism
+// Minimize __syncthreads() calls to reduce synchronization overhead
+// Utilize warp shuffle operations for reduction to avoid shared memory use
+// Explore using half-floats for sdata if precision allows to reduce shared memory usage
+```

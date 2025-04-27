@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to minimize global memory access for stencil computation
+// Ensure enough shared memory size to hold the data to prevent accessing out of bounds
+// Preload values into registers to avoid repeated global memory reads
+// Reduce redundant synchronization by carefully ordering memory accesses
+// Unroll loops to enhance instruction level parallelism and reduce loop overhead
+// Align memory access to improve memory coalescing and achieve higher bandwidth
+// Minimize use of volatile to avoid performance penalties and incorrect optimizations
+```

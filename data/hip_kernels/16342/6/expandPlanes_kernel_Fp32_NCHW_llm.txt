@@ -1,0 +1,10 @@
+```
+// Optimize memory access patterns to ensure coalesced global reads and writes.
+// Loading inputs into shared memory reduces the number of global memory accesses.
+// Use shared memory to minimize bank conflicts and maximize throughput.
+// Consider using warp-level primitives for reductions or scans when applicable.
+// Evaluate thread block size to align with the warp size for optimal execution.
+// Ensure efficient use of shared memory by optimizing memory allocation and usage.
+// Use __syncthreads() only where necessary to avoid performance bottlenecks.
+// Analyze the impact of divergent branches and minimize where possible.
+```

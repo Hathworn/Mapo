@@ -1,0 +1,3 @@
+// Consider using shared memory to store frequently accessed data to reduce global memory access latency.
+// Ensure coalesced memory access for d_in by organizing threads such that adjacent threads read adjacent memory locations.
+// Minimize the use of __syncthreads() by reorganizing computations to reduce overhead and improve performance.

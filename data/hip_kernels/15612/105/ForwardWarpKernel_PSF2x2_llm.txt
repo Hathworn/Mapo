@@ -1,0 +1,5 @@
+// Use texture memory for read-only input arrays to save global memory bandwidth.
+// Align memory allocations to fully utilize coalesced memory access patterns.
+// Consider using shared memory to accumulate `dst` and `normalization_factor` values locally.
+// Minimize divergent branches inside kernels to improve warp execution efficiency.
+// Ensure appropriate grid and block dimensions for optimal occupancy and load balancing.

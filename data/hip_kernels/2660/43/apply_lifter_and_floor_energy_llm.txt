@@ -1,0 +1,8 @@
+```
+// Consider reducing the use of shared memory if lifter coefficients are small
+// Optimize memory coalescing by ensuring threads access consecutive memory locations
+// Use float variables in shared memory to minimize bank conflicts
+// Prefer __restrict__ qualifiers for pointers to enable further compiler optimizations
+// Evaluate the use of loop unrolling to mitigate overhead in the lifter application loop
+// Investigate if memory prefetching strategy would help improve performance
+```

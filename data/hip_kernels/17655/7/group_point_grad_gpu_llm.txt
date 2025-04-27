@@ -1,0 +1,7 @@
+```
+// Consider using Shared Memory to optimize repeated global memory access for idx
+// Optimize memory access patterns to enhance coalescing, particularly for grad_out
+// Assess the benefits of using Warp-Level Primitives for further optimization
+// Ensure atomic operations are minimized or optimized, as they can be a bottleneck
+// Investigate the potential for loop unrolling beyond the current level for grad_points update
+```

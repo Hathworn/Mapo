@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for pred, truth, delta, and error to improve memory bandwidth utilization.
+// Ensure pred, truth, delta, and error are aligned to 32 or 64-byte boundaries for better memory access patterns.
+// Optimize the calculation by minimizing the use of branch instructions within the conditional statement.
+// Utilize shared memory if multiple threads access the same value to reduce global memory access.
+// Experiment with different block sizes and grid sizes to maximize occupancy and minimize idle threads.
+```

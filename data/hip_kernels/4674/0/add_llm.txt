@@ -1,0 +1,3 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Consider loop unrolling if applicable to further reduce branch overhead.
+// Check if using warp shuffle (if applicable) can optimize data movement within the warp.

@@ -1,0 +1,18 @@
+digraph "CFG for '_Z19relabelUnrollKernelPiiiiiii' function" {
+	label="CFG for '_Z19relabelUnrollKernelPiiiiiii' function";
+
+	Node0x60ee530 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%7:\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %10 = getelementptr i8, i8 addrspace(4)* %8, i64 6\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 2, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = mul i32 %9, %13\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %16 = add i32 %14, %15\l  %17 = sdiv i32 %3, %6\l  %18 = mul i32 %16, %17\l  %19 = icmp slt i32 %18, %17\l  br i1 %19, label %20, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x60ee530:s0 -> Node0x60f0550;
+	Node0x60ee530:s1 -> Node0x60f05e0;
+	Node0x60f0550 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%20:\l20:                                               \l  %21 = mul nsw i32 %5, %4\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %23 = add i32 %21, %22\l  %24 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %25 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %26 = bitcast i8 addrspace(4)* %25 to i16 addrspace(4)*\l  %27 = load i16, i16 addrspace(4)* %26, align 4, !range !4, !invariant.load !5\l  %28 = zext i16 %27 to i32\l  %29 = mul i32 %24, %28\l  %30 = add i32 %23, %29\l  %31 = mul i32 %30, %3\l  br label %33\l}"];
+	Node0x60f0550 -> Node0x60f2260;
+	Node0x60f05e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%32:\l32:                                               \l  ret void\l}"];
+	Node0x60f2260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi i32 [ %18, %20 ], [ %42, %41 ]\l  %35 = add i32 %34, %31\l  %36 = zext i32 %35 to i64\l  %37 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %36\l  %38 = load i32, i32 addrspace(1)* %37, align 4, !tbaa !7\l  %39 = icmp eq i32 %38, %1\l  br i1 %39, label %40, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x60f2260:s0 -> Node0x60f29e0;
+	Node0x60f2260:s1 -> Node0x60f0370;
+	Node0x60f29e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%40:\l40:                                               \l  store i32 %2, i32 addrspace(1)* %37, align 4, !tbaa !7\l  br label %41\l}"];
+	Node0x60f29e0 -> Node0x60f0370;
+	Node0x60f0370 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  %42 = add nsw i32 %34, 1\l  %43 = icmp slt i32 %42, %17\l  br i1 %43, label %33, label %32, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x60f0370:s0 -> Node0x60f2260;
+	Node0x60f0370:s1 -> Node0x60f05e0;
+}

@@ -1,0 +1,6 @@
+```
+// Use shared memory to optimize access to largeur and hauteur.
+// Use __syncthreads to ensure memory coherence when initializing shared_largeur and shared_hauteur.
+// Precompute scaled_x and scaled_y to avoid repetitive calculations.
+// Access shared memory instead of global memory inside the loop to enhance performance.
+// Ensure proper shared memory initialization in thread 0.

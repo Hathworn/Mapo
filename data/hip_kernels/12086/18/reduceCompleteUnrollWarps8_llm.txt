@@ -1,0 +1,9 @@
+```
+// Encourage coalesced memory access for better memory throughput
+// Consider using shared memory to stage data for more efficient access
+// Leverage loop unrolling to minimize loop overhead and increase instruction-level parallelism
+// Utilize __syncthreads() to ensure all threads have reached the same point
+// Aim to reduce branching to improve warp execution efficiency
+// Use volatile keyword wisely to manage compiler optimizations 
+// Explore additional unrolling of warp iterations to eliminate further thread divergence
+```

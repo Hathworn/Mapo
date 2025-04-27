@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access patterns for loading data from global memory to shared memory.
+// Minimize branch divergence by aligning buffer index calculations.
+// Consider using loop unrolling for the data loading loop to decrease loop overhead.
+// Evaluate the block size to maximize occupancy and under-utilization of shared memory.
+// Optimize global memory access by ensuring all memory accesses are coalesced.
+```

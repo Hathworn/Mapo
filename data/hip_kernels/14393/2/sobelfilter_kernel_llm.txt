@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for the source array to reduce global memory access latency.
+// Precompute common index values and store them in registers to avoid redundant arithmetic operations.
+// Ensure memory coalescing by accessing global memory in a pattern that matches the memory architecture.
+// Use constant memory for small, frequently accessed data sets to improve cache efficiency.
+// Avoid bank conflicts when using shared memory by ensuring proper memory access patterns.
+// Consider using a different block size to better match the warp size for improved performance.
+// Use inline functions for repeated calculations to reduce register pressure and improve readability.
+```

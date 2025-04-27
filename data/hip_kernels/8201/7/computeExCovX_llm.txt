@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Load data into shared memory outside the inner loop if possible
+// Ensure memory coalescing by aligning data to warp size
+// Use __syncthreads() carefully to avoid unnecessary synchronization overhead
+// Read-only data should be broadcasted efficiently using shared memory
+```

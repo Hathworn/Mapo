@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing by accessing consecutive memory locations when possible
+// Use shared memory to prefetch data if there are access patterns that can benefit from it
+// Minimize divergence in control flow by ensuring all threads in a warp tend to follow the same execution path
+// Consider using vectorized memory access if applicable for your specific data structure and hardware
+```

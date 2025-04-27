@@ -1,0 +1,4 @@
+// Use shared memory for input window to reduce global memory accesses
+// Prefetch input data into shared memory before processing
+// Synchronize threads after loading shared memory to ensure data consistency
+// Reduce the number of global memory writes by leveraging conditional statements

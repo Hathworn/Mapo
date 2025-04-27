@@ -1,0 +1,5 @@
+```
+// Load the accuracy value from global to local memory (registers) to reduce global memory access latency.
+// Consider using __fdividef for faster division on the GPU if precision allows for it.
+// Ensure coalesced memory access when reading and writing the accuracy value to avoid bank conflicts.
+```

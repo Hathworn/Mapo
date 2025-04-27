@@ -1,0 +1,7 @@
+```cpp
+// Use a grid-stride loop to improve performance on large arrays
+// Access memory in a coalesced manner by ensuring consecutive threads access consecutive memory locations
+// Employ shared memory if data reuse is possible between threads
+// Consider adjusting block size and grid size based on the GPU architecture for optimal performance
+// Use __restrict__ qualifiers if applicable to help the compiler with optimization
+```

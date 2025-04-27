@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for values array
+// Ensure colPointers array is accessed efficiently to avoid bank conflicts
+// Optimize shared memory usage by avoiding unnecessary __syncthreads() when possible
+// Avoid global memory access by using registers for frequently accessed variables
+// Leverage warp-level primitives for reduction to minimize synchronization
+```

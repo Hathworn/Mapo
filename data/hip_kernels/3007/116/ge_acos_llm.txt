@@ -1,0 +1,7 @@
+```cpp
+// Consider using __restrict__ qualifiers on pointers to improve compiler optimization
+// Use shared memory to reduce global memory access time if access patterns allow
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations
+// Optimize memory access by minimizing divergent branches within warps
+// Implement loop unrolling techniques if operating on large data sets
+```

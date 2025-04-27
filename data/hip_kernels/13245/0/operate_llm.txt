@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced access in shared memory loading
+// Use warp-level primitives to further optimize memory access
+// Minimize shared memory bank conflicts
+// Apply loop unrolling for better performance in loops
+// Optimize thread synchronization to avoid unnecessary __syncthreads()
+```

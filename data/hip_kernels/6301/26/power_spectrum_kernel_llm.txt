@@ -1,0 +1,6 @@
+// Consider using shared memory for `Ar` to reduce global memory access
+// Align memory access by ensuring `float2` alignment for `Ar`
+// Preload data into registers for improved access speed during computations
+// Use `__restrict__` keyword to hint compiler about non-aliasing pointers
+// Investigate loop unrolling for the primary computation loop for better throughput
+// Ensure coalesced accesses for `Aw` to reduce memory transaction overhead

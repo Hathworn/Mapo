@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access and improve memory access speed.
+// Minimize atomic operations as they can cause serialization and decrease performance.
+// Employ cooperative thread mapping to balance workload and improve cache utilization.
+// Ensure memory coalescing by aligning data structures for efficient access by threads.

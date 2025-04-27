@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access.
+// Aggregate partial results in shared memory before updating global memory.
+// Align memory accesses to improve coalescing.
+// Ensure the input data is aligned for optimal access patterns.
+// Minimize divergent branching in the kernel.
+// Explore using warp-level primitives to further optimize reduction.
+```

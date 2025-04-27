@@ -1,0 +1,6 @@
+```
+// Cache frequently accessed data in shared memory to reduce global memory access
+// Use syncthreads to ensure all threads see the updated shared memory value
+// Use local variables to minimize unnecessary global memory accesses
+// Reduce write operations to global memory by storing results locally first
+```

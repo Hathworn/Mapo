@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using __shared__ memory for data reused over iterations.
+// Coalesce memory access by restructuring data in d_quantity and d_count for better L2 cache hits.
+// Consider loop unrolling technique to decrease loop overhead and increase execution speed.
+// Use texture memory or read-only cache for d_probabilities if read-only access pattern is detected.
+// Evaluate warp divergence and ensure branches are avoided within the for-loop.
+```

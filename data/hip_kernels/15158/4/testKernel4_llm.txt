@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to minimize global memory accesses
+// Utilize __syncthreads() to ensure proper synchronization among threads
+// Consider loading data from adjacent blocks into shared memory for coalesced access
+// Evaluate whether boundary checks can be optimized to reduce conditional branching
+```

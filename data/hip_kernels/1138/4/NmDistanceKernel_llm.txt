@@ -1,0 +1,9 @@
+```
+// Consider increasing the batch size if shared memory usage and occupancy allow.
+// Use shared memory to reduce redundant global memory accesses for xyz2.
+// Achieve coalesced access to global memory for loading xyz2 data into buf.
+// Consider tuning block and grid dimensions for better balance of occupancy and latency hiding.
+// Unroll the inner loop for processing batches for better performance and ILP.
+// After loop unrolling, handle remaining elements outside the unrolled loop.
+// Use __syncthreads() to ensure all threads have loaded their data into shared memory.
+```

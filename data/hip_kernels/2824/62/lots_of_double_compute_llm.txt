@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory
+// Consider using vectorized data types (e.g., double2) to load/store multiple elements at once
+// Align data structures to cache line boundaries to improve cache performance
+```

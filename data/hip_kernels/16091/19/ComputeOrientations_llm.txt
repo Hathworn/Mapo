@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses where possible
+// Consider splitting register-heavy computation across threads for better resource utilization
+// Use shared memory to reduce global memory accesses during histogram computation
+// Precompute constant values outside of critical loops to minimize redundant operations
+// Perform as many arithmetic operations in parallel using multiple threads to increase throughput
+```

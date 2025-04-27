@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data during computations to reduce global memory access.
+// Coalesce memory accesses by ensuring that consecutive threads access consecutive memory addresses.
+// Consider using float4 or float2 data types to load/store multiple data elements at once for better memory throughput.
+// Ensure that all `A[idx]`, `B[idx]`, and `C[idx]` accesses are aligned to achieve maximum memory bandwidth.
+// Minimize divergent branches by ensuring that all threads within a warp follow the same execution path.
+```

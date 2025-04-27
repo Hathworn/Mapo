@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access
+// Coalesce global memory access within the loop to improve memory bandwidth utilization
+// Minimize use of division operation, potentially use bit-shift if k_size is a power of 2
+// Avoid recalculating values within loops, store in local variables instead
+// Consider unrolling loops for small kernel sizes to reduce loop overhead
+// Ensure that block size is optimized for the GPU architecture to achieve high occupancy
+// Use texture memory for read-only data to potentially improve memory access times
+```

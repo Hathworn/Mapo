@@ -1,0 +1,3 @@
+// Initialize state only once per thread instead of every trial
+// Use shared memory to reduce global memory access latency
+// Aggregate results from shared memory to reduce divergence

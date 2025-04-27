@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory accesses.
+// Load tiles of size 32x32 from global to shared memory for both matrices.
+// Ensure threads only access valid elements for potential out-of-bounds areas.
+// Use __syncthreads() to synchronize threads before computation.
+// Use loop unrolling to enhance compute efficiency within tile computation.
+```

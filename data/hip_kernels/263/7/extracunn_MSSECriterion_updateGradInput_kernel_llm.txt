@@ -1,0 +1,6 @@
+```
+// Consider increasing the size of shared memory buffer for larger blocks
+// Use __syncthreads() wisely to avoid unnecessary synchronization
+// Ensure memory coalescing by having consecutive threads access consecutive memory addresses
+// Consider optimizing block size to maximize occupancy and minimize divergence
+```

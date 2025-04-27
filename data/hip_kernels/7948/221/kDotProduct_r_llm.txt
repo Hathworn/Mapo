@@ -1,0 +1,8 @@
+```c
+// Reduce shared memory access by using a local variable for summation
+// Process elements across grid instead of block for better load balancing
+// Use __syncthreads to ensure all updates to shared memory are completed
+// Minimize warp divergence in reduction using warp-level primitives
+// Ensure memory coalescing by accessing contiguous memory locations
+// Write the block's result to global memory only once per block
+```

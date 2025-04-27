@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for better memory throughput.
+// Ensure all memory accesses are aligned to avoid bank conflicts.
+// Use shared memory to reduce redundant global memory accesses.
+// Try using registers for frequently accessed variables.
+// Minimize divergent warps within this kernel.
+// Examine occupancy levels to determine if tuning block size can improve performance.
+```

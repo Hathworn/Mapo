@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory access patterns for coalesced access when updating image values.
+// Pre-load shared memory with commonly accessed rand values for faster access.
+// Consider using half precision if accuracy permits for faster computation and reduced memory bandwidth.
+// Minimize divergence in warp execution by simplifying conditional statements where possible.
+// Group image updates with fused compute to reduce memory access frequency.
+```

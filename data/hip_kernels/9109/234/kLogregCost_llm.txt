@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for array 'probs' to improve memory access efficiency
+// Evaluate using shared memory to reduce repeated global memory loads of 'maxProbs' and 'labels'
+// Explore warp-level primitives to optimize the repetitive comparison in the loop
+// Minimize divergent branching by restructuring conditions for calculating 'correctProbs'
+// Investigate vectorized loads/stores for labelLogProbs and correctProbs to enhance throughput
+// Assess the potential of the loop unrolling technique for the loop iterating over 'numOut'
+```

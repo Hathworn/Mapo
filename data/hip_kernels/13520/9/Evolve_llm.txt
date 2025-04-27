@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for neighboring cell data
+// Avoid bank conflicts in shared memory by ensuring data accessed by threads in a warp do not map to the same bank
+// Consider coalesced memory access patterns when loading data to or from global memory
+// Minimize use of __syncthreads() as it introduces synchronization overhead
+// Ensure memory footprint of shared memory matches block size to optimize usage and reduce latency
+```

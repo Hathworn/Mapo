@@ -1,0 +1,3 @@
+// Consider using shared memory for values and probs to reduce global memory access
+// Use __restrict__ keyword on pointer arguments to help the compiler optimize memory accesses
+// Optimize memory access patterns by aligning data to cache line boundaries

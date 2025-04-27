@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Synchronize to ensure all threads have loaded their data
+// Synchronize for safe shared memory reuse
+// Reduce within a warp (assume blockDim.x is warpSize)
+// Write the result for each warp's leader
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Loading data to shared memory reduces the number of global memory accesses
+// Synchronize threads to ensure data in shared memory is consistent before use
+// Transpose block offset to minimize global memory write accesses
+// Ensure threads are synchronized before writing data from shared memory to global memory
+```

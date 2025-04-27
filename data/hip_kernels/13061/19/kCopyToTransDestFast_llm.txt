@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by aligning srcStart and destStart pointers.
+// Try increasing the COPY_BLOCK_SIZE to maximize usage of shared memory.
+// Consider using vectorized types (e.g., float4) to optimize memory loads and stores.
+// Ensure grid and block sizes are configured to best fit the input dimensions for occupancy.

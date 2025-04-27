@@ -1,0 +1,8 @@
+```
+// Cache frequently accessed variables in registers to minimize global memory access
+// Use shared memory to accumulate intermediate results and reduce global memory operations
+// Ensure shared memory usage is compliant with maximum shared memory availability per block
+// Minimize atomic operations by using shared memory for intermediate accumulation
+// Use __syncthreads() to ensure all threads have copied their results to shared memory before writing back to global memory
+// Consider optimal block size to maximize occupancy while keeping within shared memory limits
+```

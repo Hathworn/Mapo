@@ -1,0 +1,7 @@
+```cpp
+// Precompute total threads for efficient looping
+// Minimize memory accesses by caching reused computations like w_col_start, w_col_end, h_col_start, h_col_end
+// Use precomputed offset and coefficients to avoid redundant calculations inside loops
+// Favor a single loop structure for potential compiler optimizations and loop unrolling
+// Accumulate results in a local variable to reduce global memory accesses
+```

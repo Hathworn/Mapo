@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for best performance
+// Consider using shared memory for data reuse to reduce global memory access
+// Optimize grid and block size to fully utilize GPU resources
+// Minimize divergent branches within the kernel where applicable
+// Use __restrict__ qualifiers on pointers to improve compiler optimizations 
+```

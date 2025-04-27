@@ -1,0 +1,3 @@
+// Use a single index variable to avoid re-computation.
+// Ensure threads are accessing memory within valid bounds.
+// Use memory coalescing by loading data with __ldg for better performance.

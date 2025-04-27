@@ -1,0 +1,4 @@
+// Consider using shared memory for 'mean' and 'variance' data within a block to reduce global memory access.
+// Use loop unrolling in the inner loop to decrease loop overhead and increase data locality.
+// Optimize 'powf' function usage with precomputed values if possible to reduce computation overhead.
+// Minimize accesses to 'delta' and 'x' by fetching them into registers in cases where threads access same values repeatedly.

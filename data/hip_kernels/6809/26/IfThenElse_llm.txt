@@ -1,0 +1,7 @@
+```c
+// Ensure memory coalescing by aligning data access patterns
+// Prefetch data to shared memory if possible to reduce global memory reads
+// Minimize divergence by ensuring similar execution paths for threads
+// Consider loop unrolling if N is known and manageable
+// Analyze the block and grid size choice to maximize occupancy
+```

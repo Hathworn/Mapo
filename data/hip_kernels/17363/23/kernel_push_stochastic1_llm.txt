@@ -1,0 +1,4 @@
+// Use coalesced memory access patterns for g_push_reser and s_push_reser to improve throughput
+// Minimize the use of atomic operations by restructuring the algorithm if possible to reduce contention
+// Explore the use of warp-level primitives to optimize the finish flag update
+// Ensure that shared memory usage is aligned to prevent bank conflicts

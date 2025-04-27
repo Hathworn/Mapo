@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to decrease the number of global memory accesses.
+// Coalesce memory accesses by having threads access consecutive memory locations.
+// Use texture memory for reading constants like template_half_height and template_half_width.
+// Reduce warp divergence by ensuring all threads in a warp follow the same execution path.
+// Calculate image_index_1d without reversing the index to improve access patterns.
+```

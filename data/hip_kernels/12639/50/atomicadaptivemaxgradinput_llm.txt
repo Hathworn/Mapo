@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for gradOutput, gradInput, indices_x, and indices_y
+// Use shared memory where possible to store temporary variables
+// Minimize the number of indirect accesses and calculations inside the for-loops
+// Ensure that memory accesses are aligned when possible to increase efficiency
+// Evaluate if loop unrolling would benefit performance for the inner loop over 'xx'
+```

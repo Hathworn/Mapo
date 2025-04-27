@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access for col_sum
+// Ensure N is small enough to fit col_sum into shared memory
+// Implement warp-level synchronization for better efficiency if applicable
+// Consider coalesced global memory access for output writes
+// Reduce bank conflicts in shared memory by padding or restructuring
+// Assess occupancy and optimize blockDim.x for better resource utilization
+```

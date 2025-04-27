@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for Md and Nd to reduce global memory access latency
+// Coalesce global memory accesses for Md and Nd to improve bandwidth utilization
+// Optimize loop unrolling for the k-loop to reduce loop overhead
+// Explore use of warp shuffle operations for better intra-warp communication efficiency
+// Check memory access pattern for potential bank conflicts in shared memory usage
+```

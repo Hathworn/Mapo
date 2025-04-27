@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to reduce redundant global memory accesses for weight calculations.
+// Align memory access patterns to achieve coalesced memory access.
+// Attempt loop unrolling to increase instruction-level parallelism.
+// Minimize usage of atomic operations, consider alternative reduction methods to optimize performance.
+// Organize threads and data layout to maximize occupancy and warp efficiency.
+// Evaluate if bank conflicts are minimized when using shared memory.
+```

@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Unroll loops to reduce branch divergence and improve instruction throughput.
+// Use precomputed slopes to decrease redundant computation within the loop.
+// Inline functions to reduce overhead associated with function calls.
+// Avoid unnecessary computation by checking bounds early in the kernel.
+// Optimize memory access patterns by grouping operations that access similar data.
+// Utilize bitwise operations and integer arithmetic to minimize floating-point operations.
+// Ensure proper alignment of shared memory usage to optimize bandwidth utilization.
+```

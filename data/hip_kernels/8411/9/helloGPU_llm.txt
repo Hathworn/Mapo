@@ -1,0 +1,5 @@
+// Consider minimizing the number of threads accessing global memory.
+// Use shared memory to reduce latency.
+// Limit printf usage to avoid serialization and overhead.
+// Align data structures to maximize coalesced memory access.
+// Optimize the block and grid dimensions to ensure efficient execution.

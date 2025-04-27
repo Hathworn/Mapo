@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses for 'a' and 'b' arrays to improve memory throughput.
+// Utilize shared memory to store 'a' and 'b' data for each block to minimize global memory access.
+// Use warp shuffle instructions for reduction instead of __syncthreads for better performance.
+// Implement loop unrolling outside of shared memory to reduce instruction overhead.
+// Evaluate using half precision or __float2 to increase arithmetic density within the kernel.
+```

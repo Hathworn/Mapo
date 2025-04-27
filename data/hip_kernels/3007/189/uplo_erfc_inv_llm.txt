@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses for optimal performance
+// Prefer shared memory for frequently accessed data where applicable
+// Avoid bank conflicts in shared memory when using shared data
+// Minimize divergent branches to enhance warp execution efficiency
+// Consider warp shuffle for intra-warp data exchange if applicable

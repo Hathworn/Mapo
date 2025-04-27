@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning Ar and Aw to the warp size
+// Use shared memory to store Ar and Aw values to minimize global memory accesses
+// Optimize use of registers by minimizing index calculations in the loop
+// Consider loop unrolling if the row_length is fixed and known at compile time
+// Provide enough threads per block to fully utilize GPU resources

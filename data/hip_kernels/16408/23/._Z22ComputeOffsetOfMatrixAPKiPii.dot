@@ -1,0 +1,13 @@
+digraph "CFG for '_Z22ComputeOffsetOfMatrixAPKiPii' function" {
+	label="CFG for '_Z22ComputeOffsetOfMatrixAPKiPii' function";
+
+	Node0x60c8130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = icmp slt i32 %4, %2\l  br i1 %5, label %6, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x60c8130:s0 -> Node0x60c8fe0;
+	Node0x60c8130:s1 -> Node0x60c9070;
+	Node0x60c8fe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%6:\l6:                                                \l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = mul i32 %7, %2\l  %9 = zext i32 %8 to i64\l  %10 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %9\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !5, !invariant.load !6\l  %15 = zext i16 %14 to i32\l  br label %17\l}"];
+	Node0x60c8fe0 -> Node0x60ca280;
+	Node0x60c9070 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%16:\l16:                                               \l  ret void\l}"];
+	Node0x60ca280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  %18 = phi i32 [ %4, %6 ], [ %24, %17 ]\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !7\l  %22 = sub nsw i32 0, %21\l  %23 = getelementptr inbounds i32, i32 addrspace(1)* %10, i64 %19\l  store i32 %22, i32 addrspace(1)* %23, align 4, !tbaa !7\l  %24 = add i32 %18, %15\l  %25 = icmp slt i32 %24, %2\l  br i1 %25, label %17, label %16, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x60ca280:s0 -> Node0x60ca280;
+	Node0x60ca280:s1 -> Node0x60c9070;
+}

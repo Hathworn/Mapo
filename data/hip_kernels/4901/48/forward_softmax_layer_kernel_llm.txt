@@ -1,0 +1,6 @@
+```
+// Use shared memory for input and output to reduce global memory access
+// Ensure each thread reads contiguous elements to improve memory coalescing
+// Avoid recalculating exp(largest/temp) to save computation
+// Calculate sum only after finding the largest element to avoid redundant calculations
+```

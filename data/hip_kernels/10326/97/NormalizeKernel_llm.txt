@@ -1,0 +1,6 @@
+```cpp
+// Consider aligning memory access patterns for coalesced memory access
+// Use shared memory to load normalization factors if they are reused across threads
+// Minimize divergence by ensuring branches are warp divergent
+// Ensure memory is accessed in sequential order to utilize global memory bandwidth efficiently
+```

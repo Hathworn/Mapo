@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access for vec
+// Use shared memory efficiently to reduce global memory transactions
+// Reduce warp divergence by ensuring threads within a warp execute the same code path
+// Utilize occupancy calculator to determine optimal block size for full device utilization
+// Employ loop unrolling for the reduction phase to decrease loop overhead
+// Use __ldg() for read-only data to take advantage of cache
+```

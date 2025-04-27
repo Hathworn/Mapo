@@ -1,0 +1,9 @@
+```cpp
+// Coalesce global memory accesses for better performance.
+// Use prefetching to minimize data transfer delays.
+// Ensure shared memory usage is optimized within kernel limits.
+// Align data structures in shared memory to prevent bank conflicts.
+// Use __restrict__ qualifier to indicate no overlap in pointer data.
+// Optimize loop unrolling where appropriate for better execution efficiency.
+// Use appropriate block and thread configuration for maximizing occupancy.
+```

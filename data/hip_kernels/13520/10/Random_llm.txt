@@ -1,0 +1,8 @@
+```c
+// Consider using __restrict__ qualifier to potentially improve compiler optimizations.
+// Optimize global memory access patterns by ensuring coalesced accesses.
+// Minimize divergent branches to maintain warp efficiency.
+// Evaluate the use of shared memory for frequently accessed data to reduce global memory traffic.
+// Consider adjusting block size and grid size to maximize GPU utilization and hide latency.
+// Evaluate if loop unrolling could benefit the performance by reducing loop overhead.
+```

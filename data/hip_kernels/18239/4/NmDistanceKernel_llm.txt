@@ -1,0 +1,9 @@
+```c
+// Ensure coalesced access to global memory by aligning data structures.
+// Utilize `__shared__` memory effectively to reduce global memory traffic.
+// Consider increasing batch size for better shared memory utilization, with respect to the hardware limits.
+// Minimize the usage of `__syncthreads()` to prevent unnecessary synchronization overhead.
+// Optimize use of registers by limiting the live range of variables where possible.
+// Ensure warp divergence is minimized by reducing conditional branching within the innermost loop.
+// Consider using half-precision if the precision requirements permit, for improved performance on compatible hardware.
+```

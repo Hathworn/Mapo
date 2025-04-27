@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when writing to the 'cluster' array
+// Precompute values that are used multiple times to reduce instruction overhead
+// Place frequently used constants in registers to minimize memory access latency
+// Use __float2int_rn intrinsic for precise and efficient floating-point to integer conversion
+// Adjust block size for better occupancy and workload distribution
+```

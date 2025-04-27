@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses for gradOutput_data
+// Adjust shared memory size to match block size for better utilization
+// Utilize coalesced memory access for gradOutput_data within a warp
+// Minimize bank conflicts when accessing shared memory
+// Consider loop unrolling for scale_factor loops to reduce control overhead

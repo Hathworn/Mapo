@@ -1,0 +1,7 @@
+```
+// Minimize global memory access by storing data in shared memory if possible.
+// Ensure coalesced memory access to improve memory throughput.
+// Use __restrict__ keyword for pointer parameters if data is not aliased.
+// Optimize block and grid dimensions to maximize occupancy and performance.
+// Consider loop unrolling if applicable to reduce loop overhead.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache mean and variance values for each filter to reduce global memory accesses.
+// Ensure coalesced memory access by appropriately aligning x, mean, and variance arrays as per HIP memory architecture.
+// Use vectorized operations if possible to optimize throughput (e.g., float2 or float4).
+// Check for bank conflicts when using shared memory and modify access patterns if necessary.
+```

@@ -1,0 +1,5 @@
+// Ensure memory coalescing by accessing pre_grad with consecutive thread indices  
+// Minimize thread divergence by checking boundary conditions outside the loop  
+// Use shared memory if possible to further reduce global memory access  
+// Optimize block and grid dimensions for better occupancy and bandwidth  
+// Consider loop unrolling to reduce loop overhead

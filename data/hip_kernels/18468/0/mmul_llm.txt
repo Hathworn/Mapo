@@ -1,0 +1,8 @@
+```
+// Ensure proper thread block sizing for balanced workload distribution
+// Optimize global memory access by utilizing shared memory for A and B matrices
+// Minimize redundant global memory access by preloading data into registers where possible
+// Experiment with loop unrolling for better pipeline utilization in the accumulation loop
+// Assess performance impact of tuning ds and thread block dimensions
+// Use the __restrict__ keyword on pointers to improve compiler optimization
+```

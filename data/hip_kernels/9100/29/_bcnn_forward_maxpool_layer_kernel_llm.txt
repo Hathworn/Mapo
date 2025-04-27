@@ -1,0 +1,3 @@
+// Use shared memory to reduce redundant global memory accesses
+// Prefetch input data into registers to minimize latency
+// Consider using warp-level primitives for even better memory coalescing

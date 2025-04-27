@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for accessing nearby pixel values to reduce global memory access.
+// Combine multiple loads from global memory into fewer transactions to improve access coalescing.
+// Implement loop unrolling for any repetitive operations within the kernel.
+// Reduce global memory traffic by storing intermediate computation results in registers.
+```

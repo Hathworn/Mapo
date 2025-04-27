@@ -1,0 +1,5 @@
+// Consider using shared memory for d_i2 to improve access speed
+// Use coalesced memory access pattern for d_i1 to reduce global memory transactions
+// Implement loop unrolling for the inner loop in the loading process to minimize overhead
+// Consider optimizing boundary condition checks to improve warp efficiency
+// Reduce conditional logic inside the kernel where possible to minimize branching

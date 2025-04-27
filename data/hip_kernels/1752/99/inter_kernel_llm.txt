@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses
+// Combine consecutive memory accesses to increase coalescing
+// Avoid using if-else statements within the kernel to minimize branching
+// Check for memory alignment to improve access speed
+// Consider unrolling the loop for better performance

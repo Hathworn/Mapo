@@ -1,0 +1,7 @@
+```
+// Use shared memory for thread-local caching if X is reused multiple times.
+// Optimize INCX handling to align memory accesses for coalescing.
+// Adjust grid and block dimensions to fully utilize GPU SM resources.
+// Prefetch data into shared memory if access stride (INCX) leads to non-coalesced patterns.
+// Avoid redundant calculations for blockDim.x and gridDim.x within the loop.
+```

@@ -1,0 +1,7 @@
+```c
+// Make sure memory accesses are coalesced
+// Consider using shared memory to reduce global memory accesses
+// Minimize divergent branches, ensure threads within a warp execute the same path
+// Prefetch data to registers to hide global memory latency
+// Align data structures to ensure efficient memory transactions
+```

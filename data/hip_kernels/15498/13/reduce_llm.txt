@@ -1,0 +1,9 @@
+```c
+// Consider coalesced accesses to global memory for optimal performance.
+// Use __syncthreads() appropriately to avoid race conditions in shared memory operations.
+// Minimize the number of __syncthreads() by reorganizing code logic if possible.
+// Ensure that shared memory is declared efficiently to accommodate the required data.
+// Optimize memory access patterns to reduce bank conflicts in shared memory.
+// When possible, unroll loops for warp-wide reductions for better performance.
+// Ensure correct alignment of shared memory for coalesced access.
+```

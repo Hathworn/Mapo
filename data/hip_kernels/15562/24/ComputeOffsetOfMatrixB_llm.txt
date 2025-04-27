@@ -1,0 +1,3 @@
+// Use shared memory to store row_sum to reduce global memory access
+// Ensure memory accesses are coalesced by aligning data structures
+// Utilize warp-based operations where possible to improve performance

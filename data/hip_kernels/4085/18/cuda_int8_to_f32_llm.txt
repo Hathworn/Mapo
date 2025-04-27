@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring input_int8 and output_f32 are properly aligned
+// Use shared memory to cache frequently accessed data and reduce global memory access
+// Minimize divergence within warps by ensuring conditional statements are uniform among threads
+// Adjust block size and grid size for optimal occupancy and resource utilization
+```

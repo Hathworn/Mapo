@@ -1,0 +1,8 @@
+```
+// Use warp shuffle operations to optimize reduction within a warp
+// Consider padding shared memory to avoid bank conflicts
+// Use multiple blocks to increase parallelism for large inputs
+// Ensure input is aligned to avoid misaligned memory accesses
+// Allocate shared memory dynamically if TPB is unknown at compile time
+// Evaluate using cooperative_groups for better warp-level parallelism
+```

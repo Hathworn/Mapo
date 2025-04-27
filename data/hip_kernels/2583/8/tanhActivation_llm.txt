@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache z values for coalesced memory access.
+// Adjust the block dimensions to optimize for memory bandwidth.
+// Utilize __restrict__ pointers for z to help with optimizing memory access.
+// Ensure warp divergence is minimized by reordering branches or using __shfl_sync() for values.
+```

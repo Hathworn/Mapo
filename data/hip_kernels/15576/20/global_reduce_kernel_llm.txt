@@ -1,0 +1,5 @@
+```
+// Prefer using warp-level primitives for reduction to minimize __syncthreads overhead
+// Consider optimizing memory coalescing by rearranging data access patterns for d_in
+// Explore using multiple streams to overlap kernel execution if possible for better performance
+```

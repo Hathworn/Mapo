@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize access to global memory
+// Ensure coalesced access to global memory for left and right arrays
+// Maximize utilization of shared memory by adjusting block size
+// Align shared memory access patterns with warp size to reduce bank conflicts
+// Consider loop unrolling within the inner loop for performance gain
+```

@@ -1,0 +1,7 @@
+```
+// Unroll the loop to reduce global memory access latency.
+// Perform a single bounds check instead of multiple to reduce instruction overhead.
+// Use shared memory to store intermediate results for faster access.
+// Employ warp-level unrolling for further reduction in synchronization overhead.
+// Utilize volatile in warp to ensure memory coherence.
+```

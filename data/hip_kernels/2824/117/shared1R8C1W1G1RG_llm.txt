@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access for loading data from A to Smem
+// Minimize shared memory bank conflicts by adjusting index calculation
+// Ensure all threads access Smem with aligned indices to reduce conflicts
+// Consider unrolling loops where applicable to enhance performance
+```

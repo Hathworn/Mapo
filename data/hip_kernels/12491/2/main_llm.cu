@@ -1,0 +1,65 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <hip/hip_runtime.h>
+#include "rgb_to_xyY_llm.cu"
+#include <chrono>
+#include <iostream>
+using namespace std;
+using namespace std::chrono;
+int main(int argc, char **argv) {
+hipSetDevice(0);
+
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    float *d_r = NULL;
+hipMalloc(&d_r, XSIZE*YSIZE);
+float *d_g = NULL;
+hipMalloc(&d_g, XSIZE*YSIZE);
+float *d_b = NULL;
+hipMalloc(&d_b, XSIZE*YSIZE);
+float *d_x = NULL;
+hipMalloc(&d_x, XSIZE*YSIZE);
+float *d_y = NULL;
+hipMalloc(&d_y, XSIZE*YSIZE);
+float *d_log_Y = NULL;
+hipMalloc(&d_log_Y, XSIZE*YSIZE);
+float delta = 1;
+int num_pixels_y = 1;
+int num_pixels_x = 1;
+int iXSIZE= XSIZE;
+int iYSIZE= YSIZE;
+while(iXSIZE%BLOCKX!=0) {
+iXSIZE++;
+}
+while(iYSIZE%BLOCKY!=0) {
+iYSIZE++;
+}
+dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
+dim3 threadBlock(BLOCKX, BLOCKY);
+hipFree(0);
+rgb_to_xyY<<<gridBlock, threadBlock>>>(d_r,d_g,d_b,d_x,d_y,d_log_Y,delta,num_pixels_y,num_pixels_x);
+hipDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+rgb_to_xyY<<<gridBlock, threadBlock>>>(d_r,d_g,d_b,d_x,d_y,d_log_Y,delta,num_pixels_y,num_pixels_x);
+}
+hipDeviceSynchronize();
+auto start = steady_clock::now();
+for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+rgb_to_xyY<<<gridBlock, threadBlock>>>(d_r,d_g,d_b,d_x,d_y,d_log_Y,delta,num_pixels_y,num_pixels_x);
+}
+hipDeviceSynchronize();
+auto end = steady_clock::now();
+auto usecs = duration_cast<duration<float, microseconds::period>>(end - start);
+cout << '[' << usecs.count() << ',' << '(' << BLOCKX << ',' << BLOCKY << ')' << ',' << '(' << XSIZE << ',' << YSIZE << ')' << ']' << endl;
+}

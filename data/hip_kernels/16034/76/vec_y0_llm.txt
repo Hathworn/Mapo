@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory if there is data re-use among threads in the same block
+// Optimize memory access by ensuring result and x are aligned to cache line sizes
+// Minimize divergent branches within the kernel
+// Ensure global memory access patterns are coalesced
+// Use memory prefetching techniques if the GPU supports it
+// Consider loop unrolling if applicable and beneficial
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to store input values to reduce global memory access
+// Ensure that memory accesses are coalesced by aligning data structures with warp size
+// Use texture or constant memory if input data has significant spatial locality
+// Minimize memory transactions by unrolling loops if applicable

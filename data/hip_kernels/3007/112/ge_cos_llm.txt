@@ -1,0 +1,7 @@
+```
+// Ensure memory access patterns are coalesced for optimal performance.
+// Consider using shared memory if there's reuse of 'a' values among threads.
+// Ensure 'a' and 'b' arrays are aligned to avoid bank conflicts.
+// Evaluate if using texture memory can improve performance for read-only 'a'.
+// Assess if prefetching data from global memory is beneficial.
+```

@@ -1,0 +1,4 @@
+// Use shared memory for row_sum and col_sum to reduce global memory accesses.
+// Consider coalesced access patterns for row_sum and col_sum to improve memory throughput.
+// Optimize the loop by unrolling to improve ILP (Instruction Level Parallelism).
+// Ensure output access is coalesced for efficient memory writes.

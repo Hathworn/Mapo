@@ -1,0 +1,7 @@
+```
+// Calculate the flat size outside the loop to avoid redundant calculations
+// Avoid recalculation of targetIdxBase and resIdxBase components inside the loop
+// Precompute indexOffset outside the innermost loop to enhance data locality
+// Ensure coalesced memory access for both src and res arrays
+// Minimize divergent branching to improve warp execution efficiency
+```

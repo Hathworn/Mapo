@@ -1,0 +1,9 @@
+```
+// Consider optimizing global memory access by coalescing loads for better performance
+// Use shared memory to minimize global memory traffic and improve data reuse
+// Load shared memory efficiently by using multiple threads to preload data into shared memory
+// Minimize bank conflicts when accessing shared memory
+// Use conditional loading for edge handling instead of branch divergence
+// Synchronize threads carefully to ensure data dependence correctness across block boundaries
+// Reduce the arithmetic intensity by simplifying the operations inside the inner loops
+```

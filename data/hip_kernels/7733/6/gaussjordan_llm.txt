@@ -1,0 +1,7 @@
+```
+// Consider coalesced access to global memory by ensuring adjacent threads access adjacent memory locations.
+// Reduce the use of shared memory where it does not contribute to performance benefits.
+// Limit syncthreads usage to only necessary places to avoid unnecessary synchronization delays.
+// Reduce redundant memory accesses by reusing values stored in registers where possible.
+// Explore further tile-level optimizations for shared memory to reduce bank conflicts.
+```

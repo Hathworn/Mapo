@@ -1,0 +1,7 @@
+```
+// Use grid-stride loop for efficient global memory access.
+// Minimize divergent branching by using simple conditional checks.
+// Prefetch values to registers to reduce global memory access latency.
+// Consider using shared memory if multiple threads access the same data.
+// Ensure coalesced memory access by aligning INCX properly.
+```

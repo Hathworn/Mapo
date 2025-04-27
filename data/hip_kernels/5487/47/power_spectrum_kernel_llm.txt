@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access by aligning data structures appropriately.
+// Minimize warp divergence by optimizing branch conditions within the thread block.
+// Consider using shared memory to reduce global memory access latency.
+// Evaluate the benefit of using __shfl_xor_sync for inter-thread communication in warp.
+```

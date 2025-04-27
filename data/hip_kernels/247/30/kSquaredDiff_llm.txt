@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory accesses
+// Align pointers if possible to enable coalesced accesses
+// Consider using vectorized data types for optimizing memory bandwidth
+// Assess the use of warp shuffle operations for further reduction in iteration count
+// Evaluate different block sizes to optimize occupancy and minimize execution time

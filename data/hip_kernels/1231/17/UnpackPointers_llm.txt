@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache 'minmax' values to reduce global memory accesses
+// Ensure coalesced memory access for the 'ptrs' array to improve memory access efficiency
+// Experiment with thread block sizing for improved occupancy depending on the target GPU
+// Evaluate potential benefit of using warp-level primitives for 'val' processing
+// Analyze overall occupancy and potential memory bandwidth bottlenecks for further improvements
+```

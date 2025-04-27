@@ -1,0 +1,4 @@
+// Optimize memory access by using shared memory to reduce global memory bandwidth
+// Ensure all threads have loaded data into shared memory before proceeding with computation
+// Consider thread coarsening to process multiple elements per thread for better throughput
+// Reduce bank conflicts in shared memory by adjusting access patterns if necessary

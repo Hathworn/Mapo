@@ -1,0 +1,6 @@
+```
+// Consider using coalesced memory access for g_idata to improve memory bandwidth.
+// Explore using __ldg() to utilize texture cache for read-only data.
+// Evaluate bank conflict avoidance strategies for shared memory access to smem.
+// Unrolling the final warp allows reducing the number of synchronization barriers.
+```

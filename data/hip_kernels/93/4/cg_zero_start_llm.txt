@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using offset calculations to reduce blockIdx.x usage
+// Prefer accessing contiguous memory locations to improve memory coalescing
+// Use shared memory to temporarily store computational results and reduce global memory access
+// Reduce warp divergence by using single thread synchronization for reduction operations
+// Ensure atomic operations for shared memory updates to avoid race conditions
+```

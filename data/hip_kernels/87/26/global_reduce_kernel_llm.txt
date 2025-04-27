@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory reads for d_in to improve memory access efficiency.
+// Use shared memory efficiently by minimizing bank conflicts during shared memory accesses.
+// Consider loop unrolling for the reduction loop to reduce loop overhead and improve performance.
+// Ensure __syncthreads() usage is correct to avoid unnecessary synchronization and divergence.
+// Evaluate thread index arithmetic to ensure it promotes efficient memory access patterns.
+```

@@ -1,0 +1,15 @@
+digraph "CFG for '_Z6piCalcPddi' function" {
+	label="CFG for '_Z6piCalcPddi' function";
+
+	Node0x5179490 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !7\l  %14 = mul i32 %5, %10\l  %15 = add i32 %14, %4\l  %16 = icmp slt i32 %15, %2\l  br i1 %16, label %17, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x5179490:s0 -> Node0x517a230;
+	Node0x5179490:s1 -> Node0x517adf0;
+	Node0x517a230 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds double, double addrspace(1)* %0, i64 %18\l  %20 = udiv i32 %13, %10\l  %21 = mul i32 %20, %10\l  %22 = icmp ugt i32 %13, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %10\l  %26 = load double, double addrspace(1)* %19, align 8, !tbaa !16\l  br label %27\l}"];
+	Node0x517a230 -> Node0x517bea0;
+	Node0x517bea0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi double [ %26, %17 ], [ %36, %27 ]\l  %29 = phi i32 [ %15, %17 ], [ %37, %27 ]\l  %30 = sitofp i32 %29 to double\l  %31 = fadd contract double %30, 5.000000e-01\l  %32 = fmul contract double %31, %1\l  %33 = fmul contract double %32, %32\l  %34 = fadd contract double %33, 1.000000e+00\l  %35 = fdiv contract double 4.000000e+00, %34\l  %36 = fadd contract double %35, %28\l  %37 = add i32 %25, %29\l  %38 = icmp slt i32 %37, %2\l  br i1 %38, label %27, label %39, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x517bea0:s0 -> Node0x517bea0;
+	Node0x517bea0:s1 -> Node0x517d230;
+	Node0x517d230 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%39:\l39:                                               \l  store double %36, double addrspace(1)* %19, align 8, !tbaa !16\l  br label %40\l}"];
+	Node0x517d230 -> Node0x517adf0;
+	Node0x517adf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%40:\l40:                                               \l  ret void\l}"];
+}

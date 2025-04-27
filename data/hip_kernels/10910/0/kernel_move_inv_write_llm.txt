@@ -1,0 +1,3 @@
+// Consider using shared memory for frequent data access to reduce global memory latency.
+// Avoid writing to global memory inside conditionals as it may reduce coalesced access.
+// Ensure memory access patterns are coalesced to maximize memory bandwidth.

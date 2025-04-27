@@ -1,0 +1,6 @@
+```c++
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access by aligning input data properly
+// Minimize __syncthreads() barriers for better performance
+// Use efficient load/store patterns to and from shared memory
+```

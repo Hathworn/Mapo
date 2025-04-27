@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access patterns by ensuring threads access consecutive memory locations
+// Minimize shared memory bank conflicts by properly aligning shared memory arrays
+// Consider using local memory for thread-specific data instead of shared memory if possible
+// Optimize the use of `__syncthreads()` to avoid unnecessary synchronization points
+// Use registers effectively to reduce global memory access latency
+// Avoid divergent branches by aligning conditions within warp execution
+// Consider tiling strategies for loading data into shared memory to improve memory access efficiency
+```

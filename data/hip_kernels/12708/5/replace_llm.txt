@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to input_T, output_T, prefix_T, and prefix_helper_T to improve memory bandwidth utilization.
+// Use shared memory to cache frequently accessed data such as prefix_T and prefix_helper_T to reduce global memory accesses.
+// Optimize control flow by minimizing the branching within the kernel, particularly the if-else statements for newpos calculation.
+// Align access patterns to ensure memory accesses fall on aligned boundaries, thereby reducing potential warp divergence.
+// Use loop unrolling strategies to reduce overhead in the for-loop and increase instructions throughput.
+```

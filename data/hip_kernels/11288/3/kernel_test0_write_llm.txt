@@ -1,0 +1,7 @@
+
+// Ensure coalesced memory access by aligning data structures with warp boundaries
+// Avoid excessive divergence by minimizing conditional branches in critical sections
+// Use shared memory when possible to reduce global memory accesses for frequently used data
+// Optimize memory access patterns to minimize cache misses
+// Consider the use of atomic operations for accurate error recording without race conditions
+// Leverage loop unrolling techniques to reduce loop overhead and improve performance within blocks

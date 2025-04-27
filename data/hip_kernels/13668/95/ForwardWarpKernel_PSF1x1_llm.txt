@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access for `u` and `v` when fetching flow vectors
+// Utilize shared memory to reduce redundant global memory accesses for `u`, `v`, and `src`
+// Explore using texture memory for read-only data access optimization (e.g., `src` array)
+// Prefetch data into registers when computing `cx` and `cy` to reduce memory latency
+// Optimize boundary checks and calculations to reduce branch divergence among threads
+```

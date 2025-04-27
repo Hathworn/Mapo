@@ -1,0 +1,8 @@
+```
+// Use shared memory to store common data between threads to reduce global memory accesses
+// Consider coalescing memory accesses when reading delta and prev_delta
+// Prefetch data into registers to minimize latency
+// Ensure memory access patterns are sequential and aligned
+// Use constant memory for any commonly accessed static data like constants
+// Optimize loop unrolling manually or via compiler directives to enhance performance
+```

@@ -1,0 +1,6 @@
+// Consider combining multiple memory accesses into a single transaction to reduce latency.
+// Look into using shared memory to reduce redundant global memory accesses.
+// Examine memory access patterns to ensure coalesced memory access for better performance.
+// Align data structures to prevent misaligned memory accesses.
+// Utilize vectorized loads and stores to optimize memory bandwidth usage.
+// Investigate occupancy metrics; try optimizing register usage to improve them.

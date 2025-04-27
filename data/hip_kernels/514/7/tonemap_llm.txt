@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for values that would benefit from reuse, like d_cdf_norm.
+// Consider using texture memory for d_log_Y for better caching.
+// Coalesce accesses to d_x, d_y, and d_log_Y for improved memory throughput.
+// Use loop unrolling if appropriate in any part of the computation, particularly in ongoing iterations.
+// Ensure memory alignment to improve access speed for d_r_new, d_g_new, d_b_new.
+// Guarantee each thread processes aligned memory locations for optimal throughput.
+```

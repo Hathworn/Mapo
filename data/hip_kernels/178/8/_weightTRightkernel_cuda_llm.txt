@@ -1,0 +1,9 @@
+```
+// Precompute any repeated calculations and store them in local variables to reduce redundant computations.
+// Utilize shared memory or registers to reduce global memory access latency.
+// Consider memory coalescing to optimize global memory access patterns for improved performance.
+// Ensure that all kernel launches have the right configuration to maximize occupancy.
+// Align data accesses to natural boundaries where possible to enhance memory throughput.
+// Consider using __restrict__ properly to help the compiler with aliasing optimizations and enable better vectorization.
+// Check the use of the __syncthreads() barrier if data dependency arises among threads in the block.
+```

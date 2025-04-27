@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring that consecutive threads access consecutive elements in memory.
+// Use shared memory to minimize global memory access where possible.
+// Ensure that stride-1 access pattern is followed for efficient memory bandwidth usage.
+// Ensure grid and block dimensions are suitable for the target GPU architecture to maximize occupancy.
+// Use compile-time constants where possible to allow the compiler to optimize memory access patterns.
+```

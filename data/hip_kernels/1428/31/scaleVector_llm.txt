@@ -1,0 +1,6 @@
+```
+// Use shared memory to optimize data access and reduce global memory transactions
+// Adjust shared memory size according to the block size to maximize usage
+// Ensure synchronization across threads after loading to shared memory to prevent race conditions
+// Load data once to shared memory to reduce repeated global memory reads
+```

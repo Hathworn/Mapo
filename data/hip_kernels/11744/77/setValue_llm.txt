@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider using warp-level primitives for synchronization
+// Minimize divergent branches by removing conditions
+// Use atomic operations if multiple threads might write to the same global memory location
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for repeated values like MaxValue and MinValue to minimize global memory access.
+// Evaluate if loop unrolling or warp-level primitives could further enhance performance for predictable data patterns.
+// Ensure memory alignment of ShiftData array to reduce potential coalescing issues during access.
+// Monitor for bank conflicts when using shared memory if implemented, to maintain speed improvements.

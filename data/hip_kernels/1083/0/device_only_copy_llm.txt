@@ -1,0 +1,4 @@
+// Use coalesced memory access to improve memory throughput
+// Consider larger block sizes for better occupancy
+// Ensure input and output arrays are aligned to improve access speed
+// Prefetch data to shared memory if possible to reduce global memory accesses

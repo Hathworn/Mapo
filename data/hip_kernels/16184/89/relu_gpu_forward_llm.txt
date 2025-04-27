@@ -1,0 +1,4 @@
+// Use shared memory for blocks to reduce global memory accesses
+// Consider vectorized loads and stores for coalesced memory access
+// Optimize thread block size for better occupancy based on GPU architecture
+// Implement loop unrolling to decrease loop control overhead

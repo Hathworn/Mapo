@@ -1,0 +1,5 @@
+```
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations
+// Use shared memory to store row_sum values if accessed multiple times to reduce global memory accesses
+// Consider unrolling the loop if the value of N is known at compile time for performance improvement
+```

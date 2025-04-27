@@ -1,0 +1,3 @@
+// Optimize memory access by coalescing reads to delta and x arrays.
+// Use shared memory to reduce global memory access for mean and variance values.
+// Consider using atomic operations for variance_delta updates to avoid race conditions.

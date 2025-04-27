@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses and improve memory coalescing.
+// Ensure that memory accesses are coalesced; align data to warp size if possible.
+// Minimize divergence by ensuring threads in a warp follow the same execution path.
+// Use loop unrolling techniques if the number of iterations is known and constant.
+// Arrange data to increase the likelihood of cache hits, potentially improving cache locality.
+```

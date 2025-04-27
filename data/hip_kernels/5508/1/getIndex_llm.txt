@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency for d_mask and d_scan
+// Coalesce global memory accesses by aligning d_index, d_scan, and d_mask
+// Consider using warp shuffles to reduce divergence when calculating d_index
+// Minimize use of thread synchronization for better performance
+// Profile memory access patterns to identify further bottlenecks
+```

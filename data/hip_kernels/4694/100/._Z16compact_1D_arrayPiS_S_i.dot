@@ -1,0 +1,13 @@
+digraph "CFG for '_Z16compact_1D_arrayPiS_S_i' function" {
+	label="CFG for '_Z16compact_1D_arrayPiS_S_i' function";
+
+	Node0x558f290 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = mul i32 %10, %9\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp sgt i32 %13, 0\l  %15 = icmp slt i32 %13, %3\l  %16 = select i1 %14, i1 %15, i1 false\l  br i1 %16, label %17, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x558f290:s0 -> Node0x55909d0;
+	Node0x558f290:s1 -> Node0x5591410;
+	Node0x55909d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%17:\l17:                                               \l  %18 = zext i32 %13 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %21 = add nsw i32 %13, -1\l  %22 = zext i32 %21 to i64\l  %23 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %22\l  %24 = load i32, i32 addrspace(1)* %23, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %25 = icmp eq i32 %20, %24\l  br i1 %25, label %31, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x55909d0:s0 -> Node0x5591410;
+	Node0x55909d0:s1 -> Node0x5592780;
+	Node0x5592780 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%26:\l26:                                               \l  %27 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %22\l  %28 = load i32, i32 addrspace(1)* %27, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %29 = sext i32 %20 to i64\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %29\l  store i32 %28, i32 addrspace(1)* %30, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x5592780 -> Node0x5591410;
+	Node0x5591410 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```cpp
+// Use larger tiles for better memory coalescing if possible
+// Ensure TILE_WIDTH divides WIDTH evenly for avoiding bank conflicts
+// Merge __syncthreads() into loops where possible to reduce synchronization overhead
+// Prefetch data into shared memory to hide global memory latency
+// Consider using float4 for loading/storing to fully utilize memory bandwidth
+```

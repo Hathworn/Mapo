@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses for gradOutput to improve bandwidth efficiency.
+// Ensure that gradInput and gradOutput are aligned for coalesced access patterns.
+// Avoid bank conflicts by ensuring gradInput accesses are aligned across threads.
+// Consider prefetching weights to shared memory to reduce global memory access latency.
+// Use double buffering for ptr_gradOutput to hide memory access latency.
+// Optimize loop unrolling for the inner loops iterating over kH and kW for better performance.
+// Consider reordering thread assignments to better fit access patterns and hit cache lines.
+```

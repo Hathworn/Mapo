@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache X and Y values for better memory access patterns
+// Ensure memory coalescing by adjusting thread access patterns to contiguous memory locations
+// Use __restrict__ keyword with pointers to help compiler with aliasing optimizations
+// Evaluate warp optimization techniques for better utilization of GPU cores
+// Profile cache usage with different block sizes to find the optimal configuration
+```

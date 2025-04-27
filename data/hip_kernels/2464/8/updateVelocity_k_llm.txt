@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for vx and vy to reduce global memory accesses
+// Use loop unrolling for 'p' loop if 'lb' is known at compile time to increase performance
+// Prefetch vx and vy values to registers before the 'if (fi < dy)' condition for efficiency
+// Optimize pitch calculation if possible or align data to avoid misaligned memory accesses
+```

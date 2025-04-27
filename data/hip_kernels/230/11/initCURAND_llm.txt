@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access where possible
+// Consider coalesced access patterns for better memory throughput
+// Minimize divergence by aligning thread execution paths
+// Ensure vectorization by using appropriate data types
+// Use __syncthreads() to ensure memory consistency if needed
+```

@@ -1,0 +1,4 @@
+// Ensure memory coalescing by aligning accesses of global arrays
+// Consider using shared memory for commonly accessed data like 'dc' and 's'
+// Minimize conditional checks inside the kernel for better performance
+// Ensure that data is loaded into registers when possible for faster access

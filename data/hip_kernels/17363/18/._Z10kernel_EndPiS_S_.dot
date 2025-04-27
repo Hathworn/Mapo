@@ -1,0 +1,13 @@
+digraph "CFG for '_Z10kernel_EndPiS_S_' function" {
+	label="CFG for '_Z10kernel_EndPiS_S_' function";
+
+	Node0x642c060 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = load i32, i32 addrspace(1)* %2, align 4, !tbaa !7, !amdgpu.noclobber !5\l  %14 = icmp slt i32 %12, %13\l  br i1 %14, label %15, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x642c060:s0 -> Node0x642e7a0;
+	Node0x642c060:s1 -> Node0x642e830;
+	Node0x642e7a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%15:\l15:                                               \l  %16 = sext i32 %12 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %19 = icmp eq i32 %18, 1\l  br i1 %19, label %20, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x642e7a0:s0 -> Node0x642f230;
+	Node0x642e7a0:s1 -> Node0x642e830;
+	Node0x642f230 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%20:\l20:                                               \l  %21 = atomicrmw add i32 addrspace(1)* %1, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %22\l}"];
+	Node0x642f230 -> Node0x642e830;
+	Node0x642e830 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

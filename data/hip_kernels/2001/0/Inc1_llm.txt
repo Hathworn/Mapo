@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory reads and writes.
+// Ensure coalesced memory access patterns to improve memory bandwidth utilization.
+// Minimize the number of conditional statements in the kernel to avoid warp divergence.
+// Use loop unrolling for the inner loop to increase instruction level parallelism.
+// Verify memory alignment for optimal performance on the target architecture.
+// Profile the kernel to identify potential bottlenecks related to memory access.
+```

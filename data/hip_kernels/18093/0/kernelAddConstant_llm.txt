@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to reduce global memory accesses
+// Aggregate multiple operations to minimize memory bandwidth
+// Ensure memory coalescing for optimal global memory access patterns
+// Use asynchronous memory copies to overlap computation and data transfer
+// Align memory accesses to avoid memory access penalties
+// Evaluate the necessity of __syncthreads() for memory consistency
+```

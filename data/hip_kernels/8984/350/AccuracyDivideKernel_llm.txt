@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory accesses for optimal throughput
+// Minimize warp divergence by reducing branch instructions
+// Implement shared memory buffering if needed for frequent accesses
+// Align data structures to prevent uncoalesced memory accesses
+// Opt for atomic operations if modifying accuracy in parallel contexts
+// Consider asynchronous memory transfers to overlap I/O with computation
+```

@@ -1,0 +1,7 @@
+```
+// Group threads in warps to improve memory access patterns and efficiency
+// Use shared memory to reduce global memory accesses and improve latency
+// Coalesce global memory reads from d_in to maximize memory bandwidth
+// Consider loop unrolling for any operations inside the if condition to improve performance
+// Minimize usage of branching with alternative logic to improve warp execution efficiency
+```

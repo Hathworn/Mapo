@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced access to global memory by aligning halo and in-memory accesses.
+// Use shared memory to minimize repeated global memory accesses.
+// Avoid bank conflicts in shared memory by ensuring that shared memory accesses are appropriately aligned.
+// Consider using dynamic shared memory if the aperture size may vary.
+```

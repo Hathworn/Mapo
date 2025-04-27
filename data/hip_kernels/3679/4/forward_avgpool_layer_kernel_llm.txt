@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses when accumulating sum
+// Preload input data to registers to minimize latency
+// Consider loop unrolling for summation to increase instruction-level parallelism
+// Ensure memory alignment for input and output to maximize transaction efficiency
+// Evaluate using warp shuffle for reduction to avoid thread divergence
+```

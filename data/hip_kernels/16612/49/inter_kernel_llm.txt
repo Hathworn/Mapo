@@ -1,0 +1,8 @@
+```c
+// Ensure memory access patterns are coalesced to improve bandwidth usage
+// Use shared memory to cache frequently accessed portions of X and Y if possible
+// Reduce global memory accesses by storing intermediate results in registers
+// Consider using __restrict__ qualifier to help compiler optimize pointer aliasing
+// Avoid bank conflicts if shared memory is used
+// Consider loop unrolling if it significantly benefits the performance
+```

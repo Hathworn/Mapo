@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring pred, truth, delta, and error arrays are appropriately aligned
+// Minimize divergent branches by structuring conditionals to favor common paths
+// Ensure enough threads per block to fully utilize the GPU's occupancy
+// Use shared memory if possible to cache frequently accessed data within the block
+```

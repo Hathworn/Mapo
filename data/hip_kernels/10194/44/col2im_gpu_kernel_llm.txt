@@ -1,0 +1,9 @@
+```
+// Consider reducing global memory accesses by using shared memory for frequently accessed data
+// Ensure memory coalescing by having adjacent threads access adjacent memory locations
+// Minimize the usage of division/modulus operations within loops as they are computationally expensive
+// Prefetch data to registers to minimize latency from accessing global memory
+// Implement loop unrolling to decrease loop control overhead and increase instruction throughput
+// Explore the use of warp shuffle functions to reduce memory traffic for intra-warp communication
+// Align data structures to the memory boundary to enhance cache performance and reduce bank conflicts
+```

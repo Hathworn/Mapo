@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access pattern for x and mean arrays
+// Consider using shared memory for storing mean[filter] for improved access speed
+// Investigate the possibility of minimizing register pressure by optimizing the pow calculation
+// Consider unrolling loops to reduce loop overhead for better performance
+// Validate if the division by (spatial * batch - 1) can be optimized or pre-computed
+```

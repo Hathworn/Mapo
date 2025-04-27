@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure all accesses to shared memory are coalesced.
+// Unroll inner computation loop for increased performance.
+// Synchronize threads after loading data into shared memory.
+// Consider using float4 where applicable for coalesced memory accesses.
+```

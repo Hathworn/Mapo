@@ -1,0 +1,6 @@
+// Use shared memory to store edge data for faster access
+// Make sure to coalesce memory accesses to edgeArrayAux
+// Consider using warp-level primitives to reduce synchronization overhead
+// Optimize edge traversal by accessing consecutive edges in a single warp
+// Minimize divergence by ensuring all threads in a warp follow the same execution path
+// Reuse warpId calculation within loop to avoid redundant operations

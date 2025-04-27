@@ -1,0 +1,15 @@
+digraph "CFG for '_Z3bfsPK4edgePii' function" {
+	label="CFG for '_Z3bfsPK4edgePii' function";
+
+	Node0x4ce4d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = sext i32 %12 to i64\l  %14 = getelementptr inbounds %struct.edge, %struct.edge addrspace(1)* %0,\l... i64 %13, i32 0\l  %15 = load i32, i32 addrspace(1)* %14, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %16 = sext i32 %15 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !12, !amdgpu.noclobber\l... !5\l  %19 = getelementptr inbounds %struct.edge, %struct.edge addrspace(1)* %0,\l... i64 %13, i32 1\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !13, !amdgpu.noclobber\l... !5\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !12, !amdgpu.noclobber\l... !5\l  %24 = icmp eq i32 %18, %2\l  %25 = icmp eq i32 %23, -1\l  %26 = select i1 %24, i1 %25, i1 false\l  br i1 %26, label %27, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4ce4d20:s0 -> Node0x4cead80;
+	Node0x4ce4d20:s1 -> Node0x4ceae10;
+	Node0x4cead80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%27:\l27:                                               \l  %28 = add nsw i32 %2, 1\l  store i32 %28, i32 addrspace(1)* %22, align 4, !tbaa !12\l  br label %29\l}"];
+	Node0x4cead80 -> Node0x4ceae10;
+	Node0x4ceae10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = icmp eq i32 %18, -1\l  %31 = icmp eq i32 %23, %2\l  %32 = select i1 %30, i1 %31, i1 false\l  br i1 %32, label %33, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x4ceae10:s0 -> Node0x4ce9da0;
+	Node0x4ceae10:s1 -> Node0x4ce9df0;
+	Node0x4ce9da0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%33:\l33:                                               \l  %34 = add nsw i32 %2, 1\l  store i32 %34, i32 addrspace(1)* %17, align 4, !tbaa !12\l  br label %35\l}"];
+	Node0x4ce9da0 -> Node0x4ce9df0;
+	Node0x4ce9df0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  ret void\l}"];
+}

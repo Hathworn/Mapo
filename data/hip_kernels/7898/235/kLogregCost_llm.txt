@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Use shared memory to store intermediate results and reduce redundant global memory accesses.
+// Check if loop unrolling can be applied to iterate over `numOut` for better performance.
+// Align `probs` and `labels` accesses to ensure optimal global memory transactions.
+// Use warp synchronization to optimize `numMax` calculations if necessary.
+// Minimize divergent branches where possible within the kernel.
+```

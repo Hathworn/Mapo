@@ -1,0 +1,7 @@
+```
+// Leverage shared memory to reduce global memory accesses
+// Ensure coalesced memory access pattern for ingrad, outgrad, and indata
+// Consider thread block size that optimizes occupancy and memory throughput
+// Avoid bank conflicts in shared memory use
+// Use __restrict__ qualifiers if there are no aliasing issues
+```

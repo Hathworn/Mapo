@@ -1,0 +1,8 @@
+```
+// Consider coalesced access to global memory when accessing `a` and `sortpart`.
+// Ensure that `a2` is being written to in a coalesced manner.
+// Use shared memory if there are patterns of reuse in `a` or `sortpart` to reduce global memory accesses.
+// Minimize branch divergence in the condition `p < pini ? p : sortpart[p]`.
+// Check if using texture or surface memory can optimize access to `a` or `a2` if their access patterns suit.
+// Consider loop unrolling in scenarios where multiple operations would benefit and the loop boundary is known.
+```

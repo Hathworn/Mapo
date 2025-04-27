@@ -1,0 +1,5 @@
+// Use shared memory if multiple threads access the same data to reduce global memory access latency.
+// Ensure memory coalescing by organizing data so that consecutive threads access consecutive memory locations.
+// Consider using vectorized operations if applicable to improve throughput.
+// Balance the block and grid size to match the hardware architecture for optimal resource utilization.
+// Evaluate the use of warp shuffle operations for efficient intra-thread communication.

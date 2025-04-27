@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Load the weights in parallel into shared memory
+// Ensure proper synchronization with __syncthreads after loading into shared memory
+// Consider using warp level primitives for reducing the mean to further optimize shared memory usage
+// Minimize __syncthreads usage by optimizing thread block calculations
+// Opt for using atomic operations if feasible to reduce synchronization points
+// For broadcasting mean, ensure single global memory read for efficiency
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns to coalesce reads and writes
+// Minimize divergent branches to improve warp efficiency
+// Utilize shared memory to reduce global memory accesses if applicable
+// Ensure __syncthreads() where necessary to prevent race conditions
+// Consider using vectorized data types if advantageous for the architecture
+```

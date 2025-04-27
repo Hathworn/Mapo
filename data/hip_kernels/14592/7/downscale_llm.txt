@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache gradOutput_data for better performance
+// Minimize divergent branching by ensuring warp divergence is reduced
+// Use coalesced memory access patterns when possible for gradOutput_data
+// Ensure proper alignment of memory accesses for gradInput_data
+// Tune block and grid dimensions for optimal occupancy and performance
+// Explore using __restrict__ pointers for gradInput_data and gradOutput_data to improve memory bandwidth
+```

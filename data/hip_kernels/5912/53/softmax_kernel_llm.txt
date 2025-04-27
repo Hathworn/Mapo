@@ -1,0 +1,6 @@
+// Use __syncthreads to ensure all threads have written to shared memory before proceeding.
+// Consider using warp-level primitives like __shfl_xor_sync for faster data exchange.
+// Use atomic operations responsibly as they can create contention and slow down execution.
+// Minimize atomic operations where possible by restructuring code to reduce contention.
+// Ensure shared memory usage is within hardware limits for optimal performance.
+// Consider loop unrolling if n is small and predictable to reduce overhead in for loops.

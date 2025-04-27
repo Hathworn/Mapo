@@ -1,0 +1,7 @@
+```
+// Consider assessing if the empty kernel needs any computation.
+// If computation is needed, ensure coalesced memory access.
+// Use shared memory effectively if data reuse is possible.
+// Investigate the possibility of loop unrolling if loops are added.
+// Optimize any potential conditionals within the kernel to minimize divergence.
+```

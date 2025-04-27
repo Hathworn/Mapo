@@ -1,0 +1,9 @@
+```cpp
+// Consider optimizing shared memory usage by aligning data for coalesced memory access.
+// Ensure that TILE_SIZE is chosen to make full use of shared memory while minimizing bank conflicts.
+// Analyze and minimize shared memory synchronization (__syncthreads()) within loops to reduce overhead.
+// Consider loop unrolling inside the compute block to increase instruction level parallelism.
+// Ensure that A_elements and B_elements are aligned and padded appropriately for memory coalescing.
+// Optimize register use to keep frequently accessed data close to compute units.
+// Adjust memory access patterns to take advantage of spatial and temporal locality.
+```

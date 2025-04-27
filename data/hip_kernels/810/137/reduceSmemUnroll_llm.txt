@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to minimize global memory access
+// Ensure efficient boundary checks to eliminate unnecessary computations
+// Implement loop unrolling to reduce loop overhead
+// Use volatile to prevent compiler reordering affecting performance in warp reduction
+// Minimize syncthreads() usage to improve performance
+```

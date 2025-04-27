@@ -1,0 +1,8 @@
+```
+// Combine memory accesses to improve coalescing
+// Ensure arrays a, b, s, and c are appropriately aligned
+// Consider using shared memory if data reuse can be achieved
+// Minimize memory access latency by ensuring n is a multiple of the block size
+// Evaluate the benefit of using warp-synchronous programming for reduction if applicable
+// Opt for fewer branching conditions to reduce warp divergence
+```

@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for normalization_factor
+// Utilize shared memory for normalization_factor if accessed multiple times per block
+// Prefetch normalization_factor into registers when possible
+// Minimize divergence by ensuring warp-level execution paths remain aligned
+```

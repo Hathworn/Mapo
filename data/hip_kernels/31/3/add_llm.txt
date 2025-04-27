@@ -1,0 +1,7 @@
+```
+// Use blockIdx.x * blockDim.x + threadIdx.x for unique thread index
+// Use total threads to stride through the array
+// Consider using shared memory to cache data that is accessed multiple times
+// Coalesce global memory access by ensuring that consecutive threads access consecutive memory locations
+// Optimize memory access patterns to minimize memory access latency
+```

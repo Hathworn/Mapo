@@ -1,0 +1,8 @@
+```
+// Optimize memory access pattern to improve coalescing
+// Consider using shared memory to reduce global memory access latency
+// Align memory access to warp size to minimize bank conflicts
+// Ensure grid and block dimensions are chosen to maximize occupancy
+// Prefetch data to shared memory if multiple accesses are needed
+// Use memory padding if necessary to avoid bank conflicts
+```

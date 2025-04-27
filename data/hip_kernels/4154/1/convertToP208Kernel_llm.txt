@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses where possible
+// Ensure memory reads are coalesced by accessing consecutive memory locations
+// Perform loop unrolling for operations within the kernel to reduce instruction overhead
+// Try to balance the block size and grid size to optimize for the specific GPU architecture
+// Minimize divergent branching to improve warp execution efficiency
+```

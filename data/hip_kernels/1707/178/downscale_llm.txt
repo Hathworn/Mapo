@@ -1,0 +1,3 @@
+// Precompute scale_factor multiplication to reduce redundant computation in the kernel.
+// Use a temporary variable to accumulate results to optimize memory access.
+// Avoid recomputing loop-invariant expressions for better performance.

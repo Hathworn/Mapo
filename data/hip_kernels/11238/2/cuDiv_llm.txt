@@ -1,0 +1,6 @@
+```
+// Ensure arrays a, b, and result are allocated in unified memory
+// Use __restrict__ qualifier for pointers to help the compiler with optimizations
+// Allocate memory with hipMallocManaged for zero-copy access between CPU and GPU
+// Prefetch memory to GPU before kernel execution to reduce overhead
+```

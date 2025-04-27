@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access for loading mat array
+// Optimize shared memory usage by minimizing its size
+// Pre-compute indices[i % height] to avoid repeated calculation
+// Consider using warp-level primitives for further optimization
+// Ensure grid and block dimensions are optimal for the device
+```

@@ -1,0 +1,7 @@
+```
+// Load data into shared memory to reduce global memory accesses
+// Use loop unrolling to enhance memory coalescing
+// Ensure all threads complete their memory writes with __syncthreads()
+// Implement warp-shuffle reduction for further optimization if possible
+// Optimize for occupancy by carefully choosing DP_BLOCKSIZE
+```

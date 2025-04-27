@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access and improve memory bandwidth usage.
+// Optimize index calculation by reducing operations within the loop to improve performance.
+// Ensure proper usage of __syncthreads() to synchronize threads before accessing shared memory.
+// Consider using loop unrolling for small fixed-size loops to reduce loop overhead.
+// Consider using warp-level primitives to optimize min finding within a warp.
+```

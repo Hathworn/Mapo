@@ -1,0 +1,5 @@
+// Ensure coalesced global memory access for better performance.
+// Use shared memory to cache repetitive data such as mean and var if beneficial.
+// Consider using vectorized loads/stores for float4 or float2 when accessing global memory.
+// Align data structures in memory to improve memory transaction efficiency.
+// Consider loop unrolling if applicable to reduce loop overhead and improve pipelining efficiency.

@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses to Fi for improved memory throughput
+// Preload ABC, Ui_t, and Ui_tminusdt into shared memory to reduce global memory accesses
+// Reduce the number of conditional checks in the loop unrolling by ensuring maxNumForces is a multiple of 4
+// Ensure memory access patterns for Ri are coalesced for better performance
+// Consider the use of warp shuffles instead of separate variable accumulation for force components
+```

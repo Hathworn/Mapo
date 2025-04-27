@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory access patterns for mat_a and mat_b
+// Use shared memory to store tile data from mat_a and mat_b to reduce global memory access
+// Ensure that the grid and block dimensions are optimized for your target GPU
+// Evaluate using loop unrolling to increase the throughput of the kernel
+```

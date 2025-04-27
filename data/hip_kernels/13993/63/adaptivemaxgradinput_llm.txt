@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by aligning data access patterns of threads
+// Consider using shared memory if there's data reuse within warps
+// Minimize divergent branching within the loop to improve warp efficiency
+// Try to increase arithmetic intensity by optimizing calculations outside the loop
+// Consider loop unrolling manually or using compiler directives for innermost loops
+// Reduce the number of atomic operations if possible by reworking the algorithm
+```

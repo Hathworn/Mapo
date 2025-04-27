@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access and improve data locality
+// Ensure coalesced memory access patterns for both mat_in and mat_out
+// Optimize block size and grid configuration to increase occupancy
+// Consider padding shared memory arrays to prevent bank conflicts
+// Utilize __syncthreads() efficiently to synchronize threads before accessing shared memory
+```

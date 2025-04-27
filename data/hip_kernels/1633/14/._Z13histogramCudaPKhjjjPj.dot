@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13histogramCudaPKhjjjPj' function" {
+	label="CFG for '_Z13histogramCudaPKhjjjPj' function";
+
+	Node0x5d71370 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %7, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = getelementptr i8, i8 addrspace(4)* %6, i64 6\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 2, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = mul i32 %15, %19\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %22 = add i32 %20, %21\l  %23 = icmp ult i32 %14, %2\l  %24 = icmp ult i32 %22, %3\l  %25 = select i1 %23, i1 %24, i1 false\l  br i1 %25, label %26, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5d71370:s0 -> Node0x5d74de0;
+	Node0x5d71370:s1 -> Node0x5d74e70;
+	Node0x5d74de0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%26:\l26:                                               \l  %27 = mul i32 %22, %1\l  %28 = add i32 %27, %14\l  %29 = zext i32 %28 to i64\l  %30 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %29\l  %31 = load i8, i8 addrspace(1)* %30, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %32 = zext i8 %31 to i64\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %32\l  %34 = atomicrmw add i32 addrspace(1)* %33, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %35\l}"];
+	Node0x5d74de0 -> Node0x5d74e70;
+	Node0x5d74e70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  ret void\l}"];
+}

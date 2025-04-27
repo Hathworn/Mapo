@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure thread block size is optimal for shared memory utilization
+// Consider coalesced memory accesses when loading from global to shared memory
+// Reduce bank conflicts within shared memory by padding if necessary
+// Use __syncthreads() to ensure all threads have loaded their data before computation
+```

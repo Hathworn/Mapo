@@ -1,0 +1,5 @@
+```
+// Improve memory coalescing for accessing 'lifter_coeffs' by ensuring threads access consecutive memory locations.
+// Consider using shared memory for 'lifter_coeffs' if its size allows to increase access speed.
+// Use shared memory for 'log_energy' only if it fits and can improve access speed.
+```

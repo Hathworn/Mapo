@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access count
+// Ensure coalesced memory access by adjusting data layout or thread access pattern
+// Use constant memory for frequently accessed read-only values like EPS
+// Minimize thread divergence by grouping EPS comparison within warp
+```

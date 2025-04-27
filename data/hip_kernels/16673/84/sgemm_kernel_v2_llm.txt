@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access and improve memory coalescing
+// Ensure data is accessed in a coalesced manner to maximize bandwidth
+// Consider padding shared memory to prevent bank conflicts
+// Align data structures to cache lines to reduce cache misses
+// Investigate use of vectorized loads to accelerate memory operations
+// Adjust BLOCK_DIM for optimal occupancy and memory bandwidth usage
+```

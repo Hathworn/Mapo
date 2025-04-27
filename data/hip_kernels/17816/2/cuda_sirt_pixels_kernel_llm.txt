@@ -1,0 +1,7 @@
+```
+// Use shared memory for partial sums to reduce global memory access
+// Assuming blockDim.x <= 256, adjust shared memory allocation accordingly
+// Ensure all threads have computed their partial sum with __syncthreads()
+// Utilize reduction within a block to minimize global memory usage
+// Only thread 0 should write the result back, reducing redundant updates
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access for frequently accessed data
+// Optimize memory coalescing by ensuring that accesses to devL, devA, and devB are coalesced
+// Use constant memory for the ab_min, ab_max, and ab_range values as they do not change per thread
+// Consider loop unrolling if possible when processing larger datasets for improved efficiency
+```

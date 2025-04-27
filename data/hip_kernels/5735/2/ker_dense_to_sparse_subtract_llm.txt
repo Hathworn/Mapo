@@ -1,0 +1,6 @@
+```c
+// Consider coalesced memory access patterns to improve memory access efficiency
+// Ensure idx is stored in shared memory if it is accessed multiple times to improve access speed
+// Make sure src and trg are aligned to avoid uncoalesced memory accesses
+// Use warp shuffle or warp voting functions if applicable to handle reduction within a warp
+```

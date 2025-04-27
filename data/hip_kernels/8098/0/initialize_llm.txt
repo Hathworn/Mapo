@@ -1,0 +1,7 @@
+```
+// Use shared memory if reusing data across threads
+// Ensure memory coalescing by aligning data access with memory boundaries
+// Minimize global memory access by fetching data into registers when possible
+// Avoid warp divergence by reducing conditional branching
+// Optimize block size for GPU occupancy and memory bandwidth
+```

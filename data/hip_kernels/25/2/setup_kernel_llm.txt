@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access by using linear thread indexing
+// Consider using shared memory if multiple threads use the same state
+// Use more blocks to maximize device occupancy
+// Profile to find optimal block size for this kernel
+```

@@ -1,0 +1,7 @@
+```cpp
+// Ensure data is coalesced for better memory access patterns
+// Reduce register usage by minimizing the scope of variables
+// Use shared memory if frequent access to the same data is needed by different threads
+// Consider occupancy to ensure effective use of all SMs
+// Prefetch data if the kernel is memory-bound
+```

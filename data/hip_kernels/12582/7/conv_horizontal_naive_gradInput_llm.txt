@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses to improve bandwidth utilization.
+// Use shared memory to cache portions of w or dy if they are repeatedly accessed.
+// Ensure dx is aligned to avoid misaligned memory accesses.
+// Evaluate if accessing dy in a coalesced manner is possible for incremental memory throughput.
+// Investigate whether loop unrolling can be employed to optimize the inner loop.
+```

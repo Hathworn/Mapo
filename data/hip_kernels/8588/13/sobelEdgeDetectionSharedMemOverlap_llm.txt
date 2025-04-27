@@ -1,0 +1,4 @@
+// Consider padding the shared memory to reduce bank conflicts.
+// Use loop unrolling for fixed-size operations where applicable.
+// Load entire blocks of input data at once to optimize memory transactions.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.

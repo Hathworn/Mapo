@@ -1,0 +1,6 @@
+```
+// Consider using shared memory efficiently to minimize redundant global memory access.
+// Ensure coalesced memory access patterns for optimal performance.
+// Leverage warp-level primitives for reduction to reduce synchronization overhead.
+// Minimize __syncthreads() usage to improve warp efficiency when possible.
+```

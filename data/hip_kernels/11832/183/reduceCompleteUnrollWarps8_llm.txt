@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning global memory reads
+// Consider using shared memory to store intermediate results
+// Use loop unrolling to minimize loop overhead
+// Ensure all threads in a warp are converged for efficient execution
+// Use __syncthreads() judiciously to avoid unnecessary synchronization
+// Use volatile keyword for variables updated within a warp
+// Optimize the block size to be a multiple of warp size (e.g., 32)
+```

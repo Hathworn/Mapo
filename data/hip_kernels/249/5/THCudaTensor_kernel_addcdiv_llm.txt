@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access by ensuring src1 and src2 are accessed in a coalesced manner
+// Utilize shared memory to cache frequently accessed data to reduce global memory bandwidth
+// Ensure the grid and block dimensions are chosen to maximize occupancy and hide memory latency
+// Avoid warp divergence by ensuring all threads in a warp take the same execution path
+// Minimize register usage per thread to increase occupancy and allow more warps to run concurrently
+```

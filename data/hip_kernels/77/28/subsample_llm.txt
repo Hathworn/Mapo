@@ -1,0 +1,6 @@
+```
+// Use shared memory to load input data in chunks to reduce global memory access.
+// Align data to coalesced memory access patterns in ptr_input to improve performance.
+// Ensure input data is accessed in a coalesced manner by threads in the same warp.
+// Consider using atomic operations if needed to handle concurrent writes to output memory.
+```

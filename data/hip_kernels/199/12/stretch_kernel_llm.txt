@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access.
+// Align memory access to ensure coalesced reads and writes for increased memory throughput.
+// Use constant memory for frequently read data that does not change over the runtime to speed up access.
+// Reduce divergent branches by restructuring conditions to enhance warp execution efficiency.
+// Minimize bank conflicts when using shared memory to avoid serialization of memory accesses.
+```

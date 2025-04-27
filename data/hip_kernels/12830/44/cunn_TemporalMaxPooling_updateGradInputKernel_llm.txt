@@ -1,0 +1,8 @@
+```
+// Use shared memory for indices to reduce global memory access
+// Load gradOutput_data and indices_data into shared memory before loop to improve memory access
+// Unroll the loop over feat to increase instruction-level parallelism
+// Align data accesses to coalesce memory transactions
+// Consider using texture memory if indices have spatial locality
+// Consider double-buffering for gradInput_data updates to hide memory latency
+```

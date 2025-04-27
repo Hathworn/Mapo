@@ -1,0 +1,8 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory locations
+// Minimize bank conflicts in shared memory by appropriately padding arrays if necessary
+// Use vectorized data types where possible to increase memory transaction efficiency
+// Optimize the use of registers by minimizing the number of variables and reusing them
+// Enable compiler optimizations flags for better instruction scheduling and resource allocation
+```

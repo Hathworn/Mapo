@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for the 'in' array to improve data locality.
+// Coalesce memory access by ensuring consecutive threads access consecutive memory locations in 'in' and 'out' arrays.
+// Evaluate if factor could be stored in a register to reduce memory read latency.
+// Ensure 'gid' calculation is optimal and doesn't introduce unnecessary computations.
+```

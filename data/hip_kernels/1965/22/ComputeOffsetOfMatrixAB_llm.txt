@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache row_sum and col_sum for reduced global memory access.
+// Ensure coalesced access to global memory for output by optimizing thread and block indexing.
+// Minimize thread divergence within the for loop to improve warp execution efficiency.
+```

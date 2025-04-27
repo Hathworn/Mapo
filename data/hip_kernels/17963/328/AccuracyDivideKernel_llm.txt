@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce the frequency of global memory accesses
+// Initialize shared memory from global memory only once per block
+// Use __syncthreads() to ensure all threads have the updated shared memory value
+// Perform calculations in shared memory to reduce access latency
+// Write results from shared memory back to global memory with minimized contention
+```

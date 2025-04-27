@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses for diag_value
+// Minimize conditional checks within kernel to improve warp execution efficiency
+// Coalesced memory accesses could be ensured by restructuring matrix storage layout
+// Investigate using atomic operations for concurrent writes if needed
+// Evaluate thread block size for optimal occupancy and memory latency
+```

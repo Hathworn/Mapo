@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns by ensuring consecutive threads access consecutive memory locations.
+// Utilize shared memory to reduce global memory accesses and improve data reuse within thread blocks.
+// Evaluate the use of __restrict__ qualifiers to assist the compiler with alias analysis and potentially improve memory load/store efficiency.
+// Adjust the block size and grid size for better occupancy and ensure maximum utilization of the streaming multiprocessors.
+// Explore the possibility of using memory prefetching directives or functions to hide memory access latencies.
+```

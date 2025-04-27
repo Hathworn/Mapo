@@ -1,0 +1,5 @@
+// Use coalesced memory access to improve bandwidth utilization
+// Consider using shared memory to reduce global memory accesses
+// Ensure memory alignment to optimize memory transactions
+// Evaluate the use of __restrict__ pointers to inform the compiler about non-aliasing 
+// Minimize warp divergence by ensuring uniform branch paths within the warp

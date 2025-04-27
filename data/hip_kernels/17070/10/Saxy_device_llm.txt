@@ -1,0 +1,4 @@
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Minimize conditional statements inside the kernel for better performance.
+// Consider shared memory usage if data reuse within a warp is possible.
+// Ensure data is properly aligned to improve memory access efficiency.

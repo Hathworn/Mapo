@@ -1,0 +1,4 @@
+// Consider coalescing global memory access for input_output array
+// Minimize bank conflicts in shared memory access
+// Use __syncthreads() judiciously to avoid unnecessary synchronization
+// Investigate if kernel fission could improve performance by parallelizing work across multiple kernels

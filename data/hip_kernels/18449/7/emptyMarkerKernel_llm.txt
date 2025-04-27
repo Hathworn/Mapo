@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifiers if pointers are used in future kernel functions to improve memory access performance.
+// Optimize data layout in structures for coalesced memory access by grouping frequently accessed data.
+// Attempt to minimize global memory accesses and prioritize shared memory usage where applicable.
+// Employ loop unrolling techniques if applicable to reduce instruction overhead in future kernel functions.
+// Avoid bank conflicts in shared memory by padding data structures appropriately.
+```

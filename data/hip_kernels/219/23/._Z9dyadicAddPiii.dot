@@ -1,0 +1,13 @@
+digraph "CFG for '_Z9dyadicAddPiii' function" {
+	label="CFG for '_Z9dyadicAddPiii' function";
+
+	Node0x57dd120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = icmp sgt i32 %2, 0\l  br i1 %4, label %5, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x57dd120:s0 -> Node0x57dd810;
+	Node0x57dd120:s1 -> Node0x57dd8a0;
+	Node0x57dd810 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e36c5570",label="{%5:\l5:                                                \l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = shl nuw nsw i32 %2, 1\l  %15 = add nuw nsw i32 %13, 1\l  %16 = add i32 %15, %12\l  %17 = mul i32 %14, %16\l  %18 = add i32 %17, -1\l  %19 = icmp slt i32 %18, %1\l  br i1 %19, label %20, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x57dd810:s0 -> Node0x57df530;
+	Node0x57dd810:s1 -> Node0x57dd8a0;
+	Node0x57df530 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%20:\l20:                                               \l  %21 = sext i32 %18 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %24 = sub nsw i32 %18, %2\l  %25 = sext i32 %24 to i64\l  %26 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %25\l  %27 = load i32, i32 addrspace(1)* %26, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %28 = add nsw i32 %27, %23\l  store i32 %28, i32 addrspace(1)* %22, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x57df530 -> Node0x57dd8a0;
+	Node0x57dd8a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

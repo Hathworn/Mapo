@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access if necessary
+// Ensure coalesced memory access for `X` to improve bandwidth usage
+// Consider using vectorized operations for `X` with appropriate alignment
+// Optimize block and grid dimensions to improve utilization and avoid idle threads

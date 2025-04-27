@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache portions of the 'normDistPrefixSum' and 'origDist' arrays to reduce global memory accesses.
+// Consider coalescing memory access patterns, particularly for 'dest' array writes, to boost memory throughput.
+// Optimize the binary search function if possible by reducing branching to further minimize thread divergence.
+// Explore thread block size tuning to ensure optimal balance between occupancy and memory access efficiency.
+```

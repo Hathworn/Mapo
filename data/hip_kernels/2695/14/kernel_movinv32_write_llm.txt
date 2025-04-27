@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses if possible
+// Align memory accesses to improve coalescing
+// Consider unrolling loop to reduce instruction overhead
+// Evaluate the use of asynchronous memory copies for overlapping computation and data transfer
+// Ensure end_ptr is correctly aligned to prevent access violations
+// Potentially reduce block size to increase occupancy if register usage is high
+```

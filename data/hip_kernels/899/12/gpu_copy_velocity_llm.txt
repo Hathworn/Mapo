@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory accesses for g_group_contents
+// Ensure data for g_vx_i, g_vy_i, g_vz_i is accessed with coalescing
+// Align g_vx_o, g_vy_o, g_vz_o for optimal write performance
+// Minimize bank conflicts in shared memory usage if applicable
+// Use const restrict to help with compiler optimization
+// Balance the workload across threads efficiently
+```

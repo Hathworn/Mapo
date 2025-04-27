@@ -1,0 +1,5 @@
+// Consider memory coalescing by ensuring that threads access contiguous memory locations in delta and prev_delta.
+// Explore the possibility of using shared memory to store parts of the delta or indexes arrays for faster access.
+// Reduce global memory transactions by combining reads where possible.
+// Minimize divergence by restructuring conditional statements within the loops, especially the checks on out_w and out_h.
+// Ensure that memory accesses are aligned to 32-byte boundaries for optimal performance.

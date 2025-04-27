@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store block-specific data to reduce global memory accesses.
+// Optimize the computation of thread_id to minimize arithmetic operations per thread.
+// Minimize the use of printf in device code as it may introduce significant overhead.
+// If printf calls are necessary, consider limiting them to a specific condition, such as thread_id == 0.
+// Use __syncthreads() where necessary to avoid race conditions when accessing shared memory.
+```

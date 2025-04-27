@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns for the u, v, and src arrays.
+// Consider using shared memory to reduce global memory accesses.
+// Optimize the use of atomicAdd which may become a bottleneck due to contention.
+// Assess occupancy and block size for better resource utilization.
+// Minimize the divergence by ensuring all threads participate similarly in conditional branches.
+// If possible, convert float operations to half to leverage hardware support for faster computation.
+```

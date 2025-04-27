@@ -1,0 +1,9 @@
+```
+// Avoid bank conflicts by optimizing data access patterns
+// Coalesce global memory accesses for better performance
+// Use shared memory to reduce repeated global memory access if applicable
+// Unroll loops to improve efficiency when iterating over fixed-size arrays
+// Minimize arithmetic operations in the if-block by precomputing values
+// Consider using textures or a read-only cache for the xMin, yMin, yMax arrays
+// Try loop invariant code motion to move invariant computations out of loops
+```

@@ -1,0 +1,10 @@
+```c
+// Ensure coalesced memory accesses for input, kernel, and output arrays
+// Utilize shared memory to reduce global memory reads
+// Merge loops to improve memory access patterns and data locality
+// Balance the workload among threads using batch, kid, and nkids variables
+// Minimize divergence by ensuring threads work on adjacent elements
+// Use __syncthreads() carefully to avoid write-after-read hazards
+// Optimize thread block dimensions to fully utilize shared memory
+// Consider loop unrolling for small kernel sizes to reduce loop overhead
+```

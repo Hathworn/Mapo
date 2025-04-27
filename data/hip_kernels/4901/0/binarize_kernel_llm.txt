@@ -1,0 +1,6 @@
+```c
+// Ensure memory coalescing by accessing global memory sequentially
+// Consider using shared memory to cache data for reuse within a block
+// Evaluate the occupancy to ensure enough threads are launched for effective pipelining
+// Use a stride loop to increase data reuse and reduce global memory load latency
+```

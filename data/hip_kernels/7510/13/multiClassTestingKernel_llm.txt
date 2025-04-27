@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses
+// Ensure memory coalescing by proper indexing to reduce cache misses
+// Evaluate loop unrolling further for the inner loop for performance gain
+// Use warp-level primitives for optimizing reduction of maximum values
+// Preload repeated values like instanceStart into registers to minimize recalculation

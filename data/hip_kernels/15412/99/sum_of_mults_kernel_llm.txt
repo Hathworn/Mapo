@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access
+// Consider memory coalescing by aligning data access patterns
+// Minimize divergent branching within warp
+// Evaluate using float4 to perform operations on four elements at once
+// Prefetch data to registers when possible to reduce latency

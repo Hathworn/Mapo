@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns by ensuring coalesced reads for pred, truth, delta, and error arrays.
+// Use shared memory to reduce redundant global memory access and latency.
+// Consider using warp-level primitives for further optimization on data reduction tasks.
+// Evaluate if using vectorized loads and stores could improve performance on current GPU architecture.
+// Profile to check if occupancy is maximized and ensure optimal block and grid size configuration.
+```

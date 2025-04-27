@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning global memory access patterns
+// Reduce branch divergence by ensuring threads within a warp follow the same execution path
+// Consider using memory padding to avoid bank conflicts in shared memory
+// Prefetch neighboring cells into registers to reduce shared memory accesses
+// Use loop unrolling for operations on neighboring cells to improve performance
+// Minimize use of atomic operations, consider alternative synchronization methods if possible
+```

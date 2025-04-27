@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if multiple threads access overlapping data
+// Use coalesced memory access patterns for better memory throughput
+// Align memory access to 128 or 256 bytes when possible to utilize full bandwidth
+// Investigate the use of __ldg() for read-only data access to cache data efficiently
+ // Explore warp-level primitives to reduce warp divergence
+```

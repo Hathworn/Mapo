@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for d_Data to improve memory throughput
+// Use vectorized data types like float4 for loading d_Data to utilize larger memory transactions
+// Preload data for constant memory when applicable to maximize use of fast memory
+// Aim to reduce global memory transactions by keeping reused data in registers when possible
+// Ensure kernels are fully utilized by optimizing block and grid size to match GPU architecture
+// Reorder computations to minimize warp divergence within the kernel execution
+// Experiment with loop unrolling for small loops to decrease loop overhead
+```

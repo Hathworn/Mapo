@@ -1,0 +1,15 @@
+digraph "CFG for '_Z6addIncPjS_iS_' function" {
+	label="CFG for '_Z6addIncPjS_iS_' function";
+
+	Node0x63e32d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = zext i32 %5 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !9, !invariant.load !8\l  %13 = zext i16 %12 to i32\l  %14 = shl i32 %5, 1\l  %15 = mul i32 %14, %13\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !10\l  %17 = add i32 %15, %16\l  %18 = icmp slt i32 %17, %2\l  br i1 %18, label %19, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x63e32d0:s0 -> Node0x63e5c60;
+	Node0x63e32d0:s1 -> Node0x63e5cf0;
+	Node0x63e5c60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%19:\l19:                                               \l  %20 = sext i32 %17 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !4, !amdgpu.noclobber\l... !8\l  %23 = add i32 %22, %8\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %20\l  store i32 %23, i32 addrspace(1)* %24, align 4, !tbaa !4\l  br label %25\l}"];
+	Node0x63e5c60 -> Node0x63e5cf0;
+	Node0x63e5cf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = add i32 %17, %13\l  %27 = icmp ult i32 %26, %2\l  br i1 %27, label %28, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x63e5cf0:s0 -> Node0x63e6950;
+	Node0x63e5cf0:s1 -> Node0x63e69a0;
+	Node0x63e6950 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%28:\l28:                                               \l  %29 = zext i32 %26 to i64\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %29\l  %31 = load i32, i32 addrspace(1)* %30, align 4, !tbaa !4\l  %32 = add i32 %31, %8\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %29\l  store i32 %32, i32 addrspace(1)* %33, align 4, !tbaa !4\l  br label %34\l}"];
+	Node0x63e6950 -> Node0x63e69a0;
+	Node0x63e69a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  ret void\l}"];
+}

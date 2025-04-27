@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if data reuse occurs across threads 
+// Ensure memory accesses are aligned with warp boundaries for better coalescing
+// Minimize divergent branching by ensuring all threads in a warp follow the same execution path 
+// Optimize data transfer between host and device where applicable
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for the delta array to reduce global memory access.
+// Minimize index calculations by precomputing indices that are reused.
+// Utilize loop unrolling techniques to decrease loop overhead and potentially increase performance.
+// Evaluate if accessing variance[i] multiple times can be optimized through caching in registers.

@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to store 'W', 'A', and 'B' to reduce global memory access.
+// Load necessary data into registers to minimize multiple global memory reads.
+// Ensure coalesced memory access patterns when accessing global memory arrays 'A' and 'B'.
+// Use __syncthreads() if data dependencies exist between threads sharing data in shared memory.
+```

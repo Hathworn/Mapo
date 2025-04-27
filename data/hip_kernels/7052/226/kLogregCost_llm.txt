@@ -1,0 +1,7 @@
+```
+// Align data types for coalesced memory access
+// Use shared memory if there is data re-use within the thread block
+// Consider using __restrict__ qualifiers for pointers to aid compiler optimizations
+// Optimize loop unrolling by allowing the compiler to unroll for small fixed-size loops
+// Reduce branch divergence by reordering conditional checks if possible
+```

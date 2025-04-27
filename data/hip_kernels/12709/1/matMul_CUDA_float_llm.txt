@@ -1,0 +1,7 @@
+```
+// Use shared memory for tiles of input matrices to improve memory access patterns.
+// Use coalesced memory accesses in global memory while reading input matrices.
+// Consider loop unrolling to reduce loop overhead in the accumulation process.
+// Minimize bank conflicts in shared memory by ensuring data is aligned properly.
+// Balance workload across threads to utilize more computational resources.
+```

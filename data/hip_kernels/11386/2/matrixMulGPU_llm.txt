@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Load data into shared memory to exploit data locality.
+// Synchronize threads after loading shared memory to ensure all data is available.
+// Use shared memory to accumulate partial results efficiently.
+// Synchronize threads before each new iteration to ensure the previous computations are completed.
+```

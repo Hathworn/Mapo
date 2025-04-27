@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring contiguous threads access contiguous memory locations
+// Consider using shared memory more efficiently to reduce bank conflicts
+// Minimize number of __syncthreads() to only necessary points
+// Use warp-synchronous programming when possible for reductions
+// Align the shared memory accesses for coalescing
+```

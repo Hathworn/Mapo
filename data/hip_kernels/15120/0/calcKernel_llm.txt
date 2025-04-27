@@ -1,0 +1,6 @@
+// Consider coalescing memory access to d_in and d_out to improve memory throughput.  
+// Avoid branch divergence in the 'if' statement by processing threads outside range differently.  
+// Use shared memory if there are redundant calculations for gid within blocks to reduce global memory access.  
+// Optimize pow function by approximating it with faster math operations if precision allows.  
+// Ensure NUM_THREADS aligns with block size for optimal thread occupancy.  
+// Prefetch input data to L2 cache if possible, depending on usage patterns outside kernel.

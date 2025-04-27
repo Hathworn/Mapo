@@ -1,0 +1,4 @@
+// Consider coalesced memory access for d_Data and d_Result to improve memory bandwidth utilization.
+// Use shared memory if frequent reuse of data elements from d_Data occurs within the same block.
+// Minimize conditional checks within the kernel to reduce thread divergence.
+// Ensure alignment of memory allocations to optimize hardware access.

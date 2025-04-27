@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access for g_uquery and g_vpointset to improve memory bandwidth.
+// Consider using float4 for vectorized memory loads.
+// Reduce thread divergence by minimizing conditional statements.
+// Ensure that shared memory access is well-coalesced.
+// Reuse loaded data in registers whenever possible to reduce redundant memory access.
+// Consider using warp-level primitives to reduce synchronization overhead.
+```

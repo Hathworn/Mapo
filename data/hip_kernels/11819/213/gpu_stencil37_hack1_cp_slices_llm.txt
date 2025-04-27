@@ -1,0 +1,4 @@
+// Consider using shared memory for columns as well for faster access.
+// Use vectorized loads/stores where possible to reduce memory transaction overhead.
+// Ensure coalesced memory access patterns for dst and shared_slices to improve bandwidth utilization.
+// Avoid excessive syncthreads calls; ensure minimum synchronization for better performance.

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for data if there's reuse across threads
+// Align data access for coalesced memory reads
+// Minimize divergent branches by organizing data layout
+// Profile memory access patterns to ensure efficient use of L2 cache
+// Use __ldg() for read-only data to optimize memory reads if applicable
+// Reduce memory access latency by prefetching data into registers
+```

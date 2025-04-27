@@ -1,0 +1,3 @@
+// Cache current block offset in Qi_gdof for reuse to reduce redundant calculations.
+// Fuse loops for updating Qi_gdof to decrease array accesses and optimize memory bandwidth usage.
+// Consider using shared memory for frequently accessed data to reduce global memory access time.

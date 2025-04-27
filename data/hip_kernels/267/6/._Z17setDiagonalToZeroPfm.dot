@@ -1,0 +1,10 @@
+digraph "CFG for '_Z17setDiagonalToZeroPfm' function" {
+	label="CFG for '_Z17setDiagonalToZeroPfm' function";
+
+	Node0x49d6f60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = mul i32 %8, %7\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = icmp ult i64 %12, %1\l  br i1 %13, label %14, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x49d6f60:s0 -> Node0x49d8ed0;
+	Node0x49d6f60:s1 -> Node0x49d8f60;
+	Node0x49d8ed0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = trunc i64 %1 to i32\l  %16 = mul i32 %11, %15\l  %17 = add i32 %16, %11\l  %18 = sext i32 %17 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  store float 0.000000e+00, float addrspace(1)* %19, align 4, !tbaa !7\l  br label %20\l}"];
+	Node0x49d8ed0 -> Node0x49d8f60;
+	Node0x49d8f60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

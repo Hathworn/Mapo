@@ -1,0 +1,3 @@
+// Use __restrict__ pointers to indicate no aliasing for state and seeds arrays
+// Prefer shared memory for frequently accessed data within blocks
+// Optimize memory access by ensuring seeds are accessed in a coalesced manner

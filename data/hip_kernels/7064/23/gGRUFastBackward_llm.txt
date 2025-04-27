@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Prefetch data into registers to decrease the number of memory accesses.
+// Align memory accesses to utilize coalesced memory transactions.
+// Use __restrict__ qualifiers to help the compiler optimize memory access.
+// Minimize branch divergence by structuring branching logic to be more uniform.
+// Consider loop unrolling to increase instruction-level parallelism.
+// Use atomic operations judiciously as they can serialize threads and reduce performance.
+```

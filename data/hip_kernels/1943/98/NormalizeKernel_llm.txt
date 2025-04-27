@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache normalization_factor for coalesced access
+// Optimize memory access pattern by aligning data with warp boundaries
+// Minimize bank conflicts by utilizing padding in shared memory
+// Preload contiguous memory regions to improve cache utilization
+// Consider using texture memory for better spatial locality
+```

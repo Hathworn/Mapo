@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for reading x and writing dx.
+// Use warp-level primitives for reduction to improve performance.
+// Ensure the use of shared memory is optimal and does not exceed its capacity.
+// Minimize memory divergence among threads in reading and writing operations.
+// Check if using float4 or similar vectorized types for x and dx can improve memory bandwidth.
+```

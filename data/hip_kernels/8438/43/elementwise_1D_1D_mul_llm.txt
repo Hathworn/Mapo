@@ -1,0 +1,4 @@
+// Use shared memory to cache input data and reduce global memory accesses  
+// Coalesce global memory accesses by ensuring sequential threads access sequential memory locations  
+// Optimize block and grid sizes to maximize occupancy while minimizing memory latency  
+// Consider loop unrolling to improve instruction-level parallelism  

@@ -1,0 +1,5 @@
+// Ensure memory access is coalesced for better performance.
+// Avoid repeated map index computations.
+// Minimize thread divergence by separating out conditional operations.
+// Use shared memory if applicable for gathering data within a block.
+// Consider occupancy-based adjustments to block size for optimal resource utilization.

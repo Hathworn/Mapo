@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for mat and tgtMat to improve memory throughput.
+// Ensure that vec is accessed in a way that maximizes cache hit rates.
+// Evaluate the grid and block dimensions to find the optimal configuration for the target hardware.
+// Use shared memory if matrix or vector data reuse can be identified to reduce global memory access.
+// Check for bank conflicts in shared memory and align data accordingly if shared memory is utilized.
+// Minimize divergent branches within the loop by consistently iterating over i.
+```

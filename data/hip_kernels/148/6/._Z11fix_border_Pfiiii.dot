@@ -1,0 +1,20 @@
+digraph "CFG for '_Z11fix_border_Pfiiii' function" {
+	label="CFG for '_Z11fix_border_Pfiiii' function";
+
+	Node0x5fa53b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %4\l  br i1 %15, label %16, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x5fa53b0:s0 -> Node0x5fa7240;
+	Node0x5fa53b0:s1 -> Node0x5fa72d0;
+	Node0x5fa7240 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%16:\l16:                                               \l  %17 = freeze i32 %14\l  %18 = freeze i32 %3\l  %19 = sdiv i32 %17, %18\l  %20 = mul i32 %19, %18\l  %21 = sub i32 %17, %20\l  %22 = icmp eq i32 %2, 0\l  %23 = icmp slt i32 %21, %1\l  %24 = select i1 %22, i1 %23, i1 false\l  br i1 %24, label %25, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x5fa7240:s0 -> Node0x5fa7940;
+	Node0x5fa7240:s1 -> Node0x5fa7990;
+	Node0x5fa7940 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%25:\l25:                                               \l  %26 = mul nsw i32 %19, %3\l  %27 = add nsw i32 %26, %1\l  br label %38\l}"];
+	Node0x5fa7940 -> Node0x5fa7bf0;
+	Node0x5fa7990 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%28:\l28:                                               \l  %29 = icmp ne i32 %2, 1\l  %30 = sub nsw i32 %3, %1\l  %31 = icmp slt i32 %21, %30\l  %32 = select i1 %29, i1 true, i1 %31\l  br i1 %32, label %45, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5fa7990:s0 -> Node0x5fa72d0;
+	Node0x5fa7990:s1 -> Node0x5fa7410;
+	Node0x5fa7410 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%33:\l33:                                               \l  %34 = mul nsw i32 %19, %3\l  %35 = xor i32 %1, -1\l  %36 = add i32 %35, %3\l  %37 = add i32 %36, %34\l  br label %38\l}"];
+	Node0x5fa7410 -> Node0x5fa7bf0;
+	Node0x5fa7bf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%38:\l38:                                               \l  %39 = phi i32 [ %27, %25 ], [ %37, %33 ]\l  %40 = sext i32 %39 to i64\l  %41 = getelementptr inbounds float, float addrspace(1)* %0, i64 %40\l  %42 = load float, float addrspace(1)* %41, align 4, !tbaa !7\l  %43 = sext i32 %14 to i64\l  %44 = getelementptr inbounds float, float addrspace(1)* %0, i64 %43\l  store float %42, float addrspace(1)* %44, align 4, !tbaa !7\l  br label %45\l}"];
+	Node0x5fa7bf0 -> Node0x5fa72d0;
+	Node0x5fa72d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%45:\l45:                                               \l  ret void\l}"];
+}

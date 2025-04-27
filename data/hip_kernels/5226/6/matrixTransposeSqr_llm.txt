@@ -1,0 +1,9 @@
+```
+// Use shared memory to optimize memory access patterns
+// Align shared memory to avoid bank conflicts
+// Ensure threads access contiguous memory in global memory for coalesced access
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Ensure the transposition phase aligns with shared memory to optimize bank access
+// Reorder indices during transposition to minimize global memory accesses
+// Use tileSize + 1 to avoid bank conflicts in shared memory
+```

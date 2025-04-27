@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache frequently accessed data for faster access
+// Ensure coalesced memory accesses by aligning data reads to the warp boundaries
+// Experiment with varying block sizes to find optimal occupancy and performance
+// Utilize warp shuffle operations to reduce global memory accesses when possible
+// Explore asynchronous memory transfers and prefetching for overlapping computation and data movement
+```

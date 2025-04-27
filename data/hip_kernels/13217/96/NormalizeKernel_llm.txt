@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for normalization_factor and image arrays
+// Utilize shared memory to reduce global memory accesses
+// Use __ldg to cache normalization_factor for read-only access
+// Ensure warp divergence is minimized for conditional statements
+```

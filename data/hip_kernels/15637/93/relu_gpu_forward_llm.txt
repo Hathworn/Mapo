@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache input data for threads within the same block
+// Use vectorized memory access to potentially improve throughput
+// Adjust grid and block size for optimal occupancy and scalability
+// Ensure input pointer 'in' is aligned to 16-bytes for coalesced access
+```

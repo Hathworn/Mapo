@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for A and C to improve performance.
+// Ensure that A and C arrays are aligned in memory to enable vectorized loads.
+// Use shared memory to reduce global memory accesses if applicable.
+// Minimize thread divergence by ensuring each thread executes the same number of instructions.
+// Optimize the block size for maximum occupancy on the GPU hardware.
+```

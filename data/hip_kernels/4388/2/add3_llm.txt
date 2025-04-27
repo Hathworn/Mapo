@@ -1,0 +1,5 @@
+// Consider shared memory if multiple threads access redundant data
+// Optimize memory access pattern for coalescing
+// Ensure num_elem is read efficiently by all threads
+// Investigate register pressure for potential reduction
+// Minimize thread divergence by aligning workloads

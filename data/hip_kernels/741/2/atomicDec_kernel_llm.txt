@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data, like d_quantity, to reduce global memory access.
+// Consider coalescing memory access patterns for d_probabilities, d_quantity, and d_count arrays.
+// Minimize divergence within warp using conditional statements that can be optimized.
+// Use profiling tools to identify cache hit and miss patterns and optimize data layout accordingly.
+// If possible, use atomic operations with reduced contention to improve performance.

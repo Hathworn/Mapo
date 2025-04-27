@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access latency.
+// Optimize memory access by ensuring image[i * w + j] is coalesced.
+// Leverage warp-level primitives for reduction when applicable to improve efficiency.
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path.

@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed 'cur_tot_weight' to reduce global memory accesses.
+// Evaluate if loop unrolling can be applied to further optimize the loop iteration within the global kernel.
+// Use atomic operations efficiently on shared memory instead of global memory to reduce contention.
+// Ensure coalesced memory access in the loop to optimize bandwidth usage for 'quadratic' and 'linear' arrays.
+// Assess whether the initialization and synchronization of 'local_linear_update' can be optimized to reduce latency.

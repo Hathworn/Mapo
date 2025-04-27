@@ -1,0 +1,5 @@
+// Consider using shared memory for h_mascara to reduce global memory access.
+// Ensure h_n is coalesced to improve memory access patterns.
+// Increase the thread block size to improve occupancy and kernel performance.
+// Align data structures to maximize memory access efficiency.
+// Evaluate if prefetching data can be beneficial for h_n and h_mascara.

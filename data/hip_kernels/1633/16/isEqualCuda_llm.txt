@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by utilizing 1D block and grid configuration
+// Localize variable 'localIsEqual' to avoid frequent global memory writes
+// Calculate row and column indices using integer division and modulus operations
+// Perform atomic operations on global memory only when necessary to minimize contention

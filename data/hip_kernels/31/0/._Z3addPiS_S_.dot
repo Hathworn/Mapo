@@ -1,0 +1,10 @@
+digraph "CFG for '_Z3addPiS_S_' function" {
+	label="CFG for '_Z3addPiS_S_' function";
+
+	Node0x4618d40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = icmp slt i32 %4, 100\l  br i1 %5, label %6, label %14\l|{<s0>T|<s1>F}}"];
+	Node0x4618d40:s0 -> Node0x4619620;
+	Node0x4618d40:s1 -> Node0x46196b0;
+	Node0x4619620 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%6:\l6:                                                \l  %7 = sext i32 %4 to i64\l  %8 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %7\l  %9 = load i32, i32 addrspace(1)* %8, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %10 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %7\l  %11 = load i32, i32 addrspace(1)* %10, align 4, !tbaa !4, !amdgpu.noclobber\l... !8\l  %12 = add nsw i32 %11, %9\l  %13 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %7\l  store i32 %12, i32 addrspace(1)* %13, align 4, !tbaa !4\l  br label %14\l}"];
+	Node0x4619620 -> Node0x46196b0;
+	Node0x46196b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%14:\l14:                                               \l  ret void\l}"];
+}

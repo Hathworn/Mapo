@@ -1,0 +1,7 @@
+```c
+// Consider optimizing memory access patterns for u and v by using shared memory.
+// Coalesce global memory accesses for src and dst to improve bandwidth utilization.
+// Pre-fetch src data into registers before use to reduce memory latency.
+// Ensure stride values allow coalesced accesses across warp for src, u, v, and dst.
+// Evaluate potential benefits of loop unrolling if applicable depending on the loop structure.
+```

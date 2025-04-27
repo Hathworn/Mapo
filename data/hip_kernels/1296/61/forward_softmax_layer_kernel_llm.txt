@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory accesses for input loading
+// Minimize the use of __syncthreads() where possible to reduce synchronization overhead
+// Consider using warp-level primitives for reduction operations to improve efficiency
+// Evaluate the amount of shared memory used to prevent excess allocation and ensure occupancy
+// Optimize shared memory usage by reducing redundant shared memory arrays if possible
+// Ensure the block size maximizes the utilization of the GPU resources
+```

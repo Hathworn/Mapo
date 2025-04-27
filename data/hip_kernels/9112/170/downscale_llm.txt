@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access for gradOutput_data
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Leverage memory coalescing by ensuring gradOutput_data accesses are sequential
+// Experiment with different block sizes for optimal occupancy and performance
+// Consider loop unrolling for the inner loop with scale_factor if performance gains are observed
+```

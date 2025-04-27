@@ -1,0 +1,5 @@
+// Optimize memory access patterns by ensuring coalesced access for weights array.
+// Utilize shared memory to cache mean_arr_gpu values within a block to minimize global memory access.
+// Consider loop unrolling for operations inside kernel to reduce instruction overhead.
+// Evaluate occupancy and adjust block and grid sizes to maximize GPU resource utilization.
+// Implement profiling to identify memory bottlenecks and adjust code structure accordingly.

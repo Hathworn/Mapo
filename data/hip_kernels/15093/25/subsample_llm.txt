@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Ensure coalesced memory accesses by aligning input/output memory layout.
+// Use loop unrolling techniques for small kernel dimensions (kH, kW).
+// Optimize thread/block configuration to minimize warp divergence.
+// Consider using texture memory for read-only data to leverage cache benefits.
+// Analyze memory access patterns for potential bank conflicts.
+```

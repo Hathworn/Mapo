@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for both input and output arrays
+// Ensure shared memory utilization is within hardware limits to avoid bank conflicts
+// Prefetch data into shared memory to reduce global memory latency
+// Consider using __ldg() for loading read-only data for potential L1 cache benefits
+// Balance workload across blocks and threads to maximize occupancy
+```

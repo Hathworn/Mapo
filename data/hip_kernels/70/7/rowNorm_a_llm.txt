@@ -1,0 +1,7 @@
+```c
+// Use shared memory to store v and a for better memory access patterns
+// Consider coalesced memory access for X to optimize memory bandwidth
+// Try loop unrolling to minimize loop overhead
+// Use __restrict__ keyword if pointers do not alias for better optimization
+// Consider using texture memory if v and a have spatial locality
+```

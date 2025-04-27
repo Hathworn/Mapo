@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring sequential threads access sequential memory addresses
+// Utilize shared memory to store intermediate results for threads in the same block
+// Reduce global memory accesses by performing operations in registers when possible
+// Pay attention to memory bank conflicts when using shared memory
+```

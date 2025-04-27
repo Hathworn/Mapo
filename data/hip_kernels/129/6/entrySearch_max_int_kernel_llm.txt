@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for pointer arguments to optimize memory accesses
+// Ensure data is 128-byte aligned in global memory to maximize memory coalescing
+// Use asynchronous copy to load data from global memory to shared memory to hide latency
+// Tune block size and shared memory size based on specific GPU architecture to improve occupancy
+// Avoid bank conflicts by ensuring shared memory access patterns are optimized
+// Evaluate the use of warp-level primitives to further optimize the reduction step
+```

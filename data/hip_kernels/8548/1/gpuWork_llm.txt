@@ -1,0 +1,11 @@
+```
+// Consider coalesced memory access for arrays g and h
+// Utilize shared memory more effectively for neighboring accesses
+// Minimize global memory transactions by optimizing memory access patterns
+// Check if loop unrolling benefits the reduction in shared memory
+// Investigate benefits of using warp-synchronous programming for reduction
+// Ensure memory banks are efficiently accessed in shared memory
+// Align memory access patterns to reduce bank conflicts
+// Use __ldg() for read-only data to optimize cache usage
+// Explore half precision if accuracy allows for faster computation
+```

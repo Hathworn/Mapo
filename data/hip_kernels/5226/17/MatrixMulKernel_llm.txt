@@ -1,0 +1,10 @@
+```
+// Cache the row and column indices to improve register usage
+// Use shared memory to reduce global memory access latency
+// Ensure correct bounds checking to prevent memory access violations
+// Optimize memory coalescing patterns for global memory reads
+// Employ shared memory efficiently to maximize bandwidth utilization
+// Synchronize threads to ensure all data is loaded before computation
+// Minimize control divergence within the thread block
+// Avoid unnecessary computations outside tile bounds
+```

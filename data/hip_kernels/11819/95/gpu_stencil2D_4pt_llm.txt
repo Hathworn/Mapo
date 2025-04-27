@@ -1,0 +1,5 @@
+// Optimize shared memory loading by coalescing global memory accesses.
+// Reduce redundant calculations of indices within loops.
+// Use vectorized memory operations where possible to improve bandwidth utilization.
+// Minimize divergent memory access patterns or thread divergence within branches.
+// Consider tuning TILE_SIZE for best occupancy and performance balance.

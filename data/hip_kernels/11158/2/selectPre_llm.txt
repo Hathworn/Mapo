@@ -1,0 +1,7 @@
+```
+// Ensure global access is coalesced for improved memory access efficiency.
+// Consider using shared memory to store data that threads within the same block use frequently.
+// Optimize memory transactions by aligning data structures to cache line boundaries.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+// Preload data into registers if possible to reduce redundant global memory accesses.
+```

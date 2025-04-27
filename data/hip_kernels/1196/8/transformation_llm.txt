@@ -1,0 +1,5 @@
+// Ensure shared memory size is properly defined based on blockDim.x
+// Consider padding shared memory to avoid bank conflicts
+// Optimize memory access by ensuring src and dest pointers are properly aligned
+// Evaluate if prefetching values into registers before operations can improve performance
+// Test different blockDim sizes to optimize for different GPU architectures

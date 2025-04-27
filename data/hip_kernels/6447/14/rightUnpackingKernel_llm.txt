@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Utilize __syncthreads() to synchronize threads after loading to shared memory
+// Ensure shared memory is sized appropriately for thread count
+// Consider coalesced access pattern when reading from global memory
+// Minimize bank conflicts in shared memory usage
+```

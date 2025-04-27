@@ -1,0 +1,6 @@
+```
+// Consider using __ldg() for read-only memory access to u, v, and src for better cache usage.
+// Optimize thread access patterns to ensure coalesced memory access for u, v, and src.
+// Ensure dst is written in a coalesced manner by adjusting the access pattern if possible.
+// Evaluate the use of shared memory if there is high data reuse across threads.
+```

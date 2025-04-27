@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data used frequently to reduce global memory access
+// Ensure memory coalescing in the loop accessing x to improve memory bandwidth usage
+// Use loop unrolling to decrease loop overhead in the accumulation loop
+// Explore using warp-level primitives for more efficient parallel reduction
+```

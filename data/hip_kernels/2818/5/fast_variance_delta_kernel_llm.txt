@@ -1,0 +1,9 @@
+```
+// Minimize shared memory usage by reducing the size of local array
+// Loop unrolling could improve performance in iteration where id varies
+// Use warp shuffle for faster reduction instead of shared memory
+// Avoid unnecessary global memory accesses by caching x and delta
+// Prefetch data into registers to hide global memory latency
+// Consider using cooperative groups for more complex reduction patterns
+// Ensure memory access patterns are coalesced
+```

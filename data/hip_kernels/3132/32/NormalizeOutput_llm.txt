@@ -1,0 +1,6 @@
+```
+// Ensure that memory accesses are coalesced by processing contiguous elements with each thread
+// Use a larger block size if performance is limited by insufficient parallelism
+// Consider using shared memory to cache data if memory bandwidth is a bottleneck
+// Minimize divergence by ensuring branches are uniformly executed across threads
+```

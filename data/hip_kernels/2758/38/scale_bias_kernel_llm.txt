@@ -1,0 +1,6 @@
+```
+// Use shared memory for biases to minimize global memory access
+// Load biases into shared memory at the beginning if within bounds
+// Synchronize threads to ensure all biases are loaded before usage
+// Multiply the output with shared biases instead of accessing global biases repeatedly
+```

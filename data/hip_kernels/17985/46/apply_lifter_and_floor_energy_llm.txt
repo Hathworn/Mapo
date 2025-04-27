@@ -1,0 +1,6 @@
+```
+// Optimization: Use shared memory for lifter coefficients to reduce global memory access.
+// Optimization: Utilize __syncthreads() to ensure consistent shared memory load.
+// Optimization: Distribute lifter application work across threads to increase parallelism.
+// Optimization: Implement conditional and efficient memory update when applying energy.
+```

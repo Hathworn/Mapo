@@ -1,0 +1,4 @@
+// Reuse computed global index for efficiency
+// Use early exit for threads exceeding sparseSize to minimize redundant checks
+// Store target index calculation to reduce redundant memory access
+// Check boundaries efficiently to prevent out-of-bounds access

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure that memory accesses are coalesced wherever possible
+// Avoid redundant calculations by pre-computing invariant values
+// Use __syncthreads() to synchronize threads after shared memory loading
+// Consider using loop unrolling if beneficial for kernel performance
+```

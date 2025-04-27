@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for 'adj_list' and 'weights'
+// Use shared memory to cache 'beg_pos[tid]' and 'beg_pos[tid + 1]' to reduce global memory accesses
+// Prefetch data from global memory to registers to reduce latency
+// Explore warp-level primitives to reduce divergent branches on 'mask'
+```

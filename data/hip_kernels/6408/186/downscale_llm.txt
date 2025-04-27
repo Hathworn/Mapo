@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by aligning memory reads for gradOutput_data
+// Use shared memory to cache frequently accessed data to reduce global memory access
+// Try reducing the number of arithmetic calculations in translate_idx_inv by precomputing common expressions
+// Explore launching the kernel with a block size that maximizes GPU occupancy
+```

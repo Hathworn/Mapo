@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access by ensuring threads read contiguous memory locations.
+// Leverage shared memory for tiles to reduce global memory accesses.
+// Minimize bank conflicts in shared memory access.
+// Consider prefetching data to hide memory latency.
+// Ensure data alignment to improve memory transaction efficiency.
+// Maximize occupancy by adjusting block and grid dimensions.
+// Avoid divergence by keeping branch conditions uniform across warps.
+```

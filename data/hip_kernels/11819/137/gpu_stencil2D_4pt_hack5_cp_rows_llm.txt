@@ -1,0 +1,8 @@
+```
+// Optimize global memory access pattern by coalescing reads to dst.
+// Consider using shared memory to reduce global memory traffic.
+// Ensure alignment of global memory accesses to achieve peak bandwidth.
+// Consider loading more elements per thread if shared memory allows.
+// Reduce divergence in legalNextRow and legalCurCol checks.
+// Verify if shared memory usage is within limits for larger grids.
+```

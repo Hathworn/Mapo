@@ -1,0 +1,6 @@
+```cpp
+// Load values into shared memory to reduce global memory access
+// Ensure coalesced memory access pattern for both a and b
+// Consider using constant memory for any invariant data
+// Use warp-level operations to minimize thread divergence
+```

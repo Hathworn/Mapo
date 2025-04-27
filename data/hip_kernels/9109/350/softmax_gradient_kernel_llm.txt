@@ -1,0 +1,7 @@
+```cpp
+// Consider using float2 or float4 loads for Y, dY, and dX to improve memory throughput
+// Ensure data alignment to utilize coalesced memory access
+// Preload data into shared memory if dim is small enough for reuse benefits
+// Utilize __shfl_down_sync for warp-level reduction to minimize __syncthreads overhead
+// Explore the use of warp shuffle operations to optimize reduction across block threads
+```

@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache xyz2 for coalesced memory access
+// Consider tuning the batch size to optimize shared memory use
+// Synchronize threads to ensure all data is loaded before computation
+// Unroll the inner loop to increase instruction level parallelism
+// Use float intrinsics for potentially faster computation
+// Avoid bank conflicts in shared memory accesses if possible
+// Profile to identify memory access patterns and optimize further
+```

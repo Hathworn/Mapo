@@ -1,0 +1,6 @@
+```c
+// Consider coalescing memory accesses to g_hash by ensuring contiguous threads access contiguous memory locations.
+// Use shared memory to store intermediate results if possible to reduce global memory accesses.
+// Minimize divergent branches in the kernel to improve warp execution efficiency.
+// Evaluate if loop unrolling can be applied if there are loops in the hash computation for better performance.
+```

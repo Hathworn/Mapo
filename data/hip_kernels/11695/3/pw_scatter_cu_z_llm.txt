@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache ghatmap values within a block to reduce repetitive global memory access
+// Consider using vectorized operations for pwcc to improve memory throughput
+// Ensure memory access patterns are coalesced for better bandwidth utilization
+// Optimize conditional branches to minimize divergence among threads
+```

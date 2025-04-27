@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache conv data to reduce global memory access.
+// Use const memory for s_size or s_rad if they remain unchanged to reduce register pressure.
+// Consider thread coarsening to improve occupancy and reduce control divergence.
+// Leverage memory coalescing by aligning data access patterns to improve read/write throughput.
+// Minimize the use of atomic operations and ensure there are no bank conflicts.
+// Try to maximize the use of registers by reusing variables as much as possible.
+// Ensure proper use of __restrict__ to help compiler optimize memory access.
+```

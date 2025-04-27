@@ -1,0 +1,5 @@
+// Check if memory coalescing is achieved when accessing d_Input and d_Result
+// Use appropriate block size to maximize occupancy and utilize shared memory efficiently
+// Consider unrolling the reduction loop for further performance optimization
+// Evaluate using atomic operations if the reduction grid is small
+// Ensure alignment of shared memory allocations for efficient access

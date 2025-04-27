@@ -1,0 +1,6 @@
+```
+// Consider using __restrict__ qualifier for pointers to enable compiler optimizations.
+// Use shared memory for frequently accessed values if applicable to reduce global memory access.
+// Ensure coalesced memory access by aligning memory operations to warp boundaries.
+// Consider using atomics if applicable to prevent race conditions when writing to global memory.
+```

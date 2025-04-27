@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access
+// Align data accesses to facilitate coalesced memory loads
+// Minimize divergent branches within warp
+// Optimize grid and block dimensions to improve occupancy
+// Consider using vectorized data types for loading and storing
+// Reduce register pressure by using local variables efficiently
+// Pre-fetch data needed for calculations to hide latency
+```

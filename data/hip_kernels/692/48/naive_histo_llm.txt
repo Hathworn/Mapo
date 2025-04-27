@@ -1,0 +1,3 @@
+// Ensure shared_bins is initialized efficiently by limiting conditional usage
+// Consider using warp-level primitives for reduction within shared_bins
+// Minimize atomic operations on global memory by maximizing shared memory usage

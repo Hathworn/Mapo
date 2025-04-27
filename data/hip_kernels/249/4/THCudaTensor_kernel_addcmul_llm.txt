@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache src1 and src2 for better memory access patterns.
+// Ensure coalesced memory access by aligning data, src1, and src2 accesses to 32-byte boundaries.
+// Explore using half precision if applicable to reduce memory bandwidth usage.
+// Check if loop unrolling can provide performance benefits for the element-wise operation.
+```

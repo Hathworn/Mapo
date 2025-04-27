@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for mask values if multiple threads access the same mask[xindex0] repeatedly
+// Precompute reciprocal of xstrides to reduce division operations in index calculations
+// Unroll the loop to reduce branch divergence and improve performance
+// Check if coalesced memory access patterns are in place for in and mask arrays
+```

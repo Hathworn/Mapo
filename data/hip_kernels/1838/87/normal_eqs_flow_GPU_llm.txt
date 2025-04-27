@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning data layout to warp size.
+// Use float2 instead of separate float elements for better memory access patterns.
+// Consider loop unrolling for the innermost loop to improve computational throughput.
+// Use shared memory for intermediate calculations to reduce global memory access.
+// Optimize atomic operations by minimizing contention and increase parallelism.

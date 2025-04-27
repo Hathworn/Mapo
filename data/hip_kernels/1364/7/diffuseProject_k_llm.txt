@@ -1,0 +1,9 @@
+```
+// Unroll the loop for better performance
+// Use shared memory to reduce global memory access latency
+// Coalesce global memory accesses to improve memory throughput
+// Consider using texture memory for read-only data to leverage caching
+// Optimize register usage to avoid spilling to local memory
+// Minimize divergent branches within the warp
+// Prefetch data to hide memory latency
+```

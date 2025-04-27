@@ -1,0 +1,13 @@
+digraph "CFG for '_Z15set_d_check_nnzPiS_iii' function" {
+	label="CFG for '_Z15set_d_check_nnzPiS_iii' function";
+
+	Node0x618a270 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %2\l  br i1 %15, label %16, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x618a270:s0 -> Node0x618c130;
+	Node0x618a270:s1 -> Node0x618c1c0;
+	Node0x618c130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%16:\l16:                                               \l  %17 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %18 = mul i32 %17, %2\l  %19 = add i32 %14, %18\l  %20 = zext i32 %19 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %23 = icmp sgt i32 %22, 0\l  br i1 %23, label %24, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x618c130:s0 -> Node0x618d050;
+	Node0x618c130:s1 -> Node0x618c1c0;
+	Node0x618d050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%24:\l24:                                               \l  %25 = mul i32 %17, %4\l  %26 = sdiv i32 %14, %3\l  %27 = add i32 %26, %25\l  %28 = zext i32 %27 to i64\l  %29 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %28\l  %30 = atomicrmw add i32 addrspace(1)* %29, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %31\l}"];
+	Node0x618d050 -> Node0x618c1c0;
+	Node0x618c1c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

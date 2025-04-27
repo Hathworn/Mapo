@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory access latency
+// Load elements into shared memory in segments to reduce stride
+// Ensure __syncthreads() is used after updating shared memory
+// Make sure to handle partial block sums if nrow is not divisible by blockDim.x
+```

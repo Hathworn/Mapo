@@ -1,0 +1,10 @@
+```c
+// Use shared memory to store data used by multiple threads to reduce global memory access.
+// Minimize the use of local arrays inside the kernel to manage limited registers efficiently.
+// Merge B[ii] and A calculations into a single loop to improve memory locality and reduce overhead.
+// Ensure coalesced memory access when reading xvals and yvals arrays.
+// Use warp-level primitives for efficient sharing of data within a warp.
+// Remove unnecessary calls to pow() as it can be costly and calculated before the kernel launch.
+// Consider using a tile-based approach for reducing the complexity of indirection in global memory access.
+// Prefetch data into registers or shared memory for anticipated access to hide latency.
+```

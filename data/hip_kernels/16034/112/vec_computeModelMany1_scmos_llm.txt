@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for scmos array if accessed multiple times to reduce global memory access.
+// Use __restrict__ keyword for pointer parameters to potentially improve memory access speed by preventing aliasing.
+// Align data in memory where possible to improve access speed and cache efficiency.
+// Ensure coalesced memory access patterns to reduce global memory access latency.
+```

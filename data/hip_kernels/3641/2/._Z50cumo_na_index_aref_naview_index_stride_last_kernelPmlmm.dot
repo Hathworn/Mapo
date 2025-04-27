@@ -1,0 +1,13 @@
+digraph "CFG for '_Z50cumo_na_index_aref_naview_index_stride_last_kernelPmlmm' function" {
+	label="CFG for '_Z50cumo_na_index_aref_naview_index_stride_last_kernelPmlmm' function";
+
+	Node0x63ee4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add i32 %14, %15\l  %17 = zext i32 %16 to i64\l  %18 = icmp ult i64 %17, %3\l  br i1 %18, label %19, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x63ee4a0:s0 -> Node0x63f0790;
+	Node0x63ee4a0:s1 -> Node0x63f0820;
+	Node0x63f0790 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = udiv i32 %13, %10\l  %21 = mul i32 %20, %10\l  %22 = icmp ugt i32 %13, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %10\l  %26 = zext i32 %25 to i64\l  br label %28\l}"];
+	Node0x63f0790 -> Node0x63f0d10;
+	Node0x63f0820 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%27:\l27:                                               \l  ret void\l}"];
+	Node0x63f0d10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  %29 = phi i64 [ %17, %19 ], [ %34, %28 ]\l  %30 = getelementptr inbounds i64, i64 addrspace(1)* %0, i64 %29\l  %31 = load i64, i64 addrspace(1)* %30, align 8, !tbaa !16\l  %32 = sub i64 %2, %31\l  %33 = mul i64 %32, %1\l  store i64 %33, i64 addrspace(1)* %30, align 8, !tbaa !16\l  %34 = add i64 %29, %26\l  %35 = icmp ult i64 %34, %3\l  br i1 %35, label %28, label %27, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x63f0d10:s0 -> Node0x63f0d10;
+	Node0x63f0d10:s1 -> Node0x63f0820;
+}

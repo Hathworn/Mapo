@@ -1,0 +1,8 @@
+```
+// Precompute expressions and index calculations to reuse in the loop
+// Optimize memory access by coalescing reads from data_col
+// Consider padding threads to avoid divergent branches
+// Attempt loop unrolling for w_col and h_col if beneficial
+// Ensure data_im writes are coalesced to improve memory throughput
+// Utilize shared memory if possible to store intermediate values
+```

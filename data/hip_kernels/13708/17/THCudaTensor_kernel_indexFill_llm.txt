@@ -1,0 +1,9 @@
+```
+// Use shared memory to store frequently accessed data like stride or index for faster access
+// Consider loop unrolling in the second 'for' loop for better performance
+// Ensure coalesced access patterns when accessing 'tensor' within 'idx_size' loop
+// Evaluate if texture memory benefits 'index' since it has less frequent writes and read-heavy access
+// Inline simple or small functions for fewer function call overheads
+// Assess warp divergence and attempt to minimize divergent branches
+// Consider occupancy tuning by adjusting block sizes based on hardware and kernel behavior
+```

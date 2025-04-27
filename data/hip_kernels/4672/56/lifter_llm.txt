@@ -1,0 +1,7 @@
+```
+// Mitigate memory latency by ensuring all threads within a warp access contiguous memory locations.
+// Optimize memory access by using shared memory if access patterns allow its effective use.
+// Ensure coalesced memory access to enhance memory throughput.
+// Consider adjusting the grid and block dimensions for better thread occupancy and performance.
+// Evaluate the possibility of reducing the amount of divergence in conditional statements.
+```

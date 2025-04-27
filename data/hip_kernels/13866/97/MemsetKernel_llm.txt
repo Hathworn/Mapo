@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses if multiple threads access nearby memory locations
+// Apply memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Consider using __restrict__ qualifiers for pointers to allow compiler optimizations
+// Ensure that the grid and block dimensions are optimized for the target hardware
+```

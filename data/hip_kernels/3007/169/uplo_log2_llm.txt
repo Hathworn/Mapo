@@ -1,0 +1,6 @@
+```
+// Coalesce memory access for b[] by using gid_0 as the leading index
+// Use shared memory to reduce redundant loads of a[] values
+// Ensure proper alignment of a[] and b[] for coalesced access
+// Consider using warp shuffles for intra-warp data sharing
+```

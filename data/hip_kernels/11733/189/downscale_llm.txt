@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for gradOutput_data if accessed multiple times to reduce global memory access latency.
+// Ensure memory coalescing by aligning memory accesses for gradInput_data to improve performance.
+// Utilize vectorized loads/stores if appropriate to maximize memory throughput.
+```

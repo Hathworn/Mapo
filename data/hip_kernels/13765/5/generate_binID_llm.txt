@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing consecutive dIn[i] elements
+// Use __ldg() to load read-only data for better performance
+// Consider using shared memory if multiple threads access the same data
+// Minimize register usage by simplifying calculations or using inline functions
+// Prefetch data if possible to hide latency
+```

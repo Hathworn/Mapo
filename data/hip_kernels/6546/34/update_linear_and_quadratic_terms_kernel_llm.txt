@@ -1,0 +1,3 @@
+// Load current weight once into a register to minimize global memory access
+// Optimize thread calculation by reducing unnecessary arithmetic
+// Use atomic operation for potential data race; only first thread updates

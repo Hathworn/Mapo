@@ -1,0 +1,6 @@
+// Consider using shared memory for shift_table to reduce global memory access
+// Ensure coalesced memory access by aligning text_start and pat_len with warp size
+// Eliminate warp divergence by restructuring conditionals where possible
+// Try prefusing loops to decrease loop overhead and improve instruction level parallelism
+// Minimize memory bank conflicts within shared memory access
+// Use half-warp optimizations for improving memory throughput in atomic operations

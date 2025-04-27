@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access patterns to improve read efficiency from d_in
+// Consider minimizing bank conflicts in shared memory access by optimizing stride
+// Initialize shared memory with warp-level primitives to increase efficiency
+// Leverage warp synchronous programming techniques for better performance
+// Prefer atomic operations on d_total if blocks can be parallelized further
+```

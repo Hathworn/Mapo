@@ -1,0 +1,6 @@
+// Ensure tile data is loaded before computing to maximize memory coalescing and reduce global memory accesses.
+// Leverage shared memory to minimize bandwidth and optimize memory accesses in the calculation.
+// Minimize arithmetic intensity by storing intermediary results in registers for reuse.
+// Unroll loops for further reduction in loop control overhead, optimizing pipeline execution.
+// Consider increasing BDIMX for better resource utilization and parallelism, depending on hardware constraints.
+// Reduce synchronization barriers by restructuring computation patterns when feasible.

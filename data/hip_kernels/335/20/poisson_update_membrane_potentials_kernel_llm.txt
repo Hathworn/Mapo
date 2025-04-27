@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Ensure coalesced memory access for d_rates and d_membrane_potentials_v by organizing data appropriately
+// Prefetch data into registers to minimize repeated global memory accesses within the loop
+// Consider combining conditional statements to minimize branching divergence
+// Use loop unrolling to enhance instruction throughput when processing large arrays
+```

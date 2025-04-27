@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by organizing data layout to prevent unaligned access.
+// Consider using shared memory to cache portions of grad_out to reduce global memory reads.
+// Optimize memory usage by minimizing redundant calculations in index-based arithmetic.
+// Use atomic operations carefully to avoid serialization in parallel computations.

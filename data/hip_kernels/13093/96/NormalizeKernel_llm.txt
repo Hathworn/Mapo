@@ -1,0 +1,6 @@
+```
+// Use shared memory to store normalization_factor for coalesced access if possible
+// Consider using vectorized loads/stores for image to reduce memory transactions
+// Ensure memory alignment for normalization_factor and image to optimize access patterns
+// Minimize the use of branching by rearranging conditions to prioritize common execution paths
+```

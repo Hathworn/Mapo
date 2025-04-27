@@ -1,0 +1,8 @@
+```
+// Consider aligning memory to coalesced memory access patterns
+// Use shared memory to minimize global memory access
+// Optimize memory accesses with more threads per block to hide latency
+// Ensure that accesses are coalesced for global memory
+// Utilize warp-level primitives for synchronization and reduction
+// Explore bank conflict avoidance in shared memory accesses
+```

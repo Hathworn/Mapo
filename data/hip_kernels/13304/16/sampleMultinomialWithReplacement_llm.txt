@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache normDistPrefixSum for each block to reduce global memory access.
+// Ensure coalesced access by having threads within a warp access consecutive memory locations in dest.
+// Optimize the use of registers by minimizing the number of variables declared inside the inner loop.
+// Utilize loop unrolling in the sample loop to increase instruction-level parallelism and reduce loop overhead.
+```

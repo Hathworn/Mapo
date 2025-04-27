@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Consider using __restrict__ to improve compiler optimizations
+// Align data accesses to ensure coalesced memory access
+// Prefetch data if necessary to hide latency
+// Balance the workload among threads to avoid divergence
+```

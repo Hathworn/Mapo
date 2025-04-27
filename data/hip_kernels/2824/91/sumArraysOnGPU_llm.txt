@@ -1,0 +1,9 @@
+```
+// Use shared memory for temporary storage to reduce global memory access.
+// Minimize bank conflicts when using shared memory.
+// Use coalesced memory access patterns for A, B, and C to improve bandwidth utilization.
+// Consider loop unrolling if the operations inside the loop block are repetitive.
+// Balance the number of threads per block and blocks per grid for optimal occupancy.
+// Align data structures to 128 bytes for best memory access performance.
+// Use constant memory for constants like 0.2 and 123.1 if they are rarely changed.
+```

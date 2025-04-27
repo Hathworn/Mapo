@@ -1,0 +1,18 @@
+digraph "CFG for '_Z13run_reductionPiS_S_iS_' function" {
+	label="CFG for '_Z13run_reductionPiS_S_iS_' function";
+
+	Node0x4c50bd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = sext i32 %6 to i64\l  %9 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %8\l  %10 = load i32, i32 addrspace(1)* %9, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !10, !invariant.load\l... !9\l  %15 = sext i32 %10 to i64\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %15\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  store i32 1, i32 addrspace(3)* @_ZZ13run_reductionPiS_S_iS_E12s_block_conv,\l... align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %18 = icmp slt i32 %7, %17\l  br i1 %18, label %19, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4c50bd0:s0 -> Node0x4c53e70;
+	Node0x4c50bd0:s1 -> Node0x4c53f00;
+	Node0x4c53e70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%19:\l19:                                               \l  %20 = zext i16 %14 to i32\l  %21 = shl i32 %10, 1\l  %22 = mul i32 %21, %20\l  %23 = add nsw i32 %22, %7\l  %24 = sext i32 %23 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %24\l  %26 = load i32, i32 addrspace(1)* %25, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %27 = icmp eq i32 %26, 0\l  br i1 %27, label %28, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4c53e70:s0 -> Node0x4c544b0;
+	Node0x4c53e70:s1 -> Node0x4c53f00;
+	Node0x4c544b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%28:\l28:                                               \l  store i32 0, i32 addrspace(3)* @_ZZ13run_reductionPiS_S_iS_E12s_block_conv,\l... align 4, !tbaa !5\l  br label %29\l}"];
+	Node0x4c544b0 -> Node0x4c53f00;
+	Node0x4c53f00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %30 = icmp eq i32 %7, 0\l  br i1 %30, label %31, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x4c53f00:s0 -> Node0x4c54940;
+	Node0x4c53f00:s1 -> Node0x4c54990;
+	Node0x4c54940 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5a08170",label="{%31:\l31:                                               \l  %32 = load i32, i32 addrspace(3)*\l... @_ZZ13run_reductionPiS_S_iS_E12s_block_conv, align 4, !tbaa !5\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %15\l  store i32 %32, i32 addrspace(1)* %33, align 4, !tbaa !5\l  br label %34\l}"];
+	Node0x4c54940 -> Node0x4c54990;
+	Node0x4c54990 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  ret void\l}"];
+}

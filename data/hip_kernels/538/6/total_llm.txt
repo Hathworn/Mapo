@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Leverage binary reduction tree for efficient parallel reduction
+// Consider combining two loads into one if the architecture supports coalesced memory accesses
+// Ensure correct boundary checks to prevent out-of-bounds errors
+// Balance between block size and number of threads for optimal performance

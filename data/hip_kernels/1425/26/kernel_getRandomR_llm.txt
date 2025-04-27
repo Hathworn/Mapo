@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Use shared memory for result (res) to minimize redundancy
+// Use local variable for sum to avoid shared memory bank conflicts
+// Perform scaling operations after matrix multiplication to optimize caching
+// Coalesce global memory writes by contiguous thread access for dev_mat
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency
+// Consider adjusting the block size to improve warp utilization
+// Ensure coalesced memory access by aligning block and thread indices
+// Reduce bank conflicts by using padding (IPAD) in shared memory
+// Use __syncthreads() to ensure all threads have written to shared memory before reading
+// Check for boundary conditions to avoid accessing out-of-bounds memory
+```

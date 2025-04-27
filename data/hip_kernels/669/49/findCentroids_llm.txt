@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory accesses and reduce latency
+// Minimize atomic operations by accumulating results into shared memory first
+// Make use of __syncthreads() effectively to synchronize threads within a block
+// Ensure coalesced memory access patterns to improve bandwidth utilization
+// Consider loop unrolling for filter iterations to potentially improve performance
+// Avoid unnecessary __syncthreads() calls to reduce thread synchronization overhead
+```

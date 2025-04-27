@@ -1,0 +1,6 @@
+```
+// Use __restrict__ to improve compiler optimization by assuming non-aliasing pointers
+// Utilize shared memory for faster access and coalesced memory transactions
+// Load elements from global to shared memory to minimize global memory access latency
+// Ensure __syncthreads() is used to synchronize and avoid race conditions
+```

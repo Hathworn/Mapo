@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Use more warps and smaller block size for better memory latency hiding
+// Prefetch data from global memory to registers to reduce latency
+// Minimize use of global memory by reusing loaded data within the loop
+// Ensure stride access pattern to leverage memory coalescing
+// Check if `da`, `db`, and `ds` can be accessed in a coalesced manner
+// Evaluate whether loop unrolling might reduce overhead in the loop
+```

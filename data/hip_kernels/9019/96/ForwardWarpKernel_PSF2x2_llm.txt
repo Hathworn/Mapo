@@ -1,0 +1,8 @@
+```
+// Precompute and cache reused variables to reduce calculations inside the kernel
+// Use modff to split floating point values into integer and fractional parts, avoiding additional calculations
+// Consolidated bounds checking to minimize branching and enhance performance
+// Use #pragma unroll to unroll the loop and improve memory access patterns
+// Optimize memory access by ensuring dst and normalization_factor are accessed within bounds
+// Use _atomicAdd to avoid race conditions when writing to shared memory
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory for d_cdf_norm if access patterns permit
+// Coalesce global memory access for d_x, d_y, and d_log_Y
+// Minimize divergent branches within the kernel
+// Consider using texture memory for d_cdf_norm to leverage cache
+// Optimize memory access patterns for d_r_new, d_g_new, d_b_new updates
+// Ensure maximum occupancy by checking block size and register usage
+```

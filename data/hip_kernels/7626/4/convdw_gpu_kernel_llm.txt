@@ -1,0 +1,7 @@
+```
+// Use shared memory to optimize memory access patterns and reduce global memory accesses
+// Accumulate partial results in registers to reduce memory traffic
+// Ensure __syncthreads() is used to synchronize threads and avoid race conditions
+// Avoid bank conflicts in shared memory usage by ensuring access patterns do not collide
+// Consider loop unrolling for the innermost loop to reduce loop overhead
+```

@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory for frequently accessed data.
+// Reduce global memory accesses by caching repeated calculations in local variables.
+// Consider using __ldg() for read-only data to optimize memory access patterns.
+// Ensure coalesced memory access patterns by properly aligning data structure layout.
+// Explore using texture memory for read-only inputs if it can reduce global memory reads.

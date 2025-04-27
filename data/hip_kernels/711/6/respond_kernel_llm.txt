@@ -1,0 +1,4 @@
+// Use shared memory to store frequently accessed data like col and proposal to reduce global memory accesses.
+// Consider using memory coalescing by ensuring that threads access consecutive memory locations.
+// Unroll the loop further for potential performance boost when row degree is consistently small.
+// Try thread block synchronization to minimize warp divergence.

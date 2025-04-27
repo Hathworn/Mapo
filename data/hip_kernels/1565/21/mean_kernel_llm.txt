@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses.
+// Optimize memory access patterns by ensuring coalesced memory accesses.
+// Consider using loop unrolling for the batch and spatial dimensions to improve performance.
+// Ensure the use of __syncthreads to safely synchronize threads when accessing shared memory.
+// Consider optimizing block and grid sizes to maximize occupancy and parallelism.

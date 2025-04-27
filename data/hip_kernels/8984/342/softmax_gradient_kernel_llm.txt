@@ -1,0 +1,5 @@
+```
+// Unroll loop for better performance by reducing instruction overhead
+// Use warp shuffle for optimized reduction to minimize thread divergence
+// Consider using __ldg() for read-only data to utilize GPU cache
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing global memory accesses to improve memory throughput
+// Preload bias and scale once per block to reduce repetitive global memory access
+// Unroll loops for better performance and reduce control divergence
+// Use fmaxf instead of fmax for improved performance on GPUs
+// Consider using local memory to cache often-used values instead of shared memory
+// Align shared memory accesses to reduce bank conflicts
+```

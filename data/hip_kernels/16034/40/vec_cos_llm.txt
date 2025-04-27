@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for x to reduce global memory accesses.
+// Ensure result is coalesced by having consecutive threads access consecutive memory locations.
+// Optimize block and grid sizes to match the GPU architecture for maximum utilization.
+// Use __restrict__ keyword if pointers can guarantee no overlap to help the compiler optimize memory accesses.
+```

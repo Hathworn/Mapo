@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce repetitive global memory access
+// Optimize thread block size to match warp size for better efficiency
+// Consider using vectorized loads/stores for accessing data
+// Use asynchronous copy methods for memory transfers
+// Minimize divergent branches within kernel
+// Ensure memory access patterns are coalesced for increased throughput
+// Profile kernel execution to identify bottlenecks and optimize further
+```

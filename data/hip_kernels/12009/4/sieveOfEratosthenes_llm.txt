@@ -1,0 +1,5 @@
+// Consider coalesced memory accesses for primes array
+// Use shared memory for prime calculations to reduce global memory access
+// Minimize thread divergence by aligning loop indices with thread/block dimensions
+// Prefetch data into shared memory for threads in a block
+// Reduce writes to global memory by updating values in shared memory first

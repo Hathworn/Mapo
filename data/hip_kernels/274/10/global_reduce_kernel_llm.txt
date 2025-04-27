@@ -1,0 +1,6 @@
+```c
+// Ensure coalesced access to global memory by aligning data access patterns.
+// Use __restrict__ keyword in kernel arguments to help the compiler with memory access optimization.
+// Minimize synchronization points to reduce overhead and improve performance.
+// Consider tuning block size for optimal occupancy and execution performance.
+```

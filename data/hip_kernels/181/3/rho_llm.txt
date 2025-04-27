@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers to improve memory access efficiency.
+// Consider aligning data to optimize for cache usage.
+// Use shared memory to reduce global memory access within the kernel.
+// Ensure all data is coalesced when accessing global memory.
+// Avoid divergent branches to maintain warp execution efficiency.
+// Profile memory access patterns to identify further bottlenecks.
+```

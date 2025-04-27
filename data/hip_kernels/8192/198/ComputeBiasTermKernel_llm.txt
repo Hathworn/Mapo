@@ -1,0 +1,4 @@
+// Consider using shared memory to cache winningFraction[] for faster access within block
+// Ensure that biasTerm[] is correctly aligned to avoid uncoalesced accesses
+// Evaluate using __restrict__ keyword for pointers to potentially improve memory access efficiency
+// Optimize memory access patterns to reduce bank conflicts when accessing winningFraction[]

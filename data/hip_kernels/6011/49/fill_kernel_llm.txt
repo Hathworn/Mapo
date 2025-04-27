@@ -1,0 +1,4 @@
+// Use shared memory if multiple threads access the same data to reduce global memory access overhead.
+// Optimize memory coalescing by ensuring contiguous memory accesses from threads.
+// Consider using warp shuffle operations to minimize shared memory use when applicable.
+// Utilize vectorized memory access if applicable to increase data throughput.

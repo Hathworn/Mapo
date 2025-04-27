@@ -1,0 +1,7 @@
+```
+// Use dynamic shared memory allocation efficiently to reduce global memory access.
+// Optimize by removing the offset variable and using stride with index directly for better memory access patterns.
+// Read max with blockIdx.x to minimize unnecessary global memory fetches.
+// Perform reduction using shared memory with stride to optimize memory access and reduce latency.
+// Use atomic operations for writing the result to global memory to ensure data consistency.
+```

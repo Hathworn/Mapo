@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency if applicable.
+// Minimize the use of division operations by replacing them with bitwise shifts where possible.
+// Ensure coalesced memory access patterns to improve memory throughput.
+// Consider loop unrolling in cases with known iteration counts to reduce loop overhead.
+// Align memory accesses to the boundary of the memory architecture's block size for efficiency.
+// Use __restrict__ keyword for pointers if aliases are not used to improve compiler optimizations.
+// Precompute constant expressions outside of the loop to reduce redundant calculations.
+```

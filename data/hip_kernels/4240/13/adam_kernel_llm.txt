@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by having contiguous threads access contiguous memory addresses
+// Use shared memory or registers to store repeated accessed values to reduce global memory access
+// Consider using vectorized operations to optimize memory transactions on supported hardware
+// Precompute and store constant values in registers to minimize recalculation overhead
+// Reduce the number of arithmetic operations by combining them where possible
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to temporarily store and reduce accuracy values before division
+// Consider using warp-level primitives to optimize parallel reduction within the block
+// Ensure memory accesses are coalesced to enhance performance
+// Consider reducing the use of atomic operations if they're used in other contexts
+```

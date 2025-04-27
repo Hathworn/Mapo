@@ -1,0 +1,7 @@
+```
+// Use strided access to reduce memory access conflicts
+// Ensure coalesced memory access within the warp
+// Minimize bank conflicts when accessing shared memory
+// Consider using shared memory for repeated data access
+// Balance computation and memory access to hide latency
+```

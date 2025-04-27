@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store data that is reused across threads
+// Minimize global memory access by using register variables
+// Align data types to reduce memory access overhead
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations
+// Avoid divergent threads to maintain efficiency
+// Leverage warp-level programming for improved performance
+```

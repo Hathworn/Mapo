@@ -1,0 +1,6 @@
+// Switch to using shared memory for temporary storage to reduce global memory access.
+// Minimize global memory access by utilizing registers for frequently accessed data.
+// Consider coalescing memory accesses for the hashes array.
+// Use vectorized load/store operations to optimize hash value extraction.
+// Evaluate using atomic operations for comb_prefix updates to prevent race conditions.
+// Implement additional loop unrolling to further reduce control overhead.

@@ -1,0 +1,6 @@
+```
+// Ensure coalesced access where src and out pointers are accessed sequentially within warp
+// Consider shared memory if frequently accessed data pattern matches
+// Increase block size for better occupancy if registers allow
+// Explore memory padding and alignment for improved cache performance
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by adjusting array strides
+// Try using shared memory for gt_gpu and a_avg_gpu if access patterns allow
+// Avoid bank conflicts in shared memory for optimal performance
+// Ensure the use of __syncthreads() is minimal to reduce warp divergence
+// Evaluate if looping over channels can be parallelized to increase utilization
+```

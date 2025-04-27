@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache globalFlow data to reduce global memory accesses
+// Ensure memory coalescing when accessing velocities array to improve bandwidth utilization
+// Consider vectorizing operations if supported to reduce instruction overhead
+// Minimize divergence by organizing if conditions based on likely branches
+// Evaluate the current block and grid size configuration for optimal occupancy and performance
+```

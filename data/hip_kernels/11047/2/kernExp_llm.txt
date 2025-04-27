@@ -1,0 +1,6 @@
+```
+// Cache bias in shared memory for faster access
+// Use __syncthreads() after loading to ensure all threads have updated value
+// Ensure that the boundary condition is correctly set for the grid dimensions
+// Minimize use of __syncthreads() for performance unless necessary
+```

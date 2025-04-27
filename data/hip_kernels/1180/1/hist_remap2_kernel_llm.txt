@@ -1,0 +1,8 @@
+// Consider coalescing memory accesses to improve bandwidth utilization.
+// Use shared memory to cache frequently accessed data, such as histJ and cumJ.
+// Minimize divergent branching by reorganizing conditions.
+// Reduce the number of arithmetic operations within the loop.
+// Investigate if loop unrolling could improve performance for the binary search.
+// Align data structures to reduce overhead on memory transfers.
+// Explore the possibility of using texture memory for read-only data like histJ and cumJ.
+// Ensure that data types are optimized for memory access, potentially using half precision where appropriate.

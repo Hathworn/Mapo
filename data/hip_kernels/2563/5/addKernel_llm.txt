@@ -1,0 +1,8 @@
+```
+// Optimize for coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Reduce memory latency by using shared memory if the data can be reused within the block
+// Consider using warp shuffle operations to reduce the need for shared memory in some computations
+// Utilize asynchronous memory copies to overlap data transfer and computation
+// Minimize register usage to allow for more threads per block and higher occupancy
+// Prefetch data to registers to reduce latency by overlapping computation and memory access
+```

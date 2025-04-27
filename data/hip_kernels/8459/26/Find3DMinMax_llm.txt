@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for improved memory throughput.
+// Use read-only data cache for input arrays to reduce global memory traffic.
+// Optimize shared memory usage to prevent bank conflicts.
+// Increase tile size if register usage allows, for more data reuse.
+// Ensure that warp divergence is minimized by aligning branches.
+```

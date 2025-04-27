@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache normalization_factor for better data locality and reduced global memory access.
+// Ensure coalesced access to the image and normalization_factor arrays to improve memory bandwidth.
+// Use float4 to load and store data if applicable to utilize vectorized operations.
+```

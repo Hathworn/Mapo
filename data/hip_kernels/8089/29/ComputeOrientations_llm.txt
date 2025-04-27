@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access patterns for g_Data to improve bandwidth utilization.
+// Pre-calculate common expressions outside critical loops for memory access reduction.
+// Consider padding shared memory arrays to avoid bank conflicts.
+// Optimize conditional branching by evaluating constraints before accessing data.
+// Minimize the use of __syncthreads() by grouping operations where possible.
+// Utilize warp shuffle functions for histogram reduction if supported by the target architecture.
+// Ensure sufficient occupancy by balancing the number of threads and occupancy per SM.
+// Evaluate register pressure and consider using local memory for temporaries if beneficial.
+```

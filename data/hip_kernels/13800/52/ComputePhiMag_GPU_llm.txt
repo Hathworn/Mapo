@@ -1,0 +1,7 @@
+```c
+// Use shared memory if possible to further reduce global memory access latency
+// Ensure coalesced memory access to maximize memory throughput
+// Prefetch data if beneficial, to hide global memory latency
+// Minimize memory access by combining loads if appropriate
+// Consider loop unrolling if applicable and beneficial for workload
+```

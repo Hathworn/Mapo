@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access times
+// Consider loop unrolling to improve instruction-level parallelism for index calculations
+// Coalesce global memory accesses by accessing consecutive memory addresses in each thread
+// Minimize the number of divergent branches by optimizing conditional operations
+// Adjust grid and block dimensions to maximize occupancy and decrease warp divergence
+```

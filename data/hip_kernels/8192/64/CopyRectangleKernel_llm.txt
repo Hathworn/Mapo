@@ -1,0 +1,5 @@
+// Optimize: Ensure coalesced access to global memory for better memory throughput
+// Optimize: Prefer using shared memory if repeatedly accessed data can be reused
+// Optimize: Try to maximize the arithmetic intensity to hide memory latency
+// Optimize: Consider loop unrolling for a small number of operations inside the loop
+// Optimize: Minimize divergent branches for better warp execution efficiency

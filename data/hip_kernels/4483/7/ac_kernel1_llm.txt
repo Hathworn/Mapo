@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory to store frequently accessed small arrays such as d_state_supply.
+// Consider using texture memory for read-only data like d_state_transition if it has high spatial locality.
+// Minimize bank conflicts by ensuring aligned data access in shared memory.
+// Use warp-level operations to reduce synchronization overhead and improve parallelism.
+// Ensure coalesced memory access by aligning d_text and d_out to avoid misaligned memory loads/stores.

@@ -1,0 +1,4 @@
+// Avoid recalculating the same values within a thread
+// Precompute common expressions to reduce operations
+// Use shared memory for data that is accessed by multiple threads within a block
+// Coalesce global memory accesses for better performance

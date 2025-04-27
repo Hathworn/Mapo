@@ -1,0 +1,11 @@
+```
+// Use shared memory to cache data for efficient access patterns.
+// Ensure memory coalescing by aligning data access to warp boundaries.
+// Initialize shared memory with boundary values to avoid out-of-bounds access.
+// Implement loop unrolling techniques to minimize control overhead.
+// Reduce bank conflicts in shared memory by padding data appropriately.
+// Optimize conditional checks for data boundaries by using clamp functions.
+// Utilize vectorized data type for reducing redundant load operations.
+// Prioritize register usage for frequently accessed variables.
+// Use __syncthreads() judiciously to ensure consistent data visibility.
+```

@@ -1,0 +1,9 @@
+```
+// Use __restrict__ keyword on pointer parameters to indicate no-aliasing and improve memory access efficiency
+// Consider coalesced memory accesses for I, minI, maxI, and mask arrays to enhance global memory access
+// Optimize condition checks inside the kernel to reduce divergent warps and increase performance
+// Preload constant data into shared memory if multiple threads read the same elements, reducing redundant global memory accesses
+// Use local memory or registers for frequently used scalar variables like _id, id, dc, val, _minI, _maxI, and idx for faster access
+// Implement loop unrolling if processing multiple data points per thread is feasible for better resource utilization
+// Investigate the occupancy of the kernel and adjust block size or resource usage for optimal performance
+```

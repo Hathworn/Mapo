@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for src and dest arrays by ensuring threads access consecutive elements
+// Use shared memory for frequently accessed data to reduce global memory load
+// Ensure src and dest arrays are aligned for better memory access patterns
+// Minimize divergence by checking bounds outside of the main processing loop
+// Explore using the __restrict__ keyword to help the compiler optimize memory accesses
+```

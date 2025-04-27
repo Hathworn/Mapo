@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access patterns for global memory loads
+// Minimize use of __syncthreads() to reduce synchronization overhead
+// Consider using a more local scope for shared memory to maximize its utilization
+// Ensure shared memory usage does not exceed hardware limits to prevent fallback to global memory
+// Calculate thread index efficiently to reduce arithmetic operations
+// Use warp-based reduction if applicable to enhance performance with fewer synchronization barriers
+```

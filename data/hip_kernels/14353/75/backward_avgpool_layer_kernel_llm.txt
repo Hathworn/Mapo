@@ -1,0 +1,8 @@
+```c
+// Use __restrict__ keyword for in_delta and out_delta to optimize memory access
+// Align data pointers to improve memory coalescing
+// Use shared memory to reduce global memory accesses
+// Use fewer atomic operations by aggregating results in shared memory first
+// Optimize out_index and in_index calculation to minimize redundant operations
+// Consider using warp-level primitives to optimize loop further
+```

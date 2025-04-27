@@ -1,0 +1,10 @@
+```cpp
+// Use __restrict__ pointers for potentially improved memory access patterns
+// Consider using shared memory for frequently accessed data within each kernel block
+// Prefetch data to minimize the impact of global memory latency
+// Minimize divergence by ensuring all threads in a warp follow the same execution path
+// Align data access to the warp size to increase memory throughput
+// Combine atomic operations if possible to reduce contention
+// Use float4 for coalesced memory access if multiple contiguous float values are read/written together
+// Ensure data is allocated with proper alignment to avoid uncoalesced access
+```

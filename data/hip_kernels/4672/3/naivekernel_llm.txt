@@ -1,0 +1,5 @@
+// Consider using shared memory to store frameA and frameB for better memory access patterns  
+// Coalesce memory accesses by ensuring proper alignment of data structures  
+// Use branchless techniques to minimize conditional branching within the kernel  
+// Ensure threads are well-distributed across blocks to maintain optimal load balancing  
+// Minimize divergence by evaluating the condition as a single atomic operation

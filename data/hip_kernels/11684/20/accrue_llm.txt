@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access time.
+// Consider loop unrolling if there are repetitive operations within the kernel.
+// Coalesce memory access patterns to improve memory bandwidth utilization.
+// Ensure that the data types used match the underlying hardware to avoid potential performance penalties.
+// Minimize the use of conditional statements in the kernel for better warp execution efficiency.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses for histogram updates.
+// Initialize shared memory with zeros to ensure correctness.
+// Synchronize threads after initializing shared memory to ensure all updates are completed.
+// Perform atomic operations on shared memory to reduce contention on global memory.
+// Synchronize threads before merging local histogram back to the global histogram.
+// Use atomicAdd on global memory only after reducing contention with shared memory.
+```

@@ -1,0 +1,7 @@
+```
+// Load uniform value to shared memory to reduce global memory access.
+// Ensure uniform value is read once per block to optimize memory access.
+// Use shared memory to minimize latency from repeated global reads.
+// Sync threads to ensure shared memory is loaded before use by all threads.
+// Check boundary conditions to avoid illegal memory access.
+```

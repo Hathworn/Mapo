@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache frequently accessed variables
+// Optimize memory access by aligning data to warp size
+// Ensure coalesced memory accesses to the image array
+// Consider using float4 instead of float3 for better memory efficiency
+// Reduce redundant calculations by storing intermediate results
+// Assess the potential of using __restrict__ to enable compiler optimizations
+// Avoid bank conflicts in shared memory usage
+// Investigate occupancy reduction by tuning block and grid sizes
+```

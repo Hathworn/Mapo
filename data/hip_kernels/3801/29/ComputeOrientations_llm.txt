@@ -1,0 +1,9 @@
+```
+// Consider using coalesced memory accesses for loading data from global memory to shared memory.
+// Try using shared memory effectively to reduce redundant global memory access.
+// Minimize bank conflicts in shared memory by proper memory layout.
+// Explore using texture or surface memory for potentially faster memory reads.
+// Ensure arithmetic operations are placed to reduce register pressure.
+// Use constant memory where applicable for frequently accessed constant values.
+// Evaluate warp-level primitives to further optimize reduction operations.
+```

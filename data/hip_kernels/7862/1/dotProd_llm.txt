@@ -1,0 +1,8 @@
+```
+// Consider using warp shuffle operations for reduction to avoid __syncthreads
+// Use larger block size (e.g., 128 or 256) for better occupancy
+// Coalesce memory accesses for a and b to improve memory throughput
+// Consider padding shared memory to avoid bank conflicts
+// Optimize global memory access patterns by aligning data structure
+// Use __restrict__ keyword for pointers if possible to inform the compiler about non-aliasing
+```

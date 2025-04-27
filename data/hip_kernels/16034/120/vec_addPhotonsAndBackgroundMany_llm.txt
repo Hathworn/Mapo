@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// Optimize memory coalescing to improve the memory access pattern
+// Ensure proper use of __syncthreads() if shared memory is involved
+// Consider loop unrolling if the computation is iterated and benefits from it
+// Check for bank conflicts if shared memory is used
+// Explore warp-level primitives if further optimization is needed
+```

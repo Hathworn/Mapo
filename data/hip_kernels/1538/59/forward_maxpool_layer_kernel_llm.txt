@@ -1,0 +1,5 @@
+// Consider pre-fetching data to shared memory for faster access
+// Use loop unrolling in the pooling window iteration for better performance
+// Minimize index calculations by reusing computed values
+// Optimize strided memory accesses by ensuring coalesced memory patterns
+// Assess the possibility of using vectorized loads/stores to enhance throughput

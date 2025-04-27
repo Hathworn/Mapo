@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring adjacent threads access contiguous memory locations
+// Use shared memory efficiently by minimizing bank conflicts
+// Consider using vectorized memory access to improve throughput
+// Ensure optimal block size and grid size for maximizing SM occupancy
+// Avoid unnecessary use of __syncthreads() to reduce latency
+```

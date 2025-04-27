@@ -1,0 +1,5 @@
+// Use __ldg() for read-only accesses to potentially improve caching performance
+// Ensure coalesced memory accesses for better memory throughput
+// Consider loop unrolling for j and i loops to reduce loop overhead
+// Use warp shuffle operations for reduction instead of __shared__ memory for efficiency
+// Verify alignment of variance_delta writes to avoid non-coalesced memory accesses

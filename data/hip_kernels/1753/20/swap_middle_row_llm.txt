@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve performance
+// Ensure block size matches shared memory allocation to avoid overflow
+// Consider optimizing grid and block dimensions for better occupancy
+// Minimize bank conflicts in shared memory access for faster execution
+// Use __syncthreads() to synchronize threads and prevent race conditions
+```

@@ -1,0 +1,7 @@
+```
+// Consider using warp-level primitives for reduction to avoid shared memory bottlenecks.
+// Use __shfl_xor for efficient mean calculation across threads in a warp.
+// Use cooperative_groups for flexible memory access patterns.
+// Minimize global memory access by increasing data locality.
+// Use float4 or float2 for vectorized access to optimize memory transfers.
+```

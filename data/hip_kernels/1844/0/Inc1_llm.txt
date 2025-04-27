@@ -1,0 +1,6 @@
+```
+// Load Ad[tx] once outside the loop to reduce memory access.
+// Use a temporary variable to hold Ad[tx] value and update it, minimizing global memory writes.
+// Synchronize threads to ensure consistent data across all threads within a block.
+// Write to Bd[tx] once per iteration to minimize write operations.
+```

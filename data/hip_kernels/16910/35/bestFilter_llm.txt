@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to load Wh values for each thread block to reduce global memory accesses.
+// Implement double buffering technique to overlap data loading and computation for cmax.
+// Use shared memory to reduce repetitive access to mus by loading mus[tid] only once per thread.
+// Ensure that the iMatch boolean checks are efficiently coalesced to minimize warp divergence.
+// Align Nspikes, Nfilters, and Nchan memory accesses to cache lines to enhance transaction efficiency.
+// Optimize thread block size to ensure the highest possible occupancy given the hardware constraints.
+```

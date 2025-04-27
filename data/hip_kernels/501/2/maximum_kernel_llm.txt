@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access patterns for vg_a and vg_b.
+// Ensure pitch_a and pitch_b are appropriate for coalesced access.
+// Optimize shared memory usage to fit within its capacity.
+// Use __restrict__ pointers if possible to help the compiler with optimization.
+// Prefetch data to shared memory to hide global memory latency.
+// Review the grid and block dimensions to fully utilize the GPU resources.
+```

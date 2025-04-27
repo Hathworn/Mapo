@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for tmp_window to reduce global memory accesses.
+// Coalesce global memory accesses for arrays like d_mss_offsets for better performance.
+// Use texture memory for frequently accessed arrays such as d_ts and d_ss if they exhibit spatial locality.
+// Opt for loop unrolling in the inner loop to minimize loop control overhead.
+// Use registers for variables like tmp and prev_tmp to reduce memory latency.
+// Align d_params accesses if possible for improved memory access efficiency.
+// Analyze occupancy and adjust block size to maximize the effective use of available resources.
+```

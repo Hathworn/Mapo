@@ -1,0 +1,8 @@
+```
+// Consider utilizing shared memory to minimize global memory access overhead.
+// Pre-load data into shared memory to enhance memory coalescing.
+// Leverage shared memory in the loop to reduce redundant global memory reads.
+// Using __syncthreads() ensures all threads have written their data before reading.
+// Handle the special case outside the main loop to avoid conditional checks inside the loop.
+// Keep minimum logic inside critical sections to prevent branch divergence.
+```

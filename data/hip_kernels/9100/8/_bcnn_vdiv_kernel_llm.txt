@@ -1,0 +1,4 @@
+// Ensure coalesced memory access patterns for improved global memory efficiency.
+// Consider using shared memory if there's an opportunity to reuse data within the block.
+// Optimize block size to maximize warp utilization and minimize memory access latency.
+// Adjust grid size based on hardware capabilities to balance load and reduce overhead.

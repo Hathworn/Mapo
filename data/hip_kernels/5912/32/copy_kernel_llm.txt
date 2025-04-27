@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider using vectorized loads/stores if data alignment allows
+// Optimize memory coalescing by ensuring INCX and INCY are 1 where possible
+// Minimize divergence by ensuring all threads in a warp execute the same instruction
+// Experiment with different block sizes for optimum performance
+// Prefetch data to reduce latency where applicable
+```

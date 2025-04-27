@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory access
+// Consider reading multiple elements per thread for coalesced access
+// Optimize block size and grid dimensions to maximize occupancy
+// Remove conditional statements for increased warp efficiency if possible

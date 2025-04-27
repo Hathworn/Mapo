@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory
+// Use shared memory to store portions of input_itemsets and reference arrays to reduce global memory accesses
+// Evaluate the possibility of loop unrolling or replacing conditional statements with warp-level primitives for efficiency
+// Investigate the use of asynchronous memory operations to hide memory latency
+// Ensure grid and block dimensions are optimized for full occupancy
+```

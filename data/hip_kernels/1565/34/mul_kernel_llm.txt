@@ -1,0 +1,6 @@
+// Use shared memory to reduce redundant global memory accesses if data reuse is possible  
+// Ensure coalesced memory access by analyzing INCX and INCY for optimal stride values  
+// Minimize memory divergence by aligning INCX and INCY to warp boundaries  
+// Launch kernel with adequate compute-to-memory ratio to maximize bandwidth utilization  
+// Consider loop unrolling for the grid-stride loop to reduce loop overhead  
+// Optimize block and grid dimensions for better load balancing and occupancy

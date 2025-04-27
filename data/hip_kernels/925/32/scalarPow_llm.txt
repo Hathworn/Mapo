@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses for better performance by ensuring contiguous threads access contiguous memory locations in 'in' and 'out' arrays.
+// Use shared memory to load data into faster access memory within each block before computation.
+// Optimize block and thread dimensions to maximize occupancy and reduce thread divergence.
+// Minimize redundant mathematical calculations such as recalculating 'sqrt(val.x * val.x + val.y * val.y)' by storing intermediate results in registers.
+// Prefetch global memory data for 'in' array to registers before computation to reduce latency.

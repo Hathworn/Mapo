@@ -1,0 +1,3 @@
+// Use shared memory for thread block wide reuse to reduce global memory accesses.
+// Load adjacency and fineAggregate data into shared memory to improve memory coalescing.
+// Ensure coalesced accesses to global memory by working within shared memory scope.

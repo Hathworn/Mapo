@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access within each block.
+// Align data accesses to ensure coalesced memory transactions.
+// Use __restrict__ for pointers if applicable to aid compiler optimizations.
+// Minimize thread divergence by ensuring if conditions are satisfied uniformly across warps.

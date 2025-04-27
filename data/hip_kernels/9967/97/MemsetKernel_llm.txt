@@ -1,0 +1,5 @@
+```cpp
+// Ensure coalesced memory access by aligning threadIdx.x with memory layout
+// Avoid branch divergence by checking index bounds outside the kernel loop
+// Use shared memory if possible to reduce global memory access
+```

@@ -1,0 +1,4 @@
+// Avoid redundant memory operations by using __fmaf_rn for fused multiply-add
+// Use early return to reduce warp divergence for out-of-bounds threads
+// Use atomic operations carefully to prevent race conditions while updating shared data
+// Consider coalescing memory access patterns for improved performance

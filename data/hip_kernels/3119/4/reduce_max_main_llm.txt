@@ -1,0 +1,6 @@
+// Consider using __restrict__ pointers to improve memory access speed.
+// Ensure optimal coalesced memory access to global memory.
+// Minimize divergence by ensuring conditional statements align across threads within a warp.
+// Consider using larger blocks to minimize overhead and improve performance.
+// Utilize shared memory effectively to reduce frequent global memory access.
+// Unroll loops past a certain threshold for better register utilization.

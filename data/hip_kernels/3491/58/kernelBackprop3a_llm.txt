@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure proper synchronization with __syncthreads() to avoid race conditions
+// Load weights to shared memory outside of inner loop to minimize latency
+// Optimize memory coalescing by aligning access patterns
+```

@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access by using coalesced memory accesses for d_in and d_out
+// Minimize shared memory bank conflicts by addressing sdata indices in a structured access pattern
+// Use loop unrolling to reduce loop overhead for the inner substage loop
+// Consider leveraging warp shuffle operations for communication instead of shared memory for small stages
+// Evaluate using half precision floats if precision requirements permit for increased throughput
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for `pointsCoordinates` to reduce global memory access
+// Ensure coalesced accesses in `vertexData` to improve global memory throughput
+// Avoid branching by using arithmetic operations where possible to determine `halfSide`
+// Pre-compute reusable values like `textureAbsLength` and make use of `constant` or `shared` memory if applicable
+// Optimize register usage by reducing the number of variables within kernel scope
+```

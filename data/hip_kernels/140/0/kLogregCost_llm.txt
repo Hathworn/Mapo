@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns by ensuring coalesced reads for labels array
+// Pre-fetch maxProbs[tx] and store in a register to reduce redundant global memory reads
+// Minimize use of branching by using __shfl_sync() for warp-wide reduction of numMax computation
+// Consider using shared memory to store intermediate results for numMax for more efficient reduction
+// Use atomic operations cautiously when updating shared or global memory to avoid race conditions
+```

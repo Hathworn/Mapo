@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache input pixel data for faster access.
+// Coalesce global memory accesses by rearranging the memory layout.
+// Ensure coalesced writes to global memory by aligning output pixel writes.
+// Use texture memory for 2D spatial locality and cached memory reads.
+// Restructure loops to maximize warp occupancy and avoid branch divergence.
+// Utilize __restrict__ qualifiers for kernel arguments to hint memory access patterns.
+// Consider loop unrolling for performance improvement in bilinear interpolation calculations.
+// Ensure proper memory alignment for input and output arrays for optimal access speed.
+```

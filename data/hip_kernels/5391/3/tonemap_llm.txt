@@ -1,0 +1,6 @@
+```
+// Use shared memory for `d_cdf_norm` to reduce global memory accesses.
+// Consider coalescing memory accesses for `d_x`, `d_y`, `d_log_Y`, `d_r_new`, `d_g_new`, `d_b_new`.
+// Move calculation of `bin_index_norm` and `bin_index` outside the loop if possible.
+// Replace repetitive memory writes with atomic operations if data races occur.
+```

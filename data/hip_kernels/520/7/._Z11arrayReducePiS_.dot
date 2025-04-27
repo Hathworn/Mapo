@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11arrayReducePiS_' function" {
+	label="CFG for '_Z11arrayReducePiS_' function";
+
+	Node0x4584fe0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = add i32 %10, %3\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %12\l  %14 = load i32, i32 addrspace(1)* %13, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %15 = icmp sgt i32 %14, -1\l  br i1 %15, label %16, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x4584fe0:s0 -> Node0x4587870;
+	Node0x4584fe0:s1 -> Node0x4587900;
+	Node0x4587870 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%16:\l16:                                               \l  %17 = zext i32 %4 to i64\l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %17\l  %19 = load i32, i32 addrspace(1)* %18, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %20 = sub nsw i32 %14, %19\l  store i32 %20, i32 addrspace(1)* %13, align 4, !tbaa !7\l  br label %21\l}"];
+	Node0x4587870 -> Node0x4587900;
+	Node0x4587900 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  ret void\l}"];
+}

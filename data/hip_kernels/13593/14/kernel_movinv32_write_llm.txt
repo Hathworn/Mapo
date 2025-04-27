@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by aligning pointer arithmetic to memory boundaries.
+// Reduce memory divergence by ensuring threads within a warp follow similar execution paths.
+// Consider prefetching data into shared memory if there is data reuse within the block.
+// Optimize the use of registers to avoid spilling into local memory.
+// Maintain proper memory access patterns by aligning data sizes to naturally cache line sizes.
+```

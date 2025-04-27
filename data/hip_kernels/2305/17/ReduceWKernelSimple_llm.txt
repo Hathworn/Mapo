@@ -1,0 +1,5 @@
+// Avoid unnecessary recomputation of index within loops for improved memory access
+// Ensure coalesced memory access by accessing contiguous elements in memory
+// Reduce global memory accesses by using shared memory if possible
+// Utilize warp divergence reduction techniques for better performance
+// Consider loop unrolling to decrease loop overhead

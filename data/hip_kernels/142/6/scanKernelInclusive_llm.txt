@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Ensure that thread synchronization is necessary; excessive barriers can slow performance
+// Evaluate the need for multiple syncthreads to reduce their usage
+// Optimize warp shuffle operations; check if shuffling can be minimized
+// Assess if boundary checks can be minimized or removed for performance
+```

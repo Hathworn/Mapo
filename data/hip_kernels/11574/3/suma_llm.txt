@@ -1,0 +1,5 @@
+// Consider using shared memory to store intermediate results for further computation
+// Ensure coalesced memory access when writing results to global memory
+// Evaluate occupancy to ensure maximum use of GPU resources
+// Fuse multiple operations to reduce memory bandwidth demand
+// Explore loop unrolling if applicable for increased instruction throughput

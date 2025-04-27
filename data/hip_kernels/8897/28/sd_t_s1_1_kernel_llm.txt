@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Minimize recalculating thread indexes for loading shared memory.
+// Optimize loop indexing to use fewer division/modulus operations.
+// Prefetch v2_d elements for the next iteration if possible.
+// Ensure memory coalescing when accessing t2_d and v2_d arrays.
+```

@@ -1,0 +1,9 @@
+```cpp
+// Consider optimizing memory access patterns to improve cache utilization.
+// Try to ensure coalesced global memory access to maximize bandwidth usage.
+// Ensure to minimize shared memory bank conflicts in the pre scan section.
+// Investigate utilizing warp-level primitives to accelerate prefix sum operations.
+// Consider loop unrolling where applicable to enhance instruction throughput.
+// Monitor register usage to prevent spilling, which can degrade performance.
+// Utilize __syncthreads() judiciously as it may impact warp occupancy negatively.
+```

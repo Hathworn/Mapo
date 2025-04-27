@@ -1,0 +1,8 @@
+```
+// Prefer using registers over shared memory for frequently accessed variables
+// Reduce the number of accesses to global memory when possible
+// Use warp-level synchronization instead of __syncthreads() where applicable
+// Align memory accesses to reduce latencies
+// Ensure memory coalescing by organizing data properly
+// Minimize division operations by refactoring calculations
+```

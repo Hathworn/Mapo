@@ -1,0 +1,8 @@
+```cpp
+// Consider using half-warp transactions for coalesced memory access
+// Use __ldg() for read-only data to take advantage of the read-only data cache
+// Avoid bank conflicts when accessing shared memory
+// Optimize thread block configuration for better occupancy
+// Minimize the use of __syncthreads() for synchronization
+// Adjust memory alignment to match the hardware texture/memory requirements
+```

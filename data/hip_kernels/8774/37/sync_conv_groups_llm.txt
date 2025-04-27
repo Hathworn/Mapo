@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth utilization
+// Ensure data is accessed in a pattern that exploits memory coalescing capabilities
+// Use shared memory to reduce global memory access for frequently accessed data
+// Optimize thread block size to match the hardware warp size to reduce divergence
+// Minimize the use of __syncthreads() to avoid unnecessary synchronization overhead
+```

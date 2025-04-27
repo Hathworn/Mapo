@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to load input data if the data reuse is high to reduce global memory access.
+// Consider coalescing memory accesses to input and result arrays to optimize memory bandwidth usage.
+// Experiment with different block sizes and grid dimensions to find the optimal configuration.
+// Minimize divergence by ensuring uniformity in conditional operations across warp.
+```

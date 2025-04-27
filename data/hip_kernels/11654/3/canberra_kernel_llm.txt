@@ -1,0 +1,10 @@
+```cpp
+// Consider aligning pitch values to optimize memory access
+// Utilize shared memory to reduce the number of global memory accesses
+// Prefetch data into shared memory to minimize latency
+// Ensure coalesced memory access for vg_a and vg_b
+// Use loop unrolling for the accumulation loop if possible
+// Minimize bank conflicts in shared memory usage
+// Consider using float4 operations to optimize bandwidth utilization
+// Optimize the use of conditional statements to avoid divergence
+```

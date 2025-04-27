@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses for d_input and d_output
+// Use shared memory efficiently by reducing bank conflicts
+// Ensure sufficient occupancy by optimizing block and grid dimensions
+// Reduce the number of __syncthreads() calls if possible for better performance
+```

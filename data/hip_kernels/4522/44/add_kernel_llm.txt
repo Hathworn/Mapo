@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses if repeated access occurs
+// Optimize stride length to ensure coalesced memory access patterns
+// Consider prefetching data to reduce latency in memory access
+// Use float4 or float2 loads and stores for better memory throughput if applicable
+// Ensure that ALPHA is stored in a register to reduce redundant global reads
+```

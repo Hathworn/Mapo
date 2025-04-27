@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for global memory reads (e.g., _minJ, _maxJ).
+// Use shared memory for frequently accessed data such as histJ and cumJ to reduce global memory bandwidth.
+// Reorder operations to minimize read-after-write dependencies and ensure optimal pipelining.
+// Align data structures to 128 bytes to simplify memory access patterns and improve throughput.
+// Use loop unrolling in the binary search to decrease branch divergence and improve performance.
+// Reduce arithmetic operations by pre-computing invariant expressions.
+// Balance workload among threads to ensure all blocks complete execution simultaneously.
+```

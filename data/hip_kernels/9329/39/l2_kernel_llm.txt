@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache pred and truth data to reduce global memory accesses
+// Coalesce memory accesses by ensuring blocks of threads access consecutive memory locations
+// Consider using __ldg() intrinsic to minimize memory latency for read-only data
+// Optimize thread occupancy by adjusting block size to maximize GPU utilization
+```

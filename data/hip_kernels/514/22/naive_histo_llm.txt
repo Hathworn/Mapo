@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to temporarily store bin counts
+// Reduce global memory access by accumulating counts in shared memory
+// Use coalesced memory access for reading input data
+// Minimize warp divergence by ensuring all threads execute similar paths
+// Explore using warp-level primitives for efficient distribution
+```

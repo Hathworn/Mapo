@@ -1,0 +1,7 @@
+```c
+// Use shared memory to store local tile data for d_g and d_b to reduce global memory access.
+// Consider loop unrolling for the inner for-loop to improve performance.
+// Optimize memory access by ensuring coalesced memory access for d_coordinates, d_r, d_b, and d_g.
+// Prefetch subsequent coordinates data ahead of the loop to minimize global memory latency.
+// Use texture memory for d_g and d_b if spatial locality is significant to improve cache-hit rate.
+```

@@ -1,0 +1,10 @@
+```c
+// Consider coalescing global memory accesses to improve memory throughput.
+// Minimize bank conflicts in shared memory by ensuring variables like T2 align appropriately.
+// Use fast math operations if precision allows to reduce computational latency.
+// Reduce redundant __syncthreads() calls where possible to lower synchronization overhead.
+// Optimize thread block size based on hardware architecture for better occupancy.
+// Preload frequently accessed data into registers to decrease memory latency.
+// Reuse shared memory across multiple iterations where applicable to save memory bandwidth.
+// Avoid branching within warp where possible to improve execution efficiency.
+```

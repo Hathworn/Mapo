@@ -1,0 +1,6 @@
+```c
+// Consider coalescing global memory accesses to improve memory throughput.
+// Ensure memory alignment to leverage the full bandwidth of global memory.
+// Utilize shared memory if multiple threads within a block access the same data.
+// Minimize global memory accesses by reusing data loaded into registers/local memory.
+```

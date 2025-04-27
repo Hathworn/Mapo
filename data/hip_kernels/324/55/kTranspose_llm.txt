@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced global memory access when reading from idata
+// Consider using float4 to read and write for better memory throughput
+// Use padding in shared memory for avoiding bank conflicts
+// Prefetch data using multiple threads to overlap computation and memory operations
+// Optimize block size to fully utilize GPU resources and match memory transaction sizes
+// Use __restrict__ qualifier on pointers if no aliasing to help compiler optimization
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Consider increasing loop unroll factor for better performance
+// Align memory access to avoid bank conflicts in shared memory
+// Optimize loop bounds to reduce register pressure
+// Use warp-wide operations where possible to improve throughput

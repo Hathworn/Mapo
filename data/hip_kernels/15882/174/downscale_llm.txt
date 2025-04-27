@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data blocks to reduce global memory access latency
+// Consider coalesced memory access for gradOutput_data to improve memory throughput
+// Minimize bank conflicts in shared memory access if shared memory is used
+// Ensure gradInput_data and gradOutput_data are aligned to 128-byte boundaries if possible
+// Use __restrict__ qualifiers for gradInput_data and gradOutput_data to help the compiler optimize memory access
+```

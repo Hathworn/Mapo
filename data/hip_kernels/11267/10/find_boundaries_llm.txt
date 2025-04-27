@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory access for the 'which_bucket' array to improve memory access efficiency
+// Use __syncthreads() for synchronization if needed after updating 'bucket_start' within the warp
+// Ensure 'bucket_start' updates are minimized and done within atomic operations if necessary
+```

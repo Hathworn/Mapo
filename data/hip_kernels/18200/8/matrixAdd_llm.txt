@@ -1,0 +1,4 @@
+// Consider using shared memory if multiple accesses to a and b occur frequently
+// Align data access with warp size to reduce bank conflicts
+// Ensure that memory access patterns are coalesced for better performance
+// Minimize the use of if conditions in performance-critical sections

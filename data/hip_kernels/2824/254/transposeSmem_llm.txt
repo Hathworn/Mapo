@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory transactions
+// Pad shared memory to avoid bank conflicts
+// Ensure boundary checks to prevent invalid memory access
+// Load data into shared memory to optimize coalesced access
+// Use __syncthreads() to synchronize threads before accessing shared memory
+// Transpose indices calculation for efficient memory access
+```

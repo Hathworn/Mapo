@@ -1,0 +1,10 @@
+digraph "CFG for '_Z2k4PiS_' function" {
+	label="CFG for '_Z2k4PiS_' function";
+
+	Node0x51f9da0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = icmp eq i32 %3, 0\l  br i1 %4, label %17, label %5\l|{<s0>T|<s1>F}}"];
+	Node0x51f9da0:s0 -> Node0x51fa6e0;
+	Node0x51f9da0:s1 -> Node0x51fa770;
+	Node0x51fa770 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%5:\l5:                                                \l  %6 = shl i32 %3, 5\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = add i32 %3, -1\l  %10 = zext i32 %9 to i64\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %10\l  %12 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %13 = sext i32 %8 to i64\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %13\l  %15 = load i32, i32 addrspace(1)* %14, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %16 = add nsw i32 %15, %12\l  store i32 %16, i32 addrspace(1)* %14, align 4, !tbaa !5\l  br label %17\l}"];
+	Node0x51fa770 -> Node0x51fa6e0;
+	Node0x51fa6e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access patterns for dst array
+// Ensure shared memory usage is aligned to warp size for optimal access
+// Use double buffering to hide memory latency and increase bandwidth utilization
+// Minimize global memory access latency by using shared memory effectively
+// Align data structures to avoid misaligned accesses and maximize throughput
+// Avoid unnecessary synchronization barriers to reduce delay
+// Evaluate the possibility of using texture memory for read-only data access
+// Consider loop unrolling to increase instruction throughput
+```

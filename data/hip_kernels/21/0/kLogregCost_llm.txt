@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses to probs array to reduce global memory transaction overhead  
+// Utilize shared memory to store intermediate results like maxp or labelp for faster access  
+// Evaluate the benefits of loop unrolling for numMax computation to enhance performance  
+// Ensure use of efficient intrinsic functions where possible, such as __logf, to maintain performance  
+// Assess the possibility of using vector types if data alignment and use cases permit for better memory access efficiency

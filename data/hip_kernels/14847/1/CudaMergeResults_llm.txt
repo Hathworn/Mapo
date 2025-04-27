@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store frequently accessed subblock information.
+// Use a grid-stride loop to maximize occupancy and work distribution.
+// Employ coalesced memory access by ensuring adjacent threads access contiguous memory locations.
+// Optimize atomic operations as they can be a bottleneck in performance.
+// If possible, reduce the usage of atomic operations by improving memory access patterns.
+```

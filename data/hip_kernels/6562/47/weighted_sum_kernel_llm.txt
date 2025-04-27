@@ -1,0 +1,3 @@
+// Consider using shared memory for arrays to reduce global memory access if the kernel launches enough threads.
+// Evaluate memory coalescing to ensure optimal memory access patterns.
+// Ensure that 'b' is actually expected to be nullable and if not frequently nullable, refactor to avoid checking.

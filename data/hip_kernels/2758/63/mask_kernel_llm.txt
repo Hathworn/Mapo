@@ -1,0 +1,7 @@
+```c
+// Suggest using shared memory to reduce global memory access
+// Consider coalesced memory access for 'x' and 'mask' arrays
+// Ensure data is aligned in memory to prevent misaligned access
+// Use __restrict__ keyword for 'x' and 'mask' if no aliasing occurs
+// Evaluate the use of half-precision if acceptable for reduced memory bandwidth
+```

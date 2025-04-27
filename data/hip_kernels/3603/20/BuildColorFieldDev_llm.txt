@@ -1,0 +1,8 @@
+```
+// Load minmax[0] and minmax[1] into registers to reduce global memory accesses.
+// Use __syncthreads() if necessary to ensure all threads have loaded minmax values before proceeding.
+// Ensure memory coalescing when accessing the 'data' array.
+// Consider using shared memory if multiple threads access the same data elements.
+// Use efficient ternary operators for conditional value assignments.
+// Ensure all threads have calculated 'alpha' and updated 'colors' before exiting the kernel.
+```

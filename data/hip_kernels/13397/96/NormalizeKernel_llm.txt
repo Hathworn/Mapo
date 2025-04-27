@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses for normalization_factor and image
+// Consider using shared memory to store portions of normalization_factor
+// Use __restrict__ keyword for pointers to reduce aliasing
+// Reduce divergence with an optimized boundary check structure
+```

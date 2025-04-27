@@ -1,0 +1,24 @@
+digraph "CFG for '_Z15CudaImageSmoothPhS_iii' function" {
+	label="CFG for '_Z15CudaImageSmoothPhS_iii' function";
+
+	Node0x54209b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = getelementptr i8, i8 addrspace(4)* %7, i64 6\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 2, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = mul i32 %15, %19\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %22 = add i32 %20, %21\l  %23 = sdiv i32 %4, 2\l  %24 = icmp slt i32 %14, %23\l  br i1 %24, label %62, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x54209b0:s0 -> Node0x5424370;
+	Node0x54209b0:s1 -> Node0x5424400;
+	Node0x5424400 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%25:\l25:                                               \l  %26 = sub nsw i32 %2, %23\l  %27 = icmp sgt i32 %14, %26\l  %28 = add nsw i32 %4, -2\l  %29 = icmp slt i32 %22, %28\l  %30 = select i1 %27, i1 true, i1 %29\l  %31 = icmp sgt i32 %22, %26\l  %32 = select i1 %30, i1 true, i1 %31\l  br i1 %32, label %62, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5424400:s0 -> Node0x5424370;
+	Node0x5424400:s1 -> Node0x5422a60;
+	Node0x5422a60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%33:\l33:                                               \l  %34 = sdiv i32 %4, -2\l  %35 = icmp sgt i32 %34, %23\l  br i1 %35, label %56, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x5422a60:s0 -> Node0x5424d00;
+	Node0x5422a60:s1 -> Node0x5424d50;
+	Node0x5424d50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%36:\l36:                                               \l  %37 = phi float [ %50, %53 ], [ 0.000000e+00, %33 ]\l  %38 = phi i32 [ %54, %53 ], [ %34, %33 ]\l  %39 = add nsw i32 %38, %22\l  %40 = mul nsw i32 %39, %2\l  %41 = add i32 %40, %14\l  br label %42\l}"];
+	Node0x5424d50 -> Node0x5425d20;
+	Node0x5425d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = phi float [ %37, %36 ], [ %50, %42 ]\l  %44 = phi i32 [ %34, %36 ], [ %51, %42 ]\l  %45 = add i32 %41, %44\l  %46 = sext i32 %45 to i64\l  %47 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %46\l  %48 = load i8, i8 addrspace(1)* %47, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %49 = uitofp i8 %48 to float\l  %50 = fadd contract float %43, %49\l  %51 = add nsw i32 %44, 1\l  %52 = icmp slt i32 %44, %23\l  br i1 %52, label %42, label %53, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x5425d20:s0 -> Node0x5425d20;
+	Node0x5425d20:s1 -> Node0x5424ec0;
+	Node0x5424ec0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%53:\l53:                                               \l  %54 = add nsw i32 %38, 1\l  %55 = icmp slt i32 %38, %23\l  br i1 %55, label %36, label %56, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x5424ec0:s0 -> Node0x5424d50;
+	Node0x5424ec0:s1 -> Node0x5424d00;
+	Node0x5424d00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%56:\l56:                                               \l  %57 = phi float [ 0.000000e+00, %33 ], [ %50, %53 ]\l  %58 = mul nsw i32 %4, %4\l  %59 = sitofp i32 %58 to float\l  %60 = fdiv contract float %57, %59\l  %61 = fptoui float %60 to i8\l  br label %62\l}"];
+	Node0x5424d00 -> Node0x5424370;
+	Node0x5424370 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%62:\l62:                                               \l  %63 = phi i8 [ %61, %56 ], [ 0, %25 ], [ 0, %5 ]\l  %64 = mul nsw i32 %22, %2\l  %65 = add nsw i32 %64, %14\l  %66 = sext i32 %65 to i64\l  %67 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %66\l  store i8 %63, i8 addrspace(1)* %67, align 1, !tbaa !7\l  ret void\l}"];
+}

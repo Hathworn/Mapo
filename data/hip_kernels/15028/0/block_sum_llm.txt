@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory coalescing when accessing global memory
+// Use __shared__ memory to reduce global memory access
+// Use unrolled loop to minimize loop overhead
+// Avoid __syncthreads() in the last warp to reduce synchronization overhead
+// Use volatile to prevent unwanted compiler optimizations
+// Minimize access to global memory by storing partial results in shared memory
+```

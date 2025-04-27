@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Align data in memory to improve coalesced memory access
+// Use float4 or float2 types for vectorization of memory loads
+// Consider increasing block size to maximize thread occupancy
+// Prefetch data into registers to reduce memory latency
+```

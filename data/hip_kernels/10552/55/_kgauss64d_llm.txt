@@ -1,0 +1,5 @@
+```
+// Use shared memory to avoid redundant global memory loads
+// Load `s` values into shared memory at the beginning of each iteration
+// Ensure overlapping computation and memory loading by using `__syncthreads()` appropriately
+```

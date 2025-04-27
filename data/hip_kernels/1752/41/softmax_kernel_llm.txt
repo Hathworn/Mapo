@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access.
+// Improve warp utilization by aligning shared memory usage.
+// Consider padding shared memory to avoid bank conflicts.
+// Opt for coalesced memory access patterns to enhance performance.
+// Optimize stride-based access for better memory coalescing.
+// Limit thread divergence for better performance.

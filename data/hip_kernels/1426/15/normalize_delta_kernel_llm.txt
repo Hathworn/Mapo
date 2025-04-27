@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed variables like mean and variance to reduce global memory accesses
+// Preload mean[f], variance[f], mean_delta[f], and variance_delta[f] from global to local variables to reduce redundant memory transactions
+// Use asynchronous data prefetching techniques to hide memory latency when accessing x[index] and delta[index]
+// Coalesce memory accesses for delta and x to improve memory throughput
+// Evaluate thread block size and grid configuration to better utilize the GPU architecture and achieve higher occupancy
+```

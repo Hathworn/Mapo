@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory accesses.
+// Ensure correct usage of __syncthreads() for synchronization after loading.
+// Use threadIdx.x and threadIdx.y for shared memory indexing.
+// Zero out shared memory elements outside valid range for boundary conditions.
+// Calculate thread indices to avoid redundant operations on invalid data.
+// Optimize loop for tiles to minimize redundant loads into shared memory.
+// Avoid unnecessary computations for threads outside matrix bounds.

@@ -1,0 +1,6 @@
+```
+// Use shared memory to store normalization constant to minimize redundant global memory accesses
+// Use __syncthreads() to ensure all threads have the updated normalization_constant
+// Optimize memory access patterns by ensuring sequential thread access in global memory
+// Consider using vectorized memory operations if possible for improved throughput
+```

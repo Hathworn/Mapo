@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns for d_max_row_nz and d_row_perm arrays
+// Consider reducing divergent branches with effective thread synchronization
+// Explore shared memory utilization to cache d_bin_offset entries locally
+// Optimize the use of atomic operations to prevent excessive contention
+// Evaluate if loop unrolling further beyond given optimizations is beneficial
+// Ensure data alignment to reduce misaligned memory access penalties
+```

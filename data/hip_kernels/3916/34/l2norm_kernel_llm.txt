@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory access to x and dx arrays to improve memory access efficiency.
+// Reduce shared memory usage by using a warp shuffle for the reduction instead of __syncthreads.
+// Avoid redundant division by sum in the loop by pre-computing a multiplier.
+```

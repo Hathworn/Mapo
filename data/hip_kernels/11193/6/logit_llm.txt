@@ -1,0 +1,8 @@
+```
+// Use __restrict__ keyword to indicate no aliasing and improve memory access patterns
+// Ensure y and x are coalesced in memory
+// Minimize divergence by avoiding control flow in kernel
+// Consider using shared memory if reusing data elements
+// Experiment with different block sizes for optimal performance
+// Ensure kernel launch configuration matches the hardware capabilities
+```

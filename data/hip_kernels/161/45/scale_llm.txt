@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring data is aligned for warp-based operations.
+// Use shared memory to store column data for faster access and reduce global memory traffic.
+// Attempt further loop unrolling for the scaling loop if nsamples is known to be large.
+// Consider leveraging vectorized data types if possible, e.g., float4, to process multiple elements per thread.
+```

@@ -1,0 +1,9 @@
+```c
+// Use shared memory to reduce global memory access for mean and sd values
+// Pre-load shared values once per block to reduce redundant memory operations
+// Utilize shared memory for intermediate thread sums to minimize atomic operations
+// Each thread calculates partial results independently to optimize parallel computation
+// Reduce bank conflicts by ensuring proper memory access patterns in shared memory
+// Perform parallel reduction to aggregate results efficiently
+// Minimize global memory access by reusing data in shared memory
+```

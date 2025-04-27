@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Optimize memory access by coalescing data loads.
+// Ensure bank conflicts are minimized in shared memory access.
+// Maximize occupancy by carefully setting block and grid sizes.
+// Consider using atomic operations for final accumulation in global memory.
+// Use __syncthreads to guarantee shared memory coherence.
+```

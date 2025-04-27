@@ -1,0 +1,5 @@
+// Utilize shared memory to reduce global memory accesses  
+// Initialize shared memory to avoid race conditions  
+// Use stride for load balancing across threads  
+// Employ atomic operations for synchronization  
+// Avoid bank conflicts by aligning shared memory accesses

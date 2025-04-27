@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Consider employing memory coalescing for count_buff accesses
+// Ensure pos_buff accesses are coalesced for increased bandwidth
+// Utilize occupancy calculator to determine optimal block size
+// Minimize divergence by restructuring the if condition usage
+```

@@ -1,0 +1,5 @@
+```
+// Use shared memory for lifter coefficients to reduce global memory access
+// Use blockDim.x instead of CU1DBLOCK for cleaner code
+// Use the first thread in each block to apply energy
+```

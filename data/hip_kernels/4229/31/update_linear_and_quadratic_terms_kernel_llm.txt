@@ -1,0 +1,7 @@
+```
+// Use reciprocal instead of division to improve performance by avoiding repeated division operations
+// Optimize the loop stride to enhance memory access patterns and increase parallelism
+// Pre-calculate values shared across threads to minimize redundant computations and memory accesses
+// Perform updates in the loop using diagonal index calculation to ensure efficient memory access to quadratic array
+// Manage atomic operations separately to avoid potential race conditions in the linear array update
+```

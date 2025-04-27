@@ -1,0 +1,10 @@
+```cpp
+// Coalesce memory access by ensuring u, v, and src are accessed sequentially
+// Minimize bank conflicts by using padding in array strides when possible
+// Use shared memory to temporarily store frequently accessed data if applicable
+// Optimize the use of shared memory to reduce redundant global memory loads
+// Adjust block size to achieve a better balance between occupancy and performance
+// Consider loop unrolling if applicable to minimize control overhead
+// Use float2 operations where possible to capitalize on hardware acceleration
+// Ensure atomic operations are absolutely necessary to avoid performance bottlenecks
+```

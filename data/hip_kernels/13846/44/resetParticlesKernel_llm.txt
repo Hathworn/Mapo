@@ -1,0 +1,5 @@
+```
+// Use coalesced memory access patterns for pos and vel
+// Consider using shared memory to load particle data if reused within block
+// Ensure nParts is a multiple of blockDim.x for better warp efficiency
+```

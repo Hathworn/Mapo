@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning baseX with block size
+// Utilize shared memory efficiently by minimizing padding
+// Use #pragma unroll to enhance loop performance, especially for the result computation
+// Implement boundary checks to prevent out-of-bound access for d_Src
+// Synchronize threads with __syncthreads() post loading to ensure all data is available before computation
+```

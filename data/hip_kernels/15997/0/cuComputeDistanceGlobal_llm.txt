@@ -1,0 +1,5 @@
+// Consider changing memory access pattern to coalesced access for A and B.
+// Use vectorized memory access (e.g., float4) to improve memory throughput.
+// Use registers where possible to reduce shared memory usage.
+// Verify if shared memory usage can be further reduced or reused efficiently.
+// Reduce thread divergence by ensuring uniform memory access patterns.

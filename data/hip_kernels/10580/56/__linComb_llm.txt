@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// Ensure memory coalescing by using a stride that optimizes memory access patterns
+// Check for bank conflicts when using shared memory
+// Consider loop unrolling for the computation if len is known and small
+// Optimize thread block size to match compute capability for better resource utilization
+```

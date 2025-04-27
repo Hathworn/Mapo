@@ -1,0 +1,9 @@
+```cpp
+// Consider using shared memory to store the filter matrix for faster access by all threads.
+// Preload the input data block into shared memory to reduce global memory accesses.
+// Implement boundary checking to avoid out-of-bounds memory access.
+// Optimize the loop by minimizing the arithmetic operations inside the nested loops.
+// Ensure coalesced memory access by adjusting the data access pattern of src and dst arrays.
+// Consider increasing the block size if the occupancy is low to improve kernel performance.
+// Use texture memory for the input data if it provides better memory bandwidth.
+```

@@ -1,0 +1,8 @@
+```
+// Cache parameters in local variables for constant memory access to improve latency
+// Use local variables for thread and block indices to minimize register usage
+// Use shared memory to reduce global memory accesses and improve bandwidth utilization
+// Preload data into shared memory for coalesced access and maximize throughput
+// Ensure all threads have loaded the data with __syncthreads() for shared memory consistency
+// Use atomicAdd to prevent collisions and ensure correct accumulation
+```

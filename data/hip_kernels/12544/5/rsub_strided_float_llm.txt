@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache dx and dy elements as they are reused.
+// Ensure memory coalescing by aligning accesses of dx, dy, and result with warp boundaries.
+// Use loop unrolling to reduce loop overhead and improve instruction-level parallelism.
+// Avoid branch divergence by restructuring conditional statements where possible.
+```

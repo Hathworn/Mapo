@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce redundant global memory accesses for normalization factors.
+// Reduce bank conflicts when using shared memory by padding.
+// Ensure memory accesses are coalesced for optimal performance.
+// Utilize vectorized operations where possible for memory loads/stores.
+// Optimize thread block size for better occupancy and reduced resource contention.
+// Use warp shuffle operations for efficient data manipulation within warps.

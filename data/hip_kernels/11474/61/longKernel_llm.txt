@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by organizing threads and data in a linear fashion
+// Use shared memory if frequent data access is needed within blocks
+// Optimize block size to fully utilize GPU resources and minimize overhead
+// If data is read-only, consider using __restrict__ to allow better optimization by the compiler
+// Align data to memory-boundaries to reduce memory access latency
+```

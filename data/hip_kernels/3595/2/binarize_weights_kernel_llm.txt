@@ -1,0 +1,3 @@
+// Ensure coalesced memory access for weights and binary arrays to improve read/write efficiency
+// Consider using shared memory for mean computation to minimize global memory access
+// Utilize loop unrolling in the second loop to optimize the binary transformation process

@@ -1,0 +1,8 @@
+```
+// Consider adding __shared__ memory for data if more complex logic is added in the future
+// Ensure memory coalescing if accessing global memory in future iterations
+// If possible, use fewer threads per block to allow for better occupancy and performance
+// Evaluate if bank conflicts occur should shared memory be used, and mitigate them
+// Identify any constant values that can be moved to __constant__ memory for faster access
+// Utilize warp-level primitives for any future inter-thread communication
+```

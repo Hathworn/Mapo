@@ -1,0 +1,6 @@
+```
+// Align memory accesses to improve coalescing
+// Minimize divergent branches by ensuring all threads within a warp agree on execution paths
+// Optimize the pitch to ensure that it matches cache line sizes
+// Consider using shared memory if subtraction pattern involves reuse of data
+```

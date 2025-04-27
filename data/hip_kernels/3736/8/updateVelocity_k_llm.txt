@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access if there's spatial locality in memory access pattern.
+// Experiment with different values of block size for optimal performance considering hardware occupation.
+// Use loop unrolling for the loop to improve the performance by reducing loop control overhead.
+// Align memory accesses properly to reduce memory transaction overhead, especially for coalesced memory access.
+// Consider using float4 instead of float2 if proper memory alignment is maintained for better throughput.

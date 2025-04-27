@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if bias is reused multiple times within a block for better memory access pattern.
+// Coalesced memory access pattern is already achieved due to simple linear indexing.
+// Ensure that n_channel is a multiple of blockDim.x for efficient warp utilization.
+// Profile the kernel to ensure maximum thread occupancy is achieved.
+```

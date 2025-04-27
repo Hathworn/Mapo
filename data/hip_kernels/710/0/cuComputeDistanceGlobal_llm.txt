@@ -1,0 +1,5 @@
+// Utilize shared memory to reduce global memory accesses.
+// Ensure memory coalescing by properly aligning memory accesses.
+// Use __syncthreads() to coordinate shared memory usage between threads.
+// Apply loop unrolling to optimize the loop computation.
+// Check boundary conditions to avoid out-of-bound memory accesses.

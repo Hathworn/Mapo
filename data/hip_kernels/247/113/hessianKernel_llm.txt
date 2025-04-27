@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory access to d_gxx, d_gxy, d_gxz, d_gyy, d_gyz, d_gzz to improve memory throughput.
+// Minimize divergent control flow by reviewing thread computation paths especially in the calculation of indices.
+// Optimize shared memory usage if possible to reduce global memory pressure.
+// Evaluate if loop unrolling can be applied to sections of code executing repetitive tasks.
+// Investigate the possibility of using float4 for vector operations to make use of vectorized instructions.
+// Profile the kernel to identify further bottlenecks in memory bandwidth or compute resources.
+// Check alignment of memory accesses to fully exploit the memory cache and avoid misaligned accesses.
+```

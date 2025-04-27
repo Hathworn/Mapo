@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data for fast access and minimize global memory reads
+// Ensure correct boundaries to avoid reading out-of-bounds memory
+// Preload data outside the loop to reduce redundant memory accesses
+// Minimize thread divergence by combining conditions
+// Rotate memory positions in shared memory to optimize access patterns
+// Optimize synchronization to ensure correct data dependency resolution
+```

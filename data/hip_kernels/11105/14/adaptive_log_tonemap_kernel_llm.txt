@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses for imageIn and imageOut to improve memory throughput.
+// Use shared memory to store intermediate values like B, G, R, and reduce redundant global memory loads.
+// Prefetch *max, ld_max, and b into local registers to reduce global memory latency.
+// Minimize thread divergence by ensuring threads within the same warp follow similar execution paths.
+// Ensure idx calculation is optimized as it is frequently used.
+// Use __restrict__ qualifiers for imageIn and imageOut pointers to help the compiler optimize memory access.
+// Avoid redundant calculations such as multiple calls to rgb2Lum within the kernel for the same pixel.
+// Investigate using float4 or similar vectorized loads/stores for 3-channel data to reduce memory access overheads.
+```

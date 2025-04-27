@@ -1,0 +1,5 @@
+```
+// Consider using __syncthreads() if you expand beyond single-thread operation
+// Ensure the 'accuracy' pointer is aligned to avoid uncoalesced memory access
+// Consider using atomic operations if multiple blocks need to update 'accuracy'
+```

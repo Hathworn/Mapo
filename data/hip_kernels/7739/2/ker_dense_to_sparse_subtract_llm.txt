@@ -1,0 +1,4 @@
+// Use shared memory to cache idx and src values to reduce global memory accesses  
+// Minimize the number of atomic operations by thread consolidation  
+// Align memory access patterns to maximize coalesced memory access  
+// Experiment with different grid and block dimensions for optimal occupancy

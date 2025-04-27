@@ -1,0 +1,7 @@
+```
+// Use memory coalescing for d_s and d_normals for faster access
+// Consider using shared memory to store intermediate calculations of s_curr
+// Prefetch data into registers to reduce global memory latency
+// Use double precision for critical calculations if precision is important
+// Optimize block size and grid size configuration for specific GPU architecture
+```

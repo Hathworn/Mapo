@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ pointers to help the compiler optimize memory access.
+// Ensure coalesced memory access when reading from and writing to global memory.
+// Exploit shared memory efficiently to minimize global memory access latency.
+// Use warp-level primitives like __shfl_down_sync to optimize reduce operations.
+// Increase block size to maximize occupancy without exceeding shared memory per block.
+// Adjust grid and block dimensions to balance the workload across SMs efficiently.
+// Consider using float2 for memory transactions to reduce memory bandwidth usage.
+```

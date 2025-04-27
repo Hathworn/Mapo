@@ -1,0 +1,7 @@
+```
+// Consider increasing the use of shared memory to store multiple elements for coalesced access
+// Ensure data type alignment in shared memory to improve access speed
+// Minimize use of __syncthreads() to reduce synchronization overhead
+//尝试在循环中合并内存访问来减少频繁的全局内存读写
+// Consider launching more threads per block to make better use of SM resources
+```

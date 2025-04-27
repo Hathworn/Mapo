@@ -1,0 +1,7 @@
+```
+// Ensure vec1 is accessed in a coalesced manner.
+// Load elements into shared memory to reduce global memory accesses.
+// Use shared memory to store tmp1; optimize its indexing to maximize usage.
+// Minimize __syncthreads() calls within parallel reduction.
+// Use atomic operations sparingly to minimize their performance impact on result.
+```

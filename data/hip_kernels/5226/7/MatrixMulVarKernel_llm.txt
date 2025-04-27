@@ -1,0 +1,5 @@
+// Use shared memory to cache tiles of M and N to reduce global memory accesses
+// Consider using asynchronous copy for loading data into shared memory
+// Tune block size to enhance occupancy and memory access coalescing
+// Ensure memory access patterns lead to coalesced reads and writes to global memory
+// Consider aligning row and column calculations to warp size boundaries for optimal performance

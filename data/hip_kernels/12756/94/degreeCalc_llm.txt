@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by accessing vertexArray sequentially
+// Consider loop unrolling for improved performance in accessing neighbourArray
+// Use shared memory to minimize global memory access for vertexArray if reused often
+// Optimize atomic operation for sum by reducing the number of atomicAdd calls
+```

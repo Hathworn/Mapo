@@ -1,0 +1,5 @@
+// Use shared memory if suitable to reduce global memory access latency
+// Use vectorized types like int4 to maximize memory throughput when possible
+// Ensure memory coalescing by having consecutive threads access consecutive memory locations
+// Consider prefetching data to hide memory latency when working on large datasets
+// Experiment with varying block and grid sizes for optimal performance on specific GPU architecture

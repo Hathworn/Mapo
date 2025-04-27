@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if suitable, to store loc_ values temporarily for access by multiple threads.
+// Align memory access to the size of warp to improve coalesced memory transactions.
+// Prefetch loc_ into registers prior to the main execution loop to minimize latency.
+// Ensure data types are optimized for memory bandwidth (e.g., use float2 if applicable).
+// Investigate if __restrict__ qualifiers can be applied for assumed non-aliasing pointers.
+```

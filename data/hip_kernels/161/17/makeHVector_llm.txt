@@ -1,0 +1,7 @@
+```
+// Use dynamic shared memory to reduce global memory access.
+// Implement in-warp reduction using shuffles for efficient sum computation.
+// Perform cross-warp reduction to finalize sum in shared memory.
+// Ensure only thread 0 computes beta to minimize redundant calculations.
+// Use block-wide synchronization for shared memory consistency.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for 'probs' by transposing the data layout.
+// Use shared memory to store 'probs' values that are accessed multiple times.
+// Prefetch 'maxProbs' and 'labels' into registers to reduce global memory access latency.
+// Use warp-level primitives to efficiently compute 'numMax' for better occupancy.
+// Ensure '__float2int_rd' and '__int2float_rn' are effectively leveraging the hardware for conversion.
+```

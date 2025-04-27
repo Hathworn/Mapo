@@ -1,0 +1,5 @@
+// Consider coalescing memory access by aligning data structures to be coalesced naturally
+// Use shared memory to minimize redundant global memory accesses for frequently accessed data
+// Ensure all memory allocations are contiguous for improving access speed
+// Utilize texture memory for read-only data to achieve higher performance through caching
+// Ensure proper memory alignment to achieve optimal performance with memory transactions

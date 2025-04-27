@@ -1,0 +1,6 @@
+```
+// Use shared memory for input tile to reduce global memory accesses
+// Loop over 'n' using block-stride loop to enhance parallel efficiency
+// Load input into shared memory for coalesced memory access
+// Synchronize to ensure shared memory is consistent before next iteration
+```

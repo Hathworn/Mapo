@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed values to reduce global memory accesses.
+// Ensure memory coalescing by having threads access consecutive memory addresses.
+// Unroll loops if applicable to increase instruction throughput.
+// Use __restrict__ qualifiers for pointers if applicable to discourage unnecessary aliasing.
+// Evaluate whether texture memory could be beneficial for read-only data like 'a'.
+```

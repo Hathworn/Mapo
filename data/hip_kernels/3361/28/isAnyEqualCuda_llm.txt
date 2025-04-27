@@ -1,0 +1,6 @@
+```
+// Consider using a more specialized memory layout for shared memory to prevent bank conflicts
+// Preload sharedValues into registers for each thread to minimize shared memory usage inside loop
+// Optimize loop unrolling for the check equality section to reduce branch divergence
+// Use warp-level primitives to optimize the reduction logic for checking equality
+```

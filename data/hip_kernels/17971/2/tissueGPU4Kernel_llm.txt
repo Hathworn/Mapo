@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to decrease global memory access latency.
+// Attempt to coalesce memory accesses when loading from d_tisspoints.
+// Improve memory alignment for better performance.
+// Minimize bank conflicts in shared memory usage.
+// Unroll loops where applicable for reduced overhead.
+// Use __restrict__ keyword for pointers to allow compiler optimizations.
+// Ensure float operations use FMA (fused multiply-add) if supported by hardware.
+```

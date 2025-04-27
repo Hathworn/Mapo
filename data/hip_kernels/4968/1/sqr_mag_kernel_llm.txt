@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses by storing real and imaginary parts separately in two arrays.
+// Use shared memory to minimize redundant global memory accesses and reduce latency.
+// Ensure all threads in a warp execute if-condition together to avoid divergence.
+// Group accesses to `result` for improved memory throughput and cache utilization.
+```

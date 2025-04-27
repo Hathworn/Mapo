@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for histogram bins to reduce global memory accesses
+// Initialize shared memory histogram bins only if shared memory space is available
+// Ensure __syncthreads() is called after writing to and before reading from shared memory
+// Use atomic operations on shared memory to minimize contention
+// Accumulate shared memory bins to global memory in parallel to reduce bottleneck
+// Minimize the use of atomic operations on global memory by utilizing block-wise aggregation
+```

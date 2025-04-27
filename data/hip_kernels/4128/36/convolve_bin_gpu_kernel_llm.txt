@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to cache inputs and weights, reducing global memory access latency.
+// Consider coalescing memory accesses to improve global memory throughput.
+// Align data structures to memory boundaries to optimize memory access patterns.
+// Examine potential use of warp shuffle operations for inter-thread communication.
+// Experiment with loop unrolling in channel and filter loops to minimize branching overhead.
+// Assess block and grid size configuration to maximize device occupancy and resource utilization.
+```

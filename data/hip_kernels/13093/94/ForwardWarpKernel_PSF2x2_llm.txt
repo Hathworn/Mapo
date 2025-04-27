@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced reads and writes wherever possible
+// Consider using shared memory to stage data for improved access patterns
+// Minimize divergent branches by structuring conditionals to align with warp execution
+// Evaluate the possibility of using texture memory for read-only data to enhance cache usage
+// Ensure atomic operations are necessary and evaluate alternatives for reduction patterns
+```

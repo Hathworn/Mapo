@@ -1,0 +1,8 @@
+```
+// Precompute sqrt to avoid recalculation
+// Removed __syncthreads(); as it is unnecessary in this context
+// Consider using shared memory if sqrt values are reused across threads
+// Ensure memory coalescing by accessing consecutive memory locations
+// Check occupancy and adjust block size for better utilization
+// Use printf only for debugging purposes, as it can affect performance
+```

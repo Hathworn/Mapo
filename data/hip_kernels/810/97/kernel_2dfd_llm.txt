@@ -1,0 +1,10 @@
+```
+// Consider increasing the thread block size for better parallel efficiency.
+// Use shared memory to store frequently accessed data to reduce global memory accesses.
+// Apply padding in shared memory to avoid bank conflicts and improve performance.
+// Preload data into registers to reduce latency associated with accessing global memory.
+// Optimize memory coalescing by ensuring aligned memory access patterns.
+// Minimize redundant calculations by storing repeated values in registers.
+// Use prefetching to hide memory latency from global memory to shared or registers.
+// Ensure the use of __syncthreads() is only when absolutely necessary to avoid warp divergence and synchronization overhead.
+```

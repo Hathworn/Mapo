@@ -1,0 +1,7 @@
+```c
+// Consider coalescing global memory accesses by aligning 'g_Data' accesses
+// Preload more data into shared memory to minimize global memory traffic
+// Use texture memory if access pattern leads to spatial locality
+// Reduce redundant calculations by precomputing repeated values
+// Ensure contiguous memory allocation for hist[] to improve cache efficiency
+```

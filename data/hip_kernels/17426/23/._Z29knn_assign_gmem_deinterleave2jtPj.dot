@@ -1,0 +1,16 @@
+digraph "CFG for '_Z29knn_assign_gmem_deinterleave2jtPj' function" {
+	label="CFG for '_Z29knn_assign_gmem_deinterleave2jtPj' function";
+
+	Node0x4537a90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%3:\l  %4 = alloca i64, align 8, addrspace(5)\l  %5 = addrspacecast i64 addrspace(5)* %4 to i64*\l  %6 = bitcast i64 addrspace(5)* %4 to i8 addrspace(5)*\l  call void @llvm.lifetime.start.p5i8(i64 8, i8 addrspace(5)* %6) #3\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = zext i32 %15 to i64\l  store volatile i64 %16, i64* %5, align 8, !tbaa !7\l  %17 = load volatile i64, i64* %5, align 8, !tbaa !7\l  %18 = shl i64 %17, 1\l  store volatile i64 %18, i64* %5, align 8, !tbaa !7\l  %19 = load volatile i64, i64* %5, align 8, !tbaa !7\l  %20 = zext i32 %0 to i64\l  %21 = icmp ult i64 %19, %20\l  br i1 %21, label %22, label %43\l|{<s0>T|<s1>F}}"];
+	Node0x4537a90:s0 -> Node0x453a840;
+	Node0x4537a90:s1 -> Node0x453a8d0;
+	Node0x453a840 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%22:\l22:                                               \l  %23 = zext i16 %1 to i32\l  %24 = icmp eq i16 %1, 0\l  br i1 %24, label %43, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x453a840:s0 -> Node0x453a8d0;
+	Node0x453a840:s1 -> Node0x453ab10;
+	Node0x453ab10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%25:\l25:                                               \l  %26 = zext i16 %1 to i64\l  br label %27\l}"];
+	Node0x453ab10 -> Node0x453ac80;
+	Node0x453ac80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ 0, %25 ], [ %41, %27 ]\l  %29 = load volatile i64, i64* %5, align 8, !tbaa !7\l  %30 = add i64 %29, %20\l  %31 = mul i64 %30, %26\l  %32 = zext i32 %28 to i64\l  %33 = add nuw nsw i64 %32, %26\l  %34 = add i64 %33, %31\l  %35 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %34\l  %36 = load i32, i32 addrspace(1)* %35, align 4, !tbaa !11\l  %37 = load volatile i64, i64* %5, align 8, !tbaa !7\l  %38 = mul i64 %37, %26\l  %39 = add i64 %38, %32\l  %40 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %39\l  store i32 %36, i32 addrspace(1)* %40, align 4, !tbaa !11\l  %41 = add nuw nsw i32 %28, 1\l  %42 = icmp eq i32 %41, %23\l  br i1 %42, label %43, label %27, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x453ac80:s0 -> Node0x453a8d0;
+	Node0x453ac80:s1 -> Node0x453ac80;
+	Node0x453a8d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%43:\l43:                                               \l  call void @llvm.lifetime.end.p5i8(i64 8, i8 addrspace(5)* %6) #3\l  ret void\l}"];
+}

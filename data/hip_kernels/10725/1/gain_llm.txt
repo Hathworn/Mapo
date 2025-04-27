@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to store input tile for coalesced access
+// Load color components into registers to minimize global memory access
+// Reduce arithmetic operations by pre-calculating gains
+// Analyze the need for __syncthreads() when using shared memory
+// Ensure memory access patterns are coalesced for both input and output
+```

@@ -1,0 +1,4 @@
+// Consider using __restrict__ pointer qualifiers for x to improve memory access.
+// Load lambda into cached_lambda outside the loop if it remains constant across kernel invocations.
+// Prefetch elements of x into local variables or registers if possible for faster access.
+// Ensure optimal thread block size for better occupancy and efficiency.

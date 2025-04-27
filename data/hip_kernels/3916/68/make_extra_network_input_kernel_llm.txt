@@ -1,0 +1,6 @@
+```
+// Consider using `__restrict__` qualifier for input pointers to improve compiler optimization
+// Optimize memory access by using shared memory for frequently accessed data within a block
+// Ensure coalesced memory access by adjusting data layout if possible
+// Use `__ldg` for all read-only global memory accesses to leverage texture cache
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access patterns by ensuring consecutive threads access consecutive memory locations for vals.
+// Assess the possibility of using shared memory to reduce redundant computation of constants like 1/(sigma * sqrt(2 * 3.141592653589793)).
+// Evaluate usage of inline device functions or pre-computed constants outside of the loop to minimize repeated computation.
+// Optimize thread block size for better occupancy and decreased memory divergence.
+// Utilize compiler flags to maximize potential compile-time optimizations.
+```

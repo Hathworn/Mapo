@@ -1,0 +1,7 @@
+```cpp
+// Unroll the loop to improve instruction-level parallelism
+// Use __restrict__ to help the compiler with aliasing optimizations
+// Consider using shared memory to reduce global memory accesses
+// Align data to warp size to improve memory coalescing
+// Use ldc instructions for non-trivial shared to global memory copies
+```

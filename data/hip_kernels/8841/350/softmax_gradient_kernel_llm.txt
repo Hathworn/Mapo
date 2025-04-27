@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Ensure coalesced memory access for input arrays
+// Optimize parallel reduction with shared memory usage
+// Avoid bank conflicts in shared memory access by aligning data appropriately
+// Prefer float4 data type for larger throughput where applicable
+// Utilize loop unrolling for additional performance gains
+```

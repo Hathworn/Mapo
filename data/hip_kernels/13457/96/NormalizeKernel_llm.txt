@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for frequently accessed normalization_factor.
+// Ensure memory access is coalesced for both normalization_factor and image.
+// Use __ldg to load normalization_factor if it is read-only and to exploit cached loads.
+```

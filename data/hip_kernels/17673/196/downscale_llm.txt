@@ -1,0 +1,8 @@
+```
+// Consider using memory coalescing techniques for gradOutput_data accesses
+// Use shared memory to reduce redundant global memory reads
+// Leverage vectorized memory loads if the architecture supports it
+// Avoid bank conflicts in shared memory by padding when necessary
+// Ensure optimal block size and grid size configuration for maximum occupancy
+// Analyze and minimize warp divergence in loop unrolling
+```

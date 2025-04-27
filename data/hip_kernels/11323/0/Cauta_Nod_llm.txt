@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses for noduri array.
+// Ensure data is coalesced when loading noduri into shared memory.
+// Avoid race conditions by using atomic operations like atomicMin.
+// Consider loop unrolling for small NUMAR_NODURI to increase performance.
+// Replace dynamic index calculations with constants where possible in loop iterations.
+// Optimize access patterns to minimize bank conflicts in shared memory.
+// Reduce the number of checks in the CautareMuchie function for better performance.
+```

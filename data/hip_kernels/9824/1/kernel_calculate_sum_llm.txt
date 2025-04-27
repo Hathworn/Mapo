@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure all threads have finished updating shared memory before proceeding
+// Optimize shared memory usage by initializing unused elements to zero
+// Perform warp-level reductions for smaller block dimensions to increase efficiency
+// Minimize global memory access by storing only necessary results back to global memory
+```

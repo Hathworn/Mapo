@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data for faster access.
+// Minimize global memory accesses by storing intermediate results in registers.
+// Optimize memory coalescing by ensuring threads in the same warp access contiguous memory locations.
+// Avoid divergent branches within warp execution for better performance.
+// Utilize constant memory for constants that are repeatedly accessed by all threads.
+```

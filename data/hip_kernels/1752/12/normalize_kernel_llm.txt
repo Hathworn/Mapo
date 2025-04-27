@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for x by ensuring contiguous threads access contiguous memory locations
+// Evaluate use of shared memory for storing mean and variance to reduce redundant global memory accesses
+// Ensure enough threads per block to mask memory latencies and maximize occupancy
+// Use __syncthreads() if shared memory is implemented to ensure data consistency across threads
+// Minimize use of magic numbers; consider defining 0.000001f as a constant for better maintainability
+```

@@ -1,0 +1,9 @@
+```
+// Optimize memory access patterns by reducing latency through coalesced access.
+// Consider using shared memory to reduce global memory access times.
+// Reuse Zbuffer, discrepancy, and normals data, stored in registers, during computations.
+// Ensure multiple threads access contiguous memory to improve coalesced performance.
+// Investigate using memory prefetching techniques for frequent accessed data.
+// Balance computation and memory operations to hide memory latency.
+// Evaluate shared memory occupancy regarding the number of threads per block.
+```

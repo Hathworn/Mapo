@@ -1,0 +1,11 @@
+```c
+// Optimize memory access by using shared memory for frequently accessed data.
+// Minimize global memory access by caching data in shared memory.
+// Use atomic operations efficiently to avoid unnecessary contention.
+// Ensure coalesced access to global memory wherever possible.
+// Use syncthreads judiciously to synchronize shared memory usage.
+// Limit shared memory usage to avoid bank conflicts.
+// Reduce the number of atomic operations by using shared memory buffers.
+// Balance load among threads to maximize parallel efficiency.
+// Consider using padding to prevent shared memory bank conflicts.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory for 'vec' to reduce global memory access latency
+// Consider coalesced memory access for 'mat' and 'tgtMat'
+// Ensure 'tgtMat' is also accessed in a coalesced manner
+// Optimize block and grid dimensions for SM occupancy
+// Prefetch data to shared memory when possible
+// Minimize redundant computations inside the loop
+```

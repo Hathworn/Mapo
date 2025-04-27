@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses.
+// Store partial sum in register to minimize thread local memory usage.
+// Ensure memory coalescing by accessing continuous memory blocks with threads.
+// Use __syncthreads() efficiently to synchronize shared memory operations.
+// Avoid bank conflicts in shared memory by appropriate index access patterns.
+// Minimize warp divergence when updating shared memory sums.

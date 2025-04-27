@@ -1,0 +1,9 @@
+```
+// Ensure efficient memory access patterns by organizing access in a coalesced manner
+// Consider using shared memory to reduce global memory accesses and increase data reuse
+// Balance workload among threads to avoid warp divergence
+// Optimize the use of registers to hold intermediate computations
+// Minimize the use of atomic operations where possible to reduce contention
+// Use loop unrolling if applicable to improve throughput
+// Ensure all memory accesses are aligned for better performance
+```

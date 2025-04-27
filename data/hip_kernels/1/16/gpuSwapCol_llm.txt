@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to decrease access latency for colj variable
+// Only read colj once per block to minimize global memory transactions
+// Use __syncthreads() to ensure all threads have up-to-date values in shared memory
+// Consider using warp-level primitives for more efficient synchronization
+// Optimize memory access patterns to boost coalesced memory accesses
+// Reduce unnecessary global memory writes within the kernel
+```

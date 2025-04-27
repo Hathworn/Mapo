@@ -1,0 +1,10 @@
+digraph "CFG for '_Z5poli1Pfi' function" {
+	label="CFG for '_Z5poli1Pfi' function";
+
+	Node0x4da9f40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %15 = icmp slt i32 %11, %1\l  br i1 %15, label %16, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x4da9f40:s0 -> Node0x4dac7d0;
+	Node0x4da9f40:s1 -> Node0x4dac860;
+	Node0x4dac7d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = fmul contract float %14, 3.000000e+00\l  %18 = fmul contract float %14, %17\l  %19 = fmul contract float %14, 7.000000e+00\l  %20 = fsub contract float %18, %19\l  %21 = fadd contract float %20, 5.000000e+00\l  store float %21, float addrspace(1)* %13, align 4, !tbaa !7\l  br label %22\l}"];
+	Node0x4dac7d0 -> Node0x4dac860;
+	Node0x4dac860 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

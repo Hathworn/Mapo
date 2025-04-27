@@ -1,0 +1,5 @@
+// Consider coalesced memory access for A and C to reduce global memory latency.
+// Use shared memory for frequently accessed data to reduce global memory transactions.
+// Minimize branch divergence within the kernel loop for better performance. 
+// Optimize the block and grid dimensions to achieve maximum occupancy. 
+// Ensure alignment of memory allocations for A and C to improve access efficiency.

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Synchronize threads after loading from global memory
+// Use __syncthreads() to ensure all additions are complete before next operation
+// Store intermediate reduction results in global memory
+// Final reduction is done by thread 0 of block 0
+```

@@ -1,0 +1,11 @@
+```
+// Use shared memory to cache centroid data for faster access
+// Consider warp-level primitives to optimize memory access patterns
+// Prefetch data into registers to reduce memory latency
+// Minimize global memory accesses by using local variables
+// Optimize loop unrolling to improve execution efficiency
+// Ensure coalesced memory access for trans_x, trans_y, trans_z
+// Avoid bank conflicts when using shared memory for cov_dxd_pi
+// Reduce conditional checks inside inner loops by restructuring code
+// Explore using half-precision if precision requirements allow
+```

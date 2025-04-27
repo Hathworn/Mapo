@@ -1,0 +1,9 @@
+```
+// Consider vectorizing memory accesses for delta array if possible
+// Use shared memory to reduce global memory accesses for delta array
+// Optimize reduction by minimizing thread divergence within a warp
+// Check for optimal block size (BLOCK) based on the architecture
+// Investigate potential benefits of loop unrolling further for batch and size loops
+// Evaluate if memory coalescing can be improved for delta array access
+// Explore using atomic operations for updating bias_updates to avoid race conditions
+```

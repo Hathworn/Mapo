@@ -1,0 +1,19 @@
+digraph "CFG for '_Z17bitonic_sort_stepPfii' function" {
+	label="CFG for '_Z17bitonic_sort_stepPfii' function";
+
+	Node0x45a0210 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = mul i32 %10, %9\l  %12 = add i32 %11, %4\l  %13 = xor i32 %12, %1\l  %14 = icmp ugt i32 %13, %12\l  br i1 %14, label %15, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x45a0210:s0 -> Node0x45a2140;
+	Node0x45a0210:s1 -> Node0x45a21d0;
+	Node0x45a2140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%15:\l15:                                               \l  %16 = and i32 %12, %2\l  %17 = icmp eq i32 %16, 0\l  %18 = zext i32 %12 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7\l  %21 = zext i32 %13 to i64\l  %22 = getelementptr inbounds float, float addrspace(1)* %0, i64 %21\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !7\l  br i1 %17, label %24, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x45a2140:s0 -> Node0x45a2f20;
+	Node0x45a2140:s1 -> Node0x45a2fb0;
+	Node0x45a2f20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%24:\l24:                                               \l  %25 = fcmp contract ogt float %20, %23\l  br i1 %25, label %28, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x45a2f20:s0 -> Node0x45a3180;
+	Node0x45a2f20:s1 -> Node0x45a21d0;
+	Node0x45a2fb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%26:\l26:                                               \l  %27 = fcmp contract olt float %20, %23\l  br i1 %27, label %28, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x45a2fb0:s0 -> Node0x45a3180;
+	Node0x45a2fb0:s1 -> Node0x45a21d0;
+	Node0x45a3180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%28:\l28:                                               \l  store float %23, float addrspace(1)* %19, align 4, !tbaa !7\l  store float %20, float addrspace(1)* %22, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x45a3180 -> Node0x45a21d0;
+	Node0x45a21d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,5 @@
+// Use more efficient memory access patterns
+// Minimize use of global memory and maximize use of shared memory
+// Ensure coalesced memory accesses when reading/writing to global memory
+// Consider unrolling loops if employed in the kernel for better performance
+// Use __syncthreads() efficiently to avoid unnecessary synchronization overheads

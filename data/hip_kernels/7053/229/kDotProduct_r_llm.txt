@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to reduce global memory accesses.
+// Use loop unrolling for increased register utilization.
+// Optimize reduction using warp-level programming.
+// Use volatile keyword for warp reduction efficiency.
+// Ensure full warp utilization for reduction steps.
+// Accumulate results at block-level to finalize global memory access.
+// Minimize synchronizations by efficient reduction steps.
+```

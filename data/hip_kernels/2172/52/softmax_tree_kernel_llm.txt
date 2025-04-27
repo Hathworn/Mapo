@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache input values for faster access
+// Minimize bank conflicts by padding shared memory
+// Use warp-level primitives to further optimize reduction operations
+// Utilize cooperative groups for better thread synchronization
+// Optimize memory access patterns to improve coalescing
+// Consider splitting computations across multiple kernel launches if necessary
+```

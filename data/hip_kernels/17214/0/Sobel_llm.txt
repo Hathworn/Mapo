@@ -1,0 +1,10 @@
+```
+// Align memory access to improve coalesced access patterns
+// Use shared memory effectively to reduce global memory bandwidth
+// Minimize thread divergence by optimizing conditional blocks
+// Clearly define Sobel kernels to maximize instruction throughput
+// Consider pre-computed constants for Sobel kernels to reduce computation
+// Optimize loop bounds to minimize unnecessary computations
+// Leverage texture or read-only cache for faster memory access if applicable
+// Explore warp shuffle techniques to minimize __syncthreads overhead
+```

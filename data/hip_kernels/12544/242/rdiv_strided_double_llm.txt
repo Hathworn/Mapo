@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by aligning the data
+// Optimize memory access patterns for both `dx` and `dy`
+// Ensure that `incx` and `incy` allow vectorized instructions
+// Preload data into shared memory if beneficial
+// Reduce redundant global memory accesses by storing `dx[i]` and `dy[i]` in registers if reused
+// Consider using __ldg() to load data from global memory that doesn't change
+```

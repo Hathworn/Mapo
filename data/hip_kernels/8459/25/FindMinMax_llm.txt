@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access for d_Data to improve read efficiency.
+// Ensure proper thread block size to optimize shared memory usage.
+// Use of __syncthreads() is necessary after shared memory reduction.
+// Consider padding shared memory arrays to avoid bank conflicts.
+// Ensure grid size covers the entire data set to avoid undefined behavior.
+// Minimize use of conditional checks inside the main processing loop.
+```

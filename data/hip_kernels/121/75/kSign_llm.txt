@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by verifying contiguous memory access for `mat` and `target`
+// Use shared memory if possible to exploit data reuse within a block
+// Optimize thread-block size to maximize occupancy and minimize warp divergence
+// Consider pre-fetching or staging data in registers for faster access
+// Evaluate the use of faster memory spaces like __constant__ or __restrict__ qualifiers for read-only data
+```

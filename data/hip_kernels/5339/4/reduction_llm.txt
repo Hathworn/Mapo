@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Minimize global memory access by utilizing shared memory effectively
+// Ensure __syncthreads() is called after each stage of reduction to synchronize threads
+// Consider unrolling the reduction loop for the final iterations to decrease overhead
+// Optimize the block size (TPB) based on the specific GPU architecture
+```

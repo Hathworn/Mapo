@@ -1,0 +1,5 @@
+// Avoid redundant calculations by computing thread index once
+// Use constant memory or shared memory for frequently accessed data if possible for better memory access patterns
+// Use coalesced memory access by ensuring threads read contiguous blocks of memory
+// Reduce register pressure by optimizing loop variable initialization and calculations
+// Consider loop unrolling if the iteration count is predictable and high

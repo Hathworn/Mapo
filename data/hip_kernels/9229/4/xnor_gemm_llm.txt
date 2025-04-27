@@ -1,0 +1,11 @@
+```
+// Consider using memory coalescing to optimize global memory access patterns.
+// Minimize access to global memory by maximizing the use of shared memory.
+// Ensure accesses to Asub and Bsub are coalesced to improve memory bandwidth.
+// Consider using double buffering to hide memory latency.
+// Investigate the potential benefits of padding shared memory to prevent bank conflicts.
+// Optimize the kernel launch configuration by tuning BLOCK_SIZE to match the hardware specifics.
+// Leverage loop unrolling to reduce loop overhead and increase execution speed.
+// Align memory accesses by using misalignment techniques to avoid performance penalties.
+// Evaluate memory footprint to ensure sufficient occupancy and efficient resource usage.
+```

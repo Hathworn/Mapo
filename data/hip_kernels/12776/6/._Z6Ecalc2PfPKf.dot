@@ -1,0 +1,5 @@
+digraph "CFG for '_Z6Ecalc2PfPKf' function" {
+	label="CFG for '_Z6Ecalc2PfPKf' function";
+
+	Node0x5412ee0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = mul i32 %8, %7\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %1, i64 %12\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %15 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %16 = load float, float addrspace(1)* %15, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %17 = fsub contract float %14, %16\l  store float %17, float addrspace(1)* %15, align 4, !tbaa !7\l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+// Minimize index calculations by using registers for frequently accessed values
+// Utilize shared memory to reduce global memory accesses if possible
+// Apply loop unrolling for operations within the kernel to enhance re-use of data in registers
+// Consider coalescing global memory accesses to increase memory throughput
+// Use __ldg() for read-only data if running on devices with compute capability >= 3.5 to cache reads
+// Optimize block and grid dimensions to match the GPU's architecture for better performance

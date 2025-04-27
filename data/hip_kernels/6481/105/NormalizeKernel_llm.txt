@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache normalization_factor data to reduce global memory reads.
+// Ensure memory coalescing by aligning data access patterns with the warp size.
+// Optimize thread block size to improve memory throughput and occupancy.
+// Use __ldg to load from normalization_factor if cached memory optimization is not suitable.
+// Minimize divergence in the conditional statements to enhance warp efficiency.
+```

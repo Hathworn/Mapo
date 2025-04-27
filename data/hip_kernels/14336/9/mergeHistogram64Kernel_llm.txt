@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory access for d_PartialHistograms to improve memory throughput
+// Use shared memory to minimize global memory access during reduction
+// Unroll reduction loops further to decrease the number of synchronization points and improve performance
+// Ensure that __syncthreads() is minimized to reduce synchronization overhead
+```

@@ -1,0 +1,9 @@
+```cpp
+// Optimize memory access by coalescing global memory reads and writes.
+// Consider using shared memory for frequently accessed data like d_cdf_norm.
+// Ensure to minimize bank conflicts when using shared memory.
+// Prefetch data to registers to reduce global memory latency.
+// Avoid redundant calculations by reusing computed values where possible.
+// Use loop unrolling if applicable to further reduce runtime.
+// Balance the workload across threads to avoid thread divergence.
+```

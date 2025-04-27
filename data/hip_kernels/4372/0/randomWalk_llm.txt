@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache data frequently accessed by threads to improve memory access times.
+// Consider using memory coalescing for accessing results and crossTimes arrays to improve global memory bandwidth.
+// Initialize hiprandState with different seeds for each thread to ensure randomness and avoid correlations.
+// Use warp shuffle functions to reduce thread divergence when checking boundary conditions.
+// Allocate results and crossTimes arrays in the GPU's global memory with optimal alignment to improve access speed.
+```

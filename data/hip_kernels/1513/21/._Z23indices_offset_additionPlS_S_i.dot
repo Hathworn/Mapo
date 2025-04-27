@@ -1,0 +1,18 @@
+digraph "CFG for '_Z23indices_offset_additionPlS_S_i' function" {
+	label="CFG for '_Z23indices_offset_additionPlS_S_i' function";
+
+	Node0x4a03450 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = icmp ult i32 %5, 26\l  br i1 %6, label %7, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x4a03450:s0 -> Node0x4a048e0;
+	Node0x4a03450:s1 -> Node0x4a04970;
+	Node0x4a048e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%7:\l7:                                                \l  %8 = zext i32 %5 to i64\l  %9 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %8\l  %10 = load i64, i64 addrspace(1)* %9, align 8, !tbaa !5, !amdgpu.noclobber !9\l  %11 = getelementptr inbounds [26 x i64], [26 x i64] addrspace(3)*\l... @_ZZ23indices_offset_additionPlS_S_iE12smem_offsets, i32 0, i32 %5\l  store i64 %10, i64 addrspace(3)* %11, align 8, !tbaa !5\l  br label %12\l}"];
+	Node0x4a048e0 -> Node0x4a04970;
+	Node0x4a04970 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%12:\l12:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %15 = getelementptr i8, i8 addrspace(4)* %14, i64 4\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 4, !range !10, !invariant.load\l... !9\l  %18 = zext i16 %17 to i32\l  %19 = getelementptr inbounds i8, i8 addrspace(4)* %14, i64 12\l  %20 = bitcast i8 addrspace(4)* %19 to i32 addrspace(4)*\l  %21 = load i32, i32 addrspace(4)* %20, align 4, !tbaa !11\l  %22 = mul i32 %13, %18\l  %23 = add i32 %22, %5\l  %24 = mul nsw i32 %3, 26\l  %25 = icmp slt i32 %23, %24\l  br i1 %25, label %26, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4a04970:s0 -> Node0x4a06e10;
+	Node0x4a04970:s1 -> Node0x4a06ea0;
+	Node0x4a06e10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%26:\l26:                                               \l  %27 = udiv i32 %21, %18\l  %28 = mul i32 %27, %18\l  %29 = icmp ugt i32 %21, %28\l  %30 = zext i1 %29 to i32\l  %31 = add i32 %27, %30\l  %32 = mul i32 %31, %18\l  br label %34\l}"];
+	Node0x4a06e10 -> Node0x4a05f90;
+	Node0x4a06ea0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%33:\l33:                                               \l  ret void\l}"];
+	Node0x4a05f90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  %35 = phi i32 [ %23, %26 ], [ %44, %34 ]\l  %36 = sext i32 %35 to i64\l  %37 = getelementptr inbounds i64, i64 addrspace(1)* %0, i64 %36\l  %38 = load i64, i64 addrspace(1)* %37, align 8, !tbaa !5\l  %39 = srem i32 %35, 26\l  %40 = getelementptr inbounds [26 x i64], [26 x i64] addrspace(3)*\l... @_ZZ23indices_offset_additionPlS_S_iE12smem_offsets, i32 0, i32 %39\l  %41 = load i64, i64 addrspace(3)* %40, align 8, !tbaa !5\l  %42 = add nsw i64 %41, %38\l  %43 = getelementptr inbounds i64, i64 addrspace(1)* %2, i64 %36\l  store i64 %42, i64 addrspace(1)* %43, align 8, !tbaa !5\l  %44 = add i32 %32, %35\l  %45 = icmp slt i32 %44, %24\l  br i1 %45, label %34, label %33, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x4a05f90:s0 -> Node0x4a05f90;
+	Node0x4a05f90:s1 -> Node0x4a06ea0;
+}

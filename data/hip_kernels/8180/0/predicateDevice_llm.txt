@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ keyword to help the compiler with memory aliasing
+// Use shared memory to cache data if the function is bottlenecked by global memory bandwidth
+// Consider using warp-level primitives like __shfl_sync() for optimized reductions
+// Ensure data is coalesced for better global memory access patterns
+// Minimize divergent branches even in conditional logic
+// Consider loop unrolling if applicable for repetitive calculations
+// Evaluate if using fewer threads with increased workload per thread is more efficient
+```

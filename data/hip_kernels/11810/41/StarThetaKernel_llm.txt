@@ -1,0 +1,4 @@
+// Use shared memory to cache Rmed values within the block to reduce global memory access
+// Utilize register for frequently accessed variables like dxtheta and invdxtheta
+// Consider using texture memory for Qbase if access patterns benefit from cache locality
+// Analyze the occupancy of the kernel to ensure optimal use of resources

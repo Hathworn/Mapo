@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve memory access performance
+// Load data into shared memory in a coalesced manner
+// Ensure __syncthreads() is called after loading into shared memory
+// Minimize bank conflicts when accessing shared memory
+// Consider prefetching data to shared memory to hide memory latency
+```

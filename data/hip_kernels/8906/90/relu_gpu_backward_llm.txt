@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing for optimal global memory access
+// Use shared memory if ingrad, outgrad, and indata are accessed multiple times within a thread block
+// Consider loop unrolling to increase instruction throughput
+// Adjust grid and block dimensions for better occupancy
+```

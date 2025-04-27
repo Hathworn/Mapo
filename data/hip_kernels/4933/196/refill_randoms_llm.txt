@@ -1,0 +1,7 @@
+```
+// Use precomputed stride for better memory access patterns
+// Load state into local variable to reduce global memory accesses
+// Process in a loop with stride to improve access coalescing
+// Use local copy of state to minimize memory access latency
+// Save modified state back to global memory at the end for consistency
+```

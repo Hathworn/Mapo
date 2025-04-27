@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency when reading distribution arrays.
+// Optimize memory access patterns by coalescing reads from `origDist` and `normDistPrefixSum`.
+// Ensure `dest` memory writes are coalesced for efficiency.
+// Evaluate if using warp shuffle operations can optimize the binary search function.
+// Minimize the usage of global memory by caching frequently used values in registers.
+// Consider using atomic operations for updates to `origDist` if required by the logic.
+```

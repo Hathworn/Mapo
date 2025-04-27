@@ -1,0 +1,9 @@
+```
+// Consider using memory coalescing to improve global memory access efficiency.
+// Ensure memory access is aligned to optimize load/store operations.
+// Minimize shared memory usage by reducing the size of arrays where possible.
+// Optimize data transfer between shared memory and registers to reduce latency.
+// Improve warp scheduling by avoiding divergence for higher performance.
+// Reduce synchronization overhead by minimizing __syncthreads() calls.
+// Explore converting repeated operations to efficient intrinsic functions.
+```

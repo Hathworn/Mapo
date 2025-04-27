@@ -1,0 +1,6 @@
+```
+// Consider using __restrict__ keyword to leverage pointer aliasing optimizations
+// Ensure idata is aligned in memory for better coalesced global memory access
+// Use shared memory to store common terms across threads within a block if applicable
+// Evaluate the potential for loop unrolling to improve throughput on mathematical operations
+```

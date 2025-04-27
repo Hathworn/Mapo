@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for weights and outputs to reduce global memory access
+// Use loop unrolling for small fixed size arrays to minimize branching
+// Implement memory coalescing by ensuring that threads access consecutive memory locations
+// Reduce bank conflicts by padding shared memory arrays as needed
+// Analyze workload distribution and maximize occupancy by optimizing block sizes
+```

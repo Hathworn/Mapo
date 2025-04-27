@@ -1,0 +1,8 @@
+
+```
+// Consider coalescing global memory accesses to optimize memory bandwidth utilization
+// Use shared memory to cache frequently accessed data like `mass` and `forces1`/`forces2` contributing to `massProduct` and `blockScale`
+// Minimize the number of repeated arithmetic operations by pre-computing values used multiple times
+// Ensure that threads within a warp are accessing sequential memory addresses to maximize efficiency
+// Align data structures to natural boundaries to reduce misaligned memory access penalties
+```

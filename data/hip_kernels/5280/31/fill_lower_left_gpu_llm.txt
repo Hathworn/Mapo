@@ -1,0 +1,3 @@
+// Ensure coalesced memory access for iRow and jCol
+// Consider using shared memory if there are repeated accesses to rind_L or cind_L
+// Optimize access patterns to minimize global memory transactions

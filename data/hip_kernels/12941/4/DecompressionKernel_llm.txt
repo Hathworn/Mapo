@@ -1,0 +1,8 @@
+```
+// Consider using warp shuffle operations to optimize intra-warp communication.
+// Explore the use of shared memory to store frequently used values, reducing global memory accesses.
+// Use coalesced memory access patterns for reading from compressed_data_buffer_in.
+// Minimize __syncthreads() usage by leveraging warp-level primitives.
+// Consider optimizing the prefix sum calculation using warp-level operations to reduce shared memory dependency.
+// Check for bank conflicts in shared memory accesses to ibufs[] and resolve them.
+```

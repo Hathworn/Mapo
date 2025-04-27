@@ -1,0 +1,9 @@
+```
+// Precompute currentPixel outside the loop to reduce repetitive global memory access
+// Minimize bank conflicts by ensuring aligned memory access
+// Use shared memory to store input image block to reduce global memory access
+// Unroll the loop to minimize loop overhead and use registers efficiently
+// Combine small operations to reduce instruction count
+// Use texture memory for read-only data to benefit from caching
+// Consider using atomic operations for better parallel performance where applicable
+```

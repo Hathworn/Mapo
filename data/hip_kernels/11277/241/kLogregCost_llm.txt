@@ -1,0 +1,11 @@
+```
+// Consider using data prefetching techniques to hide memory latency.
+// Align data accesses to cache line boundaries to improve performance.
+// Minimize divergent branches by organizing data more coherently.
+// Evaluate the benefits of using float4 for coalesced data access.
+// Use shared memory for temporary storage to reduce global memory accesses.
+// Unroll the loop completely if the iteration count is known to be small.
+// Use warp shuffle operations to reduce the need for shared memory synchronization.
+// Opt for atomic operations if applicable to handle reductions in parallel execution.
+// Consider splitting the kernel if register pressure is too high.
+```

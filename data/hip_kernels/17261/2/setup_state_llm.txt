@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if the state can be reused within a block
+// Use cooperative groups or warp-level primitives for better synchronization
+// Evaluate the need for atomics if state modification occurs in parallel
+// Assess memory access patterns to minimize cache misses
+```

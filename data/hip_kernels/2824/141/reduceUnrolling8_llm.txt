@@ -1,0 +1,6 @@
+```
+// Use shared memory to store intermediate results to reduce global memory access
+// Consider warp shuffle functions for better reduction within threads
+// Optimize global memory access patterns by ensuring coalesced access
+// Evaluate the use of atomic operations to avoid __syncthreads for final result
+```

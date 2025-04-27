@@ -1,0 +1,5 @@
+// Use shared memory for mean accumulation to reduce global memory access
+// Implement loop unrolling for the accumulation loop to improve performance
+// Consider using warp-level reduction for faster mean calculation
+// Optimize memory access patterns to minimize bank conflicts in shared memory
+// Experiment with different block sizes to achieve better occupancy

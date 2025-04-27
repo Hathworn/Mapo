@@ -1,0 +1,4 @@
+// Consider using shared memory to store temporary sums to reduce repeated global memory accesses.
+// Optimize index calculations by using local variables to minimize redundant computations. 
+// Check if reading gradOutput could be coalesced for better memory access efficiency.
+// Look into overlapping computation with memory transfers using asynchronous copies where possible.

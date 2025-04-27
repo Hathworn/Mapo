@@ -1,0 +1,8 @@
+```
+// Use constant memory for frequently accessed read-only variables like multipliers
+// Consider using shared memory for accessing parameters within the same block to reduce global memory access
+// Ensure coalesced memory access patterns for p_corr, v_corr, and acc arrays
+// Consider loop unrolling if prediction steps are fixed and known at compile time
+// Minimize divergent branches by restructuring the index validation logic
+// Prefetch data to registers where possible to hide memory latency
+```

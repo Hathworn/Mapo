@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Optimize memory coalescing by ensuring sequential thread memory access
+// Use __syncthreads() to synchronize threads after loading t2_d into shared memory
+// Consider unrolling loops to improve instruction throughput and reduce loop overhead
+// Ensure that memory accesses are aligned to increase efficiency
+// Consolidate memory accesses to increase the utilization of memory bandwidth
+```

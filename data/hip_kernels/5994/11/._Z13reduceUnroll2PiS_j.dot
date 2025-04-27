@@ -1,0 +1,31 @@
+digraph "CFG for '_Z13reduceUnroll2PiS_j' function" {
+	label="CFG for '_Z13reduceUnroll2PiS_j' function";
+
+	Node0x5e698e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = shl i32 %10, 1\l  %14 = zext i32 %13 to i64\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %14\l  %16 = add i32 %12, %9\l  %17 = icmp ult i32 %16, %2\l  br i1 %17, label %18, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x5e698e0:s0 -> Node0x5e6ba90;
+	Node0x5e698e0:s1 -> Node0x5e6bb20;
+	Node0x5e6ba90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%18:\l18:                                               \l  %19 = zext i32 %16 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %22 = sext i32 %12 to i64\l  %23 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %22\l  %24 = load i32, i32 addrspace(1)* %23, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %25 = add nsw i32 %24, %21\l  store i32 %25, i32 addrspace(1)* %23, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x5e6ba90 -> Node0x5e6bb20;
+	Node0x5e6bb20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%26:\l26:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %27 = icmp ult i32 %12, %2\l  br i1 %27, label %28, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x5e6bb20:s0 -> Node0x5e6d270;
+	Node0x5e6bb20:s1 -> Node0x5e6d2c0;
+	Node0x5e6d270 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%28:\l28:                                               \l  %29 = icmp ult i16 %8, 2\l  br i1 %29, label %33, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x5e6d270:s0 -> Node0x5e6d490;
+	Node0x5e6d270:s1 -> Node0x5e6d4e0;
+	Node0x5e6d4e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%30:\l30:                                               \l  %31 = zext i32 %11 to i64\l  %32 = getelementptr inbounds i32, i32 addrspace(1)* %15, i64 %31\l  br label %35\l}"];
+	Node0x5e6d4e0 -> Node0x5e6b980;
+	Node0x5e6d490 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%33:\l33:                                               \l  %34 = icmp eq i32 %11, 0\l  br i1 %34, label %48, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x5e6d490:s0 -> Node0x5e6d9d0;
+	Node0x5e6d490:s1 -> Node0x5e6d2c0;
+	Node0x5e6b980 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = phi i32 [ %9, %30 ], [ %37, %46 ]\l  %37 = lshr i32 %36, 1\l  %38 = icmp ult i32 %11, %37\l  br i1 %38, label %39, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x5e6b980:s0 -> Node0x5e6dd60;
+	Node0x5e6b980:s1 -> Node0x5e6db00;
+	Node0x5e6dd60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%39:\l39:                                               \l  %40 = add nuw nsw i32 %37, %11\l  %41 = zext i32 %40 to i64\l  %42 = getelementptr inbounds i32, i32 addrspace(1)* %15, i64 %41\l  %43 = load i32, i32 addrspace(1)* %42, align 4, !tbaa !7\l  %44 = load i32, i32 addrspace(1)* %32, align 4, !tbaa !7\l  %45 = add nsw i32 %44, %43\l  store i32 %45, i32 addrspace(1)* %32, align 4, !tbaa !7\l  br label %46\l}"];
+	Node0x5e6dd60 -> Node0x5e6db00;
+	Node0x5e6db00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%46:\l46:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %47 = icmp ult i32 %36, 4\l  br i1 %47, label %33, label %35, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5e6db00:s0 -> Node0x5e6d490;
+	Node0x5e6db00:s1 -> Node0x5e6b980;
+	Node0x5e6d9d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%48:\l48:                                               \l  %49 = load i32, i32 addrspace(1)* %15, align 4, !tbaa !7\l  %50 = zext i32 %4 to i64\l  %51 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %50\l  store i32 %49, i32 addrspace(1)* %51, align 4, !tbaa !7\l  br label %52\l}"];
+	Node0x5e6d9d0 -> Node0x5e6d2c0;
+	Node0x5e6d2c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%52:\l52:                                               \l  ret void\l}"];
+}

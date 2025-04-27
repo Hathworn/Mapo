@@ -1,0 +1,9 @@
+```cpp
+// Optimize memory coalescing by aligning global memory accesses
+// Consider double buffering to hide latency when loading shared memory
+// Ensure TILE_SIZE maintains performance across various GPU architectures
+// Reduce __syncthreads() calls by reorganizing computation to minimize thread divergence
+// Unroll the loops if TILE_SIZE is a compile-time constant for better ILP
+// Experiment with varying values of TILE_SIZE for optimal occupancy
+// Investigate using a custom memory allocator for shared memory to prevent bank conflicts
+```

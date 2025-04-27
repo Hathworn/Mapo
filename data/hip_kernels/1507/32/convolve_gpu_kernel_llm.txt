@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed weights to reduce global memory access.
+// Unroll inner loops further if register pressure allows, focusing on reducing the overhead of loop control.
+// Ensure coalesced memory access for the input data to utilize the memory bandwidth efficiently.
+// Use constant memory for weights if they are reused by multiple threads to reduce global memory access latency.
+// Ensure that all memory accesses are aligned to improve performance and avoid bank conflicts.
+// Evaluate the use of asynchronous copies to or from shared memory to hide memory latency.
+```

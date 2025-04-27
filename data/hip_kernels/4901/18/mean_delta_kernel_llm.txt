@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for variance[i] to reduce global memory accesses.
+// Pre-fetch delta[index] to registers to avoid frequent memory accesses.
+// Optimize the accumulation loop with loop unrolling for better performance.
+// Ensure memory accesses are coalesced for delta array.
+// Evaluate the use of warp-wise summation for sum calculation to utilize parallelism.
+```

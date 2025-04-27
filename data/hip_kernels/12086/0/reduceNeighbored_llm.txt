@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by using contiguous memory patterns
+// Minimize divergent branches within the loop
+// Consider using shared memory to reduce access latency from global memory
+// Reuse allocated shared memory by copying data to it before the reduction loop
+// Optimize synchronization points to avoid unnecessary barriers
+```

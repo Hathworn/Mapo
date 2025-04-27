@@ -1,0 +1,5 @@
+// Unroll loop to improve instruction throughput
+// Use shared memory to minimize global memory accesses
+// Ensure proper synchronization with __syncthreads() to prevent race conditions
+// Only write back to global memory if indices are within matrix bounds to avoid unnecessary operations
+// Enhance memory access patterns by coalescing global memory reads and writes

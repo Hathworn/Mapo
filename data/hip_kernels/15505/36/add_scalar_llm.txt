@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Ensure coalesced memory access for optimal memory bandwidth utilization
+// Adjust block size to maximize occupancy and better utilize the GPU resources
+// Prefetch data to registers to enhance memory access speed
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+```

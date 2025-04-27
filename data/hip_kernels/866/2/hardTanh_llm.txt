@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier to improve memory access optimization
+// Use shared memory if the data is reused within the block to reduce global memory accesses
+// Ensure coalesced memory access to improve global memory bandwidth utilization
+// Prefetch data into registers to hide global memory latency
+// Optimize block and grid size to match the GPU architecture for optimal occupancy
+```

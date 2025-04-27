@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for g_idata to improve memory access efficiency
+// Use shared memory to reduce global memory access and improve performance
+// Minimize thread divergence by ensuring all threads execute the same path
+// Ensure 'n' is a multiple of warp size to avoid out-of-range accesses
+// Use __syncthreads() judiciously to avoid unnecessary synchronization stalls
+```

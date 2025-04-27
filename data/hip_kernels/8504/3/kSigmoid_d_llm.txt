@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for input and output pointers to enable compiler optimizations.
+// Minimize global memory accesses by loading input[i] into a local variable before usage.
+// Ensure memory accesses are coalesced by having contiguous threads access contiguous memory addresses.
+// Use shared memory if there are any potential opportunities to reduce global memory traffic.
+// Check if the kernel launch configuration (block size and grid size) is optimal for the hardware.
+```

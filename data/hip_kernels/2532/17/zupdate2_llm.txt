@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache 'f' values to reduce global memory accesses
+// Pre-compute 'nx - 1' and 'ny - 1' to avoid repeated computation inside the loop
+// Use warp shuffle operations to efficiently compute the gradient without conditional checks
+// Optimize memory pattern by ensuring coalesced global memory access for 'z' and 'f'
+// Ensure that the 'sqrtf' function is correctly vectorized to maximize performance
+```

@@ -1,0 +1,6 @@
+// Ensure global memory access is coalesced for better performance
+// Consider using shared memory if multiple threads access the same data
+// Optimize block size and grid configuration for better occupancy
+// Use thread block dimensions that are multiples of warp size for efficiency
+// Align data structures to improve memory access performance
+// Evaluate usage of __restrict__ to optimize pointer aliasing

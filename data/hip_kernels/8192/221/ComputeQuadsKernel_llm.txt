@@ -1,0 +1,10 @@
+```cpp
+// Consider coalescing global memory accesses to optimize memory bandwidth
+// Load pointsCoordinates using fewer transactions by aligning memory accesses
+// Precompute halfSide only when activityFlag[threadId] is non-zero to save calculations
+// Leverage shared memory to cache frequently accessed data across threads within the same block
+// Use texture cache to read pointsCoordinates if spatial locality and reuse high across threads in different blocks
+// Explore using __ldg() for reading pointsCoordinates and activityFlag if accessed multiple times
+// Unroll loops when populating vertexData for improved instruction level parallelism
+// Investigate warp-level intrinsics for potential optimizations in vertexData calculations
+```

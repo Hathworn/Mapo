@@ -1,0 +1,8 @@
+```c
+// Consider coalescing global memory accesses for improved performance
+// Use shared memory to cache frequently accessed data within a block
+// Align memory access patterns to avoid bank conflicts and ensure coalescence
+// Minimize divergent branches by reorganizing condition checks
+// Consider using texture memory for read-only data to benefit from caching
+// Evaluate the use of __restrict__ to provide better compiler optimizations
+```

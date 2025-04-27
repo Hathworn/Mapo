@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for idx and idx1 to improve memory access efficiency
+// Ensure idx and idx1 are allocated with proper memory alignment to enhance access speed
+// Utilize shared memory to cache idx1 values if multiple threads need the same data
+// Minimize conditional branches by restructuring the if condition to help improve warp execution efficiency
+// Prefer __restrict__ qualifier for idx and idx1 pointers if there are no aliasing concerns
+```

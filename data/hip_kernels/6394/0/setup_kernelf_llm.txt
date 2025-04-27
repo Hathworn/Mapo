@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store frequently accessed data within a block to reduce global memory accesses.
+// Optimize memory access patterns to ensure coalesced memory transactions.
+// Ensure that data allocated for hiprandState is aligned properly to improve memory access efficiency.
+// Use __syncthreads() if necessary to prevent race conditions when using shared memory.
+```

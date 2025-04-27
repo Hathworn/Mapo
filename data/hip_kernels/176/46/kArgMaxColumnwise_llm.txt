@@ -1,0 +1,7 @@
+```
+// Consider using float2 to load two elements at once for coalesced memory access
+// Use __ldg intrinsic to speed up reading constant memory if mat is read-only
+// Ensure the height is a multiple of 32 to maximize warp efficiency
+// Consider reducing shared memory usage by using warp-level primitives like __shfl_xor
+// Consider launching fewer blocks for larger widths to improve occupancy
+```

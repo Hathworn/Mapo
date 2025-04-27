@@ -1,0 +1,8 @@
+```c++
+// Consider coalescing memory accesses by ensuring consecutive threads access consecutive memory addresses.
+// Try to minimize divergence by ensuring all threads in a warp follow the same execution path.
+// Utilize shared memory to reduce the number of global memory transactions.
+// Ensure the shared memory bank conflicts are minimized by properly aligning data.
+// Use __syncthreads() efficiently to synchronize threads only when necessary.
+// Take advantage of constant memory for frequently accessed read-only variables.
+```

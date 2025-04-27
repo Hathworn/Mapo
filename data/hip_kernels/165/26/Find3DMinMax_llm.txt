@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for d_Data1, d_Data2, and d_Data3 to improve memory throughput.
+// Ensure shared memory is accessed in a coalesced pattern to maximize memory bandwidth.
+// Evaluate using float4 loads to minimize cache fetch and improve throughput.
+// Optimize explicit load-balancing by using warp-synchronous programming whenever possible.
+// Minimize branch divergence by avoiding conditions that separate threads within a warp.
+// Reduce shared memory bank conflicts by re-organizing shared memory accesses.
+```

@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing by accessing global memory with consecutive threads
+// Use shared memory to minimize global memory access and reduce memory latency
+// Unroll the loop during shared memory reduction for improved warp efficiency
+// Utilize warp-level operations to perform final reductions without barriers
+```

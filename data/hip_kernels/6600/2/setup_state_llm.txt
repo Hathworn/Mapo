@@ -1,0 +1,6 @@
+```
+// Use a stride pattern to improve memory coalescing
+// Consider using shared memory if state is reused
+// Minimize use of global memory by storing intermediate results in registers
+// Ensure block size is a multiple of warp size to maximize occupancy
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access
+// Ensure coalesced memory access by aligning data and memory indices
+// Minimize conditional branches within the kernel to avoid warp divergence
+// Use vectorized operations to improve data throughput and efficiency
+// Evaluate warp size and align data processing to optimize hardware utilization

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory access pattern to ensure coalesced reads/writes
+// Investigate possibility of using texture memory for read-only data
+// Ensure hiprandState_t allocation is using aligned memory access
+// Check alignment of d_a to improve memory coalescing
+// Consider increasing the number of threads per block to maximize occupancy
+```

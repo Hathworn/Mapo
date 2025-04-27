@@ -1,0 +1,5 @@
+```
+// Use shared memory for lifter_coeffs to reduce memory access time
+// Ensure __syncthreads is used after writing to shared memory for synchronization
+// Perform boundary checks before computations to avoid unnecessary memory accesses
+```

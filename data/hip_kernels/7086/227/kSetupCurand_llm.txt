@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data frequently accessed by all threads
+// Reduce memory transactions by ensuring coalesced accesses in global memory
+// Implement loop unrolling for repeated operations to reduce overhead
+// Consider using local memory for variables that are privately used by the thread
+// Evaluate warp-level primitives to improve parallel execution efficiency
+// Investigate memory alignment to improve access speed and reduce cache misses
+```

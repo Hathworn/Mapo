@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data within the kernel.
+// Use texture memory for read-only data with spatial locality.
+// Ensure memory coalescing in accessing idata array to improve bandwidth utilization.
+// Minimize divergent branching within warps by aligning execution paths.
+```

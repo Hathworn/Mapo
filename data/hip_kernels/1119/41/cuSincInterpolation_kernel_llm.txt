@@ -1,0 +1,6 @@
+```
+// Use shared memory to store r_filter_ to reduce global memory access latency.
+// Consider aligning memory accesses to simplify coalescing and improve throughput.
+// Reorder nested loops to exploit spatial locality and improve cache utilization.
+// Utilize loop unrolling to reduce loop overhead and potentially increase the performance.
+```

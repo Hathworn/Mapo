@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for dy array to improve memory throughput.
+// Use shared memory if multiple threads access overlapping sections of dy.
+// Optimize grid and block dimensions to match the GPU architecture for maximized occupancy.
+// Evaluate the impact of using __restrict__ qualifier for pointers to reduce memory aliasing.
+```

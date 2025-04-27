@@ -1,0 +1,4 @@
+// Load 'uni' from global memory into shared memory to avoid repeated global memory accesses by threads.
+// Ensure address calculations are vectorized to minimize arithmetic operations for address computation.
+// Use __syncthreads() after loading 'uni' to guarantee all threads see the updated value before proceeding.
+// Perform addition in parallel to exploit thread-level parallelism and maximize throughput.

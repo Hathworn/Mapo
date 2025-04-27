@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data for threads within the same block to reduce global memory accesses.
+// Ensure coalesced memory access by aligning data accesses among threads.
+// Investigate using vectorized loads and stores if Q and Q_reverse_pad are accessed sequentially.
+// Explore occupancy optimizations to balance thread usage and memory bandwidth effectively.
+```

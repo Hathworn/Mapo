@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory coalescing for valid_points access
+// Consider using __ldg for read-only dh_ang accesses if no updates
+// Prefetch x, y, z values for improved latency hiding
+// Ensure shared memory usage hits the optimal limit per block
+// Unroll inner computations to reduce loop overhead further
+// Evaluate dependency on precision, possibly using float instead of double if precision allows
+```

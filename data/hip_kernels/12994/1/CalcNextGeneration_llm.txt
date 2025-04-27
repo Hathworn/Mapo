@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for i_cells to reduce global memory access
+// Optimize memory access patterns by ensuring coalesced reads for i_cells and o_cells
+// Prefetch data to registers where possible to minimize latency
+// Minimize divergence by restructuring branching logic
+// Consider using loop unrolling in CountAliveCells function for performance gains
+```

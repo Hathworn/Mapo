@@ -1,0 +1,7 @@
+```c
+// Utilize __shfl_down_sync(mask, val, offset) for warp-wide reductions instead of shared memory for better performance.
+// Ensure that all threads in a warp participate in the reduction to avoid divergence and underutilization.
+// Use __syncwarp() if necessary to wait for all threads in the warp to reach the reduction point.
+// Consider using `blockIdx.x` and `blockDim.x` to process more data elements in each block for higher occupancy.
+// Use __ldg to load read-only data from global memory if applicable, to optimize memory access patterns.
+```

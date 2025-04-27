@@ -1,0 +1,6 @@
+```
+// Consider using coalesced memory access by ensuring consecutive threads access consecutive memory addresses in the global memory.
+// Utilize warp-level primitives for reduction to further optimize the shared memory usage and reduce synchronization overhead.
+// Ensure bank conflicts in shared memory are minimized by carefully aligning memory accesses.
+// Consider padding shared memory to avoid bank conflicts if applicable.
+```

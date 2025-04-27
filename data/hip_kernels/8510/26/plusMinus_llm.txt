@@ -1,0 +1,7 @@
+```
+// Load size into a register to minimize repeated global memory access
+// Prefetch base[ix] and deviation[ix] into registers to reduce memory latency
+// Consider loop unrolling if operations per thread are significant for performance gain
+// Ensure coalesced global memory access for base and deviation arrays
+// Use shared memory if thread data reuse across iterations is possible
+```

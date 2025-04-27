@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Ensure memory coalescing by aligning data accesses of each thread in a warp
+// Avoid warp divergence by restructuring conditional statements
+// Use constant memory for read-only data that does not change during kernel execution
+// Optimize grid and block dimensions for better occupancy and device utilization
+```

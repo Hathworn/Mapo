@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses by using contiguous threads to access contiguous memory addresses in src
+// Optimize for memory alignment by ensuring src and tgt arrays are aligned to suitable boundaries
+// Use shared memory to cache frequently accessed data from src to reduce global memory accesses
+// Avoid bank conflicts in shared memory by ensuring accesses are spread across multiple memory banks
+```

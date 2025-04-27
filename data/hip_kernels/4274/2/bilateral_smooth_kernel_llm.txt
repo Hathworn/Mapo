@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access and improve data locality.
+// Ensure that guide data fits into shared memory for effective usage.
+// Optimize the memory access for the affine_model and filtered_affine_model arrays.
+// Calculate color differences locally using shared memory to minimize repetitive global fetches.
+// Avoid uncoalesced global memory access for guide using shared memory arrays.
+// Synchronize shared memory accesses with __syncthreads() to ensure data consistency within a block.

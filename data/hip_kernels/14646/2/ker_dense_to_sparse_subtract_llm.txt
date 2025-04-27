@@ -1,0 +1,4 @@
+// Ensure idx array is accessed in a coalesced manner
+// Avoid bank conflicts by aligning data structures appropriately
+// Utilize shared memory if possible to further reduce global memory access
+// Optimize block and thread dimensions to match hardware capabilities for better resource utilization

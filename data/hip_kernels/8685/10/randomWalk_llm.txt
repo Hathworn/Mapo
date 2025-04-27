@@ -1,0 +1,6 @@
+```
+// Use shared memory to store crossTimes for faster access and to reduce global memory transactions
+// Consider optimizing memory coalescing when accessing the results array
+// Utilize loop unrolling for the for-loop when calculating path steps to increase instruction throughput
+// Evaluate the use of __syncthreads() to ensure memory operations are complete before using data
+```

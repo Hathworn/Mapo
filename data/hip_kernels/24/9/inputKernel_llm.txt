@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access latency, especially if data reused
+// Ensure memory coalescing by accessing consecutive memory locations in row-major order
+// Optimize loop by unrolling to enhance computational efficiency if applicable
+// Investigate reducing the data size by using a narrower type if precision permits

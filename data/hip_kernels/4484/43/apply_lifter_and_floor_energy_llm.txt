@@ -1,0 +1,6 @@
+```
+// Use shared memory to store lifter coefficients for faster access
+// Ensure proper synchronization using __syncthreads() to avoid race conditions
+// Optimize memory access pattern by coalescing access where possible
+// Consider using warp level operations for reducing synchronization overhead
+```

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring threads access consecutive memory addresses
+// Consider using __restrict__ qualifiers for pointers to enable better compiler optimizations
+// Explore the use of shared memory to cache input data if reused across threads
+// Minimize divergent branches by restructuring conditional statements
+// Optimize the workload balance to prevent idle threads within a block
+```

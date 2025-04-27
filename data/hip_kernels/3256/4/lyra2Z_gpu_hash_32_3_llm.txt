@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Ensure coalesced memory writes to g_hash for better memory throughput.
+// Minimize global memory access by keeping temporary results in registers.
+// Profile and adjust block and grid sizes to enhance occupancy and performance.
+// Explore using __restrict__ keyword to provide the compiler with optimization hints.
+```

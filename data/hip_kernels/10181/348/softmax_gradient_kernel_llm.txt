@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for Y, dY, and dX by aligning data structures
+// Minimize shared memory usage via parallel reduction to decrease bank conflicts
+// Optimize reduction loop by using a single warp loop to limit divergence
+// Use __syncthreads() strategically to synchronize results and avoid deadlock
+// Consider occupancy optimization by adjusting thread/block configurations
+```

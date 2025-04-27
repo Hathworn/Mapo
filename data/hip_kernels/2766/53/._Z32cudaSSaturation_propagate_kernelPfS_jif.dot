@@ -1,0 +1,25 @@
+digraph "CFG for '_Z32cudaSSaturation_propagate_kernelPfS_jif' function" {
+	label="CFG for '_Z32cudaSSaturation_propagate_kernelPfS_jif' function";
+
+	Node0x581f930 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = udiv i32 %14, %11\l  %19 = mul i32 %18, %11\l  %20 = icmp ugt i32 %14, %19\l  %21 = zext i1 %20 to i32\l  %22 = add i32 %18, %21\l  %23 = mul i32 %22, %11\l  %24 = icmp ult i32 %17, %2\l  br i1 %24, label %25, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x581f930:s0 -> Node0x5821ee0;
+	Node0x581f930:s1 -> Node0x5821f70;
+	Node0x5821ee0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%25:\l25:                                               \l  %26 = icmp sgt i32 %3, 0\l  %27 = icmp eq i32 %3, 0\l  %28 = sub nsw i32 0, %3\l  %29 = shl nuw i32 1, %28\l  %30 = sitofp i32 %29 to float\l  %31 = select i1 %27, float 1.000000e+00, float %30\l  %32 = shl nuw i32 1, %3\l  %33 = sitofp i32 %32 to float\l  %34 = fcmp contract une float %4, 0.000000e+00\l  %35 = fneg contract float %4\l  br label %37\l}"];
+	Node0x5821ee0 -> Node0x5821ab0;
+	Node0x5821f70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%36:\l36:                                               \l  ret void\l}"];
+	Node0x5821ab0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%37:\l37:                                               \l  %38 = phi i32 [ %17, %25 ], [ %55, %54 ]\l  %39 = zext i32 %38 to i64\l  %40 = getelementptr inbounds float, float addrspace(1)* %0, i64 %39\l  %41 = load float, float addrspace(1)* %40, align 4, !tbaa !16\l  br i1 %26, label %42, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x5821ab0:s0 -> Node0x5823710;
+	Node0x5821ab0:s1 -> Node0x58237a0;
+	Node0x5823710 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%42:\l42:                                               \l  %43 = fdiv contract float %41, %33\l  br label %46\l}"];
+	Node0x5823710 -> Node0x5823970;
+	Node0x58237a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%44:\l44:                                               \l  %45 = fmul contract float %31, %41\l  br label %46\l}"];
+	Node0x58237a0 -> Node0x5823970;
+	Node0x5823970 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%46:\l46:                                               \l  %47 = phi float [ %43, %42 ], [ %45, %44 ]\l  br i1 %34, label %48, label %54\l|{<s0>T|<s1>F}}"];
+	Node0x5823970:s0 -> Node0x5823be0;
+	Node0x5823970:s1 -> Node0x5823320;
+	Node0x5823be0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%48:\l48:                                               \l  %49 = fcmp contract olt float %47, %35\l  %50 = fcmp contract ogt float %47, %4\l  %51 = select contract i1 %50, float %4, float %47\l  %52 = select contract i1 %49, float %35, float %51\l  %53 = getelementptr inbounds float, float addrspace(1)* %1, i64 %39\l  store float %52, float addrspace(1)* %53, align 4, !tbaa !16\l  br label %54\l}"];
+	Node0x5823be0 -> Node0x5823320;
+	Node0x5823320 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%54:\l54:                                               \l  %55 = add i32 %38, %23\l  %56 = icmp ult i32 %55, %2\l  br i1 %56, label %37, label %36, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5823320:s0 -> Node0x5821ab0;
+	Node0x5823320:s1 -> Node0x5821f70;
+}

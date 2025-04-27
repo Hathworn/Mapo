@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory latency.
+// Use coalesced memory accesses to enhance global memory throughput.
+// Ensure that 'n' is divisible by the block size to avoid partial block execution overhead.
+// Assess potential register pressure to avoid exceeding the register limit and avoid spilling to local memory.

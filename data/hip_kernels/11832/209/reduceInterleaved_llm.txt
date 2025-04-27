@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced access when loading data into shared memory
+// Minimize bank conflicts in shared memory access
+// Use __syncthreads() to synchronize threads after shared memory operations
+// Consider using warp-level primitives to reduce syncthreads overhead
+```

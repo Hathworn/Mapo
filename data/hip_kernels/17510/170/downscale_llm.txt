@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store gradOutput_data tiles for better memory access efficiency.
+// Utilize coalesced memory accesses for gradOutput_data to reduce memory transaction overhead.
+// Ensure gradOutput_data accesses are memory-aligned to optimize global memory throughput.
+// Optimize loop unrolling for the scale_factor loop to minimize loop control overhead.
+// Consider the use of __restrict__ qualifier for gradOutput_data and gradInput_data pointers to inform the compiler of non-aliasing.
+```

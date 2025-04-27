@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access where possible to improve memory throughput.
+// Evaluate the impact of using shared memory if operations per block are heavy to reduce global memory traffic.
+// Investigate the warp size and ensure threads within the same warp access consecutive memory addresses.
+// Minimize divergent branches to optimize warp execution efficiency.
+// Ensure the kernel launch configurations (block and grid sizes) are optimized for the target GPU architecture.
+```

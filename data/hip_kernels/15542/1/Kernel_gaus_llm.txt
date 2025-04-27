@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns for Vd and Ris arrays to improve global memory throughput.
+// Evaluate the use of __restrict__ keyword for Vd, Ris, and other pointers to help the compiler with optimization.
+// Ensure the Vp array access is coalesced to optimize memory transactions.
+// Check if Nd array access benefits from using shared memory to reduce redundant loads.
+// Load ind[y] once into shared memory if reused across threads to minimize global memory access.
+```

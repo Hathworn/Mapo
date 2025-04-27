@@ -1,0 +1,18 @@
+digraph "CFG for '_Z18OpenBoundaryKernelPdS_S_id' function" {
+	label="CFG for '_Z18OpenBoundaryKernelPdS_S_id' function";
+
+	Node0x4a27540 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !5, !invariant.load !6\l  %11 = zext i16 %10 to i32\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = mul i32 %12, %11\l  %14 = add i32 %13, %6\l  %15 = icmp slt i32 %14, %3\l  br i1 %15, label %16, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x4a27540:s0 -> Node0x4a29380;
+	Node0x4a27540:s1 -> Node0x4a29410;
+	Node0x4a29380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%16:\l16:                                               \l  %17 = add nsw i32 %14, %3\l  %18 = sext i32 %17 to i64\l  %19 = getelementptr inbounds double, double addrspace(1)* %1, i64 %18\l  %20 = load double, double addrspace(1)* %19, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %21 = sext i32 %14 to i64\l  %22 = getelementptr inbounds double, double addrspace(1)* %1, i64 %21\l  store double %20, double addrspace(1)* %22, align 8, !tbaa !7\l  %23 = getelementptr inbounds double, double addrspace(1)* %2, i64 %18\l  %24 = load double, double addrspace(1)* %23, align 8, !tbaa !7\l  %25 = getelementptr inbounds double, double addrspace(1)* %2, i64 %21\l  store double %24, double addrspace(1)* %25, align 8, !tbaa !7\l  %26 = shl nsw i32 %3, 1\l  %27 = add nsw i32 %14, %26\l  %28 = sext i32 %27 to i64\l  %29 = getelementptr inbounds double, double addrspace(1)* %0, i64 %28\l  %30 = load double, double addrspace(1)* %29, align 8, !tbaa !7\l  %31 = fcmp contract ogt double %30, 0.000000e+00\l  br i1 %31, label %36, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x4a29380:s0 -> Node0x4a2b710;
+	Node0x4a29380:s1 -> Node0x4a2b7a0;
+	Node0x4a2b7a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%32:\l32:                                               \l  %33 = load double, double addrspace(1)* %19, align 8, !tbaa !7\l  %34 = fcmp contract olt double %33, %4\l  br i1 %34, label %36, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x4a2b7a0:s0 -> Node0x4a2b710;
+	Node0x4a2b7a0:s1 -> Node0x4a295f0;
+	Node0x4a295f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  br label %36\l}"];
+	Node0x4a295f0 -> Node0x4a2b710;
+	Node0x4a2b710 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%36:\l36:                                               \l  %37 = phi double [ %30, %35 ], [ 0.000000e+00, %32 ], [ 0.000000e+00, %16 ]\l  %38 = getelementptr inbounds double, double addrspace(1)* %0, i64 %18\l  store double %37, double addrspace(1)* %38, align 8, !tbaa !7\l  br label %39\l}"];
+	Node0x4a2b710 -> Node0x4a29410;
+	Node0x4a29410 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%39:\l39:                                               \l  ret void\l}"];
+}

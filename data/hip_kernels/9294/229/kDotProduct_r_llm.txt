@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Use register for thread-local accumulation to optimize memory usage
+// Unroll loop to improve memory throughput and efficiency
+// Use single warp for final reduction to minimize synchronization overhead
+// Write result to global memory only once per block to minimize write operations
+```

@@ -1,0 +1,5 @@
+// Consider optimizing tempG shared memory access for better coalesced reads.
+// Ensure alignment of memory accesses towards optimal coalescing.
+// Reuse shared memory across multiple workperthread iterations if possible.
+// Minimize redundant calculations by reorganizing computation blocks.
+// Consider using texture cache for w if read-only.

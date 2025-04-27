@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to cache betas and minimize repeated global memory accesses
+// Synchronize threads after loading shared memory to ensure safe and consistent data access
+// Check row_index bounds to avoid excess computation and potential out-of-bound access
+// Optimize data access pattern to minimize strided memory access which can slow down performance
+```

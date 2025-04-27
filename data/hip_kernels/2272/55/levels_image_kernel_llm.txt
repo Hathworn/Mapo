@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache image data per block to reduce global memory accesses.
+// Consider coalescing accesses to global memory, especially when reading `rand` and writing `image`.
+// Optimize the thread indexing to better utilize warps and reduce divergence.
+// Minimize redundant calculations within the kernel, such as repeated calculations of offsets.
+// Consider using texture memory if image data access patterns are suitable for caching.
+```

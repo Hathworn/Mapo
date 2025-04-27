@@ -1,0 +1,7 @@
+```
+// Ensure global memory accesses are coalesced by checking boundary conditions
+// Use shared memory to minimize global memory accesses for tiles
+// Synchronize threads to ensure all threads have loaded data into shared memory
+// Careful unrolling of loops could further reduce computation time if applicable
+// Consider adjusting TILE_WIDTH for optimal occupancy and performance on given hardware
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory if data reuse is possible to reduce global memory accesses
+// Ensure coalesced memory access for better memory throughput
+// Consider loop unrolling if applicable for higher computational throughput
+// Use __restrict__ pointers for potential compiler optimizations in memory accesses
+// Reduce the use of if conditions inside kernels for better performance
+```

@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to store biases if they are read repeatedly
+// Ensure coalesced memory accesses for output and biases arrays
+// Optimize grid and block dimensions for load balancing and occupancy
+// Use warp-level primitives if the operation can be further optimized
+```

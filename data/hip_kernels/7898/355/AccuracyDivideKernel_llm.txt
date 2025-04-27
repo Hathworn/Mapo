@@ -1,0 +1,5 @@
+```
+// Ensure that *accuracy resides in shared memory for faster access
+// Consider reducing N usage to a power of 2 for efficient division
+// Use __syncthreads() after writing to *accuracy in case of further calculations
+```

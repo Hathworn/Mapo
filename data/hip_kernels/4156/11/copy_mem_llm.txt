@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced access by using contiguous threads in x-dimension
+// Unroll loops to decrease loop overhead
+// Optimize shared memory access by minimizing bank conflicts
+// Use __syncthreads() to synchronize threads and ensure data consistency
+```

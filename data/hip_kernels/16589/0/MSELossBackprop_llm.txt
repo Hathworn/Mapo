@@ -1,0 +1,9 @@
+```
+// Merge memory access to leverage coalesced memory
+// Use shared memory to store intermediate values if needed
+// Minimize divergent branches within the kernel
+// Align memory accesses to warp boundaries for optimal performance
+// Ensure that data is padded to avoid bank conflicts
+// Use __restrict__ keyword for pointer parameters to help compiler optimizations
+// Consider using half precision if precision is not a critical requirement
+```

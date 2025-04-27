@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data such as weights, to reduce global memory access.
+// Ensure memory coalescing by aligning memory accesses for gradInput, target, and weights.
+// Reduce branching by restructuring conditional statements to minimize divergence among threads.
+// Use loop unrolling techniques to optimize the single loop over all elements handled by this block.
+// Assess the use of atomic operations or warp-level primitives to optimize access to total_weight.
+```

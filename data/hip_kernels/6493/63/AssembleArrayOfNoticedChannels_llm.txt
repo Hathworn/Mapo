@@ -1,0 +1,5 @@
+// Utilize shared memory for frequently accessed variables to reduce global memory access latency
+// Loading of lwrNtcdEnrg and hghrNtcdEnrg into shared memory should be restricted to a single thread to avoid redundancy
+// Synchronize threads after loading shared variables to ensure all threads have the updated values
+// Calculate index based on block and grid dimensions to maximize parallel execution
+// Perform boundary checks after index calculation to ensure memory access within valid range

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache neighbour pixels to reduce global memory accesses.
+// Use texture memory for inputImage to benefit from cached memory accesses.
+// Ensure coalesced memory access by processing in column-major order or using appropriate strides.
+```

@@ -1,0 +1,6 @@
+```
+// Optimize memory access patterns to reduce bank conflicts in shared memory.
+// Ensure coalesced access to global memory by aligning the threads in each warp properly.
+// Consider using a stride of TILE_SIZE to access elements in shared memory to minimize conflicts.
+// Use __syncthreads() efficiently to ensure proper synchronization across threads.
+```

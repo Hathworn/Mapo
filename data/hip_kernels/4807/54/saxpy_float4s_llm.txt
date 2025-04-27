@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for better memory throughput
+// Use float4 data type to ensure vectorized operations and better memory alignment
+// Ensure NUM_ITERS is divisible by 4 to avoid out-of-bounds memory access
+// Minimize divergence by ensuring uniform step size in loop iterations
+// Utilize shared memory if possible to reduce global memory access latency
+// Explore asynchronous memory transfers for improved performance
+// Implement double-buffering if applicable to overlap computation and data transfer
+```

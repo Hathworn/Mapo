@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses if multiple threads work on the same columns
+// Explore coalesced memory accesses for better performance by aligning dV and dNorms appropriately
+// Investigate potential loop unrolling if there are repetitive operations on the vector elements
+// Utilize warp-level primitives where possible to reduce the need for atomic operations
+```

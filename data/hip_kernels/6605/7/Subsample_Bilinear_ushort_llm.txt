@@ -1,0 +1,9 @@
+```
+// Consider using texture cache for improved memory efficiency
+// Prefetch texture data to shared memory to reduce global memory accesses
+// Use __fdividef for fast division wherever applicable
+// Inline calculation of scale factors to reduce repeated computations
+// Consolidate texture fetch operations to leverage spatial locality
+// Use shared memory to buffer frequently accessed data to minimize latency
+// Optimize boundary checks to avoid redundant thread execution
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure that shared memory is appropriately sized when launched
+// Consider optimal block size for maximal occupancy and performance
+// Utilize coalesced memory accesses when reading input
+// Minimize divergent warps by ensuring uniform access patterns
+// Perform in-block reduction to minimize synchronization overhead
+```

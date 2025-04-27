@@ -1,0 +1,9 @@
+```cpp
+// Optimize memory access patterns for coalesced access
+// Ensure all threads in a warp access contiguous memory locations
+// Consider utilizing shared memory to reduce global memory access
+// Minimize divergent branches within warp by reconsidering condition checks
+// Evaluate loop unrolling to reduce iteration overhead
+// Consider using __restrict__ keyword if applicable for pointer parameters
+// Profile performance impact when altering grid and block dimensions
+```

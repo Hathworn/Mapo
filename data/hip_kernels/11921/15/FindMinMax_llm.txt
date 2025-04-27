@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory access latency
+// Implement warp-level operations to reduce thread divergence
+// Use memory coalescing by aligning data access patterns
+// Optimize data access by validating thread-coordinate bounds
+// Minimize conditional branches for warp execution efficiency
+// Implement efficient synchronization with __syncthreads()

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by coalescing global memory loads.
+// Consider using a loop unrolling technique to optimize the stencil computation.
+// Ensure shared memory usage is within hardware limits to prevent bank conflicts.
+// Use __syncthreads() if needed to synchronize threads before stencil computation.
+// Evaluate warp divergence when handling boundary checks and minimize where possible.
+```

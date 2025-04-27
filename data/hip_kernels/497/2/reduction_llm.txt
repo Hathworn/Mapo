@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for g_data[idx] to improve memory throughput.
+// Reduce conditional checks in the loop to improve branch efficiency.
+// Use warp shuffle instructions for intra-warp reductions to avoid shared memory usage.
+// Ensure shared memory access is bank conflict-free to maximize memory access efficiency.
+// Consider using a larger block size if shared memory limits permit to improve occupancy.
+```

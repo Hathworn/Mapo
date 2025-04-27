@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to load data in chunks to reduce global memory access.
+// Ensure __syncthreads() is placed correctly to avoid data hazards.
+// Utilize warp shuffle instructions to avoid __syncthreads() for further optimization if applicable.
+// Check for coalesced global memory access patterns.
+// Optimize boundary condition checks using min/max to avoid divergent branches.
+```

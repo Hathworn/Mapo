@@ -1,0 +1,7 @@
+```
+// Consider increasing the block size for better occupancy
+// Use vectorized loads to improve memory coalescing
+// Ensure shared memory usage is within limits for optimal performance
+// Reduce the number of __syncthreads() calls if possible
+// Align data structures to 32-byte boundaries to enhance memory access efficiency
+```

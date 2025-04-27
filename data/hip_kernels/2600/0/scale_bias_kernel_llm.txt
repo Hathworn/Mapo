@@ -1,0 +1,6 @@
+```
+// Calculate base index outside the loop to reduce redundant computation
+// Use a loop to improve the workload distribution among threads
+// Ensure coalesced memory access by accessing contiguous memory locations
+// Consider using shared memory for biases if accessed frequently
+```

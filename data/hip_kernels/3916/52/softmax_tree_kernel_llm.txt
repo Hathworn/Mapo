@@ -1,0 +1,8 @@
+```cpp
+// Unroll the loop for improved performance
+// Ensure coalesced memory access by aligning input and output data
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+// Utilize shared memory to cache intermediate results if possible
+// Consider using float4/float2 for vectorized memory operations to reduce transaction count
+// Reduce redundant calculations and memory accesses in the softmax_device function
+```

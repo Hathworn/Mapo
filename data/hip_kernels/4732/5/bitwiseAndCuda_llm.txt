@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce redundant global memory access
+// Ensure coalesced access by organizing data in a suitable layout
+// Prefetch data to registers where applicable to hide memory latency
+// Experiment with different block sizes to optimize occupancy and performance
+// Avoid warp divergence by ensuring all threads in a warp execute the same control path
+```

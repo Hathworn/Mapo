@@ -1,0 +1,9 @@
+```c
+// Coalesce memory accesses by ensuring d_Data[p + ty * width] accesses are contiguous
+// Ensure shared memory is effectively utilized by using 128 threads per block
+// Reduce unnecessary global memory reads by storing values in shared memory first
+// Employ warp shuffle operations to speed up reduction and minimize shared memory usage
+// Optimize synchronization by minimizing __syncthreads() calls
+// Ensure proper alignment to improve memory access efficiency
+// Prefetch data into shared memory for improved access speed
+```

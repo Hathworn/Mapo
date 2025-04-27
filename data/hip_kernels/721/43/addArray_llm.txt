@@ -1,0 +1,4 @@
+// Use shared memory for caching inputs to minimize global memory access
+// Load inputs into shared memory before computation for faster access
+// Ensure synchronization after loading shared memory to prevent race conditions
+// Perform operations in shared memory to reduce global memory access latency

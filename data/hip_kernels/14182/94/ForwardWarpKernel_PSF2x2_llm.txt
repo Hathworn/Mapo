@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory access to 'u' and 'v' for better performance
+// Align 'normalization_factor' and 'dst' to avoid bank conflicts
+// Use shared memory to cache 'src' values for reuse across threads within a block
+// Check if using texture memory for 'src' could improve access latency
+// Ensure 'atomicAdd' operations are minimized for higher efficiency
+```

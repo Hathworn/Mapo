@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache the relevant phi values across threads in the block for coalescing reads.
+// Preload phiL, phiR, phiU, and phiD to registers to reduce global memory access latency.
+// Ensure coalesced memory access patterns when reading from fi to fully utilize memory bandwidth.
+```

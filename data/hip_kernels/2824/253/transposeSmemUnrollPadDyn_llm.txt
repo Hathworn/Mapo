@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses and boost performance.
+// Ensure all memory accesses to 'in' and 'out' arrays are coalesced.
+// Load data unconditionally where possible to avoid branch divergence.
+// Adjust boundary checks to reduce conditional statements, improving efficiency.
+// Use dynamic shared memory allocation judiciously to maximize occupancy.
+```

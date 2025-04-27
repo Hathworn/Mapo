@@ -1,0 +1,9 @@
+```c
+// Ensure coalesced global memory access by aligning memory reads/writes
+// Use shared memory to store intermediate computation results
+// Use loop unrolling to improve performance by reducing loop overhead
+// Decrease register pressure by reducing usage of local variables
+// Consider increasing block size for better utilization of SM resources
+// Optimize memory access patterns to minimize global memory latency
+// Prefetch data into registers to hide memory latency
+```

@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring coalesced reads for bottom_rois
+// Precompute frequently used values like roi_width and bin sizes outside loops
+// Use shared memory to reduce redundant calculations for bin sizes and transformed positions
+// Unroll inner loops to reduce loop overhead and improve performance
+// Consider using texture or L2 cache for bilinear_interp function data access if beneficial
+// Fuse similar operations outside of nested loops to minimize redundant calculations
+```

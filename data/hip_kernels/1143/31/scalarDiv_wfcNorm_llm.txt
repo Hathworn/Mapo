@@ -1,0 +1,11 @@
+```
+// Consider coalesced memory access for global memory operations.
+// Utilize memory padding if necessary to avoid bank conflicts in shared memory.
+// Optimize grid and block dimensions for better occupancy and performance.
+// Ensure all accesses to shared memory are aligned to prevent uncoalesced accesses.
+// Consider using asynchronous copies if applicable for shared memory data prefetch.
+// Ensure enough available shared memory to avoid over-subscription.
+// Profile the kernel to check if shared memory usage limits occupancy.
+// Use atomics instead of global array writes if applicable to reduce memory traffic.
+// Balance workload to minimize idle threads and ensure all SMs are utilized.
+```

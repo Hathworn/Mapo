@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data
+// Ensure proper memory coalescing to optimize memory access patterns
+// Precompute constants outside of nested loops to reduce computation redundancy
+// Use registers for intermediate sums to speed up calculations
+// Minimize the number of global memory accesses by computing results within the kernel before writing back

@@ -1,0 +1,7 @@
+```
+// Consider aligning data to prevent uncoalesced global memory accesses
+// Use shared memory to temporarily store data to reduce global memory reads
+// Ensure enough threads per block to fully utilize global memory bandwidth
+// Optimize grid and block dimensions for better memory coalescing
+// Check memory access patterns to avoid bank conflicts
+```

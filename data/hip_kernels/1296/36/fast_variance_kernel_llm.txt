@@ -1,0 +1,7 @@
+```
+// Use shared memory for partial results to reduce global memory accesses
+// Ensure that shared memory is initialized by all threads before proceeding
+// Optimize loop parallelization by assigning each thread a distinct start offset
+// Employ reduction techniques to minimize synchronization overhead
+// Reduce the number of threads communicating to global memory by computing results in shared memory
+```

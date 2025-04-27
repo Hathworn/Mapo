@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory for pixel blocks to reduce global memory accesses
+// Coalesce global memory accesses by processing pixels in rows
+// Consider using float4 for reading/writing pixel data to reduce instructions
+// Optimize padding function to reduce condition checks and branching
+// Load all kernel values into shared memory to minimize repeated global reads
+// Ensure all threads in a block are busy to improve warp efficiency
+// Utilize loop unrolling to improve the computational throughput in convolution
+```

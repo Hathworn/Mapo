@@ -1,0 +1,11 @@
+```cpp
+// Optimize memory coalescence for accessing g_Data.
+// Use shared memory to reduce global memory accesses.
+// Consider loop unrolling to improve performance.
+// Perform memory access boundary checks efficiently.
+// Reduce shared memory bank conflicts.
+// Utilize more threads per block for better GPU utilization.
+// Optimize shared memory usage by limiting array sizes.
+// Minimize __syncthreads() calls where possible.
+// Balance the workload among threads to avoid divergence.
+```

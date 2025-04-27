@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for input and output arrays to improve memory throughput.
+// Use shared memory to store input tile to reduce global memory accesses.
+// Utilize constant memory for frequently accessed static data like filter dimensions.
+// Optimize loop unrolling in the pooling window to enhance parallelization.
+// Align memory accesses to 32-byte boundaries to improve memory access efficiency.
+// Reduce divergent branches for better warp execution efficiency.
+```

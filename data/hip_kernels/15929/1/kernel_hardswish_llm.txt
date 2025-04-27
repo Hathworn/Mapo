@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers for input_ and output_ pointers to help the compiler optimize memory access
+// Ensure input_ and output_ data are aligned in memory for better performance
+// Consider loading input_[i] into a register to reduce redundant global memory reads
+// Use shared memory to cache data if there's reuse within neighboring threads
+// Consider loop unrolling if applicable to the workload and block size
+// Ensure kernel launch parameters (block and grid sizes) are optimized for target architecture
+```

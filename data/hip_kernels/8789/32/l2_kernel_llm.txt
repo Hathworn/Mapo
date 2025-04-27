@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring continuous threads access continuous memory locations
+// Utilize shared memory if multiple threads within a block access the same data frequently to reduce global memory traffic
+// Experiment with different block sizes to determine optimal occupancy and performance balance
+// Use efficient intrinsic operations like __fadd_rn, __fmul_rn where appropriate as already utilized
+// Avoid thread divergence by ensuring all threads within a warp follow the same execution path
+```

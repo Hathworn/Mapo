@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache input data for coalesced access pattern.
+// Ensure x array accesses are coalesced by aligning data based on groups.
+// Reduce global memory writes by using atomic operations if applicable.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+```

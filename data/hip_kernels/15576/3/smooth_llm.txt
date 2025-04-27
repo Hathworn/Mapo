@@ -1,0 +1,5 @@
+// Consider using shared memory to store neighboring elements for better memory coalescing.
+// Minimize redundant accesses to global memory by loading critical elements into registers or shared memory.
+// Ensure that thread indices do not exceed the bounds of the array to avoid invalid memory accesses.
+// Align data structures to enable coalesced memory access and ensure optimal global memory throughput.
+// Optimize grid and block dimensions to maximize occupancy and minimize warp divergence.

@@ -1,0 +1,3 @@
+// Consider using shared memory for faster access compared to global memory
+// Minimize divergence by ensuring that all threads in a warp follow the same execution path
+// Ensure data coalesced access to optimize memory throughput

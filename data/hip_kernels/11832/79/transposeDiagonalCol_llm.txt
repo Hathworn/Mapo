@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Add +1 to shared memory allocation to avoid bank conflicts.
+// Ensure data is loaded to shared memory before performing transpose operation.
+// Restructure index calculation to maximize coalesced memory access.

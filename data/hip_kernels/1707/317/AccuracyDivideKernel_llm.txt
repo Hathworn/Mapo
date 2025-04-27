@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce repeated global memory access if N is used multiple times.  
+// Ensure the alignment of accuracy pointer for optimal coalesced memory access.  
+// Minimize global memory writes by storing results only when necessary.  
+// Use atomic operations if accuracy might be accessed by multiple threads simultaneously.

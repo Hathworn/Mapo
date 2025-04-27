@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache frequently accessed data and reduce global memory reads
+// Ensure coalesced memory access patterns for v0 and v1 to maximize bandwidth usage
+// Use loop unrolling to minimize loop overhead and increase instruction-level parallelism
+// Consider using asynchronous copy if possible to overlap computation and data transfer
+// Reduce thread divergence by ensuring threads within the same warp follow similar execution paths
+```

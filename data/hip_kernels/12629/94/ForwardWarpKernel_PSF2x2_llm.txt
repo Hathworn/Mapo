@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses for 'u' and 'v' arrays.
+// Utilize shared memory for 'src' array to reduce global memory traffic.
+// Prefetch data into registers for frequently accessed variables.
+// Fuse kernel launches when possible to minimize launch overhead.
+// Use __ldg() to benefit from read-only cache for constant data like 'time_scale'.
+// Align data structures to improve memory access efficiency.
+// Consider reorganizing thread blocks to maximize occupancy.
+```

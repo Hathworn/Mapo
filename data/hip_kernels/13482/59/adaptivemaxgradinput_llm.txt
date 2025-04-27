@@ -1,0 +1,6 @@
+```
+// Ensure memory alignment for coalesced global memory access
+// Use shared memory to cache repeated global memory reads
+// Consider splitting kernel into smaller tasks for better occupancy
+// Minimize use of atomicAdd to avoid serialization
+```

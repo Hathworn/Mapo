@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access if possible
+// Minimize bank conflicts by padding shared memory when necessary
+// Prefer coalesced global memory accesses for better memory throughput
+// Consider loop unrolling if it can improve performance
+// Ensure enough threads per block to fully utilize GPU resources
+```

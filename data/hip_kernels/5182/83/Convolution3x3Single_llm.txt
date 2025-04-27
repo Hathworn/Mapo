@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Consider transposing blocks to improve memory coalescing
+// Evaluate read/write patterns for better caching
+// Prefetch data into registers before computation
+// Investigate warp-level operations for further optimization
+// Assess occupancy using different block sizes
+// Consider data alignment to leverage vectorized loads
+```

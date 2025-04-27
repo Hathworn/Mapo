@@ -1,0 +1,7 @@
+// Optimize memory access by using shared memory to reduce global memory access latency.
+// Ensure data with edge conditions are preloaded into shared memory for each thread block.
+// Minimize register usage by efficiently using thread block resources.
+// Consider loop unrolling to reduce loop overhead and improve memory access patterns.
+// Align memory access with warp boundaries to promote coalesced memory transactions.
+// Evaluate use of bank conflict-free memory access patterns in shared memory.
+// Ensure the kernel is maximizing the occupancy by tuning block size and grid dimensions.

@@ -1,0 +1,6 @@
+```
+// Use shared memory to leverage faster access and reduce global memory access
+// Copy input using stride to optimize memory coalescing
+// Minimize warp divergence by using single statement in reduction
+// Use bit shifting for division by 2 to enhance performance
+```

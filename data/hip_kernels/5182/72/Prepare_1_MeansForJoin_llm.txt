@@ -1,0 +1,7 @@
+```c
+// Optimize memory accesses by ensuring coalesced global memory access for input[] and delta[].
+// Use shared memory to cache data that is accessed multiple times to reduce global memory transactions.
+// Consider loop unrolling for operations that update delta array to improve instruction throughput.
+// Minimize divergent branches by rearranging conditions if possible to enhance warp efficiency.
+// Pre-compute constant values like 2.0f / imageWidth and 2.0f / imageHeight outside the kernel for reuse.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Optimize thread block dimensions for better memory coalescing.
+// Use const memory for frequently accessed read-only data, like variables sizeInput and sizeFullPadded.
+// Ensure memory alignment for input and output arrays to improve access efficiency.
+// Prefetch data to shared memory to hide global memory latency where possible.
+```

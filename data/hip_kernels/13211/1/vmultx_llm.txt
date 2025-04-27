@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed variables to reduce global memory access latency.
+// Ensure coalesced memory access for arrays 'a', 'b', and 'c' to maximize bandwidth.
+// Evaluate thread block size to maximize occupancy while preventing register spilling.
+// Prefer using __restrict__ pointers for 'a', 'b', and 'c' to enable better compiler optimizations.
+// Optimize grid and block dimensions to match the size of the input arrays and maximize parallel execution.
+```

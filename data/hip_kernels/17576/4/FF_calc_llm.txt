@@ -1,0 +1,9 @@
+```c
+// Ensure coalesced memory access when loading WK into shared memory
+// Consider using larger block sizes to increase occupancy and hide latency
+// Preload vdW into shared memory to reduce global memory accesses
+// Reduce index calculations inside loops where possible
+// Unroll inner loops to improve instruction throughput
+// Optimize shared memory use to prevent bank conflicts
+// Minimize divergent branches within the loop to enhance warp execution efficiency
+```

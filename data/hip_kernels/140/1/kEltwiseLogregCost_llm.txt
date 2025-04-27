@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data for each block to reduce global memory accesses
+// Coalesce memory accesses by ensuring predmap, indmap, indlogpred, and correctprobs are accessed consecutively
+// Avoid branch divergence by using branchless conditional operations already implemented
+// Prefetch data to registers when possible to reduce memory latency
+// Optimize loop unrolling for the per_thread_case loop to reduce loop overhead
+```

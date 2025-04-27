@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure coalesced memory access by aligning data structures and operations to warp boundaries.
+// Explore using vectorized memory operations if the hardware supports them for better memory throughput.
+// Minimize divergent branches to maintain warp execution efficiency.
+// If possible, rearrange the data to allow memory accesses in contiguous chunks, enhancing memory bandwidth usage.

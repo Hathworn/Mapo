@@ -1,0 +1,10 @@
+digraph "CFG for '_Z10gpu_ComputPiii' function" {
+	label="CFG for '_Z10gpu_ComputPiii' function";
+
+	Node0x59241f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %6, %10\l  %12 = add i32 %11, %4\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %15 = getelementptr i8, i8 addrspace(4)* %5, i64 6\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 2, !range !5, !invariant.load !6\l  %18 = zext i16 %17 to i32\l  %19 = mul i32 %14, %18\l  %20 = add i32 %19, %13\l  %21 = icmp sgt i32 %2, 0\l  br i1 %21, label %22, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x59241f0:s0 -> Node0x5927b60;
+	Node0x59241f0:s1 -> Node0x5927bf0;
+	Node0x5927b60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%22:\l22:                                               \l  %23 = mul nsw i32 %12, %1\l  %24 = add nsw i32 %20, %23\l  %25 = mul nsw i32 %20, %1\l  %26 = add nsw i32 %25, %12\l  %27 = sext i32 %24 to i64\l  %28 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %27\l  store i32 %26, i32 addrspace(1)* %28, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x5927b60 -> Node0x5927bf0;
+	Node0x5927bf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

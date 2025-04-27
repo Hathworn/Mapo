@@ -1,0 +1,5 @@
+// Reduce global memory accesses by loading data into shared memory.
+// Use shared memory tiles to optimize memory access patterns.
+// Avoid out-of-bounds accesses by checking array indices.
+// Ensure synchronization between threads using __syncthreads() before computations.
+// Minimize redundant calculations by computing within shared memory.

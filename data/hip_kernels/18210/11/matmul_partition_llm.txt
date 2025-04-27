@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory accesses
+// Ensure alignment of memory accesses for better GPU memory throughput
+// Consider using warp-level primitives if supported by the hardware
+// Optimize data reuse within the shared memory
+// Use __restrict__ pointers to hint compiler about non-aliasing
+// Minimize synchronization by merging dependencies when possible

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for xyz1 and xyz2 to reduce global memory accesses
+// Use __syncthreads() to ensure all threads have complete access to shared memory
+// Pre-compute dx * dx, dy * dy, dz * dz for distance calculation to improve performance
+// Minimize branching within loops for enhanced execution efficiency
+// Consider loop unrolling for the inner neighbor search loop to reduce loop overhead
+```

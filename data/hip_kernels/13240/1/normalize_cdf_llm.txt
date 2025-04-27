@@ -1,0 +1,5 @@
+// Use __restrict__ to indicate no aliasing of pointers for better optimizations
+// Minimize global memory accesses by using registers for intermediate computations
+// Ensure coalesced memory access patterns for improved performance
+// Consider using shared memory if multiple threads need access to common data
+// Avoid bank conflicts when using shared memory for efficient memory access

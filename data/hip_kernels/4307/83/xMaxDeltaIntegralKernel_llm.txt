@@ -1,0 +1,9 @@
+```
+// Use tiled memory access patterns to minimize global memory transactions.
+// Consider coalescing memory access for better global memory utilization.
+// Explore shared memory usage to buffer parts of the data for reused access.
+// Align memory operations to avoid uncoalesced memory loads and stores.
+// Use compiler flags to unroll loops for performance in compute-bound sections.
+// Optimize the block and grid size for full occupation of the device resources.
+// Minimize divergence within warps by ensuring conditional branches are unified.
+```

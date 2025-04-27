@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads with image rows
+// Minimize bank conflicts when accessing rand array
+// Consider loop unrolling if the number of operations is small
+// Preload constant values if frequently accessed
+// Use shared memory for intermediate computations if beneficial
+```

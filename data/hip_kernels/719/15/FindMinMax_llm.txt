@@ -1,0 +1,4 @@
+// Use shared memory to cache frequently accessed data and reduce global memory access
+// Ensure coalesced global memory access by having threads access consecutive memory locations
+// Optimize shared memory usage by minimizing the number of active data in shared memory
+// Consider using warp-level primitives to reduce the need for __syncthreads()

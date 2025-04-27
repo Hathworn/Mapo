@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access during unrolling
+// Exploit memory coalescing in the loop for in-place reduction
+// Use atomic operations to optimize the reduction further where possible
+// Memory access patterns can be improved by considering neighboring threads
+// Load data from global to shared memory effectively to minimize latency
+```

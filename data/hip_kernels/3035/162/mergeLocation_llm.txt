@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory traffic
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory locations
+// Minimize divergent branches to optimize warp execution
+// Optimize use of __restrict__ pointers to help the compiler with memory optimization

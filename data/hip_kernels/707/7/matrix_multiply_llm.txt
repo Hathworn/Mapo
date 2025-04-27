@@ -1,0 +1,7 @@
+```
+// Consider using a larger TILE_WIDTH for better occupancy and performance
+// Ensure __shared__ memory size does not exceed hardware limits for optimal performance
+// Use __syncthreads() carefully to avoid unnecessary synchronization overhead
+// Potentially use loop unrolling with #pragma unroll for improved performance
+// Check if data alignment can be improved to reduce global memory access latency
+```

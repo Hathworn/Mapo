@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses when loading data into shared memory
+// Ensure shared memory is fully utilized to optimize memory bandwidth
+// Consider adjusting BLOCK_SIZE to fit within available shared memory and reduce bank conflicts
+// Unroll loops to improve instruction throughput and latency hiding
+// Minimize the use of __syncthreads() where possible to reduce synchronization overhead
+// Consider using float2 or float4 for loading/storing multiple elements at once to optimize vectorized memory operations
+```

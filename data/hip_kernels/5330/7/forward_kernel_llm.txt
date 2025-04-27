@@ -1,0 +1,7 @@
+// Consider coalesced memory access for better global memory access efficiency.
+// Explore the use of shared memory to store mean and variance for faster access.
+// Check for potential bank conflicts in shared memory usage.
+// Utilize vectorized loads and stores if applicable to improve memory throughput.
+// Ensure the kernel is operating on enough work items to fully utilize the GPU.
+// Investigate warp divergence and optimize thread paths to minimize it.
+// Consider loop unrolling if the number of iterations is fixed for performance gains.

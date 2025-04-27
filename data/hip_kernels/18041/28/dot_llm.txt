@@ -1,0 +1,5 @@
+// Unroll loop to increase instruction throughput.
+// Use shared memory to reduce global memory accesses.
+// Utilize __syncthreads() to ensure full reduction completion.
+// Employ a binary tree reduction to minimize computational complexity.
+// Ensure single write operation per block to global memory for efficiency.

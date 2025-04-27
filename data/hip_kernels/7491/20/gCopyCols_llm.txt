@@ -1,0 +1,5 @@
+```
+// Use 2D grid configuration for better work distribution across all rows
+// Start threads within thread block for coalesced memory access
+// Ensure threads within a block work on contiguous memory for optimal cache usage
+```

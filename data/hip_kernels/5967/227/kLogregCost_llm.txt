@@ -1,0 +1,6 @@
+```
+// Consider further reducing global memory access by loading all needed data into shared memory at once
+// Possible optimization: use float2 or float4 to load multiple probabilities in fewer transactions
+// Evaluate if using warp shuffle operations can replace shared memory usage for reducing bank conflicts
+// Optimize the atomicAdd operation by minimizing its usage or replacing it with warp-level primitives
+```

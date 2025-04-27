@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store data for reducing memory access latency.
+// Ensure coalesced memory access by aligning data structures to cache line sizes.
+// Avoid divergent branches by ensuring condition checks are uniform across threads.
+// Minimize use of global memory and prefer local variables where applicable.
+// Investigate async data transfers and compute overlaps to hide memory latency.
+```

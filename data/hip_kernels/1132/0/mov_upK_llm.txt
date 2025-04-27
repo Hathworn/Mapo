@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses for matriz by accessing consecutive elements
+// Consider shared memory for frequently accessed data within the warp
+// Reduce the number of syncthreads to enhance performance, ensuring correctness
+// Utilize loop unrolling where applicable for better loop performance
+// Fuse consecutive kernel calls if possible to minimize kernel launch overhead

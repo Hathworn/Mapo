@@ -1,0 +1,8 @@
+```
+// Consider coalesced access patterns by ensuring that threads read contiguous memory locations to enhance memory throughput.
+// Minimize bank conflicts by adjusting how data is accessed within shared memory, aiming for aligned access.
+// Implement loop unrolling if applicable to reduce the overhead of loop control and increase instruction throughput.
+// Utilize __restrict__ qualifier to indicate that pointers do not alias, allowing better optimization by the compiler.
+// Prefetch data to shared memory before processing to reduce global memory latency, if applicable within resource constraints.
+// Evaluate the use of texture memory for potentially better caching behavior when accessing u and v arrays.
+```

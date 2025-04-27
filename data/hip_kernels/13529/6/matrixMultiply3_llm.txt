@@ -1,0 +1,10 @@
+```
+// Consider aligning data access to coalesce global memory reads.
+// Use shared memory to store tile data to minimize global memory accesses.
+// Ensure all threads have loaded their data into shared memory using __syncthreads().
+// Use shared memory efficiently by loading tiles of data for reuse in computations.
+// Minimize bank conflicts in shared memory access for better performance.
+// Optimize the loop to reduce shared memory store and load operations.
+// Avoid redundant synchronizations to reduce overhead.
+// Make sure grid dimensions efficiently cover the matrix to maximize occupancy.
+```

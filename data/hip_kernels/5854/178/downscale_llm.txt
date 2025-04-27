@@ -1,0 +1,7 @@
+// Avoid bank conflicts by ensuring memory accesses are properly aligned
+// Ensure memory coalescing by accessing continuous memory in inner loops
+// Use shared memory wisely to cache frequently accessed data
+// Prefetch data if possible to hide memory latency
+// Use __restrict__ pointers to inform the compiler about non-aliasing data
+// Consider using atomic operations if data race conditions exist
+// Consider splitting loops to improve parallelism and reduce thread divergence

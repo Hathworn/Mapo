@@ -1,0 +1,5 @@
+// Optimize memory reads by loading more data into shared memory.
+// Consider using loop unrolling to improve thread throughput.
+// Ensure coalesced global memory access to minimize latency.
+// Use shared memory efficiently by applying bank conflict avoidance techniques.
+// Utilize warp-level primitives for reduction to enhance performance.

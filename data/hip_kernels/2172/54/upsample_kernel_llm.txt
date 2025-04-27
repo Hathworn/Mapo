@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Use texture memory for read-only data that are accessed multiple times by all threads in a warp.
+// Ensure coalesced memory access patterns by aligning data structures and processing.
+// Precompute as many values as possible outside the kernel to reduce redundant computation.
+// Minimize divergent branches by restructuring the conditional logic where possible.
+// Optimize stride usage by evaluating the necessity of stride-related calculations.
+```

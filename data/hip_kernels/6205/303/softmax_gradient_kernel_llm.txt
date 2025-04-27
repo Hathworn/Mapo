@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory efficiently to reduce global memory accesses
+// Explore the use of warp shuffle operations to optimize warp-level reductions
+// Try minimizing the use of __syncthreads() for better occupancy
+// Ensure that the warp-level reduction assumes blockDim.x is a multiple of 32
+// Evaluate if using cooperative groups for reduction could yield performance gains
+```

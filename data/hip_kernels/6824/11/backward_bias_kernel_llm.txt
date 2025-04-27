@@ -1,0 +1,7 @@
+```
+// Collapse loops to reduce branch divergence and improve memory access patterns
+// Utilize shared memory for efficient accumulation of values
+// Implement reduction within shared memory to minimize global memory accesses
+// Use warp-level primitives to eliminate the need for __syncthreads() in final reduction steps
+// Ensure global memory writes are minimized by accumulating shared memory before writing back
+```

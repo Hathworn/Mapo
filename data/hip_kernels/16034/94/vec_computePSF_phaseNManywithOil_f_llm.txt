@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store frequently accessed data like kx, ky, kz, etc., to reduce global memory accesses.
+// Use __restrict__ to indicate that pointer parameters do not alias, which can help the compiler optimize memory access patterns.
+// Align the data structures in global memory to facilitate coalesced memory access and improve memory throughput.
+// Use pre-fetching techniques to hide memory latency by overlapping computation with data transfer.
+// Optimize the use of registers by reusing variables and reducing the number of temporary variables.
+// Consider using warp-shuffle functions for inter-thread communication to avoid costly shared memory usage.
+```

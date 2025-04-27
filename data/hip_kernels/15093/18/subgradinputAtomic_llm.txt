@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Minimize divergence by ensuring uniform execution across threads
+// Align memory accesses to improve coalescing
+// Reorder loops to increase data locality within shared memory
+// Prefetch data to reduce latency by overlapping computation with memory access
+// Use float4 for vectorized memory loading where applicable
+// Consider using cooperative groups for improved memory hierarchy utilization
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access
+// Ensure memory coalescing by having consecutive threads access consecutive memory addresses
+// Apply further loop unrolling where beneficial, considering register pressure
+// Optimize grid and block dimensions based on empirical performance testing
+```

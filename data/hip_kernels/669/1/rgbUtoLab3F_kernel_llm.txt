@@ -1,0 +1,9 @@
+```
+// Use shared memory for loading rgbU tile-wise to reduce global memory accesses
+// Combine calculations where possible to reduce the number of instructions
+// Leverage vectorized operations if supported by the platform for color conversions
+// Consider loop unrolling for any repetitive calculations within the kernel
+// Use memory coalescing by ensuring contiguous memory access patterns
+// Explore the use of __restrict__ qualifier for pointers to optimize memory reads
+// Assess the possibility of using asynchronous memory transfers to hide latency
+```

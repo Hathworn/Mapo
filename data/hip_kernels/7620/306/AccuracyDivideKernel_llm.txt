@@ -1,0 +1,7 @@
+```c
+// Consider loading N into a register if it's used multiple times in a larger kernel
+// Ensure *accuracy is not frequently accessed by multiple threads to avoid contention
+// Prefetch data into shared memory if multiple threads need the same data
+// Make sure the memory access patterns are coalesced for optimal performance
+// Use warp-level primitives to reduce global memory accesses when applicable
+```

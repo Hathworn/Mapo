@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access
+// Coalesce global memory accesses to improve memory bandwidth utilization
+// Minimize divergent branches to maintain warp execution efficiency
+// Consider using __syncthreads() to ensure data consistency
+// Optimize thread block size for better SM occupancy
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced global memory access for dst RGBA loads
+// Store intermediate y_value, u_value, and v_value in shared memory
+// Use float4 vector loads and stores to optimize memory bandwidth
+// Explore using __ldg() for rgba value loads to utilize read-only cache
+// Leverage texture or surface memory for improved data fetch efficiency
+// Add memory prefetch to reduce latency for src writes and loads
+```

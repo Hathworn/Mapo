@@ -1,0 +1,6 @@
+```
+// Use shared memory for 'sharedNorm' to minimize global memory access latency
+// Consider coalescing global memory accesses for 'array' to increase memory throughput
+// Ensure all threads within a warp or block load data in a coalesced manner for efficiency
+// Use __syncthreads() wisely to ensure data consistency between threads when needed
+```

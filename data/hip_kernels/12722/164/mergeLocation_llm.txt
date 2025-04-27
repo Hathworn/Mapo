@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency  
+// Ensure coalesced access to global memory for better performance  
+// Favor shared memory reads over global memory reads for frequently accessed data  
+// Consider adjusting block size for optimal shared memory utilization  
+// Use __syncthreads() to synchronize threads when accessing shared memory  
+// Optimize memory access patterns to reduce contention

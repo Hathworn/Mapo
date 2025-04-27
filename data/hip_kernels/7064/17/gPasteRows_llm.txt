@@ -1,0 +1,4 @@
+// Consider coalesced memory access to reduce latency.
+// Ensure the thread block size matches the warp size for efficiency.
+// Use shared memory if possible to minimize global memory accesses.
+// Optimize atomic operations to avoid serialization and contention.

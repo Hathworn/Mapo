@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to store input data for reuse within the kernel
+// Apply loop unrolling in the innermost loops for increased performance
+// Ensure coalesced memory access for input and output arrays for better bandwidth utilization
+// Prefetch data into registers where possible to reduce memory access latency
+// Utilize memory access patterns that minimize bank conflicts in shared memory
+// Optimize the launch configuration to maximize occupancy based on resource availability
+// Explore opportunities for using constant memory for kernel weights if they remain unchanged across threads
+```

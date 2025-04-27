@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Employ a stride loop to optimize memory coalescing
+// Use warp-level reduction to minimize synchronization costs
+// Accumulate results from each block into the global memory
+```

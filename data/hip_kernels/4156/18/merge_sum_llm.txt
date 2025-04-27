@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Reduce warp divergence by handling out-of-bounds threads early
+// Improve memory coalescing by ensuring threads access consecutive memory locations
+// Use __syncthreads() to synchronize threads before shared memory use
+// Consider using texture memory for better caching if access patterns are read-only
+```

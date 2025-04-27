@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for A and B to improve memory throughput
+// Optimize shared memory usage by minimizing bank conflicts
+// Preload shared memory using a separate loop to hide latency
+// Evaluate if using a larger thread block size improves performance
+// Ensure alignment of global memory access for maximizing memory bandwidth
+// Consider loop unrolling within the computation loop for potential speedup
+// Use half precision or mixed precision if accuracy allows for reduced memory bandwidth
+```

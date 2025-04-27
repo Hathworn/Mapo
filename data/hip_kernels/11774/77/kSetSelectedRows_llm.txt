@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning thread access patterns.
+// Use shared memory efficiently to reduce redundant global memory accesses.
+// Consider vectorization to improve memory throughput by using float4 or float2 types.
+// Re-examine memory bank conflicts within shared memory to ensure optimal usage.
+// Apply loop unrolling to enhance instruction throughput in the copy loop.

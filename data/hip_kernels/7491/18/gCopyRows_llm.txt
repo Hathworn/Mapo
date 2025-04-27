@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory if rows have spatial locality to minimize global memory accesses.
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations.
+// Use loop unrolling for the inner loop to reduce the loop overhead.
+// Ensure grid and block dimensions are optimally set for the target GPU to maximize occupancy.
+```

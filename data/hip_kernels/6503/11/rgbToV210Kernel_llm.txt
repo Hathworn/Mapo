@@ -1,0 +1,9 @@
+```cpp
+// Use coalesced global memory access for pSrc reads by optimizing the way indices are calculated.
+// Consider using __ldg() intrinsics for read-only data to potentially improve cache usage.
+// Ensure that shared memory access is coalesced to maximize efficiency.
+// Avoid bank conflicts in shared memory by ensuring proper alignment and usage.
+// Unroll the loops for better ILP and potentially lower latency.
+// Optimize the way indices are calculated to utilize registers efficiently.
+// Minimize the use of division operations in index calculations where possible.
+```

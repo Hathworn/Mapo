@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by aligning data structures
+// Use __ldg() for read-only data to exploit cached memory accesses
+// Minimize shared memory usage by utilizing registers instead
+// Optimize grid-stride loop for better load balancing across threads
+// Consider varying block and grid sizes based on problem dimensions
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to store frequently accessed data like connectionMatrix within the block.
+// Reorder loops to improve memory access patterns and enhance cache utilization.
+// Minimize the use of atomic operations if possible, as they can serialize execution and lower performance.
+// Reduce thread divergence by ensuring each warp executes a uniform amount of work.

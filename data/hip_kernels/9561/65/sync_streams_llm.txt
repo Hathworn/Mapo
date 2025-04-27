@@ -1,0 +1,7 @@
+```
+// Consider ensuring memory coalescing when accessing global memory
+// Use shared memory to reduce global memory access latency
+// Minimize the use of atomic operations in global memory
+// Avoid branch divergence within warps by aligning thread execution paths
+// Use loop unrolling to increase instruction throughput when applicable
+```

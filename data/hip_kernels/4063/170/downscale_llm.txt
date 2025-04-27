@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for gradOutput_data to optimize memory access patterns
+// Use memory coalescing by organizing access to gradOutput_data to minimize warp divergence
+// Explore the use of atomic operations to avoid race conditions when updating gradInput_data
+```

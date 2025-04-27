@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access when loading from global memory to shared memory.
+// Ensure all threads in a warp read contiguous memory locations to improve bandwidth.
+// Minimize bank conflicts in shared memory by optimizing data layout if performance bottleneck occurs.
+// Assess if larger shared memory allocation could enable better parallelism and utilization of the device.
+```

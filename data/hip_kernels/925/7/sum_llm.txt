@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data from global memory to reduce global memory accesses
+// Coalesce global memory accesses by ensuring that threads access consecutive memory addresses
+// Consider loop unrolling if there are repetitive independent operations for potential increase in throughput
+// Optimize grid and block dimensions to maximize GPU occupancy and minimize warp divergence
+// Use __ldg() to load read-only data for potential performance improvement on supported CUDA hardware
+```

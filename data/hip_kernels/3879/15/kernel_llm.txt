@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Consider padding shared memory to avoid bank conflicts.
+// Perform computations as close to data loading as possible to reduce latency between load and use.
+// Minimize the size of shared memory to reduce shared memory bank conflicts.
+// Use loop unrolling to increase throughput if the loop iteration count is fixed and known.
+```

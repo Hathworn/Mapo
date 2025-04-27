@@ -1,0 +1,3 @@
+// Consider using shared memory to cache mean[i] for threads within the same block to reduce global memory access
+// Avoid redundant calculations of index by calculating outside the inner loop if possible
+// Explore loop unrolling to minimize loop overhead and improve performance

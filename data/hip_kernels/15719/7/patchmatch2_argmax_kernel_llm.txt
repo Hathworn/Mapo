@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache and reuse data within thread blocks to reduce global memory access.
+// Ensure coalesced memory access patterns by aligning data access with warp execution.
+// Minimize divergent branches within the kernel to enhance warp execution efficiency.
+// Evaluate the use of loop unrolling to optimize loops with a fixed iteration count for better performance.
+```

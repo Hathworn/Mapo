@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for frequently accessed data
+// Coalesce memory accesses by ensuring adjacent threads access consecutive memory addresses
+// Consider loop unrolling for operations that are applied over small and fixed-size ranges
+// Optimize memory access patterns to leverage memory coalescing and reduce bank conflicts
+// Avoid redundant calculations by storing common sub-expressions in registers
+```

@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access patterns when loading data to shared memory.
+// Consider using a warp-wise reduction for histogram bin combination.
+// Implement loop unrolling in loops that combine histogram bins for potential performance gain.
+// Use atomics efficiently to minimize serialization in histogram updates.
+// Consider preloading frequently used values into registers to reduce global memory accesses.
+// Leverage shared memory bank conflict avoidance techniques if necessary.
+```

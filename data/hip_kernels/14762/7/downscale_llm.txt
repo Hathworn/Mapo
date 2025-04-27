@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access to improve memory throughput
+// Use shared memory to store intermediate results if there are reused computations
+// Avoid repeated division in translate_idx_inv by storing results in temporary variables
+// Optimize loop order to maximize warps and reduce execution divergence
+// Unroll loops to increase instruction throughput if the loop count is fixed
+// Prefetch data into shared memory to overlap computation with memory access
+// Ensure data alignment to achieve half-warp memory transactions
+// Analyze the use of banked shared memory to avoid bank conflicts
+```

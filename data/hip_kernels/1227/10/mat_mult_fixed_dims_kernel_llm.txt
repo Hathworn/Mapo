@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache matrix fragments to reduce global memory access.
+// Consider coalesced memory access patterns to maximize memory throughput.
+// Apply loop unrolling in the inner loop of the multiplication for better performance.
+// Reduce thread divergence by ensuring thread blocks execute uniformly.
+// Ensure sufficient occupancy by selecting optimal block size considering shared memory usage.
+// Avoid bank conflicts in shared memory access by padding the shared memory allocation if needed.
+// Use the __restrict__ keyword on pointers to help the compiler with aliasing optimizations.
+// Explore the use of prefetching techniques to hide memory latency.
+```

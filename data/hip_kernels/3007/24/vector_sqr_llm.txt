@@ -1,0 +1,9 @@
+```
+// Load data to shared memory if reuse is expected to reduce global memory accesses
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory locations
+// Use appropriate memory spaces (e.g., `__restrict__` pointers) to enable more compiler optimizations
+// Consider manual loop unrolling if the kernel computation is small and launches with many threads
+// Ensure that alignment of data structures matches device memory access requirements
+// Minimize conditional statements inside the kernel that could lead to warp divergence
+// Evaluate if there's a benefit to using vectorized data types (e.g., `float2`, `float4`) for memory accesses
+```

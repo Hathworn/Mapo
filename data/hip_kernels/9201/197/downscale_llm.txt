@@ -1,0 +1,8 @@
+```
+// Use shared memory to buffer gradOutput_data to reduce global memory accesses.
+// Ensure coalesced memory access patterns for gradOutput_data.
+// Use __syncthreads() to manage shared memory usage efficiently.
+// Consider loop unrolling for the inner loops to reduce the overhead of loop control.
+// Check for warp divergence and optimize control flow if necessary.
+// Evaluate occupancy and adjust block size or grid size for better performance.
+```

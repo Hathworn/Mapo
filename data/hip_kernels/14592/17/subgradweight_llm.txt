@@ -1,0 +1,9 @@
+```cpp
+// Consider using memory coalescing for input and gradOutput accesses.
+// Use shared memory more effectively to reduce global memory accesses.
+// Use loop unrolling for ky and kx loops for better performance.
+// Ensure optimal block size based on hardware capabilities for compute efficiency.
+// Minimize use of atomic operations by reducing data in shared memory first.
+// Consider using float4 or float2 for vectorized memory access where applicable.
+// Reduce shared memory bank conflicts by padding shared memory accesses.
+```

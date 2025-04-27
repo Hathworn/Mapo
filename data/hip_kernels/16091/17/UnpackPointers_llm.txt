@@ -1,0 +1,3 @@
+// Use shared memory to reduce redundant global memory accesses.
+// Ensure thread coalescing for global memory stores into 'ptrs'.
+// Avoid unnecessary __syncthreads calls if memory dependencies can be avoided.

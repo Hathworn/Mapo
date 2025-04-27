@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve data locality.
+// Apply strided access pattern to ensure coalesced global memory accesses.
+// Utilize __syncthreads() effectively to guarantee memory consistency across threads.
+// Implement a tree-based reduction to minimize divergent branches.

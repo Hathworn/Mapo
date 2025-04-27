@@ -1,0 +1,5 @@
+```
+// As the kernel serves only for synchronization, memory access optimizations are not applicable.
+// Ensure that this kernel incurs minimal overhead by being completely empty.
+// Use __syncthreads() if future usage requires thread-level synchronization within a block.
+```

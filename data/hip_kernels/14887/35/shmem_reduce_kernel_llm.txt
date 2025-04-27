@@ -1,0 +1,6 @@
+```
+// Consider aligning d_in access to maximize memory coalescing.
+// Use __syncthreads() efficiently to reduce instruction overhead.
+// Minimize __shared__ memory size for better occupancy.
+// Try using dynamic parallelism for better block reduction.
+```

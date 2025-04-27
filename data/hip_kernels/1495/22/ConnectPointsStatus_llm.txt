@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce repeated global memory access, especially for PointType_BestN.
+// Improve coalescing by aligning memory accesses for PointType_BestN and ConnectStatus with warp sizes.
+// Use loop unrolling to enhance performance within the nested loops.
+// Minimize branching within loops to boost execution speed.
+// Avoid global memory writes if not absolutely necessary within loops to reduce latency.
+```

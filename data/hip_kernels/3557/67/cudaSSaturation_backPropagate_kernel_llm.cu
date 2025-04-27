@@ -1,0 +1,14 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void cudaSSaturation_backPropagate_kernel(float* x, float* dx, unsigned int size, float threshold)
+{
+    const unsigned int index = blockIdx.x * blockDim.x + threadIdx.x;
+    const unsigned int stride = blockDim.x * gridDim.x;
+
+    if (threshold != 0.0f) { // Check threshold once to prevent redundant checks
+        for (unsigned int i = index; i < size; i += stride) {
+            dx[i] *= (x[i] > -threshold && x[i] < threshold) ? 1.0f : 0.0f; // Simplified condition
+        }
+    }
+}

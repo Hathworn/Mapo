@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to minimize global memory accesses
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory addresses
+// Use warp-shuffle operations for data exchange if supported, to reduce shared memory usage and synchronization
+// Minimize branching and divergent paths within the kernel
+```

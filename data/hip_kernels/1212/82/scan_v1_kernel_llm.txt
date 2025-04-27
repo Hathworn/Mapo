@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for d_input and d_output to improve bandwidth utilization.
+// Reduce the number of synchronizations by optimizing the scan algorithm to reduce __syncthreads() calls.
+// Minimize bank conflicts in shared memory by ensuring data access patterns avoid shared memory conflicts.
+// Explore the use of warp-level primitives for a more efficient scan implementation.
+```

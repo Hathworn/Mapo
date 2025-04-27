@@ -1,0 +1,7 @@
+```
+// Optimize global memory access by minimizing pointer arithmetic within loops
+// Consider using shared memory to reduce redundant global memory accesses
+// Precompute frequently used values like scale to register before the loop
+// Unroll small loops to reduce branch overhead if beneficial
+// Check alignment of data to utilize coalesced memory accesses
+```

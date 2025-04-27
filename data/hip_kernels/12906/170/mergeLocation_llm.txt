@@ -1,0 +1,5 @@
+```
+// Consider using __ldg(&loc_[ptidx]) for potential read-only cache benefits on loc_ accesses
+// Ensure coalesced memory access patterns for x and y arrays for improved performance
+// Use shared memory if loc_ is accessed multiple times and there is value in reducing global memory access
+```

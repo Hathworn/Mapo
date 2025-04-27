@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache row_sum and col_sum to reduce global memory reads
+// Ensure coalesced memory access for output by aligning the access pattern
+// Optimize loop variable i by unrolling the loop if N is known at compile-time
+// Limit the usage of arithmetic operations within the loop for better performance
+```

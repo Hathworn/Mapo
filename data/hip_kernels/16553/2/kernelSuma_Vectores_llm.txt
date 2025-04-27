@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access to improve memory throughput.
+// Ensure that block size is a multiple of the warp size to optimize execution efficiency.
+// Consider utilizing shared memory if multiple threads require access to the same elements to reduce global memory traffic.
+// Optimize for occupancy by tuning the block size and utilizing all available registers.
+```

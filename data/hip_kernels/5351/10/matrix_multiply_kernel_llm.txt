@@ -1,0 +1,4 @@
+// Use shared memory for the input vector to reduce global memory access  
+// Copy the input vector to shared memory  
+// Ensure all threads have loaded the vector  
+// Perform the matrix-vector multiplication with shared memory access  

@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Optimize thread indexing for efficient memory access
+// Initialize shared memory to preload frequently used data
+// Make use of __syncthreads() to ensure all threads have loaded shared data
+// Ensure computations are done within valid thread range
+// Avoid division by zero by checking distance squared
+// Accumulate forces using preloaded shared memory data
+```

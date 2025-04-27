@@ -1,0 +1,13 @@
+digraph "CFG for '_Z19STREAM_Triad_doublePdS_S_dm' function" {
+	label="CFG for '_Z19STREAM_Triad_doublePdS_S_dm' function";
+
+	Node0x6143610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !5, !invariant.load !6\l  %12 = zext i16 %11 to i32\l  %13 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 12\l  %14 = bitcast i8 addrspace(4)* %13 to i32 addrspace(4)*\l  %15 = load i32, i32 addrspace(4)* %14, align 4, !tbaa !7\l  %16 = mul i32 %7, %12\l  %17 = add i32 %16, %6\l  %18 = zext i32 %17 to i64\l  %19 = icmp ult i64 %18, %4\l  br i1 %19, label %20, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x6143610:s0 -> Node0x61458c0;
+	Node0x6143610:s1 -> Node0x6145950;
+	Node0x61458c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%20:\l20:                                               \l  %21 = udiv i32 %15, %12\l  %22 = mul i32 %21, %12\l  %23 = icmp ugt i32 %15, %22\l  %24 = zext i1 %23 to i32\l  %25 = add i32 %21, %24\l  %26 = mul i32 %25, %12\l  %27 = zext i32 %26 to i64\l  br label %28\l}"];
+	Node0x61458c0 -> Node0x6145e40;
+	Node0x6145e40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  %29 = phi i64 [ %18, %20 ], [ %37, %28 ]\l  %30 = getelementptr inbounds double, double addrspace(1)* %0, i64 %29\l  %31 = load double, double addrspace(1)* %30, align 8, !tbaa !16\l  %32 = getelementptr inbounds double, double addrspace(1)* %1, i64 %29\l  %33 = load double, double addrspace(1)* %32, align 8, !tbaa !16\l  %34 = fmul contract double %33, %3\l  %35 = fadd contract double %31, %34\l  %36 = getelementptr inbounds double, double addrspace(1)* %2, i64 %29\l  store double %35, double addrspace(1)* %36, align 8, !tbaa !16\l  %37 = add i64 %29, %27\l  %38 = icmp ult i64 %37, %4\l  br i1 %38, label %28, label %39, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x6145e40:s0 -> Node0x6145e40;
+	Node0x6145e40:s1 -> Node0x6145950;
+	Node0x6145950 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%39:\l39:                                               \l  ret void\l}"];
+}

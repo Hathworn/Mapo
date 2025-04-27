@@ -1,0 +1,11 @@
+digraph "CFG for '_Z9mk_kernelPcm' function" {
+	label="CFG for '_Z9mk_kernelPcm' function";
+
+	Node0x5275af0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%2:\l  %3 = icmp eq i64 %1, 0\l  br i1 %3, label %4, label %5\l|{<s0>T|<s1>F}}"];
+	Node0x5275af0:s0 -> Node0x5276210;
+	Node0x5275af0:s1 -> Node0x52762a0;
+	Node0x5276210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%4:\l4:                                                \l  ret void\l}"];
+	Node0x52762a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l5:                                                \l  %6 = phi i64 [ %9, %5 ], [ 0, %2 ]\l  %7 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %6\l  store i8 0, i8 addrspace(1)* %7, align 1, !tbaa !4\l  %8 = add nuw nsw i64 %6, 1\l  %9 = and i64 %8, 4294967295\l  %10 = icmp ult i64 %9, %1\l  br i1 %10, label %5, label %4, !llvm.loop !7\l|{<s0>T|<s1>F}}"];
+	Node0x52762a0:s0 -> Node0x52762a0;
+	Node0x52762a0:s1 -> Node0x5276210;
+}

@@ -1,0 +1,7 @@
+```
+// Consider utilizing shared memory for data reuse to reduce global memory access.
+// Try loop unrolling to minimize loop overhead and improve execution efficiency.
+// Examine if using texture memory could yield better memory access patterns.
+// Investigate whether coalesced memory accesses are possible and ensure that threads access memory in a contiguous way.
+// Use constant memory for data sizes (like nx, ny, nz) if they remain constant across the kernel execution.
+```

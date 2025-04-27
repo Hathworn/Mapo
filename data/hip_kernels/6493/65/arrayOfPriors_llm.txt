@@ -1,0 +1,7 @@
+```cpp
+// Avoid shared memory as it doesn't provide benefits for this kernel
+// Ensure memory access patterns are coalesced for better performance
+// Use an optimal block size to maximize GPU utilization
+// Consider utilizing __restrict__ keyword to help the compiler with optimizations
+// Ensure thread divergence is minimized within the warp
+```

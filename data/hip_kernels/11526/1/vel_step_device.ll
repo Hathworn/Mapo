@@ -1,0 +1,95 @@
+; ModuleID = '/home/LiuS/LS-CAT-HIP/data/hip_kernels/11526/1/vel_step.cu'
+source_filename = "/home/LiuS/LS-CAT-HIP/data/hip_kernels/11526/1/vel_step.cu"
+target datalayout = "e-p:64:64-p1:64:64-p2:32:32-p3:32:32-p4:64:64-p5:32:32-p6:32:32-i64:64-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024-v2048:2048-n32:64-S32-A5-G1-ni:7"
+target triple = "amdgcn-amd-amdhsa"
+
+%struct.HIP_vector_type = type { %struct.HIP_vector_base }
+%struct.HIP_vector_base = type { %union.anon }
+%union.anon = type { <4 x float> }
+%struct.HIP_vector_type.0 = type { %struct.HIP_vector_base.1 }
+%struct.HIP_vector_base.1 = type { %union.anon.2 }
+%union.anon.2 = type { %"struct.HIP_vector_base<float, 3>::Native_vec_" }
+%"struct.HIP_vector_base<float, 3>::Native_vec_" = type { [3 x float] }
+
+; Function Attrs: argmemonly mustprogress nofree norecurse nosync nounwind willreturn
+define protected amdgpu_kernel void @_Z8vel_stepP15HIP_vector_typeIfLj4EEPS_IfLj3EEjf(%struct.HIP_vector_type addrspace(1)* noalias nocapture %0, %struct.HIP_vector_type.0 addrspace(1)* noalias nocapture readonly %1, i32 %2, float %3) local_unnamed_addr #0 {
+  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()
+  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr()
+  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4
+  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*
+  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5
+  %10 = zext i16 %9 to i32
+  %11 = mul i32 %5, %10
+  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6
+  %13 = add i32 %11, %12
+  %14 = icmp ugt i32 %13, %2
+  br i1 %14, label %48, label %15
+
+15:                                               ; preds = %4
+  %16 = sext i32 %13 to i64
+  %17 = getelementptr inbounds %struct.HIP_vector_type.0, %struct.HIP_vector_type.0 addrspace(1)* %1, i64 %16, i32 0, i32 0, i32 0, i32 0, i64 0
+  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !7, !amdgpu.noclobber !5
+  %19 = fpext float %18 to double
+  %20 = fmul contract double %19, 5.000000e-01
+  %21 = fpext float %3 to double
+  %22 = fmul contract double %20, %21
+  %23 = getelementptr inbounds %struct.HIP_vector_type, %struct.HIP_vector_type addrspace(1)* %0, i64 %16, i32 0, i32 0, i32 0, i64 0
+  %24 = load float, float addrspace(1)* %23, align 16, !tbaa !7, !amdgpu.noclobber !5
+  %25 = fpext float %24 to double
+  %26 = fadd contract double %22, %25
+  %27 = fptrunc double %26 to float
+  store float %27, float addrspace(1)* %23, align 16, !tbaa !7
+  %28 = getelementptr inbounds %struct.HIP_vector_type.0, %struct.HIP_vector_type.0 addrspace(1)* %1, i64 %16, i32 0, i32 0, i32 0, i32 0, i64 1
+  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !7, !amdgpu.noclobber !5
+  %30 = fpext float %29 to double
+  %31 = fmul contract double %30, 5.000000e-01
+  %32 = fmul contract double %31, %21
+  %33 = getelementptr inbounds %struct.HIP_vector_type, %struct.HIP_vector_type addrspace(1)* %0, i64 %16, i32 0, i32 0, i32 0, i64 1
+  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !7, !amdgpu.noclobber !5
+  %35 = fpext float %34 to double
+  %36 = fadd contract double %32, %35
+  %37 = fptrunc double %36 to float
+  store float %37, float addrspace(1)* %33, align 4, !tbaa !7
+  %38 = getelementptr inbounds %struct.HIP_vector_type.0, %struct.HIP_vector_type.0 addrspace(1)* %1, i64 %16, i32 0, i32 0, i32 0, i32 0, i64 2
+  %39 = load float, float addrspace(1)* %38, align 4, !tbaa !7, !amdgpu.noclobber !5
+  %40 = fpext float %39 to double
+  %41 = fmul contract double %40, 5.000000e-01
+  %42 = fmul contract double %41, %21
+  %43 = getelementptr inbounds %struct.HIP_vector_type, %struct.HIP_vector_type addrspace(1)* %0, i64 %16, i32 0, i32 0, i32 0, i64 2
+  %44 = load float, float addrspace(1)* %43, align 8, !tbaa !7, !amdgpu.noclobber !5
+  %45 = fpext float %44 to double
+  %46 = fadd contract double %42, %45
+  %47 = fptrunc double %46 to float
+  store float %47, float addrspace(1)* %43, align 8, !tbaa !7
+  br label %48
+
+48:                                               ; preds = %4, %15
+  ret void
+}
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workitem.id.x() #1
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare align 4 i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr() #1
+
+; Function Attrs: mustprogress nofree nosync nounwind readnone speculatable willreturn
+declare i32 @llvm.amdgcn.workgroup.id.x() #1
+
+attributes #0 = { argmemonly mustprogress nofree norecurse nosync nounwind willreturn "amdgpu-flat-work-group-size"="1,256" "frame-pointer"="none" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="gfx906" "target-features"="+16-bit-insts,+ci-insts,+dl-insts,+dot1-insts,+dot2-insts,+dot7-insts,+dpp,+flat-address-space,+gfx8-insts,+gfx9-insts,+s-memrealtime,+s-memtime-inst,+sramecc" "uniform-work-group-size"="true" }
+attributes #1 = { mustprogress nofree nosync nounwind readnone speculatable willreturn }
+
+!llvm.module.flags = !{!0, !1}
+!opencl.ocl.version = !{!2}
+!llvm.ident = !{!3}
+
+!0 = !{i32 1, !"wchar_size", i32 4}
+!1 = !{i32 7, !"PIC Level", i32 1}
+!2 = !{i32 2, i32 0}
+!3 = !{!"clang version 15.0.0 (http://10.15.3.7/dcutoolkit/driverruntime/llvm-project.git 340750feeda88c9c2ce8ad481b11d9aa7f033d39)"}
+!4 = !{i16 1, i16 1025}
+!5 = !{}
+!6 = !{i32 0, i32 1024}
+!7 = !{!8, !8, i64 0}
+!8 = !{!"omnipotent char", !9, i64 0}
+!9 = !{!"Simple C++ TBAA"}

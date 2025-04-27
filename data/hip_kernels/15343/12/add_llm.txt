@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced global memory access when loading A into shared memory
+// Ensure __syncthreads() is used after tile is updated for proper synchronization
+// Optimize boundary condition checks to minimize warp divergence
+// Minimize redundant calculations by storing indices in variables if repeatedly accessed
+```

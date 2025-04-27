@@ -1,0 +1,3 @@
+// Use shared memory to store vec[row] to reduce redundant global memory access.
+// Consider coalesced memory accesses by aligning data to memory boundaries for better performance.
+// Implement loop unrolling if possible for improved computational throughput.

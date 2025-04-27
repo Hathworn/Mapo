@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for intermediate data to reduce global memory accesses
+// Coalesce global memory accesses by ensuring threads access consecutive memory locations
+// Use __restrict__ keyword for pointers to indicate non-aliasing if applicable
+// Minimize divergent branches by restructuring conditional statements
+// Consider unrolling loops for further performance enhancements if applicable
+// Ensure memory alignment for g_hash and resNonces to improve memory access patterns
+```

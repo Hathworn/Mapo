@@ -1,0 +1,8 @@
+```
+// Consider aligning shared memory size to warp size for coalesced access
+// Use multiple loads to increase utilization of memory bandwidth
+// Prefetch data into registers to hide latency of global memory access
+// Minimize __syncthreads usage to reduce synchronization overhead
+// Optimize for branch divergence in thread execution paths
+// Evaluate use of vectorized data types to enhance throughput
+```

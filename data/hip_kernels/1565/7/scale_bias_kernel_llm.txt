@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory access
+// Ensure minimal divergence in control flow by structuring conditional checks effectively
+// Allocate adequate number of threads per block to fully utilize hardware occupancy
+// Tune block size to achieve better memory coalescing based on the dataset and hardware specifics

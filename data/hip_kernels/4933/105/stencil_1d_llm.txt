@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory access by aligning global memory access.
+// Increase block size for more threads to improve occupancy.
+// Use shared memory to reduce global memory access overhead.
+// Preload data into shared memory to minimize latency.
+// Ensure correct handling of halo regions to avoid race conditions.
+// Use loop unrolling to improve the pipeline efficiency.
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses for bias
+// Synchronize threads to ensure shared memory is fully populated before use
+// Utilize block and thread indexing to optimize memory access patterns
+// Consider loading bias into shared memory only when beneficial to balance overhead
+```

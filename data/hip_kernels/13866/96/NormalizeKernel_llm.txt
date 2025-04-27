@@ -1,0 +1,5 @@
+```
+// Consider coalesced access by aligning normalization_factor and image memory
+// Use shared memory for normalization_factor if possible to improve access speed
+// Minimize divergence by ensuring all threads in a warp execute similar paths
+```

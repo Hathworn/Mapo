@@ -1,0 +1,5 @@
+```
+// Coalesce memory accesses by ensuring threads access contiguous memory locations.
+// Use shared memory to store the input data if it's accessed multiple times within a block.
+// Consider using __syncthreads() if shared memory is used to ensure all threads have completed their operations.
+```

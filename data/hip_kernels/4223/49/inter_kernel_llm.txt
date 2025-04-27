@@ -1,0 +1,6 @@
+```
+// Consider optimizing memory access by using shared memory for X and Y within each block.
+// Ensure coalesced memory access for the OUT array to improve global memory throughput.
+// Minimize divergence by handling the X and Y assignments in separate kernel launches if possible.
+// Check if launching fewer blocks with more threads per block improves occupancy and performance.
+```

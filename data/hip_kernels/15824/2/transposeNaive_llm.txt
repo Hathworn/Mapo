@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Ensure padding in shared memory to prevent bank conflicts.
+// Use __syncthreads() to synchronize threads within the block for shared memory operations.
+// Optimize grid and block dimensions to maximize occupancy and reduce memory latency.
+```

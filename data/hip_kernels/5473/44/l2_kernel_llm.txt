@@ -1,0 +1,6 @@
+```
+// Coalesce memory accesses by ensuring the data in 'pred' and 'truth' is aligned properly
+// Use shared memory to store 'pred' and 'truth' data in order to reduce global memory accesses
+// Ensure 'delta' and 'error' arrays are aligned and properly distributed to avoid bank conflicts
+// Employ loop unrolling techniques if applicable to further optimize calculations within the kernel
+```

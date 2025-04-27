@@ -1,0 +1,10 @@
+digraph "CFG for '_Z9matrixSumPiS_S_i' function" {
+	label="CFG for '_Z9matrixSumPiS_S_i' function";
+
+	Node0x5eefe20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = mul nsw i32 %3, %3\l  %7 = icmp ult i32 %5, %6\l  br i1 %7, label %8, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x5eefe20:s0 -> Node0x5ef0cf0;
+	Node0x5eefe20:s1 -> Node0x5ef0d80;
+	Node0x5ef0cf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%8:\l8:                                                \l  %9 = zext i32 %5 to i64\l  %10 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %9\l  %11 = load i32, i32 addrspace(1)* %10, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %9\l  %13 = load i32, i32 addrspace(1)* %12, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %14 = add nsw i32 %13, %11\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %9\l  store i32 %14, i32 addrspace(1)* %15, align 4, !tbaa !5\l  br label %16\l}"];
+	Node0x5ef0cf0 -> Node0x5ef0d80;
+	Node0x5ef0d80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  ret void\l}"];
+}

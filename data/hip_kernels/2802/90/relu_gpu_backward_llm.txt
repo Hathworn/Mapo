@@ -1,0 +1,4 @@
+// Consider coalescing memory access patterns for indata and outgrad arrays
+// Use shared memory if multiple threads access the same data multiple times
+// Ensure full warp utilization by adjusting block size for memory access efficiency
+// Apply loop unrolling if the length of N is known and fixed

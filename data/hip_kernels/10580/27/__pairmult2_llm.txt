@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing the global memory access for A to improve memory throughput.
+// Investigate whether shared memory could be used to cache portions of A or Bdata for reuse.
+// Minimize divergent branching caused by multiple conditional statements in loops.
+// Ensure that Bjc array accesses are coalesced and that it benefits from memory prefetching.
+// If possible, align the data in A and Bdata to facilitate aligned memory access.
+// Optimize the loop iteration order for better memory access patterns.
+```

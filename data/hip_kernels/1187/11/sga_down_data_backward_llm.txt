@@ -1,0 +1,7 @@
+
+// Consider using shared memory to reduce global memory access.
+// Minimize redundant calculations in index computations.
+// Pre-fetch filter values into registers where possible.
+// Unroll loops to enhance parallel efficiency.
+// Align memory access patterns to minimize bank conflicts and improve coalescing.
+// Utilize __restrict__ qualifiers to inform the compiler about non-aliasing pointers.

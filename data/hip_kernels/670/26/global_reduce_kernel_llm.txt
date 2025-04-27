@@ -1,0 +1,8 @@
+```
+// Ensure coalesced global memory access by aligning d_in and d_out
+// Minimize global memory accesses by using shared memory effectively
+// Consider using warp shuffle operations to reduce synchronization overhead
+// Optimize shared memory usage by minimizing bank conflicts
+// Use __syncthreads() only when necessary to reduce synchronization overhead
+// Evaluate performance implications of different block sizes
+```

@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing by aligning data accesses within threads in a warp
+// Minimize redundant calculations by storing frequently used values in local variables
+// Utilize shared memory to reduce global memory access for repeated data within a block
+// Strive for optimal block size to maximize occupancy without causing register or shared memory spillover
+// Evaluate the use of __restrict__ keyword to give the compiler more information for potential optimizations
+```

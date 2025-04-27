@@ -1,0 +1,6 @@
+```
+// Consider using warp-level primitives like __shfl_down_sync to avoid __syncthreads overhead in reduction
+// Coalesced memory access: ensure d_PartialHistograms access is coalesced for better memory bandwidth utilization
+// Prefetch data into registers to minimize global memory access latency
+// Use dynamic shared memory if MERGE_THREADBLOCK_SIZE is flexible to minimize wasted memory
+```

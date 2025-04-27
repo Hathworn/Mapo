@@ -1,0 +1,6 @@
+```
+// Optimize memory access patterns by ensuring coalesced reads from cellStartEnd
+// Consider using shared memory to store cellStartEnd values if multiple threads access the same data
+// Ensure sufficient occupancy by tuning block size and grid size
+// Avoid potential bank conflicts when using shared memory
+```

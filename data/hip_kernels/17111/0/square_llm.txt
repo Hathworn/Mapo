@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses by ensuring array is accessed in a sequential manner.
+// Use shared memory if multiple threads access the same data to reduce global memory traffic.
+// Ensure the block size is a multiple of warp size to avoid branch divergence.
+// Optimize grid and block dimensions to maximize occupancy and efficiency.
+```

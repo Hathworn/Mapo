@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access by using shared memory to buffer input data.
+// Optimize memory access patterns to reduce bank conflicts in shared memory.
+// Use __ldg for read-only input data to take advantage of cached reads.
+// Assess block and grid sizes for optimal occupancy and performance.
+// Bench test different block size configurations to improve performance.
+// Consider the use of vectorized loads/stores for better memory bandwidth utilization.
+// Ensure aligned memory access to maximize throughput.
+```

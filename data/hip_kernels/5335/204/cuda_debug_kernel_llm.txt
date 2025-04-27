@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Minimize memory divergence by coalescing memory accesses.
+// Optimize the grid and block size for better occupancy and performance.
+// Utilize warp shuffle instructions for inter-thread communication if necessary.
+// Unroll loops to increase instruction throughput, if applicable.
+// Double-check for any unnecessary memory barriers and remove them.
+// Ensure that textures or surfaces are used optimally, if applicable.
+```

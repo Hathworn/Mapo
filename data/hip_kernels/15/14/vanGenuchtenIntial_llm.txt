@@ -1,0 +1,5 @@
+// Consider using shared memory for caching frequently accessed variables
+// Minimize the use of pow() function due to its computational cost, can use multiplication for small integer exponents
+// Perform memory coalescing by organizing the arrays to match access patterns
+// Avoid branching within divergent warp execution, try to reduce conditional checks
+// Align memory access patterns with cache lines for better performance

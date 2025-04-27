@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for input data.
+// Consider using texture memory for read-only input data to optimize cache performance.
+// Try to increase the block size to maximize occupancy.
+// Ensure coalesced memory access for better performance.

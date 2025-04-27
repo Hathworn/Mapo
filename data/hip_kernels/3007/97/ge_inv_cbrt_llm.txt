@@ -1,0 +1,10 @@
+```
+// Use __restrict__ qualifiers on pointers to improve compiler optimizations.
+// Prefetch data into shared memory to reduce global memory latency.
+// Ensure memory accesses are coalesced for improved performance.
+// Consider using vectorized data types like float4 if applicable.
+// Minimize bank conflicts if shared memory is utilized.
+// Align memory accesses to avoid performance penalties.
+// Consider loop unrolling if applicable to enhance ILP (Instruction Level Parallelism).
+// Check if occupancy can be improved by optimizing resource usage.
+```

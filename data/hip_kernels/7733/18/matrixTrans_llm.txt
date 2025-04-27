@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency
+// Tile dimensions include padding to avoid bank conflicts in shared memory
+// Ensure threads are synchronized before accessing shared memory
+// Transpose indices to improve coalesced memory access
+// Optimize block and grid sizes for best occupancy given hardware constraints
+```

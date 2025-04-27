@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache forest data and reduce global memory access.
+// Ensure proper synchronization using __syncthreads() after loading data into shared memory.
+// Consider adjusting thread block size to optimize shared memory usage and avoid bank conflicts.
+// Minimize global memory accesses by reusing loaded data in shared memory for calculations.
+```

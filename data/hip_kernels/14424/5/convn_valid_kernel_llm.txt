@@ -1,0 +1,6 @@
+// Consider using smaller blocks to minimize index calculation overhead
+// Ensure kernel and data fit within shared memory; adjust shared memory size if necessary
+// Minimize thread divergence by aligning kW and kH with block dimensions
+// Optimize memory access patterns to improve coalesced access of sh_data and sh_kernel
+// Consider using loop unrolling in sum computation for better performance
+// Check if the size of sh_kernel and sh_data can be reduced for memory efficiency

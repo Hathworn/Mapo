@@ -1,0 +1,16 @@
+digraph "CFG for '_Z29kernel_prefix_sum_inefficientPdS_i' function" {
+	label="CFG for '_Z29kernel_prefix_sum_inefficientPdS_i' function";
+
+	Node0x6127140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = icmp ult i32 %12, %2\l  %14 = icmp ne i32 %4, 0\l  %15 = and i1 %14, %13\l  br i1 %15, label %16, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x6127140:s0 -> Node0x6127f10;
+	Node0x6127140:s1 -> Node0x6129230;
+	Node0x6127f10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%16:\l16:                                               \l  %17 = add i32 %12, -1\l  %18 = zext i32 %17 to i64\l  %19 = getelementptr inbounds double, double addrspace(1)* %0, i64 %18\l  %20 = load double, double addrspace(1)* %19, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  br label %21\l}"];
+	Node0x6127f10 -> Node0x6129230;
+	Node0x6129230 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%21:\l21:                                               \l  %22 = phi double [ %20, %16 ], [ 0.000000e+00, %3 ]\l  %23 = getelementptr inbounds [1024 x double], [1024 x double] addrspace(3)*\l... @_ZZ29kernel_prefix_sum_inefficientPdS_iE5sdata, i32 0, i32 %4\l  store double %22, double addrspace(3)* %23, align 8\l  %24 = icmp eq i32 %4, 0\l  br i1 %24, label %25, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x6129230:s0 -> Node0x612a970;
+	Node0x6129230:s1 -> Node0x612aba0;
+	Node0x612a970 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%25:\l25:                                               \l  %26 = phi double [ %22, %21 ], [ %35, %29 ]\l  %27 = zext i32 %12 to i64\l  %28 = getelementptr inbounds double, double addrspace(1)* %1, i64 %27\l  store double %26, double addrspace(1)* %28, align 8, !tbaa !7\l  ret void\l}"];
+	Node0x612aba0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi i32 [ %36, %29 ], [ 1, %21 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %31 = sub i32 %4, %30\l  %32 = getelementptr inbounds [1024 x double], [1024 x double] addrspace(3)*\l... @_ZZ29kernel_prefix_sum_inefficientPdS_iE5sdata, i32 0, i32 %31\l  %33 = load double, double addrspace(3)* %32, align 8, !tbaa !7\l  %34 = load double, double addrspace(3)* %23, align 8, !tbaa !7\l  %35 = fadd contract double %33, %34\l  store double %35, double addrspace(3)* %23, align 8, !tbaa !7\l  %36 = shl nuw nsw i32 %30, 1\l  %37 = icmp ult i32 %4, %36\l  br i1 %37, label %25, label %29, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x612aba0:s0 -> Node0x612a970;
+	Node0x612aba0:s1 -> Node0x612aba0;
+}

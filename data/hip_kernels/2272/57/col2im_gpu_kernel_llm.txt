@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses for data_col to improve memory throughput.
+// Use shared memory to reduce redundant global memory accesses.
+// Ensure proper alignment of data to exploit efficient memory transactions.
+// Analyze occupancy to determine if increasing block size could improve performance.
+// Evaluate the use of __restrict__ qualifiers to aid compiler optimizations.
+// Use warp-level primitives to reduce divergent branches inside loops.
+// Assess if loop unrolling provides significant performance benefits in this context.
+// Consider using asynchronous memory prefetching to overlap data transfer with computations.
+```

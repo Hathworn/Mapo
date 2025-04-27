@@ -1,0 +1,4 @@
+// Consider using shared memory to minimize global memory access latency.
+// Ensure memory coalescing for g_idata accesses by aligned data access.
+// Try increasing thread block size for better resource utilization.
+// Consider using warp-level primitives for reduction to avoid synchronization.

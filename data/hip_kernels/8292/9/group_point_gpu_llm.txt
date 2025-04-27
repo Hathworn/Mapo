@@ -1,0 +1,7 @@
+```
+// Pre-fetch as much data as possible into shared memory to reduce global memory accesses
+// Consider loop unrolling to further reduce the loop overhead and improve instruction-level parallelism
+// Optimize memory coalescing by ensuring threads access consecutive memory locations in global memory
+// Align data structures and types to 16-, 32-, or 64-byte boundaries for better memory throughput
+// Reduce divergent branches within the kernel to improve warp execution efficiency
+```

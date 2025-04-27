@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses by organizing x memory layout
+// Ensure shared memory usage remains within limits for block size
+// Unroll loops for performance gains in inner loop
+// Use __restrict__ qualifiers on pointer arguments to improve compiler optimizations
+// Test and tune block size for best performance considering shared memory and occupancy
+// Employ atomic operations if required for final reduction across blocks
+```

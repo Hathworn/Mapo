@@ -1,0 +1,6 @@
+```c
+// Use coalesced memory access for reading d_w_grad and d_prev_grad
+// Consider data prefetching to hide memory latency
+// Ensure shared memory use is minimized for better resource utilization
+// Optimize loop unrolling factor to balance register pressure and performance
+```

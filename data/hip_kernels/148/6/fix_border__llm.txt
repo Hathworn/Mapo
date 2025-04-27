@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for input array
+// Avoid bank conflicts in shared memory usage
+// Use __syncthreads() judiciously to synchronize threads only when necessary
+// Ensure shared memory usage does not exceed available memory per block
+// Optimize the divergence of conditional branches within the kernel
+// Balance workload evenly across threads for optimal utilization
+```

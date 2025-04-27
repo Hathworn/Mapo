@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory accesses by loading data into shared memory using threadIdx.x
+// Apply reduction in shared memory to minimize synchronization and memory bandwidth usage
+// Use atomic operations for final block results to prevent race conditions in global memory

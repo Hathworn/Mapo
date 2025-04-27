@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure shared memory usage does not exceed hardware limits
+// Access shared memory once per thread, store in local variables as needed
+// Avoid divergent branches within loop
+// Unroll loops for performance improvement
+// Minimize memory access by reusing loaded data
+```

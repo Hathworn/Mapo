@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses for better performance
+// Consider using shared memory for commonly accessed data to reduce global memory accesses
+// Increase number of threads per block to allow better utilization of GPU resources
+// Use vectorized data types like float4 for loading/storing multiple elements at once
+// Prefer using atomic operations where applicable to avoid race conditions
+```

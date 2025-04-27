@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache xyzr and colors arrays per block to reduce global memory access
+// Align memory access patterns for better coalescing by using a fixed stride (gridspacing_coalesce) 
+// Aggregate memory updates at the end to reduce repeated memory accesses
+// Optimize loop unrolling factor DUNROLLX to balance computational workload and register usage
+// Consider using texture memory for the xyzr and colors arrays for faster read access
+```

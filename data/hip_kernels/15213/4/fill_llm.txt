@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if array elements are frequently accessed by multiple threads.
+// Ensure coalesced memory access by aligning data structure and access patterns.
+// Avoid bank conflicts by structuring memory accesses properly.
+// Use loop unrolling if computation within the loop allows for it, to decrease loop overhead.
+// Optimize block size based on target GPU architecture for improved occupancy.

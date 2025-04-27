@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache xyz2 data for better memory coalescing
+// Consider unrolling the innermost loop for improved performance
+// Prefetch xyz1 data to registers to minimize memory access latency
+// Combine conditional and loop iteration to potentially reduce branch divergence
+```

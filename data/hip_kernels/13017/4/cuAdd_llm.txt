@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for caching frequently accessed data
+// Align data accesses to coalesce global memory transactions
+// Minimize branch divergence within the kernel
+// Prefer using __syncthreads() only when necessary to avoid synchronization overhead
+// Consider increasing block size to improve occupancy, but ensure it does not exceed shared memory per block limit
+```

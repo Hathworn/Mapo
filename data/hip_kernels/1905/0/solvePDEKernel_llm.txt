@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for frequently accessed values to reduce global memory access
+// Consider using texture memory for read-only data to improve cache hits
+// Rearrange data access patterns for coalesced memory access
+// Minimize divergent branching within warp by restructuring control flow
+// Precompute constant expressions outside of loops to save computation time
+// Perform loop unrolling for known loop bounds to improve performance
+```

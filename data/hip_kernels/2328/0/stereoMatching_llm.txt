@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access by ensuring threads access consecutive memory locations in global memory.
+// Use shared memory to store window data if window size is small enough to fit, reducing redundant global memory accesses.
+// Optimize texture memory usage by caching reused texture fetches in registers whenever possible.
+// Minimize use of expensive operations like division within inner loops.
+// Consider loop unrolling for the evaluateCost function to reduce loop overhead.
+```

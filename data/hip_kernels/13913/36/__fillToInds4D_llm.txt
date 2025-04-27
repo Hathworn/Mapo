@@ -1,0 +1,7 @@
+```
+// Optimize global memory access by ensuring coalesced access patterns
+// Use shared memory to cache indices `I`, `J`, `K`, `L` for re-use by multiple threads
+// Consider minimizing divergent branches by restructuring if conditions
+// Ensure grid and block dimensions are chosen to fully utilize GPU resources
+// Use loop unrolling to increase instruction level parallelism if possible
+```

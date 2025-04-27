@@ -1,0 +1,7 @@
+```
+// Suggest using loop unrolling in both shared memory loading and computation to minimize loop overhead.
+// Ensure shared memory accesses are coalesced for better memory performance.
+// Use __syncthreads() to synchronize threads after loading shared memory for preventing race conditions.
+// Consider using larger tile size if shared memory usage is not a bottleneck.
+// Verify that all memory accesses are aligned to improve memory coalescing.
+```

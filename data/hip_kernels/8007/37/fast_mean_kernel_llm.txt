@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory efficiently to minimize global memory access
+// Use loop unrolling to reduce loop overhead and improve memory throughput
+// Implement warp-level reduction to decrease the time spent in summation
+// Ensure coalesced memory access by aligning data access patterns
+// Minimize divergent branching to optimize warp execution
+// Possibility of reducing synchronization by handling more reductions at the warp level
+```

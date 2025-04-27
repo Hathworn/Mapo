@@ -1,0 +1,6 @@
+// Ensure coalesced memory access patterns for optimal performance
+// Align the accessed memory to the warp size if possible
+// Reduce shared memory bank conflicts by padding shared memory arrays
+// Consider using texture memory for read-only data for higher bandwidth
+// Optimize block and grid dimensions based on occupancy calculator results
+// Evaluate the use of atomic operations and their impact on performance

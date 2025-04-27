@@ -1,0 +1,6 @@
+```c
+// Consider padding shared memory to avoid bank conflicts.
+// Ensure coalesced access to global memory for input matrices.
+// Prefer warp-synchronous programming using warp-level primitives if applicable.
+// Check for memory alignment to enhance performance.
+```

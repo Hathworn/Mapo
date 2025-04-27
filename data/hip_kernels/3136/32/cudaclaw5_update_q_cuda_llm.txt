@@ -1,0 +1,8 @@
+```cpp
+// Ensure global memory accesses are coalesced by aligning memory layout.
+// Minimize the use of global memory accesses - consider using shared memory for temporary storage.
+// Consider loop unrolling if applicable to reduce instruction overhead.
+// Ensure efficient use of registers by minimizing register pressure within the kernel.
+// Aim to balance computation and memory access to optimize for memory-bound or compute-bound performance.
+// Consider using vectorized operations if supported by the architecture for higher throughput.
+```

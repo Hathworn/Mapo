@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access by ensuring coalesced memory accesses for the x array.
+// Use shared memory to store mean and variance per block to improve memory bandwidth usage.
+// Evaluate the use of __ldg() intrinsic for loading mean and variance if they are accessed read-only.
+// Employ loop unrolling techniques for unrolling critical loops.
+// Assess grid-stride loop to handle more iterations per thread and reduce block launching overhead.
+```

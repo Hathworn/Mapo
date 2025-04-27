@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations
+// Use shared memory if possible to reduce global memory access latency
+// Consider using a larger block size if the GPU supports more threads per block to improve occupancy
+// Profile memory usage and kernel execution to identify any potential bottlenecks
+```

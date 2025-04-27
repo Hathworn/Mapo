@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store elements while processing to reduce global memory accesses.
+// Ensure memory coalescing by aligning data structures to 32 bytes for optimal global memory access patterns.
+// Unroll the loop if the operation inside is simple and the size is known to induce instruction level parallelism.
+// Check if the data transfer between host and device can be minimized or overlapped with computation.
+```

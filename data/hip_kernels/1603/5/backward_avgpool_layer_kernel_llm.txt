@@ -1,0 +1,4 @@
+// Use shared memory to store a portion of in_delta if the block size is much smaller than the overall data
+// Unroll the loop to minimize control overhead and improve instruction throughput
+// Ensure the memory access pattern is coalesced for in_delta to maximize memory bandwidth utilization
+// Consider using atomic operations if in_delta needs to be updated concurrently by multiple threads

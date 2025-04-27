@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for centroidCoordinates to reduce global memory access
+// Ensure memory coalescing for visField accesses by aligning memory access patterns
+// Use texture memory for centroidCoordinates if there is spatial locality
+// Optimize thread block size for better occupancy and resource utilization
+```

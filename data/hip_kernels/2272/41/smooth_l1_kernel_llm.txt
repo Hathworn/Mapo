@@ -1,0 +1,7 @@
+```
+// Ensure data is accessed in a coalesced manner to optimize memory reads
+// Align memory accesses to 32-byte boundaries if possible for improved bandwidth
+// Favor using shared memory for repeated access to improve access latency
+// Consider prefetching data to hide memory latency where applicable
+// Minimize divergent branches within warp execution to enhance performance
+```

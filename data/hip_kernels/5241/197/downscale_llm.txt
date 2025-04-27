@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for gradOutput_data to improve memory bandwidth.
+// Ensure __syncthreads() is used if needed when accessing shared data to prevent data hazards.
+// If applicable, leverage shared memory to cache gradOutput_data for better data locality.
+// Explore loop unrolling techniques on the scale_factor loop for potential performance gain.
+// Investigate if reducing the number of arithmetic operations in translate_idx_inv could optimize performance.
+// Apply const restrict qualifiers to pointers when applicable to enhance compiler optimizations.
+```

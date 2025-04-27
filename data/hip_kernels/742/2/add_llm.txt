@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses for frequently used data
+// Ensure memory coalescing by accessing consecutive global memory addresses
+// Minimize warp divergence by aligning thread tasks and conditions
+// Prefer __nvcuda__ operations for more efficient calculations if available
+// Pre-load data into registers when repeatedly used within the kernel
+```

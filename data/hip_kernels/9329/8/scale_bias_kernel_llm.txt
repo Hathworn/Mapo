@@ -1,0 +1,3 @@
+// Use shared memory to cache bias values for faster access
+// Consider loop unrolling for better throughput in repeated operations
+// Use __restrict__ keyword for pointers if no aliasing occurs in the same kernel to aid compiler optimizations

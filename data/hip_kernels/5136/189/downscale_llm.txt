@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache gradOutput_data to reduce global memory accesses.
+// Align memory accesses to achieve coalesced memory transactions.
+// Minimize divergent warps by ensuring branch conditions are uniform across threads.
+// Ensure unroll factor matches scale_factor for optimal performance.
+```

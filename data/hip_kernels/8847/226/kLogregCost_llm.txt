@@ -1,0 +1,7 @@
+```
+// Consider optimizing memory access patterns by ensuring coalesced memory access.
+// Utilize shared memory to reduce redundant global memory access.
+// Ensure that reads from global memory are aligned to avoid bank conflicts.
+// Consider using __ldg() intrinsic to take advantage of the read-only data cache.
+// Minimize the use of branching to improve warp execution efficiency.
+```

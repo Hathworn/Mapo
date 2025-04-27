@@ -1,0 +1,4 @@
+// Use coalesced memory access for postsyn_neuron to improve memory bandwidth.
+// Consider pre-loading division values into shared memory for faster access.
+// Ensure weight_divisor and current_weight accesses are coalesced to maximize memory throughput.
+// Evaluate the impact of loop unrolling on performance for the inner loop.

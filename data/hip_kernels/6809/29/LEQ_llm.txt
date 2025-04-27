@@ -1,0 +1,5 @@
+// Cache the grid size for reduced computation
+// Utilize shared memory for repeated data access within a block
+// Load elements that will be accessed more than once into shared memory
+// Perform the comparison using shared memory
+// Additional check to ensure within bounds

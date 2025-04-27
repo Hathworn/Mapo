@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory accesses for stencil computation
+// Reduce memory divergence by aligning memory accesses to coalesce loads and stores
+// Employ warp-synchronous programming when possible to minimize __syncthreads() overhead
+// Load halo regions with minimal threads to save resources and ensure efficient data management
+// Ensure global memory accesses are within coalesced boundaries for better memory throughput
+```

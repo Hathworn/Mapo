@@ -1,0 +1,20 @@
+digraph "CFG for '_Z21cudaSScaleSign_kerneljPfS_ffS_' function" {
+	label="CFG for '_Z21cudaSScaleSign_kerneljPfS_ffS_' function";
+
+	Node0x5635aa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 12\l  %14 = bitcast i8 addrspace(4)* %13 to i32 addrspace(4)*\l  %15 = load i32, i32 addrspace(4)* %14, align 4, !tbaa !6\l  %16 = mul i32 %7, %12\l  %17 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %18 = add i32 %16, %17\l  %19 = udiv i32 %15, %12\l  %20 = mul i32 %19, %12\l  %21 = icmp ugt i32 %15, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %12\l  %25 = fcmp contract une float %4, 0.000000e+00\l  %26 = icmp ult i32 %18, %0\l  br i1 %25, label %28, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5635aa0:s0 -> Node0x5638b50;
+	Node0x5635aa0:s1 -> Node0x5638be0;
+	Node0x5638be0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bbd1f870",label="{%27:\l27:                                               \l  br i1 %26, label %46, label %60\l|{<s0>T|<s1>F}}"];
+	Node0x5638be0:s0 -> Node0x5638d20;
+	Node0x5638be0:s1 -> Node0x5638d70;
+	Node0x5638b50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d6dce470",label="{%28:\l28:                                               \l  br i1 %26, label %29, label %60\l|{<s0>T|<s1>F}}"];
+	Node0x5638b50:s0 -> Node0x5638eb0;
+	Node0x5638b50:s1 -> Node0x5638d70;
+	Node0x5638eb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi i32 [ %44, %29 ], [ %18, %28 ]\l  %31 = zext i32 %30 to i64\l  %32 = getelementptr inbounds float, float addrspace(1)* %2, i64 %31\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !16\l  %34 = fcmp contract oge float %33, 0.000000e+00\l  %35 = getelementptr inbounds float, float addrspace(1)* %1, i64 %31\l  %36 = load float, float addrspace(1)* %35, align 4, !tbaa !16\l  %37 = fneg contract float %36\l  %38 = select contract i1 %34, float %36, float %37\l  %39 = fmul contract float %38, %3\l  %40 = getelementptr inbounds float, float addrspace(1)* %5, i64 %31\l  %41 = load float, float addrspace(1)* %40, align 4, !tbaa !16\l  %42 = fmul contract float %41, %4\l  %43 = fadd contract float %39, %42\l  store float %43, float addrspace(1)* %40, align 4, !tbaa !16\l  %44 = add i32 %30, %24\l  %45 = icmp ult i32 %44, %0\l  br i1 %45, label %29, label %60, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5638eb0:s0 -> Node0x5638eb0;
+	Node0x5638eb0:s1 -> Node0x5638d70;
+	Node0x5638d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d8564670",label="{%46:\l46:                                               \l  %47 = phi i32 [ %58, %46 ], [ %18, %27 ]\l  %48 = zext i32 %47 to i64\l  %49 = getelementptr inbounds float, float addrspace(1)* %2, i64 %48\l  %50 = load float, float addrspace(1)* %49, align 4, !tbaa !16\l  %51 = fcmp contract oge float %50, 0.000000e+00\l  %52 = getelementptr inbounds float, float addrspace(1)* %1, i64 %48\l  %53 = load float, float addrspace(1)* %52, align 4, !tbaa !16\l  %54 = fneg contract float %53\l  %55 = select contract i1 %51, float %53, float %54\l  %56 = fmul contract float %55, %3\l  %57 = getelementptr inbounds float, float addrspace(1)* %5, i64 %48\l  store float %56, float addrspace(1)* %57, align 4, !tbaa !16\l  %58 = add i32 %47, %24\l  %59 = icmp ult i32 %58, %0\l  br i1 %59, label %46, label %60, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x5638d20:s0 -> Node0x5638d20;
+	Node0x5638d20:s1 -> Node0x5638d70;
+	Node0x5638d70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ecd3c570",label="{%60:\l60:                                               \l  ret void\l}"];
+}

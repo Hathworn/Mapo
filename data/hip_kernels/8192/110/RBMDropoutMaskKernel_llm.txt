@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory accesses for maskPtr
+// Use constant memory for dropout if it is read-only
+// Ensure sufficient occupancy by choosing optimal block size
+// Utilize shared memory if there are any redundant memory accesses
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+```

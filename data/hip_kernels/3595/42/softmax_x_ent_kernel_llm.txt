@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Consider coalescing memory accesses for pred and truth arrays to improve bandwidth utilization
+// Optimize block and grid size to maximize occupancy and minimize thread divergence
+// Pre-compute common expressions outside of critical loops to minimize redundant calculations

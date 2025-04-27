@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store intermediate values of dY and Y for better memory access patterns.
+// Perform memory coalescing by ensuring that data access within the warp is sequential to maximize the memory bandwidth.
+// Optimize the reduction phase by minimizing the use of __syncthreads() through warp-level primitives.
+// Consider using atomic operations for the final aggregation step to avoid synchronization overhead.
+// Investigate the possibility of loop unrolling to reduce the number of executed instructions within the loop.
+```

@@ -1,0 +1,28 @@
+digraph "CFG for '_Z36cudaDSaturation_backPropagate_kernelPdS_jid' function" {
+	label="CFG for '_Z36cudaDSaturation_backPropagate_kernelPdS_jid' function";
+
+	Node0x5790b50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = udiv i32 %14, %11\l  %19 = mul i32 %18, %11\l  %20 = icmp ugt i32 %14, %19\l  %21 = zext i1 %20 to i32\l  %22 = add i32 %18, %21\l  %23 = mul i32 %22, %11\l  %24 = icmp ult i32 %17, %2\l  br i1 %24, label %25, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5790b50:s0 -> Node0x5793100;
+	Node0x5790b50:s1 -> Node0x5793190;
+	Node0x5793100 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%25:\l25:                                               \l  %26 = icmp sgt i32 %3, 0\l  %27 = icmp slt i32 %3, 0\l  %28 = sub nsw i32 0, %3\l  %29 = shl nuw i32 1, %28\l  %30 = sitofp i32 %29 to double\l  %31 = shl nuw i32 1, %3\l  %32 = sitofp i32 %31 to double\l  %33 = fcmp contract une double %4, 0.000000e+00\l  %34 = fneg contract double %4\l  br label %36\l}"];
+	Node0x5793100 -> Node0x57942d0;
+	Node0x5793190 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  ret void\l}"];
+	Node0x57942d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  %37 = phi i32 [ %17, %25 ], [ %62, %61 ]\l  br i1 %26, label %38, label %43\l|{<s0>T|<s1>F}}"];
+	Node0x57942d0:s0 -> Node0x5794550;
+	Node0x57942d0:s1 -> Node0x57945e0;
+	Node0x5794550 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%38:\l38:                                               \l  %39 = zext i32 %37 to i64\l  %40 = getelementptr inbounds double, double addrspace(1)* %1, i64 %39\l  %41 = load double, double addrspace(1)* %40, align 8, !tbaa !16\l  %42 = fdiv contract double %41, %32\l  store double %42, double addrspace(1)* %40, align 8, !tbaa !16\l  br label %49\l}"];
+	Node0x5794550 -> Node0x5795100;
+	Node0x57945e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%43:\l43:                                               \l  br i1 %27, label %44, label %49\l|{<s0>T|<s1>F}}"];
+	Node0x57945e0:s0 -> Node0x5795200;
+	Node0x57945e0:s1 -> Node0x5795100;
+	Node0x5795200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%44:\l44:                                               \l  %45 = zext i32 %37 to i64\l  %46 = getelementptr inbounds double, double addrspace(1)* %1, i64 %45\l  %47 = load double, double addrspace(1)* %46, align 8, !tbaa !16\l  %48 = fmul contract double %47, %30\l  store double %48, double addrspace(1)* %46, align 8, !tbaa !16\l  br label %49\l}"];
+	Node0x5795200 -> Node0x5795100;
+	Node0x5795100 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%49:\l49:                                               \l  br i1 %33, label %50, label %61\l|{<s0>T|<s1>F}}"];
+	Node0x5795100:s0 -> Node0x5795610;
+	Node0x5795100:s1 -> Node0x5794450;
+	Node0x5795610 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%50:\l50:                                               \l  %51 = zext i32 %37 to i64\l  %52 = getelementptr inbounds double, double addrspace(1)* %0, i64 %51\l  %53 = load double, double addrspace(1)* %52, align 8, !tbaa !16\l  %54 = fcmp contract ogt double %53, %34\l  %55 = fcmp contract olt double %53, %4\l  %56 = and i1 %54, %55\l  %57 = select contract i1 %56, double 1.000000e+00, double 0.000000e+00\l  %58 = getelementptr inbounds double, double addrspace(1)* %1, i64 %51\l  %59 = load double, double addrspace(1)* %58, align 8, !tbaa !16\l  %60 = fmul contract double %59, %57\l  store double %60, double addrspace(1)* %58, align 8, !tbaa !16\l  br label %61\l}"];
+	Node0x5795610 -> Node0x5794450;
+	Node0x5794450 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%61:\l61:                                               \l  %62 = add i32 %37, %23\l  %63 = icmp ult i32 %62, %2\l  br i1 %63, label %36, label %35, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5794450:s0 -> Node0x57942d0;
+	Node0x5794450:s1 -> Node0x5793190;
+}

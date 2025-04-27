@@ -1,0 +1,4 @@
+// Consider using __shared__ memory for frequently accessed data to reduce memory latency
+// Optimize memory access patterns by ensuring coalesced accesses by all threads in a warp
+// Use available memory alignment features to improve memory access efficiency
+// Evaluate using warp-level primitives to optimize data shuffling between threads

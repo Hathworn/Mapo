@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Use coalesced memory access patterns to enhance memory throughput.
+// Minimize memory bank conflicts in shared memory for better performance.
+// Overlap data transfer and computation where possible to hide latency.
+// Optimize thread-to-data mapping for better load balancing.
+// Reduce register usage to allow for higher occupancy.
+// Consider occupancy tuning to find the optimal number of blocks per SM.
+```

@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses  
+// Coalesce global memory accesses for better performance  
+// Ensure alignment of memory accesses to minimize memory transaction overhead  
+// Consider using memory prefetching techniques to hide memory latency  
+// Minimize divergent branching to optimize warp execution  
+// Maximize occupancy by choosing optimal block size and grid configuration

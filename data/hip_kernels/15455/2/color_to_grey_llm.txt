@@ -1,0 +1,4 @@
+// Consider using shared memory to cache input_image data for threads in the same block
+// Reduce bank conflicts by carefully managing shared memory access patterns
+// Minimize global memory transactions by aligning memory access
+// Evaluate warp divergence and optimize control flow to enhance efficiency

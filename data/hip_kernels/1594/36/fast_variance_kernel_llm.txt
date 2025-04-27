@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses by ensuring contiguous threads access contiguous memory positions.
+// Optimize the usage of shared memory by minimizing the usage when feasible, possibly by using warp-level primitives.
+// Evaluate the appropriateness of using atomic operations for reduction if reducing at the global level is needed.
+// Examine the impact of using float4 for loading elements if memory alignment allows for increased bandwidth efficiency.
+// If appropriate, consider loop unrolling to improve the throughput of iterations over spatial and batch dimensions.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to 'da' to improve throughput
+// Minimize redundant loading of 'col[i]' by storing it in a register
+// Use a reduction algorithm for shared memory accumulation to prevent race conditions
+// Avoid using shared memory beyond its necessity to reduce usage
+// Consider unrolling the inner loop to enhance performance
+// Use warp shuffle operations instead of shared memory for reduction
+```

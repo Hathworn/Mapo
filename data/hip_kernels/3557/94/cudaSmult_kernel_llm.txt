@@ -1,0 +1,8 @@
+```
+// Optimize memory coalescing for global memory accesses by ensuring contiguous threads access contiguous memory locations
+// Minimize shared memory bank conflicts by using padding if necessary
+// Consider loop unrolling to increase instruction-level parallelism
+// Evaluate the balance between shared memory size and occupancy for this kernel
+// Use __restrict__ keyword on pointers if applicable to enable better compiler optimizations
+// Assess whether further optimization of block size and grid size can improve performance
+```

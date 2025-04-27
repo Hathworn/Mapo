@@ -1,0 +1,4 @@
+// Consider optimizing shared memory allocation by reducing its size if not all values are used.
+// Use warp shuffle operations for left and right neighbor calculations to reduce __syncthreads overhead.
+// Minimize global memory writes by buffering output in shared memory before final write.
+// Ensure coalesced global memory access for both input and output arrays to improve memory bandwidth usage.

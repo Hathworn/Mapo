@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to optimize memory throughput.
+// Reduce unnecessary accesses to global memory by making better use of shared memory.
+// Adjust TILE_SIZE to perfectly fit into shared memory and avoid bank conflicts.
+// Ensure syncthreads() is used correctly to prevent race conditions in shared memory.
+// Optimize index calculations to reduce arithmetic overhead in the kernel.
+// Verify alignment of memory accesses to maximize bandwidth efficiency.
+```

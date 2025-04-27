@@ -1,0 +1,3 @@
+// Use shared memory for d_Src to reduce global memory access latency
+// Consider using coalesced memory access for d_Src and d_Dst
+// Prefetch d_Filter into shared memory for faster access

@@ -1,0 +1,8 @@
+```
+// Use shared memory effectively to reduce global memory access and improve access coalescing
+// Ensure the loading into shared memory is done in a coalesced manner for better memory transaction efficiency
+// Reduce conditional checks inside loops by minimizing unnecessary computations
+// Divide work evenly among threads to avoid thread divergence and improve efficiency
+// Optimize the calculation and storage of IoU results by using bitwise operations
+// Consider prefetching data if applicable to overlap computation and memory access phases
+```

@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure blockDim.x does not exceed 256 to prevent shared memory overflow
+// Load data into shared memory before processing to reduce global memory transactions
+// Initialize offset[1] outside of main loop to avoid repeated execution
+// Load previous key from shared memory to reduce global memory loads
+// Correct previous element access in shared memory to leverage locality
+// Perform boundary checks to avoid unnecessary global memory access
+```

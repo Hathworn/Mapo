@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store input data to optimize memory access patterns.
+// Coalesced memory access can be improved by ensuring columns are accessed sequentially.
+// Reduce global memory accesses by computing biasIndex using a precalculated offset.
+// Ensure optimal occupancy by selecting appropriate block size based on device capabilities.
+// Minimize divergent branches by aligning thread execution paths.
+```

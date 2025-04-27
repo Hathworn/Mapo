@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache mid and gap values within each block to reduce global memory access
+// Ensure data alignment for coalesced memory access when fetching alpha and mid values
+// Minimize divergent branches in condition checks by simplifying the logic
+// Group arithmetic operations to reduce the number of operations and improve efficiency
+// Strive for loop unrolling where beneficial to maximize parallel execution
+// Consider using atomic operations for the prof updates to ensure correctness
+```

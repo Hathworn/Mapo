@@ -1,0 +1,5 @@
+// Use shared memory to cache data locally for frequently accessed values and reduce global memory access.
+// Ensure memory access patterns are coalesced to improve memory bandwidth utilization.
+// Consider loop unrolling for iterative computation to decrease the number of loop control instructions.
+// Optimize grid and block dimension settings to improve thread utilization and avoid underutilization of GPU resources.
+// Evaluate the use of atomic operations if there are potential conflicts in writing to 'out'.

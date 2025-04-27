@@ -1,0 +1,11 @@
+digraph "CFG for '_Z9addKernelPfS_S_ii' function" {
+	label="CFG for '_Z9addKernelPfS_S_ii' function";
+
+	Node0x5780340 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = mul i32 %14, %3\l  %16 = add nsw i32 %15, %3\l  %17 = tail call i32 @llvm.smin.i32(i32 %16, i32 %4)\l  %18 = icmp slt i32 %15, %17\l  br i1 %18, label %20, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x5780340:s0 -> Node0x5782580;
+	Node0x5780340:s1 -> Node0x5782610;
+	Node0x5782610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%19:\l19:                                               \l  ret void\l}"];
+	Node0x5782580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  %21 = phi i32 [ %29, %20 ], [ %15, %5 ]\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds float, float addrspace(1)* %0, i64 %22\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !7\l  %25 = getelementptr inbounds float, float addrspace(1)* %1, i64 %22\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7\l  %27 = fadd contract float %24, %26\l  %28 = getelementptr inbounds float, float addrspace(1)* %2, i64 %22\l  store float %27, float addrspace(1)* %28, align 4, !tbaa !7\l  %29 = add nsw i32 %21, 1\l  %30 = icmp slt i32 %29, %17\l  br i1 %30, label %20, label %19, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5782580:s0 -> Node0x5782580;
+	Node0x5782580:s1 -> Node0x5782610;
+}

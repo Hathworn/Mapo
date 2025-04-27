@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for mat and target arrays to reduce global memory access latency.
+// Optimize memory access patterns by ensuring coalesced memory access to improve performance.
+// Examine using const memory for frequently accessed constants like margin to speed up access.
+// Ensure data alignment in memory to take full advantage of memory access structures.
+// Evaluate occupancy and adjust thread/block dimensions for improved parallel efficiency.
+// Use __restrict__ qualifiers to potentially enhance compiler optimizations.
+```

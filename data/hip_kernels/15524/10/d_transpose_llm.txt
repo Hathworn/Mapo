@@ -1,0 +1,7 @@
+```
+// Use shared memory to allow for coalesced global memory access, reducing memory latency.
+// Padding the shared memory array with an extra column to prevent shared memory bank conflicts.
+// Load data from global memory to shared memory in a coalesced manner.
+// Ensure synchronization using __syncthreads() to guarantee all threads have loaded their data before proceeding.
+// Transpose indices for coalesced writes to global memory on output.
+```

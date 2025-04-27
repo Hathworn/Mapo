@@ -1,0 +1,6 @@
+```
+// Consider memory coalescing, ensure consecutive threads access contiguous memory addresses for x, v, and y
+// Utilize shared memory to reduce global memory accesses if data reuse within block is possible
+// Minimize use of global memory; maximize use of registers for temporary variables
+// Ensure the arithmetic intensity is high to better hide memory latency
+```

@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers to aid compiler optimization by indicating no aliasing
+// Avoid warp divergences by ensuring all threads follow the same execution path
+// Replace division with multiplication by reciprocal to reduce computation overhead
+// Aim for coalesced memory access by ensuring adjacent threads access consecutive memory locations
+// Minimize bank conflicts by adjusting thread block size and memory layout if needed
+// Inline small functions to reduce function call overhead
+```

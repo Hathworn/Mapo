@@ -1,0 +1,7 @@
+```
+// Utilize shared memory for frequently accessed chroma data to improve cache efficiency
+// Use texture memory if the input image data is read-only for better cache locality
+// Try coalesced memory access patterns in global for each memory read/write operation
+// Consider using half precision if it meets precision requirements to speed up computations
+// Align memory accesses to enable vectorized loading/storing
+```

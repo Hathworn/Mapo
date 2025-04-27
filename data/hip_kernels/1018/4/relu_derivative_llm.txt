@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Optimize block and grid sizes to maximize occupancy and minimize divergence
+// Check if memory access patterns are coalesced
+// Use vectorized loads/stores for improved memory throughput if applicable
+// Ensure the kernel launch is asynchronous to avoid blocking CPU execution
+```

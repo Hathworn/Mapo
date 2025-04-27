@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses and improve memory access efficiency.
+// Ensure that memory accesses are coalesced to maximize memory bandwidth utilization.
+// Preload data into registers when possible to reduce latency from global memory access.
+// Minimize divergent branches to avoid warp serialization.
+// Optimize for bank conflicts in shared memory if employed.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring the pointers are aligned in memory.
+// Use shared memory if possible to reduce global memory accesses and bandwidth.
+// Ensure that the thread block size is a multiple of warp size (32) for better performance.
+// Avoid divergent branches by structuring conditional statements to minimize warp divergence.
+// Prefetch data to registers where possible to minimize global memory read latency.
+```

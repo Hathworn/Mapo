@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache data for better memory coalescing
+// Group memory accesses to reduce number of global memory reads
+// Utilize __restrict__ pointers to help compiler optimize memory access
+// Use __ldg() to leverage texture cache for read-only data if applicable
+// Minimize atomic operations by accumulating contributions in registers first
+// Explore using float4 instead of float for vectorized memory operations
+```

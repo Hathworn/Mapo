@@ -1,0 +1,8 @@
+```cpp
+// Consider using more shared memory to load input matrices efficiently.
+// Ensure coalesced memory access by aligning data appropriately in global memory.
+// Minimize bank conflicts in shared memory by optimizing the layout of sub-matrix data.
+// Adjust the block size to maximize occupancy and balance computational load.
+// Evaluate using loop unrolling within tile computations for better performance.
+// Profile memory usage to check potential benefits from using texture or constant memory.
+```

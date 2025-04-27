@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency
+// Optimize boundary checks to reduce unnecessary computations
+// Ensure __syncthreads() is correctly placed to synchronize threads before computation
+// Ensure __syncthreads() is used after computation to prevent memory hazard
+// Improve memory coalescing by aligning memory accesses with warp size
+// Consider increasing TILE_WIDTH for better occupancy and to maximize shared memory utilization

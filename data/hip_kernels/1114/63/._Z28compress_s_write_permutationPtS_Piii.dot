@@ -1,0 +1,13 @@
+digraph "CFG for '_Z28compress_s_write_permutationPtS_Piii' function" {
+	label="CFG for '_Z28compress_s_write_permutationPtS_Piii' function";
+
+	Node0x4f5f310 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = mul nsw i32 %4, %3\l  %16 = icmp slt i32 %14, %15\l  br i1 %16, label %17, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x4f5f310:s0 -> Node0x4f5fe40;
+	Node0x4f5f310:s1 -> Node0x4f613b0;
+	Node0x4f5fe40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%17:\l17:                                               \l  %18 = sext i32 %14 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %21 = trunc i32 %20 to i16\l  %22 = getelementptr inbounds i16, i16 addrspace(1)* %0, i64 %18\l  store i16 %21, i16 addrspace(1)* %22, align 2, !tbaa !11\l  %23 = freeze i32 %14\l  %24 = freeze i32 %4\l  %25 = sdiv i32 %23, %24\l  %26 = mul i32 %25, %24\l  %27 = sub i32 %23, %26\l  %28 = icmp eq i32 %27, 0\l  br i1 %28, label %29, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x4f5fe40:s0 -> Node0x4f62400;
+	Node0x4f5fe40:s1 -> Node0x4f613b0;
+	Node0x4f62400 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%29:\l29:                                               \l  %30 = sdiv i32 %20, 65536\l  %31 = trunc i32 %30 to i16\l  %32 = sext i32 %25 to i64\l  %33 = getelementptr inbounds i16, i16 addrspace(1)* %1, i64 %32\l  store i16 %31, i16 addrspace(1)* %33, align 2, !tbaa !11\l  br label %34\l}"];
+	Node0x4f62400 -> Node0x4f613b0;
+	Node0x4f613b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  ret void\l}"];
+}

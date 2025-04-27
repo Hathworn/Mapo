@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache elements if multiple threads access nearby memory locations to reduce global memory access.
+// Ensure coalesced memory access patterns by aligning data access within warps to improve memory throughput.
+// Consider using warp-level primitives to reduce synchronization overhead and improve performance.
+// Optimize for maximum occupancy by configuring block size based on the GPU architecture for better resource utilization.
+```

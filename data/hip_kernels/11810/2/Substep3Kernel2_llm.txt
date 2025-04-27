@@ -1,0 +1,6 @@
+```
+// Consider memory coalescing by ensuring consecutive threads access consecutive memory locations for Qplus
+// Where possible, use shared memory to cache values that are accessed multiple times within a block like Rmed
+// If possible, use loop unrolling to reduce loop overhead in sections accessed frequently
+// Evaluate the presence of bank conflicts when using shared memory to further optimize memory accesses
+```

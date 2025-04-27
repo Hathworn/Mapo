@@ -1,0 +1,7 @@
+```cpp
+// Use __restrict__ to help the compiler optimize memory access as much as possible.
+// Ensure data is coalesced by aligning memory access to warp boundaries.
+// Minimize conditional statements within the kernel as much as possible for performance.
+// Consider using shared memory for commonly accessed data to reduce global memory accesses.
+// Evaluate occupancy and adjust block size or grid size for optimization.
+```

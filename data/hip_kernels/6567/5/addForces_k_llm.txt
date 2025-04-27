@@ -1,0 +1,6 @@
+```
+// Precompute offsetX and offsetY to reduce redundant calculations per thread
+// Precompute offsetX^4 and offsetY^4 once to enhance calculation efficiency
+// Improve memory access pattern by using float2 pointer arithmetic
+// Ensure coalesced memory access for global writes to optimize bandwidth usage
+```

@@ -1,0 +1,9 @@
+```cpp
+// Consider using coalesced global memory access for g_idata and g_odata.
+// Utilize shared memory efficiently to minimize global memory access.
+// Avoid bank conflicts in shared memory access.
+// Unroll the loop to reduce loop control overhead.
+// Use __syncthreads() appropriately to ensure data consistency.
+// Employ warp shuffle techniques within the last warp for efficiency.
+// Minimize conditional branching within warps to enhance performance.
+```

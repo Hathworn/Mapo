@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by verifying mat, target are aligned and accessing continuous memory
+// Use shared memory if the same data is accessed repeatedly within a block for reduced memory latency
+// Consider adjusting the block and grid dimensions for optimal occupancy and efficient memory bandwidth usage
+// Check if using read-only cache via __ldg() can improve performance for mat elements
+// Evaluate pre-computed index value for avoiding unnecessary recalculation inside the loop

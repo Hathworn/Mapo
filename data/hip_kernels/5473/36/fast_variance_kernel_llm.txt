@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Implement coalesced memory access in the loop
+// Apply thread stride loop for spatial accumulation to maximize occupancy
+// Perform in-block reduction to minimize synchronization overhead
+// Use warp-level reduction to enhance performance within active warps
+// Minimize the number of __syncthreads() calls for efficiency
+```

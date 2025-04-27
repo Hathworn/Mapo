@@ -1,0 +1,8 @@
+```
+// Consider loading a block of data into shared memory for coalesced access
+// Use __restrict__ qualifiers on pointers to help the compiler optimize memory accesses
+// Ensure data is aligned to reduce memory bottlenecks
+// Apply loop unrolling more extensively to reduce loop overhead
+// Utilize __syncthreads() if using shared memory to ensure all threads have completed data loading
+// Evaluate if more opportunities for reducing global memory accesses exist
+```

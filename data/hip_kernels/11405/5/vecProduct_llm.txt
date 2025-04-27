@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring d_x, d_y, and d_z are aligned
+// Optimize shared memory usage if reusable data can fit in the shared memory
+// Use loop unrolling to decrease the overhead of loop control and increase throughput
+// Examine data locality to ensure data reused by multiple threads is stored close together
+// Analyze memory access patterns and use read-only memory caches if applicable
+// Ensure optimal block and grid size to maximize GPU occupancy
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for 'idx' array to improve memory access patterns
+// Use shared memory if 'n_selected' is small and can fit into shared memory to improve latency
+// Optimize the stride access pattern to ensure efficient memory transactions
+// Check if 'available[idx[i]]' accesses can be minimized or combined to reduce scattered writes
+// Evaluate occupancy to ensure that grid and block dimensions fully utilize the GPU resources
+```

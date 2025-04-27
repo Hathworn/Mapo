@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for input and rand arrays
+// Optimize memory access by ensuring all threads within a warp access contiguous memory locations
+// Consider using shared memory for intermediate computations if applicable
+// Minimize divergence by ensuring all threads in the same warp execute the same path
+// Assess register usage and reduce if possible to avoid register spilling
+```

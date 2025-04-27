@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache 'connection' data for faster access.
+// Minimize divergent branches by rearranging the if statements.
+// Consider loop unrolling if applicable for the 'maxCells' range.
+// Use __restrict__ qualifiers for pointer arguments to help the compiler optimize.
+```

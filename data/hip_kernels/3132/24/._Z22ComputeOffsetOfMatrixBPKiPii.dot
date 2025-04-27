@@ -1,0 +1,13 @@
+digraph "CFG for '_Z22ComputeOffsetOfMatrixBPKiPii' function" {
+	label="CFG for '_Z22ComputeOffsetOfMatrixBPKiPii' function";
+
+	Node0x5ebd110 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = icmp slt i32 %4, %2\l  br i1 %5, label %6, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x5ebd110:s0 -> Node0x5ebdfc0;
+	Node0x5ebd110:s1 -> Node0x5ebe050;
+	Node0x5ebdfc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%6:\l6:                                                \l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = zext i32 %7 to i64\l  %9 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %8\l  %10 = mul i32 %7, %2\l  %11 = zext i32 %10 to i64\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %11\l  %13 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %14 = getelementptr i8, i8 addrspace(4)* %13, i64 4\l  %15 = bitcast i8 addrspace(4)* %14 to i16 addrspace(4)*\l  %16 = load i16, i16 addrspace(4)* %15, align 4, !range !5, !invariant.load !6\l  %17 = zext i16 %16 to i32\l  br label %19\l}"];
+	Node0x5ebdfc0 -> Node0x5ebf410;
+	Node0x5ebe050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%18:\l18:                                               \l  ret void\l}"];
+	Node0x5ebf410 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  %20 = phi i32 [ %4, %6 ], [ %25, %19 ]\l  %21 = load i32, i32 addrspace(1)* %9, align 4, !tbaa !7\l  %22 = sub nsw i32 0, %21\l  %23 = sext i32 %20 to i64\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %12, i64 %23\l  store i32 %22, i32 addrspace(1)* %24, align 4, !tbaa !7\l  %25 = add i32 %20, %17\l  %26 = icmp slt i32 %25, %2\l  br i1 %26, label %19, label %18, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5ebf410:s0 -> Node0x5ebf410;
+	Node0x5ebf410:s1 -> Node0x5ebe050;
+}

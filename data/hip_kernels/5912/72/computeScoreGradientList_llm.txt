@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access patterns, especially for the arrays trans_x, trans_y, trans_z, and valid_points.
+// Use shared memory to improve access times for frequently accessed data such as starting_voxel_id and voxel_id.
+// Reduce the number of divergent branches in the conditional statement checking tmp_ex to improve warp execution efficiency.
+// Evaluate the possibility of using texture memory for read-only data like centroid_x, centroid_y, and centroid_z to leverage hardware caching.
+// Consider loop unrolling in the inner loop where tmp_sg is calculated to decrease overhead and increase throughput.
+```

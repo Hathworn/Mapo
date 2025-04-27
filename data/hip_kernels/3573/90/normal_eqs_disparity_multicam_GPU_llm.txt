@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Use __restrict__ keyword for pointer declarations to help the compiler with optimization by indicating no aliasing of pointers.
+// Minimize usage of atomic operations as they can become a bottleneck; explore alternatives where possible.
+// Implement loop unrolling inside for-loop to decrease loop control overhead.
+// Consider data prefetching techniques, if applicable, to reduce memory access latency.
+// Evaluate block size and grid size setting for maximizing occupancy and improving performance.
+// Ensure that shared memory usage is optimal, possibly reducing it to maximize the number of active warps.
+```

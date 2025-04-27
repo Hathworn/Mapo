@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for d_in[myId].
+// Consider using warp shuffle instructions to reduce the number of __syncthreads().
+// Unroll the loop for the reduction to improve performance.
+// Ensure d_out[blockIdx.x] is written with coalesced access.
+```

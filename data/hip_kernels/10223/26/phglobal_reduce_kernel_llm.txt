@@ -1,0 +1,8 @@
+```
+// Load data into shared memory to reduce global memory accesses
+// Use __syncthreads() after loading to ensure all threads have the data they need
+// Perform reduction in shared memory to minimize global memory traffic
+// Use a power of two for blockDim.x for efficient shared memory usage
+// Use thread synchronization between steps to ensure data consistency
+// Perform minimal atomic operations by having only thread 0 write the result
+```

@@ -1,0 +1,8 @@
+```
+// Consider using vectorized memory accesses for loading Asub and Bsub to optimize memory bandwidth.
+// Ensure Asub and Bsub are coalesced accesses to improve performance.
+// Evaluate if BLOCK_SIZE is optimal to balance shared memory usage and parallel efficiency.
+// Consider using double buffering technique to overlap computation and memory transfer.
+// Investigate if using half-precision arithmetic might improve performance for specific scenarios.
+// Profile the kernel to identify warp-level inefficiencies that can be optimized.
+```

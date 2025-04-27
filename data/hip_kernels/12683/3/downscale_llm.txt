@@ -1,0 +1,6 @@
+// Use shared memory for common variables to enhance memory access speed.
+// Avoid repetitive computation by storing results of translate_idx_inv in temporary variables.
+// Precompute scale_factor_t * scale_factor_xy outside the loop to reduce computations within the loop.
+// Try to replace atomic operations with warp-level primitives for parallel reduction to minimize synchronization overhead.
+// Consider using loop unrolling techniques in the innermost loops to reduce loop overhead.
+// Use __restrict__ pointers for gradInput_data and gradOutput_data to enable compiler optimizations.

@@ -1,0 +1,6 @@
+```
+// Avoid redundant memory access by ensuring all threads within a block cooperate to load data.
+// Utilize shared memory to prefetch data from global memory to reduce access latency.
+// Align shared memory access patterns to the warp size to maximize memory throughput.
+// Ensure coalesced memory access for efficient use of memory bandwidth.
+```

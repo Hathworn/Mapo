@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for frequently accessed data
+// Coalesce global memory access by ensuring threads access contiguous memory locations
+// Minimize warp divergence by aligning loop iterations with warp boundaries
+// Consider using atomic operations if multiple threads update the same memory location

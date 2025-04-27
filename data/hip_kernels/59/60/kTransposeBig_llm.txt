@@ -1,0 +1,5 @@
+// Precompute height x width to reduce redundant calculations and improve memory access efficiency  
+// Use computed indices for efficient memory access, reducing random access pattern impact  
+// Consider aligning data to optimize coalesced memory access, especially for large matrices  
+// Utilize shared memory if frequent data reuse within block to lower global memory bandwidth usage  
+// Minimize bank conflicts by carefully structuring access patterns when using shared memory

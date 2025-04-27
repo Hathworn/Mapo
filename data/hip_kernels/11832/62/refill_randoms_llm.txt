@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access by aligning dRand with memory banks
+// Use shared memory if multiple warps access the same data concurrently
+// Minimize global memory accesses by using registers efficiently
+// Balance grid and block dimensions for maximum occupancy
+// Initialize random states outside the kernel if possible to reduce overhead
+```

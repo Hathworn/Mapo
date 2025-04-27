@@ -1,0 +1,60 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <hip/hip_runtime.h>
+#include "_GEFrkernel_cuda_llm.cu"
+#include <chrono>
+#include <iostream>
+using namespace std;
+using namespace std::chrono;
+int main(int argc, char **argv) {
+hipSetDevice(0);
+
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    int num_slices = 1;
+int num_grid = 1;
+float *dev_recon = NULL;
+hipMalloc(&dev_recon, XSIZE*YSIZE);
+float *dev_G = NULL;
+hipMalloc(&dev_G, XSIZE*YSIZE);
+float *dev_E = NULL;
+hipMalloc(&dev_E, XSIZE*YSIZE);
+float *dev_F = NULL;
+hipMalloc(&dev_F, XSIZE*YSIZE);
+int iXSIZE= XSIZE;
+int iYSIZE= YSIZE;
+while(iXSIZE%BLOCKX!=0) {
+iXSIZE++;
+}
+while(iYSIZE%BLOCKY!=0) {
+iYSIZE++;
+}
+dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
+dim3 threadBlock(BLOCKX, BLOCKY);
+hipFree(0);
+_GEFrkernel_cuda<<<gridBlock, threadBlock>>>(num_slices,num_grid,dev_recon,dev_G,dev_E,dev_F);
+hipDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+_GEFrkernel_cuda<<<gridBlock, threadBlock>>>(num_slices,num_grid,dev_recon,dev_G,dev_E,dev_F);
+}
+hipDeviceSynchronize();
+auto start = steady_clock::now();
+for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+_GEFrkernel_cuda<<<gridBlock, threadBlock>>>(num_slices,num_grid,dev_recon,dev_G,dev_E,dev_F);
+}
+hipDeviceSynchronize();
+auto end = steady_clock::now();
+auto usecs = duration_cast<duration<float, microseconds::period>>(end - start);
+cout << '[' << usecs.count() << ',' << '(' << BLOCKX << ',' << BLOCKY << ')' << ',' << '(' << XSIZE << ',' << YSIZE << ')' << ']' << endl;
+}

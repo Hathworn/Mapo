@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced memory access patterns.
+// Consider using shared memory for frequently accessed data to reduce redundant global memory access.
+// Minimize divergent branching by simplifying the control flow within loops.
+// Utilize warp shuffle operations if possible to optimize data exchange between threads within the same warp.

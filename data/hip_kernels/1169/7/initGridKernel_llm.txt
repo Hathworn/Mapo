@@ -1,0 +1,7 @@
+```
+// Consider using constant memory for commonly accessed static data
+// Optimize block size to achieve better occupancy and warp efficiency
+// Ensure IG_BLOCKDIM_X, IG_BLOCKDIM_Y, and IG_BLOCKDIM_Z are tuned for specific hardware
+// Minimize __syncthreads() usage by ensuring warp-level synchronization
+// Use coalesced memory access patterns where possible 
+```

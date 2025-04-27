@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store cache arrays to reduce global memory access latency.
+// Optimize loading of boundary condition with shared memory to avoid redundant global memory fetches.
+// Use warp-level primitives for reduction instead of block-wide synchronization for faster convergence.
+// Handle blocks dynamically to balance workload if possible.
+// Utilize vectorized memory accesses where feasible for better memory throughput on coalesced memory access patterns.
+```

@@ -1,0 +1,6 @@
+```c++
+// Ensure coalesced memory access for global load/store
+// Minimize bank conflicts when accessing shared memory
+// Use __syncthreads() to ensure all threads have completed writing to shared memory before proceeding
+// Consider loop unrolling for copy operations to improve performance
+```

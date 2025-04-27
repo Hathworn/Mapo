@@ -1,0 +1,6 @@
+// Use shared memory to store intermediate results if necessary 
+// Consider using fewer trials per thread to reduce computational load per kernel 
+// Align memory accesses to improve memory performance 
+// Use cooperative groups if possible for better thread synchronization 
+// Optimize thread and block allocation for improved occupancy 
+// Use pinned memory for faster host-device data transfers 

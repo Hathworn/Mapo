@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for grad_data to improve memory bandwidth utilization
+// Optimize thread block size and grid dimensions for better occupancy and performance
+// Explore using shared memory if multiple threads access the same data from grad_data
+// Minimize global memory access by reusing values computed within a block
+```

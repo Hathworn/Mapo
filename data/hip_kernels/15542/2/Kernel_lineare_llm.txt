@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning thread access patterns
+// Utilize shared memory to minimize global memory reads if possible
+// Consider loop unrolling for the innermost loop if Nr_val is small and predictable
+// Optimize access to ind[], Vp[], Vnp[] by loading into registers when applicable
+// Maximize occupancy by adjusting block size to hardware specifics
+// Use __restrict__ keyword on pointer arguments if aliasing is not an issue
+```

@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access by ensuring threads access contiguous memory locations
+// Consider using shared memory if there is data reuse within a block
+// Ensure that the kernel launch configuration (block size) is optimal for the GPU architecture
+// Minimize divergent branching by ensuring all threads within a warp reach the same branches
+```

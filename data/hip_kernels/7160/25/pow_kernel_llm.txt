@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses for frequently used data.
+// Coalesce memory accesses to improve memory throughput.
+// Consider using vectorized operations for better utilization of memory bandwidth.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.

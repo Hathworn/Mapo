@@ -1,0 +1,7 @@
+```
+// Use shared memory if possible to improve memory access patterns
+// Ensure coalesced memory access for X and Y arrays
+// Use __restrict__ keyword for pointers if data is not aliased to help compiler optimizations
+// Consider using float2 or float4 if computational intensity allows, for vectorized operations
+// Check if loop unrolling benefits this kernel for further performance gains
+```

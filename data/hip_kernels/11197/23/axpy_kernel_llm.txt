@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache portions of X and Y to reduce global memory access
+// Consider using float2 or float4 for coalesced memory access if INCX or INCY is 1
+// Ensure that the total number of threads is a multiple of warp size for better efficiency
+// Use __restrict__ keyword for pointers to help the compiler with optimization
+// Try to maximize occupancy by tuning the block size based on GPU architecture
+```

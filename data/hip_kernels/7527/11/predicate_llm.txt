@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns for improved throughput
+// Use shared memory to reduce global memory accesses if possible
+// Optimize for branch divergence by arranging conditional checks for warp efficiency
+// Minimize global memory accesses by using register variables for intermediate computations
+// Consider utilizing atomic operations if applicable to reduce thread contention for updates
+// Evaluate occupancy and adjust block and grid size for better utilization
+```

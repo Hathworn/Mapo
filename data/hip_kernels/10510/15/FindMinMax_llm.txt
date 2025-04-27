@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access patterns for d_Data by ensuring threads read contiguous elements.
+// Avoid bank conflicts in shared memory by ensuring accesses to minvals and maxvals avoid conflict.
+// Consider padding shared memory to prevent bank conflicts.
+// Use __syncthreads() efficiently to ensure synchronization only when necessary.
+// Minimize the use of __syncthreads() to improve performance.
+// Avoid using conditional statements inside loops where possible to reduce warp divergence.
+// Consider using warp-level primitives like __shfl_xor_sync for more efficient reduction.
+```

@@ -1,0 +1,8 @@
+```
+// Use a while loop for improved performance by reducing control overhead
+// Pre-calculate output address to reduce calculation within the loop
+// Consider using shared memory to cache data for multiple threads, if applicable
+// Ensure coalesced memory access by checking if data is aligned properly
+// Evaluate if using atomic operations can optimize specific sections, if contention exists
+// Minimize global memory access by reusing values stored in registers or shared memory
+```

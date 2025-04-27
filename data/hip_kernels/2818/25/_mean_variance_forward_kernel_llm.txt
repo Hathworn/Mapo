@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by rearranging loops or memory layout.
+// Utilize shared memory for temporary storage to minimize global memory access.
+// Optimize thread block size to balance memory access and computational efficiency.
+// Consider loop unrolling for better performance in calculating temp_mean and temp_var. 
+// Avoid branching (e.g., `if (i >= c)` condition) by utilizing built-in functions for boundary checks.

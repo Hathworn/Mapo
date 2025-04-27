@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access by ensuring INCX is 1 for better memory performance
+// Minimize redundant calculations and load operations in the kernel
+// Prefer using shared memory if performing more complex operations within the kernel
+// Ensure grid and block sizes are optimized for the GPU architecture
+// Use __restrict__ qualifier for pointers to allow the compiler to optimize memory access
+// Evaluate the use of atomic operations if data races are present
+```

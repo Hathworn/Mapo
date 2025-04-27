@@ -1,0 +1,5 @@
+// Consider using shared memory for faster data access
+// Ensure data alignment for optimal coalescing
+// Avoid bank conflicts in shared memory operations
+// Minimize warp divergence by aligning computation with thread boundaries
+// Experiment with different block sizes for potential performance gains

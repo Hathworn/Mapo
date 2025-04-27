@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory transactions
+// Optimize memory access by coalescing global memory reads
+// Consider using float4 for fetching data to minimize memory transactions
+// Use __syncthreads() to ensure shared memory operations are synchronized
+// Leverage atomic operations wisely to avoid serialization of threads
+// Align data structures to facilitate coalesced access patterns
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory if accessing repetitive data
+// Ensure coalesced memory access for optimal performance
+// Use __restrict__ qualifier to indicate no aliasing for pointers
+// Optimize blockDim.x and grid size for maximum occupancy
+// Align data structures to prevent uncoalesced accesses
+// Prefetch data to reduce latency where feasible
+```

@@ -1,0 +1,9 @@
+```
+// Consider using coalesced memory access for delta to improve memory access efficiency.
+// Ensure enough shared memory is allocated to avoid conflicts and bank issues.
+// Utilize __syncthreads() judiciously, as it is a barrier synchronization point.
+// Optimize the loop to reduce warp divergence by ensuring all threads execute similar paths.
+// Evaluate using warp-level primitives for reduction to increase parallelism.
+// Explore reducing global memory accesses by storing invariants in registers when possible.
+// Investigate using atomic operations if concurrent updates are possible or needed.
+```

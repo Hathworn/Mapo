@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access patterns to achieve coalesced access
+// Consider using shared memory to improve performance if random states can be reused within blocks
+// Ensure sufficient blocks and threads for full GPU utilization
+// Avoid warp divergence by ensuring all threads within a warp either exit or execute similar instructions
+```

@@ -1,0 +1,5 @@
+digraph "CFG for '_Z10testKernelPfS_' function" {
+	label="CFG for '_Z10testKernelPfS_' function";
+
+	Node0x6252ac0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = load float, float addrspace(1)* %0, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %4 = getelementptr inbounds float, float addrspace(1)* %0, i64 1\l  %5 = load float, float addrspace(1)* %4, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %6 = fadd contract float %3, %5\l  store float %6, float addrspace(1)* %1, align 4, !tbaa !4\l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+// Optimize memory access by ensuring coalesced memory accesses for e_x_cov_x and score.
+// Reduce shared memory bank conflicts by using padding or managing memory layout.
+// Use warp-level operations to minimize thread divergence in score accumulation.
+// Avoid unnecessary synchronizations such as __syncthreads() to improve performance.
+// Investigate loop unrolling to improve memory access speed within inner for-loop.
+// Implement a check to ensure valid_points_num does not exceed shared memory limits.

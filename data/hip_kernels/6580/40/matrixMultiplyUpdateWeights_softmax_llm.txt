@@ -1,0 +1,4 @@
+// Use shared memory for tiling to reduce global memory accesses.
+// Ensure coalesced memory access when loading tiles from A and B into shared memory.
+// Avoid bank conflicts in shared memory by properly indexing ds_M and ds_N.
+// Minimize __syncthreads() usage to reduce synchronization overheads.

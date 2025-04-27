@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed variables to reduce global memory access and improve performance
+// Load shared variables at the beginning of the block to decrease repeated memory accesses
+// Synchronize threads after loading shared memory to ensure all threads have access to the updated values
+// Calculate and cache the norm_variance to avoid repeated computation within the loop
+```

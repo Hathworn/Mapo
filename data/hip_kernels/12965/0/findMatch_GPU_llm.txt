@@ -1,0 +1,8 @@
+```cpp
+// Consider using __ldg() for read-only memory access to optimize memory operations.
+// Align memory accesses to ensure coalesced memory transactions.
+// Use shared memory to reduce the number of global memory accesses.
+// Merge grid and block memory accesses to improve spatial locality.
+// Utilize register usage to cache frequently accessed variables.
+// Use texture memory for 2D image data to benefit from caching.
+```

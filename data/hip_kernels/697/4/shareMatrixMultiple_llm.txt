@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access.
+// Ensure shared memory is loaded efficiently to prevent bank conflicts.
+// Ensure boundary checks to avoid over-fetching and unnecessary shared memory usage.
+// Use __syncthreads() to ensure all threads have loaded required data before proceeding.

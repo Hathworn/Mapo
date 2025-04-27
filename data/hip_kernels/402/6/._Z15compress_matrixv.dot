@@ -1,0 +1,10 @@
+digraph "CFG for '_Z15compress_matrixv' function" {
+	label="CFG for '_Z15compress_matrixv' function";
+
+	Node0x5784af0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0:\l  %1 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %2 = getelementptr i8, i8 addrspace(4)* %1, i64 4\l  %3 = bitcast i8 addrspace(4)* %2 to i16 addrspace(4)*\l  %4 = load i16, i16 addrspace(4)* %3, align 4, !range !4, !invariant.load !5\l  %5 = zext i16 %4 to i32\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = mul i32 %6, %5\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %9 = add i32 %7, %8\l  %10 = sext i32 %9 to i64\l  %11 = getelementptr inbounds [1048576 x i32], [1048576 x i32] addrspace(1)*\l... @slack, i64 0, i64 %10\l  %12 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !7\l  %13 = icmp eq i32 %12, 0\l  br i1 %13, label %14, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x5784af0:s0 -> Node0x5788c60;
+	Node0x5784af0:s1 -> Node0x57897e0;
+	Node0x5788c60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%14:\l14:                                               \l  %15 = load i32 addrspace(1)*, i32 addrspace(1)* addrspace(1)* @zeros_size,\l... align 8\l  %16 = atomicrmw add i32 addrspace(1)* %15, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  %17 = ashr i32 %9, 19\l  %18 = and i32 %9, -524288\l  %19 = sext i32 %17 to i64\l  %20 = getelementptr inbounds [2 x i32], [2 x i32] addrspace(1)*\l... @zeros_size_b, i64 0, i64 %19\l  %21 = atomicrmw add i32 addrspace(1)* %20, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  %22 = add nsw i32 %21, %18\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds [1048576 x i32], [1048576 x i32] addrspace(1)*\l... @zeros, i64 0, i64 %23\l  store i32 %9, i32 addrspace(1)* %24, align 4, !tbaa !7\l  br label %25\l}"];
+	Node0x5788c60 -> Node0x57897e0;
+	Node0x57897e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  ret void\l}"];
+}

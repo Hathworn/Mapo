@@ -1,0 +1,8 @@
+```
+// Ensure coalesced global memory access in loading A into shared memory
+// Use vectorized loads (e.g., float4/int4) for A to reduce memory transactions
+// Optimize shared memory usage by minimizing bank conflicts in s[]
+// Prefetch data from A to shared memory for the next iteration to hide memory latency
+// Align shared memory access patterns to WARP_SIZE for better performance
+// Consider double buffering in s[] to overlap computation and memory operations
+```

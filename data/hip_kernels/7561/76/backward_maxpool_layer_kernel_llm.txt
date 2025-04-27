@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache 'delta' and 'indexes' to reduce global memory accesses
+// Optimize the loop structure to maximize coalesced memory access patterns
+// Consider preloading data for threads to improve memory access efficiency
+// Reuse memory accesses wherever possible within the loop
+// Minimize divergent branches inside the loop to reduce warp serialization
+// Apply loop unrolling to reduce loop overhead and improve performance
+```

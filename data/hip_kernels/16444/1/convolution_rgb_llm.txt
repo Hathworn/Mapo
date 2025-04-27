@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to load tile data for N to reduce global memory accesses.
+// Align padded dimension calculations (paddedH and paddedW) for coalesced memory access.
+// Further unroll loops within the kernel to increase parallelism and reduce loop overhead.
+// Ensure memory accesses for M are coalesced to improve performance.
+// Use warp shuffle instructions to further reduce inter-thread communication overhead.
+```

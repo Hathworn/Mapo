@@ -1,0 +1,7 @@
+```
+// Use shared memory for output accumulation to optimize memory access
+// Ensure shared memory buffer size matches block dimensions to prevent overflow
+// Avoid bank conflicts in shared memory access by ensuring proper alignment
+// Minimize global memory accesses by reusing data in shared memory
+// Tune block and grid dimensions for optimal memory coalescing
+```

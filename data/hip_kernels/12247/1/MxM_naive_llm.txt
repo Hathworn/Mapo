@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store sub-blocks of A and B to reduce global memory accesses
+// Ensure coalesced memory access patterns for matrices A, B, and C
+// Use loop unrolling within the dot product computation for improved instruction throughput
+// Utilize thread synchronization after loading sub-blocks into shared memory
+// Optimize block and grid size to match the GPU architecture and maximize occupancy
+```

@@ -1,0 +1,4 @@
+// Use warp-level primitives to minimize synchronization overhead
+// Avoid shared memory bank conflicts within reduction operation
+// Consider using atomic operations for final reduction in cases where warpSize changes
+// Ensure memory coalescing for optimal memory access pattern

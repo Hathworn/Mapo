@@ -1,0 +1,9 @@
+```cpp
+// Consider coalesced memory access for loading A and B tiles
+// Use __restrict__ qualifier for A, B, C pointers to enhance compiler optimizations
+// Check possibility of loop unrolling for TiElem loop for better performance
+// Try using multiple threads within a block to load global memory into shared memory
+// Evaluate whether larger or smaller TILE_SZ would give better performance
+// Ensure optimal grid and block size configuration for the target hardware
+// Explore use of warp-level primitives for synchronization within tile computation
+```

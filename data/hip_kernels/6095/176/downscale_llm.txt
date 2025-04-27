@@ -1,0 +1,6 @@
+// Use a local accumulator to reduce global memory accesses
+// Consider using shared memory to reduce memory bandwidth usage
+// Ensure coalesced access to global memory for gradOutput_data
+// Ensure coalesced access to global memory for gradInput_data
+// Optimize thread and block dimensions for better occupancy
+// Minimize divergent branches within loops for better efficiency

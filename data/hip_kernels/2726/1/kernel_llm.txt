@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce global memory access
+// Coalesce global memory accesses by ensuring contiguous thread accesses
+// Minimize divergent branches within warp execution
+// Balance the workload across blocks to maximize resource utilization
+// Ensure enough work per block to cover memory latency
+```

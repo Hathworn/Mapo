@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for the `x` and `y` arrays.
+// Attempt to use shared memory if `n` is small enough to fit data.
+// Ensure memory alignment for `result`, `x`, and `y` to avoid uncoalesced accesses.
+// Assess if using float instead of double can provide performance gains if lower precision is acceptable.
+// Optimize the configuration of `blockDim.x` for better occupancy and memory throughput.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access for improved bandwidth
+// Prefetch m2 data into shared memory to minimize latency
+// Ensure __syncthreads() are used to avoid race conditions
+// Consider using loop unrolling to optimize the loop
+// Avoid bank conflicts by adjusting shared memory access patterns
+```

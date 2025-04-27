@@ -1,0 +1,4 @@
+// Consider using shared memory where possible to reduce global memory accesses.
+// Ensure memory coalescing by accessing global memory in aligned and sequential order.
+// Explore using vectorized loads to further improve memory throughput.
+// Assess if texture memory could be applied for read-only data for faster access.

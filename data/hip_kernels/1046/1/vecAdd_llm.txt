@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access patterns for A, B, and C arrays
+// Utilize warp shuffles for reducing inter-thread communication overhead if applicable
+// Ensure alignment of A, B, and C to improve memory access efficiency
+// Investigate using __ldg() for read-only data if upgrade to newer hardware allows
+// Use memory prefetching techniques to hide latency for large data sets
+// Consider measuring performance impact of replacing __mul24 with __mul_hi if full 32-bit product is not required
+```

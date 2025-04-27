@@ -1,0 +1,5 @@
+// Consider coalesced memory accesses by aligning data on 128-byte boundaries.
+// Ensure that each thread accesses memory contiguously to optimize global memory bandwidth.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+// Utilize shared memory for temporary storage to reduce global memory accesses if needed.
+// Experiment with different block sizes for optimal occupancy and bandwidth usage.

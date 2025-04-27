@@ -1,0 +1,4 @@
+// Use shared memory to store centroid data for faster access and reduced global memory accesses.
+// Consider prefetching `d_x`, `d_y`, `d_z` into registers to minimize global memory fetch latency.
+// Ensure coalesced access patterns for `trans_x`, `trans_y`, `trans_z`, `e_x_cov_x` for optimal memory bandwidth utilization.
+// Reduce id-based computation overhead by using warp-level constructs where possible to leverage intra-warp communication.

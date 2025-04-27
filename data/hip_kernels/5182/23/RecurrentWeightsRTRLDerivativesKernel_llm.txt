@@ -1,0 +1,7 @@
+```
+// Use shared memory for inputs to improve cache hits
+// Prefetch recurrentWeights and previousRecurrentWeightRTRLDerivatives into shared memory
+// Ensure the threads are synchronized after loading data into shared memory
+// Partition the workload to avoid bank conflicts in shared memory accesses
+// Optimize the loop by unrolling it for performance improvement
+```

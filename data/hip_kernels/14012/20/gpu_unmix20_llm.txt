@@ -1,0 +1,4 @@
+// Consider using shared memory to store mixres and mixbits to reduce global memory accesses.
+// Optimize memory coalescing by ensuring op buffer reads and writes are aligned.
+// Use warp divergence optimizations in conditional checks for better thread utilization.
+// Explore loop unrolling techniques for accessing u and v arrays to improve throughput.

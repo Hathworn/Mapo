@@ -1,0 +1,5 @@
+// Use memory coalescing for global memory access to improve throughput.
+// Consider reducing the number of __syncthreads() calls for better performance.
+// Optimize shared memory usage to prevent bank conflicts.
+// Examine the logic to minimize unnecessary computation in CDF calculation.
+// Consider loop unrolling techniques to optimize performance within the kernel.

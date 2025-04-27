@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for better data reuse and reduced global memory access
+// Ensure coalesced memory access by aligning data access to warp size
+// Optimize loop unrolling for better instruction-level parallelism
+// Reduce register pressure by minimizing the use of local variables inside the loop
+```

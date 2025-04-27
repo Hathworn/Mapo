@@ -1,0 +1,7 @@
+```
+// Consider utilizing thread coarsening to increase each thread's workload
+// Use loop unrolling inside the loop for faster execution
+// Consider replacing atomic operations with warp-level primitives where possible
+// Allocate more shared memory if necessary to store additional data
+// Prefetch data to shared memory to further minimize global memory accesses
+```

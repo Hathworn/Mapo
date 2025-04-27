@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to cache data between threads within a block to reduce global memory access.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory addresses.
+// Minimize the use of atomic operations as they can serialize global memory access.
+// Ensure the kernel launch configuration maximizes occupancy by setting block size to leverage GPU's hardware capabilities.
+```

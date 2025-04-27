@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache d_xAx, d_bx, and d_c for better performance.
+// Ensure coalesced memory access for d_xAx, d_bx, and d_c to improve memory throughput.
+// Check if overlapping host and device computations can be implemented for better resource utilization.
+// Optimize block size and grid size to avoid divergence and ensure full utilization of the GPU.
+```

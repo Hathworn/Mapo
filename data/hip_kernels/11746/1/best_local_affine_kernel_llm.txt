@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for Mt_M, Mt_S, and invMt_M to reduce global memory access.
+// Minimize the kernel launch configuration by choosing an optimal block size and grid size.
+// Try to improve memory coalescing by aligning memory accesses within warps.
+// Investigate if the loops over dy and dx can be unrolled for better performance.
+// Ensure all memory accesses are aligned and review if float vs double precision affects performance critically.
+// Check if the computations can be reduced or reused from previous calculations within the kernel.
+```

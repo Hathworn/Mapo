@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory efficiently to reduce redundant global memory accesses.
+// Utilize warp-level operations to optimize shared memory usage and synchronization.
+// Ensure indices array accesses are aligned for better memory access efficiency.
+// Optimize control flow by reducing divergent branches within the warp.

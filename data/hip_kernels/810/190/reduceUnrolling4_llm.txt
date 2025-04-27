@@ -1,0 +1,4 @@
+// Consider using aligned memory access for better coalescing
+// Minimize bank conflicts when accessing shared memory
+// Use atomic operations for updates to avoid race conditions
+// Prefer warp-level parallelism to reduce synchronization overhead

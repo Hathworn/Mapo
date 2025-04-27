@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access
+// Pre-fetch data to registers to minimize latency
+// Coalesce global memory accesses to improve memory bandwidth
+// Align data structures to 32-byte boundaries for memory coalescing
+// Use __ldg intrinsic for read-only cache accesses
+// Optimize thread block sizes based on warp size for better utilization
+```

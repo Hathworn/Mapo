@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory if repeated access to the same data is needed.
+// Ensure alignment of memory accesses to improve coalescing.
+// Consider using float2 or float4 types for vectorized memory access.
+// Use asynchronous memory prefetching if possible to hide memory latency.
+// Optimize grid and block dimensions to maximize occupancy.
+```

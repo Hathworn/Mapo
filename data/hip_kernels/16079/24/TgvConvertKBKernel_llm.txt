@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data like disparity to reduce global memory access.
+// Unroll the loop in Newton-Raphson iterations to reduce loop overhead.
+// Fuse calculations where possible to minimize the number of arithmetic operations.
+// Reuse precomputed values across threads to minimize redundant calculations.
+// Check if using intrinsics for mathematical functions like sqrtf and tanf improves performance on the target architecture.
+```

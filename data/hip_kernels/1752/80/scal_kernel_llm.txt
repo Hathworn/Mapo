@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses by ensuring consecutive threads access consecutive memory locations in X.
+// Evaluate using shared memory if there are repeated memory reads by threads within a block to reduce global memory traffic.
+// Use loop unrolling in the for-loop to utilize ILP (Instruction Level Parallelism) for better performance.
+// Check if ALPHA is a compile-time constant to enable potential constant memory usage.
+```

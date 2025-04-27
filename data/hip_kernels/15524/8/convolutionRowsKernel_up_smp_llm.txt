@@ -1,0 +1,8 @@
+// Use shared memory to minimize global memory access latency
+// The kernel parameters and calculations are performed using constant memory for frequently accessed data
+// Unroll loops to reduce pipeline stalls and improve performance
+// Load data in chunks to improve memory coalescing and reduce thread divergence
+// Minimize redundant memory accesses by using conditional logic and avoiding out-of-bound reads
+// Ensure efficient use of shared memory by calculating offsets carefully to prevent bank conflicts
+// Use __syncthreads() to synchronize threads before reading from shared memory
+// Optimize data storage and retrieval to minimize global memory writes, focusing on necessary data

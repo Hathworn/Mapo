@@ -1,0 +1,6 @@
+```cpp
+// Avoid redundant calculations by precomputing blockOffset and indices ti and to
+// Use unrolling to increase memory access efficiency
+// Ensure memory access is coalesced by aligning blockDim.x with memory boundaries
+// Minimize conditional statements within kernel to improve performance
+```

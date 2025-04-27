@@ -1,0 +1,9 @@
+```c
+// Avoid branch divergence by using early returns for out-of-bounds checks.
+// Leverage pointer arithmetic to minimize repetitive memory calculations.
+// Unroll loops if applicable to reduce loop overhead and branch instructions.
+// Align data structures to improve coalesced memory access and throughput.
+// Pre-calculate frequently used values outside loops to reduce register pressure.
+// Minimize the use of global memory in favor of shared memory where possible.
+// Consider loop fusion techniques to merge multiple loops and reduce kernel launch overhead.
+```

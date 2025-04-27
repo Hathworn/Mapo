@@ -1,0 +1,5 @@
+// Consider using float4 or float2 to optimize memory access through coalesced reads and writes.
+// Check if shared memory can be leveraged to minimize redundant loads in the threshold checks.
+// Evaluate if loop unrolling can be applied for operations within the threshold checks.
+// Verify if using constant memory for PulseThresh and pulse_display_thresh values can reduce load time.
+// Assess the possibility of aligning memory accesses to optimize throughput.

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses for A and B to improve memory bandwidth.
+// Consider using float4 to load/store if possible for better memory access.
+// Ensure shared memory access patterns avoid bank conflicts.
+// Utilize occupancy calculator to maximize block size for best performance.
+// Minimize __syncthreads() as much as possible to reduce synchronization overhead.
+// Pre-fetch or double-buffer tiles to hide memory latency.
+```

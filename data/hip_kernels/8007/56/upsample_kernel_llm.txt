@@ -1,0 +1,7 @@
+```
+// For better memory coalescing, ensure x and out arrays are accessed with indices that stride linearly
+// Consider using shared memory to store frequently accessed values like scale
+// Evaluate if using faster atomic operations can help in the backward pass
+// Minimize divergence by ensuring comparable workloads between threads within the same warp
+// Check if using loop unrolling can optimize performance when accessing memory within kernel
+```

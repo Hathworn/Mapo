@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses by using contiguous threads to access contiguous memory portions.
+// Minimize conditional checks within the loop to enhance warp execution efficiency.
+// Consider using shared memory for frequently accessed data, like pDepth, to reduce global memory bandwidth.
+// Align memory accesses to ensure optimal memory transaction sizes, potentially leading to reduced memory latency.
+// Use texture memory for read-only access patterns to exploit caching mechanism and improve read efficiency.
+```

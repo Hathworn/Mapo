@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses and improve memory throughput.
+// Consider coalescing memory access by aligning data structures to ensure consecutive memory access patterns.
+// Ensure the data types are optimal for the architecture to maximize memory bandwidth and avoid type conversion penalties.
+// Evaluate using float4 vector operations if alignment and data size allow, for enhanced performance on SIMD architectures.
+// Ensure optimal block size and thread number to prevent warp divergence and maximize parallel execution efficiency.
+```

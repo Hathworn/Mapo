@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory access patterns to ensure coalesced reads from the delta array.
+// Consider increasing block size for better occupancy and efficient use of shared memory.
+// Minimize the number of __syncthreads() calls by reorganizing computation steps if possible.
+// Explore memory alignment strategies for shared memory to prevent bank conflicts.
+// Evaluate the effectiveness of loop unrolling, considering register pressure and occupancy trade-offs.
+// Utilize vectorized memory loads if the hardware and data layout permits.
+```

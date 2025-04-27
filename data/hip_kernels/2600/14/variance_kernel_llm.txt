@@ -1,0 +1,5 @@
+// Consider using shared memory to store mean values to minimize repeated global memory access
+// Preload mean values into shared memory before the loop to improve memory access efficiency
+// Ensure coalesced memory access patterns for the x array to optimize global memory bandwidth usage
+// Unroll inner loops if possible to increase instruction-level parallelism
+// Minimize divergence in the calculation of 'index' to improve warp execution efficiency

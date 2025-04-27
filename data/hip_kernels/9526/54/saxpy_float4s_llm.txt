@@ -1,0 +1,6 @@
+```
+// Avoid uncoalesced memory accesses by ensuring aligned float4 loads and stores
+// Exploit data parallelism through vectorized float4 operations to reduce instruction count
+// Preload data into registers to minimize access latency during loop iterations
+// Use shared memory for potential reuse of common data if applicable to further optimize bandwidth
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to buffer random numbers and reduce global memory traffic.
+// Optimize thread block size to maximize memory throughput and minimize warp divergence.
+// Ensure hiprandState_t is initialized properly before usage to avoid redundant calculations within the loop.
+// Investigate the use of persistent threads to maintain state and reduce initialization overhead for each loop iteration.
+```

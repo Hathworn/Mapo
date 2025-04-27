@@ -1,0 +1,5 @@
+// Use shared memory to reduce the number of global memory accesses  
+// Use loop unrolling in the reduction step to further optimize performance  
+// Consider aligning memory accesses to improve coalescing  
+// Ensure data is properly synchronized before writing back to global memory  
+// Consider using atomic operations if necessary for conflict-free writes to global memory

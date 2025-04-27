@@ -1,0 +1,7 @@
+```
+// Use shared memory to store sparse indices for better memory coalescing
+// Ensure __syncthreads is placed correctly to avoid race conditions
+// Optimize shared memory size according to the block size for efficient usage
+// Minimize divergence by ensuring conditions are well-structured
+// Ensure aligned data access for optimal memory throughput
+```

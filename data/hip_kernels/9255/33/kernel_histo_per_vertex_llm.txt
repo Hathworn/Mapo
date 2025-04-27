@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory accesses for both 'ct' and 'histo' to improve memory bandwidth.
+// Consider using shared memory to cache frequently accessed data like 'histo'.
+// Minimize divergent branches to ensure efficient warping.
+// Ensure all data is aligned properly for optimal memory performance.
+// Analyze occupancy and adjust block size to fully utilize GPU resources.
+```

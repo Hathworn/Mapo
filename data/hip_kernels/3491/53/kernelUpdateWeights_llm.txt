@@ -1,0 +1,3 @@
+// Store calculated rate in shared memory to reduce redundant calculations.
+// Synchronize threads to ensure all access the correct rate value.
+// Pre-calculate the global index once per thread to minimize arithmetic operations.

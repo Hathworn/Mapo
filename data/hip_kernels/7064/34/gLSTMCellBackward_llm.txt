@@ -1,0 +1,4 @@
+// Consider applying shared memory to store frequently accessed data like xWrow and sUrow
+// Optimize memory access patterns to ensure coalesced reads and writes where possible
+// Use atomic operations wisely to prevent performance bottleneck but ensure data integrity
+// Explore loop unrolling for calculations within the kernel to reduce overhead

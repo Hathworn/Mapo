@@ -1,0 +1,10 @@
+digraph "CFG for '_Z18setAllValuesKernelPiiif' function" {
+	label="CFG for '_Z18setAllValuesKernelPiiif' function";
+
+	Node0x49eca70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 9\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = mul nsw i32 %2, %1\l  %10 = icmp slt i32 %8, %9\l  br i1 %10, label %11, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x49eca70:s0 -> Node0x49ecac0;
+	Node0x49eca70:s1 -> Node0x49ee380;
+	Node0x49ecac0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%11:\l11:                                               \l  %12 = fptosi float %3 to i32\l  %13 = sext i32 %8 to i64\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %13\l  store i32 %12, i32 addrspace(1)* %14, align 4, !tbaa !5\l  br label %15\l}"];
+	Node0x49ecac0 -> Node0x49ee380;
+	Node0x49ee380 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

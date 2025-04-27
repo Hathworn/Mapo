@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache portions of Data to reduce global memory access
+// Consider loop unrolling for the Z dimension to improve computational efficiency
+// Ensure coalesced memory access patterns when reading from and writing to global memory
+// Minimize divergent branches within the kernel
+// Perform memory access analysis to ensure Load/Store efficiency
+```

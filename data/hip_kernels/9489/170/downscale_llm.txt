@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Optimize memory coalescing by ensuring contiguous threads access contiguous memory locations.
+// Ensure the loop is unrolled efficiently for the scale_factor.
+// Investigate if warp-level primitives can increase performance.
+// Prefetch gradOutput_data to registers to reduce global memory latency.
+```

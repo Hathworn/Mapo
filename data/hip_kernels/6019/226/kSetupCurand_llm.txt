@@ -1,0 +1,7 @@
+```c
+// Ensure memory coalescing by aligning RND_THREADS_PER_BLOCK with warp size
+// Consider using shared memory if multiple threads need access to the same data
+// Minimize global memory access by reducing the number of reads and writes
+// Use __restrict__ qualifier if no aliasing occurs to help the compiler optimize
+// Align the d states to 128 bytes to improve global memory access efficiency
+```

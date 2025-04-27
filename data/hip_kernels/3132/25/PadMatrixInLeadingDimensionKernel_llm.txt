@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access to improve memory throughput.
+// Optimize memory alignment by ensuring dst and src pointers are aligned.
+// Ensure col_src is a multiple of the warp size for better performance.
+// Consider prefetching data to registers to hide memory latency.
+// Minimize data divergence by ensuring all threads follow the same code path.
+```

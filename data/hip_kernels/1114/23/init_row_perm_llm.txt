@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses by ensuring contiguous threads access contiguous memory locations.
+// Utilize shared memory if there are repeated accesses to the same data to reduce global memory transactions.
+// Ensure memory accesses are aligned to improve memory load efficiency.
+// Explore the use of warp-level primitives to optimize performance for reduction or sorting operations within the kernel.
+```

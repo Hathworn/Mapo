@@ -1,0 +1,5 @@
+// Consider using float4 vector types for loading and computation to improve memory coalescing
+// Unroll the inner loop to improve instruction-level parallelism
+// Use warp intrinsics to perform reduction within the warp to minimize shared memory usage
+// Evaluate if prefetching data can further reduce memory latency
+// Assess padding shared memory to prevent bank conflicts

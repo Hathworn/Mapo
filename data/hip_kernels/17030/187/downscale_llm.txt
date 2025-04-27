@@ -1,0 +1,9 @@
+```
+// Consider aligning data to 128 or 256-byte boundaries in shared memory for optimal performance.
+// Use __syncthreads() only when necessary, as it can impact performance if overused.
+// Ensure coalesced memory access by organizing threads to access contiguous memory locations.
+// Optimize loop unrolling where possible to reduce loop overhead and improve register utilization.
+// Use the __restrict__ keyword for gradInput_data and gradOutput_data pointers to provide compiler with optimization hints.
+// Avoid excessive shared memory usage per block to maintain occupancy and reduce resource contention.
+// Consider using warp shuffle instructions for reductions to minimize shared memory usage and improve performance.
+```

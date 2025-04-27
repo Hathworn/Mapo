@@ -1,0 +1,9 @@
+```
+// Optimize memory accesses by using coalesced memory accesses
+// Avoid bank conflicts in shared memory by ensuring aligned access
+// Consider loop unrolling for the sum of squares to enhance performance
+// Pre-compute constants like rsqrt(sum) + L2HYS_EPSILONHYS * 30 for efficiency
+// Utilize warp-level primitives for intra-warp reduction if applicable
+// Ensure grid stride loop is implemented for larger data sizes
+// Monitor and minimize divergent threads in the kernel
+```

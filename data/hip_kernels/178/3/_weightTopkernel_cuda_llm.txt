@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for dev_F and dev_G updates
+// Use shared memory to cache dev_recon values and reduce global memory loads
+// Explore vectorized data types for dev_wg5 to improve memory throughput
+// Check memory access patterns for dev_recon to ensure coalesced access
+// Analyze occupancy and adjust block size for optimal performance
+// Profile to determine if more aggressive loop unrolling yields better performance
+```

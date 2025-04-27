@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency
+// Synchronize threads to ensure correct loading into shared memory
+// Unroll loops to minimize thread divergence and improve throughput
+// Minimize use of __syncthreads() within warp for efficiency
+// Optimize warp unrolling to reduce instruction overhead
+// Ensure atomic access when writing block results to global memory

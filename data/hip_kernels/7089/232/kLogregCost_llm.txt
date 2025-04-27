@@ -1,0 +1,8 @@
+```
+// Use shared memory to store intermediate results of parallel reduction
+// Minimize thread divergence to improve performance
+// Prefetch data to shared memory to enhance memory coalescing
+// Use warp shuffle operations for more efficient intra-warp communication
+// Consider loop unrolling for improved computational throughput
+// Avoid use of atomic operations when possible to reduce contention
+```

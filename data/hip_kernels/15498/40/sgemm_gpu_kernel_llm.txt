@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access patterns for sharedA and sharedB loads
+// Avoid bank conflicts when accessing shared memory
+// Synchronize threads efficiently to maximize data reuse within a tile
+// Minimize idle time by overlapping computation and data loading
+```

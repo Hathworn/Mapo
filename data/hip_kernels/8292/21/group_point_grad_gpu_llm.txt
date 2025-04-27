@@ -1,0 +1,4 @@
+// Ensure coalesced memory access patterns for grad_out and grad_points arrays  
+// Consider using shared memory if each thread requires frequent access to the same data  
+// Optimize idx array access using offset pre-computation  
+// Minimize thread divergence by ensuring each warp executes homogenous instructions

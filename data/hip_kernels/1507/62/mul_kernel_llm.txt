@@ -1,0 +1,6 @@
+```
+// Use shared memory for X and Y values within a block to improve memory access speeds.
+// Consider coalescing memory accesses for both X and Y to improve memory bandwidth.
+// Assess if reducing INCX and INCY strides could lead to better coalescing and reduced memory divergence.
+// Analyze if loop unrolling can enhance performance for this kernel by reducing overhead.
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory for weightPtr and biasPtr to reduce global memory access latency.
+// Use loop unrolling to minimize loop overhead and increase computation efficiency in the for loop.
+// Ensure that data coalescing is optimized by checking the access pattern of inputPtr and outputPtr for consecutive threads.
+// Evaluate if loading dropoutMask into shared memory could improve performance in cases where it's frequently used.

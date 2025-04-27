@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to aggregate results across multiple threads efficiently.
+// Ensure all threads synchronize before the reduction step to prevent race conditions.
+// Optimize memory access patterns by ensuring coalesced global memory access.
+// Accumulate results in thread 0 using shared memory to reduce global memory writes.
+```

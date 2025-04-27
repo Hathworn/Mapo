@@ -1,0 +1,9 @@
+```
+// Use __restrict__ keyword for pointers to reduce pointer aliasing.
+// Ensure coalesced memory access by aligning memory reads of gradOutput_data.
+// Minimize shared memory bank conflicts through padding if necessary.
+// Consider prefetching data to improve memory throughput.
+// Optimize blockSize for better occupancy and use of computing resources.
+// Ensure appropriate ratio of arithmetic to memory operations to hide latency.
+// Use shared memory if applicable for data reuse to reduce global memory access.
+```

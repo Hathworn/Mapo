@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access and improve data locality
+// Coalesce memory access by ensuring successive threads access successive memory locations
+// Experiment with different block sizes to optimize GPU occupancy
+// Use asynchronous memory operations to overlap computation and data transfer
+// Utilize read-only data cache for MatA and MatB when possible

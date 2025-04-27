@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Consider potential bank conflicts in shared memory access
+// Minimize condition checks within the kernel for better warp efficiency
+// Optimize thread synchronization to prevent unnecessary __syncthreads() usage
+// Ensure coalesced memory access patterns for global memory operations

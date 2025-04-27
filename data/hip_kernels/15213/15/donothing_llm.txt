@@ -1,0 +1,7 @@
+// Consider enabling loop unrolling for any loops present in future kernels
+// Explore using shared memory for data that is reused within blocks
+// Minimize global memory access by maximizing utilization of registers
+// Coalesce memory accesses to improve memory bandwidth usage
+// Check for vectorization opportunities to leverage hardware capabilities
+// Aim for optimizing occupancy to ensure efficient use of resources
+// Align memory allocations to prevent bank conflicts

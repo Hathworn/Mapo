@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure proper alignment to avoid bank conflicts in shared memory
+// Consider using warp-level primitives for better memory coalescing
+// Maximize occupancy by tuning block and grid sizes
+// Optimize loop unrolling further for reduced instruction overhead
+```

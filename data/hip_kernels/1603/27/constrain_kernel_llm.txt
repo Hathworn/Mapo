@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by using contiguous threads for sequential data elements
+// Optimize data reuse in shared memory if applicable to reduce global memory bandwidth
+// Assess occupancy and adjust block size to maximize the number of active warps
+// Minimize divergence by ensuring control flow is consistent across threads
+// Consider loop unrolling for performance gains in the stride loop
+// Profile and fine-tune grid and block dimensions for the specific problem size
+```

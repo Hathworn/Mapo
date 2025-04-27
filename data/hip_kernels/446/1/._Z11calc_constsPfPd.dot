@@ -1,0 +1,26 @@
+digraph "CFG for '_Z11calc_constsPfPd' function" {
+	label="CFG for '_Z11calc_constsPfPd' function";
+
+	Node0x50dfa10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = sub i32 0, %10\l  %12 = icmp eq i32 %3, %11\l  br i1 %12, label %13, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x50dfa10:s0 -> Node0x50e0980;
+	Node0x50dfa10:s1 -> Node0x50e19a0;
+	Node0x50e0980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%13:\l13:                                               \l  store float 0x3E80000000000000, float addrspace(1)* %0, align 4, !tbaa !7\l  store double 0x3CB0000000000000, double addrspace(1)* %1, align 8, !tbaa !11\l  br label %14\l}"];
+	Node0x50e0980 -> Node0x50e2900;
+	Node0x50e2900 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%14:\l14:                                               \l  %15 = phi float [ 1.000000e+00, %13 ], [ %17, %14 ]\l  %16 = phi float [ 2.000000e+00, %13 ], [ %18, %14 ]\l  %17 = fmul contract float %15, 2.000000e+00\l  %18 = fmul contract float %16, 2.000000e+00\l  %19 = tail call float @llvm.fabs.f32(float %18) #3\l  %20 = fcmp oeq float %19, 0x7FF0000000000000\l  br i1 %20, label %21, label %14, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x50e2900:s0 -> Node0x50e3000;
+	Node0x50e2900:s1 -> Node0x50e2900;
+	Node0x50e3000 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = phi double [ %24, %21 ], [ 1.000000e+00, %14 ]\l  %23 = phi double [ %25, %21 ], [ 2.000000e+00, %14 ]\l  %24 = fmul contract double %22, 2.000000e+00\l  %25 = fmul contract double %23, 2.000000e+00\l  %26 = tail call double @llvm.fabs.f64(double %25) #3\l  %27 = fcmp oeq double %26, 0x7FF0000000000000\l  br i1 %27, label %28, label %21, !llvm.loop !15\l|{<s0>T|<s1>F}}"];
+	Node0x50e3000:s0 -> Node0x50e3890;
+	Node0x50e3000:s1 -> Node0x50e3000;
+	Node0x50e3890 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%28:\l28:                                               \l  %29 = getelementptr inbounds double, double addrspace(1)* %1, i64 2\l  store double %24, double addrspace(1)* %29, align 8, !tbaa !11\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 2\l  store float %17, float addrspace(1)* %30, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x50e3890 -> Node0x50e4990;
+	Node0x50e4990 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  %32 = phi float [ 2.000000e+00, %28 ], [ %34, %31 ]\l  %33 = phi float [ 1.000000e+00, %28 ], [ %35, %31 ]\l  %34 = fmul contract float %32, 5.000000e-01\l  %35 = fmul contract float %33, 5.000000e-01\l  %36 = fcmp contract une float %35, 0.000000e+00\l  br i1 %36, label %31, label %37, !llvm.loop !16\l|{<s0>T|<s1>F}}"];
+	Node0x50e4990:s0 -> Node0x50e4990;
+	Node0x50e4990:s1 -> Node0x50e4f50;
+	Node0x50e4f50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%37:\l37:                                               \l  %38 = phi double [ %40, %37 ], [ 2.000000e+00, %31 ]\l  %39 = phi double [ %41, %37 ], [ 1.000000e+00, %31 ]\l  %40 = fmul contract double %38, 5.000000e-01\l  %41 = fmul contract double %39, 5.000000e-01\l  %42 = fcmp contract une double %41, 0.000000e+00\l  br i1 %42, label %37, label %43, !llvm.loop !17\l|{<s0>T|<s1>F}}"];
+	Node0x50e4f50:s0 -> Node0x50e4f50;
+	Node0x50e4f50:s1 -> Node0x50e5520;
+	Node0x50e5520 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%43:\l43:                                               \l  %44 = getelementptr inbounds double, double addrspace(1)* %1, i64 1\l  store double %40, double addrspace(1)* %44, align 8, !tbaa !11\l  %45 = getelementptr inbounds float, float addrspace(1)* %0, i64 1\l  store float %34, float addrspace(1)* %45, align 4, !tbaa !7\l  br label %46\l}"];
+	Node0x50e5520 -> Node0x50e19a0;
+	Node0x50e19a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%46:\l46:                                               \l  ret void\l}"];
+}

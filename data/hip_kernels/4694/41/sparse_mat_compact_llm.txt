@@ -1,0 +1,5 @@
+// Use coalesced memory access patterns by ordering threads according to memory layout for output array
+// Minimize thread divergence by reducing conditional checks within warp
+// Avoid stale data access by ensuring output array is updated within single transaction
+// Optimize memory usage by checking array boundaries prior to kernel execution
+// Utilize shared memory to store repetitive values for faster intra-block access

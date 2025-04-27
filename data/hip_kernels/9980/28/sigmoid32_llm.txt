@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing consecutive elements where possible
+// Minimize divergent branching for better warp efficiency
+// Favor shared memory usage to reduce global memory latency if applicable
+// Avoid atomic operations within this kernel for better performance
+// Consider loop unrolling if appropriate for large arrays
+```

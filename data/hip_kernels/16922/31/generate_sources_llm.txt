@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store the random states for threads within the same block if applicable
+// Align memory access for verts to ensure coalesced memory accesses
+// Consider using vectorized loads and stores for verts if possible for better memory bandwidth utilization
+// Evaluate the block size to ensure maximum occupancy and efficient use of GPU resources
+```

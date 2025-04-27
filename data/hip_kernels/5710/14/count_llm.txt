@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by arranging data in a manner that threads access contiguous memory locations
+// Analyze to ensure minimal bank conflicts when accessing shared memory
+// Utilize shared memory if threads within the same block frequently access common data values
+// Explore using __restrict__ qualifier for pointers if possible to help the compiler with optimizations
+```

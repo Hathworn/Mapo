@@ -1,0 +1,11 @@
+```cpp
+// Consider reducing the number of __syncthreads() to improve performance.
+// Merge successive __syncthreads() when possible to minimize synchronization overhead.
+// Ensure coalesced memory access patterns for tab to improve memory bandwidth utilization.
+// Optimize shared memory usage to prevent bank conflicts.
+// Evaluate different block sizes to find an optimal balance between parallelism and memory access efficiency.
+// Consider loop unrolling for inner loops to decrease loop control overhead.
+// Test with various stride sizes to determine their impact on performance and adjust accordingly.
+// Use warp shuffle operations for better intra-warp data exchange where applicable.
+// Minimize divergence within warps by ensuring uniform control flow where possible.
+```

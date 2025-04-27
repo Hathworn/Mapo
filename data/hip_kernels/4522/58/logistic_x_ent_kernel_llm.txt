@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses for pred and truth arrays
+// Optimize memory coalescing by ensuring pred and truth are accessed in a sequential manner
+// Minimize use of log by precomputing its result for common values outside of the loop
+// Check if atomic operations are necessary or if other reductions can be applied for error accumulation
+```

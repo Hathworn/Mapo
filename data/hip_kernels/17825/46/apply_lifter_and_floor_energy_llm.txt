@@ -1,0 +1,3 @@
+// Use shared memory for lifter coefficients to improve memory access patterns
+// Use shared memory for log_energy_floor to avoid redundant computations across threads
+// Synchronize threads after loading log_energy_floor into shared memory to ensure all threads have the updated value

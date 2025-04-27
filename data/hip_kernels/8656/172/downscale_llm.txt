@@ -1,0 +1,7 @@
+```c
+// Consider increasing the size of shared memory for partial_sum if scale_factor is larger to prevent bank conflicts
+// Evaluate block size and grid size for optimal occupancy and thread usage
+// Use vectorized memory access if possible for gradOutput_data to enhance memory coalescing
+// Check if using float2 or float4 types for gradInput_data and gradOutput_data could improve bandwidth usage
+// Ensure __syncthreads() is used after all threads complete writing to partial_sum to avoid race conditions
+```

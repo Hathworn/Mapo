@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory accesses
+// Ensure warp divergence is minimized by aligning thread operations
+// Coalesce global memory accesses for improved memory throughput
+// Check if the normalization constant computation can be precomputed or cached to avoid redundancy
+// Consider loop unrolling for processing elements within bounds to improve performance
+```

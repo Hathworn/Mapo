@@ -1,0 +1,6 @@
+// Consider using memory coalescing for global memory accesses.
+// Try to minimize shared memory bank conflicts.
+// Use __restrict__ keyword for pointer arguments to aid the compiler in optimization.
+// Explore if loop unrolling can optimize memory access patterns.
+// Assess if reducing the grid size can improve occupancy and memory access efficiency.
+// Investigate if warp synchronous programming can be utilized for better resource usage.

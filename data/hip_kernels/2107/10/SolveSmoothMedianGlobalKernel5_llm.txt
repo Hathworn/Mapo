@@ -1,0 +1,5 @@
+```
+// Limit the scope of warp divergence by ensuring threads within a warp execute the same path
+// Use shared memory to reduce global memory access when loading 5x5 patches
+// Consider using texture memory for 2D spatial locality to improve cache hit rates
+```

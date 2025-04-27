@@ -1,0 +1,9 @@
+```c
+// Ensure shared memory size is appropriately defined based on block dimensions to optimize data reuse
+// Minimize global memory accesses by utilizing shared memory effectively
+// Load matrix data into shared memory in stripes to optimize coalesced memory access
+// Use __syncthreads() to ensure correct synchronization between threads accessing shared memory
+// Unroll loops when possible for better performance
+// Consider edge cases and ensure bounds checking to prevent out-of-bounds memory access
+// Optimize thread block size for the target GPU architecture to maximize occupancy
+```

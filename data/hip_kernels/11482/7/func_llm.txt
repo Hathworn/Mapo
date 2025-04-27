@@ -1,0 +1,8 @@
+```
+// Consider minimizing bank conflicts in shared memory access.
+// Ensure data is coalesced when loading from or storing to global memory.
+// Use __syncthreads to ensure proper synchronization at necessary points.
+// Consider using a warp-synchronous technique if possible to reduce synchronization overhead.
+// Ensure atomic operations do not become a bottleneck by minimizing their use.
+// Evaluate the need for shared memory initialization to avoid unnecessary operations.
+```

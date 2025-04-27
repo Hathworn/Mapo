@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access patterns to maximize coalesced global memory access.
+// Use shared memory efficiently to minimize global memory access and reduce latency.
+// Ensure __syncthreads() is logically placed to avoid unnecessary synchronization barriers.
+// Check if tiling strategies can improve cache utilization and reduce global memory traffic.
+// Use atomic operations judiciously to prevent contention and serialization in global memory writes.
+// Explore vectorized memory operations if applicable to enhance data throughput.
+// Adjust block and grid dimensions to optimize occupancy and achieve best performance.
+// Benchmark with different kernel launch configurations to achieve optimal warp utilization.
+```

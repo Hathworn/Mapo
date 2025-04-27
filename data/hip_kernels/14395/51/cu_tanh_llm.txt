@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache src data if there's data reuse
+// Use __ldg() to improve memory access if src is read-only
+// Consider adjusting block size for optimal occupancy
+// Experiment with different grid configurations
+// Minimize branch divergence by ensuring uniform control flow
+// Coalesce memory accesses for improved throughput
+```

@@ -1,0 +1,10 @@
+```
+// Consider coalescing the memory access of weights and input to minimize global memory transactions
+// Use shared memory efficiently to reduce global memory congestion
+// Ensure all memory accesses are properly aligned to maximize bandwidth utilization
+// Avoid unnecessary shared memory usage by optimizing the shared memory size allocation
+// Ensure that __syncthreads() is used correctly to prevent race conditions
+// Use atomic operations cautiously to avoid performance bottlenecks in concurrent writes
+// Consider loop unrolling if beneficial to reduce loop overhead and improve throughput
+// Minimize conditional branching within the core compute loop to enhance execution efficiency
+```

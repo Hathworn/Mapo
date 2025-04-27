@@ -1,0 +1,15 @@
+digraph "CFG for 'relu_backward' function" {
+	label="CFG for 'relu_backward' function";
+
+	Node0x49c8290 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = sdiv i32 %14, %4\l  %16 = icmp slt i32 %15, %3\l  %17 = icmp sgt i32 %4, -1\l  %18 = and i1 %17, %16\l  br i1 %18, label %19, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x49c8290:s0 -> Node0x49ca3c0;
+	Node0x49c8290:s1 -> Node0x49ca450;
+	Node0x49ca3c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%19:\l19:                                               \l  %20 = sext i32 %14 to i64\l  %21 = getelementptr inbounds double, double addrspace(1)* %0, i64 %20\l  %22 = load double, double addrspace(1)* %21, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %23 = fcmp contract ogt double %22, 0.000000e+00\l  br i1 %23, label %24, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x49ca3c0:s0 -> Node0x49cb9b0;
+	Node0x49ca3c0:s1 -> Node0x49cba40;
+	Node0x49cb9b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%24:\l24:                                               \l  %25 = getelementptr inbounds double, double addrspace(1)* %1, i64 %20\l  %26 = load double, double addrspace(1)* %25, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  br label %27\l}"];
+	Node0x49cb9b0 -> Node0x49cba40;
+	Node0x49cba40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%27:\l27:                                               \l  %28 = phi contract double [ %26, %24 ], [ 0.000000e+00, %19 ]\l  %29 = getelementptr inbounds double, double addrspace(1)* %2, i64 %20\l  store double %28, double addrspace(1)* %29, align 8, !tbaa !7\l  br label %30\l}"];
+	Node0x49cba40 -> Node0x49ca450;
+	Node0x49ca450 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  ret void\l}"];
+}

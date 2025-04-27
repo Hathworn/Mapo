@@ -1,0 +1,5 @@
+```cpp
+// Optimize memory access by ensuring accuracy is in shared memory if accessed frequently
+// Consider reducing the number of threads if kernel launch overhead is a concern
+// Avoid warp divergence by having a single condition check in the kernel
+```

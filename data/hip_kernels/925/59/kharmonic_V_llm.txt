@@ -1,0 +1,7 @@
+```
+// Use of registers to store item variables for reduced global memory access
+// Coalesce memory accesses where possible, e.g., x[xid], y[yid], z[zid], Ax[gid], Ay[gid], Az[gid], and V[gid]
+// Consider shared memory for frequently accessed variables if there's data reuse within the block
+// Ensure alignment of memory accesses to improve cache efficiency
+// Minimize divergence by ensuring branches within the kernel are uniformly followed by threads in a warp
+```

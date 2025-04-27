@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure memory coalescing for loading A and B matrices
+// Avoid bank conflicts in shared memory access for sharedA and sharedB
+// Prefetch data into shared memory to overlap computation and data movement
+// Thread block size should maximize occupancy while considering register usage
+```

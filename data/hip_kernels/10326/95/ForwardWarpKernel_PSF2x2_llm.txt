@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache src data for better memory access patterns
+// Coalesce memory accesses to dst and normalization_factor to improve performance
+// Consider using loop unrolling to reduce branch divergence in bounds check
+// Preload u, v values outside the bounds check conditional to minimize register usage
+```

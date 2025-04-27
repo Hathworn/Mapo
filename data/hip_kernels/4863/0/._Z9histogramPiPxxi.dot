@@ -1,0 +1,22 @@
+digraph "CFG for '_Z9histogramPiPxxi' function" {
+	label="CFG for '_Z9histogramPiPxxi' function";
+
+	Node0x54f5270 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add nsw i32 %12, %5\l  %14 = sext i32 %13 to i64\l  %15 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)*\l... @sharedpartitions, i32 0, i32 %3\l  %16 = icmp slt i32 %5, %3\l  br i1 %16, label %21, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x54f5270:s0 -> Node0x54f6970;
+	Node0x54f5270:s1 -> Node0x54f7400;
+	Node0x54f7400 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%17:\l17:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %18 = sitofp i32 %3 to float\l  %19 = tail call i1 @llvm.amdgcn.class.f32(float %18, i32 144)\l  %20 = icmp slt i64 %14, %2\l  br i1 %20, label %26, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x54f7400:s0 -> Node0x54f7af0;
+	Node0x54f7400:s1 -> Node0x54f7b80;
+	Node0x54f6970 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = phi i32 [ %24, %21 ], [ %5, %4 ]\l  %23 = getelementptr inbounds i32, i32 addrspace(3)* %15, i32 %22\l  store i32 0, i32 addrspace(3)* %23, align 4, !tbaa !7\l  %24 = add nuw nsw i32 %22, %10\l  %25 = icmp slt i32 %24, %3\l  br i1 %25, label %21, label %17, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x54f6970:s0 -> Node0x54f6970;
+	Node0x54f6970:s1 -> Node0x54f7400;
+	Node0x54f7af0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%26:\l26:                                               \l  %27 = select i1 %19, float 0x41F0000000000000, float 1.000000e+00\l  %28 = fmul float %27, %18\l  %29 = tail call float @llvm.log2.f32(float %28)\l  %30 = select i1 %19, float 3.200000e+01, float 0.000000e+00\l  %31 = fsub float %29, %30\l  %32 = tail call float @llvm.ceil.f32(float %31)\l  %33 = fptoui float %32 to i32\l  %34 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %14\l  %35 = load i64, i64 addrspace(1)* %34, align 8, !tbaa !13, !amdgpu.noclobber\l... !6\l  %36 = trunc i64 %35 to i32\l  %37 = tail call i32 asm \"bfe.u32 $0, $1, $2, $3\l  %38 = getelementptr inbounds i32, i32 addrspace(3)* %15, i32 %37\l  %39 = atomicrmw add i32 addrspace(3)* %38, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %40\l}"];
+	Node0x54f7af0 -> Node0x54f7b80;
+	Node0x54f7b80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%40:\l40:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %16, label %42, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x54f7b80:s0 -> Node0x54fa980;
+	Node0x54f7b80:s1 -> Node0x54fa9d0;
+	Node0x54fa9d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%41:\l41:                                               \l  ret void\l}"];
+	Node0x54fa980 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = phi i32 [ %49, %42 ], [ %5, %40 ]\l  %44 = zext i32 %43 to i64\l  %45 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %44\l  %46 = getelementptr inbounds i32, i32 addrspace(3)* %15, i32 %43\l  %47 = load i32, i32 addrspace(3)* %46, align 4, !tbaa !7\l  %48 = atomicrmw add i32 addrspace(1)* %45, i32 %47 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  %49 = add nuw nsw i32 %43, %10\l  %50 = icmp slt i32 %49, %3\l  br i1 %50, label %42, label %41, !llvm.loop !16\l|{<s0>T|<s1>F}}"];
+	Node0x54fa980:s0 -> Node0x54fa980;
+	Node0x54fa980:s1 -> Node0x54fa9d0;
+}

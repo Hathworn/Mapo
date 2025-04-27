@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by using sequential indices
+// Consider using shared memory for ALPHA if multiple threads use the same value
+// Optimize memory accesses by ensuring stride alignment with memory boundaries
+// Use __restrict__ qualifiers for pointers to improve compiler optimizations
+// Evaluate occupancy and adjust block and grid sizes for optimal performance
+```

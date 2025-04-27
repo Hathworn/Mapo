@@ -1,0 +1,8 @@
+```
+// Use shared memory to store portions of A and B to reduce global memory accesses
+// Coalesce memory access by ensuring that consecutive threads access consecutive memory locations
+// Consider using a loop to allow each thread to process multiple elements improving hardware utilization
+// Minimize bank conflicts when using shared memory by ensuring aligned access patterns
+// Utilize constant memory for any reusable data that does not change across kernel executions
+// Balance the number of threads per block considering the GPU's resources to maximize occupancy
+```

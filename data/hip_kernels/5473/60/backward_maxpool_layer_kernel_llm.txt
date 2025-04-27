@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory accesses when accessing delta and indexes
+// Consider coalesced memory access for prev_delta to improve memory bandwidth utilization
+// Analyze warp divergence in loop conditions to optimize control flow
+// Use __restrict__ pointers for delta, prev_delta, and indexes to help compiler optimize with assumptions of no aliasing
+// Reduce integer arithmetic for index calculations by precomputing invariant terms outside the loop if possible
+```

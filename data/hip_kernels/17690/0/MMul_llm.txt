@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access and increase reuse.
+// Optimize memory coalescing by aligning data structures with warp size when possible.
+// Use loop unrolling in the accumulation for potential performance gain if applicable.
+// Evaluate whether wider thread blocks would improve occupancy and data access patterns.
+// Aim for balance between computational load and memory bandwidth in kernel configuration.

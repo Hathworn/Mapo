@@ -1,0 +1,10 @@
+digraph "CFG for '_Z18sxypz_kernel_largefPKfS0_S0_Pfjj' function" {
+	label="CFG for '_Z18sxypz_kernel_largefPKfS0_S0_Pfjj' function";
+
+	Node0x45b63d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !5, !invariant.load !6\l  %14 = zext i16 %13 to i32\l  %15 = mul i32 %9, %14\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %17 = mul i32 %16, %6\l  %18 = add i32 %17, %8\l  %19 = add i32 %18, %15\l  %20 = icmp ult i32 %19, %5\l  br i1 %20, label %21, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x45b63d0:s0 -> Node0x45b8640;
+	Node0x45b63d0:s1 -> Node0x45b86d0;
+	Node0x45b8640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%21:\l21:                                               \l  %22 = zext i32 %19 to i64\l  %23 = getelementptr inbounds float, float addrspace(1)* %1, i64 %22\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %25 = fmul contract float %24, %0\l  %26 = getelementptr inbounds float, float addrspace(1)* %2, i64 %22\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %28 = fmul contract float %25, %27\l  %29 = getelementptr inbounds float, float addrspace(1)* %3, i64 %22\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %31 = fadd contract float %28, %30\l  %32 = getelementptr inbounds float, float addrspace(1)* %4, i64 %22\l  store float %31, float addrspace(1)* %32, align 4, !tbaa !7\l  br label %33\l}"];
+	Node0x45b8640 -> Node0x45b86d0;
+	Node0x45b86d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

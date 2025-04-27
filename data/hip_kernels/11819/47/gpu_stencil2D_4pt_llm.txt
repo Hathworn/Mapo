@@ -1,0 +1,11 @@
+```c
+// Use shared memory to reduce global memory accesses for stencil computations
+// Coalesce global memory accesses by aligning data access patterns
+// Ensure proper memory alignment to enhance access efficiency
+// Minimize synchronization by computing halos within a single thread
+// Use __syncthreads() judiciously to ensure correct results without unnecessary barriers
+// Balance compute and memory operations to achieve optimal performance
+// Aim for maximum occupancy by choosing appropriate block size and TILE_SIZE
+// Avoid bank conflicts in shared memory access by aligning data appropriately
+// Explore using read-only cache for potentially repeated data access 
+```

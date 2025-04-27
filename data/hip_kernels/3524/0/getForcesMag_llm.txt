@@ -1,0 +1,5 @@
+// Use __shared__ memory to reduce global memory access latency.
+// Increase data locality by loading data into shared memory for reuse.
+// Use __syncthreads() to avoid race conditions when accessing shared memory.
+// Optimize memory coalescing by ensuring threads within the same warp access consecutive memory locations.
+// Consider loop unrolling to reduce loop overhead and improve performance.

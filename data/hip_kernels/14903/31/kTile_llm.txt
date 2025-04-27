@@ -1,0 +1,3 @@
+// Avoid unnecessary global memory access by using shared memory for src data if possible.
+// Consider using texture memory for additional cached access benefits.
+// Ensure coalesced memory access by aligning tgt array access across threads.

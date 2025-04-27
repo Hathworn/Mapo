@@ -1,0 +1,7 @@
+```
+// Utilize shared memory if multiple threads require access to data to reduce global memory access
+// Consider loop unrolling if performing repetitive calculations within threads to optimize execution
+// Avoid memory bank conflicts by aligning shared data appropriately
+// Prefetch data into registers when possible to minimize global memory latency
+// Minimize the use of atomic operations to prevent performance bottlenecks
+```

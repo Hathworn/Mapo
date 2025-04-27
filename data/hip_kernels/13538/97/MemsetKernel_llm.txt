@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Ensure memory access coalescing by aligning data structures
+// Use __restrict__ pointers to help the compiler with optimizations
+// Prefetch data to shared memory if access pattern is predictable
+// Experiment with different block sizes for optimal performance
+```

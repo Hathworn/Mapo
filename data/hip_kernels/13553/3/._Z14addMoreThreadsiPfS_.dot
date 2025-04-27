@@ -1,0 +1,11 @@
+digraph "CFG for '_Z14addMoreThreadsiPfS_' function" {
+	label="CFG for '_Z14addMoreThreadsiPfS_' function";
+
+	Node0x569afe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = icmp slt i32 %4, %0\l  br i1 %10, label %12, label %11\l|{<s0>T|<s1>F}}"];
+	Node0x569afe0:s0 -> Node0x569bd70;
+	Node0x569afe0:s1 -> Node0x569cc40;
+	Node0x569cc40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%11:\l11:                                               \l  ret void\l}"];
+	Node0x569bd70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%12:\l12:                                               \l  %13 = phi i32 [ %20, %12 ], [ %4, %3 ]\l  %14 = zext i32 %13 to i64\l  %15 = getelementptr inbounds float, float addrspace(1)* %1, i64 %14\l  %16 = load float, float addrspace(1)* %15, align 4, !tbaa !7\l  %17 = getelementptr inbounds float, float addrspace(1)* %2, i64 %14\l  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !7\l  %19 = fadd contract float %16, %18\l  store float %19, float addrspace(1)* %17, align 4, !tbaa !7\l  %20 = add nuw nsw i32 %13, %9\l  %21 = icmp slt i32 %20, %0\l  br i1 %21, label %12, label %11, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x569bd70:s0 -> Node0x569bd70;
+	Node0x569bd70:s1 -> Node0x569cc40;
+}

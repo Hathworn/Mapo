@@ -1,0 +1,5 @@
+// Minimize thread divergence by swapping the conditional check location
+// Consider using shared memory to cache data for multiple threads within a block
+// Optimize access patterns to avoid bank conflicts in shared memory
+// Ensure coalesced memory access for global memory reads and writes
+// Evaluate the use of warp shuffle functions to reduce register pressure

@@ -1,0 +1,8 @@
+```
+// Ensure optimal shared memory utilization by limiting blockDim.x to 256 or fewer
+// Group memory accesses to avoid bank conflicts in shared memory
+// Pre-load data into registers where possible to reduce shared memory access overhead
+// Align mat and target memory pointers to improve global memory coalescing
+// Avoid warp divergence by minimizing conditional branches in the kernel
+// Use __logf and __expf for enhanced performance through intrinsic functions
+```

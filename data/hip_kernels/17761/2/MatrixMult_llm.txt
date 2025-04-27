@@ -1,0 +1,7 @@
+```
+// Ensure TILE_WIDTH is appropriately chosen to maximize SM utilization.
+// Use coalesced memory accesses for global memory reads and writes.
+// Consider adjusting TILE_WIDTH to match warp size for better performance.
+// Prefetch global memory to shared memory efficiently to reduce latency.
+// Evaluate bank conflicts within shared memory accesses.
+```

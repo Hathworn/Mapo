@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Avoid conditional statements within the loop for performance improvement
+// Utilize data locality by fetching data in contiguous memory blocks
+// Implement loop unrolling to enhance parallel execution
+// Make use of __syncthreads() to synchronize threads within a block
+// Reduce redundant computation by loading necessary elements in shared memory once
+// Ensure that all accesses to shared memory are coalesced
+```

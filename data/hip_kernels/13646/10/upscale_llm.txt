@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to store blocks of input data for reuse
+// Coalesce global memory accesses by ensuring threads access contiguous memory
+// Use loop unrolling within each warp for more efficient memory access
+// Rearrange loops to ensure writes to global memory are coalesced
+// Prefetch data to reduce latency
+// Ensure stride accesses are minimized to improve memory throughput
+```

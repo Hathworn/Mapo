@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses by structuring data to align with memory transaction sizes.
+// Use shared memory to minimize global memory access when multiple threads access the same data.
+// Reduce the size of datatype if possible to align with the smallest necessary bit-width.
+// Load data into registers to reduce redundant reads in subsequent operations.
+```

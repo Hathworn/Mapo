@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for commonly accessed data
+// Minimize divergent branches to improve warp execution efficiency
+// Consider loop unrolling if applicable to optimize loop iteration times
+// Ensure coalesced memory access for output array to improve bandwidth utilization

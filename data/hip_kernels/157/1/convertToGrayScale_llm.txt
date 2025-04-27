@@ -1,0 +1,6 @@
+```c
+// Use shared memory to cache ucharImg data to reduce global memory accesses
+// Consider coalesced memory access patterns for ucharImg to improve memory bandwidth utilization
+// Ensure alignment of ucharImg for potential vectorized loads if hardware supports it
+// Check if loop unrolling benefits the computation of grayImg
+```

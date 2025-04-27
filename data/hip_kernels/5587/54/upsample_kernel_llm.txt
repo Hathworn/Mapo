@@ -1,0 +1,7 @@
+```
+// Consider replacing atomicAdd with more efficient memory access to minimize contention in backward pass
+// Ensure coalesced memory access patterns by aligning output indexes for better memory throughput
+// Optimize utilization of shared memory to reduce global memory traffic when accessing frequently used data
+// Implement warp-level primitives to further enhance parallel execution and manage divergent branches
+// Explore loop unrolling techniques if applicable for improved instruction-level parallelism
+```

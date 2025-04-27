@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses within the kernel.
+// Ensure coalesced memory access by aligning data structures and access patterns.
+// Use __ldg() for read-only data to leverage caching if applicable.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+// Optimize memory access patterns to fully utilize the memory bandwidth.
+```

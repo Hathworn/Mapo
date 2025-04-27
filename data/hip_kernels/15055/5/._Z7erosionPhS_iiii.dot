@@ -1,0 +1,21 @@
+digraph "CFG for '_Z7erosionPhS_iiii' function" {
+	label="CFG for '_Z7erosionPhS_iiii' function";
+
+	Node0x562eac0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %17 = getelementptr i8, i8 addrspace(4)* %8, i64 6\l  %18 = bitcast i8 addrspace(4)* %17 to i16 addrspace(4)*\l  %19 = load i16, i16 addrspace(4)* %18, align 2, !range !4, !invariant.load !5\l  %20 = zext i16 %19 to i32\l  %21 = mul i32 %16, %20\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %23 = add i32 %21, %22\l  %24 = sub nsw i32 %15, %2\l  %25 = add nsw i32 %15, %2\l  %26 = sub nsw i32 %23, %3\l  %27 = add nsw i32 %23, %3\l  %28 = icmp slt i32 %24, 0\l  %29 = icmp slt i32 %25, %4\l  %30 = add nsw i32 %4, -1\l  %31 = tail call i32 @llvm.smax.i32(i32 %24, i32 0)\l  %32 = select i1 %28, i1 true, i1 %29\l  %33 = select i1 %32, i32 %25, i32 %30\l  %34 = icmp slt i32 %26, 0\l  %35 = icmp slt i32 %27, %5\l  %36 = add nsw i32 %5, -1\l  %37 = tail call i32 @llvm.smax.i32(i32 %26, i32 0)\l  %38 = select i1 %34, i1 true, i1 %35\l  %39 = select i1 %38, i32 %27, i32 %36\l  %40 = icmp sgt i32 %37, %39\l  br i1 %40, label %48, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x562eac0:s0 -> Node0x5633140;
+	Node0x562eac0:s1 -> Node0x56331d0;
+	Node0x56331d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%41:\l41:                                               \l  %42 = icmp sgt i32 %31, %33\l  br label %43\l}"];
+	Node0x56331d0 -> Node0x56333a0;
+	Node0x56333a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%43:\l43:                                               \l  %44 = phi i32 [ %37, %41 ], [ %56, %54 ]\l  %45 = phi i8 [ -1, %41 ], [ %55, %54 ]\l  br i1 %42, label %54, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x56333a0:s0 -> Node0x5633460;
+	Node0x56333a0:s1 -> Node0x56336f0;
+	Node0x56336f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%46:\l46:                                               \l  %47 = mul nsw i32 %44, %4\l  br label %58\l}"];
+	Node0x56336f0 -> Node0x56338c0;
+	Node0x5633140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%48:\l48:                                               \l  %49 = phi i8 [ -1, %6 ], [ %55, %54 ]\l  %50 = mul nsw i32 %23, %4\l  %51 = add nsw i32 %50, %15\l  %52 = sext i32 %51 to i64\l  %53 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %52\l  store i8 %49, i8 addrspace(1)* %53, align 1, !tbaa !7\l  ret void\l}"];
+	Node0x5633460 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%54:\l54:                                               \l  %55 = phi i8 [ %45, %43 ], [ %65, %58 ]\l  %56 = add nuw nsw i32 %44, 1\l  %57 = icmp slt i32 %44, %39\l  br i1 %57, label %43, label %48, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x5633460:s0 -> Node0x56333a0;
+	Node0x5633460:s1 -> Node0x5633140;
+	Node0x56338c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%58:\l58:                                               \l  %59 = phi i32 [ %31, %46 ], [ %66, %58 ]\l  %60 = phi i8 [ %45, %46 ], [ %65, %58 ]\l  %61 = add nsw i32 %59, %47\l  %62 = sext i32 %61 to i64\l  %63 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %62\l  %64 = load i8, i8 addrspace(1)* %63, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %65 = tail call i8 @llvm.umin.i8(i8 %60, i8 %64)\l  %66 = add nuw nsw i32 %59, 1\l  %67 = icmp slt i32 %59, %33\l  br i1 %67, label %58, label %54, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x56338c0:s0 -> Node0x56338c0;
+	Node0x56338c0:s1 -> Node0x5633460;
+}

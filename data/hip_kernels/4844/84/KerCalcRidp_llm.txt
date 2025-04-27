@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Cache idp and ridp values to registers if possible
+// Ensure coalesced memory access by aligning idp and ridp accesses
+// Minimize divergent branches in the if statement
+// Use __restrict__ qualifiers for pointer arguments to optimize memory access
+```

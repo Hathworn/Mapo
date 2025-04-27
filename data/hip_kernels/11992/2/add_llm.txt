@@ -1,0 +1,9 @@
+```
+// Consider increasing block size for better occupancy and performance
+// Ensure input arrays 'a', 'b', and 'c' are allocated in contiguous memory
+// Prefer using __restrict__ qualifier if pointers are not aliased
+// Coalesce global memory accesses to arrays 'a', 'b', and 'c'
+// Use shared memory if data reuse within a block can be optimized
+// Minimize the use of global memory and prefer registers if possible
+// Verify memory alignment for input and output arrays
+```

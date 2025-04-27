@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed variables like scales and biases to minimize global memory reads.
+// Consider using loop unrolling for operations involving spatial computations to optimize instruction throughput.
+// Leverage warp-level primitives to reduce redundant calculations and improve memory coalescing.
+// Optimize thread block size based on occupancy calculator to maximize parallel execution across the GPU.
+```

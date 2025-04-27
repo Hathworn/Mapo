@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses to improve throughput
+// Use more registers to lower the number of shared memory accesses
+// Check for bank conflicts in shared memory usage
+// Optimize shared memory usage by reducing the size of shared_weights when possible
+// Minimize __syncthreads() calls to only when truly necessary
+// Consider prefetching node_weight and neighbor data to shared memory earlier
+// Reduce conditional branches for better warp execution
+```

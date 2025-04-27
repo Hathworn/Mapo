@@ -1,0 +1,6 @@
+```
+// Use shared memory to buffer XY_tofill data to reduce global memory accesses
+// Coalesce global memory access while reading from XY_tofill
+// Ensure proper memory alignment to optimize global memory throughput
+// Consider loop unrolling for better performance if accessing multiple elements
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache gradOutput_data for reuse across threads
+// Consider using texture memory for read-only access to gradOutput_data
+// Implement coalesced memory access patterns for gradInput_data storage
+// Optimize boundary checks by structuring them outside of critical loops
+// Utilize warp-centric operations to minimize divergent threads

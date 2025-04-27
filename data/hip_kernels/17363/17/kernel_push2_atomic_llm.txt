@@ -1,0 +1,11 @@
+```
+// Ensure coalesced memory accesses for global reads
+// Use shared memory to reduce global memory access latency
+// Use __syncthreads() to synchronize shared memory updates
+// Minimize unnecessary global memory accesses
+// Ensure atomic operations are used when required to avoid race conditions
+// Optimize data loading to shared memory conditionally
+// Reduce conditional checks if possible for performance improvement
+// Consolidate repeated code blocks to improve instruction cache usage
+// Determine optimal block size to improve memory throughput
+```

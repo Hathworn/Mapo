@@ -1,0 +1,6 @@
+```
+// Consider using __shared__ memory to store out_delta for faster access
+// Try coalesced memory access patterns for in_delta and out_delta
+// Analyze possible warp divergence and optimize conditional checks
+// Avoid atomic operations, as they can be costly in terms of performance
+```

@@ -1,0 +1,4 @@
+// Use shared memory to cache matrix tiles for faster access
+// Ensure memory accesses are coalesced for optimal performance
+// Consider loop unrolling for the sum accumulation to enhance throughput
+// Minimize global memory access by reusing data stored in registers

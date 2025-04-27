@@ -1,0 +1,4 @@
+// Consider memory coalescing for adj, in, and adjIn accesses. 
+// Use shared memory to store localMask to reduce global memory access.
+// Reevaluate atomic operations for adjIn update to minimize contention.
+// Ensure consistent memory access patterns to optimize warp execution.

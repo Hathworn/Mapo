@@ -1,0 +1,7 @@
+```
+// Coalesce memory accesses for improved memory bandwidth utilization
+// Minimize divergent branches by ensuring warp-level uniformity
+// Use shared memory for bias values if accessed repeatedly by threads within the same block
+// Consider increasing the thread block size for better occupancy and efficiency
+// Align data structures to enable vectorized memory access when possible
+```

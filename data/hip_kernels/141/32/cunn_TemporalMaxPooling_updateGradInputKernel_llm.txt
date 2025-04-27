@@ -1,0 +1,4 @@
+// Consider coalescing memory access patterns for gradInput_data, gradOutput_data, and indices_data to improve memory throughput.
+// Ensure all memory operations are aligned and avoid bank conflicts by optimizing thread access patterns.
+// Optimize loading of indices_data into shared memory if possible to reduce global memory bandwidth consumption.
+// Evaluate the usage of atomic operations and possible optimizations to minimize serialization overhead.

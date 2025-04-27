@@ -1,0 +1,7 @@
+```
+// Use a local variable for accumulation to minimize repeated global memory accesses
+// Consider using shared memory if data can be reused across threads
+// Optimize memory coalescing by ensuring data is accessed sequentially
+// Prefetch data if possible to hide memory latency
+// Analyze if loop unrolling can be beneficial for the inner loop
+```

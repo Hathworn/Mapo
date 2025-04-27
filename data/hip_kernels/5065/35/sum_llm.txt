@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access and increase access speed
+// Ensure memory coalescing by having contiguous threads access contiguous memory locations
+// Align shared memory access to warp size for optimal performance
+// Use __syncthreads() to synchronize threads after each step of reduction
+// Consider adjusting thread block size for efficient shared memory usage and occupancy
+// Use atomicAdd only for final accumulation to minimize contention
+```

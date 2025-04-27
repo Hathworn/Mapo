@@ -1,0 +1,10 @@
+```
+// Optimize global memory access pattern by coalescing memory accesses
+// Use shared memory to minimize global memory transactions
+// Reduce bank conflicts in shared memory access
+// Ensure all threads in the same warp access global memory sequentially
+// Avoid warp divergence by ensuring all threads execute the same instructions
+// Use fewer __syncthreads() to minimize synchronization overhead
+// Align data structures to boundary to improve memory bandwidth
+// Use the __syncthreads() function wisely to avoid unnecessary serialization
+```

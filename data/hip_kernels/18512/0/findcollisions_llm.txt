@@ -1,0 +1,7 @@
+```
+// Optimize: Use shared memory for trystr if multiple threads need the same data to reduce global memory accesses.
+// Optimize: Allocate res array on stack instead of heap if the size is known at compile-time to avoid malloc and free overhead.
+// Optimize: Avoid frequent malloc and free in id2str; use preallocated buffers to improve performance.
+// Optimize: Utilize warp shuffling to compute hashes collectively among threads for better performance in shc function.
+// Optimize: Minimize control divergence by restructuring if statements and loops for better warp efficiency.
+```

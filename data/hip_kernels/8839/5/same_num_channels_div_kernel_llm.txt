@@ -1,0 +1,3 @@
+// Consider using shared memory for data_l and data_r to minimize global memory access.
+// Leverage constant memory for values that remain unchanged across threads such as denom computation.
+// Optimize memory access patterns to ensure coalesced access, resulting in more efficient utilization.

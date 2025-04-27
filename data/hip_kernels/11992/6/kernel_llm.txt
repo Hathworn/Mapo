@@ -1,0 +1,6 @@
+```
+// Use shared memory for storing intermediate values to reduce global memory accesses.
+// Consider tiling strategies to improve memory coalescing and reduce bank conflicts.
+// Evaluate occupancy and adjust block dimensions to maximize resource utilization.
+// Use __restrict__ keyword with pointers to aid compiler optimizations on memory access.
+```

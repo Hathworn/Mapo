@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// Utilize loop unrolling for the innermost loop to improve performance
+// Ensure coalesced memory access for grad_out and grad_points arrays
+// Ensure that idx accesses are coalesced to minimize memory latency
+```

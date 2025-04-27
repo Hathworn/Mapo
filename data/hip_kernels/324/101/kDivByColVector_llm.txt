@@ -1,0 +1,6 @@
+```
+// Use shared memory for vec to reduce global memory accesses
+// Coalesce global memory accesses for mat and tgtMat by accessing them with contiguous threads
+// Consider loop unrolling for the division operation if performance is critical
+// Use larger block size for better occupancy, but balance with shared memory usage
+```

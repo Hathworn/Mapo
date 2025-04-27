@@ -1,0 +1,6 @@
+// Simplify index calculations to avoid redundant operations
+// Optimize memory access by implementing shared memory for mask and maskNewIds arrays if reused frequently
+// Ensure proper coalesced memory access for mask, maskNewIds, and maskOut arrays
+// Avoid excessive atomic operations by reducing contention on centers using warp-level reduction techniques
+// Apply loop unrolling if applicable in areas with predictable and repetitive computation
+// Use fast math intrinsics selectively for higher performance computation

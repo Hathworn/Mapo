@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data and reduce global memory accesses
+// Coalesce global memory accesses by ensuring aligned access patterns
+// Minimize thread divergence within warps to enhance performance
+// Ensure memory transactions are fully utilized to improve throughput
+// Consider using __syncthreads() where appropriate for thread coordination
+```

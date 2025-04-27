@@ -1,0 +1,6 @@
+// Optimize memory access by using shared memory for frequently accessed data such as maxProbs and labels.
+// Consider using asynchronous computation to overlap computations with memory transfers for improved performance.
+// Use coalesced memory access patterns to maximize bandwidth utilization, especially when accessing the probs array.
+// Investigate using texture memory or other specialized memories if the data access pattern benefits from it.
+// Ensure loop unrolling is maximized where possible inside the critical for-loop to minimize computational latency.
+// Explore warp-level primitives to efficiently perform comparisons in parallel across threads within a warp for numMax calculation.

@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for rInput1 and rInput2 to reduce global memory access
+// Unroll the innermost loop further for potentially better performance
+// Ensure memory coalescing when accessing rInput1 and rInput2
+// Use warp-level primitives for reduction to improve performance
+// Minimize bank conflicts in shared memory accesses
+// Prefetch data into shared memory if reuse is high
+// Optimize data access patterns to improve cache utilization
+```

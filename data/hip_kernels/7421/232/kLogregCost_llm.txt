@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to reduce redundant loads from global memory.
+// Avoid branch divergence by replacing conditional statements with arithmetic operations.
+// Ensure coalesced memory access by aligning data and addressing patterns.
+// Preload data to registers when possible to minimize global memory latency.
+// Use warp-synchronous programming to optimize reduction operations for numMax.
+```

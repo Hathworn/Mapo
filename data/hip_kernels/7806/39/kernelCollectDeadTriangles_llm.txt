@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by aligning cdeadTri and cmarker accesses.
+// Cache cnewtri[x] to a register to minimize global memory reads.
+// Use shared memory if possible to reduce global memory bandwidth.
+// Check if __syncthreads() is needed after assignments for synchronization.
+```

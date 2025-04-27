@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache blocks of `dist` to optimize memory access
+// Ensure coalesced memory access to global memory for `dist` when loading into shared memory
+// Use warp shuffle instructions to reduce the overhead of finding the minimum element across threads
+// Try adjusting the thread block size to improve occupancy
+// Avoid divergent branching by ensuring all threads in a warp execute the same path
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory
+// Use __builtin_assume to inform compiler about invariant conditions
+// Ensure grid and block dimensions are optimized for the specific GPU architecture
+// Prefetch data into registers if possible
+```

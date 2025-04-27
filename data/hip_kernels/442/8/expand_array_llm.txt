@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data for concurrent threads
+// Use shared memory to reduce global memory access latency if data is reused
+// Minimize bank conflicts when using shared memory for better performance
+// Prefetch data into registers where possible to reduce memory access times
+// Consider using warp shuffle operations to reduce divergent threads
+// Optimize thread block size based on GPU's specific architecture
+```

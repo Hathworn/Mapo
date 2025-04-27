@@ -1,0 +1,8 @@
+```
+// Align memory accesses by ensuring data alignment for delta array
+// Use coalesced memory accesses to improve bandwidth utilization
+// Perform loop unrolling within the batch loop for performance gain
+// Consider reducing the number of __syncthreads to minimize synchronization overhead
+// Optimize shared memory usage by minimizing its size to fit into shared memory limits
+// Prefer warp-level primitives over __syncthreads for intra-warp operations
+```

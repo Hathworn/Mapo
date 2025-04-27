@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache input data tiles for threads
+// Optimize memory access by coalescing loads from inData
+// Minimize redundant calculations of cx and cy by pre-computing them outside the inner loop
+// Utilize constant memory for kernel if kernel is small and known at compile time
+// Reduce bank conflicts by ensuring appropriate padding of shared memory arrays if used
+```

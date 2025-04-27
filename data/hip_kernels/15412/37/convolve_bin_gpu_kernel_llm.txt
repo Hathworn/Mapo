@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns for input and weights to improve global memory bandwidth.
+// Use shared memory efficiently by minimising bank conflicts when loading input and weights.
+// Ensure data reuse by maximizing the use of shared memory for weights and inputs within thread blocks.
+// Minimize synchronization points to reduce barrier overhead.
+// Employ loop unrolling techniques to reduce loop control overhead during convolution operations.
+// Utilize `__syncthreads()` judiciously to ensure shared memory is consistently updated.
+// Use atomic operations cautiously on the output to minimize contention and potential bottlenecks.
+```

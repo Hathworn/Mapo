@@ -1,0 +1,7 @@
+```
+// Use shared memory for 'deleted_rows' and 'row_group' to reduce global memory access
+// Use warp-level operations to optimize atomic operations handling
+// Consider loop unrolling for iterating over rows in 'check_existance_of_candidate_rows' function
+// Reduce register pressure by minimizing the scope of variables
+// Use cooperative groups for better synchronization and data handling efficiency
+```

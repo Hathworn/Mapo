@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring contiguous threads access contiguous elements in global memory.
+// Ensure that the computed adjustments (dens_adjustment and energy_adjustment) are stored in shared memory if accessed frequently.
+// Check for alignment issues to enhance memory access patterns and possibly pad the memory for coalesced access.
+// Use __restrict__ keyword for pointers to help the compiler with aliasing and optimize memory reads.
+// Preload data into shared memory to minimize global memory access latency if thread blocks will reuse it.
+```

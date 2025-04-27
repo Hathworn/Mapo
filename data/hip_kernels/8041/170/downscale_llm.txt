@@ -1,0 +1,8 @@
+```
+// Use shared memory for caching gradOutput_data to reduce global memory accesses.
+// Unroll the inner loop completely to minimize loop overhead and improve performance.
+// Arrange threads to maximize coalesced memory access for gradOutput_data.
+// Optimize thread block size and grid dimensions for better occupancy and performance.
+// Minimize divergent branching by refactoring condition checks within the kernel.
+// Prefetch data into registers to reduce repeated global memory accesses.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve memory bandwidth utilization.
+// Align data structures for improved memory alignment.
+// Ensure __restrict__ qualifiers are used for all pointers to allow for better compiler optimizations.
+// Consider using float4 for accels if memory alignment and access patterns allow.
+// Reduce branch divergence by ensuring threads within a warp take the same execution path.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns to improve bandwidth utilization
+// Utilize shared memory to reduce global memory transactions for binning operation
+// Consider launching enough threads to fully occupy the GPU and hide latency
+// Minimize shared memory bank conflicts to maximize throughput
+// Align memory accesses to leverage faster memory paths
+```

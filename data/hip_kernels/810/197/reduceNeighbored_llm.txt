@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory bandwidth
+// Ensure all threads within a block contribute to reduction
+// Minimize warp divergence by aligning threads for reduction
+// Optimize shared memory usage by reducing array size if possible
+```

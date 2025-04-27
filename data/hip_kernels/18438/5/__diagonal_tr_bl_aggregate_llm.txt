@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to dp array for all threads in a warp.
+// Use shared memory to store cost_image and dp data for the current row to reduce global memory transactions.
+// Consider loop unrolling for the loop over depth to improve performance.
+// Try to minimize bank conflicts when using shared memory.
+// Evaluate if the number of thread blocks and threads per block provides optimal occupancy on the target device.
+// Use texture or constant memory for frequently accessed read-only data like depth information if applicable.
+```

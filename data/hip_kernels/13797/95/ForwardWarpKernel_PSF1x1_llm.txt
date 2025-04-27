@@ -1,0 +1,3 @@
+// Consider using shared memory to cache src values for adjacent threads to reduce global memory access.
+// Use texture memory if access pattern demonstrates spatial locality to potentially improve cache efficiency.
+// Investigate memory coalescing opportunities for src, u, v, and dst arrays.

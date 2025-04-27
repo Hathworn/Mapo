@@ -1,0 +1,4 @@
+// Use __ldg to cache global memory accesses for loc_ to reduce memory latency
+// Ensure ptidx checks prevent out-of-bounds memory access
+// Perform arithmetic operations after loading to reduce register pressure
+// Align memory accesses to coalesce reads and writes where possible

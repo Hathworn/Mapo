@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses and improve memory coalescing.
+// Ensure all threads have updated shared memory before performing the reduction.
+// Use parallel reduction with stride to efficiently compute the sum.
+// Perform the final write to global memory outside the for loop to minimize update operations.
+```

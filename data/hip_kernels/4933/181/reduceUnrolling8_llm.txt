@@ -1,0 +1,3 @@
+// Consider using shared memory for the initial data load to reduce global memory access.
+// Aim to coalesce global memory access by accessing contiguous memory locations.
+// Use warp-level primitives where applicable to reduce synchronization overheads.

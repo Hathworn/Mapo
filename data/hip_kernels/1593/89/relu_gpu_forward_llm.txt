@@ -1,0 +1,4 @@
+// Ensure memory coalescing by accessing contiguous memory locations in the loop.
+// Consider using shared memory to minimize global memory accesses and improve caching.
+// Experiment with different block and grid sizes to optimize for the specific hardware architecture.
+// Evaluate the use of warp-level primitives for additional performance gains.

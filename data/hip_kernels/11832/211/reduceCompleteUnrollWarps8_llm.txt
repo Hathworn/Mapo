@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by processing consecutive elements
+// Use shared memory to minimize global memory access
+// Avoid bank conflicts in shared memory by adjusting access patterns
+// Utilize warp-level operations using volatile variables for efficiency
+// Minimize synchronization overhead by unrolling loops within warps

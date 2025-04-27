@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access patterns in global memory for in_X and in_Y
+// Consider using vectorized loads to further improve memory throughput
+// Leverage loop unrolling to increase computational efficiency within the loop
+// Optimize block size to maximize occupancy and minimize memory latency
+// Ensure that access to shared memory is conflict-free among threads
+// Align shared memory access to avoid bank conflicts
+// Consider adjusting grid/block dimensions for better hardware utilization
+```

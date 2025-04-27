@@ -1,0 +1,8 @@
+```
+// Pre-fetch all elements to reduce global memory access latency
+// Use shared memory to store intermediate results and reduce global memory transactions
+// Employ loop unrolling techniques to reduce loop overhead and increase instruction throughput
+// Use volatile qualifier to ensure variables are not optimized out during branch divergence
+// Perform warp-level reductions to minimize synchronization overhead
+// Use appropriate thread synchronization to manage shared memory dependencies
+```

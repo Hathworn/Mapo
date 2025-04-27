@@ -1,0 +1,5 @@
+// Use __restrict__ pointers to hint at potential memory access optimizations  
+// Minimize global memory accesses by ensuring that the computation is done directly in registers  
+// Align memory accesses to improve coalescing  
+// Check if shared memory usage can reduce redundant global memory accesses  
+// Consider loop unrolling for small data sizes to reduce overhead

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses for data that is repeatedly accessed.
+// Consider optimizing memory coalescing by ensuring that thread accesses are contiguous.
+// Investigate warp-level optimization techniques to improve performance on accessing global memory.
+// Implement loop unrolling if possible to decrease instruction overhead within the kernel.
+// Examine potential benefits of using texture memory for read-only data like d_depth_image_millimeter.

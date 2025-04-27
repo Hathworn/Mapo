@@ -1,0 +1,3 @@
+// Use grid-stride loop for better GPU utilization
+// Ensure 'a', 'b', 's', 'c' pointers are properly aligned for coalesced memory access
+// Consider using shared memory for 's' if there's reuse across threads

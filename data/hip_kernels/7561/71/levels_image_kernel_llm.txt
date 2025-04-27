@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for image reading and writing to improve memory throughput
+// Use shared memory for frequently accessed values like rand elements to reduce global memory accesses
+// Reduce divergent branching in if conditions where possible
+// Use __syncthreads() appropriately if shared memory is implemented for synchronization
+```

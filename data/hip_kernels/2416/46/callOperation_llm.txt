@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for global memory reads and writes
+// Consider increasing the size of shared memory allocation if needed
+// Minimize use of __syncthreads() where possible to reduce synchronization overhead
+// Evaluate potential benefits of loop unrolling for calculations
+// Ensure block size is optimal for target architecture to maximize occupancy
+```

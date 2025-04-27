@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access if 'n' is small enough.
+// Use __restrict__ qualifiers for pointers to enable better compiler optimizations.
+// Ensure 'blockDim.x' is a multiple of the warp size to improve performance.
+// Minimize divergence by ensuring all conditional structures are warp-wide.
+// Adjust the grid and block size to ensure the kernel is fully utilized.
+```

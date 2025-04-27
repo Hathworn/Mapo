@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory access latency
+// Minimize branch divergence by aligning condition checks
+// Consider loop unrolling for potential performance gain
+// Explore warp-level operations for optimizing divergence calculation
+// Investigate use of __syncthreads() for memory consistency
+// Assess potential benefits of using texture memory for accessing zx and zy
+// Evaluate the trade-offs of prefetching techniques to hide memory latency

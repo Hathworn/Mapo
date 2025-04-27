@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory traffic
+// Ensure coalesced access to global memory for better bandwidth utilization
+// Limit the number of shared memory accesses to reduce shared memory bank conflicts
+// Consider using local variables for intermediate computation results
+// Align data structures to memory boundaries for optimal access patterns
+// Balance the workload among threads to prevent divergence and idle threads
+```

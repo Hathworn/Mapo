@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for both X and Y to improve memory bandwidth utilization.
+// Unroll the loop further if registers and shared memory allow, to increase throughput.
+// Prefetch data into shared memory if the working set fits, to reduce global memory latency.
+// Ensure memory alignment for X and Y to take full advantage of vectorized instructions.
+// Use double buffering in shared memory to hide memory latency while increasing the overlap of computation and data transfer.
+```

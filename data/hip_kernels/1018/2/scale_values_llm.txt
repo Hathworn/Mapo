@@ -1,0 +1,5 @@
+```
+// Utilize coalesced memory access patterns by ensuring threadIdx.x maps directly to data idx
+// Minimize shared memory usage if possible, as it's limited per block
+// Consider using constant memory for immutable data like abs_max that remains unchanged during kernel execution
+```

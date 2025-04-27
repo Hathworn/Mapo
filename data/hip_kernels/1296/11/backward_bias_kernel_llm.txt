@@ -1,0 +1,9 @@
+```
+// Consider unrolling the inner loop over 'i' to increase ILP and efficiency.
+// Ensure coalesced memory accesses for the 'delta' array to maximize throughput.
+// Use shared memory effectively to reduce global memory accesses.
+// Implement warp-level parallel reduction to optimize reduction operations.
+// Minimize synchronization overhead within the warp for better performance.
+// Confirm bank conflict-free accesses in shared memory for efficient usage.
+// Keep occupancy high by ensuring efficient use of threads and blocks.
+```

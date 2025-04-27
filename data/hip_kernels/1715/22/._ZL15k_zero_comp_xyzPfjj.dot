@@ -1,0 +1,10 @@
+digraph "CFG for '_ZL15k_zero_comp_xyzPfjj' function" {
+	label="CFG for '_ZL15k_zero_comp_xyzPfjj' function";
+
+	Node0x61c61b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp ult i32 %12, %1\l  br i1 %13, label %14, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x61c61b0:s0 -> Node0x61c8050;
+	Node0x61c61b0:s1 -> Node0x61c80e0;
+	Node0x61c8050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = mul i32 %15, %2\l  %17 = add i32 %12, %16\l  %18 = zext i32 %17 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  store float 0.000000e+00, float addrspace(1)* %19, align 4, !tbaa !7\l  br label %20\l}"];
+	Node0x61c8050 -> Node0x61c80e0;
+	Node0x61c80e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

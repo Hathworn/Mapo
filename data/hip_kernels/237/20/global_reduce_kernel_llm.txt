@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced global memory access when loading data into shared memory
+// Consider using a double-buffered approach to further hide memory latency
+// Optimize shared memory access patterns to avoid bank conflicts
+// Minimize the use of __syncthreads() for performance improvements
+// Leverage warp shuffle operations for reduction instead of shared memory
+```

@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure enough threads per block to maximize occupancy
+// Optimize pointer access by aligning data structures to avoid memory misalignment
+// Use const memory for coefficients and weights if they are constant during execution
+// Avoid bank conflicts in shared memory if applied
+// Align data access to warp boundaries when possible
+// Evaluate if memory coalescing is achievable with current data layout
+// Check if increasing block size improves register usage without excess
+```

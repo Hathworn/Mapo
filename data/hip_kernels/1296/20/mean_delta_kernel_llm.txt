@@ -1,0 +1,5 @@
+// Optimize memory access by loading variance[i] into a register outside the loop  
+// Consider coalescing global memory accesses for delta[index]
+// Use shared memory to accumulate sum when possible to reduce global memory accesses  
+// Explore loop unrolling techniques for better performance  
+// Reduce the use of square root function by computing variance[i] + .00001f once and storing it in a register

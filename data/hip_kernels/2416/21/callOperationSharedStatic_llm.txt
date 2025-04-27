@@ -1,0 +1,9 @@
+```
+// Efficient use of shared memory with dynamic allocation
+// Load scalar values into shared memory once to reduce global memory accesses
+// Ensure all threads have the scalar values with __syncthreads()
+// Load array elements into shared memory to reduce global memory accesses
+// Ensure all data is loaded before computation with __syncthreads()
+// Perform computations using data in shared memory to improve performance
+// Save results back to global memory efficiently
+```

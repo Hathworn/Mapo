@@ -1,0 +1,4 @@
+// Ensure all memory access is coalesced by verifying DIST array alignment with warp size.
+// Replace 'kw' index calculation with shared memory to reduce global memory load latency.
+// Consider loop unrolling or using warp-level primitives for further optimization in DIST processing.
+// Minimize conditional branching to improve warp execution efficiency.

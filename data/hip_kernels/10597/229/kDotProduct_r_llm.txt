@@ -1,0 +1,7 @@
+```
+// Utilize coalesced memory access for input arrays a and b
+// Ensure __shared__ memory size is appropriately set per block
+// Consider pre-loading data into shared memory to reduce global memory accesses
+// Optimize loop unrolling to take advantage of reduced branch divergence
+// Utilize warp synchronous programming to optimize performance in the warp-level reduction
+```

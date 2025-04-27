@@ -1,0 +1,6 @@
+```
+// Use shared memory to store 'counts' to reduce global memory access latency
+// Consider using vectorized loads/store if the data is properly aligned
+// Ensure coalesced memory access by carefully arranging data access patterns
+// Minimize thread divergence with uniform branch conditions if possible
+```

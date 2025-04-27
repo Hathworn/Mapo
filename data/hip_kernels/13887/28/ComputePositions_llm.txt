@@ -1,0 +1,5 @@
+// Load frequently accessed global memory data into shared memory to minimize global memory access latency.
+// Synchronize threads to ensure all data is loaded into shared memory before usage.
+// Use shared memory for computation to optimize memory bandwidth.
+// Optimize arithmetic operations to reduce redundant computations.
+// Use __fdividef to leverage faster division where applicable.

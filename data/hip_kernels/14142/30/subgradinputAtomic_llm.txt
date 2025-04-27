@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses by reorganizing thread indexing for better performance.
+// Using shared memory to cache frequently accessed data could minimize global memory transactions.
+// Optimize the loop by reducing arithmetic operations involving constant values, e.g., computing `the_weight`.
+// Ensure memory alignment for accessing `gradOutput` to exploit full bandwidth.
+// Explore loop unrolling for the inner loops over `kH` and `kW` to minimize loop overhead.
+// Ensure occupancy optimization by adjusting block size or utilizing dynamic parallelism if necessary.
+```

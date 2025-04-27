@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce redundant global memory accesses
+// Consider loop unrolling for color assignments
+// Prefetch data to local registers before using in calculations
+// Utilize warp-level primitives to enhance thread cooperation
+// Optimize memory alignment for better coalescing
+// Use const restrict pointers for input array to exploit compiler optimizations
+```

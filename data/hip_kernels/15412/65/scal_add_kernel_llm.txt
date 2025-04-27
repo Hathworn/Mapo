@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data if X is reused frequently within the loop
+// Optimize global memory access by ensuring coalesced access patterns
+// Check if the use of __restrict__ pointers can reduce pointer aliasing overhead
+// Evaluate using pinned memory for faster data transfer between host and device
+// Consider vectorized operations if INCX is a multiple of vector width
+```

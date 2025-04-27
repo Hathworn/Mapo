@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve performance
+// Ensure memory accesses are coalesced by aligning data structures properly
+// Consider prefetching data into registers to minimize latency
+// Use larger block sizes to increase occupancy and hide memory latency
+// Minimize divergent branches within the warp for better performance
+```

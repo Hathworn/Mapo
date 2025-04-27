@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses.
+// Optimize the loop by reducing the number of branches with better control flow.
+// Utilize coalesced memory access for 'u', 'v', and 'src' to improve memory read efficiency.
+// Ensure 'dst' and 'normalization_factor' result in no serialization with atomic operations through bank conflicts.
+```

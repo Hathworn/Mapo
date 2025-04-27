@@ -1,0 +1,7 @@
+```
+// Use shared memory for mean and variance to reduce global memory access
+// Consider reducing precision to half precision floats if applicable
+// Align data structures to improve memory coalescing
+// Try to balance the workload across threads and blocks
+// Ensure grid and block dimensions maximize occupancy
+```

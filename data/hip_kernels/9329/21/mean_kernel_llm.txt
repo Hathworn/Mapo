@@ -1,0 +1,8 @@
+```
+// Consider optimizing shared memory usage for different GPU architectures
+// Utilize warp-level primitives to further enhance reduction performance
+// Ensure __syncthreads() is necessary and correctly placed for synchronization
+// Evaluate whether the block size suits the target hardware for occupancy
+// Inspect if coalesced memory access is possible for global memory reads
+// Adjust shared memory allocation size based on target GPU specifications
+```

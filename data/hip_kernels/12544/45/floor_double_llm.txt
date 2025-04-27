@@ -1,0 +1,4 @@
+// Consider using shared memory if dy array values are accessed multiple times.
+// Ensure result array is coalesced for write access by all threads in the block.
+// Minimize divergent branching caused by the index condition check.
+// Evaluate the use of vectorized memory accesses to improve memory throughput.

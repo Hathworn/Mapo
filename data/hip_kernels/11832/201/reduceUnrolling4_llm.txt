@@ -1,0 +1,4 @@
+// Consider using shared memory to store data being accessed multiple times within a thread to reduce global memory accesses.
+// Use warp-level primitives to reduce synchronization overhead and improve parallel reduction efficiency.
+// Utilize memory coalescing by ensuring threads within a warp access consecutive memory locations.
+// Minimize bank conflicts in shared memory by optimizing data access patterns within the block.

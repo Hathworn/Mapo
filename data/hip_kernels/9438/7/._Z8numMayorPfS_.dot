@@ -1,0 +1,16 @@
+digraph "CFG for '_Z8numMayorPfS_' function" {
+	label="CFG for '_Z8numMayorPfS_' function";
+
+	Node0x4e90330 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = icmp ult i32 %3, %8\l  br i1 %9, label %17, label %10\l|{<s0>T|<s1>F}}"];
+	Node0x4e90330:s0 -> Node0x4e91330;
+	Node0x4e90330:s1 -> Node0x4e91fd0;
+	Node0x4e91fd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%10:\l10:                                               \l  %11 = phi float [ 0.000000e+00, %2 ], [ %26, %17 ]\l  %12 = phi float [ 0.000000e+00, %2 ], [ %27, %17 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %13 = zext i32 %3 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %1, i64 %13\l  %15 = load float, float addrspace(1)* %14, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %16 = fcmp contract ogt float %12, %15\l  br i1 %16, label %30, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x4e91fd0:s0 -> Node0x4e91e70;
+	Node0x4e91fd0:s1 -> Node0x4e93b30;
+	Node0x4e91330 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  %18 = phi i32 [ %28, %17 ], [ %3, %2 ]\l  %19 = phi float [ %27, %17 ], [ 0.000000e+00, %2 ]\l  %20 = phi float [ %26, %17 ], [ 0.000000e+00, %2 ]\l  %21 = zext i32 %18 to i64\l  %22 = getelementptr inbounds float, float addrspace(1)* %0, i64 %21\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %24 = fcmp contract ogt float %23, %20\l  %25 = sitofp i32 %18 to float\l  %26 = select i1 %24, float %23, float %20\l  %27 = select i1 %24, float %25, float %19\l  %28 = add nuw nsw i32 %18, 1\l  %29 = icmp ult i32 %28, %8\l  br i1 %29, label %17, label %10, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4e91330:s0 -> Node0x4e91330;
+	Node0x4e91330:s1 -> Node0x4e91fd0;
+	Node0x4e91e70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%30:\l30:                                               \l  store float %12, float addrspace(1)* %14, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x4e91e70 -> Node0x4e93b30;
+	Node0x4e93b30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%31:\l31:                                               \l  %32 = getelementptr inbounds float, float addrspace(1)* %0, i64 %13\l  store float %11, float addrspace(1)* %32, align 4, !tbaa !7\l  ret void\l}"];
+}

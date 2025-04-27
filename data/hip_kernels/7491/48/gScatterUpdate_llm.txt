@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for sparseIndices to improve memory throughput
+// Use shared memory if possible to cache values for denseData updates
+// Minimize divergent branches by restructuring if conditions
+// Employ vectorized loads/stores if data alignment allows
+// Optimize thread block size for maximum occupancy and performance
+```

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store `curr_corr` data blocks used by multiple threads.
+// Prefetch data from `curr_corr` into registers to reduce global memory access latency.
+// Use vectorized loads/stores for `next_corr` to improve memory bandwidth utilization.
+```

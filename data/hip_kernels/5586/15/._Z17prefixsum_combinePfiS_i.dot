@@ -1,0 +1,10 @@
+digraph "CFG for '_Z17prefixsum_combinePfiS_i' function" {
+	label="CFG for '_Z17prefixsum_combinePfiS_i' function";
+
+	Node0x4deb120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = mul i32 %10, %9\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp sge i32 %13, %3\l  %15 = icmp eq i32 %10, 0\l  %16 = select i1 %14, i1 true, i1 %15\l  br i1 %16, label %26, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x4deb120:s0 -> Node0x4dec860;
+	Node0x4deb120:s1 -> Node0x4ded2a0;
+	Node0x4ded2a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = add i32 %10, -1\l  %19 = zext i32 %18 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %0, i64 %19\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %22 = sext i32 %13 to i64\l  %23 = getelementptr inbounds float, float addrspace(1)* %2, i64 %22\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %25 = fadd contract float %21, %24\l  store float %25, float addrspace(1)* %23, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x4ded2a0 -> Node0x4dec860;
+	Node0x4dec860 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

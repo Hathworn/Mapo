@@ -1,0 +1,8 @@
+```
+// Consider using texture memory for read-heavy arrays subBG and subT to improve cache hits.
+// Explore the use of constant memory for smaller read-only arrays like dir and coef for faster access.
+// Investigate coalescing memory access patterns for subT and subBG arrays to minimize memory load latency.
+// Ensure each thread accesses contiguous memory locations for optimal memory throughput.
+// Use warp-based algorithms to replace some shared memory operations to increase parallel efficiency.
+// Analyze the use of loop unrolling for the directional loop to reduce the number of iterations and improve performance.
+```

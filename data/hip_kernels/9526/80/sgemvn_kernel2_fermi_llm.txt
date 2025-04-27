@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access to global memory for A and x
+// Consider increasing the unroll factor in the loop for better efficiency
+// Use __syncthreads() carefully to avoid unnecessary synchronization overhead
+// Prefetch data to shared memory earlier to hide latency
+// Minimize bank conflicts in shared memory access
+// Check if the number of threads per block (num_threads) is optimal for the GPU
+```

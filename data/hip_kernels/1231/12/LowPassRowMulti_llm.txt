@@ -1,0 +1,8 @@
+```
+// Use ternary operator to reduce branch divergence
+// Consider using vectorized loads and stores to improve memory throughput
+// Use __restrict__ keyword for pointers to enable better compiler optimizations
+// Ensure coalesced memory access for d_Data and d_Result
+// Explore shared memory bank conflicts and align accesses to reduce them
+// Evaluate the use of float4 to load/store four elements at one time
+```

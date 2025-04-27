@@ -1,0 +1,6 @@
+```
+// Precompute total elements to avoid recalculating in every iteration
+// Use modulo to map target dimensions to source for wrap-around effect
+// Use __ldg for read-only cache optimization to improve memory access speed
+// Utilize block and grid dimensions to efficiently cover all target elements
+```

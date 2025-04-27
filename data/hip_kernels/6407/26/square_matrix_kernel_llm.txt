@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache tiles of the input matrix for threads within a block
+// Ensure coalesced memory access by reorganizing data or adjusting thread and block dimensions
+// Evaluate the possibility of using float4 for batch loading and storing to improve memory throughput
+// Prefetch data using __ldg to take advantage of the read-only data cache for global memory reads
+```

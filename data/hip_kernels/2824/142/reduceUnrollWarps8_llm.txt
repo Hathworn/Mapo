@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access.
+// Optimize unrolling to reduce branch divergence.
+// Use volatile memory to ensure data consistency for warp-level reductions.
+// Consider using atomic operations if further optimization is required.

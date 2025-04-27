@@ -1,0 +1,4 @@
+// Consider using shared memory to cache the kernel weights to reduce repeated global memory access.
+// Use constant memory for the weights if they fit to optimize memory bandwidth.
+// Optimize memory access by ensuring coalesced access patterns for gradInput and gradOutput.
+// Apply loop unrolling strategies effectively where beneficial, as demonstrated.

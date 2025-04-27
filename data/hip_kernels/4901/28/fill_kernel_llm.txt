@@ -1,0 +1,7 @@
+```
+// Use shared memory or L1 cache for frequently accessed data if possible
+// Align data access patterns to improve memory coalescing
+// Optimize the choice of block size to maximize warp occupancy
+// Consider using vectorized loads/stores if INCX is a multiple of vector width
+// Minimize memory divergence by ensuring INCX is set appropriately
+```

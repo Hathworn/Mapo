@@ -1,0 +1,7 @@
+```c
+// Prioritize reducing global memory accesses by storing frequently accessed data in shared or local memory
+// Arrange data in memory to ensure coalesced memory accesses and reduce memory transaction overhead
+// Minimize the use of global memory and increase the use of registers for temporary variables to optimize performance
+// Prefetch data from global memory that will be used in future iterations to hide latency
+// Utilize warp-level primitives if beneficial for parallel data access patterns and minimize thread divergence
+```

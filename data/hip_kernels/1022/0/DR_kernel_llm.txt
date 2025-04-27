@@ -1,0 +1,8 @@
+```
+// Consider using texture memory for read-only data access to improve memory throughput.
+// Ensure proper memory alignment for D and R arrays to optimize coalesced memory access.
+// Utilize warp-level operations to reduce the number of atomic operations.
+// Investigate replacing atomic operations with warp shuffle operations for shared memory reduction.
+// Evaluate the use of loop unrolling for the j loop to reduce overhead and increase instruction-level parallelism.
+// Avoid calculating repetitive values like constants in acosf and radian conversion outside the loop.
+```

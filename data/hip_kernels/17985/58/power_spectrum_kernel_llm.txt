@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to reduce global memory accesses and improve performance.
+// Avoid unnecessary synchronization by restructuring the computation to minimize __syncthreads() usage.
+// Ensure coalesced memory accesses in global memory by aligning data strides properly.
+// Consider using warp-level functions to minimize barriers and latency.
+```

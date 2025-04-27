@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory transactions for mean calculation
+// Optimize the reduction operation by using warp-level primitives like __shfl_down
+// Avoid redundant synchronizations to minimize overhead
+// Consider using float4 or other vectorized types for coalesced memory access

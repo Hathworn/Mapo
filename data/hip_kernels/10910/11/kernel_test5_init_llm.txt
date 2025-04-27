@@ -1,0 +1,7 @@
+```
+// Ensure that memory accesses are coalesced for better memory throughput
+// Align data in memory to facilitate coalesced memory access
+// Utilize threadIdx.x for more effective parallel computation
+// Minimize redundant computations by only allowing thread 0 to update p1
+// Synchronize threads after updating shared data to ensure data consistency
+```

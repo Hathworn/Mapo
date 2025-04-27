@@ -1,0 +1,9 @@
+```
+// Optimize thread index calculation for better memory coalescing by ensuring sequential access pattern
+// Preload call[tind] into a register to reduce multiple global memory accesses
+// Initialize max_running in register to avoid unnecessary global memory access
+// Compute match_idx and cmax_idx using preloaded/cache values to minimize recomputation
+// Use __syncthreads() if necessary for synchronization to ensure all threads have completed writing
+// Consider using shared memory for temporary storage of cmax values if multiple threads work on the same data
+// Increase block size or grid size after profiling to find the optimal configuration for the hardware
+```

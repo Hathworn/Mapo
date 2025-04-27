@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure shared memory array size matches workload requirements
+// Consider aligning memory accesses for coalescing
+// Use loop unrolling to minimize loop overhead
+// Cache intermediate results in registers to reduce memory traffic
+// Synchronize threads after loading data into shared memory
+// Optimize loop unrolling factor based on kernel performance analysis
+```

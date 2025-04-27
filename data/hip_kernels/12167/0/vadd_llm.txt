@@ -1,0 +1,6 @@
+// Optimize memory access patterns for coalescing
+// Ensure all memory accesses are aligned
+// Use shared memory if multiple threads access the same data frequently
+// Experiment with different block sizes for optimal occupancy
+// Minimize use of divergent threads within warps for better performance
+// Consider loop unrolling if applicable for this kernel

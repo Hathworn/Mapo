@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning contiguous threads with contiguous memory.
+// Avoid thread divergence by checking boundary conditions before accessing memory.
+// Use __syncthreads() to ensure all threads complete writing to shared memory before proceeding.
+// Opt for memory access patterns that allow for maximum efficiency in global memory transactions.
+```

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for v[row] and a[row] to reduce global memory access.
+// Use memory coalescing techniques by ensuring that threads access contiguous segments of global memory to improve performance.
+// Re-evaluate loop increments to fully utilize blockDim and gridDim for better load balancing across threads.
+```

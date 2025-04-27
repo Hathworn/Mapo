@@ -1,0 +1,8 @@
+```
+// Use shared memory if data reusability and bank conflicts need optimization
+// Ensure coalesced memory access to improve global memory bandwidth
+// Prefer strided access patterns to match memory access patterns of the hardware
+// Consider loop unrolling for better warp utilization if N is large
+// Check for alignment opportunities in X and Y for improved performance
+// Reduce the number of calculations within the loop by precomputing invariant expressions
+```

@@ -1,0 +1,7 @@
+```
+// Ensure optimal memory coalescing by accessing contiguous memory locations.
+// Minimize thread divergence by branching/blocking efficiently.
+// Utilize shared memory for intermediate computations to reduce global memory access.
+// Implement warp-level reduction efficiently to minimize synchronization overhead.
+// Store the results in the global memory only after the reduction is completed.
+```

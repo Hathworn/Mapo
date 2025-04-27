@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access for loading data from global to shared memory.
+// Consider using loop unrolling for the reduction loop to enhance performance.
+// Minimize __syncthreads() usage by arranging threads to minimize synchronization.
+// Use memory access patterns that prevent bank conflicts in shared memory.
+```

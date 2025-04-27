@@ -1,0 +1,5 @@
+```cpp
+// Consider coalescing memory access for `result` and `x` for better memory throughput.
+// Ensure `blockDim.x` is a multiple of 32 for optimal performance on AMD GPUs.
+// Use shared memory if there are opportunities for reusing `x[id]` values within the block.
+```

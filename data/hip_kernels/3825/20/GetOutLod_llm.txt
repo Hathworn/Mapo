@@ -1,0 +1,6 @@
+```
+// Preload input data into registers to reduce global memory access latency
+// Consider coalescing memory access patterns for in_lod and num_erased
+// Ensure the access to out_lod0 is coalesced to improve memory throughput
+// Check if shared memory can be utilized for temporary storage to reduce global memory traffic
+```

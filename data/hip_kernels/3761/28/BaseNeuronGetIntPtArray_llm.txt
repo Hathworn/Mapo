@@ -1,0 +1,4 @@
+// Consider using larger shared memory to accommodate more elements if necessary.
+// Ensure memory bank conflicts are minimized by accessing shared memory in a staggered pattern.
+// Implement coalesced memory access for global memory reads and writes to improve throughput.
+// Evaluate warp-synchronous programming to reduce __syncthreads overhead where applicable.

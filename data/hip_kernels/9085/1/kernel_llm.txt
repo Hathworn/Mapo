@@ -1,0 +1,8 @@
+```c
+// Ensure data_size is divisible by block size for full utilization
+// Consider using warp-level primitives for better performance
+// Optimize shared memory size to avoid bank conflicts
+// Avoid redundant __syncthreads() if possible
+// Consider data prefetching to hide memory latency
+// Align data to improve access patterns and coalescence
+```

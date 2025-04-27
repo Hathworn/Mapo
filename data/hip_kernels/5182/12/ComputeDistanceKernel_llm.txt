@@ -1,0 +1,8 @@
+```
+// Suggestions for optimizing global memory access
+// Consider coalescing global memory access patterns for symbolVectors
+// Ensure that each thread reads contiguous elements in global memory
+// Minimize bank conflicts when using sharedInputVector in shared memory
+// Consider loop unrolling for the computation inside the for loop
+// Utilize warp-level intrinsics for reduction if possible
+```

@@ -1,0 +1,4 @@
+// Use shared memory to improve data access speed  
+// Ensure all threads have loaded data into shared memory  
+// Consider optimizing block size for memory coalescing  
+// Use __syncthreads() to synchronize all threads before using shared memory

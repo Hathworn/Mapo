@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store intermediate values for reduction operations
+// Optimize memory access by ensuring pred, truth, delta, and error are coalesced
+// Ensure the kernel launch configuration maximizes occupancy and reduces warp divergence
+// Use asynchronous memory copies for efficient data transfers
+```

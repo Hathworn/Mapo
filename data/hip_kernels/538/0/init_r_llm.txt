@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by ensuring that consecutive threads access consecutive memory addresses.
+// Utilize shared memory to reduce repetitive global memory reads.
+// Minimize bank conflicts in shared memory by appropriate padding if necessary.
+// Use loop unrolling techniques to optimize memory access and compute-bound sections.
+// Ensure three-dimensional thread blocks do not exceed maximum memory allocation.
+// Reduce register usage by optimizing expression calculations.
+```

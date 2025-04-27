@@ -1,0 +1,9 @@
+```
+// Precompute the base index for M to improve performance
+// Ensure coalesced memory access pattern in the loop for BP
+// Unroll the innermost loop for better performance when accessing BP
+// Verify alignment of memory access to ensure maximum bandwidth utilization
+// Evaluate the possibility of padding data structures to improve coalescence
+// Consider using shared memory for frequently reused data within blocks
+// Check if loop interchange or fusion can optimize cache usage
+```

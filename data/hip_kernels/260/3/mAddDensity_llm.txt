@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for global memory reads
+// Ensure block size matches the warp size for optimal performance
+// Avoid unnecessary use of __syncthreads when not required
+// Use shared memory efficiently to minimize bank conflicts
+// Optimize the block and grid size based on the GPU architecture
+```

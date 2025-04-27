@@ -1,0 +1,7 @@
+// Utilize shared memory to reduce global memory accesses for in array
+// Check memory coalescing for grad_x, grad_y, grad_z accesses
+// Avoid recalculating the same indices multiple times within the kernel
+// Use register variables for frequently accessed data
+// Consider using texture memory if access patterns warrant it
+// Conduct warp-level optimization to utilize full memory throughput
+// Ensure alignment of vectors to optimize memory fetches

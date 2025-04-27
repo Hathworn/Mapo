@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency for per_class_sum_.
+// Ensure data fits into shared memory; otherwise, consider alternative tiling or memory access strategies.
+// Perform boundary checks to avoid accessing out-of-bounds memory, enhancing stability.
+// Consider coalesced memory access pattern for feature_weights_ to maximize throughput.
+```

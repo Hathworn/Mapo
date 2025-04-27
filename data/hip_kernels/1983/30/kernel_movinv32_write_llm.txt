@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access for better performance
+// Ensure the kernel launch parameters are optimized for your specific hardware
+// Minimize the number of shared memory accesses
+// Avoid bank conflicts when accessing shared memory
+// Adjust loop unrolling to balance between register pressure and performance gain
+// Consider using texture memory for read-only data to leverage caching
+// Ensure all memory accesses are aligned
+```

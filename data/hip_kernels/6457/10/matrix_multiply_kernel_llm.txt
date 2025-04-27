@@ -1,0 +1,5 @@
+```cpp
+// Use vectorized loads for matrix elements to improve memory throughput
+// Consider warp-wide synchronization to further optimize shared memory usage
+// Explore launching more threads per block to improve occupancy and hide memory latency
+```

@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning data structures.
+// Minimize bank conflicts in shared memory by ensuring proper data alignment.
+// Reduce global memory accesses by maximizing usage of shared memory.
+// Aim to keep the global memory bandwidth high and underutilized.
+// Consider occupying all SIMD lanes with active threads.
+// Reduce warp divergence in the reduction loop to enhance performance.
+// Optimize block size to fully utilize the GPU's compute resources.
+```

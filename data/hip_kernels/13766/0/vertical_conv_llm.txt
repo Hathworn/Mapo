@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache kernel elements to reduce global memory access
+// Coalesce global memory accesses to improve memory throughput
+// Align data structures for efficient memory access and avoid bank conflicts
+// Consider adjusting block size based on the GPU architecture for optimal occupancy
+// Minimize bank conflicts by ensuring proper memory access patterns for pixel data
+```

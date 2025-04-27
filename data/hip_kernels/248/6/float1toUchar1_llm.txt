@@ -1,0 +1,9 @@
+```
+// Use shared memory for block-level data reuse to minimize global memory access
+// Consider coalesced access patterns for input and output images for better memory throughput
+// Ensure memory access within warps is aligned to avoid bank conflicts
+// Evaluate the use of texture memory for read-only input image data
+// Opt for using __ldg() intrinsic for read-only memory access when appropriate
+// Balance grid and block dimensions to maximize occupancy and minimize warp divergence
+// Avoid branching by refactoring boundary checks using logical operations or compiler directives
+```

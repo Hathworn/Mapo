@@ -1,0 +1,6 @@
+// Coalesced memory access for efficient global memory operations
+// Use shared memory to reduce global memory access latency
+// Unroll loops to enhance performance through reduced branch divergence
+// Minimize register usage to improve occupancy and parallelism
+// Pre-load data into shared memory to prevent redundant global memory reads
+// Avoid shared memory bank conflicts for better throughput

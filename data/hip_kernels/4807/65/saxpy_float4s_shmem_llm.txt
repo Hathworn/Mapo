@@ -1,0 +1,9 @@
+```cpp
+// Utilize shared memory to reduce global memory access frequency.
+// Ensure proper memory alignment for float4 to increase memory access efficiency.
+// Use __syncthreads() to safely move data between shared and global memory.
+// Batch loads/stores in float4 to exploit coalesced memory access patterns.
+// Minimize warp divergence by maintaining a uniform control flow across threads.
+// Consider tuning CTA_COUNT and COMPUTE_THREADS_PER_CTA to balance occupancy and resource usage.
+// Leverage float4 operations to reduce instruction count and improve throughput.
+```

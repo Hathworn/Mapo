@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Conditional assignment prevents out-of-bounds memory access
+// Minimize divergent branches within warp by conditional logic
+// Synchronize threads to ensure shared memory operations are complete
+// Use loop unrolling if possible for further optimization
+```

@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Apply loop unrolling to increase throughput and reduce loop overhead
+// Minimize bank conflicts in shared memory by ensuring proper data access patterns
+// Consider coalescing global memory accesses for better memory bandwidth utilization
+// Ensure proper synchronization with __syncthreads() within block
+// Avoid diverging branches to maintain warp efficiency
+// Align data structures to ensure proper memory alignment and access speed
+// Use atomic operations if needed for reduction in global memory
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access for d_in loading
+// Optimize shared memory usage by minimizing synchronization points
+// Apply loop unrolling inside shared_reduce for performance gain
+// Consider banking to avoid shared memory bank conflicts 
+// Consider using atomic operations for the final accumulator in shared memory
+```

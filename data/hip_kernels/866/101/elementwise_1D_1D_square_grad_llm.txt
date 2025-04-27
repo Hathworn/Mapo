@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for improved memory bandwidth utilization
+// Minimize thread divergence by ensuring control flow is aligned within warps
+// Ensure sufficient occupancy by choosing appropriate block and grid dimensions
+// Consider using shared memory if data reuse occurs within blocks
+// Optimize memory access patterns to reduce global memory latency
+```

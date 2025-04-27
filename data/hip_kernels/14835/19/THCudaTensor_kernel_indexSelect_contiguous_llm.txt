@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses.
+// Load index into registers to minimize memory access latency.
+// Leverage warp-level parallelism for better memory coalescing.
+// Unroll loops to decrease branch divergence and increase throughput.
+// Synchronize threads to ensure shared memory data consistency.
+```

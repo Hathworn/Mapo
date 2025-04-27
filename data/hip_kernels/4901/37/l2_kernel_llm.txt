@@ -1,0 +1,8 @@
+```
+// Use shared memory to improve performance by reducing global memory access
+// Correct error calculation placement to ensure accurate results
+// Zero out extra thread memory usage to prevent stale data impact
+// Parallel reduction within block to efficiently sum the errors
+// Use __syncthreads to ensure all threads have completed their calculations before proceeding
+// Write block error sum to global memory at the end to accumulate results
+```

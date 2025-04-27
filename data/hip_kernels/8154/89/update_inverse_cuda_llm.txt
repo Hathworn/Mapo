@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access patterns for Ainv and u to improve memory bandwidth utilization.
+// Minimize the usage of __syncthreads() as it introduces overhead; consider restructuring the code to reduce its necessity.
+// Utilize the shared memory efficiently by ensuring the shared data is properly reused across threads.
+// Explore loop unrolling during the reduction process to reduce the number of operations and improve performance.
+// Investigate whether reducing precision in calculations could lead to performance improvements without significant accuracy loss.
+```

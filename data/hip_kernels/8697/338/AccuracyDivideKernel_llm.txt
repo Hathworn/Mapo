@@ -1,0 +1,6 @@
+```
+// Ensure the accuracy pointer is accessed by a single thread to reduce contention
+// Use shared memory to reduce global memory access frequency if accuracy is used by other threads
+// Consider memory alignment and coalescing to improve memory access efficiency if necessary
+// Minimize use of global memory by keeping frequently accessed data in registers if applicable
+```

@@ -1,0 +1,6 @@
+```
+// Optimize memory accesses by ensuring p[i] is coalesced
+// Consider adding __restrict__ to pointer p for better compiler optimization
+// Use shared memory if possible to reduce global memory traffic
+// Ensure all threads exit together to avoid warp divergence
+```

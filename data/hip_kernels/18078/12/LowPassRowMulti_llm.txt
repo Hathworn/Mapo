@@ -1,0 +1,5 @@
+// Use shared memory efficiently to reduce global memory access latency.
+// Consider using warp-level primitives for further optimization.
+// Ensure coalesced memory access for d_Data when loading into shared memory.
+// Add more loop unrolling if performance gains are observed.
+// Ensure alignment of memory allocations for d_Result and d_Data.

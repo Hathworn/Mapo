@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses
+// Initialize shared memory only once with a single thread
+// Use __syncthreads() to ensure all threads have updated shared memory before proceeding
+// Utilize local register for each thread's computation to minimize memory latency
+// Perform atomic addition to avoid race conditions when updating shared memory
+// Perform atomic addition from shared to global memory only once by a single thread

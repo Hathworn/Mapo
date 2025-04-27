@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access patterns for the `x` array.
+// Ensure that `result` array is aligned and accessed in a coalesced manner.
+// Minimize the use of shared memory unless necessary for performance.
+// Optimize the grid and block dimensions to match the specific GPU architecture.
+// Avoid bank conflicts if shared memory is used.
+// Reduce register pressure by minimizing variable use inside the kernel.
+```

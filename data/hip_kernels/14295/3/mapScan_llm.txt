@@ -1,0 +1,3 @@
+// Pre-load d_total[bx] into a shared variable for faster repeated access.
+// Consider cooperative groups for blocks larger than 1024 threads for better synchronization.
+// Use shared memory for d_array blocks to minimize global memory access and boost performance.

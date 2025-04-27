@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for gradInput_data and gradOutput_data
+// Use shared memory to minimize global memory access for frequent data access
+// Optimize memory bandwidth by aligning data access patterns
+// Consider loop unrolling for the scale factor loops to improve performance
+// Use __restrict__ qualifier to help the compiler with memory aliasing assumptions
+```

@@ -1,0 +1,6 @@
+```
+// Optimize memory access by coalescing global memory loads
+// Ensure the use of __syncthreads() after loading data into shared memory
+// Consider using warp shuffle operations for data within a warp
+// Use the first element conditionally instead of always the first thread for shared memory tasks
+```

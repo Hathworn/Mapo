@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency.
+// Use loop unrolling inside the features loop to reduce loop overhead.
+// Consider using warp shuffle functions for better data transfer efficiency among threads.

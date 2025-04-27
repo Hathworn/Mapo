@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure memory coalescing by aligning memory accesses across threads.
+// Consider using __ldg() for read-only data to leverage L1 cache.
+// Minimize bank conflicts in shared memory usage.
+// Try vectorized loads/stores to improve memory throughput.
+// Optimize grid and block size for better occupancy and efficiency.
+```

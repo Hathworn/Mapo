@@ -1,0 +1,6 @@
+```cpp
+// Ensure memory accesses are coalesced by using unit stride when possible
+// Use shared memory to reduce global memory accesses if INCX is not 1
+// Consider loop unrolling for better performance if N is large
+// Ensure data is aligned to benefit from vectorized operations
+```

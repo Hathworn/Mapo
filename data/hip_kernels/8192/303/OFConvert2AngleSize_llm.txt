@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache OF_value for coalesced access
+// Minimize global memory accesses by reusing shared memory
+// Ensure alignment for OF_value loads for efficient memory transactions
+// Utilize __syncthreads() appropriately when using shared memory
+// Consider loop unrolling if applicable for performance improvement
+```

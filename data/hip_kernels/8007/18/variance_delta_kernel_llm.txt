@@ -1,0 +1,7 @@
+```
+// Cache frequently accessed global memory data in registers
+// Minimize thread divergence by ensuring condition checks are well-distributed
+// Use shared memory for temporary storage if there is thread contention on global memory
+// Align memory accesses for coalesced global memory transactions
+// Minimize the use of powf by pre-calculating powers when possible
+```

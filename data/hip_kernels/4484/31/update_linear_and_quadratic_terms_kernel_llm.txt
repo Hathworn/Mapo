@@ -1,0 +1,6 @@
+```cpp
+// Utilize shared memory to reduce global memory accesses.
+// Ensure coalesced memory access by having threads access consecutive memory locations.
+// Consider using __syncthreads() to synchronize threads if shared memory is implemented.
+// Use of atomicAdd is efficient here because only a single thread handles linear update.
+```

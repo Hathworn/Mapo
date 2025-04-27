@@ -1,0 +1,4 @@
+// Utilize shared memory to minimize global memory accesses
+// Load data to shared memory to enhance memory efficiency
+// Use __syncthreads() to ensure shared memory consistency
+// Avoid redundant global memory reads by aggregating in shared memory

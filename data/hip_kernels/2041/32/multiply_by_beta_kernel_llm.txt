@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Optimize memory coalescing by ensuring contiguous memory accesses
+// Minimize global memory accesses by reusing data within the thread block
+// Analyze if loop unrolling can optimize the multiplication operations
+// Use __restrict__ keyword to hint the compiler about non-aliasing pointers
+// Ensure that kernel is launched with optimal block size for better occupancy
+// Explore warp-level operations to further optimize reduction over beta
+```

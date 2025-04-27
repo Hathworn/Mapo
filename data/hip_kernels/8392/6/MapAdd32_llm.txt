@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data
+// Align memory accesses to improve coalescing
+// Consider using texture memory for read-only data like 'result'
+// Optimize the loop with loop fission to reduce dependencies
+// Apply memory prefetching for 'result' before the loop starts
+```

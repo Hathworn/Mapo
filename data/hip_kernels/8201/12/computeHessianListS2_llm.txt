@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache repeated voxel calculations and accesses.
+// Explore loop unrolling techniques for the inner loop for more efficient computation.
+// Use constant memory for frequently accessed values like gauss_d1 if they remain constant across kernel calls.
+// Minimize divergent branches within the thread group for enhanced performance.
+// Optimize memory access patterns to maximize coalescing.
+```

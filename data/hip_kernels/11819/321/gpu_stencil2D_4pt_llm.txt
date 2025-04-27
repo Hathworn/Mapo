@@ -1,0 +1,10 @@
+```
+// Consider using constant memory for frequently reused values like HALO and N.
+// Align memory accesses to increase memory bandwidth efficiency.
+// Optimize shared memory usage by minimizing redundant loads.
+// Avoid bank conflicts in shared memory by ensuring proper indexing.
+// Explore loop unrolling beyond pragma directives for further performance improvement.
+// Consider using warp shuffle operations for neighboring element access to reduce shared memory dependency.
+// Balance work among threads for optimal utilization and latency hiding.
+// Evaluate potential use of asynchronous data transfers for overlapping computation with memory operations.
+```

@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced memory reads.
+// Consider using shared memory if data reuse within a block is possible.
+// Ensure kernel launch parameters maximize occupancy and minimize idle threads.
+// Evaluate if FP16 conversions or tensor cores could provide additional performance benefits.

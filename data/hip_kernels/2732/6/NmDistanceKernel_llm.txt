@@ -1,0 +1,4 @@
+// Use shared memory to cache xyz2 data to reduce global memory access
+// Minimize prefetch distance to improve data locality and reduce memory latency
+// Optimize memory access pattern in xyz and buf for coalesced access
+// Reduce warp divergence by ensuring uniform execution path

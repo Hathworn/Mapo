@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access for temporary storage  
+// Reduce global memory access by processing two data points simultaneously  
+// Store results in shared memory to avoid redundant global memory writes  
+// Employ warp shuffle operations for efficient intra-warp reduction

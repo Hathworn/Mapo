@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache frequently accessed labels data
+// Minimize global memory transactions by coalescing memory accesses
+// Use register variables for constants like Z1 and Y1
+// Reduce warp divergence by ensuring that threads within the same block follow similar execution paths
+// Consider loop unrolling if the iteration count is known to reduce loop overhead
+// Minimize the number of atomic operations to reduce serialization of threads
+```

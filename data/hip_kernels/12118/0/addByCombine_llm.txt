@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Ensure coalesced memory access by aligning data structures and thread indices
+// Minimize conditionals within the kernel to improve warp execution efficiency
+// Evaluate the use of vectorized operations for increased throughput
+// Assess occupancy and adjust block size to maximize GPU resource utilization
+```

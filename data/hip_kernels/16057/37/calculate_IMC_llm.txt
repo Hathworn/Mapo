@@ -1,0 +1,5 @@
+// Use shared memory to store data for reduction to improve memory access efficiency.
+// Ensure to limit shared memory usage by avoiding unnecessary large allocations.
+// Reduce global memory accesses by utilizing shared memory for intermediate calculations.
+// Atomic operations on shared memory results can be used to efficiently update global memory.
+// The use of `log10f` function requires careful consideration of floating-point precision and performance.

@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access patterns to maximize coalesced memory access.
+// Ensure shared memory usage is within hardware limits for large block sizes.
+// Assess the profitability of further unrolling loops based on the iteration range.
+// Verify that shared memory is bank conflict free for improved performance.
+// Reevaluate need and impact of __syncthreads() for synchronization if data dependencies allow simplification.
+// Reassess the size of shared memory arrays based on the anticipated workload and block configuration.
+// Explore potential benefits of using just-in-time loading to shared memory to manage larger datasets.
+// Investigate if occupancy can be improved by adjusting kernel launch parameters after shared memory modification.
+```

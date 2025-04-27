@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache normalization_factor for better memory access coalescing.
+// Ensure alignment of memory accesses to optimize global memory throughput.
+// Investigate using __ldg for loading normalization_factor to potentially increase cache hit rate.
+// Evaluate using float2 for image data to benefit from vectorized memory operations.
+// Profile the use of different block sizes for better warp scheduling and occupancy.
+// Exploit register usage to minimize global memory traffic.
+```

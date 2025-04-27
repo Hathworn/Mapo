@@ -1,0 +1,13 @@
+digraph "CFG for '_Z16grayscale_kernelPdPhmdd' function" {
+	label="CFG for '_Z16grayscale_kernelPdPhmdd' function";
+
+	Node0x56a0720 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = mul i32 %14, %10\l  %16 = udiv i32 %13, %10\l  %17 = mul i32 %16, %10\l  %18 = icmp ugt i32 %13, %17\l  %19 = zext i1 %18 to i32\l  %20 = add i32 %16, %19\l  %21 = mul i32 %20, %10\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %23 = add i32 %15, %22\l  %24 = sext i32 %23 to i64\l  %25 = icmp ult i64 %24, %2\l  br i1 %25, label %26, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x56a0720:s0 -> Node0x56a2d00;
+	Node0x56a0720:s1 -> Node0x56a2d90;
+	Node0x56a2d00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%26:\l26:                                               \l  %27 = fsub contract double %4, %3\l  br label %29\l}"];
+	Node0x56a2d00 -> Node0x56a2f60;
+	Node0x56a2d90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%28:\l28:                                               \l  ret void\l}"];
+	Node0x56a2f60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi i64 [ %24, %26 ], [ %41, %29 ]\l  %31 = phi i32 [ %23, %26 ], [ %40, %29 ]\l  %32 = getelementptr inbounds double, double addrspace(1)* %0, i64 %30\l  %33 = load double, double addrspace(1)* %32, align 8, !tbaa !16\l  %34 = fsub contract double %33, %3\l  %35 = fdiv contract double %34, %27\l  %36 = fmul contract double %35, 2.550000e+02\l  %37 = tail call double @llvm.round.f64(double %36)\l  %38 = fptosi double %37 to i8\l  %39 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %30\l  store i8 %38, i8 addrspace(1)* %39, align 1, !tbaa !20\l  %40 = add i32 %21, %31\l  %41 = sext i32 %40 to i64\l  %42 = icmp ult i64 %41, %2\l  br i1 %42, label %29, label %28, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x56a2f60:s0 -> Node0x56a2f60;
+	Node0x56a2f60:s1 -> Node0x56a2d90;
+}

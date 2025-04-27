@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory accesses.
+// __syncthreads() ensures all threads have loaded memory before proceeding, minimizing data hazards.
+// Cache width and height for boundary checks to avoid multiple calculations.
+```

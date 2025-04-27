@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data from global memory.
+// Ensure memory accesses are coalesced by having threads access sequential memory locations.
+// Use register variables to store frequently used variables to reduce memory latency.
+// Evaluate if loop unrolling can be beneficial for repeated operations within the kernel.
+// Consider adjusting block size for optimal occupancy and maximum memory bandwidth utilization.
+```

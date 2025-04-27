@@ -1,0 +1,6 @@
+```
+// The stride calculation allows for efficient loop unrolling.
+// Precomputing inv_std_dev helps save computation time inside the loop.
+// Cache var_adj and mean_adj computations to reduce latency.
+// Unroll the loop with stride utilization to maximize parallel processing.
+```

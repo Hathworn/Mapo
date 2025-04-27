@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure coalesced memory accesses by aligning INCX with warp size
+// Minimize divergent branches by ensuring uniform access patterns
+// Apply loop unrolling for the stride loop to reduce loop overhead
+// Use appropriate launch parameters to maximize GPU occupancy
+```

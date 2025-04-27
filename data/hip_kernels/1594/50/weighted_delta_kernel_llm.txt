@@ -1,0 +1,6 @@
+```c
+// Cache frequently accessed global memory values to local variables to reduce memory access latency.
+// Use if-checks to minimize branch divergence between threads.
+// Ensure memory accesses are coalesced for optimal performance.
+// Consider using shared memory if further caching is required for frequently accessed data.
+```

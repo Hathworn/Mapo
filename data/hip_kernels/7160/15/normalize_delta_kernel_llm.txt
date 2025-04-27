@@ -1,0 +1,8 @@
+```c
+// Use shared memory to cache frequently accessed values like mean and variance for faster access.
+// Consider unrolling loops if applicable to enhance performance and SIMD utilization.
+// Align data structures in memory to avoid misaligned accesses which can degrade performance.
+// Minimize bank conflicts when using shared memory to ensure efficient memory access patterns.
+// Prefetch next needed elements into registers to hide memory latency and improve data throughput.
+// Utilize vectorized memory operations to increase bandwidth utilization and reduce instruction count.
+```

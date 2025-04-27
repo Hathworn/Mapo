@@ -1,0 +1,8 @@
+```
+// Leverage shared memory for histogram computation to reduce global memory accesses
+// Use thread block for shared memory initialization to increase efficiency
+// Optimize memory accesses by increasing coalescence for read operations
+// Utilize atomic operations on shared memory for conflict-free updates before writing back
+// Sync threads post shared memory updates to ensure consistency across the block
+// Move data from shared to global memory using all threads to avoid warp divergence
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for caching frequently accessed data to reduce global memory access latency.
+// Adjust the grid and block dimensions to maximize occupancy and ensure coalesced memory access.
+// Employ loop unrolling for the main computational loop to minimize loop control overhead.
+// Use the __restrict__ keyword for pointer arguments if input data is not aliased, to enable more aggressive compiler optimizations.
+// Verify memory access patterns to ensure no bank conflicts when using shared memory.
+```

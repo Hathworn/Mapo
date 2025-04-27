@@ -1,0 +1,5 @@
+// Ensure coalesced access by verifying the memory alignment of d_coordinates and other arrays.
+// Consider using shared memory for template dimension values to reduce redundant global accesses.
+// Use register variables for frequently accessed items like image_index_2d to minimize global memory access.
+// Evaluate loop unrolling for x and y loops to reduce loop overhead and improve performance.
+// Assess using tile-based operations to enhance memory access patterns and utilize cache better.

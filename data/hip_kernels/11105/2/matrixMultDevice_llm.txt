@@ -1,0 +1,7 @@
+```cpp
+// Load input data into shared memory to minimize global memory access
+// Use thread synchronization to ensure tiles are completely loaded before computation
+// Perform computation using shared memory for faster access compared to global memory
+// Synchronize threads again before continuing to the next tile
+// Write the computed result back to global memory only after all threads have completed tile computation
+```

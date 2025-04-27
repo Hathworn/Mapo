@@ -1,0 +1,7 @@
+```c
+// Consider aligning memory accesses to coalesce global memory transactions.
+// Avoid divergence by ensuring all threads within a warp follow the same execution path.
+// Preload d_gcs into shared memory if possible to reduce global memory access.
+// Minimize the number of global memory accesses by combining reads or writes where feasible.
+// Investigate using texture memory for potentially cache-friendly read access.
+```

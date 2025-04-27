@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns to optimize global memory reads and writes.
+// Using shared memory optimizes access times; ensure shared memory size is adequate but not excessive.
+// Use loop unrolling techniques to optimize performance further.
+// Ensure __syncthreads() is used appropriately to synchronize threads after shared memory usage.
+// Validate memory bounds to prevent out-of-bounds accesses and potential undefined behavior.
+```

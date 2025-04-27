@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Minimize divergent branches within the kernel
+// Optimize the usage of __syncthreads() to avoid unnecessary stalls
+// Ensure coalesced memory access for better bandwidth utilization
+// Use loop unrolling to minimize loop overhead
+```

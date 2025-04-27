@@ -1,0 +1,6 @@
+```cpp
+// Consider coalescing global memory access in gradOutput_data[ipidx]
+// Use shared memory to cache block-local gradOutput_data
+// Minimize divergence by ensuring consistent path through translate_idx_inv for all threads
+// Ensure gradInput_data is accessed with coalesced writes
+```

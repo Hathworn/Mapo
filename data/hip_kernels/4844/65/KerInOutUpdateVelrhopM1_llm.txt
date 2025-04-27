@@ -1,0 +1,4 @@
+// Consider coalesced memory access to reduce transaction overheads.
+// Ensure memory accesses are aligned to improve memory throughput.
+// Evaluate using shared memory to minimize redundant global memory accesses.
+// Optimize memory bandwidth by ensuring all threads in a warp access contiguous memory locations.

@@ -1,0 +1,5 @@
+// Ensure memory coalescing by accessing vg_a and vg_b with contiguous thread indices.
+// Utilize shared memory efficiently by minimizing usage outside of reduction operations.
+// Consider loop unrolling within the accumulation loop for improved performance.
+// Minimize synchronization overhead by reducing the number of __syncthreads calls where possible.
+// Optimize register usage by ensuring local variables are declared within the smallest necessary scope.

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.  
+// Accumulate results in registers to decrease the number of global memory operations.  
+// Use __syncthreads() to ensure consistent shared memory data across threads.  
+// Break computation into tiles to minimize data movement and optimize throughput.

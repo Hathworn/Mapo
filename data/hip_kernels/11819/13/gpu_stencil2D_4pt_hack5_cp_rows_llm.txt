@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access.
+// Consider coalesced memory access patterns for dst array.
+// Ensure memory access within bounds to avoid out-of-bound errors.
+// Optimize data copying by loading multiple elements using vectorization.
+// Use __syncthreads() to synchronize thread computation after shared memory access.
+```

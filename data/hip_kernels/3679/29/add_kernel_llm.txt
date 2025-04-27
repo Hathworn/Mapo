@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory traffic
+// Pre-fetch data into registers to minimize repeated global memory access
+// Ensure memory coalescing by accessing contiguous data locations when possible
+// Optimize block and grid size for better work distribution and resource utilization

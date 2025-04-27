@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for input and referenceVector to improve memory throughput.
+// Align data structures in memory to ensure natural alignment and prevent misaligned accesses.
+// Use shared memory if possible to reduce redundant global memory accesses when reusing data within a block.
+// Unroll loops manually if present to reduce loop overhead and improve performance, if applicable.
+// Evaluate the use of __restrict__ qualifiers to help the compiler with aliasing optimizations.
+```

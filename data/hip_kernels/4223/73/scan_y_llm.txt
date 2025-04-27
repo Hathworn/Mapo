@@ -1,0 +1,10 @@
+```
+// Use coalesced memory access patterns for shared memory load
+// Ensure synchronization with __syncthreads() after shared memory operations
+// Initialize shared memory elements to reduce out-of-bound errors
+// Use shared memory to reduce global memory accesses and increase parallel processing
+// Consider double buffering techniques for further memory access optimization
+// Minimize thread divergence and ensure balanced workload across threads
+// Use inline computation to decrease register usage during loop iterations
+// Align memory accesses to leverage warp-level mechanics and improve throughput
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Optimize memory access patterns by ensuring coalesced accesses to improve performance.
+// Minimize redundant calculations outside the kernel to reduce computational overhead.
+// Evaluate whether loop unrolling techniques could benefit this kernel for better performance.
+// Consider preferring __syncthreads() in appropriate locations to ensure correct synchronization when using shared memory.
+```

@@ -1,0 +1,9 @@
+```
+// Consider using float4 instead of float for improved memory coalescing.
+// Ensure a is aligned for better coalesced access patterns.
+// Ensure b is aligned for better coalesced access patterns.
+// Use __restrict__ to allow more aggressive compiler optimizations.
+// Optimize shared memory usage by avoiding bank conflicts.
+// Implement loop unrolling within the while loop for reduced loop overhead.
+// Adjust grid size to be a multiple of DP_BLOCKSIZE for better occupancy.
+```

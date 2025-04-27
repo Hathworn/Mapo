@@ -1,0 +1,4 @@
+// Use shared memory for x, y values to reduce global memory access latency
+// Consider loop unrolling if the operation per element is suitable
+// Align data to 128 bytes for better memory coalescing
+// Ensure data is copied to the device using optimized API calls like hipMemcpyAsync

@@ -1,0 +1,8 @@
+```
+// Consider increasing TILE_DIM if shared memory allows for larger tile sizes.
+// Investigate bank conflicts in shared memory accesses and realign data to avoid them.
+// Ensure that each A_shared and B_shared access coalesces global memory reads.
+// Utilize double buffering technique to hide latency and overlap computation with data movement.
+// Load as much data as possible into shared memory in single load instructions to maximize bandwidth.
+// Consider using the __restrict__ keyword for pointers to allow more aggressive compiler optimization.
+```

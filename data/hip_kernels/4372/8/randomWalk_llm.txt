@@ -1,0 +1,6 @@
+```
+// Use shared memory if multiple threads require access to common data to reduce global memory access
+// Consider memory coalescing to improve global memory access efficiency
+// Utilize __syncthreads() judiciously to ensure proper synchronization where necessary
+// Investigate warp shuffle operations to benefit from lower latency for intrawarp communication
+```

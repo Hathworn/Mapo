@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache pattern updates to reduce global memory accesses
+// Ensure the initial pattern is assigned in a way that minimizes bank conflicts
+// Consider using a warp-wide operation to optimally update the shared pattern
+// Loop with stride of block size for possible compiler unroll to improve memory access patterns
+// Consider coalescing memory accesses in ptr[i] to enhance performance
+// Utilize prefetching or asynchronous copy for ptr[i] if applicable to minimize latency
+```

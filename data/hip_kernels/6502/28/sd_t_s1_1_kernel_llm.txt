@@ -1,0 +1,4 @@
+// Consider using coalesced memory accesses for global memory loads and stores for performance improvement.
+// Try tuning shared memory size to match the GPU architecture's shared memory limits for better utilization.
+// Use constant memory if certain data sets do not change during kernel execution to reduce global memory traffic.
+// Optimize thread block size and grid dimensions based on problem size for efficient parallel distribution.

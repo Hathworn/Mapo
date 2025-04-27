@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access by ensuring sequential threads access sequential memory locations
+// Consider using shared memory if there are common repetitive accesses among threads
+// Ensure alignment of memory accesses for better performance
+// Prefetch segments of memory into shared memory to minimize global memory latency
+// Experiment with different block sizes to find the optimal configuration for your GPU architecture
+// Consider using asynchronous memory prefetching to overlap computation with memory transfer
+```

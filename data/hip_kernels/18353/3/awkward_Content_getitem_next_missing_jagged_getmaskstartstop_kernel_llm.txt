@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache repetitive accesses to offsets_in for faster access.
+// Use warp-level primitives to optimize conditional assignments for mask_value.
+// Optimize memory access patterns by coalescing reads and writes of prefixed_index and index_in.
+```

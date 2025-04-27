@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access patterns for pred, truth, delta, and error arrays
+// Ensure arrays are aligned to cache line boundaries for better caching
+// Consider use of shared memory for frequently accessed data within thread blocks
+// Minimize divergent branches by ensuring all threads in a warp take the same execution path
+// Identify and eliminate redundant calculations within the kernel where possible
+```

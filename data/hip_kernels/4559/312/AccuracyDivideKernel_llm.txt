@@ -1,0 +1,3 @@
+// Consider optimizing memory access by using shared memory if applicable
+// Ensure preventing race conditions using atomic operations if division on global memory is needed by multiple threads
+// Check if moving computation to CPU could reduce GPU idle time since only one thread is used here

@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access.
+// Consider coalescing global memory accesses for efficiency.
+// Make use of __syncthreads() to ensure memory consistency within the block.
+// Boundary check to prevent out-of-bounds memory access.
+// Consider using multiple warps to fully utilize the GPU's parallel processing capabilities.

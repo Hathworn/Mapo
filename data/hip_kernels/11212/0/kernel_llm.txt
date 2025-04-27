@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Minimize use of __syncthreads() by restructuring computation for better warp utilization
+// Reduce shared memory allocation by optimizing shared memory usage
+// Ensure data alignment for optimal performance
+// Consider loop unrolling for computation inside kernel function for reduced overhead
+```

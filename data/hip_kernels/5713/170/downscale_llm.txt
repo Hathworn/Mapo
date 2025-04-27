@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Minimize divergent branches to enhance warp execution efficiency
+// Avoid bank conflicts in shared memory for better parallel performance
+// Evaluate loop unrolling to reduce loop overhead and increase computation speed
+// Utilize __syncthreads() strategically if using shared memory to ensure data consistency across threads
+```

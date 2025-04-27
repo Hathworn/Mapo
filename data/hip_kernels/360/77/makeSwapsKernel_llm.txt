@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses to partition, swap_to, swap_from, and swap_index arrays.
+// Ensure accesses to nodeWeights and desirability arrays are coalesced for better memory throughput.
+// Use shared memory to cache frequent accesses to partSizes to reduce global memory transactions.
+// Consider loop unrolling for large arrays to minimize overhead and improve throughput.
+// Use warp-level primitives to optimize reduction operations if applicable.
+```

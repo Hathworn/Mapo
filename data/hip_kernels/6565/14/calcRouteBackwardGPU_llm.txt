@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by using stride properly
+// Use shared memory if there are shared values among threads for better cache usage
+// Consider loop unrolling if the loop trip count is known and small
+// Optimize memory access patterns to minimize memory transaction overhead
+// Check bank conflicts in shared memory and resolve them
+// Use vectorized memory operations if possible
+```

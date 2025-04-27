@@ -1,0 +1,10 @@
+```
+// Consider using shared memory for frequently accessed data
+// Optimize access pattern to coalesce memory reads and writes
+// Explore using warp-level primitives to improve performance
+// Consider double buffering technique to hide memory latency
+// Reorder computation to reduce warp divergence
+// Use more aggressive loop unrolling to reduce instruction overhead
+// Evaluate possibility of using texture memory for read-only data
+// Review usage of constant memory for immutable values
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache gradOutput_data for improved memory access patterns
+// Unroll the loops completely if the scale_factor is small for better instruction-level parallelism
+// Minimize the number of calls to translate_idx_inv by computing common subexpressions outside the loop
+// Ensure gradInput_data and gradOutput_data are accessed in a coalesced manner
+// Use __restrict__ pointers if possible to help the compiler optimize memory access
+```

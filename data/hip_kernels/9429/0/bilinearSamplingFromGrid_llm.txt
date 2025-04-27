@@ -1,0 +1,6 @@
+```
+// Use __shared__ memory to load grid data for faster access and reduce redundant global memory loads.
+// Ensure __syncthreads() is called after loading data into shared memory to synchronize threads.
+// Make use of fast local boolean checks to avoid accessing out-of-bound memory areas.
+// Unroll loop iterations where applicable to reduce the loop overhead and enhance throughput.
+```

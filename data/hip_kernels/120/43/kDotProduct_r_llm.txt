@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses, improving memory efficiency.
+// Load data in chunks to maximize L1 cache utilization and reduce global memory traffic.
+// Perform reduction using unrolling to reduce loop overhead and improve occupancy.
+// Utilize warp-synchronous programming to optimize the final reduction steps.
+// Write results from shared memory to global memory in a coalesced manner.

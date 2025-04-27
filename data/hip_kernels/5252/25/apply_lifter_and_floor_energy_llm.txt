@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to store lifter coefficients for reducing global memory access
+// Ensure memory coalescing by aligning data access patterns
+// Consider loop unrolling for warp-level parallelism
+// Use __syncthreads() to synchronize threads within a block when modifying shared data
+// Prefer __fmul_rn for more accurate floating-point multiplication if precision is critical
+```

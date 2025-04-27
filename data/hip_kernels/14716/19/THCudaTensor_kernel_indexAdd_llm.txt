@@ -1,0 +1,7 @@
+```
+// Consider employing shared memory to reduce global memory accesses
+// Utilize memory coalescing to improve memory access patterns
+// Investigate loop unrolling inside the for-loop for potential performance gain
+// Align memory accesses to 128/256 bits when possible for optimal usage of memory bandwidth
+// Minimize use of atomic operations, evaluate possibility of partial sums in shared memory
+```

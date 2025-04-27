@@ -1,0 +1,7 @@
+```
+// Consider loop unrolling for processing multiple elements per thread.
+// Use __restrict__ keyword to hint compiler for pointer aliasing.
+// Ensure data is aligned for efficient memory access.
+// Employ shared memory to store repetitive data.
+// Use atomic operations only when needed to improve performance.
+```

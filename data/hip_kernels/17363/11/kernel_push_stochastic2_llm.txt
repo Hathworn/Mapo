@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for `s_push_reser` and `g_push_reser` to reduce global memory access.
+// Ensure that the memory accesses for `g_terminate` and `d_stochastic` are coalesced.
+// Explore using warp-level primitives to further optimize memory access patterns.
+// Investigate using loop unrolling if thread calculations can be further simplified.
+// Evaluate the benefits of using asynchronous memory copy if `s_push_reser` and `g_push_reser` are large.
+```

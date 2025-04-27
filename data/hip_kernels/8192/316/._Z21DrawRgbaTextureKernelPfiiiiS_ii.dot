@@ -1,0 +1,24 @@
+digraph "CFG for '_Z21DrawRgbaTextureKernelPfiiiiS_ii' function" {
+	label="CFG for '_Z21DrawRgbaTextureKernelPfiiiiS_ii' function";
+
+	Node0x529cb60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = getelementptr inbounds i8, i8 addrspace(4)* %9, i64 12\l  %15 = bitcast i8 addrspace(4)* %14 to i32 addrspace(4)*\l  %16 = load i32, i32 addrspace(4)* %15, align 4, !tbaa !6\l  %17 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %18 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %19 = udiv i32 %16, %13\l  %20 = mul i32 %19, %13\l  %21 = icmp ugt i32 %16, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %18\l  %25 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %26 = add i32 %24, %17\l  %27 = mul i32 %26, %13\l  %28 = add i32 %27, %25\l  %29 = mul nsw i32 %7, %6\l  %30 = sdiv i32 %28, %29\l  %31 = mul nsw i32 %30, %29\l  %32 = sub nsw i32 %28, %31\l  %33 = sdiv i32 %32, %6\l  %34 = mul nsw i32 %33, %6\l  %35 = sub nsw i32 %32, %34\l  %36 = icmp slt i32 %30, 3\l  br i1 %36, label %37, label %71\l|{<s0>T|<s1>F}}"];
+	Node0x529cb60:s0 -> Node0x529e6c0;
+	Node0x529cb60:s1 -> Node0x529f960;
+	Node0x529e6c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%37:\l37:                                               \l  switch i32 %30, label %40 [\l    i32 0, label %38\l    i32 2, label %39\l  ]\l|{<s0>def|<s1>0|<s2>2}}"];
+	Node0x529e6c0:s0 -> Node0x529faa0;
+	Node0x529e6c0:s1 -> Node0x529faf0;
+	Node0x529e6c0:s2 -> Node0x529fbb0;
+	Node0x529faf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%38:\l38:                                               \l  br label %40\l}"];
+	Node0x529faf0 -> Node0x529faa0;
+	Node0x529fbb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%39:\l39:                                               \l  br label %40\l}"];
+	Node0x529fbb0 -> Node0x529faa0;
+	Node0x529faa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%40:\l40:                                               \l  %41 = phi i32 [ %30, %37 ], [ 0, %39 ], [ 2, %38 ]\l  %42 = add nsw i32 %35, %3\l  %43 = icmp slt i32 %42, %1\l  %44 = icmp sgt i32 %42, -1\l  %45 = and i1 %43, %44\l  br i1 %45, label %46, label %71\l|{<s0>T|<s1>F}}"];
+	Node0x529faa0:s0 -> Node0x52a0180;
+	Node0x529faa0:s1 -> Node0x529f960;
+	Node0x52a0180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%46:\l46:                                               \l  %47 = add nsw i32 %33, %4\l  %48 = icmp slt i32 %47, %2\l  %49 = icmp sgt i32 %47, -1\l  %50 = and i1 %48, %49\l  br i1 %50, label %51, label %71\l|{<s0>T|<s1>F}}"];
+	Node0x52a0180:s0 -> Node0x52a04c0;
+	Node0x52a0180:s1 -> Node0x529f960;
+	Node0x52a04c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%51:\l51:                                               \l  %52 = mul i32 %41, %2\l  %53 = add i32 %52, %47\l  %54 = mul i32 %53, %1\l  %55 = add i32 %54, %42\l  %56 = mul nsw i32 %29, 3\l  %57 = add nsw i32 %32, %56\l  %58 = sext i32 %57 to i64\l  %59 = getelementptr inbounds float, float addrspace(1)* %5, i64 %58\l  %60 = load float, float addrspace(1)* %59, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %61 = sext i32 %55 to i64\l  %62 = getelementptr inbounds float, float addrspace(1)* %0, i64 %61\l  %63 = load float, float addrspace(1)* %62, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %64 = fsub contract float 1.000000e+00, %60\l  %65 = fmul contract float %63, %64\l  %66 = sext i32 %28 to i64\l  %67 = getelementptr inbounds float, float addrspace(1)* %5, i64 %66\l  %68 = load float, float addrspace(1)* %67, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %69 = fmul contract float %60, %68\l  %70 = fadd contract float %65, %69\l  store float %70, float addrspace(1)* %62, align 4, !tbaa !16\l  br label %71\l}"];
+	Node0x52a04c0 -> Node0x529f960;
+	Node0x529f960 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%71:\l71:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for dphi, dpsix, and dpsiy arrays
+// Use shared memory to temporarily store tile data and reduce global memory accesses
+// Optimize block and grid dimensions to ensure full occupancy of GPU resources
+// Minimize divergent branches within the if statement
+// Prefetch data to shared memory and use it within the if block
+```

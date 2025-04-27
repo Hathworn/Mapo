@@ -1,0 +1,4 @@
+// Ensure memory access is coalesced for efficient global access  
+// Minimize conditional branches to reduce warp divergence  
+// Use shared memory for frequently accessed data if applicable  
+// Consider loop unrolling if applicable for parallel data processing

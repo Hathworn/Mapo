@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to optimize memory access patterns.
+// Minimize global memory access by utilizing registers for temporary variables.
+// Take advantage of memory coalescing for the variable `deltas_o_d`.
+// Ensure the use of __syncthreads() is necessary and does not impede performance.
+// Prefetch data into shared memory outside of the critical loop if possible.
+// Unroll loops where beneficial to reduce loop overhead.
+// Check alignment of memory accesses to improve coalescing.
+// Avoid bank conflicts in shared memory access patterns.
+```

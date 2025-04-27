@@ -1,0 +1,10 @@
+digraph "CFG for '_Z15Vector_AdditionPKiS0_Pi' function" {
+	label="CFG for '_Z15Vector_AdditionPKiS0_Pi' function";
+
+	Node0x4d65df0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = and i32 %4, 63488\l  %6 = icmp eq i32 %5, 0\l  br i1 %6, label %7, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x4d65df0:s0 -> Node0x4d66780;
+	Node0x4d65df0:s1 -> Node0x4d66810;
+	Node0x4d66780 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%7:\l7:                                                \l  %8 = and i32 %4, 65535\l  %9 = zext i32 %8 to i64\l  %10 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %9\l  %11 = load i32, i32 addrspace(1)* %10, align 4, !tbaa !4, !amdgpu.noclobber\l... !8\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %9\l  %13 = load i32, i32 addrspace(1)* %12, align 4, !tbaa !4, !amdgpu.noclobber\l... !8\l  %14 = add nsw i32 %13, %11\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %9\l  store i32 %14, i32 addrspace(1)* %15, align 4, !tbaa !4\l  br label %16\l}"];
+	Node0x4d66780 -> Node0x4d66810;
+	Node0x4d66810 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  ret void\l}"];
+}

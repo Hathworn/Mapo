@@ -1,0 +1,7 @@
+```
+// Use shared memory for kernel to reduce global memory access
+// Prefetch data into registers to minimize repeated access 
+// Consider using vectorized loads and stores for improved memory throughput 
+// Align memory accesses to avoid uncoalesced access penalties
+// Ensure memory access patterns are coalesced for optimal performance
+```

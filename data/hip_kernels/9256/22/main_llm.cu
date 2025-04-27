@@ -1,0 +1,66 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <hip/hip_runtime.h>
+#include "expansionKernel_llm.cu"
+#include <chrono>
+#include <iostream>
+using namespace std;
+using namespace std::chrono;
+int main(int argc, char **argv) {
+hipSetDevice(0);
+
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    int batchSize = XSIZE*YSIZE;
+float *input = NULL;
+hipMalloc(&input, XSIZE*YSIZE);
+int *inputLengths = NULL;
+hipMalloc(&inputLengths, XSIZE*YSIZE);
+int numberRows = 1;
+int numberInputEntries = 1;
+int numberFilterRowPositions = 2;
+int filterHeight = YSIZE;
+int filterWidth = XSIZE;
+int filterLength = 2;
+int numberResultEntries = 1;
+float *result = NULL;
+hipMalloc(&result, XSIZE*YSIZE);
+int *resultLengths = NULL;
+hipMalloc(&resultLengths, XSIZE*YSIZE);
+int iXSIZE= XSIZE;
+int iYSIZE= YSIZE;
+while(iXSIZE%BLOCKX!=0) {
+iXSIZE++;
+}
+while(iYSIZE%BLOCKY!=0) {
+iYSIZE++;
+}
+dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
+dim3 threadBlock(BLOCKX, BLOCKY);
+hipFree(0);
+expansionKernel<<<gridBlock, threadBlock>>>(batchSize,input,inputLengths,numberRows,numberInputEntries,numberFilterRowPositions,filterHeight,filterWidth,filterLength,numberResultEntries,result,resultLengths);
+hipDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+expansionKernel<<<gridBlock, threadBlock>>>(batchSize,input,inputLengths,numberRows,numberInputEntries,numberFilterRowPositions,filterHeight,filterWidth,filterLength,numberResultEntries,result,resultLengths);
+}
+hipDeviceSynchronize();
+auto start = steady_clock::now();
+for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+expansionKernel<<<gridBlock, threadBlock>>>(batchSize,input,inputLengths,numberRows,numberInputEntries,numberFilterRowPositions,filterHeight,filterWidth,filterLength,numberResultEntries,result,resultLengths);
+}
+hipDeviceSynchronize();
+auto end = steady_clock::now();
+auto usecs = duration_cast<duration<float, microseconds::period>>(end - start);
+cout << '[' << usecs.count() << ',' << '(' << BLOCKX << ',' << BLOCKY << ')' << ',' << '(' << XSIZE << ',' << YSIZE << ')' << ']' << endl;
+}

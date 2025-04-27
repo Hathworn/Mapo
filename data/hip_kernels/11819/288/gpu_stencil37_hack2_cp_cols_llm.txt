@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store frequently accessed data to reduce global memory accesses.
+// Reduce numerator calculation redundancy by pre-computing values for repeated operations.
+// Use loop unrolling to optimize repetitive operations and improve memory access patterns.
+// Verify memory coalescing for read and write operations to enhance performance on the GPU.
+// Ensure data alignment to leverage hardware-specific instructions and avoid unaligned access penalties.
+// Minimize control flow divergence within the kernel to improve efficiency.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Ensure proper memory coalescing by aligning shared memory accesses.
+// Use shared memory to minimize redundant loads from global memory.
+// Consider using loop unrolling to optimize the stencil computation further.
+// Check boundary conditions carefully to avoid out-of-bounds memory access.
+// Use __syncthreads() only where necessary to avoid thread divergence.
+```

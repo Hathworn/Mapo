@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory accesses for neighbor pixels
+// Use loop unrolling to optimize the inner loops for performance
+// Implement memory coalescing by processing multiple pixels per thread for better efficiency
+// Avoid branch divergence, especially in conditions based on keep_mask
+// Consider vectorizing operations if nChannels is a multiple of 4 
+```

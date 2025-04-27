@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache frequently used data to reduce global memory accesses.
+// Ensure memory coalescing by aligning data access patterns to improve throughput.
+// Evaluate using half precision for computations where precision loss is acceptable to improve performance.
+// Minimize divergence by restructuring conditional statements if possible.
+// Consider employing warp shuffle instructions for reductions to reduce shared memory usage.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for data that is accessed frequently by threads to reduce global memory access latency.
+// Coalesce global memory accesses by ensuring that contiguous threads access contiguous memory locations.
+// Evaluate the use of warp shuffles for inter-thread communication to minimize memory access overhead.
+// Examine using asynchronous memory transfers to overlap computation with data movement.
+// Optimize memory usage by using appropriate data types to match the precision requirements of the algorithm.
+// Leverage constant memory for data that remains unchanged during kernel execution to reduce memory traffic.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access latency
+// Load from global to shared memory
+// Perform computation using register
+// Reduce redundant computation by updating B only once per loop
+// Update global memory with the final value

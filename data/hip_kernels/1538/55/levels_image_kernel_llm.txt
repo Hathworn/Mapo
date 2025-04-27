@@ -1,0 +1,5 @@
+// Consider using shared memory for storing image data to reduce global memory accesses.
+// Use streams to overlap kernel execution with data transfers.
+// Optimize the memory access pattern by ensuring coalesced accesses.
+// Check if reducing bank conflicts can further improve performance in shared memory.
+// Explore the use of atomics for any potential read-modify-write operations to ensure thread safety.

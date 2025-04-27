@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access for idx to reduce memory transactions.
+// Explore the use of vectorized data types for src and trg to maximize bandwidth.
+// Investigate using warp shuffle operations to reduce shared memory use and synchronization.
+// Ensure loop unrolling for the atomic addition loop to improve performance.
+// Profile kernel execution to identify further potential bottlenecks with memory access patterns.
+```

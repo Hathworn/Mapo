@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access latency.
+// Ensure proper synchronization (__syncthreads) for shared memory usage to prevent race conditions.
+// Optimize memory coalescing by storing data in shared memory before accessing global memory.
+// Consider using warp-level primitives to reduce on shared memory for better performance.

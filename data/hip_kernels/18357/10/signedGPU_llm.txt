@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for same block data access patterns to reduce global memory traffic
+// Optimize memory coalescing by ensuring contiguous memory access for Ns and Ds arrays
+// Use warp shuffle operations for reduction or combining results if applicable to reduce global memory access
+// Check if Ns and Ds arrays can be double-buffered or pinned to improve memory bandwidth
+// Evaluate using asynchronous memory copies and streams for overlapping computations with data transfers
+```

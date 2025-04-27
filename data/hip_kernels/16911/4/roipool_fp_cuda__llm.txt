@@ -1,0 +1,6 @@
+```
+// Consider reorganizing data access patterns to ensure coalesced memory access
+// Use shared memory to cache frequently accessed data within each block
+// Ensure that the size of blockDim is chosen to optimize occupancy and minimize warp divergence
+// Prefetch data to registers if it will be reused multiple times in calculations
+```

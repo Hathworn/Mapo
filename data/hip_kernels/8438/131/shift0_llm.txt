@@ -1,0 +1,6 @@
+// Ensure coalesced memory access by aligning data structures to warp size
+// Consider using shared memory for repeated calculations within a block
+// Minimize divergent branches to improve warp efficiency
+// Utilize constant memory for any repetitive read-only data
+// Restructure data access patterns to favor sequential access for better caching
+// Assess register pressure and optimize thread-level memory usage

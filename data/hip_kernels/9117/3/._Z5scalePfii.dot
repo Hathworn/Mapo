@@ -1,0 +1,13 @@
+digraph "CFG for '_Z5scalePfii' function" {
+	label="CFG for '_Z5scalePfii' function";
+
+	Node0x557ecd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = add nsw i32 %2, 1\l  %5 = icmp slt i32 %4, %1\l  br i1 %5, label %6, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x557ecd0:s0 -> Node0x557f4a0;
+	Node0x557ecd0:s1 -> Node0x557f530;
+	Node0x557f4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%6:\l6:                                                \l  %7 = mul nsw i32 %2, %1\l  %8 = add nsw i32 %7, %2\l  %9 = sext i32 %8 to i64\l  %10 = getelementptr inbounds float, float addrspace(1)* %0, i64 %9\l  br label %11\l}"];
+	Node0x557f4a0 -> Node0x557f3c0;
+	Node0x557f3c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%11:\l11:                                               \l  %12 = phi i32 [ %4, %6 ], [ %19, %11 ]\l  %13 = add nsw i32 %12, %7\l  %14 = sext i32 %13 to i64\l  %15 = getelementptr inbounds float, float addrspace(1)* %0, i64 %14\l  %16 = load float, float addrspace(1)* %15, align 4, !tbaa !4\l  %17 = load float, float addrspace(1)* %10, align 4, !tbaa !4\l  %18 = fdiv contract float %16, %17\l  store float %18, float addrspace(1)* %15, align 4, !tbaa !4\l  %19 = add nsw i32 %12, 1\l  %20 = icmp slt i32 %19, %1\l  br i1 %20, label %11, label %21, !llvm.loop !8\l|{<s0>T|<s1>F}}"];
+	Node0x557f3c0:s0 -> Node0x557f3c0;
+	Node0x557f3c0:s1 -> Node0x557f530;
+	Node0x557f530 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%21:\l21:                                               \l  ret void\l}"];
+}

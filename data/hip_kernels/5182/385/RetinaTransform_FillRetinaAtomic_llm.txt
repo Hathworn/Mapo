@@ -1,0 +1,9 @@
+```cpp
+// Ensure subImageDefs is read efficiently to avoid memory latency
+// Reduce the number of condition checks by combining min/max operations
+// Consider restructuring loops or using shared memory to reduce repeated calculations
+// Avoid accessing global memory multiple times for the same data within loops
+// Precompute repeated calculations outside the loop as possible constants
+// Use floating-point constants for calculations to avoid implicit conversions
+// Optimize atomic operations by reducing contention or using warp-level primitives
+```

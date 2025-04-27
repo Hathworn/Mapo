@@ -1,0 +1,6 @@
+```
+// Use shared memory to store parts of the matrix for coalesced access
+// Unroll the loop further if registers allow, to increase instruction throughput
+// Consider using vectorized loads and stores (e.g., float4) for higher memory throughput
+// Align data structures on 128-bit boundaries for optimal memory transactions
+```

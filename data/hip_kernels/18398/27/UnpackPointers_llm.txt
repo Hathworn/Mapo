@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by structuring data access patterns for threads within a warp
+// Minimize bank conflicts in shared memory by aligning data properly
+// Reduce divergent branching by evaluating conditions outside loops when possible
+// Use shared memory to buffer rows if appropriate to minimize global memory transactions
+// Optimize loop unrolling manually if compiler optimizations aren't sufficient
+```

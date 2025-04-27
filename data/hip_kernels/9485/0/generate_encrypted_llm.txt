@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for pDataPointer and pRandomData to improve bandwidth.
+// Ensure that pSize is a multiple of the block size for optimal resource utilization.
+// Utilize shared memory if repetitive access to pRandomData can benefit from reduced global memory access.
+// Minimize divergent branches by ensuring well-aligned block sizes.
+// Experiment with different block sizes to achieve maximum occupancy.
+```

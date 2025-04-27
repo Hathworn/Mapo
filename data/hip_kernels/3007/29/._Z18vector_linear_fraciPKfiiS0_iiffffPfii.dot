@@ -1,0 +1,10 @@
+digraph "CFG for '_Z18vector_linear_fraciPKfiiS0_iiffffPfii' function" {
+	label="CFG for '_Z18vector_linear_fraciPKfiiS0_iiffffPfii' function";
+
+	Node0x55218c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%14:\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %16 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %17 = getelementptr i8, i8 addrspace(4)* %16, i64 4\l  %18 = bitcast i8 addrspace(4)* %17 to i16 addrspace(4)*\l  %19 = load i16, i16 addrspace(4)* %18, align 4, !range !4, !invariant.load !5\l  %20 = zext i16 %19 to i32\l  %21 = mul i32 %15, %20\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %23 = add i32 %21, %22\l  %24 = icmp slt i32 %23, %0\l  br i1 %24, label %25, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x55218c0:s0 -> Node0x5524440;
+	Node0x55218c0:s1 -> Node0x55244d0;
+	Node0x5524440 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%25:\l25:                                               \l  %26 = mul nsw i32 %23, %3\l  %27 = add nsw i32 %26, %2\l  %28 = sext i32 %27 to i64\l  %29 = getelementptr inbounds float, float addrspace(1)* %1, i64 %28\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %31 = fmul contract float %30, %7\l  %32 = fadd contract float %31, %8\l  %33 = mul nsw i32 %23, %6\l  %34 = add nsw i32 %33, %5\l  %35 = sext i32 %34 to i64\l  %36 = getelementptr inbounds float, float addrspace(1)* %4, i64 %35\l  %37 = load float, float addrspace(1)* %36, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %38 = fmul contract float %37, %9\l  %39 = fadd contract float %38, %10\l  %40 = fdiv contract float %32, %39\l  %41 = mul nsw i32 %23, %13\l  %42 = add nsw i32 %41, %12\l  %43 = sext i32 %42 to i64\l  %44 = getelementptr inbounds float, float addrspace(1)* %11, i64 %43\l  store float %40, float addrspace(1)* %44, align 4, !tbaa !7\l  br label %45\l}"];
+	Node0x5524440 -> Node0x55244d0;
+	Node0x55244d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%45:\l45:                                               \l  ret void\l}"];
+}

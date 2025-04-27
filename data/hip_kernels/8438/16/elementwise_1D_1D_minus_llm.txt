@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns to optimize global memory throughput
+// Ensure that threadIdx.x is the fastest varying index for better memory access
+// Minimize divergence by ensuring that all threads in a warp execute the same instructions
+// Prefetch data into local registers to reduce global memory latency
+// Consider using shared memory to cache input data if there is temporal reuse
+// Balance the number of blocks and threads to maximize occupancy
+```

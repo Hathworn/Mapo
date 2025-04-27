@@ -1,0 +1,6 @@
+```c
+// Use coalesced memory access patterns for both x and mask arrays.
+// Ensure that block size is a multiple of warp size for optimal execution.
+// Minimize divergence by ensuring threads in a warp follow the same execution path.
+// Consider using shared memory if multiple threads access the same memory locations.
+```

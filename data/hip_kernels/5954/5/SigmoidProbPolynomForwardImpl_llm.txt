@@ -1,0 +1,5 @@
+// Use shared memory to cache probs and values for faster access within a block
+// Align data accesses to memory boundary to enhance coalesced access
+// Minimize branch divergence by avoiding conditional return statements in threads
+// Explore loop unrolling techniques for faster polynomial accumulation
+// Consider using warp-level primitives to further optimize atomic operations

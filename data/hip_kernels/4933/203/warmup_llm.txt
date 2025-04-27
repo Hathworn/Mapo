@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory if reusing data loaded from global memory multiple times within the block.
+// Ensure data alignment to enhance memory access efficiency.
+// Avoid bank conflicts if shared memory is utilized.
+// Optimize the grid and block size for better occupancy and memory efficiency.
+```

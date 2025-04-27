@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive elements
+// Minimize branch divergence by aligning execution paths where possible
+// Use appropriate block and grid dimensions to maximize occupancy and hide latencies
+// Prefetch data into registers to decrease global memory access latency
+```

@@ -1,0 +1,7 @@
+```
+// Consider using warp-level primitives for efficient data exchange within shared memory.
+// Ensure bank conflicts are minimized by using padding if necessary.
+// Check for alignment of memory accesses to improve global memory throughput.
+// Use inline PTX assembly if appropriate for critical sections of the computation.
+// Consider loop unrolling for the innermost computation loop.
+```

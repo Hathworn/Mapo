@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data access patterns.
+// Use shared memory to cache gradOutput_data to reduce global memory traffic.
+// Consider loop unrolling beyond pragma unroll for deeper loops when scale_factor is constant.
+// Prefetch gradOutput_data into registers to reduce memory access latency.
+// Use memory access patterns that minimize bank conflicts in shared memory.
+// Consider vectorized data access to improve throughput when accessing gradOutput_data.
+```

@@ -1,0 +1,4 @@
+// Utilize shared memory for frequently accessed data to reduce global memory reads
+// Consider loop unrolling if computation inside the loop is significant to improve performance
+// Verify memory coalescing patterns for optimal access in warp executions
+// Explore asynchronous memory copies to overlap data transfer with computation if applicable

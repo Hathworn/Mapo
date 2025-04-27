@@ -1,0 +1,5 @@
+// Optimize memory access patterns by using shared memory to reduce global memory access latency
+// Ensure each thread reads/writes contiguous memory to maximize coalesced access
+// Use __syncthreads() to synchronize threads and avoid race conditions when transposing
+// Consider adjusting tile size based on GPU architecture and shared memory limits to improve performance
+// Verify boundary conditions to avoid memory access beyond allocated array limits

@@ -1,0 +1,6 @@
+```
+// Consider aligning memory accesses to improve coalescing
+// Preload values used multiple times into registers to reduce redundant global memory accesses
+// Use shared memory to cache repeated reads for threads within a block where possible
+// Evaluate if using textures could provide better cache behavior for read-only data
+```

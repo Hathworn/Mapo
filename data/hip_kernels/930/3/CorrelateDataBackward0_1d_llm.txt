@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access patterns when accessing bottom1 and topdiff 
+// Consider padding to avoid bank conflicts in shared memory access
+// Minimize __syncthreads() usage to reduce synchronization overhead
+// Balance the number of threads and blocks to maximize occupancy
+// Optimize memory access patterns to improve cache utilization
+// Align shared memory usage with CUDA thread warp size to prevent wasted bandwidth
+```

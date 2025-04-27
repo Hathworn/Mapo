@@ -1,0 +1,7 @@
+```c
+// Use loop unrolling to improve memory access pattern and reduce loop iterations
+// Ensure memory access is coalesced by accessing consecutive elements with consecutive threads
+// Use shared memory to reduce global memory access latency
+// Apply warp shuffle in parallel reduction to minimize synchronization overhead
+// Use __syncthreads() to ensure all threads have written their partial sums
+```

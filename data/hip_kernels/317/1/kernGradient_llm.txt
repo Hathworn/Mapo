@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access latency
+// Load boundary data for halo cells to avoid conditional checks
+// Minimize divergence by having all threads participate in similar operations
+// Ensure shared memory access is coalesced to improve performance
+// Synchronize threads to prevent read-after-write hazards
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced global memory accesses by aligning data properly
+// Use shared memory to reduce global memory bandwidth
+// Prefetch neighboring elements into shared memory to minimize global memory access
+// Balance the workload across blocks to optimize resource utilization
+// Use __syncthreads() to ensure data is read into shared memory before computation
+```

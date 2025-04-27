@@ -1,0 +1,8 @@
+```c
+// Consider coalescing global memory access for gradOutput, gradInput, indices_x, and indices_y.
+// Ensure proper alignment to maximize memory throughput.
+// Use shared memory to minimize redundant global memory fetches.
+// Explore loop unrolling to reduce the loop control overhead.
+// Minimize divergent branching by ensuring similar execution paths for threads.
+// Improve memory access patterns to reduce the potential for cache thrashing.
+```

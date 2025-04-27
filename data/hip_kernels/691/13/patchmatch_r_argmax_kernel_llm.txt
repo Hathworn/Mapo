@@ -1,0 +1,4 @@
+// Flatten nested loops to reduce the number of conditional checks.
+// Consider using shared memory for `conv` if not too large, to reduce global memory access.
+// Ensure memory coalescing for correspondence and match write operations for efficient global memory access.
+// Minimize register pressure by reusing variable `conv_max` across different operations.

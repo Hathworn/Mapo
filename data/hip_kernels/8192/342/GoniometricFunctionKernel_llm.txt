@@ -1,0 +1,5 @@
+// Cache input value to reduce global memory access
+// Simplified grid-stride calculation for efficient parallelism
+// Ensure execution only within bounds for memory safety
+// Handling the case of atan2 separately due to its unique access pattern
+// Additional boundary check for index safety in atan2 case

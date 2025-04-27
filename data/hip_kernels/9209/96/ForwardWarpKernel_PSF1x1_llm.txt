@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to cache portions of u, v, and src to reduce global memory access.
+// Consider coalesced memory access patterns when reading from global memory for u, v, and src.
+// Optimize flow_stride and image_stride alignment to improve memory access efficiency.
+// Explore using float2 for combined u and v access to reduce memory operations.
+// Prefetch data for the next iteration to hide memory latency.
+// Minimize use of atomic operations, if possible, to reduce performance bottlenecks.
+```

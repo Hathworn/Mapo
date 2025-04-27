@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access for improved performance
+// Ensure coalesced memory access patterns for writing to global memory
+// Explore warp-level operations to further optimize parallel reduction process
+// Use atomic operations if reduction result needs synchronization across threads

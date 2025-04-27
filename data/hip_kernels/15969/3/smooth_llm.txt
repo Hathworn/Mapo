@@ -1,0 +1,7 @@
+```
+// Consider padding memory accesses to avoid bank conflicts
+// Use shared memory to cache data for each thread block
+// Prefetch data into registers to reduce global memory access
+// Coalesce global memory accesses by aligning data properly
+// Minimize divergent branches within the kernel for efficiency
+```

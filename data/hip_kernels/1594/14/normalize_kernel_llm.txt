@@ -1,0 +1,6 @@
+```
+// Consider using __restrict__ qualifier for pointers x, mean, and variance to improve memory access
+// Use shared memory to store mean and variance if they are accessed by multiple threads in the same block
+// Coalesce memory accesses by ensuring that consecutive threads access consecutive memory locations
+// Explore using vectorized memory access to load multiple elements at once, for example using float4
+```

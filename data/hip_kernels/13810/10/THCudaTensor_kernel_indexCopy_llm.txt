@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache res_stride and index for faster access.
+// Reduce global memory access by minimizing the computations inside the loop.
+// Ensure coalesced memory access by aligning memory operations among threads.
+// Use loop unrolling to optimize repeated calculations within the loop.
+// Precompute constant values outside the loops to reduce repeated calculations.
+```

@@ -1,0 +1,7 @@
+```c
+// Use shared memory if data reuse is possible to reduce global memory access
+// Coalesce memory accesses by ensuring adjacent threads access adjacent memory addresses
+// Minimize bank conflicts by ensuring shared memory access patterns are well-aligned
+// Prefer warp-level operations for better efficiency
+// Balance workloads to maximize occupancy and hide memory latency
+```

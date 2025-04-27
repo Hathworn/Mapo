@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data and reduce global memory access
+// Optimize memory access patterns to ensure coalesced memory accesses
+// Evaluate the use of texture or surface memory for read-only data like d_ConstantA and d_ConstantB
+// Ensure grid and block dimensions optimize for full occupancy
+// Use streams to overlap data transfer and kernel execution if applicable
+```

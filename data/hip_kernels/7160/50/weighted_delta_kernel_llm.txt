@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data such as 'dc[i]' and 's[i]' to reduce global memory access.
+// Consider loop unrolling to optimize computation, especially for operations inside 'if' conditions.
+// Ensure coalesced memory access by restructuring loops and data layout to minimize global memory transaction overhead.
+// Use vectorized memory access patterns with float4 or similar types to improve throughput.
+// Evaluate the thread and block configuration for optimal utilization of GPU resources and reduced latency.
+```

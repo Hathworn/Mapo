@@ -1,0 +1,4 @@
+// Use coalesced memory access by ensuring contiguous index access
+// Minimize divergent branches within warp by reducing complex conditions
+// Optimize block size to fully utilize GPU cores for efficient parallelism
+// Prefetching data to shared memory if reused within kernels

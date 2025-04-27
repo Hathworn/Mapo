@@ -1,0 +1,4 @@
+// Consider using __restrict__ qualifiers to advise the compiler of non-aliasing
+// Use shared memory if possible to cache data from global memory for reduced read latency
+// Ensure coalesced memory access by aligning data structures to benefit from hardware capabilities
+// Employ warp-wide reduction or atomic operations cautiously for parallel reduction strategies

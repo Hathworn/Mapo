@@ -1,0 +1,8 @@
+```
+// Ensure that shared memory accesses are coalesced
+// Try to use larger block sizes for higher occupancy
+// Consider using __restrict__ pointers for x_gradient and channel
+// Optimize boundary conditions to reduce branching
+// Use constant memory for x_kernel as it doesn't change
+// Avoid bank conflicts in shared memory accesses
+```

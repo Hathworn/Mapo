@@ -1,0 +1,7 @@
+```
+// Optimize shared memory layout for coalesced global memory access
+// Unroll loops to improve instruction-level parallelism
+// Use __syncthreads() to ensure all threads synchronize before computation
+// Minimize global memory access by loading halos and main data into shared memory 
+// Carefully manage halo data to avoid out-of-bounds memory access
+```

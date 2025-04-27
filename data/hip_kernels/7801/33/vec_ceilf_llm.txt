@@ -1,0 +1,4 @@
+// Ensure coalesced memory access to maximize throughput
+// Consider using shared memory to reduce redundant global memory reads
+// Adjust block and grid size for optimal occupancy and efficiency
+// Minimize divergence by ensuring each warp processes consecutive elements

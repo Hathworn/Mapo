@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses
+// Increase thread block sizes to maximize warp utilization
+// Apply loop unrolling to reduce loop overhead in the main layer processing
+// Use texture memory for read-only data to benefit from caching
+// Minimize redundant synchronization for better performance
+// Optimize memory access patterns to achieve coalesced accesses

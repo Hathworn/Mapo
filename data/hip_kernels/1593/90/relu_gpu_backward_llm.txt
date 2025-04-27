@@ -1,0 +1,7 @@
+```cpp
+// Make sure memory access is coalesced to improve memory throughput
+// Consider using shared memory if needed to optimize memory access patterns
+// Ensure all threads within a warp follow the same execution path to improve efficiency
+// Utilize the grid-stride loop to ensure all elements are processed, even for large N
+// Double-check that thread synchronization is unnecessary; avoid if possible to reduce overhead
+```

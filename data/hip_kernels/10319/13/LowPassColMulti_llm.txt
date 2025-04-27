@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider memory coalescing when accessing global memory
+// Load data into shared memory in a coalesced manner
+// Reduce bank conflicts in shared memory by adjusting access patterns
+// Unroll loop for better performance, especially within inner loops
+// Ensure memory access patterns are coalesced within global memory loads
+// Minimize shared memory use per thread block for better occupancy
+// Use __syncthreads() sparingly to reduce synchronization overhead
+```

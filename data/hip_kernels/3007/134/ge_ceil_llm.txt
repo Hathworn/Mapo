@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses by ensuring contiguous memory access patterns.
+// Evaluate using shared memory to minimize global memory latency.
+// Optimize data loading using vectorized memory operations, if applicable.
+// Check for bank conflicts when using shared memory and ensure alignment.
+// Ensure enough thread parallelism to fully utilize the GPU's computing resources.
+// Use __restrict__ qualifier for pointer arguments to enable additional compiler optimizations.
+```

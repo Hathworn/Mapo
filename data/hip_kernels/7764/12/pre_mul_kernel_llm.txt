@@ -1,0 +1,10 @@
+```cpp
+// Ensure memory alignment for better coalesced memory access
+// Use shared memory if multiple threads access nearby elements
+// Pre-fetch and store data into registers to reduce memory latency
+// Minimize the number of global memory accesses by using registers
+// Ensure that the kernel execution configuration maximizes occupancy
+// Consider using warp shuffle operations for data sharing within a warp
+// Align array sizes to the warp size to minimize warp divergence
+// Use __ldg for read-only data to benefit from read-only cache
+```

@@ -1,0 +1,3 @@
+// Avoid redundant calculations by using localState pointer for state access
+// Minimize latency by initializing the generator state inside the kernel
+// Use unique sequence per thread to ensure random number quality

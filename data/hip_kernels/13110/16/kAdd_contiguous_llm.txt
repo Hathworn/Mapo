@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced by processing contiguous elements
+// Use loop unrolling to reduce loop overhead and improve throughput
+// Consider using shared memory if reuse of data is possible to avoid global memory accesses
+// Balance the workload across threads to ensure all threads perform a similar amount of work
+// Minimize the use of conditionals inside the loop to reduce branch divergence
+```

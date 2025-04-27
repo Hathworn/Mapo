@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by aligning d_mask, d_dists, and d_update_dists data structures
+// Use shared memory to store frequently accessed data within a block to reduce global memory accesses
+// Evaluate thread block size to optimize performance based on device architecture
+// Avoid warp divergence by ensuring consistent execution paths for all threads within a warp
+// Prefetch data to reduce memory latency by using asynchronous memory prefetch instructions
+```

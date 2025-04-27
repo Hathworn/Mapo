@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache t2_d for faster access and reduce global memory reads
+// Ensure coalesced memory access for t2_d loads into shared memory
+// Consider loop unrolling for small fixed-size loops to improve performance
+// Use efficient index calculations to minimize the number of costly divisions and modulo operations
+// Evaluate if additional shared memory can be used for v2_d to further reduce global memory bandwidth usage
+// Ensure that memory access patterns are optimized for both global and shared memory access
+// Consider using a grid-stride loop (gridDim.x * blockDim.x) for better scalability and workload balancing
+```

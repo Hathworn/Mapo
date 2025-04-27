@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache repetitive memory accesses to tRCoeffs and tUnrCoeffs
+// Minimize branching in the loop by ensuring 'rows' is even for better unrolling effectiveness
+// Employ atomic operations or warp-level primitives if possible to reduce thread divergence
+// Consider using asynchronous copy and compute with streams for overlapping data transfer and computation
+```

@@ -1,0 +1,7 @@
+```
+// Unroll the loop to reduce loop overhead and improve instruction throughput.
+// Ensure coalesced memory accesses for A and B to improve memory bandwidth.
+// Consider using shared memory to cache elements of A and B for fewer global memory accesses.
+// Optimize memory stride by ensuring that threads access consecutive memory locations.
+// Use atomic operations carefully if necessary to ensure correct concurrent writes.
+```

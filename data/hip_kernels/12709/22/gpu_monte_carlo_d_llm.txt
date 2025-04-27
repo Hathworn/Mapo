@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for 'estimate'
+// Initialize random states outside of kernel loop to reduce overhead
+// Minimize shared memory size if BLOCK_SIZE is over-allocated
+// Ensure enough threads per block to fully utilize the GPU's capabilities
+```

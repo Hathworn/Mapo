@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to reduce global memory access for frequently accessed data
+// Optimize block and grid dimensions to maximize occupancy
+// Ensure memory access patterns are coalesced for better performance
+// Explore the use of warp-level operations to minimize divergence
+// Check for memory bank conflicts when using shared memory
+// Minimize the use of atomic operations where possible to improve throughput
+```

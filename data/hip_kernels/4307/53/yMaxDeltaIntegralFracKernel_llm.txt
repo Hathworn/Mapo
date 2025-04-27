@@ -1,0 +1,7 @@
+```
+// Use shared memory to store frequently accessed data to reduce global memory access latency.
+// Implement loop unrolling to further optimize memory access patterns.
+// Prefetch data from global memory to registers to increase data reuse.
+// Ensure memory coalescing by accessing contiguous memory locations where possible.
+// Avoid branch divergence by ensuring that threads within a warp take the same execution path.
+```

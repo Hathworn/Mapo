@@ -1,0 +1,6 @@
+```
+// Consider unrolling the inner loop to improve memory access patterns.
+// Ensure coalesced memory access by aligning 'x' and 'mean' accesses.
+// Use shared memory to store intermediate sums to improve memory access speed.
+// Optimize thread block size to match hardware warp size, commonly 32.
+```

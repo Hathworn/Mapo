@@ -1,0 +1,9 @@
+``` 
+// Use shared memory for scaling factors to optimize memory access
+// Calculate scaling factors once per block to reduce redundant computation
+// Synchronize threads after calculating shared memory variables
+// Bounds check for output indices to avoid unnecessary computations
+// Use unsigned integers for indices to avoid potential negative values
+// Ensure all threads have completed updating and using shared memory
+// Consider bank conflicts when using shared memory for better performance
+```

@@ -1,0 +1,4 @@
+// Coalesce memory accesses in d_in to improve memory throughput.
+// Consider using shared memory to reduce global memory access for d_bins.
+// Investigate whether using warp-level primitives can further optimize histogram updates.
+// Optimize thread block configuration to maximize occupancy and minimize warp divergence.

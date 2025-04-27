@@ -1,0 +1,4 @@
+// Avoid pointer arithmetic within the kernel loop by precomputing offsets
+// Minimize memory access latency by ensuring data is coalesced
+// Consider using shared memory for data reuse and reducing global memory access
+// Ensure that data alignment is optimal for coalesced memory access

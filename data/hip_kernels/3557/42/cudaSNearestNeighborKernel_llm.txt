@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to reduce global memory access.
+// Optimize index calculations to reduce redundant operations.
+// Ensure coalesced memory access patterns for better performance.
+// Reuse precomputed multipliers to avoid recalculating in each iteration.
+// Consider loop unrolling for the ox and oy loops to reduce loop overhead.
+// Balance block size and grid size for optimal occupancy and performance.
+// Align data structures to cache line sizes to improve memory access efficiency.
+// Use vectorized types (e.g., float4) where possible to improve bandwidth utilization.
+```

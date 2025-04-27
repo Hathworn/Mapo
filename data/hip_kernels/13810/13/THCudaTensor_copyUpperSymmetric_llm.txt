@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by adjusting data layout
+// Consider using shared memory to store frequently accessed data
+// Use __restrict__ qualifier to help compiler optimize memory access
+// Avoid bank conflicts if using shared memory
+// Experiment with different block and grid sizes for performance gains
+// Consider using asynchronous memory copies if applicable
+```

@@ -1,0 +1,5 @@
+// Avoid uncoalesced memory accesses by ensuring threads access contiguous memory locations.  
+// Use shared memory to reduce repeated global memory accesses for frequently used data.  
+// Optimize thread block size for best memory throughput and occupancy.  
+// Use loop unrolling within the kernel if applicable to reduce instruction overhead.  
+// Minimize conditional checks within the kernel for performance.  

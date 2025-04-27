@@ -1,0 +1,4 @@
+// Ensure vec loads are coalesced for memory access efficiency
+// Utilize shared memory to minimize access to global memory
+// Use __syncthreads() to synchronize threads ensuring proper loading of shared memory
+// Consider tuning block and thread dimensions to optimize memory access patterns

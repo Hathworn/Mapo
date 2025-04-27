@@ -1,0 +1,6 @@
+
+// Consider coalesced memory access for arrays a and b
+// Optimize shared memory usage by minimizing __syncthreads()
+// Consider using a warp shuffle for faster reduction within a warp
+// Ensure alignment of data structures to improve memory access efficiency
+// Load data in continuous blocks to maximize memory bandwidth usage

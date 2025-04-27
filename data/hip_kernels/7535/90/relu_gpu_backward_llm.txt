@@ -1,0 +1,6 @@
+```
+// Use loop unrolling and shared memory to improve memory access efficiency
+// Load data to shared memory in a coalesced manner to reduce global memory access
+// Use __syncthreads() to ensure all threads have loaded their data before proceeding
+// Consider increasing the block size if shared memory allows to enhance parallelism
+```

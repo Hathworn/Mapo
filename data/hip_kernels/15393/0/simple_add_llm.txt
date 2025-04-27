@@ -1,0 +1,3 @@
+// Consider using shared memory for accessing a and b to minimize global memory access latency.
+// Ensure memory access patterns are coalesced to maximize memory throughput.
+// Optimize blockDim.x and gridDim.x for your specific GPU architecture for maximum performance.

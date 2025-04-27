@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce memory accesses by using consecutive threads for consecutive data
+// Consider using warp-level primitives to optimize further inside the loop
+```

@@ -1,0 +1,4 @@
+// Utilize shared memory to reduce global memory access by caching data in shared_dx and shared_dy arrays.
+// Ensure coalesced memory access by aligning data loading and storing with warp size.
+// Avoid redundant synchronization by verifying that shared memory writes and reads are conflict-free.
+// Minimize branch divergence by ensuring conditions uniformly apply across threads.

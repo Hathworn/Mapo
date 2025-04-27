@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access
+// Explore coalescing accesses to the global memory for row_indices and column_indices
+// Minimize thread divergence by ensuring consistent control flow within warp
+// Consider memory alignment for better performance, particularly for row_indices updates
+// Investigate use of __restrict__ keyword for pointers to improve compiler optimizations
+```

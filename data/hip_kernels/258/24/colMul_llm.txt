@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to load chunks of b to reduce global memory access.
+// Ensure memory coalescing by following alignment in accessing global memory.
+// Optimize block and thread dimensions for better occupancy and performance.
+// Consider loop tiling if data size exceeds shared memory limitations.
+```

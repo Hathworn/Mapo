@@ -1,0 +1,5 @@
+// Consider using shared memory to store intermediate results for coalesced access.
+// Ensure memory accesses are aligned to improve performance.
+// Check for potential memory bank conflicts in shared memory usage.
+// Minimize global memory accesses by reusing data as much as possible.
+// Apply loop unrolling if the iteration count is known to improve performance.

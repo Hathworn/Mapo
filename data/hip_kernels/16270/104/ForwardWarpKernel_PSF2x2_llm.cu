@@ -1,0 +1,62 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__device__ __forceinline__ float imag(const float2& val)
+{
+    return val.y;
+}
+
+__global__ void ForwardWarpKernel_PSF2x2(const float *u, const float *v, const float *src, const int w, const int h, const int flow_stride, const int image_stride, const float time_scale, float *normalization_factor, float *dst)
+{
+    int j = threadIdx.x + blockDim.x * blockIdx.x;
+    int i = threadIdx.y + blockDim.y * blockIdx.y;
+
+    // Check bounds in advance
+    if (i >= h || j >= w) return;
+
+    int flow_row_offset  = i * flow_stride;
+    int image_row_offset = i * image_stride;
+
+    // Calculate destination pixel position and its fractional offset
+    float cx = u[flow_row_offset + j] * time_scale + (float)j + 1.0f;
+    float cy = v[flow_row_offset + j] * time_scale + (float)i + 1.0f;
+    float px, py;
+    float dx = modff(cx, &px);
+    float dy = modff(cy, &py);
+
+    // Precalculate weight components
+    float weight_br = dx * dy;
+    float weight_bl = (1.0f - dx) * dy;
+    float weight_ul = (1.0f - dx) * (1.0f - dy);
+    float weight_ur = dx * (1.0f - dy);
+
+    // Cache value
+    float value = src[image_row_offset + j];
+
+    // Fill pixels if within bounds
+    int tx = (int)px;
+    int ty = (int)py;
+
+    if (tx >= 0 && tx < w && ty >= 0 && ty < h) {
+        _atomicAdd(dst + ty * image_stride + tx, value * weight_br);
+        _atomicAdd(normalization_factor + ty * image_stride + tx, weight_br);
+    }
+
+    tx -= 1; // bottom left
+    if (tx >= 0 && tx < w && ty >= 0 && ty < h) {
+        _atomicAdd(dst + ty * image_stride + tx, value * weight_bl);
+        _atomicAdd(normalization_factor + ty * image_stride + tx, weight_bl);
+    }
+
+    tx += 1; ty -= 1; // upper right
+    if (tx >= 0 && tx < w && ty >= 0 && ty < h) {
+        _atomicAdd(dst + ty * image_stride + tx, value * weight_ur);
+        _atomicAdd(normalization_factor + ty * image_stride + tx, weight_ur);
+    }
+
+    tx -= 1; // upper left
+    if (tx >= 0 && tx < w && ty >= 0 && ty < h) {
+        _atomicAdd(dst + ty * image_stride + tx, value * weight_ul);
+        _atomicAdd(normalization_factor + ty * image_stride + tx, weight_ul);
+    }
+}

@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for g_idata[idx] and g_idata[idx + blockDim.x] to improve memory throughput.
+// Minimize the use of global memory by storing data in shared memory when possible, particularly in unrolled loops.
+// Utilize shared memory bank conflict avoidance techniques to enhance performance.
+// Optimize shared memory utilization by aligning shared_data array to prevent bank conflicts when accessing consecutive elements.
+// Ensure that loads and stores to shared memory are coalesced to reduce latency.
+// Configure grid and block dimensions to maximize occupancy and efficient use of resources.
+```

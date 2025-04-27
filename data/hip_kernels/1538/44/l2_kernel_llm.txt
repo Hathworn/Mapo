@@ -1,0 +1,5 @@
+// Consider coalesced memory access for 'pred' and 'truth' arrays
+// Use shared memory to reduce memory access latency if applicable
+// Ensure vectors are aligned in memory to maximize efficient access
+// Evaluate use of warp-wide operations to minimize latency
+// Investigate potential loop unrolling for further optimization

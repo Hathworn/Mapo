@@ -1,0 +1,6 @@
+```cpp
+// Ensure contiguous memory access pattern for 'in' to improve coalescing
+// Consider using shared memory for 'table' to reduce global memory access
+// Use __restrict__ qualifier for pointers to help compiler optimize
+// Adjust block size to maximize occupancy and minimize warp divergence
+```

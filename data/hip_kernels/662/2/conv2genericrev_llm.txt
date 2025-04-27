@@ -1,0 +1,8 @@
+```cpp
+// Consider loading kernel data into shared memory to reduce global memory access.
+// Use memory coalescing techniques when accessing input and output arrays.
+// Optimize thread block dimensions to increase occupancy and resource utilization.
+// Ensure input data is accessed in a coalesced manner to maximize memory throughput.
+// Leverage the use of __launch_bounds__ to control the number of register usage for better occupancy.
+// Consider loop interchange if possible to improve cache utilization.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access patterns for better memory utilization.
+// Ensure that adjacent threads access adjacent memory locations.
+// Minimize shared memory bank conflicts if shared memory is used.
+// Use registers efficiently to reduce global memory access.
+// Balance the workload among threads to avoid divergence.
+// Profile the kernel to identify and address any further bottlenecks.
+```

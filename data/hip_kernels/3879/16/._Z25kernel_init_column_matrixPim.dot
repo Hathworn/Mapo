@@ -1,0 +1,21 @@
+digraph "CFG for '_Z25kernel_init_column_matrixPim' function" {
+	label="CFG for '_Z25kernel_init_column_matrixPim' function";
+
+	Node0x5e5fa00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = getelementptr inbounds i8, i8 addrspace(4)* %4, i64 12\l  %10 = bitcast i8 addrspace(4)* %9 to i32 addrspace(4)*\l  %11 = load i32, i32 addrspace(4)* %10, align 4, !tbaa !6\l  %12 = mul i32 %3, %8\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %14 = add i32 %12, %13\l  %15 = getelementptr i8, i8 addrspace(4)* %4, i64 6\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 2, !range !4, !invariant.load !5\l  %18 = zext i16 %17 to i32\l  %19 = getelementptr inbounds i8, i8 addrspace(4)* %4, i64 16\l  %20 = bitcast i8 addrspace(4)* %19 to i32 addrspace(4)*\l  %21 = load i32, i32 addrspace(4)* %20, align 8, !tbaa !16\l  %22 = udiv i32 %11, %8\l  %23 = mul i32 %22, %8\l  %24 = icmp ugt i32 %11, %23\l  %25 = zext i1 %24 to i32\l  %26 = add i32 %22, %25\l  %27 = mul i32 %26, %8\l  %28 = udiv i32 %21, %18\l  %29 = mul i32 %28, %18\l  %30 = icmp ugt i32 %21, %29\l  %31 = zext i1 %30 to i32\l  %32 = add i32 %28, %31\l  %33 = mul i32 %32, %18\l  %34 = icmp ult i32 %14, 7000\l  br i1 %34, label %35, label %62\l|{<s0>T|<s1>F}}"];
+	Node0x5e5fa00:s0 -> Node0x5e61d70;
+	Node0x5e5fa00:s1 -> Node0x5e636b0;
+	Node0x5e61d70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%35:\l35:                                               \l  %36 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %37 = mul i32 %36, %18\l  %38 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !15\l  %39 = add i32 %37, %38\l  %40 = bitcast i32 addrspace(1)* %0 to i8 addrspace(1)*\l  br label %41\l}"];
+	Node0x5e61d70 -> Node0x5e64340;
+	Node0x5e64340 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%41:\l41:                                               \l  %42 = phi i32 [ %14, %35 ], [ %60, %58 ]\l  %43 = phi i32 [ %39, %35 ], [ %59, %58 ]\l  %44 = icmp ult i32 %43, 60000\l  br i1 %44, label %45, label %58\l|{<s0>T|<s1>F}}"];
+	Node0x5e64340:s0 -> Node0x5e64790;
+	Node0x5e64340:s1 -> Node0x5e64470;
+	Node0x5e64790 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%45:\l45:                                               \l  %46 = zext i32 %42 to i64\l  %47 = mul i64 %46, %1\l  %48 = getelementptr inbounds i8, i8 addrspace(1)* %40, i64 %47\l  %49 = bitcast i8 addrspace(1)* %48 to i32 addrspace(1)*\l  %50 = mul nuw nsw i32 %42, 60000\l  br label %51\l}"];
+	Node0x5e64790 -> Node0x5e64b70;
+	Node0x5e64b70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%51:\l51:                                               \l  %52 = phi i32 [ %43, %45 ], [ %56, %51 ]\l  %53 = add i32 %52, %50\l  %54 = zext i32 %52 to i64\l  %55 = getelementptr inbounds i32, i32 addrspace(1)* %49, i64 %54\l  store i32 %53, i32 addrspace(1)* %55, align 4, !tbaa !17\l  %56 = add i32 %52, %33\l  %57 = icmp ult i32 %56, 60000\l  br i1 %57, label %51, label %58, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x5e64b70:s0 -> Node0x5e64b70;
+	Node0x5e64b70:s1 -> Node0x5e64470;
+	Node0x5e64470 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%58:\l58:                                               \l  %59 = phi i32 [ %43, %41 ], [ %56, %51 ]\l  %60 = add i32 %42, %27\l  %61 = icmp ult i32 %60, 7000\l  br i1 %61, label %41, label %62, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x5e64470:s0 -> Node0x5e64340;
+	Node0x5e64470:s1 -> Node0x5e636b0;
+	Node0x5e636b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%62:\l62:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,23 @@
+digraph "CFG for '_Z7replacePiS_S_S_iii' function" {
+	label="CFG for '_Z7replacePiS_S_S_iii' function";
+
+	Node0x5732a20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e0dbd870",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x()\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = shl i32 %9, 10\l  %11 = add nuw nsw i32 %10, %8\l  %12 = icmp sgt i32 %6, 0\l  br i1 %12, label %13, label %65\l|{<s0>T|<s1>F}}"];
+	Node0x5732a20:s0 -> Node0x5733640;
+	Node0x5732a20:s1 -> Node0x57336d0;
+	Node0x5733640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%13:\l13:                                               \l  %14 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %15 = getelementptr inbounds i8, i8 addrspace(4)* %14, i64 12\l  %16 = bitcast i8 addrspace(4)* %15 to i32 addrspace(4)*\l  %17 = load i32, i32 addrspace(4)* %16, align 4, !tbaa !4\l  %18 = getelementptr i8, i8 addrspace(4)* %14, i64 4\l  %19 = bitcast i8 addrspace(4)* %18 to i16 addrspace(4)*\l  %20 = load i16, i16 addrspace(4)* %19, align 4, !range !13, !invariant.load\l... !14\l  %21 = zext i16 %20 to i32\l  %22 = udiv i32 %17, %21\l  %23 = mul i32 %22, %21\l  %24 = icmp ugt i32 %17, %23\l  %25 = zext i1 %24 to i32\l  %26 = add i32 %22, %25\l  %27 = add nsw i32 %5, -1\l  %28 = shl nuw i32 1, %27\l  %29 = add nsw i32 %4, 1023\l  %30 = sdiv i32 %29, 1024\l  %31 = sext i32 %30 to i64\l  %32 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %31\l  br label %33\l}"];
+	Node0x5733640 -> Node0x5733b70;
+	Node0x5733b70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  %34 = phi i32 [ 0, %13 ], [ %63, %59 ]\l  %35 = shl nsw i32 %34, 10\l  %36 = mul i32 %35, %26\l  %37 = add i32 %11, %36\l  %38 = icmp slt i32 %37, %4\l  br i1 %38, label %39, label %65\l|{<s0>T|<s1>F}}"];
+	Node0x5733b70:s0 -> Node0x5735950;
+	Node0x5733b70:s1 -> Node0x57336d0;
+	Node0x5735950 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%39:\l39:                                               \l  %40 = sext i32 %37 to i64\l  %41 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %40\l  %42 = load i32, i32 addrspace(1)* %41, align 4, !tbaa !15\l  %43 = mul i32 %26, %34\l  %44 = add i32 %43, %9\l  %45 = zext i32 %44 to i64\l  %46 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %45\l  %47 = load i32, i32 addrspace(1)* %46, align 4, !tbaa !15\l  %48 = add nsw i32 %47, %42\l  %49 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %40\l  %50 = load i32, i32 addrspace(1)* %49, align 4, !tbaa !15\l  %51 = and i32 %50, %28\l  %52 = icmp eq i32 %51, 0\l  br i1 %52, label %53, label %55\l|{<s0>T|<s1>F}}"];
+	Node0x5735950:s0 -> Node0x57368b0;
+	Node0x5735950:s1 -> Node0x5736940;
+	Node0x57368b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f08b6e70",label="{%53:\l53:                                               \l  %54 = sub nsw i32 %37, %48\l  br label %59\l}"];
+	Node0x57368b0 -> Node0x57355d0;
+	Node0x5736940 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d8564670",label="{%55:\l55:                                               \l  %56 = load i32, i32 addrspace(1)* %32, align 4, !tbaa !15\l  %57 = add nsw i32 %48, -1\l  %58 = add i32 %57, %56\l  br label %59\l}"];
+	Node0x5736940 -> Node0x57355d0;
+	Node0x57355d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%59:\l59:                                               \l  %60 = phi i32 [ %54, %53 ], [ %58, %55 ]\l  %61 = sext i32 %60 to i64\l  %62 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %61\l  store i32 %50, i32 addrspace(1)* %62, align 4, !tbaa !15\l  %63 = add nuw nsw i32 %34, 1\l  %64 = icmp eq i32 %63, %6\l  br i1 %64, label %65, label %33, !llvm.loop !19\l|{<s0>T|<s1>F}}"];
+	Node0x57355d0:s0 -> Node0x57336d0;
+	Node0x57355d0:s1 -> Node0x5733b70;
+	Node0x57336d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e0dbd870",label="{%65:\l65:                                               \l  ret void\l}"];
+}

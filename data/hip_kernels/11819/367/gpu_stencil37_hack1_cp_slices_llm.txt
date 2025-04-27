@@ -1,0 +1,6 @@
+```
+// Use shared memory for slices to reduce global memory accesses.
+// Pre-calculate constant offsets for reducing computation inside loops.
+// Use a single conditional block to reduce branching overhead.
+// Ensure proper use of __syncthreads() to avoid race conditions.
+```

@@ -1,0 +1,6 @@
+```
+// Avoid unnecessary synchronization barriers by limiting operations to threadIdx.x == 0
+// Consider using shared memory for intermediate results before final division to optimize memory bandwidth
+// Ensure that accuracy pointer is properly allocated in global memory for correct access by kernel
+// Investigate whether additional precision is required for division operation by using double data type instead of float
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data, optimizing access patterns.
+// Minimize the number of accesses to global memory by reusing values in registers.
+// Consider unrolling loops manually to enhance parallel threads' efficiency.
+// Precompute shared values to reduce redundant computations within each thread block.
+// Split warp execution paths to ensure uniform execution and reduce divergence.

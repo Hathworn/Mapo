@@ -1,0 +1,6 @@
+```
+// Use shared memory for mean_delta initialization to improve memory access speeds
+// Employ atomicAdd to avoid race conditions in shared memory updates
+// Consider unrolling loops to enhance performance by reducing loop overhead
+// Ensure mean_delta computation is finalized after synchronization to maintain correctness
+```

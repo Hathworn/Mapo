@@ -1,0 +1,32 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void fast_variance_delta_kernel(float *x, float *delta, float *mean, float *variance, int batch, int filters, int spatial, float *variance_delta)
+{
+    const int threads = BLOCK;
+    __shared__ float local[threads];
+
+    int id = threadIdx.x;
+    local[id] = 0;
+
+    int filter = blockIdx.x;
+
+    int i, j;
+    // Optimize loop by reducing branch divergence
+    for (j = 0; j < batch; ++j) {
+        for (i = id; i < spatial; i += threads) {
+            int index = j * spatial * filters + filter * spatial + i;
+            local[id] += delta[index] * (x[index] - mean[filter]);
+        }
+    }
+
+    // Use atomic operations for safe accumulation
+    __syncthreads();
+    if (id == 0) {
+        variance_delta[filter] = 0;
+        for (i = 0; i < threads; ++i) {
+            variance_delta[filter] += local[i];
+        }
+        variance_delta[filter] *= -.5 * powf(variance[filter] + .000001f, (float)(-3. / 2.));
+    }
+}

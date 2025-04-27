@@ -1,0 +1,4 @@
+// Use shared memory to store intermediate results within the thread block to reduce global memory access
+// Consider loop unrolling for the inner loop to improve instruction throughput
+// Optimize memory access patterns for coalescing to minimize memory latency
+// Ensure alignment of data structures for efficient memory transactions

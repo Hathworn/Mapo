@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access where possible
+// Consider using a cooperative launch for better grid management
+// Align data access to avoid memory bank conflicts
+// Optimize thread workload balance by ensuring each block works on an equal amount of data
+// Minimize the usage of printf as it can perturb kernel performance
+```

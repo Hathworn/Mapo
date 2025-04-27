@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Load data into shared memory to increase memory access coalescing
+// Synchronize threads to ensure all data is loaded into shared memory
+// Calculate power spectrum using data from shared memory to improve performance
+// Handle boundary conditions separately to avoid unnecessary computations

@@ -1,0 +1,5 @@
+// Consider coalesced memory access for pred, truth, delta, and error arrays.
+// Leverage shared memory where applicable to reduce global memory accesses.
+// Use larger block size to increase the ratio of computations to memory operations.
+// Minimize condition checks inside the loop for better performance.
+// Analyze and optimize thread divergence to ensure efficient execution.

@@ -1,0 +1,10 @@
+```c
+// Use shared memory if possible to reduce global memory accesses.
+// Ensure memory coalescing by aligning memory accesses for efficiency.
+// Analyze bank conflicts when accessing shared memory.
+// Leverage warp-level primitives to reduce divergence within warps.
+// Tune block and grid dimensions to maximize occupancy.
+// Adjust the size of blocks to match the memory transfer size.
+// Consider using __ldg intrinsic for read-only data to optimize cache usage.
+// Evaluate the use of loop unrolling to enhance pipeline efficiency.
+```

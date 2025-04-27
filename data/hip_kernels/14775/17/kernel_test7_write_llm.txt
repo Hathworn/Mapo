@@ -1,0 +1,8 @@
+```
+// Consider using coalesced memory access to improve memory throughput.
+// Align data structures to ensure optimal memory alignment.
+// Minimize bank conflicts in shared memory access.
+// Adjust block size to ensure achieving optimal occupancy.
+// Use the __restrict__ qualifier to assist the compiler in optimizing memory access.
+// Pre-fetch data into registers to reduce latency when accessing memory.
+```

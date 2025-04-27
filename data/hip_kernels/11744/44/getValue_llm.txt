@@ -1,0 +1,5 @@
+```
+// Consider aligning data access to improve coalescing
+// Ensure outdata and indata are not stored in the same memory bank to avoid bank conflicts
+// Use shared memory for intermediate values if multiple threads access the same data
+```

@@ -1,0 +1,10 @@
+```
+// Ensure memory access is coalesced by aligning data structures
+// Use shared memory to reduce global memory access
+// Unroll loops if applicable to improve performance
+// Avoid bank conflicts in shared memory access
+// Consider applying a larger block size if occupancy permits
+// Minimize the use of atomic operations
+// Ensure __syncthreads() is used properly to coordinate threads
+// Use fast math functions if precision allows
+```

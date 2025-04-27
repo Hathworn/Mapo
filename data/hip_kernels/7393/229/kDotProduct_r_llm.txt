@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access and improve memory bandwidth
+// Optimize thread block synchronization with __syncthreads() at key stages
+// Unroll loop in block reduction to reduce thread divergence
+// Use volatile to prevent compiler reordering on warp-level reduction
+// Accumulate results in registers for faster processing
+// Ensure efficient memory access patterns by coalescing loads
+```

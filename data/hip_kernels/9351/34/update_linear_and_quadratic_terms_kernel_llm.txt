@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses
+// Atomic operations are used to ensure safe updates across threads
+// Prioritize coalesced memory access to optimize bandwidth
+// Minimize divergence by aligning conditional checks across a warp
+// Prefer use of registers for frequently accessed variables to reduce latency
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access by ensuring dY, Y, and dX are accessed in a memory-friendly manner
+// Use loop unrolling in the gradient computation for potential speed-up
+// Use fewer shared memory accesses by optimizing the reduction process
+// Try to reduce global memory access by retaining critical data in registers
+// Ensure optimal block size to maximize occupancy without oversubscribing resources
+```

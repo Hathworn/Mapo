@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Align memory accesses for coalesced reads and writes
+// Preload data to registers to reduce redundant global memory accesses
+// Consider using float4 for vectorized memory operations

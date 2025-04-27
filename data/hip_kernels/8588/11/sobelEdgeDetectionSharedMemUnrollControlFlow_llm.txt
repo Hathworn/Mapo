@@ -1,0 +1,5 @@
+// Consider optimizing memory access patterns to fully utilize coalesced memory reads.
+// Unroll loops where applicable to reduce loop overhead and increase instruction throughput.
+// Minimize control flow divergence by aligning thread operations and boundary checks.
+// Use shared memory efficiently to reduce global memory access latency.
+// Ensure threads access memory in a pattern that minimizes bank conflicts in shared memory.

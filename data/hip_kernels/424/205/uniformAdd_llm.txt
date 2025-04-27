@@ -1,0 +1,3 @@
+// Load the uniform into shared memory only once per block to minimize global memory access.
+// Ensure the uniform value is loaded before use to avoid race conditions.
+// Use logical AND to prevent out-of-bound access and reduce branch divergence.

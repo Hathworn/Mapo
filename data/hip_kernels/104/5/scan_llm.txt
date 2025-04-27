@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access when loading to shared memory for better performance
+// Consider using half-warp synchronization for certain phases if hardware allows
+// Unroll loops to reduce overhead in up-sweep and down-sweep phases
+// Minimize the use of shared memory to reduce bank conflicts
+// Use volatile keyword if necessary to prevent compiler reordering issues
+// Align global memory writes to increase efficiency
+// Consider using asynchronous copies if kernel supports it
+```

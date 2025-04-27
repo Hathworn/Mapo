@@ -1,0 +1,7 @@
+```cpp
+// Use __restrict__ qualifiers to potentially improve memory access efficiency
+// Ensure data alignment to improve memory coalescing
+// Increase block size while balancing occupancy for better performance
+// Consider shared memory for temporary data storage if needed
+// Pre-fetch data into registers to reduce global memory latency
+```

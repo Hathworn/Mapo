@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for d_dot1, d_dot2, d_dist, and d_azimut
+// Consider using shared memory to store intermediate values like lat1_radians
+// Pre-compute _PI / 180 and store in a constant memory to reduce repetitive calculations
+// Check for occupancy optimization by adjusting block and grid dimensions
+```

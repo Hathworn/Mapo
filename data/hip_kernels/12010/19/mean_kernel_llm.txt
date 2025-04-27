@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store partial sums for improved memory access speed
+// Align data accesses to improve coalescing and reduce memory transaction overhead
+// Prefetch data into registers outside of loops to minimize memory latency
+// Increase block size if kernel execution is not fully utilizing the compute resources
+```

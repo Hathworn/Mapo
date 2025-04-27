@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to cache frequently accessed data like group_offset.
+// Minimize global memory accesses by fetching input and group data into shared memory.
+// Use loop unrolling techniques in the softmax calculation for efficiency.
+// Ensure optimal use of registers to avoid bank conflicts and reduce latency.
+// Align memory accesses to improve coalesced memory transactions.
+// Consider using __shfl_down_sync for warp-synchronous reduction in the sum computation.
+// Assess grid and block size configuration for better occupancy and memory throughput.
+// Investigate the parallelism within the softmax computation to spread work evenly across threads.
+```

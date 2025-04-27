@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring coalesced access patterns
+// Use shared memory to reduce global memory access latency
+// Consider loop unrolling for better warp efficiency
+// Use __restrict__ to indicate non-aliasing pointers if applicable
+// Evaluate occupancy using appropriate grid and block dimensions
+// Remove redundant __syncthreads() if no data synchronization is needed
+```

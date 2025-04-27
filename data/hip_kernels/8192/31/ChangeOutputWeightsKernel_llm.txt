@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache hiddenActivations to reduce global memory access
+// Use float2 or float4 types to load and store multiple weights at once for coalesced access
+// Explore launching fewer blocks with more threads per block for better occupancy
+// Evaluate loop unrolling explicitly if register pressure allows for it
+// Assess the impact of using `__restrict__` pointers for potential compiler optimizations
+```

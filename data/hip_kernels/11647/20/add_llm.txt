@@ -1,0 +1,6 @@
+```cpp
+// Exit early to avoid unnecessary computations on out-of-bounds threads
+// Use shared memory if accessing data multiple times to reduce global memory accesses
+// Ensure memory accesses are coalesced for improved performance
+// Ensure that 'offset' and 'n' are chosen to maximize coalesced global memory access
+```

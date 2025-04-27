@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access
+// Ensure all threads have completed the data load with __syncthreads()
+// Perform computations using shared memory to improve data locality
+// Use __syncthreads() to synchronize threads before writing results back

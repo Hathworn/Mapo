@@ -1,0 +1,7 @@
+```
+// Use loop unrolling to minimize loop overhead and increase instruction-level parallelism
+// Ensure memory accesses are coalesced by aligning thread data access
+// Minimize global memory access by loading data into registers when possible
+// Consider increasing block size for better GPU occupancy if resources allow
+// Avoid divergent branches within the loop to maintain warp efficiency
+```

@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing by accessing consecutive memory locations
+// Consider moving inv_norm calculation outside the loop if norm is constant
+// Use shared memory to reduce global memory accesses if overlapping data is processed by multiple threads
+// Avoid branching by using arithmetic operations in places of if conditions where possible
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing accesses to d_in to optimize global memory load efficiency
+// Ensure alignment of the data in d_bins and d_in to reduce memory transactions
+// Use shared memory to reduce the number of global memory accesses for d_bins
+// Employ loop unrolling techniques if BIN_COUNT is small and loop iterations are predictable
+// Evaluate the usage of larger thread blocks to improve occupancy
+```

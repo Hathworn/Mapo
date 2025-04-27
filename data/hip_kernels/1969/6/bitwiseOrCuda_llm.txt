@@ -1,0 +1,4 @@
+// Consider using shared memory to cache row data for in1 and in2 to reduce global memory access
+// Optimize rowSizeIn1, rowSizeIn2, and rowSizeOut calculations by ensuring they're accessed in cache
+// Align data structures to improve memory coalescing and reduce memory access latency
+// Implement loop unrolling if applicable for better performance in the bitwise operation section

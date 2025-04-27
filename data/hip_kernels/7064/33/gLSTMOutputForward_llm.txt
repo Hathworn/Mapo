@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by aligning data structures properly.
+// Consider using shared memory to minimize redundant global memory accesses for xW and sU.
+// Optimize thread block and grid dimensions for better occupancy.
+// Utilize vectorized memory operations if possible.
+// Check for memory alignment of out, cell, xW, sU, and b for efficient memory access.
+// Employ loop unrolling to enhance the performance of the for-loop within the kernel.
+```

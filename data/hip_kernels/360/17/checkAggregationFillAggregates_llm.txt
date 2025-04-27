@@ -1,0 +1,4 @@
+// Load values into shared memory to reduce global memory access latency
+// Use shared memory for accessing valuesIn to improve data locality
+// __syncthreads() ensures all threads have completed shared memory loads
+// atomicExch is used to safely update incomplete across all threads

@@ -1,3 +1,5 @@
+# 2025.3.10 author:cjk 使用mainfilev3.py函数为每个核函数创建main.cu文件，用于执行核函数。
+# 2025.4.11 author:cjk 生成优化后代码对应的main.cu
 import pandas as pd
 from mainfilev3 import main_skeleton
 import re
@@ -12,14 +14,44 @@ import ast
 import sys
 import datetime
 
-# 创建main函数
+# 使用mainfilev3.py文件中的函数，生成main.cu文件，在这个文件还加上一个操作：include对应核函数
 def remake_main(path:str,variables:str,function_name:str):
     variables =ast.literal_eval(variables)
     main_body = main_skeleton()
     main_body.add_variables(function_name,variables)
     main_body.change_function(function_name)
-    main_body.add_includes(['#include "'+function_name+'.cu"'])
+    main_body.add_includes(['#include "'+function_name+'_llm.cu"'])
     main_body.save_main(path)
+
+# 我在生成main.cu文件，修改完其中变量后，再添加初始化变量。不然下面这些变量会在第二步被莫名其妙修改。
+def add_default_values_to_mainfile(mainfile: str):
+    # 要插入的代码行
+    default_values_code = """
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    """
+
+    # 打开文件并读取内容
+    with open(mainfile, 'r') as f:
+        lines = f.readlines()
+
+    # 查找hipSetDevice(0);并在其后插入代码
+    for i, line in enumerate(lines):
+        if "hipSetDevice(0);" in line:
+            # print("find")
+            lines.insert(i + 1, default_values_code)  # 插入代码行
+            break
+
+    # 将修改后的内容写回文件
+    with open(mainfile, 'w') as f:
+        f.writelines(lines)
 
 def find_value_for_list(in_var:str,checklist,exact):
     if exact:
@@ -85,8 +117,6 @@ def edit_values(path:str,device_id):
             out.append(stripped_line)
         a_file.close()
     for c in range(len(out)):
-
-
         if out[c].find("=")!=-1 and  out[c].find("for")==-1 and  out[c].find("while")==-1 and  out[c].find("auto")==-1 and out[c].find("blocks_")==-1 and out[c].find("matrices_")==-1:
             if out[c].split("=")[0].find("*")==-1:
                 left=out[c].split("=")[0]
@@ -100,36 +130,6 @@ def edit_values(path:str,device_id):
     fs.write(s1)
     fs.close()
 
-
-# 运行main函数以及相应的核函数
-def run_file(path:str, function, run_times, device_id, flags, timeout, matrix_len):
-    bin_path = "./bin/"
-    # compile_cmd = "nvcc " + str(flags) + " " +  str(path)+ " -o="+bin_path+str(device_id)+".out"
-    compile_cmd = "hipcc " + str(flags) + " " +  str(path)+ " -o "+bin_path+str(device_id)+".out"
-    print(compile_cmd)
-
-    # 编译核函数
-    proc = subprocess.Popen([compile_cmd], stderr=subprocess.PIPE, shell=True,universal_newlines=True)
-    (out, err) = proc.communicate()
-    # 运行核函数
-    try:
-
-            run_cmd = "timeout " + timeout + " " + bin_path + str(device_id) + ".out" + " "+str(matrix_len)
-            #print(run_cmd)
-            proc = subprocess.Popen([run_cmd], stdout=subprocess.PIPE, shell=True,universal_newlines=True)
-            (out, err) = proc.communicate()
-            results = out.split("\n")[:-1]
-            for r in results:
-                res = ast.literal_eval(r)
-                new_row = pd.DataFrame([{'path': path, 'function': function, 'time': res[0], 'blocks': res[1], 'matrix':res[2]}])
-                run_times = pd.concat([run_times, new_row], ignore_index=True)
-    except KeyboardInterrupt:
-        print("\nQuitting ...")
-        sys.exit(0)
-    except:
-            new_row = pd.DataFrame([{'path': path, 'function': function, 'time': -1}])
-            run_times = pd.concat([run_times, new_row], ignore_index=True)
-    return run_times
 
 def add_variables(df,variables,function):
     variables =ast.literal_eval(variables)
@@ -147,62 +147,60 @@ def add_variables(df,variables,function):
             df=df.append({'function':function , 'type' : v[0],"name":v[1],"assumed_type":assumed_type} , ignore_index=True)
     return df
 
+
 def main():
-    device_id=int(sys.argv[1])
-    timeout=str(sys.argv[2])
-    matrix_len=str(sys.argv[3])
-    flags=str(sys.argv[4])
-    data_path = "./data/"
-    results_path = "./results/"
-    runs = pd.read_csv(data_path+'kernel_list.csv')
-    # total_samples = len(runs)
-    # split_point = total_samples // 4  # 中间分割点
+    data_path = "/home/LiuS/LS-CAT-HIP/data/"
+    # results_path = "./results/"
 
-    # if device_id == 0:
-    #     runs = runs.iloc[:split_point]  # 前半部分
-    # elif device_id == 1:
-    #     runs = runs.iloc[split_point:2*split_point]  # 后半部分
-    # num_rows = len(runs)
-    # print("数据总条数:", num_rows)
+    # 读取 kernel_list.csv 文件
+    runs = pd.read_csv(data_path + 'kernel_list.csv')
+    print("总核函数数量:", len(runs))
 
-    # 假设总样本数
-    total_samples = len(runs)
-    samples_per_gpu = total_samples // 64
-    start_idx = 37 * samples_per_gpu
-    end_idx = start_idx + samples_per_gpu
-    runs = runs.iloc[start_idx:end_idx]
-
-
-    runtimes_path = results_path+"runtimes_temp_"+str(device_id)+".csv"
-    run_times = pd.DataFrame(columns=['path',"function","time",'blocks','matrix'])#,'blocksizex',"blocksizey"])
-    if path.exists(runtimes_path):
-        run_times = pd.read_csv(runtimes_path,low_memory=False)
-
-    counter=0
-    total_compute_time=time.time()
+    counter = 0
+    total_compute_time = time.time()
     prev_output_str_len = 0
-    print("Started measurement process ...")
-    for index, row in runs.iterrows():
-        kernel_path = data_path+"kernels/"+str(row["Repo"])+"/"+str(row["underdirectory"])
-        mainfile = kernel_path+"/"+"main.cu"
-        if not any(run_times["path"].isin([mainfile])):
-            # 构建main函数 这个main函数是框架 所有核函数都创建一个main函数
-            # 包含参数配置、计时函数、核函数调用
-            remake_main(kernel_path,row['variables'],row['function'])
-            edit_values(mainfile,device_id)
-            compute_time=time.time()
-            run_times=run_file(mainfile,row["function"],run_times,device_id,flags,timeout,matrix_len)
-            run_times.to_csv(results_path+"runtimes_temp"+str(device_id)+".csv",index=False)
 
-        counter+=1
-        time_left = ((time.time()-total_compute_time) / counter)*(len(runs)-counter)
-        print(" "*prev_output_str_len, end="\r")
-        output_str = "Completion: " + str(counter) + "/" + str(len(runs)) + " (" + str(round(100*counter/len(runs), 4)) + "%), " + "Time left: " + str(datetime.timedelta(seconds=int(time_left)))
-        prev_output_str = len(output_str)
+    print("开始生成 main.cu 文件 ...\n")
+
+    for index, row in runs.iterrows():
+        # 构建 kernel_path
+        kernel_path = path.join(data_path, "hip_kernels", str(row["Repo"]), str(row["underdirectory"]))
+        
+        # 这里设置生成main文件名字
+        mainfile = path.join(kernel_path, "main.cu")
+        # mainfile = path.join(kernel_path, "main_llm.cu")
+
+
+        # 判断 kernel_path 是否存在
+        if not path.exists(kernel_path):
+            print(f"路径不存在，跳过：{kernel_path}")
+            continue
+
+        # 判断 main.cu 是否已经存在（避免重复生成）
+        # if not path.exists(mainfile):
+        if True:
+            print(f"生成：{mainfile}")
+            remake_main(kernel_path, row['variables'], row['function'])
+            edit_values(mainfile,0)
+            add_default_values_to_mainfile(mainfile)
+
+        counter += 1
+        # 估算剩余时间
+        elapsed_time = time.time() - total_compute_time
+        time_left = (elapsed_time / counter) * (len(runs) - counter)
+
+        # 进度条输出
+        print(" " * prev_output_str_len, end="\r")
+        output_str = (
+            f"生成进度: {counter}/{len(runs)} "
+            f"({round(100 * counter / len(runs), 2)}%), "
+            f"剩余时间: {str(datetime.timedelta(seconds=int(time_left)))}"
+        )
+        prev_output_str_len = len(output_str)
         print(output_str, end="\r")
 
-    run_times.dropna().to_csv(results_path+"runtimes_done_"+str(device_id)+".csv",index=False)
-    print("Done")
+    print("\n\n全部 main.cu 文件生成完成！")
+
 
 if __name__ == "__main__":
     main()

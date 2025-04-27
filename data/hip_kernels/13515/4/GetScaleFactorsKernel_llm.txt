@@ -1,0 +1,9 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Utilize local registers instead of shared memory when possible to maximize speed.
+// Prefetch global memory data into shared memory for better memory access patterns.
+// Ensure memory coalescing by aligning data structures properly in global memory.
+// Avoid bank conflicts in shared memory by carefully organizing data access patterns.
+// Consider loop unrolling techniques to minimize loop overhead and increase instruction throughput.
+// Use atomic operations only when necessary to prevent performance bottleneck due to global synchronization.
+```

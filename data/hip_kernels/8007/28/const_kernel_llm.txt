@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by making sure INCX is 1
+// Use shared memory if multiple threads access the same data
+// Adjust grid and block dimensions to match the hardware
+// Prefer smaller block sizes for higher latency tolerance
+// Consider occupancy tuning for optimal performance
+// Make ALPHA a __constant__ variable if it doesn't change
+```

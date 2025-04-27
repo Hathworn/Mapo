@@ -1,0 +1,8 @@
+```
+//Consider using coalesced memory accesses by storing adj_mat in column-major order
+//Use warp-level primitives to reduce synchronization overhead
+//Use double buffering in shared memory to hide memory latency
+//Apply loop unrolling in the inner loop for col_idx to increase instruction-level parallelism
+//Minimize usage of global memory by caching cap_max_mat into shared memory
+//Evaluate the use of texture memory for visited array to benefit from cached reads
+```

@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing to improve global memory access patterns
+// Use warp shuffle operations for more efficient intra-block reduction
+// Utilize shared memory to minimize redundant global memory accesses
+// Ensure block size is a multiple of warp size to optimize reduction
+// Evaluate prefetching data to shared memory to reduce latency
+```

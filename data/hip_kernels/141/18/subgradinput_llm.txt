@@ -1,0 +1,3 @@
+// Use shared memory to store weights to reduce global memory access latency.
+// Precompute index increments for input and output pointers to optimize loop operations.
+// Minimize thread divergence by ensuring loop limits are consistent across all threads.

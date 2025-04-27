@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access by ensuring coalesced memory access patterns
+// Consider using shared memory if repeated access to memory locations occurs
+// Avoid thread divergence by minimizing conditional statements within critical sections
+// Use __syncthreads() judiciously as it may introduce performance overhead if overused
+```

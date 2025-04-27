@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve performance by minimizing global memory accesses
+// Load data into shared memory at the beginning to reduce redundant global memory reads
+// Access shared memory within the loop to replace global memory accesses, reducing latency
+// Ensure that the number of threads corresponds to the data size to efficiently use shared memory
+// Consider further optimizing shared memory usage by minimizing its footprint
+```

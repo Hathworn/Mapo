@@ -1,0 +1,8 @@
+```
+// Use shared memory for candidates and candidateCounts to improve access time
+// Consider coalesced memory accesses when reading adjacency and adjIndexes arrays
+// Use atomic operations to minimize contention and improve performance in shared memory
+// Evaluate loop unrolling for neighbor iteration to reduce overhead
+// Ensure memory alignment for accessed structures to maximize throughput
+// Explore caching strategies for frequently accessed data to reduce global memory accesses
+```

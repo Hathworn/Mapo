@@ -1,0 +1,8 @@
+```
+// Coalesce global memory accesses by organizing rInput1 and rInput2 accesses
+// Use shared memory to minimize repetitive global memory access within loops
+// Utilize memory coalescing for output writes by arranging blockIdx to access consecutive elements
+// Balance computation and memory access within threads to optimize performance
+// Reduce register pressure by optimizing thread usage within the prod_sum calculation
+// Ensure aligned memory access for global reads and writes to improve efficiency
+```

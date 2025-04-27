@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to improve memory bandwidth usage
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Consider using shared memory to reduce global memory access latency
+// Optimize block size and grid size for maximum occupancy and performance
+// Prefetch data into registers to reduce access latency
+```

@@ -1,0 +1,5 @@
+// Ensure data alignment for faster memory access
+// Use shared memory if input arrays are used multiple times within the kernel
+// Check for potential coalesced memory access patterns to improve throughput
+// Consider prefetching data to reduce memory latency
+// Profile memory bandwidth to identify bottlenecks and optimize accordingly

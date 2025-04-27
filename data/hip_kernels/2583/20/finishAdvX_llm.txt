@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by organizing data in a structure of arrays (SoA) format.
+// Utilize shared memory to reduce redundant global memory accesses.
+// Employ vector data types such as float2 or float4 for better memory throughput.
+// Consider loop unrolling and minimizing redundant computations within the kernel.
+// Explore occupancy tuning by adjusting block size for better GPU utilization.
+// Use read-only cache if applicable for the 'X' data to enhance memory read efficiency.
+```

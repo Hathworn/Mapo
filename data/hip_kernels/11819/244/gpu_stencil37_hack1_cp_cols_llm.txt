@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory accesses by aligning shared_cols accesses with warp size.
+// Ensure shared memory is efficiently utilized to minimize bank conflicts when accessing shared_cols.
+// Use memory prefetching techniques if necessary to overlap data transfer and computation.
+// Avoid excessive synchronization unless necessary to reduce warp divergence.
+// Evaluate leveraging constant memory for frequently accessed variables like tile_x, tile_y, tile_z.
+```

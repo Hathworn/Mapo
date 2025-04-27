@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data reused across threads to reduce global memory access
+// Minimize divergent paths by ensuring uniform execution across threads
+// Ensure optimal block and grid size configuration for better utilization of the GPU
+// Reuse computed values in registers to reduce repeated calculations
+// Investigate occupancy to ensure maximum efficiency of resource usage
+```

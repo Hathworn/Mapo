@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by arranging threads to access continuous memory locations
+// Use shared memory to store intermediate results within a block for reducing global memory accesses
+// Avoid branch divergence by ensuring all threads in a warp execute the same path
+// Align data structures to 32-byte boundaries to improve memory access efficiency
+// Consider using warp-level primitives to perform reductions within a warp
+```

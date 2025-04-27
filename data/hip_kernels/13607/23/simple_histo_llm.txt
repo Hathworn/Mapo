@@ -1,0 +1,5 @@
+```cpp
+// Consider using shared memory to reduce global memory access
+// Ensure coalesced access patterns for d_in to improve memory throughput
+// Use warp-level primitives to aggregate results before atomic operations
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data such as bbox and label
+// Consider coalescing global memory accesses for better bandwidth utilization
+// Minimize divergent branches by grouping warp threads with similar execution paths
+// Ensure proper alignment of memory accesses to enable vectorized loads/stores
+// Use loop unrolling if applicable to reduce loop overhead and improve ILP (Instruction Level Parallelism)
+```

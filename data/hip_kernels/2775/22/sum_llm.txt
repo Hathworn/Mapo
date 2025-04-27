@@ -1,0 +1,8 @@
+```c
+// Ensure global memory accesses are coalesced
+// Consider using warp-level primitives for reduction
+// Optimize shared memory usage by minimizing bank conflicts
+// Use loop unrolling to enhance performance within the reduction loop
+// Consider occupancy optimization by adjusting block and grid sizes
+// Evaluate if the atomic operation can be minimized or replaced
+```

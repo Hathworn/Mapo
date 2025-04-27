@@ -1,0 +1,5 @@
+// Use shared memory for variance to improve memory access performance  
+// Initialize shared variance to zero for each thread  
+// Move result from shared memory to global memory after calculation  
+// Optimize memory access by minimizing the use of global memory within the kernel function  
+// Consider coalescing memory access patterns to improve performance

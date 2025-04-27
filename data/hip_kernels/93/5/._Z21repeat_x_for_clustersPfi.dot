@@ -1,0 +1,10 @@
+digraph "CFG for '_Z21repeat_x_for_clustersPfi' function" {
+	label="CFG for '_Z21repeat_x_for_clustersPfi' function";
+
+	Node0x473afc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp sgt i32 %3, 0\l  %13 = icmp slt i32 %11, %1\l  %14 = select i1 %12, i1 %13, i1 false\l  br i1 %14, label %15, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x473afc0:s0 -> Node0x473d030;
+	Node0x473afc0:s1 -> Node0x473d0c0;
+	Node0x473d030 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = zext i32 %10 to i64\l  %17 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %19 = sext i32 %11 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %0, i64 %19\l  store float %18, float addrspace(1)* %20, align 4, !tbaa !7\l  br label %21\l}"];
+	Node0x473d030 -> Node0x473d0c0;
+	Node0x473d0c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  ret void\l}"];
+}

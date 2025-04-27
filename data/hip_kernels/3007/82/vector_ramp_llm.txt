@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for x by ensuring stride_x is 1
+// Ensure memory access for y is coalesced by setting stride_y to 1
+// Minimize register usage inside the kernel by limiting variables
+// Use __restrict__ keyword for x and y pointers to improve memory access efficiency
+// Launch kernel with appropriate block size to maximize occupancy
+// Explore using shared memory if there are common sub-expressions among threads
+```

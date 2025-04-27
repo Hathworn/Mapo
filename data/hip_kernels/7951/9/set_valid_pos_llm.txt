@@ -1,0 +1,7 @@
+```
+// Consider increasing the number of threads per block for better latency hiding
+// Use cooperative groups if supported to reduce synchronization overhead
+// Prefetch data to shared memory to reduce global memory latency
+// Use memory coalescing to improve memory access patterns
+// Avoid divergent branches to improve warp execution efficiency
+```

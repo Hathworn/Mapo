@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory transaction
+// Initialize shared memory in the first thread to avoid redundant operations
+// Use __syncthreads() to synchronize threads after initializing shared memory
+// Replace global memory access with shared memory to improve memory access efficiency

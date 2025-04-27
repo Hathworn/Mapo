@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Adjust shared memory size according to maximum blockDim.x
+// Accumulate results in shared memory to reduce the number of atomic operations
+// Synchronize threads to ensure all updates to shared memory are complete before reduction
+// Use atomicAdd to safely update global memory from multiple threads
+// Update linear term only once per kernel execution
+// Utilize thread and block indexing to balance workload
+```

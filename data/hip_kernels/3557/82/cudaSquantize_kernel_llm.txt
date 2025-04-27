@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns by ensuring global memory accesses are in contiguous memory locations.
+// Consider using shared memory to reduce redundant global memory accesses.
+// Minimize divergent branches in the warp by restructuring conditional logic if possible.
+// Investigate the use of vectorized operations for potential speedup.
+// Ensure the occupancy is maximized by choosing an appropriate block size or using occupancy calculator tools.
+// Consider allocating memory aligned to cache line boundaries to improve cache performance.
+```

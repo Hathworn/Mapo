@@ -1,0 +1,7 @@
+```c
+// Preload biases and nabla_b into shared memory to reduce global memory access latency
+// Increase block size and configure grid size to improve occupancy
+// Consider using warp shuffle for nabla_b reduction across threads for better performance
+// Ensure data is coalesced during global memory accesses to nabla_b and biases
+// Align memory access patterns to fit within a cache line to improve cache utilization
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider aligning memory accesses to utilize coalesced memory access patterns
+// Pre-compute (h + 1) * (w + 1) before the loop for efficient indexing
+// Unroll loops explicitly using #pragma unroll for better performance
+// Use shared memory to cache frequently accessed data, reducing global memory access
+// Use __restrict__ pointers to indicate no aliasing, enabling more optimization opportunities
+// Consider using warp shuffle or other techniques to reduce register pressure
+```

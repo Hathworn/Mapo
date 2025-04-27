@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access.
+// Ensure coalesced memory access by aligning data structures with warp size.
+// Consider using vectorized loads/stores to increase memory throughput.
+// Minimize register usage to allow more threads per block.

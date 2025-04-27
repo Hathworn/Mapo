@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for 'a' and 'b' for optimal memory bandwidth usage.
+// Ensure 'TILE_WIDTH' is a power of 2 for hardware efficiency.
+// Preload 'a' and 'b' into registers when possible to reduce shared memory bank conflicts.
+// Verify memory alignment of input matrices to reduce the chance of memory access bottlenecks.
+// Increase thread parallelism by adjusting block and grid sizes based on the GPU architecture.
+```

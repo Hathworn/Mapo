@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns for better global memory throughput
+// Consider using shared memory to stage bias values and reduce global memory traffic if multiple accesses occur
+// Evaluate launching more threads per block if register and shared memory usage allow, to maximize GPU resource utilization
+// Align data structures in memory for optimal access patterns, such as padding if necessary
+// Profile the kernel with various block sizes and grid dimensions to find the optimal configuration
+```

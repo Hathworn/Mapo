@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store intermediate results before writing to global memory
+// Coalesced memory access can be achieved by aligning array indices with warp size
+// Check if using atomic operations might benefit parallel writes to d_markers_out
+```

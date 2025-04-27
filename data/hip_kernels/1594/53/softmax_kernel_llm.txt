@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for 'input' and 'output' arrays in 'softmax_device'.
+// Implement shared memory usage for 'largest' and 'sum' to reduce global memory access.
+// Use warp-level primitives to optimize reduction operations in 'softmax_device'.
+// Explore using loop unrolling techniques in 'softmax_device' for improved performance.
+// Evaluate occupancy and adjust 'blockDim' and 'gridDim' settings for better parallel efficiency.
+// Assess the potential benefits of asynchronous memory copies in 'softmax_kernel'.
+```

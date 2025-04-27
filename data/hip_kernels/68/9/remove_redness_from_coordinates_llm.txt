@@ -1,0 +1,4 @@
+// Consider using shared memory to cache d_coordinates in smaller blocks to reduce global memory accesses.
+// Implement loop unrolling for the pixel iteration loops to improve localization and processing efficiency.
+// Use texture memory for accessing color channels to leverage hardware caching capabilities and minimize global memory delay.
+// Evaluate using warp shuffles to reduce instructions in computing indices and minimize redundant computations.

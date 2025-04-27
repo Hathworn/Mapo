@@ -1,0 +1,4 @@
+// Ensure memory accesses are coalesced by using efficient strided loops.
+// Consider using shared memory for repeated data access within a block.
+// Minimize global memory usage by reusing intermediate calculations in registers.
+// Use atomic operations if necessary to optimize concurrent writes.

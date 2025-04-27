@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access
+// Ensure initialization of shared memory is performed by one thread to avoid race conditions
+// Utilize atomicMax to safely perform reduction in shared memory
+// Use atomic operations to update global memory, reducing false sharing and memory contention
+// Ensure synchronization with __syncthreads to correctly aggregate results

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache input data and reduce global memory access
+// Use coalesced memory access patterns for both reading from input and writing to output
+// Explore the possibility of using atomic operations if applicable to avoid race conditions
+// Ensure loop unrolling pragma doesn't increase register pressure and affects performance negatively
+// Evaluate the thread block size for optimal utilization of the GPU resources
+```

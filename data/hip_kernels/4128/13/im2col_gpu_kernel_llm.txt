@@ -1,0 +1,7 @@
+```
+// Consider increasing the shared memory allocation size if possible
+// Ensure the shared memory usage is within limits to prevent occupancy issues
+// Align global memory accesses to improve memory coalescing
+// Avoid bank conflicts within shared memory accesses
+// Consider loop unrolling for the inner ksize loops to decrease the overhead
+```

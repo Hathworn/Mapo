@@ -1,0 +1,3 @@
+// Consider using shared memory for accessing row_sum to reduce global memory access.
+// Ensure that blockIdx.x * N calculation is efficiently managed to avoid redundant operations.
+// Verify if coalesced memory access patterns are effectively utilized for row_sum and output.

@@ -1,0 +1,3 @@
+// Use shared memory to cache normalization_factor for better memory access patterns.
+// Reduce global memory transactions by using registers where possible.
+// Consider coalescing memory access for the image array.

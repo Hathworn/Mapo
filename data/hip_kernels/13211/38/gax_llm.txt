@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses and improve memory coalescing.
+// Use vectorized data types like double2 to load/store multiple data elements in a single transaction.
+// Evaluate using fewer threads or adjustable block size for better use of available shared memory and cache resources.
+// Ensure that a[0] remains in register for quicker access during repeated computation.
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by organizing data such that consecutive threads access consecutive memory locations.
+// Consider utilizing shared memory if frequently accessed data is needed within a block.
+// Use warp-synchronous programming to reduce overhead from divergent branches.
+// Optimize grid and block size configuration to maximize occupancy and efficiency.
+// Employ __restrict__ pointers if no aliasing to help the compiler with optimizations.
+// Profile the usage of atomic operations, as they can create serialization points and affect performance.
+```

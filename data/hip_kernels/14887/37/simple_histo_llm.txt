@@ -1,0 +1,7 @@
+```
+// Consider using memory access patterns that maximize coalesced access
+// Use shared memory for intermediate results to reduce global memory traffic
+// Synchronize threads before accessing shared_bins to ensure no data races
+// Minimize atomic operations in global memory by accumulating in shared memory first
+// Ensure that shared memory is allocated correctly based on the number of bins
+```

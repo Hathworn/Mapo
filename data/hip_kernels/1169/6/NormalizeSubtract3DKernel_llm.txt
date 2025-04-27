@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache img_sub for faster access if there is data reuse.
+// Consider coalesced memory access patterns to optimize global memory reads.
+// Warp divergence can be minimized by ensuring all threads follow the main if-condition.
+// Optimize grid and block dimensions to fully utilize GPU resources and minimize idle threads.
+```

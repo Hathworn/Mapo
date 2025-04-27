@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data like means and std within each block for better memory access efficiency
+// Coalesce memory accesses where possible to optimize memory bandwidth usage on inputs like ROIRef and ROIEst
+// Evaluate using const memory for read-only data like numPartsPerClass and numTemplatesPerClass to reduce global memory traffic
+// Optimize thread block size and dimensions to ensure maximal occupancy and effective use of resources
+// Use atomic operations wisely to prevent costly synchronization overheads where data races might occur

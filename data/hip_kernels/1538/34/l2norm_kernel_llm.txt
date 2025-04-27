@@ -1,0 +1,7 @@
+```
+// Use shared memory to load data and reduce global memory accesses
+// Prefetch data to registers to hide latency and improve loop performance
+// Vectorize operations, consider processing multiple spatial elements per thread
+// Merge consecutive memory accesses into larger chunks for coalescing
+// Ensure memory alignment and coalesced accesses for x and dx arrays
+```

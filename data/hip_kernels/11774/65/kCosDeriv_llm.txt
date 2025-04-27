@@ -1,0 +1,6 @@
+// Use shared memory to store intermediate results for faster access
+// Align data accesses to memory boundaries for coalesced reads and writes
+// Consider using float2 for accessing a and b if data is 2D for memory coalescing
+// Ensure the number of threads matches warp size for performance optimization
+// Check if memory padding could reduce misaligned accesses
+// Use constant memory if 'a' and 'b' have static values for faster access

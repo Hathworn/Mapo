@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Unroll the loop for improved performance by reducing control overhead.
+// Pre-load halo elements into shared memory to minimize redundant global memory accesses.
+// Ensure thread synchronization to avoid race conditions and ensure data consistency in shared memory.

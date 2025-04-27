@@ -1,0 +1,6 @@
+```
+// Use squared distance to avoid sqrt computation for performance improvement
+// Consider coalescing memory accesses for xyz1 and xyz2 to improve memory bandwidth utilization
+// Optimize idx writes by using shared memory if possible to reduce global memory traffic
+// Ensure block and thread dimensions are optimal for maximizing GPU utilization
+```

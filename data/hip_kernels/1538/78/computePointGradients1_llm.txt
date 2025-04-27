@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for x, y, z arrays for better performance.
+// Preload frequently accessed dj_ang data into shared memory to reduce global memory access.
+// Ensure all threads have written to shared memory before usage with __syncthreads().
+// Use double buffering technique if applicable to overlap computation and data transfer.
+// Adjust block and grid size to maximize occupancy and efficiency on target device.
+```

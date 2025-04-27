@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache A and B sub-matrices to reduce global memory access.
+// Ensure coalesced memory access for improved performance.
+// Use loop unrolling to optimize the innermost loop for better performance.
+// Evaluate using warp-level primitives like __shfl_xor for further optimization.
+// Align memory access to leverage memory throughput.
+```

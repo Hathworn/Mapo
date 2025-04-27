@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for accessing original_img to reduce global memory access latency.
+// Ensure memory coalescing for both read and write operations to optimize global memory bandwidth.
+// Evaluate the use of asynchronous copy operations to optimize memory transfer between the host and device.
+// Investigate using texture memory if data access patterns are 2D or spatially coherent.
+```

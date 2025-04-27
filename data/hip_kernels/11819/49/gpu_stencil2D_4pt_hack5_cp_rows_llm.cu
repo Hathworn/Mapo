@@ -1,0 +1,44 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void gpu_stencil2D_4pt_hack5_cp_rows(double *dst, double *shared_cols, double *shared_rows, int tile_y, int M, int N) {
+    #ifdef CUDA_DARTS_DEBUG
+    if((blockIdx.x==0)&&(blockIdx.y==0)&&(threadIdx.x==0)){
+        printf("copy rows begin!\n");
+    }
+    #endif
+
+    int base_global_row = (tile_y * blockIdx.y);
+    int base_global_col = blockDim.x * blockIdx.x;
+    int base_global_idx = N * base_global_row + base_global_col;
+    int nextRow = base_global_row + 1;
+    bool legalNextRow = (nextRow < M);
+    int t = threadIdx.x;
+    bool legalCurCol = (base_global_col + t) < N;
+    
+    // Efficient index calculation and memory access
+    int row_offset = (base_global_row / tile_y) * 2 * N + base_global_col;
+    int global_idx = base_global_idx + t;
+    int shared_idx = row_offset + t;
+    int shared_idx_next_row = shared_idx + N;
+
+    if (legalCurCol) {
+        shared_rows[shared_idx] = dst[global_idx];
+    }
+    if (legalNextRow && legalCurCol) {
+        shared_rows[shared_idx_next_row] = dst[global_idx + N];
+    }
+    __syncthreads();
+
+    #ifdef CUDA_DARTS_DEBUG
+    if (blockIdx.y == 0 && blockIdx.x == 2 && (t == 0 || t == 1)) {
+        printf("addr:%d, val = %f\n", shared_idx_next_row, shared_rows[shared_idx_next_row]);
+    }
+    #endif
+
+    #ifdef CUDA_DARTS_DEBUG
+    if ((blockIdx.x == 0) && (blockIdx.y == 0) && (threadIdx.x == 0)) {
+        printf("copy rows finish!\n");
+    }
+    #endif
+}

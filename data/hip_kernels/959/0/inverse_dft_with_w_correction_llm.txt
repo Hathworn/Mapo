@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to load visibilities and vis_intensity in blocks to reduce global memory access latency.
+// Perform coalesced accesses to ensure contiguous memory reads and writes.
+// Ensure that grid_pitch is appropriately aligned to allow efficient memory transactions.
+// Try loop unrolling for the batch processing loop to improve instruction efficiency.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using texture memory for p_Src as it offers better caching performance for repeated access patterns.
+// Use shared memory to store p_Src data used by multiple threads within a block to reduce global memory access.
+// Ensure coalesced memory access for p_Src to maximize memory throughput.
+// Consider unrolling loops where possible to minimize overhead and take advantage of instruction-level parallelism.
+// Leverage faster 32-bit arithmetic by using common techniques like shifting and masking operations.
+```

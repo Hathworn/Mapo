@@ -1,0 +1,5 @@
+// Consider coalesced memory access for ptr[offset]
+// Ensure all threads in a warp access contiguous memory locations
+// Minimize memory divergence by optimizing ptr[offset] usage
+// Use shared memory if data reuse exists within blocks
+// Optimize calculation d = sqrtf(fx * fx + fy * fy) to avoid recalculations

@@ -1,0 +1,9 @@
+```
+// Consider using warp-level operations to reduce pressure on shared memory.
+// Use texture memory for input image if read-only access provides performance benefits.
+// Optimize global memory access patterns by ensuring coalesced reads and writes.
+// Investigate potential use of loop unrolling for initializing shared memory.
+// Evaluate the use of `atomicAdd` for potential contention and explore reduction techniques.
+// Consider the effect of bank conflicts in shared memory and adjust layout if needed.
+// Reassess grid and block dimensions to optimize both occupancy and memory throughput.
+```

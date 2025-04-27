@@ -1,0 +1,6 @@
+```
+// Check bounds before accessing memory to prevent out-of-range access.
+// Use pointer arithmetic to set block_end accurately and avoid redundant checks.
+// Optimize memory coalescing by ensuring threads write sequentially in memory.
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+```

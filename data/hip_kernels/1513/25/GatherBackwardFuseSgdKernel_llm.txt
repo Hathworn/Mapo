@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access to improve bandwidth utilization
+// Utilize __syncthreads() to synchronize shared memory loading
+// Limit the number of active threads to those required for the computation
+// Apply atomic operations efficiently to avoid race conditions
+```

@@ -1,0 +1,6 @@
+```c
+// Use shared memory to load data from A and B tiles to reduce global memory accesses.
+// Consider loop unrolling for the accumulation loop for performance enhancement.
+// Ensure coalesced memory access when reading A and B matrices to maximize memory throughput.
+// Use __restrict__ qualifiers for pointers to provide the compiler with optimization opportunities.
+```

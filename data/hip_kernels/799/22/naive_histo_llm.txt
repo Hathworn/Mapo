@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce global memory accesses.
+// Ensure blocks are fully populated to increase occupancy.
+// If BIN_COUNT exceeds shared memory size, consider looping over parts of BIN_COUNT.
+// Avoid bank conflicts by ensuring shared memory accesses are aligned.
+// Use enough blocks to ensure all data is processed even if data size isn't divisible by block size.
+// Consider using warp-level primitives for more efficient reductions.
+```

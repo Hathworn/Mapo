@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access and improve data locality
+// Coalesce global memory access by ensuring 'x[k * groups + i]' is accessed in a contiguous manner
+// Consider loop unrolling to increase instruction-level parallelism
+// Use warp-level primitives to accumulate data within a warp before writing to global memory
+// Minimize bank conflicts when using shared memory by ensuring aligned access patterns
+```

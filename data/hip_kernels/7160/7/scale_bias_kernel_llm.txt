@@ -1,0 +1,9 @@
+```
+// Ensure offset index is calculated accurately to prevent memory access errors
+// Compute the index outside of loops to enhance computational efficiency
+// Coalesce memory accesses for improved memory throughput
+// Use shared memory to reduce global memory accesses if applicable
+// Optimize block size and threads per block to maximize occupancy and performance
+// Consider using float4 data type for vectorized operations to increase throughput
+// Use __restrict__ qualifier for pointers to optimize memory accesses
+```

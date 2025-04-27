@@ -1,0 +1,5 @@
+digraph "CFG for '_Z12simple_histoPiPKii' function" {
+	label="CFG for '_Z12simple_histoPiPKii' function";
+
+	Node0x5023f30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = mul i32 %10, %9\l  %12 = add i32 %11, %4\l  %13 = sext i32 %12 to i64\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %13\l  %15 = load i32, i32 addrspace(1)* %14, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %16 = srem i32 %15, %2\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %17\l  %19 = atomicrmw add i32 addrspace(1)* %18, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  ret void\l}"];
+}

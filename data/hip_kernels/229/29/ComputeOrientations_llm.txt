@@ -1,0 +1,12 @@
+```cpp
+// Use unroll directives for optimization in loops for better memory throughput.
+// Precompute Gaussian weights and store them in shared memory.
+// Use shared memory to load data blocks for better coalesced memory access.
+// Ensure proper synchronization with __syncthreads() when working with shared memory.
+// Minimize memory accesses by clamping within valid window bounds before loading.
+// Accumulate results in shared memory for reduced memory overhead.
+// Perform reduction steps in shared memory to improve parallel execution efficiency.
+// Leverage non-maximum suppression to filter and enhance salient orientation peaks.
+// Align memory boundaries optimally to reduce bank conflicts.
+// Consider loop unrolling for histogram computation for optimal performance.
+```

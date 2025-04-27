@@ -1,0 +1,8 @@
+```
+// Use shared memory for commonly accessed values to reduce global memory transactions
+// Prefetch yDotS and yDotY values to reduce latency when accessing global memory
+// Align memory allocations to ensure coalesced accesses to global memory
+// Consider using double buffering technique if kernel execution time allows
+// Optimize condition checks to minimize branching and improve execution path
+// Evaluate loop unrolling in case of repetitive computations for enhanced performance
+```

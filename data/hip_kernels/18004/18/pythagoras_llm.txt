@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache Gx and Gy for coalesced access.
+// Minimize global memory access by maximizing data reuse through registers.
+// Ensure memory access patterns are aligned for better performance.
+// Use constant or texture memory for frequently accessed data if needed.
+// Optimize memory access by loading data in coalesced patterns.
+// Minimize thread divergence by ensuring similar execution paths.
+```

@@ -1,0 +1,7 @@
+```
+// Unroll loops to improve memory throughput
+// Use __restrict__ to help the compiler optimize memory accesses
+// Consider reading data into shared memory if it helps reduce global memory accesses
+// Optimize thread block size and grid size for better occupancy
+// Coalesce memory accesses to improve performance
+```

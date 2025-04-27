@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache res_stride to reduce global memory accesses
+// Consider using coalesced memory access for the index array to improve memory throughput
+// Prefetch src data to shared memory to improve data reuse and reduce memory latency
+// Use loop unrolling to reduce loop overhead and improve performance
+// Optimize conditional statements to avoid unnecessary calculations within loops
+```

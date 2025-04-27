@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data like minI and maxI
+// Consider using a coalesced memory access pattern for reading I array
+// Leverage shared memory to reduce global memory accesses for hist updates
+// Ensure coalesced access pattern when updating the histogram array
+// Minimize conditional branches within the memory-critical segments
+// Optimize the calculation of bin index by reducing arithmetic operations
+// Align memory allocations for better performance during array accesses
+```

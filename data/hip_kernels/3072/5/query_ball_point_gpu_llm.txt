@@ -1,0 +1,4 @@
+// Use shared memory for xyz2 to reduce global memory accesses.
+// Ensure synchronicity after loading xyz2 into shared memory.
+// Load idx into shared memory to decrease global memory write latency.
+// Optimize the computation loop by minimizing conditional branching.

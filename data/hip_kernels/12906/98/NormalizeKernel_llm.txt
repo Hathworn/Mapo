@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache normalization_factor to reduce global memory accesses.
+// Optimize thread block dimensions to enhance coalesced memory access patterns.
+// Ensure that block size is a multiple of warp size to fully utilize the hardware.
+// Ensure that aligned memory access patterns are used for both image and normalization_factor.
+// Prefetch data to registers where possible for reduced latency.
+```

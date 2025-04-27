@@ -1,0 +1,6 @@
+```
+// Precompute the normalization constant once per block to reduce redundant calculations
+// Utilize shared memory to store the normalization constant and minimize global memory access
+// Use __syncthreads() to ensure all threads have the calculated normalization constant before proceeding
+// Implement loop unrolling by processing multiple elements per thread for better memory access patterns
+```

@@ -1,0 +1,7 @@
+```
+// Optimize: Use shared memory to reduce global memory accesses for 'variance[i]'
+// Optimize: Coalesce global memory access for 'delta[index]' array
+// Optimize: Use loop unrolling for the inner 'spatial' loop to increase instruction-level parallelism
+// Optimize: Consider using '__restrict__' keyword for pointers to help compiler optimize memory accesses
+// Optimize: Launch configuration should be tuned based on target GPU architecture for maximizing occupancy
+```

@@ -1,0 +1,3 @@
+// Use shared memory if repeated access to a[i] and b[i] for multiple threads to reduce global memory access
+// Ensure coalesced memory access for dest[i] to improve bandwidth efficiency
+// Consider using texture memory for accessing a[i] and b[i] if read-only and can benefit from caching

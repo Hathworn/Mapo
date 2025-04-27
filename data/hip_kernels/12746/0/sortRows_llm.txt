@@ -1,0 +1,8 @@
+```
+// Prefetch data to shared memory to reduce global memory accesses.
+// Minimize the number of divergent branches to improve warp execution efficiency.
+// Ensure memory access patterns coalesce where possible.
+// Consider utilizing warp-level primitives to optimize the sorting operation.
+// Investigate alternative sorting algorithms for potential performance improvements.
+// Use constant memory if colorMode or THRESHOLD are frequently accessed and remain unchanged.
+```

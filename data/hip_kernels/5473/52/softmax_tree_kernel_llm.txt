@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Perform loop unrolling in the device function for larger n to increase instruction level parallelism
+// Consider aligning data in global memory for coalesced access
+// Use __syncthreads() if necessary when using shared memory to prevent race conditions
+// Optimize memory access patterns by considering thread index usage and avoiding bank conflicts
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory to cache num_erased for reduced global memory access.
+// Optimize memory access pattern by ensuring coalesced access for in_lod and out_lod0.
+// Evaluate warp-level optimizations for synchronizing block execution.

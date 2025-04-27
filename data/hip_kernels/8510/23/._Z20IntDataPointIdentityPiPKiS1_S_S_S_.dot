@@ -1,0 +1,16 @@
+digraph "CFG for '_Z20IntDataPointIdentityPiPKiS1_S_S_S_' function" {
+	label="CFG for '_Z20IntDataPointIdentityPiPKiS1_S_S_S_' function";
+
+	Node0x4d97590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8d6cc70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = zext i32 %7 to i64\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = zext i32 %9 to i64\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !5, !invariant.load !6\l  %15 = zext i16 %14 to i64\l  %16 = mul nuw nsw i64 %15, %10\l  %17 = add nuw nsw i64 %16, %8\l  %18 = load i32, i32 addrspace(1)* %0, align 4, !tbaa !7, !amdgpu.noclobber !6\l  %19 = sext i32 %18 to i64\l  %20 = icmp slt i64 %17, %19\l  br i1 %20, label %21, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x4d97590:s0 -> Node0x4d99e90;
+	Node0x4d97590:s1 -> Node0x4d99f20;
+	Node0x4d99e90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%21:\l21:                                               \l  %22 = load i32, i32 addrspace(1)* %5, align 4, !tbaa !7\l  %23 = sext i32 %22 to i64\l  %24 = mul nsw i64 %17, %23\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %24\l  %26 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %24\l  %27 = icmp sgt i32 %22, 0\l  br i1 %27, label %32, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4d99e90:s0 -> Node0x4d9a9b0;
+	Node0x4d99e90:s1 -> Node0x4d9aa00;
+	Node0x4d9aa00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%28:\l28:                                               \l  %29 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %17\l  %30 = load i32, i32 addrspace(1)* %29, align 4, !tbaa !7\l  %31 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %17\l  store i32 %30, i32 addrspace(1)* %31, align 4, !tbaa !7\l  br label %41\l}"];
+	Node0x4d9aa00 -> Node0x4d99f20;
+	Node0x4d9a9b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  %33 = phi i64 [ %37, %32 ], [ 0, %21 ]\l  %34 = getelementptr inbounds i32, i32 addrspace(1)* %25, i64 %33\l  %35 = load i32, i32 addrspace(1)* %34, align 4, !tbaa !7\l  %36 = getelementptr inbounds i32, i32 addrspace(1)* %26, i64 %33\l  store i32 %35, i32 addrspace(1)* %36, align 4, !tbaa !7\l  %37 = add nuw nsw i64 %33, 1\l  %38 = load i32, i32 addrspace(1)* %5, align 4, !tbaa !7\l  %39 = sext i32 %38 to i64\l  %40 = icmp slt i64 %37, %39\l  br i1 %40, label %32, label %28, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4d9a9b0:s0 -> Node0x4d9a9b0;
+	Node0x4d9a9b0:s1 -> Node0x4d9aa00;
+	Node0x4d99f20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8d6cc70",label="{%41:\l41:                                               \l  ret void\l}"];
+}

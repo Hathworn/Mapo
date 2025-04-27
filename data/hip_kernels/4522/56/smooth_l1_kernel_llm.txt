@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing to improve memory access patterns
+// Utilize shared memory if data is reused within blocks to decrease global memory access
+// Ensure global memory accesses are aligned to reduce transaction overhead
+// Prefer using __ldg for read-only data if supported by target hardware
+// Optimize divergent branches by reordering operations or using conditional assignments
+```

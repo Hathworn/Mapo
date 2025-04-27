@@ -1,0 +1,7 @@
+```
+// Avoid memory divergence by coalesced memory access in vertexArray
+// Use shared memory to store vertexArray segments for quick access
+// Minimize memory traffic by reading vertexArray[i] and vertexArray[i + 1] together
+// Consider prefetching vertexArray data to L2 cache
+// Use loop unrolling for atomic operations if inside a loop
+```

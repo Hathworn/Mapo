@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for gradOutput_plane by ensuring contiguous threads access contiguous memory.
+// Optimize gradInput_plane access by reducing the number of atomic operations if possible.
+// Ensure indices_x_plane and indices_y_plane accesses are coalesced for efficient memory reads.
+// Evaluate using shared memory to store frequently accessed elements like gradOutput_plane for faster access.
+// Test different block sizes for optimal occupancy and performance.
+// Minimize divergent threads to ensure warp efficiency.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access to d_hashArray to reduce memory bandwidth usage
+// Ensure d_cellOccArray is accessed efficiently; consider reordering or padding to prevent bank conflicts
+// Minimize divergent branches to optimize control flow on the GPU
+// Leverage shared memory if possible to reduce global memory accesses for frequently accessed data
+// Adjust block and grid sizes to maximize occupancy and ensure efficient use of computational resources
+```

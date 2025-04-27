@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache inputs if they are accessed multiple times
+// Use __syncthreads() to ensure any shared memory operations are completed before use
+// Perform memory coalescing by aligning memory accesses within the warp
+// Reduce thread divergence by ensuring branches are minimized
+```

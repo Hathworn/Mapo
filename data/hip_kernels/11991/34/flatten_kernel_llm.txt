@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring adjacent threads access adjacent memory locations
+// Consider using shared memory to leverage faster memory access within a block
+// Minimize bank conflicts in shared memory by ensuring memory accesses are well-aligned
+// Optimize memory access patterns to reduce global memory traffic
+// Consider loop unrolling if applicable to reduce loop overhead and improve ILP
+```

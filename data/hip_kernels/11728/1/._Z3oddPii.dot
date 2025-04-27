@@ -1,0 +1,13 @@
+digraph "CFG for '_Z3oddPii' function" {
+	label="CFG for '_Z3oddPii' function";
+
+	Node0x62c3da0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = shl nuw nsw i32 %3, 1\l  %5 = add nsw i32 %1, -2\l  %6 = icmp slt i32 %4, %5\l  br i1 %6, label %7, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x62c3da0:s0 -> Node0x62c5380;
+	Node0x62c3da0:s1 -> Node0x62c5410;
+	Node0x62c5380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%7:\l7:                                                \l  %8 = add nuw nsw i32 %4, 1\l  %9 = zext i32 %8 to i64\l  %10 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %9\l  %11 = bitcast i32 addrspace(1)* %10 to \<2 x i32\> addrspace(1)*\l  %12 = load \<2 x i32\>, \<2 x i32\> addrspace(1)* %11, align 4, !tbaa !5\l  %13 = extractelement \<2 x i32\> %12, i64 0\l  %14 = extractelement \<2 x i32\> %12, i64 1\l  %15 = icmp sgt i32 %13, %14\l  br i1 %15, label %16, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x62c5380:s0 -> Node0x62c6180;
+	Node0x62c5380:s1 -> Node0x62c5410;
+	Node0x62c6180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%16:\l16:                                               \l  %17 = add nuw nsw i32 %4, 2\l  %18 = zext i32 %17 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %18\l  store i32 %14, i32 addrspace(1)* %10, align 4, !tbaa !5\l  store i32 %13, i32 addrspace(1)* %19, align 4, !tbaa !5\l  br label %20\l}"];
+	Node0x62c6180 -> Node0x62c5410;
+	Node0x62c5410 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

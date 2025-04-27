@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access
+// Ensure the size fits within blockDim.x
+// Compute result using shared memory and store back into global memory

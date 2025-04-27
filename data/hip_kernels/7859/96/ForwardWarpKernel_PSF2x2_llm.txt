@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced accesses for u, v, and src arrays
+// Consider pre-fetching values into shared memory to minimize global memory accesses
+// Utilize __syncthreads() to coordinate shared memory usage if implemented
+// Minimize the use of atomic operations where possible to reduce contention
+// Investigate the use of warp-level primitives to optimize reductions
+// Ensure that normalization_factor updates are done efficiently with minimal atomic overhead
+// Evaluate aligning memory accesses with warp boundaries for better performance
+```

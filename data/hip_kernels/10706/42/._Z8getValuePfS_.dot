@@ -1,0 +1,5 @@
+digraph "CFG for '_Z8getValuePfS_' function" {
+	label="CFG for '_Z8getValuePfS_' function";
+
+	Node0x5e39a40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = icmp eq float addrspace(1)* %1, addrspacecast (float* null to float\l... addrspace(1)*)\l  %4 = select contract i1 %3, float 3.000000e+00, float 2.000000e+00\l  store float %4, float addrspace(1)* %0, align 4, !tbaa !4\l  ret void\l}"];
+}

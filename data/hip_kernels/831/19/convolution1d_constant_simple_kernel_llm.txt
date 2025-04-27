@@ -1,0 +1,7 @@
+```
+// Ensure N_ds is loaded in coalesced manner
+// Use __ldg() to load In[] if it is accessed frequently
+// Consider half-warp synchronization or padding to solve bank conflicts in shared memory
+// Load the entire mask into shared memory if shared memory size allows
+// Avoid divergence in if conditions by restructuring logic
+```

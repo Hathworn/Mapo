@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for bias if it fits to reduce global memory accesses
+// Ensure memory coalescing with appropriate stride for preact array
+// Check for bank conflicts in shared memory access if shared memory is used
+// Optimize memory access pattern for better cache utilization
+// Use constant memory for bias if it does not change and is accessed frequently
+```

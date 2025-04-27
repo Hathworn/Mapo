@@ -1,0 +1,8 @@
+```
+// Consider aligning data for coalesced global memory access
+// Utilize shared memory to reduce global memory access where possible
+// Use warp-level operations to minimize synchronization overhead
+// Optimize loop unrolling to improve register and cache performance
+// Ensure optimal use of registers to avoid spill to local memory
+// Leverage texture memory for read-only data to enhance memory bandwidth
+```

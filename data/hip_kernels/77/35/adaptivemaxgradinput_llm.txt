@@ -1,0 +1,10 @@
+```cpp
+// Align memory access to improve coalesced memory access patterns.
+// Use shared memory to cache 'indices_x' and 'indices_y' to reduce global memory accesses.
+// Optimize by merging memory accesses for 'gradOutput', 'indices_x', and 'indices_y' where appropriate.
+// Consider loop unrolling for further optimization of repeated memory accesses.
+// Ensure all reads are coalesced to maximize memory bandwidth utilization.
+// Prefetch data to registers to reduce global memory access times.
+// Reduce bank conflicts in shared memory by proper memory layout.
+// Consider using vectorized loads if applicable for 'gradInput' updates.
+```

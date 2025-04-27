@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store part of 'mat' for caching and reducing global memory access.
+// Align memory accesses to coalesce them and reduce memory transaction overhead.
+// Use const memory for 'margin' if it's not changing frequently during kernel execution.
+// Increase memory bus utilization by ensuring memory accesses are contiguous.
+// Evaluate if loop unrolling could further optimize the inner loop over 'width'.
+```

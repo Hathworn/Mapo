@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache data and reduce global memory access.
+// Organize threads in a way that ensures coalesced memory access.
+// Avoid bank conflicts in any shared memory used.
+// Reduce the number of divisions by storing precomputed strides.
+// Consider using warp shuffle operations to optimize intra-warp communication.
+// Unroll loops to reduce the overhead of loop control and increase throughput.
+// Use vectorized memory operations where possible to improve memory access efficiency.
+// Prefer atomic operations when reducing results from different threads.
+```

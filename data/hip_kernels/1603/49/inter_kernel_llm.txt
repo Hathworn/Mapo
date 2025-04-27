@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Optimize memory access patterns to ensure coalesced memory access for X and Y arrays
+// Consider using loop unrolling within the global kernel function for better performance
+// Evaluate if employing vectorized data types such as float4 improves throughput
+// Reduce if-else branching by utilizing branch-free programming techniques, e.g., ternary operators

@@ -1,0 +1,15 @@
+digraph "CFG for 'relu_backward' function" {
+	label="CFG for 'relu_backward' function";
+
+	Node0x4859330 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = freeze i32 %14\l  %16 = freeze i32 %4\l  %17 = sdiv i32 %15, %16\l  %18 = icmp slt i32 %17, %3\l  %19 = icmp sgt i32 %4, -1\l  %20 = and i1 %19, %18\l  br i1 %20, label %21, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x4859330:s0 -> Node0x485b540;
+	Node0x4859330:s1 -> Node0x485b5d0;
+	Node0x485b540 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%21:\l21:                                               \l  %22 = mul i32 %17, %16\l  %23 = sub i32 %15, %22\l  %24 = mul nsw i32 %17, %4\l  %25 = add nsw i32 %23, %24\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds double, double addrspace(1)* %0, i64 %26\l  %28 = load double, double addrspace(1)* %27, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %29 = fcmp contract ogt double %28, 0.000000e+00\l  br i1 %29, label %30, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x485b540:s0 -> Node0x485cd70;
+	Node0x485b540:s1 -> Node0x485ce00;
+	Node0x485cd70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%30:\l30:                                               \l  %31 = getelementptr inbounds double, double addrspace(1)* %1, i64 %26\l  %32 = load double, double addrspace(1)* %31, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  br label %33\l}"];
+	Node0x485cd70 -> Node0x485ce00;
+	Node0x485ce00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%33:\l33:                                               \l  %34 = phi contract double [ %32, %30 ], [ 0.000000e+00, %21 ]\l  %35 = getelementptr inbounds double, double addrspace(1)* %2, i64 %26\l  store double %34, double addrspace(1)* %35, align 8, !tbaa !7\l  br label %36\l}"];
+	Node0x485ce00 -> Node0x485b5d0;
+	Node0x485b5d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

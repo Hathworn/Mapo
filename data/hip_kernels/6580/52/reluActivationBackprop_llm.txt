@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by organizing data linearly
+// Minimize warp divergence by using ternary operator
+// Optimize shared memory usage when applicable
+// Consider launching enough threads to hide latency
+// Use appropriate block and grid size for the target GPU architecture

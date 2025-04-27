@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses for neighboring elements
+// Explore memory coalescing by ensuring continuous memory accesses by threads within a warp
+// Minimize bank conflicts in shared memory by aligning data accesses
+// Leverage constant memory for constants like 'k' and 'st' if access patterns are regular
+// Optimize block and grid dimensions for maximum occupancy and efficient memory throughput
+// Evaluate the use of texture memory if appropriate for the 3D data pattern
+```

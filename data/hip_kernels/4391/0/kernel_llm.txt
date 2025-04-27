@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency  
+// Optimize data synchronization using __syncthreads()   
+// Consider if cooperative groups can be utilized for more efficient synchronization  
+// Ensure shared memory usage is within limits to prevent out-of-memory issues  
+// Investigate if loop unrolling can improve performance in reduction operations  
+// Profile the loop to identify potential bottlenecks

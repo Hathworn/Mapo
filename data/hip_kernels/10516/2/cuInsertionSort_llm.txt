@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory accesses and improve cache efficiency.
+// Optimize memory coalescing by ensuring threads access consecutive memory locations.
+// Consider loop unrolling for better performance in small fixed-size loops.
+// Minimize divergence by ensuring that all threads within a warp follow the same execution path.
+// Use registers to hold frequently accessed data for faster computation.
+// Check if texture memory or read-only cache could benefit access patterns for constant data.
+```

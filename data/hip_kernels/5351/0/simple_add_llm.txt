@@ -1,0 +1,6 @@
+```
+// Use shared memory to optimize memory access and reduce global memory transactions.
+// Ensure uncoalesced memory access patterns are minimized through shared memory usage.
+// Utilize __syncthreads() to synchronize threads after loading into shared memory.
+// Consider bank conflicts in shared memory and adjust access patterns if necessary.
+```

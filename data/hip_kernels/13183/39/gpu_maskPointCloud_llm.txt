@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access to improve global memory bandwidth
+// Use shared memory to cache mask data for each block if possible
+// Consider vectorizing loads and stores to improve memory throughput
+// Align memory accesses and ensure memory is properly aligned
+// Optimize thread block size for better utilization of memory bandwidth
+// Minimize synchronization points within the kernel to reduce overhead
+// Ensure enough thread occupancy to hide latency of memory operations
+```

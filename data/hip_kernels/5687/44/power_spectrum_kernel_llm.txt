@@ -1,0 +1,9 @@
+```
+// Optimize memory access by using shared memory for values accessed multiple times within a block.
+// Minimize bank conflicts when using shared memory for improved performance.
+// Ensure coalesced memory access for reading and writing global memory.
+// Align data structures for better memory access patterns.
+// Consider using __ldg() for read-only data that can benefit from cache.
+// Improve data locality by restructuring computation to reduce cache misses.
+// Utilize atomic operations only when necessary to avoid serialization overhead.
+```

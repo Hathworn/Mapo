@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache b array values if data access patterns allow
+// Consider coalesced access patterns for improved memory throughput
+// Ensure memory accesses to a are aligned for optimal performance
+// Evaluate occupancy versus register pressure to find optimal block size
+// Prefetch b values into registers when possible to hide memory latency
+// Consider using asynchronous memory prefetching if supported
+```

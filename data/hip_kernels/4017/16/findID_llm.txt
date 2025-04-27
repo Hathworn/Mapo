@@ -1,0 +1,7 @@
+```
+// Minimize memory access latency by ensuring data is coalesced
+// Ensure all threads within a warp access memory in a sequential fashion
+// Optimize register usage by avoiding temporary variables within threads
+// Leverage shared memory if accessing elements that are used multiple times
+// Consider adjusting block size to match the GPU architecture for maximum occupancy
+```

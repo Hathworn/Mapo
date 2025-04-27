@@ -1,0 +1,5 @@
+// Consider using shared memory to cache BP data for better memory access locality.
+// Explore loop interchange strategies to improve data locality within the loops.
+// Use texture memory for BP data if read-only access can optimize memory transactions.
+// Assess for coalesced memory access patterns to ensure efficient global memory throughput.
+// Evaluate warp-level intrinsics for potentially reducing redundant computations within loops.

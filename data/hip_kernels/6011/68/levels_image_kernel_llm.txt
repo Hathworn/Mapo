@@ -1,0 +1,6 @@
+```
+// Cohalesce global memory accesses by ensuring memory operations are aligned
+// Use shared memory to reduce global memory access latency for frequently accessed data
+// Minimize branching by reordering if statements to reduce divergent warps
+// Prefetch data into registers to reduce latency for repeated accesses
+```

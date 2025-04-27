@@ -1,0 +1,7 @@
+```cpp
+// Use of shared memory for vertices loading to reduce global memory access
+// Ensure all threads have completed loading vertices using __syncthreads()
+// Avoid conditional divergence in the main loop
+// Optimize the polygon winding computation by minimizing arithmetic operations
+// Consider coalesced global memory access for input points and vertices
+```

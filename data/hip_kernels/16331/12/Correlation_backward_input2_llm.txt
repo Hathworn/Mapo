@@ -1,0 +1,8 @@
+```
+// Optimize global memory access by ensuring coalesced reads and writes for better memory bandwidth utilization.
+// Reduce bank conflicts in shared memory by using aligned data access.
+// Increase data reuse by loading frequently accessed values into registers.
+// Use loop unrolling within the nested loops to minimize loop overhead and improve instruction-level parallelism.
+// Consider using a larger block size to increase occupancy, but ensure shared memory resources are not exceeded.
+// Implement warp-level reduction for increased efficiency in the reduction phase.
+```

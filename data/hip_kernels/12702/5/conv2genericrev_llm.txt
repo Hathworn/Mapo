@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access for input to improve memory throughput.
+// Use caching for frequently accessed kernel data in shared memory to reduce latency.
+// Evaluate using constant memory for kernel data if it is read-only and fits in constant cache.
+// Inline small functions or loop unrolling manually for potentially better performance.
+// Adjust stride and block sizes to ensure optimal resource utilization and minimize warp divergence.
+```

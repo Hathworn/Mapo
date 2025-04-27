@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced by using a linear index
+// Consider using shared memory for frequently accessed data to reduce global memory access time
+// Ensure pitch alignment is optimized for memory access patterns to avoid bank conflicts
+// Minimize divergence by ensuring both threads within warps enter the same branch
+// Consider prefetching data into registers to reduce latency if computational intensity allows
+// Profile memory access patterns to identify and optimize cache usage
+```

@@ -1,0 +1,5 @@
+```
+// Use coalesced memory access for sparseIndices for improved memory access efficiency
+// Leverage shared memory to cache denseData for repeated access within the block
+// Consider using atomic operations if concurrent writes to sparseData are possible
+```

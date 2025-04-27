@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8_mat_addPfS_S_ffi' function" {
+	label="CFG for '_Z8_mat_addPfS_S_ffi' function";
+
+	Node0x62ef1a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = icmp slt i32 %15, %5\l  br i1 %16, label %17, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x62ef1a0:s0 -> Node0x62ef5b0;
+	Node0x62ef1a0:s1 -> Node0x62f1180;
+	Node0x62ef5b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %21 = fmul contract float %20, %3\l  %22 = getelementptr inbounds float, float addrspace(1)* %1, i64 %18\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %24 = fmul contract float %23, %4\l  %25 = fadd contract float %21, %24\l  %26 = getelementptr inbounds float, float addrspace(1)* %2, i64 %18\l  store float %25, float addrspace(1)* %26, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x62ef5b0 -> Node0x62f1180;
+	Node0x62f1180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

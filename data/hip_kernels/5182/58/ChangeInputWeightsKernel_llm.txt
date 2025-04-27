@@ -1,0 +1,10 @@
+```
+// Combine loop iterations to reduce kernel launch overhead
+// Unroll loop to increase instruction level parallelism
+// Employ memory coalescing for better global memory access patterns
+// Cache frequently accessed data in shared memory if possible
+// Use register optimization to reduce pressure on global memory
+// Optimize stride access patterns for efficiency
+// Use warp-level primitives like __shfl_sync if applicable
+// Avoid branch divergence within warps
+```

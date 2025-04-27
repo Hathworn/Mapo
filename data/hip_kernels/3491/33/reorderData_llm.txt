@@ -1,0 +1,7 @@
+```
+// Use __restrict__ keyword for pointers to facilitate compiler optimizations.
+// Consider loop unrolling for the step loop to reduce overhead.
+// Try to minimize shared memory usage or rearrange shared memory access for better coalescing.
+// Evaluate the necessity of GROUP_SIZE constant and consider hardcoding its value if applicable.
+// Assess if the use of uint2 for shared memory arrays is optimal for warp access patterns.
+```

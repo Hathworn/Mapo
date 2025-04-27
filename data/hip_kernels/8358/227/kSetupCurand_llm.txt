@@ -1,0 +1,3 @@
+// Consider aligning memory access by ensuring state array is allocated on 32-byte boundary.
+// Use __restrict__ keyword on state parameter to optimize memory access.
+// Avoid using complex calculations inside the kernel function; pre-compute values outside if possible.

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced reads and writes.
+// Consider using float4 for source to leverage aligned memory access.
+// Utilize shared memory to load data in blocks to reduce global memory access.
+// Pre-load data into registers to minimize latency during computation.
+// Ensure data access patterns remain consistent to fully utilize memory bandwidth.
+```

@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache inputs if there are repeated accesses
+// Consider memory coalescing by adjusting data layout or access patterns
+// Optimize for bank conflicts when using shared memory
+// Explore occupancy optimization strategies, such as adjusting block size
+// Utilize vectorized loads/stores for improved memory bandwidth
+// Profile and minimize divergent branches, e.g., within the conditional
+// Check if loop unrolling can improve performance for complex operations
+// Evaluate constant memory usage for frequently accessed constants like stride
+```

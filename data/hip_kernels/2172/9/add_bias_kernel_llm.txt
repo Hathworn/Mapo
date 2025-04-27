@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for 'output' to increase memory efficiency
+// Load 'biases[j]' into a register outside the loop to reduce global memory accesses
+// Ensure grid and block dimensions are chosen to maximize warp occupancy
+// Consider using shared memory if biases are reused frequently to minimize global memory traffic
+// Minimize divergence in the loop by ensuring all threads within a warp execute the same code path
+```

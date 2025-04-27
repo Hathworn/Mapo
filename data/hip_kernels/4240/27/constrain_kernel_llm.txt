@@ -1,0 +1,3 @@
+// Consider using shared memory to temporarily store X values for faster access.
+// Use coalesced memory accesses by aligning INCX to warp size (64 for HIP).
+// Minimize conditional checks to reduce warp divergence.

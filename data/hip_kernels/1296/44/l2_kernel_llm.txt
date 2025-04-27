@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if appropriate to reduce redundant global memory accesses.
+// Ensure coalesced memory access to improve memory throughput.
+// Evaluate whether using warp shuffle can reduce unnecessary memory transactions.
+// Remember to launch enough blocks to keep GPU fully utilized, depending on the value of n.
+// Check if loop unrolling would be beneficial in this context.
+```

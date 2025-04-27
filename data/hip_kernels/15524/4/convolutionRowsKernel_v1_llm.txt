@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing global memory in contiguous blocks
+// Use __constant__ memory for frequently accessed data
+// Minimize shared memory footprint by using conditional loading
+// Unroll loops to improve performance and reduce branch divergence
+// Ensure __syncthreads usage to synchronize between threads within a block
+```

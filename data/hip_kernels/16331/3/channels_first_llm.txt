@@ -1,0 +1,8 @@
+```
+// Consider using warp-level primitives for loading/storing to optimize shared memory bandwidth.
+// Avoid redundant synchronization by restructuring kernel logic.
+// Analyze memory access patterns to ensure coalesced accesses for global memory.
+// Investigate using vectorized loads/stores to improve memory throughput.
+// Utilize register for temporary variables to reduce shared memory pressure.
+// Explore loop unrolling techniques for better performance in channel iteration.
+```

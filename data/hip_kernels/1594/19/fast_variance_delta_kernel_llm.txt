@@ -1,0 +1,8 @@
+```cpp
+// Consider using __restrict__ pointers to reduce pointer aliasing and improve memory access efficiency.
+// Optimize the memory access pattern by ensuring coalesced access for better performance.
+// Utilize float4 or similar vector types to leverage memory bandwidth for loading/storing when appropriate.
+// Consider increasing the block size if the number of spatial elements is large to enhance parallelism.
+// Ensure that shared memory use is optimal and does not exceed hardware limits for efficient memory usage.
+// Evaluate if unrolling the inner loops manually introduces performance benefits by reducing loop overhead.
+```

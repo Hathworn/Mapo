@@ -1,0 +1,7 @@
+```
+// Consider adjusting shared memory size based on actual block size needs.
+// Ensure all data fits in shared memory to improve access speed.
+// Minimize global memory access by fully utilizing shared memory.
+// Coalesced access to global memory will increase throughput.
+// Consider using vectorized loads if appropriate for data alignment.
+```

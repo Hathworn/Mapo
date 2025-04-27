@@ -1,0 +1,4 @@
+// Use shared memory to reduce memory latency by storing partial inner products
+// Optimize memory access pattern by using warp-level reduction for temporary variable 'tmp'
+// Leverage __shfl_down_sync for efficient warp-level communication and reduction
+// Minimize divergence by ensuring threads within the same warp follow the same execution path

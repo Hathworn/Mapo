@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses to improve bandwidth utilization
+// Utilize shared memory if beneficial to reduce redundant global memory loads
+// Ensure optimal block size for memory fetch granularity and minimize bank conflicts
+// Consider ongoing memory access pattern to avoid divergence in warp execution
+// Check for bank conflicts in shared memory access, align data as necessary
+```

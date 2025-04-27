@@ -1,0 +1,4 @@
+// Use shared memory to store movie_rating_probs within the block to reduce global memory accesses.
+// Optimize memory access patterns by using coalesced memory access for weights.
+// Consider using texture memory for read-only data like movie_rating_probs to leverage cached memory access.
+// Evaluate loop unrolling further for the inner loop to improve performance by maximizing instruction throughput.

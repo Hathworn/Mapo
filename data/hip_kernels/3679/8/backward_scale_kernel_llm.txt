@@ -1,0 +1,6 @@
+// Consider prefetching data to shared memory to minimize global memory access latency.
+// Ensure coalesced memory accesses by aligning data structure properly.
+// Use shared memory efficiently to store frequently accessed data within block.
+// Optimize loop to reduce thread divergence for better warp execution.
+// Use parallel reduction in shared memory to reduce synchronization overhead.
+// Implement atomic operations to avoid race conditions during scale_updates modifications.

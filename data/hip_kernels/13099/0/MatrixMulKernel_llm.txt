@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure all memory accesses are coalesced by aligning block and thread indices properly.
+// Minimize bank conflicts in shared memory by carefully organizing shared memory indices.
+// Optimize the loop that iterates over shared memory blocks to avoid unnecessary computations.
+// Reduce __syncthreads() calls where possible to minimize synchronization overhead.

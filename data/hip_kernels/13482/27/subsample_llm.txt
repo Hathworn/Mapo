@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to buffer input data and reduce global memory accesses
+// Consider pre-loading weights and biases into registers to minimize repeated global memory accesses
+// Explore using warp-level primitives like __shfl_xor to optimize reduction operations
+// Adjust block size and grid size for better occupancy and resource utilization
+```

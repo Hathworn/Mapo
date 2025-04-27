@@ -1,0 +1,29 @@
+digraph "CFG for '_Z12swapOnKernelPii' function" {
+	label="CFG for '_Z12swapOnKernelPii' function";
+
+	Node0x52df650 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = mul i32 %8, %7\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = shl nuw nsw i32 %10, 1\l  %12 = add i32 %9, %11\l  %13 = icmp slt i32 %1, -1\l  br i1 %13, label %26, label %14\l|{<s0>T|<s1>F}}"];
+	Node0x52df650:s0 -> Node0x52e1610;
+	Node0x52df650:s1 -> Node0x52e16a0;
+	Node0x52e16a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%14:\l14:                                               \l  %15 = sdiv i32 %1, 2\l  %16 = add nsw i32 %12, 1\l  %17 = icmp slt i32 %16, %1\l  %18 = sext i32 %12 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %18\l  %20 = sext i32 %16 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %20\l  %22 = add nsw i32 %12, 2\l  %23 = icmp slt i32 %22, %1\l  %24 = sext i32 %22 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %24\l  br label %27\l}"];
+	Node0x52e16a0 -> Node0x52e1e90;
+	Node0x52e1610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%26:\l26:                                               \l  ret void\l}"];
+	Node0x52e1e90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ undef, %14 ], [ %36, %41 ]\l  %29 = phi i32 [ 0, %14 ], [ %42, %41 ]\l  br i1 %17, label %30, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x52e1e90:s0 -> Node0x52e2640;
+	Node0x52e1e90:s1 -> Node0x52e26d0;
+	Node0x52e2640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%30:\l30:                                               \l  %31 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7\l  %32 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7\l  %33 = icmp sgt i32 %31, %32\l  br i1 %33, label %34, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x52e2640:s0 -> Node0x52e19c0;
+	Node0x52e2640:s1 -> Node0x52e26d0;
+	Node0x52e19c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%34:\l34:                                               \l  store i32 %32, i32 addrspace(1)* %19, align 4, !tbaa !7\l  store i32 %31, i32 addrspace(1)* %21, align 4, !tbaa !7\l  br label %35\l}"];
+	Node0x52e19c0 -> Node0x52e26d0;
+	Node0x52e26d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = phi i32 [ %31, %34 ], [ %32, %30 ], [ %28, %27 ]\l  br i1 %23, label %37, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x52e26d0:s0 -> Node0x52e3590;
+	Node0x52e26d0:s1 -> Node0x52e23b0;
+	Node0x52e3590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%37:\l37:                                               \l  %38 = load i32, i32 addrspace(1)* %25, align 4, !tbaa !7\l  %39 = icmp sgt i32 %36, %38\l  br i1 %39, label %40, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x52e3590:s0 -> Node0x52e3790;
+	Node0x52e3590:s1 -> Node0x52e23b0;
+	Node0x52e3790 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%40:\l40:                                               \l  store i32 %38, i32 addrspace(1)* %21, align 4, !tbaa !7\l  store i32 %36, i32 addrspace(1)* %25, align 4, !tbaa !7\l  br label %41\l}"];
+	Node0x52e3790 -> Node0x52e23b0;
+	Node0x52e23b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %42 = add nuw nsw i32 %29, 1\l  %43 = icmp eq i32 %29, %15\l  br i1 %43, label %26, label %27, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x52e23b0:s0 -> Node0x52e1610;
+	Node0x52e23b0:s1 -> Node0x52e1e90;
+}

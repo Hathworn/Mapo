@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory coalescing by accessing data in a contiguous manner
+// Consider using shared memory to cache frequently used data like mean and variance
+// Minimize the use of expensive operations like sqrt by precomputing them if possible
+// Explore the use of asynchronous memory transfers for overlapping computation and data transfer
+// Check if using dynamic parallelism can enhance kernel launch efficiency
+// Investigate the use of warp shuffle operations to reduce global memory access
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve global memory throughput
+// Use shared memory to reduce global memory access latency
+// Adjust TILE_DIM and BLOCK_ROWS to optimize for specific GPU architecture
+// Ensure TILE_DIM+1 prevents bank conflicts in shared memory
+// Use __syncthreads to synchronize threads for shared memory usage
+// Consider occupancy and register usage for optimal performance
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache add array values for faster access.
+// Optimize global memory access patterns by ensuring coalesced access.
+// Ensure memory accesses within threads of a warp are coalesced.
+// Utilize __syncthreads() appropriately to ensure all threads have loaded blockAdd before using.
+```

@@ -1,0 +1,12 @@
+```c
+// Consider padding shared memory to avoid bank conflicts.
+// Utilize float precision to improve memory bandwidth utilization.
+// Use loop unrolling for performance improvements.
+// Ensure memory coalescing for global memory accesses.
+// Consider using asynchronous memory copies where possible.
+// Align memory accesses for improved coalescing.
+// Implement warp-level synchronization for improved performance.
+// Consider dynamic parallelism for nested parallel workloads.
+// Evaluate benefits of using texture or surface memory for specific data patterns.
+// Use constant memory for read-only kernel parameters where applicable.
+```

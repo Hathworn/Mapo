@@ -1,0 +1,11 @@
+```
+// Avoid bank conflicts: use padding in shared memory allocations
+// Minimize global memory access: prefetch data into shared memory
+// Coalesced memory access: ensure contiguous threads access contiguous memory
+// Utilize atomic operations to prevent race conditions
+// Optimize occupancy: adjust block size and thread count for GPU architecture
+// Reduce divergent branches: streamline loops and conditional operations
+// Use __forceinline__ for frequently called device functions to reduce overhead
+// Leverage warp-level operations for faster synchronization
+// Align data structures to ensure efficient memory transactions
+```

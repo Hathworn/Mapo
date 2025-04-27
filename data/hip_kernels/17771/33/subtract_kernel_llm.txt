@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache frequently accessed data to reduce global memory accesses.
+// Consider coalescing memory accesses to improve memory throughput.
+// Minimize divergent branches to maintain warp efficiency.
+// Ensure proper alignment of data structures for optimal memory access patterns.
+// Launch kernels with a block size that maximizes occupancy and utilizes GPU resources efficiently.
+```

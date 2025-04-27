@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache rows for reducing global memory accesses
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Utilize fewer threads if warp divergence occurs due to varying heights
+// Experiment with different thread block sizes to improve occupancy
+```

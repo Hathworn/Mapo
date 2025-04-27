@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory traffic.
+// Minimize data transfer from host to device by ensuring as much data as possible resides on the device.
+// Use memory coalescing to optimize global memory accesses by ensuring threads access consecutive memory addresses.
+// Experiment with different block sizes and grid configurations to maximize hardware occupancy.
+// Consider asynchronous memory transfers to overlap data movement with computation, reducing memory latency.
+```

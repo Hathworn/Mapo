@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve memory throughput
+// Minimize bank conflicts by ensuring consecutive threads access consecutive memory locations
+// Potentially use shared memory if there are opportunities for data reuse within the block
+// Evaluate the use of __ldg for read-only data to leverage cache efficiently
+// Optimize block and grid size configuration based on hardware occupancy
+```

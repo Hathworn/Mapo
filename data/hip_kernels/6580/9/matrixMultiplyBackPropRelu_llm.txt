@@ -1,0 +1,4 @@
+// Use shared memory to load tiles of matrices A and B for faster access
+// Zero-padding boundaries in shared memory load to avoid invalid memory access
+// Synchronize threads after loading shared memory to ensure all threads have completed loading
+// Synchronize threads after computation within the tile to ensure all threads have completed calculations

@@ -1,0 +1,9 @@
+```c
+// Consider coalescing memory access for gradOutput for better memory throughput.
+// Use shared memory to cache frequently accessed data to reduce global memory access.
+// Ensure memory accesses to rInput2 are aligned to improve memory efficiency.
+// Optimize loops over nOutputChannels by considering parallelized reduction techniques.
+// Use __syncthreads() efficiently to avoid unnecessary barriers and ensure proper data synchronization.
+// Consider loop unrolling for inner loops to reduce loop overhead and increase performance.
+// Evaluate bank conflicts in shared memory accesses to eliminate unnecessary wait states.
+```

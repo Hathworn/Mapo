@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced access to global memory for better performance
+// Minimize divergent branches for optimal execution
+// Use shared memory to store frequently accessed data to reduce global memory accesses
+// Ensure that memory accesses within warps are coalesced
+// Avoid bank conflicts in shared memory access
+// Ensure synchronization (__syncthreads()) is used to avoid data hazards
+```

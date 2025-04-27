@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Align memory access to improve coalescing
+// Ensure maxPts does not exceed shared memory limits to avoid overflow
+// Process multiple elements per thread to increase computation bandwidth
+// Reuse shared memory efficiently by minimizing redundant data reads

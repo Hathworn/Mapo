@@ -1,0 +1,16 @@
+digraph "CFG for '_Z16getNextPrimeFastPcyyyPy' function" {
+	label="CFG for '_Z16getNextPrimeFastPcyyyPy' function";
+
+	Node0x52a4f10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b59970",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x52a4f10:s0 -> Node0x52a6310;
+	Node0x52a4f10:s1 -> Node0x52a63a0;
+	Node0x52a6310 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  %9 = phi i64 [ %10, %12 ], [ %1, %5 ]\l  %10 = add i64 %9, 1\l  %11 = icmp ult i64 %10, %3\l  br i1 %11, label %12, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x52a6310:s0 -> Node0x52a4170;
+	Node0x52a6310:s1 -> Node0x52a63a0;
+	Node0x52a4170 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%12:\l12:                                               \l  %13 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %10\l  %14 = load i8, i8 addrspace(1)* %13, align 1, !tbaa !5, !amdgpu.noclobber !8\l  %15 = icmp eq i8 %14, 1\l  br i1 %15, label %16, label %8, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x52a4170:s0 -> Node0x52a6cb0;
+	Node0x52a4170:s1 -> Node0x52a6310;
+	Node0x52a6cb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%16:\l16:                                               \l  store i64 %10, i64 addrspace(1)* %4, align 8, !tbaa !11\l  br label %17\l}"];
+	Node0x52a6cb0 -> Node0x52a63a0;
+	Node0x52a63a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b59970",label="{%17:\l17:                                               \l  ret void\l}"];
+}

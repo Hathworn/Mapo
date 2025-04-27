@@ -1,0 +1,6 @@
+```
+// Consider using coalesced memory access for better memory performance
+// Use shared memory if there is data reuse among threads
+// Ensure blocks are fully occupied to maximize GPU utilization
+// Use __restrict__ keyword if the pointers do not alias for better optimization
+```

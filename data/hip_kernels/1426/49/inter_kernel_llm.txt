@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Coalesce global memory accesses by ensuring memory access patterns are aligned
+// Minimize conditional branching within loop to improve thread execution predictability
+// Use __syncthreads() strategically if data dependencies exist between threads within a block
+// Optimize block and grid dimensions for better SM utilization and load balancing
+```

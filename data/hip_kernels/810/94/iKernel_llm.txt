@@ -1,0 +1,7 @@
+```c
+// Ensure shared memory size matches block dimension for efficiency
+// Use __restrict__ keyword on pointers A, B, C to enable compiler optimizations
+// Consider coalesced memory access for A and B to improve bandwidth utilization
+// Avoid bank conflicts in shared memory access by proper indexing
+// Experiment with larger or smaller block sizes to find optimal configuration for target hardware
+```

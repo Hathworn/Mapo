@@ -1,0 +1,7 @@
+```
+// Use shared memory to further optimize memory access patterns
+// Consider using loop unrolling for the inner loop
+// Minimize the number of times avgWeightGrad and avgWeightGradVar are accessed in global memory
+// Evaluate the impact of changing the order of loops to improve coalesced memory accesses
+// Profile kernel performance to identify bottlenecks and adapt thread/block configuration
+```

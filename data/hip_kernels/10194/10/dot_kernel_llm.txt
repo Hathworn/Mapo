@@ -1,0 +1,8 @@
+```
+// Consider using warp-level primitives for synchronization to reduce overhead
+// Optimize memory access patterns to ensure coalesced global memory reads
+// Use double buffering technique to overlap memory loads and computation
+// Minimize the use of atomic operations when possible or use atomic functions that provide better performance
+// Tune the block size and grid size for better occupancy and hardware utilization
+// Ensure that shared memory usage does not exceed the limit to avoid bank conflicts
+```

@@ -1,0 +1,4 @@
+// Use shared memory effectively by minimizing bank conflicts
+// Avoid frequent global memory accesses by reducing in shared memory
+// Unroll loops for warp-synchronous reduction to enhance performance
+// Use volatile pointer to avoid unwanted compiler optimizations

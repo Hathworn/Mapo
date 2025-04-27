@@ -1,0 +1,9 @@
+```
+// Use shared memory effectively to reduce global memory access.
+// Optimize thread offset calculations to remove redundant computations.
+// Minimize bank conflicts in shared memory operations.
+// Preload data into registers where possible to reduce shared memory access.
+// Align memory access patterns to maximize memory coalescing.
+// Use atomic operations selectively to avoid unnecessary synchronization overhead.
+// Reduce the number of syncthreads calls by organizing thread operations.
+```

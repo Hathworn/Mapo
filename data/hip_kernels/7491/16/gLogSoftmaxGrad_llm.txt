@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses for adjRow, valRow, and gradRow to improve memory throughput
+// Consider using loop unrolling for the first for loop to reduce overhead
+// Use warp-level primitives for reduction to optimize shared memory usage and synchronization
+// Ensure all threads within a block contribute to _sum to maximize efficiency
+// Consider occupancy and shared memory usage to optimize grid and block size
+```

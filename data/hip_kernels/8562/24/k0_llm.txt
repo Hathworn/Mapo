@@ -1,0 +1,7 @@
+```
+// Utilize shared memory for neighboring data access to reduce global memory reads.
+// Minimize divergent branches by checking boundaries outside of performance-critical loops.
+// Use loop unrolling if applicable for neighboring data processing to improve computational throughput.
+// Consider vectorizing memory operations if the data layout allows for coalesced access.
+// Optimize pitched memory usage by ensuring it aligns with recommended memory alignment for the architecture.
+```

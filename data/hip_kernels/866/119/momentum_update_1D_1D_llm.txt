@@ -1,0 +1,7 @@
+// Use __restrict__ to indicate no aliasing for better compiler optimization.
+// Efficient memory access using __ldg to load data from global memory.
+// Apply gradient clipping to avoid excessively large updates.
+// Access m_restrict with simple arithmetic for efficient memory write.
+// Use conditional logic effectively to avoid branch divergence.
+// Use stride-based iteration to maximize warp utilization and reduce stalls.
+// Reset gradient to zero to avoid stale values in subsequent iterations.

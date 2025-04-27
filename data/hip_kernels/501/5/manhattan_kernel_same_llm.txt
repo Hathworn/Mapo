@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses for vg_a to improve throughput.
+// Use shared memory to cache data from vg_a for better memory access patterns.
+// Ensure proper alignment for shared memory allocations to maximize bandwidth.
+// Use register variables for frequently accessed data to minimize global memory access.
+// Minimize bank conflicts in shared memory by strategically reading data.
+// Consider unrolling loops for better compute resource utilization.
+// Use half-warp reduction to improve parallelism in the reduction phase.
+// Check for memory access patterns that can be aligned or optimized further.
+```

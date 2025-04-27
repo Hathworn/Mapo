@@ -1,0 +1,6 @@
+```cpp
+// Use __ldg() intrinsic for potential read-only data caching
+// Consider coalescing global memory accesses for higher bandwidth
+// Minimize use of __syncthreads() for performance, if possible
+// Ensure shared memory access patterns are coalesced and bank conflict-free
+```

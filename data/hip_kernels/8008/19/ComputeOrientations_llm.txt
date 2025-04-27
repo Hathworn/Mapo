@@ -1,0 +1,6 @@
+// Consider using texture memory for g_Data to optimize access patterns.
+// Utilize constant memory for gauss array to speed up accesses.
+// Optimize memory access by ensuring data coalescing when accessing g_Data.
+// Avoid branching as much as possible to increase warp efficiency.
+// Consider loop unrolling for histogram reduction loops to minimize loop overhead.
+// If possible, use warp shuffle operations for reducing histograms instead of shared memory.

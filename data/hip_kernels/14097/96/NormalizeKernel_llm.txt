@@ -1,0 +1,6 @@
+```cpp
+// Minimize memory access by storing blockDim.y and blockDim.x in shared variables if reused
+// Ensure coalesced memory access by using proper data alignment for image array
+// Check if __ldg can be used for reading normalization_factor to utilize texture cache
+// Consider using shared memory if multiple threads access adjacent indices
+```

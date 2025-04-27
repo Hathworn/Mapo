@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce repeated global memory accesses
+// Ensure data is accessed in a coalesced manner
+// Use loop unrolling to reduce loop overhead
+// Consider prefetching data to hide memory latency
+// Optimize memory access patterns to maximize cache usage
+// Minimize divergence within the warp by ensuring uniform branching
+```

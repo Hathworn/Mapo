@@ -1,0 +1,5 @@
+// Consider loop unrolling for improved performance
+// Minimize global memory access by fetching input values only once
+// Use shared memory for partial sums to reduce global memory usage during reduction
+// Ensure all threads contribute their partial sums before the reduction step
+// Optimize memory access patterns for coalescing to improve bandwidth utilization

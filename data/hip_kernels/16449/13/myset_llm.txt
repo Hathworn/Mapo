@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by accessing consecutive memory locations.
+// Optimize for memory bandwidth by splitting large arrays into chunks.
+// Use shared memory if frequent data reuse occurs within a block.
+// Consider using warp-level primitives to reduce divergence in loops.

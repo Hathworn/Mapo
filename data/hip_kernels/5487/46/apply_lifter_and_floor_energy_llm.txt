@@ -1,0 +1,7 @@
+```
+// Use shared memory to store lifter_coeffs for faster access by all threads
+// Optimize memory access patterns to ensure coalesced reads from features array
+// Consider loop unrolling for operations on lifter coefficients to improve performance
+// Use warp shuffling or reductions for energy calculations instead of relying solely on threadIdx.x == 0
+// Minimize divergent branches to improve execution efficiency by restructuring conditions
+```

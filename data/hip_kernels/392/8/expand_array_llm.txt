@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for improved performance
+// Consider using shared memory if data reuse across threads is possible
+// Minimize divergent branches to enhance warp execution efficiency
+// Prefetch data to registers where possible to reduce memory latency
+// Align memory accesses to 4-byte boundaries if feasible for better throughput
+// Use vectorized data types if applicable to exploit memory bandwidth
+```

@@ -1,0 +1,5 @@
+```
+// Use shared memory for weights and inputs to reduce global memory access latency
+// Efficient data reading into shared memory to optimize memory access patterns
+// Synchronize threads with __syncthreads() to ensure all threads have the necessary data before proceeding
+```

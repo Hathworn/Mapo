@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Minimize the number of threads performing the division to reduce branch divergence
+// Ensure synchronization for shared memory access consistency
+// Use __syncthreads() to ensure all threads see the updated value in shared memory
+```

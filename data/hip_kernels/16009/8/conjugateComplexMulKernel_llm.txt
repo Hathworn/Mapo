@@ -1,0 +1,7 @@
+// Ensure coalesced memory access for improved bandwidth utilization
+// Consider using shared memory for repeated data to reduce global memory access
+// Minimize shared memory use to prevent bank conflicts
+// Use vectorized operations if possible to increase arithmetic throughput
+// Avoid divergent execution paths for better warp efficiency
+// Optimize memory access patterns to align with memory coalescing
+// Consider loop unrolling for the main computation to reduce overhead

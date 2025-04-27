@@ -1,0 +1,8 @@
+```
+// Cache data in shared memory if possible to reduce global memory access.
+// Use loop unrolling to leverage data reuse and reduce redundant calculations.
+// Ensure coalesced memory access by adjusting index calculations.
+// Consider using warp-level primitives to further reduce memory divergence.
+// Perform boundary checks outside the loop to minimize conditional branches.
+// Align memory access patterns to exploit memory read/write throughput.
+```

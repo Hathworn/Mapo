@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for the frontier and visited arrays
+// Use shared memory to cache frequently accessed data like edgeArray and edgeArrayAux
+// Minimize redundant global memory accesses by reusing loaded data within the loop
+// Optimize the use of atomic operations to reduce contention and synchronization overhead
+// Ensure that data is read in a coalesced manner by aligning thread accesses properly
+```

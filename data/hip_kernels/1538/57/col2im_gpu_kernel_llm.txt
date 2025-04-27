@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data_col for faster access and reduced global memory traffic
+// Optimize index calculations by using more efficient integer arithmetic
+// Unroll inner loops to improve parallel execution efficiency
+// Consider coalescing global memory accesses when reading from data_col
+// Balance the workload across threads and thread blocks for better parallel efficiency
+// Utilize warp-level primitives to reduce the overhead of atomic operations when updating data_im
+```

@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access where possible
+// Minimize memory access divergence within warps
+// Use shared memory to reduce global memory accesses
+// Implement loop unrolling if applicable
+// Use __restrict__ pointers for better compiler optimizations
+// Consider using vectorized loads/stores for efficient memory transfer
+// Balance workloads to avoid warp divergence
+```

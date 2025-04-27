@@ -1,0 +1,7 @@
+```
+// Consider aligning shared memory usage to warp size for better performance
+// Load data into shared memory in coalesced manner to optimize global memory bandwidth
+// Reduce redundant memory access by reusing values from shared memory
+// Ensure the number of threads per block is optimized for the specific GPU architecture
+// Minimize use of __syncthreads() as it can introduce unnecessary synchronization overhead
+```

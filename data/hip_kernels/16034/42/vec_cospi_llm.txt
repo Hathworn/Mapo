@@ -1,0 +1,4 @@
+// Use shared memory to cache frequently accessed data like x[id] values for better read efficiency.
+// Consider adjusting the number of threads per block to achieve maximum occupancy and reduce threading overhead.
+// Investigate using compiler flags or tuning parameters to optimize warp execution efficiency.
+// Ensure proper alignment of data structures to improve memory coalescing and access speeds.

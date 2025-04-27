@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access latency.
+// Preload constant values to avoid recalculation within the kernel.
+// Use coalesced memory access patterns for `state` to maximize bandwidth efficiency.
+// Check if using fewer threads with a larger block size improves performance.

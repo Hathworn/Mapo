@@ -1,0 +1,6 @@
+```
+// Use shared memory to store frequently accessed data, reducing global memory accesses.
+// Consider coalesced access patterns for reading from and writing to global memory.
+// Minimize divergent warp execution by ensuring branches are well-optimized.
+// Ensure each thread accesses consecutive memory locations for optimal memory throughput.
+```

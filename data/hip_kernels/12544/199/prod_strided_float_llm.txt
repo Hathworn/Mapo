@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses to improve global memory access patterns
+// Use float4 or other vectorized types if possible for memory transactions
+// Optimize the loop to minimize the number of if conditions for better ILP
+// Employ loop unrolling techniques to enhance computational throughput
+// Align shared memory access to avoid bank conflicts
+// Consider reducing __syncthreads() calls to lower synchronization overhead
+// Evaluate using cooperative groups for more efficient inter-thread communication
+```

@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifier for d_in and d_out to improve memory access speed.
+// Explore using shared memory if operations involve data reuse within a block.
+// Check if memory access pattern can benefit from coalescing.
+// Evaluate the use of texture memory for read-only data to improve cache performance.
+// Implement loop unrolling techniques for the cube calculation if possible.
+// Confirm alignment of memory allocations for d_in and d_out if not already done.
+```

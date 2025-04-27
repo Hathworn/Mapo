@@ -1,0 +1,6 @@
+```
+// Coalesce global memory accesses by ensuring a[i], b[i], and c[i] are accessed sequentially.
+// Utilize shared memory if possible to reduce global memory latency.
+// Consider loop unrolling if the operation within the bounds check is complex.
+// Ensure that the grid and block dimensions are chosen to fully utilize device occupancy.
+```

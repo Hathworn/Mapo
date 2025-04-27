@@ -1,0 +1,7 @@
+```c
+// Use shared memory to store temporary results to minimize global memory accesses.
+// Loop unrolling can be applied to further optimize the reduction operation.
+// Ensure coalesced memory access patterns to improve memory throughput.
+// Consider using warp-level primitives to reduce synchronization overhead.
+// Optimize the use of registers by minimizing variable lifetimes within the kernel.
+```

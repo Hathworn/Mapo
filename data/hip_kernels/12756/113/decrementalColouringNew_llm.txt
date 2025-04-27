@@ -1,0 +1,3 @@
+// Consider using shared memory to cache frequently accessed vertexArray data.
+// Optimize neighbourArray accesses by coalescing; ensure memory accesses are contiguous.
+// Evaluate potential warp divergence from the conditional inside the loop for further optimization.

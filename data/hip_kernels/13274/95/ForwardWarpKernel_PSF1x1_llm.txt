@@ -1,0 +1,6 @@
+// Optimize memory access patterns to maximize coalesced reads.
+// Consider using shared memory for frequently accessed variables or blocks.
+// Ensure __fmaf_rn intrinsics are utilized effectively for fused multiply-add operations.
+// Apply boundary checks early to exit threads, minimizing warp divergence.
+// Evaluate data alignment and size of u, v, and src arrays to ensure efficient memory operations.
+// Minimize conditional branches by restructuring the code where possible.

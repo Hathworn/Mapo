@@ -1,0 +1,7 @@
+```c
+// Optimize memory access by aligning data structures to improve coalesced access.
+// Use shared memory to store portions of normDistPrefixSum for faster access if possible.
+// Employ __syncthreads wisely to reduce idle time spent while ensuring correct data access.
+// Reduce the number of computations in frequently called functions by pre-computing constant expressions.
+// Try to minimize warp divergence by ensuring that all threads in a warp follow similar execution paths.
+```

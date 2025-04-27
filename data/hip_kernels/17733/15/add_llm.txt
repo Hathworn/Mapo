@@ -1,0 +1,5 @@
+// Optimize: Use blockDim.x and threadIdx.x to calculate tid more explicitly
+// Optimize: Ensure memory coalescing by aligning array accesses
+// Optimize: Load data into shared memory for faster access, if applicable
+// Optimize: Prefer using __restrict__ pointers if data won't alias
+// Optimize: Check for bank conflicts in shared memory usage

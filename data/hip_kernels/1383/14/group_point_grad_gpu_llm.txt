@@ -1,0 +1,3 @@
+// Use 2D grid to increase parallelism for more efficient execution
+// Adjust stride based on 2D grid to ensure balanced workload distribution
+// Use atomic add to avoid race condition when updating grad_points

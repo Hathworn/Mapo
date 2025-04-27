@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory accesses for repeated x[idx] calculations.
+// Employ warp-level intrinsics for more efficient reduction operations.
+// Improve memory coalescing by optimizing access patterns within inner loops.
+// Reduce divergence by ensuring that conditional checks are minimized within warp execution.

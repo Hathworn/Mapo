@@ -1,0 +1,8 @@
+```
+// Use shared memory efficiently by minimizing bank conflicts
+// Prefer using float4 instead of float for coalescing global memory access
+// Consider using __restrict__ qualifier for pointers to improve memory access patterns
+// Use loop unrolling to reduce the number of iterations
+// Ensure data is loaded in a coalesced manner to optimize global memory throughput
+// Apply warp-level primitives to reduce synchronization overhead
+```

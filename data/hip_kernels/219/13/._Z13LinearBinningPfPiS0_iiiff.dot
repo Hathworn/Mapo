@@ -1,0 +1,18 @@
+digraph "CFG for '_Z13LinearBinningPfPiS0_iiiff' function" {
+	label="CFG for '_Z13LinearBinningPfPiS0_iiiff' function";
+
+	Node0x5a027a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = mul i32 %14, %13\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %17 = add i32 %15, %16\l  %18 = zext i32 %17 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %21 = tail call float @llvm.fabs.f32(float %20)\l  %22 = icmp ult i32 %17, %5\l  br i1 %22, label %23, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x5a027a0:s0 -> Node0x5a051e0;
+	Node0x5a027a0:s1 -> Node0x5a05270;
+	Node0x5a051e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e97a5f70",label="{%23:\l23:                                               \l  %24 = fpext float %21 to double\l  %25 = fpext float %7 to double\l  %26 = fmul contract double %25, 0x3EB0C6F7A0B5ED8D\l  %27 = fcmp contract olt double %26, %24\l  br i1 %27, label %28, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x5a051e0:s0 -> Node0x5a05fc0;
+	Node0x5a051e0:s1 -> Node0x5a06050;
+	Node0x5a05fc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7bca170",label="{%28:\l28:                                               \l  %29 = fsub contract float %7, %21\l  %30 = fmul contract float %29, %6\l  %31 = tail call float @llvm.maxnum.f32(float %30, float 0.000000e+00)\l  %32 = fptosi float %31 to i32\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %18\l  store i32 %32, i32 addrspace(1)* %33, align 4, !tbaa !11\l  %34 = icmp slt i32 %32, %4\l  br i1 %34, label %35, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x5a05fc0:s0 -> Node0x5a069d0;
+	Node0x5a05fc0:s1 -> Node0x5a05270;
+	Node0x5a069d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  %36 = sext i32 %32 to i64\l  %37 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %36\l  %38 = atomicrmw add i32 addrspace(1)* %37, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %44\l}"];
+	Node0x5a069d0 -> Node0x5a05270;
+	Node0x5a06050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7bca170",label="{%39:\l39:                                               \l  %40 = fmul contract float %6, %7\l  %41 = fadd contract float %40, 1.000000e+00\l  %42 = fptosi float %41 to i32\l  %43 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %18\l  store i32 %42, i32 addrspace(1)* %43, align 4, !tbaa !11\l  br label %44\l}"];
+	Node0x5a06050 -> Node0x5a05270;
+	Node0x5a05270 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%44:\l44:                                               \l  ret void\l}"];
+}

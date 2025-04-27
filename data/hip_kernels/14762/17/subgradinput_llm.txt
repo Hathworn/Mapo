@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for commonly used data.
+// Optimize memory coalescing by ensuring global memory accesses are contiguous.
+// Consider loop unrolling for the kW and kH loops to reduce loop overhead.
+// Use __restrict__ keyword for pointer arguments to improve compiler optimizations.
+// Prefetch data into registers to reduce memory access latency.
+```

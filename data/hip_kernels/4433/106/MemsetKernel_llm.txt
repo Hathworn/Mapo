@@ -1,0 +1,4 @@
+// Ensure memory accesses are coalesced to improve bandwidth utilization
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Minimize use of conditional statements inside kernels to reduce divergent thread execution
+// Optimize thread block and grid dimensions for better occupancy based on GPU architecture

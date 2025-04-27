@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring that a and c arrays are accessed sequentially by threads
+// Ensure a and c arrays are allocated with proper alignment to minimize bank conflicts
+// Prefetch data into shared memory if the data will be reused by multiple threads to reduce global memory accesses
+// Balance computational work per thread to better utilize the GPU resources and reduce idle threads
+```

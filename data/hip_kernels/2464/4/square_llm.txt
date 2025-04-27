@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory addresses
+// Use shared memory to reduce global memory accesses if the same data is used multiple times within the kernel
+// Evaluate the use of multiple streams to overlap memory transfers and kernel execution
+// Align data structure to meet the memory alignment requirements to increase memory access efficiency
+// Minimize divergent branching by ensuring threads within a warp follow the same execution path
+```

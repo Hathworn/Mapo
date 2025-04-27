@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by accessing data with a pattern aligned with warp size
+// Use __restrict__ qualifiers to help the compiler with memory access optimizations
+// Consider using __syncthreads() where necessary to prevent race conditions
+// Ensure grid and block sizes are optimized for the specific GPU architecture
+// Align data allocations to improve global memory bandwidth
+// Explore loop unrolling to increase ILP (Instruction Level Parallelism)
+```

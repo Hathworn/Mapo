@@ -1,0 +1,7 @@
+```
+// Use shared memory for partial sum accumulation if fitting in shared memory
+// Consider use of float2 for loading into registers to optimize memory access
+// Ensure coalesced memory access patterns for the variable x
+// Evaluate if loop unrolling could provide better performance for inner loop
+// Assess warp divergence and try to minimize it
+```

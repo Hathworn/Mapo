@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning memory access patterns.
+// Minimize divergent branches in the kernel for better performance.
+// Use __restrict__ keyword to minimize pointer aliasing effects.
+// Consider using shared memory to reduce global memory access.
+// Check for bank conflicts when using shared memory to optimize performance.
+// Make sure to launch enough threads to fully utilize the GPU's SMs.
+// Use a loop unrolling technique if applicable to reduce instruction overhead.
+```

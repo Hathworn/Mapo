@@ -1,0 +1,3 @@
+// Ensure coalesced memory access pattern for `col_sum` reading
+// Use shared memory for `row_sum` to reduce global memory access latency
+// Implement vectorized loads/stores for `output` if possible

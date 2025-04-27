@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for g_uquery and g_vpoint to improve bandwidth utilization.
+// Use shared memory to store commonly accessed data in maxMetricPoints to reduce global memory latency.
+// Optimize the loop in maxMetricPoints by unrolling for better performance.
+// Ensure memory alignment when accessing g_uquery and g_vpoint to enhance read efficiency.
+// Load the whole trial of g_vpointset into shared memory to reduce repeated global memory accesses.
+// Minimize the use of atomic operations by aggregating results in shared memory before a single atomic update.
+// Ensure that the shared memory usage does not exceed the hardware limit per block to avoid occupancy degradation.
+```

@@ -1,0 +1,5 @@
+// Ensure coalesced memory access to hiprandState array.
+// Pre-calculate sequence_number outside the loop if possible.
+// Consider using shared memory for frequently accessed variables.
+// Optimize the use of registers to reduce register pressure.
+// Minimize the divergence of threads by handling different conditions efficiently.

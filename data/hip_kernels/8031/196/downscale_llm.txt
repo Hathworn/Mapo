@@ -1,0 +1,5 @@
+// Use local register for accumulation to minimize global memory access
+// Ensure that thread synchronization is not required for local register use
+// Minimize write operations by using a single write to global memory
+// Consider coalesced memory access for gradOutput_data where possible
+// Evaluate shared memory usage to enhance memory access efficiency

@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to reduce global memory accesses and improve memory bandwidth.
+// Align data accesses to coalesced memory patterns for better memory performance.
+// Evaluate the use of texture or surface memory to benefit from cached memory accesses.
+// Reorder computations to minimize the number of divergent branches within warps.
+// Implement loop unrolling pragmas consistently to maximize warp efficiency.
+// Investigate the potential of using the __restrict__ keyword to optimize memory access patterns.
+// Reduce redundant recalculation of row_st and col_st by computing them before the loop.
+// Optimize the use of registers by minimizing our variables scoped within the kernel function.
+```

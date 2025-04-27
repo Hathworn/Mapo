@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced reads and writes.
+// Use shared memory to store intermediate data if possible for reuse within the block.
+// Consider using a tiling approach to improve memory bandwidth utilization.
+// Minimize thread divergence by restructuring boundary checks.

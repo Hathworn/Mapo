@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for caching X and Y to improve memory access efficiency
+// Ensure that data accessed by each thread is coalesced to achieve optimal memory throughput
+// Evaluate using __restrict__ qualifiers on pointers X and Y to help the compiler with optimizations
+// Assess potential benefits of loop unrolling to reduce loop overhead in the kernel
+```

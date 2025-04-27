@@ -1,0 +1,4 @@
+// Consider using vectorized loads to further improve memory coalescing.
+// Evaluate if adjusting block size could lead to better performance by optimizing shared memory usage.
+// Assess the use of warp shuffles to reduce synchronization and improve performance by avoiding shared memory banking conflicts.
+// Investigate the benefits of loop unrolling to reduce loop overhead and potential increase in instruction-level parallelism.

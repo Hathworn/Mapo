@@ -1,0 +1,7 @@
+```
+// Ensure blockDim.x * gridDim.x is optimized for GPU architecture
+// Coalesce global memory accesses to improve throughput
+// Use __restrict__ qualifiers for gData and target if possible
+// Consider using shared memory to further reduce global memory traffic
+// Experiment with loop unrolling to reduce loop overhead
+```

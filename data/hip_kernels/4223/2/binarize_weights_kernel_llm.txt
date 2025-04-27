@@ -1,0 +1,7 @@
+```
+// Load data into shared memory in coalesced fashion to improve memory access patterns.
+// Implement loop unrolling for the reduction loop to achieve better performance.
+// Consider using warp-level primitives for reductions instead of shared memory for lower latency.
+// Align shared memory usage to 32 bytes to prevent bank conflicts.
+// Pre-fetch memory as much as possible outside critical sections to hide memory latencies.
+```

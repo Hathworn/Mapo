@@ -1,0 +1,5 @@
+// Consider further optimizing memory access patterns by ensuring coalesced accesses to shared memory.  
+// Allocate shared memory statically before launching the kernel, to reduce overhead during execution.
+// Use texture memory or read-only cache for constant weights to take advantage of spatial locality.  
+// Implement memory padding or alignment if necessary to avoid bank conflicts in shared memory.  
+// Profile different block and grid settings to find the optimal configuration for memory throughput.

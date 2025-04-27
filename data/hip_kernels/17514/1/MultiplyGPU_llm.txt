@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access
+// Ensure coalesced memory access for global load/store
+// Minimize bank conflicts in shared memory access
+// Adjust block size for optimal usage of shared memory and warp execution 
+// Prefetch data to shared memory to hide memory latency

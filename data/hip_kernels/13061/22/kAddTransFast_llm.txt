@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced access patterns
+// Use __shared__ memory to reduce global memory access latency
+// Ensure proper synchronization with __syncthreads to avoid race conditions
+// Maintain memory access bounds to prevent out-of-bounds errors

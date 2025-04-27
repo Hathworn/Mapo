@@ -1,0 +1,11 @@
+```
+// Consider using shared memory to cache weight values to reduce global memory access
+// Coalesce global memory accesses by ensuring sequential threads access sequential memory locations
+// Explore increasing the block size to maximize occupancy and use of available GPU resources
+// Ensure memory access patterns are optimal and avoid non-coalesced accesses
+// Prefetch gradOutput data into shared memory if possible to speed up subsequent accesses
+// Use loop unrolling for the innermost loop to reduce the loop overhead and increase performance
+// Minimize bank conflicts when accessing shared memory by careful data arrangement
+// Consider using __restrict__ pointers to help compiler optimize memory access patterns
+// Ensure that the loop variable ky in the outer loop is aligned with warp size for better efficiency
+```

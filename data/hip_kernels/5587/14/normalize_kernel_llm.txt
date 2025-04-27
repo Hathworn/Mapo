@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory accesses by checking and aligning memory if possible
+// Use __restrict__ qualifiers to hint to the compiler that pointers do not alias
+// Minimize data transfer by storing frequently accessed elements in shared memory if beneficial
+// Unroll loops when possible to reduce loop overhead and increase instruction throughput
+// Evaluate the benefits of prefetching data into registers to reduce memory latency
+// Consider increasing block size for improved occupancy if registers and shared memory allow
+```

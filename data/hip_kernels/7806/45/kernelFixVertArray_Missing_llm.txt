@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for triangle vertices
+// Coalesce global memory accesses of ctriangles[] for better memory performance
+// Consider rearranging data layout for cvertarr[] to improve memory coalescing
+// Evaluate if reducing atomic operations is possible for better parallel efficiency

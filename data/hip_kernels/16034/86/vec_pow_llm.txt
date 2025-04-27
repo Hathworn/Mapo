@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for result, x, and y arrays.
+// Utilize shared memory if accessing multiple elements beyond caching limits.
+// Check for optimal register usage and limit usage to essential variables only.
+// Optimize block size to match warp size for maximizing memory throughput.
+// Balance blockDim.x to avoid excessive warp divergence.
+```

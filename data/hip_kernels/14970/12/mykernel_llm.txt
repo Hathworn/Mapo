@@ -1,0 +1,7 @@
+```cpp
+// Avoid using printf in device code for better performance
+// Consider using shared memory for data frequently accessed by threads
+// Minimize global memory access to reduce latency
+// Coalesce global memory access for better throughput
+// Use vectorized loads/stores where possible to improve memory access efficiency
+```

@@ -1,0 +1,5 @@
+digraph "CFG for '_Z6randomjPi' function" {
+	label="CFG for '_Z6randomjPi' function";
+
+	Node0x56a4a50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = xor i32 %0, 746559103\l  %4 = mul i32 %3, 1228688033\l  %5 = add i32 %4, 123456789\l  %6 = add i32 %4, 5783321\l  %7 = lshr i32 %5, 2\l  %8 = xor i32 %7, %5\l  %9 = shl i32 %6, 4\l  %10 = shl i32 %8, 1\l  %11 = xor i32 %9, %10\l  %12 = xor i32 %11, %6\l  %13 = xor i32 %12, %8\l  %14 = add i32 %4, -1966614051\l  %15 = add i32 %14, %13\l  %16 = urem i32 %15, 100\l  store i32 %16, i32 addrspace(1)* %1, align 4, !tbaa !4\l  ret void\l}"];
+}

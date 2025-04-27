@@ -1,0 +1,7 @@
+```
+// Use shared memory for repeated data access if multiple threads access overlapping regions of x
+// Coalesce global memory accesses to x and result arrays for improved memory bandwidth
+// Align memory allocations to 128 bytes to ensure efficient memory transactions
+// Consider loop unrolling techniques if more operations are done within the if statement
+// Employ memory prefetching to hide memory latency if applicable
+```

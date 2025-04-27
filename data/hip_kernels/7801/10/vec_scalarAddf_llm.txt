@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to buffer elements for better memory access patterns.
+// Use coalesced memory accesses by ensuring contiguous threads access contiguous memory.
+// Ensure alignment of memory accesses for improved performance on GPU architectures.
+// Minimize divergent branches within the kernel for optimal thread execution.
+// Evaluate the register and shared memory usage to prevent occupancy limitations.
+// Ensure the kernel is launched with an appropriate number of threads and blocks.
+// Apply loop unrolling if applicable to enhance performance by reducing loop overhead.
+```

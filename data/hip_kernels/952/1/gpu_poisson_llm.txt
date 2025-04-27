@@ -1,0 +1,7 @@
+```cpp
+// Use __LDG intrinsic to fetch global memory more efficiently if possible
+// Ensure coalesced memory access pattern for fi array and reduce global memory transactions
+// Optimize shared memory usage to avoid bank conflicts
+// Use loop unrolling for loading halo cells into shared memory for better performance
+// Implement asynchronous memory prefetching to hide memory latency
+```

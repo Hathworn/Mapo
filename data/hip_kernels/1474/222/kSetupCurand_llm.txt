@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for pointers to optimize memory access.
+// Prefetch data into shared memory if applicable to reduce global memory access.
+// Ensure warp divergence is minimized for better efficiency.
+// Optimize grid and block size based on the target GPU architecture.
+// Use asynchronous memory copy if data transfer is a bottleneck.
+// Evaluate if using different random number generation libraries offers performance gains.
+```

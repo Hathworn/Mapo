@@ -1,0 +1,5 @@
+// Use coalesced memory access to improve memory bandwidth utilization.  
+// Consider padding arrays to ensure each thread accesses contiguous memory blocks.  
+// Minimize global memory access by using shared memory where possible for intermediate computations.  
+// Adjust block and grid dimensions to optimize occupancy and balance between computation and memory latency.  
+// Evaluate using different memory access patterns to find the most efficient method for the specific hardware.

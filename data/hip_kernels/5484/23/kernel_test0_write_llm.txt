@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory access by aligning pointers appropriately
+// Minimize warp divergence by checking conditions outside loops when possible
+// Reduce bank conflicts by using appropriate stride between writes
+// Use shared memory to reduce global memory accesses if applicable
+// Consider loop unrolling if loop iterations are known at compile time
+// Align memory accesses to natural boundaries to improve memory throughput
+```

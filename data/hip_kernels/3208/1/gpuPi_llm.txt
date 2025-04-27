@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses to improve memory throughput
+// Use shared memory for intermediate results to reduce global memory access
+// Minimize use of atomic operations or explore warp-level primitives if possible
+// Ensure the loop has sufficient iterations per thread to optimize instruction execution
+// Optimize loop iteration by reducing computational overhead within the loop
+```

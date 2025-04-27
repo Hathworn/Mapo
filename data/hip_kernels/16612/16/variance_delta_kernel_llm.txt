@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for reduction to improve memory access speed
+// Use vectorized loads/stores if possible to increase memory throughput
+// Balance the workload across threads to avoid divergence
+// Use __restrict__ keyword on pointer arguments to enhance compiler optimizations
+```

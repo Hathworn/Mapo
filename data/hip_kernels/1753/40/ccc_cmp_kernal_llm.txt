@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Load data into shared memory to minimize repeated global memory access
+// Synchronize threads after loading shared memory to ensure data consistency before computation
+// Optimize memory access patterns by using coalesced accesses in shared memory loading

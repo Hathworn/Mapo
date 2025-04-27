@@ -1,0 +1,4 @@
+// Consider using shared memory for temporary storage if the input data is reused
+// Optimize memory access patterns, such as coalesced access, if possible
+// Ensure that memory access aligns with 32 or 64 bytes for better performance
+// Use __ldg for read-only data if applicable for caching benefits

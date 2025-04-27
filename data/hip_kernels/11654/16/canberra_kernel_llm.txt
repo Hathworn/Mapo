@@ -1,0 +1,5 @@
+// Use grid-stride loop for better performance by reducing thread divergence
+// Utilize shared memory to minimize redundant global memory accesses
+// Use a single variable for accumulation to reduce register pressure
+// Optimize using warp reduction to speed up the accumulation process
+// Check for non-zero denominator to prevent division by zero errors

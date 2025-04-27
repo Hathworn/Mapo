@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Ensure data is accessed in a coalesced manner to improve memory throughput
+// Use the __restrict__ qualifier for data and output pointers to help the compiler optimize memory access
+// Experiment with different loop unroll factors based on hardware specifics
+// Prefetch data to registers before entering the inner loop
+```

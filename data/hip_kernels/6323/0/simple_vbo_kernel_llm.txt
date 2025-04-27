@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache data within blocks to reduce global memory access
+// Ensure memory coalescing by aligning data accesses with memory boundaries
+// Consider loop unrolling if repetitive calculations occur
+// Minimize divergent branching to maintain warp execution efficiency
+// Evaluate the use of texture memory for read-only data to reduce latency
+// Optimize block size and grid size configuration to improve occupancy
+```

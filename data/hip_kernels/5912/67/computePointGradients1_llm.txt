@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency for j_ang.
+// Ensure coalesced memory access for valid_points to improve memory throughput.
+// Load j_ang into shared memory only if necessary to reduce redundant operations.
+// Use appropriate loop strides to avoid idle threads in handling valid_points.
+// Consider aligning x, y, z, and respective pg arrays to improve memory access patterns.
+```

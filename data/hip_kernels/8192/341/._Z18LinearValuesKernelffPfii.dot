@@ -1,0 +1,15 @@
+digraph "CFG for '_Z18LinearValuesKernelffPfii' function" {
+	label="CFG for '_Z18LinearValuesKernelffPfii' function";
+
+	Node0x5faee40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = udiv i32 %13, %10\l  %17 = mul i32 %16, %10\l  %18 = icmp ugt i32 %13, %17\l  %19 = zext i1 %18 to i32\l  %20 = add i32 %16, %19\l  %21 = mul i32 %20, %15\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %23 = add i32 %21, %14\l  %24 = mul i32 %23, %10\l  %25 = add i32 %24, %22\l  %26 = icmp eq i32 %22, 0\l  br i1 %26, label %27, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5faee40:s0 -> Node0x5fb1650;
+	Node0x5faee40:s1 -> Node0x5fb16e0;
+	Node0x5fb1650 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%27:\l27:                                               \l  %28 = fsub contract float %1, %0\l  %29 = add nsw i32 %3, -1\l  %30 = sitofp i32 %29 to float\l  %31 = tail call float @llvm.maxnum.f32(float %30, float 1.000000e+00)\l  %32 = fdiv contract float %28, %31\l  store float %32, float addrspace(3)* @_ZZ18LinearValuesKernelffPfiiE5delta,\l... align 4, !tbaa !16\l  br label %33\l}"];
+	Node0x5fb1650 -> Node0x5fb16e0;
+	Node0x5fb16e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %34 = icmp slt i32 %25, %3\l  br i1 %34, label %35, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x5fb16e0:s0 -> Node0x5fb2d70;
+	Node0x5fb16e0:s1 -> Node0x5fb2e00;
+	Node0x5fb2d70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{%35:\l35:                                               \l  %36 = sitofp i32 %25 to float\l  %37 = load float, float addrspace(3)* @_ZZ18LinearValuesKernelffPfiiE5delta,\l... align 4, !tbaa !16\l  %38 = fmul contract float %37, %36\l  %39 = fadd contract float %38, %0\l  %40 = add nsw i32 %25, %4\l  %41 = srem i32 %40, %3\l  %42 = sext i32 %41 to i64\l  %43 = getelementptr inbounds float, float addrspace(1)* %2, i64 %42\l  store float %39, float addrspace(1)* %43, align 4, !tbaa !16\l  br label %44\l}"];
+	Node0x5fb2d70 -> Node0x5fb2e00;
+	Node0x5fb2e00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%44:\l44:                                               \l  ret void\l}"];
+}

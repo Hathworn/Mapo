@@ -1,0 +1,6 @@
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations in M and N
+// Utilize shared memory effectively to minimize global memory accesses
+// Consider loop unrolling within the inner compute loop for better performance
+// Assess the use of constant memory for frequently accessed, read-only data
+// Investigate potential warp divergence caused by the boundary condition checks
+// Increase tile size if registers and shared memory allow, for larger computations per block

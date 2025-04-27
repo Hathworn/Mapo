@@ -1,0 +1,5 @@
+```
+// Consider coalescing the memory access to arrays a and b to optimize memory bandwidth utilization.
+// Evaluate using shared memory to accumulate partial sums within a block before using atomicAdd to global memory.
+// Use vectorized loads if memory alignment allows for increased throughput.
+```

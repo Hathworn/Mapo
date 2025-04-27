@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to cache data and reduce global memory access
+// Consider using __ldg to hint the hardware that the data is read-only
+// Ensure coalesced memory access by aligning sequential threads with data elements
+// Minimize divergent code by restructuring conditional branches
+// Pre-compute repeated calculations outside of loops if applicable
+// Explore launch configuration adjustments to maximize warp occupancy
+```

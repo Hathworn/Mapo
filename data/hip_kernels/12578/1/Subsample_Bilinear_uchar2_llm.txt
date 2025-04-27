@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed texture data to reduce redundant access.
+// Precompute scaling factors outside of the kernel where possible to reduce calculations per thread.
+// Optimize texture fetches by ensuring memory alignment and access patterns that reduce cache misses.
+// Use vectorized data types where possible to enhance coalesced memory access and reduce kernel duration.
+// Reuse calculated values and reduce repeated calculations within the kernel to improve performance.
+```

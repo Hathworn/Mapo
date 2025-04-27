@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access if applicable
+// Consider loop unrolling if multiple similar operations are happening
+// Evaluate if warp shuffle can optimize data sharing across threads
+// Minimize thread-independent calculations where possible
+// Use register variables to hold frequently accessed data
+```

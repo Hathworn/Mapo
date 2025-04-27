@@ -1,0 +1,7 @@
+```
+// Minimize memory copy operations between global and shared memory
+// Consider using coalesced memory accesses when accessing global memory
+// Ensure shared memory size does not exceed hardware limitations
+// Use __syncthreads() judiciously to avoid performance bottlenecks
+// Evaluate if shared memory provides tangible performance benefits
+```

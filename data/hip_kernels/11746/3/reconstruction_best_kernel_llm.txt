@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for affine_model_id if reused by multiple threads within a block
+// Prefetch input data into registers to reduce global memory access
+// Ensure coalesced access pattern when reading from and writing to global memory
+// Minimize divergent branches by optimizing condition checks
+```

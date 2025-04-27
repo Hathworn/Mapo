@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for intermediate data to reduce global memory accesses
+// Preload data into registers for repeated access within the loop
+// Ensure memory coalescing by aligning data access patterns
+// Use warp-level primitives to optimize synchronization and data sharing
+// Minimize divergent branches inside the kernel loop
+```

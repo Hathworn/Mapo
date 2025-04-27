@@ -1,0 +1,5 @@
+// Precompute indices outside of the inner loop to reduce computation
+// Use shared memory if possible to cache x_coors, y_coors for frequent accesses
+// Consider coalesced memory access patterns for pfe_output and scattered_feature
+// Check for alignment of data structures to optimize memory access
+// Minimize divergence in thread execution within warp

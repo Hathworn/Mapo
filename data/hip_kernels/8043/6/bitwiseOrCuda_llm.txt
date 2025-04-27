@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure alignment and coalesced access patterns for in1, in2, and out arrays
+// Use __restrict__ keyword for pointers to suggest no aliasing for compiler optimization
+// Improve memory locality by fetching data into registers before computation
+// Check if utilizing texture or surface memory is beneficial for read-only arrays
+// Consider loop unrolling if computation is intensive within the bounds check
+```

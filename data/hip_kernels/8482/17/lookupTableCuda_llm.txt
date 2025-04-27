@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache frequently accessed data such as 'table' if it is small enough to fit in shared memory
+// Optimize data fetch by ensuring coalesced memory access for 'in' and 'out' arrays
+// Consider using texture memory for read-only data such as 'table' to benefit from caching
+// Align data to improve memory access efficiency and reduce bank conflicts
+```

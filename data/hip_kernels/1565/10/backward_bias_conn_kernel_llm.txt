@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Accumulate values in shared memory to minimize global memory reads
+// Ensure kernel launch sets shared memory size to blockDim.x*sizeof(float)
+// Perform reduction to reduce synchronization and atomic operations
+// Ensure proper __syncthreads() usage to avoid data races
+// Optimize block size to fit the target GPU architecture
+```

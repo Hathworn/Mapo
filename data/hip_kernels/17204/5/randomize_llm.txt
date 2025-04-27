@@ -1,0 +1,7 @@
+```
+// Minimize global memory access by caching in registers
+// Avoid bank conflicts by ensuring thread accesses are coalesced
+// Ensure memory accesses are aligned for faster access
+// Use __syncthreads() if required to prevent race conditions with rand states
+// Consider launching occupancy calculator tool for best block-size
+```

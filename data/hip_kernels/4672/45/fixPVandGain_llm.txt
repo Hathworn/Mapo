@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for frequently accessed data to reduce global memory access.
+// Prefetch data to registers to minimize memory latency impacts.
+// Consider using float2 to load/store two floats at once to optimize memory throughput.
+// Ensure memory coalescing by having threads access continuous memory locations.
+// Minimize divergent branches by restructuring control flow.
+```

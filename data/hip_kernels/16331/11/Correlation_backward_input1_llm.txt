@@ -1,0 +1,6 @@
+// Consider using shared memory for rInput2 to reduce global memory accesses
+// Pre-compute indices outside of loops to avoid redundant calculations
+// Use loop unrolling for the inner loop to improve access patterns
+// Explore memory coalescing to enhance global memory bandwidth usage
+// Investigate warp-level intrinsic operations for parallel reduction
+// Reduce bank conflicts in shared memory access by careful indexing

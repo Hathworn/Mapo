@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Load inputs into shared memory in chunks to optimize memory bandwidth.
+// Calculate shmemIdx once to avoid redundant computation.
+// Minimize conditional checks inside the loop to improve performance.
+// Ensure coalesced memory access by aligning index calculations.
+```

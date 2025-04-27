@@ -1,0 +1,4 @@
+// Consider optimizing memory access patterns to reduce bank conflicts in shared memory.
+// Ensure the size of dynamically-allocated shared memory is matched with the access patterns.
+// Minimize conditional statements inside the kernel to avoid divergent warps.
+// Evaluate the necessity of special handling for parameters 'k' and 'p' and consider constant memory for frequently used variables.

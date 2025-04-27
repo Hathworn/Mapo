@@ -1,0 +1,5 @@
+// Minimize divergence by aligning condition checks with warp execution
+// Favor shared memory over global memory accesses where possible
+// Coalesce global memory access for improved memory throughput
+// Utilize constant memory for repetitive data access
+// Ensure memory alignment for optimal access speed

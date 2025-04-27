@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access to global memory by aligning threads with consecutive memory accesses
+// Use shared memory to reduce redundant global memory loads for frequently accessed data
+// Minimize divergent branches by structuring conditionals to avoid warp divergence
+// Consider using vectorized loads and stores to optimize memory bandwidth utilization
+// Utilize memory prefetching techniques to hide latency of global memory accesses
+```

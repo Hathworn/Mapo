@@ -1,0 +1,4 @@
+// Cache ir[] in register for reduced memory access latency
+// Cache ic[] in register for reduced memory access latency
+// Cache data[] in register for reduced memory access latency
+// Direct assignment to od[] to potentially minimize unnecessary atomic operations

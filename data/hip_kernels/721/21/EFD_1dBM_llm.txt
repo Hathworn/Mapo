@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory access by ensuring the threads access consecutive elements in d_val_n and d_val_npo.
+// Use shared memory if possible to reduce global memory access latency.
+// Ensure the block size is optimized for the GPU architecture to maximize occupancy.
+```

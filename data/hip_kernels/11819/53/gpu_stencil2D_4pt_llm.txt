@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by aligning shared memory indices with global memory
+// Utilize shared memory to minimize redundant global memory loads in stencil computation
+// Evaluate if shared memory bank conflicts occur and optimize indexing to reduce them
+// Explore using texture memory for read-only data to potentially improve performance
+// Consider reducing HALO copying operations by optimizing thread synchronization strategies

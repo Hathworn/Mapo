@@ -1,0 +1,5 @@
+// Consider coalescing global memory accesses for improved performance.
+// Use shared memory to reduce redundant global memory reads for frequently used data.
+// Optimize warp utilization by aligning the number of threads per block with warp size.
+// Explore potential vectorization opportunities for float2 operations to maximize throughput.
+// Minimize branching within the kernel to reduce divergence across threads.

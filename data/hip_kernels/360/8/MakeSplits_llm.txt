@@ -1,0 +1,8 @@
+```
+// Consider reducing shared memory usage or utilizing more shared memory banks to prevent bank conflicts.
+// Investigate the pattern of memory access to global memory for optimizing coalesced memory accesses.
+// Reuse already loaded data in registers to minimize reads from global memory.
+// Avoid divergent branching within warp to enhance performance.
+// Optimize atomic operations by minimizing their usage or implementing atomic-free alternatives.
+// Examine the potential for loop unrolling to improve parallel execution.
+```

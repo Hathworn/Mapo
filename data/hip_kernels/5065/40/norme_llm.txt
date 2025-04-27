@@ -1,0 +1,5 @@
+```cpp
+// Consider using shared memory if accessing VN and V multiple times to reduce global memory access.
+// Ensure coalesced memory access by aligning data structures and accesses to warp boundaries.
+// If possible, adjust grid and block size to optimize memory throughput and maximize occupancy.
+```

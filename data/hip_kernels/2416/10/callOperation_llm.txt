@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure coalesced memory access patterns by aligning data access with warp size
+// Minimize branching to improve warp execution efficiency
+// Prefetch data if there are predictable access patterns
+// Evaluate potential for loop unrolling if applicable
+// Use constant memory for widely used constants
+```

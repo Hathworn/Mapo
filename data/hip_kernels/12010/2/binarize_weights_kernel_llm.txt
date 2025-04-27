@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses when reading weights to reduce access time
+// Ensure shared memory is adequately sized to avoid bank conflicts
+// Minimize atomic operations by reducing their usage or batching them where possible
+// Check alignment of data to ensure optimal performance in memory accesses
+// Use efficient block and grid dimensions to maximize occupancy
+```

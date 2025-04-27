@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Use shared memory efficiently to minimize global memory accesses
+// Avoid bank conflicts in shared memory by proper padding
+// Minimize warp divergence by handling boundary conditions separately
+// Consider prefetching data into shared memory before computation
+// Use '__syncthreads()' to synchronize threads after loading shared memory
+// Optimize constant memory usage for improved performance
+```

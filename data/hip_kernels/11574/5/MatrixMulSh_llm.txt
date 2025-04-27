@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access to global memory when loading tiles
+// Minimize bank conflicts in shared memory by careful index computation
+// Consider use of larger TILE_WIDTH for higher occupancy
+// Use loop unrolling to optimize multiply and accumulate steps
+// Ensure proper use of __syncthreads() to avoid race conditions
+// Optimize the grid and block dimensions for the specific GPU architecture
+```

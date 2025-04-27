@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for tiles of M and N to reduce global memory access
+// Use coalesced memory access patterns for N to improve memory throughput
+// Avoid bank conflicts in shared memory by padding if necessary
+// Consider prefetching data to hide memory latency
+// Optimize loop unrolling factor based on empirical testing
+// Ensure memory accesses are aligned for optimal performance
+```

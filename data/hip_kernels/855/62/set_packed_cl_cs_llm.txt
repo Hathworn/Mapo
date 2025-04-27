@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring that consecutive threads access consecutive memory addresses.
+// Use shared memory to minimize global memory access and improve access times.
+// Prefetch data into registers if possible to reduce repeated global memory accesses.
+// Evaluate the use of __restrict__ qualifiers to inform the compiler that pointers do not alias, potentially improving optimization.
+// Check for warp divergence, as conditional statements may cause some threads to be inactive.
+```

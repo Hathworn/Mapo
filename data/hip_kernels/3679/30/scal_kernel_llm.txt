@@ -1,0 +1,5 @@
+// Consider using shared memory for caching frequently accessed data to reduce global memory accesses.
+// Align global memory accesses to improve memory coalescing if INCX is constant.
+// Ensure ALPHA and INCX variables are loaded into registers to minimize latency.
+// Investigate thread block size to ensure it aligns with GPU warp size for maximum efficiency.
+// Use loop unrolling in the while loop to reduce instruction overhead.

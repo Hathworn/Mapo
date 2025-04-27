@@ -1,0 +1,4 @@
+// Use shared memory for storing reused values to reduce global memory access  
+// Ensure the first thread initializes shared memory to avoid race conditions  
+// Use __syncthreads() to synchronize threads after shared memory initialization  
+// Perform arithmetic operations using cached values to reduce redundant computations

@@ -1,0 +1,8 @@
+```cpp
+// Prefer memory coalescing by aligning data accesses correctly
+// Avoid using blockDim.x and blockDim.y multiple times in the loop
+// Use shared memory to cache frequent read/write data when possible
+// Prefetch data to registers to minimize memory accesses
+// Ensure efficient use of the memory hierarchy by accessing contiguous memory locations
+// Consider using warp shuffles or shared memory to reduce load/store operations
+```

@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifiers for pointers to enable better compiler optimizations.
+// Consider using float4 for coalesced memory access if dim is a multiple of 4.
+// Align memory accesses to ensure coalescing and reduce memory transaction overhead.
+// Use loop unrolling in the reduction phase to minimize loop overhead.
+// Adjust block size for optimal occupancy and performance balance.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access latency.
+// Minimize memory access by ensuring each thread calculates its own index only once.
+// Ensure that memory accesses are coalesced to improve bandwidth.
+// Use __syncthreads() to synchronize threads after loading data into shared memory.
+// Ensure that offset calculations are done outside the critical path to minimize overhead.
+```

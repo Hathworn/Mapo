@@ -1,0 +1,9 @@
+```
+// Use shared memory and loop unrolling for optimization
+// Load data into shared memory to reduce global memory access
+// Use __syncthreads() to ensure all data is loaded before computations
+// Consider using const memory for readonly parts of the kernel
+// Minimize bank conflicts in shared memory access
+// Ensure coalesced memory access for better performance
+// Try using vector types for memory operations to enhance throughput
+```

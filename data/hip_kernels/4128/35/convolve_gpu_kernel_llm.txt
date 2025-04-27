@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache input data and weights for thread blocks to reduce global memory access overhead.
+// Apply loop unrolling further by unrolling the inner loop to improve instruction throughput and reduce control overhead.
+// Ensure memory access patterns are coalesced for both input and weights to maximize memory bandwidth utilization.
+// Investigate using texture memory for input data to potentially improve cache efficiency and memory access speed.
+// Optimize block and thread dimensions to match the GPU architecture for better utilization of cores and memory bandwidth.
+```

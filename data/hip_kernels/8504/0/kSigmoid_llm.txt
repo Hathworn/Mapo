@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by organizing input/output memory layout
+// Use __restrict__ qualifier for input and output pointers to help compiler optimizations
+// Consider prefetching input data to shared memory if further optimization is needed
+// Check for warp divergence and try to minimize it
+// Profile memory utilization and attempt loop unrolling or other techniques if beneficial
+```

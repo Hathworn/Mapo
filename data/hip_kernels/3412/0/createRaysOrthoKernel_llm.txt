@@ -1,0 +1,4 @@
+// Consider coalesced memory access by aligning data for float4 in rays
+// Utilize shared memory to reduce redundant global memory accesses
+// Ensure the thread block size is optimal for the GPU architecture
+// Minimize divergent branches by organizing threads efficiently

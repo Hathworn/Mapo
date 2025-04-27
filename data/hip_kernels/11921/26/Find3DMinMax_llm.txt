@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth.
+// Evaluate if additional shared memory usage can be further reduced for better occupancy.
+// Optimize thread synchronization to minimize __syncthreads() overhead when possible.
+// Profile memory access patterns to identify potential bank conflicts in shared memory.
+// Ensure memory access patterns maximize L2 cache usage for frequently accessed data.
+```

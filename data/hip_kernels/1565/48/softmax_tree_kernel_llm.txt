@@ -1,0 +1,5 @@
+// Use shared memory for parallel reduction to find max value.
+// Ensure memory access is coalesced to improve read performance.
+// Reduce bank conflicts in shared memory operations.
+// Use atomic operations efficiently to prevent race conditions during summation.
+// Allocate only necessary shared memory to reduce shared memory usage.

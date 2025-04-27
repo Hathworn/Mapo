@@ -1,0 +1,3 @@
+// Consider using shared memory for frequently accessed data structures like src_stride and index to reduce global memory access.
+// Optimize access to src and tensor by ensuring coalesced memory accesses where possible.
+// Minimize branching inside the loop by refactoring for consistent execution paths.

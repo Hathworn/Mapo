@@ -1,0 +1,5 @@
+```
+// Use shared memory to store partial results for faster memory access
+// Use __syncthreads() to ensure all threads have completed their operations before proceeding
+// Store final block result to global memory to minimize global memory writes
+```

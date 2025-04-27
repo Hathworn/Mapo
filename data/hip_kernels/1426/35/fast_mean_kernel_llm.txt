@@ -1,0 +1,4 @@
+// Use shared memory to reduce access to global memory, improving memory access efficiency.
+// Unroll loops to decrease the loop control overhead and increase instruction level parallelism.
+// Implement block-level reduction to minimize the number of global memory writes and reads.
+// Use __syncthreads() to synchronize memory access across threads within a block after accumulation.

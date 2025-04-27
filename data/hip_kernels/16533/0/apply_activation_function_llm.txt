@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifiers for input/output pointers to enable more aggressive compiler optimizations
+// Consider using shared memory if there are repeated accesses to data
+// Prefetch data to local variables for better memory access patterns
+// Optimize block size and grid size for better occupancy and performance
+// Align memory accesses to coalesce global memory reads
+```

@@ -1,0 +1,8 @@
+```
+// Consider using a memory coalescing approach to optimize global memory access
+// Utilize a block size that prevents bank conflicts in shared memory access
+// Explore increasing the block size or grid size for better occupancy
+// Evaluate loop unrolling based on the number of iterations and register usage
+// Implement warp shuffle operations for a more efficient reduction
+// Assess if more shared memory usage could further optimize reduction
+```

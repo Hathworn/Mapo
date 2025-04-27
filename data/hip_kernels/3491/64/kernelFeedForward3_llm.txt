@@ -1,0 +1,7 @@
+```
+// Use shared memory to load biases to reduce global memory accesses
+// Consider memory coalescing for loading and storing 'zs' and 'activations'
+// Ensure blocks are fully utilized to maximize occupancy
+// Use __syncthreads() if needed to ensure memory access ordering
+// Consider using registers for frequently accessed variables like 'z_val'
+```

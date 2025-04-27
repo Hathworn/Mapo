@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to improve global memory throughput.
+// Evaluate the impact of using shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure memory alignment to take advantage of warp memory efficiency.
+// Avoid using bank-conflicted shared memory accesses if shared memory is utilized.
+// Minimize divergent branching within the kernel to maintain warp efficiency.
+```

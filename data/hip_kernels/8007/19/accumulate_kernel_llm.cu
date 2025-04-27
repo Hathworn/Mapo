@@ -1,0 +1,15 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void accumulate_kernel(float *x, int n, int groups, float *sum)
+{
+    int i = (blockIdx.x + blockIdx.y*gridDim.x) * blockDim.x + threadIdx.x;
+    if (i >= groups) return;
+
+    float local_sum = 0.0f; // Use local variable to avoid memory access for each addition
+    for (int k = 0; k < n; ++k) {
+        local_sum += x[k * groups + i];
+    }
+    sum[i] = local_sum; // Store the result back to the global memory
+}
+```

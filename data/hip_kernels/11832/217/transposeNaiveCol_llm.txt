@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Add padding in shared memory to prevent bank conflicts
+// Ensure all threads within a block complete memory operations using __syncthreads()
+// Use coalesced memory access patterns for global memory reads
+```

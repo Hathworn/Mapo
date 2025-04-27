@@ -1,0 +1,6 @@
+```
+// Precompute batch size outside the loop to avoid redundant calculations
+// Simplified index calculation reduces the number of arithmetic operations
+// Use conditional checks to prevent out-of-bound errors and reduce unnecessary computations
+// Consider loading 'biases[filter]' into a local variable to reduce global memory access
+```

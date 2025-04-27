@@ -1,0 +1,5 @@
+// Consider using shared memory to enhance memory coalescing and reduce global memory access latency.
+// Ensure that accesses within a warp are contiguous to maximize memory throughput.
+// Use __syncthreads() to synchronize threads when necessary, especially when using shared memory.
+// Optimize block size to match the warp size and the device's capabilities for maximal occupancy.
+// Use loop unrolling to minimize loop overhead and enhance performance.

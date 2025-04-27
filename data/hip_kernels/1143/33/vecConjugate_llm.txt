@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for frequently accessed data.
+// Coalesce global memory accesses to improve bandwidth.
+// Consider using float2 instead of double2 if precision allows, to reduce memory usage.
+// Ensure memory allocation is done using hipMalloc for better alignment and performance.
+// Explore asynchronous memory transfers to overlap computation with data transfer.
+```

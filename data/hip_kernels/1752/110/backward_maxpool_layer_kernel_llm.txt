@@ -1,0 +1,5 @@
+// Ensure all memory accesses are coalesced
+// Minimize use of division and modulus by using loop unrolling or pre-calculation
+// Consider using shared memory for frequently accessed data to reduce global memory load
+// Reduce conditional checks within inner loops to streamline memory access operations
+// Optimize block and grid dimensions to maximize GPU utilization and minimize idle threads

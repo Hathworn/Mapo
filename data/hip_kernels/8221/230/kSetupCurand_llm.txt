@@ -1,0 +1,7 @@
+```
+// Calculate thread index once to reduce redundant calculations and improve memory access efficiency.
+// Use __restrict__ keyword for pointers to help the compiler optimize memory access patterns if applicable.
+// Consider using shared memory if multiple reads to the same data are needed within the block to reduce global memory accesses.
+// Reorder operations to minimize variable lifespan and reduce register pressure if performance deviations are observed.
+// Ensure 64-bit seed usage for better randomness across threads and wider period for random states.
+```

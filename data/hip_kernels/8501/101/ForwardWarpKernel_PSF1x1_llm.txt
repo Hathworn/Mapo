@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data for reduced latency.
+// Use constant memory for values that do not change across threads, such as time_scale, to save bandwidth.
+// Try to maximize coalesced memory accesses by ensuring threads access consecutive memory locations.
+// Explore the possibility of loop unrolling for the calculation of offsets and values.

@@ -1,0 +1,4 @@
+// Consider using __restrict__ pointers to improve memory access performance.
+// Ensure coalesced memory access by organizing threads to access contiguous memory locations.
+// Evaluate occupancy and adjust block and thread dimensions for better utilization of GPU resources.
+// Experiment with using shared memory for frequently accessed data to minimize global memory access.

@@ -1,0 +1,8 @@
+```
+// Consider using a memory coalescing pattern for accessing `row[i]`.
+// Optimize shared memory usage by minimizing its size if possible.
+// Ensure `__syncthreads()` is used effectively to prevent race conditions.
+// Evaluate if using `atomicAdd` for reduction might be beneficial in certain cases.
+// Check if loop unrolling could increase performance for the inner loop.
+// Assess potential benefits of using warp shuffle functions for reduction.
+```

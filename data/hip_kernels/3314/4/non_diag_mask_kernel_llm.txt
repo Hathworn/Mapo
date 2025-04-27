@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword to provide compiler with assumptions about pointer aliasing.
+// Use shared memory to minimize global memory access for row_data and col_data if they are reused.
+// Ensure thread divergence is minimized in the control flow for efficiency.
+// Coalesce global memory accesses to out_data by ensuring optimal access patterns.
+// Add loop unrolling for any potential iterative operations within the kernel for better performance.
+```

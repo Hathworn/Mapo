@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by ensuring that consecutive threads access consecutive memory locations in A
+// Use shared memory to buffer data and minimize global memory reads
+// Ensure that all memory accesses are aligned to improve performance
+// Experiment with different block sizes to optimize warp occupancy and memory bandwidth efficiency
+// Use asynchronous memory transfers to overlap data transfer with computation if applicable
+```

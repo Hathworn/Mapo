@@ -1,0 +1,7 @@
+```
+// Consider aligning data in memory for coalesced global memory access.
+// Use shared memory or register memory to temporarily store frequently accessed data like 'truth[i]'.
+// Ensure the number of threads per block is optimized to maximize occupancy.
+// Minimize branching by using conditional assignment (e.g., ternary operators) efficiently.
+// Pre-load 'pred[i]' into register to reduce multiple memory accesses.
+```

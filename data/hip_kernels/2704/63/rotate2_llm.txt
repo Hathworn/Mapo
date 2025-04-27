@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by reorganizing data storage if possible
+// Minimize divergent branching by ensuring the block size fits the data dimensions
+// Use shared memory if reuse of data within the block is high to reduce global memory loads
+// Consider using vectorized loads/stores if memory alignment permits
+```

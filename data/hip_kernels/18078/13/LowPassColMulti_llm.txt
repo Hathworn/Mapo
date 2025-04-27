@@ -1,0 +1,11 @@
+```
+// Ensure proper memory coalescing when accessing global memory in d_Data and d_Result
+// Minimize bank conflicts in shared memory by potentially padding the shared memory
+// Use loop unrolling pragmas to maximize ILP (Instruction Level Parallelism) in the convolution
+// Optimize shared memory loading with a double-buffering technique if possible
+// Evaluate reducing register usage via compiler flags or manual adjustments
+// Align accesses to global memory on warp boundaries to maximize memory throughput
+// Check occupancy and adjust block size or register usage to avoid underutilization
+// Preload commonly used values like kernel weights into registers to minimize shared/global memory accesses
+// Avoid redundant __syncthreads() if threads are guaranteed not to overwrite each other's data
+```

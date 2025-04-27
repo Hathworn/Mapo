@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for gradOutput and gradInput to enhance memory bandwidth usage.
+// Explore shared memory for caching frequently accessed data to reduce global memory accesses.
+// Potentially unroll loops further to hide latency and improve instruction-level parallelism.
+// Align memory accesses to increase memory throughput and reduce transaction costs.
+// Use the restrict qualifier if applicable to aid the compiler in optimizing memory access patterns.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning consecutive threads to access consecutive memory addresses in the input and output arrays.
+// Consider using shared memory for repeated accesses to the same data to reduce global memory reads.
+// Utilize warp-level primitives for synchronization and reduction within a warp to boost performance.
+// Investigate occupancy and adjust block size for optimal warp utilization and reduced memory latency.
+// If atomic operations in the backward pass are a bottleneck, explore alternative methods like parallel reductions.
+```

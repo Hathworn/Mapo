@@ -1,0 +1,7 @@
+```
+// Consider minimizing global memory accesses by using shared memory for intermediate results.
+// Use shared memory to store B_c, G_c, and R_c data to reduce redundant global memory reads within each block.
+// Ensure all threads have finished writing to shared memory before performing the reduction to leverage shared memory benefits.
+// Optimize global memory coalescing by aligning nValue, Bdata, Gdata, and Rdata accesses for each thread to consecutive memory locations.
+// Implement warp-synchronous programming by removing unnecessary __syncthreads() inside the reduction loop if applicable on newer architectures.
+```

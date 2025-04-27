@@ -1,0 +1,5 @@
+// Ensure memory coalescing by using appropriate memory access patterns
+// Consider using shared memory for frequently accessed data to reduce global memory access
+// Optimize block and grid dimensions to maximize SM utilization 
+// Minimize divergent branching within warps for better performance
+// Use __restrict__ keyword for pointer parameters to inform the compiler of non-aliasing pointers for better optimization

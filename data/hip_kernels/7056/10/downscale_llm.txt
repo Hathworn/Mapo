@@ -1,0 +1,5 @@
+// Use shared memory to reduce repeated access to global memory.
+// Consider using loop unrolling for the nested loop to reduce overhead.
+// Ensure memory coalescing by accessing gradOutput_data in a linear fashion.
+// Explore using atomic operations if race conditions occur during memory updates to gradInput_data.
+// Reassess thread block dimensions to exploit maximum occupancy and hide memory latency.

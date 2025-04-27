@@ -1,0 +1,4 @@
+// Optimize memory access by using shared memory for histogram calculation
+// Reduce global memory atomic operations by using block-level shared memory
+// Ensure proper synchronization with __syncthreads() before operating on shared memory
+// Minimize global memory writes by aggregating results in shared memory before writing

@@ -1,0 +1,7 @@
+```cpp
+// Coalesce global memory access to improve memory throughput
+// Minimize memory divergence by ensuring all threads follow the same execution path
+// Utilize shared memory to reduce redundant global memory accesses
+// Align memory accesses to cache line boundaries to avoid uncoalesced accesses
+// Ensure that the data structures used in kernel code are optimized for memory access patterns
+```

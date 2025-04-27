@@ -1,0 +1,5 @@
+```
+// Early exit if _id is out of bounds improves thread divergence
+// Binary search optimization: replace with simple lookup since CSR_rowIdx is sorted
+// Access and compute each component once to reduce memory reads
+```

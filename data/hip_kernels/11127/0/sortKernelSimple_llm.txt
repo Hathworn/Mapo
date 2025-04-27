@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to minimize global memory accesses.
+// Load data into shared memory to benefit from faster access.
+// Use __syncthreads() to ensure all threads have loaded data.
+// Perform sorting within shared memory to maintain efficiency.
+// Use __syncthreads() again before writing back to global memory.
+// Commit sorted data from shared memory back to global memory.
+```

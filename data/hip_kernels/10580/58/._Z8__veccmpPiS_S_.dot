@@ -1,0 +1,5 @@
+digraph "CFG for '_Z8__veccmpPiS_S_' function" {
+	label="CFG for '_Z8__veccmpPiS_S_' function";
+
+	Node0x4ef5e70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = load i32, i32 addrspace(1)* %0, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %5 = load i32, i32 addrspace(1)* %1, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %6 = tail call i32 asm \"vset4.s32.s32.ne$0, $1.b0000, $2, $3\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 1\l  store i32 %6, i32 addrspace(1)* %2, align 4, !tbaa !4\l  %8 = tail call i32 asm \"vset4.s32.s32.ne$0, $1.b1111, $2, $3\l  %9 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 2\l  store i32 %8, i32 addrspace(1)* %7, align 4, !tbaa !4\l  %10 = tail call i32 asm \"vset4.s32.s32.ne$0, $1.b2222, $2, $3\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 3\l  store i32 %10, i32 addrspace(1)* %9, align 4, !tbaa !4\l  %12 = tail call i32 asm \"vset4.s32.s32.ne$0, $1.b3333, $2, $3\l  store i32 %12, i32 addrspace(1)* %11, align 4, !tbaa !4\l  ret void\l}"];
+}

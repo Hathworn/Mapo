@@ -1,0 +1,6 @@
+```
+// To reduce memory access latency, unroll loops and use shared memory
+// Avoid bank conflicts by ensuring memory accesses are aligned
+// Use volatile memory for the last warp to minimize register pressure
+// Employ occupancy calculator to configure optimal block size
+```

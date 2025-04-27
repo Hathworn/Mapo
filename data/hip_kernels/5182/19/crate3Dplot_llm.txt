@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access by organizing threads to access contiguous memory addresses
+// Minimize the usage of global memory by storing frequently accessed data in shared memory
+// Consider using __restrict__ keyword for pointers to enable additional compiler optimizations
+// Use appropriate grid and block dimensions to ensure high occupancy
+// Ensure that the 'if' condition minimizes warp divergence among threads
+// Align data to ensure optimal memory access patterns and reduce cache misses
+```

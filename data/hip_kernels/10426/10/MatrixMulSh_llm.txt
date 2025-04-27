@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access  
+// Optimize memory coalescing by accessing memory in a sequential manner  
+// Ensure synchronization after loading data into shared memory  
+// Limit the use of __syncthreads to necessary points to reduce overhead  
+// Reduce global memory access by reusing shared memory for accumulations

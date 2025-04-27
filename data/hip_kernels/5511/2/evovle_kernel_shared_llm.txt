@@ -1,0 +1,6 @@
+```
+// Consider using texture memory to exploit cached accesses and reduce global memory latency.
+// Try to increase block size if shared memory usage allows it to enhance parallelism.
+// Ensure coalesced access to global memory when loading oldGen into shared memory.
+// Evaluate the use of warp-level primitives for synchronization or reduction operations.
+```

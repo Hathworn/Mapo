@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for better performance
+// Use __syncthreads() to ensure all threads have copied data to shared memory
+// Avoid redundant computation by preloading frequently accessed variables into registers
+// Optimize bank conflicts in shared memory by carefully managing thread access patterns
+```

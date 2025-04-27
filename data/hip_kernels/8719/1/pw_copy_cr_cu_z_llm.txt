@@ -1,0 +1,5 @@
+// Use grid-stride loop to reduce thread divergence
+// Optimize memory access by ensuring coalesced access patterns
+// Consider using shared memory for frequently accessed data
+// Utilize compiler flags for optimal HIP kernel performance
+// Analyze occupancy and adjust block and grid sizes accordingly

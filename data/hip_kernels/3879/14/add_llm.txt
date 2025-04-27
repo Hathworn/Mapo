@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if multiple threads access the same data
+// Ensure memory accesses are coalesced for optimal performance
+// Use __ldg intrinsic to leverage texture cache for read-only data
+// Align data structures to the size of the largest data type accessed
+```

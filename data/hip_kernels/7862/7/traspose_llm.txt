@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory coalescing for global memory accesses
+// Use shared memory to improve data locality and reduce global memory access latency
+// Ensure proper use of __syncthreads() to prevent race conditions within shared memory
+// Consider increasing TILE_DIM to improve cache utilization if resources allow
+```

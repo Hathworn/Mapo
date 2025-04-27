@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory wisely to avoid overuse and bank conflicts
+// Minimize the use of global memory access by caching data in shared memory
+// Ensure proper synchronization using __syncthreads() to prevent race conditions
+// Optimize memory coalescing by aligning memory accesses with warp size
+// Use constant memory for frequently accessed data if applicable
+// Consider reducing memory allocation size by optimizing array dimensions
+// Avoid redundant calculations by storing intermediate results in registers
+```

@@ -1,0 +1,7 @@
+```c
+// Review memory access patterns to ensure coalesced access
+// Minimize global memory accesses by using shared memory when possible
+// Consider loop unrolling if applicable to improve performance
+// Ensure that no warp divergence occurs within this kernel
+// Verify that all threads within a block are being utilized efficiently
+```

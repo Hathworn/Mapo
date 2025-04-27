@@ -1,0 +1,3 @@
+// Consider using shared memory for gradInput_data and gradOutput_data to reduce redundant global memory accesses.
+// Optimize the loop by unrolling to improve performance.
+// Ensure coalesced memory access patterns in gradInput_data and gradOutput_data for better bandwidth utilization.

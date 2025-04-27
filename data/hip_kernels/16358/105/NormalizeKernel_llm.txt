@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for normalization_factor and image arrays
+// Utilize shared memory to cache frequently accessed data within threads
+// Consider loop unrolling to improve throughput
+// Prefer __syncthreads() to coordinate threads within a block for shared memory use
+```

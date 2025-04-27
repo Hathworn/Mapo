@@ -1,0 +1,10 @@
+```
+// Use shared memory to keep data accessed by multiple threads, reducing global memory accesses
+// Utilize __restrict__ keyword for pointers to improve compiler optimization
+// Employ loop unrolling to minimize loop overhead
+// Replace division operations with multiplications wherever possible for better performance
+// Consider using double2 type to handle pairs of double variables more efficiently
+// Reduce precision if double is not necessary, such as using float instead of double
+// Attempt to utilize warp shuffle operations for inter-thread communication in the same warp
+// Coalesce memory accesses by ensuring threads in a warp access contiguous memory locations
+```

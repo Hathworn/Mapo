@@ -1,0 +1,13 @@
+digraph "CFG for '_Z14channels_firstPfS_iiii' function" {
+	label="CFG for '_Z14channels_firstPfS_iiii' function";
+
+	Node0x481a2f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.z()\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %11 = shl nsw i32 %5, 1\l  %12 = icmp slt i32 %10, %2\l  br i1 %12, label %13, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x481a2f0:s0 -> Node0x481bdf0;
+	Node0x481a2f0:s1 -> Node0x481be80;
+	Node0x481bdf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%13:\l13:                                               \l  %14 = add nsw i32 %11, %3\l  %15 = add nsw i32 %11, %4\l  %16 = mul i32 %7, %2\l  %17 = mul i32 %14, %7\l  %18 = add nsw i32 %8, %5\l  %19 = add nsw i32 %9, %5\l  %20 = add i32 %18, %17\l  %21 = mul i32 %20, %15\l  %22 = add i32 %19, %21\l  %23 = mul i32 %22, %2\l  br label %25\l}"];
+	Node0x481bdf0 -> Node0x481c5e0;
+	Node0x481be80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%24:\l24:                                               \l  ret void\l}"];
+	Node0x481c5e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = phi i32 [ %10, %13 ], [ %38, %25 ]\l  %27 = add i32 %26, %16\l  %28 = mul i32 %27, %3\l  %29 = add i32 %28, %8\l  %30 = mul i32 %29, %4\l  %31 = add i32 %30, %9\l  %32 = sext i32 %31 to i64\l  %33 = getelementptr inbounds float, float addrspace(1)* %0, i64 %32\l  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !5\l  %35 = add i32 %26, %23\l  %36 = sext i32 %35 to i64\l  %37 = getelementptr inbounds float, float addrspace(1)* %1, i64 %36\l  store float %34, float addrspace(1)* %37, align 4, !tbaa !5\l  %38 = add nuw nsw i32 %26, 64\l  %39 = icmp slt i32 %38, %2\l  br i1 %39, label %25, label %24, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x481c5e0:s0 -> Node0x481c5e0;
+	Node0x481c5e0:s1 -> Node0x481be80;
+}

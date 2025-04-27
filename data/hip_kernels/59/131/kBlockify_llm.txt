@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed source data within a block
+// Align memory accesses to improve coalesced memory access and reduce latency
+// Use vectorized data types like float4 to minimize memory transactions and improve bandwidth
+// Ensure proper memory alignment to avoid bank conflicts in shared memory
+// Optimize stride calculations to prevent unnecessary arithmetic operations inside the loop

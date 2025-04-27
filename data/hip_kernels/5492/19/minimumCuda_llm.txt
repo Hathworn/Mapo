@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for each thread.
+// Ensure memory coalescing by organizing data access patterns.
+// Consider loop unrolling for potential performance benefits.
+// Optimize index calculations to avoid redundant arithmetic operations.
+// Check the use of const and restrict qualifiers for pointers to aid compiler optimizations.
+// Use warp-level primitive operations, if applicable, to speed up computations.
+```

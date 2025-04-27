@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses
+// Reorganize data to ensure coalesced memory access patterns
+// Evaluate the use of warp-level primitives for faster data exchange
+// Minimize register usage where possible to increase occupancy
+// Investigate the use of vectorized types for data loading and storing

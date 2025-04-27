@@ -1,0 +1,6 @@
+```
+// Consider using coalesced memory access for loc_ array to improve global memory bandwidth utilization
+// Ensure loc_shared size is suitable for the hardware's available shared memory
+// Align accesses to x and y arrays for better memory performance
+// Adjust block size for optimal occupancy and to fully utilize GPU resources
+```

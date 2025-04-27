@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for 'labelledImage' and 'pops' arrays.
+// Use shared memory to reduce global memory accesses inside the for-loops.
+// Optimize loop order to improve memory coalescing.
+// Minimize divergence by restructuring conditions, especially inside loops.
+// Compute cx and cy without intermediate values to optimize register usage.
+// Preload frequently accessed 'labelledImage' and 'pops' values to shared memory.
+// Ensure 'results' array is written to in a coalesced manner.
+```

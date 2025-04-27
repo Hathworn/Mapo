@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access when loading data into shared memory to improve memory bandwidth utilization.
+// Consider padding shared memory to avoid bank conflicts for better performance.
+// Ensure that data_in and data_out are aligned to facilitate coalesced access in global memory.
+// Experiment with different BLOCK_SIZE values to find the optimal balance between occupancy and memory usage.
+// If the kernel size is small, consider using constant memory to store the kernel for faster access.
+```

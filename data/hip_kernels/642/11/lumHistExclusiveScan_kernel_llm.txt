@@ -1,0 +1,6 @@
+```
+// Load input into shared memory in a coalesced manner to improve memory access patterns
+// Minimize the use of __syncthreads by optimizing the loop structure
+// Ensure optimal bank conflict resolution in shared memory accesses
+// Consider using warp level primitives to reduce synchronization overhead
+```

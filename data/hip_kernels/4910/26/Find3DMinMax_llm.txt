@@ -1,0 +1,8 @@
+```
+// Improve memory coalescing by ensuring threads access consecutive memory locations when reading input data.
+// Consider aligning shared memory sizes with warp size for better memory access patterns.
+// Use temporary variables to minimize repeated calculations, which reduces latency.
+// Move calculations outside conditional branches to avoid divergent warps.
+// Use __restrict__ qualifiers in kernel parameters to provide more optimization hints to the compiler.
+// Reduce bank conflicts by padding shared memory arrays if necessary.
+```

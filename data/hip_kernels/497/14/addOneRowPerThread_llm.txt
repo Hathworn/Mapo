@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to further reduce global memory access latency.
+// Ensure memory accesses are p1000 properly aligned for optimum throughput.
+// Optimize block and grid size to minimize idle threads and maximize resource utilization.
+// Evaluate if prefetching data into registers would benefit performance.
+// Test different degrees of loop unrolling for the optimal trade-off between performance and instruction overhead.
+// Profile and reduce register pressure if possible to prevent spilling.
+```

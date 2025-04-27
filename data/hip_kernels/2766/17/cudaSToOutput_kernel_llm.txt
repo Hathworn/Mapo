@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data and reduce global memory traffic.
+// Coalesce global memory accesses to improve memory bandwidth utilization.
+// Align data structures to 32-byte boundaries to optimize memory access patterns.
+// Minimize divergent branches within the kernel to improve warp execution efficiency.
+// Consider using memory prefetching to hide memory latencies.
+// Optimize the launch configuration to achieve full occupancy, balancing between threads per block and block count.
+// Reduce the number of IO operations by combining multiple outputs into single transactions.
+```

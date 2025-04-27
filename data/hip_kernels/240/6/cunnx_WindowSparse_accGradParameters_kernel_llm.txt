@@ -1,0 +1,6 @@
+// Unroll the loop for input buffer copying and weights accumulation
+// Use shared memory to buffer inputs for reducing global memory access
+// Implement loop unrolling to enhance parallel execution efficiency
+// Optimize atomic operations for reducing contention per thread
+// Optimize memory access patterns by accessing data in a coalesced manner
+// Consider increasing block size for better occupancy and utilization

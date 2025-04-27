@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for gradOutput_data by aligning ipidx_array
+// Use shared memory to reduce global memory access for ipidx_array
+// Ensure gradInput_data is accessed in a coalesced manner
+// Use loop unrolling to optimize the sum reduction process
+// Minimize divergent branches in if conditions
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for more neighboring pixel values to reduce global memory accesses.
+// Ensure coalesced memory access when reading from or writing to global memory.
+// Utilize warp-wide synchronization to improve efficiency of shared memory usage.
+// Evaluate the block size and grid size to optimize occupancy and reduce unnecessary computations.
+// Consider using constant memory for frequently used constants such as Sobel operator coefficients.
+```

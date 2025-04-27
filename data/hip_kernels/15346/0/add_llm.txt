@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure __syncthreads() is used to synchronize threads after loading data into shared memory
+// Access global memory as little as possible; use shared variables instead
+```

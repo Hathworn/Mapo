@@ -1,0 +1,7 @@
+```
+// Optimize data access patterns to ensure coalesced memory access
+// Consider using shared memory to buffer frequently accessed data
+// Use __restrict__ qualifier for pointer parameters to improve compiler optimizations
+// Implement loop unrolling manually if the scale_factor is known at compile-time
+// Use atomic operations if necessary to prevent race conditions during the accumulation
+```

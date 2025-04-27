@@ -1,0 +1,10 @@
+```
+// Ensure data loading to shared memory coalesces memory accesses where possible
+// Consider using double buffering technique to hide global memory access latency
+// Align shared memory usage to reduce bank conflicts
+// Use available registers to store intermediate computation results when practical
+// Assess warp divergence and ensure threads within a warp take the same execution path
+// Minimize shared memory usage by identifying and eliminating redundant data
+// Explore occupancy optimizations to fully utilize the GPU's computational resources
+// Profile and evaluate the kernel to identify bottlenecks in computation or memory access
+```

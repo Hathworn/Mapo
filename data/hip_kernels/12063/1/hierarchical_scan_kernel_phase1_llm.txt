@@ -1,0 +1,8 @@
+```cpp
+// Ensure data loading and storing are coalesced for better memory performance
+// Encourage the use of shared memory for frequent data access
+// Minimize the usage of __syncthreads() to reduce synchronization overhead
+// Use local variables to hold frequently accessed values to reduce register pressure
+// Optimize memory access patterns to minimize bank conflicts in shared memory
+// Consider loop unrolling for small, fixed-size loops to reduce overhead
+```

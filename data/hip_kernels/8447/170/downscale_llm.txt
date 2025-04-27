@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store gradOutput_data for faster access
+// Utilize memory coalescing by ensuring consecutive threads access consecutive elements
+// Make use of loop unrolling further if applicable to increase instruction level parallelism
+// Try minimizing global memory accesses by calculating translate_idx_inv only once if possible
+```

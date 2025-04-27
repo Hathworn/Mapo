@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access latency
+// Ensure coalesced memory access for d_M by sequential reads
+// Ensure coalesced memory access for d_N by sequential reads
+// Make use of shared memory for temporary data storage to reduce bandwidth
+// Synchronize threads to ensure consistent reads after loading into shared memory
+// Optimize block size to improve occupancy and reduce idle threads
+// Optimize tile size to balance between shared memory space and computation efficiency
+```

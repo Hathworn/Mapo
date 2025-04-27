@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for global memory reads of A
+// Minimize thread divergence by ensuring uniform workload distribution
+// Ensure shared memory usage is optimized and does not exceed limits
+// Use const qualifier for A and sums to enable better compiler optimizations
+// Explore the use of dynamic shared memory if the block size is flexible
+// Consider prefetching data to shared memory for more efficient usage
+```

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z24externUndoAssignParallelPiii' function" {
+	label="CFG for '_Z24externUndoAssignParallelPiii' function";
+
+	Node0x58a0f70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = icmp uge i32 %12, %1\l  %14 = icmp eq i32 %12, %2\l  %15 = select i1 %13, i1 true, i1 %14\l  br i1 %15, label %21, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x58a0f70:s0 -> Node0x58a1d40;
+	Node0x58a0f70:s1 -> Node0x58a3080;
+	Node0x58a3080 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = zext i32 %12 to i64\l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %17\l  %19 = load i32, i32 addrspace(1)* %18, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %20 = add nsw i32 %19, 1\l  store i32 %20, i32 addrspace(1)* %18, align 4, !tbaa !7\l  br label %21\l}"];
+	Node0x58a3080 -> Node0x58a1d40;
+	Node0x58a1d40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  ret void\l}"];
+}

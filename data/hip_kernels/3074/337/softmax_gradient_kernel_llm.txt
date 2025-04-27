@@ -1,0 +1,7 @@
+```cpp
+// Consider memory coalescing for global memory access to improve memory throughput
+// Ensure shared memory bank conflicts are minimized
+// Use __syncthreads() efficiently to reduce idle warps
+// Evaluate if loop unrolling provides benefit in your specific case
+// Leverage memory access patterns to maximize L1 cache usage
+```

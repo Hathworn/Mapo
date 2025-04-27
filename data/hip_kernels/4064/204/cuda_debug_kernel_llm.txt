@@ -1,0 +1,12 @@
+```
+// Consider coalesced memory access by ensuring threads access contiguous memory addresses.
+// Evaluate the use of shared memory to reduce global memory traffic.
+// Minimize divergent branching to maintain warp execution efficiency.
+// Use appropriate compiler flags and warp size optimization if needed.
+// Check for any potential bank conflicts in shared memory access patterns.
+// Opt for asynchronous memory transfers if data dependencies allow.
+// Assess the possibility of loop unrolling to improve pipeline utilization.
+// Utilize occupancy calculator to ensure optimal resource usage.
+// Explore launching multiple smaller kernels instead of one large kernel if beneficial.
+// Implement checks and optimizations for memory alignment to boost performance.
+```

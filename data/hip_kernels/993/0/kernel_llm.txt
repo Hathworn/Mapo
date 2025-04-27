@@ -1,0 +1,6 @@
+```
+// Use of coalesced memory access pattern as all threads are accessing consecutive memory
+// Consider shared memory for temporary data storage to reduce global memory accesses
+// Increase thread block size to improve occupancy if resources permit
+// Minimize divergent branches within the kernel
+```

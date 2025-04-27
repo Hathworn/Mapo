@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce redundant global memory accesses for large datasets
+// Optimize memory access pattern to ensure continuous memory access and improve coalescing
+// Initialize accumulators with a reduction approach to minimize warp divergence
+// Ensure memory alignment for x and mean arrays to leverage faster memory transactions
+// Investigate possible use of vectorized memory operations for x array to enhance throughput

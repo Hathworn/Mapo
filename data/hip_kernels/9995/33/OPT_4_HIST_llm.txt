@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for d_lcmMatrix and d_LCMSize.
+// Minimize divergent branches in warp by optimizing condition checks.
+// Evaluate potential shared memory usage to reduce global memory access.
+// Use loop unrolling if iSize or jSize is small and bounded to reduce loop overhead.
+// Consider using memory comparison function if applicable to replace the loop comparison.
+// Use atomicAdd() carefully to prevent serialization and to optimize histogram updates.
+```

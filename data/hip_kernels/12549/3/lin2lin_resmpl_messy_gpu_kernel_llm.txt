@@ -1,0 +1,12 @@
+```
+// Use constant memory for frequently accessed constants to optimize memory latency
+// Minimize memory access within the conditional blocks to improve performance
+// Combine multiple redundant memory calculations to reduce access latency
+// Optimize y-direction sampling by improving index calculation and minimizing conditional checks
+// Use shared memory for temporary variables to reduce global memory access
+// Reduce excessive use of __syncthreads() to improve warp scheduling efficiency
+// Consider coalesced memory access patterns for dev_C0_tmp, dev_C1_tmp, and dev_C2_tmp
+// Optimize x-direction resampling using better index calculation and loop unrolling where appropriate
+// Utilize proper thread block dimensions to ensure efficient utilization of threads and memory bandwidth
+// Balance computational load across threads to prevent warp divergence
+```

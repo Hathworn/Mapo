@@ -1,0 +1,8 @@
+```
+// Avoid using mod operator inside loops for better performance.
+// Pre-compute repetitive calculations outside nested loops to optimize access and reduce computation.
+// Use shared memory for data_col if possible to reduce global memory accesses.
+// Ensure coalesced memory access by aligning data access patterns for data_col and data_im.
+// Consider loop unrolling to reduce loop overhead and improve execution efficiency.
+// Optimize index calculations for reduced arithmetic operations and better performance.
+```

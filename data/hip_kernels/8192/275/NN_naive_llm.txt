@@ -1,0 +1,4 @@
+// Consider using shared memory for B vectors to reduce global memory accesses
+// Consider unrolling the loop within Dist_between_two_vec for better performance
+// Ensure coalesced memory access for both A and B vectors to optimize bandwidth usage
+// Use float4 or similar data structures for aligned memory data to reduce load/store instructions

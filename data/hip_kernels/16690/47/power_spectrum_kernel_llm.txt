@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for Ar and Aw to improve memory throughput
+// Evaluate using shared memory for temporary storage if there are repeated memory accesses
+// Explore employing the `__restrict__` keyword on pointers to hint at non-aliasing for better compiler optimization
+// Investigate using warp shuffle operations to reduce memory accesses if applicable
+// Assess leveraging asynchronous copy operations if the data size and access pattern allow
+```

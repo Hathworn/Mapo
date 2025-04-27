@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring consecutive threads access consecutive memory locations in aFourth.
+// Evaluate using shared memory if aFourth is accessed multiple times to reduce global memory access latency.
+// Ensure memory alignment for float accesses for better throughput.
+// Opt for __restrict__ keyword on pointers if applicable to aid compiler optimization.
+// Analyze opportunity for loop unrolling if more operations per thread will be added.
+```

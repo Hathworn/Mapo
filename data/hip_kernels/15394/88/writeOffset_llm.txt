@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory access latency.
+// Optimize memory access patterns to ensure coalesced access to global memory.
+// Use __restrict__ keyword for A, B, and C to help the compiler with potential optimizations.
+// Ensure that the offset value does not lead to bank conflicts or memory divergence.
+// Analyze if loop unrolling may improve performance depending on the workload characteristics.
+```

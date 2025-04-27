@@ -1,0 +1,7 @@
+```
+// Coalesce memory accesses by ensuring that threads in a warp access consecutive memory locations.
+// Use float2 data type to load/store two floats at once, reducing memory transaction overhead.
+// Align memory accesses on the float2 boundaries to take advantage of float2 coalescing.
+// Ensure that d_A, d_B, and d_C pointers are aligned to at least 8-byte boundaries for float2.
+// Minimize warp divergence by ensuring block size is a multiple of warp size (32).
+```

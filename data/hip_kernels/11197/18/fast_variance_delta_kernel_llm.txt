@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses;
+// Ensure coalesced accesses by having contiguous threads access contiguous memory locations;
+// Perform reduction with a loop for better thread execution convergence;
+// Use volatile qualifier if necessary to ensure shared memory visibility across threads;
+```

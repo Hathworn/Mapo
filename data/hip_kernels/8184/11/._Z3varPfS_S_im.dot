@@ -1,0 +1,10 @@
+digraph "CFG for '_Z3varPfS_S_im' function" {
+	label="CFG for '_Z3varPfS_S_im' function";
+
+	Node0x5af3280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = sext i32 %14 to i64\l  %16 = icmp ult i64 %15, %4\l  br i1 %16, label %17, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x5af3280:s0 -> Node0x5af3db0;
+	Node0x5af3280:s1 -> Node0x5af5300;
+	Node0x5af3db0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = getelementptr inbounds float, float addrspace(1)* %2, i64 %15\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %20 = getelementptr inbounds float, float addrspace(1)* %0, i64 %15\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %22 = fsub contract float %19, %21\l  %23 = add nsw i32 %3, 1\l  %24 = sitofp i32 %23 to float\l  %25 = fdiv contract float %22, %24\l  %26 = fadd contract float %21, %25\l  store float %26, float addrspace(1)* %20, align 4, !tbaa !7\l  %27 = load float, float addrspace(1)* %18, align 4, !tbaa !7\l  %28 = fsub contract float %27, %26\l  %29 = fmul contract float %22, %28\l  %30 = getelementptr inbounds float, float addrspace(1)* %1, i64 %15\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !7\l  %32 = fadd contract float %31, %29\l  store float %32, float addrspace(1)* %30, align 4, !tbaa !7\l  br label %33\l}"];
+	Node0x5af3db0 -> Node0x5af5300;
+	Node0x5af5300 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

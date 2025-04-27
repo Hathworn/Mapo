@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for delta and prev_delta for better bandwidth utilization.
+// Utilize shared memory to store intermediate values for each kernel block to reduce global memory reads.
+// Reduce thread divergence by ensuring conditional logic and loop bounds are uniform for threads within a warp.
+// Evaluate the use of memory hierarchy strategies such as using registers for frequently accessed variables.
+// Align data structures such as indexes to improve memory access patterns and reduce access latency.
+```

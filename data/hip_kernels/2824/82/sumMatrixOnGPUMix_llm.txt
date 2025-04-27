@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced access by having consecutive threads access consecutive memory locations
+// Use shared memory if there is data reuse across threads within the same block
+// Experiment with different block sizes to maximize occupancy and minimize bank conflicts
+// Consider the use of vector loads if the memory is aligned and it enhances performance
+// Minimize divergent branches within the kernel
+```

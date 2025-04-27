@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to cache gradOutput_data for faster access.
+// Group threads accessing the same data to benefit from coalesced memory access.
+// Minimize bank conflicts by ensuring that threads access contiguous elements in shared memory.
+// Check for memory alignment to maximize bandwidth utilization.
+```

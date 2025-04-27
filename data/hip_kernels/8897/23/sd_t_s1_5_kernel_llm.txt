@@ -1,0 +1,8 @@
+```
+// Consider aligning data to improve coalesced memory access
+// Ensure that shared memory size is optimized for the hardware's capabilities
+// Optimize the loop unrolling for increased parallel execution
+// Explore batched/strided access patterns to maximize locality
+// Check memory access patterns for both shared memory and global memory
+// Minimize use of __syncthreads() if not necessary to reduce synchronization overhead
+```

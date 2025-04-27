@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache dev_accumulate_weights and dev_accumulate_values to reduce global memory accesses
+// Consider loop unrolling if applicable to enhance performance by reducing loop overhead
+// Ensure coalesced memory access patterns to maximize memory throughput
+// Evaluate using half-precision math where possible for performance gains
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to temporarily store degreeCount values before writing them back to global memory.
+// Strive for coalesced memory accesses when fetching and storing data from/to globalState.
+// Update the globalState only after computations for better performance.
+// Minimize the number of writes to global memory by updating the degreeCount in shared memory first.
+```

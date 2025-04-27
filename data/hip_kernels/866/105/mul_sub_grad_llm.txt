@@ -1,0 +1,4 @@
+// Use cooperative thread indexing to reduce bank conflicts
+// Ensure tid is always within bounds before proceeding
+// Replace addition operation with atomicAdd if needed to handle concurrent writes
+// Reduce stride with shared memory if kernel needs to process data in smaller chunks

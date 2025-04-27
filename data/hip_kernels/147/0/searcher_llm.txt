@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to improve global memory throughput.
+// Utilize shared memory where applicable to reduce redundant global memory accesses.
+// Restructure condition checks to avoid bank conflicts and achieve better warp utilization.
+// Explore the possibility of loop unrolling in the `uniq` function to enhance performance.
+// Analyze the access pattern for `M` and perhaps reorganize data to fit better into cache lines.
+// Investigate the use of warp shuffle techniques to eliminate idle threads and enhance performance.
+```

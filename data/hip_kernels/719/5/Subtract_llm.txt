@@ -1,0 +1,4 @@
+// Ensure data is coalesced by accessing global memory in contiguous blocks
+// Avoid shared memory unless necessary as it can affect performance on newer GPUs
+// Utilize warp-level primitives where possible for potential speedup
+// Consider using texture memory if frequent global memory access is detected

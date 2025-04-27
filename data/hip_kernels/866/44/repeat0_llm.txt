@@ -1,0 +1,8 @@
+```cpp
+// Use __restrict__ to optimize memory access patterns
+// Ensure shared memory usage to reduce global memory access latency
+// Load data into shared memory to improve coalesced access
+// Use __syncthreads() to synchronize threads after loading into shared memory
+// Ensure each thread accesses different parts to avoid bank conflicts
+// Consider tuning block size to optimize shared memory utilization and occupancy
+```

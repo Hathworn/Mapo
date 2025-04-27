@@ -1,0 +1,4 @@
+// Avoid shared memory if data is accessed only once
+// Use __restrict__ to indicate no aliasing and improve compiler optimization
+// Align data for coalesced accesses and better memory throughput
+// Consider loop unrolling for repetitive operations

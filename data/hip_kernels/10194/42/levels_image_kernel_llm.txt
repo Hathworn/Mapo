@@ -1,0 +1,9 @@
+```
+// Ensure memory coalescing by arranging data accessed by consecutive threads close in memory.
+// Reduce unnecessary memory accesses and ensure data reuse.
+// Consider using shared memory for data accessed multiple times by threads within a block.
+// Optimize block and grid dimensions to maximize occupancy and resource utilization.
+// Utilize warp-level primitives where applicable to minimize register pressure and latency.
+// Avoid bank conflicts in shared memory by ensuring unique access patterns.
+// Minimize branching by restructuring conditionals and loop constructs.
+```

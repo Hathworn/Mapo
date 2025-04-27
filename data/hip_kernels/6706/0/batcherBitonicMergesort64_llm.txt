@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by aligning data access with warp size.
+// Use shared memory to minimize global memory access latency.
+// Apply loop unrolling for the innermost substage loop for reduced loop overhead.
+// Experiment with different block sizes for potentially improved performance.
+// Consider using vectorized data types for further memory access optimization.
+```

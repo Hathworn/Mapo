@@ -1,0 +1,6 @@
+```
+// Consider alignment of memory accesses for X array for coalesced memory access
+// Ensure ALPHA is copied to local memory or register to minimize global memory access
+// Utilize shared memory if threads within a block need to use common data
+// Assess warp execution efficiency and consider loop unrolling if beneficial
+```

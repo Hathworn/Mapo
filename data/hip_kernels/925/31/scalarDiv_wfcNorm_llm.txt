@@ -1,0 +1,7 @@
+```
+// Consider caching pSum[0] in shared memory to reduce global memory access
+// Use coalesced memory access patterns for in and out arrays
+// Consider using __restrict__ to limit pointer aliasing
+// Ensure grid and block dimensions are optimal for the GPU architecture
+// Align data structures to improve memory access speed
+```

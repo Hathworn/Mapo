@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed values such as mean[filter_id] and variance[filter_id].
+// Ensure coalesced memory access by organizing data layout to align with thread indices.
+// Consider loop unrolling to reduce loop overhead and improve instruction-level parallelism.
+// Pre-fetch elements x[index] and delta[index] into registers to minimize global memory latency.
+// Use atomic operations carefully if variance_delta is a shared variable to avoid race conditions.
+```

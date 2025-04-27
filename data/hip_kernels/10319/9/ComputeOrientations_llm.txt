@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for g_Data to improve memory bandwidth utilization.
+// Utilize shared memory efficiently by minimizing bank conflicts when accessing the 'data' and 'hist' arrays.
+// Ensure the gaussian value computations in shared memory have minimal redundant calculations.
+// Preload data and gauss elements into shared memory before the main computation loop to hide memory latency.
+// Employ warp-level synchronization wherever possible to reduce __syncthreads() overhead.
+// Consider using atomic operations when accumulating results to the hist array if necessary to avoid race conditions.
+// Evaluate the need for reducing data in the hist array in parallel to decrease processing time on the y-axis reduction phase.
+```

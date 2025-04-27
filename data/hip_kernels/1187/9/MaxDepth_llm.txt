@@ -1,0 +1,5 @@
+// Consider using shared memory for cache efficiency
+// Minimize accessing global memory by leveraging data reuse
+// Apply coalesced memory access patterns for better throughput
+// Limit divergence in branching for threads within a warp
+// Use atomic operations if necessary to avoid write conflicts

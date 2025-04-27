@@ -1,0 +1,5 @@
+// Use shared memory to cache filters for faster access.
+// Minimize register usage by optimizing loop index calculations.
+// Consider using loop unrolling to reduce loop overhead.
+// Check if bank conflicts occur in shared memory accesses and optimize if necessary.
+// Implement warp-level primitives to optimize conditional operations.

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by using contiguous data structures
+// Use __restrict__ keyword for ingrad, outgrad, and indata to optimize memory access
+// Consider shared memory usage if there are repeated data access patterns
+// Adjust block size for optimal occupancy and performance
+// Use __syncthreads() if there is shared memory to maintain thread synchronization
+```

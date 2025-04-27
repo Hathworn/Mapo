@@ -1,0 +1,5 @@
+```
+// Utilize shared memory for frequently accessed data to reduce global memory access.
+// Consider using vectorized loads/stores for A[i] and B[i] if data alignment allows.
+// Optimize data coalescing by ensuring memory access patterns align with warp execution.
+```

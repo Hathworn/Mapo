@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency.
+// Consider coalesced memory access for shared_cols for improved performance.
+// Ensure loop unrolling to leverage increased instruction-level parallelism.
+// Align memory access patterns to prevent bank conflicts in shared memory.
+// Use `__syncthreads()` cautiously to synchronize threads efficiently.
+```

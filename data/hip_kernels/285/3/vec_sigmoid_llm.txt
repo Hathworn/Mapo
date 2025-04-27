@@ -1,0 +1,7 @@
+```
+// Ensure optimal block size and grid size for memory access pattern
+// Consider using shared memory if multiple threads access the same data
+// Align data access to memory boundaries to improve coalescing
+// Ensure all threads in a warp follow the same execution path to avoid divergence
+// Use expf intrinsic function for better performance
+```

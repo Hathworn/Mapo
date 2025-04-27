@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing to improve access speed when reading from _hash
+// Utilize shared memory to reduce repeated access to the global memory
+// Ensure that _hashCellCount is properly aligned to avoid un-coalesced access
+// If possible, adjust block and grid sizes to ensure maximum occupancy
+// Check for bank conflicts when accessing shared memory if implemented
+```

@@ -1,0 +1,8 @@
+```c
+// Optimize shared memory size to fit within the limits of the target GPU.
+// Consider coalesced memory access patterns to improve global memory access efficiency.
+// Load data into shared memory using a blocking pattern to maximize efficiency.
+// Reduce the number of __syncthreads() calls by grouping independent calculations.
+// Minimize the frequency array initialization by reusing it across different threads.
+// Consider limiting the size of the frequency array to the required channel values.
+```

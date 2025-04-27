@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for nabla_b if accessed frequently within warp to reduce global memory access.
+// Use __syncthreads() cautiously if shared memory is implemented to avoid race conditions.
+// Ensure coalesced memory access by possibly padding data structures to match warp size.
+// Evaluate if loop unrolling could be beneficial for the computation inside the kernel.
+// Ensure the data type used aligns with hardware efficiency, such as using half or float4 if suitable.
+```

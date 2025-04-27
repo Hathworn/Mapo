@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory access
+// Consider coalescing accesses to d_nnz_num for improved memory throughput
+// Minimize divergence in the warp by using predication
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by reorganizing data layout for better global memory efficiency.
+// Ensure vec is accessed in coalesced manner by using shared memory if possible.
+// Experiment with different block size configurations to maximize warp utilization.
+// Reduce divergent branching by ensuring all threads within a warp follow the same execution paths.
+// Minimize global memory access latency by using texture memory if applicable.
+// Analyze memory bandwidth usage for potential bottlenecks and adjust thread/block ratio.
+```

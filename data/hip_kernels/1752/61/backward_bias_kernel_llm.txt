@@ -1,0 +1,7 @@
+```
+// Use loop unrolling to reduce overhead and increase instruction throughput.
+// Employ shared memory for intermediate sums to minimize global memory accesses.
+// Apply a reduction step in shared memory to optimize parallel sum computation.
+// Synchronize threads to ensure data integrity before and after reduction steps.
+// Merge global memory access where possible to take advantage of coalesced memory transactions.
+```

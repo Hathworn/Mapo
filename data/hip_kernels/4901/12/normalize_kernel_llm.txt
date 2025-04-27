@@ -1,0 +1,6 @@
+```
+// Use shared memory to load mean and variance values for faster access
+// Coalesce memory accesses by ensuring x, mean, and variance are accessed sequentially
+// Consider using vectorized loads/stores for x for better throughput
+// Ensure adequate occupancy by adjusting block size to maximize parallel execution
+```

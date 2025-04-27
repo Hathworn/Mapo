@@ -1,0 +1,7 @@
+```
+// Move constants out of loop to reduce redundant calculations
+// Use shared memory to store intermediate results to minimize global memory accesses
+// Consider coalescing memory accesses for gradInput, gradOutput, and indices
+// Align memory accesses to improve bandwidth utilization
+// Ensure optimal occupancy by adjusting block size according to hardware specifications
+```

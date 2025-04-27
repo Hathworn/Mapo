@@ -1,0 +1,5 @@
+```
+// Move __syncthreads() outside of the loop to avoid redundant synchronization
+// Precompute start and end values outside of the loop for reduced computation
+// Use atomicAdd for thread-safe memory updates
+```

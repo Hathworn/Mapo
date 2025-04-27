@@ -1,0 +1,13 @@
+digraph "CFG for '_Z20ker_gkylCartFieldAbsjjPd' function" {
+	label="CFG for '_Z20ker_gkylCartFieldAbsjjPd' function";
+
+	Node0x5f364f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 4, !tbaa !6\l  %13 = mul i32 %4, %9\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %15 = add i32 %14, %0\l  %16 = add i32 %15, %13\l  %17 = add i32 %1, %0\l  %18 = icmp ult i32 %16, %17\l  br i1 %18, label %19, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x5f364f0:s0 -> Node0x5f38850;
+	Node0x5f364f0:s1 -> Node0x5f388e0;
+	Node0x5f38850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = udiv i32 %12, %9\l  %21 = mul i32 %20, %9\l  %22 = icmp ugt i32 %12, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %9\l  br label %27\l}"];
+	Node0x5f38850 -> Node0x5f38d60;
+	Node0x5f388e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%26:\l26:                                               \l  ret void\l}"];
+	Node0x5f38d60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ %16, %19 ], [ %33, %27 ]\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds double, double addrspace(1)* %2, i64 %29\l  %31 = load double, double addrspace(1)* %30, align 8, !tbaa !16\l  %32 = tail call double @llvm.fabs.f64(double %31)\l  store double %32, double addrspace(1)* %30, align 8, !tbaa !16\l  %33 = add i32 %25, %28\l  %34 = icmp ult i32 %33, %17\l  br i1 %34, label %27, label %26, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5f38d60:s0 -> Node0x5f38d60;
+	Node0x5f38d60:s1 -> Node0x5f388e0;
+}

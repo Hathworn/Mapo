@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data
+// Minimize global memory accesses by storing intermediate results in registers
+// Unroll loops to reduce loop overhead
+// Optimize thread block size to maximize occupancy
+// Consider using __syncthreads() if needed for synchronization
+// Align memory accesses to improve memory coalescing
+// Use __restrict__ qualifiers for pointer arguments to enable compiler optimizations
+```

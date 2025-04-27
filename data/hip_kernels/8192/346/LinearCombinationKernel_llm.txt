@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache input elements for better memory access patterns
+// Ensure memory access is coalesced by aligning input and output arrays
+// Consider loop unrolling for small fixed sizes to improve throughput
+// Minimize divergent branches by ensuring all threads in a warp execute the same path
+```

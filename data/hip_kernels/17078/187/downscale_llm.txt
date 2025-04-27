@@ -1,0 +1,7 @@
+```
+// Use shared memory for thread collaboration to reduce global memory access
+// Adjust size of shared memory based on shared memory limitations to optimize usage
+// Accumulate results in a register to minimize memory access and improve performance
+// Accumulate directly to avoid repeated memory access and reduce latency
+// Single write to global memory to minimize write operations and improve performance
+```

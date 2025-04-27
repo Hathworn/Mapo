@@ -1,0 +1,6 @@
+```
+// Precompute stride for all threads to reduce redundant calculations
+// Utilize ternary operator for conditional assignments to enhance code readability and maintain performance
+// Consider using shared memory if xmask and x are frequently accessed by threads within the same block to reduce global memory access latency
+// Prefetch data into registers to decrease global memory read latency and increase throughput
+```

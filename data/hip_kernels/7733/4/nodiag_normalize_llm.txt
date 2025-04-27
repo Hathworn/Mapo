@@ -1,0 +1,5 @@
+```c
+// Consider using shared memory for A and I to reduce global memory access latency.
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations.
+// Minimize divergent branching within the if conditions for better warp execution efficiency.
+```

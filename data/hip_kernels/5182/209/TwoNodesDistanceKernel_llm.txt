@@ -1,0 +1,7 @@
+```c
+// Optimize memory access by loading data into shared memory before computation
+// Consider using warp-based parallel reduction for faster summation
+// Ensure coalesced memory access when reading twoNodesDifference
+// Use __syncthreads() if shared memory is implemented to synchronize threads
+// Evaluate if using a separate kernel for parts of the computation improves performance
+```

@@ -1,0 +1,10 @@
+```
+// Consider aligning memory accesses with warp boundaries to optimize memory usage.
+// Use __restrict__ to allow the compiler more freedom for optimization.
+// Ensure coalesced memory access for better performance.
+// Evaluate usage of shared memory to minimize global memory bandwidth.
+// If applicable, implement loop unrolling for performance gains.
+// Consider using asynchronous data transfers where possible.
+// Employ occupancy calculator to ensure maximum hardware utilization.
+// Evaluate the use of constant memory for frequently accessed data.
+```

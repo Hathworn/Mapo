@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access by storing halo regions
+// Coalesce global memory access by arranging threads to access contiguous memory locations
+// Use __syncthreads() to ensure all threads have completed shared memory operations before proceeding
+// Transfer data in chunks that fit in the shared memory to improve memory throughput
+// Consider using double buffering for shared memory to hide memory latency during stencil operations
+// Load and store data in a way that avoids bank conflicts in shared memory if possible
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory effectively to minimize global memory accesses
+// Consider coalesced memory access patterns for dst array
+// Unroll loops to increase instruction throughput
+// Ensure shared memory usage fits within the hardware limit
+// Minimize __syncthreads() calls to reduce synchronization overhead
+// Optimize conditional checks to reduce divergent warps
+```

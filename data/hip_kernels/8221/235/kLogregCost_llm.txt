@@ -1,0 +1,8 @@
+```
+// Ensure sufficient threads are launched to cover all cases
+// Consider using loop unrolling if numOut is known at compile time
+// Use shared memory to reduce global memory accesses
+// Avoid branch divergence by structuring conditional statements effectively
+// Preload maxp into shared memory if reused across threads
+// Consider using warp shuffle instructions for efficient reductions
+```

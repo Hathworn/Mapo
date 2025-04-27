@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring that input and rand arrays are aligned.
+// Use shared memory if possible to reduce global memory access latency.
+// Ensure usage of __restrict__ keyword for pointers to avoid pointer aliasing issues.
+// Apply loop unrolling techniques if applicable to increase throughput.
+// Verify if prefetching memory can benefit performance for specific data sizes.
+```

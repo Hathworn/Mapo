@@ -1,0 +1,4 @@
+// Consider using shared memory to store 'accuracy' if accessed by multiple threads within a block
+// Reduce warp divergence by ensuring only necessary threads enter the condition
+// Ensure 'accuracy' is correctly initialized and available across kernel calls
+// Consider atomic operations if multiple threads may update 'accuracy' in future changes

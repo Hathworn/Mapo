@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for global memory reads and writes to improve access efficiency
+// Employ shared memory more extensively to reduce global memory access latency
+// Use appropriate thread block size to enable maximum occupancy and balance between computation and memory usage
+// Optimize halo region copying to minimize synchronization overhead
+// Consider loop unrolling for stencil computation to increase instruction-level parallelism
+// Align data structures to avoid bank conflicts in shared memory
+// Utilize __ldg() function to load read-only data, if applicable, for potential caching benefits
+```

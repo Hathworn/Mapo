@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning loc_ to preferred memory access patterns
+// Use shared memory if applicable to reduce global memory traffic
+// Consider using __ldg for read-only loc_ to utilize texture cache
+// Check if __half2float can be replaced with native float operations for better performance
+// Ensure that x and y are similarly accessed in a coalesced fashion
+// Minimize thread divergence by organizing threads to handle consecutive data points
+```

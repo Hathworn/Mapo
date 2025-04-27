@@ -1,0 +1,5 @@
+// Ensure coalesced global memory access by aligning the input and output arrays properly.
+// Consider unrolling loops to reduce loop overhead and increase instruction throughput.
+// Optimize shared memory usage by minimizing its size to fit within hardware limits.
+// Use appropriate memory barriers like __syncthreads() to synchronize threads effectively.
+// Ensure proper occupancy by configuring block size and shared memory usage to maximize parallelism.

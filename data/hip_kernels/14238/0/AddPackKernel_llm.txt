@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache dimendionsSizes if reused frequently
+// Prefetch data by loading packDimensions into shared memory
+// Coalesce memory accesses for packMeasures in the inner loop
+// Consider using texture memory for measures if access pattern benefits
+// Minimize global memory writes with atomic operations if applicable
+```

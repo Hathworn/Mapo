@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Ensure proper memory coalescing by aligning data structures appropriately.
+// Use asynchronous memory transfers to overlap data movement and computation.
+// Tune grid and block sizes to maximize occupancy and minimize idle threads.
+// Profile the kernel and leverage local memory if register spilling is observed.
+// Experiment with loop unrolling to enhance instruction throughput.
+// Avoid warp divergence by ensuring threads within a warp follow the same execution path.
+```

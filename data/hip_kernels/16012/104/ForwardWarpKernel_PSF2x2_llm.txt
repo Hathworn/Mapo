@@ -1,0 +1,7 @@
+// Ensure memory accesses are coalesced to improve performance.
+// Use shared memory to cache frequently accessed data.
+// Minimize the number of conditional statements.
+// Consider loop unrolling for the kernel invocation.
+// Use integer arithmetic where possible to avoid float precision loss.
+// Align memory allocations to avoid misaligned accesses.
+// Optimize atomic operations to reduce contention and overhead.

@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access patterns for loading data into shared memory.
+// Ensure that the shared memory array is sufficiently sized to handle out-of-bounds accesses.
+// Evaluate if using shared memory here significantly improves performance given the access pattern.
+// Consider unrolling the loop if the `size` is known and fixed at compile time.
+// Assess the grid and block dimensions to optimize occupancy and resource utilization.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced access to global memory by ensuring thread blocks access consecutive elements in memory
+// Preload shared memory with data from global memory to reduce global memory accesses
+// Utilize faster math libraries where precision requirements allow, such as using __expf when possible instead of expf for enhanced performance
+// Minimize redundant calculations by reusing computed values within the thread
+// Group related computations to maintain data in registers and reduce memory overhead
+// Optimize thread block dimensions to ensure full occupancy and efficient memory access patterns
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning memory addresses accessed by threads
+// Consider using shared memory to reduce global memory access
+// Minimize divergent branching by ensuring all threads within a warp take the same execution path
+// Explore the use of warp-level primitives to further enhance performance
+// Verify that grid and block dimensions maximize occupancy
+// Look into prefetching data to optimize memory access latency
+```

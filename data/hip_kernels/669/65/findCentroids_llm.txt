@@ -1,0 +1,7 @@
+```
+// Consider using vectorized loads for responses to improve memory throughput.
+// Use warp-level primitives to reduce atomic operations for localMasses.
+// Ensure proper memory coalescing when accessing cluster and responses arrays.
+// Adjust block size for optimal occupancy based on register and shared memory usage.
+// Evaluate using cooperative groups for better block-level synchronization.
+```

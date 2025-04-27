@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses for lifter_coeffs and log_energy
+// Coalesce global memory accesses by organizing data access patterns for features
+// Consider loop unrolling in the while loop to decrease branch overhead
+// Use warp-level primitives to optimize operations in the lifter coefficients application part
+// Ensure memory accesses are aligned for optimal throughput
+// Prioritize reading log_energy into a register for energy flooring condition check
+```

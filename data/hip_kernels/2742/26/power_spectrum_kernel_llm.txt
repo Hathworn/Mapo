@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns for Ar and Aw to optimize memory throughput.
+// Use shared memory to store matrix chunks for reducing global memory access time.
+// Prefetch data into registers to hide global memory latency.
+// Minimize the use of __syncthreads() which can lead to thread divergence and lower performance.
+// Thread blocking strategies might be optimized to improve occupancy and reduce idling.
+```

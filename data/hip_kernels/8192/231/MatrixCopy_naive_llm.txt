@@ -1,0 +1,5 @@
+// Use shared memory for blocks to reduce global memory access latency.
+// Consider vectorized loads and stores to utilize memory bandwidth better.
+// Align memory access, particularly if using a vectorized approach, to avoid misalignment penalties.
+// Consider whether a loop unrolling technique could benefit this copy operation.
+// Evaluate if coalesced memory access patterns can be improved to minimize bank conflicts.

@@ -1,0 +1,10 @@
+```
+// Reduce global memory access by coalesced memory alignment for input arrays Y, dY, and dX.
+// Consider using double buffering or L2 cache for the reduction_buffer to mitigate shared memory bank conflicts.
+// Replace loop with warp-level intrinsic for further optimization in reduction.
+// Use dynamic shared memory allocation for reduction_buffer to handle varying dimensions efficiently.
+// Leverage asynchronous memory prefetching for Y and dY to improve latency hiding.
+// Minimize warp divergence in reduction loop by ensuring consistent thread participation.
+// Optimize the usage of __shfl_down_sync to ensure alignment with HIP architecture specifics.
+// Evaluate the block size and grid size to avoid under-utilization of compute resources.
+```

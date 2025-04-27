@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for nvccResults and activelayers arrays
+// Ensure optimal memory access patterns to reduce global memory transactions
+// Use shared memory if possible to reduce repeated global memory reads
+// Align and pad data structures to avoid bank conflicts
+// Optimize loop unrolling for the writenum loop to improve throughput
+```

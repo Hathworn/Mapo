@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory for frequently used variables to minimize global memory accesses.
+// Ensure memory accesses are coalesced to improve performance.
+// Minimize the number of printf calls to reduce kernel execution time.
+// Utilize warp-level primitives for cooperative operations to optimize thread performance.
+// Use constant memory for any invariant data across threads to speed up access times.
+```

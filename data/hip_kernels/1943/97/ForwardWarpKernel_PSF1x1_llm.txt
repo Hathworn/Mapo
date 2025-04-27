@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for `u`, `v`, `src`, and `dst` arrays to improve memory efficiency.
+// Investigate if using shared memory for frequently accessed data can provide performance benefits.
+// Ensure that `flow_stride` and `image_stride` are optimally aligned with memory access patterns.
+// Optimize `atomicAdd` usage by reducing contention, possibly via block-wise accumulation before adding to global memory.

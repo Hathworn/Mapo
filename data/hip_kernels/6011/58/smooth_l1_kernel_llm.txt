@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store intermediate values to reduce global memory access
+// Use texture memory for read-only data like 'truth' to potentially improve caching and access speed
+// Ensure data alignment for 'pred', 'truth', 'delta', and 'error' to optimize memory access patterns
+// Explore potential loop unrolling for improved performance in repetitive operations
+// Verify the use of HIP intrinsic functions for optimal execution on the GPU architecture
+```

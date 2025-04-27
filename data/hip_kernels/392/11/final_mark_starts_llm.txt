@@ -1,0 +1,6 @@
+```cpp
+// Ensure memory coalescing by aligning data structures to warp size boundaries
+// Consider prefetching data into shared memory to reduce global memory latency
+// Minimize memory access divergence by aligning accesses across warps
+// Use vectorized loads/stores if applicable to improve memory throughput
+```

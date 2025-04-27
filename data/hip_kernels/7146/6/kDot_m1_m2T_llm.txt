@@ -1,0 +1,9 @@
+```c
+// Consider increasing occupancy by adjusting block size.
+// Load m2 elements into shared memory to minimize global memory access.
+// Reduce bank conflicts in shared memory access by padding shared memory.
+// Synchronize threads within the block after loading m2 into shared memory.
+// Ensure shared memory size does not exceed hardware limitations.
+// Use __syncthreads() efficiently to avoid unnecessary synchronization.
+// Write output results back to global memory with coalesced access.
+```

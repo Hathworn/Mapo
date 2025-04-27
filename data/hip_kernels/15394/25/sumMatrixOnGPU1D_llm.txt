@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Load data in contiguous memory blocks for better coalescing
+// Synchronize threads after shared memory load to ensure data consistency
+// Use shared memory for computation to minimize redundant global accesses
+// Synchronize threads after computation to prepare for next data load

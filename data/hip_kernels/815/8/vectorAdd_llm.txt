@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by accessing sequential memory addresses
+// Use __restrict__ keyword to provide compiler hints for optimization
+// Consider using shared memory if there is reuse of data between threads
+// Prefetch data into registers to hide global memory latency
+// Tune block and grid dimensions for optimal occupancy and performance
+// Profile kernel to identify and eliminate memory access bottlenecks
+```

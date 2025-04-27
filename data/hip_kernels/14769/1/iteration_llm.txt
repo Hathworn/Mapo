@@ -1,0 +1,5 @@
+// Consider unrolling the loop for loading data into shared memory to reduce branch divergence
+// Use pointer arithmetic for accessing f_d to reduce index calculation overhead
+// Utilize more shared memory to minimize global memory accesses during stream step
+// Optimize memory access patterns to ensure coalesced global memory writes
+// Ensure the shared memory usage is within limits to avoid bank conflicts

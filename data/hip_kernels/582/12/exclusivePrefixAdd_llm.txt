@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses by aligning data structures
+// Ensure shared memory usage is optimal and fits within device limitations
+// Evaluate potential benefits from using more blocks rather than maximizing threads per block
+// Minimize bank conflicts in shared memory by offsetting the shared memory indices
+// Avoid unnecessary __syncthreads() calls to improve performance
+// Use warp-synchronous programming if applicable to avoid synchronization overhead
+```

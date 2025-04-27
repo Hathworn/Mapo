@@ -1,0 +1,8 @@
+```
+// Use shared memory to store probabilities for all threads in a block to improve memory access pattern.
+// Prefetch probabilities into registers to hide latency from global memory access.
+// Minimize divergence by ensuring all threads in a warp take the same execution path as much as possible.
+// Reduce the number of operations within the loop with efficient indexing.
+// Explore using warp-level primitives for reductions instead of atomic operations for better performance.
+// Tune the number of threads per block to ensure full occupancy without underutilizing shared resources.
+```

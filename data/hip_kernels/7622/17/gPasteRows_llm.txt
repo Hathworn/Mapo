@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access for row data
+// Minimize atomic operations by accumulating data in registers before writing to global memory
+// Consider coalesced memory access patterns to improve bandwidth utilization

@@ -1,0 +1,6 @@
+// Consider optimizing shared memory usage by adjusting its size dynamically based on block dimensions
+// Use __shared__ memory cautiously as each thread in a block accesses the same location
+// Evaluate if atomic operations are needed; try reducing their use for better performance
+// Ensure that memory accesses are coalesced for improved memory throughput
+// Avoid using atomicMax and atomicAdd inside critical performance loops if possible
+// Verify synchronization usage (__syncthreads()) to prevent unnecessary delays between threads

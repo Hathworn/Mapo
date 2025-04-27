@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Coalesce memory accesses by ensuring consecutive threads access contiguous memory locations
+// Ensure proper memory alignment to improve memory access efficiency
+// Minimize divergent branches within the kernel
+// Utilize warp-level primitives to further optimize memory accesses
+```

@@ -1,0 +1,9 @@
+```c
+// Use coalesced memory access to improve global memory throughput.
+// Minimize redundant accesses to global memory by using shared memory (already implemented).
+// Consider increasing the unrolling factor beyond 4 if it aligns with hardware constraints and workload.
+// Adjust the shared memory allocation dynamically to match the block dimensions, reducing unused memory.
+// For warp unrolling, ensure bank conflicts in shared memory are avoided for peak performance.
+// Replace "volatile" usage in warp unrolling with __builtin_assume_aligned if applicable for alignment optimization.
+// Evaluate occupancy to ensure enough threads per SM for efficient resource utilization.
+```

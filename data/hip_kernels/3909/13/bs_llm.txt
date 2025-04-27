@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently used constants like c1, c2, ..., c5 to reduce access latency.
+// Investigate possibility of loop unrolling if the access pattern for large arrays is predictable.
+// Ensure coalesced memory accesses for drand, dput, and dcall by organizing data properly.
+// Use warp shuffles if advantageous for exchanging data within warps to improve efficiency.

@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access by aligning data in memory
+// Consider using shared memory if data reuse is possible
+// Optimize block size and threads per block for better memory throughput
+// Use __restrict__ qualifier for pointers if no data aliasing occurs
+// Evaluate occupancy and adjust parameters to improve warp utilization
+```

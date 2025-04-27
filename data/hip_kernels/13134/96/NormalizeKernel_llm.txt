@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache normalization factors to reduce global memory accesses
+// Consider loop unrolling if possible to increase computational throughput
+// Utilize asynchronous copy operations if the kernel launch is not memory-bound
+// Ensure coalesced memory access for both reading normalization_factor and writing image
+// Maximize occupancy by choosing optimal block size considering register usage
+```

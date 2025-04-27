@@ -1,0 +1,5 @@
+// Consider coalesced memory accesses to improve global memory performance.
+// Use shared memory to store frequently accessed data to reduce global memory bandwidth.
+// Align data accesses to the warp size to avoid bank conflicts and improve memory throughput.
+// Reduce the number of mathematical operations in the while loop for faster execution.
+// Consider loop unrolling to increase instruction-level parallelism within the kernel.

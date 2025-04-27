@@ -1,0 +1,9 @@
+```cpp
+// Pre-calculate indices to minimize repeated calculations inside loops
+// Use pitched memory wisely to align data for better memory access
+// Load data once into registers to reduce global memory access times
+// Use shared memory if multiple threads access the same data repeatedly
+// Store results back to global memory only after processing is complete
+// Consider using shared memory to store pre-calculated values, like txx2 and tyy2
+// Minimize recalculating invariant values during kernel execution
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory accesses.
+// Align shared memory to avoid bank conflicts (+1 added to TILE_DIM).
+// Ensure coalesced global memory access while loading and storing data.
+// Experiment with different TILE_DIM and BLOCK_ROWS values for better performance.
+// Use __syncthreads() to synchronize threads after loading into shared memory.
+```

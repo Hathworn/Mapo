@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory to improve memory access patterns
+// Ensure coalesced global memory access when loading data into shared memory
+// Unroll loops to reduce overhead and increase instruction-level parallelism
+// Use __syncthreads() to synchronize threads before accessing shared memory
+// Optimize for multiple blocks per GPU using the tile size
+// Ensure that data is accessed in a row-major order for contiguous memory access
+// Consider increasing block size to fully utilize computational resources
+// Remove bank conflicts in shared memory by adjusting indexing if necessary
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory accesses for ia, ib, and ic
+// Use shared memory if frequent reuse of data is possible
+// Ensure each thread accesses contiguous memory locations where feasible
+// Evaluate if loop unrolling could offer performance improvement
+// Utilize warp-level primitives for potential reduction opportunities
+// Minimize divergence by ensuring conditional branches are minimal
+```

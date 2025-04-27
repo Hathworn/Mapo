@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access 
+// Prefetch data into registers for frequently used variables 
+// Ensure memory coalescing by accessing consecutive elements 
+// Minimize bank conflicts in shared memory usage 
+// Use atomic operations sparingly to avoid serialization

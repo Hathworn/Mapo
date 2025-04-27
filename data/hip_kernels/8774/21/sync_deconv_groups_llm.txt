@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ qualifiers for pointers to improve memory access
+// Ensure proper memory coalescing for global reads and writes
+// Profile register usage to ensure optimal occupancy
+// Try to minimize shared memory bank conflicts
+// Use warp-level primitives if possible to reduce synchronization overhead
+// Evaluate the use of asynchronous copy for shared memory preloading
+// Align data structures to improve memory access efficiency
+```

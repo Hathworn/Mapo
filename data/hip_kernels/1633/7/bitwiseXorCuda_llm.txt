@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory accesses to improve memory throughput.
+// Ensure that all threads within a warp access consecutive memory locations.
+// Consider using shared memory for temporary storage to reduce global memory accesses.
+// Align data structures to reduce memory transaction costs.
+// Optimize grid and block dimensions for maximum occupancy and efficiency.
+```

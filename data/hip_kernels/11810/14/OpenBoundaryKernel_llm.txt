@@ -1,0 +1,4 @@
+// Consider using shared memory to store values that are reused in multiple threads for faster access.
+// Optimize memory access patterns by ensuring coalesced memory accesses where possible.
+// Minimize conditionals inside the kernel to reduce divergence and improve performance.
+// Reduce redundant calculations by storing constant values such as SigmaMed in register memory.

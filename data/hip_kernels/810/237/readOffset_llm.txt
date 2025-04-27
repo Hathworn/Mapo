@@ -1,0 +1,8 @@
+```
+// Ensure shared memory size matches block size for efficient use
+// Use __syncthreads() to prevent race conditions and ensure safe access
+// Align data accesses to improve cache performance
+// Consider unrolling loops if applicable for further performance gain
+// Re-use loaded shared memory data across multiple operations if possible
+// Evaluate shared memory bank conflicts and restructure if needed
+```

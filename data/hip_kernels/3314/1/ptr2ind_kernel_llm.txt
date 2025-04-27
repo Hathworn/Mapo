@@ -1,0 +1,4 @@
+// Use coalesced memory access patterns for ptr_data and out_data.
+// Minimize conditional statements by ensuring index calculations are streamlined.
+// Prefer using shared memory if possible for repeated data access within a block.
+// Consider loop unrolling if accessing contiguous memory regions.

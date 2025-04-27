@@ -1,0 +1,9 @@
+```
+// Consider using memory coalescing to optimize global memory access pattern
+// Explore using vector types (like float4) to align memory accesses
+// Investigate the use of texture memory for readonly data to improve cache performance
+// Implement loop unrolling to minimize loop overhead in the innermost loop
+// Utilize shared memory effectively to reduce global memory access where possible
+// Use warp shuffle operations to minimize the need for shared memory in reduction
+// Consider using asynchronous copy to shared memory to overlap memory transfer with computation
+```

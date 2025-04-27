@@ -1,0 +1,9 @@
+```cpp
+// Consider balancing shared memory usage with occupancy benefits.
+// Use __syncthreads() only when necessary to avoid thread divergence.
+// Ensure memory coalescing by examining the memory access pattern to `a[]`.
+// Consider preloading data to avoid bank conflicts in shared memory.
+// Evaluate the benefit of loading `b[]` into shared memory depending on usage.
+// Avoid unnecessary barriers to improve performance.
+// Reassess warp divergence, especially in boundary conditions.
+```

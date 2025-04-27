@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Optimize thread usage by ensuring coalesced access to global memory for x, delta, and mean.
+// Unroll the inner loops to improve instruction throughput and reduce loop overhead.
+// Evaluate if loop interchange could benefit cache locality for delta[index] and x[index].
+// Minimize divergence by aligning thread execution paths where possible.
+// Check if using float2 or float4 data types could enhance memory throughput.
+```

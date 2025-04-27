@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache normalization_factor into lower latency memory.
+// Prefetch normalization_factor[pos] to registers to reduce memory latency.
+// Consider using loop unrolling for better performance in the calculation.
+// Minimize divergent branching by avoiding unnecessary conditionals.
+// Ensure coalesced memory access for the image array to improve throughput.
+```

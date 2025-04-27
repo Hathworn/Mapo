@@ -1,0 +1,6 @@
+```c
+// Consider coalesced memory access to d_c for improved memory bandwidth.
+// Avoid unnecessary barriers within a warp for better performance.
+// Use shared memory to cache data if multiple reads are necessary.
+// Minimize use of atomic operations if a high number of threads will collide.
+```

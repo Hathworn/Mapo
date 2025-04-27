@@ -1,0 +1,6 @@
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Coalesce memory accesses by ensuring data is accessed in contiguous memory blocks
+// Optimize thread block size for better occupancy and parallelism
+// Consider using vectorized operations for improved computational throughput
+// Minimize divergent branches for efficient warp execution
+// Balance load among threads for preventing idle threads

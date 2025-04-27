@@ -1,0 +1,10 @@
+```
+// Use shared memory efficiently by ensuring correct allocation size.
+// Ensure coalesced memory access pattern when reading inputs_d.
+// Reorder weight accesses to achieve better memory coalescing.
+// Consider loop unrolling to reduce loop overhead for fixed sizes.
+// Check for bank conflicts in shared memory accesses.
+// Minimize usage of atomic operations due to performance cost.
+// Opt for using warp-level primitives instead of __syncthreads() where possible.
+// Evaluate using __expf() for faster exponentiation in the kernel.
+```

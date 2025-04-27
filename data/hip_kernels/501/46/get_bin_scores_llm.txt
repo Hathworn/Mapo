@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword to hint compiler for memory access optimization
+// Ensure memory coalescing by aligning access patterns for x and bins arrays
+// Minimize divergent branches in if-else logic to enhance warp execution efficiency
+// Utilize shared memory for frequently accessed data like knots to reduce global memory access
+// Optimize loop bounds to avoid unnecessary calculations and reduce register pressure
+// Consider loop unrolling in nested loops for better instruction throughput
+```

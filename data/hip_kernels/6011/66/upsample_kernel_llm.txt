@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access patterns to increase memory throughput
+// Use shared memory to store frequently accessed data within threads
+// Reduce bank conflicts in shared memory access where possible
+// Ensure data is accessed in a pattern that maximizes L2 cache hits
+// Favor using warp-synchronous programming for better efficiency
+// Minimize the use of atomic operations to avoid serialization and contention
+```

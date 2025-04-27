@@ -1,0 +1,9 @@
+```
+// Increase TILE_SIZE if shared memory allows to improve data locality
+// Ensure 2D coalesced memory accesses by using shared memory padding
+// Initialize shared memory variables in a single statement to improve performance
+// Use ceil to accurately determine the number of tiles needed
+// Access global memory with stride pattern to ensure coalesced accesses
+// Consider additional loop unrolling based on TILE_SIZE for further optimization
+// Verify array bounds before accessing global memory to prevent out-of-bound errors
+```

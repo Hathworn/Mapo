@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store temporary histogram calculations to reduce global memory access.
+// Explore using atomic operations to handle concurrent updates to the histogram when multiple threads work on the same bucket.
+// Implement loop unrolling in the main while loop by processing multiple buckets per iteration to reduce loop overhead.
+// Optimize memory access patterns to ensure coalesced memory access for all threads when accessing InputHists and hist arrays.
+```

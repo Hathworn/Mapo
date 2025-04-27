@@ -1,0 +1,6 @@
+```
+// Use shared memory for mean and variance to reduce global memory access latency
+// Ensure boundary check condition early to avoid unnecessary computation
+// Combine variance_delta init and accumulation to minimize register usage
+// Optimize variance calculation using shared memory to avoid recomputation
+```

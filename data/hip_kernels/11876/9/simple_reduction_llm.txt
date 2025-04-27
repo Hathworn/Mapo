@@ -1,0 +1,8 @@
+```
+// Optimize memory access to reduce bank conflicts
+// Consider using warp shuffle functions for reduction to improve performance
+// Ensure shared memory utilization is appropriate for the number of threads per block
+// Align data structures if possible to improve memory coalescing
+// Evaluate if loop unrolling can be applied for the stride calculation
+// Review atomic operations for potential bottleneck on large data sets
+```

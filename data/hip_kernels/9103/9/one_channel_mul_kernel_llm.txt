@@ -1,0 +1,7 @@
+```c
+// Consider unrolling loops within the kernel to increase instruction-level parallelism.
+// Increase block size if register pressure allows, to maximize occupancy.
+// Align data access to 128-byte boundaries to make use of coalesced memory access.
+// Consider padding shared memory to avoid bank conflicts.
+// Ensure that data_r size does not exceed shared memory capacity per block.
+```

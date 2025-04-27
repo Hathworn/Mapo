@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for gradOutput and indices to reduce global memory accesses
+// Optimize memory coalescing for gradInput_data and gradOutput_data access
+// Align memory access for gradOutput_data using warp operations to increase throughput
+// Check if loop unrolling can be improved by aligning with warp size
+```

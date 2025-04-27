@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to load gradOutput_data into local memory first
+// Implement register blocking to accumulate results for multiple iterations at once
+// Utilize constant memory for repeated data access patterns to reduce memory traffic
+// Try to use memory coalescing techniques to improve access patterns
+// Apply warp-level optimizations such as warp divergence reduction
+// Investigate possible use of asynchronous copies for latency hiding
+// Ensure that memory access patterns are aligned for cache efficiency
+```

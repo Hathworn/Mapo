@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for the dZ array to enhance global memory efficiency.
+// Consider allocating shared memory to hold a tile of the dZ array to reduce redundant global memory access.
+// Ensure the sharedW array is used optimally by minimizing divergent threads within the same warp.
+// Evaluate if the __syncthreads() calls can be reduced or repositioned to minimize synchronization overhead.
+// Explore the use of vectorized data types (e.g., float4) for improved memory transaction performance.
+```

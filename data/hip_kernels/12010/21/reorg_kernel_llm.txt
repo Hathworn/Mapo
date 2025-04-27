@@ -1,0 +1,5 @@
+// Avoid uncoalesced memory accesses by aligning memory access patterns
+// Reduce register pressure by minimizing unnecessary variable usage
+// Implement shared memory to store commonly accessed values for threads in a block, if applicable
+// Consider loop unrolling for small loops to reduce overhead
+// Optimize thread block size and grid dimensions for better occupancy and performance

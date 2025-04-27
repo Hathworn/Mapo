@@ -1,0 +1,5 @@
+// Consider using shared memory to store values temporarily to avoid repeated global memory access  
+// Ensure memory access patterns are coalesced for better performance  
+// Utilize warp level operations to minimize divergence and optimize memory transactions  
+// Evaluate if loop unrolling provides significant benefits, as hardware optimizations may cover some of these cases  
+// Investigate whether textures or read-only data caches may provide faster access for the specific data patterns

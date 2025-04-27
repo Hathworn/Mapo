@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency and improve throughput.
+// Consider increasing shared memory size if blockDim.x is larger than current allocation.
+// Ensure __syncthreads() is used properly to avoid race conditions during shared memory access.
+// Investigate optimal block size to balance between occupancy and shared memory usage.

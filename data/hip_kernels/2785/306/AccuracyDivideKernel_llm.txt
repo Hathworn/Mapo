@@ -1,0 +1,5 @@
+```
+// Optimize memory access by ensuring data is coalesced when loading from global memory
+// Use shared memory if multiple threads access the same data to reduce global memory traffic
+// Consider the use of warp-level primitives to avoid atomic operations when possible
+```

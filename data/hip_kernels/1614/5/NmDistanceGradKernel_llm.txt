@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache xyz1 and xyz2 to improve memory access speed
+// Reduce atomic operations by accumulating results in registers before atomicAdd
+// Consider loop unrolling if n is a compile-time constant to reduce loop overhead
+// Ensure coalesced memory access for all device memory reads and writes
+// Optimize index calculations to minimize arithmetic operations in each iteration
+```

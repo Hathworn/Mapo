@@ -1,0 +1,5 @@
+// Use shared memory to load data in tile sizes to reduce global memory accesses.
+// Ensure synchronization between threads when loading and computing data using __syncthreads().
+// Optimize block and thread dimensions to maximize data parallelism and memory coalescing.
+// Avoid bank conflicts when accessing shared memory by adjusting array indices if necessary.
+// Consider loop unrolling to improve performance by reducing branch overhead.

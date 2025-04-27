@@ -1,0 +1,6 @@
+```
+// Ensure the offset does not cause misalignment that affects coalesced memory accesses
+// Consider pre-loading offsets in shared memory for improved access patterns
+// Minimize divergent branches by ensuring warp-wide boundary checks
+// Use memory at aligned addresses for optimal coalescing and performance
+```

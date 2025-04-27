@@ -1,0 +1,3 @@
+// Use __expf instead of expf for better performance on GPU
+// Ensure coalesced memory accesses by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory to cache data that is reused within the kernel

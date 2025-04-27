@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory if repeated access to a subset of global memory is needed
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous memory locations
+// Use as few registers as possible to allow more threads to run concurrently
+// Consider loop unrolling if within a loop for additional performance
+// Minimize branching within kernel to reduce divergence
+// Maximize arithmetic intensity by increasing the number of computations relative to data transfer
+```

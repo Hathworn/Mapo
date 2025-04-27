@@ -1,0 +1,4 @@
+// Load dc[i] into a register for reuse to reduce global memory reads
+// Load s[i] into a register for reuse to reduce global memory reads
+// Use conditional checks to avoid unnecessary writes when da and db are null
+// Minimize global memory access by reusing loaded values in calculations

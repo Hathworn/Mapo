@@ -1,0 +1,15 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void square_matrix_kernel(int32_t num_rows, int32_t num_cols, const float* feats, int32_t ldf, float* feats_sq, int32_t lds) {
+    // Calculate global row and column indices using block and thread indices
+    int i = blockIdx.y * blockDim.y + threadIdx.y;
+    int j = blockIdx.x * blockDim.x + threadIdx.x;
+    
+    // Ensure indices are within bounds
+    if (i < num_rows && j < num_cols) {
+        // Compute square of the element
+        float f = feats[i * ldf + j];
+        feats_sq[i * lds + j] = f * f;
+    }
+}

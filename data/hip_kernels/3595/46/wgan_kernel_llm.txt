@@ -1,0 +1,5 @@
+```cpp
+// Optimize memory access by ensuring pred, truth, delta, and error are accessed in coalesced manner.
+// Consider using shared memory if multiple threads are working on overlapping data to minimize global memory access.
+// Ensure n is a multiple of blockDim.x for optimal occupancy and workload distribution.
+```

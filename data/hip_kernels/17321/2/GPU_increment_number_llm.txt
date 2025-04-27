@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for buffer if multiple accesses are required
+// Ensure memory access patterns are coalesced for optimal performance
+// Check for bank conflicts when accessing shared memory
+// Utilize __syncthreads() if threads need to be synchronized after modifications
+```

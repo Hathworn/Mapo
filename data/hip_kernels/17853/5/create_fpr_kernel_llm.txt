@@ -1,0 +1,6 @@
+// Precompute constants outside of loop to reduce redundant computation
+// Use stride-based loop for better parallelism and cache efficiency
+// Consider using shared memory for variables accessed frequently by threads
+// Optimize for coalesced memory access in global memory operations
+// Reduce memory bank conflicts in shared memory access if applied
+// Minimize use of divergent branches within warp threads

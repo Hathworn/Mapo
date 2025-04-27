@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by organizing threads to read contiguous data
+// Use shared memory to load vec[i] when possible to reduce global memory access
+// Consider using warp-level primitives for efficient data handling
+// Optimize block and grid dimensions for optimal occupancy and throughput
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for improved memory bandwidth utilization
+// Minimize shared memory usage where possible to save resources
+// Consider using warp-level primitives for parallel reductions within a warp
+// Explore potential for using __ldg()/__stg() for read-only data for better cache utilization
+// Profile memory access patterns to identify any potential bottlenecks or uncoalesced access
+// Ensure the inner loop of selection sort is optimized for memory access patterns
+```

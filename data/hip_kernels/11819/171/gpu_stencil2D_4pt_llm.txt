@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns for global memory loads and stores.
+// Minimize bank conflicts in shared memory by ensuring a stride that avoids overlapping bank indices.
+// Consider loop unrolling for the innermost loops to help with instruction-level parallelism.
+// Avoid unnecessary shared memory synchronization, optimize the usage of __syncthreads().
+```

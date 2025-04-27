@@ -1,0 +1,3 @@
+// Use constant memory for w, h values to reduce register pressure.
+// Precompute (h*w) to reduce repeated calculations inside the loop.
+// Use shared memory if possible to avoid repeated global memory accesses.

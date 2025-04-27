@@ -1,0 +1,7 @@
+```
+// Consider using memory coalescing to improve global memory access efficiency.
+// Optimize shared memory use to prevent bank conflicts.
+// Use loop unrolling to reduce the overhead of loop control.
+// Ensure that the number of iterations (size/BLOCK) is a multiple of BLOCK for full utilization.
+// Analyze warps to ensure there are no divergent branches, especially inside loops.
+```

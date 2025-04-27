@@ -1,0 +1,30 @@
+digraph "CFG for '_Z35cumulativeOffspringToAncestorKernelPKiPii' function" {
+	label="CFG for '_Z35cumulativeOffspringToAncestorKernelPKiPii' function";
+
+	Node0x5feed60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp sge i32 %12, %2\l  %14 = icmp slt i32 %12, 0\l  %15 = or i1 %13, %14\l  br i1 %15, label %86, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x5feed60:s0 -> Node0x5ff0dc0;
+	Node0x5feed60:s1 -> Node0x5ff0e50;
+	Node0x5ff0e50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%16:\l16:                                               \l  %17 = icmp eq i32 %12, 0\l  br i1 %17, label %23, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x5ff0e50:s0 -> Node0x5ff10a0;
+	Node0x5ff0e50:s1 -> Node0x5ff10f0;
+	Node0x5ff10f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%18:\l18:                                               \l  %19 = add nsw i32 %12, -1\l  %20 = zext i32 %19 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %23\l}"];
+	Node0x5ff10f0 -> Node0x5ff10a0;
+	Node0x5ff10a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%23:\l23:                                               \l  %24 = phi i32 [ %22, %18 ], [ 0, %16 ]\l  %25 = zext i32 %12 to i64\l  %26 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %25\l  %27 = load i32, i32 addrspace(1)* %26, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %28 = sub nsw i32 %27, %24\l  %29 = icmp sgt i32 %28, 0\l  br i1 %29, label %30, label %86\l|{<s0>T|<s1>F}}"];
+	Node0x5ff10a0:s0 -> Node0x5ff2600;
+	Node0x5ff10a0:s1 -> Node0x5ff0dc0;
+	Node0x5ff2600 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%30:\l30:                                               \l  %31 = xor i32 %24, -1\l  %32 = add i32 %27, %31\l  %33 = and i32 %28, 7\l  %34 = icmp ult i32 %32, 7\l  br i1 %34, label %74, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5ff2600:s0 -> Node0x5ff1020;
+	Node0x5ff2600:s1 -> Node0x5ff2b00;
+	Node0x5ff2b00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%35:\l35:                                               \l  %36 = and i32 %28, -8\l  br label %37\l}"];
+	Node0x5ff2b00 -> Node0x5ff2cd0;
+	Node0x5ff2cd0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%37:\l37:                                               \l  %38 = phi i32 [ 0, %35 ], [ %71, %37 ]\l  %39 = phi i32 [ 0, %35 ], [ %72, %37 ]\l  %40 = add nsw i32 %38, %24\l  %41 = sext i32 %40 to i64\l  %42 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %41\l  store i32 %12, i32 addrspace(1)* %42, align 4, !tbaa !7\l  %43 = or i32 %38, 1\l  %44 = add nsw i32 %43, %24\l  %45 = sext i32 %44 to i64\l  %46 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %45\l  store i32 %12, i32 addrspace(1)* %46, align 4, !tbaa !7\l  %47 = or i32 %38, 2\l  %48 = add nsw i32 %47, %24\l  %49 = sext i32 %48 to i64\l  %50 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %49\l  store i32 %12, i32 addrspace(1)* %50, align 4, !tbaa !7\l  %51 = or i32 %38, 3\l  %52 = add nsw i32 %51, %24\l  %53 = sext i32 %52 to i64\l  %54 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %53\l  store i32 %12, i32 addrspace(1)* %54, align 4, !tbaa !7\l  %55 = or i32 %38, 4\l  %56 = add nsw i32 %55, %24\l  %57 = sext i32 %56 to i64\l  %58 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %57\l  store i32 %12, i32 addrspace(1)* %58, align 4, !tbaa !7\l  %59 = or i32 %38, 5\l  %60 = add nsw i32 %59, %24\l  %61 = sext i32 %60 to i64\l  %62 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %61\l  store i32 %12, i32 addrspace(1)* %62, align 4, !tbaa !7\l  %63 = or i32 %38, 6\l  %64 = add nsw i32 %63, %24\l  %65 = sext i32 %64 to i64\l  %66 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %65\l  store i32 %12, i32 addrspace(1)* %66, align 4, !tbaa !7\l  %67 = or i32 %38, 7\l  %68 = add nsw i32 %67, %24\l  %69 = sext i32 %68 to i64\l  %70 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %69\l  store i32 %12, i32 addrspace(1)* %70, align 4, !tbaa !7\l  %71 = add nuw nsw i32 %38, 8\l  %72 = add i32 %39, 8\l  %73 = icmp eq i32 %72, %36\l  br i1 %73, label %74, label %37, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5ff2cd0:s0 -> Node0x5ff1020;
+	Node0x5ff2cd0:s1 -> Node0x5ff2cd0;
+	Node0x5ff1020 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%74:\l74:                                               \l  %75 = phi i32 [ 0, %30 ], [ %71, %37 ]\l  %76 = icmp eq i32 %33, 0\l  br i1 %76, label %86, label %77\l|{<s0>T|<s1>F}}"];
+	Node0x5ff1020:s0 -> Node0x5ff0dc0;
+	Node0x5ff1020:s1 -> Node0x5ff4cb0;
+	Node0x5ff4cb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%77:\l77:                                               \l  %78 = phi i32 [ %83, %77 ], [ %75, %74 ]\l  %79 = phi i32 [ %84, %77 ], [ 0, %74 ]\l  %80 = add nsw i32 %78, %24\l  %81 = sext i32 %80 to i64\l  %82 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %81\l  store i32 %12, i32 addrspace(1)* %82, align 4, !tbaa !7\l  %83 = add nuw nsw i32 %78, 1\l  %84 = add i32 %79, 1\l  %85 = icmp eq i32 %84, %33\l  br i1 %85, label %86, label %77, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x5ff4cb0:s0 -> Node0x5ff0dc0;
+	Node0x5ff4cb0:s1 -> Node0x5ff4cb0;
+	Node0x5ff0dc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%86:\l86:                                               \l  ret void\l}"];
+}

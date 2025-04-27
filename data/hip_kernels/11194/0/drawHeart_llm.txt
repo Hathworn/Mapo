@@ -1,0 +1,4 @@
+// Consider using shared memory to cache sinf and cosf values within each block.
+// Compute theta only once and reuse the value in both xx and yy calculations.
+// Ensure coalesced memory access by aligning CIRCLE_SEGMENTS with the warp size.
+// Try to minimize divergent branches by restructuring the code or loop order.

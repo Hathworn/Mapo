@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for gradOutput_data to reduce redundant global memory accesses
+// Use coalesced memory access patterns to improve global memory bandwidth utilization
+// Explore more loop unrolling or warp-level primitives to enhance parallel execution efficiency
+// Align memory access to avoid bank conflicts and improve throughput
+```

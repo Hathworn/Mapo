@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced global memory access by keeping the thread index calculation simple.
+// Use shared memory if possible to store intermediate values and reduce global memory traffic.
+// Minimize divergence by ensuring threads within a warp follow the same execution path.
+// Consider using texture or constant memory for data that is read-only to optimize cache usage.
+// Align memory allocations to 128 bytes for better memory transaction efficiency on AMD GPUs.
+// If possible, use warp shuffle functions for data sharing among threads in the same warp.
+```

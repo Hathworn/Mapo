@@ -1,0 +1,4 @@
+// Use 'stride' instead of 'numThreads' to ensure proper parallelization 
+// Calculate row once per iteration to minimize redundant calculations 
+// Consider coalesced memory access for better memory read efficiency 
+// Potentially use shared memory for frequently accessed data like 'vec[row]'

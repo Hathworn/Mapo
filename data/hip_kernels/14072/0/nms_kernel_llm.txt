@@ -1,0 +1,3 @@
+// Optimize memory access by using shared memory for block_boxes to reduce global memory access
+// Ensure memory access is coalesced when loading data into shared memory
+// Unroll the loop for improved memory access patterns within the warp

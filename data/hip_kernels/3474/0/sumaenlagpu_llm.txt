@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache frequently accessed data if applicable
+// Use __restrict__ to indicate that pointer arguments do not alias
+// Opt for coalesced memory access patterns to improve memory throughput
+// Avoid bank conflicts within shared memory by ensuring appropriate data alignment
+// Evaluate effects of varying block and grid sizes to find optimal configuration
+// Profile the kernel using profilers to identify other potential bottlenecks
+```

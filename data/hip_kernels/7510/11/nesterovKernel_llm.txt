@@ -1,0 +1,10 @@
+```
+// Consider coalesced accesses for 'parameterIndices' and 'counts' arrays.
+// Use shared memory to store frequently accessed data such as 'history'.
+// Ensure memory accesses to 'parameters' are coalesced for better performance.
+// Improve memory access pattern for 'gradient' to maximize coalescing.
+// Explore using vectorized loads/stores for 'parameters' and 'gradient'.
+// Prefetch data to shared memory where applicable to hide latency.
+// Use 'const __restrict__' pointers to help the compiler with potential optimizations.
+// Align data structures to cache line size to reduce cache misses.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to store biases to reduce global memory access latency
+// Ensure memory alignment for output and biases to improve access efficiency
+// Optimize block and grid size for maximum occupancy and minimal warp divergence
+// Consider using vectorized memory access patterns if data allows
+```

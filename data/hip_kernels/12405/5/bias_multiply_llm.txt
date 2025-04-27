@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by organizing input, bias, and ret arrays in a linear fashion.
+// Minimize bank conflicts in accessing the bias array by ensuring that biasIndex provides aligned access.
+// Consider using shared memory to cache frequently accessed bias values to reduce global memory reads.
+// Evaluate if using __restrict__ qualifiers can further optimize memory access by indicating no aliasing.
+```

@@ -1,0 +1,7 @@
+```c
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Use shared memory to reduce global memory accesses if data reuse exists among threads.
+// Align memory accesses to the size of a warp to prevent memory transaction overhead.
+// Optimize the use of registers by minimizing variable scopes and using them efficiently.
+// Consider loop unrolling techniques to minimize loop control overhead if beneficial.
+```

@@ -1,0 +1,12 @@
+```c
+// Consider implementing shared memory usage to reduce global memory access.
+// Utilize warp-level programming to leverage full warp execution efficiency.
+// Evaluate memory access patterns to ensure coalesced memory access.
+// Optimize register usage to minimize usage and spills.
+// Ensure kernel launch configuration is optimal for the target GPU architecture.
+// Analyze occupancy to determine if there are sufficient active warps per multiprocessor.
+// Implement loop unrolling if applicable to reduce loop overhead.
+// Investigate using vectorized loads/stores to improve memory efficiency.
+// Check for opportunities to minimize synchronization overhead between threads.
+// Profile performance to identify additional bottlenecks and optimization opportunities.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access time.
+// Ensure coalesced memory accesses to improve bandwidth utilization.
+// Adjust grid and block dimensions for optimal occupancy and performance.
+// Minimize divergent warps caused by conditional statements.
+// Prefetch row_id to a register before the loop to decrease redundant global memory accesses.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Unroll the loop to increase instruction-level parallelism
+// Use __syncthreads() to synchronize threads after writing to shared memory
+// Use volatile keyword to prevent compiler optimization in warp unrolling
+// Minimize global memory transactions by coalescing accesses
+// Only thread 0 writes the result back to global memory
+```

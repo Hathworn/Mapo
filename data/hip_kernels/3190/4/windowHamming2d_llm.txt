@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for window function values to reduce global memory access
+// Ensure coalesced memory access patterns for improved performance
+// Minimize divergence in control flow for better thread utilization
+// Optimize thread block size for GPU architecture to achieve maximum occupancy
+// Pre-calculate constants outside the kernel if possible to reduce register usage
+```

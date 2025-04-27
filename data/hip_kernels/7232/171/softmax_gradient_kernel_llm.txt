@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses by storing intermediate results
+// Prefer warp-level operations for reductions to minimize synchronization overhead
+// Align memory access patterns to improve global memory throughput
+// Utilize thread unrolling in loops for enhanced occupancy and performance

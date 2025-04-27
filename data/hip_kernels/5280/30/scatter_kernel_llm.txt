@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Coalesced access to pfe_output can improve memory throughput.
+// Ensure that x_coors and y_coors accesses are coalesced.
+// Optimize register usage to allow for more threads per block.
+// Experiment with different block size configurations for optimal performance.
+// Minimize bank conflicts in shared memory usage, if added.
+```

@@ -1,0 +1,9 @@
+```
+// Unroll the first loop for better performance
+// Use __restrict__ pointers to help the compiler optimize memory access
+// Consider using float2 or float4 for coalesced memory access if applicable
+// Ensure memory is accessed in a coalesced pattern within the loops
+// Replace shared memory usage with warp shuffle instructions for reduction
+// Use atomic operations judiciously as they can be costly; explore alternatives if feasible
+// Align data structures to avoid bank conflicts in shared memory
+```

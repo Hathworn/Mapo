@@ -1,0 +1,5 @@
+// Ensure global memory access is coalesced by aligning data appropriately
+// Consider using shared memory to cache frequently accessed data
+// Use __restrict__ qualifier to potentially improve compiler optimizations
+// Evaluate the launch configuration to maximize occupancy and resource utilization
+// Balance grid and block sizes to minimize warp divergence and memory throttling

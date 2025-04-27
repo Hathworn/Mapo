@@ -1,0 +1,4 @@
+// Consider coalescing memory access for `mask` and `to_carry` for better read/write efficiency.
+// Optimize `prefixed_mask` memory access pattern to reduce global memory latency.
+// Evaluate using shared memory for `mask` in cases of repeated access to minimize global memory bandwidth usage.
+// Explore loop unrolling strategies for the conditional check to improve warp execution efficiency.

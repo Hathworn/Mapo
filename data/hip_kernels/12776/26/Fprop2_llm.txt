@@ -1,0 +1,7 @@
+```
+// Consider tiling the computation for better cache usage
+// Utilize coalesced memory accesses to improve memory bandwidth
+// Reduce the use of atomic operations by leveraging warp reduction strategies
+// Align shared memory access to avoid bank conflicts
+// Avoids direct global memory writes by accumulating results in shared memory
+```

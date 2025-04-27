@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns for loading global memory
+// Minimize the number of __syncthreads calls for performance
+// Consider loading multiple elements per thread for better bandwidth utilization
+// Use warp shuffle operations to reduce synchronization overhead in reduction
+// Optimize shared memory access to reduce bank conflicts
+// Use loop unrolling to minimize loop overhead in the reduction phase
+```

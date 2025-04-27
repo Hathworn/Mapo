@@ -1,0 +1,8 @@
+```
+// Consider memory coalescing to improve memory access patterns.
+// Use __restrict__ pointers if possible to inform the compiler that pointers do not alias.
+// Investigate if using shared memory or caches can improve access speed.
+// Check if loop unrolling can expedite repeated operations for higher throughput.
+// Profile for warp divergence and optimize conditional branching inside the kernel.
+// Align data structures to improve load/store efficiency and reduce misaligned accesses.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to optimize access to X and Y arrays.
+// Ensure memory access patterns are coalesced to improve performance.
+// Strided loop helps avoid thread underutilization in case of fewer elements.
+// If NX and NY are large, consider using multiple kernels or splitting computation to manage resources effectively.
+// Pay attention to bank conflicts when using shared memory in future optimizations.
+```

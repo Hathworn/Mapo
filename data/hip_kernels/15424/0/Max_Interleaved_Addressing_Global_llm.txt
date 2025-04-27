@@ -1,0 +1,7 @@
+```
+// Use shared memory for faster access and less global memory traffic
+// Ensure all threads in the block have completed writing to shared memory
+// Use a stride loop to efficiently reduce data within a block
+// Boundary check to prevent reading out-of-bounds memory
+// Use thread 0 to write the final block result back to global memory
+```

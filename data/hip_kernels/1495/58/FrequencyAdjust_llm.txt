@@ -1,0 +1,6 @@
+```c
+// Optimize global memory access by ensuring coalesced reads and writes to KSpaceData.
+// Consider using shared memory for frequent data access in the calculation of m and c.
+// Avoid redundant calculations by precomputing PXScale differences outside the global function.
+// Unroll the loop where idZ is calculated to enhance performance.
+```

@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access
+// Ensure memory coalescing by accessing contiguous memory locations
+// Minimize thread divergence within the reduction loop
+// Use __syncthreads() for synchronization after each reduction step
+// Perform reduction in shared memory to reduce global memory bandwidth usage
+// Consider occupancy and thread block size for optimal performance

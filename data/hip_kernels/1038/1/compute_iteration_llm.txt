@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning buffer accesses when possible
+// Use shared memory to reduce global memory access if possible
+// Avoid bank conflicts in shared memory by ensuring proper alignment
+// Minimize divergent branches within warp executions
+// Consider loop unrolling if applicable to utilize instruction-level parallelism
+```

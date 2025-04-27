@@ -1,0 +1,10 @@
+digraph "CFG for '_Z17scale_bias_kernelPfS_iiii' function" {
+	label="CFG for '_Z17scale_bias_kernelPfS_iiii' function";
+
+	Node0x529b1c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = icmp slt i32 %15, %5\l  br i1 %16, label %17, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x529b1c0:s0 -> Node0x529b5d0;
+	Node0x529b1c0:s1 -> Node0x529d1a0;
+	Node0x529b5d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = sdiv i32 %15, %4\l  %19 = srem i32 %18, %3\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %1, i64 %20\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %23 = sext i32 %15 to i64\l  %24 = getelementptr inbounds float, float addrspace(1)* %0, i64 %23\l  %25 = load float, float addrspace(1)* %24, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %26 = fmul contract float %22, %25\l  store float %26, float addrspace(1)* %24, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x529b5d0 -> Node0x529d1a0;
+	Node0x529d1a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

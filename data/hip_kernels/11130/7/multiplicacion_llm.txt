@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store submatrices of 'a' and 'b' for faster access.
+// Optimize memory coalescing by accessing 'b' with coalesced memory pattern.
+// Ensure all loads and stores are coalesced to reduce memory transaction overhead.
+// Avoid bank conflicts in shared memory by padding shared memory arrays if necessary.
+// Pre-load data into registers to reduce repeated global memory accesses.
+```

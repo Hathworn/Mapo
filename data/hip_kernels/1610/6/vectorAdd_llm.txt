@@ -1,0 +1,3 @@
+// Precompute global index outside any loops or conditional blocks to minimize calculations
+// Ensure continuous memory access for better coalescing by using simple array indexing
+// Avoid conditional checks inside the main computation to reduce branching

@@ -1,0 +1,6 @@
+```
+// Suggestion: Ensure the thread block size is a multiple of 64 for optimal memory access.
+// Suggestion: Use __restrict__ qualifier for d_dst pointer if possible to allow compiler optimizations.
+// Suggestion: Consider using shared memory if there are any reusable computations across threads.
+// Suggestion: Ensure coalesced memory accesses when writing to d_dst to maximize bandwidth usage.
+```

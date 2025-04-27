@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store repeated reads of lambda
+// Coalesce global memory access for the array 'vals' to improve performance
+// Pre-calculate -log(hiprand_uniform(&state[idx])) only once if the operation is the same for other computations
+// Check if using memory coalescing techniques can help with accessing hiprandState array
+// Evaluate if reducing divergent branches will optimize performance further
+```

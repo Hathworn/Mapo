@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by using contiguous memory patterns.
+// Minimize memory divergence by accessing voronoiPtr sequentially.
+// Consider using shared memory to reduce global memory access in cboundary.
+// Prefetch patternPtr data into registers for reuse within the loop.
+// Optimize loop to reduce dependency chain and improve ILP (Instruction Level Parallelism).
+```

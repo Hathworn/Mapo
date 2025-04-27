@@ -1,0 +1,9 @@
+```cpp
+// Consider coalescing global memory accesses for inputs and outputs to improve memory throughput
+// Use shared memory if possible to store data being accessed multiple times by threads within the same block
+// Ensure threads read consecutive memory locations to increase memory coalescing
+// Minimize branch divergence by rearranging conditional code if possible
+// Optimize data reuse by exploring loop unrolling techniques
+// Utilize constant memory for any constants used frequently across threads
+// Consider adjusting block and grid dimensions to better utilize GPU resources and reduce idle threads
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory accesses for src_image to improve memory throughput.
+// Use shared memory to cache src_image data tiles for each block to reduce global memory traffic.
+// Align rects data to improve memory access patterns and cache efficiency.
+// Optimize dst_ptr accesses to ensure coalesced writes by aligning the gid computation.
+// Use float2 and int2 types for 2-element accesses to reduce the number of instructions.
+```

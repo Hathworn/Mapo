@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing global memory access patterns.
+// Use shared memory to minimize the number of global memory accesses.
+// Ensure memory alignment to improve access speed.
+// Consider using warp-level primitives for intra-block synchronization instead of __syncthreads.
+// Evaluate if texture memory could provide advantages for certain access patterns.
+// Minimize the use of conditional branching to maintain consistent execution within warps.
+// Investigate potential use of loop unrolling to reduce loop iteration overhead.
+```

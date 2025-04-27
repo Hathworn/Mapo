@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if ingrad and outgrad data can benefit from reduced global memory access
+// Coalesce memory accesses by ensuring data is accessed in a sequential, orderly fashion
+// Optimize block and grid sizes to fully utilize GPU resources and minimize the number of idle threads
+// Use prefetching techniques if possible to hide memory latency
+```

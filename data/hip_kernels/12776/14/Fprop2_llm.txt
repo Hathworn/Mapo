@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure all threads have written to shared memory before proceeding
+// Consider coalescing memory access to layer1 for better performance
+// Optimize the use of shared memory for syn2 to further reduce global memory access
+// Avoid bank conflicts in shared memory access by adjusting data placement if needed
+// Explore the possibility of loop unrolling to increase instruction level parallelism
+```

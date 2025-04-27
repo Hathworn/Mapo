@@ -1,0 +1,3 @@
+// Use shared memory for repeated access to x_coors and y_coors for reduced global memory transactions
+// Synchronize threads after loading shared memory to ensure consistency across all threads in the block
+// Compute feature index using cached values to minimize redundant calculations

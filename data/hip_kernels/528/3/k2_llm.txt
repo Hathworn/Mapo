@@ -1,0 +1,4 @@
+// Consider using coalesced accesses for the arrays 'visited' and 'new_frontier' to improve memory access efficiency.
+// Implement further warp-level operations if possible to reduce the need for __syncthreads() and improve parallelism.
+// Explore using a reduction pattern instead of atomic operations to better manage shared and global memory access.
+// Investigate the possibility of using streaming multiprocessor-specific optimizations like warp shuffle for data exchange.

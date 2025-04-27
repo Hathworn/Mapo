@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for reading flow vectors u and v.
+// Use shared memory to reduce redundant global memory loads.
+// Ensure src values are read in a coalesced manner.
+// Consider using fast math functions for __float2int_rn if precision allows.
+// Preload frequently accessed values to keep them in registers.
+// Consider using texture memory if applicable for better cache performance.
+```

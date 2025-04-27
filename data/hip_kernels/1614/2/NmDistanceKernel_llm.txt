@@ -1,0 +1,7 @@
+```
+// Use shared memory buffer to reduce repeated global memory accesses
+// Minimize divergence by aligning loop exit condition across threads
+// Unroll loops to enhance memory access pattern and decrease overhead
+// Utilize '__syncthreads()' to ensure data consistency when using shared memory
+// Initialize 'best' variable with FLT_MAX to optimize comparison checks
+```

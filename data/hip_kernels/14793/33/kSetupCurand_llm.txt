@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider using warp-level primitives for synchronization to reduce overhead
+// Ensure that the number of threads is a multiple of warp size to avoid idle threads
+// Optimize seed initialization to minimize the time complexity
+```

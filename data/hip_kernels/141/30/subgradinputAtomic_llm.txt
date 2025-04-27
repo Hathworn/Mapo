@@ -1,0 +1,8 @@
+```
+// Use shared memory to store gradOutput to reduce global memory accesses
+// Ensure coalesced memory access when loading gradOutput into shared memory
+// Use atomicAdd to avoid race conditions when updating global gradInput
+// Consider larger block dimensions to increase parallelism if resources allow
+// Ensure grid and block dimensions cover the full range of input dimensions
+// Minimize bank conflicts in shared memory access by adjusting memory patterns
+```

@@ -1,0 +1,9 @@
+```
+// Consider increasing the block size to better utilize shared memory.
+// Use loop unrolling to reduce the overhead of loop control.
+// Avoid bank conflicts in shared memory access by padding shared memory.
+// Minimize global memory accesses by maximizing shared memory usage.
+// Ensure that the grid size (gridDim.x) is large enough to cover all data.
+// Balance the workload across blocks to prevent thread divergence.
+// Align global memory accesses to optimize memory throughput.
+```

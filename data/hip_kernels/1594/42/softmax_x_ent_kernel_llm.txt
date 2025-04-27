@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access patterns for pred and truth to improve memory throughput
+// Utilize shared memory to store intermediate results where possible
+// Consider reducing global memory accesses by using registers to store repeated accessed data
+// Optimize block and grid sizes for maximum GPU occupancy
+// Ensure memory access patterns are aligned to increase memory efficiency
+// Minimize the use of divergent branches to maintain thread efficiency
+// Explore the use of warp-level primitives to optimize reductions or broadcasts
+```

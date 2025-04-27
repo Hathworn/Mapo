@@ -1,0 +1,7 @@
+```
+// Avoid unnecessary global memory accesses by using shared memory effectively.
+// Ensure memory accesses are coalesced to maximize throughput.
+// Consider loop unrolling if tile_z is small to reduce loop control overhead.
+// Check if shared memory usage affects occupancy; optimize block and grid sizes accordingly.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+```

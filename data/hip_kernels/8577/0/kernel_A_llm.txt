@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Coalesce memory access by ensuring threads in the same warp access contiguous memory locations.
+// Minimize divergent branching by using predication or restructuring code to follow a similar path for all threads.
+```

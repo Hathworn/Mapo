@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure thread synchronization with __syncthreads() when accessing shared memory.
+// Coalesce global memory accesses for matC by ensuring continuous thread access.
+// Ensure boundary checks to avoid out-of-bound accesses, especially when loading shared memory.

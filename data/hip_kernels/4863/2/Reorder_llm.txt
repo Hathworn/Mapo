@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Load histogram data into shared memory to minimize global memory usage
+// Synchronize threads to ensure all histogram data is loaded before use
+// Apply atomic operations on shared memory for better efficiency
+// Ensure thread synchronization after updating shared memory
+// Transfer updated shared memory data back to global memory efficiently
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache col_widths and init_vals to reduce global memory accesses.
+// Optimize thread-ordering by ensuring memory coalescing on accesses to groups.
+// Use warp-level primitive functions to maximize memory access efficiency within a warp.
+// Investigate potential bank conflicts in shared memory usage and minimize them.
+```

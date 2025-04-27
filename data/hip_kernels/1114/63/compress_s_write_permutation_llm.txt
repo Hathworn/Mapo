@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to d_write_permutation
+// Use shared memory for d_s_write_permutation if data reuse is possible within a block
+// Ensure accesses to d_s_write_permutation_offset are coalesced across different chunks
+// Optimize conditions to avoid warp divergence, particularly in the conditional statements
+// Check if loop unrolling could improve performance by reducing the total number of iterations
+```

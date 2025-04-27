@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for repeated access to common data
+// Use __restrict__ qualifiers to aid compiler optimizations
+// Ensure coalesced memory access patterns
+// Minimize register use by reorganizing instruction sequences
+// Optimize block and grid size to maximize occupancy
+// Implement loop unrolling if applicable
+// Profile memory throughput to identify bottlenecks
+```

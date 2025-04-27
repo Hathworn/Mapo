@@ -1,0 +1,5 @@
+```
+// Consider using __restrict__ pointers for Y, dY, and dX to hint the compiler on non-aliasing.
+// Preload data from global to shared memory if there are repeated accesses within the loop.
+// Investigate using different memory access patterns or coalescing accesses to improve memory throughput.
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access patterns for kx, ky, kz, pupil, phase to improve performance.
+// Utilize shared memory for common data such as kx, ky, kz to reduce global memory access latency.
+// Prefetch data from global memory to shared memory as thread block level to improve bandwidth utilization.
+// Explore the use of memory padding or aligning data structures to avoid bank conflicts.
+// Minimize the use of division operations where possible, as they are computationally expensive.
+// Investigate the potential benefits of loop unrolling for the innermost computations to increase instruction level parallelism.
+```

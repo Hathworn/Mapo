@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for storing idx and priority to minimize global memory access
+// Ensure threads within a block load necessary data into shared memory, limiting data fetch
+// Implement thread synchronization using __syncthreads() to ensure data consistency
+// Early exit from loop upon condition satisfaction to reduce computation time
+// Optimize shared memory allocation based on the maximum expected working set size
+```

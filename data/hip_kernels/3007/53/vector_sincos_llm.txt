@@ -1,0 +1,5 @@
+// Use __restrict__ pointers to enable better compiler optimizations.
+// Prefetch data into shared memory where possible to optimize memory access.
+// Align memory accesses to improve cache efficiency.
+// Minimize divergent branches for improved execution efficiency.
+// Consider loop unrolling for better performance where applicable.

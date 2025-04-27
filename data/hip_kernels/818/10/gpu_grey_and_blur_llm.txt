@@ -1,0 +1,8 @@
+```
+// Utilize coalesced memory access by ensuring consecutive threads access consecutive data.
+// Minimize divergent branches by organizing threads to handle adjacent data elements.
+// Consider padding shared memory to handle bank conflicts.
+// Increase shared memory size based on optimal blockDim configuration to enhance data reuse.
+// Ensure proper synchronization with __syncthreads() after each shared memory operation.
+// Experiment with varying the blur kernel size and shared memory layout for optimal performance.
+```

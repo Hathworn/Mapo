@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning truth, pred, delta, and error arrays properly
+// Use shared memory to reduce redundant global memory accesses if possible
+// Consider loop unrolling for improved performance if workload allows
+// Optimize the block and grid dimensions for better occupancy and memory throughput
+// Minimize divergence within warps by handling boundary conditions more efficiently
+```

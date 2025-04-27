@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory access for arrays a, b, and c.
+// Use shared memory if there are repeated access patterns within blocks to reduce global memory traffic.
+// Ensure proper memory alignment for arrays a, b, and c to maximize throughput.
+// Use __restrict__ keyword for pointers if no aliasing occurs to aid compiler optimization.
+// Investigate occupancy and ensure the number of blocks and threads maximize SM utilization.
+```

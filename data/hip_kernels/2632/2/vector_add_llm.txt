@@ -1,0 +1,6 @@
+// Ensure coalesced memory accesses for arrays a, b, out
+// Consider using shared memory for frequently accessed data
+// Minimize condition checks within the kernel
+// Use loop unrolling if loops are present in the actual computation
+// Optimize memory bandwidth by using aligned memory accesses
+// Experiment with different block sizes for optimal performance

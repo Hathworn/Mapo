@@ -1,0 +1,6 @@
+// Use shared memory for bias accesses to reduce global memory reads  
+// Pre-compute frequently accessed values outside of loops  
+// Use vectorized data types like double2 for coalesced memory access  
+// Ensure memory accesses are coalesced by proper indexing  
+// Explore using warp shuffle for reducing computations within threads  
+// Consider using atomic operations if necessary for concurrent writes  

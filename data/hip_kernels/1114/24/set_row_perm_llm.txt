@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure coalesced access to the global memory for d_max_row_nz
+// Check if d_bin_size accesses can be optimized by reducing atomic operations
+// Optimize d_row_perm accesses to improve memory coalescing
+// Evaluate if warp synchronization can further optimize atomic operations
+// Minimize branch divergence within the for-loop
+```

@@ -1,0 +1,7 @@
+```cpp
+// Utilize shared memory to reduce repeated global memory reads
+// Align memory accesses to coalesce global memory operations
+// Use loop unrolling to minimize loop control overhead
+// Consider increasing block size for better occupancy and bandwidth utilization
+// Avoid bank conflicts when using shared memory by ensuring memory accesses are aligned
+```

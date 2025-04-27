@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by aligning data to ensure better memory throughput
+// Minimize divergence by ensuring threads within a warp take similar execution paths
+// Use shared memory to store frequently accessed data within a block
+// Optimize block and grid size for maximum occupancy and memory access patterns
+// Ensure memory access patterns utilize full memory bandwidth available
+```

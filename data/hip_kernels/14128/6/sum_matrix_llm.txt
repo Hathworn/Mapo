@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure memory coalescing by accessing consecutive memory locations
+// Consider using loop unrolling for further optimization where applicable
+// Use __syncthreads() when operating with shared memory to ensure synchronization
+```

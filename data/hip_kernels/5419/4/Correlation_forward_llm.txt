@@ -1,0 +1,9 @@
+```
+// Consider optimizing memory access patterns for rInput1 and rInput2 to maximize coalesced reads.
+// Investigate using shared memory more efficiently to cache data from global memory.
+// Minimize bank conflicts in shared memory by appropriate padding if necessary.
+// Ensure that the access pattern minimizes warp divergence, especially in the displacement and kernel loops.
+// Assess potential benefits of loop unrolling for the kernel_radius and displacement loops.
+// Avoid redundant calculations by pre-computing invariant expressions outside loops.
+// Check if the reduction step can be improved by employing parallel reduction techniques.
+```

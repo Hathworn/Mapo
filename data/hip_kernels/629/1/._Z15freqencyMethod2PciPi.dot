@@ -1,0 +1,21 @@
+digraph "CFG for '_Z15freqencyMethod2PciPi' function" {
+	label="CFG for '_Z15freqencyMethod2PciPi' function";
+
+	Node0x5739500 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = icmp ult i32 %4, 26\l  br i1 %5, label %6, label %8\l|{<s0>T|<s1>F}}"];
+	Node0x5739500:s0 -> Node0x573a980;
+	Node0x5739500:s1 -> Node0x573aa10;
+	Node0x573a980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%6:\l6:                                                \l  %7 = getelementptr inbounds [26 x i32], [26 x i32] addrspace(3)*\l... @_ZZ15freqencyMethod2PciPiE5sfreq, i32 0, i32 %4\l  store i32 0, i32 addrspace(3)* %7, align 4, !tbaa !5\l  br label %8\l}"];
+	Node0x573a980 -> Node0x573aa10;
+	Node0x573aa10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%8:\l8:                                                \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !9, !invariant.load\l... !10\l  %13 = zext i16 %12 to i32\l  %14 = getelementptr inbounds i8, i8 addrspace(4)* %9, i64 12\l  %15 = bitcast i8 addrspace(4)* %14 to i32 addrspace(4)*\l  %16 = load i32, i32 addrspace(4)* %15, align 4, !tbaa !11\l  %17 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %18 = mul i32 %17, %13\l  %19 = udiv i32 %16, %13\l  %20 = mul i32 %19, %13\l  %21 = icmp ugt i32 %16, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %13\l  %25 = add i32 %18, %4\l  %26 = icmp slt i32 %25, %1\l  br i1 %26, label %28, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x573aa10:s0 -> Node0x573c2c0;
+	Node0x573aa10:s1 -> Node0x573c350;
+	Node0x573c350 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%27:\l27:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %5, label %39, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x573c350:s0 -> Node0x573c670;
+	Node0x573c350:s1 -> Node0x573c6c0;
+	Node0x573c2c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  %29 = phi i32 [ %37, %28 ], [ %25, %8 ]\l  %30 = sext i32 %29 to i64\l  %31 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %30\l  %32 = load i8, i8 addrspace(1)* %31, align 1, !tbaa !20, !amdgpu.noclobber\l... !10\l  %33 = sext i8 %32 to i32\l  %34 = add nsw i32 %33, -97\l  %35 = getelementptr inbounds [26 x i32], [26 x i32] addrspace(3)*\l... @_ZZ15freqencyMethod2PciPiE5sfreq, i32 0, i32 %34\l  %36 = atomicrmw add i32 addrspace(3)* %35, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  %37 = add nsw i32 %29, %24\l  %38 = icmp slt i32 %37, %1\l  br i1 %38, label %28, label %27, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x573c2c0:s0 -> Node0x573c2c0;
+	Node0x573c2c0:s1 -> Node0x573c350;
+	Node0x573c670 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%39:\l39:                                               \l  %40 = zext i32 %4 to i64\l  %41 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %40\l  %42 = getelementptr inbounds [26 x i32], [26 x i32] addrspace(3)*\l... @_ZZ15freqencyMethod2PciPiE5sfreq, i32 0, i32 %4\l  %43 = load i32, i32 addrspace(3)* %42, align 4, !tbaa !5\l  %44 = atomicrmw add i32 addrspace(1)* %41, i32 %43 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %45\l}"];
+	Node0x573c670 -> Node0x573c6c0;
+	Node0x573c6c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%45:\l45:                                               \l  ret void\l}"];
+}

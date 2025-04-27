@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Align memory accesses to 64 bytes for optimal coalescing
+// Unroll loops to increase instruction throughput
+// Use warp-level primitives for synchronization instead of __syncthreads
+// Check for bank conflicts in shared memory access patterns
+```

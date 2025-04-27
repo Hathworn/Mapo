@@ -1,0 +1,4 @@
+// Use shared memory to store A[index] values if accessed multiple times
+// Coalesce memory access for optimal global memory bandwidth use
+// Consider using __syncthreads() for synchronization if shared memory is used
+// Optimize block and grid size for better occupancy

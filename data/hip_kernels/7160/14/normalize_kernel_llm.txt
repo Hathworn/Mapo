@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for x by assigning consecutive threads to consecutive indices
+// Preload mean[f] and variance[f] into registers if possible to reduce memory access latency
+// Consider using shared memory to cache mean and variance if filters are small to reduce global memory access
+// Attempt using memory access patterns that avoid bank conflicts within shared memory if utilized
+// Evaluate using float4 or float2 for vectorized memory operations if alignment conditions are satisfied
+```

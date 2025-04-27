@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns for d_bidx, d_sums, d_xi4, and d_pxi4 arrays to enhance memory bandwidth utilization.
+// Minimize memory traffic by reducing redundant reads of d_bidx and d_sums through local caching.
+// Explore shared memory use to store frequently accessed data when feasible to minimize global memory latency.
+// Ensure memory access alignment for float4 data transfers to exploit efficient memory transactions.
+```

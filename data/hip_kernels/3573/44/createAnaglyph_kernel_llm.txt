@@ -1,0 +1,4 @@
+// Optimize memory access pattern by using shared memory for left_image and right_image.
+// Minimize redundant calculations by calculating idx once.
+// Use coalesced memory access for out_image updates.
+// Ensure efficient branching with minimal warp divergence for x_right bounds checking.

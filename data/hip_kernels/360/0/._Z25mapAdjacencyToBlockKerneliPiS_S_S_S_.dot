@@ -1,0 +1,14 @@
+digraph "CFG for '_Z25mapAdjacencyToBlockKerneliPiS_S_S_S_' function" {
+	label="CFG for '_Z25mapAdjacencyToBlockKerneliPiS_S_S_S_' function";
+
+	Node0x5e815e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = icmp slt i32 %15, %0\l  br i1 %16, label %17, label %43\l|{<s0>T|<s1>F}}"];
+	Node0x5e815e0:s0 -> Node0x5e81a30;
+	Node0x5e815e0:s1 -> Node0x5e83600;
+	Node0x5e81a30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %21 = add nsw i32 %15, 1\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %22\l  %24 = load i32, i32 addrspace(1)* %23, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %5, i64 %18\l  %26 = load i32, i32 addrspace(1)* %25, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %27 = icmp slt i32 %20, %24\l  br i1 %27, label %28, label %43\l|{<s0>T|<s1>F}}"];
+	Node0x5e81a30:s0 -> Node0x5e84ac0;
+	Node0x5e81a30:s1 -> Node0x5e83600;
+	Node0x5e84ac0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  %29 = phi i32 [ %41, %28 ], [ %20, %17 ]\l  %30 = sext i32 %29 to i64\l  %31 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %30\l  %32 = load i32, i32 addrspace(1)* %31, align 4, !tbaa !7\l  %33 = sext i32 %32 to i64\l  %34 = getelementptr inbounds i32, i32 addrspace(1)* %5, i64 %33\l  %35 = load i32, i32 addrspace(1)* %34, align 4, !tbaa !7\l  %36 = icmp eq i32 %26, %35\l  %37 = select i1 %36, i32 -1, i32 %26\l  %38 = select i1 %36, i32 -1, i32 %35\l  %39 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %30\l  store i32 %37, i32 addrspace(1)* %39, align 4\l  %40 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %30\l  store i32 %38, i32 addrspace(1)* %40, align 4\l  %41 = add nsw i32 %29, 1\l  %42 = icmp slt i32 %41, %24\l  br i1 %42, label %28, label %43, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5e84ac0:s0 -> Node0x5e84ac0;
+	Node0x5e84ac0:s1 -> Node0x5e83600;
+	Node0x5e83600 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%43:\l43:                                               \l  ret void\l}"];
+}

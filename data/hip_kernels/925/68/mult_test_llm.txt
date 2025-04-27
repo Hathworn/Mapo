@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Ensure proper memory alignment for effective coalesced memory access.
+// Try optimizing data transfer by using memory access patterns that align with warp size.
+// Consider loop unrolling within operations to further optimize computational efficiency.
+// Check for register pressure; limit usage to avoid spills into local memory.
+// Utilize __syncthreads() efficiently to ensure proper synchronization between threads.
+```

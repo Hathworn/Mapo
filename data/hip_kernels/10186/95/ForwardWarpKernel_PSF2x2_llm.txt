@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data such as src and flow arrays.
+// Optimize global memory access patterns by ensuring coalesced access, especially when accessing src, dst, and normalization_factor.
+// Reduce divergence by aligning if conditions where applicable to improve warp execution efficiency.
+// Consider merging adjacent threads' operations to reduce atomic operations if data consistency allows.
+```

@@ -1,0 +1,8 @@
+```
+// Use __shared__ memory to reduce global memory accesses and improve performance
+// Ensure memory coalescing by properly accessing global memory in a sequential manner
+// Avoid bank conflicts in shared memory by using padding if necessary
+// Minimize synchronization points (__syncthreads()) to reduce overhead
+// Load data in chunks that fit into shared memory to maximize data reuse
+// Balance load across threads and blocks to optimize resource utilization
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory reads for activations and delta_nabla_b
+// Ensure coalesced access patterns when loading data into shared memory
+// Minimize __syncthreads() calls for increased performance
+// Consider using warp-level primitives for further synchronization reduction

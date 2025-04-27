@@ -1,0 +1,6 @@
+```cpp
+// Unroll the reduction loop for better performance.
+// Consider using shared memory to reduce global memory access.
+// Ensure coalesced memory access by having contiguous threads access contiguous memory locations.
+// Use warp-level primitives to further optimize the reduction.
+```

@@ -1,0 +1,12 @@
+```c
+// Coalesced memory access for g_Data loading to reduce global memory transactions
+// Use __builtin_assume_aligned for memory alignment hints, if applicable
+// Consider loop unrolling for loading data into shared memory for improved performance
+// Prefetch data to shared memory to hide memory latency
+// Use warp-level primitives or shuffle for reductions to further optimize performance
+// Consider preloading Gaussian values and access in a coalesced manner
+// Optimize atomicAdd usage by redesigning memory access patterns or using parallel reduction
+// Minimize __syncthreads usage or replace with warp-synchronous programming where possible
+// Use float4 or other vector types for data loading to increase memory throughput
+// Ensure proper use of __restrict__ keyword for pointers to aid compiler optimization
+```

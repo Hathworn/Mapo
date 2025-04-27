@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access for global memory reads/writes
+// Use __restrict__ qualifiers for pointers if there are no aliasing issues
+// Unroll loops where possible to reduce loop overhead
+// Use padding in shared memory to avoid bank conflicts
+// Prefer __shfl_sync or warp-level primitives for reductions within a warp
+// Reduce the overhead of __syncthreads() by minimizing its usage
+// Merge multiple kernel launches into a single launch if applicable
+```

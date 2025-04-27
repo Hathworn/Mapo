@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to cache input tiles and further reduce global memory access.
+// Reduce redundant calculations by storing frequently used indices or expressions.
+// Look into using vectorized memory access to coalesce memory operations.
+// Optimize thread block and grid sizes to maximize occupancy and better match warp sizes.
+// Use constant memory for parameters that do not change and are repeatedly accessed.
+// Analyze the divergent branches in the loop and attempt to minimize divergence.
+```

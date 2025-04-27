@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store data that multiple threads within the same block may reuse.
+// Optimize memory coalescing by ensuring that global memory accesses are contiguous.
+// Ensure the grid and block dimensions are chosen to maximize occupancy.
+// Minimize register usage to allow more threads per block.
+```

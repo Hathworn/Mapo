@@ -1,0 +1,8 @@
+```
+// Combine kernel launches or use occupancy calculator to find optimal block size
+// Use __restrict__ keyword if applicable for pointers to improve compiler optimization
+// Consider using warp shuffle functions to reduce shared memory usage
+// Ensure proper coalesced memory access patterns for X array
+// Profile memory bandwidth and use asynchronous memory transfers if applicable
+// Review load/store instructions for potential improvements with vectorized types
+```

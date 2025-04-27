@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for the initial loading into shared memory.
+// Evaluate the use of texture memory for read-only data to potentially increase performance.
+// Ensure that the number of threads per block is a multiple of warp size for optimal performance.
+// Minimize the use of __syncthreads() as frequent synchronization may affect performance.
+// Consider loop unrolling for the innermost computation loop to maximize throughput.
+// Use a faster mathematical library function if available, such as hipblas for specialized operations.
+```

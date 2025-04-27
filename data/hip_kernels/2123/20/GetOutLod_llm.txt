@@ -1,0 +1,4 @@
+// Use shared memory for num_erased when frequently accessed by multiple threads  
+// Coalesce memory accesses by ensuring threads access contiguous memory locations in out_lod0  
+// Minimize thread divergence by ensuring all threads follow the same execution path  
+// Consider loop unrolling if it improves performance

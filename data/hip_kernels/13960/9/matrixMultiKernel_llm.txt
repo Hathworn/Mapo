@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for A and B loading
+// Consider increasing BLOCK_SIZE for better parallelization if resources allow
+// Use float4 to load data in vectors where applicable to increase memory throughput
+// Avoid unnecessary synchronization with __syncthreads() if possible
+```

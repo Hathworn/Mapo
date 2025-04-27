@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access where possible to improve memory throughput
+// Leverage shared memory if necessary to further optimize memory access patterns
+// Consider using wider memory accesses (e.g., float4) to reduce the number of transactions
+// Minimize divergence by aligning branch conditions within warp boundaries
+// Always check the impact of loop unrolling, as very large unrolls can lead to register pressure
+// Analyze if further unrolling or loop fission could benefit based on hardware specifics
+```

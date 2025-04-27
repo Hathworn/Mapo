@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache Y values if reused within warp
+// Adjust block size to maximize occupancy and reduce register pressure
+// Consider coalesced memory access by ensuring X and Y are aligned
+// Pre-fetch data into registers to hide global memory latency
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses and improve memory access patterns
+// Ensure __syncthreads() is used to avoid race conditions between loading and processing phases
+// Optimize data reuse by leveraging shared memory for repeated access within the block
+// Minimize use of global memory to avoid latency issues, particularly in heavily iterated loops
+// Balance load to ensure all threads within a block have an even workload

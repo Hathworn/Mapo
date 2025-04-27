@@ -1,0 +1,7 @@
+```
+// Consider aligning memory accesses to optimize cache usage.
+// Use coalesced memory access patterns for Y, dY, and dX arrays.
+// Consider using shared memory to store the entire reduction_buffer to minimize global memory access.
+// Explore the use of __shfl_xor for warp-level reduction to potentially increase performance.
+// Review the occupancy and ensure blockDim is maximizing GPU utilization.
+```

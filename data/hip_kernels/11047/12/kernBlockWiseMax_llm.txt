@@ -1,0 +1,8 @@
+```
+// Consider minimizing divergent branches within the loop
+// Utilize __restrict__ keyword if applicable for better compiler optimization
+// Avoid unnecessary syncthreads within the loop if data dependency allows
+// Use cooperative groups for more fine-grained parallelism if available
+// Optimize shared memory usage by reducing latency where possible
+// Minimize global memory accesses by storing intermediate results in registers
+```

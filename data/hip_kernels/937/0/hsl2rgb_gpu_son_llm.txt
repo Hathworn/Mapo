@@ -1,0 +1,7 @@
+```
+// Use shared memory for repeated calculations within a block to reduce global memory access.
+// Optimize memory coalescing by ensuring global memory accesses by threads in a warp are contiguous.
+// Minimize divergent branching within warps to improve performance.
+// Consider loop unrolling if the content of Hue_2_RGB_gpu can be simplified with less branching.
+// Explore using half precision if L, H, S values don't require full float precision for faster computation.
+```

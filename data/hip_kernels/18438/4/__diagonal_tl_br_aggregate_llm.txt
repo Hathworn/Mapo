@@ -1,0 +1,9 @@
+```c
+// Reuse shared memory to store dp and reduce global memory access
+// Consider coalescing memory access to improve read throughput
+// Use loop unrolling to minimize loop overhead
+// Optimize the calculation of indices for efficient memory access
+// Avoid warp divergence by aligning branching conditions
+// Prefetch data when possible to hide memory latency
+// Minimize register usage to enable higher occupancy
+```

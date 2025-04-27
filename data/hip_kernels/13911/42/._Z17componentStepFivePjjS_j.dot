@@ -1,0 +1,13 @@
+digraph "CFG for '_Z17componentStepFivePjjS_j' function" {
+	label="CFG for '_Z17componentStepFivePjjS_j' function";
+
+	Node0x63d0640 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %15 = getelementptr i8, i8 addrspace(4)* %5, i64 6\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 2, !range !4, !invariant.load !5\l  %18 = zext i16 %17 to i32\l  %19 = udiv i32 %13, %10\l  %20 = mul i32 %19, %10\l  %21 = icmp ugt i32 %13, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %14\l  %25 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !15\l  %26 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %27 = add i32 %24, %6\l  %28 = mul i32 %27, %18\l  %29 = add i32 %28, %25\l  %30 = mul i32 %29, %10\l  %31 = add i32 %30, %26\l  %32 = icmp ult i32 %31, %1\l  br i1 %32, label %33, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x63d0640:s0 -> Node0x63d2630;
+	Node0x63d0640:s1 -> Node0x63d26c0;
+	Node0x63d2630 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%33:\l33:                                               \l  %34 = zext i32 %31 to i64\l  %35 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %34\l  %36 = load i32, i32 addrspace(1)* %35, align 4, !tbaa !16, !amdgpu.noclobber\l... !5\l  %37 = icmp eq i32 %36, %3\l  br i1 %37, label %38, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x63d2630:s0 -> Node0x63d4cc0;
+	Node0x63d2630:s1 -> Node0x63d26c0;
+	Node0x63d4cc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%38:\l38:                                               \l  %39 = atomicrmw xchg i32 addrspace(1)* %2, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %40\l}"];
+	Node0x63d4cc0 -> Node0x63d26c0;
+	Node0x63d26c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%40:\l40:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and improve performance
+// Coalesce memory accesses by ensuring threads access contiguous memory locations
+// Consider loop unrolling if applicable to reduce instruction overhead
+// Ensure memory alignment for optimal access patterns
+// Use warp-level primitives if possible to reduce synchronization overhead
+```

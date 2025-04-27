@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache `gradOutput_data` values accessed within the unrolled loop.
+// Minimize divergent branches by ensuring `ii` is always within `no_elements` inside conditional checks.
+// Coalesce memory access patterns by aligning `gradOutput_data` and `gradInput_data` reads across threads.
+// Evaluate prefetching strategies for `gradOutput_data` in scenarios with larger scale_factor values.
+// Consider additional loop unrolling if `scale_factor` constraints are known at compile time.
+```

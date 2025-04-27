@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access if the same data is reused by multiple threads.
+// Consider using cooperative groups or warp-level primitives for potentially improved performance.
+// Ensure optimal block size and grid configuration for better memory throughput.
+// Prefer coalesced memory accesses to improve memory performance.
+// Consider using __restrict__ keyword for pointer parameters if pointers are non-overlapping.
+// Evaluate the use of memory access patterns and optimize address calculations.
+// Minimize the use of atomic operations or ensure they are used efficiently if needed.
+```

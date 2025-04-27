@@ -1,0 +1,5 @@
+```c
+// Consider coalesced memory access for d_input and d_output to improve memory throughput
+// Utilize shared memory to store tile sub-matrix of d_input to minimize global memory access
+// Minimize redundant calculations by pre-computing repeated indices like (y-1)*width
+```

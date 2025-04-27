@@ -1,0 +1,7 @@
+```
+// Use coalesced access to global memory for g_idata reads
+// Minimize shared memory usage to reduce bank conflicts
+// Consider using atomic operations for further reduction
+// Ensure block size is a power of two for efficient warpReduce
+// Leverage instruction-level parallelism within the warpReduce function
+```

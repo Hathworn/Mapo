@@ -1,0 +1,6 @@
+```
+// Coalesce global memory accesses to improve memory throughput.
+// Ensure __syncthreads() is used after loading data to shared memory to prevent race conditions.
+// Use loop unrolling within reduction to reduce instruction overhead.
+// Optimize shared memory usage to reduce bank conflicts.
+```

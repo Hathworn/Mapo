@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency for lifter coefficients.
+// Ensure efficient memory coalescing by aligning the shared memory usage with the thread index.
+// Use __syncthreads() to synchronize threads after loading data into shared memory.
+// Use shared memory size optimization to balance between performance and resource usage.
+// Consider adjusting blockDim.x for optimal parallelization based on the hardware architecture.
+// Use logf instead of log for better performance with float precision.
+```

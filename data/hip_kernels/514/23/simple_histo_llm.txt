@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access in d_in array to improve memory throughput
+// Minimize atomic operations in d_bins by using shared memory for local aggregation
+// Consider aligning BIN_COUNT to a power of two for efficient modulo operations
+// Utilize warp-level primitives to further reduce atomic contention in global memory
+```

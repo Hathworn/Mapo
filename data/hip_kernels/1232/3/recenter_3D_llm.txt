@@ -1,0 +1,7 @@
+```cpp
+// Precompute dim_z, dim_y, dim_x division by 2 to avoid recalculating
+// Use shared memory for frequently accessed data to reduce global memory access
+// Ensure coalesced memory access by accessing sequential coordinates in the structure
+// Consider using loop unrolling to reduce loop overhead if applicable
+// Optimize grid and block dimensions to maximize occupancy and minimize underutilization
+```

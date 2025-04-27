@@ -1,0 +1,9 @@
+```cpp
+// Consolidate adjacent memory accesses to improve coalescing
+// Avoid repeated recalculations of indices to save computation
+// Combine multiple condition checks to reduce branching
+// Use shared memory to store frequently accessed values and reduce global memory accesses
+// Ensure proper synchronization with __syncthreads() before and after shared memory usage
+// Consider reducing the scope of thread divergence within the warp
+// Ensure that memory alignment is optimized for better access patterns
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store tiles of d_Data1 and d_Data2 for coalesced accesses
+// Ensure memory accesses are coalesced by accessing consecutive threads within a warp to consecutive memory addresses
+// Avoid unnecessary re-computation by using registers to store frequently used values such as 'p' and boundary conditions
+// Experiment with different block sizes to find the optimal configuration for the hardware architecture
+```

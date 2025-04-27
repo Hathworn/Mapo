@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data to reduce global memory access
+// Consider optimizing the thread block and grid size for better occupancy
+// Use loop unrolling on scale_factor loops for potential performance improvement
+// Consider using warp-level primitives to reduce synchronization overhead
+// Minimize register usage by optimizing memory access patterns and operations
+```

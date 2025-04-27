@@ -1,0 +1,6 @@
+```
+// Initialize shared memory once before loop to avoid redundant operations
+// Load input into register to reduce global memory access latency
+// Use a single atomic operation to minimize contention
+// Write to global memory once outside the loop to reduce write operations
+```

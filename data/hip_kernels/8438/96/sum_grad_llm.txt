@@ -1,0 +1,7 @@
+```
+// Consider preferring __restrict__ qualifiers for pointer inputs to help compiler optimizations.
+// Ensure the memory accesses (in, out) are coalesced to improve throughput.
+// Consider using shared memory to reduce global memory access latency.
+// Evaluate if loop unrolling can benefit performance for iterating over nElement.
+// Consider adjusting the grid/block size to better utilize the GPU resources.
+```

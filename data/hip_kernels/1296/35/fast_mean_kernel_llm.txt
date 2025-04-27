@@ -1,0 +1,6 @@
+```
+// Consider using shared memory efficiently to minimize repetitive global memory access
+// Apply loop unrolling for better instruction-level parallelism
+// Use warp-level primitives like __shfl_down_sync for fast reduction within a warp
+// Align memory access patterns to improve coalescing
+```

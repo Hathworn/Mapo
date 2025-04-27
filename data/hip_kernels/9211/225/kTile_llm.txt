@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by aligning src and tgt reads/writes
+// Use shared memory to reduce global memory access latency
+// Optimize block size to maximize SM occupancy and improve memory throughput
+// Use loop unrolling to reduce loop overhead and improve throughput

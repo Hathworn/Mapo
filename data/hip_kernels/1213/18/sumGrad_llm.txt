@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory reads
+// Optimize memory coalescing by arranging data to ensure contiguous thread access
+// Evaluate if caching some data to registers improves performance
+// Ensure the kernel launch configuration maximizes occupancy
+// Implement loop unrolling to potentially reduce loop overhead
+// Check if reducing memory usage can alleviate bandwidth bottlenecks
+// Use __restrict__ pointers for better compiler optimization
+```

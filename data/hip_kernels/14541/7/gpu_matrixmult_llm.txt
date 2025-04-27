@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access patterns for gpu_a and gpu_b.
+// Align shared memory usage to avoid bank conflicts.
+// Minimize the use of __syncthreads to only when necessary.
+// Use constant memory for frequently accessed data if applicable.
+// Optimize block and thread dimensions based on hardware capabilities.
+```

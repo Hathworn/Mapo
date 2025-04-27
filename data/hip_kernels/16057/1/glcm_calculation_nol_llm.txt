@@ -1,0 +1,8 @@
+```
+// Consider coalesced global memory access to improve performance.
+// Optimize memory allocation by reducing the bank conflicts in shared memory.
+// Assess use of shared memory size for the specific value of maxx.
+// Ensure minimal usage of atomic operations for better efficiency.
+// Analyze if thread synchronization (__syncthreads) can be minimized.
+// Evaluate if glcm can be initialized in parallel to decrease initialization time.
+```

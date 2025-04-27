@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access and improve memory bandwidth usage
+// Ensure that cur_sum variable is kept in registers for fast access
+// Optimize loop increment stride by blockDim to minimize ineffective memory access
+// Perform reduction in shared memory to minimize global memory writes 

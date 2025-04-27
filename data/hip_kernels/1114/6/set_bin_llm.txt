@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for d_row_nz by optimizing the thread block size
+// Use shared memory to cache frequently accessed data to reduce global memory access
+// Minimize the use of atomic operations for improved performance
+// Consider using warp-level primitives for operations on smaller data segments
+```

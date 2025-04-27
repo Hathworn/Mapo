@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory access by ensuring threads access contiguous memory locations
+// Align base_index computation to warp size to prevent bank conflicts
+// Consider loop unrolling to improve performance by reducing loop overhead
+// Evaluate using half precision if acceptable for your application to improve throughput
+```

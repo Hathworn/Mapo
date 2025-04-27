@@ -1,0 +1,5 @@
+// Consider using shared memory for data that is accessed multiple times
+// Ensure memory access patterns are coalesced to reduce memory transaction overhead
+// Utilize vectorized load and store operations where possible for efficient memory access
+// Minimize divergent branching to improve warp efficiency
+// Optimize block and thread configurations to maximize GPU utilization

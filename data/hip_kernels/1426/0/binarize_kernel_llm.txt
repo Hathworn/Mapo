@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to load chunks of x and reduce global memory accesses
+// Align data access to coalesce memory transactions if possible
+// Ensure warp divergence is minimized by structuring conditions to avoid branching
+// Evaluate using float2 or similar vector types for memory throughput optimization
+// Profile and adjust block size to maximize warp occupancy
+```

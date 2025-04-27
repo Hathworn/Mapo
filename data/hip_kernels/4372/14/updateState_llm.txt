@@ -1,0 +1,11 @@
+```c
+// Use shared memory for frequently accessed data to reduce global memory access
+// Consider minimizing use of atomic operations, if any, to reduce contention
+// Coalesce global memory accesses to improve memory bandwidth utilization
+// Ensure data alignment to avoid accessing unaligned memory
+// Optimize loop unrolling for any potential performance benefits
+// Consider using local memory to hold intermediate computation results
+// Ensure each thread block has enough threads to fully utilize SHARED memory
+// Avoid bank conflicts when using shared memory
+// Preload any constant data to reduce unnecessary memory fetches
+```

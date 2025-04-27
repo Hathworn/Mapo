@@ -1,0 +1,5 @@
+digraph "CFG for '_Z12forward_biasPfS_iiii' function" {
+	label="CFG for '_Z12forward_biasPfS_iiii' function";
+
+	Node0x52070a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %11 = sext i32 %8 to i64\l  %12 = getelementptr inbounds float, float addrspace(1)* %1, i64 %11\l  %13 = load float, float addrspace(1)* %12, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %14 = mul nsw i32 %7, %3\l  %15 = add i32 %14, %8\l  %16 = mul i32 %15, %4\l  %17 = add i32 %16, %9\l  %18 = mul i32 %17, %5\l  %19 = add nsw i32 %18, %10\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %0, i64 %20\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %23 = fadd contract float %13, %22\l  store float %23, float addrspace(1)* %21, align 4, !tbaa !5\l  ret void\l}"];
+}

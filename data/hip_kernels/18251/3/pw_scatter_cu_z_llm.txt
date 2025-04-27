@@ -1,0 +1,4 @@
+// Use shared memory to store ghatmap for faster access
+// Minimize global memory accesses by using registers to store scaled_real and scaled_imag
+// Optimize memory coalescing by ensuring consecutive threads access consecutive elements in pwcc
+// Consider using stream synchronization for better parallel execution when nmaps == 2

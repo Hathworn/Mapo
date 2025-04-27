@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if there are repeated accesses to nearby memory locations.
+// Ensure that memory accesses are coalesced to improve global memory throughput.
+// Test different block sizes to find the optimal configuration for your specific hardware.
+// Minimize divergence by ensuring that threads within a warp follow the same execution path.
+```

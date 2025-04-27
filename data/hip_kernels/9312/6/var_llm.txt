@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Unroll loop to improve performance by increasing instruction-level parallelism
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+// Use parallel reduction within a block to optimize performance
+// Ensure all threads reach the barrier before reducing within the block to maintain data integrity
+// Use warp shuffle operations to further optimize reduction in the last warp
+```

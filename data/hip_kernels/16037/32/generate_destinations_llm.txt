@@ -1,0 +1,3 @@
+// Use shared memory to cache `sources` array for reduced global memory access
+// Optimize stride access pattern to enhance coalesced memory access
+// Consider using warp shuffle operations for better data movement within threads

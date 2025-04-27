@@ -1,0 +1,4 @@
+// Use shared memory for vec[] to optimize memory access
+// Each block loads a portion of the vector to shared memory
+// Ensure all threads have completed the memory load
+// Use shared memory and avoid global memory access for vec

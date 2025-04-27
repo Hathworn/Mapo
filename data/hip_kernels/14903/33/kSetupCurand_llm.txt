@@ -1,0 +1,7 @@
+```cpp
+// Ensure global memory accesses are coalesced
+// Use shared memory if multiple threads access the same data
+// Minimize the use of global memory by reusing data in registers
+// Consider using warp level primitives for intra-warp synchronizations
+// Optimize block size for balancing between resource usage and occupancy
+```

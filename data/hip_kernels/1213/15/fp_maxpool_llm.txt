@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for the input array to reduce the number of global memory accesses.
+// Use constant memory for frequently accessed variables such as kernel_size if their values remain unchanged.
+// Align memory accesses to increase coalesced access patterns, optimizing memory throughput.
+// Ensure the input data is aligned to improve memory access efficiency.
+// Reduce the padding computation overhead by pre-calculating constants outside of kernel loops.
+// Consider loop unrolling for better pipeline efficiency if the loop iteration count is known.
+```

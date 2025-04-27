@@ -1,0 +1,6 @@
+```
+// Coalesced memory access by using a single index calculation for both normalization_factor and image arrays
+// Use shared memory if multiple threads within a block access the same normalization_factor values
+// Consider using float4 or float2 data types for vectorized memory access
+// Ensure memory access patterns are optimized for the specific GPU architecture in use
+```

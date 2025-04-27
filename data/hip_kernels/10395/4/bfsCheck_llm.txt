@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for d_graph_mask and d_graph_visited
+// Utilize vectorized loads and stores if possible
+// Explore using warp shuffle instructions instead of shared memory for local_stop
+// Minimize conditional branches in the kernel
+// Ensure optimal block and grid size to maximize occupancy
+// Consider double buffering for d_updating_graph_mask
+```

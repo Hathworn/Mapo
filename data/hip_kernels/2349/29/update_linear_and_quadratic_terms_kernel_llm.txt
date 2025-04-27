@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for cur_tot_weight
+// Reduce atomic operations by accumulating results in registers before updating quadratic
+// Consider loop unrolling for better performance in the loop processing
+// Optimize memory access patterns by aligning data access to cache lines
+// Reduce latency by minimizing conditional statements within the loop
+```

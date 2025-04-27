@@ -1,0 +1,4 @@
+// Consider using shared memory for coalesced access patterns to minimize global memory access latency.
+// Reduce branch divergence by aligning conditions more closely with thread index.
+// Optimize memory access by ensuring memory alignment constraints are met for faster loads/stores.
+// Utilize warp-level primitives where applicable to reduce redundancy in operations and logic.

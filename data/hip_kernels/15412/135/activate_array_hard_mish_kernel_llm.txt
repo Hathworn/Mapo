@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses for frequently accessed data
+// Consider using texture memory for read-only data as it can optimize caching
+// Ensure coalesced memory accesses by organizing data access patterns
+// Minimize use of __syncthreads() for better warp execution efficiency
+// Analyze if loop unrolling can provide a performance benefit
+// Consider splitting large data chunks into smaller portions for better cache efficiency
+// Profile memory usage to avoid bank conflicts in shared memory
+```

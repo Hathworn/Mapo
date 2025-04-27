@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store temporary results for better memory access pattern
+// Try coalescing global memory accesses by accessing consecutive elements in a warp
+// Minimize thread divergence by ensuring conditionals are warp-uniform
+// Align memory accesses to 32-byte boundaries for better performance
+// Use the __restrict__ qualifier for pointer arguments to optimize memory access if applicable
+// Profile the kernel to identify memory bottlenecks and improve data flow
+```

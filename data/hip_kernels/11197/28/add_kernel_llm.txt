@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses to improve bandwidth efficiency
+// Evaluate using shared memory for frequently accessed data to reduce global memory latency
+// Minimize conditional branches within kernels to optimize instruction throughput
+// Optimize grid and block dimensions to maximize occupancy based on the hardware's capabilities
+// Profile the application to find and alleviate memory bottlenecks

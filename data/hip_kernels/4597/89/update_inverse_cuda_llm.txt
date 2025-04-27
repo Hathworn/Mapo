@@ -1,0 +1,8 @@
+```
+// Consider optimizing shared memory usage by minimizing shared memory allocation for unused threads.
+// Implement loop unrolling to reduce the number of iterations in reduction loops for faster convergence.
+// Evaluate the benefits of using warp shuffle operations for reductions instead of shared memory when N is small.
+// Ensure that shared memory accesses are coalesced to improve read/write performance.
+// Monitor the number of threads per block to ensure they are a multiple of warp size for better efficiency.
+// Consider double buffering for shared memory to overlap computation and memory loads.
+```

@@ -1,0 +1,11 @@
+```cpp
+// Consider coalesced memory access for g_Data to improve memory throughput.
+// Consider using float2 (or another vector type) for loading shared memory to improve data movement efficiency.
+// Precompute as many constant calculations as possible outside of loops.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+// Consider reducing histograms with parallel reduction to speed up the process.
+// Cache frequently accessed values in registers to reduce shared memory usage.
+// Ensure calculations within thread-safe atomic operations remain efficient to minimize bottlenecks.
+// Evaluate whether shared memory bank conflicts could be impacting performance and optimize access patterns.
+// Consider loop unrolling where possible to reduce loop overhead.
+```

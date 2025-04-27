@@ -1,0 +1,7 @@
+```
+// Load hiprandState into a local variable to reduce global memory access
+// Use int casting to avoid precision issues and unnecessary operations
+// Update global hiprandState after calculations to minimize global memory access
+// Consider using shared memory if multiple threads access the same memory areas frequently
+// Check for coalesced memory access pattern to optimize global memory usage
+```

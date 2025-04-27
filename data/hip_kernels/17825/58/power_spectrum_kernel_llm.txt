@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache Ar and Aw values for memory access optimization.
+// Explore the possibility of using __ldg() intrinsic for read-only data from global memory.
+// Review memory coalescing by ensuring Aw[idx] is accessed consecutively.
+// Ensure gridDim.x and blockDim.x are optimized based on the device architecture.
+```

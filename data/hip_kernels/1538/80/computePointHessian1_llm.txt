@@ -1,0 +1,8 @@
+```
+// Load shared memory in a single read to reduce global memory accesses
+// Use __syncthreads to ensure correct synchronization of shared memory
+// Utilize register variables to hold reused values, reducing memory latency
+// Minimize compute-to-memory access ratio by leveraging shared memory
+// Consider coalesced memory access patterns to improve memory throughput
+// Optimize loop unrolling if possible to increase instruction level parallelism
+```

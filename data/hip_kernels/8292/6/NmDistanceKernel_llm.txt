@@ -1,0 +1,8 @@
+```cpp
+// Consider caching frequently accessed data in shared memory to reduce global memory accesses.
+// Use loop unrolling to decrease loop overhead and increase performance.
+// Ensure coalesced memory access patterns for both reading from and writing to global memory.
+// Consider utilizing vectorized loads/stores when possible to improve memory throughput.
+// Use __syncthreads() wisely to ensure proper synchronization without impacting performance.
+// Balance the workload among threads to maximize resource utilization.
+```

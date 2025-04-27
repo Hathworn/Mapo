@@ -1,0 +1,5 @@
+```
+// Load data into shared memory to reduce global memory accesses
+// Use __syncthreads() after initializing shared memory to ensure all threads have written their partial sum before reduction
+// Consider using atomic operations only at the end to minimize contention
+```

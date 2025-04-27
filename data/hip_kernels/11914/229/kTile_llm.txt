@@ -1,0 +1,6 @@
+```
+// Use shared memory if possible to cache src data to reduce global memory access
+// Ensure memory coalescing by accessing tgt array with continuous memory patterns
+// Investigate using read-only data cache for src to enhance read efficiency
+// Check if warp shuffling techniques can be applied for further optimization
+```

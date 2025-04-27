@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency
+// Ensure coalesced memory access when loading data into shared memory
+// Synchronize threads to ensure all have finished writing to shared memory
+// Consider memory access pattern for reading shared memory to optimize cache usage
+// Optimize thread divergence by handling special cases outside the main loop when possible
+```

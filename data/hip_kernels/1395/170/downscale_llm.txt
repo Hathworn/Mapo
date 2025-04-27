@@ -1,0 +1,9 @@
+```
+// Optimize memory access patterns for coalesced access
+// Minimize global memory accesses by reading shared data once
+// Use shared memory to cache gradOutput_data for re-use
+// Consider unrolling the inner loops for better performance
+// Reduce the use of __syncthreads() by restructuring computations
+// Ensure gradInput_data is aligned for optimal performance
+// Consider using float4 or float2 for vectorized memory operations
+```

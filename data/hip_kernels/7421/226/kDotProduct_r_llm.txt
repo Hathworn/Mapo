@@ -1,0 +1,8 @@
+```
+// Use shared memory to accumulate partial results, reducing global memory access.
+// Ensure efficient use of registers to minimize costly global memory transactions.
+// Proper boundary checks prevent illegal memory access and ensure correct calculations.
+// Implement loop unrolling for reduction, improving instruction throughput and efficiency.
+// Utilize warp intrinsic functions to perform reductions within warps, reducing synchronization overhead.
+// Store final block result in global memory only once per block, minimizing memory writes.
+```

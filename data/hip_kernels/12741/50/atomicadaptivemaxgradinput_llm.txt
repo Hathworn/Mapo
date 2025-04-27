@@ -1,0 +1,8 @@
+```
+// Use shared memory to store intermediate results for better memory access
+// Coalesce memory accesses to gradInput and gradOutput by indexing them appropriately
+// Minimize the number of floor and float operations within the loop
+// Prefetch data into registers to reduce global memory access latency
+// Optimize loop unrolling for output_h and output_w to improve pipeline efficiency
+// Reduce divergent branching within the conditional statements
+```

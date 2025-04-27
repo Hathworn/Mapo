@@ -1,0 +1,13 @@
+digraph "CFG for '_Z11kSquashReluPfS_jf' function" {
+	label="CFG for '_Z11kSquashReluPfS_jf' function";
+
+	Node0x5b2e630 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add i32 %14, %15\l  %17 = udiv i32 %13, %10\l  %18 = mul i32 %17, %10\l  %19 = icmp ugt i32 %13, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %10\l  %23 = icmp ult i32 %16, %2\l  br i1 %23, label %24, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x5b2e630:s0 -> Node0x5b30bf0;
+	Node0x5b2e630:s1 -> Node0x5b30c80;
+	Node0x5b30bf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%24:\l24:                                               \l  %25 = fneg contract float %3\l  br label %27\l}"];
+	Node0x5b30bf0 -> Node0x5b30e30;
+	Node0x5b30c80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%26:\l26:                                               \l  ret void\l}"];
+	Node0x5b30e30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ %16, %24 ], [ %38, %27 ]\l  %29 = zext i32 %28 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !16\l  %32 = fmul contract float %31, %25\l  %33 = tail call float @llvm.exp.f32(float %32)\l  %34 = fadd contract float %33, 1.000000e+00\l  %35 = fdiv contract float 2.000000e+00, %34\l  %36 = fadd contract float %35, -1.000000e+00\l  %37 = getelementptr inbounds float, float addrspace(1)* %1, i64 %29\l  store float %36, float addrspace(1)* %37, align 4, !tbaa !16\l  %38 = add i32 %28, %22\l  %39 = icmp ult i32 %38, %2\l  br i1 %39, label %27, label %26, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5b30e30:s0 -> Node0x5b30e30;
+	Node0x5b30e30:s1 -> Node0x5b30c80;
+}

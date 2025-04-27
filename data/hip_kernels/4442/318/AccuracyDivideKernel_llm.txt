@@ -1,0 +1,5 @@
+// Consider using shared memory if accessing accuracy involves redundant global memory access  
+// Minimize thread-divergence by ensuring warps less likely to have inactive threads  
+// Ensure memory access is coalesced to reduce latency  
+// Use fast math library functions if applicable to enhance computation efficiency  
+// Evaluate block and grid sizes for optimal hardware utilization

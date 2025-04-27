@@ -1,0 +1,7 @@
+```
+// Use shared memory for coalesced memory access if applicable.
+// Preload data to registers to reduce repeated memory accesses.
+// Ensure memory access patterns are coalesced for efficiency.
+// Avoid bank conflicts in shared memory if utilized.
+// Use __ldg() for read-only data to utilize texture cache when beneficial.
+```

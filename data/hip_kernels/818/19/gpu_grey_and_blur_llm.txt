@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache pixel data for faster access and reduced global memory transactions.
+// Minimize bank conflicts in shared memory by ensuring proper alignment and padding.
+// Consider loop unrolling for the blur operation to reduce loop overhead.
+// Use constant memory for frequently accessed kernel configurations like `k_size`.
+```

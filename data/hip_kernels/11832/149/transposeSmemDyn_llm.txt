@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns to improve memory throughput
+// Minimize bank conflicts in shared memory by ensuring proper data layout
+// Utilize __syncthreads() to synchronize threads after shared memory load
+// Opt for optimal block size and tile dimensions to maximize occupancy
+// Ensure in-bound checks are performed before accessing global memory
+```

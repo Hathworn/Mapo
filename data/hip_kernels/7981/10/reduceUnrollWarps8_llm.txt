@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to load data initially to reduce global memory accesses.
+// Optimize memory access by ensuring coalesced accesses when loading data.
+// Unrolling the loop to handle 8 elements helps increase instruction throughput.
+// Ensure that __syncthreads() is correctly applied whenever shared memory is updated by multiple threads.
+// Use volatile pointers in the last warp to ensure proper ordering and visibility of memory operations.
+// Consider using warp shuffle operations to reduce the number of synchronization points in the last warp.
+```

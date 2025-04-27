@@ -1,2 +1,0 @@
-#define EMPTY_KEY_64 INT64_C(9223372036854775807)
-//new series 

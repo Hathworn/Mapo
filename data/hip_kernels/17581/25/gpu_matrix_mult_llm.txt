@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure threads within bounds to avoid unnecessary memory operations.
+// Load blocks of data into shared memory for faster repeated access.
+// Ensure loading of shared memory is complete with __syncthreads().

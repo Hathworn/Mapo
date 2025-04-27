@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory effectively to minimize global memory access
+// Loop unrolling is applied to enhance computational efficiency
+// Utilize shuffle reduction within warp to avoid global memory writes
+// Minimize memory access by using __shfl_down_sync for reduction
+// Only write to global memory when absolutely necessary
+```

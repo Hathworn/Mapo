@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store icov0, icov1, and icov2 to reduce global memory access.
+// Use coalesced memory access patterns for pg_start and cov_dxd_pi_start for improved memory throughput.
+// Minimize the number of global memory accesses by ensuring the data is kept in registers when possible.
+// Ensure stride-based access pattern in the main loop for better warp utilization and to hide memory latency.
+```

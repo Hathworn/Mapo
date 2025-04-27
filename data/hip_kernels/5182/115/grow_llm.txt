@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns for accessing 'chromosomes'
+// Use shared memory to reduce redundant global memory accesses
+// Minimize divergent branching by restructuring conditions
+// Consider loop unrolling for performance improvement
+// Reduce the number of arithmetic operations within loops
+// Avoid recalculating the same index multiple times in loops
+// Use `__syncthreads()` only when necessary to avoid synchronization overhead
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for loading u and v
+// Ensure dst pointers are access-aligned to reduce bank conflicts
+// Optimize memory access patterns to minimize uncoalesced global memory operations
+// Use shared memory if data reuse between threads in a block is possible
+// Leverage unified memory for potential automatic data prefetching
+```

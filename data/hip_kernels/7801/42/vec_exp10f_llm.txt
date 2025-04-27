@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access for arrays 'result' and 'x'
+// Use shared memory if there are any common subexpressions or accesses
+// Reduce register usage within the loop if possible
+// Ensure that 'n' is aligned to BLOCK_SIZE for full occupancy
+// Avoid using exp10f(x[i]) repetitively if the same calculation can be reused
+```

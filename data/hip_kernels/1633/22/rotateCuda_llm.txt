@@ -1,0 +1,10 @@
+```
+// Optimize memory access by using shared memory for input data.
+// Consider using texture memory for better spatial locality and caching.
+// Reduce the use of fine-grained synchronization for faster memory access.
+// Adjust block size for optimum memory throughput and occupancy.
+// Utilize constant memory for variables like rowSizeIn, rowSizeOut, cosAngle, sinAngle, inXStart, and inYStart.
+// Minimize memory divergence by aligning memory accesses and improving coalescing.
+// Prefetch data to reduce wait time for memory access in subsequent calculations.
+// Consider loop unrolling techniques for calculations involving probX and probY.
+```

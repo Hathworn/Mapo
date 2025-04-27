@@ -1,0 +1,5 @@
+// Ensure coalesced memory access for a, b, and result arrays by aligning data structures
+// Consider using shared memory for frequently accessed data if appropriate
+// Optimize grid and block dimensions to match hardware capabilities for maximum warp efficiency
+// Minimize register usage to allow more threads per block for better occupancy
+// Investigate using pinned memory for faster host-device data transfer

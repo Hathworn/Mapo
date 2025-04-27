@@ -1,0 +1,5 @@
+// Consider using shared memory to store intermediate results for xsum to reduce global memory access.
+// Investigate coalesced memory access patterns for the arrays uproj, W, mu, and cmax to improve memory bandwidth.
+// Ensure that the memory accesses for cmax in the kernel loop are coalesced across threads in a warp.
+// Use read-only cache or const memory optimization for the Params and call arrays if they remain unchanged during kernel execution.
+// Consider loop unrolling for the loops iterating over NchanNear and NrankPC to improve instruction-level parallelism.

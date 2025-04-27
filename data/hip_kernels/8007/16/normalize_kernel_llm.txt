@@ -1,0 +1,4 @@
+// Pre-fetch mean and variance to avoid redundant global memory accesses
+// Ensure coalesced memory access by using contiguous memory layout for input data
+// Utilize shared memory for frequently accessed variables to reduce global memory access latency
+// Optimize block and grid dimensions to maximize warp occupancy and reduce execution divergence

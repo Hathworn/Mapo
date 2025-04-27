@@ -1,0 +1,5 @@
+// Consider coalesced memory access to improve memory bandwidth utilization
+// Minimize memory access latency by ensuring a, b, and y are aligned properly
+// Evaluate the possibility of using shared memory for intermediate computations to reduce global memory accesses
+// Check for potential loop unrolling to enhance instruction-level parallelism
+// Ensure full occupancy by optimizing grid and block dimensions based on the specific GPU architecture

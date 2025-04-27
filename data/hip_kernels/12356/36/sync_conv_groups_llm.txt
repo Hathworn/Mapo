@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to reduce global memory accesses
+// If there's a pattern in access, coalesce the memory operations
+// Analyze the memory access pattern to optimize for memory alignment
+// Use the __syncthreads() function only if necessary to avoid unnecessary synchronization
+// Minimize the use of global memory within the kernel if possible
+// Explore loop unrolling if there are loops within the actual kernel operations
+```

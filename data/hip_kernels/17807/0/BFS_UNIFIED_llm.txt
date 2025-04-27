@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for edges and dest arrays
+// Utilize shared memory for frequently accessed data
+// Reduce global memory access by caching visited array in shared memory
+// Optimize atomic operations by reducing contention
+// Employ half-warp optimizations for p_frontier and c_frontier accesses
+// Consider using warp-level primitives for efficient synchronization
+// Align data structures to avoid unaligned memory access penalties
+```

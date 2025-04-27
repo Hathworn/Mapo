@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads with memory layout
+// Consider using shared memory for reuse and to minimize global memory access
+// Optimize stride calculations to reduce redundant operations
+// Minimize divergence by ensuring thread blocks execute the same control paths
+// Use loop unrolling if beneficial in this context to increase parallelism
+```

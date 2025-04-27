@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to optimize frequent access to data_im_ptr and data_col_ptr
+// Reorganize data_im access pattern to ensure coalesced memory access
+// Ensure data_col_ptr memory access is well-aligned to improve write efficiency
+// Use loop unrolling pragmas efficiently to balance register pressure and instruction throughput
+```

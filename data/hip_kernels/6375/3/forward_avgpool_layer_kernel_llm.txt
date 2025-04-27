@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache input data for each block to reduce global memory access latency.
+// Optimize memory coalescing by ensuring that consecutive threads read consecutive data elements from input.
+// Evaluate if using atomic operations would improve accuracy and performance when accumulating sums across threads.
+// If applicable, apply loop unrolling to the for loop to minimize control overhead and maximize throughput.
+// Balance blockDim.x and gridDim.x to optimize for target GPU and ensure the kernel is fully saturated.
+```

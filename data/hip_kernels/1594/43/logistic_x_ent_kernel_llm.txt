@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for better performance
+// Use shared memory if there are common data accessed by multiple threads
+// Eliminate bank conflicts in shared memory access
+// Overlap memory transfers with computation using asynchronous copies
+// Minimize divergent branches within the warp
+// Avoid recalculating the index in each iteration
+```

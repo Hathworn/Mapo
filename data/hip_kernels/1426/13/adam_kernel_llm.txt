@@ -1,0 +1,6 @@
+```
+// Precompute powf values outside loop to reduce redundant calculations.
+// Use computation += syntax for direct updates to reduce variable assignments.
+// Consider optimizing memory access by ensuring x, m, and v are in coalesced memory order.
+// Ensure N is a multiple of blockDim.x where possible for efficient warp execution.
+```

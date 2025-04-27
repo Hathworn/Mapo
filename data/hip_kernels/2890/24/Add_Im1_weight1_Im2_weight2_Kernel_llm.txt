@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for optimal performance
+// Consider using shared memory if Im1 and Im2 are reused across multiple threads
+// Minimize register usage by avoiding complex arithmetic operations inside the loop
+// Try to maximize the occupancy by tuning block size and number of threads
+// Use vectorized memory operations if supported by the hardware
+```

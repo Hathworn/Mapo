@@ -1,0 +1,5 @@
+```
+// Ensure coalesced memory access for delta_nabla_w to improve bandwidth utilization
+// Consider using shared memory for activations if reuse is possible within the block
+// Optimize thread block size to maximize occupancy and minimize register usage
+```

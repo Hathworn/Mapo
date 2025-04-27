@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Coalesce global memory accesses by ensuring that threads access consecutive memory locations.
+// Ensure that 'a' and 'b' are aligned to a suitable boundary to maximize memory coalescing.
+// Minimize bank conflicts in shared memory by appropriately padding the allocations if necessary.
+```

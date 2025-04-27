@@ -1,0 +1,9 @@
+```cpp
+// Minimize global memory accesses by using shared memory
+// Consider coalescing global memory accesses for better efficiency
+// Ensure shared memory bank conflicts are avoided
+// Use __syncthreads() to synchronize threads within a block
+// Reduce unnecessary synchronization points
+// Load and write operations should be optimized for memory bandwidth
+// Leverage occupancy for optimal performance by tuning block and grid sizes
+```

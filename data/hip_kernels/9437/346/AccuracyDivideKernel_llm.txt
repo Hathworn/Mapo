@@ -1,0 +1,6 @@
+```
+// Use shared memory to store intermediate results and reduce global memory access
+// Ensure coalesced memory access for optimal global memory performance
+// Consider using warp shuffle operations to avoid using shared memory and block synchronization
+// Verify if reducing precision to half-precision floats could improve performance without loss of accuracy
+```

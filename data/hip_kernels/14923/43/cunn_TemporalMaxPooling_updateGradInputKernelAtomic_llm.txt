@@ -1,0 +1,6 @@
+```
+// Consider increasing the temporal block size (TEMPORAL_MAX_POOLING_THREADS) to improve workload balance.
+// Ensure coalesced memory access by aligning gradInput_data, gradOutput_data, and indices_data accesses.
+// Use shared memory to cache gradOutput and indices values to reduce global memory access.
+// Minimize atomic operations by considering alternative reduction strategies or combining atomic additions.
+```

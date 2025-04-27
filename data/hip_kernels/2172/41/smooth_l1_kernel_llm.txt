@@ -1,0 +1,7 @@
+```
+// Consider pre-loading pred[i] and truth[i] into registers to improve memory access efficiency
+// Use shared memory if there's data reuse within a block to reduce global memory accesses
+// Align memory accesses for error[i] and delta[i] to improve coalesced memory access
+// Optimize the use of conditional operations to minimize divergence within the warp
+// Avoid redundant calculations such as recalculating abs_val by storing it in a local variable
+```

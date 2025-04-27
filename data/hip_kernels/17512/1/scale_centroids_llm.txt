@@ -1,0 +1,4 @@
+// Use shared memory for counts to reduce global memory access  
+// Ensure all threads have loaded the data with __syncthreads  
+// Adjust size of shared_counts based on maximum possible 'k' to optimize memory usage  
+// Use conditional to avoid divide by zero errors optimizing for stability

@@ -1,0 +1,5 @@
+// Consider coalescing memory access for output and biases
+// Ensure biases are loaded into shared memory for faster access
+// Reduce global memory load by storing indexes in registers
+// Align data types for better memory load/store efficiency
+// Reassess the choice of gridDim and blockDim for optimal occupancy

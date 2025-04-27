@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Initialize shared memory for each thread
+// Write each thread's maximum to shared memory
+// Synchronize threads to ensure shared memory is fully populated
+// Reduce maximum across all threads in block
+// Write the block's maximum to global memory
+// Synchronize to ensure block maximum is written before next iteration
+```

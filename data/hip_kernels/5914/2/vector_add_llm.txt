@@ -1,0 +1,6 @@
+```c
+// Use shared memory if there's an opportunity for data reuse within a block
+// Consider coalesced memory access patterns for A_dev and B_dev
+// Ensure data is aligned to prevent uncoalesced memory accesses
+// Optimize block and grid dimensions to maximize occupancy
+```

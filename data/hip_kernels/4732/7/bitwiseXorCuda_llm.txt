@@ -1,0 +1,3 @@
+// Consider aligning memory accesses with warp size to optimize coalesced memory access
+// Use shared memory if possible to minimize global memory accesses for frequently used data
+// Ensure optimal block and grid size settings to improve warp utilization and reduce idle threads

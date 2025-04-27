@@ -1,0 +1,7 @@
+```
+// Consider using float2 or float4 for coalesced global memory access
+// Evaluate the usage of __ldg() for read-only data from global memory
+// Minimize the use of __syncthreads() if not necessary
+// Ensure all data fits within the maximum shared memory size
+// Align data structures for optimal memory access patterns
+```

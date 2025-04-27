@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory accesses for frequently reused data
+// Align memory accesses to coalesced memory transactions if possible
+// Minimize bank conflicts by ensuring optimal memory access patterns
+// Evaluate if texture memory could be beneficial for read-heavy operations
+// Check if loop unrolling might offer performance benefits depending on the GPU architecture
+// Prefetch data where patterns allow to hide latency
+// Analyze if reducing divergent branching would improve performance
+```

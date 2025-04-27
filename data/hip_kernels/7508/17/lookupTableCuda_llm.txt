@@ -1,0 +1,4 @@
+// Consider coalesced memory access by ensuring rowSize is a multiple of block size
+// Use shared memory if possible to cache table values and reduce global memory accesses
+// Optimize grid and block dimensions to maximize occupancy
+// Prefetch input data to registers to minimize redundant global memory accesses

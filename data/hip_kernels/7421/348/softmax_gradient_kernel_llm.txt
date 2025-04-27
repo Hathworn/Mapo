@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Coalesce memory accesses to improve memory read efficiency
+// Consider using warp shuffle for reduction instead of shared memory
+// Ensure memory alignment for coalesced access patterns
+// Use __restrict__ keyword for pointer arguments to help the compiler optimize memory loads
+// Preload data into registers to minimize redundant memory access
+```

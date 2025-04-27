@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to store intermediate results for variance_delta calculations to reduce global memory accesses.
+// Ensure coalesced memory access by having consecutive threads access consecutive elements of the x and delta arrays.
+// Explore optimizing loop unrolling factor, and ensure unroll matches the hardware capabilities for increased performance.
+// Use __syncthreads() appropriately if implementing shared memory to synchronize threads.
+```

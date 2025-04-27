@@ -1,0 +1,4 @@
+// Consider coalesced memory access by ensuring sequential indices access contiguous memory locations
+// Use shared memory to reduce repeated global memory access for ghatmap values
+// Use vectorized operations where possible to reduce instruction count and improve memory bandwidth usage
+// Ensure grid and block dimensions are optimized for maximum occupancy and parallelism

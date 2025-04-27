@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses if applicable
+// Optimize memory access patterns to ensure coalesced reads/writes
+// Ensure the grid-stride loop covers all elements for arbitrary N
+// Consider using fewer threads if N is significantly smaller than total threads
+// Avoid using bank-conflict-prone memory layouts in shared memory
+```

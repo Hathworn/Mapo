@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Ensure memory accesses are coalesced wherever possible
+// Loop unrolling can be used for the loops over `l` and `m`
+// Minimize conditional statements inside nested loops
+// Consider using warp level primitives for reduction operations
+```

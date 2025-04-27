@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data_im_tile to reduce global memory transactions
+// Use vectorized memory access for data_im_ptr and data_col_ptr to improve memory throughput
+// Ensure memory alignment where possible to take advantage of coalesced memory access
+// Prefetch data for the next iteration to hide memory latency
+// Minimize divergent branches by restructuring boundary checks
+```

@@ -1,0 +1,7 @@
+```
+// Reuse shared memory allocations for multiple purposes within the same block to reduce memory footprint.
+// Ensure proper memory alignment and coalesced access for the global memory reads of array a and b.
+// Consider using warp-level primitives for reduction to improve performance.
+// Optimize block size and minimize thread divergence by configuring blockDim.x according to hardware characteristics.
+// Preload values from global memory into registers before computation to decrease memory latency.
+```

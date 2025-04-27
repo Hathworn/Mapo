@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Minimize usage of __device__ functions within the loop
+// Ensure coalesced memory accesses for gradOutput_data
+// Implement thread striding for underutilized threads
+// Avoid bank conflicts in shared memory usage
+// Perform atomic operations if necessary to prevent race conditions
+```

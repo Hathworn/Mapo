@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifier for loc_, x, and y pointers to optimize memory access
+// Consider coalescing memory accesses by ensuring global memory writes for x and y are done in a contiguous manner
+// Check alignment for loc_ to ensure efficient memory access patterns
+// Utilize shared memory if applicable to further reduce global memory access
+// Experiment with different block sizes to find the optimal configuration for this kernel
+```

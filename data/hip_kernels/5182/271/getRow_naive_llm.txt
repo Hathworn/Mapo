@@ -1,0 +1,9 @@
+```
+// Combine memory accesses within a warp to improve coalescing
+// Ensure *row_id is loaded outside the kernel for better locality
+// Use shared memory if reusing A[rowOffset] across multiple blocks
+// Minimize divergence by ensuring all threads within a block perform the same operation
+// Prefetch *row_id value to reduce latency
+// Consider using vectorized loads/stores if Acols is a multiple of 4 for efficiency
+// Align data structures to 64 bytes if possible for optimal access
+```

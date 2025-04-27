@@ -1,0 +1,6 @@
+```c
+// Merge index stride loop to minimize global memory access
+// Apply block-level reduction to reduce global memory contention
+// Consider using loop unrolling to optimize reduction efficiency
+// Use atomic operations outside of the loop to prevent warp divergence
+```

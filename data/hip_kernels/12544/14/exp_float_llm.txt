@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by organizing threads to access consecutive memory locations.
+// Consider using shared memory to store frequently accessed data and reduce global memory access.
+// Optimize loop unrolling factors to match the hardware's maximum capacity to improve throughput.
+// Adjust the block size and grid size to achieve better occupancy and maximize resource utilization.
+// Use __restrict__ qualifier for pointers if no aliasing occurs to improve memory access patterns.
+```

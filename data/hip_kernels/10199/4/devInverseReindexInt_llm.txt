@@ -1,0 +1,5 @@
+// Ensure memory accesses are coalesced for better performance
+// Use shared memory if possible to minimize global memory access latency
+// Avoid redundant memory accesses by calculating indices efficiently
+// Consider preferring warp-synchronous programming to minimize diverging branches
+// Leverage data locality by clustering threads logically

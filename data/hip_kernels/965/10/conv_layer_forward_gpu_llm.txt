@@ -1,0 +1,3 @@
+// Use __shared__ memory to cache weights for faster access.
+// Utilize __syncthreads() after loading weights to ensure all threads have completed loading.
+// Apply #pragma unroll to the inner loops to enhance loop performance.

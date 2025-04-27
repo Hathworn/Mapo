@@ -1,0 +1,4 @@
+// Use grid-stride loop to maximize GPU occupancy and efficiency
+// Ensure coalesced memory access by accessing dy and result in a sequential manner
+// Consider using shared memory if temporary storage is needed to reduce global memory accesses
+// Prefer using const keyword for fixed values (e.g. incy) for potential compiler optimizations

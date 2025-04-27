@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Align data access to 128 bytes to take advantage of coalesced memory access
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path
+// Consider employing loop unrolling for potential instruction parallelism improvements
+```

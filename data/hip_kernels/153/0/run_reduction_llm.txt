@@ -1,0 +1,5 @@
+// Use coalesced memory access for con array to improve memory bandwidth.
+// Ensure that ActiveList and blockSizes are accessed in a coalesced manner.
+// Consider loop unrolling if blocksize has a predictable pattern.
+// Optimize shared memory usage by minimizing bank conflicts in s_block_conv updates.
+// Consider using warp-level primitives to reduce synchronization overhead.

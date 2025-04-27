@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache indices for faster repeated access
+// Unroll the loop for improved performance if the 'mat_width' is known
+// Consider coalesced memory access patterns to improve global memory efficiency
+// Align memory accesses to ensure proper cache utilization
+// Minimize divergent branches within the loop for better warp efficiency
+```

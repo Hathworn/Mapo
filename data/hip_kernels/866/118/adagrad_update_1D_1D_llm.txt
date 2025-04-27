@@ -1,0 +1,5 @@
+// Consider using shared memory for small data chunks to reduce global memory accesses.
+// Ensure memory accesses are coalesced to minimize bandwidth usage.
+// Minimize the use of division by using reciprocal multiplication if applicable.
+// Ensure that the `index` calculation avoids divergence across threads in a warp.
+// Consider unrolling loops for small stride values to reduce loop overhead.

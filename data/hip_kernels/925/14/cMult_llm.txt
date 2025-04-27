@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by organizing threads to access consecutive memory locations
+// Use shared memory if multiple threads access the same data to reduce global memory traffic
+// Consider loop unrolling for repetitive calculations to reduce instruction overhead
+// Optimize registers usage by minimizing the use of local variables
+// Evaluate use of warp-level primitives to further optimize data exchange within a warp
+```

@@ -1,0 +1,6 @@
+```c
+// Consider coalesced global memory access for imagem array to enhance memory throughput
+// Utilize shared memory to reduce global memory load for frequently accessed image data
+// Ensure alignment of imagem array to prevent memory handling inefficiencies
+// Minimize divergence by ensuring all threads within a warp execute the same path
+```

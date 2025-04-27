@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache histogram updates and reduce global memory accesses.
+// Coalesce global memory writes by using warp-wide aggregation for histogram updates.
+// Optimize texture memory access pattern to improve cache hit rate.
+// Implement warps to handle multiple pixels to increase parallelism and reduce divergence.
+// Consider using larger block sizes to increase occupancy and better utilize GPU resources.
+```

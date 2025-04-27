@@ -1,0 +1,8 @@
+```c
+// Consider using texture memory for 'source' and 'kernel' for faster read access
+// Implement loop unrolling only if you are certain 'len' is a multiple of 4
+// Ensure 'len' is a constant expression or manage boundary conditions properly
+// Investigate memory coalescing by ensuring 'source' and 'kernel' alignment
+// Assess shared memory usage if the working set fits into it for reduced latency
+// Profile to check if bank conflicts occur in shared memory usage
+```

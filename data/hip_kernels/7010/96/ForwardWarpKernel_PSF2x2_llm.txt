@@ -1,0 +1,7 @@
+```
+// Use __restrict__ qualifiers on pointer parameters to optimize memory access
+// Consider using shared memory to reduce global memory reads
+// Optimize flow_stride and image_stride for coalesced access
+// Use float2 for vectorized memory access where applicable
+// Prefetch data to registers to hide global memory latency
+```

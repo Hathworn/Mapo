@@ -1,0 +1,5 @@
+// Load data in larger chunks to reduce global memory transactions.
+// Consider using cooperative groups for warp-level operations.
+// Use __syncthreads() wisely to avoid unnecessary synchronization overhead.
+// Consider using asynchronous copy and prefetching techniques.
+// Experiment with block and thread dimensions for optimal occupancy.

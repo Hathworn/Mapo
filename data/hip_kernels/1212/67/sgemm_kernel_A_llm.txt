@@ -1,0 +1,5 @@
+// Reuse shared memory tiles for efficient global memory access
+// Load tiles collaboratively to reduce global memory transactions
+// Ensure __syncthreads() to synchronize shared memory loads
+// Minimize branching within memory loading for performance consistency
+// Align memory accesses to optimize hardware specific features

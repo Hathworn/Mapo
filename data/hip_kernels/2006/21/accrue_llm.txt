@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for input arrays a and b
+// Use shared memory to avoid bank conflicts for reduction
+// Ensure all threads write to shared memory for consistent behavior
+// Consider loop unrolling for further performance enhancement
+// Optimize use of __syncthreads to minimize synchronization overhead
+```

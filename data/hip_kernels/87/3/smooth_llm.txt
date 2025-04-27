@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses for neighboring elements.
+// Consider loop unrolling if the smoothing operation involves repetitive calculations.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Adjust block size for maximizing occupancy and minimizing idle threads.

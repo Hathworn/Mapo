@@ -1,0 +1,3 @@
+// Consider using shared memory to cache normalization_factor values for threads within a block to reduce global memory access.
+// Use __restrict__ keyword on pointer arguments for potential performance gain if data does not overlap.
+// Evaluate potential bank conflicts in shared memory and use padding if necessary to optimize memory access.

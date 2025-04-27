@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing global memory loads of gradOutput.
+// Consider padding shared memory to avoid bank conflicts.
+// Unroll inner loops over kW and kH to improve performance.
+// Use __syncthreads() efficiently to minimize idle threads.
+// Ensure alignment of memory accesses for input using appropriate data structures.
+// Use texture or read-only cache for the input to improve memory bandwidth utilization.
+// Launch enough blocks to fully utilize the GPU and hide latency.
+```

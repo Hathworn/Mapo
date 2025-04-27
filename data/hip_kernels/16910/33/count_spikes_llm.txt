@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency for frequently accessed data.
+// Coalesce global memory accesses to improve memory access efficiency.
+// Use register variables for frequently accessed values within each thread to reduce memory bandwidth.
+// Optimize the loop by unrolling it if the value of Nspikes is known at compile time.
+// Investigate the potential for using atomic operations if thread contention on nsp[tind] occurs.
+```

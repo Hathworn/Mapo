@@ -1,0 +1,8 @@
+```
+// Use coalesced access for d_Data to improve memory throughput
+// Consider using float2 for combined min and max operations
+// Optimize shared memory usage by reducing bank conflicts
+// Ensure __syncthreads() is positioned correctly to avoid race conditions
+// Evaluate if further loop unrolling could yield performance benefits
+// Assess if multiple kernel launches affect performance negatively
+```

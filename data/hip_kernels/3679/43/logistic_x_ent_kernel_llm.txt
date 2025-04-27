@@ -1,0 +1,4 @@
+// Use shared memory to cache `pred` and `truth` for coalesced access
+// Minimize register usage to avoid spilling to local memory
+// Optimize loop unrolling in the kernel to increase throughput
+// Consider using asynchronous copying for memory operations

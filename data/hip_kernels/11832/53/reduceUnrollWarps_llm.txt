@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Avoid bank conflicts when accessing shared memory
+// Optimize global memory access by using continuous memory access patterns
+// Minimize synchronization by optimizing reduction loop structures
+// Use `volatile` within warp unrolling to ensure proper memory access ordering
+// Limit divergence in warp execution by optimizing control flow within warps
+```

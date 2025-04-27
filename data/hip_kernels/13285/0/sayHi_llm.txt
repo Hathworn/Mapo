@@ -1,0 +1,9 @@
+```
+// Ensure memory access patterns are coalesced for better performance.
+// Utilize shared memory to reduce global memory access when possible.
+// Minimize the use of printf due to its high overhead in GPU kernels.
+// Consider loop unrolling for repetitive operations within the kernel.
+// Optimize kernel launch configuration with regards to occupancy.
+// Balance the workload among threads to ensure efficient parallel execution.
+// Reduce divergent branches to ensure warp efficiency.
+```

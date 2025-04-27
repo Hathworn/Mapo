@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses.
+// Avoid bank conflicts by ensuring memory accesses are coalesced.
+// Consider using warp shuffle operations for faster warp-level reduction.
+// Ensure volatile keyword is used when accessing shared memory within a warp.

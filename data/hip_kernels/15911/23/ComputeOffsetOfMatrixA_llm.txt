@@ -1,0 +1,4 @@
+// Use shared memory to cache col_sum values and reduce global memory accesses
+// Consider coalesced memory accesses for the output array to improve throughput
+// Minimize use of pointer arithmetic by using array indexing
+// Balance work among threads to ensure efficient execution

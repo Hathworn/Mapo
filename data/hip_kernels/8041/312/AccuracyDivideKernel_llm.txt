@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory transactions
+// Only thread 0 accesses global memory to avoid race conditions and reduce memory access latency
+// Synchronize threads to ensure shared memory value is consistent across threads
+// Initialize shared memory outside the division to minimize computation in global memory

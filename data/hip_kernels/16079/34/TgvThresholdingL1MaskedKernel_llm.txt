@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory for frequently accessed data to reduce global memory accesses.
+// Coalesce global memory accesses when reading input arrays like mask[] and Tp[].
+// Consider using texture memory for read-only data like Iu[] and Iz[] for better cache performance.
+// Optimize divergent branches to minimize warp divergence.
+// Minimize global memory writes by combining operations where possible.
+// Prefetch neighboring elements needed for computations to avoid latency from global memory accesses.
+// Use persistent threads to maximize device utilization and minimize kernel launch overhead.
+```

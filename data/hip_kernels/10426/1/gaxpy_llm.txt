@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for a[bid * n + tid] to improve memory bandwidth utilization.
+// Load x[tid] into a register to decrease global memory access latency.
+// Reduce the use of shared memory by optimizing the reduction step.
+// Decrease synchronization overhead by utilizing warp shuffle operations for reduction.
+// Explore using __restrict__ pointers to improve memory access pattern predictability.
+```

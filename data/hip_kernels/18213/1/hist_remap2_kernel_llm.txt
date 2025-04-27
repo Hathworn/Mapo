@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations to improve memory access efficiency.
+// Utilize shared memory to reduce redundant global memory access, particularly for frequently accessed data such as minJ, maxJ, and stepJ.
+// Minimize divergent branches by ensuring conditions are likely to yield uniform execution across threads in a warp.
+// Prefetch data into registers where possible to reduce memory access latency.
+// Use loop unrolling techniques for sections of code with loop constructs to enhance performance by decreasing loop overhead.
+```

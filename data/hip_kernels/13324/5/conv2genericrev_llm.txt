@@ -1,0 +1,10 @@
+```
+// Consider using constant memory for kernel weights to improve memory access latency.
+// Optimize shared memory usage by reducing bank conflicts in shared_output allocation.
+// Attempt to coalesce memory accesses by organizing input and output data in contiguous blocks.
+// Use loop unrolling techniques in convolution loops to decrease loop overhead and improve throughput.
+// Explore usage of half-precision (FP16) if precision requirements allow, for better throughput on supported GPUs.
+// Consider using a more efficient memory access pattern for the kernel loading loop to maximize cache hits.
+// Investigate if using warp-level primitives for reduction in shared memory can enhance performance.
+// Evaluate if the problem size allows for the usage of tensor cores for further acceleration.
+```

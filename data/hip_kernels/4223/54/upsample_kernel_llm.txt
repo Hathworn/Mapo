@@ -1,0 +1,5 @@
+// Consider using shared memory to store partial results to reduce global memory accesses.
+// Optimize block and grid dimensions for better occupancy and utilization.
+// Coalesce global memory access for read operations to improve memory bandwidth.
+// Align memory access patterns to ensure optimal memory transaction size and avoid bank conflicts.
+// Utilize constant memory for frequently used values like scale to decrease global memory latency.

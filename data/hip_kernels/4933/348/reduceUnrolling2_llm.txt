@@ -1,0 +1,5 @@
+// Consider using shared memory to store input data to reduce global memory access.
+// Add __syncthreads() after updating g_idata to ensure all threads see the change.
+// Ensure boundary check before accessing g_idata to avoid accessing out of bounds.
+// Utilize warp shuffle or warp reduction for further reduction within warp level.
+// Consider using atomic operations for final result aggregation across blocks.

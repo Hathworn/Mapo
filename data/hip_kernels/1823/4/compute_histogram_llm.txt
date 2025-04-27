@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for data array.
+// Use warp-level primitives to reduce contention on atomicAdd.
+// Ensure optimal block size for memory and compute bounded kernels.
+// Use larger shared memory tile for local_hist to reduce global memory access.
+```

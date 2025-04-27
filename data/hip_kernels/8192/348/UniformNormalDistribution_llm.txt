@@ -1,0 +1,5 @@
+// Consider coalescing memory access for optimal memory bandwidth
+// Minimize divergence by ensuring warp-wide conditional coherence
+// Ensure utilization of shared memory if there are repeated accesses to the same values
+// Precompute invariant expressions outside the kernel if possible
+// Leverage constant memory for frequently used read-only data

@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access
+// Ensure memory coalescing by accessing contiguous memory locations
+// Synchronize threads effectively to prevent data hazards
+// Consider using warp shuffle instructions for better efficiency
+// Reduce redundant __syncthreads() where possible
+// Optimize loop by calculating indices outside inner loops
+// Use constants or pre-computed values for repeated calculations
+```

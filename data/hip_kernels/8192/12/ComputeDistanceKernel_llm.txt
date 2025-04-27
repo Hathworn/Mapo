@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access for symbolVectors to improve performance
+// Preload inputVector elements into shared memory to minimize redundant global memory accesses
+// Evaluate using float4 data types for faster memory loads and computations
+// Consider aligning symbolVectors and inputVector to cache boundary for optimal memory performance
+// Unroll the loop to reduce loop overhead if the symbolSize is known at compile time
+```

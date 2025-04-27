@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced access patterns.
+// Consider storing intermediate results in shared memory to reduce redundant calculations.
+// Use __powf when possible for better performance with single-precision pow.
+// Precompute constant values outside the loop to improve efficiency.
+// Ensure the loop variable increment aligns with warp size to optimize execution.
+```

@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency
+// Coalesce memory access by ensuring threads access consecutive memory locations
+// Avoid branching by using conditional assignment instead of if-statement

@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory accesses by using shared memory for row indices.
+// Ensure that sourceRowIndices remain within block scope to improve cache performance.
+// Use __syncthreads() to synchronize threads after loading row indices.
+// Avoid conditional logic within the main data copying loop to enhance coalesced memory access.
+// Prefer loading data in a coalesced manner to maximize memory bandwidth utilization.
+// Consider loop unrolling if the number of columns (nCols) is known at compile time for further optimization.
+```

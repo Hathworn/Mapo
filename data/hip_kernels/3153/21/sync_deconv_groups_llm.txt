@@ -1,0 +1,10 @@
+```
+// Consider coalescing memory accesses to improve memory throughput.
+// Minimize shared memory usage to avoid bank conflicts.
+// Use constant memory for any read-only data that is accessed by all threads.
+// Align data structures to ensure coalesced accesses.
+// Employ loop unrolling where beneficial for performance.
+// Avoid branching within the kernel to maintain warp execution efficiency.
+// Consider using vectorized memory operations for efficiency.
+// Profile your application to identify bottlenecks and address them.
+```

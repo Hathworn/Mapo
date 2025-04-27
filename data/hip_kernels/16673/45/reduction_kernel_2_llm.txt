@@ -1,0 +1,5 @@
+// Use shared memory to optimize memory access
+// Ensure coalesced memory accesses for global memory reads and writes
+// Reduce thread divergence by minimizing conditional statements
+// Optimize reduction loop by using bitwise operations for stride calculation
+// Only synchronize threads if necessary to reduce overhead

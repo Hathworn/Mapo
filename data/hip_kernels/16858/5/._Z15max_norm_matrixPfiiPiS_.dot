@@ -1,0 +1,15 @@
+digraph "CFG for '_Z15max_norm_matrixPfiiPiS_' function" {
+	label="CFG for '_Z15max_norm_matrixPfiiPiS_' function";
+
+	Node0x54445d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  store i32 0, i32 addrspace(1)* %3, align 4, !tbaa !4\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !8, !invariant.load !9\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !10\l  %14 = add i32 %12, %13\l  %15 = mul nsw i32 %2, %1\l  %16 = icmp slt i32 %14, %15\l  br i1 %16, label %17, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x54445d0:s0 -> Node0x5445f90;
+	Node0x54445d0:s1 -> Node0x5446ae0;
+	Node0x5445f90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{%17:\l17:                                               \l  %18 = sext i32 %14 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !11,\l... !amdgpu.noclobber !9\l  %21 = tail call float @llvm.fabs.f32(float %20)\l  %22 = bitcast float %21 to i32\l  %23 = atomicrmw max i32 addrspace(1)* %3, i32 %22 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %24\l}"];
+	Node0x5445f90 -> Node0x5446ae0;
+	Node0x5446ae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %25 = icmp eq i32 %14, 0\l  br i1 %25, label %26, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x5446ae0:s0 -> Node0x5447b30;
+	Node0x5446ae0:s1 -> Node0x5447b80;
+	Node0x5447b30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%26:\l26:                                               \l  %27 = bitcast i32 addrspace(1)* %3 to float addrspace(1)*\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !4\l  store float %28, float addrspace(1)* %4, align 4, !tbaa !11\l  br label %29\l}"];
+	Node0x5447b30 -> Node0x5447b80;
+	Node0x5447b80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,9 @@
+```cpp
+// Consider coalescing memory accesses to improve global memory throughput.
+// Utilize shared memory to reduce redundant global memory reads.
+// Optimize thread block dimensions to maximize the use of shared memory.
+// Ensure alignment of data to avoid bank conflicts in shared memory usage.
+// Minimize divergence by aligning warps with computation tasks.
+// Use fewer registers per thread to allow for increased occupancy.
+// Check if tile size can be adjusted to optimize shared memory usage.
+```

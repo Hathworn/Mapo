@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning d_A and d_B loading operations
+// Use shared memory effectively to reduce global memory access latency
+// Minimize synchronization overhead by grouping loads and computation
+// Adjust block dimension to match warp size for better performance
+// Avoid bank conflicts in shared memory access for optimal speed
+```

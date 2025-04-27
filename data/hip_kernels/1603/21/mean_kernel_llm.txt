@@ -1,0 +1,4 @@
+// Consider using shared memory for partial sum accumulation to reduce global memory accesses.
+// Optimize memory access patterns by ensuring coalesced memory access within the inner loop.
+// Minimize register pressure by rearranging computations if possible to enable more threads per block.
+// Ensure `filters` and other loop-bound variables are appropriately set for efficient block utilization.

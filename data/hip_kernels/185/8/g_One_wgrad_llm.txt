@@ -1,0 +1,6 @@
+```c
+// Use __restrict__ keyword for pointer parameters to allow compiler optimizations.
+// Ensure inputs, curDelta, and wgradTmp are aligned to improve memory access efficiency.
+// Coalesce memory accesses for inputs, curDelta, and wgradTmp by ensuring contiguous thread ID access patterns.
+// Consider loop unrolling for the inner loop to enhance performance.
+```

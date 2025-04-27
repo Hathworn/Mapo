@@ -1,0 +1,3 @@
+// Use __restrict__ keyword for input and output pointers to improve memory access efficiency.
+// Consider using shared memory to buffer row_sum values and reduce redundant global memory accesses.
+// Explore loop unrolling techniques if applicable for further instruction-level parallelism.

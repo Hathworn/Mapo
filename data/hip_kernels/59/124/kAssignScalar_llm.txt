@@ -1,0 +1,4 @@
+// Consider using shared memory to optimize access latency
+// Ensure memory accesses are coalesced by aligning data
+// Reduce grid and block dimensions if len is significantly smaller than total threads
+// Evaluate potential use of atomic operations if necessary to handle concurrent writes

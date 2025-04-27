@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache sub-matrices and reduce redundant global memory access.
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path.
+// Optimize memory access patterns by coalescing global memory reads and writes.
+// Use constant memory for immutable kernel arguments when applicable.
+```

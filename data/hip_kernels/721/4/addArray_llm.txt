@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access overhead
+// Coalesce global memory accesses for improved memory bandwidth
+// Ensure gridDim.x and blockDim.x are optimal for GPU occupancy
+// Consider using atomic operations if necessary to avoid race conditions
+// Profile kernel for bottlenecks and adjust block and grid sizes accordingly

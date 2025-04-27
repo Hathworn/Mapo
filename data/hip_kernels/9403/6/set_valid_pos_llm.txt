@@ -1,0 +1,5 @@
+// Consider reducing __syncthreads() usage to minimize synchronization overhead.
+// Evaluate if using warp-level operations can further reduce memory access latency.
+// Potentially use atomic operations if pos_buff update causes race conditions.
+// Optimize block size to maximize occupancy and balance shared memory usage.
+// Assess the benefit of pre-fetching data into shared memory outside of the loop.

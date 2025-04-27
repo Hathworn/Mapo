@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store target row indices for efficient access
+// Load indices into shared memory with boundary checks to prevent out-of-bounds access
+// Leverage shared memory indices to reduce global memory access latency
+// Perform row copying using cooperative threads for better memory coalescing
+```

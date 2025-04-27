@@ -1,0 +1,9 @@
+```
+// Load data into shared memory to reduce global memory access
+// Use shared memory to improve cache efficiency
+// Ensure that only valid data is accessed to prevent out-of-bounds reads
+// Synchronize threads to ensure all data is loaded before computation
+// Use loop unrolling for the innermost product calculation to enhance performance
+// Synchronize again after computation to avoid data hazards between iterations
+// Update global memory only if indices are within proper bounds to prevent errors
+```

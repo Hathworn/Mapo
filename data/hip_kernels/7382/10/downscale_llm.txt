@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory accesses.
+// Consider loop unrolling for improved performance.
+// Implement coalescing access patterns by ensuring consecutive threads access consecutive memory locations.
+// Optimize the memory access by accessing gradOutput_data in a coalesced manner.

@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory accesses to g_idata and g_odata for improved performance.
+// Ensure all thread blocks have enough work to avoid idle warps in the unrolling process.
+// Evaluate the block size to optimize occupancy and resource usage in the GPU.
+// Avoid bank conflicts in shared memory accesses by considering the shared memory stride.
+// Consider using __restrict__ to provide the compiler with more optimization opportunities.
+// Use __syncthreads() wisely to prevent unnecessary synchronization delays.
+```

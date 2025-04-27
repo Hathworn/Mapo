@@ -1,0 +1,7 @@
+```
+// Use fast division for hscale and vscale to improve performance.
+// Precompute wh and wv using fused multiply-add for accuracy.
+// Use clamp operation to ensure wh and wv remain within bounds.
+// Optimize bilinear interpolation using texture fetches for coalesced memory access.
+// Favor integer arithmetic in averaging to reduce computation overhead.
+```

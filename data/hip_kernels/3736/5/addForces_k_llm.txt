@@ -1,0 +1,7 @@
+```
+// Use __restrict__ for pointers if no aliasing is involved
+// Use shared memory to hold frequently accessed data
+// Utilize vectorized loads and stores if applicable
+// Ensure coalesced memory access patterns for better performance
+// Minimize the use of __syncthreads() if not necessary
+```

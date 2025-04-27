@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache devValue and devWeight for faster access
+// Avoid bank conflicts by arranging shared memory accesses appropriately
+// Try double-buffering technique to overlap memory transfers and computation
+// Consider using atomic operations if there are concurrent writes to the same memory location
+```

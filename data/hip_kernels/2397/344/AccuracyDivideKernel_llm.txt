@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache `accuracy` and reduce global memory access.
+// Use a grid-stride loop in combination with atomicAdd for better scalability.
+// Optimize thread blocks and grid dimensions for maximum occupancy.
+// Ensure coalesced memory access by aligning data properly.
+```

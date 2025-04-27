@@ -1,0 +1,7 @@
+```
+// Use shared memory if multiple threads access nearby addresses to reduce global memory access latency.
+// Consider coalescing memory accesses for better global memory throughput.
+// Ensure enough active warps to hide memory latency; consider increasing the block size if needed.
+// Use loop unrolling if the operation inside the loop is repeated for performance gain.
+// Check for bank conflicts in shared memory access if shared memory is used.
+```

@@ -1,0 +1,9 @@
+```
+// Use shared memory for centroids to reduce global memory access latency.
+// Consider unrolling loops to improve instruction throughput.
+// Use atomic operations for thread-safe updates to shared changes variable.
+// Ensure memory coalescing by accessing global memory in contiguous patterns.
+// Evaluate the usage of __syncthreads to ensure correct synchronization with minimal overhead.
+// Optimize loading of centroids by minimizing redundant data transfer to shared memory.
+// Consider using warp-level primitives for optimized reduction operations.
+```

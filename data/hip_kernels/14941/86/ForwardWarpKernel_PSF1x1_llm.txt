@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access and increase memory bandwidth.
+// Ensure alignment of memory access to enable coalesced access patterns, particularly for loading flow and image data.
+// Use texture memory for read-only access to improve cache utilization in operations with high spatial locality.
+// Evaluate if loop unrolling could be beneficial for reducing control overhead in pixel operations.
+// Investigate the use of warp-level primitives for reducing synchronization overhead in atomic operations.
+```

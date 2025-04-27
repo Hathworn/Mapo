@@ -1,0 +1,8 @@
+```
+// Precompute values outside loops to reduce redundant calculations.
+// Align memory access patterns to improve coalescing.
+// Use shared memory if applicable to minimize global memory accesses.
+// Adjust block and grid dimensions for better occupancy and resource utilization.
+// Consider unrolling the loop for small w*h values to optimize performance.
+// Use atomicAdd only if necessary to ensure data consistency.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced by aligning accesses within the warp
+// Use shared memory to buffer data and reduce global memory access
+// Leverage loop unrolling for better instruction-level parallelism
+// Consider using warp-level primitives to optimize the reduction in the inner loop
+// Ensure proper synchronization after the initial copy to enable correct operation on shared data
+```

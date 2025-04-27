@@ -1,0 +1,8 @@
+```
+// Combine memory operations to minimize global memory access
+// Use shared memory to hold intermediate calculations and reduce global memory bandwidth
+// Utilize vectorized memory accesses when loading/storing float2 structures
+// Consider using __ldg for read-only data to cache in texture memory
+// Ensure float4 alignment if extending to float4 for coalesced access
+// minimize divergent branching by removing potential branch instructions
+```

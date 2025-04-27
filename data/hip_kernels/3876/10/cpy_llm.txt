@@ -1,0 +1,7 @@
+```
+// Ensure memory access patterns are coalesced for efficiency
+// Consider using warp shuffle or reduce within a warp for faster reductions
+// Use atomic operations judiciously as they may serialize memory updates
+// Explore using multiple streams to overlap memory transfers and kernel execution
+// Investigate aligning shared memory size to a multiple of warp size for optimal usage
+```

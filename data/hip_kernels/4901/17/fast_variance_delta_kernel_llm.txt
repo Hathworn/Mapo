@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access for intermediate results
+// Utilize loop unrolling to improve instruction throughput
+// Consider using warp-level primitives for more efficient reduction
+// Reduce repeated computation of index within loops
+// Ensure memory access patterns are coalesced for better performance
+// Explore the possibility of further unrolling the spatial loop
+// Use __restrict__ keyword if possible to provide the compiler with more optimization opportunities
+```

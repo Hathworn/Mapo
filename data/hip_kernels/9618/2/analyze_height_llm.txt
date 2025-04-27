@@ -1,0 +1,3 @@
+// Consider using shared memory for frequently accessed data within a block to reduce global memory access latency.
+// Use __restrict__ keyword on the pointers to improve compiler optimization by indicating non-aliasing.
+// Evaluate if loop unrolling could be beneficial when accessing elements in global memory.

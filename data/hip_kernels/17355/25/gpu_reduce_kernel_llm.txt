@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning vector load.
+// Minimize shared memory usage by limiting its initialization.
+// Use warp-level primitives to optimize reduction further.
+// Utilize __syncwarp() to reduce unnecessary synchronization.
+// Explore increasing block size to improve occupancy.
+// Consider using Cooperative Groups for finer control of syncthreads.
+// Investigate memory access pattern to enhance L1/L2 cache usage.
+```

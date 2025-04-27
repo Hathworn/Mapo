@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for 'a' and 'b' arrays
+// Consider using warp-level primitives for efficient reduction
+// Avoid redundant __syncthreads usage after warp shuffle
+// Minimize shared memory bank conflicts
+```

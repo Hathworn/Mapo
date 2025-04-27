@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses for better memory throughput.
+// Align data structures with cache line boundaries to improve cache performance.
+// Minimize the use of atomic operations, as they can be slow and cause serialization.
+// Use shared memory to cache frequently accessed data and reduce global memory traffic.
+// Experiment with block and grid dimensions to maximize occupancy and load balance.
+```

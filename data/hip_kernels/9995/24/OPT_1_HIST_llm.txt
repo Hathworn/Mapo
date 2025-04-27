@@ -1,0 +1,7 @@
+```
+// Consider improving memory coalescing by ensuring consecutive threads access consecutive memory locations in lcm array
+// Use shared memory more efficiently to reduce global memory access latency
+// Ensure that the value of 'n' allows effective and full usage of the GPU's capacity to enhance performance
+// Apply further loop unrolling on the inner loop if possible to minimize loop overhead
+// Use warp-synchronous programming techniques to optimize the atomic operations where applicable
+```

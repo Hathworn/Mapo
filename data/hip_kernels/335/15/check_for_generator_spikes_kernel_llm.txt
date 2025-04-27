@@ -1,0 +1,8 @@
+```
+// Consider using coalesced memory accesses to improve memory throughput.
+// Use shared memory to reduce redundant global memory access.
+// Minimize the use of atomic operations for improved performance, if possible.
+// Ensure aligned memory access to prevent reduced memory bandwidth.
+// Optimize the thread block size for better occupancy and performance.
+// Re-evaluate the necessity of __syncthreads() for potential removal.
+```

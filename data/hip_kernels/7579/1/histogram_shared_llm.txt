@@ -1,0 +1,6 @@
+```
+// Ensure shared memory initialization is done by a single warp to minimize divergence.
+// Use __syncthreads() after initializing shared memory to ensure all threads proceed together.
+// Accumulate counts in shared memory first to reduce global memory accesses.
+// Write back to global memory from shared memory in a coalesced manner.
+```

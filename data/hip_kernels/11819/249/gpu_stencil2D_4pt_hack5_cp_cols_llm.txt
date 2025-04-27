@@ -1,0 +1,8 @@
+```
+// Utilize shared memory effectively to reduce global memory access latency
+// Precompute repeated index calculations outside conditional statements
+// Minimize conditional checks within the memory access critical path
+// Favor arithmetic operations over multiple access to global memory
+// Ensure alignment of shared memory accesses to maximize coalescing
+// Consolidate index updates for subsequent accesses
+```

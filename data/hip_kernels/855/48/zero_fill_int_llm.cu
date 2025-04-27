@@ -1,0 +1,8 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+__global__ void zero_fill_int(int *d_array, int size) {
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i < size) {  // Simplified condition check to only proceed when within bounds
+        d_array[i] = 0;
+    }
+}

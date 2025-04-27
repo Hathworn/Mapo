@@ -1,0 +1,7 @@
+```
+// Use local variables for repeated calculations to minimize pointer arithmetic.
+/// Use shared memory if possible for input data that's accessed multiple times to reduce global memory access.
+// Align memory access patterns to improve coalescing and throughput.
+// Consider using atomic operations or warp-level primitives for synchronization if needed.
+// Verify register and shared memory usage to ensure optimal occupancy.
+```

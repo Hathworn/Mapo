@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for dev_tran to improve memory throughput.
+// Consider using shared memory for dev_tran if the data is reused across threads.
+// Consider coalesced memory access for dev_ramR to improve memory throughput.
+// Consider using shared memory for dev_ramR if the data is reused across threads.
+// Coalesced memory access is already handled for dev_ramD, ensure data alignment.
+```

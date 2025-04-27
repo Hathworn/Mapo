@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache d_g and d_b blocks
+// Coalesce memory accesses to d_coordinates
+// Use texture memory for d_coordinates if possible
+// Minimize divergence by ensuring uniform loop execution
+// Align data structures to prevent unaligned access penalties
+// Prioritize using registers over shared memory when possible
+```

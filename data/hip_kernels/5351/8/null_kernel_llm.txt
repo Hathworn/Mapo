@@ -1,0 +1,8 @@
+```
+// Use __shared__ memory to reduce global memory traffic
+// Ensure proper memory access patterns to prevent bank conflicts
+// Use warp-level primitives to optimize intra-warp communication
+// Minimize the number of divergent branches within a warp
+// Align data structures to cache line boundaries to improve memory throughput
+// Consider loop unrolling to increase instruction-level parallelism
+```

@@ -1,0 +1,5 @@
+// Ensure TILE_WIDTH is optimized for your specific GPU architecture for best performance.
+// Consider prefetching data into shared memory to reduce global memory access latency.
+// Use shared memory judiciously to maximize data reuse and minimize global memory reads.
+// Implement bounds checking when loading to avoid out-of-bound memory access.
+// Balance threads within the block to reduce warp divergence for efficiency.

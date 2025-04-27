@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses to improve memory bandwidth utilization
+// Use warp-level primitives like __shfl_down_sync to accelerate reduction instead of __syncthreads
+// Optimize shared memory usage by minimizing the shared memory footprint and reusing shared memory space if possible
+// Ensure occupancy is maximized by tailoring block size to maximize the number of active warps per multiprocessor
+// Evaluate potential use of mixed precision or tensor cores if applicable to improve performance
+```

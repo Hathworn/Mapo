@@ -1,0 +1,7 @@
+```cpp
+// Consider using coalesced memory accesses to improve memory bandwidth utilization.
+// Use __ldg to read from global memory if the data is read-only for possibly better performance.
+// Ensure that the shared memory size does not exceed the device capability for optimal performance.
+// Attempt to minimize shared memory use or reuse shared memory space where possible.
+// Avoid bank conflicts in shared memory by ensuring data is accessed in a way that minimizes conflicts.
+```

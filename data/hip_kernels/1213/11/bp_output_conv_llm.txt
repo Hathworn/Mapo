@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to reduce global memory loads.
+// Ensure coalesced memory access patterns for d_output and nd_preact.
+// Explore loop unrolling further to minimize branch divergence.
+// Avoid atomic operations where possible for better performance.
+```

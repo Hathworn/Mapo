@@ -1,0 +1,4 @@
+// Avoid redundant computation by determining threadIdx.x only once at the start.
+// Consider using shared memory if the data from S is accessed multiple times by threads in the same block.
+// Ensure the memory access pattern is coalesced to improve global memory read efficiency.
+// Use vectorized data types or operations if processing multiple elements per thread to optimize bandwidth usage.

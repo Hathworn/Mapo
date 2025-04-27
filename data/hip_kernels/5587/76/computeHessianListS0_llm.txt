@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed variables like trans_x, trans_y, trans_z
+// Prefetch data from global memory to registers when possible
+// Reduce stride loop overhead by optimizing loop execution and minimizing index calculations
+// Consider warp-based optimizations for better utilization of compute resources

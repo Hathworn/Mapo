@@ -1,0 +1,10 @@
+```c
+// Consider preloading data into shared memory to further reduce global memory access.
+// Merge two loops iterating over 'batch' and 'size' if possible to improve locality.
+// Consider loop unrolling for the innermost loops to reduce loop overhead.
+// Avoid using atomic operations within loops if possible; they can be bottleneck.
+// Use __syncthreads() when dealing with shared memory to ensure all threads have completed computation.
+// Store rsqrtf values in temporary variables to prevent recomputation.
+// Consider using float4 or float2 to load data if data alignment allows it for coalesced memory access.
+// Optimize block size and grid size to ensure efficient GPU utilization.
+```

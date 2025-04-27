@@ -1,0 +1,4 @@
+// Use shared memory if possible to reduce global memory access latency
+// Ensure coalesced access by aligning memory accesses to warp size
+// Consider using atomic operations if race conditions are detected during updates
+// Explore loop unrolling techniques to minimize loop overhead

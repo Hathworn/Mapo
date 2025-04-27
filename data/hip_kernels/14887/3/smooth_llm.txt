@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for neighboring elements to reduce global memory accesses
+// Utilize coalesced accesses to optimize memory read patterns
+// Implement loop unrolling if kernel is called multiple times in sequence
+// Align data structures to improve memory alignment and reduce memory transactions
+// Evaluate potential benefits of memory prefetching to hide latency
+// Ensure grid and block size configurations maximize hardware occupancy
+```

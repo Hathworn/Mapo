@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Coalesced access for better memory throughput
+// Consider loop unrolling to improve performance
+// Utilize __syncthreads() to ensure all threads have loaded data into shared memory
+// Separate loops for different cases to maximize parallel execution
+```

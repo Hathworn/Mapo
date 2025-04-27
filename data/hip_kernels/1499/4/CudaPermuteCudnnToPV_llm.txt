@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce redundant data fetches from global memory
+// Coalesce memory accesses by ensuring threads within a warp access consecutive memory locations
+// Optimize thread block size to maximize occupancy and hide latency
+// Evaluate if a texture or cache could optimize memory access patterns given usage constraints
+// Revisit grid and block configurations to ensure all elements are covered without divergence
+```

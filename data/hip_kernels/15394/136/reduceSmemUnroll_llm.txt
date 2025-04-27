@@ -1,0 +1,7 @@
+```
+// Optimize the data fetching from global memory by using coalesced access patterns.
+// Use shared memory to minimize global memory access latency and bandwidth.
+// Unroll loops in the reduction phase to enhance performance and reduce instruction overhead.
+// Minimize synchronization overhead by using warp-level primitives like __shfl_down_sync.
+// Use volatile keyword selectively to prevent compiler optimizations which might cause stalls.
+```

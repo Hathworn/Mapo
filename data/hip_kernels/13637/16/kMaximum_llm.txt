@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to cache data that is accessed frequently.
+// Coalesce memory accesses by ensuring consecutive threads access consecutive data elements.
+// Ensure alignment of data structures to leverage memory coalescing.
+// Limit the use of conditional statements inside the kernel to improve performance.
+// Consider the use of vectorized data types for better memory access efficiency.
+// Employ loop unrolling if applicable to reduce loop overhead.
+```

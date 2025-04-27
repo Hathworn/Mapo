@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory accesses by using contiguous threads for consecutive data
+// Minimize divergent code paths to improve warp efficiency
+// Use shared memory to reduce redundant global memory access if the pattern allows
+// Consider unrolling loop to increase instruction level parallelism if applicable
+// Prefetch data to registers to hide global memory latency
+```

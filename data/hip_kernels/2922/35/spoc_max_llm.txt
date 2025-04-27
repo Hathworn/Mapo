@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for global memory reads
+// Use further warp-level intrinsic functions for reduction
+// Minimize __syncthreads() usage by checking if shared memory synchronization is needed
+// Align shared memory allocation to avoid bank conflicts
+```

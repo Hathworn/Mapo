@@ -1,0 +1,5 @@
+// Use shared memory for idx if possible to reduce global memory access
+// Ensure memory coalescing by restructuring data access pattern
+// Consider using warp shuffle for operations within the same warp to avoid shared memory bank conflicts
+// Evaluate if loop unrolling would benefit performance enhancement
+// Minimize thread divergence by ensuring uniform branch execution across threads

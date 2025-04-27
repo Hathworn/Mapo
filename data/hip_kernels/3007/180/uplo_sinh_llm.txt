@@ -1,0 +1,5 @@
+// Use __restrict__ keyword for pointers to improve memory access performance.
+// Consider using shared memory to reduce redundant global memory access.
+// Align data structures to prevent misaligned memory access and improve coalescing.
+// Perform loop unrolling if applicable to minimize looping overhead.
+// Minimize branch divergence by ensuring threads within the same warp follow similar execution paths.

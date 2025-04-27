@@ -1,0 +1,29 @@
+digraph "CFG for '_Z29THCudaTensor_kernel_indexFillPfPlS_lilllf' function" {
+	label="CFG for '_Z29THCudaTensor_kernel_indexFillPfPlS_lilllf' function";
+
+	Node0x64a1260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a7c5fe70",label="{%9:\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !4, !invariant.load !5\l  %15 = zext i16 %14 to i32\l  %16 = getelementptr i8, i8 addrspace(4)* %11, i64 6\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 2, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = mul i32 %10, %19\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %23 = add i32 %20, %21\l  %24 = mul i32 %23, %15\l  %25 = add i32 %24, %22\l  %26 = freeze i32 %25\l  %27 = sdiv i64 %6, %5\l  %28 = sext i32 %26 to i64\l  %29 = icmp sgt i64 %27, %28\l  %30 = icmp sgt i64 %5, 0\l  %31 = and i1 %29, %30\l  br i1 %31, label %32, label %87\l|{<s0>T|<s1>F}}"];
+	Node0x64a1260:s0 -> Node0x64a5770;
+	Node0x64a1260:s1 -> Node0x64a5800;
+	Node0x64a5770 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8caffe70",label="{%32:\l32:                                               \l  %33 = icmp sgt i64 %3, 0\l  %34 = sext i32 %4 to i64\l  %35 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %34\l  %36 = load i64, i64 addrspace(1)* %35, align 8, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %37\l}"];
+	Node0x64a5770 -> Node0x64a5e10;
+	Node0x64a5e10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%37:\l37:                                               \l  %38 = phi i64 [ 0, %32 ], [ %50, %39 ]\l  br i1 %33, label %52, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x64a5e10:s0 -> Node0x64a6050;
+	Node0x64a5e10:s1 -> Node0x64a5f10;
+	Node0x64a5f10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%39:\l39:                                               \l  %40 = phi i32 [ 0, %37 ], [ %82, %80 ]\l  %41 = sext i32 %40 to i64\l  %42 = getelementptr inbounds float, float addrspace(1)* %2, i64 %38\l  %43 = load float, float addrspace(1)* %42, align 4, !tbaa !11\l  %44 = fadd contract float %43, -1.000000e+00\l  %45 = fptosi float %44 to i64\l  %46 = mul nsw i64 %36, %45\l  %47 = add nsw i64 %46, %41\l  %48 = getelementptr inbounds float, float addrspace(1)* %0, i64 %47\l  store float %8, float addrspace(1)* %48, align 4, !tbaa !11\l  %49 = add nuw nsw i64 %38, 1\l  %50 = and i64 %49, 4294967295\l  %51 = icmp slt i64 %50, %5\l  br i1 %51, label %37, label %87, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x64a5f10:s0 -> Node0x64a5e10;
+	Node0x64a5f10:s1 -> Node0x64a5800;
+	Node0x64a6050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%52:\l52:                                               \l  %53 = phi i64 [ %85, %80 ], [ 0, %37 ]\l  %54 = phi i32 [ %84, %80 ], [ %26, %37 ]\l  %55 = phi i32 [ %82, %80 ], [ 0, %37 ]\l  %56 = trunc i64 %53 to i32\l  %57 = icmp slt i32 %56, %4\l  br i1 %57, label %58, label %70\l|{<s0>T|<s1>F}}"];
+	Node0x64a6050:s0 -> Node0x64a80e0;
+	Node0x64a6050:s1 -> Node0x64a8170;
+	Node0x64a80e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d24b4070",label="{%58:\l58:                                               \l  %59 = sext i32 %54 to i64\l  %60 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %53\l  %61 = load i64, i64 addrspace(1)* %60, align 8, !tbaa !7, !amdgpu.noclobber\l... !5\l  %62 = sdiv i64 %61, %7\l  %63 = sdiv i64 %59, %62\l  %64 = mul nsw i64 %63, %62\l  %65 = trunc i64 %64 to i32\l  %66 = sub i32 %54, %65\l  %67 = mul nsw i64 %63, %61\l  %68 = trunc i64 %67 to i32\l  %69 = add i32 %55, %68\l  br label %80\l}"];
+	Node0x64a80e0 -> Node0x64a61f0;
+	Node0x64a8170 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d24b4070",label="{%70:\l70:                                               \l  %71 = icmp sgt i32 %56, %4\l  br i1 %71, label %72, label %80\l|{<s0>T|<s1>F}}"];
+	Node0x64a8170:s0 -> Node0x64a9190;
+	Node0x64a8170:s1 -> Node0x64a61f0;
+	Node0x64a9190 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%72:\l72:                                               \l  %73 = sext i32 %54 to i64\l  %74 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %53\l  %75 = load i64, i64 addrspace(1)* %74, align 8, !tbaa !7, !amdgpu.noclobber\l... !5\l  %76 = srem i64 %73, %75\l  %77 = trunc i64 %76 to i32\l  %78 = add i32 %55, %54\l  %79 = sub i32 %78, %77\l  br label %80\l}"];
+	Node0x64a9190 -> Node0x64a61f0;
+	Node0x64a61f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%80:\l80:                                               \l  %81 = phi i32 [ %66, %58 ], [ %77, %72 ], [ %54, %70 ]\l  %82 = phi i32 [ %69, %58 ], [ %79, %72 ], [ %55, %70 ]\l  %83 = add nuw nsw i64 %53, 1\l  %84 = freeze i32 %81\l  %85 = and i64 %83, 4294967295\l  %86 = icmp slt i64 %85, %3\l  br i1 %86, label %52, label %39, !llvm.loop !15\l|{<s0>T|<s1>F}}"];
+	Node0x64a61f0:s0 -> Node0x64a6050;
+	Node0x64a61f0:s1 -> Node0x64a5f10;
+	Node0x64a5800 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a7c5fe70",label="{%87:\l87:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory accesses by adjusting thread-stride mapping
+// Minimize bank conflicts by aligning data accesses with warp size
+// Use shared memory to store frequently accessed values to reduce global memory access
+// Consider loop unrolling for the innermost loop to improve instruction throughput
+// Prefetch data elements to registers to reduce memory latency
+// Explore using multiple warps to handle reduction operations across threads
+```

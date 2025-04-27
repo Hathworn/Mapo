@@ -1,0 +1,9 @@
+```
+// Utilize coalesced memory access patterns to optimize global memory transactions
+// Minimize bank conflicts in shared memory by ensuring proper data alignment
+// Consider loop unrolling for repetitive computation within the kernel
+// Use fewer registers per thread if possible to allow for more active warps per multiprocessor
+// Evaluate the necessity of __syncthreads() to determine if it can be reduced or eliminated
+// Explore occupancy-to-core ratio to maximize thread utilization
+// Consider using local memory if shared memory size exceeds available resources
+```

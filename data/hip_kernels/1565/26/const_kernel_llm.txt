@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Ensure coalesced memory access for X[idx * INCX]
+// Evaluate potential use of texture memory for read-only ALPHA
+// Use __restrict__ keyword for pointers to help compiler optimization
+```

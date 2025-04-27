@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Use __syncthreads() to synchronize threads after loading into shared memory
+// Use __syncthreads() to synchronize threads after computation
+// Load elements into shared memory in tiles to optimize memory coalescing
+// Ensure all shared memory accesses are complete before proceeding
+```

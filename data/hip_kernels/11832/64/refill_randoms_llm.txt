@@ -1,0 +1,2 @@
+// Use a local copy of the state to reduce global memory accesses
+// Ensure coalesced memory access by iterating with stride equal to total number of threads

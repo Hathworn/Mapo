@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by reordering threads' memory access pattern
+// Ensure that 'add' and 'out' arrays are accessed with contiguous threads for better cache utilization
+// Minimize the use of atomic operations; try to redesign kernel to reduce contention
+// Use shared memory to store intermediate results if possible, reducing global memory access
+// Evaluate if 'sample' and 'stride' can be optimized or made constants for loop unrolling
+// Reduce divergent branching by ensuring all threads in a warp take the same execution path
+```

@@ -1,0 +1,9 @@
+```
+// Ensure coalesced access by using consecutive indices for memory access
+// Minimize shared memory bank conflicts
+// Use __restrict__ pointers for compiler optimization
+// Consider loop unrolling if operation is repeated
+// Avoid divergence by ensuring all threads follow the same path
+// Prefetch data into registers when possible
+// Optimize memory access patterns to reduce latency
+```

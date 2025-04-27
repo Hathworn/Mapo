@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for storing intermediate results to improve memory access efficiency.
+// Minimize global memory accesses by first loading relevant data into registers or shared memory.
+// Coalesce global memory accesses by ensuring that consecutive threads access consecutive memory locations.
+// Optimize the softmax_device function by reducing the number of reads and writes to global memory.
+// Ensure maximum occupancy by tuning block size according to the hardware specifications.
+// Precompute values that do not change within the loops to reduce redundant calculations.
+// Avoid bank conflicts in shared memory by ensuring optimal memory access patterns.
+```

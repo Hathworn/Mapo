@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access overhead
+// Optimize memory access patterns for coalesced access
+// Minimize thread divergence by ensuring all threads in a warp follow the same execution path
+// Use __syncthreads() appropriately to synchronize threads after shared memory operations
+// Avoid frequent usage of printf in device code to reduce performance impact
+```

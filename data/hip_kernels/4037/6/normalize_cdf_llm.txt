@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed data
+// Store the normalization constant in shared memory to reduce global memory accesses
+// Use __syncthreads() to ensure the normalization constant is loaded before use
+// Minimize global memory accesses by reading input data once and using stored shared memory data
+```

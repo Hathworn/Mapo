@@ -1,0 +1,8 @@
+```
+// Use coalesced accesses when loading input into shared memory
+// Consider using constant memory for filter if it doesn't change
+// Ensure shared memory bank conflicts are minimized
+// Prefetch data into shared memory if applicable
+// Minimize global memory accesses by maximizing data reuse in shared memory
+// Consider using multiple streams to overlap computation and data transfer
+```

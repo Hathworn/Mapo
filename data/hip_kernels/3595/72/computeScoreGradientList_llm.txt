@@ -1,0 +1,7 @@
+// Consider optimizing memory access patterns to improve cache utilization
+// Use shared memory to store frequently accessed data like centroid coordinates
+// Use texture memory for read-only data like trans_x, trans_y, trans_z to improve bandwidth
+// Coalesce memory accesses to global memory by ensuring threads within a warp access consecutive memory locations
+// Minimize divergence within warps by restructuring conditional statements and loops
+// Reduce redundant casting by storing trans_x, trans_y, trans_z as double once loaded
+// Implement loop unrolling for the internal loop over the voxels to reduce loop overhead

@@ -1,0 +1,3 @@
+// Use shared memory to store normalization factors within a block to reduce global memory access.
+// Consider using texture memory for normalization factors if they don't change frequently.
+// Ensure coalesced memory accesses by optimizing thread block size and data layout.

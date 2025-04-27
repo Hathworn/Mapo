@@ -1,0 +1,6 @@
+```c
+// Use coalesced access to global memory for input array 'd_in'
+// Minimize use of __syncthreads() in shared_reduce function
+// Optimize shared memory usage by reducing bank conflicts
+// Consider using a tree-based reduction for better warp usage
+```

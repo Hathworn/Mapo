@@ -1,0 +1,4 @@
+// Consider using shared memory to cache frequently accessed data
+// Minimize index calculations inside the loop to improve performance
+// Ensure memory coalescing by accessing consecutive elements in the stride loop
+// Use warp-level primitives to optimize synchronization when required

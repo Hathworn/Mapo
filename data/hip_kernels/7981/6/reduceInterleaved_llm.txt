@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory load latency
+// Optimize thread synchronization to minimize idle time
+// Utilize warp shuffle operations to enhance parallel reduction
+// Ensure coalesced global memory access for g_idata and g_odata
+// Avoid unnecessary memory transfers by checking idx >= n early

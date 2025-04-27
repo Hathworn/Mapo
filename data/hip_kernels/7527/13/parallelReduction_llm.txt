@@ -1,0 +1,7 @@
+```
+// Load input data into shared memory to reduce global memory access
+// Avoid warp divergence by ensuring all threads reach __syncthreads()
+// Perform reduction using a stride loop for coalesced access
+// Minimize bank conflicts by ensuring aligned access patterns
+// Store intermediate results only once at the end of the reduction
+```

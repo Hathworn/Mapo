@@ -1,0 +1,28 @@
+digraph "CFG for '_Z10smoothGrayPhS_jj' function" {
+	label="CFG for '_Z10smoothGrayPhS_jj' function";
+
+	Node0x55bc9c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = shl i32 %5, 16\l  %13 = mul i32 %12, %10\l  %14 = shl i32 %11, 10\l  %15 = add i32 %13, %14\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %17 = or i32 %15, %16\l  %18 = mul i32 %3, %2\l  %19 = icmp ult i32 %17, %18\l  br i1 %19, label %20, label %71\l|{<s0>T|<s1>F}}"];
+	Node0x55bc9c0:s0 -> Node0x55bee00;
+	Node0x55bc9c0:s1 -> Node0x55bee90;
+	Node0x55bee00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%20:\l20:                                               \l  %21 = freeze i32 %17\l  %22 = freeze i32 %2\l  %23 = udiv i32 %21, %22\l  %24 = add i32 %23, -2\l  %25 = add i32 %23, 2\l  %26 = mul i32 %23, %22\l  %27 = sub i32 %21, %26\l  %28 = add i32 %27, -2\l  %29 = add i32 %27, 2\l  %30 = tail call i32 @llvm.smax.i32(i32 %24, i32 0)\l  %31 = tail call i32 @llvm.smax.i32(i32 %28, i32 0)\l  %32 = icmp ult i32 %25, %2\l  %33 = add i32 %2, -1\l  %34 = select i1 %32, i32 %25, i32 %33\l  %35 = icmp ult i32 %29, %2\l  %36 = select i1 %35, i32 %29, i32 %33\l  %37 = icmp sgt i32 %30, %34\l  br i1 %37, label %49, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x55bee00:s0 -> Node0x55bec60;
+	Node0x55bee00:s1 -> Node0x55bfda0;
+	Node0x55bfda0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%38:\l38:                                               \l  %39 = icmp sgt i32 %31, %36\l  br label %40\l}"];
+	Node0x55bfda0 -> Node0x55bff70;
+	Node0x55bff70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%40:\l40:                                               \l  %41 = phi i32 [ %30, %38 ], [ %56, %53 ]\l  %42 = phi i32 [ 0, %38 ], [ %55, %53 ]\l  %43 = phi i32 [ 0, %38 ], [ %54, %53 ]\l  br i1 %39, label %53, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x55bff70:s0 -> Node0x55c0030;
+	Node0x55bff70:s1 -> Node0x55c03b0;
+	Node0x55c03b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%44:\l44:                                               \l  %45 = mul i32 %41, %2\l  br label %58\l}"];
+	Node0x55c03b0 -> Node0x55c0580;
+	Node0x55c0640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%46:\l46:                                               \l  %47 = sdiv i32 %54, %55\l  %48 = trunc i32 %47 to i8\l  br label %49\l}"];
+	Node0x55c0640 -> Node0x55bec60;
+	Node0x55bec60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%49:\l49:                                               \l  %50 = phi i8 [ %48, %46 ], [ poison, %20 ]\l  %51 = zext i32 %17 to i64\l  %52 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %51\l  store i8 %50, i8 addrspace(1)* %52, align 1, !tbaa !7\l  br label %71\l}"];
+	Node0x55bec60 -> Node0x55bee90;
+	Node0x55c0030 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%53:\l53:                                               \l  %54 = phi i32 [ %43, %40 ], [ %67, %58 ]\l  %55 = phi i32 [ %42, %40 ], [ %68, %58 ]\l  %56 = add nuw nsw i32 %41, 1\l  %57 = icmp slt i32 %41, %34\l  br i1 %57, label %40, label %46, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x55c0030:s0 -> Node0x55bff70;
+	Node0x55c0030:s1 -> Node0x55c0640;
+	Node0x55c0580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%58:\l58:                                               \l  %59 = phi i32 [ %31, %44 ], [ %69, %58 ]\l  %60 = phi i32 [ %42, %44 ], [ %68, %58 ]\l  %61 = phi i32 [ %43, %44 ], [ %67, %58 ]\l  %62 = add i32 %59, %45\l  %63 = zext i32 %62 to i64\l  %64 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %63\l  %65 = load i8, i8 addrspace(1)* %64, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %66 = zext i8 %65 to i32\l  %67 = add nsw i32 %61, %66\l  %68 = add nsw i32 %60, 1\l  %69 = add nuw nsw i32 %59, 1\l  %70 = icmp slt i32 %59, %36\l  br i1 %70, label %58, label %53, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x55c0580:s0 -> Node0x55c0580;
+	Node0x55c0580:s1 -> Node0x55c0030;
+	Node0x55bee90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c5d6f270",label="{%71:\l71:                                               \l  ret void\l}"];
+}

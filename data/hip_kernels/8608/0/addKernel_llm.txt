@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed variables
+// Ensure memory coalescing for global memory access
+// Evaluate thread divergence and avoid unnecessary conditions
+// Use __restrict__ keyword for pointers to enable compiler optimizations
+// Consider loop unrolling if possible for further performance enhancement
+// Minimize thread synchronization overhead where applicable
+```

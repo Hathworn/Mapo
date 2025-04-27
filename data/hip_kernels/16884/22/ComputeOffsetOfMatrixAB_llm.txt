@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache row_sum locally for faster access
+// Use shared memory to cache col_sum locally for faster access
+// Consider coalesced memory access for output array
+// Optimize loop to reduce divergent warps
+// Prefetch data for col_sum to minimize memory latency
+// Ensure memory access patterns are aligned to avoid bank conflicts
+```

@@ -1,0 +1,8 @@
+```
+// Ensure the arrays A, B, and C are aligned in memory for coalesced access
+// Minimize the use of global memory by reusing data within the kernel when possible
+// Consider increasing the thread block size to improve occupancy if the GPU supports it
+// Use __restrict__ qualifiers for pointers if there are no aliasing issues
+// Prefetch data to shared memory if the kernel becomes more complex with additional operations
+// Utilize vectorized memory operations for higher throughput if applicable
+```

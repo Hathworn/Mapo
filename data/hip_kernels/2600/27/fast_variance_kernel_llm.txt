@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access by aligning threadIdx.x with data structure in memory
+// Utilize __syncthreads() efficiently to avoid unnecessary synchronization
+// Optimize loop unrolling manually or using compiler flags for better parallelism
+// Inspect shared memory usage to ensure no bank conflicts occur
+// Merge final reduction of local sums more efficiently by using parallel reduction techniques
+// Ensure proper memory alignment for arrays to take advantage of faster memory transactions
+```

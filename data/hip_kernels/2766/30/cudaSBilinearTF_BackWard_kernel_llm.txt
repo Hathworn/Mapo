@@ -1,0 +1,5 @@
+// Consider using shared memory to cache diffInput values accessed multiple times.
+// Adjust block size to better match the input dimensions and improve memory access patterns.
+// Optimize the thread block layout to minimize warp divergence.
+// Explore loop unrolling techniques to reduce loop overhead.
+// Ensure coalesced memory access by aligning data structures and access patterns.

@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing by ensuring that threads access memory in a linear and contiguous manner.
+// Minimize memory divergence by restructuring data access patterns to avoid conditional branches.
+// Ensure optimal block and thread dimensions to fully utilize the GPU resources.
+// Use shared memory if possible for frequently accessed data to reduce global memory access overhead.
+// Preload data into registers where appropriate to minimize repeated global memory accesses.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Unroll loop iterations if applicable to improve instruction level parallelism.
+// Ensure proper alignment and padding to prevent bank conflicts.
+// Double-check warp divergence and try minimizing conditional statements within the kernel.
+// Profile the kernel to find any bottlenecks and optimize accordingly.
+```

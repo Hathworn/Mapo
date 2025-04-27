@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses by ensuring sequential threads access sequential memory locations
+// Use shared memory to reduce global memory accesses if col_sum is accessed repeatedly
+// Increase thread block size to better utilize the GPU's compute resources
+// Experiment with different grid and block sizes for optimal performance
+```

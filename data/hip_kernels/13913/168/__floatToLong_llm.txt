@@ -1,0 +1,4 @@
+// Ensure global memory accesses are coalesced by using stride pattern
+// Use explicit cast to improve code readability and prevent implicit type conversion issues
+// Optimize grid and block dimensions to maximize occupancy and minimize idle threads
+// Consider accessing data in chunks to utilize shared memory if beneficial for larger data sets

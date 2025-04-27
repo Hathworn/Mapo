@@ -1,0 +1,10 @@
+```cpp
+// Use grid stride loop to improve parallelism and scalability.
+// Ensure memory accesses are coalesced for optimal performance.
+// Minimize shared memory usage to reduce resource contention.
+// Consider using __syncthreads if there is any inter-thread dependency.
+// Prefetch data to shared memory if multiple accesses to the same data are needed.
+// Optimize block and grid sizes to match the GPU architecture for better occupancy.
+// Use appropriate memory space for data based on access patterns.
+// Avoid bank conflicts in shared memory accesses.
+```

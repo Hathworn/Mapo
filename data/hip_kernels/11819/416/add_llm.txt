@@ -1,0 +1,6 @@
+// Use coalesced memory access to optimize global memory reads and writes.
+// Minimize shared memory bank conflicts to ensure efficient memory access.
+// Replace redundant reads/writes with registers wherever possible.
+// Use warp-level primitives to reduce synchronization overhead when applicable.
+// Double-check shared memory allocation size to match the kernel's requirements.
+// Consider fusing operations to reduce memory transactions.

@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Evaluate memory alignment for hiprandState to speed up memory transactions.
+// Use shared memory or registers for frequently accessed data to reduce global memory accesses.
+// Minimize bank conflicts to improve parallel execution efficiency when accessing shared memory.
+```

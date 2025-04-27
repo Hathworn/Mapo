@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses by ensuring sequential threads access sequential memory addresses
+// Ensure shared memory usage is optimized and within limits to avoid bank conflicts
+// Use warp-level primitives for the final stages of reduction to reduce synchronization overhead
+// Minimize divergent branches to improve warp execution efficiency
+// Ensure that `ncols` is divisible by `blockDim.x` for optimal work distribution
+```

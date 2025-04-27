@@ -1,0 +1,7 @@
+```
+// Use __syncthreads() only when necessary to avoid performance overhead
+// Consider coalesced memory access patterns to maximize memory throughput
+// Ensure all loads/stores are coalesced for better memory performance
+// Use warp-level primitives if supported to avoid expensive __syncthreads()
+// Optimize data transfer by minimizing global memory accesses
+```

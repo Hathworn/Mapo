@@ -1,0 +1,4 @@
+// Use shared memory to temporarily store row_sum and col_sum for faster access.
+// Consider using atomic operations if data synchronization is required across threads.
+// Implement loop unrolling to potentially reduce extra conditional checks.
+// Adjust grid and block dimensions to maximize occupancy and minimize warp divergence.

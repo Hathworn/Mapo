@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce global memory access.
+// Ensure shared memory size is sufficient for the block's processing.
+// Use __syncthreads() to avoid race conditions when accessing shared memory.
+// Organize memory access patterns to coalesce global memory reads.
+// Balance workload among threads to maximize occupancy.
+// Experiment with block and grid sizes to optimize performance based on hardware.
+```

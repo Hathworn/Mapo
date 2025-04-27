@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for X and Y arrays
+// Avoid bank conflicts by accessing consecutive elements
+// Prefetch data to shared memory if computation is reutilized
+// Ensure enough blocks and threads to cover all elements
+// Minimize use of global memory by utilizing registers
+```

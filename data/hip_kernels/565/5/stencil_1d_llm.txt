@@ -1,0 +1,8 @@
+```cpp
+// Use __restrict__ qualifier for pointers to help compiler with memory access optimization
+// Consider loop unrolling for the stencil computation loop to reduce overhead
+// Ensure that RADIUS and THREADS_PER_BLOCK are defined as compile-time constants for better optimization
+// Avoid branching in the boundary check by computing boundary values outside the main kernel
+// Utilize vectorized memory loads if possible to improve memory access patterns
+// Ensure that temp shared memory accesses are coalesced to minimize bank conflicts
+```

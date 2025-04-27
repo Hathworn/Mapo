@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns to improve memory access efficiency
+// Consider shared memory to reduce global memory access latency
+// Optimize thread block size to match GPU architecture for better occupancy
+// Utilize vectorized memory access if applicable
+// Minimize divergent branching by ensuring all threads of a warp follow the same execution path
+// Align memory accesses to 128/256 bits to fully utilize memory bandwidth
+```

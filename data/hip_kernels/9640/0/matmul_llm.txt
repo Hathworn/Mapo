@@ -1,0 +1,5 @@
+// Consider unrolling the loop to reduce loop overhead and increase instruction-level parallelism.
+// Ensure using shared memory efficiently by minimizing bank conflicts.
+// Optimize shared memory loading patterns to maximize coalesced access.
+// Assess the use of __syncthreads() to determine if all are necessary, reducing barriers where possible.
+// Evaluate using local memory for frequently accessed variables to reduce shared memory pressure.

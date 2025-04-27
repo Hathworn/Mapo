@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns for input and kernel to improve memory bandwidth utilization
+// Optimize shared memory usage by ensuring all threads have a local copy of frequently used data
+// Minimize thread divergence in the reduction across threads section
+// Consider loop unrolling for the convolution loop to reduce loop overhead
+// Use double buffering in shared memory to overlap computation and communication
+// Align data structures to improve cache utilization where possible
+```

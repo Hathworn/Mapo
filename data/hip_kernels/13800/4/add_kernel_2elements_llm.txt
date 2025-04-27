@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache block-level data to reduce global memory accesses.
+// Consolidate block offset calculations to minimize redundant operations.
+// Use `__syncthreads()` to ensure data consistency after loading from global to shared memory.
+// Optimize loop to minimize arithmetic operations within the loop.
+// Consider unrolling loops manually to further optimize performance.
+```

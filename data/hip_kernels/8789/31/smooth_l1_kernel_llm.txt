@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for 'pred', 'truth', 'delta', and 'error' arrays
+// Use shared memory to reduce redundant accesses to global memory
+// Check if computation of 'fabsf' can utilize intrinsic functions for further optimization
+// Explore the possibility of loop unrolling if 'n' or workload size is consistent
+// Optimize thread block size to ensure better occupancy and resource utilization
+```

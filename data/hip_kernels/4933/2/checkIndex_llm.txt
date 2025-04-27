@@ -1,0 +1,9 @@
+```
+// Use a single printf statement for better performance
+// Minimize divergent branches to maintain warp efficiency
+// Ensure data is coalesced when accessing global memory
+// Use shared memory to reduce global memory access latency
+// Optimize thread block size for maximum occupancy
+// Avoid unnecessary synchronization points
+// Align data structures to facilitate faster memory access
+```

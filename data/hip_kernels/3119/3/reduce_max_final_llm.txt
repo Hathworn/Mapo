@@ -1,0 +1,4 @@
+// Consider using memory coalescing for accessing g_idata and max_idx.
+// Utilize multiple accesses within a single transaction to optimize bandwidth.
+// Evaluate the use of shared memory double buffering to hide latency.
+// Minimize synchronization points to reduce warp overhead.

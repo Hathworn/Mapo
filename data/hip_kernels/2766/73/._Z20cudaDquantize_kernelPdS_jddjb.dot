@@ -1,0 +1,20 @@
+digraph "CFG for '_Z20cudaDquantize_kernelPdS_jddjb' function" {
+	label="CFG for '_Z20cudaDquantize_kernelPdS_jddjb' function";
+
+	Node0x5f9dbe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !4, !invariant.load !5\l  %13 = zext i16 %12 to i32\l  %14 = getelementptr inbounds i8, i8 addrspace(4)* %9, i64 12\l  %15 = bitcast i8 addrspace(4)* %14 to i32 addrspace(4)*\l  %16 = load i32, i32 addrspace(4)* %15, align 4, !tbaa !6\l  %17 = mul i32 %8, %13\l  %18 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %19 = add i32 %17, %18\l  %20 = udiv i32 %16, %13\l  %21 = mul i32 %20, %13\l  %22 = icmp ugt i32 %16, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %13\l  %26 = icmp ugt i32 %5, 1\l  br i1 %26, label %29, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5f9dbe0:s0 -> Node0x5fa0180;
+	Node0x5f9dbe0:s1 -> Node0x5fa0210;
+	Node0x5fa0210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%27:\l27:                                               \l  %28 = icmp ult i32 %19, %2\l  br i1 %28, label %55, label %65\l|{<s0>T|<s1>F}}"];
+	Node0x5fa0210:s0 -> Node0x5fa03e0;
+	Node0x5fa0210:s1 -> Node0x5fa0430;
+	Node0x5fa0180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%29:\l29:                                               \l  %30 = fsub contract double %4, %3\l  %31 = add i32 %5, -1\l  %32 = uitofp i32 %31 to double\l  %33 = fdiv contract double %30, %32\l  %34 = icmp ult i32 %19, %2\l  br i1 %34, label %35, label %65\l|{<s0>T|<s1>F}}"];
+	Node0x5fa0180:s0 -> Node0x5f9f950;
+	Node0x5fa0180:s1 -> Node0x5fa0430;
+	Node0x5f9f950 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = phi i32 [ %53, %35 ], [ %19, %29 ]\l  %37 = zext i32 %36 to i64\l  %38 = getelementptr inbounds double, double addrspace(1)* %0, i64 %37\l  %39 = load double, double addrspace(1)* %38, align 8, !tbaa !16\l  %40 = fcmp contract olt double %39, %3\l  %41 = fcmp contract ogt double %39, %4\l  %42 = select contract i1 %41, double %4, double %39\l  %43 = select contract i1 %40, double %3, double %42\l  %44 = fsub contract double %43, %3\l  %45 = fdiv contract double %44, %33\l  %46 = tail call double @llvm.round.f64(double %45)\l  %47 = select i1 %6, double %45, double %46\l  %48 = fptosi double %47 to i32\l  %49 = sitofp i32 %48 to double\l  %50 = fmul contract double %33, %49\l  %51 = fadd contract double %50, %3\l  %52 = getelementptr inbounds double, double addrspace(1)* %1, i64 %37\l  store double %51, double addrspace(1)* %52, align 8\l  %53 = add i32 %36, %25\l  %54 = icmp ult i32 %53, %2\l  br i1 %54, label %35, label %65, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5f9f950:s0 -> Node0x5f9f950;
+	Node0x5f9f950:s1 -> Node0x5fa0430;
+	Node0x5fa03e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%55:\l55:                                               \l  %56 = phi i32 [ %63, %55 ], [ %19, %27 ]\l  %57 = zext i32 %56 to i64\l  %58 = getelementptr inbounds double, double addrspace(1)* %0, i64 %57\l  %59 = load double, double addrspace(1)* %58, align 8, !tbaa !16\l  %60 = fcmp contract oge double %59, 0.000000e+00\l  %61 = select contract i1 %60, double 1.000000e+00, double -1.000000e+00\l  %62 = getelementptr inbounds double, double addrspace(1)* %1, i64 %57\l  store double %61, double addrspace(1)* %62, align 8, !tbaa !16\l  %63 = add i32 %56, %25\l  %64 = icmp ult i32 %63, %2\l  br i1 %64, label %55, label %65, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x5fa03e0:s0 -> Node0x5fa03e0;
+	Node0x5fa03e0:s1 -> Node0x5fa0430;
+	Node0x5fa0430 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#eed0c070",label="{%65:\l65:                                               \l  ret void\l}"];
+}

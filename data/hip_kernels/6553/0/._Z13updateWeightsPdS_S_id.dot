@@ -1,0 +1,5 @@
+digraph "CFG for '_Z13updateWeightsPdS_S_id' function" {
+	label="CFG for '_Z13updateWeightsPdS_S_id' function";
+
+	Node0x565ee60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = zext i32 %6 to i64\l  %8 = getelementptr inbounds double, double addrspace(1)* %0, i64 %7\l  %9 = load double, double addrspace(1)* %8, align 8, !tbaa !5,\l... !amdgpu.noclobber !9\l  %10 = getelementptr inbounds double, double addrspace(1)* %1, i64 %7\l  %11 = load double, double addrspace(1)* %10, align 8, !tbaa !5,\l... !amdgpu.noclobber !9\l  %12 = sitofp i32 %3 to double\l  %13 = fmul contract double %11, %12\l  %14 = fmul contract double %13, %4\l  %15 = fadd contract double %9, %14\l  store double %15, double addrspace(1)* %8, align 8, !tbaa !5\l  ret void\l}"];
+}

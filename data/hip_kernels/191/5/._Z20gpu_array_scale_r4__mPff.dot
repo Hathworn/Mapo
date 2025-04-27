@@ -1,0 +1,11 @@
+digraph "CFG for '_Z20gpu_array_scale_r4__mPff' function" {
+	label="CFG for '_Z20gpu_array_scale_r4__mPff' function";
+
+	Node0x4db3380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 4, !tbaa !6\l  %13 = mul i32 %4, %9\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %15 = add i32 %13, %14\l  %16 = zext i32 %15 to i64\l  %17 = udiv i32 %12, %9\l  %18 = mul i32 %17, %9\l  %19 = icmp ugt i32 %12, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %9\l  %23 = zext i32 %22 to i64\l  %24 = icmp ult i64 %16, %0\l  br i1 %24, label %26, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x4db3380:s0 -> Node0x4db59e0;
+	Node0x4db3380:s1 -> Node0x4db5a70;
+	Node0x4db5a70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%25:\l25:                                               \l  ret void\l}"];
+	Node0x4db59e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i64 [ %31, %26 ], [ %16, %3 ]\l  %28 = getelementptr inbounds float, float addrspace(1)* %1, i64 %27\l  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !16\l  %30 = fmul contract float %29, %2\l  store float %30, float addrspace(1)* %28, align 4, !tbaa !16\l  %31 = add i64 %27, %23\l  %32 = icmp ult i64 %31, %0\l  br i1 %32, label %26, label %25, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x4db59e0:s0 -> Node0x4db59e0;
+	Node0x4db59e0:s1 -> Node0x4db5a70;
+}

@@ -1,0 +1,6 @@
+```c
+// Use local variables to reduce register pressure.
+// Store intermediate results in shared memory to decrease global memory access.
+// Use __syncthreads() to ensure all threads have completed their operations before accessing shared memory.
+// Ensure memory coalescing by accessing global memory in contiguous patterns.
+```

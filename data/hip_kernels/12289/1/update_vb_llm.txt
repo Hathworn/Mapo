@@ -1,0 +1,7 @@
+```cpp
+// Ensure memory access patterns are coalesced by using sequential threads
+// Consider using shared memory if data reuse within the block is applicable
+// Evaluate if using float4 data type could provide alignment and performance benefits
+// Access memory in a continuous fashion to leverage DRAM burst capabilities
+// Review if loop unrolling can increase computational throughput for this operation
+```

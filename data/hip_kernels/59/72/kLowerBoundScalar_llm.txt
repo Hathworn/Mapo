@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data and reduce global memory accesses
+// Ensure that memory accesses are coalesced to improve bandwidth utilization
+// Experiment with block and grid sizes to maximize occupancy and performance
+// Check if __restrict__ qualifiers can be used for the mat and target pointers to allow for better compiler optimizations
+```

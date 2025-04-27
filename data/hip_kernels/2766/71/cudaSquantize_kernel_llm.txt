@@ -1,0 +1,8 @@
+```
+// Use shared memory to store repeated calculations like scaling to reduce redundant computation.
+// Consider using texture memory for input data 'x' if the access pattern is cache-friendly.
+// Align data access to improve global memory coalescing.
+// Utilize vectorized data types like float4 for loading/storing data to enhance memory throughput.
+// Minimize divergent branches within the loop to optimize warp execution efficiency.
+// Ensure data allocated for buffers 'x' and 'y' are aligned with memory boundaries.
+```

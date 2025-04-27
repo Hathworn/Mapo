@@ -1,0 +1,20 @@
+digraph "CFG for '_Z25kernel_test0_global_writePcS_' function" {
+	label="CFG for '_Z25kernel_test0_global_writePcS_' function";
+
+	Node0x5281e30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a1c0ff70",label="{%2:\l  %3 = bitcast i8 addrspace(1)* %0 to i32 addrspace(1)*\l  %4 = addrspacecast i32 addrspace(1)* %3 to i32*\l  %5 = bitcast i8 addrspace(1)* %1 to i32 addrspace(1)*\l  %6 = addrspacecast i32 addrspace(1)* %5 to i32*\l  store i32 1, i32 addrspace(1)* %3, align 4, !tbaa !4\l  %7 = icmp ult i32* %4, %6\l  br i1 %7, label %8, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x5281e30:s0 -> Node0x5283380;
+	Node0x5281e30:s1 -> Node0x52833d0;
+	Node0x5283380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#88abfd70",label="{%8:\l8:                                                \l  %9 = ptrtoint i32* %4 to i64\l  br label %10\l}"];
+	Node0x5283380 -> Node0x5281fd0;
+	Node0x5281fd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%10:\l10:                                               \l  %11 = phi i64 [ 4, %8 ], [ %24, %22 ]\l  %12 = phi i32 [ 1, %8 ], [ %23, %22 ]\l  br label %13\l}"];
+	Node0x5281fd0 -> Node0x5283940;
+	Node0x5283940 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%13:\l13:                                               \l  %14 = phi i64 [ %11, %10 ], [ %18, %13 ]\l  %15 = or i64 %14, %9\l  %16 = inttoptr i64 %15 to i32*\l  %17 = icmp eq i32* %16, %4\l  %18 = shl i64 %14, 1\l  br i1 %17, label %13, label %19, !llvm.loop !8\l|{<s0>T|<s1>F}}"];
+	Node0x5283940:s0 -> Node0x5283940;
+	Node0x5283940:s1 -> Node0x5283df0;
+	Node0x5283df0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%19:\l19:                                               \l  %20 = inttoptr i64 %15 to i32*\l  %21 = icmp ult i32* %20, %6\l  br i1 %21, label %22, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x5283df0:s0 -> Node0x52836e0;
+	Node0x5283df0:s1 -> Node0x52833d0;
+	Node0x52836e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%22:\l22:                                               \l  store i32 %12, i32* %20, align 4, !tbaa !4\l  %23 = shl i32 %12, 1\l  %24 = shl i64 %14, 1\l  br label %10, !llvm.loop !8\l}"];
+	Node0x52836e0 -> Node0x5281fd0;
+	Node0x52833d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a1c0ff70",label="{%25:\l25:                                               \l  ret void\l}"];
+}

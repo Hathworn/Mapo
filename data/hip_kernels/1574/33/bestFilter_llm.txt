@@ -1,0 +1,8 @@
+```c
+// Optimize memory access by using shared memory for frequently accessed data.
+// Use __restrict__ keyword for pointer arguments to enhance compiler optimizations.
+// Consider coalesced memory access pattern for `cmax` and `iW` for better performance.
+// Minimize divergent branches inside loops to avoid thread divergence.
+// Evaluate using inline functions or macros for repetitive operations to reduce instruction count.
+// Consider loop unrolling for the inner loop to decrease loop overhead.
+```

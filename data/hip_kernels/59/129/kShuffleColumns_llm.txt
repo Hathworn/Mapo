@@ -1,0 +1,4 @@
+// Avoid using division and modulus for thread index calculations, use bitwise operations when possible for better performance.
+// Consider aligning memory access to prevent potential bank conflicts.
+// Try using shared memory to cache data if reuse can be identified within threads to reduce global memory fetches.
+// Use cooperative thread groups for finer control over synchronization and memory access optimizations.

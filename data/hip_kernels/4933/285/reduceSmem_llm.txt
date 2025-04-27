@@ -1,0 +1,4 @@
+// Consider using half precision for smem to save memory bandwidth if precision allows.
+// Ensure memory alignment for accessing idata and smem to optimize coalesced memory access.
+// Use bank conflict avoidance techniques when accessing shared memory.
+// Evaluate if loop unrolling further for the reduction phase could improve performance.

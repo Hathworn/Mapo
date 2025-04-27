@@ -1,0 +1,5 @@
+// Align data access to avoid bank conflicts
+// Use shared memory efficiently by minimizing redundant loads
+// Apply loop unrolling to decrease loop overhead and enhance ILP
+// Optimize thread synchronization to reduce warp divergence
+// Combine reduction with warp shuffle to enhance parallel efficiency

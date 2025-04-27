@@ -1,0 +1,5 @@
+```cpp
+// Consider using __ldg() to load read-only inputs from global memory for potential cache benefits.
+// Ensure that the inputs are aligned in memory for coalesced access.
+// Evaluate if using shared memory is beneficial to reuse common values across threads.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory accesses to global memory by aligning data
+// Minimize bank conflicts during in-place reduction
+// Reduce the number of global memory accesses by using shared memory
+// Consider using warp-level primitives to optimize divergence
+// Implement loop unrolling to enhance performance
+// Use __syncthreads() only when necessary to improve efficiency
+```

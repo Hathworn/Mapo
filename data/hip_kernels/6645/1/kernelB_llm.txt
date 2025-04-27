@@ -1,0 +1,4 @@
+// Ensure coalesced memory accesses by using linear indexing
+// Prefer float4 accesses if data alignment allows
+// Consider shared memory for frequently accessed data if appropriate
+// Minimize bank conflicts by padding shared memory

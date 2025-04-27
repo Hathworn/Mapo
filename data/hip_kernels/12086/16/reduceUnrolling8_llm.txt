@@ -1,0 +1,11 @@
+```cpp
+// Consider using __restrict__ qualifiers for pointers to optimize memory access.
+// Ensure memory accesses are coalesced to improve bandwidth utilization.
+// Utilize shared memory effectively for inter-thread communication.
+// Utilize warp shuffle operations if supported for further reduction.
+// Minimize global memory accesses by maximizing data reuse.
+// Consider loop unrolling for shared memory reduction.
+// Address potential bank conflicts in shared memory accesses.
+// Assess the impact of padding shared memory to prevent bank conflicts.
+// Evaluate occupancy and adjust block size for optimal performance.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory coalescing by ensuring global memory accesses are contiguous
+// Improve occupancy by adjusting block size and grid configuration
+// Use __syncthreads() to synchronize threads if necessary
+// Utilize warp-level primitives for better performance
+```

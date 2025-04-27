@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data structures appropriately
+// Consider using shared memory to reduce global memory accesses for dev_accumulate_weights and dev_accumulate_values
+// Employ warp-level primitives to optimize reduction operations within the warp
+// Avoid bank conflicts when utilizing shared memory
+// Minimize divergent branches to ensure consistent execution paths within warps
+```

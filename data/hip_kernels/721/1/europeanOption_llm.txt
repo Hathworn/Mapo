@@ -1,0 +1,4 @@
+// Use local variable for initialPrice to reduce global memory access.
+// Pre-calculate constants outside the loop to save computation time.
+// Optimize arithmetic operations inside the loop for better performance.
+// Ensure proper use of hiprand_normal for random number generation per thread.

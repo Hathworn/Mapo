@@ -1,0 +1,13 @@
+digraph "CFG for '_Z24reset_nan_and_inf_kernelPfm' function" {
+	label="CFG for '_Z24reset_nan_and_inf_kernelPfm' function";
+
+	Node0x5b18140 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = icmp ult i64 %12, %1\l  br i1 %13, label %14, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x5b18140:s0 -> Node0x5b1a0e0;
+	Node0x5b18140:s1 -> Node0x5b1a170;
+	Node0x5b1a0e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%14:\l14:                                               \l  %15 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %16 = load float, float addrspace(1)* %15, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %17 = fcmp uno float %16, 0.000000e+00\l  %18 = tail call float @llvm.fabs.f32(float %16) #3\l  %19 = fcmp oeq float %18, 0x7FF0000000000000\l  %20 = select i1 %17, i1 true, i1 %19\l  br i1 %20, label %21, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x5b1a0e0:s0 -> Node0x5b1ba30;
+	Node0x5b1a0e0:s1 -> Node0x5b1a170;
+	Node0x5b1ba30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%21:\l21:                                               \l  store float 0.000000e+00, float addrspace(1)* %15, align 4, !tbaa !7\l  br label %22\l}"];
+	Node0x5b1ba30 -> Node0x5b1a170;
+	Node0x5b1a170 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,5 @@
+```
+// Ensure coalesced memory access patterns for x, mean, and variance arrays
+// Consider pre-loading mean, variance, mean_delta, and variance_delta values into shared memory
+// Utilize constant memory for variables like filters and spatial if they are consistent across kernels
+```

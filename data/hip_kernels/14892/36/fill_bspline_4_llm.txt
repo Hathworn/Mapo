@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Coalesce global memory accesses to the thetax, thetay, and thetaz arrays to improve memory bandwidth utilization.
+// Consider loop unrolling for the innermost loops to reduce the overhead of loop control and increase instruction-level parallelism.
+// Use `__restrict__` qualifiers for pointers when applicable to help the compiler optimize memory accesses.
+// Minimize the use of multiple float calculations by storing common expressions in local variables.
+// Align global memory accesses to 128 bytes to improve the memory transaction efficiency on certain architectures.
+// Prefetch data to registers when possible to hide memory latency.
+```

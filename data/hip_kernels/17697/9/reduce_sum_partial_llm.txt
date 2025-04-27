@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Ensure coalesced memory access for global reads
+// Minimize __syncthreads() calls by reducing unnecessary synchronizations
+// Consider bank conflicts in shared memory access
+// Utilize warp shuffle operations to reduce __syncthreads() within warp
+// Align global memory access to optimize bandwidth utilization
+```

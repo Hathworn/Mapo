@@ -1,0 +1,20 @@
+digraph "CFG for '_Z17incSumScan_kernelPjS_m' function" {
+	label="CFG for '_Z17incSumScan_kernelPjS_m' function";
+
+	Node0x60ced70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = zext i32 %12 to i64\l  %14 = icmp ult i64 %13, %2\l  br i1 %14, label %15, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x60ced70:s0 -> Node0x60cfb00;
+	Node0x60ced70:s1 -> Node0x60d0d70;
+	Node0x60cfb00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%15:\l15:                                               \l  %16 = zext i32 %4 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %19 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)* @s_incScan,\l... i32 0, i32 %4\l  store i32 %18, i32 addrspace(3)* %19, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br label %23\l}"];
+	Node0x60cfb00 -> Node0x60d22b0;
+	Node0x60d23b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%20:\l20:                                               \l  %21 = load i32, i32 addrspace(3)* %19, align 4, !tbaa !7\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %16\l  store i32 %21, i32 addrspace(1)* %22, align 4, !tbaa !7\l  br label %36\l}"];
+	Node0x60d23b0 -> Node0x60d0d70;
+	Node0x60d22b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%23:\l23:                                               \l  %24 = phi i32 [ %33, %32 ], [ 1, %15 ]\l  %25 = icmp ult i32 %4, %24\l  br i1 %25, label %32, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x60d22b0:s0 -> Node0x60d2650;
+	Node0x60d22b0:s1 -> Node0x60d2810;
+	Node0x60d2810 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%26:\l26:                                               \l  %27 = load i32, i32 addrspace(3)* %19, align 4, !tbaa !7\l  %28 = sub i32 %4, %24\l  %29 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)* @s_incScan,\l... i32 0, i32 %28\l  %30 = load i32, i32 addrspace(3)* %29, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %31 = add i32 %30, %27\l  store i32 %31, i32 addrspace(3)* %19, align 4, !tbaa !7\l  br label %32\l}"];
+	Node0x60d2810 -> Node0x60d2650;
+	Node0x60d2650 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %33 = shl nsw i32 %24, 1\l  %34 = zext i32 %33 to i64\l  %35 = icmp ugt i64 %34, %2\l  br i1 %35, label %20, label %23, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x60d2650:s0 -> Node0x60d23b0;
+	Node0x60d2650:s1 -> Node0x60d22b0;
+	Node0x60d0d70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%36:\l36:                                               \l  ret void\l}"];
+}

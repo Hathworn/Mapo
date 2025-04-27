@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access to improve memory throughput.
+// Use shared memory for frequently accessed data to minimize global memory accesses.
+// Optimize thread block size for better occupancy and throughput.
+// Minimize data transfers between the host and device to reduce latency.
+// Align data structures to memory boundaries to enhance access speed.
+// Evaluate the use of warp-level primitives for divergent paths to improve efficiency.
+// Apply loop unrolling to increase instruction-level parallelism.
+// Consider tuning kernel launch parameters for specific GPU architectures.
+```

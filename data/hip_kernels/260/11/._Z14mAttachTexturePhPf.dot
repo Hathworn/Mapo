@@ -1,0 +1,5 @@
+digraph "CFG for '_Z14mAttachTexturePhPf' function" {
+	label="CFG for '_Z14mAttachTexturePhPf' function";
+
+	Node0x4990f50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %1, i64 %12\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %15 = fcmp contract oge float %14, 2.550000e+02\l  %16 = select contract i1 %15, float 2.550000e+02, float %14\l  %17 = fptoui float %16 to i8\l  %18 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %12\l  store i8 %17, i8 addrspace(1)* %18, align 1, !tbaa !11\l  ret void\l}"];
+}

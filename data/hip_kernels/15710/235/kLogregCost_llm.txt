@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory access to the 'probs' array for improved memory throughput.
+// Use shared memory to cache elements like 'maxProbs' and 'labels' if it fits, reducing global memory bandwidth.
+// Apply loop unrolling already implemented for 'numOut' for better performance.
+// Use __restrict__ qualifiers for pointer parameters if data will not alias, enabling better compiler optimizations.
+```

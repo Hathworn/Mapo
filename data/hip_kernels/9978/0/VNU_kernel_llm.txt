@@ -1,0 +1,8 @@
+```
+// Use external shared memory for faster access compared to global memory
+// Calculate current_Index to prevent repeated computation within the kernel
+// Load offset into shared memory to avoid accessing global memory multiple times
+// Ensure all offsets are loaded before computation using __syncthreads
+// Utilize direct thread indexing to optimize memory bandwidth utilization
+// Condensed sign determination to minimize branching
+```

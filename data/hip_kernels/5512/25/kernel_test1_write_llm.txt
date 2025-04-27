@@ -1,0 +1,5 @@
+```c
+// Use shared memory to cache data for coalesced writes
+// Ensure proper alignment of pointers to prevent misaligned accesses
+// Use __restrict__ qualifier for _ptr and end_ptr to aid compiler optimization
+```

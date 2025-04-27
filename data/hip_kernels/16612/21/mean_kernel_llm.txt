@@ -1,0 +1,4 @@
+// Use coalesced memory access to improve memory access patterns
+// Consider using shared memory to store intermediate results to reduce global memory access
+// Experiment with loop unrolling for j-loop and k-loop to increase instruction level parallelism
+// Assess the benefits of using atomic operations if race conditions are observed in mean calculations

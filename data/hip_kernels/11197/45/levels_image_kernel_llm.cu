@@ -1,0 +1,105 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__device__ float3 hsv_to_rgb_kernel(float3 hsv) {
+    float h = hsv.x;
+    float s = hsv.y;
+    float v = hsv.z;
+
+    float r, g, b;
+    float f, p, q, t;
+
+    if (s == 0) {
+        r = g = b = v;
+    } else {
+        // Optimize: Pre-calculate integer part index only once.
+        int index = int(h);
+        f = h - index;
+        p = v * (1.0f - s);
+        q = v * (1.0f - s * f);
+        t = v * (1.0f - s * (1.0f - f));
+        
+        // Use switch statement instead of multiple if-else.
+        switch (index % 6) {
+            case 0: r = v; g = t; b = p; break;
+            case 1: r = q; g = v; b = p; break;
+            case 2: r = p; g = v; b = t; break;
+            case 3: r = p; g = q; b = v; break;
+            case 4: r = t; g = p; b = v; break;
+            case 5: r = v; g = p; b = q; break;
+        }
+    }
+    // Clamp values to [0, 1] range.
+    r = fminf(fmaxf(r, 0.0f), 1.0f);
+    g = fminf(fmaxf(g, 0.0f), 1.0f);
+    b = fminf(fmaxf(b, 0.0f), 1.0f);
+
+    return make_float3(r, g, b);
+}
+
+__device__ float3 rgb_to_hsv_kernel(float3 rgb) {
+    float r = rgb.x;
+    float g = rgb.y;
+    float b = rgb.z;
+
+    float h, s, v;
+    float max = fmaxf(r, fmaxf(g, b));  // Optimize: Use fmaxf for simpler max calculation.
+    float min = fminf(r, fminf(g, b));  // Optimize: Use fminf for simpler min calculation.
+    float delta = max - min;
+    v = max;
+
+    if (max == 0) {
+        s = 0;
+        h = -1;  // Undefined hue when s is 0.
+    } else {
+        s = delta / max;
+        if (r == max) {
+            h = (g - b) / delta;
+        } else if (g == max) {
+            h = 2.0f + (b - r) / delta;
+        } else {
+            h = 4.0f + (r - g) / delta;
+        }
+        if (h < 0.0f) h += 6.0f;
+    }
+    return make_float3(h, s, v);
+}
+
+__global__ void levels_image_kernel(float *image, float *rand, int batch, int w, int h, int train, float saturation, float exposure, float translate, float scale, float shift) {
+    int size = batch * w * h;
+    int id = blockIdx.x * blockDim.x + threadIdx.x;  // Optimize: Simplify thread index calculation.
+    if (id >= size) return;
+
+    int pixel_idx = id * 3;
+    float rshift = rand[0];
+    float gshift = rand[1];
+    float bshift = rand[2];
+    float r0 = rand[8 * id + 0];
+    float r1 = rand[8 * id + 1];
+    float r2 = rand[8 * id + 2];
+    float r3 = rand[8 * id + 3];
+
+    saturation = r0 * (saturation - 1) + 1;
+    saturation = (r1 > 0.5f) ? 1.0f / saturation : saturation;
+    exposure = r2 * (exposure - 1) + 1;
+    exposure = (r3 > 0.5f) ? 1.0f / exposure : exposure;
+
+    image += pixel_idx;  // Update pixel index directly.
+    float r = image[0];
+    float g = image[h * w];
+    float b = image[2 * h * w];
+    float3 rgb = make_float3(r, g, b);
+
+    if (train) {
+        float3 hsv = rgb_to_hsv_kernel(rgb);
+        hsv.y *= saturation;
+        hsv.z *= exposure;
+        rgb = hsv_to_rgb_kernel(hsv);
+    } else {
+        shift = 0;
+    }
+
+    image[0] = rgb.x * scale + translate + (rshift - 0.5f) * shift;
+    image[h * w] = rgb.y * scale + translate + (gshift - 0.5f) * shift;
+    image[2 * h * w] = rgb.z * scale + translate + (bshift - 0.5f) * shift;
+}

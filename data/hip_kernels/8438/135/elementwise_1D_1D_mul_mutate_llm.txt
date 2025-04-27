@@ -1,0 +1,7 @@
+```c
+// Use shared memory for in1 and in2 to reduce global memory access latency.
+// Consider coalesced memory access for better memory throughput.
+// Ensure all memory accesses are aligned to 4-byte boundaries for optimal performance.
+// Minimize divergent branches within the loop to enhance warp efficiency.
+// Balance the number of warps per multiprocessor to achieve maximum occupancy.
+```

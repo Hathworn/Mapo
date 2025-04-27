@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed data for warp efficiency.
+// Utilize vectorized memory access to improve global load/store bandwidth.
+// Minimize atomic operations by restructuring computation where possible.
+// Prefetch data outside the loop to reduce register pressure and improve latency.
+```

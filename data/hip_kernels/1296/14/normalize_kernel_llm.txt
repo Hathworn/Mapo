@@ -1,0 +1,4 @@
+// Use shared memory to store mean and variance for faster access
+// Ensure coalesced access pattern for x array to improve memory throughput
+// Consider loop unrolling for complex operations to reduce instruction overhead
+// Use memory fences if needed to maintain consistent data access in multi-block scenarios

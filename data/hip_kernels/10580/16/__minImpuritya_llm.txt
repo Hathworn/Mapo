@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns for reading from counts and writing to outv.
+// Optimize memory access by ensuring outg calculations use shared memory where possible.
+// Avoid bank conflicts while accessing fieldlens by considering padding or alignment.
+// Investigate the reuse of data in registers to minimize global memory accesses.
+```

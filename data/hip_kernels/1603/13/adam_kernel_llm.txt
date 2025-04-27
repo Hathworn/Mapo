@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce redundant global memory accesses for B1_t_pow and B2_t_pow
+// Use loop unrolling if applicable to further reduce instruction overhead
+// Ensure coalesced memory access patterns to improve memory throughput
+// Consider aligning data structures for optimal memory access
+// Minimize divergence in conditionals by optimizing the if-condition
+```

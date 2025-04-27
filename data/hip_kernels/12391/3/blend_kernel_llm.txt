@@ -1,0 +1,7 @@
+```
+// Use shared memory effectively to reduce global memory access latency
+// Coalesce memory access to improve global memory bandwidth
+// Load boundary pixels to shared memory to ensure correct calculations
+// Avoid bank conflicts in shared memory usage by ensuring aligned access
+// Ensure threads within a block are synchronized after loading data to shared memory
+```

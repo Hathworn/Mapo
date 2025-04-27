@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access patterns to maximize bandwidth utilization
+// Use __syncthreads() to avoid race conditions after loading data into shared memory
+// Optimize boundary checks to minimize unnecessary computations
+// Consider loop unrolling for the gradient computation to reduce instruction overhead
+```

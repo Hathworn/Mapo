@@ -1,0 +1,6 @@
+```
+// Consider memory coalescing by aligning shared memory loads with consecutive threads to reduce bank conflicts.
+// Utilize shared memory more effectively by loading from global memory into shared memory in a warp fashion.
+// Evaluate replacing atomic operations with warp-level primitives for better performance.
+// Optimize global memory access by ensuring reads and writes adhere to alignment preferences.
+```

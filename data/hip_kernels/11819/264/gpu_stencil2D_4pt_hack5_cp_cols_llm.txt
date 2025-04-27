@@ -1,0 +1,6 @@
+```
+// Pre-compute global indices to reduce redundant calculations and improve register usage.
+// Merge multiple conditional checks to minimize branching and improve warp execution efficiency.
+// Use shared memory effectively to store reused data and reduce global memory access latency.
+// Utilize __syncthreads() to ensure memory operations are synchronized across threads in a block.
+```

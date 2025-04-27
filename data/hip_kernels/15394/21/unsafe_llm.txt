@@ -1,0 +1,5 @@
+// Consider using __restrict__ pointers for 'shared_var' and 'values_read' to improve memory access optimization.
+// Reduce repeated atomic operations in the loop by using local computation and a single atomic update outside the loop.
+// Explore using warp-wide operations or cooperative group synchronization to minimize atomic contention.
+// Check if using shared memory for intermediate values can reduce global memory access latency.
+// Ensure proper memory alignment and coalesced access for 'values_read' to improve memory throughput.

@@ -1,0 +1,5 @@
+// Use shared memory to store data loaded from global memory for faster access
+// Ensure memory coalescing by accessing contiguous memory locations in a warp
+// Consider loop unrolling if the data structure allows for it to minimize loop overhead
+// Optimize data loading and storing by using texture memory or constant memory if appropriate
+// Leverage occupancy calculator to determine optimal block and grid size for maximum performance

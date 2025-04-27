@@ -1,0 +1,10 @@
+digraph "CFG for '_Z31hierarchical_scan_kernel_phase3PiS_' function" {
+	label="CFG for '_Z31hierarchical_scan_kernel_phase3PiS_' function";
+
+	Node0x5148f40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = shl nsw i32 %4, 11\l  %6 = or i32 %5, %3\l  %7 = icmp sgt i32 %4, 0\l  br i1 %7, label %8, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x5148f40:s0 -> Node0x514a730;
+	Node0x5148f40:s1 -> Node0x514a7c0;
+	Node0x514a730 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%8:\l8:                                                \l  %9 = add nsw i32 %4, -1\l  %10 = zext i32 %9 to i64\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %10\l  %12 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !5\l  %13 = sext i32 %6 to i64\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %13\l  %15 = load i32, i32 addrspace(1)* %14, align 4, !tbaa !5\l  %16 = add nsw i32 %15, %12\l  store i32 %16, i32 addrspace(1)* %14, align 4, !tbaa !5\l  %17 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !5\l  %18 = or i32 %6, 1024\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !5\l  %22 = add nsw i32 %21, %17\l  store i32 %22, i32 addrspace(1)* %20, align 4, !tbaa !5\l  br label %23\l}"];
+	Node0x514a730 -> Node0x514a7c0;
+	Node0x514a7c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%23:\l23:                                               \l  ret void\l}"];
+}

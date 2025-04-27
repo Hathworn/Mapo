@@ -1,0 +1,8 @@
+```
+// Unroll loop to increase instruction-level parallelism and reduce branch divergence
+// Use shared memory or registers to reduce global memory accesses
+// Use __syncthreads() to ensure all previous operations are completed before proceeding
+// Use volatile for warp-level reduction to ensure memory consistency
+// Unroll warp-level reduction to minimize branch divergence and improve performance
+// Store block results in global memory only once to minimize write operations
+```

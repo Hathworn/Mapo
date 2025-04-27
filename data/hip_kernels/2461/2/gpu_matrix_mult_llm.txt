@@ -1,0 +1,5 @@
+// Calculate row and col indices outside the loop to avoid redundant calculations
+// Use a local accumulator to reduce memory accesses to C
+// Perform conditional checks early to avoid unnecessary processing
+// Access A and B sequentially within the loop to improve memory coalescing
+// Minimize writes by storing the result in a register until the final write to C

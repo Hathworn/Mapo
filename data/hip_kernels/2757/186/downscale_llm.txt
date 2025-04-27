@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache gradOutput_data values accessed in the inner loops for reuse and to reduce global memory accesses.
+// Unroll the inner loops to enhance instruction-level parallelism and potentially reduce branch divergence for small scale_factor values.
+// Evaluate aligning gradOutput_data accesses to improve memory coalescing and potentially increase bandwidth utilization.
+// Consider using asynchronous memory prefetching techniques to hide latency and improve memory access efficiency.
+// Ensure sufficient occupancy by balancing the number of active threads and resource usage per block.
+```

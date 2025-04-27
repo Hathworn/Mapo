@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access patterns for the row_sum array
+// Minimize global memory access by caching blockIdx.x computation
+// Consider using shared memory if row_sum entries are reused frequently across threads
+// Optimize grid and block dimensions to maximize occupancy
+```

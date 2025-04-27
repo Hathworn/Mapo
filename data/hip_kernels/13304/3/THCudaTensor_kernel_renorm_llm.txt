@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Align data accesses to maximize memory coalescing.
+// Ensure all threads have written their local sums before reduction.
+// Use __syncthreads() to synchronize threads during reduction.
+// Access shared memory efficiently to avoid bank conflicts.
+// Perform normalization in the first thread to minimize redundant computations.
+// Avoid warp divergence by ensuring conditional statements are simple and uniform.
+// Ensure synchronization after computing the normalization factor.
+```

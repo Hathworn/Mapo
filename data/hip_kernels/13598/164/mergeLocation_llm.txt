@@ -1,0 +1,7 @@
+```
+// Use shared memory to store loc_ data to reduce redundant global memory accesses.
+// Ensure coalesced access to loc_ to improve memory bandwidth utilization.
+// Consider a loop unrolling technique if npoints is large to reduce overhead.
+// Optimize thread block size for better occupancy and reduced memory latency.
+// Use warp shuffle for inter-thread communication to decrease synchronization cost.
+```

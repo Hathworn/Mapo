@@ -1,0 +1,7 @@
+```
+// Use shared memory to load frequently accessed data to minimize global memory access.
+// Ensure coalesced access to global memory for uproj loading into shared memory.
+// Consider increasing the shared memory size if Nfeatures is small for better utilization.
+// Ensure alignment when accessing shared memory to prevent bank conflicts.
+// Reduce __syncthreads() usage if possible to minimize synchronization overhead.
+```

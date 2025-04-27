@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for w to improve memory access patterns
+// Use coalesced memory accesses for a by iterating over columns inside the loop
+// Load h into shared memory to reduce redundant global memory accesses
+// Avoid recalculating w[j * k + row] and w[j * k + i] by storing in register
+```

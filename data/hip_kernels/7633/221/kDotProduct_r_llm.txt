@@ -1,0 +1,7 @@
+```c
+// Use __shared__ memory to minimize global memory access and optimize memory access patterns
+// Efficient handling of boundary condition to prevent out-of-bounds access
+// Implement loop unrolling to reduce thread divergence and improve performance
+// Use warp-level optimizations with volatile to enhance performance within a warp
+// Ensure result write-back is limited to first thread to reduce unnecessary memory operations
+```

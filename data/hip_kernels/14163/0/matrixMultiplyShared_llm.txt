@@ -1,0 +1,4 @@
+// Consider reducing tile size if shared memory usage is too high
+// Ensure data alignment on global memory accesses for optimal coalescence
+// Factor in the compute-to-memory access ratio to maintain balanced performance
+// Minimize shared memory bank conflicts by adjusting indexing patterns

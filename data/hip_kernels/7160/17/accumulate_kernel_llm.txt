@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by using sequential thread access patterns
+// Minimize shared memory usage by using local variables like temp_sum
+// Check if using atomic operations can reduce warp divergence
+// Consider using __restrict__ pointers to optimize memory bandwidth

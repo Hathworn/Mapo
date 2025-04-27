@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access patterns for shared memory loads
+// Minimize global memory access by reusing data in shared memory
+// Consider using read-only data cache where applicable
+// Avoid bank conflicts in shared memory access by proper indexing
+// Ensure enough threads are utilized for shared memory efficiency
+// Examine if loop unrolling can further improve performance
+// Use vectorized loads and stores where possible
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for z and tanh_grad_z arrays
+// Use shared memory to reduce global memory accesses if possible
+// Optimize boundary check to minimize divergence
+// Precompute index calculation outside of conditionals if possible
+// Use __restrict__ pointers for z and tanh_grad_z to enable better compiler optimizations
+```

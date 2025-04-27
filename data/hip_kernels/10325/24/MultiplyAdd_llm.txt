@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for d_ConstantA and d_ConstantB loads to reduce global memory accesses
+// Evaluate if texture memory is suitable for read-only data like d_Data to reduce bandwidth usage
+// If global memory access patterns align, consider coalescing loads and stores to improve memory throughput
+// Optimize block size to maximize occupancy and maximize parallel execution
+// Investigate warp divergence and ensure minimal branching for better performance
+```

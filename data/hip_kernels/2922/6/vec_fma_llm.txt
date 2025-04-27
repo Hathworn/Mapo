@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently used data if necessary.
+// Ensure data alignment for coalesced global memory access.
+// Assess the possibility of loop unrolling for performance benefits.
+// Analyze if using __ldg intrinsic for read-only data improves performance.
+// Evaluate warp shuffling strategies for any potential reductions.
+```

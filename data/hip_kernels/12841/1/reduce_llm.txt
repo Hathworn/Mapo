@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced access when copying from global to shared memory
+// Optimize shared memory usage by adjusting shared memory size based on block size rather than fixed size
+// Minimize __syncthreads() calls by ensuring threads within a warp are independent
+// Explore loop unrolling for the reduction loop to enhance performance
+// Consider using atomics if there's a risk of bank conflicts or overlapping memory writes
+```

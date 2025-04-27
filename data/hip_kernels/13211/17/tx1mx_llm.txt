@@ -1,0 +1,7 @@
+```
+// Consider using vectorized memory operations to improve bandwidth utilization
+// Avoid bank conflicts in shared memory by ensuring optimal data access patterns
+// Ensure enough shared memory is allocated to avoid out-of-bounds access
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Ensure proper alignment of data in shared memory for better performance
+```

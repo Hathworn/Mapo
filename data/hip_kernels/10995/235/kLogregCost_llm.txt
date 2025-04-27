@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access patterns for better global memory performance.
+// Consider using warp-level primitives or cooperative groups to further optimize reductions.
+// Minimize divergent branching by aligning conditions within warp boundaries.
+// Pre-fetch data into shared memory for reused items to reduce global memory traffic.
+// Investigate potential bank conflicts in shared memory access.
+```

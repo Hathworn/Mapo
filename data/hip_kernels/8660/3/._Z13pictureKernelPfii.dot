@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13pictureKernelPfii' function" {
+	label="CFG for '_Z13pictureKernelPfii' function";
+
+	Node0x46e7290 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %5, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %14 = getelementptr i8, i8 addrspace(4)* %4, i64 6\l  %15 = bitcast i8 addrspace(4)* %14 to i16 addrspace(4)*\l  %16 = load i16, i16 addrspace(4)* %15, align 2, !range !4, !invariant.load !5\l  %17 = zext i16 %16 to i32\l  %18 = mul i32 %13, %17\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %20 = add i32 %18, %19\l  %21 = icmp slt i32 %12, %1\l  %22 = icmp slt i32 %20, %2\l  %23 = select i1 %21, i1 %22, i1 false\l  br i1 %23, label %24, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x46e7290:s0 -> Node0x46ead10;
+	Node0x46e7290:s1 -> Node0x46eada0;
+	Node0x46ead10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%24:\l24:                                               \l  %25 = mul nsw i32 %20, %1\l  %26 = add nsw i32 %25, %12\l  %27 = sext i32 %26 to i64\l  %28 = getelementptr inbounds float, float addrspace(1)* %0, i64 %27\l  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %30 = fmul contract float %29, 2.000000e+00\l  store float %30, float addrspace(1)* %28, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x46ead10 -> Node0x46eada0;
+	Node0x46eada0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```
+// Prefer reading maxIndices and chain values into shared memory to minimize global memory accesses
+// Synchronize threads after loading data into shared memory to ensure consistency
+// Avoid unnecessary computations by checking boundary conditions before accessing memory
+// Consider coalescing global memory accesses to optimize performance
+// Utilize __syncthreads() to ensure all threads have reached the same point before proceeding
+```

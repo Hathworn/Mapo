@@ -1,0 +1,9 @@
+```
+// Optimize global memory access by coalescing loads from difference array
+// Utilize shared memory more effectively by reducing bank conflicts
+// Schedule threads to minimize idle time during shared memory loads
+// Ensure shared memory usage stays within limits to avoid spills
+// Consider loop unrolling within the compute loop for better performance
+// Use warp-level primitives if applicable for further optimization
+// Verify occupancy and adjust block size for optimal performance
+```

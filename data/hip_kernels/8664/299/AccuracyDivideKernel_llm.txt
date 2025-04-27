@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store intermediate results for better memory access efficiency.
+// Avoid using atomic operations as accuracy is updated only by a single thread.
+// If possible, perform division outside the kernel to reduce kernel execution time.
+```

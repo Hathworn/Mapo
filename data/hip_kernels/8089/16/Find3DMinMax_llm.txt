@@ -1,0 +1,5 @@
+// Use shared memory for data caching to reduce global memory access latency.
+// Perform boundary checks before data read/write operations.
+// Avoid bank conflicts in shared memory by proper indexing in data arrays.
+// Minimize redundant data transactions by clamping read positions.
+// Ensure that threads execute in warp-sized chunks to maximize efficiency.

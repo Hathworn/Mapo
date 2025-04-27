@@ -1,0 +1,6 @@
+```
+// Suggest prefetching vec1 elements to shared memory to reduce global memory access latency.
+// Use __syncthreads() only when necessary to avoid performance penalties.
+// Consider unrolling the inner loop to increase ILP (Instruction Level Parallelism).
+// Evaluate using warp shuffle operations for data exchange to optimize intra-warp communication.
+```

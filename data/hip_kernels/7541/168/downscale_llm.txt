@@ -1,0 +1,7 @@
+```
+// Consider loading gradOutput_data to shared memory to reduce global memory access.
+// Access gradInput_data and gradOutput_data using coalesced access patterns.
+// Use vectorized types such as float4 for gradOutput_data accesses where possible.
+// Consider loop unrolling for the nested loop to optimize access patterns.
+// Evaluate using texture memory for potential caching benefits of gradOutput_data.
+```

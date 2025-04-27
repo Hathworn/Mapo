@@ -1,0 +1,7 @@
+```
+// Use warp reduction to minimize bank conflicts and improve memory access efficiency
+// Utilize shared memory to store intermediate results and reduce global memory access
+// Optimize the use of __shfl_down_sync to ensure warp-level reduction is used effectively
+// Ensure that reduction within a block combines results without unnecessary synchronization
+// Reduce global memory reads by leveraging cached shared memory where possible
+```

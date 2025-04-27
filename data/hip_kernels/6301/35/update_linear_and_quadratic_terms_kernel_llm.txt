@@ -1,0 +1,9 @@
+```
+// Load cur_weight to a register to reduce memory access latency
+// Avoid redundant type casting to enhance computational efficiency
+// Use thread indices to avoid branch divergence and improve parallel execution
+// Prefetch quadratic elements into shared memory if they are reused
+// Favor warp divergence over branch divergence for better thread efficiency
+// Consider coalesced memory access for updating 'quadratic' to optimize bandwidth
+// Use atomic operations minimally to avoid serialization and contention
+```

@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers to potentially improve memory access optimization
+// Align shared memory access to improve memory coalescing
+// Optimize shared memory allocation to reduce bank conflicts
+// Use texture memory (if beneficial) to exploit hardware caching
+// Minimize global memory access by maximizing data use in shared memory
+// Explore loop unrolling in critical loops for performance improvement
+```

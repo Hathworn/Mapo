@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Load data from global memory to shared memory only once per block
+// Ensure __syncthreads() is used after loading data into shared memory
+// Minimize global memory access by using shared_a instead of a[idx]
+```

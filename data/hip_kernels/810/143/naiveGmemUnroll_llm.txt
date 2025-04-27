@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Consider memory coalescing for better bandwidth utilization
+// Use loop unrolling for better utilization of compute resources
+// Ensure proper alignment for memory access to leverage coalesced loads
+// Prefetch data if possible to hide memory latency

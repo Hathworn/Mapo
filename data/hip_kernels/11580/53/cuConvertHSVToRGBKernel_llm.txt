@@ -1,0 +1,5 @@
+// Use shared memory to store intermediate values to reduce global memory accesses
+// Prefetch values from global memory to reduce latency
+// Coalesce memory access patterns to maximize memory throughput
+// Ensure stride is correctly aligned to maximize memory coalescing
+// Consider using texture memory for read-only data with read cache benefits

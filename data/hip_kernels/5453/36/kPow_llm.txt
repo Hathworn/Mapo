@@ -1,0 +1,7 @@
+```
+// Consider pre-fetching data into shared memory for coalesced access
+// Ensure shared memory usage is optimal and does not exceed hardware limits
+// Use __syncthreads to synchronize threads after loading into shared memory
+// Explore using warp-level primitives for reducing synchronization overhead
+// Ensure memory alignment to achieve coalesced global memory access
+```

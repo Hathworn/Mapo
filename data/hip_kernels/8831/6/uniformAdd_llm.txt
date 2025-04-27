@@ -1,0 +1,6 @@
+```cpp
+// Load shared memory once per block to reduce global memory access
+// Use __syncthreads() to ensure all threads see the updated shared memory
+// Consider coalesced memory access for g_data to improve performance
+// Check boundary conditions to avoid accessing out-of-bounds memory
+```

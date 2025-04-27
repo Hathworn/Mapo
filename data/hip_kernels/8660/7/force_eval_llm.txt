@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access patterns when loading indices
+// Ensure float4 data structures are aligned for optimal access
+// Consider shared memory for frequently accessed data to reduce global memory loads
+// Minimize data transfer by loading the indices only once
+// Optimize register usage to avoid excessive register spilling
+// Use warp-level operations if data dependencies allow
+```

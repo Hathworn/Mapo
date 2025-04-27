@@ -1,0 +1,5 @@
+```cpp
+// Consider using shared memory for storing intermediate results like emb_sum to reduce global memory access.
+// Use vectorized loads and stores to improve memory bandwidth utilization when accessing in, top_grad, and dgrad arrays.
+// Implement loop unrolling in the for loops to reduce loop overhead and improve performance.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache data and minimize global memory access.
+// Use coalesced memory access for x and y to improve memory throughput.
+// Avoid branch divergence by ensuring all threads within a warp follow the same execution path where possible.
+// Try adjusting block and grid sizes to find the most efficient configuration for the hardware used.
+```

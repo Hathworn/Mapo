@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Coalesce global memory accesses to improve memory bandwidth utilization.
+// Ensure that each thread accesses a contiguous region of memory to maximize coalescing.
+// Minimize thread divergence by ensuring all threads within a warp follow the same execution path.
+// Align data structures to prevent unaligned memory accesses and potential performance penalties.
+// Evaluate the occupancy of the kernel and adjust block size to ensure high efficiency.
+```

@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning thread blocks with memory layout.
+// Consider reorganizing global memory accesses to minimize bank conflicts.
+// Align thread blocks on thread-to-data prefetch to take advantage of memory throughput.
+// Use shared memory to reduce global memory access and utilize data reuse.
+// Where possible, prefetch data to reduce latency and increase parallel efficiency.
+// Optimize memory access patterns to minimize warp divergence.
+// Minimize usage of atomic operations and consider alternatives for better performance.
+```

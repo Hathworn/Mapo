@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for frequently used variables like d_x, d_y, and d_log_Y.
+// Coalesce memory access patterns for d_x, d_y, d_log_Y, d_cdf_norm, d_r_new, d_g_new, and d_b_new.
+// Minimize bank conflicts by ensuring proper memory alignment in shared memory usage.
+// Use registers for variables like x, y, log_Y, and bin_index to optimize performance.
+// Ensure that the number of threads per block is a multiple of warp size to maximize occupancy.
+```

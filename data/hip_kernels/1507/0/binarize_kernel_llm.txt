@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by using optimal data alignment for x and binary
+// Ensure n is a multiple of the warp size to maximize warp utilization
+// Utilize shared memory if the binary results are used multiple times
+// Evaluate if loop unrolling could benefit performance by further optimizing boundary checks
+// Balance the number of threads and blocks to hide latency and maximize occupancy
+```

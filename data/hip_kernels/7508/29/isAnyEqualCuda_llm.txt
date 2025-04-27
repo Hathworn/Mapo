@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for 'image' and 'value' to improve memory throughput.
+// Use shared memory to reduce global memory access when accessing 'value' elements.
+// Align 'valueCount' to a multiple of 4 to ensure loop unrolling benefits.
+// Ensure that 'differenceCount' is aligned to avoid atomic contention if necessary.
+```

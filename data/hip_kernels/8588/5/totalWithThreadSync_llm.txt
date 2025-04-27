@@ -1,0 +1,6 @@
+```c
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Use shared memory to minimize global memory access within warp.
+// Ensure data alignment in shared memory to avoid bank conflicts.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization latency.
+```

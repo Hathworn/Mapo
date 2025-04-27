@@ -1,0 +1,9 @@
+```
+// Ensure memory access is coalesced by aligning memory access patterns.
+// Consider using shared memory to reduce global memory traffic.
+// Optimize conditional checks by restructuring branching logic.
+// Use bool instead of int for flags to reduce register usage.
+// Precompute index offsets outside critical paths to reduce redundant calculations.
+// Minimize divergence by handling special cases outside the critical computation loop.
+// Consider loop unrolling for weight gradient computation to improve parallel workload.
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring that consecutive threads access consecutive memory addresses
+// Use shared memory to reduce global memory access latency if the same data is accessed multiple times
+// Reduce divergent branches by consolidating if conditions if possible
+// Minimize warp divergence in the if-else conditions to improve performance
+// Ensure optimal block and grid size to maximize occupancy and context switches
+```

@@ -1,0 +1,11 @@
+```cpp
+// Use coalesced memory access by ensuring threads access consecutive memory locations.
+// Minimize shared memory usage by optimizing the size and access patterns.
+// Avoid bank conflicts in shared memory by ensuring aligned data access.
+// Preload the halo region efficiently to reduce idle time.
+// Ensure the dimensions of shared memory are optimal for memory access patterns.
+// Utilize derived block and grid sizes that align with the hardware's capabilities.
+// Balance the workload among threads to minimize divergence and idle time.
+// Optimize kernel launch parameters to best match the GPU's compute resources.
+// Use appropriate synchronization (`__syncthreads()`) to ensure data consistency.
+```

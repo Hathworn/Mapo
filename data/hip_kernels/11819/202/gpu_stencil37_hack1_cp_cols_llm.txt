@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by aligning threads' access to consecutive memory locations in global memory
+// Minimize redundant calculations by precomputing index values outside loops when possible
+// Use shared memory to cache data and reduce global memory access latency
+// Synchronize threads using __syncthreads to ensure all memory operations are completed before iteration
+// Consider increasing tile sizes if shared memory capacity allows, to improve memory access efficiency
+```

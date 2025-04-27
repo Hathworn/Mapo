@@ -1,0 +1,8 @@
+```c
+// Optimize data loading to shared memory by minimizing divergence in thread execution paths.
+// Use coalesced memory access patterns for T to improve global memory bandwidth utilization.
+// Ensure memory access for S is aligned and coalesced to maximize effective memory throughput.
+// Consider loop unrolling techniques for innermost loops to reduce loop overhead and improve pipelining.
+// Explore using float4 data type for S and T to maximize throughput on aligned memory accesses.
+// Evaluate the use of asynchronous memory prefetching to hide memory latency further.
+```

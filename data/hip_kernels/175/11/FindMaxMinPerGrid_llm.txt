@@ -1,0 +1,7 @@
+```
+// Consider using float4 for coalesced global memory access
+// Use __restrict__ qualifiers on pointer arguments to help the compiler with optimizations
+// Use warp-level primitives like __shfl_down_sync for reduction within a warp to enhance performance
+// Consider reducing the use of __syncthreads() where redundant to reduce synchronization overhead
+// Utilize loop unrolling to minimize loop control overhead
+```

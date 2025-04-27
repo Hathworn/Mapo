@@ -1,0 +1,8 @@
+```
+// Avoid recalculating static_cast<float> for pointX and pointY, compute once and reuse.
+// Consider using shared memory for centroidCoordinates to improve memory access efficiency.
+// Use loop unrolling to reduce loop overhead and potentially increase performance.
+// Ensure coalesced memory access patterns to optimize global memory transactions.
+// Check if reducing the number of operations per thread in the loop can improve performance.
+// Analyze if warp-level primitives can be applied to further optimize the kernel.
+```

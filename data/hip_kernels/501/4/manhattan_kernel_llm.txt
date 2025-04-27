@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access by ensuring that threads access consecutive elements
+// Prefetch vg_a and vg_b data into shared memory to reduce global memory access
+// Minimize the use of __syncthreads() by effectively using warp-level primitives
+// Ensure shared memory size does not exceed the available memory per block
+// Consider using float4 for loading data to utilize vectorized operations
+// Reuse registers effectively to keep the data in fast access storage
+```

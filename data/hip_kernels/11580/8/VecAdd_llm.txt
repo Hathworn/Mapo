@@ -1,0 +1,10 @@
+```
+// Use __restrict__ qualifiers to improve memory access patterns
+// Ensure A, B, C are aligned in memory
+// Consider using shared memory for frequently accessed data
+// Coalesce memory accesses by ensuring contiguous threads access contiguous data
+// Minimize branch divergence within warp
+// Utilize warp shuffling for data within the same warp
+// Pre-fetch data to hide global memory latency
+// Group memory operations to reduce instruction overhead
+```

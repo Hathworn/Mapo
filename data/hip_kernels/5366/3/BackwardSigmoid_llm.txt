@@ -1,0 +1,8 @@
+```
+// Use __restrict__ keyword to indicate that the pointers do not alias
+// Consider using shared memory for frequently accessed data
+// Use vectorized operations to load and store multiple elements at once if possible
+// Evaluate the use of texture memory for read-only data to benefit from caching
+// Ensure coalesced memory accesses by aligning data and using contiguous threads
+// Try to minimize the use of atomic operations and reduce branch divergence
+```

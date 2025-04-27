@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for temporary storage to reduce redundant global memory access.
+// Ensure all global memory accesses are coalesced.
+// Minimize the use of divergent branches to optimize warp execution.
+// Precompute invariant expressions outside the loop to minimize unnecessary recalculation.
+// Reduce arithmetic redundancy by reusing computed variables wherever possible.
+// Evaluate the cost of __fdividef and consider replacing with multiplication when the division is by a constant.
+```

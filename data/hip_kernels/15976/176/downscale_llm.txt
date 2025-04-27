@@ -1,0 +1,7 @@
+```c
+// Precompute global memory access to reduce redundant calculations
+// Use shared memory to cache frequently accessed gradOutput_data elements
+// Avoid branch divergence by aligning warp execution paths
+// Ensure coalesced memory accesses to gradOutput_data for optimal throughput
+// Consider loop unrolling for small scale_factors to minimize loop overhead
+```

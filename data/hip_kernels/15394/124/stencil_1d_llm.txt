@@ -1,0 +1,8 @@
+```
+// Opt for coalesced memory access by ensuring contiguous memory locations are read by adjacent threads
+// Reduce bank conflicts by proper alignment of shared memory access
+// Consider increasing the block size for better utilization of the GPU resources
+// Minimize memory divergence by ensuring warp threads follow same execution path
+// Possible use of double buffering technique to hide latency of global memory accesses
+// Evaluate using async compute to overlap memory transfer and computation
+```

@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns for better coalescing
+// Use shared memory to minimize global memory access latency
+// Load data into shared memory to increase access speed
+// Utilize __syncthreads() to synchronize threads within a block
+// Ensure coalesced memory access for A[gid] in the global memory
+// Consider reducing bank conflicts in shared memory access
+```

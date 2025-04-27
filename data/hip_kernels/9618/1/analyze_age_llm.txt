@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by arranging data in SOA (Structure of Arrays) format
+// Use shared memory if the same data is accessed multiple times by threads within a block
+// Ensure memory accesses are aligned to 32-bit or 64-bit boundaries
+// Minimize divergent branching with warp-uniform conditions
+// Experiment with different block sizes for performance tuning
+```

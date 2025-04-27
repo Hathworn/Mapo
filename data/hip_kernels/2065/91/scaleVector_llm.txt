@@ -1,0 +1,4 @@
+// Use shared memory to cache data for better memory access patterns.
+// Minimize global memory access by using registers for frequently accessed variables.
+// Optimize block and grid size configuration for improved occupancy and parallelism.
+// Consider using constant memory if scale is uniform across threads to leverage faster access.

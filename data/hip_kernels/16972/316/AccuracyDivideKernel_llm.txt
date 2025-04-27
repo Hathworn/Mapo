@@ -1,0 +1,6 @@
+```c
+// Load entire accuracy data into shared memory at once if possible
+// Use warp-level primitives to reduce thread divergence
+// Consider using multiple threads to perform division concurrently
+// Minimize __syncthreads calls to reduce synchronization overhead
+```

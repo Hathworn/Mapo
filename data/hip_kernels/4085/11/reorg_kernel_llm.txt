@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access by aligning data according to warp size.
+// Consider using shared memory to store intermediate results to reduce global memory access.
+// Reduce divergence by minimizing conditional logic within the thread.
+// Optimize thread block size and grid size for better occupancy and performance.
+// Avoid bank conflicts when using shared memory to improve memory access efficiency.
+```

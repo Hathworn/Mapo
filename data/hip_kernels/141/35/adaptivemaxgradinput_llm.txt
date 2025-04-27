@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for gradOutput by iterating over contiguous memory.
+// Use shared memory if data reuse is significant to reduce global memory access.
+// Address potential bank conflicts in shared memory if implemented.
+// Ensure memory alignment for float pointers to maximize memory throughput.
+// Investigate if prefetching data can help reduce memory latency.
+// Confirm that atomic operations do not become a bottleneck for performance.
+// Explore using const restrict qualifiers to indicate non-aliasing pointers.
+```

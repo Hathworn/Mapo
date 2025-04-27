@@ -1,0 +1,24 @@
+digraph "CFG for '_Z33Max_Interleaved_Addressing_SharedPfi' function" {
+	label="CFG for '_Z33Max_Interleaved_Addressing_SharedPfi' function";
+
+	Node0x617a250 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = mul i32 %8, %7\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp slt i32 %11, %1\l  br i1 %12, label %13, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x617a250:s0 -> Node0x617c1c0;
+	Node0x617a250:s1 -> Node0x617c250;
+	Node0x617c1c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%13:\l13:                                               \l  %14 = sext i32 %11 to i64\l  %15 = getelementptr inbounds float, float addrspace(1)* %0, i64 %14\l  %16 = load float, float addrspace(1)* %15, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %17 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ33Max_Interleaved_Addressing_SharedPfiE5sdata, i32 0, i32 %10\l  store float %16, float addrspace(3)* %17, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %18 = icmp ugt i16 %6, 1\l  br i1 %18, label %19, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x617c1c0:s0 -> Node0x617d850;
+	Node0x617c1c0:s1 -> Node0x617c250;
+	Node0x617d850 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  %20 = phi i32 [ %21, %32 ], [ 1, %13 ]\l  %21 = shl nsw i32 %20, 1\l  %22 = add i32 %21, 1023\l  %23 = and i32 %22, %10\l  %24 = icmp eq i32 %23, 0\l  br i1 %24, label %25, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x617d850:s0 -> Node0x617dd70;
+	Node0x617d850:s1 -> Node0x617d9c0;
+	Node0x617dd70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ed836670",label="{%25:\l25:                                               \l  %26 = load float, float addrspace(3)* %17, align 4, !tbaa !7\l  %27 = add i32 %20, %10\l  %28 = getelementptr inbounds [1024 x float], [1024 x float] addrspace(3)*\l... @_ZZ33Max_Interleaved_Addressing_SharedPfiE5sdata, i32 0, i32 %27\l  %29 = load float, float addrspace(3)* %28, align 4, !tbaa !7\l  %30 = fcmp contract olt float %26, %29\l  %31 = select contract i1 %30, float %29, float %26\l  store float %31, float addrspace(3)* %17, align 4, !tbaa !7\l  br label %32\l}"];
+	Node0x617dd70 -> Node0x617d9c0;
+	Node0x617d9c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %33 = icmp ult i32 %21, %7\l  br i1 %33, label %19, label %34, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x617d9c0:s0 -> Node0x617d850;
+	Node0x617d9c0:s1 -> Node0x617c250;
+	Node0x617c250 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%34:\l34:                                               \l  %35 = icmp eq i32 %11, 0\l  br i1 %35, label %36, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x617c250:s0 -> Node0x617e8d0;
+	Node0x617c250:s1 -> Node0x617e920;
+	Node0x617e8d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c1d4f470",label="{%36:\l36:                                               \l  %37 = load float, float addrspace(3)* getelementptr inbounds ([1024 x\l... float], [1024 x float] addrspace(3)*\l... @_ZZ33Max_Interleaved_Addressing_SharedPfiE5sdata, i32 0, i32 0), align 16,\l... !tbaa !7\l  store float %37, float addrspace(1)* %0, align 4, !tbaa !7\l  br label %38\l}"];
+	Node0x617e8d0 -> Node0x617e920;
+	Node0x617e920 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%38:\l38:                                               \l  ret void\l}"];
+}

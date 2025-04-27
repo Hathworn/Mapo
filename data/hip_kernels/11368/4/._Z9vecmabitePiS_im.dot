@@ -1,0 +1,5 @@
+digraph "CFG for '_Z9vecmabitePiS_im' function" {
+	label="CFG for '_Z9vecmabitePiS_im' function";
+
+	Node0x5974d80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = mul i32 %6, %2\l  %8 = add i32 %7, %5\l  %9 = shl i32 %8, 1\l  %10 = zext i32 %9 to i64\l  %11 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %10\l  %12 = load i32, i32 addrspace(1)* %11, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %13 = zext i32 %8 to i64\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %13\l  store i32 %12, i32 addrspace(1)* %14, align 4, !tbaa !5\l  ret void\l}"];
+}

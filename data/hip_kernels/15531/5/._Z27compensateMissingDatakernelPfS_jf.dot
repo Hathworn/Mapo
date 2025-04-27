@@ -1,0 +1,13 @@
+digraph "CFG for '_Z27compensateMissingDatakernelPfS_jf' function" {
+	label="CFG for '_Z27compensateMissingDatakernelPfS_jf' function";
+
+	Node0x5826350 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp ult i32 %13, %2\l  br i1 %14, label %15, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x5826350:s0 -> Node0x58282a0;
+	Node0x5826350:s1 -> Node0x5828330;
+	Node0x58282a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%15:\l15:                                               \l  %16 = sext i32 %13 to i64\l  %17 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %18 = load float, float addrspace(1)* %17, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %19 = getelementptr inbounds float, float addrspace(1)* %1, i64 %16\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %21 = fmul contract float %20, %20\l  %22 = fmul contract float %20, %21\l  %23 = fmul contract float %20, %22\l  %24 = fdiv contract float %18, %23\l  %25 = tail call float @llvm.fabs.f32(float %24)\l  %26 = fneg contract float %25\l  store float %26, float addrspace(1)* %17, align 4, !tbaa !7\l  %27 = load float, float addrspace(1)* %19, align 4, !tbaa !7\l  %28 = fcmp contract oeq float %27, 0.000000e+00\l  br i1 %28, label %29, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x58282a0:s0 -> Node0x582a630;
+	Node0x58282a0:s1 -> Node0x5828330;
+	Node0x582a630 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%29:\l29:                                               \l  store float %3, float addrspace(1)* %17, align 4, !tbaa !7\l  br label %30\l}"];
+	Node0x582a630 -> Node0x5828330;
+	Node0x5828330 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  ret void\l}"];
+}

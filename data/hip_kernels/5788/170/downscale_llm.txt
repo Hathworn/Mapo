@@ -1,0 +1,5 @@
+```
+// Optimization: Use __restrict__ keyword for gradInput_data and gradOutput_data to enable better caching
+// Optimization: Consider using shared memory to cache data within scale_factor loops to reduce global memory accesses
+// Optimization: Use loop unrolling to increase instruction-level parallelism within scale_factor loops
+```

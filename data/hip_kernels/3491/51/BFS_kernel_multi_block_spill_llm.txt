@@ -1,0 +1,6 @@
+```
+// Load edges into shared memory for improved memory access
+// Synchronize threads in the block to ensure shared memory consistency
+// Use atomic operations to safely update shared data structures
+// Employ __threadfence_system to ensure memory operation visibility across all threads
+```

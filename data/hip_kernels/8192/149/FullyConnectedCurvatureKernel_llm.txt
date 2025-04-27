@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for weightsGradPtr and shiftedWeightsPtr
+// Utilize shared memory for frequently accessed data like avgWeightGradPtr and avgBiasGradPtr
+// Consider using loop unrolling for the inner loop to reduce overhead
+// Minimize divergent branches by restructuring conditionals
+// Employ prefetching techniques for dropoutMaskPtr to minimize latency
+```

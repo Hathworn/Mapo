@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve coalesced memory access for diffInput and argMax
+// Ensure blockDim.x fits the shared memory capacity to avoid excessive usage
+// Optimize stride access pattern to minimize thread divergence
+// Consider prefetching data to shared memory for subsequent iterations
+// Optimize __syncthreads usage to reduce synchronization overhead
+```

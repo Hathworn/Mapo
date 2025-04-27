@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for xmask to reduce global memory access latency
+// Optimize memory access patterns by ensuring coalesced access for x and xmask
+// Experiment with different block sizes to find the optimal configuration
+// Utilize __restrict__ keyword for pointers if applicable to help the compiler optimize
+```

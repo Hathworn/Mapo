@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing by accessing contiguous memory locations.
+// Consider using shared memory to reduce global memory access if multiple threads access the same data.
+// Optimize block size to ensure efficient use of the GPU's resources.
+// Minimize divergent execution by ensuring threads within a warp follow the same execution path.
+```

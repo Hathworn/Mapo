@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache gradOutput_data values for a block
+// Minimize redundant recalculations by storing frequently used values in registers
+// Coalesce memory accesses when reading gradOutput_data to improve bandwidth efficiency
+// Unroll the innermost loop to reduce loop overhead and increase instruction-level parallelism
+// Use __restrict__ qualifiers for pointers to help the compiler optimize memory access
+```

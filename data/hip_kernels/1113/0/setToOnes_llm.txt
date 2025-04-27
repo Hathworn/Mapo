@@ -1,0 +1,4 @@
+// Consider using shared memory if data reuse is possible to reduce global memory accesses
+// Ensure memory access patterns are coalesced to maximize bandwidth
+// Use loop unrolling to potentially reduce loop overhead
+// Evaluate if larger block size benefits occupancy while maintaining coalesced global memory access

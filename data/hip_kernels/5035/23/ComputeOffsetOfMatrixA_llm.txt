@@ -1,0 +1,3 @@
+// Consider using shared memory to reduce repetitive global memory accesses for col_sum.
+// Optimize memory coalescing by ensuring that threads within a warp access contiguous memory addresses.
+// Avoid possible bank conflicts in shared memory by carefully organizing data layout.

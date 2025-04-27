@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory access patterns for shared memory loading
+// Minimize bank conflicts in shared memory by optimizing access patterns
+// Ensure __syncthreads() is placed only when necessary to optimize parallel execution
+// Consider using texture or surface memory for read-only data to improve cache efficiency
+// Optimize block and grid dimensions according to the specific hardware capabilities
+```

@@ -1,0 +1,13 @@
+digraph "CFG for '_Z3addPiS_S_' function" {
+	label="CFG for '_Z3addPiS_S_' function";
+
+	Node0x57d3320 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = icmp slt i32 %4, 1000\l  br i1 %5, label %6, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x57d3320:s0 -> Node0x57d3c00;
+	Node0x57d3320:s1 -> Node0x57d3c90;
+	Node0x57d3c00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%6:\l6:                                                \l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %9 = bitcast i8 addrspace(4)* %8 to i32 addrspace(4)*\l  %10 = load i32, i32 addrspace(4)* %9, align 4, !tbaa !4\l  %11 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !13, !invariant.load\l... !14\l  %14 = zext i16 %13 to i32\l  %15 = udiv i32 %10, %14\l  %16 = mul i32 %15, %14\l  %17 = icmp ugt i32 %10, %16\l  %18 = zext i1 %17 to i32\l  br label %19\l}"];
+	Node0x57d3c00 -> Node0x57d5570;
+	Node0x57d5570 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  %20 = phi i32 [ %4, %6 ], [ %29, %19 ]\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !15\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %21\l  %25 = load i32, i32 addrspace(1)* %24, align 4, !tbaa !15\l  %26 = add nsw i32 %25, %23\l  %27 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %21\l  store i32 %26, i32 addrspace(1)* %27, align 4, !tbaa !15\l  %28 = add i32 %15, %20\l  %29 = add i32 %28, %18\l  %30 = icmp slt i32 %29, 1000\l  br i1 %30, label %19, label %31, !llvm.loop !19\l|{<s0>T|<s1>F}}"];
+	Node0x57d5570:s0 -> Node0x57d5570;
+	Node0x57d5570:s1 -> Node0x57d3c90;
+	Node0x57d3c90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%31:\l31:                                               \l  ret void\l}"];
+}

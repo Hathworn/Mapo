@@ -1,0 +1,11 @@
+```
+// Optimize memory access patterns to improve cache utilization
+// Load neighboring memory locations in a coalesced manner
+// Use shared memory to store repeatedly accessed global data, if possible
+// Minimize divergent branches by organizing threads to handle similar tasks
+// Balance workload across threads to prevent bottlenecks due to uneven execution durations
+// Pre-calculate repeated expressions to reduce redundant computations
+// Consider using intrinsic functions for common mathematical operations to enhance performance
+// Ensure data alignment to prevent potential memory access inefficiencies
+// Avoid excessive use of branching within the kernel function to maintain execution efficiency
+```

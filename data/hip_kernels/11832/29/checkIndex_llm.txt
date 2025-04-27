@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequent data access to reduce global memory accesses
+// Minimize divergent threads within warp by optimizing conditional branches
+// Use asynchronous memory copy operations to overlap computation and data transfer
+// Ensure memory coalescing by accessing global memory in a coalesced manner
+```

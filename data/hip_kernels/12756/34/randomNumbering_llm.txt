@@ -1,0 +1,6 @@
+```c
+// Use coalesced memory access for degreeCount array to improve memory throughput.
+// Prefetch hiprandState to shared memory to reduce global memory latency.
+// Consider using warp shuffle operations for efficient state updates when possible.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+```

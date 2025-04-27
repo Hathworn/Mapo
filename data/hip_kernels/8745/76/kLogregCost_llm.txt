@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access by aligning data sequentially
+// Use __restrict__ keyword to aid compiler optimizations if applicable
+// Consider using shared memory for frequently accessed data within the block
+// Prefer __device__ functions for repeated operations to reduce code duplication
+// Consider loop unrolling for iterating over numOut if this is known at compile-time
+```

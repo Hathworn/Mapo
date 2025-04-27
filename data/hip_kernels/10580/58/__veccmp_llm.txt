@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Ensure memory coalescing by adjusting the memory access pattern.
+// Apply loop unrolling if the loop iteration count is fixed and small.
+// Use registers wisely to minimize excessive global memory reads and writes.
+// Consider using __restrict__ keyword for pointers to optimize memory access.
+```

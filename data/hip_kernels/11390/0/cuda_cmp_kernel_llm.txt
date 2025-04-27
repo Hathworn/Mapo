@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses, minimizing latency
+// Consider coalesced memory accesses to improve memory throughput
+// Use of atomic operations is efficient for updating shared flags across threads
+// Minimize divergent branching to optimize warp execution
+```

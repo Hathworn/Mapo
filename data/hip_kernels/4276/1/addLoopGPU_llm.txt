@@ -1,0 +1,8 @@
+```c
+// Consider coalescing global memory accesses to increase bandwidth efficiency
+// Ensure adequate occupancy by tuning block size to better utilize GPU resources
+// Use shared memory to reduce latency from global memory access if applicable
+// Analyze warp divergence and optimize branching structure
+// Leverage vectorized memory operations if supported to widen memory fetches
+// Align memory allocations to 128/256 bytes boundaries for better performance
+```

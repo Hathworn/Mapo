@@ -1,0 +1,7 @@
+```cpp
+// Align memory access patterns to ensure coalesced memory accesses
+// Use shared memory to cache a and b values to reduce global memory accesses
+// Consider employing loop unrolling if loops are present for better instruction throughput
+// Ensure the grid and block dimensions maximize the occupancy for given GPU configuration
+// Check if using __restrict__ keyword can aid in improving memory access efficiency
+```

@@ -1,0 +1,11 @@
+digraph "CFG for '_Z35_computeHistogramCudaStandardAtomicPKhmPj' function" {
+	label="CFG for '_Z35_computeHistogramCudaStandardAtomicPKhmPj' function";
+
+	Node0x4e114d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = getelementptr inbounds i8, i8 addrspace(4)* %4, i64 12\l  %10 = bitcast i8 addrspace(4)* %9 to i32 addrspace(4)*\l  %11 = load i32, i32 addrspace(4)* %10, align 4, !tbaa !6\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = mul i32 %12, %8\l  %14 = udiv i32 %11, %8\l  %15 = mul i32 %14, %8\l  %16 = icmp ugt i32 %11, %15\l  %17 = zext i1 %16 to i32\l  %18 = add i32 %14, %17\l  %19 = mul i32 %18, %8\l  %20 = zext i32 %19 to i64\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %22 = add i32 %13, %21\l  %23 = zext i32 %22 to i64\l  %24 = icmp ult i64 %23, %1\l  br i1 %24, label %26, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x4e114d0:s0 -> Node0x4e13bc0;
+	Node0x4e114d0:s1 -> Node0x4e13c50;
+	Node0x4e13c50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%25:\l25:                                               \l  ret void\l}"];
+	Node0x4e13bc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i64 [ %33, %26 ], [ %23, %3 ]\l  %28 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %27\l  %29 = load i8, i8 addrspace(1)* %28, align 1, !tbaa !16, !amdgpu.noclobber !5\l  %30 = zext i8 %29 to i64\l  %31 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %30\l  %32 = atomicrmw add i32 addrspace(1)* %31, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  %33 = add i64 %27, %20\l  %34 = icmp ult i64 %33, %1\l  br i1 %34, label %26, label %25, !llvm.loop !19\l|{<s0>T|<s1>F}}"];
+	Node0x4e13bc0:s0 -> Node0x4e13bc0;
+	Node0x4e13bc0:s1 -> Node0x4e13c50;
+}

@@ -1,0 +1,6 @@
+```c
+// Improve memory coalescing by ensuring contiguous memory access in global memory
+// Use additional shared memory to preload values for each thread block
+// Avoid redundant __syncthreads() calls by optimizing data dependency
+// Ensure shared memory size is correctly configured to avoid bank conflicts
+```

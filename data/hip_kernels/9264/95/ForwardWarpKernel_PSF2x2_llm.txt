@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring both spatial and temporal locality.
+// Cache flow and image row offsets to reduce redundant calculations.
+// Use shared memory for frequently accessed elements to minimize global memory access.
+// Align data structures for coalesced memory access.
+// Consider loop unrolling for precompute weight variables.
+// Use __restrict__ pointers to minimize pointer aliasing and optimize memory access.
+```

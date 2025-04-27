@@ -1,0 +1,7 @@
+// Use shared memory to reduce redundant surface reads
+// Ensure coalesced memory access for better efficiency
+// Pre-calculate indices to avoid recomputation
+// Minimize boundary checks by organizing code structure
+// Convert float to half using intrinsic for efficiency
+// Use registers to reduce global memory access
+// Optimize synchronization with __syncthreads() placement

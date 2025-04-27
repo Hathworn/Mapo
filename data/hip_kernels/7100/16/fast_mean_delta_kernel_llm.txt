@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory accesses.
+// Loop unrolling implemented to reduce loop control overhead.
+// Optimize thread synchronization by using a hierarchical reduction approach.
+// Leverage volatile keyword in the final reduction to ensure consistent memory reads.
+// Minimize bank conflicts in shared memory by careful indexing.

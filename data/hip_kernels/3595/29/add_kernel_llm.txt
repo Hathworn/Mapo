@@ -1,0 +1,4 @@
+// Consider using shared memory for commonly accessed data to reduce global memory accesses.
+// Ensure grid and block sizes are optimized to the target hardware for maximum occupancy.
+// Leverage memory coalescing by ensuring that X[i*INCX] accesses are efficient across threads.
+// Use asynchronous memory copy operations where appropriate to overlap computation and memory transfer.

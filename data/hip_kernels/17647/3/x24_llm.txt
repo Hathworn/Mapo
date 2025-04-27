@@ -1,0 +1,5 @@
+// Utilize shared memory for frequently accessed data to reduce global memory access.
+// Ensure memory accesses are coalesced to optimize bandwidth usage.
+// Minimize register usage by analyzing computation dependencies.
+// Consider the use of async copies to overlap computation with data transfers.
+// Profile kernel launch configurations to ensure optimal thread block and grid sizes.

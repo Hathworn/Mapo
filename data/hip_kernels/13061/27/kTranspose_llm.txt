@@ -1,0 +1,5 @@
+// Ensure memory coalescing by reading matrix data into shared memory
+// Leverage shared memory to reduce global memory access latency
+// Implement padding in shared memory to avoid bank conflicts
+// Use __syncthreads() to ensure all threads have completed the shared memory store
+// Optimize global memory access patterns by aligning with warp size

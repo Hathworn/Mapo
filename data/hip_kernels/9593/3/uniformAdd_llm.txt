@@ -1,0 +1,7 @@
+```
+// Consider using a warp size for load efficiency in shared memory.
+// Align data access patterns to improve memory coalescing.
+// Avoid shared memory bank conflicts by ensuring proper data alignment.
+// Utilize __syncthreads() appropriately to prevent race conditions.
+// Optimize boundary checks to minimize branch divergence.
+```

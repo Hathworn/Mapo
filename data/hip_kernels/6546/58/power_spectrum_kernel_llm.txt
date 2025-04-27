@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Coalesce global memory accesses for improved memory throughput
+// Consider using warp-level primitives for reduction operations
+// Apply __restrict__ qualifiers to pointer parameters for better compiler optimization
+// Align data structures to improve memory access patterns
+// Ensure proper use of __syncthreads() to avoid race conditions
+```

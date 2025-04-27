@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to store frequently accessed data to minimize global memory access latency
+// Ensure memory coalescing by aligning memory accesses in a way that adjacent threads access consecutive memory locations
+// Consider loop unrolling to reduce loop overhead and increase instruction level parallelism
+// Reduce bank conflicts in shared memory by ensuring that threads access different memory banks
+// Implement pre-fetching to overlap computation and memory operations, reducing idle time waiting for memory
+```

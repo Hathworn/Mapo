@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for p_dist and p_ind to improve memory bandwidth.
+// Use shared memory to further reduce global memory accesses within each block.
+// Minimize divergent branches to increase warp efficiency, especially in sorting logic.
+// Check if employing a block-wise sort strategy using shared memory could lead to better performance.
+// Ensure memory alignment to maximize throughput and reduce potential memory access penalties.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access overhead where possible
+// Consider loop unrolling for the 'for (int k = 0; k < nsec; k++)' loop to improve performance if nsec is small and fixed
+// Assess whether the computations inside the loop can be rearranged to coalesce memory accesses better
+// Try using half precision if the precision allows to reduce memory usage and improve computation speed
+// Explore the possibility of using texture memory for repeated access pattern data like Vmoy and invRmed
+```

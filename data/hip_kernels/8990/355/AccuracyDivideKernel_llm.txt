@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if data reuse is possible.
+// Ensure that the pointer to accuracy is aligned for coalesced memory access.
+// Evaluate if multiple elements need similar operation for thread-level parallelism.
+// Optimize the kernel launch configuration if this kernel is called repeatedly.
+// Minimize data movement by reducing the number of global memory operations.
+```

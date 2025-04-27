@@ -1,0 +1,5 @@
+// Use shared memory for intermediate computations to reduce global memory access
+// Calculate wt using local registry computation to minimize memory reads
+// Store intermediate results in shared memory to improve memory access efficiency
+// Prevent repeated memory access by storing values in registers
+// Write back the result of wt to global memory at the end of computation to optimize memory writes

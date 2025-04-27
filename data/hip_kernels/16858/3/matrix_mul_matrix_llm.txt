@@ -1,0 +1,8 @@
+```
+// Consider using larger tiles to increase data reuse and decrease global memory accesses.
+// Ensure coalesced memory access by adjusting the memory layout for better performance.
+// Check if shared memory usage can be optimized to further reduce bank conflicts.
+// Evaluate using loop unrolling within the computation loop to enhance throughput.
+// Consider double buffering technique to hide memory latency during tiled matrix multiplication.
+// Adjust block size to maximize occupancy and balance computation with memory access.
+```

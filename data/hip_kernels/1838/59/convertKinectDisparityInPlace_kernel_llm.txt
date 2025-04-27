@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses for frequently accessed data
+// Coalesce memory accesses by ensuring threads access contiguous memory locations
+// Consider loop unrolling for potential performance enhancement in computations
+// Profile kernel execution to identify bottlenecks and refine block and grid sizes experts

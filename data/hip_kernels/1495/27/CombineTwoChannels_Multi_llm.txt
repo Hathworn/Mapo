@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access latency
+// Ensure coalesced access by aligning memory accesses to warp boundaries
+// Minimize conditional statements inside the kernel for better efficiency
+// Employ loop unrolling if applicable to optimize throughput

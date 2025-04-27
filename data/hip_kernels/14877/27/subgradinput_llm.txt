@@ -1,0 +1,7 @@
+```
+// Consider increasing the size of shared memory if the block size or data size grows.
+// Ensure shared memory accessed is contiguous to enhance memory coalescing.
+// Minimize global memory accesses by maximizing shared memory usage.
+// Use __syncthreads() carefully to ensure that memory operations are complete for all threads.
+// Reduction of shared memory bank conflicts can optimize performance further.
+```

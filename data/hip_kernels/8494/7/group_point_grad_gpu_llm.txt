@@ -1,0 +1,3 @@
+// Consider using shared memory to cache idx and grad_out data for better memory access efficiency
+// Investigate coalesced memory access patterns for grad_out and grad_points
+// Optimize atomic operations by restructuring accumulation to reduce contention

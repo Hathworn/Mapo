@@ -1,0 +1,6 @@
+```
+// Cache queryID to reduce repeated global memory access
+// Consider using shared memory for queryLengthArray if there are multiple accesses in a block
+// Consider prefetching scoreArray values to reduce global memory latency
+// Consider using faster transcendental math functions if applicable
+```

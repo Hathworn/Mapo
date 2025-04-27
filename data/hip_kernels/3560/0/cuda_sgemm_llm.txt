@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Ensure matrix_a and matrix_b are accessed in a coalesced manner
+// Avoid bank conflicts in shared memory access
+// Improve data parallelism by better using block and thread dimensions for data tiling
+// Minimize synchronization overhead by optimizing the computation loop

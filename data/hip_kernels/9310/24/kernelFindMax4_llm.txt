@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access when loading data from global memory
+// Consider double buffering to hide global memory latency
+// Ensure shared memory usage is within hardware limits to maximize occupancy
+// Optimize block size to maximize GPU utilization for the given architecture
+// Ensure proper synchronization to prevent data races
+```

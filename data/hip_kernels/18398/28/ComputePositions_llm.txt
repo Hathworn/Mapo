@@ -1,0 +1,10 @@
+```
+// Consider caching data from g_Data2, g_Data3, and g_Data1 in shared memory to reduce global memory access.
+// Use __ldg() intrinsic for read-only data to take advantage of the texture cache.
+// Explore using float2 or float4 vectors for coalesced memory access to improve memory bandwidth usage.
+// Ensure that memory access patterns are coalesced to optimize for the GPU's memory architecture.
+// Align data in memory with CUDA's alignment requirements when possible to improve load/store efficiency.
+// Consider unrolling loops manually to increase instruction throughput if applicable.
+// Use the restrict keyword if applicable to inform the compiler about non-aliasing memory accesses.
+// Minimize the use of control flow divergence within warps for better performance.
+```

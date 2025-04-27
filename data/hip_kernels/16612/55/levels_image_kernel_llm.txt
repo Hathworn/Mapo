@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce redundant global memory accesses for common data like rand
+// Unroll loops to minimize branching and improve performance
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Consider using texture memory for repeated read access to image data
+// Evaluate using atomic operations if concurrent writes can be avoided
+// Check if float operations can benefit from using __fmul_rn for fast multiplication
+```

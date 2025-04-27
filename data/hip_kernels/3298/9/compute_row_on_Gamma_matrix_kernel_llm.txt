@@ -1,0 +1,6 @@
+```
+// Use shared memory for storing indices to reduce global memory access latency
+// Coalesce memory accesses for exp_V by assigning l as consecutive indices
+// Prefetch N_ptr elements to cache if size permits, reducing repeated access latency
+// Consider loop unrolling for operation on row_ptr to increase throughput
+```

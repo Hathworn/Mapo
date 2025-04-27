@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed data within the kernel
+// Minimize global memory accesses by using local variables where possible
+// Ensure memory coalescing by accessing consecutive memory locations
+// Evaluate warp divergence due to conditional statement and optimize if possible
+// Align memory allocations to ensure optimal memory access pattern

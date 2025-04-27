@@ -1,0 +1,5 @@
+// Optimize memory access by ensuring data is coalesced in global memory
+// Consider using shared memory to reduce global memory bandwidth usage
+// Minimize conditional checks within kernel to reduce divergence
+// Evaluate if loop unrolling could benefit performance depending on compiler optimization settings
+// Double-check alignment and padding for input/output arrays to maximize memory throughput

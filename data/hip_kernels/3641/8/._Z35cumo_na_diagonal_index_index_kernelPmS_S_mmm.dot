@@ -1,0 +1,13 @@
+digraph "CFG for '_Z35cumo_na_diagonal_index_index_kernelPmS_S_mmm' function" {
+	label="CFG for '_Z35cumo_na_diagonal_index_index_kernelPmS_S_mmm' function";
+
+	Node0x55b9680 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 12\l  %14 = bitcast i8 addrspace(4)* %13 to i32 addrspace(4)*\l  %15 = load i32, i32 addrspace(4)* %14, align 4, !tbaa !6\l  %16 = mul i32 %7, %12\l  %17 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %18 = add i32 %16, %17\l  %19 = zext i32 %18 to i64\l  %20 = icmp ult i64 %19, %5\l  br i1 %20, label %21, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x55b9680:s0 -> Node0x55bb920;
+	Node0x55b9680:s1 -> Node0x55bb9b0;
+	Node0x55bb920 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%21:\l21:                                               \l  %22 = udiv i32 %15, %12\l  %23 = mul i32 %22, %12\l  %24 = icmp ugt i32 %15, %23\l  %25 = zext i1 %24 to i32\l  %26 = add i32 %22, %25\l  %27 = mul i32 %26, %12\l  %28 = zext i32 %27 to i64\l  br label %30\l}"];
+	Node0x55bb920 -> Node0x55bbea0;
+	Node0x55bb9b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%29:\l29:                                               \l  ret void\l}"];
+	Node0x55bbea0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  %31 = phi i64 [ %19, %21 ], [ %40, %30 ]\l  %32 = add i64 %31, %3\l  %33 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %32\l  %34 = load i64, i64 addrspace(1)* %33, align 8, !tbaa !16\l  %35 = add i64 %31, %4\l  %36 = getelementptr inbounds i64, i64 addrspace(1)* %2, i64 %35\l  %37 = load i64, i64 addrspace(1)* %36, align 8, !tbaa !16\l  %38 = add i64 %37, %34\l  %39 = getelementptr inbounds i64, i64 addrspace(1)* %0, i64 %31\l  store i64 %38, i64 addrspace(1)* %39, align 8, !tbaa !16\l  %40 = add i64 %31, %28\l  %41 = icmp ult i64 %40, %5\l  br i1 %41, label %30, label %29, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x55bbea0:s0 -> Node0x55bbea0;
+	Node0x55bbea0:s1 -> Node0x55bb9b0;
+}

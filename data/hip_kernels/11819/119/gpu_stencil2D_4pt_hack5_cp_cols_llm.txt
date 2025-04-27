@@ -1,0 +1,5 @@
+```
+// Coalesce global memory reads to improve memory access efficiency.
+// Minimize redundant global memory accesses by storing data in shared memory.
+// Use __syncthreads() to ensure all threads have completed writing to shared memory before proceeding.
+```

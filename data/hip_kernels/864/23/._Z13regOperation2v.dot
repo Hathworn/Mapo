@@ -1,0 +1,5 @@
+digraph "CFG for '_Z13regOperation2v' function" {
+	label="CFG for '_Z13regOperation2v' function";
+
+	Node0x5d4ed80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%0:\l  %1 = load i32, i32 addrspace(1)* getelementptr ([10 x\l... %struct.HIP_vector_type], [10 x %struct.HIP_vector_type] addrspace(1)*\l... @devInt2, i64 0, i64 1, i32 0, i32 0, i32 0, i64 0), align 8\l  %2 = load i32, i32 addrspace(1)* getelementptr inbounds ([10 x\l... %struct.HIP_vector_type], [10 x %struct.HIP_vector_type] addrspace(1)*\l... @devInt2, i64 0, i64 1, i32 0, i32 0, i32 0, i64 1), align 4\l  store i32 %1, i32 addrspace(1)* getelementptr ([10 x\l... %struct.HIP_vector_type], [10 x %struct.HIP_vector_type] addrspace(1)*\l... @devInt2, i64 0, i64 0, i32 0, i32 0, i32 0, i64 0), align 16, !tbaa !4\l  store i32 %2, i32 addrspace(1)* getelementptr ([10 x\l... %struct.HIP_vector_type], [10 x %struct.HIP_vector_type] addrspace(1)*\l... @devInt2, i64 0, i64 0, i32 0, i32 0, i32 0, i64 1), align 4, !tbaa !4\l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store data for faster access and reduced global memory traffic.
+// Use coalesced memory access to improve cache efficiency when copying data from global to shared memory.
+// Implement loop unrolling techniques to reduce the overhead of loop control and increase instruction throughput.
+// Avoid using __syncthreads() if not necessary, as it can introduce synchronization overhead.
+// Where feasible, minimize data-dependent conditions inside loops to reduce divergent execution paths.
+```

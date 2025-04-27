@@ -1,0 +1,9 @@
+```
+// Coalesce memory access by ensuring contiguous threads access contiguous memory locations.
+// Use shared memory to reduce global memory accesses for frequently accessed data.
+// Optimize grid and block dimensions to maximize occupancy and utilize GPU efficiently.
+// Consider using read-only cache or texture memory for input matrices to improve memory bandwidth.
+// Minimize divergent branches by ensuring warp execution consistency.
+// Unroll loops where possible to enhance performance by reducing loop overhead.
+// Ensure memory alignment for coalesced memory transactions.
+```

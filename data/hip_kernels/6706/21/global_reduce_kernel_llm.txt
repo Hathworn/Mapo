@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses to minimize global memory transactions
+// Use __ldg for read-only data to utilize read-only data cache
+// Align shared memory access to improve throughput
+// Minimize __syncthreads() usage to reduce synchronization overhead where possible
+```

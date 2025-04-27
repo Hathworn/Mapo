@@ -1,0 +1,7 @@
+```
+// Use a register to accumulate partial sums instead of shared or global memory
+// Store the intermediate results in shared memory to minimize global memory accesses
+// Efficient parallel reduction using shared memory to reduce synchronization overhead
+// Use block-level accumulation to minimize global writes
+// Ensure memory coalescing by accessing global memory with continuous threads
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses for input matrices.
+// Tile matrix multiplication to minimize data movement.
+// Ensure coalesced global memory access by using shared memory buffers.
+// __syncthreads() must be called after loading shared memory to ensure all threads have completed.
+// Check bounds before accessing shared memory to avoid unnecessary memory operations.

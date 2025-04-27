@@ -1,0 +1,5 @@
+// Consider memory coalescing if accessing global memory in future implementations.
+// Avoid bank conflicts by ensuring optimal data arrangement if shared memory is utilized later.
+// Analyze the block size for optimal occupancy and compute throughput in future use cases.
+// Minimize register usage for better performance if the kernel's functionality expands.
+// Monitor for warp divergence when introducing conditional statements in the kernel later.

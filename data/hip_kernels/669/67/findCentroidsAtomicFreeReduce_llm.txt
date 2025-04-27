@@ -1,0 +1,4 @@
+// Consider using warp-level reduction to minimize synchronization overhead.
+// Utilize shared memory more effectively by aligning its size to the warp size for better data locality.
+// Explore using more efficient memory access patterns to reduce bank conflicts in shared memory.
+// Optimize global memory writes by ensuring coalesced access patterns to improve throughput.

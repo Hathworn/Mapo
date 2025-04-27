@@ -1,0 +1,10 @@
+```c
+// Minimize memory access by using shared memory for frequently accessed data
+// Coalesce global memory accesses for optimal memory bandwidth utilization
+// Use __restrict__ qualifiers to help the compiler optimize memory access
+// Ensure proper memory alignment for coalesced access patterns
+// Consider using registers for storing temporary variables within threads
+// Avoid unnecessary synchronization points if not required for correct execution
+// Use appropriate block size to maximize occupancy and warps efficiency
+// Opt for loop unrolling where applicable to reduce loop overhead
+```

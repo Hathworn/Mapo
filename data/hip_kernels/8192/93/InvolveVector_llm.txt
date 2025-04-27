@@ -1,0 +1,4 @@
+// Consider using shared memory for intermediate storage to reduce global memory reads and writes.
+// Try to coalesce memory access by aligning data layout with warp size.
+// Ensure effective utilization of threads by minimizing idle threads; use padding or revisit thread distribution.
+// Investigate and minimize bank conflicts when accessing shared memory.

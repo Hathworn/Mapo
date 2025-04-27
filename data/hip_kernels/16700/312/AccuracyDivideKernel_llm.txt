@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for optimal performance
+// Minimize use of global memory by utilizing shared memory if possible
+// Avoid thread divergence for better efficiency
+// Consider using atomic operations if multiple threads might access accuracy
+// Use __restrict__ keyword for pointers if aliasing is not possible
+// Limit operations within the kernel for reduced execution time
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed data and reduce global memory access
+// Ensure memory access patterns are coalesced for optimal performance
+// Consider using vectorized operations if memory alignment allows
+// Optimize block size and grid size based on the target architecture for maximum efficiency
+// Minimize the use of conditional statements within the kernel for better branching efficiency

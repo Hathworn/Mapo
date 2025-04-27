@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data structures.
+// Consider using shared memory if data reuse between threads is high.
+// Ensure the selected stride covers all data for efficient utilization.
+// Use __restrict__ keyword for pointers if data is not aliased.
+// Check if vectorized memory access (e.g., float4) can be applied to improve bandwidth.
+```

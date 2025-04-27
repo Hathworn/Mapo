@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses for repeated elements
+// Try to increase thread block size for better occupancy
+// Ensure coalesced accesses in global memory reads/writes
+// Consider loop unrolling for repeated patterns
+// Reduce synchronization points where possible
+// Evaluate bank conflicts in shared memory access
+// Adjust NPAD value if possible to better match your device's memory architecture
+```

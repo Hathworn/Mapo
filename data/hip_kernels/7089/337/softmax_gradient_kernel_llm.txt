@@ -1,0 +1,4 @@
+// Use warp-level primitives to reduce synchronization overhead.
+// Optimize memory access patterns to minimize global memory latency.
+// Consider using texture memory for read-only data like 'Y' and 'dY'.
+// Ensure coalesced memory access for 'dX' writes.

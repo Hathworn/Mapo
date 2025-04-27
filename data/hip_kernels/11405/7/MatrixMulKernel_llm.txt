@@ -1,0 +1,4 @@
+// Ensure that shared memory usage is optimized to reduce bank conflicts.
+// Consider using coalesced memory access patterns for global memory reads.
+// Try to reduce the number of syncthreads calls for better synchronization efficiency.
+// Perform memory pre-fetching to hide global memory latency.

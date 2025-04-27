@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring A and B are coalesced loaded into shared memory.
+// Increase tile sizes (tile_size_y and tile_size_x) for larger shared memory tiles.
+// Ensure synchronization with __syncthreads() is placed correctly for shared memory use.
+// Use #pragma unroll to optimize loops with compile-time unrolling where beneficial.
+// Store partial results directly in registers to reduce shared memory usage.
+// Ensure block size is chosen to maximize occupancy while considering shared memory limits.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access by ensuring contiguous threads access contiguous data.
+// Avoid bank conflicts by using shared memory efficiently.
+// Use __restrict__ qualifier on pointers to help the compiler with optimizations.
+// Minimize global memory access by making use of shared memory effectively.
+// Consider loop unrolling for the reduction step to optimize performance.
+```

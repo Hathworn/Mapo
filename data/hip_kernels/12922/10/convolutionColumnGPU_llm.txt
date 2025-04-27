@@ -1,0 +1,7 @@
+```
+// Use shared memory to store a portion of h_Src to reduce global memory access
+// Use constant memory for h_Filter when it is read-only and small enough
+// Consider loop unrolling to reduce overhead in the loop
+// Ensure coalesced memory access by aligning memory accesses to cache line sizes
+// Minimize divergent branches, especially within critical loops
+```

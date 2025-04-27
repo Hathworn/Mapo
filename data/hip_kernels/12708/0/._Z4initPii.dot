@@ -1,0 +1,11 @@
+digraph "CFG for '_Z4initPii' function" {
+	label="CFG for '_Z4initPii' function";
+
+	Node0x637ed00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = mul i32 %4, %1\l  %6 = add i32 %5, %3\l  %7 = add i32 %5, %1\l  %8 = icmp ult i32 %6, %7\l  br i1 %8, label %10, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x637ed00:s0 -> Node0x637fcb0;
+	Node0x637ed00:s1 -> Node0x6380010;
+	Node0x6380010 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%9:\l9:                                                \l  ret void\l}"];
+	Node0x637fcb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%10:\l10:                                               \l  %11 = phi i32 [ %14, %10 ], [ %6, %2 ]\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %12\l  store i32 2147483647, i32 addrspace(1)* %13, align 4, !tbaa !5\l  %14 = add nsw i32 %11, 1024\l  %15 = icmp ult i32 %14, %7\l  br i1 %15, label %10, label %9, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x637fcb0:s0 -> Node0x637fcb0;
+	Node0x637fcb0:s1 -> Node0x6380010;
+}

@@ -1,0 +1,9 @@
+```
+// Use shared memory to store frequently accessed data to reduce global memory access latency.
+// Consider pre-loading data into registers to minimize repeated global memory access.
+// Minimize the use of complex arithmetic operations within loops for optimized performance.
+// Align data structures to improve memory coalescing and reduce memory transaction issues.
+// Utilize loop unrolling for the inner loop to reduce the loop overhead and improve performance.
+// If possible, reduce branching within the kernel to ensure warp execution efficiency.
+// Use __syncthreads() judiciously to synchronize threads only when necessary, preventing unnecessary synchronization overhead.
+```

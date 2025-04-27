@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Ensure memory access is coalesced for better performance
+// Consider optimizing block and grid configuration to fit shared memory limits
+// Ensure total thread memory usage fits within available shared memory size

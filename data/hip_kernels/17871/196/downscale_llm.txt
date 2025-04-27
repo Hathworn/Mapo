@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses for gradInput_data and gradOutput_data
+// Use shared memory to minimize global memory access latency
+// Cache index calculations to reduce redundant computations
+// Improve memory alignment to enhance access speed
+// Optimize scale_factor related loop strategy to avoid divergence

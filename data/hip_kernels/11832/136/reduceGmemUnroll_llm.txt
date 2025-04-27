@@ -1,0 +1,7 @@
+```
+// Use shared memory to store intermediate results and reduce global memory access frequency
+// Employ loop unrolling to improve throughput by reducing loop overhead
+// Use volatile keyword to prevent unwanted compiler optimizations when accessing shared memory
+// Unroll the warp reduction to reduce the number of synchronization points
+// Consider enhancing memory coalescing by aligning data access
+```

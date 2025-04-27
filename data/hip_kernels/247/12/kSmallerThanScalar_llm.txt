@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Use memory coalescing to improve access speed by ensuring contiguous memory access.
+// Ensure scalar value is loaded into a register to minimize repetitive global reads.
+// Verify that accesses to gData are coalesced for warp efficiency.
+// Investigate warp divergence due to conditional statements.
+```

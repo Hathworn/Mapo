@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns, coalesced memory access for 'original'.
+// Use shared memory to cache 'original' data to reduce global memory bandwidth.
+// Minimize bank conflicts when using shared memory.
+// Consider unrolling the loop to decrease loop overhead.
+// Use __syncthreads() to ensure all threads have consistent shared memory data.
+// Consider using atomics if necessary to avoid race conditions.
+```

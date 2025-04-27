@@ -1,0 +1,6 @@
+```
+// Implement loop unrolling for the stride loop to reduce loop overhead.
+// Use shared memory to decrease global memory access time during reduction.
+// Ensure coalesced memory access to improve memory bandwidth utilization.
+// Consider adding warp-synchronous programming to avoid __syncthreads() if possible.
+```

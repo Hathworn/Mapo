@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses for d_in to improve global memory throughput
+// Use loop unrolling in the shared_reduce function for further optimization
+// Minimize __syncthreads() calls by combining steps when possible
+// Consider using warp shuffle operations for reduction instead of shared memory
+// Optimize the use of shared memory by limiting its allocation to only what's necessary
+// Ensure that the last thread writes d_out_shared outside conditional branches, if possible
+```

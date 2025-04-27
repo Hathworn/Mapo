@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory addresses.
+// Use shared memory to minimize redundant global memory accesses, especially for values reused by multiple threads.
+// Avoid warp divergence by ensuring all threads in a warp follow the same execution path whenever possible.
+// Prefetch data if it leads to performance improvement and the data size is consistent across kernel calls.
+```

@@ -1,0 +1,5 @@
+// Use __restrict__ to indicate no aliasing for memory access optimization
+// Optimize memory access by minimizing stride in array indexing
+// Prefer memory coalescing by adjusting thread and block dimensions accordingly
+// Consider shared memory usage for improved access times if applicable
+// Use loop unrolling if copying large blocks of data for reduced overhead

@@ -1,0 +1,5 @@
+// Consider using shared memory for repetitive data access in threads
+// Use coalesced memory access patterns for gMat1 and gMat2 to increase bandwidth usage efficiency
+// Verify using constant memory if gMat1 or gMat2 contain constant data across threads
+// Ensure gMatTarget is accessed in a coalesced manner to optimize write operations
+// Consider loop unrolling if applicable for further performance gains

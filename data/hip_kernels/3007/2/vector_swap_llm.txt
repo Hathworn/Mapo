@@ -1,0 +1,4 @@
+// Use shared memory if the vectors x and y have common access patterns to reduce global memory accesses.
+// Ensure stride_x and stride_y are optimized to promote coalesced memory access for better performance.
+// Consider loop unrolling if n is very large to reduce thread divergence and improve throughput.
+// If stride_x or stride_y is equal to 1, ensure memory accesses are close to maximize memory bandwidth utilization.

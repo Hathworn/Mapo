@@ -1,0 +1,12 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Minimize register pressure by reusing variables where possible
+// Use shared memory for common subexpression values if applicable
+// Optimize thread block size to maximize occupancy
+// Consider the use of half precision for reducing memory bandwidth
+// Combine arithmetic operations to reduce instruction count
+// Consider loop unrolling for inner loops for performance
+// Avoid branching within the loops for better warp execution
+// Consider prefetching data where possible to hide memory latency
+// Align data to cache line size for better memory access efficiency
+```

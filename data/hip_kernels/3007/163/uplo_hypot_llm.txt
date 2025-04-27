@@ -1,0 +1,8 @@
+```
+// Use shared memory to store reused data, reducing global memory access.
+// Consider coalescing memory access for 'a', 'b', and 'c' arrays to improve access patterns.
+// Ensure alignment of data pointers to optimal boundaries to improve memory access speed.
+// Prefetch data for 'a' and 'b' into registers to minimize latency.
+// Consider loop unrolling if applicable to increase instruction-level parallelism.
+// Ensure that the kernel launch parameters are tuned for the best occupancy and performance.
+```

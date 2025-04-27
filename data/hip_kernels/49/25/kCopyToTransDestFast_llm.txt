@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency and bandwidth utilization.
+// Reverse indices for coalesced global memory access.
+// Minimize warp divergence by ensuring only valid threads participate with boundary checks.
+// Align shared memory to avoid bank conflicts during shared memory operations.

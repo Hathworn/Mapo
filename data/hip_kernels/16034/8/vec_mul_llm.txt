@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses
+// Coalesce memory accesses by optimizing data alignment
+// Consider using a larger block size for increased parallelism
+// Check and balance occupancy to improve utilization
+// Reduce divergent branches within warp
+// Use const restrict qualifiers for pointers if applicable

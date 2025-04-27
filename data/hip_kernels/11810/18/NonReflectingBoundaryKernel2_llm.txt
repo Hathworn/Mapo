@@ -1,0 +1,3 @@
+// Use shared memory to hold frequently accessed data like SoundSpeed and Dens to reduce global memory access.
+// Optimize memory access patterns by ensuring coalesced access for Vrad writes in the kernel.
+// Ensure the use of const keyword for unchanged values like SigmaMed and SigmaMed2 for faster access.

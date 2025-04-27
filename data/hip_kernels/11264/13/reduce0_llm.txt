@@ -1,0 +1,6 @@
+```
+// Use shared memory to coalesce global memory accesses for speed
+// Unroll the loop to reduce synchronization overhead
+// Use warp-level primitives to reduce shared memory bank conflicts
+// Avoid unnecessary __syncthreads() for better performance
+```

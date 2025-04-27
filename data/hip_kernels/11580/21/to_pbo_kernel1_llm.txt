@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads to memory addresses
+// Consider using shared memory for intermediate values if necessary
+// Minimize divergent branches by ensuring all threads within warp execute same path
+// Reduce global memory access by using registers for frequently accessed variables
+// Optimize memory access patterns to improve cache utilization
+```

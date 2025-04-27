@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data such as disparity, Zbuffer, and normals to reduce global memory access latency.
+// Optimize memory access by ensuring alignment of global memory reads, which may involve padding data structures or reorganizing accesses.
+// Minimize divergence in threads by restructuring conditionals where applicable.
+// Check if using texture memory for read-only data could improve performance due to caching benefits.
+```

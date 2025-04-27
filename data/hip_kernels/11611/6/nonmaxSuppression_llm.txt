@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Use texture memory or constant memory for read-only data accessed by all threads to improve cache hit rates.
+// Minimize warp divergence by ensuring threads in the same warp follow similar execution paths where possible.
+// Optimize memory access patterns to reduce bank conflicts and improve coalesced accesses.

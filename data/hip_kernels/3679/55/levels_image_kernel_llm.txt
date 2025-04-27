@@ -1,0 +1,4 @@
+// Precompute indices and parameters to reduce repeated calculations
+// Use lookup to avoid multiple if-statements in hsv_to_rgb_kernel for efficiency
+// Precompute rand values to reduce repeated load from global memory
+// Efficiently write back the computed values to avoid redundant memory operations

@@ -1,0 +1,4 @@
+// Ensure coalesced memory access for output array
+// Consider using shared memory for biases if repeatedly accessed
+// Avoid branching if possible for better warp execution
+// Optimize for occupancy by adjusting block and grid dimensions

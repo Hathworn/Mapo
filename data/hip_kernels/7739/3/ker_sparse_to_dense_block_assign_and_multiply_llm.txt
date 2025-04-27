@@ -1,0 +1,7 @@
+```c
+// Consider aligning memory accesses to improve coalescence
+// Ensure idx and src arrays are aligned to improve memory access efficiency
+// Consider using shared memory for data reuse and reducing global memory traffic
+// Minimize divergent branches by ensuring threads within a warp execute similar instructions
+// Explore prefetching upcoming memory accesses to hide latency
+```

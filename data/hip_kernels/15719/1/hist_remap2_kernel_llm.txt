@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently used data such as cumJ and histJ for faster access
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations
+// Minimize divergent code paths, especially inside the while loop
+// Consider unrolling loops for improved performance if the loop bounds are small and static
+// Align access to global memory with natural memory boundaries to improve memory efficiency
+// Reduce the number of kernel function arguments by grouping related data into structures if possible
+// Preload data to reduce repeated global memory access, increasing data locality
+```

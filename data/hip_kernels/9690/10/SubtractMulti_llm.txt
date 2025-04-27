@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access latency.
+// Load data into shared memory in coalesced manner for improved performance.
+// Ensure all threads synchronize after loading shared data to prevent data races.
+// Optimize shared memory usage by minimizing its size where possible.

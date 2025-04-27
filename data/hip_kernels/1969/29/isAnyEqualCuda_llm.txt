@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for the image array to improve memory throughput.
+// Use shared memory to store frequently accessed data and reduce global memory access.
+// Ensure shared memory size is enough to hold all data efficiently to avoid memory bank conflicts.
+// Consider minimizing the use of atomic operations in favor of warp-aggregated operations for better performance.
+// Ensure data is aligned appropriately in memory to optimize load and store operations.
+```

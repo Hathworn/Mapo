@@ -1,0 +1,6 @@
+```
+// Use a loop to initialize min_Idx to improve shared memory access efficiency.
+// Combine the two if conditions for better warp execution and avoid divergence.
+// Use atomic operations carefully to prevent serialization of threads.
+// Ensure coalesced global memory access for out and out_pos to optimize performance.
+```

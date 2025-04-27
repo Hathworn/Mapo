@@ -1,0 +1,6 @@
+// Use shared memory for A and B to reduce global memory accesses
+// Ensure coalesced memory access patterns for better throughput
+// Consider loop unrolling for repeated computations
+// Align memory accesses to increase bandwidth efficiency
+// Use appropriate block and grid sizes to maximize GPU utilization
+// Minimize warp divergence by ensuring even division of workload

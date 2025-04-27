@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access by ensuring continuous memory blocks are accessed by consecutive threads.
+// Ensure `b` is accessed efficiently; it might be beneficial to load once per block and use shared memory.
+// Minimize global memory accesses by considering using registers or shared memory for intermediary computations.
+// Consider loop unrolling if applicable to reduce loop overhead and improve performance.
+// Ensure kernel configuration maximizes occupancy and utilizes available resources optimally.
+```

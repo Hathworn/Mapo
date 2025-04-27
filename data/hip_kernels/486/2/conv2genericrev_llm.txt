@@ -1,0 +1,8 @@
+```
+// Use shared memory to store partial convolution results to reduce global memory accesses.
+// Ensure coalesced memory access patterns for input and kernel for better performance.
+// Consider using padding to align memory accesses and reduce bank conflicts in shared memory.
+// Minimize the use of __syncthreads() to reduce synchronization overhead where possible.
+// Reuse loaded values from shared memory to minimize redundant accesses.
+// Strive to maximize occupancy by optimizing block size and use of shared memory.
+```

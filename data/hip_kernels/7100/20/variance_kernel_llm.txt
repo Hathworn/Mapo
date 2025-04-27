@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for mean to reduce global memory access
+// Simplify thread index calculation
+// Load mean into shared memory
+// Ensure all threads have loaded mean
+// Local accumulator for variance
+// Avoid pow for efficiency
+```

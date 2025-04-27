@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory accesses.
+// Ensure Proper alignment of data in shared memory.
+// Use atomic operations in shared memory where possible.
+// Ensure coalesced accesses to global memory.
+// Reduce the frequency of __syncthreads() if feasible.
+// Minimize global memory writes by using shared memory.
+```

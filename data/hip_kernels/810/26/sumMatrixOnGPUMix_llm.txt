@@ -1,0 +1,8 @@
+```
+// Combine memory access patterns of MatA and MatB to improve coalescence
+// Ensure data alignment on 128-byte boundaries for better memory performance
+// Utilize shared memory if possible to reduce global memory access
+// Minimize thread divergence by ensuring consistent branch paths
+// Optimize block and grid dimensions for target GPU architecture
+// Use read-only cache for constant values if applicable
+```

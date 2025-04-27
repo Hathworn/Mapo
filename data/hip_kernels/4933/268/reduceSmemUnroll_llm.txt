@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning global memory accesses
+// Utilize shared memory for intermediate summation to avoid redundant global memory access
+// Use __syncthreads() to synchronize threads after shared memory writing
+// Employ unrolling to minimize loop overhead and increase throughput
+// Minimize divergence by ensuring all threads in a warp take the same execution path
+// Enable occupancy by configuring block size to efficiently use resources
+```

@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to minimize global memory reads
+// Consider using float4 loads to reduce transaction count for data arrays
+// Implement loop unrolling for min/max computations to enhance performance
+// Ensure memory coalescing by using contiguous reads/writes and aligning data structures
+// Optimize warp execution efficiency by aligning operations with warp boundaries
+// Avoid bank conflicts in shared memory accesses to improve throughput 
+// Investigate alternative parallel reduction techniques for min/max calculations
+```

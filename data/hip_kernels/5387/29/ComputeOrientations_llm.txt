@@ -1,0 +1,6 @@
+// Ensure coalesced memory access for loading g_Data to minimize memory transaction overhead.
+// Reduce the number of `__syncthreads()` calls to prevent unnecessary synchronization overhead.
+// Consider using warp shuffle operations for the histogram reduction to improve performance.
+// Optimize index calculations to prevent redundant computations in critical loops.
+// Minimize divergence by ensuring consistent execution paths within threads of a warp.
+// Reuse calculated values wherever possible to reduce redundant arithmetic operations.

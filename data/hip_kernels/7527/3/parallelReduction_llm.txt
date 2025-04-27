@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring d_array accesses fit a stride pattern
+// Minimize shared memory usage by optimizing the reduction pattern
+// Ensure full usage of blockDim threads to maximize parallelism during reduction
+// Align d_global writes to avoid memory bank conflicts
+```

@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory if N is large to reduce global memory access.
+// Ensure memory access is coalesced for optimal performance.
+// Check if atomic operations are needed for larger grid sizes to avoid race conditions.
+// Leverage threadfence or __syncthreads if different threads might read/write the same location.
+```

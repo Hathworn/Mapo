@@ -1,0 +1,7 @@
+```
+// Use shared memory for faster access to frequently reused data
+// Prefer coalesced memory access patterns to optimize global memory transactions
+// Reduce the number of accesses to global memory by using shared memory
+// Ensure shared memory bank conflicts are minimized when accessing shared_data
+// Allocate shared memory considering the optimal size based on the warp size
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access in X and Y to improve bandwidth utilization.
+// Utilize shared memory if the kernel involves computations that can benefit from cached data.
+// Optimize grid and block dimensions to maximize occupancy and minimize idle threads.
+// Prefetch data for the next loop iteration to hide memory latency.
+// Align data access to ensure aligned memory transactions if possible.
+```

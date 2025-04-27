@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to store intermediate values if possible to reduce global memory access.
+// Optimize block and grid dimensions to improve occupancy and memory coalescing.
+// Consider using float4 or other vectorized types to load/store multiple values in one instruction.
+// Ensure all reads and writes are coalesced in memory by aligning data properly.
+// Minimize the use of thread-level synchronization by ensuring each thread works independently.
+// Prefetch data to avoid stalling on cache misses where applicable.
+```

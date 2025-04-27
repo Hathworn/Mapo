@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses by ensuring that adjacent threads access consecutive memory locations in global memory to improve memory throughput.
+// Minimize bank conflicts by ensuring that data access patterns are such that multiple threads do not access the same memory bank.
+/// Utilize shared memory to store frequently accessed data to reduce the global memory access latency.
+// Profile the kernel to identify any potential warp divergence and try to minimize it for better performance.
+// Ensure data alignment for improved memory access patterns and to potentially enable certain hardware optimizations.
+```

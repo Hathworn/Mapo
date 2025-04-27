@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing when indexing state array
+// Utilize shared memory if there are frequent accesses to common data
+// Consider reducing global memory accesses by pre-loading data to registers
+// Opt for a lower occupancy to reduce pressure on cache and shared memory
+// Profile to identify memory bottlenecks and optimize data handling accordingly
+// Prioritize alignment in memory access patterns for better throughput
+```

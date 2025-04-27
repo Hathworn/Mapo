@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache src values to reduce global memory access.
+// Optimize thread block size and grid size for better occupancy and performance.
+// Ensure coalesced memory access for dest for more efficient memory access.
+// Consider adjusting bias_dim to match natural warp size for better alignment.
+```

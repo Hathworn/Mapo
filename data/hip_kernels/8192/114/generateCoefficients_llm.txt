@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve memory access patterns.
+// Reduce shared memory bank conflicts by padding shared memory if necessary.
+// Avoid redundant calculations for threadGlobalID by calculating once.
+// Explore using shared memory to promote data reuse among threads.
+// Assess opportunity to use texture memory for read-only data like 'noise'.
+// Check if warp-level primitives can optimize intra-warp operations.
+```

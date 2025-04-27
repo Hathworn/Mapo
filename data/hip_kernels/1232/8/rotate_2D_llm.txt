@@ -1,0 +1,4 @@
+// Use shared memory to store old_y and old_x to reduce global memory access latency.
+// Utilize coalesced memory access patterns by ensuring that threads access contiguous memory locations.
+// Optimize thread block size to improve memory throughput and load balancing.
+// Consider loop unrolling if there are repeated calculations within the loop.

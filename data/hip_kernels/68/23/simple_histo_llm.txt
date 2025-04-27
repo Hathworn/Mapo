@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Initialize shared memory with zeros to ensure a clean state
+// Use __syncthreads() to synchronize threads within the block
+// Perform atomic operations on shared memory to reduce contention in global memory
+// Transfer cumulative results from shared to global memory efficiently
+```

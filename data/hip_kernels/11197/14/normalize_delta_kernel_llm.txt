@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for 'delta' array
+// Ensure 'x', 'mean', 'variance', 'mean_delta', and 'variance_delta' are accessed in coalesced order
+// Use shared memory for repetitive access to 'mean' and 'variance' if possible
+// Reduce divergent branches by restructuring conditional logic
+// Evaluate the use of loop unrolling for 'spatial' iterations if applicable
+```

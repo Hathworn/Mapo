@@ -1,0 +1,9 @@
+```c
+// Consider coalesced global memory accesses to improve memory bandwidth utilization.
+// Use loop unrolling strategically to reduce the number of iterations and improve performance.
+// Leverage shared memory to minimize global memory access latency.
+// Ensure aligned memory access to avoid misaligned memory transactions.
+// Optimize use of shared memory by limiting the size and scope of variables stored.
+// Avoid bank conflicts in shared memory by ensuring memory access patterns are optimized.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+```

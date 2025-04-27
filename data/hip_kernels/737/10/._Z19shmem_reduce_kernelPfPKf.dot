@@ -1,0 +1,15 @@
+digraph "CFG for '_Z19shmem_reduce_kernelPfPKf' function" {
+	label="CFG for '_Z19shmem_reduce_kernelPfPKf' function";
+
+	Node0x5a5cc50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !5, !invariant.load !6\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = shl i32 %9, 1\l  %11 = mul i32 %10, %8\l  %12 = add i32 %11, %3\l  %13 = sext i32 %12 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %1, i64 %13\l  %15 = load float, float addrspace(1)* %14, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %16 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %3\l  store float %15, float addrspace(3)* %16, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br label %19\l}"];
+	Node0x5a5cc50 -> Node0x5a5fff0;
+	Node0x5a600f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%17:\l17:                                               \l  %18 = icmp eq i32 %3, 0\l  br i1 %18, label %28, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x5a600f0:s0 -> Node0x5a60210;
+	Node0x5a600f0:s1 -> Node0x5a60260;
+	Node0x5a5fff0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  %20 = phi i32 [ %8, %2 ], [ %26, %19 ]\l  %21 = add nuw nsw i32 %20, %3\l  %22 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %21\l  %23 = load float, float addrspace(3)* %22, align 4, !tbaa !7\l  %24 = load float, float addrspace(3)* %16, align 4, !tbaa !7\l  %25 = fadd contract float %23, %24\l  store float %25, float addrspace(3)* %16, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %26 = lshr i32 %20, 1\l  %27 = icmp ult i32 %20, 2\l  br i1 %27, label %17, label %19, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x5a5fff0:s0 -> Node0x5a600f0;
+	Node0x5a5fff0:s1 -> Node0x5a5fff0;
+	Node0x5a60210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a7c5fe70",label="{%28:\l28:                                               \l  %29 = load float, float addrspace(3)* getelementptr inbounds ([0 x float],\l... [0 x float] addrspace(3)* @sdata, i32 0, i32 0), align 4, !tbaa !7\l  %30 = zext i32 %9 to i64\l  %31 = getelementptr inbounds float, float addrspace(1)* %0, i64 %30\l  store float %29, float addrspace(1)* %31, align 4, !tbaa !7\l  br label %32\l}"];
+	Node0x5a60210 -> Node0x5a60260;
+	Node0x5a60260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d4dbe670",label="{%32:\l32:                                               \l  ret void\l}"];
+}

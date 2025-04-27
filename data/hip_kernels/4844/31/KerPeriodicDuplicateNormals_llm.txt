@@ -1,0 +1,4 @@
+// Consider aligning memory accesses for better coalescing.
+// Use shared memory if the same data is accessed multiple times by threads within a block.
+// Avoid unnecessary computation or memory access within frequently executed paths.
+// Use constant memory for frequently accessed data that does not change.

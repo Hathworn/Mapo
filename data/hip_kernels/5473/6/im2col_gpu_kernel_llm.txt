@@ -1,0 +1,8 @@
+```
+// Coalesce memory accesses by ensuring contiguous threads access contiguous data
+// Use shared memory to reduce global memory accesses and minimize latency
+// Prefetch data into registers to avoid repeated global memory loads
+// Minimize divergent branches by ensuring threads within a warp follow the same execution path
+// Consider loop unrolling to reduce loop overhead and increase instruction-level parallelism
+// Ensure appropriate grid and block dimensions to maximize occupancy and minimize warp divergence
+```

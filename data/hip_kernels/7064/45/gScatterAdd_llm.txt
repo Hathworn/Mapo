@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for denseData and sparseData to improve memory efficiency
+// Use shared memory to buffer sparseData if there are multiple accesses per thread
+// Align sparseIndices to warp size to prevent memory divergence
+// Minimize the use of atomic operations if possible, aiming to reduce contention
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by using consecutive threads to access consecutive memory addresses
+// Minimize divergence by grouping computations that can be vectorized
+// Consider shared memory utilization if the kernel will benefit from intermediate storage
+// Perform memory reads and writes in a way that maximizes memory bandwidth
+// Consider using float precision carefully to avoid unnecessary performance loss
+```

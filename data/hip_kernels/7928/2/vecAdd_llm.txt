@@ -1,0 +1,7 @@
+```
+// Use shared memory to store input vectors for increased memory access speed
+// Coalesce memory accesses to improve cache performance
+// Reduce global memory accesses by combining computations into fewer steps
+// Consider using warp shuffle functions for small reductions in register usage
+// Optimize the grid and block dimensions for better load balancing and hardware utilization
+```

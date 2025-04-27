@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache input data if there is reuse among threads.
+// Prefetch data to reduce memory latency.
+// Ensure coalesced memory access for gradInput and input.
+// Consider using float2 for input and gradInput to load/store two values at once.
+// Avoid divergence in thread execution paths for efficiency.
+```

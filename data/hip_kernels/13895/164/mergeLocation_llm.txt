@@ -1,0 +1,6 @@
+```
+// Use __ldg to benefit from read-only cache for loc_ fetches
+// Prefer registers over shared memory for frequently accessed data
+// Minimize device memory accesses by computing scales before storage
+// Align data structures to ensure coalesced memory access
+```

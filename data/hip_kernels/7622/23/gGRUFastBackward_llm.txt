@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for better memory throughput.
+// Reduce the number of redundant accesses to global memory by using shared memory or registers.
+// Use appropriate synchronization methods when shared memory is used to avoid race conditions.
+// Ensure that atomic operations are minimized to reduce serialization and contention overhead.
+// Explore occupancy optimization by adjusting grid and block dimensions for better utilization.
+// Evaluate constant memory for frequently accessed and unchanged values like b for potential speed-up.
+// Revisit the conditional logic to minimize divergent branches and improve warp efficiency.
+```

@@ -1,0 +1,6 @@
+// Optimize shared memory usage by reducing size if possible.
+// Consider merging multiple __syncthreads() calls to reduce overhead.
+// Use memory coalescing when loading g_Data to shared memory.
+// Investigate padding in shared memory or aligning variable access for better performance.
+// Precompute values like i2sigma2 outside loop if reused frequently.
+// Ensure atomicAdd operations are the most efficient approach to update hist array.

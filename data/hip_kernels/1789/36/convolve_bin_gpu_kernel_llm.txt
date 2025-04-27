@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for weights to reduce global memory accesses.
+// Use coalesced memory access patterns for input and output arrays.
+// Reduce bank conflicts when using shared memory.
+// Ensure optimal thread block size to maximize GPU occupancy.
+// Use loop unrolling for iterating over filter dimensions.
+```

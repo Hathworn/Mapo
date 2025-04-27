@@ -1,0 +1,9 @@
+```
+// Use a register for the initial max value per thread to reduce global memory access
+// Use shared memory for inter-thread communication to minimize global memory traffic
+// Reduce max computation in registers to take advantage of faster register access
+// Ensure coalesced memory access by aligning pitch calculations with warp definitions
+// Use shared memory reduction to aggregate values and reduce global memory write operations
+// Utilize synchronization barriers effectively to ensure correct read/write ordering
+// Avoid bank conflicts by considering shared memory access patterns in reduction steps
+```

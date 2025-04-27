@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by adjusting index calculations for input array access
+// Ensure thread divergence is minimized by aligning loop iterations with warp size where possible
+// Leverage shared memory to store intermediate results if the input array dimensions are large
+// Optimize memory access patterns to ensure maximum memory throughput
+// Ensure the grid and block dimensions are chosen to maximize occupancy
+```

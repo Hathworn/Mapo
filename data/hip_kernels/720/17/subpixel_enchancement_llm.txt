@@ -1,0 +1,6 @@
+```
+// Ensure memory coalescing by aligning memory addresses for d0, c2, and out arrays.
+// Use shared memory to store frequently accessed data like neighboring values of c2.
+// Minimize divergent branches within the warp to enhance performance.
+// Consider prefetching neighboring values of c2 to reduce memory latency.
+```

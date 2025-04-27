@@ -1,0 +1,2 @@
+// Use shared memory for delta to reduce repeated accesses to global memory
+// Consider using warp-level primitives to reduce the amount of atomic operations

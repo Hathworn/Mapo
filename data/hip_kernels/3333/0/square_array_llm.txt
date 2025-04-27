@@ -1,0 +1,4 @@
+// Use shared memory to cache data and reduce global memory accesses.
+// Ensure coalesced memory access by using sequential thread indices.
+// Avoid bank conflicts in shared memory by padding if necessary.
+// Optimize block size and grid dimensions for better occupancy.

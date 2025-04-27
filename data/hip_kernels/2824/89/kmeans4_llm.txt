@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced memory access for input and centroids arrays
+// Use shared memory for centroids to reduce global memory loads
+// Minimize use of atomic operations in newcentroids and counter arrays
+// Try using warp shuffle operations for reduction of squaredDistances
+```

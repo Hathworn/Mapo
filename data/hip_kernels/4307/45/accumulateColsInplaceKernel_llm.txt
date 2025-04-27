@@ -1,0 +1,7 @@
+```
+// Optimization: Consider using read-only data cache for input values
+// Optimization: Minimize thread divergence by ensuring colIdx calculations are consistent
+// Optimization: Use atomics for sum reduction when utilizing shared memory across blocks
+// Optimization: Ensure shared memory usage doesn't exceed limits to avoid bank conflicts
+// Optimization: Verify alignment of memory accesses to improve coalesced reads
+```

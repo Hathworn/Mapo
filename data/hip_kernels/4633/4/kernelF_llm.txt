@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access patterns by aligning d_xAx, d_bx, d_c, and d_y memory allocations
+// Consider using shared memory for intermediate results if operating on multiple elements
+// Reduce global memory accesses by caching repetitive accesses in registers
+// Minimize memory latency by prefetching data if workloads allow
+```

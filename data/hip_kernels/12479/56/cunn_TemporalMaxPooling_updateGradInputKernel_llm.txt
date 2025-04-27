@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access
+// Coalesce global memory access patterns for gradOutput, gradInput, and indices
+// Consider using textures to leverage memory caching for indices if read-only
+// Ensure memory alignment for gradOutput, gradInput, and indices arrays
+// Analyze and minimize bank conflicts in shared memory usage
+// Consider loop unrolling for feature iteration to boost performance

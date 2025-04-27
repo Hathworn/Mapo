@@ -1,0 +1,8 @@
+```
+// Consider aligning data accesses to improve coalesced memory access.
+// Ensure shared memory usage does not exceed available limit.
+// Use __syncthreads() only where necessary to avoid unnecessary synchronization overhead.
+// Consider using float4 data type for vectorized memory access when applicable.
+// Check for bank conflicts in shared memory access and optimize where possible.
+// Minimize global memory accesses by maximizing data reuse in shared memory.
+```

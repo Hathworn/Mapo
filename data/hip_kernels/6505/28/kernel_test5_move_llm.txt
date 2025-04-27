@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency
+// Prefetch data into shared memory to improve coalescing and reduce memory stalls
+// Ensure memory access patterns are coalesced by aligning data loads and stores
+// Consider adjusting the block size for optimal shared memory usage and occupancy
+// Aim to minimize warp divergence by ensuring uniform execution paths within warps
+// Use appropriate synchronization primitives to coordinate shared memory access
+```

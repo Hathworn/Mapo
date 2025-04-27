@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce redundant global memory reads within softmax_device.
+// Explore loop unrolling techniques to improve throughput in the largest value computation.
+// Optimize memory access patterns by aligning input and output accesses to avoid bank conflicts.
+// Evaluate the possibility of using warp shuffles to perform reduction operations efficiently.
+// Investigate if persistent threads can maintain occupancy and reduce kernel launch overhead.
+// Check the possibility of using atomic operations for any necessary synchronization.
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure memory coalescing for global memory operations
+// Consider using prefetching to overlap memory transfer with computations
+// Minimize the use of __syncthreads() to avoid costly synchronization
+```

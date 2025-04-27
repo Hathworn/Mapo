@@ -1,0 +1,7 @@
+```
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Optimize shared memory usage by loading block data into shared memory before processing if possible.
+// Minimize memory transactions by aligning data accesses where possible.
+// Consider using loop unrolling for better performance on vectorized operations.
+// Ensure enough threads in a block to fully utilize the GPU's computing resources.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access by aligning data structures
+// Minimize memory divergence by utilizing warp voting for conditions
+// Consider using __restrict__ keyword for pointer parameters to optimize memory access
+// Apply loop unrolling if possible for further reduction in instruction count
+```

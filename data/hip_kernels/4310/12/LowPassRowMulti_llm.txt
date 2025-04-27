@@ -1,0 +1,6 @@
+```
+// Consider increasing the block size to improve occupancy and parallelization.
+// Utilize coalesced access to global memory to increase memory throughput.
+// Use shared memory to cache values and reduce redundant global memory reads.
+// Avoid unnecessary __syncthreads() where possible to reduce synchronization overhead.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for d_out_shared and d_in pointers to improve compiler optimization
+// Use coalesced memory access patterns by ensuring data read by consecutive threads is contiguous
+// Use loop unrolling for the shared_reduce function to minimize the number of iterations and synchronize calls
+// Ensure data fitting in shared memory to reduce global memory access latency
+// Prefer using atomic operations if applicable to reduce synchronization overhead
+```

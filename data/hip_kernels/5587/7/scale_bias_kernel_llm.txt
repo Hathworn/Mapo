@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for biases to reduce global memory access times.
+// Preload biases into shared memory at the beginning of the kernel.
+// Ensure coalesced memory access for the output array.
+// Optimize grid and block dimensions to maximize occupancy.
+// Minimize the number of calculations inside the loop, e.g., calculate (batch * n + filter) * size outside the loop if possible.
+```

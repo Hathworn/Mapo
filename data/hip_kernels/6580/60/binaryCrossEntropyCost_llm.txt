@@ -1,0 +1,7 @@
+// Consider using shared memory to store 'predictions' and 'target' for coalesced memory access.
+// Ensure that data in shared memory is accessed in a coalesced manner.
+// Use loop unrolling for blocks to reduce overhead.
+// Evaluate memory access patterns for efficiency and potential bank conflicts.
+// Minimize redundant arithmetic by factoring common expressions.
+// Verify that 'size' is correctly divisible by the number of threads for load balancing.
+// Organize memory access to ensure maximum coalescence.

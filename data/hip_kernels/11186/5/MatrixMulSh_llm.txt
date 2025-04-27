@@ -1,0 +1,7 @@
+```
+// Use shared memory for efficient data loading to reduce global memory accesses.
+// Ensure synchronization after loading tiles to prevent race conditions.
+// Accumulate product results using registers to minimize access to slower memory.
+// Synchronize after computation to allow safe loading of new data into shared memory.
+// Optimize loop unrolling for TILE_WIDTH to improve computational throughput.
+```

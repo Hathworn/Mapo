@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data to reduce global memory access latency.
+// Use coalesced access patterns by adjusting array indexing to improve memory throughput.
+// Evaluate the possibility of loop unrolling for the neighbor processing loop to reduce overhead.
+// Ensure memory alignment for the vertexArray and neighbourArray for optimal access speed.
+// Investigate the use of atomic operations for data consistency if needed in concurrent environments.

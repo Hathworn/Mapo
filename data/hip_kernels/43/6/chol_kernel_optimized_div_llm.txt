@@ -1,0 +1,4 @@
+// Use __restrict__ pointers for potential optimization of memory access
+// Consider aligning memory accesses for better performance
+// Ensure use of shared memory where applicable to reduce global memory access
+// Evaluate the use of atomic operations if conflicts arise in parallel executions

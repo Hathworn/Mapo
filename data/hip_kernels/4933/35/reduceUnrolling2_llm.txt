@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory accesses
+// Consider loop unrolling further to reduce instruction overhead
+// Implement warp shuffle for the last warp to eliminate synchronization
+// Align memory accesses to ensure coalesced reading from global memory
+```

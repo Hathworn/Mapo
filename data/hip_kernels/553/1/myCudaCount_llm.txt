@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by aligning data access patterns across threads
+// Use shared memory to minimize global memory access time
+// Apply loop unrolling to increase instruction throughput
+// Minimize use of __syncthreads for better performance
+// Optimize the access pattern to shared memory to reduce bank conflicts
+// Preload data into registers to reduce memory fetch latency
+```

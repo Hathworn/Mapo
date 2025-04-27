@@ -1,0 +1,10 @@
+```
+// Consider using __ldg to load data if it is read-only and accessed multiple times.
+// Ensure coalesced memory access by adjusting and aligning data structures.
+// Use shared memory to store frequently accessed data within threads.
+// Apply loop unrolling pragmatically to accelerate frequent operations.
+// Minimize divergence by carefully structuring control flows.
+// Evaluate memory bank conflicts in shared memory usage scenarios.
+// Check if atomic operations can be minimized or replaced for higher performance.
+// Consider optimizing for occupancy by fine-tuning block and grid sizes.
+```

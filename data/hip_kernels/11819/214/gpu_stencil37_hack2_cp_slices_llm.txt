@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory accesses by aligning data structures correctly
+// Consider padding shared memory to avoid bank conflicts
+// Optimize usage of __syncthreads() to minimize performance bottlenecks
+// Evaluate the possibility of loop unrolling for the tile loop to improve throughput
+// Make use of shared memory efficiently by loading data in chunks
+```

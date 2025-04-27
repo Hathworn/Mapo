@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns by ensuring coalesced memory reads for vectsA and vectsB.
+// Use __shared__ memory for repeated data access patterns to reduce global memory traffic.
+// Avoid bank conflicts by ensuring data alignment in __shared__ memory.
+// Implement loop unrolling where applicable to reduce loop overhead.
+// Minimize synchronization by optimizing reduction pattern in threadSumsA and threadSumsB.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Consider aligning memory accesses to improve coalescing and reduce latency.
+// Use __ldg() to utilize global memory read-only cache for frequently accessed data.
+// Investigate shared memory bank conflicts in DATA array access patterns.
+// If applicable, consider loop unrolling to reduce loop overhead and improve efficiency.
+// Evaluate if using float2 or float4 can improve memory throughput where applicable.
+// Test the impact of using asynchronous copies for data movement to/from shared memory.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently accessed density values to reduce global memory reads.
+// Optimize thread/block allocation to ensure efficient memory bandwidth utilization.
+// Consider memory coalescing while accessing density and energy arrays.
+// Avoid bank conflicts in shared memory when implementing shared memory optimization.
+// Minimize divergent branches, especially in logic depending on `coefficient`.

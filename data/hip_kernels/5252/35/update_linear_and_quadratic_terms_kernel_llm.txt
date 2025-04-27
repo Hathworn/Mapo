@@ -1,0 +1,5 @@
+```
+// Pre-calculate new_scale and val outside the loop to reduce redundant computations.
+// Utilize variables for indexing to minimize repeated calculation and improve access efficiency.
+// Use one thread per block to perform reductions and avoid race conditions with atomic operations.
+```

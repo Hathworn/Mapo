@@ -1,0 +1,7 @@
+```
+// Consider using coalesced global memory access patterns where possible.
+// Ensure use of shared memory is beneficial by reducing bank conflicts.
+// Consider reducing the use of atomic operations which can be a bottleneck.
+// Explore loop unrolling to improve the throughput of loops.
+// Use warp-level primitives to further optimize parallel reductions.
+```

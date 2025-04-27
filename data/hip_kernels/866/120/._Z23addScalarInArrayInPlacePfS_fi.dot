@@ -1,0 +1,11 @@
+digraph "CFG for '_Z23addScalarInArrayInPlacePfS_fi' function" {
+	label="CFG for '_Z23addScalarInArrayInPlacePfS_fi' function";
+
+	Node0x462b420 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add i32 %14, %15\l  %17 = udiv i32 %13, %10\l  %18 = mul i32 %17, %10\l  %19 = icmp ugt i32 %13, %18\l  %20 = zext i1 %19 to i32\l  %21 = add i32 %17, %20\l  %22 = mul i32 %21, %10\l  %23 = icmp slt i32 %16, %3\l  br i1 %23, label %24, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x462b420:s0 -> Node0x462da20;
+	Node0x462b420:s1 -> Node0x462dab0;
+	Node0x462da20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %32, %24 ], [ %16, %4 ]\l  %26 = load float, float addrspace(1)* %1, align 4, !tbaa !16\l  %27 = fmul contract float %26, %2\l  %28 = sext i32 %25 to i64\l  %29 = getelementptr inbounds float, float addrspace(1)* %0, i64 %28\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !16\l  %31 = fadd contract float %30, %27\l  store float %31, float addrspace(1)* %29, align 4, !tbaa !16\l  %32 = add nsw i32 %25, %22\l  %33 = icmp slt i32 %32, %3\l  br i1 %33, label %24, label %34, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x462da20:s0 -> Node0x462da20;
+	Node0x462da20:s1 -> Node0x462dab0;
+	Node0x462dab0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%34:\l34:                                               \l  ret void\l}"];
+}

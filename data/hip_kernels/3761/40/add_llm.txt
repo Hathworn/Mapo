@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache n[blockIdx.x] for faster access
+// Use coalesced memory access pattern for output array to maximize memory bandwidth utilization
+// Ensure output array is correctly aligned to prevent misaligned memory access penalties
+// Consider using loop unrolling if more operations are performed in the kernel to improve instruction throughput
+// Adjust block size and grid size for optimal occupancy and load balancing based on hardware specifications
+```

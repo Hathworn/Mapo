@@ -1,0 +1,3 @@
+// Use shared memory for storing flow vectors to reduce global memory access
+// Coalesce memory access by ensuring threads access consecutive memory locations
+// Use vectorized data loads if possible to reduce memory transaction overhead

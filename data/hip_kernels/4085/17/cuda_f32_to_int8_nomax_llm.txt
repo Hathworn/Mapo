@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache input data if reused
+// Coalesce memory accesses to input_f32 to improve throughput
+// Consider loop unrolling if `size` is large
+// Optimize block and grid size for target GPU architecture
+```

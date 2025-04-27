@@ -1,0 +1,8 @@
+```
+// Consider implementing warp synchronous reductions for efficiency.
+// Use __syncthreads() only when necessary to reduce overhead.
+// Explore reading Y and dY into shared memory to minimize global memory access.
+// Use float4 operations where possible to optimize vectorized memory transactions.
+// Evaluate the impact of block size on memory access patterns and occupancy.
+// Investigate if loop unrolling for small dims can enhance performance.
+```

@@ -1,0 +1,8 @@
+// Consider coalescing memory accesses to improve bandwidth utilization
+// Ensure data is accessed in a contiguous manner for better cache performance
+// Minimize shared memory bank conflicts for more efficient access patterns
+// Assess the possibility of loop unrolling for performance gains
+// Evaluate the use of registers to keep frequently accessed data
+// Utilize warp-level primitives for collective operations
+// Employ thread blocking techniques to enhance resource utilization  
+// Adjust occupancy by fine-tuning thread and block dimensions

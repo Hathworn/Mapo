@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for histogram bins to reduce global memory access.
+// Implement warp-level atomic operations to improve efficiency on histogram updates.
+// Explore cooperative groups for better handling of thread collaboration.
+// Ensure coalesced access to the Source array to maximize memory throughput.
+// Use multiple partial histograms per block and combine them at the end to minimize atomic collisions.
+```

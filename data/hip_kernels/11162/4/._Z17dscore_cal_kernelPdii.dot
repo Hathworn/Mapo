@@ -1,0 +1,5 @@
+digraph "CFG for '_Z17dscore_cal_kernelPdii' function" {
+	label="CFG for '_Z17dscore_cal_kernelPdii' function";
+
+	Node0x5134d10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = sitofp i32 %1 to double\l  %7 = mul nsw i32 %4, %2\l  %8 = add nsw i32 %7, %5\l  %9 = sext i32 %8 to i64\l  %10 = getelementptr inbounds double, double addrspace(1)* %0, i64 %9\l  %11 = load double, double addrspace(1)* %10, align 8, !tbaa !5,\l... !amdgpu.noclobber !9\l  %12 = fdiv contract double %11, %6\l  store double %12, double addrspace(1)* %10, align 8, !tbaa !5\l  ret void\l}"];
+}

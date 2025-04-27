@@ -1,0 +1,6 @@
+```
+// Use __restrict__ for delta and mean_delta pointers to improve memory access optimization
+// Utilize atomic operations to update shared memory to avoid race conditions
+// Consider loop unrolling techniques to optimize the accumulation in local memory
+// Leverage warp shuffle operations for reduction within thread block to enhance performance
+```

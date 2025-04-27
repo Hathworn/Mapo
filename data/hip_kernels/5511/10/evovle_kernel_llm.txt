@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory access for neighbor calculations.
+// Minimize atomic operations by using thread-private counters before final reduction.
+// Consider loop unrolling for neighbor accumulation to optimize performance.
+// Implement memory coalescing strategies to ensure efficient access patterns.
+```

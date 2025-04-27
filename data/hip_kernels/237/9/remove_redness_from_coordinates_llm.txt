@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for storing portions of d_g and d_b data to reduce global memory access.
+// Align consecutive memory accesses to coalesced accesses for d_g and d_b to improve memory throughput.
+// Evaluate reducing the number of redundant computations inside the loops, especially image_offset_index_1d_clamped.
+// Ensure that the thread block size is a multiple of the warp size for better performance.
+// Consider loop unrolling techniques to optimize the innermost loops for better performance.
+```

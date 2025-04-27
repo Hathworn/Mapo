@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses for t2_d data.
+// Ensure coalesced memory accesses for v2_d to improve throughput.
+// Consider further loop unrolling within h1 and p4 loops for better ILP if registers allow.
+// Use __syncthreads to avoid race conditions after loading shared memory.

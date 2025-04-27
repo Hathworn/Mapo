@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory addresses.
+// Use shared memory to cache repeated reads from global memory and reduce global memory traffic.
+// Ensure that all memory accesses are aligned for better performance.
+// Minimize thread divergence by keeping branch conditions consistent across the warp.
+```

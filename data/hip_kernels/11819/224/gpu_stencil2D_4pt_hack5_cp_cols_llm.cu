@@ -1,0 +1,50 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void gpu_stencil2D_4pt_hack5_cp_cols(double * dst, double * shared_cols, double * shared_rows, int tile_x, int tile_y, int M, int N) {
+
+#ifdef CUDA_DARTS_DEBUG
+    if ((blockIdx.x == 0) && (blockIdx.y == 0) && (threadIdx.y == 0)) {
+        printf("copy cols begin!\n");
+    }
+#endif
+
+    // Compute base indices
+    int base_global_row = tile_y * blockIdx.y;
+    int base_global_col = tile_x * blockIdx.x;
+    int base_global_idx = N * base_global_row + base_global_col;
+    
+    // Precompute indices and validity checks
+    int nextCol = base_global_col + 1;
+    bool legalNextCol = (nextCol < N);
+    int t = threadIdx.y;
+    int idx = 2 * M * blockIdx.x + t + base_global_row;
+    int idx_nextCol = idx + M;
+    bool legalCurRow = (base_global_row + t) < M;
+    
+    // Use local memory to cache shared_cols
+    __shared__ double local_shared_cols[1024];
+    
+    // Optimize memory access with coalesced reads
+    if (legalCurRow) {
+        local_shared_cols[t] = dst[base_global_idx + t * N];
+        shared_cols[idx] = local_shared_cols[t];
+    }
+    if (legalNextCol && legalCurRow) {
+        local_shared_cols[t] = dst[base_global_idx + t * N + 1];
+        shared_cols[idx_nextCol] = local_shared_cols[t];
+    }
+    __syncthreads();
+
+#ifdef CUDA_CUDA_DEBUG
+    if (blockIdx.x == 1 && t < 5) {
+        printf("addr: %d ,%f,\n", idx_nextCol, shared_cols[idx_nextCol]);
+    }
+#endif
+
+#ifdef CUDA_DARTS_DEBUG
+    if ((blockIdx.x == 0) && (blockIdx.y == 0) && (threadIdx.y == 0)) {
+        printf("copy cols finish!\n");
+    }
+#endif
+}

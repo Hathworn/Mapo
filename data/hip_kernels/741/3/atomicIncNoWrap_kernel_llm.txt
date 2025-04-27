@@ -1,0 +1,5 @@
+```
+// Use shared memory for d_count to reduce global memory accesses
+// Initialize shared memory once outside the loop to improve performance
+// Aggregate results in shared memory before writing back to global memory
+```

@@ -1,0 +1,4 @@
+// Use shared memory to load normalization factors to reduce global memory access latency.
+// Coalesced memory access for normalization_factor to improve bandwidth utilization.
+// Consider loop unrolling if there are additional computations on each pixel.
+// Use __restrict__ with pointers if the data is guaranteed to not alias for better optimization.

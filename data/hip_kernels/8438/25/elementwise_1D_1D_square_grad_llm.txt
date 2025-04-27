@@ -1,0 +1,7 @@
+```
+// Use shared memory for data reuse to minimize global memory accesses
+// Align memory accesses to improve coalescing and reduce memory transaction
+// Optimize the usage of registers to prevent spilling into local memory
+// Consider using warp-level primitives to further increase parallelism
+// Employ prefetching techniques to hide global memory latency
+```

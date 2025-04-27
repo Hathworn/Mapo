@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced global memory access to improve memory load efficiency.
+// Use warp-level primitives like __shfl_down_sync to reduce __syncthreads calls.
+// Optimize shared memory usage by avoiding bank conflicts.
+// Utilize early exit strategies to minimize unnecessary computations.
+```

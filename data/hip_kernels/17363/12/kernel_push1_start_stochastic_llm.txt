@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Minimize data transfer by using shared memory to store frequently accessed height values
+// Reduce global memory access latency by reading neighboring height values into shared memory at once
+// Use atomic operations efficiently to prevent race conditions while minimizing overhead
+// Consider warp-level primitives for synchronization to reduce __syncthreads() overhead
+// Address memory bandwidth bottlenecks by minimizing redundant global memory accesses
+```

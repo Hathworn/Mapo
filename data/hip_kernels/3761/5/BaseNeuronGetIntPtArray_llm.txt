@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache arr1 values for coalesced access
+// Ensure coalesced memory access by aligning pos_idx * step1
+// Consider loop unrolling for arr2 assignments if step2 is constant
+// Minimize branching by ensuring n_elem is a multiple of blockDim.x
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for d_bidx and d_sums to improve memory throughput.
+// Use shared memory to store data from d_xi4 and d_pxi4 if possible, reducing global memory access latency.
+// Ensure d_bidx and d_sums are aligned to improve memory transaction efficiency.
+// Try to minimize divergence by organizing threads that follow the same execution path together.
+```

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory addresses.
+// Avoid branch divergence to improve warp execution efficiency.
+// Optimize access patterns to leverage cache use by minimizing random memory access.
+// Implement loop unrolling to improve instruction throughput and hide memory latency.
+// Consider use of shared memory for data reused within a block to reduce global memory traffic.
+```

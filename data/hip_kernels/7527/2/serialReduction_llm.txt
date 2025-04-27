@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for d_array to improve memory access
+// Ensure d_array is aligned to improve coalesced memory access
+// Use warp-level primitives to decrease synchronization overhead within block
+// Consider reducing the number of atomic operations by using hierarchical reduction
+// Optimize the occupancy to ensure maximum thread utilization
+```

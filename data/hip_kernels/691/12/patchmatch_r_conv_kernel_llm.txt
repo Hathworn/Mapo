@@ -1,0 +1,11 @@
+```
+// Ensure coalesced memory access by aligning data
+// Minimize bank conflicts in shared memory access
+// Use shared memory to store frequently accessed data if possible
+// Eliminate divergent branches where feasible
+// Reduce memory access by reusing loaded data within thread block
+// Optimize loop unrolling to improve performance
+// Consider prefetching data to hide memory latency
+// Use vectorized loads/stores to improve memory throughput
+// Evaluate use of compiler flags for further optimization
+```

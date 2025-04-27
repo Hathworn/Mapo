@@ -1,0 +1,7 @@
+```cpp
+// Consider using loop unrolling to reduce loop overhead
+// Assess if using float instead of int improves performance due to coalesced access
+// Evaluate increasing TILE_SIZE for better memory bandwidth utilization
+// Check benefits of padding shared memory to avoid bank conflicts
+// Experiment with using warp shuffles for small matrix sizes
+```

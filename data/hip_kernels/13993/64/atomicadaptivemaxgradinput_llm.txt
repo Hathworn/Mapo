@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache input data to reduce global memory access.
+// Ensure coalesced memory access for gradOutput, indices_x, and indices_y.
+// Align memory access patterns to improve load/store efficiency.
+// Minimize bank conflicts when utilizing shared memory.
+```

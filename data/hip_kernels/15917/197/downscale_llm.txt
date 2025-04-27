@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory access
+// Address warp divergence by ensuring subsequent operations within threads use consistent control paths
+// Consider using cooperative groups for synchronization instead of __syncthreads
+// Use float4 data types to load/store multiple values at once for coalesced access
+// Optimize memory access pattern by ensuring data access is aligned to reduce latency
+// Deploy atomic operations cautiously to ensure data integrity without sacrificing parallelism
+// Evaluate the use of loop unrolling and its impact on register pressure
+// Minimize unnecessary arithmetic operations within loops to enhance execution speed
+```

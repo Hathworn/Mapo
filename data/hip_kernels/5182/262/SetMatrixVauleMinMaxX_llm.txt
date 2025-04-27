@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access to improve memory bandwidth utilization.
+// Evaluate if shared memory can be utilized to reduce global memory reads/writes.
+// Ensure memory accesses within a warp are aligned to avoid bank conflicts.
+// Investigate occupancy and adjust block size or grid size for better utilization.
+// Minimize divergent branches within warp to improve execution efficiency.
+// Profile memory access patterns and optimize for more contiguous access.
+```

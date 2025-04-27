@@ -1,0 +1,5 @@
+// Use __device__ __forceinline__ to reduce function call overhead for idx()  
+// Change nested loops order if it helps coalesced memory access  
+// Prefer shared memory if multiple threads access the same data frequently  
+// Use thread block strides that are powers of two to enable warp-level optimizations  
+// Minimize thread divergence by ensuring all threads follow similar paths

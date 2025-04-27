@@ -1,0 +1,13 @@
+digraph "CFG for '_Z22subtract_arrays_kernelPlPKll' function" {
+	label="CFG for '_Z22subtract_arrays_kernelPlPKll' function";
+
+	Node0x493b510 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !7\l  %14 = mul i32 %5, %10\l  %15 = add i32 %14, %4\l  %16 = sext i32 %15 to i64\l  %17 = icmp slt i64 %16, %2\l  br i1 %17, label %18, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x493b510:s0 -> Node0x493c2e0;
+	Node0x493b510:s1 -> Node0x493d8c0;
+	Node0x493c2e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%18:\l18:                                               \l  %19 = udiv i32 %13, %10\l  %20 = mul i32 %19, %10\l  %21 = icmp ugt i32 %13, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %10\l  br label %26\l}"];
+	Node0x493c2e0 -> Node0x493dd40;
+	Node0x493d8c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%25:\l25:                                               \l  ret void\l}"];
+	Node0x493dd40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i64 [ %16, %18 ], [ %35, %26 ]\l  %28 = trunc i64 %27 to i32\l  %29 = getelementptr inbounds i64, i64 addrspace(1)* %1, i64 %27\l  %30 = load i64, i64 addrspace(1)* %29, align 8, !tbaa !16, !amdgpu.noclobber\l... !6\l  %31 = getelementptr inbounds i64, i64 addrspace(1)* %0, i64 %27\l  %32 = load i64, i64 addrspace(1)* %31, align 8, !tbaa !16\l  %33 = sub nsw i64 %32, %30\l  store i64 %33, i64 addrspace(1)* %31, align 8, !tbaa !16\l  %34 = add i32 %24, %28\l  %35 = sext i32 %34 to i64\l  %36 = icmp slt i64 %35, %2\l  br i1 %36, label %26, label %25, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x493dd40:s0 -> Node0x493dd40;
+	Node0x493dd40:s1 -> Node0x493d8c0;
+}

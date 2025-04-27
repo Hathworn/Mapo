@@ -1,0 +1,3 @@
+// Use shared memory to reduce redundancy in accessing bid and tid
+// Initialize shared memory once per block to save global memory bandwidth
+// Synchronize threads to ensure all have consistent access to shared variables before use

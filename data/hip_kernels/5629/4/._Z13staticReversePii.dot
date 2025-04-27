@@ -1,0 +1,5 @@
+digraph "CFG for '_Z13staticReversePii' function" {
+	label="CFG for '_Z13staticReversePii' function";
+
+	Node0x633d900 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = xor i32 %3, -1\l  %5 = add i32 %4, %1\l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %9 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(3)*\l... @_ZZ13staticReversePiiE1s, i32 0, i32 %3\l  store i32 %8, i32 addrspace(3)* %9, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %10 = getelementptr inbounds [64 x i32], [64 x i32] addrspace(3)*\l... @_ZZ13staticReversePiiE1s, i32 0, i32 %5\l  %11 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  store i32 %11, i32 addrspace(1)* %7, align 4, !tbaa !5\l  ret void\l}"];
+}

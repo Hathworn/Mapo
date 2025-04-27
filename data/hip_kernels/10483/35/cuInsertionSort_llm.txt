@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory access patterns to ensure coalesced memory access.
+// Consider using shared memory to store portions of dist and ind for faster access.
+// Reduce bank conflicts by ensuring data access patterns are friendly to memory banks.
+// Unroll inner loops to reduce loop overhead and improve performance.
+// Consider using warp shuffle operations for efficient data exchange between threads.
+```

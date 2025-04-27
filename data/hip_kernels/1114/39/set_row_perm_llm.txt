@@ -1,0 +1,9 @@
+```
+// Ensure proper memory alignment to improve load and store efficiency
+// Use shared memory if the same data is accessed multiple times by threads
+// Consider vectorized memory access patterns for better throughput
+// Minimize atomic operations by batch processing or using warp-level primitives
+// Avoid divergent branches or group threads with similar execution paths
+// Use warp-level intrinsics to optimize synchronization and data exchange
+// Schedule threads to maximize occupancy while minimizing memory latency
+```

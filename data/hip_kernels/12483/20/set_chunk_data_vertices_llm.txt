@@ -1,0 +1,6 @@
+```c
+// Consider preloading shared memory with reused inputs outside thread loop.
+// Minimize global memory access by using shared memory for x_min and y_min.
+// Use __syncthreads() to ensure all threads have updated shared memory values.
+// Move vertex_dx and vertex_dy writes outside of conditional blocks.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access latency  
+// Optimize warp-level computations to reduce divergence  
+// Prefetch data into shared memory to improve memory coalescing  
+// Avoid excessive synchronization to reduce overhead  
+// Ensure memory access patterns are coalesced for global memory reads and writes

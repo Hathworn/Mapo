@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses by ensuring data loaded is contiguous in memory
+// Use shared memory if multiple threads in the same block access overlapping data
+// Prefetch data into registers to minimize memory load latency
+// Apply loop unrolling if any loop structure is present to enhance performance
+// Minimize global memory writes by using shared memory for intermediate calculations
+// Align memory allocations to improve memory read/write efficiency
+// Consider the use of texture memory for read-only data to better caching performance
+```

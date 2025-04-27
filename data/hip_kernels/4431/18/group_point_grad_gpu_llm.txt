@@ -1,0 +1,7 @@
+```
+// Consider aligning memory accesses for idx_ptr, grad_out_ptr, and grad_points_ptr to improve cache performance.
+// Ensure coalesced memory access patterns to maximize bandwidth utilization.
+// Investigate potential for shared memory usage to reduce global memory reads and writes.
+// Evaluate if loop unrolling could provide a performance benefit in the inner loops.
+// Assess the grid and block dimensions for better workload distribution.
+```

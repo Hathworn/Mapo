@@ -1,0 +1,9 @@
+```cpp
+// Consider using shared memory to reduce global memory accesses.
+// Ensure coalesced memory access patterns for improved performance.
+// Use float variables for precomputed ratios to avoid casting overhead.
+// Make use of __restrict__ keyword for pointer parameters to leverage potential aliasing benefits.
+// Consider loop unrolling if applicable in future iterations.
+// Utilize occupancy calculator to determine optimal block size for better GPU utilization.
+// Explore asynchronous memory copy operations between host and device.
+```

@@ -1,0 +1,43 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+
+__global__ void reduceUnrollWarps (int *g_idata, int *g_odata, unsigned int n)
+{
+    // Set thread ID
+    unsigned int tid = threadIdx.x;
+    unsigned int idx = blockIdx.x * blockDim.x * 2 + threadIdx.x;
+
+    // Convert global data pointer to the local pointer of this block
+    int *idata = g_idata + blockIdx.x * blockDim.x * 2;
+
+    // Unroll 2 and check bounds
+    if (idx + blockDim.x < n) g_idata[idx] += g_idata[idx + blockDim.x];
+
+    __syncthreads();
+
+    // In-place reduction within shared memory for faster access
+    for (int stride = blockDim.x / 2; stride > 32; stride >>= 1)
+    {
+        if (tid < stride)
+        {
+            idata[tid] += idata[tid + stride];
+        }
+        // Synchronize within threadblock
+        __syncthreads();
+    }
+
+    // Unrolling last warp using volatile for proper optimization
+    if (tid < 32)
+    {
+        volatile int *vsmem = idata;
+        vsmem[tid] += vsmem[tid + 32];
+        vsmem[tid] += vsmem[tid + 16];
+        vsmem[tid] += vsmem[tid + 8];
+        vsmem[tid] += vsmem[tid + 4];
+        vsmem[tid] += vsmem[tid + 2];
+        vsmem[tid] += vsmem[tid + 1];
+    }
+
+    // Write the result of this block to global memory
+    if (tid == 0) g_odata[blockIdx.x] = idata[0];
+}

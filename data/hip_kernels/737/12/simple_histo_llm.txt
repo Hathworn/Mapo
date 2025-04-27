@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory accesses.
+// Use coalesced memory access patterns for d_in to improve performance.
+// Optimize the number of threads/block to achieve optimal hardware utilization.
+// Minimize divergence by ensuring that all threads in a warp follow the same execution path.
+// Profile the code to identify bottlenecks in memory access patterns and adjust accordingly.
+```

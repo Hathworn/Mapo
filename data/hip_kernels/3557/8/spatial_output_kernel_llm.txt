@@ -1,0 +1,6 @@
+```
+// Use shared memory for batchInputOffset calculations to reduce global memory access
+// Apply loop unrolling when nbClass is a small fixed value to reduce loop overhead
+// Consider using atomic operations if multiple threads write to outputEstimated at once
+// Prefetch data to registers before the loop to decrease memory latency
+```

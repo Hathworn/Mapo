@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce memory fetch latency for truth and pred arrays
+// Synchronize threads after loading data into shared memory to ensure consistency
+// Ensure that memory access for shared memory is coalesced for better performance
+// Opt for using logf for float precision and performance improvement
+// Consider using atomics if global memory writes need synchronization
+```

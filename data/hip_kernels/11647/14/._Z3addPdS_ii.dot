@@ -1,0 +1,13 @@
+digraph "CFG for '_Z3addPdS_ii' function" {
+	label="CFG for '_Z3addPdS_ii' function";
+
+	Node0x63ff180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !5, !invariant.load !6\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = add i32 %12, %5\l  %14 = icmp slt i32 %13, %3\l  br i1 %14, label %15, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x63ff180:s0 -> Node0x63ff210;
+	Node0x63ff180:s1 -> Node0x6401120;
+	Node0x63ff210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%15:\l15:                                               \l  %16 = sext i32 %13 to i64\l  %17 = getelementptr inbounds double, double addrspace(1)* %0, i64 %16\l  %18 = load double, double addrspace(1)* %17, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %19 = getelementptr inbounds double, double addrspace(1)* %1, i64 %16\l  store double %18, double addrspace(1)* %19, align 8, !tbaa !7\l  %20 = icmp slt i32 %13, %2\l  br i1 %20, label %27, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x63ff210:s0 -> Node0x6401120;
+	Node0x63ff210:s1 -> Node0x64023e0;
+	Node0x64023e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%21:\l21:                                               \l  %22 = sub nsw i32 %13, %2\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds double, double addrspace(1)* %0, i64 %23\l  %25 = load double, double addrspace(1)* %24, align 8, !tbaa !7\l  %26 = fadd contract double %18, %25\l  store double %26, double addrspace(1)* %19, align 8, !tbaa !7\l  br label %27\l}"];
+	Node0x64023e0 -> Node0x6401120;
+	Node0x6401120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,9 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Consider loop unrolling for the condition checks to improve performance
+// Avoid type casting inside the kernel, compute outside if possible
+// Prefer warp-wise memory access patterns to improve coalescing
+// Check for bank conflicts when using shared memory and optimize accordingly
+// Minimize divergence by structuring conditional statements efficiently
+// Evaluate if prefetching data can further optimize memory accesses
+```

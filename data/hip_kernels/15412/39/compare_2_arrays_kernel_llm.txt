@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed global data.
+// Use __syncthreads() to manage dependencies among threads.
+// Explore warp shuffle functions for efficient data exchange within warps.
+// Ensure coalesced access for read and write operations to global memory.
+// Minimize divergence by organizing thread groups to avoid conditional branches.

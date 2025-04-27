@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for tiles of matrix_a and matrix_b to reduce global memory access.
+// Ensure coalesced global memory access for both matrix_a and matrix_b when loading into shared memory.
+// Optimize the loop inside rowcol_dot to maximize data reuse within shared memory.
+// Consider loop unrolling techniques for the dot product calculation.
+// Use warp-level primitives for faster synchronization if the GPU architecture supports it.
+```

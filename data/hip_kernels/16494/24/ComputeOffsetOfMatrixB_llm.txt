@@ -1,0 +1,5 @@
+```
+// Ensure coalesced memory access to row_sum for better performance
+// Consider using shared memory if data reuse is possible within a block
+// Avoid bank conflicts by padding shared memory if implemented
+```

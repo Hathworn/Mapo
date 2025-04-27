@@ -1,0 +1,7 @@
+// Use shared memory to minimize global memory access latency.
+// Prefetch input data into shared memory to increase memory coalescing.
+// Ensure memory accesses are coalesced where possible for better performance.
+// Optimize shared memory usage to avoid bank conflicts.
+// Minimize conditional checks inside the loops for improved efficiency.
+// Use loop unrolling if possible to further reduce overheads in the ksize loops.
+// Optimize grid and block dimensions to maximize kernel occupancy.

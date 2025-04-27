@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Ensure coalesced memory access patterns by having consecutive threads access consecutive memory locations
+// If possible, eliminate unnecessary branching within the kernel to improve performance
+// Utilize __restrict__ keyword for pointer arguments to help the compiler optimize memory accesses
+// Experiment with different block sizes to find the optimal balance between occupancy and performance
+```

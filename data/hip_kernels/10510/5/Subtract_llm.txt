@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access and improve memory access efficiency
+// Reduce divergent branches by consolidating boundary checks
+// Consider using texture memory if data access patterns benefit from cached reads
+// Ensure that data arrays are aligned to improve coalesced memory access
+// Avoid warp divergence by ensuring all threads in a warp follow the same execution path
+// Use loop unrolling if possible to minimize loop overhead
+```

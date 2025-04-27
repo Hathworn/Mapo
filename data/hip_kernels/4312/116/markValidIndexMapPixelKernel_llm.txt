@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache a block of index_map values for reduced global memory access latency.
+// Consider using texture memory for index_map to benefit from spatial locality and caching.
+// Minimize divergence in the loop by unrolling for small fixed window sizes.
+// Ensure memory coalescing for flatten_validity_indicator by aligning threads to access contiguous memory.
+// Evaluate the performance tradeoff of using atomic operations if flatten_validity_indicator requires updates across threads.
+```

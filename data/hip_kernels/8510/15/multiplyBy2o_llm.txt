@@ -1,0 +1,6 @@
+```
+// Load 'size' into shared memory to reduce global memory bandwidth usage
+// Ensure 'shared_size' is initialized only once per block to improve performance
+// Synchronize threads after initializing shared memory to prevent race conditions
+// Access 'in' and 'out' arrays using coalesced memory access patterns to improve memory throughput
+```

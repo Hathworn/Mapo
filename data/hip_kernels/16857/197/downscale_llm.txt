@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache gradOutput_data for coalesced memory access
+// Consider loop unrolling for the scale_factor loops if it is a compile-time constant
+// Use __restrict__ keyword for pointers if data does not overlap
+// Minimize the use of global memory by using registers when possible
+```

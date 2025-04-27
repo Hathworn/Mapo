@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache cur_tot_weight for faster access
+// Use thread coarsening to improve memory access patterns and reduce divergence
+// Ensure coalesced access to the quadratic array by reordering data if possible
+// Use asynchronous memory operations to overlap computation with memory transfer
+// Explore loop unrolling in the quadratic updating loop for performance gain
+// Minimize the use of atomic operations if memory consistency allows
+```

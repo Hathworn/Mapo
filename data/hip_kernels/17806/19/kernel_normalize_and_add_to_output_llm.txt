@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access pattern by reorganizing memory layout if possible
+// Consider using shared memory to store intermediate values for better access patterns
+// Minimize divergent branches by possibly restructuring conditional statements
+// Ensure maximum occupancy by configuring the block size according to the GPU architecture
+// Utilize constant memory for frequently accessed constants like c_volSize and c_normalize
+```

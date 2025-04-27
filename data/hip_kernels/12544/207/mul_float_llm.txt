@@ -1,0 +1,7 @@
+```cpp
+// Coalesce memory accesses by having consecutive threads access consecutive elements in arrays a, b, and sum to maximize memory throughput.
+// Ensure that all arrays are aligned in memory to avoid uncoalesced accesses.
+// Use shared memory if possible to reduce global memory accesses.
+// Consider using float4 or similar types for vectorized loads/stores to improve data throughput.
+// Optimize the grid and block sizes to achieve maximum occupancy and minimize idle threads.
+```

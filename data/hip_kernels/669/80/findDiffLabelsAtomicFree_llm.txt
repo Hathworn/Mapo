@@ -1,0 +1,9 @@
+```
+// Use shared memory to store distances temporarily to improve memory access speed.
+// Consider using float4 or float2 for coalesced memory access in distance calculations.
+// Utilize __syncthreads() after shared memory write operations to ensure data consistency.
+// Optimize data loading with aligned memory access if possible.
+// Minimize the use of global memory writes by using atomic operations sparingly.
+// Allocate enough registers and use them efficiently to store intermediate results.
+// Avoid divergent branches to maximize warp execution efficiency.
+```

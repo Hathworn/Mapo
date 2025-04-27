@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for 'activityFlag' and 'connection' arrays to improve memory bandwidth.
+// Use shared memory for frequent updates on 'age' array to reduce global memory accesses.
+// Optimize memory access patterns for 'localError' computation to ensure memory coalescing.
+// Avoid using only a single thread for updates to utilize more parallelism, unless necessary for logic.
+// Minimize expensive operations and calculations inside the loop for preprocessing outside if possible.
+```

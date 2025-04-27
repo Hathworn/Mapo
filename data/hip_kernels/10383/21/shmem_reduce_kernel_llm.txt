@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns when loading d_in into shared memory for improved performance.
+// Use __restrict__ to pointers d_out and d_in for better compiler optimizations and memory access.
+// Ensure memory alignment of shared memory allocations and accesses for optimal load/store efficiency.
+// Experiment with different shared memory sizes and block dimensions to find the best configuration.
+// Minimize the use of __syncthreads() as excessive use can reduce performance; ensure it's necessary before adding.
+```

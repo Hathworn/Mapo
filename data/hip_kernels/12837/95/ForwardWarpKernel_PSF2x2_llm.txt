@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access by aligning access patterns to avoid bank conflicts.
+// Use shared memory to cache frequently accessed data from global memory and reduce memory latency.
+// Ensure warp divergence is minimized by restructuring conditional logic to maintain SIMD efficiency.
+// When possible, use __ldg() for read-only data access to leverage cache benefits.
+// Explore loop unrolling for operations within the lambda to reduce instruction overhead.
+// Apply prefetching techniques to preload data when predictable access patterns are identified.
+// Use the restrict keyword on pointers where applicable to aid compiler optimization.
+```

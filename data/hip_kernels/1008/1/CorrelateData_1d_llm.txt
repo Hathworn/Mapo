@@ -1,0 +1,10 @@
+```cpp
+// Optimize memory access by reordering loops to improve shared memory utilization.
+// Use thread coarsening or loop unrolling if beneficial to improve performance.
+// Ensure shared memory index calculations are efficient to avoid redundant computations.
+// Use __syncthreads() cautiously to ensure memory coherence and avoid race conditions.
+// Consider reducing bank conflicts in shared memory accesses for better performance.
+// Prefer using register memory for frequently accessed variables like 'sum'.
+// Minimize global memory accesses by maximizing use of shared and local memory.
+// Ensure computation intensity is balanced to reduce idle time of SMs.
+```

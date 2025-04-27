@@ -1,0 +1,7 @@
+```
+// Consider aligning data accesses to improve memory coalescing.
+// Utilize shared memory if there are repeated accesses to the same data.
+// Ensure ALPHA is loaded into a register to reduce memory access overhead.
+// Investigate using a larger block size to fully utilize GPU resources.
+// Consider using __restrict__ keyword for pointers if the data is non-overlapping.
+```

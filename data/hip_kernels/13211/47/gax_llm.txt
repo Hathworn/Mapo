@@ -1,0 +1,4 @@
+// Use shared variable for a[0] to reduce global memory access
+// Ensure coalesced memory access pattern for 'b' and 'c' arrays
+// Consider using memory prefetching for better data locality
+// Evaluate occupancy and adjust block and grid size for optimal performance

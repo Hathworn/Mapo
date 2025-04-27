@@ -1,0 +1,6 @@
+```c
+// Ensure coalesced memory access for input array for improved memory bandwidth
+// Consider splitting the kernel if the size is considerably large to avoid warp divergence
+// Minimize bank conflicts by ensuring optimal access patterns within the warp
+// Use shared memory for frequent data re-use if applicable
+```

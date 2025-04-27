@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced memory access patterns to improve bandwidth utilization
+// Consider using warp-level primitives for reducing synchronization overhead
+// Optimize thread block size to maximize occupancy and resource utilization

@@ -1,0 +1,6 @@
+```
+// Consider using atomic operations for modifying accuracy to ensure data integrity.
+// Utilize shared memory to reduce global memory accesses if accuracy is computed per block first.
+// Ensure coalesced memory access patterns when possible.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+```

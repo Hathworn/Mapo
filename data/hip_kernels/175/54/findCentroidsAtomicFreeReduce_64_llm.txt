@@ -1,0 +1,6 @@
+```
+// Use shared memory for faster local_mass and local_count aggregation
+// Minimize atomic operations by accumulating results in shared memory first
+// Ensure only a single thread writes results back to global memory
+// Avoid bank conflicts in shared memory by proper indexing
+```

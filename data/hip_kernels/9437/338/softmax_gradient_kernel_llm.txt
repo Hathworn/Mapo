@@ -1,0 +1,8 @@
+```
+// Consider using coalesced memory access patterns for Y, dY, and dX.
+// Use shared memory to cache frequently accessed data for reuse within the block.
+// Ensure the grid and block dimensions are optimized for the target architecture.
+// Utilize loop unrolling for maximizing memory throughput.
+// Minimize the number of global memory accesses.
+// Consider using warp shuffle for the final reduction stage to avoid shared memory bank conflicts.
+```

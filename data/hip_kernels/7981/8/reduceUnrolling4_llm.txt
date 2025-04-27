@@ -1,0 +1,7 @@
+```c++
+// Consider using shared memory to cache reads from global memory
+// Use coalesced access patterns when loading data from global memory
+// Ensure minimal divergence within warp using appropriate control structures
+// Consider using warp-level primitives to optimize reduction further
+// Evaluate if memory alignment can be optimized for boundary checks
+```

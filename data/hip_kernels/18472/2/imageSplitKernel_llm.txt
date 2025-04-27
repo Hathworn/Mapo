@@ -1,0 +1,7 @@
+```c
+// Ensure memory accesses are coalesced for optimal performance.
+// Pre-calculate commonly used expressions to reduce redundant calculations.
+// Use shared memory if there is a possibility to reduce global memory access.
+// Avoid warp divergence by ensuring threads within a warp follow the same execution path.
+// Consider loop unrolling if applicable, although not necessary here.
+```

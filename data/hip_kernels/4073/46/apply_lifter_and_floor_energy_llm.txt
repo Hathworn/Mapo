@@ -1,0 +1,4 @@
+// Use shared memory for lifter coefficients to reduce global memory accesses.
+// Enable loop unrolling to increase computation parallelism.
+// Ensure synchronization with __syncthreads() after loading into shared memory.
+// Optimize memory access pattern by processing multiple columns per thread.

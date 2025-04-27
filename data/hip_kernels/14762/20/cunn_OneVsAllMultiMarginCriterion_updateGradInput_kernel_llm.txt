@@ -1,0 +1,5 @@
+```
+// Consider using __restrict__ keyword for input and gradInput pointers to optimize memory access.
+// Ensure memory accesses to target and positiveWeight are coalesced.
+// Reduce memory divergence by using conditional assignment instead of branches.
+```

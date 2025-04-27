@@ -1,0 +1,8 @@
+```
+// Load data into shared memory to reduce global memory access
+// Coalesce memory accesses for a, b, and c to improve bandwidth usage
+// Ensure memory access patterns are aligned to warp size boundaries
+// Utilize memory prefetching to hide latency
+// Consider loop unrolling for potential increased performance
+// Evaluate occupancy and adjust block size/grid size for optimal resource utilization
+```

@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses for delta to improve memory bandwidth utilization
+// Use shared memory efficiently to minimize redundant global memory accesses
+// Ensure enough shared memory allocation for shared_sum to avoid bank conflicts
+// Try to minimize atomic operations or use warp-level reductions for better performance
+// Align block size with the hardware's warp size to maximize parallel efficiency
+```

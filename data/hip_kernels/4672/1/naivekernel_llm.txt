@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Coalesce memory accesses by ensuring threads access consecutive memory locations
+// Try to use vectorized data types like float4 where applicable
+// Ensure the total number of threads covers the entire workload
+// Optimize arithmetic operations and avoid branching where possible
+```

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z7mapScanPjS_m' function" {
+	label="CFG for '_Z7mapScanPjS_m' function";
+
+	Node0x646de60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl nsw i32 %5, 2\l  %7 = add nsw i32 %6, %4\l  %8 = sext i32 %7 to i64\l  %9 = icmp ult i64 %8, %2\l  br i1 %9, label %10, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x646de60:s0 -> Node0x646ec00;
+	Node0x646de60:s1 -> Node0x646f730;
+	Node0x646ec00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%10:\l10:                                               \l  %11 = sext i32 %5 to i64\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %11\l  %13 = load i32, i32 addrspace(1)* %12, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %14 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %8\l  %15 = load i32, i32 addrspace(1)* %14, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %16 = add i32 %15, %13\l  store i32 %16, i32 addrspace(1)* %14, align 4, !tbaa !5\l  br label %17\l}"];
+	Node0x646ec00 -> Node0x646f730;
+	Node0x646f730 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  ret void\l}"];
+}

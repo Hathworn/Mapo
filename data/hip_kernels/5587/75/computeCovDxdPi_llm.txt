@@ -1,0 +1,8 @@
+```
+// Process only necessary rows and columns to reduce workload
+// Ensure coalesced memory access by arranging icov and voxel_id loading
+// Optimize memory access pattern in the inner loop for cov_dxd_pi_tmp
+// Unrolling loop for better performance to enhance instruction throughput
+// Efficiently access memory by storing starting voxel index once
+// Minimize memory access latency by using one-load-per-access for voxel ids
+```

@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access overhead
+// Load data into shared memory to exploit memory coalescing
+// Ensure synchronization with __syncthreads() for data consistency across threads

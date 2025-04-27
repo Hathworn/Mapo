@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses by ensuring INCX is 1
+// Align data in memory for optimal access patterns
+// Minimize shared memory usage if not necessary
+// Use __restrict__ qualifier if applicable to pointers to aid compiler optimization
+// Ensure blocks and threads are optimally configured for the target device
+// Check for potential bank conflicts in shared memory access
+// Consider loop unrolling manually or using compiler directives for further optimization
+```

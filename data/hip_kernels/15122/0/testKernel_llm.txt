@@ -1,0 +1,11 @@
+```
+// Use shared memory to reduce global memory accesses
+// Pad shared memory to minimize bank conflicts
+// Use double buffering to hide memory latency
+// Minimize the number of __syncthreads() calls
+// Adjust block size to maximize occupancy and memory bandwidth
+// Prefetch data to register to reduce memory access latency
+// Use coalesced memory access patterns
+// Reduce redundant calculations by reusing shared memory
+// Use loop unrolling to optimize computation
+```

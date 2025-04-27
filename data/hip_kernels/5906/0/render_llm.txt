@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for intermediate calculations to reduce repeated global memory accesses.
+// Ensure memory alignment of framebuffer to optimize coalesced memory accesses.
+// Optimize block and grid dimensions for better occupancy and memory access patterns.
+// Use texture or surface memory for framebuffer if read/write operations are frequent.
+// Consider caching frequently accessed data using registers.
+```

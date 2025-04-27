@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency
+// Consider using __syncthreads() to ensure shared memory consistency
+// Evaluate if coalesced memory access patterns are achieved
+// Minimize memory divergence by aligning data access patterns
+// Assess if loop unrolling benefits the stride loop performance
+// Analyze occupancy to ensure full utilization of GPU resources
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for dev_BIN1 and dev_BIN2 to improve memory bandwidth usage.
+// Ensure dev_LTAKE_map is accessed in a coalesced manner for better performance.
+// Explore using shared memory if appropriate for reducing redundant global memory accesses.
+// Check if launching with larger block dimensions improves memory access patterns and efficiency.
+// Evaluate if the WIDTH and HEIGHT parameters can be rearranged for better access patterns, especially with respect to 2D grid structures.
+```

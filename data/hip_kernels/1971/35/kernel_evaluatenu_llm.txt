@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by accessing q using tid index
+// Optimize digamma and log calculations: they are already coalesced and minimal
+// Consider using shared memory for repeating calculations like log_term1 and log_term2
+// Potential use of inline functions to avoid function call overhead for digamma
+// Attempt to reduce the precision if acceptable for the application, using float instead of double
+```

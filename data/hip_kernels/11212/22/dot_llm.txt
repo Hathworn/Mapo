@@ -1,0 +1,10 @@
+```cpp
+// Consider increasing data reuse by loading chunks into shared memory.
+// Ensure coalesced global memory access by aligning data structures.
+// Use __restrict__ keyword for pointer arguments to hint at no aliasing.
+// Optimize the loop unrolling factor to balance between compute and memory access.
+// Minimize branch divergence by ensuring all threads in a warp follow the same path.
+// Prefer using float4 or float2 to leverage vectorized loads for better memory throughput.
+// Reduce the number of __syncthreads() calls to avoid unnecessary synchronization overhead.
+// Test different block sizes to find the optimal configuration for the specific GPU architecture.
+```

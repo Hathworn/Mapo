@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to cache data and reduce global memory accesses.
+// Ensure coalesced memory access patterns for global memory reads and writes.
+// Utilize loop unrolling for better instruction-level parallelism.
+// Minimize the use of branch divergence by restructuring conditional logic.
+// Explore leveraging constant memory for frequently accessed 'ct' array.
+// Align global memory accesses to 32-byte boundaries for optimal performance.
+// Avoid bank conflicts when possible by optimizing shared memory access patterns.
+```

@@ -1,0 +1,5 @@
+// Use coalesced memory accesses when loading the data into shared memory
+// Ensure shared memory writes are coalesced to optimize performance
+// Consider using vectorized loads for better memory throughput
+// Adjust TILE_DIM and BLOCK_ROWS to align with warp size for efficiency
+// Minimize unnecessary __syncthreads calls to reduce synchronization overhead

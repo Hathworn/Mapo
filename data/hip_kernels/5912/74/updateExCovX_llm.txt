@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Minimize global memory accesses by merging multiple read/write operations
+// Ensure coalesced memory access patterns to increase memory throughput
+// Evaluate the use of __restrict__ qualifiers for pointers to enable better compiler optimizations
+// Assess if the workload is evenly distributed among threads to prevent load imbalance
+// Consider adjusting the block size or grid size to achieve better occupancy
+```

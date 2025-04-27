@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns by aligning spatial elements across contiguous memory
+// Minimize global memory accesses by using shared memory to accumulate partial sums
+// Ensure shared memory size does not exceed the per-block limit for efficient usage
+// Optimize memory access by ensuring alignment and coalescence of index calculations
+// Consider using atomic operations for reduction if applicable to support larger block dimensions
+```

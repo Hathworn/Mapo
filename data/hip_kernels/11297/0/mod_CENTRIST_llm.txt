@@ -1,0 +1,10 @@
+```
+// Utilize shared memory effectively for image processing
+// Ensure coalesced memory accesses to global memory
+// Minimize shared memory bank conflicts
+// Avoid redundant global memory accesses by loading necessary data into shared memory
+// Use atomic operations in shared memory to reduce contention when updating histogram
+// Ensure proper synchronization to prevent data hazards
+// Optimize loop unrolling to improve performance
+// Consider thread block size for optimal occupancy and resource utilization
+```

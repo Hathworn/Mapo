@@ -1,0 +1,8 @@
+```
+// Optimize memory access by minimizing divergence
+// Consider thread coarsening for better memory throughput
+// Unroll reduction loop to minimize synchronization overhead
+// Avoid using __syncthreads() when unnecessary to reduce latency
+// Prefetch data to shared memory to reduce global memory access latency
+// Explore using cooperative groups for better synchronization mechanisms
+```

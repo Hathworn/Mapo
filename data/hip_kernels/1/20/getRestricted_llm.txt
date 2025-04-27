@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for Q to reduce global memory transactions.
+// Ensure coalesced memory access for vectors and matrices to improve efficiency.
+// Use block synchronization to avoid data hazards during Gram-Schmidt process.
+// Evaluate the use of atomic operations for potential parallel reductions.
+// Avoid redundant copying by computing invnorm directly during initializations.
+```

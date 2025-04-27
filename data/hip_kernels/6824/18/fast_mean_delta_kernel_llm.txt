@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for 'delta' to reduce global memory access
+// Use memory coalescing techniques for accessing 'delta' to improve bandwidth utilization
+// Ensure 'variance' is accessed in a coalesced manner to optimize global memory reads
+// Experiment with loop unrolling further to find the optimal unroll factor for your GPU architecture
+// Explore using warp-level primitives for additional optimization during reduction
+```

@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory access patterns to maximize coalescing
+// Use shared memory to reduce global memory access where possible
+// Ensure all data fits into the available shared memory to prevent overflow
+// Exploit data locality by grouping threads working on the same data
+// Optimize thread block size for better occupancy and performance
+// Profile kernel to identify any memory or synchronization bottlenecks
+```

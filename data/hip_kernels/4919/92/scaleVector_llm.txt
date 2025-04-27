@@ -1,0 +1,5 @@
+```cpp
+// Ensure memory coalescing by accessing consecutive elements in the thread block
+// Use shared memory if appropriate to reduce global memory access
+// Minimize divergent branching by organizing work so all threads in a warp follow the same execution path
+```

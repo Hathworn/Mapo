@@ -1,0 +1,8 @@
+```
+// Use shared memory to store intermediate values to reduce global memory access.
+// Use warp-level primitives to optimize atomic operation performance.
+// Minimize use of atomic operations for improved performance.
+// Avoid bank conflicts in shared memory usage.
+// Prefetch data into shared memory to hide memory latency.
+// Use appropriate block size and grid configuration for optimal occupancy.
+```

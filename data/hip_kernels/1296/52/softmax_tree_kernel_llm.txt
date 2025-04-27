@@ -1,0 +1,7 @@
+```
+// Consider optimizing the use of __syncthreads() to minimize synchronization overhead.
+// Avoid atomic operations; consider reductions within a warp for better performance.
+// Ensure shared memory size is determined accurately for varying group sizes.
+// Evaluate memory coalescing to improve access efficiency to global memory.
+// Consider padding shared memory access to avoid bank conflicts.
+```

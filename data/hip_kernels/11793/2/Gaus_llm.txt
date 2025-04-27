@@ -1,0 +1,6 @@
+```c
+// Ensure coalesced memory access by accessing Mtr in a stride-1 pattern
+// Consider using shared memory to store reusable Mtr values for improved performance
+// Optimize loop: unroll for potential performance gain
+// Minimize divergent branching by ensuring all threads in a warp process the loop
+```

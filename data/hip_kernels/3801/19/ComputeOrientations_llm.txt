@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access patterns to optimize global memory reads.
+// Try aligning shared memory usage with warp boundaries for better utilization.
+// Preload data into shared memory in a coalesced manner.
+// Use `__syncthreads()` after shared memory operations to ensure correct data loading.
+// Minimize the number of atomic operations by optimizing histogram computation.
+// Unroll loops if possible to reduce loop overhead and improve performance.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently used data to reduce global memory accesses.
+// Align memory accesses to improve coalescing and reduce memory transaction counts.
+// Consider launching with a thread block size that is a multiple of warp size for better warp utilization.
+// Minimize memory divergence by ensuring threads within a warp access contiguous memory locations.
+```

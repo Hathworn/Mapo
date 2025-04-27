@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data for threads within the same block
+// Use coalesced memory accesses to improve global memory access efficiency
+// Evaluate if loop unrolling could benefit performance in inner loops
+// Avoid warp divergence by ensuring uniform control paths within a warp
+// Minimize the use of sqrtf by computing and storing its result if accessed multiple times
+```

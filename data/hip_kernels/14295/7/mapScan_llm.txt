@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access patterns for better performance
+// Prefer fewer larger blocks to balance work distribution among SMs
+// Minimize synchronization calls to reduce overhead

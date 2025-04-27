@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache means and numPairs to reduce global memory accesses.
+// Unroll the loop to improve instruction-level parallelism.
+// Check for NaNs before calculations to avoid redundant computation.
+// Use binary tree reduction in shared memory to minimize latency.
+// Ensure only the first thread writes the final result to minimize contention.
+```

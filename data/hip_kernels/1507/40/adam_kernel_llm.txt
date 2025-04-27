@@ -1,0 +1,9 @@
+```
+// Precompute (1 - B1^t) to avoid redundant calculations in each iteration
+// Precompute (1 - B2^t) to avoid redundant calculations in each iteration
+// Consider using shared memory to cache B1^t and B2^t across threads for better performance
+// Ensure coalesced memory access by checking alignment of m, v, and x arrays
+// Use compound assignment to reduce instruction count for the update step
+// Evaluate use of half precision (fp16) if supported by the target architecture for potential performance benefits
+// Consider loop unrolling or other loop optimization techniques if the kernel is a bottleneck
+```

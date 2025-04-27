@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring that consecutive threads access consecutive memory locations.
+// Ensure that the input vectors a, b, and c are aligned in memory to improve throughput.
+// Use shared memory if there are patterns of data reuse within the blocks to minimize global memory accesses.
+// Check for bank conflicts if utilizing shared memory for further potential optimization.
+// Evaluate if using vectorized loads and stores can enhance memory bandwidth utilization.
+// If feasible, balance compute to memory access ratio to hide memory latencies.
+```

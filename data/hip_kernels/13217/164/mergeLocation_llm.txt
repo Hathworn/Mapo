@@ -1,0 +1,7 @@
+```
+// Use shared memory if frequent access to loc_ is needed and size allows
+// Consider coalesced memory access for loc_ if possible
+// Align scale calculations to leverage FMA operations if hardware supports
+// Ensure x and y arrays are aligned to enable vectorized writes
+// Evaluate if loop unrolling benefits when processing large datasets
+```

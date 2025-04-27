@@ -1,0 +1,9 @@
+```
+// Use unsigned 'direction' instead of int for optimization
+// Extract and shift only once per iteration
+// Utilize register for better performance
+// Use a lookup table for direction increments to improve branch prediction
+// Check target condition and maze boundary in one conditional
+// Use atomic to update shared 'workDone'
+// Similarly, atomic exchange for path
+```

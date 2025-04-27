@@ -1,0 +1,6 @@
+// Use shared memory to cache 'output' values to reduce global memory access latency.  
+// Replace repetitive computation of 'i1' and 'i2' indices with precomputed values outside the inner loops.
+// Use loop unrolling for 'i' loop to improve instruction-level parallelism.
+// Avoid redundant computation of 'norm1' and 'norm2' by reusing precomputed values for sqrts or storing intermediate results in registers.
+// Minimize writes to global memory by accumulating results in local variables and performing a single write at the end.  
+// Add a check to avoid possible race conditions or overwrites during updates to 'delta' with atomic operations or thread-safe mechanisms.  

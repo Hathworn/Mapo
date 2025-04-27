@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13copyAndRemovePfPjS_jf' function" {
+	label="CFG for '_Z13copyAndRemovePfPjS_jf' function";
+
+	Node0x5d76e80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %6\l  %8 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %9 = add i32 %8, -1\l  store i32 %9, i32 addrspace(1)* %7, align 4, !tbaa !4\l  %10 = icmp eq float addrspace(1)* %2, addrspacecast (float* null to float\l... addrspace(1)*)\l  %11 = zext i32 %9 to i64\l  br i1 %10, label %16, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x5d76e80:s0 -> Node0x5d79210;
+	Node0x5d76e80:s1 -> Node0x5d792a0;
+	Node0x5d792a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#e8765c70",label="{%12:\l12:                                               \l  %13 = getelementptr inbounds float, float addrspace(1)* %0, i64 %11\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !9,\l... !amdgpu.noclobber !8\l  %15 = getelementptr inbounds float, float addrspace(1)* %2, i64 %6\l  store float %14, float addrspace(1)* %15, align 4, !tbaa !9\l  br label %16\l}"];
+	Node0x5d792a0 -> Node0x5d79210;
+	Node0x5d79210 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  %17 = getelementptr inbounds float, float addrspace(1)* %0, i64 %11\l  store float %4, float addrspace(1)* %17, align 4, !tbaa !9\l  ret void\l}"];
+}

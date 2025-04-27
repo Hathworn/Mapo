@@ -1,0 +1,7 @@
+```
+// For memory access coalescence, ensure A and B arrays are accessed in a contiguous manner
+// Use shared memory to minimize global memory transactions and increase reusability of data
+// Consider using loop unrolling within the inner loop to improve computational efficiency
+// Synchronize threads after loading tiles into shared memory to avoid race conditions
+// Only write results back to global memory when necessary to reduce global memory access
+```

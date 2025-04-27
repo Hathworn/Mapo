@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache nnIndex to reduce global memory access
+// Optimize loop to minimize divergence by processing full warps where possible
+// Consider using float4 operations for coalescing memory access in gradOutput
+// Check if nnCount can be stored in registers for faster access
+// Use a more efficient memory layout for gradInput if possible
+```

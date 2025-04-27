@@ -1,0 +1,7 @@
+```
+// Consider calculating num_threads_per_block and num_blocks once and passing it as kernel parameters.
+// Use __syncthreads() judiciously if thread synchronization is needed after the printf operations.
+// Limit the usage of printf in device code for better performance.
+// Evaluate the need for computing and printing gridDim and blockDim repetitively in all threads.
+// Ensure coalesced memory access patterns if accessing global memory in future expansions.
+```

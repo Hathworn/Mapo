@@ -1,0 +1,8 @@
+```
+// Consider optimizing shared memory bank conflicts by aligning data appropriately
+// Ensure coalesced memory access for global memory reads
+// Use loop unrolling for further memory access optimization
+// Reduce the number of syncthreads for better performance
+// Consider using atomics if race conditions are permitted
+// Evaluate shared memory usage to prevent overuse
+```

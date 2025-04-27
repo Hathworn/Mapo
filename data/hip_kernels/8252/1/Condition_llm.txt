@@ -1,0 +1,5 @@
+```c
+// Consider optimizing memory coalescing for GrayScale_ accesses
+// Ensure TILE_WIDTH is a multiple of warp size for optimal shared memory usage
+// Use __syncthreads() only after all threads have completed loading data into shared memory
+```

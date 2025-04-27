@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses for positions and pBests arrays.
+// Minimize shared memory usage by reducing dimensions if possible.
+// Minimize synchronization barriers for performance improvement.
+// Consider loop unrolling for accessing tempParticle arrays.
+// Evaluate fitness_function with warp-synchronous programming for efficiency.
+// Consider using `__restrict__` qualifiers for pointers to aid compiler optimization.
+// Optimize memory accesses for gBest via coherent shared or constant memory usage.
+```

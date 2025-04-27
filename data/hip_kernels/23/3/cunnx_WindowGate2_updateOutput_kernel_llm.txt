@@ -1,0 +1,10 @@
+```
+// Use shared memory effectively to minimize global memory access.
+// Ensure that each thread accesses memory locations with a stride to maximize coalescing.
+// Balance load by distributing work evenly among threads in the block.
+// Consider memory alignment and padding to avoid bank conflicts in shared memory.
+// Use __syncthreads() only when necessary to reduce synchronization overhead.
+// Optimize the input and output index calculation to minimize redundant operations.
+// Avoid unnecessary type casting between float and int where possible.
+// Evaluate use of __restrict__ qualifiers to help the compiler with potential optimizations.
+```

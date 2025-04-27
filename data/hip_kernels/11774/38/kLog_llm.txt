@@ -1,0 +1,5 @@
+```
+// Suggest using shared memory to cache data for better memory access patterns
+// Consider aligning data access to warp size to improve coalescing
+// Use `__restrict__` keyword for pointers if data can be guaranteed to not overlap
+```

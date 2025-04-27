@@ -1,0 +1,5 @@
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Utilize shared memory if repeated reads from global memory can be minimized with intermediate storage
+// Adjust block and grid dimensions to maximize hardware utilization and minimize warp divergence
+// Evaluate warp execution efficiency and avoid conditional branching within the loop
+// Explore loop unrolling for potentially better instruction parallelism

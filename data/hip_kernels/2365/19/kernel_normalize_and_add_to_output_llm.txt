@@ -1,0 +1,8 @@
+```c
+// Optimize memory access by ensuring coalesced access patterns
+// Ensure sufficient occupancy by selecting appropriate block size
+// Minimize divergence by reordering conditional checks
+// Use shared memory if there are repeated accesses to the same data
+// Consider loop unrolling if applicable for further performance gain
+// Align data to 128/256 bytes where possible for better memory throughput
+```

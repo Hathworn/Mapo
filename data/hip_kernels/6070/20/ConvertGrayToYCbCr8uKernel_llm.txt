@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory if multiple threads access neighboring input data
+// Ensure coalesced memory access by aligning input and output memory
+// Reduce arithmetic operations by calculating pixel values outside the loop if possible
+// Use loop unrolling for handling multiple pixels per thread for better utilization
+// Minimize memory divergence by ensuring contiguous thread blocks access contiguous memory
+// Analyze occupancy and ensure the block size is optimal for the compute capability
+```

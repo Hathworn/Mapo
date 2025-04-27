@@ -1,0 +1,8 @@
+```c
+// Consider using coalesced memory accesses to global memory for improved performance.
+// Align shared memory initialization with warp size for efficient memory access.
+// Use more threads to fill shared memory to achieve better utilization of SM resources.
+// Reduce conditional statements inside the loop to decrease warp divergence.
+// Ensure that atomic operations do not create contention among threads.
+// Optimize thread block size and grid size to maximize occupancy.
+```

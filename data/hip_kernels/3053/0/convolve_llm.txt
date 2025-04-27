@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Load kernel values into shared memory before computation starts
+// Ensure all threads have synchronized access to shared memory
+// Reduce redundant global memory accesses by using shared memory for kernel weights
+// Improve coalesced access to global memory for source image data

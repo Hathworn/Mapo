@@ -1,0 +1,6 @@
+```
+// Consider using warp-level primitives for reduction to reduce thread divergence and synchronization overhead.
+// Use float4 or other vector types to load multiple elements at once to improve memory throughput.
+// Ensure coalesced memory access patterns for the input Y and dY arrays to enhance memory access efficiency.
+// If possible, use shared memory to cache frequently accessed data to reduce global memory reads.
+```

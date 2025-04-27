@@ -1,0 +1,10 @@
+```cpp
+// Ensure coalesced memory access to improve global memory bandwidth utilization
+// Use shared memory to reduce redundant global memory loads
+// Aggressively apply loop unrolling where possible to minimize loop overhead
+// Consider using atomic operations for the reduction steps for better performance in certain cases
+// Use __syncthreads() efficiently to avoid unnecessary synchronization barriers
+// Optimize the initialization of ikj matrix to avoid redundant computations
+// Avoid warp divergence by aligning conditional statements properly within warps
+// Explore the use of half precision if possible to reduce memory usage and improve throughput
+```

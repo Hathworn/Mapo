@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for gradInput_data and gradOutput_data to improve bandwidth utilization.
+// Ensure that indices_data is accessed in a coalesced manner to enhance memory throughput.
+// Optimize thread block size to maximize occupancy and fully utilize GPU cores.
+// Avoid bank conflicts in shared memory usage to maximize performance.
+// Minimize divergent branches within the loop to enhance execution efficiency.
+// Profile the use of atomicAdd to understand its impact on performance; consider alternative reduction strategies if it becomes a bottleneck.
+```

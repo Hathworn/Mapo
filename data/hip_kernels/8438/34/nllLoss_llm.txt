@@ -1,0 +1,7 @@
+```
+// Use shared memory to store input data and reduce global memory accesses
+// Ensure coalesced memory access patterns by aligning data structures
+// Minimize the memory footprint in kernels to improve memory throughput
+// Consider the use of vectorized loads and stores if applicable
+// Ensure warp-divergence-free condition by aligning data indices correctly
+```

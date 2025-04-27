@@ -1,0 +1,10 @@
+```
+// Use coalesced memory access patterns to improve memory bandwidth.
+// Consider optimizing shared memory usage to fit block size and reduce bank conflicts.
+// Use memory prefetching techniques to hide memory latency.
+// Ensure global memory accesses are coalesced, especially for the src array.
+// Consider loop unrolling for fixed iteration loops to reduce loop overhead.
+// Ensure that operations on shared memory are minimized to reduce contention.
+// Optimize atomic operations to improve performance in critical sections.
+// Reduce thread divergence by aligning conditions in if-statements.
+```

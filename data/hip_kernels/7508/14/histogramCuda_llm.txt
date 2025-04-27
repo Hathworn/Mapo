@@ -1,0 +1,3 @@
+// Use shared memory for local histogram accumulation before updating global histogram
+// Optimize memory access pattern by using coalesced reads to global memory
+// Minimize atomic operations by accumulating in local registers/arrays and performing fewer updates to global histogram

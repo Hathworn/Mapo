@@ -1,0 +1,7 @@
+// Consider optimizing block size to match shared memory limits
+// Load global memory data into shared memory to minimize latency
+// Use coalesced access patterns to improve throughput
+// Ensure memory access patterns avoid bank conflicts in shared memory
+// Implement __syncthreads() to ensure all threads have loaded shared memory
+// Optimize warp efficiency by aligning with shared memory usage
+// Balance shared memory usage with register allocation for best performance

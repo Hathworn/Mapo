@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Avoid bank conflicts when accessing shared memory in the kernel.
+// Consider increasing the size of shared memory to avoid reloading data from global memory.
+// Use constant memory for filter coefficients to benefit from caching.
+// Ensure thread blocks are optimally sized for the hardware.
+// Use loop unrolling to increase performance by reducing overhead.
+// Verify memory access patterns are coalesced to optimize global memory bandwidth.
+```

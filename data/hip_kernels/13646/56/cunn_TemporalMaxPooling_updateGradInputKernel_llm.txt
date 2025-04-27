@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for indices_data to reduce global memory access
+// Pre-load gradOutput_data into shared memory to optimize memory access
+// Optimize loop with unrolling to reduce instruction overhead
+// Ensure coalesced memory access for gradInput_data by redesigning data layout if possible
+// Use warp-level primitives to reduce divergence for atomic operations
+```

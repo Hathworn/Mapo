@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced global memory access.
+// Use shared memory to reduce global memory access latency.
+// Perform reduction within the block to minimize inter-thread communication.
+// Ensure proper synchronization using __syncthreads() to avoid data hazards.
+// Consider using warp-level primitives for more efficient reduction.
+```

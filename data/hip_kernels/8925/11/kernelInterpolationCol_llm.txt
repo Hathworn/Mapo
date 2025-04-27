@@ -1,0 +1,6 @@
+```cpp
+// Reduce global memory access by using shared memory for intermediate results.
+// Ensure coalesced global memory accesses by organizing threads to access consecutive memory locations.
+// Minimize shared memory usage to avoid bank conflicts.
+// Use warp-based computation where possible for better performance.
+```

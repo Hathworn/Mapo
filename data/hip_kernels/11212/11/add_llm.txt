@@ -1,0 +1,2 @@
+// Use local register for intermediate result to reduce global memory access
+// Ensure only one thread writes to *c to prevent race conditions and reduce contention

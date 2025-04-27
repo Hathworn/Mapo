@@ -1,0 +1,4 @@
+// Consider memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to reduce global memory accesses for matrices 'a' and 'b'
+// Prefetch data to registers for frequently accessed elements within the loop
+// Optimize block and grid dimensions for better occupancy and execution efficiency

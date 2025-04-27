@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses.
+// Initialize shared_bins with zero to avoid race conditions.
+// Use atomic operations to safely update shared memory.
+// Ensure synchronization with __syncthreads() after updates.
+// Combine shared histogram results into the global histogram using atomicAdd().

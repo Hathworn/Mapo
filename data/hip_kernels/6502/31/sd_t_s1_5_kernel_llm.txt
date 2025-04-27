@@ -1,0 +1,5 @@
+// Consider coalescing global memory accesses for t2_d to improve bandwidth utilization
+// Optimize shared memory usage by minimizing bank conflicts
+// Use __syncthreads() only where necessary to reduce synchronization overhead
+// Investigate the benefit of loop unrolling within the main computation loop to reduce loop control overhead
+// Evaluate performance impact of increasing block size for better occupancy and reduced kernel launch overhead

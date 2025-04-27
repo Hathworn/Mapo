@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory access latency.
+// Consider using a more efficient block-wide reduction technique.
+// Minimize warp divergence by ensuring threads within a warp follow the same execution path.
+// Use fewer synchronizations (__syncthreads()) if possible to improve performance.
+// Optimize the reduction step with thread coarsening techniques.
+```

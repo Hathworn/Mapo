@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Use shared memory more efficiently to reduce redundant access to global memory.
+// Evaluate utilizing loop unrolling for `tz` loop to improve instruction-level parallelism.
+// Ensure memory access patterns are aligned to avoid bank conflicts in shared memory.
+// Optimize index calculations by precomputing repetitive expressions outside the loop.
+// Reduce the number of `__syncthreads()` calls, as they introduce synchronization overhead.
+```

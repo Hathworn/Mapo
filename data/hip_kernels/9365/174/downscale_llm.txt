@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access
+// Consider using vectorized memory access (e.g., float4) for coalesced reads and writes
+// Optimize block and grid size for better occupancy
+// Minimize divergent branches in kernels
+// Reorder loops and operations for better memory access patterns

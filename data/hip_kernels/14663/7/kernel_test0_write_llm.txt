@@ -1,0 +1,7 @@
+```
+// Consider aligning memory accesses to improve coalesced memory access patterns
+// Investigate use of shared memory to reduce global memory accesses
+// Minimize use of expensive pointer arithmetic within the loop, calculate outside loop if possible
+// Use warp shuffle operations to efficiently share data between threads if needed
+// Ensure that the pattern and mask use bitwise operations efficiently to minimize computation time
+```

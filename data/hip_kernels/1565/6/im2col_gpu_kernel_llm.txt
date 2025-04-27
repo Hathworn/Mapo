@@ -1,0 +1,8 @@
+```
+// Unroll nested loops to reduce loop control overhead
+// Use shared memory to cache repeated access data_im for better memory access speed
+// Coalesce memory access by ensuring continuous memory access pattern for data_col_ptr
+// Consider maximizing block size to improve GPU occupancy and parallelism
+// Reduce bank conflicts by padding shared memory if used
+// Minimize branching by restructuring conditional checks for data assignment
+```

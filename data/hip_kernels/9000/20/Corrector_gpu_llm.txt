@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Optimize memory coalescing by accessing elements in a linear, aligned order
+// Minimize register usage to ensure more registers per thread and avoid spilling
+// Consider restructuring data access patterns for improved cache usage

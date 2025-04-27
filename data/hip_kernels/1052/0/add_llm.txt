@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed variables.
+// Optimize thread block size for better hardware utilization.
+// Implement memory coalescing by ensuring sequential threads access sequential memory locations.
+// Use vectorized memory operations if possible to reduce instruction overhead.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.

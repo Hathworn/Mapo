@@ -1,0 +1,9 @@
+```
+// Consider using a larger portion of shared memory to increase data locality
+// Load data from global memory to shared memory in a coalesced manner to optimize bandwidth
+// Use multiple thread blocks to increase parallelism and hide memory latency
+// Reduce synchronization by minimizing dependencies between threads
+// Utilize more registers for thread-specific computations to improve performance
+// Ensure the loop count is properly set according to workload specifics for better resource utilization
+// Store results back to global memory using coalesced writes to improve performance
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve memory coalescing
+// Preallocate shared memory based on thread block size for optimal performance
+// Ensure syncthreads to maintain data consistency across threads
+// Minimize warp divergence by using conditional checks efficiently

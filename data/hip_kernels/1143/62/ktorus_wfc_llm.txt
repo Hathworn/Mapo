@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache x, y, z values for faster access
+// Prefetch items array to avoid repeated global memory access
+// Block coalesced access patterns for x, y, z to optimize memory throughput
+// Use constant memory for items values frequently used across threads
+// Minimize thread divergence by ensuring warp-wise execution continuity
+```

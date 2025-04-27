@@ -1,0 +1,5 @@
+// Use __shared__ memory to reduce global memory accesses.
+// Calculate dx2 outside the loops to minimize redundant computations.
+// Minimize redundant global memory loads by storing intermediate results in shared memory.
+// Ensure thread synchronization using __syncthreads() to prevent race conditions.
+// Precompute indices and conditions outside the inner loop to avoid unnecessary recalculations.

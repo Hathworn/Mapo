@@ -1,0 +1,7 @@
+```cpp
+// Ensure global memory accesses are coalesced for dst array
+// Minimize divergent branches for better warp execution efficiency
+// Use shared memory if possible to reduce global memory load latency
+// Consider using __restrict__ pointers to aid the compiler in optimizations
+// Use loop unrolling if seed is large to improve performance
+```

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8copyCudaPKhjPhjjj' function" {
+	label="CFG for '_Z8copyCudaPKhjPhjjj' function";
+
+	Node0x59e93e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %8, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %17 = getelementptr i8, i8 addrspace(4)* %7, i64 6\l  %18 = bitcast i8 addrspace(4)* %17 to i16 addrspace(4)*\l  %19 = load i16, i16 addrspace(4)* %18, align 2, !range !4, !invariant.load !5\l  %20 = zext i16 %19 to i32\l  %21 = mul i32 %16, %20\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %23 = add i32 %21, %22\l  %24 = icmp ult i32 %15, %4\l  %25 = icmp ult i32 %23, %5\l  %26 = select i1 %24, i1 %25, i1 false\l  br i1 %26, label %27, label %37\l|{<s0>T|<s1>F}}"];
+	Node0x59e93e0:s0 -> Node0x59ece60;
+	Node0x59e93e0:s1 -> Node0x59ecef0;
+	Node0x59ece60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%27:\l27:                                               \l  %28 = mul i32 %23, %1\l  %29 = add i32 %28, %15\l  %30 = zext i32 %29 to i64\l  %31 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %30\l  %32 = load i8, i8 addrspace(1)* %31, align 1, !tbaa !7, !amdgpu.noclobber !5\l  %33 = mul i32 %23, %3\l  %34 = add i32 %33, %15\l  %35 = zext i32 %34 to i64\l  %36 = getelementptr inbounds i8, i8 addrspace(1)* %2, i64 %35\l  store i8 %32, i8 addrspace(1)* %36, align 1, !tbaa !7\l  br label %37\l}"];
+	Node0x59ece60 -> Node0x59ecef0;
+	Node0x59ecef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%37:\l37:                                               \l  ret void\l}"];
+}

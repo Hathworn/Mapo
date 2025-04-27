@@ -1,0 +1,7 @@
+```
+// Consider optimizing shared memory usage to further reduce global memory access latency.
+// Use coalesced memory access patterns when loading from and storing to global memory.
+// Consider loop unrolling for inputSize and outputSize loops to reduce the loop overhead.
+// Consider reducing atomic operations by using warp-level parallelism with shuffling techniques.
+// Optimize the use of __shared__ memory to improve data reusability across threads.
+```

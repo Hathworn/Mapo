@@ -1,0 +1,7 @@
+```c
+// Ensure data is coalesced by accessing global memory in a strided manner
+// Use caching features like __ldg() for frequently accessed data if available
+// Consider using shared memory if data reuse within the block can be achieved
+// Adjust grid and block dimensions to maximize occupancy and minimize idle threads
+// Evaluate use of float4 if data alignment and access patterns allow for vectorized loads
+```

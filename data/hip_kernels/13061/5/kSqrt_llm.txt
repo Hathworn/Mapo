@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for repeated accesses if gData[i] is reused often
+// Ensure memory access pattern is coalesced for gData and target arrays
+// Check for memory alignment for gData and target to improve access speed
+// Use float4 or float2 to load/store multiple float values at once to enhance memory throughput
+// Verify the ideal block and grid size for the target GPU architecture to maximize occupancy
+```

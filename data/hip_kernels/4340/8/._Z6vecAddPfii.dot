@@ -1,0 +1,15 @@
+digraph "CFG for '_Z6vecAddPfii' function" {
+	label="CFG for '_Z6vecAddPfii' function";
+
+	Node0x6260190 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = add nsw i32 %4, %1\l  %6 = icmp slt i32 %5, %2\l  br i1 %6, label %7, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x6260190:s0 -> Node0x62610a0;
+	Node0x6260190:s1 -> Node0x6261130;
+	Node0x62610a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%7:\l7:                                                \l  %8 = sext i32 %5 to i64\l  %9 = getelementptr inbounds float, float addrspace(1)* %0, i64 %8\l  %10 = load float, float addrspace(1)* %9, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %11 = add nsw i32 %1, -1\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %15 = fadd contract float %10, %14\l  store float %15, float addrspace(1)* %9, align 4, !tbaa !5\l  br label %16\l}"];
+	Node0x62610a0 -> Node0x6261130;
+	Node0x6261130 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  %17 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %18 = getelementptr i8, i8 addrspace(4)* %17, i64 4\l  %19 = bitcast i8 addrspace(4)* %18 to i16 addrspace(4)*\l  %20 = load i16, i16 addrspace(4)* %19, align 4, !range !10, !invariant.load\l... !9\l  %21 = zext i16 %20 to i32\l  %22 = add i32 %5, %21\l  %23 = icmp ult i32 %22, %2\l  br i1 %23, label %24, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x6261130:s0 -> Node0x6263480;
+	Node0x6261130:s1 -> Node0x6263510;
+	Node0x6263480 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%24:\l24:                                               \l  %25 = zext i32 %22 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %25\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !5\l  %28 = add nsw i32 %1, -1\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !5\l  %32 = fadd contract float %27, %31\l  store float %32, float addrspace(1)* %26, align 4, !tbaa !5\l  br label %33\l}"];
+	Node0x6263480 -> Node0x6263510;
+	Node0x6263510 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

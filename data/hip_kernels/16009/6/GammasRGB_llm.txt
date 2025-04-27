@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access by ensuring sequential threads access sequential elements in memory
+// Use shared memory to reduce global memory access latency for frequently accessed data
+// Prefer using __restrict__ for kernel parameters to enhance compiler optimizations
+// Ensure loop unrolling where possible for operations within the kernel to increase performance
+// Minimize divergence by restructuring conditional statements when possible
+// Use registers for temporary variables to improve access speed
+// Consider using texture memory for read-heavy data to benefit from caching
+```

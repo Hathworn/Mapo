@@ -1,0 +1,5 @@
+```c
+// Optimize memory access by ensuring dst is aligned to 128 bytes
+// Consider using __restrict__ keyword for pointers to avoid pointer aliasing
+// Use warp-level primitives to reduce divergent branches
+```

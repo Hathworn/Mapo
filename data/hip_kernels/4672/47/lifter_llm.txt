@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Ensure memory coalescing by aligning data access patterns
+// Consider loop unrolling for the if-condition to reduce branch divergence
+// Minimize thread divergence by ensuring all threads in a warp execute the same code path

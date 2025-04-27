@@ -1,0 +1,11 @@
+```c
+// Copy data to shared memory to reduce global memory access
+// Load bias and scale into shared memory to minimize redundant accesses
+// Initialize output in shared memory for accumulation
+// Perform loop unrolling to enhance loop execution efficiency
+// Load block of B matrix into shared memory for better temporal locality
+// Utilize unrolling to minimize loop overhead and improve performance
+// Reuse data in shared memory across threads to reduce global memory usage
+// Apply fused multiply-add for efficient computation in unrolled loop
+// Optimize ReLU activation with max function for better performance
+```

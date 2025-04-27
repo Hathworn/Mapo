@@ -1,0 +1,7 @@
+```
+// Use shared memory to store the division factor to reduce redundant calculations
+// Use __syncthreads() to ensure all threads have loaded the division factor
+// Calculate the global thread index to ensure correct data access
+// Use loop unrolling for larger arrays to improve memory throughput
+// Ensure correct alignment and coalesced memory access patterns
+```

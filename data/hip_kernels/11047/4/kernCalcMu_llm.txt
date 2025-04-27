@@ -1,0 +1,8 @@
+```
+// Consider using coalesced global memory access to improve memory bandwidth utilization.
+// Use shared memory to minimize global memory access latency.
+// Cache common expression results to reduce repeated calculations within the kernel.
+// Ensure the use of __syncthreads() is minimized or optimized to lower synchronization costs.
+// Evaluate the necessity of shared memory based on the 'pointDim' size for efficiency.
+// Ensure memory accesses and computation are performed in parallel within a warp.
+```

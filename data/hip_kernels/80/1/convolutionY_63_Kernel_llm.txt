@@ -1,0 +1,8 @@
+```
+// Consider using texture memory for `d_Src` to improve read performance.
+// Avoid using global memory for `d_Dst` within the kernel, store intermediate results in shared memory and write back at once if possible.
+// Unroll loops further to increase parallel execution efficiency.
+// Ensure coalesced memory access by arranging data properly for better performance.
+// Prefetch data required for operations to ensure they are available without delay.
+// Minimize divergent branching to maintain warp efficiency.
+```

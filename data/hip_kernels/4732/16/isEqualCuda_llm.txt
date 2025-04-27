@@ -1,0 +1,5 @@
+```
+// Use shared memory for intermediate results to reduce global atomic operations
+// Check equality in shared memory to minimize global memory access
+// Perform block-level reduction to reduce the number of global atomic operations
+```

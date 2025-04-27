@@ -1,0 +1,7 @@
+```
+// Use shared memory for input values to reduce global memory access latency
+// Load data into shared memory only once per block to minimize redundant memory access
+// Optimize numerical stability by finding the largest value using atomic operations in shared memory
+// Compute exponentials using shared memory to improve access speed and reduce global memory usage
+// Normalize output using shared memory to ensure consistent access times
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses for intermediate results.
+// Utilize loop unrolling in reduction to minimize the number of iterations.
+// Leverage volatile keyword to prevent unwanted compiler optimizations in critical section.
+// Aim to maximize thread utilization with blockDim tuning.

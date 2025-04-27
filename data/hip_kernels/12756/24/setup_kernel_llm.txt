@@ -1,0 +1,7 @@
+```cpp
+// Consider adjusting block size for better occupancy
+// Ensure memory coalescing by properly aligning state array accesses
+// Use shared memory if multiple threads require access to the same data
+// Profile the kernel to assess warp serialization issues
+// Utilize asynchronous memory copies where possible
+```

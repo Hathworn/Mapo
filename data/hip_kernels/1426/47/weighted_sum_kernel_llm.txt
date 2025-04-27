@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing for global memory access
+// Use shared memory if possible to reduce global memory accesses
+// Minimize divergence by ensuring all threads in a warp execute the same path
+// Consider aligning data structures to improve memory access efficiency
+// Use loop unrolling if the function is called within a loop to reduce overhead
+// Optimize grid and block dimensions for better load balancing and occupancy
+```

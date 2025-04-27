@@ -1,0 +1,6 @@
+```
+// Coalesce memory access to exampleIds and exampleFiringRate
+// Use shared memory to store intermediate results for firing rates
+// Minimize divergence by ensuring all threads in a warp execute the same path
+// Use block shared memory to store intermediate max values to reduce global memory accesses
+```

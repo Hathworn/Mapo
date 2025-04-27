@@ -1,0 +1,9 @@
+```c
+// Use coalesced memory access patterns for loading data into shared memory
+// Ensure block size is a multiple of warp size for optimal performance
+// Minimize bank conflicts in shared memory access
+// Consider loop unrolling for the summation computation
+// Allocate enough shared memory to avoid out-of-bound accesses
+// Use __syncthreads() effectively to ensure synchronization
+// Avoid unnecessary synchronization after computation
+```

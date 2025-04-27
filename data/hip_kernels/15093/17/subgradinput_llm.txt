@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to minimize redundant global memory accesses.
+// Use coalesced memory access patterns when updating ptr_gradInput for better performance.
+// Avoid bank conflicts when accessing shared memory to optimize memory throughput.
+// Ensure optimal block and thread configuration to maximize GPU utilization.
+// Investigate using the texture memory for constant data like weight to reduce memory latency.
+// Check alignment of memory accesses to prevent unaligned access penalties.
+```

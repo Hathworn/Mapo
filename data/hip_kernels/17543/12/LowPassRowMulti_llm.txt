@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for data reuse and reduce global memory access
+// Minimize bank conflicts by ensuring shared memory indexing doesn't conflict
+// Load data using min-max without branching to ensure efficiency
+// Ensure coalesced memory access when loading data from global memory
+// Only process valid threads to reduce unnecessary computations
+```

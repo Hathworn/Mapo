@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Implement loop unrolling for memory access within loop
+// Utilize a register for intermediate sums to exploit faster register access
+// Optimize reduction by accessing shared memory using sequential addressing
+// Unroll the last warp for the reduction step to improve parallelism
+// Use volatile keyword on shared memory for the final warp reduction to prevent compiler optimizations
+// Prefer occupancy balance between shared memory usage and number of active threads
+```

@@ -1,0 +1,7 @@
+```
+// Utilize coalesced memory access patterns for arrays a, b, s, and c
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Perform loop unrolling inside the kernel where appropriate for better performance
+// Ensure that memory accesses are aligned to reduce memory fetch overhead
+// Optimize conditional checks to minimize divergence in the warp
+```

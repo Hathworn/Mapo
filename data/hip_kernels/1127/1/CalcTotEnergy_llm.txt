@@ -1,0 +1,11 @@
+```cpp
+// Use shared memory to store repeated trigonometric calculations to reduce global memory access.
+// Consider merging contiguous global memory accesses to improve coalescing for Wx, Wy, and Wz.
+// Organize data layouts to reduce strides in memory access patterns for better cache utilization.
+// Use shared memory for intermediate variables like lon_cos, lon_sin, lat_cos, and lat_sin.
+// Analyze potential for register usage optimizations by minimizing the number of double variables.
+// Ensure that memory transactions are aligned to improve access efficiency.
+// Evaluate unrolling loops where applicable to enhance instruction-level parallelism.
+// Consider conditional execution paths to avoid unnecessary calculations for DeepModel check.
+// Profile the kernel to determine memory bandwidth efficiency and address bottlenecks.
+```

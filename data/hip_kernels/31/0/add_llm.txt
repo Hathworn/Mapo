@@ -1,0 +1,4 @@
+// Use shared memory for data that is accessed multiple times within the kernel to reduce global memory accesses.
+// Ensure coalesced memory access patterns by aligning and organizing data arrays properly.
+// Minimize divergent branching in kernels to improve warp execution efficiency.
+// Consider loop unrolling for simple operations to reduce instruction overhead within the kernel.

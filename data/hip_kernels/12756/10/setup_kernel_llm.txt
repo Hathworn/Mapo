@@ -1,0 +1,6 @@
+```
+// Use local memory to avoid redundant global memory accesses
+// Align memory access to warp size for coalesced access
+// Reduce register pressure by using shared memory where possible
+// Minimize branching for better warp execution
+```

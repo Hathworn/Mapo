@@ -1,0 +1,4 @@
+// Use shared memory for agents and destinations to reduce global memory accesses
+// Coalesce global loads to improve memory throughput
+// Consider using float instead of double for computations unless higher precision is required
+// Precompute inverse of length and store in registers to reduce repetitive calculations

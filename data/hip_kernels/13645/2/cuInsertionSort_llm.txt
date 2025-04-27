@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Coalesce memory accesses to improve memory throughput where possible.
+// Reduce redundant computations by caching repeated values or expressions.
+// Optimize loop unrolling for small loop bodies to improve instruction-level parallelism.
+// Minimize warp divergence within conditional branches for better performance.
+// Adjust block and grid sizes based on hardware capabilities to maximize occupancy.
+```

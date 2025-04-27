@@ -1,0 +1,8 @@
+```c
+// Optimize shared memory usage to improve cache hits
+// Align shared memory loads with warp size to reduce bank conflicts
+// Use loop unrolling in critical sections to improve instruction-level parallelism
+// Consider using asynchronous memory prefetching to overlap computation with data loading
+// Evaluate replacing fminf/fmaxf with integer operations if precision permits
+// Minimize calls to __syncthreads() to reduce synchronization overhead
+```

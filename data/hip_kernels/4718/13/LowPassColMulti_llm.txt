@@ -1,0 +1,8 @@
+```
+// Consider using loop unrolling to improve performance in the loop for loading data into shared memory
+// Ensure proper occupancy by choosing optimal block size while considering shared memory structure
+// Experiment with different values for blockDim.y to balance between loads into shared memory and computation efficiency
+// Ensure that the use of shared memory does not exceed the limits per block, optimize shared memory usage
+// Align data structures and accesses to prevent memory bank conflicts in shared memory usage
+// Consider using texture memory for read-only data like kernel if possible to benefit from cache memory
+```

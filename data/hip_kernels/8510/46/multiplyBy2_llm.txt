@@ -1,0 +1,9 @@
+```
+// Consider optimizing the size of the shared memory to match the blockDim.x
+// Use __syncthreads() efficiently to minimize its overhead
+// Align shared memory size to the warp size for coalesced access
+// Avoid unnecessary synchronization if not all threads are loading data
+// Experiment with different block sizes to maximize occupancy
+// Check memory alignment to improve data access patterns
+// Consider using vectorized operations if the problem allows
+```

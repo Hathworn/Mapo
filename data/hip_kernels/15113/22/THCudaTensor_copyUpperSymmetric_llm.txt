@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory access
+// Improve data locality by accessing shared memory instead of global memory
+// Minimize global memory access to improve performance
+// Ensure coalesced memory access patterns in shared memory usage
+// Reduce thread divergence in conditional statements
+// Balance shared memory usage with register allocation
+// Ensure proper synchronization with __syncthreads() to avoid race conditions

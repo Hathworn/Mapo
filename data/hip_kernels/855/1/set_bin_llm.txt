@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for d_row_nz[i] to improve memory throughput
+// Replace atomic operations with warp-level primitives to reduce contention
+// Use shared memory to accumulate bin sizes locally before writing back to global memory
+// Reduce __syncthreads() to minimize synchronization overhead
+// Explore loop unrolling for the for-loop to reduce execution time
+```

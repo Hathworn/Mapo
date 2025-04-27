@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed data like trans_x, trans_y, trans_z to reduce global memory accesses.
+// Consider using vectorized loads/stores for trans_x, trans_y, trans_z to enhance memory throughput.
+// Unroll loop during matrix-vector product calculations for better instruction level parallelism.
+// Ensure coalesced memory access patterns for valid_points, starting_voxel_id, and voxel_id arrays.
+```

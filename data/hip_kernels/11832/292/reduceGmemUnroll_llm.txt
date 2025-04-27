@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for g_idata and g_odata to avoid potential aliasing
+// Align data accesses to improve memory coalescing where possible
+// Use __ldg intrinsic to read g_idata for better caching performance on newer architectures
+// Implement loop unrolling and prefetching in scenarios where it can further enhance performance
+// Investigate using asynchronous memory transfer to overlap data movement and computation
+// Evaluate shared memory usage further to ensure it is optimal and bank conflicts are minimized
+```

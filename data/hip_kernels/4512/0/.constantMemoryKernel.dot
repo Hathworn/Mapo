@@ -1,0 +1,10 @@
+digraph "CFG for 'constantMemoryKernel' function" {
+	label="CFG for 'constantMemoryKernel' function";
+
+	Node0x6461160 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp slt i32 %11, %1\l  %13 = icmp slt i32 %11, 100\l  %14 = and i1 %12, %13\l  br i1 %14, label %15, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x6461160:s0 -> Node0x6462b60;
+	Node0x6461160:s1 -> Node0x6462bf0;
+	Node0x6462b60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = sext i32 %11 to i64\l  %17 = getelementptr inbounds [100 x float], [100 x float] addrspace(4)*\l... @constantMemoryData, i64 0, i64 %16\l  %18 = load float, float addrspace(4)* %17, align 4, !tbaa !7\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  store float %18, float addrspace(1)* %19, align 4, !tbaa !7\l  br label %20\l}"];
+	Node0x6462b60 -> Node0x6462bf0;
+	Node0x6462bf0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

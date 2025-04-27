@@ -1,0 +1,15 @@
+digraph "CFG for '_Z4initPiS_S_im' function" {
+	label="CFG for '_Z4initPiS_S_im' function";
+
+	Node0x4f71280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = sext i32 %14 to i64\l  %16 = icmp ult i64 %15, %4\l  br i1 %16, label %17, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x4f71280:s0 -> Node0x4f71db0;
+	Node0x4f71280:s1 -> Node0x4f73300;
+	Node0x4f71db0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{%17:\l17:                                               \l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  store i32 1, i32 addrspace(1)* %18, align 4, !tbaa !7\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %15\l  store i32 0, i32 addrspace(1)* %19, align 4, !tbaa !7\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %15\l  store i32 2147483647, i32 addrspace(1)* %20, align 4, !tbaa !7\l  br label %21\l}"];
+	Node0x4f71db0 -> Node0x4f73300;
+	Node0x4f73300 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = icmp eq i32 %14, 0\l  br i1 %22, label %23, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x4f73300:s0 -> Node0x4f74070;
+	Node0x4f73300:s1 -> Node0x4f740c0;
+	Node0x4f74070 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%23:\l23:                                               \l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %15\l  store i32 0, i32 addrspace(1)* %24, align 4, !tbaa !7\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  store i32 0, i32 addrspace(1)* %25, align 4, !tbaa !7\l  %26 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %15\l  store i32 1, i32 addrspace(1)* %26, align 4, !tbaa !7\l  br label %27\l}"];
+	Node0x4f74070 -> Node0x4f740c0;
+	Node0x4f740c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

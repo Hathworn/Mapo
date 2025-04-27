@@ -1,0 +1,4 @@
+// Optimize shared memory loading by avoiding bank conflicts.
+// Consider utilizing warp shuffle operations for intra-warp reductions.
+// Ensure coalesced accesses for global memory loads and stores.
+// Minimize thread divergence particularly within reduction loop.

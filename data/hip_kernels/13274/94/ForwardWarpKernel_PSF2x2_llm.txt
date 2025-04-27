@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache u, v, and src blocks to reduce global memory access latency.
+// Consider coalesced memory access patterns for src and dst to improve read and write efficiency.
+// Experiment with adjusting block size and grid dimensions for optimal occupancy and throughput.
+// Explore the use of vectorized data types (e.g., float4) if applicable to the data layout.
+// For atomicAdd operations, ensure consistent memory access patterns to minimize bank conflicts.
+```

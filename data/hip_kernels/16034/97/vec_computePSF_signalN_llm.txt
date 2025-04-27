@@ -1,0 +1,4 @@
+// Consider coalesced memory access for `sparseIndexEvenShiftOutput` and `sparseIndexOddShiftOutput`.
+// Use shared memory to cache `fft` data that are frequently accessed.
+// Optimize memory access patterns to reduce bank conflicts for result storage.
+// Check if memory alignment adjustments can improve performance.

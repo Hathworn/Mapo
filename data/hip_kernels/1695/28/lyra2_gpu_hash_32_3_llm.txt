@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to minimize global memory accesses and improve data locality.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive elements.
+// Minimize bank conflicts when using shared memory by ensuring proper access strides.
+// Limit kernel arguments to necessary variables to reduce register pressure.
+// Unroll loops where beneficial for performance improvements.
+// Utilize warp-synchronous programming if possible to enhance cooperative thread execution.
+// Consider occupancy optimizations by balancing thread count and resource usage.
+// Enforce memory access patterns that leverage L1/L2 cache optimally.
+```

@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache frequently accessed values like roomCapacities, groupIds, and groupSizes.
+// Reuse data across warps and threads to minimize reads from global memory.
+// Align data structures and access patterns to improve coalesced memory access.
+// Implement loop unrolling if applicable for the reduction to improve performance.
+// Minimize divergent execution paths by optimizing the conditional checks.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses.
+// Unroll loops to minimize loop overhead and increase instruction level parallelism.
+// Ensure coalesced memory accesses by organizing data fetching appropriately.
+// Avoid bank conflicts in shared memory where possible.
+// Use volatile memory access on the last warp for faster synchronization.
+```

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z21linearLayerUpdateBiasPfS_iiif' function" {
+	label="CFG for '_Z21linearLayerUpdateBiasPfS_iiif' function";
+
+	Node0x5512210 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = mul i32 %7, %12\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %15 = add i32 %13, %14\l  %16 = mul nsw i32 %3, %2\l  %17 = icmp slt i32 %15, %16\l  br i1 %17, label %18, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x5512210:s0 -> Node0x5514230;
+	Node0x5512210:s1 -> Node0x55142c0;
+	Node0x5514230 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%18:\l18:                                               \l  %19 = freeze i32 %15\l  %20 = freeze i32 %2\l  %21 = sdiv i32 %19, %20\l  %22 = mul i32 %21, %20\l  %23 = sub i32 %19, %22\l  %24 = sext i32 %21 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %1, i64 %24\l  %26 = fneg contract float %5\l  %27 = mul nsw i32 %21, %2\l  %28 = add nsw i32 %27, %23\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds float, float addrspace(1)* %0, i64 %29\l  %31 = load float, float addrspace(1)* %30, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %32 = sitofp i32 %2 to float\l  %33 = fdiv contract float %31, %32\l  %34 = fmul contract float %33, %26\l  %35 = atomicrmw fadd float addrspace(1)* %25, float %34\l... syncscope(\"agent-one-as\") monotonic, align 4\l  br label %36\l}"];
+	Node0x5514230 -> Node0x55142c0;
+	Node0x55142c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%36:\l36:                                               \l  ret void\l}"];
+}

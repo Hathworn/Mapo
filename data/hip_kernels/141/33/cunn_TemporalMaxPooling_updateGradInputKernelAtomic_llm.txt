@@ -1,0 +1,7 @@
+```c
+// Consider coalescing global memory accesses for gradInput and gradOutput to improve memory access speed.
+// Minimize thread divergence by ensuring that all threads within a warp take the same execution path.
+// Perform memory prefetching to improve cache utilization where possible.
+// Evaluate if using shared memory could enhance performance by reducing global memory accesses.
+// Ensure indices array is accessed efficiently, potentially using texture or constant memory if applicable.
+```

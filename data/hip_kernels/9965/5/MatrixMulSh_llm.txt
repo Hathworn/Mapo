@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce global memory access frequency
+// Ensure proper synchronization with __syncthreads() to avoid race conditions
+// Optimize thread block size to improve occupancy and performance
+// Align memory access patterns for coalescing to boost memory throughput
+```

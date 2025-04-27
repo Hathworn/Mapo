@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses when threads access the same data.
+// Optimize the memory access by coalescing reads and writes where possible.
+// Ensure that global memory accesses are aligned to maximize memory bandwidth.
+// Minimize branch divergence by ensuring all threads within a warp follow the same execution path.
+// Reduce register usage per thread to allow for higher occupancy.
+```

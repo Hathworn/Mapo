@@ -1,0 +1,7 @@
+```
+// Consider aligning memory accesses to improve memory coalescing
+// Use shared memory efficiently to minimize global memory access latency
+// Implement loop unrolling in the gradient computation for better performance
+// Optimize the reduction using warp-level primitives for faster convergence
+// Avoid redundant computations, such as recalculating buffer[tx], where possible
+```

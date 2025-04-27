@@ -1,0 +1,5 @@
+```
+// Utilize shared memory for repeated data access to reduce global memory traffic.
+// Cache block index in shared memory for faster access by all threads.
+// Use __syncthreads to ensure all threads see the latest shared memory data.
+```

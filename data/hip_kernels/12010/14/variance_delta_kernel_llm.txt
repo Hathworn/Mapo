@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for `delta` and `x` by reversing loop order if beneficial
+// Utilize shared memory to store `variance[i]` and `mean[i]` if reused multiple times by threads
+// Apply loop unrolling for the inner loop over `spatial` to reduce loop overhead
+// Assess if prefetching `delta` and `x` for subsequent iterations enhances performance
+// Optimize global memory access patterns by aligning data structures if possible
+```

@@ -1,0 +1,8 @@
+```
+// Consider aligning accessed memory to cache line boundaries for improved performance.
+// Use coalesced memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Minimize use of shared memory banks to avoid bank conflicts.
+// Ensure that there is no unnecessary synchronization that could be a performance bottleneck.
+// Optimize the usage of atomic operations to reduce contention and improve parallelism.
+// Use warp-level primitives for scan operations to leverage hardware synchronization and reduce latency.
+```

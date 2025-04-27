@@ -1,0 +1,5 @@
+```
+// Consider using coalesced memory accesses for dY, Y, and dX arrays
+// Use __shfl_down_sync for warp-level reduction to improve performance
+// Minimize __syncthreads calls by organizing computations to use warp shuffles
+```

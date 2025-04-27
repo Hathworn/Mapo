@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Coalesce global memory accesses to improve performance
+// Use __syncthreads() to avoid race conditions if threads are modifying shared data
+// Optimize usage of registers by minimizing variable lifetimes
+// Ensure warp divergence is minimized by organizing threads efficiently
+```

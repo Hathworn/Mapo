@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access when loading data to shared memory
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Consider using padding in shared memory to avoid bank conflicts
+// Ensure that the grid and block sizes are chosen to maximize occupancy
+```

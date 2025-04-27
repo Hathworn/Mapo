@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache d_Data and reduce global memory access
+// Consider coalescing global memory accesses by adjusting data layout
+// Avoid unnecessary __syncthreads() if there are no dependencies between threads
+// Use 2D thread blocks for better spatial locality and caching
+// Optimize the block size to fully utilize the GPU's computational resources
+```

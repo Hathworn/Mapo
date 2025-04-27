@@ -1,0 +1,7 @@
+```c
+// Use pinned memory to improve memory transfer speed between host and device.
+// Consider using warp shuffles to further optimize intra-block communication.
+// Align memory accesses to avoid bank conflicts in shared memory.
+// Minimize the use of __syncthreads() after reducing bank conflicts.
+// Consider using atomic operations if reduction is the bottleneck.
+```

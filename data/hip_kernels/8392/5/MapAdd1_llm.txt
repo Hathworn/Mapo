@@ -1,0 +1,6 @@
+```
+// Leverage shared memory to reuse loaded data for multiple threads
+// Ensure coalesced memory access patterns to optimize memory bandwidth
+// Minimize warp divergence by aligning condition checks
+// Use __syncthreads() judiciously to synchronize threads within a block
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced memory access patterns
+// Use shared memory to reduce global memory latency where possible
+// Consider using local memory for variables that are reused within the kernel
+// Ensure that the number of blocks and threads maximizes occupancy
+// Avoid thread divergence by minimizing branching within the kernel
+```

@@ -1,0 +1,10 @@
+```
+// Optimize memory access by using shared memory for frequently accessed arrays.
+// Coalesce memory accesses to global memory to increase memory throughput.
+// Use texture memory for accessing texture data to take advantage of texture caching.
+// Minimize divergent branching by reordering conditions or using bitwise operations.
+// Ensure enough thread blocks to fully utilize GPU resources for better performance.
+// Align data structures to ensure efficient memory transactions between host and device.
+// Consider loop unrolling in cases where iterative processing is required.
+// Reduce arithmetic operations by pre-computing invariant expressions outside of loops.
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Ensure memory accesses are coalesced for better performance
+// Consider using warp-level primitives to avoid thread divergence
+// Prefetch data to registers if possible to hide latency
+```

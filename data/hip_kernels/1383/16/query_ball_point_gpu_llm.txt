@@ -1,0 +1,8 @@
+```
+// Consider coalesced access for global memory in order to improve memory bandwidth usage.
+// Minimize divergent branching by considering alternative logic that reduces warp divergence, particularly in conditional statements.
+// Ensure effective utilization of shared memory for frequently accessed data to reduce global memory calls.
+// Use appropriate vectorized data types (e.g., float3) to optimize load/store operations for xyz1 and xyz2.
+// Reorganize input data if possible to promote aligned and coalesced memory accesses.
+// Evaluate using inline PTX or intrinsics for critical math operations to maximize performance.
+```

@@ -1,0 +1,6 @@
+```
+// Ensure memory accesses to input are coalesced
+// Avoid bank conflicts while accessing shared memory
+// Minimize the number of __syncthreads() to reduce warp serialization
+// Ensure each thread accesses its contiguous section of shared memory
+```

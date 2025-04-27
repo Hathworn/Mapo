@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve memory throughput
+// Use shared memory if multiple threads need access to common data
+// Minimize global memory accesses by loading data into registers
+// Align data structures to improve memory access efficiency
+// Use __restrict__ to help the compiler with better optimization
+// Consider using float3 for position and velocity if w component is not needed
+```

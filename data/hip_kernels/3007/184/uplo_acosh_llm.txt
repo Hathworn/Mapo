@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring global memory accesses are aligned.
+// Use shared memory to reduce redundant global memory access when multiple threads access the same data.
+// Optimize the grid and block dimensions to better match the workload distribution.
+// Try using appropriate prefetching techniques to hide global memory latency.
+// Consider loop unrolling if there are any iterative operations within each thread's work.
+// Check if using texture memory benefits read-only data access patterns.
+```

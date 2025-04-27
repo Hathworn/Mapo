@@ -1,0 +1,4 @@
+// Utilize shared memory to cache mask[i] values within blocks for faster access.
+// Consider coalesced memory access to optimize global memory reads.
+// Investigate whether texture memory can be applied for mask array to improve access patterns.
+// Ensure thread block is optimally sized for the specific GPU architecture.

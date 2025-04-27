@@ -1,0 +1,7 @@
+```
+// Consider increasing TILE_WIDTH for better occupancy if shared memory allows.
+// Ensure that the matrices are aligned in a way that coalesces global memory accesses.
+// Minimize the number of __syncthreads() calls while ensuring data dependencies are respected.
+// Verify that WIDTH is a multiple of TILE_WIDTH to avoid boundary conditions.
+// Consider using loop unrolling for the innermost k loop to improve performance.
+```

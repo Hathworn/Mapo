@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache velocity data for better memory access patterns
+// Minimize bank conflicts in shared memory by aligning memory access
+// Employ coalesced memory access for 'part' array to improve global memory throughput
+// Optimize thread indexing calculations to reduce redundant computation
+// Utilize restrict keyword for pointer arguments to enable better compiler optimization
+// Apply loop unrolling for the 'lb' loop to reduce loop overhead
+// Preload reused constants (e.g., 1.f, dt) into registers to save repeated memory fetch
+```

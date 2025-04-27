@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access to improve memory throughput
+// Align src and tgt to 128-byte boundaries for better performance
+// Use shared memory if there is data re-use between threads
+// Ensure that numThreads is a multiple of warp size (32) for efficiency
+// Minimize divergent branches within the loop
+// Experiment with different block and grid sizes for optimal kernel execution
+```

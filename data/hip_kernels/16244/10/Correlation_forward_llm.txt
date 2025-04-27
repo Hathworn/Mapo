@@ -1,0 +1,10 @@
+```
+// Use coalesced memory access patterns to improve global memory throughput
+// Consider using memory prefetching to hide memory latency
+// Minimize redundant calculations within the innermost loops
+// Use shared memory more efficiently by limiting usage to necessary data
+// Avoid bank conflicts by carefully structuring shared memory accesses
+// Ensure all global memory accesses are aligned to avoid penalties
+// Consider using texture memory if spatial locality in access patterns is high
+// Optimize reduction step using loop unrolling to enhance performance
+```

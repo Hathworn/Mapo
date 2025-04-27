@@ -1,0 +1,8 @@
+```
+// Coalesced memory access by iterating over coordinates in reverse.
+// Precompute image size outside of the loop for repetitive use.
+// Use ushort2 for 2D coordinate representation to optimize memory usage.
+// Use min/max to ensure memory accesses are within legitimate bounds.
+// Precompute clamped 1D index for repeated use to save computation.
+// Use local variables to hold frequently accessed values like g_value and b_value.
+```

@@ -1,0 +1,13 @@
+digraph "CFG for '_Z4fillPimm' function" {
+	label="CFG for '_Z4fillPimm' function";
+
+	Node0x4a251f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = zext i32 %12 to i64\l  %14 = icmp ult i64 %13, %1\l  br i1 %14, label %15, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x4a251f0:s0 -> Node0x4a27170;
+	Node0x4a251f0:s1 -> Node0x4a27200;
+	Node0x4a27170 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%15:\l15:                                               \l  %16 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %17 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %18 = getelementptr i8, i8 addrspace(4)* %5, i64 6\l  %19 = bitcast i8 addrspace(4)* %18 to i16 addrspace(4)*\l  %20 = load i16, i16 addrspace(4)* %19, align 2, !range !4, !invariant.load !5\l  %21 = zext i16 %20 to i32\l  %22 = mul i32 %17, %21\l  %23 = add i32 %22, %16\l  %24 = zext i32 %23 to i64\l  %25 = icmp ult i64 %24, %2\l  br i1 %25, label %26, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x4a27170:s0 -> Node0x4a28e60;
+	Node0x4a27170:s1 -> Node0x4a27200;
+	Node0x4a28e60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%26:\l26:                                               \l  %27 = mul i64 %24, %1\l  %28 = add i64 %27, %13\l  %29 = trunc i64 %28 to i32\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %28\l  store i32 %29, i32 addrspace(1)* %30, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x4a28e60 -> Node0x4a27200;
+	Node0x4a27200 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

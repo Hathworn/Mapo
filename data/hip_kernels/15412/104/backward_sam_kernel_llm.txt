@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache in_scales_c if accessed repeatedly to reduce global memory accesses.
+// Evaluate the benefits of using float2 or float4 for coalesced memory access when possible.
+// Investigate if using __ldg() intrinsic can improve performance for read-only data like in_scales_c.
+// Review if loop unrolling within the warp could enhance performance in scenarios with predictable patterns.
+// Explore the use of asynchronous memory prefetching to overlap data transfer and computation.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for gradOutput_data
+// Use loop unrolling for the inner loop if scale_factor is a compile-time constant
+// Align data accesses to improve memory coalescing in gradOutput_data
+// Consider using texture memory for gradOutput_data if access patterns are suited
+// Optimize thread block and grid dimensions for better hardware utilization
+```

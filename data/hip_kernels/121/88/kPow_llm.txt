@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory accesses to improve memory throughput
+// Ensure data is aligned to avoid uncoalesced access penalties
+// Consider using shared memory if there are common repeated calculations
+// Minimize the use of powf function for integer powers by using multiplication
+// Optimize the number of blocks and threads based on the specific GPU architecture
+```

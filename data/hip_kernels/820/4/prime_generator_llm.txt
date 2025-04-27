@@ -1,0 +1,3 @@
+// Optimize memory access by using shared memory for frequently accessed data.
+// Use stride loop strategy to distribute workload evenly across threads and avoid thread divergence.
+// Stride loop ensures multiple threads can efficiently cover larger data sets when grid size is limited.

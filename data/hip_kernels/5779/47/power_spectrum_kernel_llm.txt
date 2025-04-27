@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access and increase access speed
+// Load data into shared memory in a coalesced manner for better performance
+// Adjust the size of shared memory based on actual requirements to prevent memory waste
+// Avoid unnecessary loading or processing by skipping idx == 0 case early
+// Consider using warp shuffle instructions if appropriate to reduce shared memory usage
+// Avoid bank conflicts in shared memory by ensuring proper indexing
+```

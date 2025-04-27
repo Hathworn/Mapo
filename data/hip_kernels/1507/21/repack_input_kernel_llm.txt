@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to stage data before writing to re_packed_input to optimize for memory coalescing.
+// Minimize bank conflicts in shared memory access by padding shared array if needed.
+// Ensure all memory transfers are coalesced by aligning data properly and accessing in a sequential manner.
+// Reorganize data access patterns to ensure that warps access continuous memory to maximize bandwidth utilization.
+// Evaluate using vectorized operations for packing/unpacking to utilize higher memory bandwidth and improve performance.
+// Use loop unrolling to reduce loop overhead and increase instruction throughput.
+```

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for vec1 and vec2 to improve memory throughput.
+// Consider splitting the kernel into multiple passes for larger numElements to avoid wasting threads.
+// Optimize shared memory usage by padding to avoid bank conflicts.
+// Implement loop unrolling in the reduction phase to reduce loop control overhead.
+// Consider using warp-level primitives like __shfl_down_sync for reduction to improve performance.
+```

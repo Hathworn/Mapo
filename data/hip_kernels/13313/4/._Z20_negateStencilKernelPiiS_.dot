@@ -1,0 +1,10 @@
+digraph "CFG for '_Z20_negateStencilKernelPiiS_' function" {
+	label="CFG for '_Z20_negateStencilKernelPiiS_' function";
+
+	Node0x4b16020 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp ult i32 %12, %1\l  br i1 %13, label %14, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x4b16020:s0 -> Node0x4b17f20;
+	Node0x4b16020:s1 -> Node0x4b17fb0;
+	Node0x4b17f20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = zext i32 %12 to i64\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %18 = icmp ne i32 %17, 1\l  %19 = zext i1 %18 to i32\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %15\l  store i32 %19, i32 addrspace(1)* %20, align 4, !tbaa !7\l  br label %21\l}"];
+	Node0x4b17f20 -> Node0x4b17fb0;
+	Node0x4b17fb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  ret void\l}"];
+}

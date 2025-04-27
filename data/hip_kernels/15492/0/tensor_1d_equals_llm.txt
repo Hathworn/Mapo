@@ -1,0 +1,10 @@
+```
+// Use the __restrict__ keyword to improve compiler optimization by indicating pointers do not alias
+// Ensure data alignment for better memory access performance
+// Consider using shared memory for elements that are accessed repeatedly
+// Minimize divergence by ensuring all threads in a warp follow the same execution path
+// Apply loop unrolling if applicable for repeated operations
+// Optimize stride to ensure coalesced global memory access
+// If eq_flag being incremented is a frequent operation across threads, evaluate alternative synchronization methods
+// Review the block and grid dimensions for optimal occupancy and throughput
+```

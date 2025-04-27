@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache intData values for better memory access patterns
+// Improve data locality by processing consecutive global memory accesses
+// Consider coalescing global memory accesses to intData for improved bandwidth usage
+// Use loop unrolling for reducing loop overhead in frequently accessed sections
+// Consider using warp-level primitives to reduce thread divergence
+```

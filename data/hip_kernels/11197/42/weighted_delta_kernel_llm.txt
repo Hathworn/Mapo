@@ -1,0 +1,7 @@
+```cpp
+// Avoid repeated global memory access by using local variables
+// Consider using __restrict__ keyword if pointers do not alias
+// Use fmaf for potential performance improvement via fused operations
+// Ensure memory coalescing by checking data alignment
+// Reuse computed values to minimize redundant calculations
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache commonly accessed data to reduce global memory accesses.
+// Use coalesced memory access patterns to improve global memory throughput.
+// Minimize divergent branches within warp execution to improve performance.
+// Evaluate the potential benefits of loop unrolling for the 'for' loop inside the kernel.
+// Optimize the use of hiprand_normal_double by exploring alternatives like generating multiple random numbers in bulk.
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses for g_vx_i, g_vy_i, g_vz_i
+// Use float3 or struct for better memory alignment
+// Ensure memory accesses are within cache line boundaries
+// Avoid bank conflicts by aligning data to warp size
+```

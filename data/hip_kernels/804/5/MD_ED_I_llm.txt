@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize global memory access
+// Coalesce global memory access for T to improve memory bandwidth
+// Ensure T2 data fetching is done in a coalesced pattern
+// Use atomic operations to resolve data dependencies in reduction
+// Optimize shared memory usage by minimizing allocation
+// Consider loop unrolling to minimize loop overhead
+// Ensure memory access patterns are aligned to avoid bank conflicts in shared memory
+// Use __syncthreads() only when necessary to reduce synchronization latency
+```

@@ -1,0 +1,7 @@
+```
+// Potentially unroll the inner loop over 'k' to increase instruction-level parallelism
+// Consider reducing shared memory bank conflicts by altering data access patterns
+// Utilize warp-level primitives to optimize synchronization overhead
+// Prefetch next tile data into shared memory before finishing the current computation
+// Balance workload more efficiently by re-evaluating the grid and block dimensions
+```

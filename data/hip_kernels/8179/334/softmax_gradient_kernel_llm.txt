@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers on pointers to improve compiler optimizations
+// Consider using warp-level primitives for reduction to further optimize parallel performance
+// Prefetch Y, dY, and dX values into registers to reduce memory latency
+// Increase the granularity of the unroll factor if dimensions are known to be large
+// Optimize shared memory usage by ensuring the smallest possible working set
+// Investigate bank conflicts in shared memory and adjust alignment if necessary
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce redundant global memory accesses for 'values'.
+// Early return to minimize unnecessary computations once threadId exceeds limits.
+// Reduce conditional operations on pointer selection for 'dirX_local' and 'dirY_local'.
+// Optimize memory coalescing by ensuring 'originX', 'originY', 'dirX_local', and 'dirY_local' accesses are aligned.
+```

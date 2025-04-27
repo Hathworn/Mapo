@@ -1,0 +1,8 @@
+```
+// Use texture memory for accessing 'u', 'v', and 'src' to improve memory access speed
+// Consider coalescing global memory accesses to improve memory throughput
+// Leverage shared memory to further reduce global memory access latency
+// Ensure memory access patterns are coalesced and optimized for cache efficiency
+// Use loop unrolling if applicable to reduce loop overhead and increase parallelism
+// Evaluate warp-level operations for fine-grained synchronization improvements
+```

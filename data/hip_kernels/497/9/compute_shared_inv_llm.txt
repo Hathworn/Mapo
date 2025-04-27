@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache destination offsets and reduce global memory accesses.
+// Perform boundary condition checks and load additional data to shared memory.
+// Avoid division by zero in_degree check, ensuring loop only executes when necessary.
+// Accumulate contributions from source nodes within loop using cached destination offset boundaries.
+```

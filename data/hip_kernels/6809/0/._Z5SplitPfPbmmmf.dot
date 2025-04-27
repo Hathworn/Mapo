@@ -1,0 +1,13 @@
+digraph "CFG for '_Z5SplitPfPbmmmf' function" {
+	label="CFG for '_Z5SplitPfPbmmmf' function";
+
+	Node0x57d25c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 12\l  %14 = bitcast i8 addrspace(4)* %13 to i32 addrspace(4)*\l  %15 = load i32, i32 addrspace(4)* %14, align 4, !tbaa !6\l  %16 = mul i32 %7, %12\l  %17 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %18 = add i32 %16, %17\l  %19 = sext i32 %18 to i64\l  %20 = icmp ult i64 %19, %4\l  br i1 %20, label %21, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x57d25c0:s0 -> Node0x57d4880;
+	Node0x57d25c0:s1 -> Node0x57d4910;
+	Node0x57d4880 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%21:\l21:                                               \l  %22 = add i64 %2, -1\l  %23 = mul i64 %22, %4\l  %24 = mul i64 %4, %3\l  %25 = udiv i32 %15, %12\l  %26 = mul i32 %25, %12\l  %27 = icmp ugt i32 %15, %26\l  %28 = zext i1 %27 to i32\l  %29 = add i32 %25, %28\l  %30 = mul i32 %29, %12\l  br label %32\l}"];
+	Node0x57d4880 -> Node0x57d4f40;
+	Node0x57d4910 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%31:\l31:                                               \l  ret void\l}"];
+	Node0x57d4f40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  %33 = phi i64 [ %19, %21 ], [ %43, %32 ]\l  %34 = trunc i64 %33 to i32\l  %35 = add i64 %33, %23\l  %36 = getelementptr inbounds float, float addrspace(1)* %0, i64 %35\l  %37 = load float, float addrspace(1)* %36, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %38 = fcmp contract olt float %37, %5\l  %39 = add i64 %33, %24\l  %40 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %39\l  %41 = zext i1 %38 to i8\l  store i8 %41, i8 addrspace(1)* %40, align 1, !tbaa !20\l  %42 = add i32 %30, %34\l  %43 = sext i32 %42 to i64\l  %44 = icmp ult i64 %43, %4\l  br i1 %44, label %32, label %31, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x57d4f40:s0 -> Node0x57d4f40;
+	Node0x57d4f40:s1 -> Node0x57d4910;
+}

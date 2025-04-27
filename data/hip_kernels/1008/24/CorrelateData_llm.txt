@@ -1,0 +1,8 @@
+```
+// Use shared memory effectively to minimize global memory access.
+// Unroll loops to improve data loading efficiency from global to shared memory.
+// Coalesce memory access patterns to optimize memory transactions.
+// Ensure all threads in a warp follow similar execution paths to reduce warp divergence.
+// Perform summation using shared memory to minimize costly global memory access.
+// Aggregate partial results efficiently using a single thread in each block.
+```

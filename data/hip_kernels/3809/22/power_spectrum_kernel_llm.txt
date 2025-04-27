@@ -1,0 +1,7 @@
+```
+// Use __shared__ memory to reduce global memory access latency.
+// Use __syncthreads() to ensure shared memory data readiness.
+// Use float2 to read complex number efficiently from global memory.
+// Balance workload among threads by using loop with stride CU1DBLOCK.
+// Handle special edge cases outside main parallel loop if necessary.
+```

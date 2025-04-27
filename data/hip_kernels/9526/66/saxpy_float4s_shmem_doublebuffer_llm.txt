@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve data locality.
+// Employ double buffering to hide global memory latency.
+// Align loads and stores to float4 boundaries to maximize memory throughput.
+// Utilize __syncthreads() to synchronize threads when accessing shared memory.

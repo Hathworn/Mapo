@@ -1,0 +1,16 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+__global__ void mean_delta_kernel(float *delta, float *variance, int batch, int filters, int spatial, float *mean_delta)
+{
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i >= filters) return;
+
+    float mean_sum = 0.0f; // Use a register to accumulate sum for better performance
+    for (int j = 0; j < batch; ++j) {
+        for (int k = 0; k < spatial; ++k) {
+            int index = j * filters * spatial + i * spatial + k;
+            mean_sum += delta[index]; // Accumulate delta into mean_sum
+        }
+    }
+    mean_delta[i] = mean_sum * (-1.F / sqrtf(variance[i] + .000001f)); // Calculate mean_delta
+}

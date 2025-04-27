@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory access for cap and flo arrays to improve memory throughput.
+// Consider pre-fetching data to shared memory in blocks to reduce global memory latency.
+// Ensure alignment and padding to maximize memory access efficiency.
+// Utilize asynchronous memory copy functions where applicable to overlap computation with data transfer.
+```

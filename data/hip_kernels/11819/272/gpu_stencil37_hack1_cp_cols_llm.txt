@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced global memory access for dst and shared_cols
+// Use shared memory to reduce global memory transactions
+// Avoid bank conflicts in shared memory accesses
+// Minimize divergence by ensuring all threads in a warp execute similar instructions
+// Prefetch data into shared memory if data reuse is high
+// Ensure synchronous data copy with __syncthreads()
+```

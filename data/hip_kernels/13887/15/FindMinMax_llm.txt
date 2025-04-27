@@ -1,0 +1,8 @@
+```
+// Consider increasing the number of threads per block to optimize memory access patterns.
+// Use shared memory effectively to reduce global memory accesses.
+// Ensure each thread accesses contiguous memory to improve coalescing.
+// Unroll loops to minimize branching and improve instruction throughput.
+// Employ efficient in-block reduction to minimize synchronization costs.
+// Balance the number of registers used to avoid spilling to local memory.
+```

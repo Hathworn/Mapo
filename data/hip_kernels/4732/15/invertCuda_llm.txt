@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache input row data for coalesced access
+// Optimize block size and grid size based on GPU architecture for optimal occupancy
+// Align rowSizeIn and rowSizeOut to improve coalesced global memory access
+// Consider employing texture memory for 2D spatial locality and improved cache performance
+```

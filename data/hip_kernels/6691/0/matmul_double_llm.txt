@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access frequency
+// Split work among threads to maximize parallelism
+// Ensure coalesced memory access in loading elements into shared memory
+// Use boundary checks to avoid out-of-bounds global memory access
+// Synchronize threads after loading data to shared memory to ensure all data is available
+// Write results to global memory only after all calculations are complete
+```

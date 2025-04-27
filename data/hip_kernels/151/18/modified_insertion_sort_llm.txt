@@ -1,0 +1,11 @@
+```c
+// Consider coalesced memory access to improve memory bandwidth utilization.
+// Use shared memory to reduce global memory accesses and increase cache efficiency.
+// Ensure the kernel is optimized for warp execution to reduce branch divergence.
+// Evaluate using __ldg() for read-only data to improve cache performance.
+// Analyze the use of local memory to prevent excessive register spilling.
+// Consider loop fusion techniques where applicable to improve instruction-level parallelism.
+// Verify kernel launch configuration for optimal occupancy and performance.
+// Explore the use of texture memory for potential cache benefits in specific access patterns.
+// If applicable, profile the kernel using tools like rocprof to identify additional bottlenecks.
+```

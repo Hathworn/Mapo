@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access times.
+// Preload data used repeatedly in shared memory to minimize redundant global memory access.
+// Use memory coalescing to ensure contiguous memory access patterns by threads in the same warp.
+// Optimize data access patterns to improve cache utilization and reduce memory latency.

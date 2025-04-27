@@ -1,0 +1,4 @@
+// Consider coalesced memory access for verts array to improve bandwidth efficiency
+// Use shared memory to minimize redundant global memory transactions
+// Optimize thread block size to maximize occupancy and reduce branch divergence
+// Ensure proper memory alignment for hiprandState for faster access

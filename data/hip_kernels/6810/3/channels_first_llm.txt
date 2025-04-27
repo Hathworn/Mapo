@@ -1,0 +1,7 @@
+// Optimize memory access patterns by coalescing global memory reads for the `input` array.  
+// Minimize bank conflicts when writing to `rinput` by ensuring alignment and proper thread-to-data mapping.  
+// Use shared memory to reduce redundant global memory access during the `input` read phase.  
+// Consider increasing the block size (blockDim.x) for better parallelism, while ensuring no warp divergence.  
+// Add loop unrolling to maximize instruction throughput and minimize loop overhead.  
+// Use `__restrict__` keyword for `input` and `rinput` pointers to aid compiler optimization.  
+// Prefetch data into registers when repeatedly accessing the same elements in the loop.  

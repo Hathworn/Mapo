@@ -1,0 +1,5 @@
+// Use shared memory to reduce repeated global memory accesses
+// Align data structures to prevent memory access overhead
+// Increase coalesced memory accesses by ensuring data structures are contiguous
+// Optimize loop unrolling for better throughput
+// Analyze warp occupancy to maximize hardware utilization

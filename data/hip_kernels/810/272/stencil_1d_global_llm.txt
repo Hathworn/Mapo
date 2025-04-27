@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning global memory access with warp boundaries.
+// Use __ldg() for reading constant data if dcoef is constant.
+// Consider double buffering or loop unrolling for better performance.
+// Minimize the use of __syncthreads() to avoid unnecessary synchronization overhead.
+// Consider increasing the block size to achieve better occupancy if resources permit.
+// Optimize shared memory usage by using dynamic shared memory if block size varies.
+```

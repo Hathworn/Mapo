@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access for frequently accessed variables if applicable
+// Coalesce memory access by ensuring consecutive threads access consecutive memory addresses
+// Consider using atomic operations to manage simultaneous access to shared data by multiple threads if necessary

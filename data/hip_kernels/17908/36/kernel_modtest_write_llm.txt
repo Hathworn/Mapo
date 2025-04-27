@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Initialize shared memory in parallel using all threads within a block.
+// Synchronize threads with __syncthreads() to ensure shared memory initialization is complete before using it.
+// Copy data from shared memory back to global memory efficiently.
+```

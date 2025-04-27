@@ -1,0 +1,3 @@
+// Load uni value from global to shared memory by the first thread in the block
+// Ensure that the shared memory is updated before proceeding
+// Optimize by reducing condition checks in g_data updates

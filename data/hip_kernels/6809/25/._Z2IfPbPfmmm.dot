@@ -1,0 +1,18 @@
+digraph "CFG for '_Z2IfPbPfmmm' function" {
+	label="CFG for '_Z2IfPbPfmmm' function";
+
+	Node0x47cb620 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = sext i32 %17 to i64\l  %19 = icmp ult i64 %18, %4\l  br i1 %19, label %20, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x47cb620:s0 -> Node0x47cd900;
+	Node0x47cb620:s1 -> Node0x47cd990;
+	Node0x47cd900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%20:\l20:                                               \l  %21 = add i64 %3, -1\l  %22 = mul i64 %21, %4\l  %23 = add i64 %2, -1\l  %24 = mul i64 %23, %4\l  %25 = udiv i32 %14, %11\l  %26 = mul i32 %25, %11\l  %27 = icmp ugt i32 %14, %26\l  %28 = zext i1 %27 to i32\l  %29 = add i32 %25, %28\l  %30 = mul i32 %29, %11\l  br label %32\l}"];
+	Node0x47cd900 -> Node0x47ce050;
+	Node0x47cd990 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%31:\l31:                                               \l  ret void\l}"];
+	Node0x47ce050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  %33 = phi i64 [ %18, %20 ], [ %44, %42 ]\l  %34 = trunc i64 %33 to i32\l  %35 = add i64 %33, %22\l  %36 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %35\l  %37 = load i8, i8 addrspace(1)* %36, align 1, !tbaa !16, !range !20,\l... !amdgpu.noclobber !5\l  %38 = icmp eq i8 %37, 0\l  br i1 %38, label %39, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x47ce050:s0 -> Node0x47cef70;
+	Node0x47ce050:s1 -> Node0x47cd720;
+	Node0x47cef70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%39:\l39:                                               \l  %40 = add i64 %33, %24\l  %41 = getelementptr inbounds float, float addrspace(1)* %1, i64 %40\l  store float 0.000000e+00, float addrspace(1)* %41, align 4, !tbaa !21\l  br label %42\l}"];
+	Node0x47cef70 -> Node0x47cd720;
+	Node0x47cd720 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%42:\l42:                                               \l  %43 = add i32 %30, %34\l  %44 = sext i32 %43 to i64\l  %45 = icmp ult i64 %44, %4\l  br i1 %45, label %32, label %31, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x47cd720:s0 -> Node0x47ce050;
+	Node0x47cd720:s1 -> Node0x47cd990;
+}

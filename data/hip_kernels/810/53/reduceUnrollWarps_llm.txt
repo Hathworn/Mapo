@@ -1,0 +1,4 @@
+// Unroll the loop to reduce the number of iterations and memory access
+// Use shared memory to store temporary results for warp-level reductions
+// Optimize global memory access by coalescing reads and writes
+// Minimize synchronization overhead by reducing the number of __syncthreads() calls

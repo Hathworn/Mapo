@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if there's additional data reused across threads
+// Ensure memory alignment for optimal coalesced access
+// Minimize use of global memory writes to reduce latency
+// Use __syncthreads() to synchronize threads before accessing shared data
+```

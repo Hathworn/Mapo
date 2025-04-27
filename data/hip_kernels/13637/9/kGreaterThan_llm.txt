@@ -1,0 +1,8 @@
+```cpp
+// Align memory access to ensure coalesced reads and writes if possible
+// Consider using shared memory to cache frequently accessed data
+// Use vectorized loads and stores if hardware supports it
+// Minimize divergent branches within the warp
+// Ensure grid size is optimized to fully occupy the GPU hardware
+// Profile memory transactions to identify bottlenecks
+```

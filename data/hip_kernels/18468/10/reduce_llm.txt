@@ -1,0 +1,8 @@
+```
+// Avoid using shared memory for small reductions to enhance performance
+// Consider memory alignment to improve coalesced memory access
+// Balance memory bandwidth utilization with compute efficiency
+// Profile the memory access pattern to ensure optimal loading
+// Minimize branch divergence in warp operations for efficiency
+// Tune block size based on hardware specifics to balance occupancy and performance
+```

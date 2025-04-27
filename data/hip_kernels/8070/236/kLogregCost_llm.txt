@@ -1,0 +1,6 @@
+```
+// Optimize memory access by using shared memory for frequently accessed data
+// Use coalesced memory accesses when reading/writing probs array
+// Consider loop unrolling for better performance in the for loop
+// Use __syncthreads() to synchronize threads if shared memory is utilized
+```

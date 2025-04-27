@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory access to improve memory bandwidth.
+// Minimize use of atomicAdd by restructuring data writes, possibly accumulating partial results in shared memory.
+// Check if using float4 or float2 types would lead to better memory throughput.
+// Evaluate grid and block dimensions to ensure optimal occupancy.
+// Analyze shared memory usage to avoid bank conflicts.
+```

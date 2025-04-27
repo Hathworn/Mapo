@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for pred and truth arrays
+// Use shared memory to cache pred and truth data within the block
+// Ensure that global memory writes to error and delta are coalesced
+// Evaluate the use of warp shuffling or atomic operations if necessary
+```

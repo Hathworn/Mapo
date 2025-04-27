@@ -1,0 +1,3 @@
+// Consider using shared memory to reduce global memory accesses for frequently accessed data like dc_i and s_i.
+// Use loop unrolling techniques if applicable to improve execution efficiency in the kernel.
+// Ensure memory coalescing by restructuring how data is accessed in da, db, and ds.

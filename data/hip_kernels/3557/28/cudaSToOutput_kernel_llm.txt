@@ -1,0 +1,8 @@
+```
+// Ensure proper memory coalescing by accessing global memory with aligned accesses
+// Consider using shared memory to store partsPrediction and partsVisibilityPrediction data to reduce redundant global memory accesses
+// Utilize warp-level primitives to optimize parts and templates processing within the thread block
+// Evaluate use of texture memory for better caching behavior when accessing ROIEst and partsPrediction
+// Minimize conditionals by pre-computing output indices outside of the kernel if possible
+// Apply loop unrolling technique to optimize parts and templates iteration where applicable
+```

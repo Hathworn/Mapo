@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to cache frequently accessed data.
+// Minimize the use of atomic operations to reduce contention and improve performance.
+// Coalesce global memory accesses for better memory throughput.
+// Use float2 or float4 types to read/write data when possible for reduced memory transactions.
+// Ensure the grid and block dimensions are optimal for the target hardware.
+```

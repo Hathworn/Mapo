@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by having threads access contiguous memory locations.
+// Use shared memory to store intermediate results if possible to reduce global memory access.
+// Avoid divergent branches within warp execution to enhance performance.
+// Consider loop unrolling techniques for any repetitive operations in future optimization.
+// Ensure data alignment for efficient vectorized memory access if applicable.
+// Utilize bank conflict-free shared memory access patterns for better access efficiency.
+```

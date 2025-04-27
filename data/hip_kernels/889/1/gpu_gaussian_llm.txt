@@ -1,0 +1,7 @@
+```cpp
+// Use loop unrolling in gpu_applyFilter to reduce overhead
+// Minimize shared memory bank conflicts in Gaussian filter
+// Preload data into shared memory to optimize memory coalescing
+// Reduce redundant memory accesses in gpu_applyFilter
+// Use double buffering for overlapping computation and data transfer
+```

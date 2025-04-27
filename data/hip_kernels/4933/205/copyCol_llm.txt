@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by accessing consecutive memory locations within warp
+// Consider shared memory usage for reused data to reduce global memory access
+// Optimize block and grid dimensions to maximize occupancy and reduce latency
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+// Use loop unrolling if the compiler doesn't optimize it automatically
+```

@@ -1,0 +1,7 @@
+```
+// Consider utilizing shared memory to cache input data tiles for faster access
+// Avoid redundant global memory reads by preloading data into shared memory
+// Calculate global indices once and reuse for reducing redundant operations
+// Employ warp-shuffle for cross-thread data exchange if applicable in future
+// Use const memory for kernel constants like threshold if they are constant
+```

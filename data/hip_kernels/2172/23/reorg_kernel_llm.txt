@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by organizing accesses to global memory
+// Preload data into shared memory if further calculations are needed
+// Minimize the number of arithmetic operations inside the kernel
+// Experiment with different block and grid sizes for optimal occupancy
+// Align memory access to avoid bank conflicts
+// Consider using the __restrict__ keyword to optimize pointer aliasing
+```

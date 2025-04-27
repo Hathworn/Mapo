@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ pointers to help the compiler optimize memory access patterns.
+// Use texture memory for read-only data like d_time_of_last_spike_to_reach_synapse to reduce global memory access latency.
+// Employ shared memory to cache common data elements within a block if beneficial.
+// Ensure coalesced memory access by organizing data in a way that consecutive threads access consecutive memory addresses.
+// Adjust block and grid sizes to better match the GPU's architecture to further increase occupancy.
+```

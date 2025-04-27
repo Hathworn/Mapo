@@ -1,0 +1,11 @@
+```cpp
+// Consider coalescing global memory accesses for roi_bbox and outputs.
+// Ensure roi_bbox accesses are as contiguous as possible for adjacent threads.
+// Avoid redundant calculation by storing reused results in local variables.
+// Align memory accesses to 32-byte boundaries when possible for better efficiency.
+// Use shared memory to cache frequently accessed data if applicable.
+// Minimize the number of separate accesses to global memory by grouping read operations.
+// Optimize the kernel launch configuration for maximum warps efficiency.
+// Reduce the number of divergent branches within warps.
+// Utilize constant memory for any inputs that remain unchanged across threadblocks.
+```

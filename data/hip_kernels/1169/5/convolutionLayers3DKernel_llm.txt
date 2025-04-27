@@ -1,0 +1,8 @@
+```
+// Ensure effective use of shared memory to minimize global memory access
+// Avoid redundant global memory accesses by loading data once into shared memory
+// Unroll loops to optimize memory load patterns and increase throughput
+// Utilize boundary checks to prevent out-of-bounds memory access
+// Use __syncthreads() to ensure all threads have loaded data before proceeding to computations
+// Streamline computation by optimizing inner loops and unrolling to maximize parallel execution efficiency
+```

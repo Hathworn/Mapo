@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache common subexpressions for reduced global memory traffic.
+// Unroll inner loops for better instruction-level parallelism.
+// Employ warp shuffle operations to reduce synchronization overhead.
+// Preload data into registers to reduce redundant access.
+// Optimize grid and block dimensions for optimal occupancy.
+// Consider using half-precision if accuracy permits for higher memory bandwidth.
+```

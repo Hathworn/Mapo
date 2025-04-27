@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to minimize global memory access and improve data locality.
+// Merge multiple global memory accesses into a single access whenever possible.
+// Align data structures to allow coalesced memory access.
+// Use __syncthreads() to synchronize threads after loading data to shared memory.
+```

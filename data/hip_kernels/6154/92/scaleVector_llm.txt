@@ -1,0 +1,4 @@
+// Utilize shared memory to reduce global memory access latency.
+// Consider coalesced memory access patterns for d_src and d_res.
+// Make sure to align data allocations to improve memory access speeds.
+// Investigate benefit of using texture memory for read-only access to d_src.

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory double buffering to improve memory access efficiency
+// Ensure loads and stores are coalesced for efficient global memory access
+// Minimize use of __syncthreads() to reduce synchronization overhead
+// Ensure data reuse in shared memory to reduce global memory access
+// Use vectorized access for loading and storing to maximize bandwidth utilization
+```

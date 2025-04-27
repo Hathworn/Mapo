@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access
+// Load biases into shared memory to minimize repeated global memory fetches
+// Synchronize threads to ensure shared memory is fully populated before use

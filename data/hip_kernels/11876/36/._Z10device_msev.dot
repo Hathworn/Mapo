@@ -1,0 +1,29 @@
+digraph "CFG for '_Z10device_msev' function" {
+	label="CFG for '_Z10device_msev' function";
+
+	Node0x5986c90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%0:\l  %1 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %2 = load i32, i32 addrspace(4)* @d_ncases, align 4, !tbaa !5\l  %3 = load i32, i32 addrspace(4)* @d_ntarg, align 4, !tbaa !5\l  %4 = mul nsw i32 %3, %2\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !9, !invariant.load !10\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !11\l  %14 = mul i32 %5, %10\l  %15 = add i32 %14, %1\l  %16 = icmp ult i32 %15, %4\l  br i1 %16, label %17, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x5986c90:s0 -> Node0x59882f0;
+	Node0x5986c90:s1 -> Node0x59888a0;
+	Node0x59882f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%17:\l17:                                               \l  %18 = load double*, double* addrspace(4)* @d_output, align 8, !tbaa !20\l  %19 = load float*, float* addrspace(4)* @d_targets, align 8, !tbaa !20\l  %20 = udiv i32 %13, %10\l  %21 = mul i32 %20, %10\l  %22 = icmp ugt i32 %13, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %10\l  br label %26\l}"];
+	Node0x59882f0 -> Node0x5989ec0;
+	Node0x5989ec0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi double [ 0.000000e+00, %17 ], [ %37, %26 ]\l  %28 = phi i32 [ %15, %17 ], [ %38, %26 ]\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds double, double* %18, i64 %29\l  %31 = load double, double* %30, align 8, !tbaa !22\l  %32 = getelementptr inbounds float, float* %19, i64 %29\l  %33 = load float, float* %32, align 4, !tbaa !24\l  %34 = fpext float %33 to double\l  %35 = fsub contract double %31, %34\l  %36 = fmul contract double %35, %35\l  %37 = fadd contract double %27, %36\l  %38 = add i32 %25, %28\l  %39 = icmp ult i32 %38, %4\l  br i1 %39, label %26, label %40, !llvm.loop !26\l|{<s0>T|<s1>F}}"];
+	Node0x5989ec0:s0 -> Node0x5989ec0;
+	Node0x5989ec0:s1 -> Node0x59888a0;
+	Node0x59888a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%40:\l40:                                               \l  %41 = phi double [ 0.000000e+00, %0 ], [ %37, %26 ]\l  %42 = getelementptr inbounds [256 x double], [256 x double] addrspace(3)*\l... @_ZZ10device_msevE11partial_mse, i32 0, i32 %1\l  store double %41, double addrspace(3)* %42, align 8, !tbaa !22\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %43 = icmp ult i16 %9, 2\l  br i1 %43, label %56, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x59888a0:s0 -> Node0x598c1d0;
+	Node0x59888a0:s1 -> Node0x598c260;
+	Node0x598c260 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%44:\l44:                                               \l  %45 = phi i32 [ %46, %54 ], [ %10, %40 ]\l  %46 = lshr i32 %45, 1\l  %47 = icmp ult i32 %1, %46\l  br i1 %47, label %48, label %54\l|{<s0>T|<s1>F}}"];
+	Node0x598c260:s0 -> Node0x598c660;
+	Node0x598c260:s1 -> Node0x598c3d0;
+	Node0x598c660 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%48:\l48:                                               \l  %49 = add nuw nsw i32 %46, %1\l  %50 = getelementptr inbounds [256 x double], [256 x double] addrspace(3)*\l... @_ZZ10device_msevE11partial_mse, i32 0, i32 %49\l  %51 = load double, double addrspace(3)* %50, align 8, !tbaa !22\l  %52 = load double, double addrspace(3)* %42, align 8, !tbaa !22\l  %53 = fadd contract double %51, %52\l  store double %53, double addrspace(3)* %42, align 8, !tbaa !22\l  br label %54\l}"];
+	Node0x598c660 -> Node0x598c3d0;
+	Node0x598c3d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%54:\l54:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %55 = icmp ult i32 %45, 4\l  br i1 %55, label %56, label %44, !llvm.loop !28\l|{<s0>T|<s1>F}}"];
+	Node0x598c3d0:s0 -> Node0x598c1d0;
+	Node0x598c3d0:s1 -> Node0x598c260;
+	Node0x598c1d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%56:\l56:                                               \l  %57 = icmp eq i32 %1, 0\l  br i1 %57, label %58, label %64\l|{<s0>T|<s1>F}}"];
+	Node0x598c1d0:s0 -> Node0x598cf60;
+	Node0x598c1d0:s1 -> Node0x598cfb0;
+	Node0x598cf60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%58:\l58:                                               \l  %59 = load double, double addrspace(3)* getelementptr inbounds ([256 x\l... double], [256 x double] addrspace(3)* @_ZZ10device_msevE11partial_mse, i32 0,\l... i32 0), align 16, !tbaa !22\l  %60 = fptrunc double %59 to float\l  %61 = load float*, float* addrspace(4)* @d_mse_out, align 8, !tbaa !20\l  %62 = zext i32 %5 to i64\l  %63 = getelementptr inbounds float, float* %61, i64 %62\l  store float %60, float* %63, align 4, !tbaa !24\l  br label %64\l}"];
+	Node0x598cf60 -> Node0x598cfb0;
+	Node0x598cfb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%64:\l64:                                               \l  ret void\l}"];
+}

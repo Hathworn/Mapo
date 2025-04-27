@@ -1,0 +1,24 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+__global__ void kTile(const float* src, float* tgt, const uint srcWidth, const uint srcHeight, const uint tgtWidth, const uint tgtHeight) {
+    // Using shared memory to buffer the source data
+    extern __shared__ float sharedSrc[];
+    
+    const int idx = blockIdx.x * blockDim.x + threadIdx.x;
+    const int numThreads = blockDim.x * gridDim.x;
+
+    // Preload src to shared memory
+    for (int i = threadIdx.x; i < srcWidth * srcHeight; i += blockDim.x) {
+        sharedSrc[i] = src[i];
+    }
+    
+    __syncthreads();
+
+    for (uint i = idx; i < tgtWidth * tgtHeight; i += numThreads) {
+        const uint y = i / tgtWidth;
+        const uint x = i % tgtWidth;
+        const uint srcY = y % srcHeight;
+        const uint srcX = x % srcWidth;
+        tgt[i] = sharedSrc[srcY * srcWidth + srcX]; // Use shared memory for faster access
+    }
+}

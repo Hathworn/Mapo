@@ -1,0 +1,9 @@
+```
+// Optimize memory access by using shared memory for frequently accessed data
+// Consider using memory coalescing to improve global memory access efficiency
+// Ensure all memory reads and writes are coalesced to maximize bandwidth utilization
+// Use texture memory for read-only data to improve cache performance
+// Utilize __ldg() intrinsic for faster read from global memory
+// Ensure that each thread accesses contiguous memory locations to improve cache efficiency
+// Avoid divergent branching within warp by aligning control flow paths
+```

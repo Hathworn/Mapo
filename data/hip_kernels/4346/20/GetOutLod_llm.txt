@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache num_erased for faster access.
+// Ensure coalesced memory access by aligning in_lod and out_lod0.
+// Minimize global memory access by loading data to registers.
+// Utilize warp divergence minimization techniques if needed.
+```

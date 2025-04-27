@@ -1,0 +1,9 @@
+```
+// Consider enabling loop unrolling to enhance computational throughput.
+// Ensure memory coalescing for loading matrix A into shared memory.
+// Ensure memory coalescing for loading matrix B into shared memory.
+// Minimize bank conflicts in shared memory access by padding if necessary.
+// Use __syncthreads() efficiently to synchronize threads across block.
+// Consider using float4 or float2 if applicable to utilize vectorized instructions.
+// Ensure result writing is coalesced to enhance memory write efficiency.
+```

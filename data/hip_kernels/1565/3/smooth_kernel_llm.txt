@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache input data for coalesced memory access
+// Minimize divergent branches by consolidating condition checks
+// Reduce the number of redundant calculations and memory accesses
+// Align memory access patterns to enable vectorized loads/stores
+// Precompute index values outside of inner loops where possible
+// Consider loop unrolling for small fixed-size loops
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache d_cl values for better memory access efficiency.
+// Ensure coalesced memory accesses when reading/writing to global memory.
+// Use __restrict__ qualifier on pointer arguments if aliasing can be avoided.
+// Reduce the number of global memory accesses by computing values in registers where possible.
+// Minimize divergent branches within the kernel for optimal performance.
+```

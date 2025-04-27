@@ -1,0 +1,4 @@
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Avoid unnecessary use of __syncthreads() if the memory operations among threads do not require synchronization.
+// Utilize shared memory for reduction operations to minimize global memory access.
+// Optimize the loop unrolling further by explicitly unrolling small loops to reduce loop overhead.

@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory atomic operations  
+// Initialize shared histogram before main computation  
+// Calculate stride to ensure even distribution of memory accesses  
+// Accumulate in shared memory to reduce contention  
+// Use atomic operations only during final aggregation into global memory

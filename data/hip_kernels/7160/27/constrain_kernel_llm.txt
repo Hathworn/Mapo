@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve memory throughput
+// Use shared memory if there is data reuse within a block
+// Optimize global memory access by ensuring INCX is 1 where possible
+// Minimize bank conflicts by accessing memory in stride-1 pattern
+// Ensure threads within a warp handle contiguous elements for efficiency
+```

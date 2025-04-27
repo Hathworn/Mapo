@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8SubtractPfS_S_iii' function" {
+	label="CFG for '_Z8SubtractPfS_S_iii' function";
+
+	Node0x59c42f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = shl i32 %7, 5\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = add i32 %8, %9\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %12 = shl i32 %11, 4\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %10, %3\l  %16 = icmp slt i32 %14, %5\l  %17 = select i1 %15, i1 %16, i1 false\l  br i1 %17, label %18, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x59c42f0:s0 -> Node0x59c4ba0;
+	Node0x59c42f0:s1 -> Node0x59c6870;
+	Node0x59c4ba0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%18:\l18:                                               \l  %19 = mul nsw i32 %14, %4\l  %20 = add nsw i32 %19, %10\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds float, float addrspace(1)* %1, i64 %21\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %24 = getelementptr inbounds float, float addrspace(1)* %2, i64 %21\l  %25 = load float, float addrspace(1)* %24, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %26 = fsub contract float %23, %25\l  %27 = getelementptr inbounds float, float addrspace(1)* %0, i64 %21\l  store float %26, float addrspace(1)* %27, align 4, !tbaa !5\l  br label %28\l}"];
+	Node0x59c4ba0 -> Node0x59c6870;
+	Node0x59c6870 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

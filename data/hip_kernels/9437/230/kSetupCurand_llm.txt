@@ -1,0 +1,4 @@
+// Ensure memory coalescing by accessing the state array using calculated unique index 'tidx'
+// Consider aligning data structures in memory for better coalescing and reduced bank conflicts
+// Evaluate if constant memory for frequently accessed data such as the seed can improve performance
+// Explore the use of shared memory if repeated access to common data is involved among threads

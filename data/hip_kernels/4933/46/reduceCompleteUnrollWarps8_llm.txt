@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure memory coalescing by accessing consecutive elements.
+// Use warp shuffle for reduction to minimize divergence.
+// Optimize for occupancy by ensuring full utilization of blocks.
+```

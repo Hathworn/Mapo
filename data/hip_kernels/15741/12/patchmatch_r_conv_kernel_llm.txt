@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access
+// Consider texture memory for read-only data to reduce latency
+// Ensure memory coalescing by aligning memory accesses
+// Use more aggressive loop unrolling for nested loops
+// Consider prefetching data for overlapping computation and memory transfer
+// Utilize warp-level primitives to optimize reduction operations
+```

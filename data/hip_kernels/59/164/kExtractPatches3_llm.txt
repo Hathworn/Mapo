@@ -1,0 +1,8 @@
+```
+// Precompute repetitive calculations outside loops to avoid redundant operations
+// Optimally utilize shared memory to reduce global memory access
+// Consider memory coalescing strategies to ensure efficient global memory usage
+// Reduce memory divergence by aligning memory accesses among threads within a warp
+// Avoid use of block-level synchronization to reduce overhead as it's not necessary here
+// Analyze access patterns to minimize cache misses and maximize throughput
+```

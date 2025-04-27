@@ -1,0 +1,6 @@
+```
+// Use shared memory when possible to reduce global memory accesses
+// Coalesce global memory accesses to improve memory throughput
+// Align access patterns to avoid uncoalesced memory accesses
+// Utilize __syncthreads() to synchronize threads and ensure data consistency
+```

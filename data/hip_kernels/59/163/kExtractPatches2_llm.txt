@@ -1,0 +1,9 @@
+```
+// Reduce the use of global memory by utilizing shared memory for common read-only data
+// Optimize coalesced memory accesses for both reads and writes to global memory
+// Implement double buffering technique to overlap computation and memory transfers
+// Consider loop unrolling for better latency hiding in critical sections
+// Minimize divergent branching to ensure warp efficiency
+// Evaluate the thread block configuration for optimal occupancy and workload distribution
+// Ensure efficient utilization of registers to reduce pressure on global memory bandwidth
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to store results temporarily before writing to global memory
+// Optimize memory access pattern by ensuring consecutive threads access consecutive memory locations
+// Reduce the use of conditional checks within the loops for improved parallel execution
+// Avoid recalculating values inside the kernel; precompute constants if possible

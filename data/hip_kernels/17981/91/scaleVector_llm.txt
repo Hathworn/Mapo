@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses.
+// Use shared memory to minimize global memory reads, especially for non-cached reads.
+// Check if loop unrolling could improve performance for this computation.
+// Ensure the kernel is launched with an optimal number of threads per block.
+// Experiment with different block and grid sizes to find optimal performance.
+// Analyze the memory access patterns to avoid bank conflicts.
+```

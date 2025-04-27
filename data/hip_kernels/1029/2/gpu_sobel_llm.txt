@@ -1,0 +1,10 @@
+```
+// Consider using float4 for coalesced memory accesses.
+// Optimize shared memory usage by minimizing bank conflicts.
+// Ensure proper synchronization after loading data into shared memory.
+// Use half-warp for loading data into shared memory to improve coalescing.
+// Align shared memory access with warp size to maximize throughput.
+// Exploit more SMEM re-use by overlapping load and compute operations.
+// Optimize thread block configurations for occupancy and memory throughput.
+// Ensure shared memory loading patterns avoid strided access.
+```

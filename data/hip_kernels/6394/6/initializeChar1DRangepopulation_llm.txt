@@ -1,0 +1,6 @@
+```
+// Optimize memory access by using shared memory for globalState, reducing global memory access latency
+// Ensure minimal global memory access by caching to shared memory
+// Consider using warp shuffle operations for intra-warp communication to enhance performance
+// Avoid bank conflicts in shared memory by proper allocation and access patterns
+```

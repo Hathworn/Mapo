@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for hessian elements
+// Coalesce global memory accesses to improve memory bandwidth utilization
+// Reduce memory transactions by loading data using vectorized float4 loads where possible
+// Minimize conditional branching and divergence by organizing threads into coherent warps
+// Ensure that memory accesses are aligned for better performance
+// Consider using atomic operations for writing to hessian_pd to avoid conflicts
+```

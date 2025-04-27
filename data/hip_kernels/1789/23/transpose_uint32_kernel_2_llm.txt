@@ -1,0 +1,10 @@
+```
+// Consider increasing the size of shared memory for larger data sets.
+// Optimize memory access by ensuring alignment, use coalesced accesses.
+// Use padding to avoid shared memory bank conflicts.
+// Coalesce global reads by transposing in shared memory.
+// Ensure all threads within a warp can read from shared memory simultaneously.
+// Aim for shared memory access efficiency by utilizing w_align.
+// Employ __syncthreads() to synchronize threads properly during memory operations.
+// Minimize zeros padding by adjusting w_align to match access patterns.
+```

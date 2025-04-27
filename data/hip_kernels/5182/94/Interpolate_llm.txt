@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses if the input data has locality
+// Consider coalescing memory access by ensuring consecutive threads access consecutive memory locations
+// Optimize the usage of registers by minimizing the calculation inside the loop
+// Evaluate if loop unrolling can be applied for additional performance gain
+// Check if weight can be loaded into shared memory for faster access if it is constant
+// Ensure occupancy is maximized by using appropriate block size and grid size
+```

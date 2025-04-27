@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory accesses when reading from and writing to global memory
+// Consider using shared memory to achieve coalescing and reduce global memory traffic
+// Ensure the grid and block sizes are optimized for the GPU architecture in use
+// Avoid bank conflicts in shared memory if shared memory is used
+// Use appropriate memory access patterns to minimize memory latency
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Perform coalesced memory accesses when reading from d_Rin
+// Consider using asynchronous copy to overlap computation and memory operations
+// Ensure alignment of memory accesses for efficient memcpy
+// Explore use of vectorized data types for memory operations
+// Minimize divergent branches by restructuring the if conditions
+```

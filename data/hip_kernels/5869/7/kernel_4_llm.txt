@@ -1,0 +1,8 @@
+```
+// Use dynamic shared memory to reduce global memory accesses
+// Direct initialization minimizes conditional branching
+// Optimize loop for power of two for effective reduction
+// Employ volatile for warp-level operations to prevent compiler optimization issues
+// Unroll the last warp to maximize instruction-level parallelism
+// Store the result from shared memory to global memory
+```

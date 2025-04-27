@@ -1,0 +1,9 @@
+```
+// Consider using shared memory for loading atoms to reduce global memory accesses.
+// Align shared memory initialization for performance optimization.
+// Minimize divergence in loops by ensuring threads within a warp execute the same instructions.
+// Optimize memory access patterns for coalescence when loading atom positions.
+// Consider loop unrolling for the intra-block distance computation.
+// Use cache memory effectively by reducing redundant data loading in critical paths.
+// Ensure atomic operations are minimized and only happen outside performance-critical sections.
+```

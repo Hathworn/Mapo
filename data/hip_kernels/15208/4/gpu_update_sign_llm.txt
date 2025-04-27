@@ -1,0 +1,8 @@
+```
+// Optimize memory coalescing by ensuring sequential access to G and w
+// Consider using shared memory for temporary storage of G and w values to reduce global memory access
+// Prefetch data into registers where possible to reduce repeated global memory reads
+// Ensure neighbors array access patterns allow for optimal caching
+// Use loop unrolling to increase throughput where the computation pattern allows
+// Employ saturate_cast if precision allows to leverage fast math operations
+```

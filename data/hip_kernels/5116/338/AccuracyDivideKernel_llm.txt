@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to minimize global memory accesses
+// Perform division only in a single thread to avoid race conditions
+// Ensure synchronization with __syncthreads() to maintain data consistency
+// Minimize writes by updating global memory only once
+```

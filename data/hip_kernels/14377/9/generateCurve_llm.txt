@@ -1,0 +1,7 @@
+```
+//Use shared memory to cache values that are reused by multiple threads within the same block.
+//Consider using mixed precision to reduce memory bandwidth and improve performance.
+//Align data to memory transaction boundaries to optimize memory access patterns.
+//Try using vectorized memory operations to load/store multiple floats at once.
+//Utilize coalesced memory access by ensuring consecutive threads access consecutive memory addresses.
+```

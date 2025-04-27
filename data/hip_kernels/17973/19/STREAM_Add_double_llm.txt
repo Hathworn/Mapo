@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for better global memory throughput
+// Consider using restrict keyword to help compiler optimize memory access
+// Use shared memory if intermediate calculations are needed to minimize global memory latency
+// Evaluate use of asynchronous memory prefetching to improve data availability
+// Consider tuning block and grid size based on target hardware for optimal occupancy
+```

@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by checking the alignment of array1_d and array2_d.
+// Use shared memory to reduce global memory access latency.
+// Consider loop unrolling for performance improvement.
+// Assess warp divergence and optimize the boundary check condition to minimize it.

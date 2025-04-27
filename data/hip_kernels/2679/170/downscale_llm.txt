@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory coalescing for gradOutput_data reads
+// Avoid bank conflicts in shared memory accesses by padding
+// Check if thread divergence occurs and minimize it
+// Use __restrict__ qualifiers for gradInput_data and gradOutput_data to improve memory access optimization
+// Ensure proper alignment of data for memory efficiency
+```

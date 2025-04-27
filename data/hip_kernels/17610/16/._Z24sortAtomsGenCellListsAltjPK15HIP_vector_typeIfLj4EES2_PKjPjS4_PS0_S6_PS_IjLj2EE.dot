@@ -1,0 +1,36 @@
+digraph "CFG for '_Z24sortAtomsGenCellListsAltjPK15HIP_vector_typeIfLj4EES2_PKjPjS4_PS0_S6_PS_IjLj2EE' function" {
+	label="CFG for '_Z24sortAtomsGenCellListsAltjPK15HIP_vector_typeIfLj4EES2_PKjPjS4_PS0_S6_PS_IjLj2EE' function";
+
+	Node0x4500f80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%9:\l  %10 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %11 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %12 = getelementptr i8, i8 addrspace(4)* %11, i64 4\l  %13 = bitcast i8 addrspace(4)* %12 to i16 addrspace(4)*\l  %14 = load i16, i16 addrspace(4)* %13, align 4, !range !4, !invariant.load !5\l  %15 = zext i16 %14 to i32\l  %16 = mul i32 %10, %15\l  %17 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %18 = add i32 %16, %17\l  %19 = icmp ult i32 %18, %0\l  br i1 %19, label %20, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x4500f80:s0 -> Node0x45034f0;
+	Node0x4500f80:s1 -> Node0x4503580;
+	Node0x45034f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%20:\l20:                                               \l  %21 = zext i32 %18 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %5, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %24 = add nuw nsw i32 %17, 1\l  %25 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)* @hash_s, i32\l... 0, i32 %24\l  store i32 %23, i32 addrspace(3)* %25, align 4, !tbaa !7\l  %26 = icmp ne i32 %18, 0\l  %27 = icmp eq i32 %17, 0\l  %28 = and i1 %27, %26\l  br i1 %28, label %29, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x45034f0:s0 -> Node0x45049a0;
+	Node0x45034f0:s1 -> Node0x4503580;
+	Node0x45049a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%29:\l29:                                               \l  %30 = add i32 %18, -1\l  %31 = zext i32 %30 to i64\l  %32 = getelementptr inbounds i32, i32 addrspace(1)* %5, i64 %31\l  %33 = load i32, i32 addrspace(1)* %32, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  store i32 %33, i32 addrspace(3)* getelementptr inbounds ([0 x i32], [0 x\l... i32] addrspace(3)* @hash_s, i32 0, i32 0), align 4, !tbaa !7\l  br label %34\l}"];
+	Node0x45049a0 -> Node0x4503580;
+	Node0x4503580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  %35 = phi i32 [ %23, %29 ], [ %23, %20 ], [ undef, %9 ]\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  br i1 %19, label %36, label %71\l|{<s0>T|<s1>F}}"];
+	Node0x4503580:s0 -> Node0x4505980;
+	Node0x4503580:s1 -> Node0x4505a10;
+	Node0x4505980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%36:\l36:                                               \l  %37 = icmp eq i32 %18, 0\l  br i1 %37, label %47, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x4505980:s0 -> Node0x4505be0;
+	Node0x4505980:s1 -> Node0x4505c30;
+	Node0x4505c30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%38:\l38:                                               \l  %39 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)* @hash_s, i32\l... 0, i32 %17\l  %40 = load i32, i32 addrspace(3)* %39, align 4, !tbaa !7\l  %41 = icmp eq i32 %35, %40\l  br i1 %41, label %50, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x4505c30:s0 -> Node0x4505f30;
+	Node0x4505c30:s1 -> Node0x4505f80;
+	Node0x4505f80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%42:\l42:                                               \l  %43 = zext i32 %35 to i64\l  %44 = getelementptr inbounds %struct.HIP_vector_type.0,\l... %struct.HIP_vector_type.0 addrspace(1)* %8, i64 %43, i32 0, i32 0, i32 0, i64\l... 0\l  store i32 %18, i32 addrspace(1)* %44, align 8, !tbaa !11\l  %45 = zext i32 %40 to i64\l  %46 = getelementptr inbounds %struct.HIP_vector_type.0,\l... %struct.HIP_vector_type.0 addrspace(1)* %8, i64 %45, i32 0, i32 0, i32 0, i64\l... 1\l  store i32 %18, i32 addrspace(1)* %46, align 4, !tbaa !11\l  br label %50\l}"];
+	Node0x4505f80 -> Node0x4505f30;
+	Node0x4505be0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%47:\l47:                                               \l  %48 = zext i32 %35 to i64\l  %49 = getelementptr inbounds %struct.HIP_vector_type.0,\l... %struct.HIP_vector_type.0 addrspace(1)* %8, i64 %48, i32 0, i32 0, i32 0, i64\l... 0\l  store i32 0, i32 addrspace(1)* %49, align 8, !tbaa !11\l  br label %50\l}"];
+	Node0x4505be0 -> Node0x4505f30;
+	Node0x4505f30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%50:\l50:                                               \l  %51 = add i32 %0, -1\l  %52 = icmp eq i32 %18, %51\l  br i1 %52, label %53, label %57\l|{<s0>T|<s1>F}}"];
+	Node0x4505f30:s0 -> Node0x45070a0;
+	Node0x4505f30:s1 -> Node0x45070f0;
+	Node0x45070a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%53:\l53:                                               \l  %54 = add nuw i32 %18, 1\l  %55 = zext i32 %35 to i64\l  %56 = getelementptr inbounds %struct.HIP_vector_type.0,\l... %struct.HIP_vector_type.0 addrspace(1)* %8, i64 %55, i32 0, i32 0, i32 0, i64\l... 1\l  store i32 %54, i32 addrspace(1)* %56, align 4, !tbaa !11\l  br label %57\l}"];
+	Node0x45070a0 -> Node0x45070f0;
+	Node0x45070f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%57:\l57:                                               \l  %58 = zext i32 %18 to i64\l  %59 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %58\l  %60 = load i32, i32 addrspace(1)* %59, align 4, !tbaa !7\l  %61 = zext i32 %60 to i64\l  %62 = getelementptr inbounds i32, i32 addrspace(1)* %4, i64 %61\l  store i32 %18, i32 addrspace(1)* %62, align 4, !tbaa !7\l  %63 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %1, i64 %61, i32 0, i32 0, i32 0\l  %64 = load \<4 x float\>, \<4 x float\> addrspace(1)* %63, align 16\l  %65 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %6, i64 %58, i32 0, i32 0, i32 0\l  store \<4 x float\> %64, \<4 x float\> addrspace(1)* %65, align 16\l  %66 = icmp eq %struct.HIP_vector_type addrspace(1)* %2, addrspacecast\l... (%struct.HIP_vector_type* null to %struct.HIP_vector_type addrspace(1)*)\l  br i1 %66, label %71, label %67\l|{<s0>T|<s1>F}}"];
+	Node0x45070f0:s0 -> Node0x4505a10;
+	Node0x45070f0:s1 -> Node0x4504e40;
+	Node0x4504e40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%67:\l67:                                               \l  %68 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %2, i64 %61, i32 0, i32 0, i32 0\l  %69 = load \<4 x float\>, \<4 x float\> addrspace(1)* %68, align 16\l  %70 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %7, i64 %58, i32 0, i32 0, i32 0\l  store \<4 x float\> %69, \<4 x float\> addrspace(1)* %70, align 16\l  br label %71\l}"];
+	Node0x4504e40 -> Node0x4505a10;
+	Node0x4505a10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%71:\l71:                                               \l  ret void\l}"];
+}

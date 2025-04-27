@@ -1,0 +1,5 @@
+// Optimize memory access patterns to ensure coalesced memory access
+// Use shared memory to reduce redundant global memory loads
+// Consider using float2 or float4 for loading and storing data to improve memory bandwidth
+// Minimize divergent branches for better warp execution efficiency
+// Ensure sufficient occupancy by adjusting block size with respect to available resources

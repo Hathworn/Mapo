@@ -1,0 +1,5 @@
+// Use shared memory to cache frequently used data such as flow and image row offsets
+// Consider using texture memory for read-only data like input images and flow fields
+// Optimize memory coalescing by aligning data structures to warp boundaries
+// Employ warp-level primitives to reduce divergent branching within conditionals
+// Investigate usage of vectorized loads and stores for better memory throughput

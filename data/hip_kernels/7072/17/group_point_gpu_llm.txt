@@ -1,0 +1,6 @@
+```
+// Consider increasing the shared memory size if nsample exceeds 256 to avoid fallback to global memory.
+// Ensure memory coalescing by aligning shared memory loads and accesses properly.
+// Reduce memory divergence by ensuring threads within a warp take similar execution paths.
+// Align out array access to facilitate better caching and reduce memory latency.
+```

@@ -1,0 +1,7 @@
+```
+// Use registers for frequently used variables to reduce global memory access time
+// Initialize myResample to 0.0 to prevent using garbage value
+// Loop unrolling if it's known that 'bins' won't change frequently
+// Improved access pattern for g_irand[id * bins + i] / constant
+// Write final result to global memory with computed index
+```

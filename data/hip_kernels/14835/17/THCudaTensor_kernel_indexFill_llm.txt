@@ -1,0 +1,9 @@
+```
+// Consider using shared memory if stride values are reused frequently
+// Ensure coalesced memory access by reordering operations if possible
+// Investigate tiling techniques to improve cache utilization
+// Minimize divergent branching to maintain warp efficiency
+// Utilize constant memory for frequently accessed values such as tensor dimensions
+// Explore using vectorized data types for potential throughput improvement
+// Profile memory transactions to verify efficient global memory access
+```

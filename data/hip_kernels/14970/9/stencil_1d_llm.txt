@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory accesses
+// Implement halo region to support stencil computation without conditionals
+// Include boundary checks to avoid out-of-bounds memory access
+// Use __syncthreads() to ensure all threads have loaded data into shared memory
+// Apply loop unrolling to improve loop execution performance
+```

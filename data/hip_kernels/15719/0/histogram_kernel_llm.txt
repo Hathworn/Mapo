@@ -1,0 +1,4 @@
+// Optimize memory access by coalescing global memory reads
+// Pre-load frequently accessed data to shared memory to minimize global memory latency
+// Use warp divergence minimization techniques by aligning conditional checks across warp threads
+// Consider using vectorized memory access to reduce the number of transactions between global and shared memory

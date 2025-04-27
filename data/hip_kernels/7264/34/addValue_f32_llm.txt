@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Coalesce memory access by ensuring that consecutive threads access consecutive data elements
+// Align data access for improved memory throughput
+// Evaluate the need for loop unrolling in case of repeated patterns
+// Use __restrict__ keyword to inform the compiler about non-aliasing pointers for possible optimization
+// Minimize thread divergence by ensuring uniform execution paths
+```

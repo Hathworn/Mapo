@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to minimize global memory access.
+// Ensure memory access patterns are coalesced for better performance.
+// Avoid bank conflicts in shared memory usage to further optimize access time.
+// Double check the use of __syncthreads() to avoid unnecessary serialization.
+```

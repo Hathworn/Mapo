@@ -1,0 +1,7 @@
+```
+// Use shared memory for weights and activations to reduce global memory accesses
+// Prefetch weights or activations to registers for faster access in the loop
+// Consider unrolling the loop to reduce loop overhead and improve performance
+// Coalesce global memory accesses in zs to improve memory throughput
+// Ensure that w_off and bound2 are optimized for memory alignment
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to temporarily store data that threads need to swap to reduce accesses to global memory.
+// Evaluate the possibility of coalesced access for dArray to improve memory transaction efficiency.
+// Ensure that accesses to global memory are aligned to reduce latency and transaction overhead.
+// Explore using warp shuffling techniques for faster in-register data exchange without global memory usage.

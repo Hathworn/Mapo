@@ -1,0 +1,4 @@
+// Utilize shared memory to reduce global memory access latency.
+// Ensure shared memory loads occur before computation to optimize synchronization.
+// Implement coalesced memory access patterns when loading data into shared memory.
+// Consider using warp-level primitives to reduce divergence during sign calculation.

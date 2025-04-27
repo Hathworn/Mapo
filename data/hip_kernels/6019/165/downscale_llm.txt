@@ -1,0 +1,9 @@
+```
+// Launch the kernel with optimal block size for the given problem size.
+// Consider memory coalescing by ensuring continuous threads access nearby memory locations.
+// Prefetch data into shared memory if overlapping access is detected for increased bandwidth efficiency.
+// Reduce global memory accesses by computing repetitive index calculations beforehand if possible.
+// Check if using texture memory can reduce load efficiency for read-only gradOutput_data accesses.
+// Consider using vectorized types like float2 or float4 for coalesced memory access.
+// Minimize bank conflicts in shared memory by ensuring access patterns do not favor specific banks.
+```

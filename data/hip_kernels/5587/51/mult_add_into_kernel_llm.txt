@@ -1,0 +1,6 @@
+```c
+// Consider coalesced memory accesses for 'a', 'b', and 'c' to improve memory throughput.
+// Ensure all data accessed by threads in a warp is contiguous to minimize memory transactions.
+// Assess use of shared memory if 'a' and 'b' are frequently accessed to reduce global memory latency.
+// Ensure input data size 'n' is a multiple of blockDim.x to fully utilize all threads in the last block.
+```

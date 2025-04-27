@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure coalesced access when loading data into shared memory.
+// Utilize #pragma unroll to improve loop performance.
+// Avoid bank conflicts by adjusting the shared memory array dimension.

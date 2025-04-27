@@ -1,0 +1,4 @@
+// Ensure that threads access contiguous memory locations for coalesced memory access
+// Pre-compute values like stride outside loops to reduce redundant calculations
+// Simplify arithmetic operations when possible to increase execution speed
+// Exploit warp execution by ensuring the number of threads is a multiple of the warp size

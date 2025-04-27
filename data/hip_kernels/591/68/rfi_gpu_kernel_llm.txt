@@ -1,0 +1,8 @@
+```
+// Avoids out-of-bounds access by checking index
+// Moved cutoff calculation inside loop to avoid recalculation
+// Use faster sqrtf function for single precision calculation
+// Consider coalesced memory access by adjusting data layout
+// Minimize global memory access by using shared memory if possible
+// Reduce the impact of memory latency by unrolling loops
+```

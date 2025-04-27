@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses and improve performance
+// Unroll inner loop to reduce loop overhead and improve efficiency
+// Use block-level parallel reduction for better performance
+// Ensure memory coalescing by aligning index calculations properly
+// Use __syncthreads() to synchronize threads after sharing partial sums
+// Prefetch data to shared memory to minimize latency
+// Consider loading multiple elements simultaneously if registers permit
+```

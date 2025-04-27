@@ -1,0 +1,3 @@
+// Consider coalescing global memory accesses for optimal memory bandwidth utilization.
+// Ensure that all threads within a warp read contiguous memory locations to improve memory coalescence.
+// Use shared memory to stage data if there is any opportunity for re-use within the block to reduce global memory accesses.

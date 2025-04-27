@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to DeviceData for better memory read efficiency.
+// Ensure shared memory is optimally utilized and there are no bank conflicts.
+// Evaluate if reducing the usage of atomic operations could lead to performance improvements.
+// Consider splitting the workload more evenly across threads to avoid load imbalance.
+// Ensure global memory atomic operations (PartialHist updates) do not become a bottleneck.
+// Explore using warp-level primitives for increased performance when aggregating shared memory data.
+```

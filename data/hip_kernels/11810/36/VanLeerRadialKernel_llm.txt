@@ -1,0 +1,6 @@
+```
+// Consider merging Rinf, Rsup, QRStar, DensStar, and Vrad into structures to improve memory coalescing
+// Use __restrict__ keyword for pointers like Rinf, Rsup, QRStar, DensStar, and Vrad to help compiler with optimization
+// Encourage usage of shared memory to reduce multiple loads of data such as Rinf[i] and Rsup[i]
+// Evaluate loop unrolling techniques for j < nsec to decrease the number of iterations and reduce the computational overhead
+```

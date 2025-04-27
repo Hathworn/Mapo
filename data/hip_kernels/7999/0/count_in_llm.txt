@@ -1,0 +1,6 @@
+//Optimize: Use shared memory to store index array for faster access
+//Optimize: Use fewer threads and blocks to reduce overhead if possible
+//Optimize: Prefetch data by loading from global memory to registers where applicable
+//Optimize: Coalesce memory access patterns for index and dev_count arrays
+//Optimize: Consider reducing precision of calculations if acceptable for performance gain
+//Optimize: Use loop unrolling to enhance computation efficiency in base conversion loop

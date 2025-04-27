@@ -1,0 +1,11 @@
+```
+// Use coalesced memory access when loading A and B into shared memory.
+// Consider padding shared memory arrays (As, Bs) to prevent bank conflicts.
+// Increase BLOCK_SIZE for improved occupancy, if hardware constraints allow.
+// Minimize the use of atomic operations in shared memory.
+// Optimize loop unrolling pragma to maximize memory throughput.
+// Ensure alignment of the matrices in global memory for efficient access.
+// Profile memory throughput and latency to identify further bottlenecks.
+// Consider prefetching techniques for next sub-matrix loads.
+// Evaluate using half-precision or mixed-precision for performance gain.
+```

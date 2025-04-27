@@ -1,0 +1,6 @@
+// Ensure coalesced memory access by using proper indexing
+// Consider using shared memory to cache values for reuse and reduced global memory access
+// Avoid bank conflicts in shared memory by properly organizing data
+// Use vectorized data types if applicable to enhance memory transaction efficiency
+// Evaluate using pinned memory for faster data transfer between host and device
+// Optimize stride and block size for better occupancy and performance

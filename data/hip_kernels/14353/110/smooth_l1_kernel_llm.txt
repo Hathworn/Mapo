@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Coalesce global memory accesses for pred and truth arrays.
+// Ensure pred and truth arrays are aligned for coalescing.
+// Optimize stride to match warp size for better occupancy.
+// Minimize divergence by restructuring the if-else logic.
+// Consider using texture memory for better cache efficiency.
+```

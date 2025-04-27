@@ -1,0 +1,5 @@
+// Use __shared__ memory to reduce global memory access and speed up data sharing between threads.
+// Consider aligning data structures to memory access patterns to ensure optimal coalescing.
+// Implement loop unrolling techniques for improved performance inside the nested loop.
+// Evaluate if further reduction operations can be optimized using atomic operations for specific aggregation needs.
+// Check if the conditional branches due to apply_weights can benefit from code organization or warp specialization.

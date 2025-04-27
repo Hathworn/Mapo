@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses by ensuring that consecutive threads access consecutive memory locations to improve memory throughput.
+// Use shared memory to cache data that is re-used by multiple threads to reduce global memory accesses.
+// Ensure that data alignment matches the warp size to allow efficient memory accesses and reduce transaction overheads.
+// Avoid branch divergence by ensuring that threads within a warp follow the same execution path as much as possible.
+```

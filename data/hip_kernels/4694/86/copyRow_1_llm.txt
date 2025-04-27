@@ -1,0 +1,8 @@
+```
+// Consider using shared memory in cases where it can benefit tiled operations
+// Ensure memory coalescing to improve bandwidth utilization
+// Use __restrict__ qualifier to help the compiler with aliasing assumptions
+// Consider loop unrolling if applicable for better performance
+// Launch kernels with optimal block size to maximize occupancy
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+```

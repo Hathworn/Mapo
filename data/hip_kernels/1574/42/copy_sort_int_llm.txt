@@ -1,0 +1,6 @@
+```c
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to store a portion of the data to reduce global memory access latency
+// Consider loop unrolling if possible to enhance instruction throughput
+// Minimize divergent branches to maintain warp execution efficiency
+```

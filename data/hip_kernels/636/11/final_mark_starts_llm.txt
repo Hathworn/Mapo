@@ -1,0 +1,7 @@
+```c
+// Use shared memory to cache frequently accessed data like sort_indices to reduce global memory access.
+// Consider using memory coalescing for accessing hashes to improve memory bandwidth utilization.
+// Use loop unrolling techniques if applicable to reduce the number of iterations and increase instruction-level parallelism.
+// Profile the application to check if further optimizations are possible in terms of reducing register pressure.
+// If hash_count is large, consider using dynamic parallelism or increasing occupancy by adjusting block size.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ pointers for Ad and Bd to inform the compiler of non-aliasing and improve load/store optimizations
+// Use __ldg() intrinsic for read-only memory accesses to take advantage of L1 cache for Ad
+// Ensure memory access patterns are coalesced by aligning data loads/stores
+// Consider adjusting block size and grid size for optimal occupancy and performance
+// Explore using shared memory to reduce global memory bandwidth pressure if data reuse is possible
+// Evaluate using atomic operations if multiple threads need to update the same data point
+```

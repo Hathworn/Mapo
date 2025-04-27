@@ -1,0 +1,7 @@
+```
+// Use shared memory to avoid redundant global memory access
+// Combine atomic operations to minimize overhead
+// Reduce divergence by ensuring warp-coherent execution
+// Consider using kernel fusion to minimize kernel launch overhead
+// Align data access to improve memory coalescing
+```

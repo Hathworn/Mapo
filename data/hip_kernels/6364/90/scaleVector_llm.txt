@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring threads access consecutive memory addresses.
+// Avoid divergent branching to maintain warp efficiency.
+// Consider using shared memory if there are multiple memory accesses to the same data.
+// Ensure memory alignment to minimize memory transaction overhead.
+// Use occupancy calculator tools to ensure optimal block and grid dimensions.
+```

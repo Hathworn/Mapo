@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure shared memory usage is optimal to avoid bank conflicts
+// Consider coalesced access to global memory for better performance
+// Ensure __syncthreads() is correctly used to prevent race conditions
+// Optimize block size for maximum occupancy and performance
+```

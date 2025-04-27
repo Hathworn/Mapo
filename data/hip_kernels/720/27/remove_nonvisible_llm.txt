@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce redundant global memory reads if multiple threads access nearby data.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Utilize __restrict__ keyword for pointer arguments if no aliasing occurs to allow for further compiler optimization.
+// Ensure optimal thread block size by profiling for the specific GPU architecture being targeted.
+```

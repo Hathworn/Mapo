@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache repeated global memory accesses.
+// Align data structures to achieve coalesced memory access patterns.
+// Optimize thread block size for better occupancy and performance.
+// Consider loop unrolling further by hand if compiler does not optimize adequately.
+// Consider using __restrict__ qualifier to help the compiler optimize memory accesses.
+// Explore using asynchronous memory prefetch to improve bandwidth utilization.
+```

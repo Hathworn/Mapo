@@ -1,0 +1,5 @@
+// Ensure data alignment for better memory access.
+// Use shared memory for temporary storage to reduce global memory access.
+// Prefetch data to reduce latency during memory access.
+// Consider using vectorized loads/stores to enhance memory throughput.
+// Adjust block and grid dimensions to maximize occupancy.

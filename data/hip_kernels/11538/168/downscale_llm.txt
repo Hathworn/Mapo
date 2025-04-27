@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for gradOutput_data to improve memory access speeds
+// Minimize indexing overhead by precomputing indices outside the inner loop
+// Reduce global memory accesses by accumulating values in a register
+// Ensure coalesced memory accesses for improved throughput
+// Analyze warp divergence and schedule threads to reduce it
+```

@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for reusable data to reduce global memory accesses.
+// Ensure coalesced memory access by aligning data structures in memory.
+// Experiment with different block sizes to maximize occupancy and thus device utilization.
+// Utilize __syncthreads() intelligently if shared data is used to ensure correct synchronization.
+```

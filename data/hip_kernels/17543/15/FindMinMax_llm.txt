@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by aligning data reads
+// Use loop unrolling to improve iteration efficiency
+// Reduce shared memory size if possible to optimize shared memory usage
+// Consider using warp-level primitives for reduction to improve performance
+// Avoid redundant __syncthreads() calls to minimize synchronization overhead
+```

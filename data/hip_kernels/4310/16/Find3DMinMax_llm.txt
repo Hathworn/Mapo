@@ -1,0 +1,12 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Combine conditional checks for efficient access
+// Utilize fminf and fmaxf for optimized floating-point operations
+// Minimize thread divergence by aligning conditions
+// Prefetch data into shared memory to enhance memory coalescing
+// Use constant value for loop limit to reduce overhead
+// Reduce warp threads when accessing memory to handle boundary conditions
+// Use __syncthreads() to synchronize threads before using shared data
+// Pipeline memory fetch and computation to balance workload
+// Ensure blockIdx.y-based write starts for optimal memory indexing
+```

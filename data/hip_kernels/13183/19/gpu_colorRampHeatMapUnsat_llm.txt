@@ -1,0 +1,7 @@
+```cpp
+// Optimize memory access by using shared memory for storing color ramp values.
+// Consider using texture memory for reading float values to optimize cache utilization.
+// Ensure coalesced memory access when reading values from the 'vals' array.
+// Use const restrict qualifiers for pointer parameters to optimize compiler access analysis.
+// Pre-compute values like (maxVal-minVal) outside the kernel to reduce computation overhead.
+```

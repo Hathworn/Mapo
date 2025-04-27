@@ -1,0 +1,31 @@
+digraph "CFG for '_Z6reducePfS_' function" {
+	label="CFG for '_Z6reducePfS_' function";
+
+	Node0x5297730 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = getelementptr inbounds [256 x float], [256 x float] addrspace(3)*\l... @_ZZ6reducePfS_E5sdata, i32 0, i32 %3\l  store float 0.000000e+00, float addrspace(3)* %4, align 4, !tbaa !5\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !9, !invariant.load !10\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 4, !tbaa !11\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = mul i32 %13, %9\l  %15 = add i32 %14, %3\l  %16 = icmp ult i32 %15, 4096\l  br i1 %16, label %17, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5297730:s0 -> Node0x5299f20;
+	Node0x5297730:s1 -> Node0x529a760;
+	Node0x5299f20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%17:\l17:                                               \l  %18 = zext i32 %15 to i64\l  %19 = udiv i32 %12, %9\l  %20 = mul i32 %19, %9\l  %21 = icmp ugt i32 %12, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %9\l  %25 = zext i32 %24 to i64\l  br label %29\l}"];
+	Node0x5299f20 -> Node0x529acc0;
+	Node0x529ad80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%26:\l26:                                               \l  store float %34, float addrspace(3)* %4, align 4, !tbaa !5\l  br label %27\l}"];
+	Node0x529ad80 -> Node0x529a760;
+	Node0x529a760 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%27:\l27:                                               \l  %28 = icmp ult i16 %8, 2\l  br i1 %28, label %37, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x529a760:s0 -> Node0x529b640;
+	Node0x529a760:s1 -> Node0x529b690;
+	Node0x529acc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi float [ 0.000000e+00, %17 ], [ %34, %29 ]\l  %31 = phi i64 [ %18, %17 ], [ %35, %29 ]\l  %32 = getelementptr inbounds float, float addrspace(1)* %0, i64 %31\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !5,\l... !amdgpu.noclobber !10\l  %34 = fadd contract float %33, %30\l  %35 = add nuw nsw i64 %31, %25\l  %36 = icmp ult i64 %35, 4096\l  br i1 %36, label %29, label %26, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x529acc0:s0 -> Node0x529acc0;
+	Node0x529acc0:s1 -> Node0x529ad80;
+	Node0x529b640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%37:\l37:                                               \l  %38 = icmp eq i32 %3, 0\l  br i1 %38, label %51, label %55\l|{<s0>T|<s1>F}}"];
+	Node0x529b640:s0 -> Node0x529c610;
+	Node0x529b640:s1 -> Node0x529c660;
+	Node0x529b690 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%39:\l39:                                               \l  %40 = phi i32 [ %41, %49 ], [ %9, %27 ]\l  %41 = lshr i32 %40, 1\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %42 = icmp ult i32 %3, %41\l  br i1 %42, label %43, label %49\l|{<s0>T|<s1>F}}"];
+	Node0x529b690:s0 -> Node0x529ccb0;
+	Node0x529b690:s1 -> Node0x529c7a0;
+	Node0x529ccb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%43:\l43:                                               \l  %44 = add nuw nsw i32 %41, %3\l  %45 = getelementptr inbounds [256 x float], [256 x float] addrspace(3)*\l... @_ZZ6reducePfS_E5sdata, i32 0, i32 %44\l  %46 = load float, float addrspace(3)* %45, align 4, !tbaa !5\l  %47 = load float, float addrspace(3)* %4, align 4, !tbaa !5\l  %48 = fadd contract float %46, %47\l  store float %48, float addrspace(3)* %4, align 4, !tbaa !5\l  br label %49\l}"];
+	Node0x529ccb0 -> Node0x529c7a0;
+	Node0x529c7a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%49:\l49:                                               \l  %50 = icmp ult i32 %40, 4\l  br i1 %50, label %37, label %39, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x529c7a0:s0 -> Node0x529b640;
+	Node0x529c7a0:s1 -> Node0x529b690;
+	Node0x529c610 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%51:\l51:                                               \l  %52 = load float, float addrspace(3)* getelementptr inbounds ([256 x float],\l... [256 x float] addrspace(3)* @_ZZ6reducePfS_E5sdata, i32 0, i32 0), align 16,\l... !tbaa !5\l  %53 = zext i32 %13 to i64\l  %54 = getelementptr inbounds float, float addrspace(1)* %1, i64 %53\l  store float %52, float addrspace(1)* %54, align 4, !tbaa !5\l  br label %55\l}"];
+	Node0x529c610 -> Node0x529c660;
+	Node0x529c660 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%55:\l55:                                               \l  ret void\l}"];
+}

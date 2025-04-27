@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store d_coordinates data within each block to reduce global memory access.
+// Avoid recomputing min and max in the loop; compute them before entering the loop to minimize operations.
+// Consider unrolling the inner loop to improve performance by reducing loop control overhead.
+// Use half warp memory transactions for d_g and d_b accesses to increase memory throughput.
+// Ensure aligned memory access for d_g, d_b, and d_r_output to optimize global memory bandwidth.
+```

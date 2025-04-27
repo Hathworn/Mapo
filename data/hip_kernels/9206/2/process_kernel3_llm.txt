@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring sequential threads access contiguous memory locations
+// Evaluate the use of shared memory if multiple threads need access to the same data
+// Ensure data alignment for better memory access efficiency
+// Minimize data transfer between host and device by processing larger data sets in a single kernel launch when feasible
+// Examine potential loop unrolling where applicable if there are repeated patterns or operations
+```

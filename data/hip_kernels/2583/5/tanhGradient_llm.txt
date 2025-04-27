@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache z values to reduce global memory accesses
+// Consider loop unrolling for calculations within the branch
+// Optimize thread block size for maximum warp occupancy
+// Use __restrict__ keyword for pointers to enable better compiler optimizations
+// Avoid potential bank conflicts in shared memory access patterns
+```

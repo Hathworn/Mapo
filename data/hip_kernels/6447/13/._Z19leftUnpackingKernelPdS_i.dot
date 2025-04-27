@@ -1,0 +1,10 @@
+digraph "CFG for '_Z19leftUnpackingKernelPdS_i' function" {
+	label="CFG for '_Z19leftUnpackingKernelPdS_i' function";
+
+	Node0x4b7b0a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp slt i32 %12, %2\l  br i1 %13, label %14, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x4b7b0a0:s0 -> Node0x4b7cfa0;
+	Node0x4b7b0a0:s1 -> Node0x4b7d030;
+	Node0x4b7cfa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = sext i32 %12 to i64\l  %16 = getelementptr inbounds double, double addrspace(1)* %1, i64 %15\l  %17 = load double, double addrspace(1)* %16, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %18 = add nsw i32 %2, 2\l  %19 = add nsw i32 %12, 1\l  %20 = mul nsw i32 %19, %18\l  %21 = add nsw i32 %20, 1\l  %22 = sext i32 %21 to i64\l  %23 = getelementptr inbounds double, double addrspace(1)* %0, i64 %22\l  store double %17, double addrspace(1)* %23, align 8, !tbaa !7\l  br label %24\l}"];
+	Node0x4b7cfa0 -> Node0x4b7d030;
+	Node0x4b7d030 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  ret void\l}"];
+}

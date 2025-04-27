@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Coalesce memory accesses for src and dst arrays for better memory throughput
+// Ensure idx calculation considers all possible thread and block configurations
+// Apply loop unrolling for the stencil computation to enhance performance
+// Preload stencil weights into registers if possible to reduce memory latency
+```

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to store varImage and varPSF values for each block to reduce global memory access.
+// Ensure memory access patterns are coalesced for x, varImage, and varPSF to optimize memory bandwidth.
+// Evaluate if loop unrolling or other arithmetic optimizations may improve performance in division and sqrtf operations.
+```

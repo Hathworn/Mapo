@@ -1,0 +1,4 @@
+// Use shared memory to load weights and input data to reduce global memory access latency.
+// Optimize memory coalescing by aligning global memory access for input and weights.
+// Minimize conditional checks inside loops to reduce divergence and improve execution efficiency.
+// Implement loop unrolling for filter dimension loops to reduce loop overhead.

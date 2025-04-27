@@ -1,0 +1,8 @@
+```
+// Consolidate multiple memory reads into fewer transactions by utilizing shared memory
+// Ensure aligned memory access for global memory reads to improve coalescing
+// Minimize divergence in thread execution to enhance warp efficiency
+// Use loop unrolling techniques where possible to reduce the overhead of loop control
+// Optimize block and grid dimensions to effectively utilize the GPU's SMs
+// Reduce shared memory bank conflicts by carefully structuring data layout
+```

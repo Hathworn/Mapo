@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing global memory accesses for Y, dY, and dX arrays.
+// Use __syncthreads() efficiently to synchronize shared memory usage.
+// Optimize use of shared memory to avoid bank conflicts.
+// Ensure all threads within a warp access consecutive memory for optimal performance.
+// Implement loop unrolling to improve performance if it fits within the register limit.
+```

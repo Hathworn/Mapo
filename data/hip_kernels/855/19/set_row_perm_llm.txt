@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed arrays like d_bin_size and d_bin_offset to reduce global memory access latency.
+// Consider warp-level operations such as warp reduction to optimize atomic operations and minimize serialization.
+// Evaluate loop unrolling impact on performance and adjust the iteration count for better warp utilization.
+// Ensure coalesced memory access by aligning data structures and access patterns to maximize throughput.

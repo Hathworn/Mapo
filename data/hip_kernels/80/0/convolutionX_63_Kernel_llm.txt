@@ -1,0 +1,10 @@
+```
+// Ensure optimal coalesced memory access patterns.
+// Consider increasing the number of threads per block to maximize data reuse.
+// Use __restrict__ keyword for pointers if applicable to help the compiler optimize.
+// Optimize memory access by using aligned memory if necessary.
+// Evaluate the possibility of using memory prefetching techniques.
+// Consider loop unrolling in sections where applicable for minor performance gains.
+// Review how data is loaded and ensure shared memory is utilized efficiently.
+// If constant memory usage by 'c_Kernel' is within limits, check to ensure no bank conflicts.
+```

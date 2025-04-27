@@ -1,0 +1,7 @@
+```
+// Ensure coalesced global memory accesses to d_Data by aligning load operations.
+// Consider further unrolling the loop for computations to reduce register pressure.
+// Optimize shared memory usage by balancing shared memory size and block occupancy.
+// Ensure bank conflict free accesses in shared memory by properly aligning shared memory loads.
+// Consider using read-only data cache (__ldg()) for d_Kernel to optimize data fetch.
+```

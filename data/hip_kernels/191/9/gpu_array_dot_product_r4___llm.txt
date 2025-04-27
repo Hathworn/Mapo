@@ -1,0 +1,4 @@
+// Use float4 vector data types for arr1 and arr2 to increase memory throughput.
+// Align tsize to a multiple of warp size to ensure full utilization of hardware.
+// Prefetch data into registers to minimize latency and hide memory access time.
+// Optimize reduction by using warp-level primitives such as __shfl_xor_sync.

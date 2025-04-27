@@ -1,0 +1,9 @@
+```
+// Adjust shared memory size for better optimization based on access patterns
+// Ensure coalesced memory accesses for global memory reads
+// Consider using vectorized types for improving memory bandwidth utilization
+// Evaluate potential benefits of loop unrolling in reduction loop
+// Minimize __syncthreads() calls where possible to reduce synchronization overhead
+// Optimize shared memory usage by minimizing its footprint
+// Balance grid and block sizes carefully to maximize occupancy
+```

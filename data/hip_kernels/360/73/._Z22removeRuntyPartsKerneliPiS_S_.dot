@@ -1,0 +1,15 @@
+digraph "CFG for '_Z22removeRuntyPartsKerneliPiS_S_' function" {
+	label="CFG for '_Z22removeRuntyPartsKerneliPiS_S_' function";
+
+	Node0x4aca220 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp slt i32 %13, %0\l  br i1 %14, label %15, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4aca220:s0 -> Node0x4acc170;
+	Node0x4aca220:s1 -> Node0x4acc200;
+	Node0x4acc170 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%15:\l15:                                               \l  %16 = sext i32 %13 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %22 = icmp eq i32 %21, 1\l  br i1 %22, label %27, label %23\l|{<s0>T|<s1>F}}"];
+	Node0x4acc170:s0 -> Node0x4acd550;
+	Node0x4acc170:s1 -> Node0x4acd5e0;
+	Node0x4acd5e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%23:\l23:                                               \l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %19\l  %25 = load i32, i32 addrspace(1)* %24, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %26 = sub nsw i32 %18, %25\l  br label %27\l}"];
+	Node0x4acd5e0 -> Node0x4acd550;
+	Node0x4acd550 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%27:\l27:                                               \l  %28 = phi i32 [ %26, %23 ], [ -1, %15 ]\l  store i32 %28, i32 addrspace(1)* %17, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x4acd550 -> Node0x4acc200;
+	Node0x4acc200 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

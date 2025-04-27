@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory access to improve memory throughput
+// Utilize shared memory efficiently by avoiding bank conflicts
+// Implement loop unrolling in the computation section to reduce loop overhead
+// Use constant memory for the kernel to optimize repeated access
+// Minimize shared memory usage by loading only necessary data based on thread responsibilities
+// Ensure proper alignment of memory accesses to meet hardware requirements
+// Leverage asynchronous memory prefetching if applicable for data loads
+```

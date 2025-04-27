@@ -1,0 +1,7 @@
+```cpp
+// Ensure gid is within bounds for safety and to prevent undefined behavior
+// Simplify loop to reduce warp divergence and increase efficiency
+// Utilize shared memory to minimize global memory accesses and increase speed
+// Use __syncthreads to ensure memory consistency across threads
+// Conditionally write to temp only if tid is 0 to reduce unnecessary writes
+```

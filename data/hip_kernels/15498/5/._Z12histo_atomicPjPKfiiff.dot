@@ -1,0 +1,10 @@
+digraph "CFG for '_Z12histo_atomicPjPKfiiff' function" {
+	label="CFG for '_Z12histo_atomicPjPKfiiff' function";
+
+	Node0x5545020 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = icmp slt i32 %7, %3\l  br i1 %9, label %10, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x5545020:s0 -> Node0x5544250;
+	Node0x5545020:s1 -> Node0x55460c0;
+	Node0x5544250 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%10:\l10:                                               \l  %11 = mul i32 %8, %8\l  %12 = add i32 %11, %7\l  %13 = sext i32 %12 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %1, i64 %13\l  %15 = load float, float addrspace(1)* %14, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %16 = fsub contract float %15, %4\l  %17 = sitofp i32 %2 to float\l  %18 = fmul contract float %16, %17\l  %19 = fdiv contract float %18, %5\l  %20 = fptosi float %19 to i32\l  %21 = icmp eq i32 %20, %2\l  %22 = add nsw i32 %2, -1\l  %23 = select i1 %21, i32 %22, i32 %20\l  %24 = sext i32 %23 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %24\l  %26 = atomicrmw add i32 addrspace(1)* %25, i32 1 syncscope(\"agent-one-as\")\l... monotonic, align 4\l  br label %27\l}"];
+	Node0x5544250 -> Node0x55460c0;
+	Node0x55460c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

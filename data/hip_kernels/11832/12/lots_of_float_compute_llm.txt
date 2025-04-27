@@ -1,0 +1,6 @@
+```
+// Load inputs[tid] into a register to reduce global memory access latency
+// Store outputs[tid] only once to reduce global memory writes
+// Unroll the inner loop if niters is typically small and known at compile time
+// Consider using shared memory if the same inputs[tid] are accessed by multiple threads
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory for data_col if size is manageable.
+// Avoid excessive calculations within loops by pre-computing repetitive expressions.
+// Ensure coalesced memory access patterns for global memory reads of data_col.
+// Use loop unrolling for the innermost loop to reduce loop overhead.
+// Align memory access to minimize unaligned reads and writes.

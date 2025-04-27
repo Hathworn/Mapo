@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access patterns by ensuring coalesced memory access
+// Explore utilizing shared memory to reduce global memory accesses when possible
+// Minimize memory bank conflicts by aligning data properly in shared memory
+// Use __restrict__ keyword to help the compiler with potential optimization opportunities
+// Balance workload among threads to ensure efficient resource utilization
+// Ensure grid and block size are optimized for the specific GPU architecture in use
+// Consider loop unrolling if there are any loops to improve performance
+// Use asynchronous data transfer and kernel launches to overlap computation and communication
+```

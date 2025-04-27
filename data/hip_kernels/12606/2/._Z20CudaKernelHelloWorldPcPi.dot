@@ -1,0 +1,5 @@
+digraph "CFG for '_Z20CudaKernelHelloWorldPcPi' function" {
+	label="CFG for '_Z20CudaKernelHelloWorldPcPi' function";
+
+	Node0x5446cb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %4\l  %6 = load i32, i32 addrspace(1)* %5, align 4, !tbaa !5, !amdgpu.noclobber !9\l  %7 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %4\l  %8 = load i8, i8 addrspace(1)* %7, align 1, !tbaa !10, !amdgpu.noclobber !9\l  %9 = trunc i32 %6 to i8\l  %10 = add i8 %8, %9\l  store i8 %10, i8 addrspace(1)* %7, align 1, !tbaa !10\l  ret void\l}"];
+}

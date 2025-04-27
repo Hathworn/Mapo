@@ -1,0 +1,22 @@
+digraph "CFG for '_Z11InterpolatePfS_S_fi' function" {
+	label="CFG for '_Z11InterpolatePfS_S_fi' function";
+
+	Node0x6404a00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = udiv i32 %13, %10\l  %17 = mul i32 %16, %10\l  %18 = icmp ugt i32 %13, %17\l  %19 = zext i1 %18 to i32\l  %20 = add i32 %16, %19\l  %21 = mul i32 %20, %15\l  %22 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %23 = add i32 %21, %14\l  %24 = mul i32 %23, %10\l  %25 = add i32 %24, %22\l  %26 = icmp slt i32 %25, %4\l  br i1 %26, label %27, label %53\l|{<s0>T|<s1>F}}"];
+	Node0x6404a00:s0 -> Node0x6407210;
+	Node0x6404a00:s1 -> Node0x64072a0;
+	Node0x6407210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e97a5f70",label="{%27:\l27:                                               \l  %28 = fcmp contract ugt float %3, 0.000000e+00\l  br i1 %28, label %33, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x6407210:s0 -> Node0x6407e80;
+	Node0x6407210:s1 -> Node0x6407f10;
+	Node0x6407f10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7bca170",label="{%29:\l29:                                               \l  %30 = sext i32 %25 to i64\l  %31 = getelementptr inbounds float, float addrspace(1)* %0, i64 %30\l  %32 = load float, float addrspace(1)* %31, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  br label %49\l}"];
+	Node0x6407f10 -> Node0x64068f0;
+	Node0x6407e80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7bca170",label="{%33:\l33:                                               \l  %34 = fcmp contract ult float %3, 1.000000e+00\l  br i1 %34, label %39, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x6407e80:s0 -> Node0x6408c00;
+	Node0x6407e80:s1 -> Node0x6408c90;
+	Node0x6408c90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  %36 = sext i32 %25 to i64\l  %37 = getelementptr inbounds float, float addrspace(1)* %1, i64 %36\l  %38 = load float, float addrspace(1)* %37, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  br label %49\l}"];
+	Node0x6408c90 -> Node0x64068f0;
+	Node0x6408c00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%39:\l39:                                               \l  %40 = fsub contract float 1.000000e+00, %3\l  %41 = sext i32 %25 to i64\l  %42 = getelementptr inbounds float, float addrspace(1)* %0, i64 %41\l  %43 = load float, float addrspace(1)* %42, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %44 = fmul contract float %40, %43\l  %45 = getelementptr inbounds float, float addrspace(1)* %1, i64 %41\l  %46 = load float, float addrspace(1)* %45, align 4, !tbaa !16,\l... !amdgpu.noclobber !5\l  %47 = fmul contract float %46, %3\l  %48 = fadd contract float %44, %47\l  br label %49\l}"];
+	Node0x6408c00 -> Node0x64068f0;
+	Node0x64068f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e97a5f70",label="{%49:\l49:                                               \l  %50 = phi i64 [ %30, %29 ], [ %41, %39 ], [ %36, %35 ]\l  %51 = phi float [ %32, %29 ], [ %48, %39 ], [ %38, %35 ]\l  %52 = getelementptr inbounds float, float addrspace(1)* %2, i64 %50\l  store float %51, float addrspace(1)* %52, align 4, !tbaa !16\l  br label %53\l}"];
+	Node0x64068f0 -> Node0x64072a0;
+	Node0x64072a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%53:\l53:                                               \l  ret void\l}"];
+}

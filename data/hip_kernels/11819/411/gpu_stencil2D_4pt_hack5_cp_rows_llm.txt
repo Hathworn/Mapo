@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses for dst to improve memory throughput.
+// Ensure shared memory usage is optimized to prevent bank conflicts.
+// Evaluate if prefetching data into shared memory can further hide memory latency.
+// Check if __syncthreads() can be minimized while maintaining correctness to reduce synchronization overhead.
+```

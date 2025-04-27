@@ -1,0 +1,3 @@
+// Consider using warp shuffles instead of shared memory for intra-block reductions to optimize memory access.
+// Optimize memory access patterns by ensuring coalesced accesses to global memory for both input and binary arrays.
+// Investigate the use of atomic operations or additional warp-level optimizations to further improve reduction efficiency.

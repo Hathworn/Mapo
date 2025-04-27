@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifiers to optimize memory access.
+// Ensure vec[colIndex] is loaded into a register to reduce memory accesses.
+// Explore opportunities for coalesced memory access for mat and tgtMat.
+// Optimize block and grid dimension to match the hardware's warp size.
+// Use shared memory if repeated access to vec is significant across threads.
+```

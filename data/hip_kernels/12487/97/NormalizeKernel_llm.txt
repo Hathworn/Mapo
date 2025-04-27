@@ -1,0 +1,4 @@
+// Use shared memory to cache normalization_factor to reduce global memory access
+// Use vectorized types such as float4 for coalesced memory accesses and improved throughput
+// Consider using loop unrolling for better performance in compute-intensive operations
+// Explore memory access pattern for reduction in strided access and enabling coalesced accesses

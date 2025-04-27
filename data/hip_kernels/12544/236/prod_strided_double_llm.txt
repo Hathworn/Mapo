@@ -1,0 +1,5 @@
+```
+// Optimize for memory coalescing by ensuring contiguous memory access within warps
+// Use shared memory to reduce global memory access and speed up data exchange among threads
+// Consider using warp-level primitives for more efficient reduction if supported on the target architecture
+```

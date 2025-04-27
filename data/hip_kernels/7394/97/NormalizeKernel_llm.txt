@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring threads access consecutive memory
+// Utilize shared memory to load normalization factors if reused by multiple threads
+// Optimize grid and block dimensions for better occupancy and memory access patterns
+// Prefer using __ldg() for reading constant data such as normalization_factor
+```

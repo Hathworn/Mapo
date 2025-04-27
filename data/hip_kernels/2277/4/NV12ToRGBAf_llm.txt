@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for srcImageU8 to increase memory throughput.
+// Use shared memory to store frequently used data in the kernel to reduce global memory access.
+// Evaluate memory alignment to ensure optimal access patterns.
+// Investigate vectorized load/store operations to optimize memory transactions.
+// Examine using __ldg() function for read-only data to utilize texture cache.
+```

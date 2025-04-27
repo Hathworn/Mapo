@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory for accessing curr_corr to reduce global memory latency.
+// Use texture memory if access patterns are mostly 2D and exhibit spatial locality.
+// Consider using __restrict__ keyword on curr_corr and next_corr pointers for potential compiler optimization.
+// Utilize loop unrolling for tighter performance if the number of iterations is small and predictable. 
+// Align memory access to warp boundaries to optimize performance and avoid bank conflicts.
+// Ensure block size TB is a multiple of warp size for best occupancy.
+```

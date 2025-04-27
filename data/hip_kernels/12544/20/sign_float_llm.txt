@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache 'dy' values for faster access
+// Ensure memory accesses are coalesced by aligning 'dy' and 'result' arrays
+// Minimize divergent branches within loop for better performance
+// Utilize vectorized loads if possible for 'dy' array
+```

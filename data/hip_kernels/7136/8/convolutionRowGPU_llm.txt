@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to load d_Src data for better memory access efficiency
+// Ensure that memory coalescing is achieved when accessing global memory
+// Use more aggressive loop unrolling if the filter size is known at compile time
+// Investigate using fewer registers per thread to allow more active warps
+// Profile the code to check if further optimization on memory access patterns is possible
+```

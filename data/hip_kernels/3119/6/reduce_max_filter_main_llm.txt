@@ -1,0 +1,8 @@
+```cpp
+// Use __syncthreads() to synchronize threads after shared memory initialization
+// Unroll the loop to process consecutive elements for improved memory access coalescing
+// Use shared memory to store intermediate results for faster access
+// Perform reduction using shared memory to minimize global memory accesses
+// Use volatile variables for warp-level reduction to prevent memory access optimization issues
+// Ensure warp-level reduction operates without __syncthreads() for active warps
+```

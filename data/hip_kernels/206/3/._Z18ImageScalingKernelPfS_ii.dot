@@ -1,0 +1,10 @@
+digraph "CFG for '_Z18ImageScalingKernelPfS_ii' function" {
+	label="CFG for '_Z18ImageScalingKernelPfS_ii' function";
+
+	Node0x5112ba0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 9\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = sext i32 %8 to i64\l  %10 = mul nsw i32 %3, %2\l  %11 = icmp slt i32 %8, %10\l  br i1 %11, label %12, label %17\l|{<s0>T|<s1>F}}"];
+	Node0x5112ba0:s0 -> Node0x5112bf0;
+	Node0x5112ba0:s1 -> Node0x5114520;
+	Node0x5112bf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%12:\l12:                                               \l  %13 = getelementptr inbounds float, float addrspace(1)* %1, i64 %9\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %15 = fdiv contract float %14, 2.550000e+02\l  %16 = getelementptr inbounds float, float addrspace(1)* %0, i64 %9\l  store float %15, float addrspace(1)* %16, align 4, !tbaa !5\l  br label %17\l}"];
+	Node0x5112bf0 -> Node0x5114520;
+	Node0x5114520 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%17:\l17:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

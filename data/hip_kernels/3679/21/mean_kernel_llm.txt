@@ -1,0 +1,6 @@
+```
+// Combine blockIdx.y and gridDim.x with blockIdx.x for 1D grid implementation to maximize parallel execution
+// Use local variable for accumulation to reduce global memory access overhead during summation
+// Accumulate in local memory to minimize global memory traffic and improve access speed
+// Set the mean after accumulation to ensure coherent access pattern for writing results
+```

@@ -1,0 +1,4 @@
+// Pre-compute scale outside of loops to avoid redundant calculations.
+// Use local_variable to accumulate results within a thread to minimize memory transactions.
+// Avoid global memory access inside loop by caching mean[i] into a register.
+// Consider using shared memory for batch and spatial computations if possible to reduce memory access latencies.

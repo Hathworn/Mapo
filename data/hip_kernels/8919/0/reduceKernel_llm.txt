@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access.
+// Ensure all threads are within bounds to prevent unnecessary operations.
+// Reduce the number of active threads per step by half the interval.
+// Only synchronize threads when necessary to optimize performance.
+// Ensure recursive call is made only by the main block to prevent multiple launches.
+```

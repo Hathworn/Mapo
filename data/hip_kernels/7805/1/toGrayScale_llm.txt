@@ -1,0 +1,4 @@
+// Optimize memory access patterns by ensuring coalesced reads for input data.
+// Use shared memory if data reuse between threads is possible to reduce global memory accesses.
+// Consider loop unrolling for pixel processing to streamline operations and reduce overhead.
+// Evaluate the usage of constant memory for fixed weight values (0.114f, 0.587f, 0.299f) to reduce register pressure.

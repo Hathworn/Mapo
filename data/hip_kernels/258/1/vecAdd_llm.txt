@@ -1,0 +1,4 @@
+// Use __restrict__ to enable compiler optimizations on pointers
+// Unroll loop to minimize loop control overhead and improve instruction-level parallelism
+// Ensure memory accesses are coalesced for optimal global memory bandwidth usage
+// Consider using shared memory for frequently accessed data that is reused across threads

@@ -1,0 +1,6 @@
+```
+// Check boundaries once to reduce conditional checks inside the critical computation.
+// Use shared memory to store shared data across threads and avoid redundant global memory accesses.
+// Coalesce memory accesses for better utilization of the memory bandwidth.
+// Consider using warp shuffles for intra-warp communication when necessary.
+```

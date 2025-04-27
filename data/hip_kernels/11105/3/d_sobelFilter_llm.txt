@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory accesses for M matrix.
+// Combine multiple reads of imageIn into shared memory to improve memory coalescing.
+// Unroll loops if maskWidth is small and known at compile time.
+```

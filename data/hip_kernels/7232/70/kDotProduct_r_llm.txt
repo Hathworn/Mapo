@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory accesses by using contiguous threads access for arrays a and b
+// Consider using double buffering for shared memory to hide memory latency
+// Use __restrict__ keyword for pointers if possible to aid compiler optimizations
+// Adopt loop unrolling in accumulation to increase instruction level parallelism
+// Optimize shared memory reduction to avoid bank conflicts
+// Consider occupancy-specific optimizations based on DP_BLOCKSIZE
+// Use __shfl_xor for warp-level shuffle to reduce instruction count
+```

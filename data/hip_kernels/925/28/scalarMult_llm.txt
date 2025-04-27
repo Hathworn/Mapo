@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory accesses by arranging data linearly
+// Minimize shared memory usage unless it is necessary for complex calculations
+// Consider using loop unrolling if the data size is known at compile time
+// Prefetch data to L1 cache if the compiler and architecture support it
+// Monitor memory access patterns and reduce bank conflicts in shared memory
+// Evaluate and optimize the occupancy by adjusting block and grid sizes
+```

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for arrays u, v, and src by ensuring each thread reads sequential elements.
+// Use shared memory to store frequently accessed data like u_, v_ to reduce global memory access.
+// Consider optimizing the range check for tx and ty to avoid branching.
+// Use __syncthreads() if data dependencies exist to ensure memory updates are visible to all threads.
+```

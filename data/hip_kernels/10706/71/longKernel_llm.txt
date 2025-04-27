@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Ensure memory coalescing by accessing sequential data elements in adjacent threads
+// Consider using warp-synchronous programming for further optimization
+// Experiment with different block and grid sizes for optimal performance
+// Check memory alignment for better performance and avoid bank conflicts

@@ -1,0 +1,5 @@
+// Consider coalesced memory access for arrays a, b, and c
+// Utilize shared memory where applicable for frequent reads and writes
+// Ensure efficient usage of registers to minimize register spilling
+// Experiment with different block sizes for optimal occupancy
+// Profile to identify if bank conflicts occur, and address them if necessary

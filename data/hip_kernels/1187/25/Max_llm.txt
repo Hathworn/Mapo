@@ -1,0 +1,7 @@
+```
+// Combine boundary check with index usage to reduce branching overhead
+// Cache memory access to top_temp[index] to improve memory access efficiency
+// Use shared memory if pattern of access exhibits spatial or temporal locality
+// Consider using warp-level primitives for reduction operations if applicable
+// Ensure memory access patterns are coalesced to improve global memory bandwidth utilization
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory if the data is frequently accessed by threads within a block
+// Ensure coalesced memory access by avoiding stride larger than warp size
+// Evaluate if memory alignment can be improved for better memory transaction efficiency
+// Consider profiling with different block and grid sizes for optimal performance

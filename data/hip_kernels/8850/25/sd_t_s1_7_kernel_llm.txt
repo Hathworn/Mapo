@@ -1,0 +1,10 @@
+```cpp
+// Consider using coalesced memory access patterns for t2_d loading.
+// Explore using loop unrolling to minimize loop overhead in the main computation.
+// Ensure t2_shm is accessed in a bank conflict-free manner for optimal shared memory performance.
+// Investigate if using double buffering or prefetching strategies could improve data loading for t2_d or v2_d.
+// Check if computational intensity can be increased by consolidating nested loops where possible.
+// Assess if implementing memory padding could minimize potential stride issues during global memory access.
+// Evaluate potential benefits of using warp shuffle operations to reduce shared memory pressure.
+// Determine if mixed precision arithmetic could be beneficial while maintaining acceptable numerical accuracy.
+```

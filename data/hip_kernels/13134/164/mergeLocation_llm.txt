@@ -1,0 +1,9 @@
+```
+// Ensure memory accesses are coalesced when reading loc_ array.
+// Consider using shared memory if loc_ is accessed multiple times.
+// Check if float4 or int2 conversions could better utilize memory bandwidth for loc_.
+// Ensure consistent access patterns for x and y to maintain coalesced writes.
+// Profile the kernel to identify any bank conflicts within shared memory if applicable.
+// Consider loop unrolling if applicable to further optimize memory throughput.
+// Ensure that all data are properly aligned for efficient memory access.
+```

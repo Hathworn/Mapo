@@ -1,0 +1,8 @@
+```
+// Optimize global memory access by ensuring coalesced memory accesses.
+// Consider using shared memory to reduce global memory access latency.
+// Use __syncthreads() to synchronize threads after updating shared memory.
+// Ensure that all threads have completed writing to shared memory before computation.
+// Avoid bank conflicts in shared memory usage for better performance.
+// Use conditional checks to prevent out-of-bounds memory access.
+```

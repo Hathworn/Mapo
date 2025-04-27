@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access.
+// Ensure data is loaded into shared memory with boundary checks for safe access.
+// Employ __syncthreads() to ensure all threads have loaded data into shared memory.
+// Reuse temp variable for accumulation to minimize register usage.
+// Implement boundary checks in the main computation to prevent unnecessary calculations.
+// Synchronize threads after computations to ensure correctness in subsequent iterations.
+// Store results in global memory only if indices are within bounds to reduce invalid accesses.
+```

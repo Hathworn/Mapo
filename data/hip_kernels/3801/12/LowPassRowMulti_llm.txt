@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to improve data reuse and reduce global memory accesses
+// Optimize boundary conditions by preloading necessary data into shared memory
+// Use __syncthreads() to ensure all threads have written to shared memory before proceeding
+// Use loop unrolling to enhance performance by minimizing loop overhead
+// Ensure memory coalescing on global memory writes for improved performance
+```

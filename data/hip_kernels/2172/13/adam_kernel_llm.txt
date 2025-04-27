@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed variables like B1 and B2 to reduce global memory transactions
+// Reduce number of divisions by computing and storing (1.f - __powf(B1, t)) and (1.f - __powf(B2, t)) once per block in shared memory
+// Ensure coalesced memory access by aligning data structures in memory for better performance
+// Consider using atomic operations if multiple threads are updating the same elements to prevent race conditions
+// Evaluate if loop unrolling could further optimize the index calculations
+```

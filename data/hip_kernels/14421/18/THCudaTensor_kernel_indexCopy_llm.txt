@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache res_stride for faster access
+// Consider using warp-level primitives for reduction operations
+// Ensure memory coalescing for reading src array
+// Avoid bank conflicts when accessing shared memory
+// Optimize index calculations to minimize arithmetic operations
+// Ensure block and thread dimensions are optimal for GPU architecture
+```

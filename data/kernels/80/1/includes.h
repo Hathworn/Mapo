@@ -1,5 +1,0 @@
-#define	COLUMNS_BLOCKDIM_X 8
-#define	COLUMNS_BLOCKDIM_Y 32
-#define	COLUMNS_RESULT_STEPS 8
-#define	COLUMNS_HALO_STEPS 1
-//new series 

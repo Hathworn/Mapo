@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to cache commonly accessed data for faster access
+// Optimize the loop bounds with better branch prediction by arranging the if-statements differently
+// Ensure memory accesses are coalesced by aligning data structures to 128 bytes where possible
+// Implement loop unrolling for inner loops to improve instruction throughput
+// Consider using asynchronous memory copies with streams to overlap data transfer and computation
+// Use warp shuffling for reduction instead of shared memory to minimize shared memory usage
+```

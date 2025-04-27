@@ -1,0 +1,8 @@
+```
+// Use shared memory for reducing global memory accesses in thread block
+// Load data into shared memory to minimize cache misses and improve coalescing
+// Consider memory alignment and coalescing for gradOutput_data accesses
+// Apply loop unrolling pragmas judiciously based on scale_factor
+// Ensure iterative updates reduce write-back operations to global memory
+// Leverage warp-level primitives for more efficient parallel accumulation
+```

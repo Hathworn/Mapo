@@ -1,0 +1,5 @@
+// Ensure memory accesses are coalesced for better performance
+// Use shared memory if multiple threads require access to the same data
+// Consider memory padding to avoid bank conflicts
+// Consider loop unrolling for better instruction throughput
+// Minimize memory divergence by aligning data structures properly

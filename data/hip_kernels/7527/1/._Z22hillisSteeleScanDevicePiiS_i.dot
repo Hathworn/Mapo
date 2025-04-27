@@ -1,0 +1,13 @@
+digraph "CFG for '_Z22hillisSteeleScanDevicePiiS_i' function" {
+	label="CFG for '_Z22hillisSteeleScanDevicePiiS_i' function";
+
+	Node0x5d88110 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add i32 %12, %5\l  %14 = icmp sgt i32 %13, %1\l  br i1 %14, label %26, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x5d88110:s0 -> Node0x5d8a020;
+	Node0x5d88110:s1 -> Node0x5d8a0b0;
+	Node0x5d8a0b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%15:\l15:                                               \l  %16 = sub nsw i32 %13, %3\l  %17 = icmp sgt i32 %16, -1\l  br i1 %17, label %18, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x5d8a0b0:s0 -> Node0x5d8a390;
+	Node0x5d8a0b0:s1 -> Node0x5d8a020;
+	Node0x5d8a390 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%18:\l18:                                               \l  %19 = sext i32 %13 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %22 = zext i32 %16 to i64\l  %23 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %22\l  %24 = load i32, i32 addrspace(1)* %23, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %25 = add nsw i32 %24, %21\l  store i32 %25, i32 addrspace(1)* %20, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x5d8a390 -> Node0x5d8a020;
+	Node0x5d8a020 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

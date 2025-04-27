@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access for frequent data reuse.
+// Consider memory coalescing by accessing sequential indices to improve bandwidth.
+// Evaluate the use of vectorized data access for better throughput if possible.
+// Use warp-level programming techniques for finer control to maximize efficiency.

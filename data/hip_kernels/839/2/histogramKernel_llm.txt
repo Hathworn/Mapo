@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing global memory accesses to image[i] for improved performance
+// Use shared memory to reduce global memory access latency
+// Optimize block size and grid size for better occupancy and performance
+// Minimize use of atomic operations to reduce serialization overhead
+// Ensure memory alignment for better performance on modern GPUs
+// Consider using warp-level primitives for histogram reduction in shared memory
+```

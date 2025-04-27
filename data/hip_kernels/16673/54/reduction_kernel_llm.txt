@@ -1,0 +1,5 @@
+// Consider using loop unrolling in the accumulation loop for better performance
+// Prefetch next data elements to reduce latency
+// Use atomic operations to reduce synchronization overhead in the reduction phase
+// Evaluate shared memory usage and reduce if possible for better warp occupancy
+// Optimize number of blocks and threads to ensure maximum occupancy and balance between computation and memory access

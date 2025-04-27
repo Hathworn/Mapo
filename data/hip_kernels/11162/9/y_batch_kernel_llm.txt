@@ -1,0 +1,3 @@
+// Consider using shared memory or texture memory for sample_indices to reduce global memory access latency.
+// Ensure coalesced memory access when indexing y and sample_indices to optimize bandwidth utilization.
+// Use loop unrolling techniques to improve throughput for cases with more complex operations.

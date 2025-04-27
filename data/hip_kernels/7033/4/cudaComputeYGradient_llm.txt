@@ -1,0 +1,10 @@
+```
+// Optimize memory coalescing by ensuring sequential threads access sequential memory locations.
+// Avoid bank conflicts in shared memory by ensuring access patterns are properly aligned.
+// Minimize global memory access by maximizing the use of shared memory.
+// Consider loop unrolling to reduce loop overhead, especially in critical sections.
+// Ensure proper synchronization using __syncthreads() to avoid race conditions.
+// Balance the workload among threads to prevent underutilization of resources.
+// Adjust block size and chunk_size_per_thread based on hardware to optimize performance.
+// Identify and eliminate redundant or unnecessary operations to improve computation efficiency.
+```

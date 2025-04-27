@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to cache data for reused elements to optimize memory access.
+// Ensure coalesced memory access by aligning data access patterns.
+// Use the __restrict__ qualifier to potentially reduce memory traffic.
+// Tune block and grid size according to the GPU architecture for optimal performance.
+// Optimize the condition check using bitwise operations if applicable.
+// Ensure data alignment in memory for efficient access.
+```

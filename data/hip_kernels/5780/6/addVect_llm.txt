@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Ensure memory access coalescing to improve memory throughput
+// Avoid divergence by ensuring all threads in a warp follow the same execution path
+// Use an appropriate block size to maximize occupancy and minimize idle threads
+```

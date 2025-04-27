@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access for loading matrix A and B to improve memory throughput
+// Use shared memory to store partial results or frequently accessed data to reduce global memory access
+// Minimize divergent branches to ensure that all threads within a warp follow the same execution path
+// Tune the block size to ensure maximum occupancy and efficient resource usage
+// Evaluate loop unrolling for the inner loop to enhance instruction-level parallelism
+```

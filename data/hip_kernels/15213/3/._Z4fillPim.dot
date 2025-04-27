@@ -1,0 +1,5 @@
+digraph "CFG for '_Z4fillPim' function" {
+	label="CFG for '_Z4fillPim' function";
+
+	Node0x4c75a80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = zext i32 %3 to i64\l  %5 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %4\l  store i32 %3, i32 addrspace(1)* %5, align 4, !tbaa !5\l  ret void\l}"];
+}

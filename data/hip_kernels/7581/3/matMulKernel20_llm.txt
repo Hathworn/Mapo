@@ -1,0 +1,8 @@
+```
+// Ensure memory access patterns result in coalesced reads
+// Use shared memory to reduce global memory bandwidth demand
+// Consider adjusting block size to maximize occupancy
+// #pragma unroll helps with loop pipeline optimization
+// Ensure dimensions are multiples of block size to avoid boundary checks
+// Check for memory bank conflicts in shared memory
+```

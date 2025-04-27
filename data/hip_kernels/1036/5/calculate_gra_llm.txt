@@ -1,0 +1,7 @@
+```
+// Use shared memory for faster access and reduce global memory interactions
+// Ensure coalesced memory access to improve memory throughput
+// Minimize divergent branches for optimal thread performance
+// Prefetch data to shared memory for threads in a block to utilize temporal locality
+// Avoid excessive use of __syncthreads() to minimize synchronization overhead when unnecessary
+```

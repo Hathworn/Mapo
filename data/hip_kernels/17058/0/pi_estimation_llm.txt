@@ -1,0 +1,4 @@
+// Initialize random state outside the loop to avoid redundant setups.
+// Use registers to store frequently used values to reduce global memory access.
+// Save modified state back to global memory at the end to minimize global writes.
+// Estimate PI using fewer global memory accesses by operating on registers.

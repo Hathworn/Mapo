@@ -1,0 +1,6 @@
+// Ensure coalesced memory access by organizing data structures appropriately
+// Minimize global memory access within the kernel by reusing data in registers
+// Utilize shared memory to reduce redundant global memory fetches
+// Optimize memory bandwidth by aligning data access patterns
+// Consider loop unrolling to reduce branch divergence
+// Minimize synchronization points and use warp-level operations where possible

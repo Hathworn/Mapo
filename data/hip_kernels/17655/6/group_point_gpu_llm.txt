@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for points and out arrays to improve memory efficiency
+// Use shared memory to store points data as it is accessed frequently by multiple threads
+// Prefetch data into shared memory to minimize global memory access latency
+// Ensure idx array is read in a coalesced manner to optimize read operations
+// Explore using loop unrolling techniques in the inner loop to increase throughput
+// Ensure all memory accesses are aligned to the 32-byte boundaries for optimal performance
+```

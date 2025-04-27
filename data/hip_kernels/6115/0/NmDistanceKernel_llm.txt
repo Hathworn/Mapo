@@ -1,0 +1,10 @@
+```
+// Consider padding to avoid bank conflicts in shared memory
+// Use __restrict__ qualifier for input pointers to improve memory access
+// Preload data to registers to minimize repeated global memory accesses
+// Align memory accesses to boundaries for coalesced access
+// Use float4 instead of float3 for better memory transactions
+// Explore warp shuffle functions for reductions instead of shared memory
+// Evaluate use of float2 for storing coordinates to reduce memory usage
+// Consider loop tiling to increase data reuse in shared memory
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using shared memory for the core data.
+// Use shared memory for tile-based processing of input images for efficient caching.
+// Consider coalescing memory accesses for loading imgR, imgG, and imgB to improve memory throughput.
+// Unroll the innermost loop over j to exploit parallelism and reduce loop overhead.
+// Use the constant memory for the core if it does not change over multiple kernel launches.
+```

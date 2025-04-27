@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Load global memory into sharedBP[] using coalesced access
+// Ensure indexing within bounds when using shared memory
+// Apply __syncthreads() to avoid race conditions in shared memory
+// Minimize bank conflicts in shared memory access
+// Avoid excessive synchronization by limiting __syncthreads() usage
+```

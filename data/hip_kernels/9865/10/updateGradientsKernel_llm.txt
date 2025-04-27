@@ -1,0 +1,6 @@
+```cpp
+// Consider coalesced access by ensuring contiguous threads access contiguous memory locations
+// Use shared memory to reduce global memory accesses and improve performance
+// Align memory accesses to a multiple of warp size to minimize memory transaction overhead
+// Minimize branch divergence by ensuring similar control flow for threads
+```

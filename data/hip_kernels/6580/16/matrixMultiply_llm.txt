@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns to minimize global memory transaction overhead.
+// Ensure that shared memory usage is optimized to avoid bank conflicts.
+// Use __ldg() for read-only cache loads if supported by the architecture.
+// Optimize thread block and grid dimensions to maximize occupancy.
+// Use constant memory for frequently accessed read-only variables.
+```

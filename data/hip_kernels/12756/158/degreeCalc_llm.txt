@@ -1,0 +1,4 @@
+// Consider coalesced memory access patterns for vertexArray and neighbourArray to improve memory throughput.
+// Use shared memory to cache frequently accessed data, such as vertexArray[i], to reduce global memory access latency.
+// Experiment with loop unrolling within the degree calculation to improve instruction level parallelism.
+// Ensure that the data types used (e.g., int) align with natural word sizes for better memory access efficiency.

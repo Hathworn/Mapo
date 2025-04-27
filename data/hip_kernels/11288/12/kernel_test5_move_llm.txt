@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for intermediate storage to reduce global memory access latency.
+// Ensure memory accesses are coalesced by aligning data structures appropriately.
+// Use larger data types if possible to decrease the number of memory transactions.
+// Minimize the use of divergent branches by ensuring all threads within a warp follow the same code path.
+```

@@ -1,0 +1,6 @@
+```c
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations.
+// Minimize divergent branches within the kernel.
+// Use shared memory to decrease global memory access if applicable.
+// Consider increasing thread block size for better device utilization.
+```

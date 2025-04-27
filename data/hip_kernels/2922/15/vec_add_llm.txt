@@ -1,0 +1,7 @@
+```
+// Use __restrict__ keyword for A, B, and C pointers to indicate non-aliasing memory access
+// Ensure A, B, and C are aligned by 128 bits for coalesced memory access
+// Utilize shared memory if A, B, and C will be reused within the kernel
+// Prefetch data to registers to hide global memory latency
+// Consider memory access patterns to ensure coalescing
+```

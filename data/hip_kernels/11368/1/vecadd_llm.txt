@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Employ vectorized memory access for coalesced memory operations.
+// Minimize bank conflicts by padding shared memory if necessary.
+// Consider loop unrolling if it benefits the kernel execution.

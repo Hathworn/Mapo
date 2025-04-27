@@ -1,0 +1,9 @@
+```c
+// Pre-calculate bin index and reciprocal of y to minimize re-computation.
+// Ensure coalesced memory access by having threads access contiguous memory locations.
+// Consider using shared memory for repeated access to small data sets like d_cdf_norm.
+// Minimize use of division operations by precomputing reciprocal where possible.
+// Leverage fma (fused multiply-add) for efficient arithmetic operations.
+// Avoid branching inside the main loop to ensure consistent execution paths.
+// Consider loop unrolling for small, fixed-size loops if applicable.
+```

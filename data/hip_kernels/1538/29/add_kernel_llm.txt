@@ -1,0 +1,5 @@
+// Use shared memory to cache global data for threads
+// Increase block size for better memory access patterns
+// Ensure stride is aligned with memory coalescing requirements
+// Prefetch data to registers before operation for efficiency
+// Minimize divergence by ensuring all threads perform similar workloads

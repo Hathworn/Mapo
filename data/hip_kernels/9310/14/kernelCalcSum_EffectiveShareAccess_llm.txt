@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency   
+// Reduce bank conflicts by ensuring shared memory access is coalesced  
+// Minimize divergent branching by consistent thread execution paths  
+// Leverage thread synchronization with __syncthreads() to ensure data integrity  
+// Use atomic operations cautiously to avoid overhead in accumulation operations

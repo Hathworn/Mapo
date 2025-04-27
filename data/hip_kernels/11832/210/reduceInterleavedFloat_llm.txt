@@ -1,0 +1,6 @@
+```
+// Avoid long-lived shared memory usage by working directly in global memory
+// Minimize synchronization overhead by limiting __syncthreads() to necessary strides
+// Ensure efficient memory coalescing by accessing contiguous memory regions
+// Leverage warp-level intrinsic functions for better performance
+```

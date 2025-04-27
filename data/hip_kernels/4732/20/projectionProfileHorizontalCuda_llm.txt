@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Minimize atomic operations as they can be a bottleneck for performance.
+// Ensure threads within a warp access contiguous memory locations to fully utilize memory bandwidth.
+// Use shared memory to reduce redundant global memory accesses if applicable.
+```

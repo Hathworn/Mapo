@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache gradOutput_data for faster memory access
+// Use pinned memory to reduce latency for the gradOutput_data
+// Optimize block and grid dimensions to improve memory coalescing
+// Consider merging threadIdx.y and blockIdx.y calculations for simpler index computation
+```

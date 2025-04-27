@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access time
+// Load data into shared memory to avoid repeated global memory reads
+// Synchronize all threads after loading to ensure shared memory is populated
+// Perform computation using shared memory for faster processing
+// Synchronize again before writing back to ensure consistency
+// Write back to global memory only after computation is complete

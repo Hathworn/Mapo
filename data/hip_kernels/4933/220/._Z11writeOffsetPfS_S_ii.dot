@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11writeOffsetPfS_S_ii' function" {
+	label="CFG for '_Z11writeOffsetPfS_S_ii' function";
+
+	Node0x52b41b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = add i32 %14, %4\l  %16 = icmp ult i32 %15, %3\l  br i1 %16, label %17, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x52b41b0:s0 -> Node0x52b4ca0;
+	Node0x52b41b0:s1 -> Node0x52b6210;
+	Node0x52b4ca0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%17:\l17:                                               \l  %18 = zext i32 %14 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %21 = getelementptr inbounds float, float addrspace(1)* %1, i64 %18\l  %22 = load float, float addrspace(1)* %21, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %23 = fadd contract float %20, %22\l  %24 = zext i32 %15 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %2, i64 %24\l  store float %23, float addrspace(1)* %25, align 4, !tbaa !7\l  br label %26\l}"];
+	Node0x52b4ca0 -> Node0x52b6210;
+	Node0x52b6210 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

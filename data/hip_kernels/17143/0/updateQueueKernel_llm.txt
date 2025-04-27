@@ -1,0 +1,7 @@
+```cpp
+// Coalesce global memory accesses for better memory throughput by ensuring consecutive threads access consecutive elements.
+// Minimize memory accesses by storing frequently used global memory data in shared memory or registers.
+// Use warp-level primitives to reduce contention and increase parallelism when updating shared variables like queueSize.
+// Ensure thread blocks are fully occupied to maximize the utilization of GPU resources.
+// Reduce branching divergence by structuring conditional statements to minimize varying execution paths within a warp.
+```

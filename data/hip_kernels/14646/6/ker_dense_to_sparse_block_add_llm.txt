@@ -1,0 +1,4 @@
+// Use shared memory for intermediate storage to reduce global memory accesses
+// Adjust shared memory size based on block size requirements
+// Copy data to shared memory to minimize global memory read operations
+// Perform atomic operations using values loaded into shared memory

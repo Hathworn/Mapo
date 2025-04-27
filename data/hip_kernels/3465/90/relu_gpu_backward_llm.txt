@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Consider using vector types for coalesced memory access
+// Ensure enough threads to cover all N elements
+// Minimize divergence by using warp-level primitives
+```

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z23copy_buffer_util_kernelPK15HIP_vector_typeIfLj4EEPS0_i' function" {
+	label="CFG for '_Z23copy_buffer_util_kernelPK15HIP_vector_typeIfLj4EEPS0_i' function";
+
+	Node0x5892c30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp slt i32 %12, %2\l  br i1 %13, label %14, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x5892c30:s0 -> Node0x5894ad0;
+	Node0x5892c30:s1 -> Node0x5894b60;
+	Node0x5894ad0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = sext i32 %12 to i64\l  %16 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %0, i64 %15\l  %17 = getelementptr inbounds %struct.HIP_vector_type,\l... %struct.HIP_vector_type addrspace(1)* %1, i64 %15\l  %18 = bitcast %struct.HIP_vector_type addrspace(1)* %17 to i8 addrspace(1)*\l  %19 = bitcast %struct.HIP_vector_type addrspace(1)* %16 to i8 addrspace(1)*\l  tail call void @llvm.memcpy.p1i8.p1i8.i64(i8 addrspace(1)* noundef align 16\l... dereferenceable(16) %18, i8 addrspace(1)* noundef align 16\l... dereferenceable(16) %19, i64 16, i1 false)\l  br label %20\l}"];
+	Node0x5894ad0 -> Node0x5894b60;
+	Node0x5894b60 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%20:\l20:                                               \l  ret void\l}"];
+}

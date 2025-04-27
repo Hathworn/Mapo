@@ -1,0 +1,4 @@
+// Consider optimizing memory access patterns by organizing threads in a way that minimizes bank conflicts.
+// Use cooperative load/store operations to efficiently utilize shared memory and reduce global memory access.
+// Ensure memory accesses are coalesced to maximize throughput and minimize latency.
+// Consider using warp-level primitives for synchronization to reduce overhead compared to __syncthreads() when appropriate.

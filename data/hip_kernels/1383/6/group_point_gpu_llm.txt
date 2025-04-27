@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache points data for faster access
+// Optimize memory coalescing by aligning memory accesses
+// Utilize vectorized loads if possible to improve throughput
+// Consider adjusting block size for optimal warp utilization
+// Explore occupancy calculator tools for determining best grid configuration
+// Investigate if register pressure can be reduced by limiting live variables
+// Implement double buffering to overlap computation with data transfer
+```

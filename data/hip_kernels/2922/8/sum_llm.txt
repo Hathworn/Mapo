@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce bandwidth usage
+// Minimize divergent branching by ensuring threads within a warp take the same execution path
+// Use loop unrolling for the reduction to further optimize performance
+// Align memory access to avoid uncoalesced memory reads and writes
+// Optimize memory access patterns by arranging data for coalesced accesses

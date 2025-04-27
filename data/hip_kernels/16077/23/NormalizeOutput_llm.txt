@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Explore memory coalescing by ensuring contiguous memory access patterns.
+// Evaluate using the __restrict__ qualifier for pointer arguments to help the compiler with optimization.
+// Consider adjusting block and grid sizes based on target architecture for better occupancy.
+// Look into using atomic operations if there's contention for memory writes.
+```

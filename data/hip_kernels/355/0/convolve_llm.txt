@@ -1,0 +1,10 @@
+```
+// Consider using a texture memory to cache the source image data for faster access.
+// Ensure shared memory is optimally utilized by minimizing bank conflicts.
+// Aligning shared memory accesses can help improve memory coalescence.
+// Try to reduce conditional statements inside the kernel for better warp execution efficieny.
+// Double-check shared memory allocation size to avoid out-of-bound errors.
+// Consider using loop unrolling for the convolution computations to potentially improve performance.
+// Validate that all memory transactions are coalesced to ensure optimal bandwidth utilization.
+// Employ optimized launch configurations, such as using warp size multiples for block dimensions.
+```

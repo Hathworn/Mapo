@@ -1,0 +1,48 @@
+digraph "CFG for '_Z22mergeHistogram64KernelPjS_j' function" {
+	label="CFG for '_Z22mergeHistogram64KernelPjS_j' function";
+
+	Node0x59ad020 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = icmp ult i32 %4, %2\l  br i1 %5, label %6, label %8\l|{<s0>T|<s1>F}}"];
+	Node0x59ad020:s0 -> Node0x59ade90;
+	Node0x59ad020:s1 -> Node0x59adf20;
+	Node0x59ade90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%6:\l6:                                                \l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  br label %12\l}"];
+	Node0x59ade90 -> Node0x59ae200;
+	Node0x59adf20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%8:\l8:                                                \l  %9 = phi i32 [ 0, %3 ], [ %20, %12 ]\l  %10 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %4\l  store i32 %9, i32 addrspace(3)* %10, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %11 = icmp ult i32 %4, 64\l  br i1 %11, label %23, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x59adf20:s0 -> Node0x59af080;
+	Node0x59adf20:s1 -> Node0x59af110;
+	Node0x59ae200 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%12:\l12:                                               \l  %13 = phi i32 [ %4, %6 ], [ %21, %12 ]\l  %14 = phi i32 [ 0, %6 ], [ %20, %12 ]\l  %15 = shl i32 %13, 6\l  %16 = add i32 %15, %7\l  %17 = zext i32 %16 to i64\l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %17\l  %19 = load i32, i32 addrspace(1)* %18, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %20 = add i32 %19, %14\l  %21 = add i32 %13, 128\l  %22 = icmp ult i32 %21, %2\l  br i1 %22, label %12, label %8, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x59ae200:s0 -> Node0x59ae200;
+	Node0x59ae200:s1 -> Node0x59adf20;
+	Node0x59af080 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%23:\l23:                                               \l  %24 = add nuw nsw i32 %4, 64\l  %25 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %24\l  %26 = load i32, i32 addrspace(3)* %25, align 4, !tbaa !5\l  %27 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %28 = add i32 %27, %26\l  store i32 %28, i32 addrspace(3)* %10, align 4, !tbaa !5\l  br label %29\l}"];
+	Node0x59af080 -> Node0x59af110;
+	Node0x59af110 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%29:\l29:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %30 = icmp ult i32 %4, 32\l  br i1 %30, label %31, label %37\l|{<s0>T|<s1>F}}"];
+	Node0x59af110:s0 -> Node0x59b0850;
+	Node0x59af110:s1 -> Node0x59b08a0;
+	Node0x59b0850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%31:\l31:                                               \l  %32 = add nuw nsw i32 %4, 32\l  %33 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %32\l  %34 = load i32, i32 addrspace(3)* %33, align 4, !tbaa !5\l  %35 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %36 = add i32 %35, %34\l  store i32 %36, i32 addrspace(3)* %10, align 4, !tbaa !5\l  br label %37\l}"];
+	Node0x59b0850 -> Node0x59b08a0;
+	Node0x59b08a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%37:\l37:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %38 = icmp ult i32 %4, 16\l  br i1 %38, label %39, label %45\l|{<s0>T|<s1>F}}"];
+	Node0x59b08a0:s0 -> Node0x59b1090;
+	Node0x59b08a0:s1 -> Node0x59b10e0;
+	Node0x59b1090 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%39:\l39:                                               \l  %40 = add nuw nsw i32 %4, 16\l  %41 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %40\l  %42 = load i32, i32 addrspace(3)* %41, align 4, !tbaa !5\l  %43 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %44 = add i32 %43, %42\l  store i32 %44, i32 addrspace(3)* %10, align 4, !tbaa !5\l  br label %45\l}"];
+	Node0x59b1090 -> Node0x59b10e0;
+	Node0x59b10e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%45:\l45:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %46 = icmp ult i32 %4, 8\l  br i1 %46, label %47, label %53\l|{<s0>T|<s1>F}}"];
+	Node0x59b10e0:s0 -> Node0x59b17d0;
+	Node0x59b10e0:s1 -> Node0x59b1820;
+	Node0x59b17d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%47:\l47:                                               \l  %48 = add nuw nsw i32 %4, 8\l  %49 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %48\l  %50 = load i32, i32 addrspace(3)* %49, align 4, !tbaa !5\l  %51 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %52 = add i32 %51, %50\l  store i32 %52, i32 addrspace(3)* %10, align 4, !tbaa !5\l  br label %53\l}"];
+	Node0x59b17d0 -> Node0x59b1820;
+	Node0x59b1820 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%53:\l53:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %54 = icmp ult i32 %4, 4\l  br i1 %54, label %55, label %61\l|{<s0>T|<s1>F}}"];
+	Node0x59b1820:s0 -> Node0x59b1f10;
+	Node0x59b1820:s1 -> Node0x59b1f60;
+	Node0x59b1f10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%55:\l55:                                               \l  %56 = add nuw nsw i32 %4, 4\l  %57 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %56\l  %58 = load i32, i32 addrspace(3)* %57, align 4, !tbaa !5\l  %59 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %60 = add i32 %59, %58\l  store i32 %60, i32 addrspace(3)* %10, align 4, !tbaa !5\l  br label %61\l}"];
+	Node0x59b1f10 -> Node0x59b1f60;
+	Node0x59b1f60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%61:\l61:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %62 = icmp ult i32 %4, 2\l  br i1 %62, label %63, label %69\l|{<s0>T|<s1>F}}"];
+	Node0x59b1f60:s0 -> Node0x59b2650;
+	Node0x59b1f60:s1 -> Node0x59b26a0;
+	Node0x59b2650 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%63:\l63:                                               \l  %64 = add nuw nsw i32 %4, 2\l  %65 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %64\l  %66 = load i32, i32 addrspace(3)* %65, align 4, !tbaa !5\l  %67 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %68 = add i32 %67, %66\l  store i32 %68, i32 addrspace(3)* %10, align 4, !tbaa !5\l  br label %69\l}"];
+	Node0x59b2650 -> Node0x59b26a0;
+	Node0x59b26a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%69:\l69:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %70 = icmp eq i32 %4, 0\l  br i1 %70, label %71, label %81\l|{<s0>T|<s1>F}}"];
+	Node0x59b26a0:s0 -> Node0x59b2fa0;
+	Node0x59b26a0:s1 -> Node0x59b2ff0;
+	Node0x59b2fa0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%71:\l71:                                               \l  %72 = add nuw nsw i32 %4, 1\l  %73 = getelementptr inbounds [128 x i32], [128 x i32] addrspace(3)*\l... @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 %72\l  %74 = load i32, i32 addrspace(3)* %73, align 4, !tbaa !5\l  %75 = load i32, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %76 = add i32 %75, %74\l  store i32 %76, i32 addrspace(3)* %10, align 4, !tbaa !5\l  %77 = load i32, i32 addrspace(3)* getelementptr inbounds ([128 x i32], [128\l... x i32] addrspace(3)* @_ZZ22mergeHistogram64KernelPjS_jE4data, i32 0, i32 0),\l... align 16, !tbaa !5\l  %78 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %79 = zext i32 %78 to i64\l  %80 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %79\l  store i32 %77, i32 addrspace(1)* %80, align 4, !tbaa !5\l  br label %81\l}"];
+	Node0x59b2fa0 -> Node0x59b2ff0;
+	Node0x59b2ff0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%81:\l81:                                               \l  ret void\l}"];
+}

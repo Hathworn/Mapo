@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by striding data access in devDiff with threadIdx.x
+// Minimize memory divergence by reducing the use of conditional updates to devClusters
+// Utilize shared memory where possible to cache frequently accessed data like minDistance
+// Reduce register pressure by optimizing loop and variable usage inside for-loop
+// Investigate whether loading multiple element blocks from devDiff in one warp can improve performance
+// Prefetch devDiff data for subsequent loop iterations to hide memory latency
+// Avoid unnecessary computation by breaking loop early if condition guarantees minDistance will not update further
+```

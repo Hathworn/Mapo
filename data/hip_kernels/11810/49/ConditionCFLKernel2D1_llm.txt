@@ -1,0 +1,5 @@
+// Consider coalesced memory access for Rinf, Rsup, Rmed, Vrad, Vtheta, Vmoy, SoundSpeed, DT2D arrays.
+// Reuse loaded values from Rsup, Rinf, Rmed within a thread block to reduce redundant global memory access.
+// Leverage shared memory if possible to cache frequently accessed values like Rsup, Rinf, Rmed within a block.
+// Ensure Vresidual writes are coalesced to increase memory write efficiency.
+// Consider aligning data structures to improve cache utilization.

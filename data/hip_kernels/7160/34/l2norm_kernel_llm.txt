@@ -1,0 +1,6 @@
+```c
+// Ensure coalesced memory access by accessing x and dx arrays sequentially.
+// Utilize shared memory to cache frequently accessed data to reduce global memory access.
+// Consider using float2 or float4 for memory access to improve memory throughput.
+// Apply loop unrolling where it benefits the most in computation-heavy sections.
+```

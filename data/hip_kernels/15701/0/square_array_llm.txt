@@ -1,0 +1,4 @@
+// Use coalesced memory access to improve memory throughput
+// Consider shared memory if there is data reuse within the block
+// Optimize block and grid dimensions to match the GPU architecture
+// Ensure occupancy is maximized by tuning block size

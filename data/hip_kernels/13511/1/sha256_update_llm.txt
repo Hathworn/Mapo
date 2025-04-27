@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Consider using warp shuffle operations to optimize data movement.
+// Ensure memory access patterns are coalesced for better performance.
+// Utilize constant memory for frequently accessed constants.
+// Employ loop unrolling carefully to balance between code size and execution speed.
+// Check for bank conflicts in shared memory and optimize accordingly.
+// Explore using smaller thread blocks to minimize register pressure.
+```

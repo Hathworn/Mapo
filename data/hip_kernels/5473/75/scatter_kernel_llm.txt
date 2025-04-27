@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce global memory accesses for x_coors and y_coors.
+// Synchronize threads after loading coordinates into shared memory to ensure data coherence.
+// Ensure that each thread loads its feature only once to minimize redundant global memory access.
+```

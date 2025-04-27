@@ -1,0 +1,10 @@
+```c
+// Consider using 'volatile' keyword for shared memory to avoid redundant loads.
+// Prefetch data into registers to reduce global memory access latency.
+// Use occupancy calculator to determine the optimal block size for full wavefront utilization.
+// Reduce barriers with warp-synchronous programming when data dependencies allow.
+// Align data structures to cache line size to improve coalescing of memory accesses.
+// Evaluate potential benefit of shared memory bank conflict avoidance.
+// Consider using a larger block size for higher throughput if occupancy allows.
+// Explore loop unrolling in sections with fixed stride access patterns.
+```

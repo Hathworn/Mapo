@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory for frequently accessed data to reduce global memory access.
+// Leverage loop unrolling to maximize instruction throughput.
+// Consider using __restrict__ qualifiers to reduce pointer aliasing overhead.
+// Optimize memory coalescing by ensuring that threads within a warp access contiguous memory locations.
+```

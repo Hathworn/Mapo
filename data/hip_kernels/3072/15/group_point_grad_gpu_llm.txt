@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for grad_out and idx arrays
+// Consider using shared memory to cache idx values to reduce global memory access
+// Use warp-level primitives to reduce contention in atomic operations
+// Optimize block and grid dimensions for maximum occupancy
+```

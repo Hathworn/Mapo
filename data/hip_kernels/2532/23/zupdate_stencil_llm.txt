@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to reduce global memory accesses within each block.
+// Use coalesced memory accesses for zx and zy arrays to maximize memory bandwidth.
+// Perform loop unrolling for the divergence computations to reduce instruction overhead.
+// Minimize divergence and branch overhead by refactoring boundary checks where possible.
+// Pre-fetch data into registers to minimize redundant global memory accesses.
+```

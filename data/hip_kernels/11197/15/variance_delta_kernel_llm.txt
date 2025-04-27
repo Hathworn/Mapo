@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store intermediate results to reduce global memory access latency.
+// Use memory coalescing by ensuring all threads in a warp access contiguous memory locations.
+// Minimize register usage by optimizing data reuse within the loop.
+// Implement thread block strategies (e.g., strip-mining) to optimize occupancy and balance load.
+```

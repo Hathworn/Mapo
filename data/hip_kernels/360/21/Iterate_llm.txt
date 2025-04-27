@@ -1,0 +1,8 @@
+```
+// Use shared memory to store frequently accessed global data like adjIndexes to reduce global memory latency
+// Consider coalescing global memory accesses when reading adjacency and bestSeenIn to improve throughput
+// Implement loop unrolling in the loop iterating from start to end for better performance
+// Ensure global memory writes (bestSeenOut, originOut) are coalesced to minimize write latency
+// Evaluate the possibility of data locality optimizations within the loop structure
+// Check if adjacent threads access adjacent memory locations for optimal memory performance
+```

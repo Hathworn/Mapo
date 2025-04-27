@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access pattern for global memory reads from t2_d and v2_d arrays.
+// Use proper alignment of shared memory (t2_shm) to avoid bank conflicts.
+// Consider increasing the size of shared memory (t2_shm) if occupancy allows.
+// Use __ldg() for read-only data on supported hardware for better cache utilization.
+// Evaluate the use of register blocking for the innermost loop with largest computational reuse.
+// Avoid redundant computation by pre-computing repeated expressions.
+```

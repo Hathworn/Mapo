@@ -1,0 +1,4 @@
+// Optimize memory access by minimizing the number of global memory reads and writes
+// Use shared memory to store temporary variables like sum_delta to reduce global memory access
+// Consider using warp-level primitives for reduction instead of a scalar accumulator to enhance performance
+// Avoid redundant recomputation of sqrtf(variance[i] + .00001f) by storing the result in a temporary variable

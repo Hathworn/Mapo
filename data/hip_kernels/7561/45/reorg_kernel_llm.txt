@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by properly aligning the data when accessing `x` and `out` arrays.
+// Utilize shared memory to minimize global memory access and increase data reuse.
+// Consider using vectorized memory accesses for better memory bandwidth utilization.
+// Optimize thread block size and grid dimensions to maximize occupancy and throughput.
+// Assess potential warp divergence and minimize conditional branching in the kernel.
+// Prefetch data into registers to reduce the global memory access latency.
+```

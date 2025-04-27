@@ -1,0 +1,7 @@
+```cpp
+// Ensure memory coalescing by having threads access consecutive memory locations
+// Consider using shared memory for data reuse within a block
+// Optimize access patterns to reduce global memory transactions
+// Ensure that block size is a multiple of warp size for optimal performance
+// Evaluate occupancy to ensure maximum resource utilization
+```

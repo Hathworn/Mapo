@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses to improve bandwidth utilization.
+// Use vectorized loads (e.g., float4) for reading M and N to improve memory throughput.
+// Optimize the memory access pattern to ensure that threads access consecutive memory locations.
+// Consider using memory padding to avoid bank conflicts in shared memory.
+```

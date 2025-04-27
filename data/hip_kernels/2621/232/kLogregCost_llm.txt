@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for labels and probabilities to improve memory access efficiency.
+// Utilize shared memory to reduce redundant global memory reads for `maxProbs`.
+// Evaluate if using texture memory could benefit the access pattern for `probs`.
+// Experiencing bank conflicts in shared memory can be reduced by reorganizing data access patterns.
+// Ensure warp divergence is minimized by aligning conditional statements execution paths across threads.
+```

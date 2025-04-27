@@ -1,0 +1,4 @@
+// Consider using shared memory for repeated access to common values like norm_for_smooth_term and eps to reduce global memory access.
+// Optimize memory coalescing by ensuring that weightx and weighty are accessed consecutively in memory.
+// Use __restrict__ qualifiers to improve compiler optimizations by hinting that the pointers do not alias each other.
+// Avoid redundant calculations outside critical if condition to minimize unnecessary operations.

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache gradOutput_data for reuse across threads
+// Coalesce memory accesses to gradOutput_data to improve bandwidth utilization
+// Minimize bank conflicts when accessing shared memory
+// Optimize register usage by reducing the number of variables stored in registers
+// Unroll the inner loop to reduce loop overhead
+// Consider using vectorized memory operations to improve bandwidth
+```

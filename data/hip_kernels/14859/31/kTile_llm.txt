@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache a tile of the source to reduce global memory accesses.
+// Optimize memory coalescing by processing contiguous chunks of memory where possible.
+// Minimize branch divergence by ensuring threads within a warp follow the same execution path.
+// Ensure enough blocks are launched to fully utilize the GPU's resources for better parallelization.
+```

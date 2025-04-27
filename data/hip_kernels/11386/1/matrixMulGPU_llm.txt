@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve data locality.
+// Load tiles into shared memory, checking bounds.
+// Synchronize to make sure the sub-matrices are loaded.
+// Synchronize to make sure that the preceding computation is done before loading new sub-matrices in the next iteration.
+// Write the block sub-matrix to global memory, checking bounds.
+```

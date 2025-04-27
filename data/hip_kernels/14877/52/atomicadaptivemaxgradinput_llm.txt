@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access for gradOutput pointer
+// Ensure coalesced memory access for gradInput pointer
+// Optimize memory access for indices_x by ensuring coalesced reads
+// Optimize memory access for indices_y by ensuring coalesced reads
+// Consider using shared memory for repeated accesses to gradOutput
+// Minimize repeated computation of y_start and x_start
+// Avoid divergent branches inside the kernel
+```

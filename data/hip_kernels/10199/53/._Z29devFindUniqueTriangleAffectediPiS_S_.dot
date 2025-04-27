@@ -1,0 +1,18 @@
+digraph "CFG for '_Z29devFindUniqueTriangleAffectediPiS_S_' function" {
+	label="CFG for '_Z29devFindUniqueTriangleAffectediPiS_S_' function";
+
+	Node0x5cac6f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !6\l  %14 = mul i32 %5, %10\l  %15 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %16 = add nuw nsw i32 %15, 1\l  %17 = add i32 %16, %14\l  %18 = icmp ult i32 %17, %0\l  br i1 %18, label %19, label %46\l|{<s0>T|<s1>F}}"];
+	Node0x5cac6f0:s0 -> Node0x5caea40;
+	Node0x5cac6f0:s1 -> Node0x5caead0;
+	Node0x5caea40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = udiv i32 %13, %10\l  %21 = mul i32 %20, %10\l  %22 = icmp ugt i32 %13, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %10\l  br label %26\l}"];
+	Node0x5caea40 -> Node0x5caef50;
+	Node0x5caef50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i32 [ %17, %19 ], [ %44, %43 ]\l  %28 = add i32 %27, -1\l  %29 = zext i32 %28 to i64\l  %30 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %29\l  %31 = load i32, i32 addrspace(1)* %30, align 4, !tbaa !16\l  %32 = zext i32 %27 to i64\l  %33 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %32\l  %34 = load i32, i32 addrspace(1)* %33, align 4, !tbaa !16\l  %35 = icmp ne i32 %31, %34\l  %36 = icmp eq i32 %34, -1\l  %37 = or i1 %35, %36\l  br i1 %37, label %43, label %38\l|{<s0>T|<s1>F}}"];
+	Node0x5caef50:s0 -> Node0x5caf040;
+	Node0x5caef50:s1 -> Node0x5caff70;
+	Node0x5caff70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%38:\l38:                                               \l  %39 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %32\l  %40 = load i32, i32 addrspace(1)* %39, align 4, !tbaa !16\l  %41 = sext i32 %40 to i64\l  %42 = getelementptr inbounds i32, i32 addrspace(1)* %3, i64 %41\l  store i32 0, i32 addrspace(1)* %42, align 4, !tbaa !16\l  br label %43\l}"];
+	Node0x5caff70 -> Node0x5caf040;
+	Node0x5caf040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%43:\l43:                                               \l  %44 = add i32 %25, %27\l  %45 = icmp ult i32 %44, %0\l  br i1 %45, label %26, label %46, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5caf040:s0 -> Node0x5caef50;
+	Node0x5caf040:s1 -> Node0x5caead0;
+	Node0x5caead0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%46:\l46:                                               \l  ret void\l}"];
+}

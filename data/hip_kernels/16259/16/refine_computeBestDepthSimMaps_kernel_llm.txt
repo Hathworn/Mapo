@@ -1,0 +1,5 @@
+// Use texture memory to optimize the memory access pattern for isims and idpts arrays
+// Ensure coalesced global memory accesses by organizing threads to access contiguous memory locations
+// Experiment with shared memory to temporarily store per-block data that can be reused by multiple threads within a block
+// Check if warp-level primitives or shuffle operations can minimize thread divergence and improve performance
+// Consider loop unrolling in the refineDepthSubPixel function for arithmetic intensity analyzes

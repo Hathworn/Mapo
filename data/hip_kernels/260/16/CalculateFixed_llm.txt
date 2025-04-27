@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by aligning data accesses in structure of arrays (SoA) fashion
+// Use shared memory to cache frequently accessed data to reduce global memory bandwidth
+// Minimize bank conflicts by accessing shared memory in a way that avoids overlap among threads
+// Consider loop unrolling to reduce the overhead of loop control and increase instruction throughput
+// Utilize constant memory for constants or readonly data accessed by multiple threads
+// Optimize grid and block size for maximum occupancy and performance efficiency
+```

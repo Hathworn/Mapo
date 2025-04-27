@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring d_nn and nearest_neighbour_indexes are contiguous in memory
+// Use shared memory to cache nearest_neighbour_indexes if it is accessed multiple times by threads in a block
+// Minimize divergence by accessing nearest_neighbour_indexes with offsets that align with memory access patterns
+// Optimize block and grid dimensions for occupancy to maximize the number of active warps
+// Experiment with loop unrolling if applicable to improve access patterns and utilize more registers
+```

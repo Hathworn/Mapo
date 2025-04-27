@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access to global memory for x_bin_scores and y_bin_scores
+// Utilize shared memory to reduce global memory accesses if possible
+// Consider optimizing the nested loop by tiling or parallelizing
+// Unroll more loops manually if loop count is small and predictable
+// Reduce redundant calculations by computing frequently used values once
+// Ensure memory accesses for entropies_x, entropies_y, and mis are on aligned boundaries
+```

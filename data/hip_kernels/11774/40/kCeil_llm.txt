@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for improved performance
+// Minimize warp divergence by ensuring all threads within a warp take a similar path
+// Consider increasing block size to enhance parallelism and memory bandwidth utilization
+// Use shared memory if multiple threads access the same data to reduce global memory accesses
+```

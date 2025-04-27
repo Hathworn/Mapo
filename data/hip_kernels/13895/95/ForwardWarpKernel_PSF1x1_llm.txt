@@ -1,0 +1,8 @@
+```
+// Use __ldg intrinsic for loading read-only data to optimize memory access on GPU.
+// Ensure coalesced memory access by organizing thread access patterns effectively.
+// Minimize divergent branches for optimal warp execution.
+// Consider data reuse in shared memory to reduce global memory access frequency.
+// Align data structures appropriately to ensure optimal memory throughput.
+// Explore thread block size and grid configuration for optimal hardware utilization.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Ensure optimal block size to maximize warp occupancy
+// Align memory accesses to improve coalescing
+// Reduce use of atomic operations if possible, as they can serialize execution
+```

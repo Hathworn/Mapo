@@ -1,0 +1,4 @@
+// Use shared memory to store mean and variance for fast access and reduced global memory reads.
+// Consider loop unrolling in the normalization calculation to reduce instruction overhead.
+// Ensure warp synchronization with __syncthreads() when using shared memory to avoid race conditions.
+// Minimize register usage by simplifying index calculations where possible.

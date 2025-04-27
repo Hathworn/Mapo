@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access for frequently accessed data
+// Minimize thread divergence by ensuring uniform access patterns within warps
+// Optimize memory coalescing to ensure continuous memory access and improve bandwidth utilization
+// Investigate potential benefits of loop unrolling for reducing overhead in iterations
+// Consider using vectorized memory operations for increasing throughput on modern GPUs

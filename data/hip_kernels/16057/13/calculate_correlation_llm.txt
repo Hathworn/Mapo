@@ -1,0 +1,11 @@
+```c
+// Avoid redundant calculations by moving invariant code outside loops where possible
+// Use __restrict__ qualifiers to help the compiler with memory aliasing optimizations
+// Convert using shared memory for often-accessed data within threads to reduce global memory traffic
+// Ensure memory coalescing by accessing global memory with contiguous threads
+// Consider loop unrolling for the small fixed-size loops to potential gain performance
+// Minimize bank conflicts in shared memory by padding shared memory arrays
+// Use warp-level primitives to reduce synchronization overhead for reduction operations
+// Ensure synchronization is necessary before __syncthreads() to avoid overhead
+// Check if all threads are used effectively, and reduce unused threads in each block if any
+```

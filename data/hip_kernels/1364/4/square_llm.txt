@@ -1,0 +1,7 @@
+```
+// Consider using coalesced global memory access to improve memory bandwidth.
+// Optimize block size and grid size for better occupancy and performance.
+// Preload data to registers if possible to reduce latency from shared memory access.
+// Ensure that dynamic shared memory size is optimized for the target architecture.
+// Minimize __syncthreads() usage to decrease synchronization overhead.
+```

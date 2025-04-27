@@ -1,0 +1,6 @@
+```
+// Opt: Consider coalescing memory access for 'accuracy' to improve memory bandwidth utilization.
+// Opt: Ensure 'accuracy' is properly aligned to avoid bank conflicts.
+// Opt: Check if 'atomicExch' can be replaced with a more appropriate native atomic operation.
+// Opt: Verify if pointer 'accuracy' can benefit from being placed in shared memory first, before writing back to global memory.
+```

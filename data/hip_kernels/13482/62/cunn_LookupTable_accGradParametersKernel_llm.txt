@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data such as gradOutputRow and weightRow to reduce global memory accesses.
+// Consider coalesced memory access patterns for gradOutput and gradWeight to maximize memory throughput.
+// Take advantage of vectorized memory loads and stores for gradient and weight arrays to reduce instruction overhead.
+// Minimize the number of divergent branches, especially in the condition checks within the loop, to improve warp execution efficiency.
+// Opt for larger block and grid sizes to fully utilize GPU resources while ensuring occupancy is maximized.
+```

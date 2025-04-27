@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses for frequently accessed data
+// Coalesce memory access patterns to improve global memory throughput
+// Consider using warp shuffle instructions for communication within a warp to reduce shared memory usage
+// Minimize global memory accesses by caching data in registers
+// Align data structures to 128 bytes for improved memory coalescence
+// Consider launching more blocks to increase occupancy and hide memory latency
+// Try using a two-level parallelism scheme (blocks for vertices, threads for edges) to improve load balancing
+// Profile the kernel to identify and reduce memory access bottlenecks further
+```

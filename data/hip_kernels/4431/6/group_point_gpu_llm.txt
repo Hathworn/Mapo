@@ -1,0 +1,7 @@
+// Consider using coalesced memory access for reading points
+// Load indices into shared memory to reduce global memory access
+// Synchronize threads after loading data into shared memory
+// Use shared memory to hold temporary computation results
+// Ensure efficient memory access patterns during data copy
+// Avoid bank conflicts in shared memory usage
+// Minimize redundant calculations within inner loops

@@ -1,0 +1,3 @@
+// Use shared memory to store the QUANT_PAIS_AVALIA candidates for better memory access patterns.
+// Reduce repetitive accesses to global memory by caching fitness[idx] in a local variable.
+// Consider optimizing the stride-based loop for coalesced memory access.

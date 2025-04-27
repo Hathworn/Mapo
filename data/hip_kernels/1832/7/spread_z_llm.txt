@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory accesses to improve performance
+// Use shared memory to reduce global memory access latency
+// Load data in chunks to optimize memory bandwidth usage
+// Minimize bank conflicts in shared memory usage
+// Use __syncthreads() to ensure all threads have written to shared memory before proceeding
+// Reduce the number of global memory writes by optimizing usage of shared memory
+// Ensure proper alignment in memory accesses for better performance
+```

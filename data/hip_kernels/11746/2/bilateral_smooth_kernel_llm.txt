@@ -1,0 +1,10 @@
+```
+// Use shared memory to store guide values and weights to minimize global memory access
+// Consider prefetching guide values to reduce latency
+// Use __expf intrinsic function for computing exponentials to enhance performance
+// Unroll loops to increase instruction throughput
+// Minimize the number of divisions by moving invariants outside of loops
+// Ensure coalesced memory access patterns for global memory reads and writes
+// Optimize thread-block and grid size for maximum GPU utilization
+// Align memory allocations to 128 bytes for better memory transfer rates
+```

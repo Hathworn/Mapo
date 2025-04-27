@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when reading from d_coordinates
+// Minimize divergent branching by simplifying clamping logic
+// Use shared memory for frequently accessed data to reduce global memory loads
+// Consider loop unrolling for both x and y offsets for better instruction throughput
+// Avoid recalculating the same indices by moving invariant calculations outside the loops
+```

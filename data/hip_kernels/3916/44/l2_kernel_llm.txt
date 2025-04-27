@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access by using contiguous threads accessing contiguous memory addresses.
+// Utilize shared memory if accessing elements more than once within a block.
+// Consider using half precision floats if error tolerance and device support permit, to reduce memory load.
+// Balance the number of threads per block and number of blocks to fully utilize the GPU cores and achieve maximum occupancy.
+```

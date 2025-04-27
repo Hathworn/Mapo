@@ -1,0 +1,3 @@
+// Use grid-stride loop for better utilization of GPU resources
+// Ensure memory coalescing by accessing consecutive elements with INCX
+// Reduce condition checks by computing ALPHA squared outside the loop

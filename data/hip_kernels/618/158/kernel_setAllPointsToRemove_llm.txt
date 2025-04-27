@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if multiple threads access contiguous data
+// Coalesce global memory access by ensuring consecutive threads access consecutive memory addresses
+// Optimize memory access patterns to reduce uncoalesced accesses
+// Ensure the number of blocks is enough to keep the GPU fully utilized
+```

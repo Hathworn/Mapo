@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access and improve data reuse.
+// Ensure weights are loaded into shared memory in a coalesced manner to improve memory access efficiency.
+// Utilize shared memory to store boundary data, reducing redundant global memory accesses.
+// Use `__syncthreads()` effectively to prevent race conditions and ensure all threads have completed their tasks before proceeding.

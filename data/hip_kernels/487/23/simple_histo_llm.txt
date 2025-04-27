@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to buffer partial histogram results to reduce global memory access
+// Increase thread block size if the occupancy is not high enough to better utilize the GPU
+// Ensure proper memory alignment to optimize memory access transactions
+// Minimize warp divergence by reordering conditional statements if applicable
+```

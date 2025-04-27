@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Preload hh[Indx] into a register to avoid repeated global memory access
+// Preload a[Indx + j * dim] and b[Indx + i * dim] into registers for each thread
+// Move constant calculations like sqrtf(2 * PI) outside of the main loop
+// Consider memory coalescing for better memory access patterns
+```

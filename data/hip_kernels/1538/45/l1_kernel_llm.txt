@@ -1,0 +1,7 @@
+```
+// Use shared memory if applicable to reduce global memory access
+// Coalesce global memory accesses by ensuring threads access consecutive memory locations
+// Consider using warp-level primitives to optimize reduction operations
+// Verify occupancy and consider adjusting block size for better throughput
+// Optimize register usage to avoid register spilling and achieve better performance
+```

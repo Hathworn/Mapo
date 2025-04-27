@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by aligning the number of threads to a multiple of the warp size.
+// Optimize shared memory usage to reduce bank conflicts.
+// Add range checks to prevent out-of-bounds access in pIn memory.
+// Minimize __syncthreads() usage to reduce synchronization overhead.
+// Use memory access patterns that benefit from L2 cache.
+```

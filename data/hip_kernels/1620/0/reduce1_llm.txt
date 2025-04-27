@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access patterns to improve memory bandwidth utilization.
+// Consider adjusting block size for better occupancy based on specific GPU architecture.
+// Utilize shared memory efficiently to reduce redundant global memory accesses.
+// Ensure proper alignment of data in memory to maximize throughput.
+// Minimize bank conflicts in shared memory access to enhance performance.
+// Avoid warp divergence by ensuring all threads in a warp execute the same instruction.
+// Consider using half-warp unrolling for improved performance on certain architectures.
+```

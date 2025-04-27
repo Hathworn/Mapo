@@ -1,0 +1,9 @@
+```
+// Utilize shared memory to reduce global memory access
+// Ensure coalesced access by using adjacent threads to access adjacent data
+// Minimize divergence by structuring conditional branches uniformly
+// Opt for asynchronous memory access to overlap data transfer and computation
+// Consider loop unrolling to increase performance
+// Align data structures to ensure efficient memory access
+// Profile kernel to identify and eliminate bottlenecks
+```

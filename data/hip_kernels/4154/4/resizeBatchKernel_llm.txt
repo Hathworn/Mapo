@@ -1,0 +1,9 @@
+```
+// Consider increasing the size of shared memory buffer if the hardware allows, to reduce global memory access.
+// Utilize __syncthreads() carefully to ensure all threads in the block have completed their shared memory loads before proceeding.
+// Explore potential coalescing of global memory accesses to improve memory bandwidth utilization.
+// Examine if the look-up table accesses can be optimized, possibly by loading frequently accessed elements into shared memory.
+// Adjust the grid and block sizes for hardware occupancy to increase efficiency of GPU utilization.
+// Ensure that register usage is optimal to avoid spilling and maximize the speed of arithmetic operations.
+// Check if reusing loaded values can reduce repeated memory accesses or calculations.
+```

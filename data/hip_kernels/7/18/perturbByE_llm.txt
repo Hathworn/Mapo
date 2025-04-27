@@ -1,0 +1,6 @@
+```
+// Consider using __ldg() for read-only global memory access to E and masses arrays.
+// Optimize by leveraging shared memory to minimize global memory writes for tmppos.
+// Implement coalesced memory access patterns for improved memory transaction efficiency.
+// Ensure that mypos updates are minimized and potentially aggregate writes to reduce global memory pressure.
+```

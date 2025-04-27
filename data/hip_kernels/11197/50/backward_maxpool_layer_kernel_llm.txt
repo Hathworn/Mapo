@@ -1,0 +1,6 @@
+```
+// Use shared memory for caching frequently accessed data like indexes to reduce global memory access
+// Consider using a warp shuffle intrinsic to efficiently compute d across threads within a warp
+// Ensure enough threads are launched to fully utilize the GPU, possibly by fine-tuning grid and block dimensions
+// Minimize divergent branches in conditional statements to improve warp execution efficiency
+```

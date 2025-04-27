@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses if the operation can benefit from data reuse.
+// Consider using warp-level primitives to optimize memory access patterns and reduce divergence.
+// Ensure coalesced memory access by verifying that consecutive threads access consecutive memory locations.
+// Evaluate if using pinned memory can reduce data transfer latency between host and device.
+```

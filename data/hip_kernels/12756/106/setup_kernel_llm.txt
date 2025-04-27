@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by aligning hiprandState in memory
+// Consider using shared memory if multiple threads within a block reuse state
+// Optimize block and grid size based on hardware limits for maximum occupancy
+// Use asynchronous memory operations if applicable to overlap computation and data transfer
+```

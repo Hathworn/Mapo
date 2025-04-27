@@ -1,0 +1,5 @@
+// Consider using shared memory for block-level data sharing to minimize global memory accesses.
+// Optimizing index calculations to decrease arithmetic overhead and potential register spilling.
+// Ensure coalesced memory access patterns by aligning thread data access.
+// Explore loop unrolling for the accumulation loops to potentially increase performance.
+// Consider using __restrict__ qualifiers to hint at non-aliasing of pointers and optimize loads.

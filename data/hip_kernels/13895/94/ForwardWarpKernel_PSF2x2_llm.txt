@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data
+// Coalesce global memory accesses to improve memory throughput
+// Minimize divergent branches by reorganizing condition checks
+// Use __ldg for read-only data to leverage texture cache
+// Use registers wisely to reduce register pressure
+// Align data structures to improve memory access patterns
+```

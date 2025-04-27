@@ -1,0 +1,4 @@
+```
+// Ensure coalesced memory access by having threadIdx.x access consecutive indices in the vals array.
+// Minimize branching within the kernel by ensuring all threads within a warp follow the same execution path.
+```

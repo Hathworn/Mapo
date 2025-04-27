@@ -1,0 +1,5 @@
+```
+// Consider coalescing global memory accesses for d_startArray, d_startSumArray, and d_bounary.
+// Use shared memory to reduce global memory access latency if multiple threads access the same data.
+// Ensure warp divergence is minimized by keeping conditions uniform across threads in a warp.
+```

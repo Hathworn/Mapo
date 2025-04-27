@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses for dIn and dMeanIn to improve loading efficiency.
+// Use shared memory strategically to reduce redundant loads from global memory.
+// Ensure atomic operations are correctly used to avoid race conditions when updating shared memory.
+// Optimize use of shared memory by padding to avoid bank conflicts during concurrent accesses.
+```

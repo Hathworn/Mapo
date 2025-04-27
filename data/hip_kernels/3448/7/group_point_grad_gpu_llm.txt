@@ -1,0 +1,3 @@
+// Consider using shared memory to reduce global memory access in the accumulation loop.
+// Use warp shuffles to optimize inter-thread communication if necessary.
+// Ensure that the access pattern of `grad_out` and `grad_points` is coalesced to improve memory throughput.

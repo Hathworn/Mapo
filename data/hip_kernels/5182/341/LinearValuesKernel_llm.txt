@@ -1,0 +1,7 @@
+```
+// Precompute and broadcast invariant values, like 'delta', outside of loop structures where possible.
+// Use shared memory to minimize redundant global memory accesses and improve data locality.
+// Ensure coalesced memory access patterns for 'output' array to optimize memory bandwidth.
+// Avoid bank conflicts in accessing shared memory if implemented.
+// Consider using a strided approach for load/store operations to balance workload and reduce idle threads.
+```

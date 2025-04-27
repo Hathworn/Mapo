@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for tmp array
+// Ensure coalesced memory access pattern in loops for Y, dY, and dX
+// Minimize bank conflicts by carefully mapping accesses in shared memory
+// Utilize __syncthreads() appropriately to avoid race conditions
+// Replace multiple loads/stores with registers wherever possible
+```

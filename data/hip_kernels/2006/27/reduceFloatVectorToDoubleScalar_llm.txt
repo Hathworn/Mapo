@@ -1,0 +1,8 @@
+```
+// Consider using __ldg() to load fdata to leverage cached loads.
+// Use shared memory with loop unrolling to reduce global memory accesses.
+// Minimize thread divergence by applying conditional operators.
+// Pre-fetch data to shared memory to reduce global memory bandwidth use.
+// Optimize warp divergence by ensuring even work distribution among threads.
+// Ensure memory coalescing where accessing global memory.
+```

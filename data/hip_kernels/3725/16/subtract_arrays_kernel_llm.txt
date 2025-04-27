@@ -1,0 +1,4 @@
+// Ensure __restrict__ pointers to avoid pointer aliasing
+// Minimize the stride loop overhead by using appropriate block and grid dimensions settings
+// Use coalesced memory access pattern to maximize memory bandwidth utilization
+// Consider prefetching data to shared memory for further potential performance improvements

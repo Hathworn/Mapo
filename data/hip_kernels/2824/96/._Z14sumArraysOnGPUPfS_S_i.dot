@@ -1,0 +1,10 @@
+digraph "CFG for '_Z14sumArraysOnGPUPfS_S_i' function" {
+	label="CFG for '_Z14sumArraysOnGPUPfS_S_i' function";
+
+	Node0x5a3be40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = icmp slt i32 %5, %3\l  br i1 %6, label %7, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x5a3be40:s0 -> Node0x5a3cc80;
+	Node0x5a3be40:s1 -> Node0x5a3cd10;
+	Node0x5a3cc80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%7:\l7:                                                \l  %8 = zext i32 %5 to i64\l  %9 = getelementptr inbounds float, float addrspace(1)* %0, i64 %8\l  %10 = load float, float addrspace(1)* %9, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %11 = getelementptr inbounds float, float addrspace(1)* %1, i64 %8\l  %12 = load float, float addrspace(1)* %11, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %13 = fadd contract float %10, %12\l  %14 = getelementptr inbounds float, float addrspace(1)* %2, i64 %8\l  store float %13, float addrspace(1)* %14, align 4, !tbaa !5\l  br label %15\l}"];
+	Node0x5a3cc80 -> Node0x5a3cd10;
+	Node0x5a3cd10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  ret void\l}"];
+}

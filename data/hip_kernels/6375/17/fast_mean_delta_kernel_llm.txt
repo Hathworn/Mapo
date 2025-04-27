@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory accesses by ensuring thread-based access within contiguous memory regions.
+// Try to minimize global memory accesses by maximizing shared memory utilization.
+// Ensure all threads within a warp are active to prevent divergence and maximize efficiency.
+// Explore further reduction in registers by optimizing local variables.
+// If possible, experiment with alternative memory layouts for better performance.
+// Eliminate bank conflicts in shared memory through optimized index calculations.
+// Attempt to unroll loops for reduced overhead and increased throughput.
+// Analyze if more warps per block or block adjustments might lead to better resource utilization.
+```

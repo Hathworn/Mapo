@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to reduce global memory access for input data.
+// Prefetch data into registers to minimize accessing the global memory inside the loops.
+// Ensure coalesced memory access by adjusting the data layout if necessary.
+// Use warp-level primitives to avoid thread divergence in the inner loops.
+// Unroll the inner loops for potential better performance on architectures that support it.
+// Check if loop bounds can be optimized further for reducing register pressure.
+```

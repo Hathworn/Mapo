@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for better performance
+// Experiment with different block sizes to find optimal configuration
+// Consider using shared memory to reduce global memory accesses if applicable
+// Minimize memory divergence by ensuring all threads in a warp follow the same execution path
+// Check if N is a multiple of blockDim.x for efficient utilization of threads
+// Use __syncthreads() if shared memory usage is implemented to prevent race conditions
+```

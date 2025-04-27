@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency for frequently accessed data.
+// Coalesce global memory accesses to improve memory bandwidth utilization.
+// Ensure all memory accesses are aligned to avoid memory access penalties.
+// Minimize divergent branches to improve warp execution efficiency.
+// Apply loop unrolling if applicable to reduce loop overhead.
+// Use constant memory for any read-only data to take advantage of cached memory.
+```

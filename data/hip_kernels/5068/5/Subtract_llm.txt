@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by having contiguous threads access contiguous memory locations
+// Consider using shared memory if neighboring elements are accessed frequently
+// Align memory accesses to 128-byte boundaries for better performance
+// Optimize block and grid dimensions for better occupancy
+// Check the pitch alignment to reduce memory access latency
+// Use 32x32 thread blocks if hardware supports for better warp efficiency
+```

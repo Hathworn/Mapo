@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache normalization_factor if it's reused across threads
+// Consider coalesced memory access patterns for better global memory throughput
+// Avoid branch divergence by using conditional operator for invScale computation
+```

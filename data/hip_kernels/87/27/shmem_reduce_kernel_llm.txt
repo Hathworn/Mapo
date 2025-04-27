@@ -1,0 +1,7 @@
+```cpp
+// Use __restrict__ keyword to help the compiler with additional optimization opportunities.
+// Consider aligning d_in and d_out to warp boundaries to improve memory coalescing.
+// Ensure sdata is accessed in a coalesced pattern to maximize memory performance.
+// Explore potential benefits of loop unrolling in the reduction loop for better performance.
+// Evaluate the impact of occupancy for this kernel and adjust block size accordingly.
+```

@@ -1,0 +1,7 @@
+```
+// Unroll loops to enhance performance by allowing the compiler to optimize iterations
+// Use shared memory to reduce global memory accesses, ensuring coalesced access patterns
+// Adjust shared memory size based on block dimensions for optimal usage
+// Load data into shared memory before processing to minimize latency
+// Ensure data persistence and correct ordering when writing results back to global memory
+```

@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory access for frequently accessed data
+// Ensure coalesced memory access pattern for better performance
+// Use loop unrolling to optimize data transfer for numChannel == 3
+// Consider launching the kernel with an optimal block size to maximize occupancy
+// Evaluate potential benefits of using texture memory for read-only data if applicable
+```

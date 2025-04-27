@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by accessing A and C arrays linearly
+// Preload the B[i] variable into register to help reduce access latency
+// Consider using shared memory for B if it's frequently accessed and fits in shared memory
+// Use loop unrolling if applicable to increase throughput
+```

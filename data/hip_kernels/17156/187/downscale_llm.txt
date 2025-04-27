@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for gradOutput_data to minimize global memory accesses
+// Consider using memory coalescing techniques for gradInput_data accesses
+// Optimize thread divergence by ensuring work is evenly distributed across threads
+// If possible, prefetch data into registers to reduce access latency
+// Explore launching more threads per block to maximize occupancy
+// Use __restrict__ qualifier for pointer arguments to indicate non-aliasing
+```

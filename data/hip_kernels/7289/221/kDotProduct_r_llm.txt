@@ -1,0 +1,8 @@
+```cpp
+// Use registers for storing intermediate values to minimize global memory access
+// Use __shared__ memory to enable fast intra-block data exchange
+// Avoid unnecessary __syncthreads() by optimizing warp sum reductions
+// Perform warp-level reductions using volatile to avoid intermediate __syncthreads()
+// Ensure proper utilization of shared memory to avoid bank conflicts
+// Minimize grid size calculation overhead by removing unnecessary checks in loops
+```

@@ -1,0 +1,7 @@
+```
+// Load d_cdf_norm to shared memory to reduce global memory access time
+// Ensure that the blockDim.x * blockDim.y does not exceed the shared memory space
+// Consider coalesced memory accesses for d_x, d_y, d_log_Y, d_r_new, d_g_new, d_b_new
+// Pre-compute repeated divisions by y to minimize computation time
+// Check image_index_1d for bounds if further optimizations are needed
+```

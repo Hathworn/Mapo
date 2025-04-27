@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning threads with data layout
+// Use shared memory to cache gradOutput_data for better data reuse
+// Pre-compute repeated index calculations outside of inner loops
+// Unroll loops further if scale_factor is known at compile time
+// Consider using warp-level shuffles or reduce for accumulation
+// Use __syncthreads() after loading data into shared memory to avoid race conditions
+```

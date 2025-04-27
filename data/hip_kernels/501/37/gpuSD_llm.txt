@@ -1,0 +1,8 @@
+```c
+// Coalesce global memory accesses to vectsA and vectsB for better performance.
+// Minimize __syncthreads() calls if possible to reduce warp divergence.
+// Use float4 or float2 vectorized loads/stores to reduce global memory transactions.
+// Consider loop unrolling for the computation of partial sums to improve performance.
+// Ensure that accessed memory is aligned to improve load/store efficiency.
+// Analyze occupancy and increase if possible by optimizing shared memory usage.
+```

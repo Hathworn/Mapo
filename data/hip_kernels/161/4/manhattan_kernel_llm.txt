@@ -1,0 +1,8 @@
+```
+// Consider using texture memory for accessing vg_a and vg_b to improve memory access pattern.
+// Optimize pitch access by using coalesced memory access to vg_a and vg_b.
+// Avoid excessive usage of shared memory by reducing its size if possible.
+// Ensure all global memory writes are coalesced for optimal bandwidth usage.
+// Evaluate the use of warp shuffle operations for reduction instead of shared memory.
+// Analyze potential benefits of preferring atomic operations for reduction.
+```

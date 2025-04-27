@@ -1,0 +1,7 @@
+```
+// Use shared memory when possible to optimize memory access patterns.
+// Aim to coalesce global memory accesses to minimize memory transaction overhead.
+// Consider using warp shuffle functions to reduce shared memory use.
+// Ensure memory accesses are aligned to avoid bank conflicts.
+// Avoid unnecessary synchronization to reduce latency.
+```

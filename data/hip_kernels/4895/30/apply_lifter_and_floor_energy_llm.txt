@@ -1,0 +1,6 @@
+```
+// Use shared memory to store lifter coefficients for efficient access by all threads within a block.
+// Avoid repeated memory access by preloading shared_lifter_coeffs in shared memory.
+// Ensure coalesced memory access patterns within shared_lifter_coeffs to optimize memory bandwidth usage.
+// Consider adjusting block size for optimal occupancy and resource utilization.
+```

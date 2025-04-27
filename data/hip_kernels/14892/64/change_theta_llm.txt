@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data and minimize global memory access
+// Ensure memory coalescing by having each thread access contiguous data
+// Avoid bank conflicts in shared memory accesses
+// Optimize grid and block dimensions to maximize occupancy
+// Consider using vectorized loads for better memory throughput
+```

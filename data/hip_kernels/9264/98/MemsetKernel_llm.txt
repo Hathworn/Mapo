@@ -1,0 +1,3 @@
+// Use shared memory to reduce repetitive global memory accesses
+// Consider loop unrolling if w and h are known at compile-time
+// Ensure memory coalescing by accessing consecutive threads mapping to consecutive memory addresses

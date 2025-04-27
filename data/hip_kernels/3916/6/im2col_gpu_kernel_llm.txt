@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for data_im
+// Prefetch data into shared memory to reduce global memory bandwidth usage
+// Minimize shared memory bank conflicts by padding shared memory if necessary
+// Balance the load across threads to maximize occupancy
+// Use warp size calculations for thread indexing to optimize performance
+```

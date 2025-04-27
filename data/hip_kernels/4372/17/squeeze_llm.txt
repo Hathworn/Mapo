@@ -1,0 +1,4 @@
+// Use shared memory to store intermediate computations to reduce global memory access.
+// Prefetch data from global memory to registers when possible.
+// Consider using atomic operations if concurrent writes to the memory are detected.
+// Loop unrolling could be applied to reduce overhead and improve throughput.

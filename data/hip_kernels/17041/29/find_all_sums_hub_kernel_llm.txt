@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory to cache node weights
+// Reduce global memory access by caching node_weight in shared memory
+// Ensure all threads synchronize after writing to shared memory
+// Use __syncthreads() to synchronize threads within a block
+// Ensure each thread reads from the cached shared memory instead of global memory

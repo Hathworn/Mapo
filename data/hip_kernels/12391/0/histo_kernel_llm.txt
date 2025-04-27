@@ -1,0 +1,8 @@
+```
+// Use shared memory for faster access to frequently accessed data
+// Initialize shared memory for each thread block to reduce global memory traffic
+// Calculate the index and stride for processing buffer elements efficiently
+// Use atomic add for accurate histogram calculation and memory consistency
+// Ensure all updates to shared memory are done before proceeding
+// Use atomic add to update the global histogram, minimizing global memory access
+```

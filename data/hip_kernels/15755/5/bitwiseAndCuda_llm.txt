@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve memory bandwidth utilization
+// Use shared memory to store local data for each block to improve memory access speed
+// Ensure data alignment to prevent potential memory access penalties
+// Check for bank conflicts in shared memory if used
+// Optimize block and grid size for maximum occupancy and efficiency
+// Utilize __syncthreads() appropriately if using shared memory to avoid race conditions
+```

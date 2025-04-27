@@ -1,0 +1,7 @@
+```cpp
+// Ensure coalesced memory access patterns for better bandwidth utilization
+// Consider prefetching data into shared memory to reduce global memory access latency
+// Use warp-level primitives if possible to optimize reduction operations
+// Align block size and grid size to optimize for the GPU's occupancy
+// Minimize thread divergence by reorganizing conditional calculations
+```

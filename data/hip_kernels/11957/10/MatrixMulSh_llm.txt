@@ -1,0 +1,10 @@
+```
+// Consider increasing TILE_WIDTH for better utilization of shared memory if registers are available
+// Ensure matrices Md and Nd are aligned in memory for coalesced access
+// Consider using float4 for loading data for coalesced access and reduced instruction count
+// Avoid bank conflicts in shared memory access by padding shared memory arrays if needed
+// Balance between computation and memory transfer to optimize for memory bandwidth
+// Try tuning grid and block sizes to find the optimal configuration for the target device
+// Use __ldg() for read-only data accesses from global memory if applicable and beneficial
+// Double-check for potential warp divergence in the control flow or loop iterations
+```

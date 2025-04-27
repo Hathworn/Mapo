@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access and improve memory bandwidth utilization
+// Load weights into shared memory only once per block to minimize global memory transactions
+// Ensure proper synchronization with __syncthreads() after loading shared memory
+// Optimize thread calculations by utilizing block indexing effectively

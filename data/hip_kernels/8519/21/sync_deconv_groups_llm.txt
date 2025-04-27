@@ -1,0 +1,5 @@
+// Use shared memory for repeated data access to reduce global memory transactions
+// Minimize register usage by reducing variable lifetime and using appropriate data types
+// Align memory accesses to improve coalescing
+// Consider using warp shuffle operations for efficient data sharing among threads within a warp
+// Evaluate occupancy by adjusting the number of threads per block and the launch bounds settings

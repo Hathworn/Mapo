@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Minimize divergent branches in the kernel logic for better warp efficiency.
+// Use memory coalescing when accessing global memory to optimize access patterns.
+// Profile the divisor computation to ensure no computational bottleneck occurs.

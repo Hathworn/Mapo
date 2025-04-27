@@ -1,0 +1,7 @@
+```
+// Use of shared memory to store intermediate sums reduces global memory access
+// Use of __syncthreads() ensures all threads have completed computation before reduction
+// Reduction step within a block minimizes the amount of data transferred to global memory
+// Consider memory coalescing when accessing x and dx to optimize global memory bandwidth
+// After reduction, ensure memory access pattern for x and dx remains coalesced
+```

@@ -1,0 +1,23 @@
+digraph "CFG for '_Z29gpu_stencil37_hack1_cp_slicesPdS_S_S_mmmiii' function" {
+	label="CFG for '_Z29gpu_stencil37_hack1_cp_slicesPdS_S_S_mmmiii' function";
+
+	Node0x5218050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%10:\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.z()\l  %12 = mul i32 %11, %9\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %14 = mul i32 %13, %8\l  %15 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %16 = getelementptr i8, i8 addrspace(4)* %15, i64 4\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 4, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %21 = mul i32 %20, %19\l  %22 = mul i64 %5, %4\l  %23 = sext i32 %14 to i64\l  %24 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %25 = add nsw i32 %21, %24\l  %26 = sext i32 %25 to i64\l  %27 = icmp uge i64 %26, %5\l  %28 = icmp sgt i32 %8, 0\l  br i1 %28, label %29, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x5218050:s0 -> Node0x521b280;
+	Node0x5218050:s1 -> Node0x521b310;
+	Node0x521b280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%29:\l29:                                               \l  %30 = sext i32 %21 to i64\l  %31 = add nsw i32 %12, 1\l  %32 = sext i32 %31 to i64\l  %33 = icmp uge i64 %32, %6\l  %34 = sext i32 %12 to i64\l  %35 = mul i64 %22, %34\l  %36 = zext i32 %11 to i64\l  %37 = shl nuw nsw i64 %36, 1\l  %38 = mul i64 %37, %22\l  %39 = zext i32 %24 to i64\l  %40 = add nsw i64 %30, %39\l  %41 = add i64 %40, %38\l  %42 = add i64 %40, %35\l  %43 = select i1 %33, i1 true, i1 %27\l  br label %45\l}"];
+	Node0x521b280 -> Node0x521bd50;
+	Node0x521b310 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%44:\l44:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+	Node0x521bd50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%45:\l45:                                               \l  %46 = phi i32 [ 0, %29 ], [ %70, %69 ]\l  %47 = add nsw i32 %46, %14\l  %48 = sext i32 %47 to i64\l  %49 = icmp uge i64 %48, %4\l  %50 = mul i64 %48, %5\l  %51 = add i64 %41, %50\l  %52 = zext i32 %46 to i64\l  %53 = add nsw i64 %52, %23\l  %54 = mul i64 %53, %5\l  %55 = add i64 %42, %54\l  %56 = select i1 %27, i1 true, i1 %49\l  br i1 %56, label %61, label %57\l|{<s0>T|<s1>F}}"];
+	Node0x521bd50:s0 -> Node0x521c7f0;
+	Node0x521bd50:s1 -> Node0x521c880;
+	Node0x521c880 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%57:\l57:                                               \l  %58 = getelementptr inbounds double, double addrspace(1)* %0, i64 %55\l  %59 = load double, double addrspace(1)* %58, align 8, !tbaa !7\l  %60 = getelementptr inbounds double, double addrspace(1)* %3, i64 %51\l  store double %59, double addrspace(1)* %60, align 8, !tbaa !7\l  br label %61\l}"];
+	Node0x521c880 -> Node0x521c7f0;
+	Node0x521c7f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%61:\l61:                                               \l  %62 = select i1 %43, i1 true, i1 %49\l  br i1 %62, label %69, label %63\l|{<s0>T|<s1>F}}"];
+	Node0x521c7f0:s0 -> Node0x521c130;
+	Node0x521c7f0:s1 -> Node0x521d460;
+	Node0x521d460 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%63:\l63:                                               \l  %64 = add i64 %55, %22\l  %65 = getelementptr inbounds double, double addrspace(1)* %0, i64 %64\l  %66 = load double, double addrspace(1)* %65, align 8, !tbaa !7\l  %67 = add i64 %51, %22\l  %68 = getelementptr inbounds double, double addrspace(1)* %3, i64 %67\l  store double %66, double addrspace(1)* %68, align 8, !tbaa !7\l  br label %69\l}"];
+	Node0x521d460 -> Node0x521c130;
+	Node0x521c130 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%69:\l69:                                               \l  %70 = add nuw nsw i32 %46, 1\l  %71 = icmp eq i32 %70, %8\l  br i1 %71, label %44, label %45, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x521c130:s0 -> Node0x521b310;
+	Node0x521c130:s1 -> Node0x521bd50;
+}

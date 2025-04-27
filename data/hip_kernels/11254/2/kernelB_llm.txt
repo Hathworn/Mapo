@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by using consecutive memory locations for each block
+// Consider using shared memory to reduce global memory accesses
+// Use float4 or other vectorized types to improve memory throughput
+// Check for memory alignment to minimize uncoalesced memory accesses
+// Optimize block size and grid size for better occupancy
+// Use __restrict__ keyword for pointer parameters to aid compiler optimizations
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by aligning memories such that consecutive threads access consecutive memory locations.
+// Use shared memory to reduce global memory traffic if possible.
+// Optimize memory access patterns to prevent bank conflicts in shared memory.
+// Minimize the use of __float2int_rd and __int2float_rn conversions inside loops as much as possible.
+// Evaluate atomic operations' performance impact, and ensure they're necessary and optimally used.
+// Explore loop unrolling strategies to reduce loop overhead if numOut is known at compile time.
+```

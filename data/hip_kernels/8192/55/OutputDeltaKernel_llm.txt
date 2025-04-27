@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Ensure data is coalesced when reading target and outputActivations
+// Consider loop unrolling if performance gains are noticeable
+// Evaluate the need for __syncthreads() for data dependencies
+// Experiment with different block and grid sizes for optimal performance
+```

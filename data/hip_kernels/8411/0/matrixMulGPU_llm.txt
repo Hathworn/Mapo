@@ -1,0 +1,9 @@
+```cpp
+// Optimize memory access patterns to ensure coalesced memory accesses
+// Ensure all threads within a warp access contiguous memory locations
+// Use shared memory to minimize global memory accesses
+// Maintain high occupancy by choosing optimal block size
+// Consider loop unrolling for further performance improvement
+// Ensure there are enough registers to prevent spilling to local memory
+// Use __syncthreads() to synchronize threads after shared memory loads
+```

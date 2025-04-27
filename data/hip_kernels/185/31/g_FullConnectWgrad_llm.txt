@@ -1,0 +1,5 @@
+// Consider coalesced memory access for wgrad and w to enhance memory bandwidth utilization.
+// Ensure memory accesses are aligned to reduce latency.
+// Explore shared memory usage if there are redundant global memory reads.
+// Investigate if loop unrolling can improve performance due to predictable and repeated access patterns.
+// Verify that lambda impacts are correctly leveraged to minimize conditional branches within loops.

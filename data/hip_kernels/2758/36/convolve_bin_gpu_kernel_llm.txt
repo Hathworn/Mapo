@@ -1,0 +1,8 @@
+```c
+// Consider aligning shared memory access for coalescing
+// Reduce global memory access by using shared memory
+// Align input_shared size to match padding for efficient memory usage
+// Preload weights in shared memory to minimize redundant global loads
+// Use __syncthreads() efficiently to synchronize shared memory access
+// Potentially unroll inner loops to reduce loop overhead
+```

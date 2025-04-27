@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if multiple threads access the same input element to reduce global memory access.
+// Ensure the input image and output image pointers are properly aligned for coalesced access.
+// Reduce divergence by minimizing the use of conditional branches within the kernel.
+// Consider using texture memory if spatial locality is high for input image access.
+```

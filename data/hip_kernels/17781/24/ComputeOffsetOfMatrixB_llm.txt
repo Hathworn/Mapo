@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache row_sum values to reduce global memory access
+// Use __restrict__ keyword for pointers to enable compiler optimizations
+// Ensure coalesced memory accesses for output array to improve memory throughput
+```

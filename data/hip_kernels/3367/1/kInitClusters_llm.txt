@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory bandwidth
+// Optimize memory access patterns by ensuring coalesced accesses to 'clusters'
+// Ensure 'surf2Dread' usage is aligned with warp sizes for maximum efficiency
+// Consider loop unrolling if accessing 'clusters' in a loop for better throughput
+// Prefetch data if possible to hide latency in memory-bound scenarios
+```

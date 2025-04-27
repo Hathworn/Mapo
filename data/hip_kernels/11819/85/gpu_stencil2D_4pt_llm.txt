@@ -1,0 +1,8 @@
+```
+// Consider using loop unrolling within the TILE_SIZE loops for better ILP (Instruction Level Parallelism).
+// Ensure adequate shared memory allocation to prevent bank conflicts, which would improve memory access speed.
+// Optimize boundary condition checks by minimizing redundant calculations in the halo region.
+// Utilize vectorized memory accesses where possible to exploit data coalescing for global memory.
+// If applicable, explore using mixed precision to reduce memory bandwidth requirements and improve performance.
+// Evaluate using alternative memory spaces, such as the texture memory, for read-only data to offload pressure on global memory.
+```

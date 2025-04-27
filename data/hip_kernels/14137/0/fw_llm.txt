@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access.
+// Ensure coalesced memory access patterns by aligning data accesses within warps.
+// Minimize global memory writes by first checking the condition before updating values.
+// Use loop unrolling if the memory access pattern allows for predictable loop bounds.
+```

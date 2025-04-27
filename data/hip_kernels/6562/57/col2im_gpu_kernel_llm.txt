@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to cache data_col elements to reuse memory efficiently.
+// Minimize bank conflicts in shared memory access by appropriately aligning data.
+// Unroll loops for h_col and w_col to reduce loop overhead and increase instruction throughput.
+// Consider coalesced memory access patterns for loading data from global memory to reduce memory latency.
+// Use proper grid and block dimensions to maximize occupancy and ensure efficient execution.
+// Evaluate if the atomicAdd operation can be reduced or avoided to minimize synchronization overhead.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory effectively to reduce global memory access latency.
+// Ensure memory coalescing by accessing global memory in a pattern that minimizes strided access.
+// Align shared memory access to avoid bank conflicts by using padding (IPAD).
+// Perform boundary checks before accessing memory to avoid unnecessary calculations or errors.
+// Utilize thread synchronization (__syncthreads()) to ensure all threads have loaded data to shared memory before any read/write operations.
+```

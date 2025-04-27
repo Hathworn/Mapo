@@ -1,0 +1,6 @@
+```c
+// Use shared memory to cache data if necessary to improve access speed.
+// Ensure proper memory alignment for better coalesced accesses.
+// Consider using warp-level primitives to minimize divergence.
+// Minimize __syncthreads() usage to reduce synchronization overhead.
+```

@@ -1,0 +1,7 @@
+```
+// For memory coalescing, ensure that accesses to output, input, weightx, and weighty are contiguous.
+// Use shared memory to cache commonly accessed data between threads, such as weightx and weighty.
+// Reduce the number of global memory accesses by calculating coefficients using registers.
+// Consider loop unrolling for fixed iteration patterns to reduce instruction overhead.
+// Minimize read-after-write dependencies to improve instruction throughput.
+```

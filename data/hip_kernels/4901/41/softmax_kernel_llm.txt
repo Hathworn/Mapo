@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access for input and output arrays
+// Leverage shared memory to store intermediate computations within the block
+// Utilize vectorized memory operations (e.g., float2, float4) for faster data transfer
+// Adjust block size and grid size to achieve optimal occupancy
+// Use __restrict__ qualifier for input and output pointers to enable better compiler optimizations
+```

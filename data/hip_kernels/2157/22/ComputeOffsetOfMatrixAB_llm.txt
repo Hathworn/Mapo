@@ -1,0 +1,4 @@
+// Consider using shared memory to store row_sum and col_sum for faster access within a block
+// Coalesce memory accesses to output array to reduce memory transaction overhead
+// Use loop unrolling if possible to improve instruction throughput
+// Ensure all threads within a block have completed accessing row_sum and col_sum before using their values

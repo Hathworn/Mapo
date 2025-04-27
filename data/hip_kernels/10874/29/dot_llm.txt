@@ -1,0 +1,6 @@
+// Ensure coalesced global memory access by aligning a and b elements
+// Consider loop unrolling further to enhance performance
+// Investigate occupancy impact of shared memory usage
+// Look into potential bank conflicts in shared memory access
+// Evaluate if reducing grid/block sizes improves performance
+// Use __restrict__ keyword if applicable for pointer inputs

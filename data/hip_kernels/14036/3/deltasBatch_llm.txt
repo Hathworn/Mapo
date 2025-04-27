@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth utilization
+// Evaluate if using shared memory for frequently accessed inputs or weights can reduce global memory traffic
+// Investigate if loop unrolling techniques could benefit the innermost loops in terms of performance
+// Check if the activation and weight update loops can benefit from warp-level parallelism
+// Assess occupancy and ensure sufficient threads per block to keep the GPU fully utilized
+```

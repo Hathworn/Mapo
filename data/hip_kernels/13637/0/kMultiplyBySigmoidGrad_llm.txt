@@ -1,0 +1,7 @@
+```
+// Use 'stride' to access memory in coalesced fashion
+// Read 'act[i]' once to minimize global memory access
+// Directly update 'target[i]' to reduce redundant reads
+// Consider using shared memory if possible to further optimize memory access
+// Optimize grid and block dimensions to maximize device occupancy
+```

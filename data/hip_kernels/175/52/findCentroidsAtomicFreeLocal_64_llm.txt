@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for 'responses' to improve memory efficiency.
+// Align shared memory usage and allocation to avoid bank conflicts.
+// Replace shared memory initialization with parallelized thread operations.
+// Use warp-level primitives to optimize intra-warp reduction in shared memory.
+// Minimize global memory writes by combining 'centroidMass' and 'centroidCount' updates.
+```

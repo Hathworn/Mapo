@@ -1,0 +1,8 @@
+```
+// Consider decreasing the number of global memory accesses by using shared memory
+// Load input data into shared memory before processing to improve memory coalescing
+// Use constant memory for frequently accessed read-only data if applicable
+// Minimize conditional statements inside the loops to enhance performance
+// Balance workload between threads to avoid warp divergence
+// Optimize the block and grid dimensions for maximum occupancy
+```

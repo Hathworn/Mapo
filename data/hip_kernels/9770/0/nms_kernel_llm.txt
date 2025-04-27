@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access when loading box data to shared memory.
+// Employ loop unrolling to minimize loop overhead when copying data to shared memory.
+// Consider using half precision if precision requirements allow it to save memory bandwidth.
+// Optimize the use of shared memory by utilizing the smallest necessary data type.
+// Employ warp-synchronous programming to avoid calling __syncthreads() too frequently.
+// Reduce bank conflicts in shared memory by avoiding stride patterns that match the bank size.
+// Use a divide-and-conquer technique to reduce comparisons in overlapping blocks.
+```

@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Use shared memory to minimize redundant global memory accesses and improve performance.
+// Preload data into shared memory where possible to hide global memory latency.
+// Align memory accesses to 32-byte boundaries when possible for optimal performance.
+// Reduce bank conflicts in shared memory by ensuring proper access patterns.
+// Optimize loop unrolling for the main computation to reduce loop overhead and enhance ILP (Instruction-Level Parallelism).
+// Ensure that the work per thread is balanced to prevent idle threads within a warp.
+```

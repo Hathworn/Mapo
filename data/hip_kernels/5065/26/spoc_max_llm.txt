@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access
+// Ensure coalesced access by aligning input data
+// Avoid bank conflicts in shared memory access
+// Minimize __syncthreads() usage if block size allows
+// Use atomic operations carefully to avoid serialization
+// Consider loop unrolling for the reduction loop
+```

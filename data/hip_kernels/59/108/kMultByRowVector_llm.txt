@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache row vector for improved access speed
+// Ensure coalesced memory access by aligning threadIdx.x with column index
+// Minimize divergent branching by restructuring condition checks
+```

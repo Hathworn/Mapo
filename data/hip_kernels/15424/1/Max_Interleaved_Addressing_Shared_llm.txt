@@ -1,0 +1,7 @@
+```
+// Use float4 data type for coalesced memory access
+// Consider using warp shuffle operations for reduction
+// Minimize shared memory usage by starting the loop from the nearest power-of-two stride
+// Ensure optimal block size to maximize occupancy
+// Use __restrict__ qualifier for data pointer to improve compiler optimizations
+```

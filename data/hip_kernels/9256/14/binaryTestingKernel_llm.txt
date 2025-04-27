@@ -1,0 +1,5 @@
+// Ensure coalesced memory access for 'predictions' and 'targets' arrays
+// Use shared memory if there are repeated accesses to the same data
+// Consider using warp-level intrinsics for reduction operations
+// Minimize thread divergence within a warp by organizing condition checks
+// Optimize memory layout to favor linear access patterns

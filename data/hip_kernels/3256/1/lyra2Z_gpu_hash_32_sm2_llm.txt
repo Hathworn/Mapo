@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Ensure memory coalescing by having contiguous threads access contiguous memory 
+// Avoid unnecessary computations or memory accesses outside the if block to improve thread efficiency
+// Minimize use of __syncthreads() to reduce synchronization overhead
+```

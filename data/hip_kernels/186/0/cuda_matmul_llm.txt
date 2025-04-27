@@ -1,0 +1,7 @@
+```
+// Use shared memory to store matrix tiles for better memory access patterns
+// Ensure shared memory loads are coalesced to improve memory bandwidth usage
+// Synchronize threads after loading to ensure all data is properly staged
+// Perform computations on smaller shared memory tiles for better cache utilization
+// Synchronize threads after computation to prevent race conditions before next tile load
+```

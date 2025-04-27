@@ -1,0 +1,6 @@
+// Precompute avgWeightGradPtr values outside the loop to reduce memory access.
+// Cache avgGrad in a register for faster repeated usage.
+// Use shared memory for weightsGradPtr and shiftedWeightsPtr if possible to improve data access speed.
+// Consider using warp-level primitives to optimize reduction.
+// Ensure loop unrolling for better pipeline utilization.
+// Avoid branching by consolidating similar operations.

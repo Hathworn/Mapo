@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to store normalization factors to reduce global memory access.
+// Consider coalesced memory access patterns for improved global memory throughput.
+// Ensure that load and store operations are aligned to enable efficient memory transactions.
+// Minimize divergent branches within the kernel to keep warp execution efficient.
+```

@@ -1,0 +1,7 @@
+```
+// Consider reducing the number of global memory accesses by using shared memory
+// Ensure to synchronize threads after loading and before writing to shared memory
+// Consider using coalesced memory access for better performance
+// Optimize the use of __syncthreads() to avoid unnecessary synchronization
+// Ensure correct usage of shared memory size to avoid bank conflicts
+```

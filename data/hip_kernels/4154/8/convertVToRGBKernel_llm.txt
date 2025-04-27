@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store frequently accessed data to reduce global memory accesses.
+// Optimize loading of uint16_t data by coalescing accesses to ensure memory transactions are efficient.
+// Implement loop unrolling in processPixel calculations for improved performance.
+// Precompute constants used in processPixel to reduce redundant calculations within the loop.
+// Minimize divergent branches by structuring conditions to favor warp-wide decisions.
+// Evaluate the potential of launching smaller blocks to exploit better cache usage.
+```

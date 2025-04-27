@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for reusing common data among threads
+// Ensure memory access patterns are coalesced for improved global memory bandwidth
+// Minimize divergent branches by ensuring uniform execution paths
+// Experiment with different block sizes to identify the optimal configuration for the target hardware
+// Prefetch data to registers if reused within the kernel
+```

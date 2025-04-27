@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache frequently accessed data for reduced global memory access times.
+// Ensure coalesced memory access by structuring data layout to align with warp size.
+// Evaluate loop unrolling to minimize loop control overhead for continuous memory access patterns.
+// Optimize block and grid configuration to match the hardware's compute capability for maximal occupancy.
+```

@@ -1,0 +1,9 @@
+```
+// Optimize memory access by coalescing reads of pointsCoordinates
+// Consider further unrolling the loop to increase utilization
+// Use more shared memory if blockDim.x is small to maximize usage
+// Minimize use of atomic operations in performance-critical sections
+// Ensure pointsCoordinates is aligned for optimal memory access
+// Prefetch data to shared memory to reduce global memory latency
+// Consider load balancing for irregular activityFlag patterns
+```

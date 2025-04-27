@@ -1,0 +1,15 @@
+digraph "CFG for '_Z26computeGradientCentralDiffPKfPfPiiii' function" {
+	label="CFG for '_Z26computeGradientCentralDiffPKfPfPiiii' function";
+
+	Node0x623a590 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = zext i16 %12 to i32\l  %14 = mul i32 %8, %13\l  %15 = add i32 %14, %7\l  %16 = icmp slt i32 %15, %3\l  br i1 %16, label %17, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x623a590:s0 -> Node0x623b510;
+	Node0x623a590:s1 -> Node0x623c590;
+	Node0x623b510 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds float, float addrspace(1)* %0, i64 %21\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !11,\l... !amdgpu.noclobber !6\l  %24 = add nsw i32 %20, %4\l  %25 = sext i32 %24 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %25\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !11,\l... !amdgpu.noclobber !6\l  %28 = fsub contract float %23, %27\l  %29 = mul nsw i32 %5, %4\l  %30 = add nsw i32 %20, %29\l  %31 = sext i32 %30 to i64\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %31\l  store float %28, float addrspace(1)* %32, align 4, !tbaa !11\l  %33 = icmp eq i32 %5, 0\l  %34 = fmul contract float %28, %28\l  %35 = mul nsw i32 %4, 6\l  %36 = add nsw i32 %20, %35\l  %37 = sext i32 %36 to i64\l  %38 = getelementptr inbounds float, float addrspace(1)* %1, i64 %37\l  br i1 %33, label %42, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x623b510:s0 -> Node0x623c540;
+	Node0x623b510:s1 -> Node0x623e3a0;
+	Node0x623e3a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%39:\l39:                                               \l  %40 = load float, float addrspace(1)* %38, align 4, !tbaa !11\l  %41 = fadd contract float %34, %40\l  br label %42\l}"];
+	Node0x623e3a0 -> Node0x623c540;
+	Node0x623c540 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%42:\l42:                                               \l  %43 = phi float [ %41, %39 ], [ %34, %17 ]\l  store float %43, float addrspace(1)* %38, align 4, !tbaa !11\l  br label %44\l}"];
+	Node0x623c540 -> Node0x623c590;
+	Node0x623c590 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%44:\l44:                                               \l  ret void\l}"];
+}

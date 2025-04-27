@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for idx to improve memory access efficiency
+// Use shared memory if calculations occur in a repetitive manner to reduce global memory accesses
+// Verify if prefetching data can improve performance, particularly if idx is accessed in a pattern
+// Align idx to greater than 128-byte boundaries to benefit from better memory loads
+// Evaluate if loop unrolling would reduce overhead and increase performance
+```

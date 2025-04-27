@@ -1,0 +1,6 @@
+// Consider using `__restrict__` keyword for pointers to optimize memory access
+// Ensure coalesced memory access for `d`, `m`, and `x` arrays
+// Use `__syncthreads()` consistently to ensure shared memory is fully synchronized
+// Align shared memory size for optimal access patterns
+// Explore loop unrolling for further optimization
+// Investigate the use of warp-level primitives for reduction tasks

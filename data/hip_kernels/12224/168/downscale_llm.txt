@@ -1,0 +1,10 @@
+```
+// Consider using shared memory for gradOutput_data to improve memory access patterns
+// Evaluate if loop unrolling provides a significant performance benefit
+// Investigate coalesced memory accesses to ensure optimal data access by threads
+// Consider memory access latency and ensure alignment for gradInput_data
+// Check if each thread's access to gradOutput_data is sequential to enhance throughput
+// Use warp-level primitives to optimize the reduction within threads
+// Ensure memory stride access patterns do not hinder the coalescing of global memory accesses
+// Investigate using atomic operations if gradInput_data requires concurrent updates from multiple threads
+```

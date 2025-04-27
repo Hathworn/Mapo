@@ -1,0 +1,5 @@
+// Consider optimizing memory access patterns for better coalescing
+// Ensure shared memory allocation is optimized and minimizes bank conflicts
+// Evaluate using atomic operations to potentially reduce synchronization overhead
+// Check for warp divergence in the unrolled loop for last warp and optimize if necessary
+// Consider aligning data structures to improve memory access efficiency

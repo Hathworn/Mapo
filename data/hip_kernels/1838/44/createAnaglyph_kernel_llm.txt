@@ -1,0 +1,5 @@
+// Coalesce memory access for better performance
+// Consider using shared memory if multiple threads access same data
+// Ensure memory alignment for uchar4 elements
+// Avoid bank conflicts in shared memory by padding if necessary
+// Use vectorized memory operations for uchar4 loading and storing

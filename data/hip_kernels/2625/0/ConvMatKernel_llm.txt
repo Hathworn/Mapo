@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory access
+// Use constant memory for the convolution matrix if it is read-only
+// Opt for loop unrolling to potentially increase kernel performance
+// Ensure coalesced memory access patterns for img_device and img_device2
+// Explore using texture memory for global memory read reduction
+```

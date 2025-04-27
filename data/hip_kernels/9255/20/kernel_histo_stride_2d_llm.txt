@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for partial histograms to reduce global memory access.
+// Ensure coalesced memory access when reading from ct to improve memory bandwidth utilization.
+// Use warp-level primitives to minimize thread divergence and improve parallel efficiency.
+// Optimize the stride calculation to align data access patterns with device memory architecture.
+```

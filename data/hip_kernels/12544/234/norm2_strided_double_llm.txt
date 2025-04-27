@@ -1,0 +1,6 @@
+```
+// Optimize memory access patterns to ensure coalesced global memory access
+// Use warp shuffle operations for the reduction within the block to reduce synchronization overhead
+// Consider adjusting block size to improve occupancy and balance shared memory usage
+// Use a two-level reduction pattern where possible to decrease synchronization needed in the inner reduction
+```

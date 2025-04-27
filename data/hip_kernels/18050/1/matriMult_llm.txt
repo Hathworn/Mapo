@@ -1,0 +1,5 @@
+// Consider using shared memory to store tiles of matrices m and n to reduce global memory accesses.
+// Ensure proper memory alignment and coalescing for efficient global memory access.
+// Experiment with different block sizes to maximize occupancy and reduce memory latency.
+// Utilize loop unrolling to further optimize computation within the kernel.
+// Use constant memory for storing kernel-specific parameters if applicable to minimize memory access overhead.

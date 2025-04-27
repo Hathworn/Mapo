@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory accesses for flow fields 'u' and 'v'
+// Optimize thread block size to maximize occupancy and reduce idle threads
+// Prefetch data or use coalesced memory access for input arrays 'u', 'v', 'src' and output array 'dst'
+// Avoid global memory bottlenecks by ensuring memory access patterns are coalesced
+// Examine the data reuse to reduce redundant computations or memory accesses
+```

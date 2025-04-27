@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses to optimize global memory reads.
+// Ensure that shared memory utilizations are maximized for better performance.
+// Minimize divergent branches in the reduction loop for efficient warp execution.
+// Reuse loaded shared data as much as possible to reduce global memory traffic.
+// Reduce the number of syncthreads() to lower synchronization overhead.
+```

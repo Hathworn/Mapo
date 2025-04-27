@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Ensure optimal occupancy by adjusting block size and grid size based on GPU architecture.
+// Use coalesced memory access to improve memory throughput.
+// Minimize divergent branches within the warp to decrease execution overhead.
+// Explore using warp-level primitives for better performance.
+```

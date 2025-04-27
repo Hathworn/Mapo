@@ -1,0 +1,4 @@
+// Use shared memory to cache sub-matrices from A and B to reduce global memory access
+// Optimize memory coalescing to ensure that threads access contiguous memory locations
+// Consider using warp-level primitives to reduce thread divergence in the computation loop
+// Evaluate the use of asynchronous data transfers to further overlap computation and memory access

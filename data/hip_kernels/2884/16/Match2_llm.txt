@@ -1,0 +1,9 @@
+```
+// Ensure coalesced access to buffer1 to improve memory throughput
+// Minimize shared memory bank conflicts
+// Consider using warp shuffle for reduction instead of atomic operations
+// Ensure global memory accesses are coalesced for buffer2
+// Explore loop unrolling for score calculation
+// Use appropriate synchronization to avoid race conditions
+// Make sure atomic operations do not cause serialization
+```

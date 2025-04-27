@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache input data for coalesced memory access
+// Minimize global memory transactions by fetching input data in blocks
+// Ensure memory accesses are coalesced for devInput
+// Consider prefetching data for future computations
+// Use warp-level primitives for reduction if applicable
+```

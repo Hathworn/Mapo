@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning input and output arrays in global memory
+// Reduce the overall number of thread synchronizations by minimizing diverging code paths
+// Consider using shared memory to store partial results for further memory access optimization
+// Leveraging vectorized loads/stores might improve memory throughput
+// Use constant memory for kernel_size and padding if they are invariant across blocks
+```

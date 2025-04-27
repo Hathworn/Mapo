@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access to improve memory throughput
+// Use shared memory if possible to store values that can be reused by multiple threads
+// Ensure that thread indices do not cause bank conflicts within shared memory
+// Preload x[i] and y[i] values into registers to reduce global memory access latency
+// Unroll loops if beneficial to reduce the loop overhead and improve performance
+// Align data structures to cache line boundaries to optimize memory access patterns
+```

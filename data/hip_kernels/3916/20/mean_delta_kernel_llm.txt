@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for the `delta` array when possible
+// Potentially use shared memory to store data locally and reduce global memory traffic
+// Ensure the data is appropriately prefetched to hide latency
+// Consider loop unrolling to reduce loop overhead and improve performance
+// Optimize calculations by minimizing the use of expensive operations like division and sqrt
+```

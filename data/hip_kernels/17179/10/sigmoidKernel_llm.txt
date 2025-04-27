@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced global memory access patterns.
+// Use shared memory to minimize global memory accesses if possible.
+// Ensure that the number of blocks and threads allows for full occupancy.
+// Avoid branch divergence within warps for better performance.
+// Consider using __expf() instead of expf() for potentially faster execution.
+```

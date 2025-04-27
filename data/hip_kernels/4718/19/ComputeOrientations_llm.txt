@@ -1,0 +1,10 @@
+```
+// Utilize shared memory to reduce global memory accesses.
+// Avoid bank conflicts when accessing shared memory by aligning data properly.
+// Consider loop unrolling for loading data into shared memory to reduce overhead.
+// Use efficient boundary checks to minimize thread divergence.
+// Precompute Gaussian values to reuse and reduce repeated calculations.
+// Leverage shared memory for histograms to reduce global memory accesses.
+// Optimize histogram accumulation with loop unrolling to minimize synchronization overhead.
+// Consider warp-level operations (e.g., shuffle) to optimize peak finding and reduce sync points.
+```

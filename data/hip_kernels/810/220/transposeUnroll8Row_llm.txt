@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Consider using vectorized memory operations for coalesced access.
+// Optimize thread block size for better occupancy and memory access patterns.
+// Make sure the used unrolling factor matches the warp size for optimal performance.

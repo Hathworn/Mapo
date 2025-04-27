@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access pattern to ensure coalesced reads and writes
+// Consider using shared memory to reduce global memory access latency
+// Ensure loop unrolling matches warp size for optimal performance
+// Use __syncthreads() if shared memory is utilized to prevent race conditions
+```

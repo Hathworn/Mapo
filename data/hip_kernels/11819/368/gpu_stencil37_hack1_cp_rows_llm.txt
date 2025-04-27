@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Unroll loops to improve performance by reducing loop overhead
+// Ensure memory coalescing by accessing consecutive memory locations
+// Minimize conditional statements inside the loop to improve performance
+// Use __syncthreads() to synchronize threads after shared memory operations
+// Consider using additional prefetching strategies to hide memory latency
+```

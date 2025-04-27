@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for vectsA and vectsB to improve memory bandwidth utilization.
+// Minimize divergence with careful management of if statements inside the loop.
+// Use a single shared memory allocation to reduce shared memory usage and improve performance.
+// Ensure shared memory is not oversubscribed by adjusting block size or memory used.
+// Evaluate the benefits of loop unrolling in the primary for-loop.
+// Explore the impact of different block sizes on performance to optimize occupancy.
+```

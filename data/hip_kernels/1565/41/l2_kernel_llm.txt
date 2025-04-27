@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache pred and truth values, if they are accessed multiple times.
+// Ensure memory accesses are coalesced, especially for pred and truth arrays.
+// Consider using float2 or float4 types for pred and truth to increase memory throughput.
+// Implement loop unrolling for the loop processing indices to reduce loop control overhead.
+// Optimize the grid and block dimensions to ensure maximum occupancy on the GPU.
+```

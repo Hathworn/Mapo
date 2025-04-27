@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for original and to_normalize pointers
+// Align memory accesses to improve coalescing
+// Evaluate the use of shared memory to minimize global memory accesses
+// Ensure stride covers all elements even if it's larger than num_elements
+// Consider loop unrolling if num_elements is a known compile-time constant
+```

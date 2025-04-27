@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access latency.
+// Coalesce global memory accesses by ensuring threads in a warp access consecutive memory locations.
+// Minimize divergent branches within warps for increased execution efficiency.
+// Use the __restrict__ keyword for pointers if applicable to provide the compiler with additional optimization opportunities.
+// Ensure that gid calculations leverage compiler optimizations by verifying that the constants are powers of two.
+```

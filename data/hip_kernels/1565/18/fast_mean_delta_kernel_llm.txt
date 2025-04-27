@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access by reorganizing loops or data layout.
+// Use __restrict__ keyword for pointer arguments to prevent potential aliasing.
+// Prefetch data into registers to reduce memory latency.
+// Optimize boundary check logic to minimize instructions within the loop.
+// Evaluate the usage of float vs double to balance precision and performance.
+// Explore the potential for loop unrolling to improve throughput.
+// Review shared memory bank conflicts to ensure optimal usage.
+// Assess usage of atomic operations if shared memory reduction changes.
+```

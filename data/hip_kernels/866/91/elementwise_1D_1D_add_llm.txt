@@ -1,0 +1,6 @@
+```
+// Consider aligning data to memory boundaries to improve coalesced memory access
+// Use shared memory to cache input data and reduce global memory bandwidth
+// Evaluate using float4 or float2 types to increase throughput by processing multiple elements per thread
+// Experiment with adjusting blockDim.x to achieve optimal performance based on hardware characteristics
+```

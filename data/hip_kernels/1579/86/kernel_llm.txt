@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns to optimize global memory reads.
+// Minimize shared memory bank conflicts by ensuring access patterns are well-aligned.
+// Use warp-level primitives if possible to reduce shared memory use and improve performance.
+// Ensure grid and block dimensions are optimized for the specific hardware's occupancy and resources.
+// Use double buffering in shared memory to overlap computation and memory accesses for better performance.
+```

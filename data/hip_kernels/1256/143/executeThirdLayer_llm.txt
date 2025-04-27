@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and improve memory coalescing
+// Consider loop unrolling further or vectorizing the input if the hardware allows
+// Use __restrict__ keyword to indicate that pointers do not alias each other
+// Prefetch data to shared memory before the loop for improved data locality
+// Consider using warp-level primitives to reduce warp divergence and achieve better utilization
+```

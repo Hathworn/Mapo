@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure proper memory coalescing for global memory accesses by organizing data layout.
+// Consider loop unrolling techniques for potential performance improvements.
+// Align data structures to ensure faster memory access on GPU.
+// Optimize register usage to maximize parallelism within the kernel.

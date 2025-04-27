@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory access
+// Coalesce memory accesses to improve bandwidth utilization
+// Consider using texture memory for better caching efficiency
+// Avoid bank conflicts by ensuring proper alignment in shared memory
+// Ensure occupancy is maximized by optimizing block size and grid dimensions
+// Pre-fetch data into registers to hide memory latency
+// Minimize divergent branches within the kernel
+// Use float4 for memory operations to take advantage of vectorized instructions
+```

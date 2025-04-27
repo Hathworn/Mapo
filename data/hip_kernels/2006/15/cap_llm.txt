@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed values to reduce global memory read latency
+// Align memory accesses to improve coalescing and reduce memory transaction overhead
+// Ensure proper thread synchronization if accessing shared resources
+// Minimize divergent branches within warp to ensure efficient execution
+// Optimize grid and block dimensions to maximize occupancy and resource utilization
+```

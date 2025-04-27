@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access for tcutoffs
+// Loop unrolling the for loop can enhance performance by reducing loop control overhead
+// Prefetching data from global memory could reduce latency
+// Use __ldg() to load read-only data such as gpuData when accessed multiple times to take advantage of cache
+// Consolidate global memory writes to gpuResults to minimize latency
+```

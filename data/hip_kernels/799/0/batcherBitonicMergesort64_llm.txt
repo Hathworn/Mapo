@@ -1,0 +1,4 @@
+// Consider reducing the number of __syncthreads calls where possible
+// Ensure memory accesses are coalesced for better performance
+// Explore using shared memory efficiently and minimizing bank conflicts
+// Investigate using warp-level shuffles to reduce __syncthreads usage

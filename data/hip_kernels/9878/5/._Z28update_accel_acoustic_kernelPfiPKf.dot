@@ -1,0 +1,10 @@
+digraph "CFG for '_Z28update_accel_acoustic_kernelPfiPKf' function" {
+	label="CFG for '_Z28update_accel_acoustic_kernelPfiPKf' function";
+
+	Node0x57ed450 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !7\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %15 = udiv i32 %13, %10\l  %16 = mul i32 %15, %10\l  %17 = icmp ugt i32 %13, %16\l  %18 = zext i1 %17 to i32\l  %19 = add i32 %15, %18\l  %20 = mul i32 %19, %14\l  %21 = add i32 %20, %5\l  %22 = mul i32 %21, %10\l  %23 = add i32 %22, %4\l  %24 = icmp slt i32 %23, %1\l  br i1 %24, label %25, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x57ed450:s0 -> Node0x57efcb0;
+	Node0x57ed450:s1 -> Node0x57efd40;
+	Node0x57efcb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%25:\l25:                                               \l  %26 = sext i32 %23 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %0, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !16,\l... !amdgpu.noclobber !6\l  %29 = getelementptr inbounds float, float addrspace(1)* %2, i64 %26\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !16,\l... !amdgpu.noclobber !6\l  %31 = fmul contract float %28, %30\l  store float %31, float addrspace(1)* %27, align 4, !tbaa !16\l  br label %32\l}"];
+	Node0x57efcb0 -> Node0x57efd40;
+	Node0x57efd40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  ret void\l}"];
+}

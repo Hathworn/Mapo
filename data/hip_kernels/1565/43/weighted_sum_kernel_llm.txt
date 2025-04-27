@@ -1,0 +1,6 @@
+```
+// Load data into shared memory to minimize global memory access
+// Use __syncthreads() to synchronize threads after shared memory load
+// Avoid complex conditionals to optimize execution within the loop
+// Utilize grid stride loop for improved memory access patterns
+```

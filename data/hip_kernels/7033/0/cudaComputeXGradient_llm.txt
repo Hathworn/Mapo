@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for the image channel to improve data access locality
+// Unroll loops for neighbor computation to reduce loop overhead and increase throughput
+// Use constants for image dimensions to allow compiler optimizations
+// Ensure coalesced memory access by properly aligning data loads
+```

@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier for pointers to improve memory access efficiency
+// Double-check shared memory usage; ensure it fits within the hardware limits
+// Re-evaluate loop unrolling factors based on target architecture for best results
+// Ensure BLOCK is defined appropriately to match the GPU's warp size capabilities
+// Assess alignment of memory accesses to optimize coalesced memory reads/writes
+```

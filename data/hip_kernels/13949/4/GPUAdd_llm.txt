@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access latency.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Consider using constant memory for any read-only data that is shared across all threads.
+// Consider unrolling the loop if applicable to reduce loop overhead.
+// Ensure memory alignment to improve cache performance.
+```

@@ -1,0 +1,29 @@
+digraph "CFG for '_Z8find_maxPiS_i' function" {
+	label="CFG for '_Z8find_maxPiS_i' function";
+
+	Node0x501c360 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp ult i32 %12, %2\l  br i1 %13, label %14, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x501c360:s0 -> Node0x501e260;
+	Node0x501c360:s1 -> Node0x501e2f0;
+	Node0x501e260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%14:\l14:                                               \l  %15 = zext i32 %12 to i64\l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %15\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %18\l}"];
+	Node0x501e260 -> Node0x501e2f0;
+	Node0x501e2f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%18:\l18:                                               \l  %19 = phi i32 [ %17, %14 ], [ -2147483647, %3 ]\l  %20 = getelementptr inbounds [10 x i32], [10 x i32] addrspace(3)*\l... @_ZZ8find_maxPiS_iE5sdata, i32 0, i32 %11\l  store i32 %19, i32 addrspace(3)* %20, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %21 = icmp ult i16 %8, 2\l  br i1 %21, label %22, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x501e2f0:s0 -> Node0x501fa00;
+	Node0x501e2f0:s1 -> Node0x501fa90;
+	Node0x501fa00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%22:\l22:                                               \l  %23 = icmp eq i32 %11, 0\l  br i1 %23, label %37, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x501fa00:s0 -> Node0x501fc60;
+	Node0x501fa00:s1 -> Node0x501fcb0;
+	Node0x501fa90 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %26, %35 ], [ %9, %18 ]\l  %26 = lshr i32 %25, 1\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %27 = icmp ult i32 %11, %26\l  br i1 %27, label %28, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x501fa90:s0 -> Node0x5020260;
+	Node0x501fa90:s1 -> Node0x501fe20;
+	Node0x5020260 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%28:\l28:                                               \l  %29 = load i32, i32 addrspace(3)* %20, align 4, !tbaa !7\l  %30 = add nuw nsw i32 %26, %11\l  %31 = getelementptr inbounds [10 x i32], [10 x i32] addrspace(3)*\l... @_ZZ8find_maxPiS_iE5sdata, i32 0, i32 %30\l  %32 = load i32, i32 addrspace(3)* %31, align 4, !tbaa !7\l  %33 = icmp sgt i32 %29, %32\l  br i1 %33, label %34, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5020260:s0 -> Node0x501e5d0;
+	Node0x5020260:s1 -> Node0x501fe20;
+	Node0x501e5d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{%34:\l34:                                               \l  store i32 %32, i32 addrspace(3)* %20, align 4, !tbaa !7\l  br label %35\l}"];
+	Node0x501e5d0 -> Node0x501fe20;
+	Node0x501fe20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = icmp ult i32 %25, 4\l  br i1 %36, label %22, label %24, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x501fe20:s0 -> Node0x501fa00;
+	Node0x501fe20:s1 -> Node0x501fa90;
+	Node0x501fc60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%37:\l37:                                               \l  %38 = load i32, i32 addrspace(3)* getelementptr inbounds ([10 x i32], [10 x\l... i32] addrspace(3)* @_ZZ8find_maxPiS_iE5sdata, i32 0, i32 0), align 16, !tbaa\l... !7\l  %39 = zext i32 %4 to i64\l  %40 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %39\l  store i32 %38, i32 addrspace(1)* %40, align 4, !tbaa !7\l  br label %41\l}"];
+	Node0x501fc60 -> Node0x501fcb0;
+	Node0x501fcb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%41:\l41:                                               \l  ret void\l}"];
+}

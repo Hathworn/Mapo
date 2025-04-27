@@ -1,0 +1,7 @@
+```c
+// Use shared memory to minimize global memory access latency.
+// Ensure proper synchronization with __syncthreads() to avoid race conditions.
+// Use loop unrolling to reduce the number of iterations and improve performance.
+// Utilize volatile keyword for warp unrolling to handle data dependencies.
+// Ensure only tid == 0 writes back to global memory to prevent race conditions.
+```

@@ -1,0 +1,5 @@
+// Optimize memory access by ensuring aligned data access patterns
+// Consider loop unrolling if applicable to exploit instruction-level parallelism
+// Use shared memory if multiple threads access common data; consider its impact
+// Evaluate coalesced memory access to minimize global memory bandwidth usage
+// Ensure the use of __restrict__ is consistent to aid compiler optimizations

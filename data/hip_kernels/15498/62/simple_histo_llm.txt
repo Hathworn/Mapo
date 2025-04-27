@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access patterns for d_in to reduce global memory latency
+// Avoid bank conflicts in shared memory by ensuring proper memory alignment
+// Leverage warp-level primitives to further reduce atomic contention in shared memory
+// Consider unrolling loops for better ILP (Instruction Level Parallelism)
+// Minimize thread divergence by aligning workloads evenly across threads
+```

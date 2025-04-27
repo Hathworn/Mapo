@@ -1,0 +1,8 @@
+```
+// Use float4 loads if applicable to reduce memory transactions
+// Align data in memory to improve coalesced access
+// Consider the impact of bank conflicts when accessing shared memory
+// Use __restrict__ on pointer arguments if applicable for better compiler optimizations
+// Tune DP_BLOCKSIZE for optimal performance depending on hardware characteristics
+// Consider using atomics for final reduction on target if necessary
+```

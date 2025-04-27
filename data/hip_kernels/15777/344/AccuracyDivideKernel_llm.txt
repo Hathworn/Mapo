@@ -1,0 +1,7 @@
+```
+// Consider using __ldg() to load *accuracy for potentially better memory access patterns
+// Ensure proper memory alignment of *accuracy for improved coalesced access
+// Use shared memory if *accuracy is updated frequently within the kernel
+// Prefer atomicAdd for accumulation rather than atomicExch if applicable
+// Evaluate the use of warp-level primitives for finer granularity in atomic operations
+```

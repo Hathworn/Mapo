@@ -1,0 +1,8 @@
+```c
+// Use shared memory to cache data and reduce global memory access
+// Coalesce global memory access to ensure memory transactions are minimized
+// Ensure kernel launch uses optimal block and grid sizes for the target device
+// Investigate the use of read-only data cache for constant memory
+// Consider using loop unrolling if the loop is large and predictable
+// Align memory access patterns to prevent memory bank conflicts
+```

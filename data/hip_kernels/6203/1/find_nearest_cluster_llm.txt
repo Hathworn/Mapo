@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for clusters
+// Ensure coalesced access pattern in loading clusters into shared memory
+// Consider loop unrolling for calculating the Euclidean distance
+// Preload multiple objects into shared memory if there is enough space
+// Optimize thread-to-object mapping to balance workload
+// Minimize global memory writes by using atomic operations when necessary
+```

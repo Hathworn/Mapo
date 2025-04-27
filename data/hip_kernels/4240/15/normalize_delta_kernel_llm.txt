@@ -1,0 +1,7 @@
+```
+// Precompute recurrent values outside the loop to reduce processing time
+// Use a single read for global memory variables to minimize memory access
+// Avoid recomputation of invariants by storing them in local variables
+// Ensure coalesced memory access patterns to improve bandwidth utilization
+// Leverage shared memory if possible to reduce global memory access
+```

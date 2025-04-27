@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses for data
+// Group threads doing similar work to ensure coalesced memory access patterns
+// Preload more data into registers where beneficial to minimize global memory latency
+// Analyze the potential for loop unrolling if computational pattern permits
+```

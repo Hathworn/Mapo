@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Use shared memory to reduce global memory access and improve memory access speed
+// Minimize divergent branches by ensuring all threads in a warp execute similar paths
+// Consider launching kernels with optimal block sizes to maximize SM occupancy
+// Align data structures to memory boundaries to improve memory throughput
+```

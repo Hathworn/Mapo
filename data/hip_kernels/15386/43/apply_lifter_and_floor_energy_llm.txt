@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache lifter_coeffs if they are read multiple times to reduce global reads
+// Perform coalesced memory access when loading/storing feats for optimal global memory bandwidth usage
+// Consider using warp-level primitives to further enhance parallelism and reduce divergence if applicable
+// Avoid bank conflicts in shared memory when multiple threads access the same memory address
+```

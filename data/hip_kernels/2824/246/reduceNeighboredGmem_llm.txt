@@ -1,0 +1,4 @@
+// Consider coalesced memory access to ensure efficient memory transactions.
+// Use shared memory to reduce global memory access within the kernel.
+// Ensure minimal synchronization to prevent unnecessary warp divergence.
+// Avoid boundary checks inside the loop to improve parallel execution efficiency.

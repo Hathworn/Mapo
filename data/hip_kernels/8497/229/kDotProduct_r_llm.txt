@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for better memory throughput
+// Consider larger block size for more efficient parallel reduction
+// Align shared memory access to reduce bank conflicts
+// Use __restrict__ keyword for a, b, and target pointers to improve compiler optimizations
+// Ensure gridDim.x * DP_BLOCKSIZE is a multiple of numElements for optimal performance
+// Opt for warp-level primitives if available for reduction
+```

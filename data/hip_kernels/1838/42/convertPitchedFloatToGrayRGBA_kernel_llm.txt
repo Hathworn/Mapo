@@ -1,0 +1,4 @@
+// Consider using shared memory to cache portions of in_image for faster access
+// Reduce bank conflicts when using shared memory by padding with an extra float per row
+// Utilize coalesced memory access patterns for both in_image and out_image 
+// Ensure alignment of memory and data structures to reduce access time

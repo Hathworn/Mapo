@@ -1,0 +1,9 @@
+```c
+// Consider using shared memory if multiple threads need to access data
+// Ensure memory coalescing when accessing global memory
+// Minimize divergence by avoiding conditional statements within the kernel
+// Optimize memory accesses by ensuring data alignment
+// Analyze the possibility of loop unrolling if loops are present
+// Use constant memory for values that remain unchanged
+// Assess the use of registers for frequently accessed variables
+```

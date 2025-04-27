@@ -1,0 +1,6 @@
+```
+// Consider coalesced global memory access by aligning d_in and sdata
+// Use a loop unrolling technique to further optimize the reduction
+// Minimize __syncthreads() usage where possible for efficiency
+// Ensure that shared memory usage is efficient to avoid bank conflicts
+```

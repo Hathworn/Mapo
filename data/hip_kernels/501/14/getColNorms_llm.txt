@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure shared memory is aligned to avoid bank conflicts
+// Consider using warp-level primitives for optimized reductions
+// Coalesce global memory accesses by using aligned data structures
+// Minimize divergent branches by ensuring warp execution paths are similar
+// Ensure that data fits into shared memory to avoid spills to global memory
+```

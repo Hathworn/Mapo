@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize redundant global memory access
+// Load data into shared memory to reduce the number of global memory reads
+// If within bounds, use shared memory to avoid global memory access
+// Synchronize threads to ensure shared memory is updated before reuse
+```

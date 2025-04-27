@@ -1,0 +1,7 @@
+```
+// Optimize memory coalescing by ensuring global reads and writes are aligned
+// Use shared memory to minimize repeated global memory access
+// Handle the boundary conditions and halos carefully to prevent race conditions
+// Ensure __syncthreads() is used for synchronization after shared memory operations
+// Use a single thread for halo copying to reduce redundant computations and memory access
+```

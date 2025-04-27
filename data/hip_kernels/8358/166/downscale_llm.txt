@@ -1,0 +1,9 @@
+```
+// Unroll the inner loops for better performance
+// Ensure coalesced memory access by aligning data access patterns
+// Use shared memory if data reuse occurs within a block to reduce global memory accesses
+// Consider using warp shuffle instructions for data exchange between threads within a warp
+// Optimize the index calculation to minimize arithmetic instructions
+// Check if data loads are memory bound and adjust for optimal bandwidth utilization
+// Avoid bank conflicts in shared memory usage
+```

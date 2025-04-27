@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency
+// Minimize atomic operations or use warp-level primitives for better performance
+// Consider loop unrolling if applicable for optimizing index calculations
+// Evaluate memory access patterns and align memory if possible
+// Ensure proper thread synchronization mechanisms to avoid race conditions

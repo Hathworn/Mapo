@@ -1,0 +1,5 @@
+```c
+// Load global memory to shared memory to minimize global memory access for gBest
+// Use __syncthreads() to ensure consistent shared memory reads by threads
+// Utilize shared memory to improve memory access patterns and reduce latency
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store segments of A and B for faster access
+// Optimize memory accesses by ensuring coalesced access patterns for A and B
+// Preload data into registers to minimize global memory read latency
+// Ensure memory alignment for A, B, and C for efficient memory transactions
+// Explore loop unrolling for the reduction operation to increase parallelism
+// Minimize control divergence by maintaining uniform execution paths within warps
+```

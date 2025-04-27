@@ -1,0 +1,6 @@
+```
+// Leverage coalesced memory access by aligning data to ensure sequential threads access consecutive memory locations
+// Optimize memory access patterns to reduce bank conflicts and improve memory throughput
+// Consider using shared memory if the kernel computation becomes more complex and can benefit from data reuse
+// Ensure grid and block dimensions are chosen to maximize occupancy and keep all SMs busy
+```

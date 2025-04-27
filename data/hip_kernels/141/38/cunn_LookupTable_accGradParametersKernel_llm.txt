@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for frequently accessed data like gradOutputRow and weightRow
+// Test the impact of different values of SZ on performance to find the optimal unroll factor
+// Ensure memory coalescing by aligning input and indices accesses
+// Consider splitting block size and grid size to optimize resource usage based on hardware
+```

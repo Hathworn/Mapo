@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data if shared memory is underutilized
+// Ensure coalesced global memory accesses for FreqData and PowerSpectrum
+// Consider using vectorized loads/stores if FreqData and PowerSpectrum are aligned
+// Minimize divergent branches to enhance performance
+// Ensure occupancy is maximized to improve latency hiding
+```

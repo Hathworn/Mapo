@@ -1,0 +1,7 @@
+```
+// Ensure boundary check is in place during shared memory load
+// Reduce synchronization by using loop optimization for reduction
+// Use volatile keyword to prevent unwanted compiler optimizations on shared memory
+// Use warp-level operations for reduction when thread count is lower than 32
+// Ensure appropriate result storage to global memory after reduction
+```

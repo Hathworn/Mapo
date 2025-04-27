@@ -1,0 +1,8 @@
+```
+// Use fewer memory accesses by coalescing reads of arrays `d_synaptic_efficacies_or_weights` and `d_stdp`.
+// Consider using shared memory to store frequently accessed data to reduce global memory read latency.
+// Periodically prefetch data from global memory to reduce latency, especially for large datasets.
+// Ensure memory accesses are aligned to prevent bank conflicts and achieve better performance.
+// Iterate with larger grid or block size to hide latency and better utilize the GPU resources.
+// Reduce the number of conditional branches and encourage warp execution by minimizing divergent branches.
+```

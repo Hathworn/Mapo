@@ -1,0 +1,10 @@
+```
+// Consider using shared memory for intermediate computations to reduce global memory access.
+// Minimize computation in the for-loop by hoisting invariant calculations outside.
+// Utilize vectorized operations if possible to enhance memory coalescing.
+// Align memory access patterns to facilitate coalesced memory transactions.
+// Optimize use of fast math functions wherever possible to increase throughput.
+// Ensure data is accessed in contiguous blocks to maximize the cache efficiency.
+// Avoid bank conflicts in shared memory accesses by aligning data appropriately.
+// Explore using texture memory for read-only data to leverage cache efficiency.
+```

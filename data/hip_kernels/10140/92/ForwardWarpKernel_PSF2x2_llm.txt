@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses and increase memory bandwidth utilization.
+// Optimize thread block dimensions to maximize GPU occupancy.
+// Ensure coalesced memory access patterns for global memory reads and writes.
+// Use __shared__ memory wisely to reduce register pressure.
+// Consider warp-level optimizations to better utilize available resources.
+// Review performance with different values of image_stride and flow_stride.
+```

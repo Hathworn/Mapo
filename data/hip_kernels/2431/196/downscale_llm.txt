@@ -1,0 +1,9 @@
+```
+// Consider minimizing memory divergence by ensuring threads within a warp access contiguous memory locations.
+// Utilize shared memory to hold intermediate values for coalesced access, if applicable.
+// Unroll the loops for better occupancy and reduced loop control overhead.
+// Align data structures to cache line sizes for more efficient memory transactions.
+// Prefetch gradOutput_data using __ldg() for read-only cache access where applicable.
+// Explore the use of warp-level primitives to optimize memory access patterns.
+// Ensure that __device__ functions are inlined with __forceinline__ to reduce function call overhead.
+```

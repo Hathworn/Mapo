@@ -1,0 +1,8 @@
+```
+// Combine loads and stores by using shared memory to reduce global memory access
+// Align data structures to improve memory coalescing
+// Utilize vectorized operations if possible for better throughput
+// Prefer reading consecutive memory locations by threads in a warp
+// Minimize divergent code execution between threads in a warp
+// Adjust block and grid size to fit hardware for optimal occupancy
+```

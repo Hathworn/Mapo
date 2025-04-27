@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for input and kernel to enhance global memory throughput
+// Use shared memory to store often-used data to reduce global memory accesses
+// Use loop unrolling for kernel computation to reduce loop overhead and increase ILP
+// Ensure shared memory bank conflicts are minimized when multiple threads access shared_output
+// Prefetch data into shared memory before usage to hide memory latency
+```

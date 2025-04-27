@@ -1,0 +1,4 @@
+// Use shared memory to cache portions of d_a and d_b to reduce global memory access.
+// Optimize loop unrolling in the for loop for better instruction-level parallelism.
+// Consider memory coalescing for d_a and d_b accesses to maximize bandwidth.
+// Reduce conditional checks with more practical bounds optimization.

@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access for top_diff and bottom_diff arrays
+// Optimize memory access patterns for the filters array by using shared memory
+// Minimize warp divergence by reordering conditional checks
+// Use atomic operations if necessary for concurrent updates to bottom_diff
+// Pre-fetch data where possible to hide memory latency
+// Consider splitting kernel if register pressure becomes a bottleneck
+// Tune block and grid sizes to improve occupancy
+```

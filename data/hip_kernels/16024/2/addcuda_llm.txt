@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store Qt, Pt to reduce global memory access in each thread.
+// Use constant memory for small data that does not change, such as constants Rt, c, ct.
+// Use register variables for frequently accessed variables like Qx, Qy, Qz, Px, Py, Pz.
+// Minimize the use of powf and sqrtf by refactoring the range calculation to use squared values.
+// Perform loop unrolling for the Nt loop to reduce loop overhead and increase performance.
+// Consider using texture memory for read-only data with spatial locality like Qt, Pt to enhance caching.
+```

@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for gradInput and gradOutput
+// Minimize redundant calculations by reusing values within loops
+// Consider using texture memory for weight when it is read-only
+// Optimize shared memory usage to avoid bank conflicts
+// Evaluate grid and block dimensions for occupancy optimization
+// Consider loop unrolling to enhance performance
+```

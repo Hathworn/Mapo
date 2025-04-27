@@ -1,0 +1,5 @@
+// Optimize: Use __restrict__ qualifiers for pointer arguments to improve memory access speed.
+// Optimize: Use shared memory to cache frequently accessed data and reduce global memory accesses.
+// Optimize: Consider loop unrolling for the loop over numOut to reduce loop overhead.
+// Optimize: Use __ldg() for read-only data to leverage the read-only cache and reduce latency.
+// Optimize: Align data access patterns to reduce bank conflicts in shared memory.

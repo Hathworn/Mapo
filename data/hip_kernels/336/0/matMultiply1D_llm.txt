@@ -1,0 +1,7 @@
+```
+// Use __shared__ memory to reduce repeated global memory access for matA.
+// Consider unrolling the inner loop to improve performance.
+// Ensure collaborative loading in shared memory with correct index usage.
+// Optimize memory access patterns for matB to coalesce memory reads.
+// Minimize divergent branches by ensuring all threads in a block follow similar execution paths.
+```

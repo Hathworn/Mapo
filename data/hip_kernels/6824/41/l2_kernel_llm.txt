@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to reduce global memory accesses for error and delta
+// Consider vectorized loads/stores for pred and truth to improve memory throughput
+// Prefer using __restrict__ pointers to help the compiler optimize memory access
+```

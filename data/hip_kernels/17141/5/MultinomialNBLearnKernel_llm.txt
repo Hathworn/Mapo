@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access patterns by ensuring coalesced global memory access.
+// Use shared memory to store d_row_sums for reducing redundant global memory accesses.
+// Consider unrolling the loop over n_classes_ for better performance.
+// Reduce thread divergence in the conditional feat_col == 0 by restructuring code.
+```

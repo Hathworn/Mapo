@@ -1,0 +1,7 @@
+```
+// Ensure early termination for threads outside of data bounds to save compute resources.
+// Load data into shared memory to minimize redundant global memory accesses.
+// Calculate repeated data accesses once and store in temporary variables for reuse.
+// Precompute determinant components for efficiency.
+// Consider using __ldg() intrinsics for read-only data to leverage cache benefits.
+```

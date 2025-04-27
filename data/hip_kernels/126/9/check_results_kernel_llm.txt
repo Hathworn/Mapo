@@ -1,0 +1,4 @@
+// Use shared memory to cache `correctvalue` if accessed multiple times
+// Consider using warp shuffle operations to reduce thread divergence
+// Ensure `x` is aligned for better memory access efficiency
+// Experiment with different block sizes for optimal execution

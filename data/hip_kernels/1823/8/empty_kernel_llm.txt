@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency.
+// Coalesce global memory accesses to improve memory bandwidth.
+// Minimize divergence within warps to ensure efficient execution.
+// Use thread blocks that maximize occupancy, considering registers and shared memory.
+// Evaluate the use of texture memory for read-only data to leverage caching.

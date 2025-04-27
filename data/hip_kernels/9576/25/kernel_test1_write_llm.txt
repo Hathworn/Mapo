@@ -1,0 +1,4 @@
+// Optimize memory access by aligning memory to cache line size.
+// Use shared memory to minimize global memory access.
+// Coalesce memory accesses by ensuring threads within a warp access contiguous memory locations.
+// Consider using loop unrolling to further reduce instruction overhead.

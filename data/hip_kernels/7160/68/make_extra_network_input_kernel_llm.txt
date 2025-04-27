@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access to improve memory bandwidth utilization.
+// Ensure __restrict__ qualifiers are used for input pointers to enable better compiler optimization.
+// Use shared memory to cache repeated accesses of dev_x_coors_for_sub and dev_y_coors_for_sub to reduce global memory traffic.
+// Optimize control flow by minimizing warp divergence in the if statement.
+```

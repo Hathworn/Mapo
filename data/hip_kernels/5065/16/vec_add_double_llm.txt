@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers for pointers A, B, and C to enable compiler optimizations
+// Consider using shared memory for small tiles of A, B, and C to reduce global memory accesses
+// Ensure coalesced memory access by verifying proper alignment of A, B, and C
+// Experiment with different block sizes to balance between occupancy and memory throughput
+// Unroll the loop to reduce loop control overhead and improve performance
+// Use efficient memory access patterns to optimize memory bandwidth utilization
+```

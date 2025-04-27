@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve bandwidth utilization.
+// Use shared memory to cache input data within a block to reduce redundant global memory loads.
+// Check if input and output arrays can be aligned for potentially better memory access patterns.
+// Explore loop unrolling techniques for the innermost loops to reduce loop overhead.
+// Ensure that all threads in a warp are active when accessing memory to avoid divergence.
+// Evaluate different thread block sizes for optimal occupancy and performance.
+```

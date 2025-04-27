@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed values to reduce global memory access.
+// Coalesce global memory accesses by ensuring all threads in a warp access consecutive memory locations.
+// Consider employing loop unrolling to reduce branch divergence and improve thread utilization.
+// Use unsigned data types for indices where possible to avoid unnecessary sign conversion overhead.
+// Check the occupancy of kernel launches and adjust block size or grid size appropriately for better resource use.
+```

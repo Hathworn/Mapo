@@ -1,0 +1,6 @@
+```
+// Consider increasing the size of shared memory if needed to match the input size
+// Ensure memory accesses are coalesced when loading from global to shared memory
+// Minimize shared memory bank conflicts by properly aligning data in shared memory
+// Use __syncthreads() to ensure all threads have completed loading before writing
+```

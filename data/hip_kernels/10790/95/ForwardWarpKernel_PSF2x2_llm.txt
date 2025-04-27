@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store intermediate results to reduce global memory accesses.
+// The use of atomic operations can lead to serialization; explore reduction algorithms for performance improvements.
+// Analyze memory access patterns for spatial locality to enhance cache efficiency.
+// Adjust the block size to ensure a suitable occupancy and good utilization of GPU resources.
+// Evaluate if loop unrolling on the pixel update sections could yield performance gains.
+```

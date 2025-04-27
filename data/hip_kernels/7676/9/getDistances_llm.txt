@@ -1,0 +1,4 @@
+// Consider using shared memory to cache trainingWeights data for each block
+// Investigate coalesced memory access patterns for trainingWeights and testWeights arrays
+// Optimize loop unrolling factor to match the architecture and problem size
+// Ensure that the block dimensions are optimized to maximize occupancy and reduce warp divergence

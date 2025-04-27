@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for d_A block to reduce global memory accesses
+// Rearrange loops to improve coalesced memory access patterns
+// Explore increasing numThreadsPerBlock to the warp size to improve parallelism
+// Minimize usage of sqrtf by computing 1/sigma and multiplying
+// Use __syncthreads() if shared memory is implemented to ensure consistency
+```

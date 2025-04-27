@@ -1,0 +1,6 @@
+```
+// Ensure coalesced access to dataDevice by accessing consecutive memory locations
+// Use shared memory to reduce redundant global memory fetches for group statistics
+// Optimize indexing to avoid recalculating indices within inner loops
+// Minimize bank conflicts in shared memory by aligning shared arrays on warp size boundaries
+```

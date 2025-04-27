@@ -1,0 +1,4 @@
+// Consider using texture memory for d_Data for better cache utilization
+// Optimize shared memory access by ensuring memory coalescing is maximized
+// Evaluate the possibility of loop unrolling for the reduction phase 
+// Consider using atomic operations if further reduction is needed across blocks

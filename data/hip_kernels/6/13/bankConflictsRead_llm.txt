@@ -1,0 +1,6 @@
+```
+// Ensure shared memory is adequately sized to prevent bank conflicts
+// Align shared memory size to power of 2 for optimal access
+// Use per-thread timing instead of warp-level for accuracy
+// Avoid stride patterns that lead to bank conflicts
+```

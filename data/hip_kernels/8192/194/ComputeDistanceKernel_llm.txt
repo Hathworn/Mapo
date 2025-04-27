@@ -1,0 +1,7 @@
+```cpp
+// Leverage shared memory to reduce global memory access for 'dimensionWeight'.
+// Consider coalesced access for 'difference' to improve memory bandwidth utilization.
+// Explore using warp-synchronous programming in the reduction loop to minimize thread divergence.
+// Optimize memory access patterns to benefit from L2 cache usage.
+// Minimize bank conflicts in access to shared memory if it is utilized.
+```

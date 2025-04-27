@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory access patterns by reorganizing data structures for vertexArray and neighbourArray.
+// Use texture memory if frequent reads of the same data occur, benefiting from cached access in HIP.
+// Evaluate the shared memory space size to ensure it fits within the architecture's limits and adjust the sharedDetectConflict size appropriately.
+// Reduce bank conflicts in shared memory accesses by ensuring aligned memory operations.
+```

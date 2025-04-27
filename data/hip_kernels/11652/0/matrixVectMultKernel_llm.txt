@@ -1,0 +1,6 @@
+```c
+// Use shared memory to cache A and B arrays for improving memory access efficiency.
+// Consider using memory coalescing when accessing A[i] for improved bandwidth.
+// Use __syncthreads() after loading data into shared memory to ensure all threads have consistent data.
+// Unroll further or apply warp-level primitives to reduce the loop overhead if n is known to be small.
+```

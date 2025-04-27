@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access by ensuring state is accessed coalesced
+// Consider using shared memory if states are reused frequently
+// Ensure kernel launch configuration is optimal for device architecture
+// Use `__restrict__` keyword for pointer parameters to allow better optimization
+```

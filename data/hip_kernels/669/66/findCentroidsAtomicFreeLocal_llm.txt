@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to buffer 'filter_responses' for better performance
+// Align memory accesses to ensure coalesced memory access to global memory
+// Reduce memory divergence by ensuring threads in a warp access consecutive memory addresses
+```

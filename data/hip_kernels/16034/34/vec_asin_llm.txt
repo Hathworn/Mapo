@@ -1,0 +1,3 @@
+// Use shared memory to cache frequently accessed data to reduce global memory access latency.
+// Ensure coalesced memory access patterns for result and x arrays to optimize memory bandwidth usage.
+// Consider using warp-level primitives to optimize data access within a warp for better performance.

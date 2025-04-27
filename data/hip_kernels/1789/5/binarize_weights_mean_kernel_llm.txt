@@ -1,0 +1,3 @@
+// Ensure coalesced memory access by using shared memory for mean_arr_gpu if possible.
+// Consider loop unrolling to reduce overhead from looping and increase instruction throughput.
+// Verify alignment of weights and binary arrays for optimal memory access.

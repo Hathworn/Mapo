@@ -1,0 +1,5 @@
+digraph "CFG for '_Z12add_matricesPfS_S_i' function" {
+	label="CFG for '_Z12add_matricesPfS_S_i' function";
+
+	Node0x601ae50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %6 = mul i32 %5, %3\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = zext i32 %8 to i64\l  %10 = getelementptr inbounds float, float addrspace(1)* %0, i64 %9\l  %11 = load float, float addrspace(1)* %10, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %12 = getelementptr inbounds float, float addrspace(1)* %1, i64 %9\l  %13 = load float, float addrspace(1)* %12, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %14 = fadd contract float %11, %13\l  %15 = getelementptr inbounds float, float addrspace(1)* %2, i64 %9\l  store float %14, float addrspace(1)* %15, align 4, !tbaa !5\l  ret void\l}"];
+}

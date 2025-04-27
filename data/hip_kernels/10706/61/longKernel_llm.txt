@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access patterns for better bandwidth utilization.
+// Ensure data alignment to avoid unaligned access penalties.
+// Use shared memory for frequently accessed data within a block.
+// Balance occupancy and resource utilization (registers, shared memory).
+// Minimize divergent branches within the kernel.
+// Opt for the use of __restrict__ to optimize pointer aliasing.
+```

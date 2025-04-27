@@ -1,0 +1,4 @@
+// Use shared memory to cache data for referenceVector and difference to reduce global memory access latency.
+// Optimize memory access patterns by ensuring data is accessed in a coalesced manner.
+// Consider loop unrolling to potentially reduce instruction overhead within the update operation.
+// Investigate using constant memory for small read-only data like decayFactor to optimize memory usage.

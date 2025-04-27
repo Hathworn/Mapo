@@ -1,0 +1,6 @@
+```
+// Use shared memory for loading data to reduce global memory access.
+// Utilize __syncthreads() to ensure all threads have written to shared memory before proceeding.
+// Condition global memory writes to minimize redundant operations.
+// Ensure coalesced access patterns to shared memory for better performance.
+```

@@ -1,0 +1,7 @@
+// Consider coalescing memory accesses by aligning the data accesses in the threads.
+// Use shared memory for data that is reused by multiple threads to reduce global memory accesses.
+// Ensure that threads within a warp have contiguous memory access patterns.
+// Check if computation can be reduced by eliminating unnecessary operations.
+// Consider unrolling loops to minimize branch instructions and improve throughput.
+// Investigate if occupancy can be increased by choosing appropriate block size and grid size.
+// Evaluate the use of pre-fetching techniques to hide memory latency.

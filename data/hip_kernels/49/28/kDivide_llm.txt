@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring that all threads within a warp access consecutive memory locations
+// Consider increasing the number of blocks to better utilize GPU resources
+// Ensure that accesses to shared memory are done in a coalesced manner
+// Use warp-level primitives to reduce synchronization overhead
+// Evaluate the use of __fdividef for performance and precision trade-offs
+```

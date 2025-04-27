@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access pattern for groups by aligning data
+// Use shared memory to cache col_widths for faster access within a block
+// Consider using LDG (read-only) for col_widths and init_vals to optimize caching
+// Consider splitting large kernel launches to avoid resource constraints
+```

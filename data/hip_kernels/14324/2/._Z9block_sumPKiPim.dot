@@ -1,0 +1,26 @@
+digraph "CFG for '_Z9block_sumPKiPim' function" {
+	label="CFG for '_Z9block_sumPKiPim' function";
+
+	Node0x6080e40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = zext i32 %12 to i64\l  %14 = icmp ult i64 %13, %2\l  br i1 %14, label %15, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x6080e40:s0 -> Node0x6082db0;
+	Node0x6080e40:s1 -> Node0x6082e40;
+	Node0x6082db0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%15:\l15:                                               \l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %13\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %18\l}"];
+	Node0x6082db0 -> Node0x6082e40;
+	Node0x6082e40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%18:\l18:                                               \l  %19 = phi i32 [ %17, %15 ], [ 0, %3 ]\l  %20 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)* @sdata, i32\l... 0, i32 %11\l  store i32 %19, i32 addrspace(3)* %20, align 4, !tbaa !7\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %21 = icmp ult i16 %8, 2\l  br i1 %21, label %22, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x6082e40:s0 -> Node0x60844b0;
+	Node0x6082e40:s1 -> Node0x6084540;
+	Node0x60844b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%22:\l22:                                               \l  %23 = icmp eq i32 %11, 0\l  br i1 %23, label %36, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x60844b0:s0 -> Node0x6084710;
+	Node0x60844b0:s1 -> Node0x6084760;
+	Node0x6084540 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %26, %34 ], [ %9, %18 ]\l  %26 = lshr i32 %25, 1\l  %27 = icmp ult i32 %11, %26\l  br i1 %27, label %28, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x6084540:s0 -> Node0x6084b60;
+	Node0x6084540:s1 -> Node0x60848d0;
+	Node0x6084b60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%28:\l28:                                               \l  %29 = add nuw nsw i32 %26, %11\l  %30 = getelementptr inbounds [0 x i32], [0 x i32] addrspace(3)* @sdata, i32\l... 0, i32 %29\l  %31 = load i32, i32 addrspace(3)* %30, align 4, !tbaa !7\l  %32 = load i32, i32 addrspace(3)* %20, align 4, !tbaa !7\l  %33 = add nsw i32 %32, %31\l  store i32 %33, i32 addrspace(3)* %20, align 4, !tbaa !7\l  br label %34\l}"];
+	Node0x6084b60 -> Node0x60848d0;
+	Node0x60848d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %35 = icmp ult i32 %25, 4\l  br i1 %35, label %22, label %24, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x60848d0:s0 -> Node0x60844b0;
+	Node0x60848d0:s1 -> Node0x6084540;
+	Node0x6084710 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%36:\l36:                                               \l  %37 = load i32, i32 addrspace(3)* getelementptr inbounds ([0 x i32], [0 x\l... i32] addrspace(3)* @sdata, i32 0, i32 0), align 4, !tbaa !7\l  %38 = zext i32 %4 to i64\l  %39 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %38\l  store i32 %37, i32 addrspace(1)* %39, align 4, !tbaa !7\l  br label %40\l}"];
+	Node0x6084710 -> Node0x6084760;
+	Node0x6084760 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%40:\l40:                                               \l  ret void\l}"];
+}

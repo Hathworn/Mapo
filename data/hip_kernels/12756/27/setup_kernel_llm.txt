@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses by arranging the state array in a contiguous manner
+// Minimize bank conflicts by aligning state array to the warp size
+// Prefer shared memory for frequently reused data to reduce global memory accesses
+// Consider adjusting the block size to optimize occupancy and performance
+```

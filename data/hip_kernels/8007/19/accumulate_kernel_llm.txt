@@ -1,0 +1,7 @@
+```
+// Use shared memory to temporarily store partial sums before writing to global memory
+// Consider using atomic operations if multiple threads accumulate to the same index in sum
+// Use loop unrolling to minimize loop overhead
+// Ensure memory accesses are coalesced for better performance
+// Consider using stride-based access patterns for better memory load balance
+```

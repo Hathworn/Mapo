@@ -1,0 +1,7 @@
+```
+// Evaluate coalesced access to improve memory access patterns
+// Utilize shared memory to reduce global memory access for frequently accessed data
+// Ensure n_elem is a multiple of blockDim.x for better warp execution efficiency
+// Consider loop unrolling if step1 and step2 are constants
+// Align memory access to avoid bank conflicts
+```

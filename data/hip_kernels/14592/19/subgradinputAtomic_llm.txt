@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for gradInput and gradOutput 
+// Cache the output offset calculation outside the yy and xx loops
+// Use shared memory to store weights to optimize repeated loads
+// Avoid use of atomic operations where possible, explore partial summation strategy
+// Use loop unrolling to enhance instruction-level parallelism further
+// Optimize grid and block dimensions for higher occupancy and better hardware utilization
+```

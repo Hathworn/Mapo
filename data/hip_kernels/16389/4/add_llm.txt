@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access pattern for better performance
+// Consider using shared memory if data reuse is possible to reduce global memory access
+// Minimize memory divergence among threads by aligning data structures in memory
+// Attempt to use vectorized loads/stores if applicable
+// Check if loop unrolling can benefit performance in this specific case
+// Ensure grid and block dimensions are optimized for the given hardware
+```

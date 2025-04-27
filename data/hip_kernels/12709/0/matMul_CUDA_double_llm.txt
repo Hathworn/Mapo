@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for vector1 and vector2
+// Consider using loop unrolling to optimize the inner loop k
+// Optimize memory access pattern to improve coalescing for read/write operations
+// Explore using texture memory for vector2 if access pattern exhibits spatial locality
+// Ensure there are no bank conflicts when using shared memory
+```

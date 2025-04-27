@@ -1,0 +1,9 @@
+```c
+// Use grid-stride loop to improve workload balance across blocks
+// Prevent out-of-bounds access by using conditional checks
+// Use shared memory to reduce global memory accesses and improve performance
+// Ensure all threads have loaded data with __syncthreads() before proceeding
+// Perform parallel reduction to efficiently compute results
+// Ensure synchronization at each step of the reduction with __syncthreads()
+// Only one thread should update the global sum to avoid race conditions
+```

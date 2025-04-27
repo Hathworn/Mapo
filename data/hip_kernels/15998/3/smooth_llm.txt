@@ -1,0 +1,3 @@
+// Use __restrict__ pointers for v_new and v to improve memory access efficiency
+// Ensure data is stored in continuous memory for coalesced access
+// Consider shared memory usage for frequent access data to minimize global memory accesses

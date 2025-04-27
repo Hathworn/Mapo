@@ -1,0 +1,5 @@
+// Consider coalesced memory access for better performance
+// Ensure occupancy by using an optimal number of threads per block
+// Replace threadIdx and blockIdx with 2D indices for better readability
+// Use shared memory if possible to reduce global memory access latency
+// Minimize divergent branches by ensuring uniform execution paths

@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for loading from d_a to improve memory throughput
+// Preload data into shared memory to reduce global memory access within the inner loop
+// Optimize use of shared memory to minimize bank conflicts
+// Increase grid or block size if occupancy is low to better utilize GPU resources
+```

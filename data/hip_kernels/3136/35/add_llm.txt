@@ -1,0 +1,8 @@
+```
+// Use __syncthreads() to ensure all threads have written to shared memory before reading.
+// Consider using warp-level primitives for synchronization on supported devices.
+// If a and b will be used multiple times, consider loading them into shared memory.
+// Examine if loop unrolling can be applied to further optimize performance.
+// Ensure memory accesses are coalesced by aligning data structures properly.
+// Consider using constant memory for any read-only data if applicable.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced by aligning data in memory
+// Consider adjusting the stride to match the warp size for better coalescing
+// Use shared memory to reduce global memory accesses when possible
+// Prefetch data to local variables to minimize memory latency
+// Ensure grid and block dimensions maximize occupancy
+```

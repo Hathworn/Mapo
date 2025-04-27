@@ -1,0 +1,19 @@
+digraph "CFG for '_Z22p2pPingPongLatencyTestPvS_Pmii' function" {
+	label="CFG for '_Z22p2pPingPongLatencyTestPvS_Pmii' function";
+
+	Node0x5b04030 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a1c0ff70",label="{%5:\l  %6 = bitcast i8 addrspace(1)* %0 to i32 addrspace(1)*\l  %7 = addrspacecast i32 addrspace(1)* %6 to i32*\l  %8 = bitcast i8 addrspace(1)* %1 to i32 addrspace(1)*\l  %9 = addrspacecast i32 addrspace(1)* %8 to i32*\l  %10 = icmp eq i32 %4, 0\l  br i1 %10, label %27, label %11\l|{<s0>T|<s1>F}}"];
+	Node0x5b04030:s0 -> Node0x5b01ab0;
+	Node0x5b04030:s1 -> Node0x5b049b0;
+	Node0x5b049b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%11:\l11:                                               \l  %12 = icmp eq i32 %3, 0\l  br label %13\l}"];
+	Node0x5b049b0 -> Node0x5b04b40;
+	Node0x5b04b40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%13:\l13:                                               \l  %14 = phi i32 [ %18, %24 ], [ %4, %11 ]\l  %15 = phi i32 [ %25, %24 ], [ 0, %11 ]\l  %16 = phi i64 addrspace(1)* [ %20, %24 ], [ %2, %11 ]\l  %17 = phi i1 [ false, %24 ], [ %12, %11 ]\l  %18 = add nsw i32 %14, -1\l  %19 = tail call i64 @llvm.amdgcn.s.memtime()\l  %20 = getelementptr inbounds i64, i64 addrspace(1)* %16, i64 1\l  store i64 %19, i64 addrspace(1)* %16, align 8, !tbaa !4\l  br i1 %17, label %24, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x5b04b40:s0 -> Node0x5b04c30;
+	Node0x5b04b40:s1 -> Node0x5b05fe0;
+	Node0x5b05fe0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = load volatile i32, i32* %7, align 4, !tbaa !8\l  %23 = icmp eq i32 %22, %15\l  br i1 %23, label %24, label %21, !llvm.loop !10\l|{<s0>T|<s1>F}}"];
+	Node0x5b05fe0:s0 -> Node0x5b04c30;
+	Node0x5b05fe0:s1 -> Node0x5b05fe0;
+	Node0x5b04c30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%24:\l24:                                               \l  %25 = sub nsw i32 1, %15\l  store volatile i32 %25, i32* %9, align 4, !tbaa !8\l  %26 = icmp eq i32 %18, 0\l  br i1 %26, label %27, label %13, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x5b04c30:s0 -> Node0x5b01ab0;
+	Node0x5b04c30:s1 -> Node0x5b04b40;
+	Node0x5b01ab0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a1c0ff70",label="{%27:\l27:                                               \l  ret void\l}"];
+}

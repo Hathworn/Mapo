@@ -1,0 +1,9 @@
+```
+// Use memory coalescing by ensuring data accessed by threads in a warp are contiguous
+// Consider padding shared memory to avoid bank conflicts when multiple threads access the same memory bank
+// Enable warp synchronous programming to fully utilize warp execution efficiency
+// Use const memory for read-only data that is frequently accessed to utilize the fast path
+// Implement loop unrolling to reduce loop overhead further and increase ILP
+// Avoid unnecessary __syncthreads() calls after reductions smaller than warp size
+// Profile the kernel execution to identify and eliminate potential bottlenecks
+```

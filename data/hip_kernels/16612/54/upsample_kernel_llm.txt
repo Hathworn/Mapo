@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses by ensuring continuous threads access continuous memory addresses in the same warp.
+// Precompute and store often-used computations like index conversions to reduce calculation overhead.
+// Assess possibilities to use shared memory for data frequently accessed by threads within the same block.
+// Minimize expensive operations within the kernel, such as division and modulus, by using bitwise and arithmetic techniques where possible.
+// Consider loop unrolling, if applicable, to reduce branching overhead and increase execution pipeline efficiency.

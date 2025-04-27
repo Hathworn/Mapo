@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced memory access for d_in
+// Consider using warp-level primitives for reduction to reduce syncthreads
+// Optimize block size based on hardware capabilities for better resource usage

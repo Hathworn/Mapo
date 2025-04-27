@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for probs and values
+// Align memory access patterns to ensure coalesced memory transactions
+// Minimize synchronization overhead by optimizing the data loading phase
+// Ensure shared memory size fits the constraints and is fully utilized
+// Use __ldg to leverage read-only cache and optimize global memory reads
+// Optimize thread-block configuration for load balancing and occupancy
+```

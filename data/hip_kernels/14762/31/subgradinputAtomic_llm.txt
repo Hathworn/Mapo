@@ -1,0 +1,9 @@
+```
+// Consider caching frequently accessed values in shared memory to reduce global memory accesses.
+// Optimize the index calculation to minimize redundant computations.
+// Use loop unrolling for small and fixed iteration counts to improve performance.
+// Evaluate the impact of memory coalescing by verifying alignment of global memory accesses.
+// Avoid potential bank conflicts in shared memory if shared memory usage is applied.
+// Preload data into registers where possible to decrease the number of global memory accesses.
+// Reducing the number of atomic operations may be beneficial for performance scalability.
+```

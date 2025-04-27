@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced in g_Data reads
+// Consider using texture memory for constant memory access patterns in gauss[] initialization
+// Use loop unrolling techniques to enhance the performance of the inner loops
+// Minimize bank conflicts in shared memory accesses (data and hist arrays)
+// Optimize reduction patterns to ensure minimal shared memory contention
+// Evaluate using atomics or warp shuffling for histogram updates to improve performance
+```

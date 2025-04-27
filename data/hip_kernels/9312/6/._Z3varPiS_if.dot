@@ -1,0 +1,13 @@
+digraph "CFG for '_Z3varPiS_if' function" {
+	label="CFG for '_Z3varPiS_if' function";
+
+	Node0x4637010 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 8\l  %7 = add nsw i32 %6, 256\l  %8 = tail call i32 @llvm.smin.i32(i32 %7, i32 %2)\l  %9 = icmp slt i32 %6, %8\l  br i1 %9, label %16, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x4637010:s0 -> Node0x46370a0;
+	Node0x4637010:s1 -> Node0x4637d50;
+	Node0x4637e90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%10:\l10:                                               \l  %11 = fptosi float %25 to i32\l  br label %12\l}"];
+	Node0x4637e90 -> Node0x4637d50;
+	Node0x4637d50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%12:\l12:                                               \l  %13 = phi i32 [ 0, %4 ], [ %11, %10 ]\l  %14 = zext i32 %5 to i64\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %14\l  store i32 %13, i32 addrspace(1)* %15, align 4, !tbaa !4\l  ret void\l}"];
+	Node0x46370a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  %17 = phi i32 [ %26, %16 ], [ %6, %4 ]\l  %18 = phi float [ %25, %16 ], [ 0.000000e+00, %4 ]\l  %19 = sext i32 %17 to i64\l  %20 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %19\l  %21 = load i32, i32 addrspace(1)* %20, align 4, !tbaa !4, !amdgpu.noclobber\l... !8\l  %22 = sitofp i32 %21 to float\l  %23 = fsub contract float %22, %3\l  %24 = fmul contract float %23, %23\l  %25 = fadd contract float %18, %24\l  %26 = add nsw i32 %17, 1\l  %27 = icmp slt i32 %26, %8\l  br i1 %27, label %16, label %10, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x46370a0:s0 -> Node0x46370a0;
+	Node0x46370a0:s1 -> Node0x4637e90;
+}

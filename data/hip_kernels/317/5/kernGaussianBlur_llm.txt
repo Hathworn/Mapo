@@ -1,0 +1,7 @@
+```
+// Use shared memory for constant kernel to reduce global memory access.
+// Consider loading a larger region into shared memory to minimize repeated global memory accesses.
+// Synchronize threads appropriately to ensure the kernel matrix is fully initialized before usage.
+// Optimize boundary checks to reduce branch divergence.
+// A reduction in loop unrolling could be considered for better performance with larger kernel sizes.
+```

@@ -1,0 +1,7 @@
+```
+// Ensure nsamples is a multiple of nthreads * nblocks for coalesced memory access
+// Use registers for thread_count instead of shared memory where possible
+// Ensure x and y arrays are aligned to facilitate coalesced memory access
+// Consider further unrolling the loop for idx < nsamples for better instruction parallelism
+// Optimize memory access patterns by storing data in registers within the loop
+```

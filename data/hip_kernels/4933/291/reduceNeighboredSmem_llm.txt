@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access when loading data into shared memory
+// Use warp shuffling to reduce synchronization overhead during reduction
+// Minimize synchronization calls by combining strides in reduction loops
+// Consider adjusting block size to fit shared memory size constraints
+// Optimize memory access patterns to improve cache utilization
+```

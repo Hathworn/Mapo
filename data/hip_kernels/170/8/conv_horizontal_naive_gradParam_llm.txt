@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache tiles of the input data to reduce global memory accesses.
+// Use loop unrolling to improve performance by reducing loop overhead.
+// Check coalesced memory access patterns to ensure optimal memory bandwidth utilization.
+// Consider computation-communication overlap techniques to hide latency, potentially using streams.
+// Ensure appropriate use of __restrict__ to help the compiler with potential aliasing issues.
+```

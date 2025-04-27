@@ -1,0 +1,8 @@
+```c
+// Use memory coalescing to improve global memory access patterns
+// Avoid bank conflicts in shared memory access
+// Minimize the number of __syncthreads() to reduce synchronization overhead
+// Use warp shuffle operations if available to reduce shared memory usage
+// Adjust block size and grid dimensions to achieve optimal occupancy
+// Utilize constant memory for frequently accessed constant data
+```

@@ -1,0 +1,5 @@
+// Use __ldg() for readonly data like labels, maxProbs to improve memory access speed.
+// Consider memory coalescing for accessing probs array to reduce global memory transaction cost.
+// Use shared memory when possible to store frequently accessed data like probs.
+// Consider loop unrolling for the loop iterating over numOut to improve performance.
+// Minimize divergence by ensuring that threads within a warp follow similar execution paths.

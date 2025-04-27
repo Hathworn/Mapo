@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses.
+// Minimize __syncthreads() to improve performance.
+// Consider unrolling the loop to reduce loop overhead.
+// Align memory accesses to optimize for coalesced memory transactions.
+// Ensure d_in is accessed in a coalesced manner.
+```

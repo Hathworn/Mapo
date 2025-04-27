@@ -1,0 +1,5 @@
+// Use shared memory for improved memory access patterns
+// Consider using texture memory for read-only data like 'mask'
+// Optimize global memory accesses by reordering threads for coalesced access
+// Use memory prefetching to reduce latency in accessing 'in' and 'mask' arrays
+// Consider utilizing warp shuffle operations for reduction instead of a loop

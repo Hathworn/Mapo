@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory accesses to benefit from memory bandwidth
+// Consider using shared memory if there are reusable data segments
+// Minimize bank conflicts when using shared memory
+// Attempt to maximize occupancy by choosing optimal block and grid sizes
+// Avoid using atomic operations unless necessary to prevent performance degradation
+// Schedule computations to hide memory latency
+```

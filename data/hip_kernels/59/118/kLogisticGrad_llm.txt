@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns for optimal performance
+// Minimize global memory accesses by using shared memory if possible
+// Prefer using const restrict qualifiers for read-only memory inputs
+// Optimize block and grid sizes to match the GPU architecture
+// Use __ldg for reading input when possible for better cache utilization
+// Consider loop unrolling if applicable to reduce loop overhead
+```

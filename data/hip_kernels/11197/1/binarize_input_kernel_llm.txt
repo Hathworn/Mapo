@@ -1,0 +1,7 @@
+```
+// Use shared memory to improve memory access performance
+// Reduce global memory access by eliminating redundant calculations
+// Calculate the mean once per thread block for efficiency
+// Use __syncthreads() to ensure mean_shared is updated before usage
+// Precompute mean to minimize calculation in binarization loop
+```

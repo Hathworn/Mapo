@@ -1,0 +1,4 @@
+// Use shared memory to cache d_val_n values for optimized memory access  
+// Minimize warp divergence in conditional branches  
+// Align memory accesses of d_val_n and d_val_npo to improve coalescing  
+// Replace pow and exp calls with precomputed values or approximation when possible  

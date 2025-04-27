@@ -1,0 +1,5 @@
+```
+// Use __restrict__ qualifier for pointers if aliasing is not expected
+// Prefetch data to shared memory if it can be reused by multiple threads
+// Minimize divergent branches, ensure warp threads take same execution path
+```

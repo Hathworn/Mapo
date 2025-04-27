@@ -1,0 +1,6 @@
+// Unroll loops to improve pipelining and throughput
+// Process multiple points per thread to reduce redundant loads from memory
+// Use precomputed indices to reduce dynamic calculations within the loop
+// Ensure memory accesses are coalesced for optimal performance
+// Optimize conditional checks to avoid unnecessary calculations and branching
+// Accumulate scores using parallelism to reduce synchronization bottlenecks

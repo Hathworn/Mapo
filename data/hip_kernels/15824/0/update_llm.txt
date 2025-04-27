@@ -1,0 +1,3 @@
+// Consider using shared memory to store gradients temporarily if they are reused
+// Ensure coalesced access by aligning memory access patterns of weights and grad
+// Evaluate using vectorized operations to improve memory throughput

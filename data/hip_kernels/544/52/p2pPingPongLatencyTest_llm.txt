@@ -1,0 +1,6 @@
+```
+// Utilize shared memory for common variables to reduce global memory accesses
+// Use __threadfence() to prevent stale cache reads and ensure memory consistency
+// Update shared variables to prevent redundant global memory assignments
+// Use __syncthreads() after updating shared variables to maintain synchronization between threads
+```

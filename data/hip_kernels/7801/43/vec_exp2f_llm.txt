@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure __syncthreads() is used after loading data into shared memory
+// Minimize conditional statements inside the kernel for better performance
+// Consider loop unrolling if further optimization is needed
+```

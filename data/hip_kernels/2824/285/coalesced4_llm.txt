@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data and reduce global memory accesses
+// Consider using __ldg() for read-only data to potentially improve cache hit rate
+// Balance workload among threads to ensure all threads in a warp are active
+// Use float4 data type for coalesced memory access, which is already implemented
+// Perform memory access with proper alignment to avoid bank conflicts
+```

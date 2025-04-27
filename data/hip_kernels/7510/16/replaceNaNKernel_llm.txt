@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns by ensuring coalesced memory access
+// Minimize bank conflicts in shared memory access if shared memory is used
+// Explore the use of __ldg() for read-only access of global memory if beneficial
+// Consider loop unrolling for the for-loop to increase throughput
+// Ensure that global memory accesses are coalesced for efficient memory usage
+// Use shared memory to cache data and reduce global memory bandwidth if applicable
+```

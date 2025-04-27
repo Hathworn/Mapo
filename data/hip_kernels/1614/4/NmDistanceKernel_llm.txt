@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for xyz and xyz2 arrays to improve performance.
+// Load xyz2 data in shared memory efficiently, currently done using buf array.
+// Use __restrict__ keyword for pointers to help compiler optimize memory accesses.
+// Ensure shared memory usage is at its minimum to allow more blocks to be resident •
+// Minimize usage of __syncthreads() to reduce synchronization overhead.
+```

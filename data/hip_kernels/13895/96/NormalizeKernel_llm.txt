@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory accesses by ensuring the data for threads within a warp is contiguous in memory
+// Use shared memory to load blocks of normalization_factor to reduce global memory accesses
+// Optimize global memory access patterns for image reads and writes
+// Utilize vectorized operations if applicable to process multiple values per thread
+// Ensure threads accessing the same image row are within the same warp to minimize thread divergence
+```

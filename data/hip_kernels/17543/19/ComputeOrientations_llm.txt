@@ -1,0 +1,10 @@
+```
+// Unroll loops to reduce loop overhead and improve thread performance
+// Use max/min functions to prevent branches for better SIMT efficiency
+// Employ bitwise operations for modulus calculation to replace expensive division
+// Move computation of Gaussian values outside the main loop to reduce redundant calculations
+// Prefetch data using shared memory to reduce global memory access latency
+// Optimize histogram smoothing with fewer operations by combining multiple reads/writes
+// Use conditional assignments to minimize divergent branches within threads
+
+```

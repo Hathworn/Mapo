@@ -1,0 +1,5 @@
+```
+// Ensure coalesced memory access by using consecutive threads to access consecutive memory locations
+// Consider using shared memory if multiple threads need access to dy[i] before computation to reduce global memory access
+// Optimize block and grid dimensions to fully utilize GPU resources, focusing on maximizing occupancy and minimizing warp divergence
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for xyz1 and xyz2 arrays to improve memory throughput
+// Utilize shared memory to reduce global memory bandwidth if data reuse within block is possible
+// Avoid bank conflicts by ensuring variables stored in shared memory are accessed efficiently
+// Minimize the use of atomic operations where possible, as they can serialize operations
+// Evaluate the possibility of using vectorized loads/stores for xyz1 and xyz2 to improve performance
+```

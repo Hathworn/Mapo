@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache normalization_factor to reduce global memory accesses.
+// Optimize memory coalescing by ensuring threads access sequential memory locations sequentially.
+// Preload frequently accessed memory data into registers to minimize repeated global memory reads.
+// Ensure warp divergence is minimized, especially in the conditional operator for inversion.
+```

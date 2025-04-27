@@ -1,0 +1,8 @@
+```
+// Precompute indices to reduce repeated calculations and improve memory access
+// Use shared memory for frequently accessed variables if possible
+// Align memory access patterns with cache lines to minimize cache misses
+// Consider using texture memory for read-only data to leverage caching
+// Optimize loop unrolling further to ensure it fits well with warp execution
+// Ensure memory coalescing for global memory access
+```

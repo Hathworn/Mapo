@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store input blocks for faster access and reducing global memory access latency
+// Use warp shuffle operations for data exchange within a block to efficiently utilize on-chip resources
+// Optimize memory access patterns to ensure coalesced access for both reads and writes
+// Implement loop unrolling within nested loops to minimize loop overhead and increase computational throughput
+// Profile memory use and strive to minimize register and shared memory use for better occupancy and efficiency
+```

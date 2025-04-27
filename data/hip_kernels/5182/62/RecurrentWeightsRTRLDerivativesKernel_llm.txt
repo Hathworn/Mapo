@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to store recurrent weights and reduce global memory access times.
+// Consider adjusting block size for optimal warp efficiency and to minimize idle threads.
+// Ensure coalesced memory access to improve data throughput for recurrentWeightRTRLDerivatives.
+// Perform warp-level shuffles for reductions to benefit from faster exchange of values without shared memory.
+// Optimize the thread block size to match the SM architecture's warp size for better resource utilization.
+```

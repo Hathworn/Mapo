@@ -1,0 +1,4 @@
+// Consider using shared memory to store neighboring velocities for blocks to reduce global memory access
+// Use coalesced memory access patterns when loading oldVel and writing to newVel for better performance
+// Minimize the computation of indexes inside the kernel to reduce unnecessary arithmetic operations
+// Check the possibility of loop unrolling for accessing neighboring velocities to enhance throughput

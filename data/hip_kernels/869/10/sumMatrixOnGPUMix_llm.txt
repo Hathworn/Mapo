@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses
+// Optimize thread block dimensions to maximize warps usage and avoid resource underutilization
+// Check if memory coalescing can be improved by reorganizing data access patterns
+// Ensure memory reads/writes are aligned optimally to increase throughput
+// Use __restrict__ keyword for pointers if data is not aliased
+```

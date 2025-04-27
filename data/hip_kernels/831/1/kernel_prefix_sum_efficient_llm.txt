@@ -1,0 +1,6 @@
+```cpp
+// Optimize memory access patterns by ensuring coalesced access in global memory.
+// Minimize thread divergence by aligning operations on warp boundaries.
+// Consider using warp-level primitives for more efficient parallel prefix sum.
+// Ensure that shared memory usage does not exceed hardware limits to avoid spilling to global memory.
+```

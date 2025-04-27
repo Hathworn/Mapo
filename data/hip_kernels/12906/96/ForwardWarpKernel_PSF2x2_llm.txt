@@ -1,0 +1,4 @@
+// Use shared memory for commonly accessed variables to reduce global memory accesses
+// Consider using a texture cache for src array to optimize memory read operations
+// Use loop unrolling techniques to improve performance of tightly-bound loops
+// Minimize atomic operations by optimizing data structures and parallel reduction methods

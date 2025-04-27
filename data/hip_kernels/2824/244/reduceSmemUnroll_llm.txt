@@ -1,0 +1,4 @@
+// Ensure coalesced memory access for g_idata to optimize memory bandwidth.
+// Utilize shared memory to reduce global memory access latency.
+// Apply loop unrolling to minimize the instruction overhead.
+// Use warp shuffle operations to optimize intra-warp communication and reduce warp divergence.

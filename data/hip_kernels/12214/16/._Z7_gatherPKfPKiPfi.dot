@@ -1,0 +1,10 @@
+digraph "CFG for '_Z7_gatherPKfPKiPfi' function" {
+	label="CFG for '_Z7_gatherPKfPKiPfi' function";
+
+	Node0x5e7d1e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = add i32 %12, %5\l  %14 = icmp slt i32 %13, %3\l  br i1 %14, label %15, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x5e7d1e0:s0 -> Node0x5e7f0b0;
+	Node0x5e7d1e0:s1 -> Node0x5e7f140;
+	Node0x5e7f0b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = freeze i32 %13\l  %17 = sdiv i32 %16, 6\l  %18 = mul i32 %17, 6\l  %19 = sub i32 %16, %18\l  %20 = sext i32 %17 to i64\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %20\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %23 = mul nsw i32 %22, 6\l  %24 = add nsw i32 %23, %19\l  %25 = sext i32 %24 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %25\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !11,\l... !amdgpu.noclobber !6\l  %28 = sext i32 %13 to i64\l  %29 = getelementptr inbounds float, float addrspace(1)* %2, i64 %28\l  store float %27, float addrspace(1)* %29, align 4, !tbaa !11\l  br label %30\l}"];
+	Node0x5e7f0b0 -> Node0x5e7f140;
+	Node0x5e7f140 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  ret void\l}"];
+}

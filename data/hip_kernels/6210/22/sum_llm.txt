@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory access for input array
+// Use __syncthreads() to synchronize threads after each reduction step
+// Use atomicAdd to prevent race conditions when updating the output
+```

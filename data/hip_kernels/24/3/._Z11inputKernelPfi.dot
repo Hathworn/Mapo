@@ -1,0 +1,10 @@
+digraph "CFG for '_Z11inputKernelPfi' function" {
+	label="CFG for '_Z11inputKernelPfi' function";
+
+	Node0x598c200 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %13 = getelementptr i8, i8 addrspace(4)* %4, i64 6\l  %14 = bitcast i8 addrspace(4)* %13 to i16 addrspace(4)*\l  %15 = load i16, i16 addrspace(4)* %14, align 2, !range !4, !invariant.load !5\l  %16 = zext i16 %15 to i32\l  %17 = mul i32 %12, %16\l  %18 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %19 = add i32 %17, %18\l  %20 = mul nsw i32 %19, 10\l  %21 = add nsw i32 %11, %20\l  %22 = icmp slt i32 %21, %1\l  br i1 %22, label %23, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x598c200:s0 -> Node0x598fc70;
+	Node0x598c200:s1 -> Node0x598fd00;
+	Node0x598fc70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%23:\l23:                                               \l  %24 = sext i32 %21 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %24\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %27 = sitofp i32 %21 to float\l  %28 = fadd contract float %26, %27\l  store float %28, float addrspace(1)* %25, align 4, !tbaa !7\l  br label %29\l}"];
+	Node0x598fc70 -> Node0x598fd00;
+	Node0x598fd00 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

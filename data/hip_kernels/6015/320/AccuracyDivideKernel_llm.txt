@@ -1,0 +1,4 @@
+// Ensure coalesced memory access to improve bandwidth utilization
+// Minimize divergence by avoiding conditional statements in the kernel
+// Consider using shared memory if frequently accessing splittable data
+// Optimize global memory access patterns for better throughput

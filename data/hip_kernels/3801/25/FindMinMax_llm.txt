@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses for d_Data by ensuring contiguous threads access contiguous memory addresses
+// Consider using float4 or other vectorized types to reduce memory access times
+// Optimize shared memory usage by dynamically allocating only the necessary size of minvals and maxvals
+// Minimize the number of __syncthreads() calls by optimizing the reduction loop
+// Consider adjusting the block size to better fit the GPU's memory hierarchy and improve occupancy
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory for outputActivations and outputActivationDerivatives to reduce global memory accesses
+// Coalesce memory access for target array to optimize memory transactions
+// Consider using float2 for accessing target and outputActivations if possible to increase memory access efficiency
+// Ensure memory access patterns are aligned to improve coalescing
+```

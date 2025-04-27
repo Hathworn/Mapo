@@ -1,0 +1,4 @@
+// Optimize shared memory access by using warp-level operations
+// Utilize loop unrolling to reduce synchronization overhead and increase parallelism within the kernel
+// Ensure coalesced memory access to improve global memory bandwidth utilization
+// Use volatile keyword to avoid reordering by compiler and ensure correct execution within a warp

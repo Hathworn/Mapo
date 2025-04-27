@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Avoid bank conflicts by ensuring aligned access patterns in shared memory
+// Minimize __syncthreads calls by combining operations where possible
+// Consider occupancy maximization by balancing block size and shared memory usage
+```

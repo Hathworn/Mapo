@@ -1,0 +1,4 @@
+// Consider utilizing shared memory to temporarily store grad_points before atomic adds
+// Optimize memory access patterns to minimize shared memory bank conflicts
+// Ensure coalesced memory access for grad_out to maximize bandwidth usage
+// Investigate the use of warp-level synchronization primitives for efficient reduction handling

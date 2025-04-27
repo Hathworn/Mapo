@@ -1,0 +1,9 @@
+```cpp
+// Consider coalescing memory accesses for x, y, z arrays.
+// Ensure valid_points array is accessed in a coalesced manner.
+// Use shared memory to store reusable data for h_ang to reduce global memory access.
+// Consider using double buffering if applicable for overlapping memory transfer and computation.
+// Optimize loop stride to enhance memory access patterns.
+// Minimize the use of global memory within the loop by storing frequently accessed data in registers.
+// Verify if the usage of __syncthreads() is redundant and remove if unnecessary.
+```

@@ -1,0 +1,3 @@
+// Use shared memory for state array if the threads within a block need frequent access
+// Consider using Coalesced memory access to improve memory bandwidth utilization
+// Minimize global memory access by caching data in local registers when possible

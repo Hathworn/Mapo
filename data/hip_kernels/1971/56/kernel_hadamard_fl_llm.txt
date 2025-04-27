@@ -1,0 +1,8 @@
+```
+// Use loop unrolling for better performance by reducing loop overhead
+// Ensure coalesced memory accesses by aligning data structures if possible
+// Use shared memory to avoid redundant global memory access if data can fit into shared memory
+// Consider using texture memory for read-only data for faster access patterns
+// Minimize warp divergence by ensuring threads in a warp execute the same path
+// Tune block and grid sizes for optimal use of available compute resources
+```

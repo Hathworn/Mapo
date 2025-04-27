@@ -1,0 +1,4 @@
+// Use shared memory to improve memory access patterns and reduce global memory access latency
+// Ensure memory accesses are coalesced by carefully aligning addresses in shared memory storage
+// Optimize thread block dimensions to balance between warp occupancy and memory access coalescing
+// Consider using additional synchronization or memory barriers if extending the tile size beyond current setup

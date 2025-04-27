@@ -1,0 +1,6 @@
+```
+// Consider optimizing memory layout of x for coalesced access
+// Use atomics for mean computation if reducing across multiple blocks
+// Potentially launch a second kernel for final reduction if needed
+// Evaluate using warp level primitives for faster reduction
+```

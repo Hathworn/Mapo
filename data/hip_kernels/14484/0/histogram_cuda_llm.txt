@@ -1,0 +1,5 @@
+// Use shared memory instead of malloc for better performance
+// Initialize local histogram in shared memory to reduce global memory accesses
+// Use __syncthreads to ensure all threads have completed writing to shared memory
+// Optimize memory accesses by reducing global memory writes in the reduction phase
+// Ensure data coherence by synchronizing threads before updating global memory

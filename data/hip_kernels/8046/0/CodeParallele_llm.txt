@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses if multiple threads access neighboring data.
+// Consider coalescing memory accesses by ensuring continuous memory reads/writes among threads.
+// Optimize the bounds check to reduce divergence within warps.
+// Ensure that matDest is accessed in a coalesced manner for improved memory throughput.
+// Utilize pre-loading data to shared memory if reused multiple times in computation.
+```

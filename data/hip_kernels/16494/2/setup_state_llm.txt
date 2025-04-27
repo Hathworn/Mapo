@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access for hiprandState to improve performance
+// Minimize shared memory usage to allocate more registers per thread
+// Optimize block size and grid size based on hardware for load balancing
+// Consider warp-level primitives for synchronization if needed
+// Ensure alignment of hiprandState to prevent misaligned memory access
+// Preload seed value to reduce redundant memory accesses
+```

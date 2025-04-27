@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to cache 'slack' data for current block to reduce global memory accesses
+// Consider using warp-level primitives to optimize atomic operations on 'zeros_size' and 'zeros_size_b'
+// Ensure coalesced memory accesses for reading and writing the 'zeros' array
+```

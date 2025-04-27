@@ -1,0 +1,6 @@
+// Use memory coalescing to optimize global memory access patterns
+// Ensure data alignment to improve access speed
+// Consider using shared memory for temporary storage to reduce global memory accesses
+// Opt for warp-wide operations when appropriate to maximize throughput
+// Avoid bank conflicts when utilizing shared memory
+// Assess potential for register reuse to minimize memory transactions

@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for frequently accessed values to decrease global memory reads.
+// Ensure coalesced memory access by aligning threads with memory rows.
+// Validate pitch alignment for optimized memory access.
+// Avoid divergent branches for better warp efficiency.
+```

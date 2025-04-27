@@ -1,0 +1,7 @@
+```c
+// Consider using more shared memory to minimize global memory access.
+// Unroll loops to improve computation efficiency if applicable.
+// Ensure coalesced memory access patterns for optimal performance.
+// Reduce the use of __syncthreads() by optimizing reduction strategy.
+// Use warp-level primitives for reduction to improve performance on newer architectures.
+```

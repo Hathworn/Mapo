@@ -1,0 +1,5 @@
+// Consider coalescing memory access patterns for better performance on AMD GPUs.
+// Use shared memory for weight data to reduce redundant global memory accesses.
+// Optimize loop limits using integer arithmetic to minimize conditional checks.
+// Explore using vectorized loads and stores, if alignment permits, for faster data throughput.
+// Ensure memory alignment for dy and dx arrays to utilize faster memory access patterns.

@@ -1,0 +1,6 @@
+```
+// Use shared memory to store input data tiles to optimize global memory access.
+// Increase the block size for better occupancy if shared memory usage allows.
+// Consider coalescing memory access patterns for src and dest arrays.
+// Use texture memory for read-only access patterns to avoid repeated global memory accesses.
+```

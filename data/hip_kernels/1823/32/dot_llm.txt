@@ -1,0 +1,9 @@
+```
+// Increase the grid size to use more blocks and utilize more of the GPU
+// Ensure memory coalescing by aligning data structures appropriately
+// Consider using pinned memory for faster data transfer between host and device
+// Use shared memory effectively to minimize global memory access latency
+// Optimize loop unrolling based on the target architecture
+// Evaluate the kernel launch configuration for optimal occupancy
+// Use __restrict__ pointers to improve compiler optimizations by restricting aliasing
+```

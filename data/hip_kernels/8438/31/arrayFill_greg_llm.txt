@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory if data reuse is possible to reduce global memory accesses.
+// Optimize for coalesced memory access by ensuring contiguous threads access contiguous memory.
+// Reduce register pressure by minimizing the number of variables and using __restrict__ pointers if applicable.
+// Ensure occupancy is maximized by balancing register usage and thread count.
+// Use the __launch_bounds__() attribute to specify the expected block size and number of registers per thread.
+// Consider aligning data for improved memory access performance.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data
+// Ensure coalesced memory access patterns to minimize global memory transactions
+// Use __restrict__ keyword on pointers to hint at non-aliasing data
+// Align data structures to 128 bytes for efficient memory access
+// Reduce divergent branches within the kernel
+```

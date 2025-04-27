@@ -1,0 +1,4 @@
+// Utilize shared memory for coalesced memory access
+// Read into shared memory in a coalesced manner
+// __syncthreads() ensures all threads have written to shared memory before reading
+// Write from shared memory to global memory in a coalesced manner

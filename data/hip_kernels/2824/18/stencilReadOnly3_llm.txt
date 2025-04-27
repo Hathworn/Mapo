@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Use shared memory for stencilWeight if repeatedly accessed across threads
+// Check alignment for __ldg intrinsic use, ensure src and stencilWeight are aligned
+// Minimize out of bounds checks by ensuring size and data access are well-defined
+// Explore loop unrolling further if beneficial, based on profiling
+// Consider data prefetching strategies for src to improve cache utilization
+```

@@ -1,0 +1,4 @@
+// Use shared memory to store temporary results for each block to reduce global memory access.
+// Ensure coalesced memory access pattern for global memory reads and writes.
+// Consider reducing the size of data types if possible to improve memory bandwidth usage.
+// Align global memory access to reduce access time and avoid bank conflicts.

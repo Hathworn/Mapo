@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses for mins and maxes arrays.
+// Ensure input array elements are accessed contiguously for coalesced writes.
+// Align inputCount to block size for better occupancy.
+// Use shared memory if mins and maxes have repeated accesses within a block.
+// Check for unused variables and parameters to reduce register pressure.
+```

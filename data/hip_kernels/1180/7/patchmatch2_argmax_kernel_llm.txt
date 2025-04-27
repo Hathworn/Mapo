@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data such as 'conv' values.
+// Ensure memory coalescing by aligning memory accesses in 'prev_corrAB_upsampled' and 'corrAB'.
+// Use loop unrolling to minimize loop overhead in the nested 'for' loops.
+// Assess the impact of reducing register usage by optimizing variable scopes.
+// Evaluate if texture memory could be beneficial for accessing 'conv' values.
+```

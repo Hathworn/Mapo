@@ -1,0 +1,8 @@
+```
+// Consider using larger tiles for more efficient memory access pattern
+// Make sure the shared memory array is padded to avoid bank conflicts
+// Use __restrict__ keyword for src and dst pointers to assist compiler optimizations
+// Ensure shared memory load/store accesses are coalesced
+// Align the destination memory access pattern to reduce access latency
+// Consider prefetching data elements ahead of computation to overlap memory access with computation
+```

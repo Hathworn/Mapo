@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory loads.
+// Optimize memory access patterns to ensure coalesced memory access.
+// Minimize bank conflicts when using shared memory by ensuring memory reads are aligned.
+// Use constant memory for variables like ALPHA that are not changed during kernel execution.

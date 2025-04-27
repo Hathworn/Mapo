@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache matrix tiles and reduce global memory accesses
+// Consider coalesced access patterns to improve memory throughput
+// Use stride loops to enhance processor use and avoid warp divergence
+// Assess block and grid size configurations for optimal occupancy
+// Minimize divergence by aligning work division with warp size
+```

@@ -1,0 +1,7 @@
+```cpp
+// Consider using more shared memory for larger data sets to minimize global memory accesses.
+// Optimize memory coalescing by aligning data structures to warp boundaries.
+// Prefetch next data chunk into shared memory to hide global memory access latency.
+// Balance memory and computation by determining optimum block size.
+// Implement vectorized loading and storing to increase memory throughput if applicable.
+```

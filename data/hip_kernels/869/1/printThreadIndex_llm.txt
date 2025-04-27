@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for better data reuse and reduced global memory access
+// Ensure coalesced memory access by aligning data to the warp size
+// Minimize divergent branches to improve warp execution efficiency
+// Use read-only data cache when possible to optimize memory access patterns
+// Adjust block and grid dimensions to maximize occupancy and hide memory latency
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for in1 and out arrays
+// Evaluate the need for shared memory depending on the size of in0 and cnt
+// Use __restrict__ more effectively if pointer aliasing is not expected
+// Profile to ensure shared memory usage brings performance gains
+// Consider using larger block sizes for better occupancy
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access to g_Data where possible
+// Consider using read-only cache for Gaussian computations
+// Experiment with loop unrolling for the histogram reduction
+// Evaluate the potential of using warp-level primitives for reduction
+// Check if __ldg() can be leveraged for read-only global memory loads
+// Assess shared memory bank conflicts and optimize access patterns
+```

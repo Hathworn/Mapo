@@ -1,0 +1,4 @@
+// Consider using shared memory for histogram to reduce global memory accesses.
+// Ensure coalesced access by aligning data accesses with warp size.
+// Optimize atomic operations by batching updates within a loop before committing to global memory.
+// Utilize warp-level synchronization to minimize thread divergence.

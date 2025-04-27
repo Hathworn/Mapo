@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for better memory throughput
+// Consider using shared memory if reuse of data is frequent
+// Align data in memory to reduce unaligned accesses
+// Optimize block and thread dimensions for the specific hardware
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+// Reduce the number of kernel launches by fusing kernels if possible
+```

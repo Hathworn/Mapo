@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for spatial data to improve memory access patterns.
+// Prefetch data into registers to reduce global memory latency.
+// Ensure coalesced memory access by aligning memory indices as much as possible.
+// Use __restrict__ qualifiers for pointers if possible to help the compiler with aliasing assumptions.
+// Evaluate thread block size to match the hardware architecture for optimal memory throughput.
+```

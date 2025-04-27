@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to load features into each block to reduce global memory accesses.
+// Try to optimize memory coalescing by ensuring consecutive threads access consecutive data elements.
+// Use half-precision floats if precision requirements allow in order to increase throughput.
+// Ensure indices_data is read in a coalesced manner for improved memory bandwidth usage.
+// Investigate reducing register usage by using fewer variables or sharing among threads.
+```

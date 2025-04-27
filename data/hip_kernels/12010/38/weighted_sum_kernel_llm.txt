@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to cache frequently accessed values of a, b, and s.
+// Align memory access to improve coalescing and reduce memory divergence.
+// Adjust block size for maximum occupancy, aiming for optimal thread count.
+// Consider prefetching data for a and b via warp-level primitives.
+// Use memory access patterns that favor L1/L2 cache utilization.
+// Minimize conditional checks in the main loop, e.g., replace ?: with logic that avoids divergence.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory accesses for common data.
+// Group warp operations to maximize utilization.
+// Consolidate boundary conditions to minimize branch divergence.
+// Use texture memory for xMax, yMin, and yMax when possible.
+// Align data to cache lines to enhance coalesced memory access.
+// Prefetch data to hide memory latencies when accessing global memory.
+```

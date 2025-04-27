@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to store 'value' for coalesced writes.
+// Ensure early exit for out-of-bounds threads to prevent unnecessary computation and memory access.
+// Make use of __syncthreads() to ensure shared memory is populated before use.
+```

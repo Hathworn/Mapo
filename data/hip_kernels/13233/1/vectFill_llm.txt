@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Minimize divergent branching for better warp execution efficiency
+// Coalesce memory accesses to improve memory bandwidth utilization
+// Ensure data alignment to enhance memory transaction efficiency
+// Use vectorized data types for better throughput on SIMD architectures

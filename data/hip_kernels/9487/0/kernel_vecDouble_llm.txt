@@ -1,0 +1,7 @@
+```
+// Combine memory operations to minimize memory transaction
+// Use shared memory if possible to reduce global memory access
+// Ensure memory coalescing by accessing consecutive memory locations
+// Avoid divergent branches within the warp
+// Use __restrict__ qualifiers for pointer dereferencing if applicable
+```

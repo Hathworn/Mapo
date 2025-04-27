@@ -1,0 +1,7 @@
+// Ensure shared memory is optimized by reusing its usage efficiently
+// Avoid bank conflicts in shared memory access for better performance
+// Coalesce global memory accesses to maximize memory throughput
+// Minimize shared memory usage where possible to allow more blocks to execute concurrently
+// Ensure that each thread computes only necessary data to reduce redundant calculations
+// Try using loop unrolling to reduce the loop overhead and enhance performance
+// Consider using vectorized loads/stores to exploit memory bandwidth fully

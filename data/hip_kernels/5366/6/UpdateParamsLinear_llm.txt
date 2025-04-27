@@ -1,0 +1,5 @@
+// Use shared memory for dZ and A to minimize global memory access.
+// Implement vectorized loading for faster memory access.
+// Consider using warp shuffle operations for reduction instead of a loop.
+// Ensure memory accesses are coalesced for better performance.
+// Use constant memory for frequently accessed variables like lr.

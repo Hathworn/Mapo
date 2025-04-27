@@ -1,0 +1,4 @@
+// Consider coalescing global memory access to improve throughput.
+// Use shared memory to minimize global memory transactions.
+// Unroll the loop to enhance performance by reducing instruction overhead.
+// Ensure __syncthreads() placement is optimal to avoid unnecessary synchronization barriers.

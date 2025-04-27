@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for inds array
+// Ensure output array is stored in global memory with coalesced access patterns
+// Minimize bank conflicts by aligning data access if using shared memory
+// Explore the use of __ldg() for read-only cache access on inds array
+// Evaluate potential benefits of using collaborative cache loading or prefetching techniques
+```

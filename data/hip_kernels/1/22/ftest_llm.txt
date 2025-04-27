@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache commonly accessed data to reduce global memory accesses.
+// Use constant memory for read-only data that does not change per thread but is accessed frequently.
+// Consider aligning data structures in memory for coalesced memory access.
+// Explore using asynchronous memory operations for overlapping computation and data transfers.
+// Utilize __syncthreads() to ensure proper ordering of shared memory operations if implemented.
+```

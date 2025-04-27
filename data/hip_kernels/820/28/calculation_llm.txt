@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache `a` values for reducing global memory accesses
+// Minimize memory transaction size by ensuring all threads within a warp access contiguous memory addresses
+// Align data structures to 32-byte boundaries for maximum memory coalescing on AMD GPUs
+// Prefer restrict keyword for pointers to help compiler optimize memory access
+```

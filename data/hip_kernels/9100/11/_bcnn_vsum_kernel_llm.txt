@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory bandwidth usage
+// Ensure coalesced memory access pattern for global memory reads
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Use atomic operations cautiously to avoid performance bottlenecks
+// Consider loop unrolling if the block size is fixed and known
+```

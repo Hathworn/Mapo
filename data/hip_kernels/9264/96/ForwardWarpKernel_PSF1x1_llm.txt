@@ -1,0 +1,7 @@
+```
+// Use shared memory for u and v to reduce global memory access
+// Coalesced memory access for src to improve bandwidth
+// Use a single memory access for destination (dst) where atomic add occurs
+// Consider using texture memory for src if access pattern is 2D and frequent
+// Pre-fetch values into registers to hide latency and reduce redundant loads
+```

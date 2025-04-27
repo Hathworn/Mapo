@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access patterns for coalesced memory reads.
+// Use shared memory to minimize global memory accesses.
+// Ensure bank conflicts are minimized when using shared memory.
+// Align data access according to warp size to prevent divergence.
+// Try eliminating branches or using predication for conditional statements.
+// Consider unrolling loops to reduce loop overhead.
+// Precompute index calculations that are used repeatedly to reduce computation.
+// Assess the need for atomic operations in cases of data dependencies.
+```

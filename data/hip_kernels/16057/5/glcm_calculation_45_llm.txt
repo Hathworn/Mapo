@@ -1,0 +1,3 @@
+// Ensure coalesced memory access patterns for better efficiency
+// Minimize divergence within warps by checking boundary conditions before kernel launch
+// Consider using shared memory to store small tiles of glcm for reduction in global memory access

@@ -1,0 +1,7 @@
+```
+// Use shared memory if multiple threads access the same data to reduce global memory access
+// Ensure memory coalescing by aligning data accesses for contiguous threads
+// Consider using memory access patterns that minimize bank conflicts
+// Optimize grid and block dimensions to maximize warp occupancy and efficiency
+// Explore using __restrict__ keyword for pointer parameters to aid compiler optimizations
+```

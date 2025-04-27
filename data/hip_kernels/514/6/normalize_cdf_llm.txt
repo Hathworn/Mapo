@@ -1,0 +1,3 @@
+// Consider using shared memory to cache frequently accessed data to reduce global memory accesses.
+// Ensure that memory reads and writes are coalesced for better efficiency.
+// Use __restrict__ keyword for pointers to help the compiler optimize memory loads and stores.

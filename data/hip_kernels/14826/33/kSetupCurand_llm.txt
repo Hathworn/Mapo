@@ -1,0 +1,7 @@
+```
+// Limit the number of launched threads to avoid unnecessary computation
+// Use shared memory or registers if possible to reduce global memory access
+// Ensure coalesced memory accesses to improve memory throughput
+// Consider using warp-synchronous programming to reduce thread divergence
+// Use appropriate block and grid sizes to maximize occupancy
+```

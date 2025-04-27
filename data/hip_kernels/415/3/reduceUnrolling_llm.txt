@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to store partial sums to reduce global memory access.
+// Ensure coalesced memory access by aligning data accesses to warp boundaries.
+// Minimize divergence by avoiding conditional statements within warp execution paths.
+// Use __shfl_down_sync effectively to reduce shared memory usage and improve performance.
+```

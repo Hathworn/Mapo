@@ -1,0 +1,5 @@
+// Coalesce global memory accesses to improve access efficiency.
+// Consider aligning memory accesses for activation_input_gpu to minimize bank conflicts.
+// Use shared memory judiciously to store intermediate results and reduce global memory traffic.
+// Ensure shared memory is used optimally by minimizing unnecessary reuse and maximizing utilization.
+// Consider optimizing the use of __syncthreads() to minimize synchronization overhead.

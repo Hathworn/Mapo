@@ -1,0 +1,7 @@
+```
+// Consider loop unrolling for the 'l' and 'm' loops to improve performance.
+// Use shared memory to load 'delta' elements accessed repeatedly by threads.
+// Check if 'prev_delta' can be moved to shared memory to reduce global memory updates.
+// Align memory accesses for 'delta' and 'indexes' to optimize cache usage.
+// Use texture memory for reading 'delta' if spatial locality is high.
+```

@@ -1,0 +1,13 @@
+digraph "CFG for '_Z12PondHeadInitPdi' function" {
+	label="CFG for '_Z12PondHeadInitPdi' function";
+
+	Node0x44faa90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !5, !invariant.load !6\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 4, !tbaa !7\l  %13 = mul i32 %4, %9\l  %14 = add i32 %13, %3\l  %15 = icmp slt i32 %14, %1\l  br i1 %15, label %16, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x44faa90:s0 -> Node0x44fba30;
+	Node0x44faa90:s1 -> Node0x44fc730;
+	Node0x44fba30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%16:\l16:                                               \l  %17 = load double, double addrspace(4)* @psi_min, align 8, !tbaa !16\l  %18 = udiv i32 %12, %9\l  %19 = mul i32 %18, %9\l  %20 = icmp ugt i32 %12, %19\l  %21 = zext i1 %20 to i32\l  %22 = add i32 %18, %21\l  %23 = mul i32 %22, %9\l  br label %24\l}"];
+	Node0x44fba30 -> Node0x44fcdc0;
+	Node0x44fcdc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %14, %16 ], [ %28, %24 ]\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds double, double addrspace(1)* %0, i64 %26\l  store double %17, double addrspace(1)* %27, align 8, !tbaa !16\l  %28 = add i32 %23, %25\l  %29 = icmp slt i32 %28, %1\l  br i1 %29, label %24, label %30, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x44fcdc0:s0 -> Node0x44fcdc0;
+	Node0x44fcdc0:s1 -> Node0x44fc730;
+	Node0x44fc730 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%30:\l30:                                               \l  ret void\l}"];
+}

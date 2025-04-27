@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Adjust the size of shared memory to balance occupancy and memory usage
+// Ensure coalesced access to global memory for image
+// Optimize stride loop to minimize synchronization and maximize parallelism
+// Use atomic operations efficiently to avoid bank conflicts in shared memory
+```

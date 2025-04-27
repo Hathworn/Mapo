@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses for frequently used values like mean and variance.
+// Use loop unrolling techniques if applicable to decrease instruction overhead for batches or spatial dimensions.
+// Ensure coalesced memory access patterns when accessing x, mean, variance, mean_delta, variance_delta, and delta arrays.
+// Investigate optimizing the math operations by using fast math functions if acceptable precision loss is minimal.
+```

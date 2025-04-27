@@ -1,0 +1,9 @@
+```
+// Consider increasing block size to improve occupancy and reduce idle threads
+// Ensure data alignment for efficient memory access
+// Use more shared memory to better overlap computation and communication
+// Prefetch data to shared memory to minimize global memory access latency
+// Use warp-level primitives for faster reduction within a warp
+// Minimize __syncthreads() by restructuring the reduction loop
+// Evaluate if using half-precision can improve memory bandwidth utility
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache d_tetT and reduce global memory access frequency.
+// Consider reorganizing d_vertMem and d_vertMemOutside to improve memory coalescing.
+// Check for misaligned memory accesses and adjust index calculations for better alignment.
+// Explore loop unrolling to minimize overhead of loop branching.
+// Replace division and modulo operations with bitwise operations if possible.
+// Optimize switch-case by predetermining offset logic outside the loop.
+```

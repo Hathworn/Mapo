@@ -1,0 +1,7 @@
+```
+// Use memory coalescing by ensuring `x`, `y`, `z`, and `r` are accessed in a linear fashion
+// Align data to cache line size to improve memory transaction efficiency
+// Consider using shared memory for repeated access to constant data to reduce global memory loads
+// Minimize data transfers by ensuring all required data fits within GPU memory
+// Optimize memory access patterns to avoid bank conflicts
+```

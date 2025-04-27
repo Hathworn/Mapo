@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing 'add' and 'out' arrays using memory patterns that reduce global memory access latency
+// Consider using shared memory when possible to reduce redundant global memory accesses
+// Analyze warp divergence to ensure threads within a warp follow similar execution paths for better efficiency
+// Evaluate use of larger block sizes, if possible, to increase occupancy
+// Utilize constant memory for 's1' and 's2' if they remain unchanged during the kernel execution to optimize memory bandwidth
+```

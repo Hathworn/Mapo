@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring INCX is 1 for better performance.
+// Use shared memory if multiple threads access the same data to reduce global memory access.
+// Increase block size if there are no shared memory constraints to improve occupancy.
+// Ensure grid and block dimensions are configured to fully utilize the GPU.
+```

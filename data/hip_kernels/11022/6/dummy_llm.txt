@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to reduce global memory access when applicable.
+// Ensure memory coalescing in global memory accesses for better performance.
+// Evaluate whether warp-level operations can be introduced to increase parallel efficiency.
+// Consider loop unrolling for repetitive tasks to minimize loop overhead.
+// Analyze alignment of data structures for potential efficiency gains in memory transactions.
+// Explore asynchronous memory copy if overlapping computations can be leveraged.
+// Inspect thread divergence to ensure all threads within a warp execute the same instructions.
+```

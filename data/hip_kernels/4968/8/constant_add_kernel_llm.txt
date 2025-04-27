@@ -1,0 +1,8 @@
+```
+// Ensure shared memory usage is optimized by setting shared_data size to blockDim.x
+// Consider using coalesced memory access patterns
+// Ensure proper memory alignment for efficient global memory access
+// Take advantage of half-warp access while reading and writing to shared memory
+// Use __syncthreads() judiciously to ensure memory coherence
+// Assess warp divergence and minimize it by aligning condition checks
+```

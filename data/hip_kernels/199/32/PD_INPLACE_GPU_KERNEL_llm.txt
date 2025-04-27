@@ -1,0 +1,9 @@
+```c
+// Consider optimizing memory access patterns to coalesce global memory accesses
+// Use shared memory efficiently to reduce redundant global memory accesses
+// Ensure memory access patterns lead to minimal bank conflicts in shared memory
+// Consider loop unrolling for increased throughput in memory-bound sections
+// Optimize the FIR calculation loop to improve arithmetic intensity
+// Evaluate and possibly reduce the number of __syncthreads() calls for performance
+// Ensure optimal block and grid sizing for maximum occupancy
+```

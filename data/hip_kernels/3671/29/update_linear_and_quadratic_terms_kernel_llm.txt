@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced access to global memory for performance
+// Utilize shared memory for data reuse if applicable
+// Use __restrict__ pointers to inform compiler for possible optimizations
+// Minimize divergent branches within the kernel for efficiency
+// Tune block and grid sizes based on empirical testing for specific hardware
+// Consider memory alignment restrictions on newer hardware architectures
+```

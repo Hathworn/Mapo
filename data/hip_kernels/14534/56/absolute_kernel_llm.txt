@@ -1,0 +1,6 @@
+```
+// Use grid stride loop for improved thread utilization
+// Ensure input and output are properly aligned for coalesced access
+// Consider using __ldg for read-only access if applicable
+// Check occupancy and adjust block size for optimal hardware utilization
+```

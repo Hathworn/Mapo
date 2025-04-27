@@ -1,0 +1,10 @@
+```
+// Optimize memory coalescing for g_Data access patterns
+// Pad shared memory arrays for alignment to prevent bank conflicts
+// Consider loop unrolling to eliminate branch divergence
+// Use __ldg for read-only global memory access for potentially faster loads
+// Ensure shared memory allocation fits within hardware limits
+// Reuse shared memory effectively by reducing unnecessary __syncthreads()
+// Minimize atomic operations by improving histogram reduction
+// Evaluate the benefits of reducing precision for operations where applicable
+```

@@ -1,0 +1,6 @@
+```
+// Load stencil weights in coalesced manner for better memory efficiency
+// Use shared memory for frequently accessed stencil weights to reduce global memory accesses
+// Ensure correct synchronization after loading stencil weights into shared memory
+// Consider using constant memory for stencil weights if they do not change during kernel execution
+```

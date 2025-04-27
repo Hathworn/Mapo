@@ -1,0 +1,7 @@
+```
+// Consider increasing the size of shared memory if computation needs more space
+// Optimize the use of shared memory by minimizing bank conflicts
+// Align shared memory accesses to reduce memory access latency
+// Ensure __syncthreads() is used correctly to avoid race conditions
+// If possible, coalesce global memory writes to increase memory throughput
+```

@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory accesses for intermediate computations.
+// Consider padding shared memory to avoid bank conflicts and improve access efficiency.
+// Optimize memory access patterns for 'x' and 'mean' to ensure coalesced global memory accesses.
+// Increase 'threads' to better utilize GPU hardware if resources allow.
+// Use warp-level primitives such as __shfl_down_sync for reduction instead of manual loop for better performance.
+// Minimize the use of __syncthreads within the warp by leveraging warp intrinsic operations.

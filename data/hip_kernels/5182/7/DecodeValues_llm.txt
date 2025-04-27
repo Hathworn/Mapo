@@ -1,0 +1,4 @@
+// Consider using shared memory for data reused by threads to reduce global memory access.
+// Avoid redundant computations inside the loop by pre-computing values that do not change.
+// Reorder memory access patterns to achieve coalesced memory reads for higher bandwidth utilization.
+// Ensure branch divergence is minimized, especially in conditions such as threadId checks.

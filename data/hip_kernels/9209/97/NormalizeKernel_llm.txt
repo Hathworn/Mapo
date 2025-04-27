@@ -1,0 +1,3 @@
+// Use shared memory to cache normalization_factor data if accessed multiple times
+// Use vectorized memory access for image if consecutive data is accessed
+// Consider using float4 for memory coalescing if data layout allows

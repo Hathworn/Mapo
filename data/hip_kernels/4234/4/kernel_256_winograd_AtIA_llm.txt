@@ -1,0 +1,10 @@
+```cpp
+// Use shared memory to reduce global memory accesses for input data
+// Load biases and scales only once per block to exploit data reuse
+// Perform common subexpression elimination in the computation to reduce operations
+// Replace complex arithmetic expressions with pre-calculated subexpressions
+// Use proper barrier synchronization (e.g., __syncthreads) after shared memory operations
+// Simplify conditions and minimize branching to enhance thread efficiency
+// Avoid redundant computations by combining similar operations
+// Enhance data locality by fetching relevant data once and reusing it
+```

@@ -1,0 +1,7 @@
+```c
+// Consider coalesced memory access by ensuring sequential memory access patterns
+// Use shared memory to minimize global memory accesses for frequently used data
+// Ensure INCX and INCY lead to coalesced accesses for better performance
+// Minimize divergence by keeping threads within a warp executing the same path
+// Tune block size and grid size for optimal use of GPU resources and occupancy
+```

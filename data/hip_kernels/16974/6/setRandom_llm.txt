@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory accesses.
+// Minimize warp divergence by ensuring all threads within a warp execute the same path.
+// Investigate coalesced memory access patterns to improve throughput.
+// Optimize the usage of hiprand() to potentially precompute states and reduce runtime computation.

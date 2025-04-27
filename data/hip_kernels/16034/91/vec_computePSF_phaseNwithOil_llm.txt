@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache input arrays like kx, ky, etc., to reduce global memory access latency
+// Optimize access coalescing by ensuring continuous memory access patterns for threads
+// Consider loop unrolling for repetitive calculations within the kernel
+// Align memory allocation for input and output arrays for optimal access
+// Consider using texture memory for kx, ky, kz for faster access
+// Minimize branch divergence by refactoring conditional logic
+```

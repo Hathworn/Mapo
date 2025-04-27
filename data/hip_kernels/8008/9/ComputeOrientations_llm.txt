@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifier for pointers to optimize memory access
+// Align data accesses to improve coalescing
+// Consider using texture memory for g_Data if spatial locality is beneficial
+// Reducing shared memory usage by using fewer temporary variables could improve occupancy
+// Perform loop unrolling for the loops where beneficial
+// Use warp-level operations for reductions to minimize synchronization
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to cache data and reduce global memory access latency.
+// Align data access patterns to ensure coalesced memory accesses for better bandwidth utilization.
+// Use __syncthreads() judiciously if shared memory is implemented to ensure data consistency between threads.
+// Check if loop unrolling can be beneficial in reducing instruction overhead when arrays processed are large.

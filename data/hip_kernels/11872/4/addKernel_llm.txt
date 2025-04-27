@@ -1,0 +1,7 @@
+```
+//Use shared memory to reduce global memory accesses
+//Consider coalesced memory access to improve memory throughput
+//Minimize divergence by ensuring threads within a warp follow the same execution path
+//Use loop unrolling to increase instruction throughput
+//Align memory accesses to 32-byte boundaries to optimize transaction efficiency
+```

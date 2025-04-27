@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access
+// Ensure coalesced memory access by ordering threads and memory access efficiently
+// Preload depth window data using shared memory to avoid redundant texture fetches
+// Optimize memory access pattern by loading values in batches
+// Leverage texture caching for depth values to reduce memory latency

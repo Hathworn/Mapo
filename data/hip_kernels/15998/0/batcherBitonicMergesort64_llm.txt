@@ -1,0 +1,6 @@
+```c
+// Consider using memory coalescing techniques for d_in and d_out accesses
+// Ensure shared memory usage is optimized to reduce bank conflicts in sdata
+// Investigate reducing the number of __syncthreads calls for performance gains
+// Minimize divergent branches in condition checks for better warp execution
+```

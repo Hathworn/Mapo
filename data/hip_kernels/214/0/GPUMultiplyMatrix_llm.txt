@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for accessing matrix columns to reduce global memory access.
+// Consider loop unrolling to further optimize the for loop.
+// Use coalesced memory access patterns when accessing matrix elements for increased bandwidth.
+// Evaluate if the use of warp-level primitives can improve performance.
+// Avoid excessive use of __syncthreads() as it may introduce synchronization overhead.
+```

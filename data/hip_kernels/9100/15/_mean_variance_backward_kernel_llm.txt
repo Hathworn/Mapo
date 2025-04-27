@@ -1,0 +1,5 @@
+// Consider reducing the number of atomic operations in accumulation.
+// Use shared memory to minimize global memory access latency.
+// Ensure shared memory is used efficiently to reduce bank conflicts.
+// Evaluate if loop unrolling improves performance for b or wxh loops.
+// Assess if using grid-stride loops can improve loading and compute balance.

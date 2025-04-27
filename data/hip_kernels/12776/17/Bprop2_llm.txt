@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to minimize global memory access
+// Load layer1 into shared memory to reduce global memory reads
+// Perform computation to allow for coalesced memory writes with atomic operation
+// Consider optimizing atomic operations if contention is high
+```

@@ -1,0 +1,3 @@
+// Consider coalescing memory access by ensuring N and norm are accessed in contiguous blocks by each warp.
+// Make better use of shared memory to reduce redundant global memory access within the kernel.
+// Evaluate data alignment to ensure optimal memory transaction size reducing the number of memory requests.

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to store curandState if multiple accesses happen within a block
+// Consider coalesced memory accesses for better global memory throughput
+// If applicable, use warp-shuffle operations for intra-warp random number generation
+// Ensure memory alignment to maximize memory throughput
+```

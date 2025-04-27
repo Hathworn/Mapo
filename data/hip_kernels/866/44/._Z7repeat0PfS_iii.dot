@@ -1,0 +1,11 @@
+digraph "CFG for '_Z7repeat0PfS_iii' function" {
+	label="CFG for '_Z7repeat0PfS_iii' function";
+
+	Node0x4e304b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = udiv i32 %14, %11\l  %19 = mul i32 %18, %11\l  %20 = icmp ugt i32 %14, %19\l  %21 = zext i1 %20 to i32\l  %22 = add i32 %18, %21\l  %23 = mul i32 %22, %11\l  %24 = icmp slt i32 %17, %4\l  br i1 %24, label %25, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x4e304b0:s0 -> Node0x4e32a20;
+	Node0x4e304b0:s1 -> Node0x4e32ab0;
+	Node0x4e32a20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = phi i32 [ %37, %25 ], [ %17, %5 ]\l  %27 = sdiv i32 %26, %2\l  %28 = mul nsw i32 %27, %2\l  %29 = sub nsw i32 %26, %28\l  %30 = mul i32 %27, %3\l  %31 = add i32 %30, %29\l  %32 = sext i32 %31 to i64\l  %33 = getelementptr inbounds float, float addrspace(1)* %0, i64 %32\l  %34 = load float, float addrspace(1)* %33, align 4, !tbaa !16\l  %35 = sext i32 %26 to i64\l  %36 = getelementptr inbounds float, float addrspace(1)* %1, i64 %35\l  store float %34, float addrspace(1)* %36, align 4, !tbaa !16\l  %37 = add nsw i32 %26, %23\l  %38 = icmp slt i32 %37, %4\l  br i1 %38, label %25, label %39, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x4e32a20:s0 -> Node0x4e32a20;
+	Node0x4e32a20:s1 -> Node0x4e32ab0;
+	Node0x4e32ab0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%39:\l39:                                               \l  ret void\l}"];
+}

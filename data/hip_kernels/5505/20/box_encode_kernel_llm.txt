@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced by having threads access consecutive elements in memory.
+// Use shared memory to reduce redundant global memory accesses if possible.
+// Consider using constant memory for read-only parameters like wx, wy, ww, and wh to optimize caching.
+// Align float4 loads and stores to ensure optimal memory transactions.
+// If gt is not a multiple of idxJump, handle the boundary conditions to avoid out-of-bounds memory access.
+```

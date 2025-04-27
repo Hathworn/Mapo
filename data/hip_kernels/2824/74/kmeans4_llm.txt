@@ -1,0 +1,5 @@
+// Use shared memory to load centroids into cache for fast access
+// Consider using coalesced access patterns for 'input' array
+// Apply loop unrolling further in the 'distances' calculation for improved parallelism
+// Investigate the use of warp-level primitives for reduction in nearest centroid calculation
+// Prefetch data into registers where possible to minimize global memory latency

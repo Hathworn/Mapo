@@ -1,0 +1,11 @@
+```
+// Consider increasing the block size to optimize memory bandwidth usage.
+// Use shared memory to minimize global memory access latency.
+// Ensure coalesced memory access patterns to improve memory throughput.
+// Apply loop unrolling for better instruction-level parallelism.
+// Preload data into shared memory to reduce redundant global memory accesses.
+// Reduce branch divergence by ensuring uniform execution paths.
+// Optimize shared memory usage by minimizing bank conflicts.
+// Use syncthreads judiciously to avoid unnecessary synchronization overhead.
+// Assess possible asynchronous data transfers to hide memory latency.
+```

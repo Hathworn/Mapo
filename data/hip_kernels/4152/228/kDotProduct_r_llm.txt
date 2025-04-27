@@ -1,0 +1,9 @@
+```
+// Ensure memory coalescing by accessing global memory in a contiguous manner
+// Use shared memory to minimize global memory accesses
+// Employ loop unrolling to improve memory access patterns
+// Perform reduction in shared memory to leverage high bandwidth
+// Utilize warp shuffle techniques for efficient intra-warp reduction
+// Use volatile pointers for final warp reduction to prevent caching
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+```

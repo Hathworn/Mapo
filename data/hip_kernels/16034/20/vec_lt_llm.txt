@@ -1,0 +1,5 @@
+// Consider coalesced memory access to improve throughput
+// Ensure alignment of data types to prevent misaligned access
+// Evaluate usage of shared memory if working set fits in shared memory space
+// Check if loop unrolling would benefit the performance for small n
+// Avoiding warp divergence by minimizing conditional logic

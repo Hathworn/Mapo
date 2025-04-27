@@ -1,0 +1,5 @@
+// Consider using shared memory for repeated access to A and B within a block  
+// Optimize memory access coalescing for A and B arrays  
+// Use stride-based loop if the number of threads does not divide N evenly  
+// Evaluate occupancy and adjust block size for improved performance  
+// Explore using warp-level primitives for reductions if applicable

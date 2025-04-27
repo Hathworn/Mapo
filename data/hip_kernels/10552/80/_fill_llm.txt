@@ -1,0 +1,5 @@
+// Ensure memory coalescing: Confirm that x[i] accesses sequential memory addresses.  
+// Optimize grid and block dimensions to maximize hardware utilization.  
+// Use shared memory if x[i] is accessed repeatedly to reduce global memory bandwidth usage.  
+// Utilize __restrict__ keyword for pointers if no aliasing occurs.  
+// Consider using warp-level primitives for further optimizations in memory access patterns.

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access
+// Prefetch data to shared memory where possible
+// Only load data into shared memory if the index is valid
+// Use __syncthreads to ensure all threads synchronize after loading shared memory
+// Reduce global memory transactions by checking index bounds before loading data
+// Minimize memory divergence by using conditional statements smartly
+```

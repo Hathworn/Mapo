@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access
+// Load data from global to shared memory for faster access
+// Ensure all threads synchronize after loading data to shared memory
+// Use thread synchronization before writing back to global memory

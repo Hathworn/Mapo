@@ -1,0 +1,3 @@
+// Coalesce memory access by ensuring threads access contiguous memory segments
+// Use shared memory to reduce redundant global memory access within each block
+// Consider reducing atomic operations by merging threads' results within shared memory before updating global memory

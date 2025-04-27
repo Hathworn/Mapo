@@ -1,0 +1,4 @@
+// Consider using shared memory for repetitive access patterns to reduce global memory traffic.  
+// Ensure proper memory alignment for coalesced access to improve memory access efficiency.  
+// Evaluate potential thread divergence, as mathematical functions like asin could lead to non-uniform execution paths.   
+// Implement asynchronous data transfer techniques to hide memory latency from host to device.

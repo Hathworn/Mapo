@@ -1,0 +1,8 @@
+```
+// Consider using shared memory more effectively for input data to reduce global memory access.
+// Optimize memory coalescing by adjusting the access pattern of ptr_input and ptr_gradOutput.
+// Evaluate using vectorized memory loads if memory alignment permits for faster data access.
+// Reduce the number of __syncthreads() statements to minimize synchronization overhead.
+// Balance the workload among threads more evenly to avoid idle threads during computation.
+// Investigate the potential of loop unrolling beyond the pragma unroll for kx to enhance throughput.
+```

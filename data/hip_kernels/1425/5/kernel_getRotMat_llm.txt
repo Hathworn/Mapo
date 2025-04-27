@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory accesses for devnR to improve memory throughput.
+// Ensure devnR and devRotm are aligned to improve memory access efficiency.
+// Use shared memory to preload matrix elements more extensively to reduce global memory access.
+// Aim for optimal block size to maximize occupancy and minimize warp divergence.
+// Batch memory write-back to devRotm to reduce global memory transactions.
+```

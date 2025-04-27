@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory accesses by aligning the pointer to warp size.
+// Use shared memory to reduce global memory accesses where possible.
+// Minimize bank conflicts in shared memory by padding where necessary.
+// Unroll loops to allow for better instruction level parallelism.
+// Consider using asynchronous memory operations to hide memory latency.
+// Use vectorized data types (e.g., int2) to increase memory throughput.
+```

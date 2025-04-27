@@ -1,0 +1,5 @@
+// Use loop unrolling to enhance memory coalescing for better performance.
+// Utilize shared memory to accumulate intermediate sums, reducing global memory access.
+// Optimize memory access patterns by ensuring coalesced access.
+// Avoid bank conflicts within shared memory during reduction phase.
+// Use volatile keyword for shared memory operations to prevent compiler optimizations affecting memory access.

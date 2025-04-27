@@ -1,0 +1,9 @@
+```
+// Use shared memory to store tile of t2_d for faster access
+// Preload data into shared memory by each thread to reduce global memory accesses
+// Avoid using division and modulus operations in loops for index calculation
+// Unroll loops where possible to increase instruction-level parallelism
+// Ensure all threads have completed writing to shared memory before proceeding
+// Reduce compute-to-memory ratio by optimizing index reuse
+// Align data access patterns for coalesced memory access
+```

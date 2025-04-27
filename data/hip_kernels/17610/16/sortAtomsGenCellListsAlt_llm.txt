@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory accesses by aligning data structures to 128 bits
+// Use shared memory efficiently to minimize global memory access latency
+// Prefetch data to shared memory where possible for reuse
+// Minimize divergent branching inside kernel
+// Consider memory padding to avoid bank conflicts in shared memory
+// Optimize boundary checks by limiting branch divergence
+```

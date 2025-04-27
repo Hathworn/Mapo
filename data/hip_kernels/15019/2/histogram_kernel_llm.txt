@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Try to reduce divergent branches for better warp execution efficiency.
+// Use fewer shared memory arrays to minimize register pressure.
+// Ensure all threads write to global memory in a coalesced manner.
+// Consider restructuring condition checks to minimize divergence.
+// Try to reduce atomic operations by combining partial results in shared memory first.
+```

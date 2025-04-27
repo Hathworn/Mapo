@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for 'a' and 'b' if they are reused across loop iterations
+// Use __restrict__ keyword for pointers to prevent pointer aliasing and enable better compiler optimizations
+// Ensure memory accesses are coalesced by having contiguous threads access contiguous memory locations
+// Adjust block and thread sizes to maximize occupancy and ensure efficient use of available resources
+```

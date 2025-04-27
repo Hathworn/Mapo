@@ -1,0 +1,7 @@
+```c
+// Precompute reused variables outside of the per-thread scope to save computation
+// Consider aligning data in memory to improve cache utilization and access time
+// Minimize global memory access by reusing values within the registers
+// Ensure coalesced memory access patterns for x, m, and v arrays
+// Prefetch data into shared memory if applicable and beneficial
+```

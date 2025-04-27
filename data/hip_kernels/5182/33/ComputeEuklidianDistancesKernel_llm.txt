@@ -1,0 +1,8 @@
+```
+// Ensure data alignment for optimal memory access
+// Prefetch centroid coordinates to shared memory for faster access
+// Use warp shuffles to minimize memory transactions when reading centroids
+// Optimize loop unrolling for repeated calculations
+// Minimize redundant calculations by storing intermediate results
+// Favor the use of fused multiply-add (FMA) operations where applicable
+```

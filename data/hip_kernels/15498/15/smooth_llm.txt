@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory accesses
+// Load neighboring elements into shared memory to optimize memory coalescing
+// Ensure proper synchronization using __syncthreads() to avoid race conditions
+// Optimize boundary condition checks to minimize unnecessary computations
+```

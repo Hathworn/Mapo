@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache a subset of `a` and `b` to reduce global memory access
+// Prefer coalesced memory access patterns by ensuring contiguous threads access contiguous memory
+// Consider adjusting block size to optimize memory bandwidth and ensure full occupancy
+// Apply loop unrolling if the compiler does not automatically optimize repetitive operations
+// Evaluate the use of `__restrict__` qualifiers on pointers to aid compiler optimizations
+```

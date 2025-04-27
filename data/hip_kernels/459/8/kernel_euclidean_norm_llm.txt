@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses by using a stride pattern in accessing elements
+// Use shared memory to minimize global memory accesses and improve speed
+// Consider warp-level primitives like __shfl_down_sync for more efficient reduction
+// Verify that allocations and memory usage are optimized to avoid bank conflicts in shared memory
+// Ensure that the number of threads matches the data size for efficient execution
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access if data reuse occurs within a block
+// Consider using float4 type for vectorized loads/stores if INCX and INCY allow it and data alignment is ensured
+// Optimize grid and block dimensions to ensure full occupancy and efficient hardware utilization
+// Ensure coalesced memory access patterns by adjusting INCX and INCY if possible
+// Minimize divergent branches to ensure efficient execution across warps
+```

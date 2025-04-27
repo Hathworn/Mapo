@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to store intermediate results to reduce global memory access.
+// Optimize memory coalescing by ensuring threads access consecutive memory locations.
+// Consider using texture memory for read-only data to benefit from cache.
+// Minimize bank conflicts when using shared memory in the algorithm.
+// Ensure the number of threads per block is a multiple of warp size for optimal performance.
+// Balance the grid size and block size for better occupancy and load balancing.
+```

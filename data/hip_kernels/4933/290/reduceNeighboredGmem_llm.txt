@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses for better performance.
+// Ensure coalesced memory accesses to global memory when reading and writing g_idata and g_odata.
+// Use more aggressive loop unrolling to reduce instruction overhead.
+// Reduce synchronization points to minimize thread block synchronization latency.
+```

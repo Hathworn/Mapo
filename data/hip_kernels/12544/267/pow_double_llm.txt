@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning memory access patterns
+// Use shared memory to leverage faster memory access for intermediate results
+// Prefer to use a single kernel launch with optimal block and grid dimensions to maximize GPU utilization
+// Consider storing temporary calculations in registers for faster access
+// Reduce thread divergence by minimizing conditional statements within the kernel
+```

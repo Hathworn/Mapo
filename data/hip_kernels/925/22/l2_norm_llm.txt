@@ -1,0 +1,6 @@
+```cpp
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory elements.
+// Use shared memory for temporary storage if the kernel reuses data.
+// Ensure memory accesses are aligned for optimal throughput.
+// Avoid branch divergences within the warp while executing the kernel.
+```

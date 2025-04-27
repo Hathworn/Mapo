@@ -1,0 +1,6 @@
+```
+// Consider optimizing shared memory usage by loading more data per thread.
+// Use loop unrolling to improve throughput when accumulating mean.
+// Evaluate using larger blocks if feasible to maximize occupancy.
+// Minimize calls to __syncthreads() by reusing shared memory efficiently.
+```

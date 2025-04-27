@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency
+// Minimize global memory writes by aggregating results in shared memory
+// Synchronize threads effectively to ensure correct accumulation of intersection counts
+// Ensure coalesced memory access when loading proposals_idx
+// Balance load across threads by distributing instances to different thread blocks
+```

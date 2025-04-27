@@ -1,0 +1,7 @@
+```
+// Use memory coalescing for accessing arrays a and b.
+// Consider loop unrolling for the primary loop for performance gains.
+// Ensure shmem is utilized efficiently to prevent bank conflicts.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+// Consider deploying cooperative groups for more flexible grid synchronization.
+```

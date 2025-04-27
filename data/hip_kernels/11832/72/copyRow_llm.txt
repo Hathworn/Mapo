@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access latency
+// Ensure coalesced memory access by aligning data in shared memory
+// Avoid bank conflicts in shared memory by proper indexing
+// Use __syncthreads() judiciously to prevent race conditions
+```

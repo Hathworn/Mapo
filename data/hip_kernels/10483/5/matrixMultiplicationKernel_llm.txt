@@ -1,0 +1,9 @@
+```
+// Optimize memory coalescing by ensuring threads access consecutive memory locations.
+// Minimize shared memory bank conflicts by adjusting shared memory array indexing.
+// Simplify conditional checks with loop unrolling for small BLOCK_SIZE values.
+// Ensure global loads and stores are aligned to boost performance.
+// Consider using float4 loads/stores for better memory throughput if dimensions allow.
+// Analyze opportunity for prefetching data to reduce memory latency.
+// Review boundary conditions to minimize unnecessary execution paths.
+```

@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses by accessing contiguous memory locations.
+// Ensure memory accesses are aligned to improve throughput.
+// Use shared memory to reduce global memory traffic if patterns are suitable.
+// Minimize bank conflicts when using shared memory.
+// Prefer __ldg() for read-only data to utilize texture cache if supported.
+// Apply loop unrolling in compute-intensive operations if applicable.
+// Balance the workload to prevent serialization on warp execution.
+// Use memory prefetching techniques where applicable to hide latency.
+```

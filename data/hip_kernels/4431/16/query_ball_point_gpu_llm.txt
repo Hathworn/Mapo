@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache xyz2 data and reduce global memory access
+// Consider coalescing memory access for more efficient global memory reads
+// Use registers to cache xyz1 data inside the loop
+// Minimize use of shared memory to only necessary variables to avoid bank conflicts
+// Consider loop unrolling inside the second for loop for better performance
+```

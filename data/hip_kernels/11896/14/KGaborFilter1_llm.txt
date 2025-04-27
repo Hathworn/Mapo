@@ -1,0 +1,5 @@
+// Consider using __restrict__ qualifier for filter and Vr pointers to improve memory access speed.
+// Try to use shared memory for frequently accessed data to reduce global memory traffic.
+// Minimize the use of double precision for faster computation unless high precision is necessary.
+// Ensure coalesced memory access by aligning thread indices optimally.
+// Explore using texture or surface memory for better caching and access patterns.

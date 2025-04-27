@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access patterns for gradInput_data and gradOutput_data
+// Ensure gradOutput_data access is aligned to minimize memory transactions
+// Use shared memory to leverage faster access if the operation involves repetitive data access
+// Optimize warp divergence by ensuring uniform access patterns within warp
+// Investigate loop unrolling for the nested loop if scale_factor is a constant
+// Profile use of __syncthreads() for possible benefits in synchronization if data races occur
+```

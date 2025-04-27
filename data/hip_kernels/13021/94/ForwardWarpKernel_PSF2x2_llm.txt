@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access patterns for optimal performance.
+// Evaluate the use of shared memory to reduce global memory access when possible.
+// Ensure that warp divergence is minimized by organizing conditional structures.
+// Opt for use of __restrict__ qualifiers if aliasing is not a concern.
+// Leverage constant memory for read-only data that does not change often.
+// Reduce the number of _atomicAdd operations to mitigate performance bottlenecks.
+```

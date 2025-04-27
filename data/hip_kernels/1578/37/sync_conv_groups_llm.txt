@@ -1,0 +1,7 @@
+```c
+// Ensure memory accesses are coalesced for optimal performance
+// Use shared memory to reduce global memory accesses where possible
+// Consider loop unrolling to increase instruction level parallelism
+// Minimize the use of atomic operations to avoid serialization
+// Use warp-level primitives when appropriate for better sync performance
+```

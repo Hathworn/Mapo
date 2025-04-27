@@ -1,0 +1,8 @@
+```
+// Check if shared memory usage can be implemented to reduce global memory access latency
+// Consider loop unrolling techniques for better instruction level parallelism
+// Assess possibility of using texture memory for possibly better cache locality
+// Investigate occupancy to ensure maximum possible threads per block without spillover
+// Look into register pressure to ensure optimal use and avoid memory divergence
+// Try aligning memory accesses with warp boundaries for improved throughput
+```

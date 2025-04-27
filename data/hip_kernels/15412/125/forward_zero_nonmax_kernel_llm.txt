@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword to potentially enable better compiler optimizations.
+// Ensure memory accesses are coalesced to maximize memory throughput.
+// If possible, use float4 data type for loading/storing to minimize memory transactions.
+// Avoid divergence by ensuring if-conditions affect entire warps in the same way.
+// Prefetch input data into shared memory if applicable, to reduce global memory bandwidth.
+```

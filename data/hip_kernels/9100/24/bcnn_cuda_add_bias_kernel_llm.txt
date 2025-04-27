@@ -1,0 +1,6 @@
+```
+// Coalesced access: Ensure that each thread accesses consecutive memory locations
+// Ensure that each thread block's x dimension is a multiple of the warp size
+// Unroll loops if applicable to reduce loop overhead and improve pipeline efficiency
+// Consider using shared memory to leverage faster memory accesses within a block
+```

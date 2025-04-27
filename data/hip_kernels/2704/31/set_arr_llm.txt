@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring that consecutive threads access consecutive memory locations.
+// Ensure that the block size is a multiple of the warp size (typically 32) to maximize device utilization.
+// Minimize divergent branches by keeping the number of threads per block as a power of two if possible.
+// Use shared memory if further optimization of memory access patterns is required.
+```

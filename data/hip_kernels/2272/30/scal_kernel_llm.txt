@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing to improve memory access patterns
+// Ensure that INCX is set to 1 to maintain coalesced accesses when possible
+// Use shared memory if data reuse is expected within the block
+// Profile the impact of varying block and grid sizes to optimize performance
+// Minimize memory divergence across threads in a warp
+```

@@ -1,0 +1,8 @@
+```
+// Load the mean value once for each filter to reduce redundant global memory access
+// Use shared memory to accumulate data and reduce global memory writes
+// Use an intermediate variable for difference squared to avoid repeated calls to powf
+// Ensure threads are used efficiently by looping with step size equal to total threads per block
+// Accumulate results in shared memory and synchronize to avoid race conditions
+// Perform the final variance computation using only a single thread to minimize global memory access
+```

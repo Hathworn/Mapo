@@ -1,0 +1,9 @@
+```cpp
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations in a.
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations in b.
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations in c.
+// If applicable, use shared memory to cache frequently accessed data to reduce global memory bandwidth.
+// Avoid bank conflicts when using shared memory by ensuring data elements accessed by consecutive threads are in different memory banks.
+// Consider the use of vectorized memory loads and stores where possible to maximize memory throughput.
+// Profile the kernel to ensure memory access patterns are optimal and do not cause unnecessary serialization.
+```

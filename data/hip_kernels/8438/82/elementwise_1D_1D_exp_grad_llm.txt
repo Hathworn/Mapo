@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce global memory accesses
+// Optimize memory coalescing by ensuring contiguous memory access by each thread
+// Experiment with different block sizes to achieve better performance
+// Ensure all memory accesses are aligned
+// Use __restrict__ qualifier if pointers do not alias to help the compiler optimize
+```

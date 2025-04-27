@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure all threads reach __syncthreads() to avoid race conditions
+// Optimize block size and grid size for better occupancy and memory throughput
+// Consider coalescing memory accesses for better performance
+```

@@ -1,0 +1,9 @@
+```c
+// Consider aligning memory accesses to improve coalescing.
+// Utilize __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+// Limit divergent code within warp by ensuring threads within a warp follow the same execution path.
+// Optimize shared memory usage to avoid bank conflicts.
+// Evaluate if double buffering in shared memory might help reduce memory transfer bottlenecks.
+// Analyze loop efficiency to minimize redundant calculations.
+// Experiment with block size and grid size to enhance occupancy and balance resources.
+```

@@ -1,0 +1,6 @@
+```
+// Utilize shared memory for temporary storage to reduce global memory access latency.
+// Minimize the usage of conditional statements inside kernels to avoid warp divergence.
+// Ensure memory access patterns are coalesced for better performance.
+// Investigate the use of atomic operations if multiple threads may write to the same location.
+```

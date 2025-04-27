@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access by ensuring d_in and d_out are contiguous
+// Consider aligning data to avoid misaligned memory access penalties
+// Utilize shared memory to store partial results if necessary
+// Ensure data is accessed in a sequential manner for optimal caching
+// Minimize memory accesses by reusing loaded values as much as possible
+// Examine reducing the global memory footprint if feasible
+```

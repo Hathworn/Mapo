@@ -1,0 +1,4 @@
+// Consider coalesced memory access for the u and v arrays to improve memory bandwidth usage.
+// Use shared memory to store intermediate results for atomicAdd operations to reduce global memory contention.
+// Minimize use of atomic operations if possible by reorganizing computation to use more local or shared memory.
+// Precompute flow_row_offset and image_row_offset outside of loops if used repeatedly to save computational overhead.

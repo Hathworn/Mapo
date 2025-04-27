@@ -1,0 +1,4 @@
+// Use shared memory for row_sum to reduce global memory access latency
+// Prefetch row_sum data into shared memory before computing offsets
+// Consider using warp shuffle to reduce divergence in accessing row_sum elements
+// Minimize computation within the loop by storing frequently used values

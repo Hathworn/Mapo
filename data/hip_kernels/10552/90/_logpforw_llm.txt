@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for each block to store intermediate computations to reduce global memory access.
+// Calculate the maximum and sum of exponents in a single loop to minimize the number of traversals over memory.
+// Utilize Warp-level primitives such as warp shuffle to optimize the reduction operations.
+// Reduce the usage of global memory by storing frequently accessed values like 'ymax' and 'logz' in registers.
+```

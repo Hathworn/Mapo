@@ -1,0 +1,7 @@
+```
+// Use shared memory effectively to reduce redundant global memory accesses.
+// Load data into shared memory in coalesced accesses to improve coalescing and reduce latency.
+// Use __syncthreads with precise timing to ensure memory consistency and avoid race conditions.
+// Consider memory access patterns to minimize bank conflicts and optimize memory throughput.
+// Reuse shared memory buffers strategically to reduce the amount of shared memory required.
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access and improve data locality.
+// Align loop trip counts to warp size for better performance on GPU.
+// Use vectorized data types for A and B (e.g., float4) to increase throughput.
+// Consider prefetching data into registers to hide memory latency.
+// Optimize the block and grid dimensions to maximize occupancy and minimize memory latency.
+```

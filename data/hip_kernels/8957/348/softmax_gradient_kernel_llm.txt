@@ -1,0 +1,4 @@
+// Consider using __ldg() for read-only data to utilize texture cache and improve memory access speed.
+// Use float4 to load multiple elements per thread for better coalesced memory access.
+// Consider thread coarsening: make each thread handle more elements to reduce looping overhead.
+// Use warp-shuffle instructions for reduction instead of shared memory to decrease shared memory usage and increase speed.

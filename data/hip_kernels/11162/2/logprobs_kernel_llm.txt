@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory access when reading from 'probs' to improve memory throughput.
+// Use shared memory if possible to reduce redundant global memory loads.
+// Check for bank conflicts if shared memory is used to ensure efficient memory access.
+// Evaluate the occupancy and adjust block size if necessary to improve performance.
+```

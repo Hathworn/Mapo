@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access for state array
+// Prefer using __restrict__ keyword for state pointer
+// Consider using shared memory for frequently accessed data
+// Use appropriate block size for optimal occupancy
+// Align data structures for more efficient memory access
+// Minimize divergence within warps
+// Avoid bank conflicts if shared memory is used
+```

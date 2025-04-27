@@ -1,0 +1,4 @@
+// Consider using shared memory for temporary storage to reduce global memory accesses.
+// Reorganize memory access patterns to ensure coalesced accesses.
+// Optimize loops by removing redundant calculations, such as reevaluating idxS each iteration.
+// Consider using atomic operations if multiple threads may update the same memory location to prevent race conditions.

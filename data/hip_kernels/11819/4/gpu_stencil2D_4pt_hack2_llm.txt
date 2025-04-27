@@ -1,0 +1,6 @@
+```
+// Use memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Reduce the number of __syncthreads() calls to improve performance
+// Consider using shared memory effectively to minimize global memory access
+// Ensure data alignment in shared memory to avoid bank conflicts
+```

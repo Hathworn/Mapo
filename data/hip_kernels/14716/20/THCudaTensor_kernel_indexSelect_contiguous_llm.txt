@@ -1,0 +1,4 @@
+// Ensure memory coalescing in accesses to tensor[targetIdx + featureIdx] and src[srcIdx + featureIdx]
+// Use shared memory to further optimize memory load and store patterns within the blocks
+// Consider adjusting VT for optimal warp utilization and minimizing shared memory bank conflicts
+// Minimize divergence by ensuring consistent warp execution path

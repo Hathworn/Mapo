@@ -1,0 +1,8 @@
+```
+// Use shared memory to store frequently accessed data for reduced global memory access.
+// Vectorize memory accesses where possible to improve coalescing and reduce bank conflicts.
+// Consider using atomic operations for thread synchronization instead of globalState writes.
+// Optimize random generation by reducing repeated global memory reads.
+// Consider using loop unrolling for loops with known iteration counts.
+// Ensure memory alignment for data structures to prevent misaligned access penalties.
+```

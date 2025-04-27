@@ -1,0 +1,9 @@
+```
+// Combine loads to improve memory throughput
+// Consider using shared memory if multiple threads access the same data
+// Use coalesced memory accesses to enhance performance
+// Align memory access patterns for optimal caching
+// Prefer __ldg() intrinsic for read-only data if available
+// Utilize vectorized loads/stores to boost efficiency
+// Ensure memory accesses are aligned for better performance
+```

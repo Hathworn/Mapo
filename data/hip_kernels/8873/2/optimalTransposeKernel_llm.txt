@@ -1,0 +1,8 @@
+```
+// Consider reducing bank conflicts in shared memory access by transposing the shared memory usage
+// Ensure coalesced global memory access by appropriately aligning global load/store
+// Prefetch data into shared memory to hide global memory latency
+// Use loop unrolling to maximize register usage and minimize loop overhead
+// Align kernel launch configuration to hardware specifics for optimal occupancy
+// Utilize __syncthreads() efficiently to ensure proper synchronization and avoid unnecessary waits
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory for data reused multiple times
+// Minimize global memory access by using registers
+// Avoid bank conflicts when accessing shared memory
+// Optimize thread block size for better memory coalescing
+// Reduce divergent branching to improve warp utilization

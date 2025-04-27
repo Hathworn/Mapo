@@ -1,0 +1,7 @@
+```
+// Ensure optimal memory access patterns by coalescing memory reads and writes
+// Use shared memory to reduce global memory accesses if feature_size and spatial_size are manageable
+// Consider using half precision if precision requirements allow, to boost performance on supported hardware
+// Investigate the use of warp-level primitives to further optimize the reduction operation
+// Check if reducing redundant computation using __syncthreads() in shared memory is feasible
+```

@@ -1,0 +1,9 @@
+```
+// Consider pre-loading trans_x, trans_y, trans_z into shared memory to reduce global memory access.
+// Store valid_points, starting_voxel_id, and voxel_id in shared memory to optimize memory access patterns.
+// Use loop unrolling to increase computational efficiency where applicable.
+// Minimize use of global memory by pre-loading centr_x, centr_y, centr_z into shared memory.
+// Cache icov00 to icov22 in registers for faster repeated access.
+// Use fewer registers by optimizing mathematical operations where feasible.
+// Evaluate if atomic operations can be avoided to reduce computational overhead.
+```

@@ -1,0 +1,4 @@
+// Use coalesced memory access for A and B arrays to enhance memory throughput
+// Consider using shared memory to cache frequently accessed values of A and B
+// Optimize for memory alignment to reduce memory access latency
+// Minimize divergence by ensuring all threads within a warp follow the same execution path

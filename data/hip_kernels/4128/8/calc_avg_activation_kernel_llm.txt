@@ -1,0 +1,4 @@
+// Consider using shared memory to store partial sums per block to reduce global memory access
+// Optimize memory access pattern to utilize coalesced memory access for src
+// Ensure dst is written in a coalesced manner to improve performance
+// Analyze occupancy and adjust block and grid sizes for optimal computation efficiency

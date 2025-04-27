@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ qualifiers for pointers to enable compiler optimizations.
+// Prefetch data to shared memory to improve memory access patterns.
+// Minimize the use of atomic operations by reducing contention through more efficient data access.
+// Explore using warp-level primitives to reduce synchronization overhead.
+// Assess potential warp divergence and optimize control flow to enhance performance.
+// Optimize the loop structure to reduce redundant calculations and improve instruction-level parallelism.
+// Monitor bank conflicts in shared memory accesses and adjust indexing to avoid them.
+```

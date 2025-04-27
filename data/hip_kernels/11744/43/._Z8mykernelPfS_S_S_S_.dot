@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8mykernelPfS_S_S_S_' function" {
+	label="CFG for '_Z8mykernelPfS_S_S_S_' function";
+
+	Node0x57d8e20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = icmp eq i32 %6, 0\l  br i1 %7, label %8, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x57d8e20:s0 -> Node0x57da220;
+	Node0x57d8e20:s1 -> Node0x57da270;
+	Node0x57da220 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%8:\l8:                                                \l  store float 1.230000e+02, float addrspace(1)* %0, align 4, !tbaa !5\l  store float 1.230000e+02, float addrspace(1)* %1, align 4, !tbaa !5\l  store float 1.230000e+02, float addrspace(1)* %2, align 4, !tbaa !5\l  store float 1.230000e+02, float addrspace(1)* %3, align 4, !tbaa !5\l  store float 1.230000e+02, float addrspace(1)* %4, align 4, !tbaa !5\l  br label %9\l}"];
+	Node0x57da220 -> Node0x57da270;
+	Node0x57da270 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%9:\l9:                                                \l  ret void\l}"];
+}

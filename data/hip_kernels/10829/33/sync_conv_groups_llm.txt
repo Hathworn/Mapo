@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses to improve memory throughput.
+// Evaluate if shared memory can be used to reduce global memory accesses.
+// Use __ldg() to take advantage of GPU's read-only data cache for immutable data.
+// Assess if loop unrolling could benefit performance by increasing instruction-level parallelism.
+// Determine if using warp-level primitives can reduce the need for explicit synchronization.
+```

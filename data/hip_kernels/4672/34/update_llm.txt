@@ -1,0 +1,4 @@
+// Use shared memory to cache original and current values to reduce global memory access
+// Consider using vectorized loads/stores for faster data transfer between global memory and registers
+// Optimize block and thread configuration for better warp utilization and occupancy  
+// Investigate whether further loop unrolling or alternative strategies could reduce instruction overhead

@@ -1,0 +1,11 @@
+```
+// Use shared memory to reduce global memory accesses
+// Make sure to define TILE_DIM as a macro or constant value
+// Align shared memory allocation to improve memory access coalescing
+// Prefer a TILE_DIM that divides the data dimensions evenly
+// Adjust TILE_DIM to match hardware's warp size for optimal performance
+// Ensure global memory accesses are coalesced
+// Use __syncthreads() to synchronize threads before reading from shared memory
+// Promote memory requests coalescing when writing to and reading from global memory
+// Consider loop unrolling within tiles for additional performance gains
+```

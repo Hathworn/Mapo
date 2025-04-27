@@ -1,0 +1,8 @@
+```
+// Use coalesced memory accesses for improved bandwidth utilization.
+// Consider double buffering to hide memory latency.
+// Ensure proper memory alignment for efficient shared memory operations.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Explore interleaving computation and memory access to increase parallelism.
+// Utilize vectorized loads and stores if applicable to reduce memory transactions.
+```

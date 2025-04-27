@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache matrices rows for faster access and reduced global memory transactions.
+// Investigate warp-level synchronization to ensure thread-safe row swaps.
+// Explore cooperative groups for more efficient thread collaboration during swap operations.
+// Optimize memory access patterns to ensure coalesced access to mat and b during the swap.
+// Evaluate using atomic operations or reduction for managing 'greatest_row' updates in parallel. 
+```

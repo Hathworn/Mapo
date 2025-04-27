@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for Dens and DensInt to minimize repeated global memory accesses.
+// Consider using shared memory for TemperInt to minimize repeated global memory accesses.
+// Consider using shared memory for VradInt and VthetaInt to minimize repeated global memory accesses.
+// Combine the initialization of dxtheta and invdxtheta to reduce computation overhead.
+// Consider loop unrolling for operations involving small, fixed iteration counts.
+```

@@ -1,0 +1,9 @@
+```cpp
+// Ensure coalesced memory accesses by aligning data structures in memory
+// Use larger thread blocks to increase occupancy and hide latency
+// Consider using shared memory if data reuse among threads is possible
+// Optimize memory access patterns to reduce global memory transactions
+// Avoid bank conflicts in shared memory by padding if necessary
+// Use streams and asynchronous copies for overlapping data transfer and computation
+// Profile different block sizes to find the best configuration for the hardware
+```

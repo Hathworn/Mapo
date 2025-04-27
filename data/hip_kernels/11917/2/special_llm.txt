@@ -1,0 +1,8 @@
+```c
+// Consider coalescing memory accesses by ensuring contiguous threads access contiguous memory locations.
+// Ensure that memory accesses are aligned to improve memory throughput.
+// Utilize shared memory if there is reusable data across threads within the block to reduce global memory accesses.
+// Consider loop unrolling if applicable, to reduce control overhead and improve performance.
+// Evaluate the use of multiple streams for overlapping computation with data transfer if memory bandwidth is a bottleneck.
+// Implement techniques to minimize warp divergence by ensuring threads within a warp take the same execution path when possible.
+```

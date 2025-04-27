@@ -1,0 +1,4 @@
+// Consider aligning data for improved memory coalescing.
+// Use shared memory if operations repeat within the same block.
+// Ensure avoiding bank conflicts in shared memory usage.
+// Prefetch data if possible by loading into registers before computation.

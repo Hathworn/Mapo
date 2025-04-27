@@ -1,0 +1,7 @@
+```
+// Avoid redundant writes by using a single thread for computation
+// Optimize memory access by ensuring coalesced writes if applicable
+// Utilize shared memory if further operations are needed on *c
+// Consider unrolling loops if applicable for reducing branch divergence
+// Prefetch data into registers to reduce global memory latency
+```

@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory access latency
+// Ensure 1024 shared memory size fits within hardware limits
+// Consider loop unrolling for repeated operations within the loop
+// Proper synchronization with __syncthreads() before read operations
+// Adjust shared memory allocation if blockDim.x changes
+// Verify correctness of memory stride logic in the loop

@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Optimize coalesced access pattern for loading data into shared memory
+// Ensure all threads participate in the synchronization using __syncthreads()
+// Minimize divergent branching by checking colStart < width outside loops
+// Load kernel coefficients into registers for faster access
+// Align shared memory size for optimal memory access in coalesced fashion
+// Use loop unrolling techniques for convolution calculations
+```

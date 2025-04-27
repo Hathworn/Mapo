@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning threads' data access patterns
+// Use shared memory if multiple threads access the same gBest value to reduce global memory access
+// Consider loop unrolling if the operation on each element can be simplified
+// Minimize branching to improve warp execution efficiency
+// Ensure memory accesses are aligned to avoid bank conflicts
+// Use constant memory for variables like d_OMEGA if they don't change during the kernel execution
+```

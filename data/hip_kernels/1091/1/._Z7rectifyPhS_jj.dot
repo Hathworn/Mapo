@@ -1,0 +1,11 @@
+digraph "CFG for '_Z7rectifyPhS_jj' function" {
+	label="CFG for '_Z7rectifyPhS_jj' function";
+
+	Node0x4c3de40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = icmp ult i32 %5, %3\l  br i1 %6, label %8, label %7\l|{<s0>T|<s1>F}}"];
+	Node0x4c3de40:s0 -> Node0x4c3ec80;
+	Node0x4c3de40:s1 -> Node0x4c3ed10;
+	Node0x4c3ed10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%7:\l7:                                                \l  ret void\l}"];
+	Node0x4c3ec80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  %9 = phi i32 [ %15, %8 ], [ %5, %4 ]\l  %10 = sext i32 %9 to i64\l  %11 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %10\l  %12 = load i8, i8 addrspace(1)* %11, align 1, !tbaa !5\l  %13 = tail call i8 @llvm.umax.i8(i8 %12, i8 127)\l  %14 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %10\l  store i8 %13, i8 addrspace(1)* %14, align 1\l  %15 = add i32 %9, %2\l  %16 = icmp ult i32 %15, %3\l  br i1 %16, label %8, label %7, !llvm.loop !8\l|{<s0>T|<s1>F}}"];
+	Node0x4c3ec80:s0 -> Node0x4c3ec80;
+	Node0x4c3ec80:s1 -> Node0x4c3ed10;
+}

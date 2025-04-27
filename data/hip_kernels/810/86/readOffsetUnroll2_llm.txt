@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access to improve performance
+// Load two elements per thread to leverage memory bandwidth
+// Ensure enough shared memory is allocated for sharedA and sharedB
+// Synchronize threads after loading data into shared memory
+// Using shared memory reduces redundant global memory accesses
+```

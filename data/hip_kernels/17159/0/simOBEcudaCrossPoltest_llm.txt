@@ -1,0 +1,11 @@
+```
+// Consider reducing memory access for the `k1`, `k2`, `k3`, `k4`, and `rho` arrays by using shared memory if possible
+// Optimize the usage of the `tmp` array to minimize unnecessary reads and writes
+// Investigate potential loop unrolling in the main simulation loop for better performance
+// Analyze memory coalescing for global memory reads and writes to improve memory access patterns
+// Evaluate the possibility of applying constant memory for parameters that do not change per thread
+// Profile computation versus memory access to identify potential bottlenecks
+// Consider using managed memory or unified memory access patterns for `delays`, `alphas`, `betas`, and other constant inputs
+// Check for warp divergence within the calculation loops and consider restructuring code for uniform branch execution
+// Optimize the use of trigonometric and hyperbolic functions by evaluating if precomputation is viable
+```

@@ -1,0 +1,8 @@
+```
+// Use warp-level primitives for shuffle-based RNG initialization
+// Align memory accesses for states array to improve coalesced access patterns
+// Minimize shared memory usage by optimizing global memory access latency
+// Consider using memory prefetching techniques for states to reduce access time
+// Evaluate the use of unified memory for improved memory handling between host and device
+// Investigate the use of loop unrolling for potential performance improvement
+```

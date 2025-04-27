@@ -1,0 +1,7 @@
+```
+// Consider using vectorized loads and stores for better memory throughput.
+// Use __restrict__ pointers for 'd_Result' and 'd_Data' to assist the compiler in optimization.
+// Ensure memory accesses are coalesced to improve access speed.
+// Evaluate if 'kernel' can be stored in shared memory for reduced global memory access.
+// Optimize alignment of shared memory to avoid bank conflicts.
+```

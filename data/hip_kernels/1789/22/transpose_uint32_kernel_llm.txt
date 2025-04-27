@@ -1,0 +1,9 @@
+```
+// Ensure the grid and block dimensions are set for coalesced memory access
+// Consider shared memory for additional coalesced access benefits
+// Reduce memory divergence by ensuring that array accesses are coalesced
+// Align data structures to the memory transaction size
+// Utilize memory padding to handle misalignment issues
+// Consider using warp-level primitives or intrinsics for further optimization
+// Use __restrict__ pointers if there are no overlapping memory accesses
+```

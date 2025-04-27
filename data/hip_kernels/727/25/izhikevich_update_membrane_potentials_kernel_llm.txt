@@ -1,0 +1,7 @@
+```c
+// Use coalesced memory access for better global memory throughput
+// Consider using shared memory to store frequently accessed data such as d_param_a and d_param_b
+// Prefetch data to reduce global memory latency
+// Minimize bank conflicts when using shared memory
+// Consider loop unrolling for the while loop for additional performance gains
+```

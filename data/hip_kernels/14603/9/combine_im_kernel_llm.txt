@@ -1,0 +1,6 @@
+```cpp
+// Use __restrict__ pointers if A, B, and C do not alias to improve memory access
+// Consider using shared memory if data reuse within a block is possible
+// Ensure coalesced memory access by using contiguous memory in A, B, and C
+// Experiment with different block sizes for performance tuning
+```

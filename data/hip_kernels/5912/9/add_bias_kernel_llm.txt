@@ -1,0 +1,4 @@
+// Consider using shared memory for biases to reduce global memory access latency.
+// Optimize memory access pattern to improve coherence and reduce warp divergence.
+// Ensure that strides are optimized to minimize bank conflicts and maximize throughput.
+// Implement loop unrolling to reduce instruction overhead within the for-loop.

@@ -1,0 +1,8 @@
+```
+// Use shared memory to store partial results within each block to reduce global memory access.
+// Align memory accesses to improve coalescing and optimize global memory bandwidth.
+// Ensure index array is stored in read-only cache to minimize redundant global memory reads.
+// Consider loop unrolling to reduce loop overhead and increase instruction throughput.
+// Minimize the number of calculations inside the loop by analyzing access patterns and pre-computing reused values.
+// If possible, adjust data layout to ensure memory coalescing and reduce bank conflicts in shared memory.
+```

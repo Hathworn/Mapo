@@ -1,0 +1,10 @@
+```
+// Combine loops to reduce the number of iterations and enhance performance.
+// Minimize external memory access in the loop to avoid performance bottlenecks.
+// Utilize shared memory if possible to cache frequently accessed data.
+// Attempt to keep data in registers to reduce latency from global memory access.
+// Consider loop unrolling for the innermost loops to reduce loop overhead.
+// Align memory access patterns to improve coalesced memory access.
+// Ensure kernel launches work efficiently with warp size and multiprocessors.
+// Check if use of `inline` can improve device function call performance.
+```

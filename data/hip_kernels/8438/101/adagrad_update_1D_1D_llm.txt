@@ -1,0 +1,4 @@
+// Consider coalesced memory access to x, d, and m arrays for better memory efficiency.
+// Optimize loop unrolling to reduce the loop overhead and improve the computation efficiency.
+// Ensure that the shared memory usage is maximized if applicable to reduce global memory accesses.
+// Use of atomic operations can be considered if updating m[idx] creates race conditions.

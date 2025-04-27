@@ -1,0 +1,7 @@
+```
+// Use __restrict__ pointer to allow compiler optimizations on memory access
+// Consider memory coalescing for better performance on modern GPUs
+// Suggest using shared memory if data is accessed multiple times by threads
+// Ensure optimal grid and block dimensions to maximize occupancy
+// Verify alignment of data structures for best memory access efficiency
+```

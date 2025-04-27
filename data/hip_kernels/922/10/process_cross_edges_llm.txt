@@ -1,0 +1,3 @@
+// Consider using shared memory to store frequently accessed data such as parent values to reduce global memory accesses.  
+// Aggregate repeated memory writes, especially for the flag and parent arrays, to minimize atomic operations and memory bandwidth usage.
+// Optimize usage of __syncthreads() by ensuring threads are not waiting unnecessarily, potentially using warp-level primitives for synchronization.

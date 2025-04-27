@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access for gradInput, output, and gradOutput arrays.
+// Use shared memory to store gradients for each block to reduce global memory access.
+// Minimize bank conflicts in shared memory by aligning data access patterns.
+// Ensure computational intensity is high to balance memory access latency.
+// Optimize parallel reduction to prevent idle threads and improve efficiency.
+// Explore loop unrolling for the inner loops to enhance performance.
+// Consider using warp shuffle operations for faster data reduction.
+```

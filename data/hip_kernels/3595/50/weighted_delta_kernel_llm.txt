@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to hold frequently accessed data such as 's' and 'dc' to reduce global memory access latency
+// Minimize conditional statements inside the loop to improve warp execution efficiency
+// Use loop unrolling for better pipeline utilization if applicable based on the problem size
+// Ensure memory accesses are coalesced for better memory throughput
+// Prefetch data for the next loop iteration to hide memory latency
+```

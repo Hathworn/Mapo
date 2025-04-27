@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access patterns to optimize memory bandwidth utilization
+// Use shared memory to cache dY and Y values for each block to reduce global memory access
+// Ensure memory alignment to improve performance and reduce potential bank conflicts
+// Optimize the reduction phase by minimizing divergence among threads in the same warp
+// Minimize the number of syncthreads to reduce synchronization overhead
+// Consider loop unrolling to enhance instruction-level parallelism and reduce loop overhead
+```

@@ -1,0 +1,9 @@
+```
+// Consider memory coalescing by ensuring threads access consecutive memory addresses
+// Use shared memory for frequently accessed data to reduce global memory latency
+// Minimize bank conflicts when using shared memory
+// Assess the use of constant memory for read-only data accessed by all threads
+// Optimize thread block size to maximize occupancy and minimize memory access divergence
+// Ensure alignment of memory allocations for efficient memory access
+// Consider using texture memory for 2D spatial locality in global memory access
+```

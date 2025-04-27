@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory access by rearranging data layout or order of operations.
+// Use shared memory efficiently by loading data in a coalesced manner.
+// Ensure boundary checks are minimal to reduce divergence.
+// Utilize `__syncthreads()` correctly to ensure all threads have completed shared memory load.
+// Consider padding shared memory for boundary conditions outside of logic.
+// Reduce divergence by reorganizing conditional logic for setting ix, iy, iz.
+```

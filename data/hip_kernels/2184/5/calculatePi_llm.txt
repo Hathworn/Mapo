@@ -1,0 +1,3 @@
+// Use shared memory for piPartial to reduce global memory access
+// Unroll loops to decrease loop overhead and improve performance
+// Use atomicAdd for thread-safe accumulation of results

@@ -1,0 +1,6 @@
+```cpp
+// Ensure memory coalescing by aligning data access
+// Consider using shared memory to reduce global memory accesses
+// Minimize divergence by ensuring all threads within a warp take the same path
+// Prefetch data to registers to hide latency
+```

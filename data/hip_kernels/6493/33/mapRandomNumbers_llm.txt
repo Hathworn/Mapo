@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for better memory bandwidth utilization
+// Use shared memory to reduce global memory access if same data is accessed by multiple threads
+// Evaluate if constant memory can be used for constants to reduce instruction overhead
+// Optimize powf computation by replacing it with multiplication if the exponent is a small integer
+// Ensure loop unrolling does not lead to excessive register usage
+```

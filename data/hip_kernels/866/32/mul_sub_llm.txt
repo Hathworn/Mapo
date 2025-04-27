@@ -1,0 +1,6 @@
+```
+// Consider aligning shared memory access for better performance
+// Use __restrict__ keyword for pointers if applicable to allow for better compiler optimizations
+// Pre-fetch data into registers where possible to reduce repeated memory access
+// Ensure in2ScalarCount does not exceed shared memory allocation size (256 in this case)
+```

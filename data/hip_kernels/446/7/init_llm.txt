@@ -1,0 +1,7 @@
+```
+// Align data structures to cache line size to improve memory coalescing
+// Consider shared memory usage for frequently accessed data
+// Minimize branching within the kernel for warp divergence
+// Use __restrict__ keyword for pointers to enable better compiler optimizations
+// Ensure optimal block and grid size configuration for full GPU occupancy
+```

@@ -1,0 +1,8 @@
+```
+// Consider using float4 for memory access to utilize vectorized loads
+// Ensure a and b are aligned to 16 bytes to benefit from coalesced access with float4
+// Consider using a loop with a step of 4 in combination with float4 to increase bandwidth utilization
+// Ensure __syncthreads() is used correctly to prevent race conditions
+// Consider using warp shuffle operations to accelerate the final reduction steps
+// Avoid using volatile if possible by relying on warp shuffle for reduction
+```

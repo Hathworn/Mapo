@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce redundant global memory accesses.
+// Ensure memory coalescing by aligning pixel structure and calculating stride offset accordingly.
+// Use loop unrolling for color calculations to minimize instruction overhead.
+// Precompute constant expressions outside the core loop for efficiency.
+// Optimize register usage to reduce dependency and latencies within calculations.
+// Consider using texture memory for accessing pixel values if suitable.
+```

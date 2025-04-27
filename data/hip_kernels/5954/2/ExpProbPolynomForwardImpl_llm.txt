@@ -1,0 +1,6 @@
+```
+// Use __ldg for read-only data to optimize global memory reads
+// Avoid divergent branches by simplifying if conditions
+// Ensure memory coalescing by correctly aligning access patterns
+// Reduce thread divergence by leveraging gridDim and blockDim effectively
+```

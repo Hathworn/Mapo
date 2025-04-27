@@ -1,0 +1,7 @@
+```
+// Use shared memory for improved memory access
+// Load xW and sU to shared memory for coalesced access
+// Ensure shared memory is synchronized with __syncthreads()
+// Avoid bank conflicts in shared memory access
+// Utilize atomic operations for b updates to ensure thread safety
+```

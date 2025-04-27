@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to temporarily store pixel data for faster access and reduced global memory traffic
+// Use texture memory for read-only image data to optimize memory bandwidth and locality
+// Ensure coalesced memory access patterns by organizing threads to access contiguous memory locations
+// Reduce redundant computations by precomputing constant values such as 0.21f, 0.72f, and 0.07f for gray value calculation
+// Consider loop unrolling if applicable to handle larger block sizes efficiently
+// Test different block sizes for optimal performance given specific hardware constraints
+```

@@ -1,0 +1,5 @@
+// Ensure coalesced memory access patterns for 'adj', 'in', and 'mask' arrays.
+// Utilize shared memory for frequently accessed data to reduce global memory accesses.
+// Consider vectorized loads and stores for input and output arrays for better memory throughput.
+// Evaluate using warp-level primitives to optimize atomic operations and reduce contention.
+// Check for potential bank conflicts in shared memory usage and optimize accordingly.

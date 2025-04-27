@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8set_carrffPfi' function" {
+	label="CFG for '_Z8set_carrffPfi' function";
+
+	Node0x5431030 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %13 = add i32 %11, %12\l  %14 = icmp slt i32 %13, %3\l  br i1 %14, label %15, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x5431030:s0 -> Node0x5432f10;
+	Node0x5431030:s1 -> Node0x5432fa0;
+	Node0x5432f10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = shl nsw i32 %13, 1\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %2, i64 %17\l  store float %0, float addrspace(1)* %18, align 4, !tbaa !7\l  %19 = add nuw nsw i32 %16, 1\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %2, i64 %20\l  store float %1, float addrspace(1)* %21, align 4, !tbaa !7\l  br label %22\l}"];
+	Node0x5432f10 -> Node0x5432fa0;
+	Node0x5432fa0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

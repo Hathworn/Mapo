@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access latency
+// Load data in a coalesced manner to maximize memory throughput
+// Consider using the __ldg intrinsic for read-only data in global memory
+// Optimize shared memory bank conflicts by aligning data accesses
+// Use loop unrolling for better performance during reduction
+// Ensure occupancy by configuring block and grid sizes appropriately
+// Experiment with different loop unrolling factors for the block-level reduction
+```

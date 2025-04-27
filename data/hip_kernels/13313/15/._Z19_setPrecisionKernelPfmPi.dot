@@ -1,0 +1,29 @@
+digraph "CFG for '_Z19_setPrecisionKernelPfmPi' function" {
+	label="CFG for '_Z19_setPrecisionKernelPfmPi' function";
+
+	Node0x52c26e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%3:\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = mul i32 %9, %8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = zext i32 %12 to i64\l  %14 = icmp ult i64 %13, %1\l  br i1 %14, label %15, label %51\l|{<s0>T|<s1>F}}"];
+	Node0x52c26e0:s0 -> Node0x52c4650;
+	Node0x52c26e0:s1 -> Node0x52c46e0;
+	Node0x52c4650 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%15:\l15:                                               \l  %16 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %13\l  %17 = load i32, i32 addrspace(1)* %16, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %18 = icmp eq i32 %17, 0\l  br i1 %18, label %43, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x52c4650:s0 -> Node0x52c51f0;
+	Node0x52c4650:s1 -> Node0x52c5280;
+	Node0x52c5280 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%19:\l19:                                               \l  %20 = and i32 %17, 7\l  %21 = icmp ult i32 %17, 8\l  br i1 %21, label %30, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x52c5280:s0 -> Node0x52c5540;
+	Node0x52c5280:s1 -> Node0x52c5590;
+	Node0x52c5590 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b5cdfa70",label="{%22:\l22:                                               \l  %23 = and i32 %17, -8\l  br label %24\l}"];
+	Node0x52c5590 -> Node0x52c5790;
+	Node0x52c5790 [shape=record,color="#b70d28ff", style=filled, fillcolor="#c5333470",label="{%24:\l24:                                               \l  %25 = phi i32 [ 1, %22 ], [ %27, %24 ]\l  %26 = phi i32 [ 0, %22 ], [ %28, %24 ]\l  %27 = mul i32 %25, 100000000\l  %28 = add i32 %26, 8\l  %29 = icmp eq i32 %28, %23\l  br i1 %29, label %30, label %24, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x52c5790:s0 -> Node0x52c5540;
+	Node0x52c5790:s1 -> Node0x52c5790;
+	Node0x52c5540 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%30:\l30:                                               \l  %31 = phi i32 [ undef, %19 ], [ %27, %24 ]\l  %32 = phi i32 [ 1, %19 ], [ %27, %24 ]\l  %33 = icmp eq i32 %20, 0\l  br i1 %33, label %40, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x52c5540:s0 -> Node0x52c4950;
+	Node0x52c5540:s1 -> Node0x52c6550;
+	Node0x52c6550 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  %35 = phi i32 [ %37, %34 ], [ %32, %30 ]\l  %36 = phi i32 [ %38, %34 ], [ 0, %30 ]\l  %37 = mul nsw i32 %35, 10\l  %38 = add i32 %36, 1\l  %39 = icmp eq i32 %38, %20\l  br i1 %39, label %40, label %34, !llvm.loop !13\l|{<s0>T|<s1>F}}"];
+	Node0x52c6550:s0 -> Node0x52c4950;
+	Node0x52c6550:s1 -> Node0x52c6550;
+	Node0x52c4950 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d9dce170",label="{%40:\l40:                                               \l  %41 = phi i32 [ %31, %30 ], [ %37, %34 ]\l  %42 = sitofp i32 %41 to float\l  br label %43\l}"];
+	Node0x52c4950 -> Node0x52c51f0;
+	Node0x52c51f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%43:\l43:                                               \l  %44 = phi float [ 1.000000e+00, %15 ], [ %42, %40 ]\l  %45 = getelementptr inbounds float, float addrspace(1)* %0, i64 %13\l  %46 = load float, float addrspace(1)* %45, align 4, !tbaa !15,\l... !amdgpu.noclobber !5\l  %47 = fmul contract float %46, %44\l  %48 = fptosi float %47 to i32\l  %49 = sitofp i32 %48 to float\l  %50 = fdiv contract float %49, %44\l  store float %50, float addrspace(1)* %45, align 4, !tbaa !15\l  br label %51\l}"];
+	Node0x52c51f0 -> Node0x52c46e0;
+	Node0x52c46e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b39670",label="{%51:\l51:                                               \l  ret void\l}"];
+}

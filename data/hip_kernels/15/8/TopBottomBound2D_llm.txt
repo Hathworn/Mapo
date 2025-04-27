@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data like Hs, Ztopo to reduce global memory access latency.
+// Use coalesced memory access patterns for Hs and Ztopo arrays to improve bandwidth utilization.
+// Optimize memory access for K2s and K2n arrays by aligning with 128-byte cache lines for effective use of global memory transactions.
+// Ensure that the number of threads per block is a multiple of warp size (usually 32) for maximum efficiency.

@@ -1,0 +1,7 @@
+```
+// Ensure memory accesses are coalesced by accessing consecutive memory locations
+// Use shared memory if multiple threads need to access overlapping memory regions
+// Opt for a larger block size for better occupancy, depending on hardware limits
+// Consider using __restrict__ qualifier if applicable
+// Minimize divergent branches within the kernel
+```

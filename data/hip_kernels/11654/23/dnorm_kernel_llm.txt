@@ -1,0 +1,7 @@
+```
+// Implement memory coalescing by ensuring vals and out are accessed in a contiguous manner
+// Use shared memory to store intermediate results like 'std' and 'e' to reduce global memory accesses
+// Unroll loops if possible to improve instruction throughput
+// Increase occupancy by adjusting blockDim.x to better utilize available GPU resources
+// Optimize the use of registers by minimizing their usage within the kernel
+```

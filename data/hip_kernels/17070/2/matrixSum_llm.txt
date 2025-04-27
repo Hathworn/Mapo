@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring proper alignment.
+// Consider using shared memory if there are repeated accesses.
+// Minimize divergent branching for threads within a warp.
+// Employ coalesced memory access for better performance.
+// Ensure that the grid and block sizes are optimized for the hardware.
+// Utilize constant memory if input data remains unchanged throughout the kernel execution.
+```

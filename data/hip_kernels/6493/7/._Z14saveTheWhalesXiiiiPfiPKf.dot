@@ -1,0 +1,10 @@
+digraph "CFG for '_Z14saveTheWhalesXiiiiPfiPKf' function" {
+	label="CFG for '_Z14saveTheWhalesXiiiiPfiPKf' function";
+
+	Node0x635b190 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = zext i16 %12 to i32\l  %14 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %15 = mul i32 %14, %13\l  %16 = add i32 %15, %8\l  %17 = icmp slt i32 %16, %5\l  br i1 %17, label %18, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x635b190:s0 -> Node0x635d090;
+	Node0x635b190:s1 -> Node0x635d120;
+	Node0x635d090 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%18:\l18:                                               \l  %19 = sext i32 %16 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %6, i64 %19\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %22 = mul i32 %3, %1\l  %23 = add i32 %16, %22\l  %24 = mul i32 %23, %0\l  %25 = add i32 %24, %2\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %4, i64 %26\l  store float %21, float addrspace(1)* %27, align 4, !tbaa !7\l  br label %28\l}"];
+	Node0x635d090 -> Node0x635d120;
+	Node0x635d120 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

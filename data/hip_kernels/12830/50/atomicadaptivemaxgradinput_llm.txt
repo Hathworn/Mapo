@@ -1,0 +1,8 @@
+```
+// Coalesce memory accesses by ensuring threads access contiguous memory locations
+// Minimize divergent branches by ensuring all threads within a warp follow the same execution path
+// Use shared memory to buffer data that can be reused by multiple threads
+// Align memory accesses to 32-byte boundaries to fully utilize memory bandwidth
+// Optimize for memory access patterns by minimizing strided accesses
+// Use atomic operations sparingly as they serialize memory access and can reduce performance
+```

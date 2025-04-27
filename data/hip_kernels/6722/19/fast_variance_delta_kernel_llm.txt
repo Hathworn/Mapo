@@ -1,0 +1,7 @@
+```
+// Precompute index once to reduce redundant calculations.
+// Accumulate partial sum results to reduce memory accesses.
+// Use shared memory to store intermediate sums for faster access.
+// Perform block-wide reduction using shared memory to minimize global memory transactions.
+// Avoid atomic operations by using shared memory for reduction within a block.
+```

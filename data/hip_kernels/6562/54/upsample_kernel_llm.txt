@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Consider aligning data structures or padding to ensure no bank conflicts
+// Utilize shared memory if applicable to reduce repetitive global memory access
+// Profiling might reveal potential warp divergence; address if feasible
+// Optimize the loop for better occupancy by adjusting block and grid size
+```

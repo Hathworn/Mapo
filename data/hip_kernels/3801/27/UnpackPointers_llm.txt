@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache portions of minmax for better memory access patterns.
+// Loop unrolling for processing each bit of val promptly improves efficiency.
+// Use vectorized memory operations to enhance memory throughput when writing to ptrs.
+// Optimize thread block dimensions for better device occupancy and warp efficiency.
+// Ensure alignment of data for coalesced memory access to minimize global memory latency.
+```

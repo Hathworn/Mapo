@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access for better performance
+// Utilize shared memory to reduce global memory accesses
+// Prefer reading sourceRowIdx once per block to minimize memory reads
+// Consider loop unrolling for fixed-size columns to improve throughput
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Load recurrent weights and previous derivatives into shared memory once
+// Synchronize threads to ensure shared memory data consistency
+// Minimize use of __syncthreads by optimizing shared memory loading and usage patterns

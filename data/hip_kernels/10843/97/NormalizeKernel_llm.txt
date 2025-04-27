@@ -1,0 +1,4 @@
+
+// Consider memory coalescing by ensuring that consecutive threads access consecutive memory addresses.
+// Use shared memory to cache normalization factors if multiple threads read the same factor frequently.
+// Avoid branch divergence by handling the case where "scale == 0.0f" through logical operations or tiered computation.

@@ -1,0 +1,17 @@
+digraph "CFG for '_Z10degreeCalcPiS_S_ii' function" {
+	label="CFG for '_Z10degreeCalcPiS_S_ii' function";
+
+	Node0x4a4b4c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %3\l  br i1 %15, label %16, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4a4b4c0:s0 -> Node0x4a4c780;
+	Node0x4a4b4c0:s1 -> Node0x4a4c7d0;
+	Node0x4a4c780 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%16:\l16:                                               \l  %17 = sext i32 %14 to i64\l  %18 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %17\l  %19 = load i32, i32 addrspace(1)* %18, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %20 = add nsw i32 %3, -1\l  %21 = icmp eq i32 %14, %20\l  br i1 %21, label %22, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x4a4c780:s0 -> Node0x4a4cc50;
+	Node0x4a4c780:s1 -> Node0x4a4cce0;
+	Node0x4a4cc50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%22:\l22:                                               \l  %23 = shl nsw i32 %4, 1\l  br label %29\l}"];
+	Node0x4a4cc50 -> Node0x4a4ceb0;
+	Node0x4a4cce0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%24:\l24:                                               \l  %25 = add nsw i32 %14, 1\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %26\l  %28 = load i32, i32 addrspace(1)* %27, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  br label %29\l}"];
+	Node0x4a4cce0 -> Node0x4a4ceb0;
+	Node0x4a4ceb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%29:\l29:                                               \l  %30 = phi i32 [ %23, %22 ], [ %28, %24 ]\l  %31 = sub nsw i32 %30, %19\l  %32 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %17\l  store i32 %31, i32 addrspace(1)* %32, align 4, !tbaa !7\l  br label %33\l}"];
+	Node0x4a4ceb0 -> Node0x4a4c7d0;
+	Node0x4a4c7d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,8 @@
+// Ensure coalesced global memory access when reading from d_input
+// Minimize memory bank conflicts in shared_data accesses
+// Use __shfl_xor() or warp-level primitives for optimization in conditional swaps
+// Reduce the use of __syncthreads() where possible by restructuring loops
+// Try optimizing log2f calculations by precomputing values outside the kernel
+// Avoid redundant calculations within loops, such as threads_in_box computation
+// Leverage memory alignment for better shared memory utilization
+// Explore using a warp shuffle-based approach for the bitonic sort logic

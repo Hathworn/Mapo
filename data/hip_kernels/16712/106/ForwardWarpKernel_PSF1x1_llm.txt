@@ -1,0 +1,5 @@
+// Use shared memory for `u` and `v` to reduce global memory access
+// Use shared memory for `src` to improve memory access times
+// Consider using texture memory for `src` for better caching
+// Explore cooperative groups for more efficient parallelism
+// Use constant memory for `time_scale` as it doesn't change

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory reads
+// Consider optimizing the warp scheduling to ensure coherent memory access patterns
+// Evaluate the benefit of loop unrolling for critical sections to improve instruction throughput
+// Apply vectorized loads/stores using float2 where applicable for better bandwidth utilization
+// Utilize texture memory for read-only data to leverage caching
+```

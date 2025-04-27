@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access patterns for improved memory throughput
+// Avoid warp divergence by ensuring uniform control flow for threads
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Minimize atomic operations by using per-thread registers when possible
+// Ensure that __syncthreads() usage is necessary to avoid unnecessary synchronization overhead
+// Evaluate different block sizes for optimal occupancy and performance
+```

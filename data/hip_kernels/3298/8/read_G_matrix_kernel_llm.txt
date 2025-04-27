@@ -1,0 +1,7 @@
+```
+// Pre-fetch i_idx, j_idx, exp_val, and bennett_cond to reduce global memory access
+// Combine multiple conditional checks into fewer operations to optimize branching
+// Use pre-computed delta within the if block to avoid redundant calculation
+// Use shared memory if possible to reduce repeated access to global memory
+// Align memory access patterns to ensure coalesced memory access for higher bandwidth
+```

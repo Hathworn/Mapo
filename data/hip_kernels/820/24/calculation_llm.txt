@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access times.
+// Load data into shared memory before computation for better performance.
+// Reduce arithmetic operations by simplifying the expression where possible.
+// Ensure threads with tid >= vector_size do not execute unnecessary computations.
+// Consider coalesced memory access patterns where applicable.

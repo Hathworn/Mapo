@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for x array by ensuring consecutive threads access consecutive elements.
+// Utilize shared memory if there are repeated accesses to x values across threads within the same block.
+// Minimize branching within the kernel by using conditional assignments if possible.
+// Use __syncthreads() if modifying shared resources to ensure memory coherence across threads in a block.
+```

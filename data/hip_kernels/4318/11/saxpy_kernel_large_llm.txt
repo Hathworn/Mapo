@@ -1,0 +1,6 @@
+```cpp
+// Utilize shared memory to reduce global memory access.
+// Use memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Consider reducing divergent branching to improve warp execution efficiency.
+// Ensure enough threads are used to fully occupy the GPU and improve memory throughput.
+```

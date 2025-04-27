@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses by having consecutive threads access consecutive memory locations.
+// Minimize shared memory usage to maximize occupancy.
+// Use warp shuffle functions to reduce shared memory use where possible.
+// Avoid unnecessary synchronization barriers to reduce overhead.
+```

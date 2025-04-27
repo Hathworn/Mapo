@@ -1,0 +1,5 @@
+digraph "CFG for '_Z8mykernelPiPfS_' function" {
+	label="CFG for '_Z8mykernelPiPfS_' function";
+
+	Node0x4a19b70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = bitcast i32 addrspace(1)* %0 to float addrspace(1)*\l  %5 = load float, float addrspace(1)* %4, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  store float %5, float addrspace(1)* %1, align 4, !tbaa !4\l  %6 = bitcast i32 addrspace(1)* %2 to float addrspace(1)*\l  store float %5, float addrspace(1)* %6, align 4, !tbaa !9\l  ret void\l}"];
+}

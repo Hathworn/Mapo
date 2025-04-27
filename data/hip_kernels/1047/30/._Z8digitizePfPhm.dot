@@ -1,0 +1,21 @@
+digraph "CFG for '_Z8digitizePfPhm' function" {
+	label="CFG for '_Z8digitizePfPhm' function";
+
+	Node0x6398700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = getelementptr inbounds i8, i8 addrspace(4)* %6, i64 12\l  %12 = bitcast i8 addrspace(4)* %11 to i32 addrspace(4)*\l  %13 = load i32, i32 addrspace(4)* %12, align 4, !tbaa !7\l  %14 = mul i32 %5, %10\l  %15 = add i32 %14, %4\l  %16 = sext i32 %15 to i64\l  %17 = icmp ult i64 %16, %2\l  br i1 %17, label %18, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x6398700:s0 -> Node0x6399490;
+	Node0x6398700:s1 -> Node0x639aa70;
+	Node0x6399490 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%18:\l18:                                               \l  %19 = udiv i32 %13, %10\l  %20 = mul i32 %19, %10\l  %21 = icmp ugt i32 %13, %20\l  %22 = zext i1 %21 to i32\l  %23 = add i32 %19, %22\l  %24 = mul i32 %23, %10\l  br label %26\l}"];
+	Node0x6399490 -> Node0x639aef0;
+	Node0x639aa70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%25:\l25:                                               \l  ret void\l}"];
+	Node0x639aef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = phi i64 [ %16, %18 ], [ %45, %41 ]\l  %28 = trunc i64 %27 to i32\l  %29 = getelementptr inbounds float, float addrspace(1)* %0, i64 %27\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !16\l  %31 = fpext float %30 to double\l  %32 = fdiv contract double %31, 2.957000e-02\l  %33 = fmul contract double %32, 5.000000e-01\l  %34 = fadd contract double %33, 1.285000e+02\l  %35 = fptrunc double %34 to float\l  %36 = fcmp contract ugt float %35, 0.000000e+00\l  br i1 %36, label %37, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x639aef0:s0 -> Node0x639c320;
+	Node0x639aef0:s1 -> Node0x639b000;
+	Node0x639c320 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%37:\l37:                                               \l  %38 = fcmp contract ult float %35, 2.550000e+02\l  br i1 %38, label %39, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x639c320:s0 -> Node0x639c4f0;
+	Node0x639c320:s1 -> Node0x639b000;
+	Node0x639c4f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%39:\l39:                                               \l  %40 = fptoui float %35 to i8\l  br label %41\l}"];
+	Node0x639c4f0 -> Node0x639b000;
+	Node0x639b000 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  %42 = phi i8 [ %40, %39 ], [ 0, %26 ], [ -1, %37 ]\l  %43 = getelementptr inbounds i8, i8 addrspace(1)* %1, i64 %27\l  store i8 %42, i8 addrspace(1)* %43, align 1, !tbaa !20\l  %44 = add i32 %24, %28\l  %45 = sext i32 %44 to i64\l  %46 = icmp ult i64 %45, %2\l  br i1 %46, label %26, label %25, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x639b000:s0 -> Node0x639aef0;
+	Node0x639b000:s1 -> Node0x639aa70;
+}

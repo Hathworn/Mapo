@@ -1,0 +1,7 @@
+```
+// Consider reducing shared memory usage if possible to improve performance.
+// Ensure memory coalescing by having consecutive threads access consecutive memory locations.
+// Minimize the use of shared memory to only necessary data to increase occupancy.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+// Ensure that shared memory usage is correctly aligned and within limits to avoid bank conflicts.
+```

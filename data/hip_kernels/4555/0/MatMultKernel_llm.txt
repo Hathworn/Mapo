@@ -1,0 +1,8 @@
+```
+// Increase BLOCK_SIZE further if registers and shared memory allow for maximizing data reuse
+// Ensure coalesced access by aligning data access patterns with warp size (typically 32 threads)
+// Consider tiling strategy with optimal TILE_SIZE for dimensional match of input matrix
+// Use loop unrolling where possible to reduce loop overhead and improve performance
+// Try using vectorized data types like double2 or double4 for aligned memory accesses
+// Minimize bank conflicts in shared memory by padding or changing memory layout
+```

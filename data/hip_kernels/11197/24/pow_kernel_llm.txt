@@ -1,0 +1,6 @@
+```
+// Minimize memory accesses by loading X[indexX] into a register before using it
+// Ensure coalesced memory access by aligning INCX and INCY with warp size when possible
+// Consider using shared memory if the same data is accessed multiple times within a block
+// Optimize grid and block configuration to fully utilize GPU resources
+```

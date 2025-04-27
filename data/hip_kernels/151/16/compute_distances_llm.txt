@@ -1,0 +1,9 @@
+```cpp
+// Use coalesced memory accesses to improve memory bandwidth utilization.
+// Ensure memory access patterns within the blocks are coalesced for both loading and storing data.
+// Investigate potential bank conflicts in shared memory and adjust indexing to minimize them.
+// Consider using shared memory more efficiently by ensuring all threads are involved.
+// Optimize loop unrolling factor to achieve a balance between increased instruction throughput and register pressure.
+// Utilize cuda occupancy calculator to determine optimal block size for better resource utilization.
+// Consider using __ldg for read-only data for better caching on supported hardware.
+```

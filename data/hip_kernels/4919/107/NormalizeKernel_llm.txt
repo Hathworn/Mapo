@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for normalization_factor to reduce global memory access
+// Use __ldg() for normalization_factor to leverage read-only data cache
+// Ensure coalesced memory access by making s a multiple of the warp size if possible
+// Minimize branching by using warp-level primitives for boundary checks
+// Unroll loops if applicable to enhance performance
+```

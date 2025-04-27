@@ -1,0 +1,8 @@
+```
+// Consider preloading cur_tot_weight to shared memory to reduce global memory access latency.
+// Consider tiling the loop using shared memory to optimize memory coalescing.
+// Consider using warp-level primitives to reduce thread divergence.
+// Ensure prior_scale_change computation is outside the loop to avoid redundant calculations.
+// Utilize cooperative groups for efficient synchronization on linear array update.
+// Consider increasing the number of threads per block to better utilize GPU resources.
+```

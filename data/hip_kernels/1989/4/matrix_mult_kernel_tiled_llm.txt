@@ -1,0 +1,8 @@
+```
+// Use shared memory to increase data reuse and reduce global memory accesses
+// Ensure coalesced memory access patterns to optimize memory bandwidth usage
+// Perform bounds checks during shared memory loading to prevent illegal memory access
+// Unroll inner computation loop to reduce loop overhead and increase instruction level parallelism
+// Use __syncthreads() to ensure all threads synchronize after loading data into shared memory
+// Optimize matrix dimensions to ensure they are multiples of TILE_WIDTH for efficient tiling
+```

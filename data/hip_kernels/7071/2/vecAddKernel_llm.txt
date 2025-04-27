@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data that is accessed multiple times to reduce global memory access.
+// Ensure coalesced access patterns by aligning data accesses with warp size.
+// Evaluate the use of vectorized data types for potential throughput improvements.
+// Minimize divergent branching by ensuring all threads within a warp follow the same execution path.
+// Tune the number of threads per block to fully utilize available multiprocessors.
+```

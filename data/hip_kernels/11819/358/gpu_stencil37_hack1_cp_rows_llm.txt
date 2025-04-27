@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to global memory for better bandwidth utilization.
+// Check if shared memory can be used to store frequently accessed global memory data to reduce latency.
+// Ensure that all threads within a warp access contiguous memory locations to maximize global memory throughput.
+// Utilize shared memory for temporary row storage to increase data reuse and reduce redundant global memory accesses.
+// Use __syncthreads() judiciously to prevent stalling and ensure proper synchronization for shared memory operations.
+// Explore loop unrolling within kernel loops to increase instruction level parallelism.
+```

@@ -1,0 +1,3 @@
+// Use shared memory to cache zr[j] for threads in the same block to optimize memory access.
+// Consider loop unrolling for better performance if dimensions are predictable.
+// Utilize coalesced memory access patterns to ensure threads in warp access contiguous memory.

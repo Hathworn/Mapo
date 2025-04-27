@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by organizing data if possible.
+// Consider using shared memory if input and output arrays can fit for faster data access.
+// Evaluate using warp-level intrinsics for efficiency where applicable.
+// Minimize conditional statements inside the kernel for better performance.
+// Consider adjusting block and grid dimensions to optimize occupancy and performance.

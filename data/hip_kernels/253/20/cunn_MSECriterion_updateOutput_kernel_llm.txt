@@ -1,0 +1,7 @@
+```cpp
+// Consider coalescing memory accesses for input_k and target_k to improve memory bandwidth utilization.
+// Use __restrict__ keyword if possible to hint the compiler about non-aliasing pointers.
+// Ensure shared memory buffer is accessed without bank conflicts.
+// Balance the workload evenly among threads to prevent some threads from being idle.
+// Explore use of warp-level primitives for reduction to minimize synchronization overheads.
+```

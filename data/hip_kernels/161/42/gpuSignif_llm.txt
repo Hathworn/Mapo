@@ -1,0 +1,4 @@
+// Consider using shared memory to optimize repetitive bandwidth access for gpuNumPairs and gpuCorrelations.
+// Evaluate memory alignment to ensure optimal coalesced memory access.
+// Ensure thread synchronization if shared memory is used.
+// Utilize asynchronous data loading through __ldg for read-only memory to reduce latency.

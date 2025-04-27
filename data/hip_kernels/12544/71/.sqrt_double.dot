@@ -1,0 +1,21 @@
+digraph "CFG for 'sqrt_double' function" {
+	label="CFG for 'sqrt_double' function";
+
+	Node0x57a3be0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !6\l  %15 = mul i32 %6, %11\l  %16 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %17 = add i32 %15, %16\l  %18 = icmp slt i32 %17, %0\l  br i1 %18, label %19, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x57a3be0:s0 -> Node0x57a5e50;
+	Node0x57a3be0:s1 -> Node0x57a5ee0;
+	Node0x57a5e50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = udiv i32 %14, %11\l  %21 = mul i32 %20, %11\l  %22 = icmp ugt i32 %14, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %11\l  br label %27\l}"];
+	Node0x57a5e50 -> Node0x57a6360;
+	Node0x57a5ee0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%26:\l26:                                               \l  ret void\l}"];
+	Node0x57a6360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i32 [ %17, %19 ], [ %61, %60 ]\l  %29 = icmp slt i32 %28, %1\l  br i1 %29, label %60, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x57a6360:s0 -> Node0x57a6470;
+	Node0x57a6360:s1 -> Node0x57a6600;
+	Node0x57a6600 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%30:\l30:                                               \l  %31 = srem i32 %28, %3\l  %32 = icmp eq i32 %31, 0\l  br i1 %32, label %33, label %60\l|{<s0>T|<s1>F}}"];
+	Node0x57a6600:s0 -> Node0x57a5cb0;
+	Node0x57a6600:s1 -> Node0x57a6470;
+	Node0x57a5cb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7af9170",label="{%33:\l33:                                               \l  %34 = sext i32 %28 to i64\l  %35 = getelementptr inbounds double, double addrspace(1)* %2, i64 %34\l  %36 = load double, double addrspace(1)* %35, align 8, !tbaa !16\l  %37 = fcmp olt double %36, 0x1000000000000000\l  %38 = select i1 %37, double 0x4FF0000000000000, double 1.000000e+00\l  %39 = fmul double %36, %38\l  %40 = tail call double @llvm.amdgcn.rsq.f64(double %39)\l  %41 = fmul double %39, %40\l  %42 = fmul double %40, 5.000000e-01\l  %43 = fneg double %42\l  %44 = tail call double @llvm.fma.f64(double %43, double %41, double\l... 5.000000e-01)\l  %45 = tail call double @llvm.fma.f64(double %42, double %44, double %42)\l  %46 = tail call double @llvm.fma.f64(double %41, double %44, double %41)\l  %47 = fneg double %46\l  %48 = tail call double @llvm.fma.f64(double %47, double %46, double %39)\l  %49 = tail call double @llvm.fma.f64(double %48, double %45, double %46)\l  %50 = fneg double %49\l  %51 = tail call double @llvm.fma.f64(double %50, double %49, double %39)\l  %52 = tail call double @llvm.fma.f64(double %51, double %45, double %49)\l  %53 = select i1 %37, double 0x37F0000000000000, double 1.000000e+00\l  %54 = fmul double %53, %52\l  %55 = fcmp oeq double %39, 0.000000e+00\l  %56 = fcmp oeq double %39, 0x7FF0000000000000\l  %57 = or i1 %55, %56\l  %58 = select i1 %57, double %39, double %54\l  %59 = getelementptr inbounds double, double addrspace(1)* %4, i64 %34\l  store double %58, double addrspace(1)* %59, align 8, !tbaa !16\l  br label %60\l}"];
+	Node0x57a5cb0 -> Node0x57a6470;
+	Node0x57a6470 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%60:\l60:                                               \l  %61 = add i32 %25, %28\l  %62 = icmp slt i32 %61, %0\l  br i1 %62, label %27, label %26, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x57a6470:s0 -> Node0x57a6360;
+	Node0x57a6470:s1 -> Node0x57a5ee0;
+}

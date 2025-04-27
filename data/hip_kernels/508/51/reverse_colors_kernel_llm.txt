@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses by ensuring that consecutive threads access consecutive memory locations
+// Ensure the grid and block dimensions are set such that they maximize occupancy and fully utilize the GPU
+// Use shared memory if applicable to store frequently accessed data within threads of a block
+// Minimize divergent branches to maintain GPU warp efficiency
+```

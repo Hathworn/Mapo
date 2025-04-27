@@ -1,0 +1,7 @@
+```
+// Ensure coalesced access to global memory
+// Prefer to access memory in a sequential manner for better cache utilization
+// Minimize the use of conditional statements inside the kernel
+// Consider increasing the thread block size to improve occupancy
+// Avoid overuse of multiple pointers that lead to non-coalesced access patterns
+```

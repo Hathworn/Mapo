@@ -1,0 +1,6 @@
+```
+// Pre-calculate indices to avoid redundant arithmetic operations
+// Ensure memory coalescing by accessing float4 and float3 with aligned indices
+// Load float4 once to minimize read transactions and enhance throughput
+// Use __restrict__ keyword to assist compiler optimizations for non-overlapping data
+```

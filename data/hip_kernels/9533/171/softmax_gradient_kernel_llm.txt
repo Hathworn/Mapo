@@ -1,0 +1,8 @@
+```
+// Consider using memory coalescing when accessing Y, dY, and dX.
+// Use float4 vector loads/stores for Y and dY when dim is a multiple of 4.
+// Ensure that dim is always a multiple of blockDim.x for best performance.
+// Minimize shared memory usage to avoid bank conflicts during reduction.
+// Optimize warp-level reduction by using shuffling (e.g., __shfl_down).
+// Eliminate unnecessary __syncthreads() to improve kernel efficiency.
+```

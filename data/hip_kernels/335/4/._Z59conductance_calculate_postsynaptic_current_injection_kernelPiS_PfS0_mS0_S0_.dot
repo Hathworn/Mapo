@@ -1,0 +1,18 @@
+digraph "CFG for '_Z59conductance_calculate_postsynaptic_current_injection_kernelPiS_PfS0_mS0_S0_' function" {
+	label="CFG for '_Z59conductance_calculate_postsynaptic_current_injection_kernelPiS_PfS0_mS0_S0_' function";
+
+	Node0x54eebb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%7:\l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !5, !invariant.load !6\l  %14 = zext i16 %13 to i32\l  %15 = getelementptr inbounds i8, i8 addrspace(4)* %10, i64 12\l  %16 = bitcast i8 addrspace(4)* %15 to i32 addrspace(4)*\l  %17 = load i32, i32 addrspace(4)* %16, align 4, !tbaa !7\l  %18 = mul i32 %9, %14\l  %19 = add i32 %18, %8\l  %20 = sext i32 %19 to i64\l  %21 = icmp ult i64 %20, %4\l  br i1 %21, label %22, label %51\l|{<s0>T|<s1>F}}"];
+	Node0x54eebb0:s0 -> Node0x54f0e30;
+	Node0x54eebb0:s1 -> Node0x54f0ec0;
+	Node0x54f0e30 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%22:\l22:                                               \l  %23 = udiv i32 %17, %14\l  %24 = mul i32 %23, %14\l  %25 = icmp ugt i32 %17, %24\l  %26 = zext i1 %25 to i32\l  %27 = add i32 %23, %26\l  %28 = mul i32 %27, %14\l  br label %29\l}"];
+	Node0x54f0e30 -> Node0x54f1340;
+	Node0x54f1340 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi i64 [ %20, %22 ], [ %49, %47 ]\l  %31 = trunc i64 %30 to i32\l  %32 = getelementptr inbounds float, float addrspace(1)* %2, i64 %30\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !16\l  %34 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %30\l  %35 = load i32, i32 addrspace(1)* %34, align 4, !tbaa !20\l  %36 = sext i32 %35 to i64\l  %37 = getelementptr inbounds float, float addrspace(1)* %5, i64 %36\l  %38 = load float, float addrspace(1)* %37, align 4, !tbaa !16\l  %39 = getelementptr inbounds float, float addrspace(1)* %6, i64 %30\l  %40 = load float, float addrspace(1)* %39, align 4, !tbaa !16\l  %41 = fsub contract float %33, %38\l  %42 = fmul contract float %40, %41\l  %43 = fcmp contract une float %42, 0.000000e+00\l  br i1 %43, label %44, label %47\l|{<s0>T|<s1>F}}"];
+	Node0x54f1340:s0 -> Node0x54f3050;
+	Node0x54f1340:s1 -> Node0x54f1400;
+	Node0x54f3050 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d24b4070",label="{%44:\l44:                                               \l  %45 = getelementptr inbounds float, float addrspace(1)* %3, i64 %36\l  %46 = atomicrmw fadd float addrspace(1)* %45, float %42\l... syncscope(\"agent-one-as\") monotonic, align 4\l  br label %47\l}"];
+	Node0x54f3050 -> Node0x54f1400;
+	Node0x54f1400 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%47:\l47:                                               \l  %48 = add i32 %28, %31\l  %49 = sext i32 %48 to i64\l  %50 = icmp ult i64 %49, %4\l  br i1 %50, label %29, label %51, !llvm.loop !22\l|{<s0>T|<s1>F}}"];
+	Node0x54f1400:s0 -> Node0x54f1340;
+	Node0x54f1400:s1 -> Node0x54f0ec0;
+	Node0x54f0ec0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%51:\l51:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

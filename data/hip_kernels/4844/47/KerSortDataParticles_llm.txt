@@ -1,0 +1,4 @@
+// Ensure coalesced memory access patterns for a2, b2, and c2 arrays.
+// Consider using shared memory if data reuse within threads is required.
+// Align memory accesses to avoid bank conflicts and improve throughput.
+// Minimize divergent branches, ensure that condition is evaluated uniformly across threads.

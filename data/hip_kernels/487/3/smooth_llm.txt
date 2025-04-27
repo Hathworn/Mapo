@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to store neighboring elements within a block to reduce global memory access latency.
+// Minimize divergence by ensuring all threads in a warp execute the same path.
+// Ensure enough threads per block to maximize occupancy and hide latency.
+// Use occupancy calculator tools to determine optimal block size for hardware.
+```

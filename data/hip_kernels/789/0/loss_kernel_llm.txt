@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory accesses for better performance.
+// Optimize memory access by aligning data structures to avoid uncoalesced memory access.
+// Use shared memory to cache frequently accessed data such as user factors and biases.
+// Minimize the divergence in control flows within the kernel.
+// Utilize memory prefetching techniques to reduce memory latency.
+// Implement loop unrolling for the factors calculation to improve throughput.
+// Explore using warp shuffles to optimize reductions within a warp.
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store intermediate results to reduce global memory access latency.
+// Ensure coalesced memory access by aligning data layout for input and output buffers.
+// Optimize the thread block size to maximize memory bandwidth utilization.
+// Minimize the use of atomic operations by aggregating results locally within each block before atomicAdd.
+```

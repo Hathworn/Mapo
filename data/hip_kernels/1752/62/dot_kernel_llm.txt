@@ -1,0 +1,4 @@
+// Consider using shared memory to store intermediate sums and norms to reduce global memory accesses.
+// Optimize memory coalescing by ensuring contiguous memory access patterns for both output and delta arrays.
+// Avoid redundant calculations within loops, such as computing the same index multiple times.
+// Check if loop unrolling could improve the performance in the inner loop of size dimension.

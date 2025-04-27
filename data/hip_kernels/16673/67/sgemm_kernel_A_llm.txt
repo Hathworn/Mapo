@@ -1,0 +1,7 @@
+```
+// Leverage shared memory to reduce global memory access and improve performance
+// Ensure optimal block size to maximize shared memory utilization and occupancy
+// Use __syncthreads() to synchronize threads within a block after loading to shared memory
+// Ensure that row and col indices are checked to prevent out-of-bounds access
+// Consider loop unrolling to further optimize the computation within the inner loop
+```

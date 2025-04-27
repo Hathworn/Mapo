@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory access by aligning data structures to ensure optimal global memory bandwidth utilization.
+// Evaluate the possibility of using shared memory if data reuse can be exploited within the block.
+// Check memory access patterns to avoid bank conflicts in shared memory if implemented in future iterations.
+// Ensure that A, B, and C are aligned and padded appropriately to avoid misaligned memory access penalties.
+// Minimize conditional statements within the warp execution to prevent warp divergence.
+```

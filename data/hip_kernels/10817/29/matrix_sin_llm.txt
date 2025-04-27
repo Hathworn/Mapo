@@ -1,0 +1,5 @@
+// Utilize shared memory for caching to reduce global memory accesses.
+// Consider using warp shuffle instructions to perform sin calculations in parallel.
+// Try to minimize divergence by ensuring all threads within a warp follow same execution path.
+// Avoid bank conflicts in shared memory access to improve performance.
+// Align memory access patterns to the size of memory transactions for efficiency.

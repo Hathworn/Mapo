@@ -1,0 +1,7 @@
+// Try using float instead of int for shared memory if matrix elements are float
+// Evaluate using __ldg() for read-only cache loads for d_a and d_b
+// Consider using cooperative groups for smaller shared tile sizes
+// Optimize memory access patterns by ensuring coalesced reads for d_a and d_b
+// Experiment with different sizes of BLOCK_SIZE for best performance
+// Use cudaOccupancyMaxPotentialBlockSize to determine optimal block size
+// Minimize register usage by reducing temporary variables if possible

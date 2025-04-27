@@ -1,0 +1,6 @@
+```
+// Consider using warp shuffle operations to reduce shared memory usage for accumulating results
+// Optimize memory access patterns by ensuring coalesced access for the array elements
+// Avoid unnecessary __syncthreads() if warp shuffle is used for reduction
+// Ensure stride access for arr[i] into thread executes with minimized memory transfer overhead
+```

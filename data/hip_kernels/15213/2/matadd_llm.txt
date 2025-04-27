@@ -1,0 +1,8 @@
+```
+// Use shared memory for caching frequently accessed data if needed
+// Ensure memory coalescing by aligning memory accesses
+// Minimize memory access latency by optimizing data layout or using memory padding
+// Consider using a larger block size to better saturate CUDA cores
+// Avoid bank conflicts in shared memory if used
+// Check occupancy and adjust block size or grid size for better throughput
+```

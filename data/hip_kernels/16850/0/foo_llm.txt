@@ -1,0 +1,5 @@
+// Consider using shared memory for caching if multiple threads use the same data
+// Minimize global memory accesses by caching results locally
+// Avoid recalculating frequently used expressions
+// Optimize memory access patterns to improve coalescing
+// Consider using warp shuffle functions for data exchange between threads without shared memory

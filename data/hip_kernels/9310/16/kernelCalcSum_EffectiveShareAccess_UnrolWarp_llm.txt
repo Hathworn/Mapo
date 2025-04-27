@@ -1,0 +1,6 @@
+// Use shared memory efficiently by prefetching adjacent values in coalesced patterns  
+// Reduce divergent branching by limiting conditions within threads  
+// Apply unrolling techniques to minimize loop overhead and increase warp efficiency  
+// Ensure precise memory synchronization using __syncthreads()  
+// Use volatile keyword judiciously to prevent compiler optimizations that could result in incorrect behavior  
+// Choose appropriate block and grid sizes to maximize occupancy and balance workloads  

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache data from global memory before processing.
+// Ensure memory access is coalesced by aligning accesses within warps.
+// Evaluate warp-level primitives to reduce latency during iterations.
+// Check if loop unrolling can improve performance by reducing loop overhead.
+// Profile performance to verify the grid and block sizes are optimal for the target hardware.
+// Consider using __restrict__ qualifiers for pointers if there is no aliasing.
+```

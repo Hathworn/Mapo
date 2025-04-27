@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access when loading data into shared memory
+// Utilize shared memory to reduce global memory bandwidth for each thread block
+// Use unrolling to improve memory latency hiding and increase instruction level parallelism
+// Make use of USHRT_MAX to initialize boundary conditions efficiently
+// Consider increasing the size of ER_LAYERS_BLOCKDIM_X/Y/Z while ensuring occupancy remains high
+// Synchronize threads to ensure shared memory contents are consistent before computation
+```

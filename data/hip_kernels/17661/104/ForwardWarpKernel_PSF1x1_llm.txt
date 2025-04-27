@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Coalesce memory access for u and v to improve memory bandwidth usage.
+// Ensure memory alignment for better performance with coalesced access.
+// Evaluate if prefetching data into registers can reduce memory load latency.
+// Consider loop unrolling if applicable to decrease loop overhead.
+// Reuse loaded data among threads where possible to minimize memory transactions.
+```

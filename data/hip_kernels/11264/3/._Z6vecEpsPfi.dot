@@ -1,0 +1,10 @@
+digraph "CFG for '_Z6vecEpsPfi' function" {
+	label="CFG for '_Z6vecEpsPfi' function";
+
+	Node0x574d2f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr inbounds i8, i8 addrspace(4)* %3, i64 12\l  %5 = bitcast i8 addrspace(4)* %4 to i32 addrspace(4)*\l  %6 = load i32, i32 addrspace(4)* %5, align 4, !tbaa !4\l  %7 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !13, !invariant.load !14\l  %10 = zext i16 %9 to i32\l  %11 = udiv i32 %6, %10\l  %12 = mul i32 %11, %10\l  %13 = icmp ugt i32 %6, %12\l  %14 = zext i1 %13 to i32\l  %15 = add i32 %11, %14\l  %16 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %17 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %18 = mul i32 %15, %17\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %20 = add i32 %18, %16\l  %21 = mul i32 %20, %10\l  %22 = add i32 %21, %19\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds float, float addrspace(1)* %0, i64 %23\l  %25 = load float, float addrspace(1)* %24, align 4, !tbaa !16,\l... !amdgpu.noclobber !14\l  %26 = fpext float %25 to double\l  %27 = fcmp contract olt double %26, 1.000000e-05\l  %28 = icmp slt i32 %22, %1\l  %29 = select i1 %27, i1 %28, i1 false\l  br i1 %29, label %30, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x574d2f0:s0 -> Node0x57510f0;
+	Node0x574d2f0:s1 -> Node0x5751180;
+	Node0x57510f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%30:\l30:                                               \l  store float 0x3EE4F8B580000000, float addrspace(1)* %24, align 4, !tbaa !16\l  br label %31\l}"];
+	Node0x57510f0 -> Node0x5751180;
+	Node0x5751180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

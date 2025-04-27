@@ -1,0 +1,6 @@
+```
+// Ensure input arrays X and Y are located in contiguous memory for coalesced access
+// Align the allocated memory size to the nearest multiple of the warp size
+// Minimize divergent branching by ensuring the condition is uniformly met by all threads in the warp
+// Use shared memory to temporarily store data if the kernel is memory bandwidth limited
+```

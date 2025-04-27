@@ -1,0 +1,8 @@
+```
+// Use a 1D grid when possible to simplify index calculation and maximize occupancy
+// Ensure memory access patterns are coalesced to improve performance
+// Optimize ALPHA value handling using registers to reduce memory traffic
+// Consider using shared memory to reduce redundant loading of data
+// Use vectorized loads to efficiently utilize memory bandwidth
+// Minimize warp divergence by ensuring all threads in a warp perform the same instruction
+```

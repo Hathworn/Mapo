@@ -1,0 +1,10 @@
+```
+// Consider using __restrict__ qualifiers to improve memory access performance
+// Ensure pred and truth arrays are in global memory for coalesced access
+// Align memory access for pred and truth to avoid misaligned memory transactions
+// Use shared memory if block-level data reuse is high
+// Consider prefetching data to registers for repeated access
+// Evaluate thread block size for best occupancy and performance balance
+// Minimize bank conflicts when using shared memory
+// Optimize grid and block dimensions based on GPU architecture and occupancy calculators
+```

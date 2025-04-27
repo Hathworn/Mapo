@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses by loading data into shared memory once per block.
+// Ensure coalesced memory access by aligning data accesses when loading from global memory.
+// Consider loop unrolling for kernel operations to enhance instruction-level parallelism.
+// Avoid redundant loads by reusing data in registers for the convolution operation.
+// Minimize synchronization points to reduce overhead and improve performance.
+```

@@ -1,0 +1,5 @@
+// Ensure memory accesses are coalesced by accessing consecutive elements
+// Consider using shared memory for frequently accessed data to reduce global memory accesses
+// Use vectorized memory accesses if possible to process multiple data elements simultaneously
+// Verify if using half precision (FP16) can be beneficial for calculations to increase throughput
+// Experiment with different block sizes to maximize occupancy and minimize warp divergence

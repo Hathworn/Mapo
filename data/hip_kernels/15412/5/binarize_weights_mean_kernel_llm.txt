@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for mean_arr_gpu to reduce global memory access latency
+// Utilize warp-level primitives to further accelerate operations on mean_arr_gpu
+// Explore unrolling loops to improve thread-level parallelism and instruction throughput
+// Use texture memory or constant memory for weights if they are accessed frequently and have spatial locality
+```

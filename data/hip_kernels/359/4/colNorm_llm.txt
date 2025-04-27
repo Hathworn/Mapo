@@ -1,0 +1,4 @@
+// Use shared memory to cache v array values to reduce global memory access
+// Load v array into shared memory only once per block
+// Synchronize threads after loading v into shared memory to ensure all threads see the updated values
+// Ensure that the number of threads in a block does not exceed the size of shared memory usage

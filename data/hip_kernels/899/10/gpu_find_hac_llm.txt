@@ -1,0 +1,9 @@
+```
+// Use coalesced memory access for g_heat
+// Minimize shared memory bank conflicts
+// Leverage constant memory for frequently accessed constants
+// Use vectorized loads/stores when possible
+// Ensure data reuse from shared memory to reduce global memory accesses
+// Optimize usage of registers to maximize occupancy
+// Apply loop unrolling for the inner loop to improve performance
+```

@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access for norms caching.
+// Consider loop unrolling to optimize the inner loop for better performance.
+// Prefetch data into registers to minimize repeated global memory accesses.
+// Optimize the block and thread configurations to better utilize GPU resources.
+// Check for memory coalescing opportunities to improve bandwidth utilization.
+```

@@ -1,0 +1,6 @@
+// Consider using shared memory to cache input elements for threads within the same block
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Ensure memory access patterns are optimal and do not cause unnecessary bank conflicts
+// Evaluate if using warp primitives can help reduce latency in logf and fabsf operations
+// Check if preferring constant memory for frequently accessed variables can improve performance
+// Ensure occupancy is maximized by adjusting block size for better utilization of compute resources

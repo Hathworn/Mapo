@@ -1,0 +1,8 @@
+```
+// Use shared memory for mask to optimize memory access patterns
+// Preload input block into shared memory to reduce global memory accesses
+// Combine rowId and colId calculation to remove division operations
+// Minimize pointer arithmetic by using pre-computed indices
+// Consider loop unrolling for wider pools to reduce iteration overhead
+// Ensure coalesced memory access for both input and output arrays
+```

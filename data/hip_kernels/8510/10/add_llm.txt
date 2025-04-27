@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to improve memory throughput
+// Use shared memory to reduce global memory access where possible
+// Use dedicated atomic functions for faster atomic operations if needed
+// Minimize the use of __syncthreads() to reduce synchronization overhead
+// Avoid printf in performance-critical sections and use it conditionally for debugging
+```

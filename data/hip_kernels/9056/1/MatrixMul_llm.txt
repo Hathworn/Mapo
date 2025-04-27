@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache tiles of Md and Nd to reduce global memory accesses.
+// Implement memory coalescing by ensuring threads access contiguous memory locations in global memory.
+// Reduce warp divergence by aligning boundary checks with warp sizes.
+// Explore the use of loop unrolling to reduce overhead and increase arithmetic intensity.
+// Ensure block size is chosen to maximize occupancy and consider using launch bounds to optimize performance.
+```

@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by accessing global memory in continuous blocks.
+// Use __fdividef for faster single-precision division.
+// Load denominator values once per iteration to reduce redundant global memory accesses.
+// Compare floats using 0.0f to avoid precision issues and improve performance.
+// Consider using shared memory if multiple threads access the same data for additional speedup.

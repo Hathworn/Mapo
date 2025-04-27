@@ -1,0 +1,13 @@
+digraph "CFG for '_Z12assignColIdsPiPKi' function" {
+	label="CFG for '_Z12assignColIdsPiPKi' function";
+
+	Node0x607d140 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = sext i32 %3 to i64\l  %5 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %4\l  %6 = load i32, i32 addrspace(1)* %5, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %7 = add nsw i32 %3, 1\l  %8 = sext i32 %7 to i64\l  %9 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %8\l  %10 = load i32, i32 addrspace(1)* %9, align 4, !tbaa !4, !amdgpu.noclobber !8\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !9\l  %12 = add i32 %6, %11\l  %13 = icmp slt i32 %12, %10\l  br i1 %13, label %14, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x607d140:s0 -> Node0x607fbd0;
+	Node0x607d140:s1 -> Node0x607fc60;
+	Node0x607fbd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%14:\l14:                                               \l  %15 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %16 = getelementptr i8, i8 addrspace(4)* %15, i64 4\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 4, !range !10, !invariant.load\l... !8\l  %19 = zext i16 %18 to i32\l  br label %21\l}"];
+	Node0x607fbd0 -> Node0x6080400;
+	Node0x607fc60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%20:\l20:                                               \l  ret void\l}"];
+	Node0x6080400 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = phi i32 [ %12, %14 ], [ %25, %21 ]\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %23\l  store i32 %3, i32 addrspace(1)* %24, align 4, !tbaa !4\l  %25 = add i32 %22, %19\l  %26 = icmp slt i32 %25, %10\l  br i1 %26, label %21, label %20, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x6080400:s0 -> Node0x6080400;
+	Node0x6080400:s1 -> Node0x607fc60;
+}

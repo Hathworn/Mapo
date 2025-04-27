@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for A, B, AP, and BP movements.
+// Use shared memory to buffer data, reducing redundant global memory fetches.
+// Minimize the use of __syncthreads() by careful alignment of shared memory loads.
+// Prefetch data into registers where possible for faster access.
+// Balance shared memory usage to avoid bank conflicts.
+// Optimize thread block and grid dimensions to maximize occupancy.
+```

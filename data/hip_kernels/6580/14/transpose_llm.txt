@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses for faster execution.
+// Align shared memory array dimensions to prevent bank conflicts.
+// Ensure proper synchronization using __syncthreads() after writing to shared memory.

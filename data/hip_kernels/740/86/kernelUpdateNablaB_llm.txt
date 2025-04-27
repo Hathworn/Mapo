@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for improved performance
+// Ensure that both nabla_b and delta_nabla_b are allocated in contiguous memory
+// Minimize divergent branches within the thread block to enhance throughput
+// Utilize shared memory to reduce global memory accesses if possible
+// Assess the possibility of using float4 for accessing four floats at a time
+// Explore loop unrolling techniques if processing multiple elements
+```

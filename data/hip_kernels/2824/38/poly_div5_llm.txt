@@ -1,0 +1,5 @@
+// Use shared memory if data needs to be reused within a block to reduce global memory access latency.
+// Employ loop unrolling if there are fixed loop iterations within the kernel to enhance performance.
+// Use coalesced memory access patterns to ensure contiguous threads access contiguous data in global memory.
+// Consider optimizing division operations, e.g., by converting divisions to multiplications with the reciprocal if possible.
+// Ensure memory access patterns facilitate memory coalescing for maximum bandwidth utilization.

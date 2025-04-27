@@ -1,0 +1,3 @@
+// Consider using shared memory to store `vec[col]` to optimize memory access patterns.
+// Ensure coalesced memory access for `mat` and `tgtMat` by appropriately organizing thread blocks and memory layout.
+// Explore adding loop unrolling for potential speedup if `width` and `height` values are known at compile time.

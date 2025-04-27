@@ -1,0 +1,10 @@
+digraph "CFG for '_Z9hook_initPiP4Edgei' function" {
+	label="CFG for '_Z9hook_initPiP4Edgei' function";
+
+	Node0x546cc40 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp slt i32 %12, %2\l  br i1 %13, label %14, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x546cc40:s0 -> Node0x5471320;
+	Node0x546cc40:s1 -> Node0x54713b0;
+	Node0x5471320 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%14:\l14:                                               \l  %15 = sext i32 %12 to i64\l  %16 = getelementptr inbounds %struct.Edge, %struct.Edge addrspace(1)* %1,\l... i64 %15, i32 0\l  %17 = load i64, i64 addrspace(1)* %16, align 8, !tbaa !7, !amdgpu.noclobber\l... !5\l  %18 = trunc i64 %17 to i32\l  %19 = lshr i64 %17, 32\l  %20 = trunc i64 %19 to i32\l  %21 = tail call i32 @llvm.smax.i32(i32 %20, i32 %18)\l  %22 = tail call i32 @llvm.smin.i32(i32 %20, i32 %18)\l  %23 = sext i32 %21 to i64\l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %23\l  store i32 %22, i32 addrspace(1)* %24, align 4, !tbaa !12\l  br label %25\l}"];
+	Node0x5471320 -> Node0x54713b0;
+	Node0x54713b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  ret void\l}"];
+}

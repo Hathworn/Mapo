@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory coalescing by ensuring sequential access patterns to global memory.
+// Utilize shared memory effectively by minimizing its usage to reduce block-level synchronization overhead.
+// Ensure alignment and padding for memory structures to avoid potential bank conflicts.
+// Aim to minimize divergent code paths within warp execution to improve overall warp efficiency.
+// Evaluate the reuse of loaded values from global to shared memory until no longer needed.
+// Profile and identify potential hotspots in memory access to balance between shared and global memory usage.
+```

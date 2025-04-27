@@ -1,0 +1,6 @@
+```cpp
+// Consider coalescing memory accesses for the sortpart array to improve memory bandwidth utilization.
+// Ensure a and a2 arrays are accessed in a coalesced manner to maximize memory throughput.
+// Evaluate using shared memory if there are repeated accesses to the same data to reduce global memory traffic.
+// Use __restrict__ keyword for pointers if possible to help the compiler optimize memory access patterns.
+```

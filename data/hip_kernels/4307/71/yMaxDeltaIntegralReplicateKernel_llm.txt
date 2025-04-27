@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for intData to reduce global memory access
+// Coalesce memory access patterns for intData and tmpArray for better performance
+// Minimize divergent branches by arranging conditions to favor warp execution
+// Use const memory for frequently accessed read-only data like xMin, xMax, and yMax
+// Pre-compute and store frequently accessed values outside of critical loops
+// Reduce the use of floating-point operations like ceil and floor in kernel
+```

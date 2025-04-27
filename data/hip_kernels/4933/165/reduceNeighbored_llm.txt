@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access when loading g_idata into shared memory
+// Avoid bank conflicts in shared memory access by ensuring data alignment
+// Use __syncthreads() only when necessary to reduce synchronization overhead
+// Balance workload among threads to ensure efficient use of parallel resources
+// Consider using warp-level primitives for reduction to improve performance
+// Optimize shared memory usage to minimize memory access latency
+```

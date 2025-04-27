@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for the temporary arrays dev_C0_tmp, dev_C1_tmp, and dev_C2_tmp to reduce global memory access.
+// Ensure coalesced memory access patterns by aligning all read and write operations across contiguous memory locations.
+// Optimize thread synchronization by minimizing the use of __syncthreads() where possible to improve performance.
+```

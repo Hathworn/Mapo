@@ -1,0 +1,7 @@
+```
+// Consider aligning data accesses to coalesced memory patterns
+// Suggest using shared memory to cache frequently accessed values
+// Evaluate using register for temporary variables to reduce load/store operations
+// Ensure proper synchronization with __syncthreads to avoid race conditions
+// Minimize global memory writes; perform calculations in registers first
+```

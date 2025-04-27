@@ -1,0 +1,9 @@
+```
+// Consider optimizing memory access with coalesced reads from global memory.
+// Use shared memory to reduce redundant global memory accesses.
+// Ensure all threads have completed writing to shared memory before proceeding with __syncthreads().
+// Utilize #pragma unroll to optimize loop iteration for better parallelism.
+// Ensure all accesses to shared memory avoid bank conflicts by aligning data access patterns.
+// Unroll the filter radius loop for performance improvement to enhance computation efficiency.
+// Load halo and main data together to reduce branch divergence.
+```

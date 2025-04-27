@@ -1,0 +1,3 @@
+// Use __ldg intrinsic to load data for potential cache benefits
+// Store scaled values in registers to minimize expensive operations
+// Minimize global memory writes by storing results in registers first

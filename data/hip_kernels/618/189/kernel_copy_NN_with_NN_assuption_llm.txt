@@ -1,0 +1,6 @@
+```
+// Consider coalesced access patterns for d_nearest_neighbour_indexes for better memory throughput
+// Ensure d_temp_double_mem writes are coalesced to improve memory efficiency
+// Evaluate use of shared memory if data reuse occurs to minimize global memory access
+// Minimize divergence in the use of if() statements to enhance branch prediction
+```

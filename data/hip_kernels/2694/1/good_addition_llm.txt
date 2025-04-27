@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data.
+// Reduce global memory access by using registers for intermediate results.
+// Ensure coalesced memory access for a, b, and c vectors to improve performance.
+// Consider adjusting the block size and grid size for optimal occupancy.
+// Use __restrict__ keyword if applicable to help the compiler with optimization.
+```

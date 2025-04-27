@@ -1,0 +1,20 @@
+digraph "CFG for '_Z18kernel_test0_writePcS_' function" {
+	label="CFG for '_Z18kernel_test0_writePcS_' function";
+
+	Node0x4622060 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a1c0ff70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = shl i32 %3, 20\l  %5 = zext i32 %4 to i64\l  %6 = getelementptr inbounds i8, i8 addrspace(1)* %0, i64 %5\l  %7 = bitcast i8 addrspace(1)* %6 to i32 addrspace(1)*\l  %8 = addrspacecast i32 addrspace(1)* %7 to i32*\l  %9 = icmp ult i8 addrspace(1)* %6, %1\l  br i1 %9, label %10, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x4622060:s0 -> Node0x4622910;
+	Node0x4622060:s1 -> Node0x4622cb0;
+	Node0x4622910 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#88abfd70",label="{%10:\l10:                                               \l  %11 = getelementptr inbounds i8, i8 addrspace(1)* %6, i64 1048576\l  %12 = bitcast i8 addrspace(1)* %11 to i32 addrspace(1)*\l  %13 = addrspacecast i32 addrspace(1)* %12 to i32*\l  store i32 1, i32 addrspace(1)* %7, align 4, !tbaa !4\l  %14 = ptrtoint i32* %8 to i64\l  br label %15\l}"];
+	Node0x4622910 -> Node0x4623c10;
+	Node0x4623c10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%15:\l15:                                               \l  %16 = phi i64 [ 4, %10 ], [ %29, %27 ]\l  %17 = phi i32 [ 1, %10 ], [ %28, %27 ]\l  br label %18\l}"];
+	Node0x4623c10 -> Node0x4624040;
+	Node0x4624040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  %19 = phi i64 [ %16, %15 ], [ %23, %18 ]\l  %20 = or i64 %19, %14\l  %21 = inttoptr i64 %20 to i32*\l  %22 = icmp eq i32* %21, %8\l  %23 = shl i64 %19, 1\l  br i1 %22, label %18, label %24, !llvm.loop !8\l|{<s0>T|<s1>F}}"];
+	Node0x4624040:s0 -> Node0x4624040;
+	Node0x4624040:s1 -> Node0x4624470;
+	Node0x4624470 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%24:\l24:                                               \l  %25 = inttoptr i64 %20 to i32*\l  %26 = icmp ult i32* %25, %13\l  br i1 %26, label %27, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x4624470:s0 -> Node0x4623d40;
+	Node0x4624470:s1 -> Node0x4622cb0;
+	Node0x4623d40 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%27:\l27:                                               \l  store i32 %17, i32* %25, align 4, !tbaa !4\l  %28 = shl i32 %17, 1\l  %29 = shl i64 %19, 1\l  br label %15, !llvm.loop !8\l}"];
+	Node0x4623d40 -> Node0x4623c10;
+	Node0x4622cb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a1c0ff70",label="{%30:\l30:                                               \l  ret void\l}"];
+}

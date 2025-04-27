@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to further optimize access patterns and reduce global memory transactions.
+// Ensure memory accesses are coalesced by having consecutive threads access consecutive memory locations in tgt array.
+// Use appropriate block size and grid size to fully optimize hardware occupancy and minimize thread divergence.
+// Prefetch data to registers when possible to minimize latency in accessing global memory.
+```

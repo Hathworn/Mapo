@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure each thread has contiguous memory access for coalescing
+// Use __syncthreads() to synchronize threads before reducing
+// Apply loop unrolling to optimize the last warp execution
+// Leverage volatile pointers for warp-synchronous programming
+// Minimize divergent branches by ensuring uniform control flow
+// The first thread writes the result back to global memory to avoid race conditions
+```

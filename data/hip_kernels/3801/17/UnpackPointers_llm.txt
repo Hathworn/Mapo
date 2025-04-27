@@ -1,0 +1,9 @@
+```
+// Consider using warp shuffle functions to reduce shared memory usage
+// Ensure all memory accesses are coalesced
+// Minimize divergent branching
+// Use vectorized loads/stores where possible
+// Optimize the use of atomic operations to reduce contention
+// Prefetch data to increase memory bandwidth utilization
+// Ensure appropriate use of __syncthreads to avoid unnecessary synchronization
+```

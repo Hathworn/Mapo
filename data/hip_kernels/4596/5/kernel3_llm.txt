@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for arrays D and q
+// Preload common subexpressions to avoid redundant calculations
+// Use shared memory effectively to reduce global memory reads
+// Use __syncthreads() only when necessary to minimize synchronization overhead
+// Optimize loop unrolling for the inner loop if possible
+```

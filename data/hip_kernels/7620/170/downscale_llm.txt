@@ -1,0 +1,7 @@
+```
+// Consolidate the scale factor multiplication outside the loops to reduce redundant calculations
+// Use atomic operations to ensure thread safety during updates on shared memory
+// Minimize thread divergence by maintaining uniform execution paths for warps
+// Optimize memory access patterns for coalesced reads and writes
+// Consider prefetching data to reduce latency in memory access
+```

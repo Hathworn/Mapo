@@ -1,0 +1,9 @@
+```c
+// Consider using shared memory to minimize global memory access for px, py, pz.
+// Use a loop unrolling technique for operations on similar data structures.
+// Ensure memory coalescing by aligning data structures and access patterns.
+// Reduce the number of frequent divisions by pre-computing reciprocal values.
+// Optimize thread utilization by ensuring each thread does sufficient work.
+// Minimize bank conflicts in shared memory accesses by properly aligning data.
+// Explore warp-synchronous programming paradigms to improve performance.
+```

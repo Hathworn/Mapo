@@ -1,0 +1,8 @@
+```
+// Minimize shared memory use to prevent bank conflicts
+// Consider coalesced memory access patterns for better performance
+// Optimize the usage of registers within device functions to reduce register spilling
+// Use texture memory for repeated access to certain data like random numbers if beneficial
+// Avoid divergence in the kernel by minimizing conditional statements
+// Consider loop unrolling for operations inside the kernel if applicable
+```

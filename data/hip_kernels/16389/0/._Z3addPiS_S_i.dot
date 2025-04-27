@@ -1,0 +1,5 @@
+digraph "CFG for '_Z3addPiS_S_i' function" {
+	label="CFG for '_Z3addPiS_S_i' function";
+
+	Node0x5d6cdc0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = mul i32 %5, %3\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = zext i32 %8 to i64\l  %10 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %9\l  %11 = load i32, i32 addrspace(1)* %10, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %9\l  %13 = load i32, i32 addrspace(1)* %12, align 4, !tbaa !5, !amdgpu.noclobber\l... !9\l  %14 = add nsw i32 %13, %11\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %9\l  store i32 %14, i32 addrspace(1)* %15, align 4, !tbaa !5\l  ret void\l}"];
+}

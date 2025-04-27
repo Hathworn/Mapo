@@ -1,0 +1,7 @@
+```
+// Utilize coalesced memory accesses by ensuring consecutive threads access consecutive data indices
+// Minimize memory transactions by using float4 to load/store data, reducing latency
+// Leverage vectorized operations to maximize throughput and computation efficiency
+// Optimize thread block size to achieve maximum occupancy and load balance
+// Consider using shared memory if access patterns or reuse justify the overhead
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses if possible  
+// Optimize memory coalescing by aligning src and dst memory accesses  
+// Increase loop unrolling factor to further leverage instruction-level parallelism  
+// Consider using warp-level primitives for fine-grained access if stride is small  
+// Balance the grid size and block size to maximize GPU occupancy 

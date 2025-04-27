@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for 'parameters' and 'gradient' arrays.
+// Unroll the loop to align with warp size and maximize memory throughput.
+// Utilize shared memory for 'parameters' and 'gradient' to reduce global memory access latency.
+// Prefetch data to registers to reduce memory latency.
+// Align data structures to 16-byte boundaries for better memory access efficiency.
+// Use half precision if possible to reduce memory bandwidth pressure.
+```

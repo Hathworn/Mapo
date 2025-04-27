@@ -1,0 +1,5 @@
+// Consider using shared memory for data caching to reduce global memory access latency
+// Use warp-level primitives if access patterns are consistent to reduce divergence
+// Ensure memory accesses are coalesced for optimal performance
+// Evaluate the use of __restrict__ qualifier for pointer arguments to help compiler optimizations
+// Consider loop unrolling if multiple values set in a loop for increased parallelism

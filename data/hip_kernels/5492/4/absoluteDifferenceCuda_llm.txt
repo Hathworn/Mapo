@@ -1,0 +1,7 @@
+// Use __restrict__ keyword to indicate that pointers do not alias, optimizing memory access
+// Consider coalesced memory access by ensuring data structures are aligned with warp size
+// Minimize bank conflicts by having aligned access patterns for shared memory variables
+// Load data into registers before performing arithmetic operations to reduce load latency
+// Consider loop unrolling if loops are used within kernel to increase instruction throughput
+// Use memory padding if necessary to ensure aligned memory access across different elements
+// Optimize block and thread dimensions to match the specific architecture for performance efficiency

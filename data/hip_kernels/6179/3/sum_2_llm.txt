@@ -1,0 +1,7 @@
+```
+// Use shared memory to optimize access and reduce global memory transactions
+// Ensure the block size is a multiple of the warp size to maximize efficiency
+// Ensure shared memory access is coalesced to improve performance
+// Consider looping to handle larger data sets if shared memory is limited
+// Align data structures with float4 for better memory alignment and access efficiency
+```

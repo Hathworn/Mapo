@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses to improve memory throughput
+// Use shared memory to reduce redundant global memory accesses
+// Minimize use of __syncthreads() to reduce warp divergence
+// Consider prefetching data to shared memory to hide latency
+```

@@ -1,0 +1,5 @@
+// Use shared memory for biases to reduce global memory access  
+// Prefetch biases to further reduce global memory access  
+// Use single read per block for biases instead of multiple reads  
+// Avoid redundant calculations inside the loop  
+// Minimize thread divergence for better performance

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access by aligning shared memory loading across warps
+// Reduce bank conflicts by padding shared memory if necessary
+// Move conditional checks outside the critical path if possible
+// Consider loop unrolling to increase instruction-level parallelism
+// Ensure there are no redundant syncs in the kernel
+// Utilize built-in functions and intrinsic operations for efficiency
+```

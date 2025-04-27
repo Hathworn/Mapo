@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by ordering threads to avoid strided access patterns
+// Consider using shared memory to reduce global memory access latency
+// Maximize occupancy by tuning block size and using __launch_bounds to control resource allocation
+// Use asynchronous memory copy if applicable to overlap computation and data transfer

@@ -1,0 +1,8 @@
+```
+// Ensure src and tgt pointers are aligned for coalesced memory access
+// Consider using __restrict__ qualifiers for src and tgt pointers to aid in compiler optimization
+// Precompute and use source memory access pattern to improve memory access efficiency
+// Evaluate data locality and alignment to optimize cache usage
+// Promote constants like srcWidth and srcHeight to avoid redundant calculations in the loop
+// Consider loop unrolling if beneficial for GPU architecture and warp execution
+```

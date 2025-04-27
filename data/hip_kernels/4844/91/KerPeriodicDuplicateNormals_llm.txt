@@ -1,0 +1,5 @@
+```cpp
+// Consider coalesced memory access by ensuring 'listp', 'normals', and 'motionvel' are accessed in a contiguous memory pattern.
+// Minimize the use of shared memory by directly copying 'normal' and 'velocity' to reduce register pressure.
+// Leverage the compiler's ability to optimize repeated memory accesses as in 'normals' and 'motionvel'.
+```

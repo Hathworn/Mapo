@@ -1,0 +1,7 @@
+```
+// Avoid shared memory where possible to reduce access overhead
+// Utilize coalesced memory access patterns by aligning memory access across threads
+// Unroll inner loops to improve instruction throughput
+// Consider using __restrict__ keyword for pointer arguments to enable more compiler optimizations
+// Ensure data is organized to benefit from cache locality
+```

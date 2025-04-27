@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access.
+// Ensure shared memory usage is minimal to avoid bank conflicts.
+// Opt for coalesced global memory access to improve bandwidth.
+// Minimize atomic operations in shared memory for better performance.
+// Consider loop unrolling to minimize overhead in the for-loop.
+// Align data to avoid memory access misalignment.
+```

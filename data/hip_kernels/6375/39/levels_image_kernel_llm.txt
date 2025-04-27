@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access where possible.
+// Consider coalescing memory access by improving the access pattern.
+// Try loop unrolling to maximize throughput.
+// Utilize __restrict__ to indicate non-aliasing pointers for the image array.
+// Evaluate if reducing register pressure by reorganizing variable usage can improve performance.
+// Ensure warp-level calculations to prevent thread divergence, especially in the switch-case.
+```

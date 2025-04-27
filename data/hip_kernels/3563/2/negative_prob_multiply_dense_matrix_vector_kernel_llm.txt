@@ -1,0 +1,4 @@
+// Move declaration of 'prob' inside the conditional block to avoid unnecessary computation
+// Pre-compute row offset to reduce repeated index calculation
+// Ensure unique memory access patterns to optimize memory bandwidth usage
+// Minimize branching, reducing divergence within warp execution

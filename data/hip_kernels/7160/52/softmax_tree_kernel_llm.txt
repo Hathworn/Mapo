@@ -1,0 +1,9 @@
+```
+// Use shared memory for 'input' to reduce global memory access latency.
+// Prefetch 'input' data to registers to reduce the number of global memory accesses.
+// Consider loop unrolling for 'for' loops within 'softmax_device' to improve instruction-level parallelism.
+// Ensure coalesced memory access pattern in 'softmax_tree_kernel' for improved memory throughput.
+// Use warp shuffle operations to perform parallel reductions within a warp for the 'largest' and 'sum' calculations.
+// Balance the workload among threads to avoid thread divergence and underutilization.
+// Use cooperative groups to improve synchronization efficiency within the same block, if applicable.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses for lifter coefficients
+// Load lifter coefficients into shared memory only by thread 0 to avoid race conditions
+// Use shared memory synchronization (syncthreads) to ensure data is available across threads
+// Ensure only one thread handles energy flooring to minimize thread divergence
+```

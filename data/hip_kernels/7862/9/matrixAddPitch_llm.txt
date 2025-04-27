@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for better memory coalescing.
+// Optimize pitch to match memory alignment for faster access.
+// Use loop unrolling if computation per thread is significant.
+// Verify if memory access patterns fully utilize L2 cache.
+// Evaluate necessity of boundary check to possibly reduce conditional branches.
+```

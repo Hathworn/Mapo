@@ -1,0 +1,9 @@
+```
+// Consider coalesced global memory accesses for Md and Nd.
+// Minimize bank conflicts in shared memory accesses.
+// Use __restrict__ keyword for pointers to hint no aliasing.
+// Consider loop unrolling for the k-loop in tile multiplication.
+// Optimize shared memory usage to prevent warp divergence.
+// Preload the next tile in the same stream for overlapping data transfer and computation.
+// Consider using mixed-precision arithmetic if applicable for performance gain.
+```

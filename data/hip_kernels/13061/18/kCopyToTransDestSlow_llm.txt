@@ -1,0 +1,3 @@
+// Ensure coalesced memory access by aligning threadIdx with memory layout
+// Use shared memory to reduce global memory accesses where possible
+// Avoid divergent branches to improve warp execution efficiency

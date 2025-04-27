@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Optimize block size and grid size to maximize occupancy and reduce idle threads.
+// Ensure coalesced memory access patterns to improve memory throughput.
+// Use constant memory for parameters like mean and std if they remain unchanged across threads.
+// Explore persistent threads techniques for dynamic workloads to minimize kernel launch overhead.
+// Consider pre-fetching data to hide memory latency.
+```

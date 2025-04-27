@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to store parts of x and mean for reducing global memory accesses.
+// Use memory coalescing by ensuring global memory access patterns are aligned and contiguous.
+// Ensure branch divergence is minimized in the for-loop iterations.
+// Increase thread occupancy by optimizing block size and threads per block.
+// Apply loop unrolling more extensively to further enhance throughput.
+// Replace repeated calculations with pre-computed constant values where possible.
+// Use __restrict__ keyword for pointers to indicate non-aliasing and improve compiler optimization.
+```

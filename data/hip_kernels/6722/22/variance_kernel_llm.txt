@@ -1,0 +1,8 @@
+```
+// Precompute reciprocal scale to avoid division inside the loop
+// Use a register for var_accumulator to reduce memory access
+// Avoid using powf by manually squaring diff for better performance
+// Perform scale multiplication at the end to reduce computation inside the loop
+// Ensure optimal memory coalescing when accessing x array
+// Consider using shared memory if variance computation becomes a bottleneck
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for input and output arrays to improve memory throughput.
+// Utilize shared memory to cache input data per block to reduce global memory access latency.
+// Ensure memory padding where necessary to avoid bank conflicts in shared memory.
+// Optimize thread block size to achieve better occupancy and balance between parallel threads and memory access.
+// Precompute constants like 1/(kW*kH) outside loops to reduce redundant calculations.
+```

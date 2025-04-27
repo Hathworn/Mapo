@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring sequential threads access sequential memory locations for velX, velY, velZ, and d_absv
+// Avoid divergent branching by ensuring each thread within a warp executes the same instruction path
+// Utilize shared memory if multiple threads need to access the same data, though in this case it seems each thread strictly accesses unique data
+// Minimize use of local variables to optimize register usage, especially if the kernel becomes more complex
+// Ensure kernel launch parameters (block size) are optimized for the GPU architecture to maximize occupancy
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory for faster access to frequently used data
+// Employ direct index calculation to minimize arithmetic operations in memory access
+// Utilize min function for boundary checks to avoid out-of-bound errors
+// Accumulate results from shared memory to reduce global memory writes
+// Ensure only one thread per block writes back to global memory to avoid data races
+```

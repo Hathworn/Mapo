@@ -1,0 +1,10 @@
+```c
+// Consider using __restrict__ qualifiers to reduce pointer aliasing overhead.
+// Utilize shared memory to coalesce global memory access and minimize bank conflicts.
+// Consider padding shared memory to prevent access conflicts and improve performance.
+// Prefetch global memory data into registers where possible to decrease memory latency.
+// Assess loop unrolling techniques to decrease the overhead of loop control statements.
+// Analyze shared memory usage to ensure maximum occupancy and efficiency.
+// Reduce redundant calculations by leveraging registers for variable storage.
+// Ensure data alignment at 128-byte boundaries to optimize memory transactions.
+```

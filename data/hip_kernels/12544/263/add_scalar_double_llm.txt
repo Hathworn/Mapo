@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure memory coalescing by accessing consecutive memory addresses wherever possible.
+// Evaluate the use of a constant memory for data that remain unchanged to improve cache performance.
+// Minimize branching within the kernel to enhance warp execution efficiency.
+// Analyze grid and block size configurations to maximize occupancy and minimize warp divergence.

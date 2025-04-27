@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses to optimize global memory bandwidth
+// Use warp-level primitives to reduce synchronization overheads with shared memory
+// Explore using atomic operations for reductions if applicable to reduce synchronization
+// Ensure memory accesses are aligned and minimize bank conflicts in shared memory

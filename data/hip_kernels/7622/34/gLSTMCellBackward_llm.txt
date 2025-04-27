@@ -1,0 +1,8 @@
+```
+// Optimize memory coalescing by ensuring data access patterns align with warp size
+// Consider using shared memory to reduce redundant global memory accesses
+// Minimize atomic operations if possible by redesigning data dependencies
+// Ensure alignment of arrays to facilitate memory coalescing
+// Evaluate the use of loop unrolling for increased instruction-level parallelism
+// Assess possibility of using constant memory for frequently accessed variables
+```

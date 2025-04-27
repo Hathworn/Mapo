@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for the input data to reduce global memory accesses.
+// Preload the largest value for normalization into a register to minimize recalculations.
+// Explore coalesced memory access patterns to improve memory throughput.
+// Ensure the data accessed by threads is aligned for better memory performance.
+// Consider launching more blocks to improve occupancy in case the kernel is compute-bound.
+```

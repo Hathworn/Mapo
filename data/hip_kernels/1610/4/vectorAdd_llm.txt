@@ -1,0 +1,7 @@
+```
+// Use coalesced memory accesses for better global memory throughput
+// Ensure proper alignment of arrays A, B, C to avoid unaligned accesses
+// Consider shared memory if further speedup is needed by reducing global memory traffic
+// Avoid bank conflicts if shared memory is used in further optimizations
+// Try using asynchronous memory operations for overlapping data transfer and computation
+```

@@ -1,0 +1,7 @@
+```c
+// Coalesce global memory accesses to improve memory bandwidth.
+// Utilize shared memory to cache data and reduce global memory accesses.
+// Align memory access patterns within the warp to avoid bank conflicts.
+// Use __syncthreads() judiciously to ensure data consistency when accessing shared memory.
+// Minimize redundant calculations by storing intermediate results in registers or shared memory.
+```

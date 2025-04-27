@@ -1,0 +1,6 @@
+```
+// Use shared memory to store cudaChromo[idx] for faster access
+// Prefetch cudaNewpopulation[i] to improve memory access patterns
+// Consider using warp level primitives for better synchronization
+// Minimize the number of global memory accesses by caching bestChromo in registers
+```

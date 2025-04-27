@@ -1,0 +1,4 @@
+// Consider aligning memory accesses for a[i] and b[i] to coalesce global memory access.
+// Consider using loop unrolling to optimize the stride-based loop execution.
+// Ensure shared memory usage does not exceed hardware limits for scalability.
+// Use atomic operations if needed to ensure correctness in parallel reduction.

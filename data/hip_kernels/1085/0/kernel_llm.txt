@@ -1,0 +1,8 @@
+```
+// Consider reducing shared memory usage for better performance
+// Ensure coalesced memory access for global memory reads and writes
+// Optimize memory access patterns to minimize bank conflicts in shared memory
+// Adjust block and thread dimensions for optimal occupancy and execution efficiency
+// Include conditional checks to prevent out-of-bounds memory access in edge cases
+// Use __syncthreads() effectively to avoid unnecessary synchronization points
+```

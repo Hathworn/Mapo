@@ -1,0 +1,8 @@
+```cpp
+// Minimize global memory accesses by computing indices as needed
+// Reduce divergence by ensuring only one thread executes control flow statements like printf
+// Use shared memory to store intermediate results when possible
+// Coalesce memory accesses by ensuring threads access contiguous memory locations
+// Optimize memory transfers between host and device by using asynchronous operations
+// Ensure kernel launches are done with optimal block and grid sizes for better occupancy
+```

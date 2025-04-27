@@ -1,0 +1,4 @@
+// Use memory coalescing by ensuring threads in warp access contiguous memory addresses.
+// Consider using shared memory to store elements of a[] and b[] for faster access within a block.
+// Assess the use of texture memory for read-only data to improve cache performance.
+// Optimize stride calculation for better warp efficiency and minimal divergence.

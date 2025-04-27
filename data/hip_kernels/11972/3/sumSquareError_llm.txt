@@ -1,0 +1,5 @@
+// Optimize global memory access by minimizing redundant reads/writes
+// Use shared memory for intermediate calculations to reduce global memory access
+// Explore loop unrolling for both inner loops to improve performance
+// Consider using atomic operations if race conditions need to be avoided when writing to SA
+// Align data arrays in memory for better memory coalescing

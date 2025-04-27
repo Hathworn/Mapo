@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data structures and access patterns.
+// Utilize shared memory for frequently accessed data to reduce global memory access.
+// Minimize warp divergence by using uniform control flow within warps.
+// Consider loop unrolling for the innermost loop to increase throughput.
+// Optimize usage of registers by minimizing the number of temporary variables.
+// Prefetch data to registers to hide global memory latency.
+```

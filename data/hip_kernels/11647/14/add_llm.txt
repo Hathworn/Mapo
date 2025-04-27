@@ -1,0 +1,6 @@
+```c
+// Consider coalescing memory accesses to improve throughput by ensuring contiguous threads access contiguous memory locations.
+// Use shared memory to reduce global memory access latency if the offset is small or if data reuse is possible within a block.
+// Ensure that 'offset' logic does not cause non-coalesced accesses, potentially by padding or restructuring data layout.
+// Optimize block size based on the GPU architecture's capacity for concurrent threads and shared memory availability.
+```

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for Y, dY, and dX to improve memory throughput
+// Consider using float2 or float4 for vectorized memory operations to further optimize memory access
+// Align shared memory access for reduction_buffer to avoid bank conflicts
+// Reduce global memory access latency by caching frequently accessed variables in registers
+// Ensure efficient block size selection to maximize occupancy and hide memory latency
+```

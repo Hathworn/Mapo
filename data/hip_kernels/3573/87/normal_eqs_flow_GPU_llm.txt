@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to store A-matrix temporarily to reduce global memory accesses.
+// Consider coalesced global memory accesses for d_flow_compact, d_Zbuffer_flow_compact, and d_ind_flow_Zbuffer.
+// Minimize divergent branches to improve performance.
+// Use __ldg() to load read-only data from global memory for better caching.
+// Consider merging small kernels to reduce kernel launch overheads.
+// Prefetch data to registers to minimize memory latency.
+```

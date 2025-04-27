@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ qualifiers to improve memory access performance by indicating no aliasing
+// Ensure coalesced memory access for improved throughput by aligning data appropriately
+// Use shared memory to cache `mask` if there's significant reuse within the warp
+// Explore using warp-level primitives to reduce branching overhead in the conditional statement
+// Minimize divergent branches by reorganizing condition checks or data as feasible
+// Assess if prefetching `mask` and `x` values can reduce latency
+// Evaluate grid and block size configurations for optimal occupancy
+```

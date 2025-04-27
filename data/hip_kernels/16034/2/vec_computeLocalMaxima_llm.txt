@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for input and localMaxima arrays
+// Use shared memory to reduce redundant global memory loads within inner loops
+// Minimize the divergence in the control flow, especially in loops for neighbor comparison
+// Implement loop unrolling to improve performance of the nested loops
+// Consider using texture memory for read-only input access to take advantage of caching
+```

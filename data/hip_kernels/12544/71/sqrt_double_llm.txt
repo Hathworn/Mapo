@@ -1,0 +1,3 @@
+// Use shared memory for data loading to minimize global memory access latency
+// Adjust shared memory size based on block size for efficient utilization
+// Ensure proper synchronization (__syncthreads) when reading from shared memory

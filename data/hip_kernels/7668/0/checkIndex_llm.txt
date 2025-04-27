@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Align memory accesses to improve coalescing and throughput.
+// Minimize divergent branching within this kernel.
+// Evaluate the use of warp-synchronous programming where applicable.
+// Ensure that grid and block dimensions are optimized for the target architecture.
+// Analyze the necessity of printf as it may impact performance and should be minimized in production.
+```

@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce redundant global memory accesses.
+// Reduce thread divergence by ensuring all threads within a block follow the same execution path.
+// Consider using atomic operations if race conditions exist over shared memory writes.
+```

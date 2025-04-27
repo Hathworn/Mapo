@@ -1,0 +1,6 @@
+```
+// Ensure the shared memory arrays do not exceed the shared memory limits of the device
+// Avoid bank conflicts in shared memory access by considering padding
+// Coalesce global memory accesses to optimize memory throughput
+// Minimize thread divergence to improve warp efficiency
+```

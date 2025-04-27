@@ -1,0 +1,6 @@
+```
+// Ensure coalesced global memory access for input and output arrays
+// Minimize shared memory usage to only the necessary size
+// Use __syncthreads() to synchronize threads when dealing with shared memory
+// Ensure that computation can be overlapped with memory operations when possible
+```

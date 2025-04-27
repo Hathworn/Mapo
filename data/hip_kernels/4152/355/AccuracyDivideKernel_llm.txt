@@ -1,0 +1,5 @@
+```
+// Only utilize one thread to prevent data race conditions.
+// Performing division in the first thread ensures consistent results.
+// Avoids unnecessary global memory access by limiting operations to one thread.
+```

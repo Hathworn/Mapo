@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for scales_c to reduce global memory access latency.
+// Ensure memory access patterns are coalesced to improve memory throughput.
+// Minimize divergent branches to maximize warp execution efficiency.
+// Preload data into registers where possible to reduce memory access time.
+```

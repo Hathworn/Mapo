@@ -1,0 +1,5 @@
+// Use shared memory to cache filters to reduce global memory accesses
+// Optimize memory access patterns for coalesced reads and writes
+// Minimize usage of __syncthreads() by consolidating operations
+// Consider kernel launch configuration to improve occupancy
+// Assess using texture memory for read-only data like filters

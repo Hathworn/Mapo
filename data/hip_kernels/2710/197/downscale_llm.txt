@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data within each block for faster access
+// Coalesce global memory accesses to gradOutput_data for improved efficiency
+// Utilize vectorized loads/stores if possible for gradOutput_data and gradInput_data
+// Consider loop unrolling in the for loops for better performance
+// Use __restrict__ qualifier for gradInput_data and gradOutput_data pointers to aid compiler optimizations
+```

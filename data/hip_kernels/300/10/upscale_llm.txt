@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache input data for better memory access patterns
+// Coalesce global memory accesses by ensuring that consecutive threads access consecutive elements
+// Use loop unrolling if applicable to increase instruction throughput in critical sections
+// Avoid branch divergence by ensuring threads within a warp follow the same execution path
+// Experiment with different block sizes to optimize memory transactions and occupancy
+```

@@ -1,0 +1,4 @@
+// Use shared memory for intermediate storage to reduce global memory access latency.
+// Utilize atomic operations to safely update shared memory and prevent race conditions.
+// Minimize divergence by avoiding conditional statements within data processing loop.
+// Avoid repeated global memory accesses by recalculating values like `stride` and `index` upfront.

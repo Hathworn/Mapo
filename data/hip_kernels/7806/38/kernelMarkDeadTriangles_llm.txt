@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory reads.
+// Ensure coalesced memory access pattern for cmarker and cnewtri arrays.
+// Use __restrict__ qualifiers for pointer parameters to help compiler optimize memory access. 
+// Reduce divergent branching by using ternary operations as shown in the condition.

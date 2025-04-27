@@ -1,0 +1,7 @@
+```
+// Use shared memory to store queryAtrib and currAtrib for faster access
+// Employ coalesced memory accesses when reading from query and atribsValues
+// Unroll the loop for comparing queryAtrib and currAtrib to reduce loop overhead
+// Use atomic operations or reduction techniques if resultPossibilities might be updated concurrently 
+// Optimize index calculations and avoid using pointers in the index expressions to prevent race conditions
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data
+// Utilize shared memory if there are repeated accesses to the same data
+// Opt for a larger block size to increase occupancy
+// Aim for memory accesses that are sequential to minimize latency
+// Use the __restrict__ keyword for pointers if aliasing is known not to occur
+```

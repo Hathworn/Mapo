@@ -1,0 +1,6 @@
+```
+// Minimize divergent code by ensuring gid_0 and gid_1 calculations are consistent across the warp.
+// Optimize memory access patterns by aligning data structures to coalesce memory accesses.
+// Avoid bank conflicts by ensuring proper access patterns in shared or global memory.
+// Leverage shared memory for frequently accessed data if possible to reduce global memory accesses.
+```

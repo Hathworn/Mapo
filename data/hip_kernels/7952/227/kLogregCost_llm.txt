@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce memory access latency by caching repeated data in sharedNumMax for faster access.
+// Utilize __syncthreads() efficiently to ensure correct synchronization of shared data among threads within the same block.
+// Optimize reduction operation by performing it in shared memory rather than global memory to minimize global memory transactions.
+```

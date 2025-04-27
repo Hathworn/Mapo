@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access latency
+// Use index calculations to coalesce global memory access
+// Ensure the grid size is sufficient to cover large input sizes
+// Read global memory once and use shared memory for frequent access
+// Employ boundary checks to avoid out-of-bounds memory access
+// Use #pragma unroll to improve loop performance by unrolling
+// Limit the use of __syncthreads() to critical sections only
+```

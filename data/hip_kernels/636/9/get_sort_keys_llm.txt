@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory for frequently accessed data
+// Reduce bank conflicts in shared memory by padding data appropriately
+// Employ coalesced memory access patterns to boost throughput
+// Consider using texture or constant memory for read-only data access where applicable
+// Minimize divergence within warp by aligning conditional operations

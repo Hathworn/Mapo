@@ -1,0 +1,9 @@
+```cpp
+// Consider coalescing global memory accesses to improve memory bandwidth usage.
+// Evaluate the use of shared memory and determine if the size can be optimized.
+// Ensure __syncthreads() is correctly placed to avoid race conditions.
+// Minimize the use of registers by optimizing variable usage.
+// Use warp-level reductions for faster parallel reduction.
+// Consider using atomics for global memory writes if possible.
+// Check for bank conflicts in shared memory and restructure if necessary to avoid them.
+```

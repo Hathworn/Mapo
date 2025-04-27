@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses by ensuring d_in is accessed in a continuous pattern by all threads.
+// Use shared memory to reduce global memory accesses and achieve lower latency.
+// Implement loop unrolling in the reduction loop to maximize parallel reduction efficiency.
+// Check for bank conflicts in shared memory accesses and optimize by using padding if necessary.
+// Use warp-level primitives to reduce synchronization overhead, especially for intra-warp communication.
+```

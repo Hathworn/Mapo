@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for particles if data is reused within the same block
+// Optimize for memory coalescing by ensuring particles array access is contiguous
+// Utilize fast math operations where possible to improve performance
+// If LEshear is constant, store it in a shared memory to reduce global memory access
+```

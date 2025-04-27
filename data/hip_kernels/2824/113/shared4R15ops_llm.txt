@@ -1,0 +1,8 @@
+```
+// Utilize shared memory for coalesced global memory access
+// Ensure shared memory usage aligns with warp size to avoid bank conflicts
+// Precompute and store constants to minimize redundant calculations
+// Load data into shared memory first to improve data locality
+// Use shared memory to reduce global memory access frequency
+// Consider unrolling loops if divergence is detected
+```

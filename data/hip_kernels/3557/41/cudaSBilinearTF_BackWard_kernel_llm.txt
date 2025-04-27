@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for repeated values
+// Consider coalesced memory access patterns for loading diffInput
+// Avoid atomic operations if possible by restructuring computation
+// Preload constants calculated per-thread to avoid redundant computation
+// Use loop unrolling pragmatically where beneficial for performance and readability
+```

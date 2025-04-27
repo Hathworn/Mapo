@@ -1,0 +1,7 @@
+```cpp
+// Minimize data reads by loading pE[id] and x into registers.
+// Consider coalesced memory access to improve bandwidth utilization.
+// Evaluate if shared memory can be used to store reused common terms within a block.
+// Reduce divergence by ensuring threads within a warp follow the same execution path.
+// Align memory allocation to ensure proper coalescing when accessing pA and pE arrays.
+```

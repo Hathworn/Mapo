@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache vg_a and vg_b subarrays to reduce global memory access.
+// Ensure coalesced memory access patterns for vg_a and vg_b to improve performance.
+// Optimize use of shared memory by ensuring all threads in the block contribute.
+// Align data structures to avoid bank conflicts in shared memory.
+// Utilize __syncthreads() cautiously to minimize performance impact.
+```

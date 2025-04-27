@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Align accesses to shared memory to minimize bank conflicts
+// Preload data into shared memory to enhance coalesced memory access
+// Avoid redundant calculations inside loops by pre-calculating commonly used values

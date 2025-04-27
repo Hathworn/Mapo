@@ -1,0 +1,6 @@
+// Load input to shared memory in coalesced fashion for better memory access efficiency.
+// Use vector loads (e.g., int2 or int4) for more efficient shared memory access.
+// Avoid bank conflicts in shared memory by ensuring proper memory alignment.
+// Add loop unrolling for operations within shared memory to reduce overhead.
+// Minimize __syncthreads() calls to reduce warp synchronization overhead.
+// Ensure boundary checks use conditional branching to avoid unnecessary divergence.

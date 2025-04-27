@@ -1,0 +1,5 @@
+// Consider using shared memory to store the input array 'X' if multiple threads access nearby elements.
+// Use warp-level operations to minimize divergence and improve memory access patterns.
+// Ensure 'X' and 'Y' are aligned and padded to optimize memory coalescing.
+// Investigate if using a larger thread block size could enhance performance by increasing occupancy.
+// Profile the kernel execution to identify potential latency hiding opportunities.

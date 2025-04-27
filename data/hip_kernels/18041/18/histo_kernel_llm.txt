@@ -1,0 +1,9 @@
+```
+// Load histogram data into shared memory to reduce global memory accesses
+// Use __syncthreads() to synchronize threads after initializing shared memory
+// Calculate unique starting index for each thread based on block and grid dimensions
+// Use stride loop to efficiently process larger data sets
+// Use atomic operations in shared memory to reduce contention and bank conflicts
+// Synchronize threads before merging results back to global memory
+// Reduce global atomic operations by accumulating results in shared memory first
+```

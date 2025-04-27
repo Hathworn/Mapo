@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache repeated data fetches for `sparseIndexEvenShift2D` and `sparseIndexOddShift2D`.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory addresses in `fft`.
+// Align data access to 128-byte segments to fully utilize memory bandwidth.
+// Check for bank conflicts in shared memory usage, and adjust data access patterns to minimize conflicts.
+// Ensure `fft`, `sparseIndexEvenShift2D`, and `sparseIndexOddShift2D` are accessed from global memory efficiently.
+```

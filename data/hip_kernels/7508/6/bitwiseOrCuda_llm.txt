@@ -1,0 +1,7 @@
+```
+// Use __restrict__ to improve compiler optimization possibilities
+// Consider using shared memory to reduce global memory accesses if row sizes are uniform
+// Ensure coalesced memory access patterns for better global memory efficiency
+// Optimize thread block size to maximize occupancy and reduce latency
+// Evaluate the impact of avoiding modulo operations on row offset calculations
+```

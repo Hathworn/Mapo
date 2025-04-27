@@ -1,0 +1,4 @@
+// Utilize shared memory to minimize global memory accesses.
+// Load inputs to shared memory to reduce access times.
+// Use __syncthreads() to ensure all threads have synchronized shared memory usage.
+// Perform calculations in shared memory to optimize memory bandwidth usage.

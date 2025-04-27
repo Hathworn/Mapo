@@ -1,0 +1,8 @@
+```
+// Calculate scale outside of the kernel for efficient reuse
+// Use shared memory to reduce global memory accesses
+// Optimize memory coalescing by ensuring contiguous access patterns
+// Consider unrolling loops for better performance
+// Use __syncthreads() appropriately to synchronize shared memory usage
+// Compute block sums in a separate loop to avoid thread divergence
+```

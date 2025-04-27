@@ -1,0 +1,8 @@
+```
+// Use warp-level intrinsics to reduce synchronization overhead.
+// Ensure input data is coalesced to improve memory access efficiency.
+// Minimize usage of __syncthreads() by leveraging warp-level reduction.
+// Optimize shared memory usage by reusing it across different reduction stages.
+// Align shared memory allocation to avoid bank conflicts.
+// Consider using __shfl_down_sync instead of manual index calculations for warp shuffle operations.
+```

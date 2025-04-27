@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses by loading mask values
+// Avoid redundant global memory accesses by leveraging shared memory for mask referencing
+// Optimize memory transactions by adjusting shared memory size if xstrides0 is greater than 32

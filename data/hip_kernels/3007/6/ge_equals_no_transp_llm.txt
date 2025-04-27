@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for better data locality if memory access pattern allows.
+// Ensure coalesced memory accesses by aligning gid_0 and gid_1 to row-major or column-major order.
+// Minimize divergent branches by revising condition checks for best warp execution.
+// Balance the workload among threads to prevent idle threads due to boundary conditions.
+// Consider loop unrolling if applicable for enhancing instruction-level parallelism.
+// Use the __restrict__ qualifier if possible to inform the compiler about non-overlapping data.
+```

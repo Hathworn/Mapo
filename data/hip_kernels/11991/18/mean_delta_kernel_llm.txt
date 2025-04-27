@@ -1,0 +1,7 @@
+```
+// Use shared memory to store partial sums to reduce global memory access latency
+// Minimize divergent branches by using uniform conditions
+// Align data allocations to 256 bytes for better memory performance
+// Prefetch data from global memory into registers before arithmetic operations
+// Ensure coalesced access patterns when reading 'delta' and writing 'mean_delta'
+```

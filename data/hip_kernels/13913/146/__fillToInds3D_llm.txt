@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to cache I, J, K arrays if reused frequently
+// Ensure B array is accessed coalesced for better memory throughput
+// Minimize divergent branching by uniformly applying conditional logic
+// Use loop unrolling if the number of iterations is known to be small and fixed
+// Evaluate if additional blocking or grid strategy adjustments could yield better performance
+```

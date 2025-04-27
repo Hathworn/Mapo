@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses for e_values
+// Optimize atomicMax to reduce contention by using shared memory for intermediate results
+// Minimize synchronization by reducing __syncthreads() calls if possible
+// Ensure coalesced memory access pattern to maximize memory throughput
+```

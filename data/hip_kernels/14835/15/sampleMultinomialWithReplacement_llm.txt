@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access for normDistPrefixSum
+// Use shared memory to cache frequently accessed data if possible
+// Consider splitting the binarySearchForMultinomial into smaller functions to improve instruction-level parallelism
+// Avoid warp divergence by aligning the control flow
+// Decrease the grid and block dimensions to match the computational needs
+// Use a fixed pattern for hiprand_uniform calls to decrease randomness divergence
+```

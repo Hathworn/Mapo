@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to store frequently accessed data within a block to reduce global memory access.
+// Group memory accesses to enable coalesced memory accesses, reducing memory transaction overhead.
+// Minimize atomic operations or use atomic operations that are contention-free to improve performance.
+// Optimize thread block sizes to ensure maximum occupancy and efficient use of computational resources.
+```

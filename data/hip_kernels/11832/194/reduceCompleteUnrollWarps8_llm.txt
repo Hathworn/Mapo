@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses.
+// Apply loop unrolling to reduce loop overhead and increase ILP.
+// Ensure __syncthreads() is used to synchronize threads before shared memory usage.
+// Use volatile keyword to prevent compiler optimization in warp-level reductions.
+// Consider minimizing bank conflicts within shared memory access.
+```

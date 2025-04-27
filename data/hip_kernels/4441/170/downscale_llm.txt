@@ -1,0 +1,5 @@
+// Use shared memory to cache gradOutput_data for faster access within the block
+// Consider using warp-level primitives to reduce the overhead of accumulation
+// Optimize memory access patterns to ensure coalesced global memory reads
+// Minimize conditional checks within the loop to improve branch prediction
+// Investigate the use of texture memory or other HIP-specific memory enhancements

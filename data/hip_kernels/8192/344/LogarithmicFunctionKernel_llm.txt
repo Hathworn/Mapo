@@ -1,0 +1,5 @@
+// Consider using shared memory for common computations to reduce global memory access
+// Coalesce global memory accesses for input and output arrays
+// Ensure memory alignment to improve memory read/write efficiency
+// Evaluate if using float2 or float4 types could provide vectorization benefits
+// Profile to check memory bandwidth utilization and optimize warp occupancy accordingly

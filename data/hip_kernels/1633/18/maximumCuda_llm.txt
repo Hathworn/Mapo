@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced memory access by aligning data properly
+// Consider using vectorized data types for higher memory throughput
+// Experiment with different block and grid sizes for optimal performance
+// Minimize divergent branching for efficient warp execution
+// Use __restrict__ keyword on pointers to enable additional compiler optimizations
+```

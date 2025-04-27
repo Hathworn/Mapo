@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache field data to reduce global memory accesses
+// Avoid bank conflicts in shared memory access by using padding if needed
+// Optimize memory coalescing for scores array by accessing consecutive memory locations
+// Unroll the inner loops to reduce loop overhead and improve performance
+// Use __restrict__ keyword for pointer arguments if possible to help the compiler optimize memory access
+// Consider using textures or read-only data cache for constant fields if available
+// Ensure grid and block dimensions are optimized to fully utilize the GPU
+// Consider using warp-level primitives for score calculations to further enhance performance
+```

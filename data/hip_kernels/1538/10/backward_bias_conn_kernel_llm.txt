@@ -1,0 +1,2 @@
+// Consider using shared memory to store delta values for faster access.
+// Minimize atomicAdd operations by aggregating results within blocks before updating bias_updates.

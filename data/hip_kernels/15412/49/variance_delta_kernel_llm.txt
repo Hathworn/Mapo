@@ -1,0 +1,9 @@
+```
+// Use shared memory to minimize global memory access.
+// Ensure that the data loaded into shared memory fits within the block size.
+// Synchronize threads after loading shared memory to ensure data consistency.
+// Prefetch mean and variance data into shared memory for faster access.
+// Reduce global memory access by computing on shared memory values.
+// Ensure blocks are appropriately sized to utilize shared memory effectively.
+// Consider optimal grid and block dimensions for memory access patterns.
+```

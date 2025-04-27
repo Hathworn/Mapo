@@ -1,0 +1,5 @@
+// Consider using coalesced memory accesses to improve memory throughput.
+// Use appropriate block size (DP_BLOCKSIZE) that fits within the shared memory and warp size constraints.
+// Ensure that 'eidx' calculations minimize divergence and maximize occupancy.
+// Consider using atomic operations if precision is not critical and race conditions can be managed.
+// Check shared memory bank conflicts to optimize shared memory usage.

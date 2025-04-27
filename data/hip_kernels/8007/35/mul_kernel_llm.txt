@@ -1,0 +1,5 @@
+// Consider coalescing memory access for both X and Y for improved memory bandwidth utilization.
+// For better memory access patterns, ensure INCX and INCY stride does not cause non-coalesced access.
+// If INCX and INCY are always 1, eliminate them for direct access and potential compiler optimizations.
+// Evaluate using shared memory for frequently accessed data within thread blocks.
+// Check if prefetching data might improve cache performance depending on the access patterns.

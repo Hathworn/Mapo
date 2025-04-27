@@ -1,0 +1,4 @@
+// Use shared memory to cache frequently accessed data to reduce global memory access latency.
+// Use warp-level operations to maximize memory coalescing.
+// Consider loop unrolling to potentially increase performance.
+// Minimize divergence by ensuring all threads enter the same conditional paths when possible.

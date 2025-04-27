@@ -1,0 +1,8 @@
+```
+// Ensure grid and block dimensions are configured to maximize occupancy
+// Use __restrict__ keyword for pointers to help the compiler with optimizations
+// Prefetch data into shared memory if further optimizations are needed
+// Consider using warp-level primitives for intra-warp communication if applicable
+// Align data access to avoid bank conflicts in shared memory
+// Minimize divergent branches within the kernel
+```

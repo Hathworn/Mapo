@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by organizing threads such that consecutive threads access consecutive memory locations.
+// Minimize the use of conditionals within the kernel to reduce warp divergence.
+// Consider using shared memory if multiple threads within a block will use the same data.
+// Investigate potential register pressure and optimize variable usage to prevent spilling.

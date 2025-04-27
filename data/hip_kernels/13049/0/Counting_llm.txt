@@ -1,0 +1,8 @@
+```
+// Use shared memory to store data blocks to reduce global memory accesses
+// Coalesce memory accesses by ensuring contiguous threads access contiguous data locations
+// Ensure memory alignment to optimize global memory read/write operations
+// Avoid memory bank conflicts when using shared memory
+// Consider using __restrict__ to indicate no-aliasing to the compiler
+// Ensure the data size and grid size align for optimal hardware utilization
+```

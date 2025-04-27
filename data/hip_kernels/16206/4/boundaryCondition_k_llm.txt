@@ -1,0 +1,5 @@
+```
+// Consider coalescing memory accesses by using contiguous threads to access continuous memory locations for 'payoff'
+// Ensure that 'spotSize' and 'strike' are loaded into shared memory if reused across multiple threads to reduce global memory reads
+// Analyze memory access pattern to ensure optimal usage of hardware capabilities, such as memory banks or caches
+```

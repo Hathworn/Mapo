@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses to improve memory bandwidth utilization
+// Utilize vectorized memory loads and stores if possible for better memory efficiency
+// Prefetch data into shared memory to hide global memory latency
+// Ensure global memory accesses are aligned for improved performance
+// Limit divergent branches to keep all threads in a warp on the same execution path
+// Optimize shared memory usage to fit within hardware limitations for best performance
+```

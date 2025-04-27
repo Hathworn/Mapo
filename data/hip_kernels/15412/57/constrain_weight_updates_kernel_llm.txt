@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory traffic
+// Coalesce global memory accesses to weights_gpu and weight_updates_gpu for better memory performance
+// Minimize branch divergence by restructuring conditional statements
+// Preload weights_gpu[i] and weight_updates_gpu[i] to local registers to optimize memory access
+```

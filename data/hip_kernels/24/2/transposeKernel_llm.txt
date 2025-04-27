@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses.
+// Ensure coalesced memory access both when loading into and storing from shared memory.
+// Use TILE_DIM + 1 to avoid shared memory bank conflicts.
+// Apply boundary checks to prevent out-of-bound memory access.
+// Leverage grid and block dimensions for efficient data partitioning.

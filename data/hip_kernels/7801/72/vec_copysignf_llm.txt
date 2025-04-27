@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing consecutive memory locations
+// Use shared memory if reused data within a block is needed
+// Ensure enough active warps to hide memory latency by tweaking blockDim.x and gridDim.x
+// Consider using __restrict__ pointers for potential compiler optimizations
+// Optimize loop bounds calculation for better performance if array sizes are known to be divisible by warp size
+```

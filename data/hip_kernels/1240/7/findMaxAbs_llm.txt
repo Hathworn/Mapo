@@ -1,0 +1,6 @@
+```
+// Consider prefetching data into shared memory to reduce global memory access latency
+// Use coalesced memory access patterns for d_rowVec, d_colVec, and d_val to improve bandwidth utilization
+// Ensure points array access maintains memory coalescing for improved performance
+// Use atomic operations to accumulate values in d_umat2 if parallel threads write to the same location
+```

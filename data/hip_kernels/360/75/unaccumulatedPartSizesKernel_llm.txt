@@ -1,0 +1,4 @@
+// Use shared memory to decrease access latency for accumulatedSize
+// Ensure efficient synchronization using __syncthreads
+// Minimize divergent branches inside conditional statements
+// Consider memory coalescing for sizes to improve global memory access patterns

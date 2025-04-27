@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8SubtractPfS_S_ii' function" {
+	label="CFG for '_Z8SubtractPfS_S_ii' function";
+
+	Node0x4741360 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = shl i32 %6, 8\l  %8 = ashr exact i32 %7, 4\l  %9 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %10 = add nsw i32 %8, %9\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %12 = shl i32 %11, 8\l  %13 = ashr exact i32 %12, 4\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %15 = add nsw i32 %13, %14\l  %16 = icmp slt i32 %10, %3\l  %17 = icmp slt i32 %15, %4\l  %18 = select i1 %16, i1 %17, i1 false\l  br i1 %18, label %19, label %33\l|{<s0>T|<s1>F}}"];
+	Node0x4741360:s0 -> Node0x4743960;
+	Node0x4741360:s1 -> Node0x47439f0;
+	Node0x4743960 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%19:\l19:                                               \l  %20 = shl i32 %3, 8\l  %21 = ashr exact i32 %20, 8\l  %22 = shl i32 %15, 8\l  %23 = ashr exact i32 %22, 8\l  %24 = mul nsw i32 %21, %23\l  %25 = add nsw i32 %24, %10\l  %26 = sext i32 %25 to i64\l  %27 = getelementptr inbounds float, float addrspace(1)* %1, i64 %26\l  %28 = load float, float addrspace(1)* %27, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %29 = getelementptr inbounds float, float addrspace(1)* %2, i64 %26\l  %30 = load float, float addrspace(1)* %29, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %31 = fsub contract float %28, %30\l  %32 = getelementptr inbounds float, float addrspace(1)* %0, i64 %26\l  store float %31, float addrspace(1)* %32, align 4, !tbaa !5\l  br label %33\l}"];
+	Node0x4743960 -> Node0x47439f0;
+	Node0x47439f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%33:\l33:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  ret void\l}"];
+}

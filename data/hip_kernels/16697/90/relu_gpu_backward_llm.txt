@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory access.
+// Ensure coalesced memory access to outgrad during shared memory load.
+// Minimize shared memory bank conflicts while accessing shared_outgrad.
+// Check if blockDim.x is optimized for hardware-specific shared memory size.
+// Use __syncthreads() only when necessary to prevent performance bottlenecks.

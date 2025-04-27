@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Utilize texture memory for read-only data like d_g, d_b for faster access
+// Coalesce global memory accesses for d_r_output to improve memory throughput
+// Aim for a higher occupancy by increasing block size or reducing register usage
+```

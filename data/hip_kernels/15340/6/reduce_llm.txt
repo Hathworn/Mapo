@@ -1,0 +1,5 @@
+// Consider using warp-level primitives to reduce synchronization overhead
+// Ensure that shared memory size does not exceed the block limit
+// Coalesce global memory accesses for improved bandwidth
+// Use loop unrolling for better performance where possible
+// Minimize the use of atomic operations by reducing them to one per block

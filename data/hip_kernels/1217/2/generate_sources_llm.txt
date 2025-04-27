@@ -1,0 +1,8 @@
+```
+// Ensure data is coalesced by having contiguous thread IDs access contiguous memory locations.
+// Minimize branching inside the kernel to improve warp execution efficiency.
+// Use shared memory if there are frequent redundant global memory accesses.
+// Consider loop unrolling to reduce the overhead of the loop control statements.
+// Try to maximize occupancy by adjusting block size and grid size.
+// Avoid using global memory for intermediate variables, use registers instead.
+```

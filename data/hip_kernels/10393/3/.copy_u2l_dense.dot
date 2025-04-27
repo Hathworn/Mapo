@@ -1,0 +1,10 @@
+digraph "CFG for 'copy_u2l_dense' function" {
+	label="CFG for 'copy_u2l_dense' function";
+
+	Node0x5b96080 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = freeze i32 %12\l  %14 = freeze i32 %1\l  %15 = sdiv i32 %13, %14\l  %16 = mul i32 %15, %14\l  %17 = sub i32 %13, %16\l  %18 = mul nsw i32 %17, %1\l  %19 = add nsw i32 %18, %15\l  %20 = icmp sgt i32 %17, %15\l  %21 = icmp slt i32 %19, %2\l  %22 = select i1 %20, i1 %21, i1 false\l  br i1 %22, label %23, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x5b96080:s0 -> Node0x5b98500;
+	Node0x5b96080:s1 -> Node0x5b98590;
+	Node0x5b98500 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%23:\l23:                                               \l  %24 = sext i32 %12 to i64\l  %25 = getelementptr inbounds double, double addrspace(1)* %0, i64 %24\l  %26 = load double, double addrspace(1)* %25, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %27 = sext i32 %19 to i64\l  %28 = getelementptr inbounds double, double addrspace(1)* %0, i64 %27\l  store double %26, double addrspace(1)* %28, align 8, !tbaa !7\l  br label %29\l}"];
+	Node0x5b98500 -> Node0x5b98590;
+	Node0x5b98590 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

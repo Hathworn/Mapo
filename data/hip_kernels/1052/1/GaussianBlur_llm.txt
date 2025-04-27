@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// The mask array can be stored in shared memory to reduce register pressure
+// Consider prefetching data to shared memory to reduce latency when accessing neighboring pixels
+// This might allow further optimization by reducing conditional checks on border pixels
+// For non-edge pixels, implement coalesced memory access patterns to improve bandwidth
+```

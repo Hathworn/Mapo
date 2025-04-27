@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access if applicable
+// Coalesce global memory accesses by sequential threads
+// Consider optimizing thread block size for better occupancy
+// Use __restrict__ to help the compiler with pointer aliasing
+// Utilize memory access patterns to improve cache performance
+```

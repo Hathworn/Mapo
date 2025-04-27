@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads with memory boundaries
+// Minimize divergent branches by consolidating conditions
+// Consider using shared memory to store frequently reused data to reduce global memory accesses
+// Utilize __syncthreads() efficiently to synchronize threads only when necessary
+// Optimize block and grid dimensions to maximize occupancy
+```

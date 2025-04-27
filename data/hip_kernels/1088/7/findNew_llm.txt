@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache cBar and cHalf values to reduce global memory reads.
+// Ensure memory coalescing by aligning data accesses in cCurr, cBar, and cHalf.
+// Investigate the use of vectorized types like double2 for potential memory throughput improvements.
+// Profile memory access patterns to ensure no uncoalesced or divergent accesses occur.
+// Optimize block and grid dimensions to maximize occupancy and memory bandwidth.
+```

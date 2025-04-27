@@ -1,0 +1,4 @@
+// Prioritize reducing memory divergence by ensuring threads within a warp access contiguous memory locations.
+// Minimize division operations to improve performance, especially in loops.
+// Use shared memory to reduce global memory accesses if data re-use is possible within the kernel.
+// Consider using constant memory for frequently accessed variables like MOD_SZ, p1, and p2.

@@ -1,0 +1,15 @@
+digraph "CFG for '_Z12prelu_kernelPKfPfiiiS0_' function" {
+	label="CFG for '_Z12prelu_kernelPKfPfiiiS0_' function";
+
+	Node0x4950340 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !5, !invariant.load !6\l  %12 = zext i16 %11 to i32\l  %13 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %14 = mul i32 %13, %12\l  %15 = add i32 %14, %7\l  %16 = icmp slt i32 %15, %2\l  br i1 %16, label %17, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x4950340:s0 -> Node0x49512d0;
+	Node0x4950340:s1 -> Node0x49522f0;
+	Node0x49512d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%17:\l17:                                               \l  %18 = sext i32 %15 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %0, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %21 = fcmp contract ult float %20, 0.000000e+00\l  br i1 %21, label %22, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x49512d0:s0 -> Node0x4953850;
+	Node0x49512d0:s1 -> Node0x49538e0;
+	Node0x4953850 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%22:\l22:                                               \l  %23 = srem i32 %15, %3\l  %24 = sdiv i32 %23, %4\l  %25 = sext i32 %24 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %5, i64 %25\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  %28 = fmul contract float %20, %27\l  br label %29\l}"];
+	Node0x4953850 -> Node0x49538e0;
+	Node0x49538e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%29:\l29:                                               \l  %30 = phi float [ %28, %22 ], [ %20, %17 ]\l  %31 = getelementptr inbounds float, float addrspace(1)* %1, i64 %18\l  store float %30, float addrspace(1)* %31, align 4, !tbaa !7\l  br label %32\l}"];
+	Node0x49538e0 -> Node0x49522f0;
+	Node0x49522f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  ret void\l}"];
+}

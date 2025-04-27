@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory writes
+// Use atomicAdd to avoid race conditions
+// Only the first thread adds to global sum to avoid contention
+// Store degree difference directly to avoid additional variables
+```

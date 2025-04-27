@@ -1,0 +1,4 @@
+// Optimize memory access by using shared memory for pitch calculations.
+// Consider using texture memory for in_image access to benefit from cache.
+// Ensure coalesced memory access in out_image for better performance.
+// Evaluate using atomic operations for optimizing concurrent writes to out_image.

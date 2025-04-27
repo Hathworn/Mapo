@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring coalesced memory access patterns.
+// Consider using shared memory if 'a' or 'result' are accessed multiple times by threads.
+// Check if prefetching data to L1/L2 cache can improve performance.
+// Investigate if loop unrolling can provide additional performance benefits.
+// Ensure optimal block and grid size configuration for best occupancy.
+// If 'b' is constant, declare it as 'const' to facilitate compiler optimizations.
+```

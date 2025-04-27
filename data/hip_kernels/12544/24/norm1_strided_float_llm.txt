@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce global memory accesses
+// Align memory access patterns for coalesced reads from global memory
+// Ensure all accesses within the loop are coalesced for efficiency
+// Minimize unnecessary synchronization by optimizing block steps
+// Optimize reduction using warp unrolling for faster execution
+// Use atomic operations efficiently to update the global result
+```

@@ -1,0 +1,6 @@
+```
+// Precompute global memory indices outside the loop to reduce arithmetic operations
+// Ensure memory accesses are coalesced for better performance
+// Minimize divergent branching by checking bounds outside the main operations if possible
+// Leverage shared memory if multiple threads access nearby data to improve cache hit rates
+```

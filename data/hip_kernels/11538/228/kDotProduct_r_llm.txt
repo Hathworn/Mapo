@@ -1,0 +1,8 @@
+```
+// Ensure coalesced access for memory reads in a and b
+// Consider using static shared memory for shmem definition
+// Use __restrict__ pointers for a, b, and target to improve memory access
+// Optimize loop by reducing number of syncthreads calls in reduction
+// Use warp shuffle operations for parallel reduction within the warp
+// Apply loop unrolling to further optimize reduction process
+```

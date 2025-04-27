@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing output in a coalesced manner
+// Use shared memory to minimize global memory reads for col_sum
+// Increase thread block size for better occupancy if shared memory allows
+// Align grid and block dimensions to warp size for improved execution efficiency
+// Balance workload among threads to prevent potential divergence
+```

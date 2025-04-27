@@ -1,0 +1,8 @@
+```
+// Use shared memory to store a tile of the source image to minimize global memory accesses.
+// Use loop unrolling to reduce the number of iterations and increase parallelism.
+// Coalesce memory accesses on destination image to maximize memory bandwidth.
+// Optimize boundary checks using a single condition to minimize branching.
+// Pre-calculate indices used in loops to eliminate redundant calculations within the loops.
+// Convert 2D index calculations to 1D wherever possible to simplify indexing operations.
+```

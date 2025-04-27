@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for frequently accessed variables to reduce global memory access
+// Consider loop unrolling for the TRIALS_PER_THREAD loop to improve instruction-level parallelism
+// Avoid bank conflicts in shared memory by using padding if required
+// Coalesce global memory accesses by ensuring threads in a warp access contiguous memory locations
+// Use __restrict__ qualifier for pointers if possible to enable compiler optimizations
+// Ensure memory alignment to improve load/store operations efficiency
+```

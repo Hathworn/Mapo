@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory access patterns for tex2D fetches.
+// Use shared memory to store pixel values within a block if possible.
+// Ensure memory accesses are aligned for optimal performance.
+// Group threads with branch divergence to minimize performance loss.
+// Use memory prefetching strategies for surf2Dwrite if applicable.
+// Evaluate if using pitch linear memory could improve access times.
+```

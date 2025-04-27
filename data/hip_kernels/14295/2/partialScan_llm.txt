@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory accesses by utilizing contiguous sequence of threads for each block
+// Minimize shared memory bank conflicts by ensuring proper memory access patterns
+// Consider adjusting BLOCK_WIDTH to match the GPU's warp size for optimal performance
+// Avoid excessive usage of __syncthreads() to improve performance, only use when necessary
+```

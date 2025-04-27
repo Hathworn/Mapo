@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache data for better memory access patterns
+// Ensure coalesced memory accesses to improve memory throughput
+// Consider loop unrolling if possible to increase instruction-level parallelism
+// Use __syncthreads() carefully if using shared memory to avoid race conditions
+```

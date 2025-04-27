@@ -1,0 +1,8 @@
+```c
+// Consider increasing TILE_DIM for greater coalescing
+// Ensure TILE_DIM+1 to avoid bank conflicts in shared memory
+// Use shared memory to reduce repeated global memory access
+// Optimize BLOCK_ROWS to balance load among threads
+// Ensure proper grid size to fully utilize GPU resources
+// Minimize memory transfer by maximizing data reuse in shared memory
+```

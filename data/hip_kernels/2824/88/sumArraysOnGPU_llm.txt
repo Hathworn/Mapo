@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for partial results to reduce global memory accesses.
+// Pre-load data into shared memory to take advantage of memory coalescing.
+// Use loop unrolling if the computation involves repetitive operations to minimize loop overhead.
+// Check for memory bank conflicts in shared memory usage.
+// Optimize block and grid dimensions for better occupancy and performance.
+```

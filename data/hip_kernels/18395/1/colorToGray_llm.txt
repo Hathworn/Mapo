@@ -1,0 +1,7 @@
+```
+// Coalesce memory access by accessing consecutive memory locations.
+// Minimize branching by ensuring all threads in a warp execute the same operations.
+// Utilize local variables to reduce the number of global memory accesses.
+// Ensure grid and block dimensions are optimal for the target architecture.
+// Consider using shared memory to store pixel data locally within a block if applicable.
+```

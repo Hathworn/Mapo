@@ -1,0 +1,5 @@
+// Consider using shared memory to store tiles of Md and Nd to reduce redundant global memory accesses.
+// Minimize bank conflicts by ensuring data access patterns in shared memory are optimized.
+// Prefetch data for Md and Nd into shared memory before executing the loop.
+// Make use of coalesced memory access patterns for writing to Pd to enhance memory throughput.
+// Evaluate the optimal TILE_WIDTH to balance shared memory usage and thread execution efficiency.

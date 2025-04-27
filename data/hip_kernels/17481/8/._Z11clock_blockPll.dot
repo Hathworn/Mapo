@@ -1,0 +1,16 @@
+digraph "CFG for '_Z11clock_blockPll' function" {
+	label="CFG for '_Z11clock_blockPll' function";
+
+	Node0x4844ca0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%2:\l  %3 = tail call i64 @llvm.amdgcn.s.memtime()\l  %4 = icmp sgt i64 %1, 0\l  br i1 %4, label %5, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x4844ca0:s0 -> Node0x48455a0;
+	Node0x4844ca0:s1 -> Node0x4845630;
+	Node0x48455a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l5:                                                \l  %6 = tail call i64 @llvm.amdgcn.s.memtime()\l  %7 = sub nsw i64 %6, %3\l  %8 = icmp slt i64 %7, %1\l  br i1 %8, label %5, label %9, !llvm.loop !4\l|{<s0>T|<s1>F}}"];
+	Node0x48455a0:s0 -> Node0x48455a0;
+	Node0x48455a0:s1 -> Node0x4845630;
+	Node0x4845630 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%9:\l9:                                                \l  %10 = phi i64 [ 0, %2 ], [ %7, %5 ]\l  %11 = icmp eq i64 addrspace(1)* %0, addrspacecast (i64* null to i64\l... addrspace(1)*)\l  br i1 %11, label %13, label %12\l|{<s0>T|<s1>F}}"];
+	Node0x4845630:s0 -> Node0x4846d00;
+	Node0x4845630:s1 -> Node0x4846d90;
+	Node0x4846d90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%12:\l12:                                               \l  store i64 %10, i64 addrspace(1)* %0, align 8, !tbaa !6\l  br label %13\l}"];
+	Node0x4846d90 -> Node0x4846d00;
+	Node0x4846d00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#cedaeb70",label="{%13:\l13:                                               \l  ret void\l}"];
+}

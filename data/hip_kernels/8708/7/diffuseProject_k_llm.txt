@@ -1,0 +1,8 @@
+```
+// Optimize memory access by ensuring coalesced reads and writes to vx and vy.
+// Use shared memory to reduce redundant global memory accesses for xterm and yterm.
+// Minimize bank conflicts if shared memory is used.
+// Consider precomputing and storing repetitive terms like "visc * dt" and "1.f / kk" in registers.
+// Use warp-level optimization to reduce intra-warp divergence caused by "if (kk > 0.f)".
+// Ensure consistent thread utilization by balancing the workload across threads, especially in the loop over lb.
+```

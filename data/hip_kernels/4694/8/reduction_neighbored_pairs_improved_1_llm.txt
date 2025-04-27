@@ -1,0 +1,7 @@
+```
+// Ensure all threads in a block are used before writing final results to global memory
+// Reduce divergence by ensuring warp-synchronized operations
+// Optimize memory access by coalescing reads and writes wherever possible
+// Minimize shared memory bank conflicts during data access
+// Use fewer synchronization points to reduce overhead if possible
+```

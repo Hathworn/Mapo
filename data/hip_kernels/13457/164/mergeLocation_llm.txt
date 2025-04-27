@@ -1,0 +1,6 @@
+```
+// Use __restrict__ qualifiers to reduce pointer aliasing overhead
+// Ensure coalesced memory access by organizing data for warp execution
+// Load data into shared memory to minimize global memory access if reusable
+// Consider using float2 for combined x and y to enhance memory access efficiency
+```

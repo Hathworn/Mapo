@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for caching source values to reduce global memory access latency.
+// Ensure coalesced access of global memory by aligning data structures optimally.
+// Minimize divergence within warps during the random number generation.
+// Evaluate the use of __restrict__ qualifiers for pointers to help the compiler's optimization.
+```

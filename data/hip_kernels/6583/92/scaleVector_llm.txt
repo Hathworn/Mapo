@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by maintaining linear index access
+// Consider using shared memory if data is reused within threads to reduce global memory access
+// Avoid warp divergence by using a single conditional statement
+// Make sure enough thread blocks are launched to cover all elements for better resource utilization
+```

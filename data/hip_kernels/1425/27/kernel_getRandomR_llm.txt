@@ -1,0 +1,8 @@
+```
+// Use shared memory wisely to reduce global memory access
+// Consider coalescing global memory accesses to improve performance
+// Utilize vectorized loads/stores if possible
+// Ensure optimal use of #pragma unroll for loop efficiency
+// Avoid bank conflicts in shared memory by appropriate padding
+// Minimize divergent branches within the warp
+```

@@ -1,0 +1,7 @@
+```
+// Unroll the data fetch loop to minimize memory access overhead
+// Consider using shared memory to store frequently accessed data
+// Use coalesced memory access pattern for array reads
+// Implement warp shuffle for reduction instead of using __syncthreads
+// Consider using atomicMax instead of manual mutex lock for simplicity and performance
+```

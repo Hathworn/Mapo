@@ -1,0 +1,6 @@
+```
+// Use local variables for reduction to facilitate optimized memory access
+// Unroll the loop to optimize inter-thread communication
+// Use warp-level operations without __syncthreads for efficiency
+// Write the result of this block to the output array
+```

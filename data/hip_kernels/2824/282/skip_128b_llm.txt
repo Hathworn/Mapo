@@ -1,0 +1,6 @@
+```c
+// Ensure data is aligned to 128 bytes for coalesced memory access
+// Use vectorized loads/stores for 128-bit memory transactions
+// Minimize memory divergence by ensuring consecutive threads access contiguous memory
+// Consider using shared memory to reduce global memory accesses
+```

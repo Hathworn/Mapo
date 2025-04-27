@@ -1,0 +1,6 @@
+```
+// Use shared memory for referenceVector to reduce global memory access latency
+// Prefetch data to registers to minimize redundant global memory access
+// Ensure memory coalescing by organizing referenceVector access patterns
+// Consider using float4 or float2 for vectorized memory operations where appropriate
+```

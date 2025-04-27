@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access when reading from source and mat arrays
+// Use shared memory to reduce global memory access latency
+// Evaluate the benefits of loop unrolling within the for loop
+// Analyze potential divergence caused by the ternary operator in target assignment
+// Utilize __syncthreads() if shared memory is used to ensure data consistency
+// Consider using texture or surface memory for frequent read operations
+```

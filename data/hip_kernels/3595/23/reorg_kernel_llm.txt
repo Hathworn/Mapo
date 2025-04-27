@@ -1,0 +1,8 @@
+```
+// Consider optimizing memory coalescing for 'x' and 'out' array accesses
+// Use shared memory for improved access patterns between threads
+// Ensure memory access patterns are coalesced for better bandwidth utilization
+// Prefer offset calculations to minimize complex modulo/division operations
+// Utilize vectorized memory loads for 'x' and 'out' where applicable
+// Align data access patterns to warp boundaries to reduce bank conflicts
+```

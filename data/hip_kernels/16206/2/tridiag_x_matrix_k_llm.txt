@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for loading inputs into shared memory
+// Ensure full utilization of shared memory to reduce global memory access
+// Minimize shared memory bank conflicts when accessing su, sp_d, sp_m, sp_u
+// Consider vectorization or loop unrolling to increase computation throughput
+// Prefetch data to shared memory before computation to hide memory latency
+```

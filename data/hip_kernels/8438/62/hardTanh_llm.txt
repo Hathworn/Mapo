@@ -1,0 +1,9 @@
+```
+// Use shared memory to coalesce loads from global memory
+// Employ memory padding to avoid bank conflicts
+// Ensure alignment of memory accesses to improve cache efficiency
+// Consider using vectorized data types for reading/writing multiple elements at once
+// Optimize occupancy by tuning block size and grid size
+// Minimize register usage to allow more threads per block
+// Prefetch data to registers to hide memory latency
+```

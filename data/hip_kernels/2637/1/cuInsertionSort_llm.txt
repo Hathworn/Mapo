@@ -1,0 +1,4 @@
+// Consider using shared memory for p_dist and p_ind to reduce global memory accesses.
+// Optimize memory coalescing by ensuring threads access contiguous memory locations.
+// Explore using warp-level synchronization to improve loop efficiency.
+// Evaluate if loop unrolling could benefit by reducing branching and overhead.

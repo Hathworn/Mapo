@@ -1,0 +1,57 @@
+#include "hip/hip_runtime.h"
+#include "includes.h"
+/* This code will generate a fractal image. Uses OpenCV, to compile:
+nvcc CudaFinal.cu `pkg-config --cflags --libs opencv`  */
+
+typedef enum color {BLUE, GREEN, RED} Color;
+
+__global__ void convert_to_hsv(unsigned char *src, float *hsv, int width, int heigth, int step, int channels) {
+    // Calculate global thread indices for better parallelization
+    int ren = blockIdx.x * blockDim.x + threadIdx.x;
+    int col = blockIdx.y * blockDim.y + threadIdx.y;
+
+    if (ren < heigth && col < width) {  // Ensure thread pairs are within matrix bounds
+        float r = src[(ren * step) + (col * channels) + RED] / 255.0f;
+        float g = src[(ren * step) + (col * channels) + GREEN] / 255.0f;
+        float b = src[(ren * step) + (col * channels) + BLUE] / 255.0f;
+
+        float max = fmax(r, fmax(g, b));
+        float min = fmin(r, fmin(g, b));
+        float diff = max - min;
+
+        float h, s, v = max;
+
+        if (v == 0.0f) { // black
+            h = s = 0.0f;
+        } else {
+            s = diff / v;
+
+            if (diff < 0.001f) { // grey
+                h = 0.0f;
+            } else { // color calculations
+                if (max == r) {
+                    h = 60.0f * (g - b) / diff;
+                    if (h < 0.0f) { h += 360.0f; }
+                } else if (max == g) {
+                    h = 60.0f * (2 + (b - r) / diff);
+                } else {
+                    h = 60.0f * (4 + (r - g) / diff);
+                }
+            }
+        }
+
+        // Set variables for color blindness adjustment
+        float minh = 40.0f, maxh = 200.0f, minis = 0.0f, maxs = 100.0f, miniv = 0.0f, maxv = 100.0f;
+
+        // Check color blindness line and adjust hue if necessary
+        if (h > minh && h < maxh && s > minis && s < maxs && v > miniv && v < maxv) {
+            hsv[(ren * step) + (col * channels) + RED] = h + 140.0f;
+            hsv[(ren * step) + (col * channels) + GREEN] = s;
+            hsv[(ren * step) + (col * channels) + BLUE] = v;
+        } else { // Preserve original pixel color if outside the boundary
+            hsv[(ren * step) + (col * channels) + RED] = h;
+            hsv[(ren * step) + (col * channels) + GREEN] = s;
+            hsv[(ren * step) + (col * channels) + BLUE] = v;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to optimize memory accesses for arrays a, b, and ct.
+// Reduce global memory accesses by storing repeated accessed elements in registers.
+// Minimize divergence in conditional statements by using consistent thread patterns.
+// Align memory access patterns to ensure coalesced memory accesses.
+// Ensure that memory allocations are aligned with the warp size for optimal performance.
+```

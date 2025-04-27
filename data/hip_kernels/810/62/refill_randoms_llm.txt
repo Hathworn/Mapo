@@ -1,0 +1,4 @@
+// Consider using shared memory for intermediate results to reduce global memory accesses.
+// Ensure coalesced access to dRand array for better memory throughput.
+// Use __restrict__ keyword for pointers to potentially increase compiler optimizations.
+// Optimize grid and block dimensions for better occupancy and resource utilization.

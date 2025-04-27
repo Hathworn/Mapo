@@ -1,0 +1,6 @@
+// Use shared memory to store inputs and avoid redundant global memory loads
+// Consider coalescing global memory accesses for inputs and outputs to improve memory bandwidth
+// Use warp-level intrinsic functions to minimize divergence and maximize computational efficiency
+// Avoid branching within warp, consider using predicated operations to handle maskIndex calculations
+// Optimize memory alignment for input and output arrays to prevent memory access penalties
+// Prefetch data from global memory to local variables to reduce repeated memory access latency

@@ -1,0 +1,5 @@
+// Consider optimizing memory access patterns by ensuring coalesced memory access for better performance
+// Use shared memory for frequently accessed data to reduce global memory latency
+// Minimize the use of printf() in kernels as it adds significant overhead
+// Try to ensure warp-level synchronizations to avoid serialization
+// Investigate further compiler optimization flags or options for additional performance improvements

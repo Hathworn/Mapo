@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache gradOutput_data if it's reused multiple times within the same block
+// Ensure coalesced memory access by aligning global memory read and write access patterns
+// Consider loop unrolling to reduce loop overhead and possibly increase ILP (Instruction Level Parallelism)
+// Use __restrict__ qualifiers on pointers if possible to aid compiler optimizations by indicating there are no aliasing issues
+```

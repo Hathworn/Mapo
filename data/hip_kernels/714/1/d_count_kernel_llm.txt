@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses for d_pivots
+// Consider coalesced memory accesses for d_in and r_sublist
+// Minimize divergence in the binary search loop
+// Try warp-level primitives to optimize atomic operations
+```

@@ -1,0 +1,6 @@
+// Optimize memory access patterns by using shared memory.
+// Ensure all threads within a block load their respective data into shared memory.
+// Minimize global memory access by reading required halo data into shared memory.
+// Prevent out-of-bounds memory access by checking bounds during halo data reading.
+// Use __syncthreads() to synchronize threads after loading data into shared memory.
+// Leverage loop unrolling with #pragma unroll for improved performance in calculations.

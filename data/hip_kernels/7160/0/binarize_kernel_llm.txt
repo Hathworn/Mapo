@@ -1,0 +1,3 @@
+// Consider using shared memory to minimize repeated global memory access.
+// Ensure proper memory coalescing for optimal data access performance.
+// Use __ldg() intrinsic to leverage L1 cache for data access if x is read-only.

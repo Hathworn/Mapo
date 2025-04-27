@@ -1,0 +1,3 @@
+// Use shared memory to improve memory coalescing and reduce global memory transactions  
+// Utilize a tile size that helps avoid bank conflicts in shared memory  
+// Ensure synchronization with __syncthreads() to prevent race conditions when transposing  

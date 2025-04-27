@@ -1,0 +1,8 @@
+```
+// Consider increasing shared memory usage by tiling to further reduce global memory accesses.
+// Use coalesced memory access patterns to maximize memory throughput.
+// Ensure each thread block has sufficient occupancy to hide memory latency.
+// Minimize divergence within threads of a warp to enhance performance.
+// Review the balance between computational arithmetic intensity and memory bandwidth.
+// Investigate potential benefits of employing larger tiles or overlapping computation with memory operations.
+```

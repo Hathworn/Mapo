@@ -1,0 +1,4 @@
+//Ensure coalesced memory access by aligning array accesses
+//Minimize global memory access by using shared memory for reduction 
+//Optimize shared memory usage by ensuring it fits within limits (SOFTMAX_NUM_THREADS)
+//Reduce divergence by using warp-level reductions in block synchronization steps

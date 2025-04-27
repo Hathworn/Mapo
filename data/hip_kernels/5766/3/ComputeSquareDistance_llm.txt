@@ -1,0 +1,6 @@
+// Consider increasing the block size for better memory coalescing
+// Use vector loads and stores to improve memory throughput
+// Leverage warp shuffle operations for reductions within warps
+// Ensure data fits within shared memory limits by optimizing block size
+// Align data accesses to avoid bank conflicts in shared memory
+// Implement double buffering in shared memory to overlap computation and memory access

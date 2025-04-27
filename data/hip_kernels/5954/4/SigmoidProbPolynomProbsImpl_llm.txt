@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access patterns by aligning data structures
+// Use __ldg intrinsic where applicable to take advantage of cache for read-only data
+// Ensure coalesced memory access by aligning threads with contiguous memory regions
+// Minimize divergence by branching based on warp-synchronous conditions if possible
+// Evaluate the usage of shared memory for frequently accessed data
+// Reduce the number of arithmetic operations inside tight loops
+// Consider loop unrolling to lessen loop overhead and increase performance
+// Assess the grid and block dimensions for optimal occupancy and utilization
+```

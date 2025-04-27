@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory accesses by revisiting array indexing
+// Use __restrict__ keyword to potentially help with compiler optimizations for pointer aliasing
+// Prefetch memory if each filter will be used multiple times
+// Ensure the memory for part[] is aligned to avoid bank conflicts
+// Adjust the block size dynamically based on hardware for optimal performance
+// Compiler directives can be considered for loop unrolling to ensure it is always applied
+// Investigate the use of warp shuffles to replace some shared memory operations
+```

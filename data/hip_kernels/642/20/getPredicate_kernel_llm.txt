@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring d_inVal and d_predVal are accessed consecutively.
+// Align d_predVal data type with the architecture for better performance if possible.
+// Optimize memory access patterns to maximize memory bandwidth.
+// Minimize divergence in control flow within the kernel.
+// Ensure the use of __syncthreads() if needed to prevent race conditions.
+// Consider using shared memory for caching if appropriate for reducing global memory access.
+```

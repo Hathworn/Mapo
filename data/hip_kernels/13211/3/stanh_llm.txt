@@ -1,0 +1,7 @@
+```
+// Use __restrict__ to hint compiler for memory optimization
+// Ensure memory coalescing by accessing consecutive memory locations
+// Consider using shared memory if multiple threads access the same data
+// Opt for a grid-stride loop to maximize GPU occupancy
+// Double-check global memory loads/stores are optimized
+```

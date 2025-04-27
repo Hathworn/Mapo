@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using shared memory to cache frequently accessed data.
+// Consider using texture memory for repeated input data access to improve cache hits.
+// Reduce bank conflicts in shared memory by padding to avoid multiple threads accessing the same memory bank.
+// Minimize global memory accesses by computing multiple elements per thread using loop unrolling.
+// Use aligned memory access to maximize global memory transactions.
+```

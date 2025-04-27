@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory access latency.
+// Consider optimizing memory coalescing when reading from global memory.
+// Minimize conditional branches for efficiency.
+// Group memory load/store operations for better performance.
+// Consider further optimization by unrolling loops if applicable.
+// Evaluate thread block size for optimal performance regarding shared memory usage.
+// Assess the use of warp-level primitives to minimize divergence.

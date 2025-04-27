@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store ImgProperties for faster access
+// Utilize coalesced memory access patterns when accessing KernelPhase
+// Implement loop unrolling to reduce loop overhead
+// Use __restrict__ qualifier if applicable to indicate non-aliasing pointers
+// Prefetch data if possible to hide memory latencies
+```

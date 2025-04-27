@@ -1,0 +1,4 @@
+// Utilize shared memory to reduce global memory accesses.
+// Ensure proper synchronization with __syncthreads() when accessing shared memory.
+// Initialize shared memory variables accurately to prevent race conditions.
+// Use block-wide reduction to avoid atomic operations in global memory.

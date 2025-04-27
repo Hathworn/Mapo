@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and improve cache locality
+// Prefetch halo regions into shared memory to eliminate redundant global memory accesses
+// Compute loop bounds outside loops to reduce redundant calculations inside loops
+// Use `__syncthreads()` to ensure all threads have loaded their portion into shared memory before use
+// Consider adjusting TILE_SIZE based on different GPUs' shared memory capacity and compute capabilities
+```

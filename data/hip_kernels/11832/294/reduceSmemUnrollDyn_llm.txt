@@ -1,0 +1,7 @@
+```
+// Consider using `__ldg` for readonly global memory accesses to reduce memory latency.
+// Ensure that shared memory accesses are coalesced to minimize bank conflicts.
+// Try padding shared memory to avoid shared memory bank conflicts for warp-wide reductions.
+// Use conditional assignment with warp shuffle functions for the last warp shuffle reduction.
+// Consider the effects of occupancy constraints when selecting block size and shared memory size.
+```

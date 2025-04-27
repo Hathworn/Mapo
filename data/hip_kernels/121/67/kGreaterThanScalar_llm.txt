@@ -1,0 +1,3 @@
+// Use a 1D grid of threads where each thread processes one element to maximize occupancy.
+// Consider using shared memory if multiple threads access the same data for better caching efficiency.
+// Minimize divergent code paths by ensuring conditional branches are minimized.

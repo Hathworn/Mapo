@@ -1,0 +1,4 @@
+// Unroll loop to reduce branch overhead and increase instruction throughput
+// Use shared memory to minimize global memory accesses
+// Optimize reduction using warp shuffle techniques for faster synchronization
+// Use volatile qualifier for shared memory in warp shuffle to prevent reordering and ensure visibility

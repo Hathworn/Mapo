@@ -1,0 +1,4 @@
+// Optimize memory access patterns to reduce bank conflicts in shared memory.
+// Ensure coalesced global memory access for the 'a' array.
+// Minimize thread divergence within the loop for better performance.
+// Consider using warp-level primitives to further reduce atomic operations.

@@ -1,0 +1,7 @@
+```
+// Ensure data alignment for coalesced memory access
+// Use shared memory to reduce global memory reads
+// Consider loop unrolling for further optimization
+// Minimize thread divergence by ensuring all threads in a warp follow the same path
+// Balance the number of threads and blocks for optimal occupancy
+```

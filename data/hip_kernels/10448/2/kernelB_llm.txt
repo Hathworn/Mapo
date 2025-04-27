@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed data for threads within the same block to reduce global memory accesses.
+// Consider vectorized loads and stores if data alignment permits to increase memory throughput.
+// Ensure coalesced memory access by having consecutive threads access consecutive memory locations to improve bandwidth utilization.
+// Minimize divergence by organizing computation so that threads within a warp take the same execution path.
+```

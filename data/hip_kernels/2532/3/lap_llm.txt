@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access
+// Prefetch data to shared memory to optimize access patterns
+// Avoid repeated __ldg loads by reusing values stored in shared memory

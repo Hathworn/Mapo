@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced global memory access by aligning data structure
+// Minimize redundant reads by using shared memory or registers for repetitively accessed data
+// Consider avoiding bank conflicts when using shared memory
+// Strive for warp divergence minimization for improved execution efficiency
+// Enhance memory throughput by unrolling loops, if applicable
+// Use texture memory for better cache locality if read-only data fits pattern
+```

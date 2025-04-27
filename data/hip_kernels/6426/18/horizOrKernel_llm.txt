@@ -1,0 +1,4 @@
+// Unroll loop for better performance by processing multiple elements per iteration
+// Use __restrict__ qualifiers to inform the compiler about non-aliasing pointers for optimizations
+// Ensure row accesses are within bounds before processing operations to prevent unnecessary loads
+// Consider shared memory if row operations could benefit from reduced global memory access

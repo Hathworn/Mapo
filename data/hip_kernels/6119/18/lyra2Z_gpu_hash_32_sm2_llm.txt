@@ -1,0 +1,7 @@
+```cpp
+// Optimize kernel launch for better occupancy and warp utilization
+// Use shared memory to cache frequently accessed data and reduce global memory access
+// Synchronize threads after loading to ensure all data is in shared memory before use
+// Compute using shared memory to minimize latency due to slower global memory access
+// Use atomic operations when writing to global memory to prevent race conditions
+```

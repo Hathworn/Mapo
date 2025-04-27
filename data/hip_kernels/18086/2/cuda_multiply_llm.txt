@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory accesses
+// Ensure coalesced memory accesses by aligning data properly
+// Consider using vectorized loads and stores for increased memory throughput
+// Explore using texture memory for read-only data to optimize performance
+// Minimize divergent branches within warp execution
+```

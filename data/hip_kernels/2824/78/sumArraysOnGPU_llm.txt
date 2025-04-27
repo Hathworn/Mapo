@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for A and B for coalesced memory access
+// Ensure memory accesses are contiguous for better coalescing
+// Consider using loop unrolling if the operation becomes more complex
+// Minimize divergence by ensuring all threads in a warp follow the same execution path
+// Check for potential memory bank conflicts in shared memory usage
+```

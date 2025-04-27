@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced for better performance
+// Consider using multiple blocks for reduction to minimize idle threads
+// Use warp shuffle reduction to avoid shared memory and sync overhead
+// Consider using a different reduction strategy to minimize divergence
+// Optimize shared memory usage to ensure full occupancy
+// Validate correct memory alignment for global and shared memory accesses
+```

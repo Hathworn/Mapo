@@ -1,0 +1,4 @@
+// Use shared memory for kernel to reduce global memory access
+// Minimize conditional checks inside the loop for better performance
+// Ensure coalesced memory access for data_in and data_out arrays
+// Consider loop unrolling for the kernel computation loop

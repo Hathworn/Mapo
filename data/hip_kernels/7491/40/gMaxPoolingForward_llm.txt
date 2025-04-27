@@ -1,0 +1,7 @@
+```
+// Consider aligning memory accesses for improved coalescing.
+// Prefetch input and mask data to shared memory if beneficial.
+// Utilize loop unrolling for iterating over mask elements.
+// Ensure b and localMask are cache-friendly by optimizing access patterns.
+// Minimize branch divergence in if(product > currentMax) condition.
+```

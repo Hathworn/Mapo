@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory accesses to optimize global memory throughput.
+// Ensure stride loop maintains memory coalescing for better performance.
+// Avoid excessive bank conflicts in shared memory for improved efficiency.
+// Use of atomics can be a bottleneck; consider using warp-level primitives.
+```

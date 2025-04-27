@@ -1,0 +1,13 @@
+digraph "CFG for '_Z9downSweepPiii' function" {
+	label="CFG for '_Z9downSweepPiii' function";
+
+	Node0x5937180 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = mul i32 %4, %9\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %12 = add i32 %10, %11\l  %13 = icmp slt i32 %12, %1\l  br i1 %13, label %14, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x5937180:s0 -> Node0x5939050;
+	Node0x5937180:s1 -> Node0x59390e0;
+	Node0x5939050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ec7f6370",label="{%14:\l14:                                               \l  %15 = add nsw i32 %12, 1\l  %16 = add nsw i32 %2, 1\l  %17 = shl nsw i32 -1, %16\l  %18 = xor i32 %17, -1\l  %19 = and i32 %15, %18\l  %20 = icmp eq i32 %19, 0\l  br i1 %20, label %21, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x5939050:s0 -> Node0x5939690;
+	Node0x5939050:s1 -> Node0x59390e0;
+	Node0x5939690 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%21:\l21:                                               \l  %22 = shl nsw i32 -1, %2\l  %23 = add i32 %12, %22\l  %24 = sext i32 %23 to i64\l  %25 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %24\l  %26 = load i32, i32 addrspace(1)* %25, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %27 = sext i32 %12 to i64\l  %28 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %27\l  %29 = load i32, i32 addrspace(1)* %28, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  store i32 %29, i32 addrspace(1)* %25, align 4, !tbaa !7\l  %30 = add nsw i32 %29, %26\l  store i32 %30, i32 addrspace(1)* %28, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x5939690 -> Node0x59390e0;
+	Node0x59390e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

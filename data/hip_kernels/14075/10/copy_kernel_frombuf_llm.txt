@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for spatial locality to reduce global memory access
+// Ensure coalesced memory access pattern by aligning memory accesses across threads
+// Perform loop unrolling based on 'dim' only if it significantly impacts performance
+// Utilize a memory prefetching technique to minimize latency in memory access
+// Evaluate potential warp divergence in boundary condition checks and optimize
+// Explore adjusting grid and block size for better occupancy and memory bandwidth
+```

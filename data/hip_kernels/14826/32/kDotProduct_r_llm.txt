@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access latency
+// Implement warp-level primitive for efficient reduction
+// Ensure memory coalescing by accessing consecutive memory locations
+// Use __shfl_down_sync for warp-level reduction to reduce synchronization overhead
+// Minimize bank conflicts in shared memory by ensuring proper indexing
+// Write results to global memory only once per block to reduce global memory traffic
+```

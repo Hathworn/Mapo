@@ -1,0 +1,6 @@
+```
+// Use shared memory to store parts of colorMap for better access latency
+// Coalesce global memory accesses by ensuring data structures are accessed in a strided fashion
+// Avoid branching where possible in the color assignment logic
+// Consider using texture memory for colorMap if access patterns benefit from spatial locality
+```

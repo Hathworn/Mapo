@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache repetitive calculations and avoid redundant global memory access.
+// Ensure all threads have completed their operations before syncing shared memory.
+// Reduce bank conflicts by aligning shared memory to prevent contention.
+// Use a blocking strategy to load data efficiently into shared memory.
+// Minimize synchronization within loops to reduce stall and improve performance.
+// Consider loop unrolling techniques to enhance throughput in the compute section.
+```

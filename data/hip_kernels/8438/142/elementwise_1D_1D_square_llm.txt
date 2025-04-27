@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if multiple threads access the same data.
+// Ensure memory coalescing by having consecutive threads access consecutive memory locations.
+// Evaluate the grid and block dimensions to maximize occupancy.
+// Avoid unnecessary memory operations, reuse data in registers if possible.
+// Minimize warp divergence by ensuring aligned memory access.
+```

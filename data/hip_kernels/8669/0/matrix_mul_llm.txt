@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses for matrices a and b.  
+// Implement memory coalescing by ensuring sequential threads access consecutive memory locations.  
+// Prefer post-increment operations to reduce data dependencies.  
+// Minimize arithmetic operations inside the loop by precomputing values outside.  
+// Consider loop unrolling for the dot product calculation to reduce overhead.

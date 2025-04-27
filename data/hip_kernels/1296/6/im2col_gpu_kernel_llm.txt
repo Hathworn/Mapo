@@ -1,0 +1,6 @@
+// Use shared memory to reduce redundant global memory access for data_im
+// Ensure coalesced access patterns for data_im and data_col pointers
+// Consider using vectorized loads and stores for data_im_ptr and data_col_ptr
+// Evaluate the potential of loop unrolling for i and j to enhance performance
+// Optimize memory access by checking alignment and using aligned memory operations
+// Assess the usage of warp-level parallelism to improve efficiency

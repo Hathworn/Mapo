@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses to g_hash to improve memory throughput
+// Consider using shared memory to store intermediate results within a block to reduce global memory accesses
+// Align data structures to avoid misaligned accesses that could lower performance
+// Minimize divergent branching by ensuring all threads within a warp execute the same instructions
+// Experiment with different block sizes to find the configuration that maximizes occupancy and performance
+```

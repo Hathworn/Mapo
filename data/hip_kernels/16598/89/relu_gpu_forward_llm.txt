@@ -1,0 +1,6 @@
+```
+// Ensure memory access is coalesced by assigning consecutive threads to consecutive data elements.
+// Consider increasing thread block size to improve occupancy and throughput.
+// Use shared memory if there are repeated access patterns in future optimizations.
+// Evaluate performance and memory usage to adjust gridDim.x and blockDim.x for the best efficiency.
+```

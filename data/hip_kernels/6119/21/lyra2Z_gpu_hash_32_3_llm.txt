@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access and improve memory access speed.
+// Ensure that the shared memory allocation is optimized to prevent bank conflicts.
+// Consider memory coalescing where possible to increase throughput for global memory operations.
+// Utilize non-blocking memory operations, if applicable, to improve overall kernel performance.
+// Minimize latency by reducing synchronization points or using warp-level operations when possible.

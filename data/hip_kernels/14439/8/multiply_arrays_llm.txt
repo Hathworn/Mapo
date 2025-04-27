@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for common data to reduce global memory accesses
+// Ensure coalesced memory access for contiguous signals and weights for better performance
+// Check if using texture memory can benefit read-only data like weights
+// Use loop unrolling for signal processing to decrease thread divergence
+// Evaluate using register tiling for better utilization of the GPU's resources
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data for faster access within the block.
+// Reduce the number of accesses to global memory by storing frequently used values in registers.
+// Optimize memory access patterns by aligning data structures to reduce memory bank conflicts.
+// Use loop unrolling to minimize loop overhead and improve parallel execution efficiency.
+// Ensure coalesced global memory access for gradOutput_data and gradInput_data to maximize throughput.
+```

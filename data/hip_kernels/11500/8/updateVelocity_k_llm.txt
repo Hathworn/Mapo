@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access to minimize memory latency by aligning data accesses
+// Use shared memory to hold commonly accessed data within a block to reduce global memory accesses
+// Optimize the loop with loop unrolling to reduce loop overhead and increase arithmetic intensity
+// Check for bank conflicts when using shared memory and apply padding if necessary
+// Try to minimize divergent execution paths within warps for better performance
+// Ensure that data types are aligned properly in memory to avoid misaligned access penalties
+// Use float2 instead of individual float accesses to potentially leverage vectorized operations
+```

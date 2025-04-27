@@ -1,0 +1,6 @@
+```
+// Use shared memory to load gradOutput and indices data to reduce global memory access latency.
+// Using atomicAdd might cause serialization; consider reducing thread contention by reordering computations.
+// Check if coalesced memory access patterns are present for gradOutput and indices to maximize memory bandwidth.
+// Consider optimizing the loop to unroll based on the size of nClusters and the number of threads.
+```

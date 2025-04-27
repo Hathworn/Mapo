@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access to improve global memory bandwidth.
+// Utilize shared memory if multiple threads access the same data elements.
+// Remove redundant __syncthreads() as there are no race conditions.
+// Align data structures for more efficient memory access.
+```

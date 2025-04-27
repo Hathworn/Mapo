@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data such as devValue and devWeight to reduce global memory access latency.
+// Coalesce global memory accesses for cudaChromo and cudaNewpopulation to increase memory throughput.
+// Experiment with different block and grid sizes to optimize kernel performance and minimize warp divergence.
+// Use warp-level primitives to reduce divergence in simple conditional operations where applicable.
+// Consider using unified memory to simplify memory management and reduce data transfer overheads.
+```

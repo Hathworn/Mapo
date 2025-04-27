@@ -1,0 +1,8 @@
+```cpp
+// Avoid branching by using ternary operators for bounds checking.
+// Consider coalesced global memory access patterns for gradInput_data and gradOutput_data.
+// Use shared memory to stage data for threads within the same block to reduce global memory access.
+// Exploit loop unrolling for better instruction-level parallelism.
+// Leverage vector data types for wider memory transactions if applicable.
+// Utilize warp-level primitives to minimize synchronization requirements.
+```

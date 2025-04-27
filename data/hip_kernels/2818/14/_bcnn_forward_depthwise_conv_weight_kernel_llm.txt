@@ -1,0 +1,3 @@
+// Consider using shared memory for weight_data to reduce redundant global memory accesses
+// Optimize by restructuring loops to improve memory coalescing for src_data accesses
+// Use constant memory for kernel_sz if it does not change dynamically to speed up access

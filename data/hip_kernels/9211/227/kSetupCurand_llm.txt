@@ -1,0 +1,3 @@
+// Utilize shared memory to reduce global memory accesses.
+// Initialize state in shared memory to avoid direct global memory initialization.
+// Copy states to global memory only once to minimize global memory writes.

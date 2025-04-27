@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput
+// Use aligned memory allocations for input and output arrays
+// Check if using float2 or float4 for loading input values can increase performance
+// Use __restrict__ keyword for input and output pointers to provide compiler optimization hints
+// Evaluate if loop unrolling could further optimize the reduction step
+// Use warp-level primitives to reduce synchronization overhead within warps
+```

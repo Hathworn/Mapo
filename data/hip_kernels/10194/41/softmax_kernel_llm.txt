@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce memory access latency
+// Optimize memory coalescing by aligning input and output arrays
+// Use warp-based reduction for optimal performance in finding the largest value
+// Minimize register utilization by reordering computations within softmax_device
+// Prefetch data to reduce access time during calculations
+// Experiment with accessing input and output using texture memory for better caching

@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses to improve bandwidth utilization
+// Ensure that matrix dimensions are multiples of the block size to maximize occupancy
+// Utilize shared memory if data reuse occurs within thread blocks
+// Align data to cache line size to prevent bank conflicts
+// Check if loop unrolling can optimize the subtraction
+```

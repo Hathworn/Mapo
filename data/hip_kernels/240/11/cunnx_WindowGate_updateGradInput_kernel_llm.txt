@@ -1,0 +1,5 @@
+// Consider using shuffle reduction features when reducing within the block to improve warp efficiency.
+// Utilize cooperative groups to manage shared memory more effectively.
+// Avoid bank conflicts by ensuring proper alignment in shared memory usage.
+// Prefetch critical data into registers to decrease shared memory dependence and improve performance.
+// Investigate ways to increase memory coalescing by aligning accesses to both global and shared memory.

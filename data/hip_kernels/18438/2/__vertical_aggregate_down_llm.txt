@@ -1,0 +1,5 @@
+// Consider using shared memory to store dp values temporarily for faster access
+// Ensure coalesced memory access patterns by adjusting thread and block configurations
+// Use more aggressive loop unrolling if D is a small constant to reduce loop overhead
+// Explore using memory prefetching techniques to reduce latency during reads
+// Align dp and cost_image memory allocations to prevent uncoalesced access penalties

@@ -1,0 +1,3 @@
+// Utilize shared memory for frequently accessed data to reduce global memory access latency.
+// Coalesce global memory accesses by ensuring threads access contiguous memory locations.
+// Minimize thread divergence by avoiding conditional branching within the loop.

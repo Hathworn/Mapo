@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache flow_row_offset and image_row_offset values for better access speed.
+// Evaluate the possibility of coalescing memory accesses for u and v arrays.
+// Ensure dst memory accesses are coalesced by assigning atomicAdd values in contiguous blocks.
+```

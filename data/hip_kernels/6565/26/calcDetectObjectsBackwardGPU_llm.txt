@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory load for repeated reads of 'in' values
+// Consider coalescing memory access patterns for 'dz' and 'dz_in' to improve bandwidth usage
+// Unroll loops where possible to reduce loop overhead and improve performance
+// Use constant memory for fixed parameters like 'max_bounding_boxes' and 'max_classes' to reduce register usage
+// Minimize divergent branching to maintain warp efficiency
+```

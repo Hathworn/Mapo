@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache yGrad values for better memory access patterns
+// Ensure data locality by optimizing threads to process consecutive elements in memory
+// Check for warp divergence and reduce conditional checks within the kernel
+// Minimize memory traffic by reusing values or computations if possible
+// Assess if using cooperative groups can improve synchronization and data sharing
+```

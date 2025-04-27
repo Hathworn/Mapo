@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using shared memory for bin_size and bin_offset
+// Reduce global memory accesses through shared memory caching
+// Use __syncthreads() to ensure all threads have updated shared memory before proceeding
+// Apply loop unrolling to decrease loop overhead and improve performance 
+// Ensure correct synchronization back to global memory with atomic operations
+```

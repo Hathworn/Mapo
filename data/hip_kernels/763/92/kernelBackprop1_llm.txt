@@ -1,0 +1,3 @@
+// Optimize memory access by using shared memory for activations
+// Ensure that delta_nabla_w is coalesced in memory accesses
+// Consider reducing the divergent threads in accessing delta_nabla_b

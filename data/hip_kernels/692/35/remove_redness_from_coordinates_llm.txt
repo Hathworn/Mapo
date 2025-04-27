@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for d_coordinates to improve memory throughput.
+// Use shared memory to store portions of d_r, d_b, and d_g that are accessed multiple times.
+// Launch multiple smaller blocks to increase occupancy by improving parallelism.
+// Minimize bank conflicts when using shared memory by ensuring proper alignment.
+// Preload data into registers to reduce global memory access latency.
+// Explore using texture or surface memory for read-only data to leverage caching.
+```

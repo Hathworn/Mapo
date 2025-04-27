@@ -1,0 +1,8 @@
+```
+// Use shared memory for variables frequently accessed by threads to reduce global memory access
+// Consider loop unrolling if applicable to increase instruction throughput
+// Ensure memory accesses are coalesced for optimal memory bandwidth utilization
+// Consider adjusting block and grid sizes for better occupancy and performance
+// Preload data to registers when applicable to decrease latency of memory access
+// Utilize constants for invariant data where possible to optimize memory access
+```

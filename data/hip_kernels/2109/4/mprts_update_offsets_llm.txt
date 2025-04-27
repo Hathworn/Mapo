@@ -1,0 +1,5 @@
+```
+// Optimize memory access by ensuring d_spine_sums is accessed coalesced
+// Use shared memory to temporarily store spine sums to reduce global memory access
+// Ensure d_spine_sums is aligned to CUDA_BND_STRIDE for optimal access
+```

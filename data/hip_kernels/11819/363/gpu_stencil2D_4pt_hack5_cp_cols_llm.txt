@@ -1,0 +1,9 @@
+```c
+// Precompute indices to reduce redundant calculations within loop
+// Use shared memory to minimize global memory access
+// Ensure coalesced memory accesses by aligning threads with memory layout
+// Assess implementational benefits of unrolling loops
+// Align memory accesses to avoid misaligned data transfers
+// Consider using read-only data cache for constant data
+// Balance the load among threads to improve memory throughput
+```

@@ -1,0 +1,5 @@
+digraph "CFG for '_Z18kernelUpdateBiasesPfS_ff' function" {
+	label="CFG for '_Z18kernelUpdateBiasesPfS_ff' function";
+
+	Node0x5476d50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = fdiv contract float %2, %3\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = zext i32 %6 to i64\l  %8 = getelementptr inbounds float, float addrspace(1)* %0, i64 %7\l  %9 = load float, float addrspace(1)* %8, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %10 = fmul contract float %5, %9\l  %11 = getelementptr inbounds float, float addrspace(1)* %1, i64 %7\l  %12 = load float, float addrspace(1)* %11, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %13 = fsub contract float %12, %10\l  store float %13, float addrspace(1)* %11, align 4, !tbaa !5\l  ret void\l}"];
+}

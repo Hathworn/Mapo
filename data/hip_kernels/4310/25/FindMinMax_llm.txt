@@ -1,0 +1,5 @@
+// Consider using texture memory for repeated global memory access to d_Data
+// Increase warp size utilization for better computational throughput
+// Coalesce global memory accesses to optimize memory bandwidth
+// Minimize shared memory usage by using registers where possible
+// Optimize reduction by using warp shuffle operations instead of __syncthreads

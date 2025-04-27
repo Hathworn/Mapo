@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory accesses and improve performance.
+// Ensure coalesced memory access to global memory for efficient data transfer.
+// Consider loop unrolling for the innermost loop to potentially reduce loop overhead.
+// Evaluate register usage to avoid spilling and improve kernel performance.
+// Avoid redundant __syncthreads() where possible to minimize synchronization overhead.
+// Analyze tile size (BLOCK_SIZE) for optimal performance based on hardware constraints.

@@ -1,0 +1,18 @@
+digraph "CFG for '_Z4scanPii' function" {
+	label="CFG for '_Z4scanPii' function";
+
+	Node0x56e8f00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = icmp sgt i32 %1, 1\l  br i1 %4, label %5, label %21\l|{<s0>T|<s1>F}}"];
+	Node0x56e8f00:s0 -> Node0x56ea3c0;
+	Node0x56e8f00:s1 -> Node0x56ea450;
+	Node0x56ea3c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%5:\l5:                                                \l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %6\l  br label %8\l}"];
+	Node0x56ea3c0 -> Node0x56ea6a0;
+	Node0x56ea6a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  %9 = phi i32 [ 1, %5 ], [ %19, %18 ]\l  %10 = add nsw i32 %9, %3\l  %11 = icmp slt i32 %10, %1\l  br i1 %11, label %12, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x56ea6a0:s0 -> Node0x56eaa00;
+	Node0x56ea6a0:s1 -> Node0x56ea370;
+	Node0x56eaa00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%12:\l12:                                               \l  %13 = load i32, i32 addrspace(1)* %7, align 4, !tbaa !5\l  %14 = sext i32 %10 to i64\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %14\l  %16 = load i32, i32 addrspace(1)* %15, align 4, !tbaa !5\l  %17 = add nsw i32 %16, %13\l  store i32 %17, i32 addrspace(1)* %7, align 4, !tbaa !5\l  br label %18\l}"];
+	Node0x56eaa00 -> Node0x56ea370;
+	Node0x56ea370 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  %19 = shl nsw i32 %9, 1\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %20 = icmp slt i32 %19, %1\l  br i1 %20, label %8, label %21, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x56ea370:s0 -> Node0x56ea6a0;
+	Node0x56ea370:s1 -> Node0x56ea450;
+	Node0x56ea450 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%21:\l21:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory accesses for vec1
+// Use shared memory to store intermediate results in tmp1 for faster access
+// Ensure warp execution efficiency by avoiding thread divergence
+// Avoid unnecessary __syncthreads() after final reduction step
+```

@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to load chunks of mat and p to reduce global memory accesses.
+// Evaluate the effectiveness of further loop unrolling as it may yield diminishing returns.
+// Ensure coalesced memory access by aligning data and indexing patterns.
+// Initialize tiny outside the loop if it's a constant to avoid unnecessary recalculations.
+```

@@ -1,0 +1,5 @@
+```
+// Ensure coalesced global memory access when reading from 'in' and writing to 'out'
+// Use shared memory to store bin counts within a block before updating 'd_histScan' to minimize global memory accesses
+// Consider using warp-level intrinsics to reduce the overhead of atomic operations in 'd_histScan'
+```

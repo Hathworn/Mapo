@@ -1,0 +1,8 @@
+```c
+// Ensure memory coalescing by aligning data structures properly
+// Utilize shared memory to reduce global memory accesses
+// Use register tiling to maximize data reuse within a warp
+// Ensure data remains in L1/L2 cache by minimizing the stride
+// Reduce bank conflicts when using shared memory
+// Unroll loops to increase instruction-level parallelism
+```

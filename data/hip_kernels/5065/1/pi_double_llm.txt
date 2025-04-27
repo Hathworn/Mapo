@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory to store A[idx] data temporarily for better access speed
+// Ensure data alignment for the struct point2 for optimal memory coalescing
+// Use float instead of double if precision allows, to reduce memory footprint and improve performance
+// Consider loop unrolling by a factor of unrollFactor to increase ILP (Instruction Level Parallelism)
+// Explore using vectorized operations if the hardware supports it to improve throughput
+// Investigate if using texture memory provides better caching for read-only data like A[idx]
+```

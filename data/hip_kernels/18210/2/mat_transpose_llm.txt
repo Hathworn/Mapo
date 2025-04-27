@@ -1,0 +1,5 @@
+// Use shared memory to improve data locality
+// Apply boundary checks to prevent accessing out-of-bound memory
+// Use tile width padding to avoid shared memory bank conflicts
+// Load data into shared memory to minimize global memory accesses
+// Perform synchronized threads to ensure all data is transposed correctly within each block

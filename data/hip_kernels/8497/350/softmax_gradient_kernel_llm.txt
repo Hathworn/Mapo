@@ -1,0 +1,7 @@
+```
+// Consider using coalesced memory access patterns for dY and Y to improve bandwidth utilization.
+// Utilize vectorized loading/storing, such as float4, to reduce memory transaction overhead.
+// Minimize __syncthreads usage by employing warp shuffle operations for intra-block reductions.
+// Explore loop unrolling techniques within for loops to increase instruction level parallelism.
+// Ensure shared memory usage is optimized to reduce bank conflicts and improve access latency.
+```

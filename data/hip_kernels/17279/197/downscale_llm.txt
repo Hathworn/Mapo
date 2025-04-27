@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses to gradOutput_data for better memory throughput
+// Use shared memory to cache reused gradOutput_data elements within a block
+// Utilize loop unrolling in the inner loop to reduce loop overhead
+// Minimize use of atomic operations to improve performance
+```

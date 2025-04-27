@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce global memory access
+// Optimize memory access by ensuring continuous memory access patterns
+// Ensure coalesced memory accesses for global memory reads and writes
+// Check if using vectorized reads (e.g., double2) might improve performance
+// Minimize bank conflicts when using shared memory
+// Consider occupancy optimization by adjusting block and grid dimensions

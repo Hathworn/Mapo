@@ -1,0 +1,6 @@
+```
+// Optimize by ensuring coalesced memory access for X[i * INCX]
+// Consider using shared memory if further optimization needed for memory bandwidth
+// Verify if INCX can be changed to 1 for better coalescing
+// Use const memory for ALPHA if value doesn't change throughout execution
+```

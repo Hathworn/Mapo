@@ -1,0 +1,4 @@
+// Consider coalesced memory access for both devInput and devOutput to improve throughput.
+// Ensure alignment of data structures to minimise misaligned memory accesses.
+// Use shared memory to reduce repetitive global memory accesses if possible.
+// Investigate warp divergence and improve thread block execution efficiency.

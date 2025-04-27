@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for fixed, lost, and free arrays.
+// Minimize redundant memory accesses by storing intermediate results in registers.
+// Use shared memory to potentially buffer accessed data and reduce global memory traffic.
+// Ensure memory access patterns adhere to half-warp aligned access to maximize performance.
+// Explore opportunities for loop unrolling within the if statement to improve efficiency.
+```

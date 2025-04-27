@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed data
+// Load x_ind, y_ind, and num_points_at_this_pillar into shared memory
+// Employ __syncthreads() after loading data to ensure all threads are synchronized
+// Avoid unnecessary global memory accesses by using shared memory
+```

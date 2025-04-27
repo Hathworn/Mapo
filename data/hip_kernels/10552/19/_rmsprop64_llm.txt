@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache dw and dw2 for better memory access efficiency, reducing global memory latency.
+// Optimize stride calculation to ensure coalesced memory access patterns for better memory bandwidth utilization.
+// Consider loop unrolling for the for-loop to leverage pipeline parallelism and reduce loop overhead.
+// Use __restrict__ pointers for dw and dw2 to inform the compiler of non-aliasing, allowing better optimization.
+// Ensure alignment of global memory access by padding dw and dw2 if necessary to match warp size.
+```

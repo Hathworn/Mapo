@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory accesses
+// Consider coalesced memory access for vec1 to improve efficiency
+// Ensure alignment for double precision loads and stores
+// Use __ldg() intrinsic for reading vec1 if it is read-only to utilize cached memory
+```

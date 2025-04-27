@@ -1,0 +1,9 @@
+```c
+// Consider coalesced memory access for improved global memory efficiency.
+// Use shared memory to reduce global memory access and improve data locality.
+// Align shared memory access patterns to maximize bandwidth.
+// Unroll loops for kernel data loading for better performance.
+// Optimize shared memory usage to avoid bank conflicts.
+// Ensure __syncthreads() is used correctly to prevent race conditions.
+// Minimize synchronization where not necessary to reduce overhead.
+```

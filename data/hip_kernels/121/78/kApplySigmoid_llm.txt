@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access
+// Minimize thread divergence by ensuring blocks are divisible by 32
+// Consider loop unrolling if len is large enough
+// Coalesce memory access by ensuring mat and target are aligned
+// Optimize grid and block dimensions for maximum occupancy based on hardware architecture
+```

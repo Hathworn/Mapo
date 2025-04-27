@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store a tile of src to reduce global memory accesses.
+// Use float2 to load data in coalesced fashion if possible.
+// Optimize for memory coalescing by aligning data accesses in contiguous memory blocks.
+// Ensure the thread block size is a multiple of the warp size to avoid idle threads.
+// Perform loop unrolling for the loop calculating Gaussian weights if kernel_size allows.
+```

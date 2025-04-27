@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency if applicable
+// Consider using vectorized load/store operations for coalesced memory access
+// Ensure memory alignment to avoid access penalties
+// Explore loop unrolling for increased instruction throughput

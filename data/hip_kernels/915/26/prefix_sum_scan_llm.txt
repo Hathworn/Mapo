@@ -1,0 +1,4 @@
+// Consider using memory coalescing for accessing dev_main_array and dev_auxiliary_array.
+// Try using shared memory for dev_auxiliary_array to reduce global memory accesses.
+// Ensure dev_auxiliary_array is aligned to memory boundaries for faster access.
+// Investigate if loop unrolling can be applied to reduce instruction overhead.

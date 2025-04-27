@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to store weights and reduce global memory accesses.
+// Ensure thread synchronization after loading data into shared memory.
+// Consider adjusting shared memory size based on the `cols` to avoid excess usage.
+// Apply loop unrolling for potential performance improvement, depending on the `cols` size.
+// Analyze memory access patterns to improve coalesced memory access.
+// Evaluate use of warp-level primitives for further optimization.
+```

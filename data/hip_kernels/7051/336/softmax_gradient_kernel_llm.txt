@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache dY and Y to reduce global memory access
+// Apply loop unrolling techniques for both the reduction and gradient calculation loops
+// Ensure coalesced memory access patterns for improved bandwidth utilization
+// Utilize warp-level primitives like __shfl_down_sync for faster reduction
+// Experiment with different block sizes to optimize for GPU hardware architecture
+```

@@ -1,0 +1,4 @@
+// Use coalesced memory access for g_data for better performance
+// Consider using shared memory for frequently accessed data like factor
+// Minimize the use of global memory by using local variables where possible
+// Ensure the number of threads and blocks are optimal for the GPU architecture

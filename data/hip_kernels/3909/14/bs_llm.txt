@@ -1,0 +1,7 @@
+```cpp
+// Coalesce global memory accesses by ensuring continuous threads access continuous memory locations.
+// Use constant memory for frequently accessed scalar constants such as c1, c2, c3, c4, c5, zero, one, two, temp4, and oneBySqrt2pi.
+// Minimize the use of local memory by avoiding redundant calculations.
+// Consider using shared memory for intermediate calculations to reduce global memory traffic.
+// Optimize the lambda function for phi to minimize recalculations and reuse calculations wherever possible.
+```

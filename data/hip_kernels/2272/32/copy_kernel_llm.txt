@@ -1,0 +1,8 @@
+```
+// Optimize memory access by coalescing reads and writes to global memory
+// Balance the workload by maximizing thread utilization across blocks
+// Make full use of shared memory if applicable for intermediate data storage
+// Minimize branch divergence inside the kernel for better performance
+// Consider using a larger block size to improve throughput if resource usage allows
+// Align INCX and INCY with warp size to optimize memory transactions
+```

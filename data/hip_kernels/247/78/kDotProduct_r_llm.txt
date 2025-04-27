@@ -1,0 +1,9 @@
+```
+// Use coalesced global memory access patterns for a and b to improve memory throughput.
+// Consider padding shared memory to avoid bank conflicts.
+// Ensure enough blocks are launched to fully utilize the GPU's SMs for better performance.
+// Use __restrict__ keyword for pointers if possible to help compiler optimizations.
+// Consider further unrolling the reduction loop manually if the compiler does not do it automatically.
+// Explore using atomic operations for reduction as an alternative if precision requirements are relaxed.
+// Ensure numCols and numElements are divisible by DP_BLOCKSIZE to avoid partial warps.
+```

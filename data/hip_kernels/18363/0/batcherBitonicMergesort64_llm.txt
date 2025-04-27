@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced global memory reads by each thread
+// Avoid bank conflicts in shared memory access
+// Consider loop unrolling for the innermost loops
+// Minimize syncthreads calls to reduce synchronization overhead
+```

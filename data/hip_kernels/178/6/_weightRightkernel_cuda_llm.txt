@@ -1,0 +1,5 @@
+```c
+// Consider employing shared memory to cache dev_recon indices to reduce global memory accesses.
+// Investigate coalesced memory access patterns to optimize dev_recon reads.
+// Use texture memory for potentially better caching of dev_recon if access patterns involve 2D locality.
+```

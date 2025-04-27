@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to store particle data within each block to reduce global memory access.
+// Use coalesced memory access patterns when reading from and writing to global memory for better performance.
+// Ensure that the 'sortpart' array is accessed sequentially to leverage cache lines effectively.
+// Minimize the use of conditional statements within kernels to ensure consistent execution flow across threads.
+```

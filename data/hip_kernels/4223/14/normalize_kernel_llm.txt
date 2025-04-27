@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring contiguous memory accesses for threads in a warp.
+// Utilize shared memory to cache mean and variance values to reduce global memory access.
+// Make sure `variance[f]` is stored in a register to minimize repeated memory fetch within the loop.
+// Balance the grid and block dimensions to fully utilize the GPU and avoid underutilization.
+```

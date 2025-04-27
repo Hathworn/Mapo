@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to minimize global memory access latency
+// Optimize block and grid dimensions for efficient memory coalescing
+// Explore warp shuffle operations to reduce shared memory usage
+// Consider loop unrolling for small matrix dimensions
+// Ensure memory accesses are aligned for optimal coalescing
+// Profile to identify potential bank conflicts in shared memory access
+// Consider using asynchronous copy for data transfer to/from shared memory
+```

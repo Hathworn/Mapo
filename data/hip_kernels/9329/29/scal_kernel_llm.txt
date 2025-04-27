@@ -1,0 +1,5 @@
+// Consider using shared memory to hold temporary data for repeated access by threads
+// Ensure coalesced memory access for the X array to maximize throughput
+// Adjust block and grid sizes to balance memory usage and execution time
+// Use __restrict__ to hint the compiler about non-aliasing pointers if applicable
+// Explore loop unrolling for improved instruction-level parallelism

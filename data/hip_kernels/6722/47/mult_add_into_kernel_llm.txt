@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to improve data reuse and reduce global memory access.
+// Ensure memory coalescing for improved global memory access efficiency.
+// Adopt warp synchronous programming if applicable to minimize instruction divergence.
+// Review grid and block size configuration to ensure optimal occupancy and work distribution.
+// Investigate potential use of asynchronous memory copies for overlapping computation and communication.
+```

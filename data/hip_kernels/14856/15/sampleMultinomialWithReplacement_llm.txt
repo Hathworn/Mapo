@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory access for random numbers
+// Ensure warp-level synchronization for correct data usage after random number generation
+// Optimize memory coalescing when accessing normDistPrefixSum and dest arrays
+// Consider padding for normDistPrefixSum to avoid bank conflicts in shared memory
+// Reduce global memory accesses by loading values into local variables when possible
+```

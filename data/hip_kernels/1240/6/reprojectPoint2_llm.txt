@@ -1,0 +1,5 @@
+// Use coalesced memory access to minimize memory transaction costs
+// Minimize divergent branches within the kernel loop
+// Prefer shared memory for frequently accessed data to reduce global memory accesses
+// Consider reducing register pressure by optimizing loop body operations
+// Ensure proper memory alignment for improved access efficiency

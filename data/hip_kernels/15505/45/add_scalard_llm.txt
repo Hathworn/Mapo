@@ -1,0 +1,6 @@
+```c
+// Use coalesced memory access by ensuring v is aligned
+// Minimize thread divergence by using warp-friendly conditions
+// Consider using shared memory if multiple accesses to v are needed
+// Optimize block size to ensure maximum occupancy
+```

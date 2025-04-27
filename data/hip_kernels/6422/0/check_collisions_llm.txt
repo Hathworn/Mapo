@@ -1,0 +1,4 @@
+// Use shared memory for frequently accessed data to reduce global memory bandwidth
+// Preload shared memory with obstacle data to improve memory access speed
+// Apply loop unrolling if possible to expedite computation tasks
+// Consider using atomic operations if collision results need to be aggregated across threads

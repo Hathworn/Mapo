@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce global memory access latency if data reuse is possible.
+// Align data accesses to improve memory coalescing.
+// Minimize the use of divergent branches, like the conditional operator, for better performance.
+// Ensure that the arrays are properly aligned to improve memory access efficiency.
+// If possible, load data into registers for faster access within the kernel.
+```

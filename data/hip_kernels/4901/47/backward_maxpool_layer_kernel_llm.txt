@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache delta values for improved memory access patterns
+// Consider merging id calculation with threadIdx for reduced computation
+// Prefetch data to registers to hide global memory latency
+// Explore coalesced memory access patterns for reading from delta and writing to prev_delta
+// Consider loop tiling to enhance data reuse
+// Validate use of __syncthreads() if accessing shared resources or within diverged warps
+// Optimize boundary checks for out_w and out_h to reduce unnecessary calculations
+```

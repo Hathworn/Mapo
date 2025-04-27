@@ -1,0 +1,4 @@
+// Consider further optimizing memory access patterns by ensuring coalesced memory accesses.
+// Ensure the values being loaded into shared memory are the ones that contribute to computation in this iteration to avoid unnecessary loads.
+// Investigate whether loop unrolling or compiler hints could improve performance through better instruction scheduling and parallelism.
+// Consider the balance between shared memory usage and register usage to optimize thread performance and avoid spillover to global memory.

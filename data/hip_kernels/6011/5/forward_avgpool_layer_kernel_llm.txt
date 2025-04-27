@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to cache input data for coalesced access.
+// Use loop unrolling to reduce branch overhead in summation loop.
+// Assess occupancy and potentially adjust block and grid sizes for optimal performance.
+// Use __restrict__ qualifiers if applicable to provide compiler more optimization opportunities.
+```

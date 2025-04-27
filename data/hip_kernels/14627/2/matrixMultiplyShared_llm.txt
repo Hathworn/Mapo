@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses within the loop
+// Ensure coalesced memory accesses for global memory writes and reads
+// Minimize bank conflicts in shared memory by ensuring stride-1 access
+// Use __syncthreads() to handle synchronization between threads properly
+// Avoid branch divergence by ensuring all branches are executed by threads in a warp
+// Optimize for occupancy by using appropriate block and grid sizes
+// Consider vectorization if hardware supports it for better throughput
+```

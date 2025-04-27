@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache weight matrix w for reduced global memory access latency
+// Leverage shared memory synchronization to ensure w is fully loaded before access
+// Pre-compute wIndex to minimize repeated computation inside nested loops
+// Pre-compute gIndex to enhance index calculation efficiency
+// Minimize conditional checks by simplifying comparison logic
+```

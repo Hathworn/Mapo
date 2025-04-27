@@ -1,0 +1,7 @@
+```
+// Use shared memory for reduction to minimize global memory accesses
+// Perform reduction within a block to reduce global memory usage
+// Synchronize threads to ensure memory consistency after each reduction step
+// Accumulate partial sums within shared memory for faster computation
+// After reduction, write the result to global memory only once per block
+```

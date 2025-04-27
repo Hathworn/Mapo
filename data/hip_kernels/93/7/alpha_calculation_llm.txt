@@ -1,0 +1,3 @@
+// Consider using shared memory for r_squared and p_sum if accessed repeatedly by multiple threads.
+// Ensure coalesced access for r_squared and p_sum when multiple data points are involved.
+// Minimize bank conflicts by aligning shared memory accesses correctly.

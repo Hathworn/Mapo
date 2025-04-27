@@ -1,0 +1,6 @@
+```cpp
+// Use appropriate shared memory size for optimal data throughput
+// Reduce global memory access by leveraging shared memory
+// Ensure all threads can access shared memory without bank conflicts
+// Minimize the number of __syncthreads() calls to reduce overhead
+```

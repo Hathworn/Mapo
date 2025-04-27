@@ -1,0 +1,6 @@
+```cpp
+// Ensure memory coalescing by accessing global memory in a sequential manner
+// Consider using shared memory to reduce global memory access latency
+// Optimize kernel launch dimensions to fully utilize device resources
+// Use __restrict__ qualifiers for pointers if possible to improve compiler optimizations
+```

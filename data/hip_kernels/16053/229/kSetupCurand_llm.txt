@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory accesses
+// Merge smaller kernels to minimize kernel launch overhead
+// Use larger thread blocks to maximize warp occupancy
+// Ensure coalesced access to ‘state’ array
+```

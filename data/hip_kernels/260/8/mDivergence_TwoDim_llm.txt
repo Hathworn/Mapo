@@ -1,0 +1,5 @@
+```
+// Coalesce memory accesses to div array for better performance.
+// Consider using shared memory to store u_dimX and u_dimY inputs for better memory access patterns.
+// Ensure blockDim.x is a multiple of warp size to fully utilize the GPU.
+```

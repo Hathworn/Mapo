@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced access patterns.
+// Pre-calculate input index outside the loop to reduce redundancy.
+// Reduce conditional checks within the loop where possible.
+// Consider using shared memory to cache data and reduce global memory accesses.
+// Align input data to improve cache throughput and memory coalescing.
+// Ensure the block size is a multiple of the warp size to maximize device utilization.
+// Minimize divergent branching by restructuring conditions.
+```

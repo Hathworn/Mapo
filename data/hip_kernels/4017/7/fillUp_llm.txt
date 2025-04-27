@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses if applicable
+// Coalesce memory accesses by ensuring contiguous threads access contiguous memory locations
+// Consider loop unrolling if applicable for further performance improvement 
+// Ensure grid and block dimensions are optimal for minimizing latency and maximizing throughput 
+// Consider using asynchronous memory operations to overlap computation and data transfer

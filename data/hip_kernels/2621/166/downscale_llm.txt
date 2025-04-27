@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing memory access for gradOutput_data
+// Use shared memory to reduce global memory accesses
+// Align memory accesses to 128 bytes for optimal performance
+// Consider loop unrolling if scale_factor is small and known at compile-time
+// Use float4 for vectorized memory access if aligned
+// Ensure gradInput_data is accessed coalescently
+```

@@ -1,0 +1,8 @@
+```cpp
+// Use coalesced memory access to improve memory throughput
+// Consider implementing loop unrolling manually for further improvement
+// Use shared memory efficiently to reduce global memory access
+// Minimize the use of __syncthreads() within reduction to improve performance
+// Consider using warp shuffle operations for an optimized reduction
+// Optimize usage of threadIdx.x within the loop to reduce branch divergence
+```

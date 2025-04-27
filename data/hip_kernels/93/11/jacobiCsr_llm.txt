@@ -1,0 +1,4 @@
+// Consider using shared memory for 'values' and 'colIdx' to reduce global memory access latency
+// Use memory coalescing techniques for accessing arrays 'x' and 'y'
+// Ensure thread synchronization is minimized to avoid unnecessary stalls
+// Look into minimizing usage of __syncthreads() to enhance parallel efficiency

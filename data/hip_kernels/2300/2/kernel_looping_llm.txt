@@ -1,0 +1,8 @@
+```
+// Cache stride computation
+// Minimize redundant gridDim.x * blockDim.x calculations
+// Prefetch data to avoid repeated global memory access
+// Reduce memory bandwidth by reusing data in registers
+// Use shared memory if accessing large arrays or experiencing bank conflicts
+// Ensure coalesced memory access to maximize throughput
+```

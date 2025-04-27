@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize redundant global memory accesses
+// Align memory accesses to avoid bank conflicts
+// Optimize coalesced memory accesses for global memory reads and writes
+// Apply loop unrolling to further enhance performance in the loop structures
+// Minimize branch divergence in thread execution paths
+// Ensure proper synchronization after writing to shared memory
+// Utilize compiler optimization pragmas where applicable
+// Investigate optimal block size and grid dimensions for maximum occupancy
+```

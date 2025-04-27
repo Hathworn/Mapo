@@ -1,0 +1,6 @@
+```cpp
+// Align memory access for A, B, and C arrays by ensuring they are in different memory banks
+// Use coalesced memory accesses to improve performance
+// Consider adjusting offset to be a multiple of warp size for better memory access efficiency
+// Use shared memory if the data reuse allows for reducing global memory traffic
+```

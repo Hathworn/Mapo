@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses and improve caching
+// Ensure coalesced memory access by aligning thread accesses to contiguous memory locations
+// Optimize grid and block dimensions for better occupancy and minimize warp divergence
+// Evaluate use of restrict keyword to inform the compiler about non-overlapping memory accesses
+```

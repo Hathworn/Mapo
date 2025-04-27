@@ -1,0 +1,8 @@
+```
+// Optimize memory access patterns to leverage coalesced global memory access.
+// Consider using shared memory to cache the data from A and B used in the inner loop.
+// Limit the number of blocks to ensure that data fits into shared memory for each block's usage.
+// Prefer avoiding branch divergence within warps by ensuring threads within a warp follow identical execution paths.
+// Use loop unrolling for the inner loop iterating over 'd' to reduce loop overhead and improve performance.
+// Ensure grid and block dimensions are chosen based on hardware architecture for optimal occupancy and performance.
+```

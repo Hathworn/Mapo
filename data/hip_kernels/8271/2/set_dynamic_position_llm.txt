@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access
+// Consider coalesced memory access for arr
+// Optimize shared memory size for better occupancy
+// Check for bank conflicts in shared memory usage
+// Ensure sufficient threads per block for optimal utilization
+// Consider padding shared memory to avoid bank conflicts
+// Use constant memory if t is constant across threads
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for improved memory throughput
+// Ensure appropriate use of shared memory if needed to reduce global memory access
+// Investigate if loop unrolling could benefit performance in larger datasets
+// Profile to determine if occupancy can be improved by adjusting block size
+// Use __restrict__ keyword to indicate that pointer parameters do not alias each other
+// Consider using constant memory if the data is read-only and reused by multiple threads
+```

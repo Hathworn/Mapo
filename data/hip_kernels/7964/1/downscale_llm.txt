@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing gradOutput_data with contiguous threads accessing contiguous memory locations
+// Usage of __restrict__ keyword can help the compiler optimize memory access
+// Consider using shared memory to store frequently accessed data as it is faster than global memory
+// Avoid redundant calculations inside the loops, precompute values outside if possible
+// Minimize divergent warps by ensuring that all threads in a warp can follow the same execution path
+```

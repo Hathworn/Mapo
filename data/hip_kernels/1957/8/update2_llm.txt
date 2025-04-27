@@ -1,0 +1,6 @@
+```
+// Cache rho, yDotZ, and alpha in registers for faster access and reduced memory latency
+// Reuse cached values to compute beta and minimize redundant global memory access
+// Consider using __restrict__ qualifiers if applicable to improve compiler optimizations
+// Ensure coalesced memory access patterns for better global memory throughput
+```

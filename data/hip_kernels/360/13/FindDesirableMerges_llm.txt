@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring coalesced reads and writes wherever possible.
+// Use shared memory to cache `partSizes` and `adjacency` data to reduce global memory access.
+// Consider loop unrolling within the for-loop over neighbors to improve latency hiding.
+// Explore the use of warp-level primitives for operations like reduction or conditional checks.
+// Minimize divergent branches by using predication or merging divergent paths.
+```

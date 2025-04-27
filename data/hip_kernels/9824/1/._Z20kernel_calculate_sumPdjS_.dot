@@ -1,0 +1,26 @@
+digraph "CFG for '_Z20kernel_calculate_sumPdjS_' function" {
+	label="CFG for '_Z20kernel_calculate_sumPdjS_' function";
+
+	Node0x622f3c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = icmp ult i32 %12, %1\l  br i1 %13, label %14, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x622f3c0:s0 -> Node0x6230150;
+	Node0x622f3c0:s1 -> Node0x6231350;
+	Node0x6230150 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%14:\l14:                                               \l  %15 = zext i32 %12 to i64\l  %16 = getelementptr inbounds double, double addrspace(1)* %0, i64 %15\l  %17 = load double, double addrspace(1)* %16, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  br label %18\l}"];
+	Node0x6230150 -> Node0x6231350;
+	Node0x6231350 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%18:\l18:                                               \l  %19 = phi double [ %17, %14 ], [ 0.000000e+00, %3 ]\l  %20 = getelementptr inbounds [1024 x double], [1024 x double] addrspace(3)*\l... @_ZZ20kernel_calculate_sumPdjS_E10shared_sum, i32 0, i32 %4\l  store double %19, double addrspace(3)* %20, align 8\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %21 = icmp ult i16 %9, 2\l  br i1 %21, label %22, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x6231350:s0 -> Node0x6232e60;
+	Node0x6231350:s1 -> Node0x6232ef0;
+	Node0x6232e60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%22:\l22:                                               \l  %23 = icmp eq i32 %4, 0\l  br i1 %23, label %36, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x6232e60:s0 -> Node0x62330c0;
+	Node0x6232e60:s1 -> Node0x6233110;
+	Node0x6232ef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %26, %34 ], [ %10, %18 ]\l  %26 = lshr i32 %25, 1\l  %27 = icmp ult i32 %4, %26\l  br i1 %27, label %28, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x6232ef0:s0 -> Node0x6233510;
+	Node0x6232ef0:s1 -> Node0x6233280;
+	Node0x6233510 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%28:\l28:                                               \l  %29 = add nuw nsw i32 %26, %4\l  %30 = getelementptr inbounds [1024 x double], [1024 x double] addrspace(3)*\l... @_ZZ20kernel_calculate_sumPdjS_E10shared_sum, i32 0, i32 %29\l  %31 = load double, double addrspace(3)* %30, align 8, !tbaa !7\l  %32 = load double, double addrspace(3)* %20, align 8, !tbaa !7\l  %33 = fadd contract double %31, %32\l  store double %33, double addrspace(3)* %20, align 8, !tbaa !7\l  br label %34\l}"];
+	Node0x6233510 -> Node0x6233280;
+	Node0x6233280 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %35 = icmp ult i32 %25, 4\l  br i1 %35, label %22, label %24, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x6233280:s0 -> Node0x6232e60;
+	Node0x6233280:s1 -> Node0x6232ef0;
+	Node0x62330c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%36:\l36:                                               \l  %37 = load double, double addrspace(3)* getelementptr inbounds ([1024 x\l... double], [1024 x double] addrspace(3)*\l... @_ZZ20kernel_calculate_sumPdjS_E10shared_sum, i32 0, i32 0), align 16, !tbaa\l... !7\l  %38 = zext i32 %5 to i64\l  %39 = getelementptr inbounds double, double addrspace(1)* %2, i64 %38\l  store double %37, double addrspace(1)* %39, align 8, !tbaa !7\l  br label %40\l}"];
+	Node0x62330c0 -> Node0x6233110;
+	Node0x6233110 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%40:\l40:                                               \l  ret void\l}"];
+}

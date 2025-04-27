@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to store portions of the input image to reduce global memory access.
+// Coalesce global memory accesses by processing in a structure of arrays format.
+// Unroll loops for kernel operations to reduce loop overhead.
+// Minimize arithmetic operations inside the loops when calculating indices.
+// Pre-compute kernel offset and neighbor checks to streamline the innermost loop.
+```

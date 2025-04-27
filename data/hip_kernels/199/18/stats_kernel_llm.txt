@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access, minimizing latency and improving throughput.
+// Optimize loop by unrolling it to increase instruction level parallelism.
+// Use shared memory for partial sums to reduce redundant global memory accesses.
+// Perform parallel reduction within block using shared memory to minimize synchronization overhead.
+// Write reduced results to global memory only once to minimize global memory writes.
+```

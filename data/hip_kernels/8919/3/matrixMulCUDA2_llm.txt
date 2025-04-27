@@ -1,0 +1,7 @@
+```c
+// Use shared memory to minimize global memory accesses.
+// Ensure shared memory is thoroughly utilized for load efficiency.
+// Utilize __syncthreads() to prevent race conditions within the block.
+// Ensure each thread block computes a tile of the result matrix independently.
+// Reduce global memory access latency by coalescing accesses where possible.
+```

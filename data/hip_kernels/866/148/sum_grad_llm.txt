@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for input and output pointers to improve compiler optimization potential.
+// Use shared memory to reduce global memory access if there are common data reused within a block.
+// Apply loop unrolling for the loop iterating over elements to increase instruction-level parallelism.
+// Ensure coalesced memory access patterns by aligning inOffset and outOffset calculations properly.
+// Minimize divergent branches in switch statement by rearranging data or using template specialization.
+```

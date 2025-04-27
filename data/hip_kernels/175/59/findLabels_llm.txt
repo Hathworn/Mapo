@@ -1,0 +1,8 @@
+```
+// Optimize memory access by loading centroids into shared memory
+// Consider coalesced memory access for the responses array
+// Use shared memory to minimize global memory transactions
+// Minimize the divergence of threads within a warp
+// Ensure that access to sharedCentroids is coalesced to improve memory efficiency
+// Use atomic operations efficiently to reduce contention
+```

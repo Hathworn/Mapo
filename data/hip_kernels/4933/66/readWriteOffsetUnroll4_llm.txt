@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Preload data into shared memory to minimize memory access time
+// Ensure bounds checking to prevent out-of-bounds memory access
+// Use __syncthreads() to ensure all threads have finished loading data
+// Avoid divergent branches by aligning access with blockDim.x
+```

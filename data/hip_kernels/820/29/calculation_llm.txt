@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access latency
+// Load neighboring elements into shared memory to reduce boundary checks
+// Align shared memory allocation to avoid bank conflicts
+// Synchronize threads after writing to shared memory to ensure data consistency
+// Reduce arithmetic operations by leveraging vectorized computation

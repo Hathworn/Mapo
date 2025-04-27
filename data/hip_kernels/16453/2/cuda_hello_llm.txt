@@ -1,0 +1,3 @@
+// Use shared memory to reduce access latency compared to global memory
+// Perform output operations using only one thread to minimize redundant memory accesses
+// Consider using warp-synchronous mechanisms to further optimize memory accesses

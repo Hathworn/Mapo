@@ -1,0 +1,12 @@
+```
+// Cache repeated memory accesses by storing g_Data2[p].
+// Use shared memory if possible to reduce global memory access.
+// Coalesce data access for g_Data arrays to improve memory access pattern.
+// Reduce divergence by avoiding unnecessary calculations for out-of-bound indices.
+// Preload all data used in computations into registers if possible.
+// Consider unrolling loops if there are any for better instruction throughput.
+// Minimize warp divergence by ensuring threads in a warp follow similar paths.
+// Introduce const memory for frequently read constants if applicable.
+// Utilize vectorized memory operations to move multiple data at once when possible.
+// Consider split load and compute phases with __syncthreads if shared memory is used.
+```

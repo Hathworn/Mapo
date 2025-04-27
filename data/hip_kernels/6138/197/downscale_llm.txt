@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for gradOutput_data
+// Leverage shared memory to cache frequently accessed data
+// Use __syncthreads() if shared memory conflicts might occur
+// Minimize divergent branches inside loops
+// Explore loop unrolling for the inner loops
+// Ensure sufficient occupancy to hide memory latency
+```

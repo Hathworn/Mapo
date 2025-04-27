@@ -1,0 +1,5 @@
+```c
+// Use __restrict__ qualifier for src and tgt to help the compiler with aliasing optimization
+// Consider using shared memory if there are repetitive accesses to the same src data by different threads
+// Ensure data alignment and coalesced memory access for src and tgt to maximize memory throughput
+```

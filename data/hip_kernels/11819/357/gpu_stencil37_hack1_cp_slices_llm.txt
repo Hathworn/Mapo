@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to minimize global memory access latency
+// Ensure coalesced memory access patterns to maximize bandwidth utilization
+// Evaluate the need for atomic operations to prevent race conditions in shared memory
+// Optimize memory access to reduce bank conflicts in shared memory
+// Use __restrict__ pointers to potentially enable better compiler optimizations 
+```

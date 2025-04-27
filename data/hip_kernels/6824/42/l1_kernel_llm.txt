@@ -1,0 +1,5 @@
+// Use shared memory to avoid redundant global memory accesses
+// Coalesce memory accesses to reduce memory transaction overhead
+// Ensure proper memory alignment for improved access speed
+// Consider using texture memory for read-only data for cache benefits
+// Minimize bank conflicts in shared memory usage

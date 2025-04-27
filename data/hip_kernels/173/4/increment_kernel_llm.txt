@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Ensure coalesced memory access for improved memory throughput.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+// Experiment with different block sizes to find the optimal configuration for your device.
+// Ensure data is aligned to enable efficient vectorized memory transactions.
+```

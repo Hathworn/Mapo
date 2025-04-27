@@ -1,0 +1,4 @@
+// Ensure shared memory is initialized within valid range to avoid unnecessary memory access.
+// Use loop unrolling for optimized reduction.
+// Use the max function for clarity and potential compiler optimizations.
+// Write result to global memory from the first thread of each block to minimize global memory access.

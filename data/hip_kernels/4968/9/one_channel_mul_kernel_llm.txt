@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses for both data_l and data_r arrays.
+// Ensure that memory accesses for data_r are aligned to avoid bank conflicts.
+// Use __restrict__ qualifiers for pointers to enable compiler optimizations.
+// Explore using shared memory to reduce redundant global memory accesses.
+// Consider loop unrolling for complex multiplication within the if statement.

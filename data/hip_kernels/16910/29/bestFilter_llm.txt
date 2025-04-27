@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache match and cmax entries for improved memory access locality
+// Align shared memory accesses to avoid bank conflicts
+// Consider loop unrolling for the filter iteration loop if Nfilters is known and repetitive
+// Ensure coalesced global memory accesses for Params, match, iC, call, and cmax arrays
+// Evaluate if warp-level primitives can optimize reduction operations (e.g., finding max_running)
+```

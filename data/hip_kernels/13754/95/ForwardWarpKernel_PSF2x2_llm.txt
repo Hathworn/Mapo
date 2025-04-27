@@ -1,0 +1,5 @@
+// Consider using texture memory for 'u', 'v', and 'src' to improve memory access patterns.
+// Implement shared memory for accessing 'u' and 'v' values within warp to reduce redundant global memory accesses.
+// Utilize coalesced memory access for shared reads and writes to 'u', 'v', 'src', 'dst', and 'normalization_factor'.
+// Optimize use of constant memory for variables like 'time_scale' and dimensions 'w', 'h' to minimize register usage.
+// Check alignment of memory access to leverage faster memory transactions and reduce bank conflicts.

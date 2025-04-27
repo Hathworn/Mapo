@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce repeated global memory access
+// Load data into shared memory once, and access it from there
+// Use coalesced memory access patterns for reading from d_data
+// Minimize bank conflicts when using shared memory
+// Avoid divergent branches within warp if possible
+// Optimize thread block size to ensure optimal occupancy
+```

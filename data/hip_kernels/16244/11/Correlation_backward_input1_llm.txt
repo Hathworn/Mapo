@@ -1,0 +1,10 @@
+```
+// Consider using memory coalescing for accessing gradOutput to improve memory throughput.
+// Using __restrict__ pointers for input and output pointers to help with compiler optimizations.
+// Optimize shared memory usage by ensuring prod_sum array size does not exceed required memory.
+// Minimize use of shared memory synchronization with warp shuffle operations.
+// Use loop unrolling techniques to optimize the inner loops for accessing gradOutput.
+// Explore L1 caching options if applicable for repeated accesses to common data.
+// Ensure that warp-level reduction operations are using full warp lanes effectively.
+// Evaluate prefetching strategy for rInput2 to reduce memory latency.
+```

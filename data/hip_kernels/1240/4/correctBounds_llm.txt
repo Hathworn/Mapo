@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache d_ub and d_lb to reduce global memory access
+// Prefetch points data to shared memory to optimize memory access patterns
+// Ensure coalesced memory access by aligning pointCount and pointsPerFile accordingly
+// Minimize bank conflicts when using shared memory for storing variables
+// Consider using vectorized data types if possible to enhance memory throughput
+```

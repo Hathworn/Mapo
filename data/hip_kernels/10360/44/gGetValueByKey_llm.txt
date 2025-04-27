@@ -1,0 +1,5 @@
+```
+// Use coalesced memory access for d_in to improve memory throughput.
+// Consider using shared memory if thread reuse is possible to cache d_in[index] locally.
+// Minimize divergent branches by ensuring all threads in a warp follow the same execution path.
+```

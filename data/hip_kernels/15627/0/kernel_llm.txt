@@ -1,0 +1,6 @@
+// Use coalesced memory access patterns to optimize global memory reads and writes.
+// Minimize global memory transactions by grouping accesses.
+// Prefer shared memory data when repeatedly accessed in the kernel.
+// Optimize shared memory usage by limiting shared memory size according to actual needs.
+// Consider using warp shuffle instructions to reduce shared memory usage.
+// Avoid unnecessary synchronization barriers.

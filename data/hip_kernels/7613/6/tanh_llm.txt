@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory access by using a 2D grid/block.
+// Use shared memory to store 'bias[i]' values to reduce global memory accesses.
+// Launch kernel with a block size that maximizes warp utilization.
+// Consider aligning data structures to 32-byte boundaries for better memory access performance.
+```

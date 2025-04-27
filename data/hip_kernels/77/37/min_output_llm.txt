@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory access.
+// Assess the memory coalescing pattern for input reads.
+// Consider using float2 or other data types for memory load/store if it aligns.
+// Verify the grid/block dimensions to maximize occupancy.

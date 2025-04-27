@@ -1,0 +1,5 @@
+```
+// Use texture memory for `in_image` and `label` to optimize memory access patterns
+// Consider using shared memory if multiple threads may benefit from loading common data
+// Ensure coalesced access pattern for `out_image` array writes
+```

@@ -1,0 +1,7 @@
+```
+// Use grid-stride loop to allow for larger problem sizes without needing more threads.
+// Keep frequently accessed memory in registers to reduce repeated global memory accesses.
+// Access mean and variance using the filter index for memory locality and reduced latency.
+// Optimize thread block size to match hardware specifications and maximize occupancy.
+// Utilize shared memory for temporary storage if further optimization is needed.
+```

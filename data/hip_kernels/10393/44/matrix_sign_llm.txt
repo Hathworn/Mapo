@@ -1,0 +1,7 @@
+```
+// Consider using the __restrict__ keyword to enable the compiler to optimize memory access. 
+// Ensure that A and C pointers are aligned to improve coalesced memory access.
+// Use shared memory if there are opportunities to reuse data within a block to reduce global memory access.
+// Adjust block and grid size for better occupancy and memory throughput.
+// Evaluate the possibility of loop unrolling for further performance optimization.
+```

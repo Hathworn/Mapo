@@ -1,0 +1,5 @@
+// Consider using vectorized memory accesses to improve bandwidth utilization
+// Use of shared memory to store local data helps reduce global memory accesses
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+// Optimize memory access patterns to better utilize L2 cache
+// Consider loop unrolling for critical sections to reduce loop control overhead

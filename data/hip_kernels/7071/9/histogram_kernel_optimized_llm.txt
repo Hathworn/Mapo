@@ -1,0 +1,5 @@
+// Use shared memory for improved memory access efficiency
+// Initialize shared memory in parallel to reduce overhead
+// Efficient histogram calculation minimizes global memory access
+// Avoids repeated atomic operations by using an accumulator
+// Transfers data from faster shared memory to global memory only once after calculations

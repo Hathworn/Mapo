@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for 'output' and 'delta' arrays.
+// Use shared memory to load data collaboratively within each block to reduce global memory access.
+// Minimize divergent branches within the kernel to maintain warp execution efficiency.
+// Unroll inner loops to increase instruction-level parallelism and reduce loop overhead.
+// Try using half precision if precision requirements allow, to increase performance and reduce memory bandwidth usage.
+```

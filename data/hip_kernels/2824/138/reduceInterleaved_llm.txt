@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access patterns for idata to improve memory bandwidth utilization.
+// Prefer loading data into shared memory to reduce global memory transactions.
+// Use __restrict__ keyword for pointers to help the compiler with optimization.
+// Consider occupancy tuning like adjusting the block size to better utilize GPU resources.
+// Unroll more loops where possible for additional thread throughput.
+// Ensure alignment for optimal memory transactions (e.g., adjusting the size of g_idata).
+```

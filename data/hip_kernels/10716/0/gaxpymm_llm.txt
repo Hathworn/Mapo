@@ -1,0 +1,5 @@
+// Use shared memory to avoid frequent global memory accesses.
+// Align shared memory accesses to improve memory coalescing.
+// Consider double buffering technique to overlap computation and memory transfers.
+// Ensure warp is utilized fully to avoid divergence in reduction step.
+// Prefetch data into registers if possible to reduce memory latency.

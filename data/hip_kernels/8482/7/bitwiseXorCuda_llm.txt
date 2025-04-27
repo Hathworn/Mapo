@@ -1,0 +1,10 @@
+```
+// Utilize memory coalescing by ensuring row size aligns with warp size.
+// Use shared memory to cache input data when possible.
+// Minimize branching by organizing code to reduce conditional statements.
+// Optimize grid and block dimensions for occupancy.
+// Prefer to use __restrict__ keyword for all pointer parameters.
+// Consider using half or float for better throughput if applicable.
+// Align data structures to avoid misaligned memory access.
+// Use loop unrolling if the width/height can be assumed as powers of two.
+```

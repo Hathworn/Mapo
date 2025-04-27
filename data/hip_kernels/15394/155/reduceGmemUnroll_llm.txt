@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier for g_idata and g_odata to enable compiler optimizations.
+// Minimize global memory accesses by ensuring all threads within a warp are coalesced when accessing g_idata.
+// Use shared memory to store intermediate results for reduced memory latency.
+// Employ further unrolling techniques inside the warp if performance allows.
+// Consider the usage of __syncthreads() carefully to avoid unnecessary synchronization overhead.
+```

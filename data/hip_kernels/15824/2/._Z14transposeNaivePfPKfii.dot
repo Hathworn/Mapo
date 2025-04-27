@@ -1,0 +1,10 @@
+digraph "CFG for '_Z14transposeNaivePfPKfii' function" {
+	label="CFG for '_Z14transposeNaivePfPKfii' function";
+
+	Node0x565d0c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = shl i32 %5, 5\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %10 = shl i32 %9, 5\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !4\l  %12 = add i32 %10, %11\l  %13 = icmp slt i32 %12, %2\l  %14 = icmp slt i32 %8, %3\l  %15 = select i1 %13, i1 %14, i1 false\l  br i1 %15, label %16, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x565d0c0:s0 -> Node0x565f540;
+	Node0x565d0c0:s1 -> Node0x565f5d0;
+	Node0x565f540 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = mul nsw i32 %12, %3\l  %18 = add nsw i32 %17, %8\l  %19 = sext i32 %18 to i64\l  %20 = getelementptr inbounds float, float addrspace(1)* %1, i64 %19\l  %21 = load float, float addrspace(1)* %20, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %22 = mul nsw i32 %8, %2\l  %23 = add nsw i32 %22, %12\l  %24 = sext i32 %23 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %24\l  store float %21, float addrspace(1)* %25, align 4, !tbaa !5\l  br label %26\l}"];
+	Node0x565f540 -> Node0x565f5d0;
+	Node0x565f5d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  ret void\l}"];
+}

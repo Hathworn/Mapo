@@ -1,0 +1,8 @@
+```
+// Consider reducing shared memory size if numElements is less than 1024 to avoid unused memory allocation
+// Ensure memory accesses are coalesced for loads from global to shared memory
+// Make sure __syncthreads() is used correctly to prevent data hazards
+// Check if using __restrict__ pointers can help with compiler optimizations
+// Verify if loop unrolling improves performance in the computation step
+// Evaluate using warp shuffle operations instead of shared memory if applicable
+```

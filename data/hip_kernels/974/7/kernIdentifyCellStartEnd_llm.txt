@@ -1,0 +1,6 @@
+```
+// Consider coalesced access to particleGridIndices for memory efficiency.
+// Use __syncthreads() to ensure correct read-write across threads.
+// Prefetch data to shared memory to reduce global memory access time.
+// Use warp divergence considerations when reading particleGridIndices.
+```

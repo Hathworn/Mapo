@@ -1,0 +1,6 @@
+```
+// Use memory coalescing by accessing global memory in a way that threads in the same warp access consecutive memory locations
+// Minimize thread divergence by ensuring that the control flow inside the if statement is optimized for warp execution
+// Consider using shared memory if multiple threads need to access the same data within a block
+// Ensure that idx calculations and memory accesses are aligned to improve memory access patterns
+```

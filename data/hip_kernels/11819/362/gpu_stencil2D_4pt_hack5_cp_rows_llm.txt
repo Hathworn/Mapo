@@ -1,0 +1,7 @@
+```c
+// Calculate legalCurCol once and reuse to avoid redundant computation
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access patterns to optimize bandwidth usage
+// Minimize conditional checks within the kernel to enhance performance
+// Use __syncthreads() judiciously to ensure threads are synchronized
+```

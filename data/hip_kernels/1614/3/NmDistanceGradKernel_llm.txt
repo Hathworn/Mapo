@@ -1,0 +1,5 @@
+// Ensure coalesced memory accesses to improve throughput
+// Utilize shared memory if possible to avoid redundant global loads
+// Leverage warp-level operations to reduce atomicAdd overhead
+// Consider loop unrolling for computations to enhance performance
+// Investigate bank conflicts in shared memory usage and optimize accordingly

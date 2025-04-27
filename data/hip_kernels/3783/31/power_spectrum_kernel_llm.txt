@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve cache efficiency
+// Use __syncthreads() to ensure all threads have finished writing to shared memory before proceeding
+// Use CU1DBLOCK to control loop increment and optimize parallel work distribution
+// Atomic operations are used for thread safety in special case handling

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency if data reuse permits
+// Consider loop unrolling if ksize is small and known at compile time
+// Align data_col and data_im pointers to improve memory coalescing
+// Launch kernel with appropriate block size to optimize occupancy
+// Minimize divergent branches for better warp execution efficiency
+```

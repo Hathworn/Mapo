@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for array 'a' to improve performance
+// Use __ldg() to load data from global memory if applicable to take advantage of texture cache
+// Allocate enough shared memory based on the block size to avoid bank conflicts
+// Use warp shuffle operations if shared memory usage is excessive for reduction operations
+```

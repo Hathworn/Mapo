@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to temporarily store values for coalesced access
+// Ensure that the grid and block dimensions are optimized for memory bandwidth
+// Align data accesses to 32/64 bytes to utilize memory coalescing
+// Use __ldg for read-only data to leverage texture cache
+```

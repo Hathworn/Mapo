@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access for d_x, d_y, and d_log_Y arrays to improve memory throughput
+// Use shared memory for frequently accessed data such as d_cdf_norm to reduce global memory access latency
+// Perform loop unrolling if applicable to reduce the number of control instructions
+// Utilize warp-level primitives for bin_index calculation to optimize and balance workloads amongst threads
+// Investigate tuning block and grid dimensions for optimal occupancy and load balancing
+```

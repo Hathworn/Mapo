@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Minimize use of atomic operations by first accumulating values in shared memory
+// Ensure coalesced memory access to improve performance
+// Consider using warp-level primitives to further reduce synchronization overhead
+// Align data structures to cache-line boundaries where possible
+// Use texture memory for 2D spatial locality
+```

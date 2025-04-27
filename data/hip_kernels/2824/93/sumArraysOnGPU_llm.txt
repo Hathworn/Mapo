@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access by ensuring arrays are aligned in memory.
+// Consider using shared memory if there are repeated reads of data by threads in the same block to minimize global memory access.
+// Ensure global memory access patterns are coalescent for higher memory throughput.
+// Utilize __restrict__ qualifiers for input pointers to inform the compiler of no aliasing and enable better optimization.
+```

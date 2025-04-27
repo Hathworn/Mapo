@@ -1,0 +1,7 @@
+```
+// Consider using dynamic shared memory allocation for varied block sizes
+// Minimize memory access by combining reads from global memory when possible
+// Ensure memory coalescing by organizing data for contiguous access
+// Evaluate using __ldg for read-only data to exploit cache efficiency
+// Reduce __syncthreads usage if possible by valid dependencies removal
+```

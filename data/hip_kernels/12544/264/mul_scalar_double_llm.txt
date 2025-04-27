@@ -1,0 +1,4 @@
+// Consider coalesced memory access patterns for dy and result arrays.
+// Minimize warp divergence by ensuring idx and incy result in aligned access.
+// Evaluate using shared memory for frequently accessed data.
+// Optimize grid-stride loop to reduce overhead.

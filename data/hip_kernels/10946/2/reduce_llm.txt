@@ -1,0 +1,7 @@
+```cpp
+// Use thread coarsening to reduce loop iterations within a block.
+// Try to access global memory in a coalesced manner.
+// Ensure that `l2` is a power of 2 to optimize the reduction logic.
+// Minimize synchronization by unrolling the loop when possible.
+// Consider using warp shuffle functions for intra-warp communication to reduce shared memory usage.
+```

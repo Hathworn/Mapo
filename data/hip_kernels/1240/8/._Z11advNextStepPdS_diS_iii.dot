@@ -1,0 +1,13 @@
+digraph "CFG for '_Z11advNextStepPdS_diS_iii' function" {
+	label="CFG for '_Z11advNextStepPdS_diS_iii' function";
+
+	Node0x5c8a710 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%8:\l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !4, !invariant.load !5\l  %14 = zext i16 %13 to i32\l  %15 = getelementptr inbounds i8, i8 addrspace(4)* %10, i64 12\l  %16 = bitcast i8 addrspace(4)* %15 to i32 addrspace(4)*\l  %17 = load i32, i32 addrspace(4)* %16, align 4, !tbaa !6\l  %18 = mul i32 %9, %14\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %20 = add i32 %18, %19\l  %21 = udiv i32 %17, %14\l  %22 = mul i32 %21, %14\l  %23 = icmp ugt i32 %17, %22\l  %24 = zext i1 %23 to i32\l  %25 = add i32 %21, %24\l  %26 = mul i32 %25, %14\l  %27 = icmp slt i32 %20, %3\l  br i1 %27, label %28, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x5c8a710:s0 -> Node0x5c8cc90;
+	Node0x5c8a710:s1 -> Node0x5c8cd20;
+	Node0x5c8cc90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%28:\l28:                                               \l  %29 = mul nsw i32 %7, %3\l  br label %31\l}"];
+	Node0x5c8cc90 -> Node0x5c8cef0;
+	Node0x5c8cd20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%30:\l30:                                               \l  ret void\l}"];
+	Node0x5c8cef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  %32 = phi i32 [ %20, %28 ], [ %45, %31 ]\l  %33 = add nsw i32 %32, %29\l  %34 = sext i32 %33 to i64\l  %35 = getelementptr inbounds double, double addrspace(1)* %0, i64 %34\l  %36 = load double, double addrspace(1)* %35, align 8, !tbaa !16\l  %37 = getelementptr inbounds double, double addrspace(1)* %1, i64 %34\l  %38 = load double, double addrspace(1)* %37, align 8, !tbaa !16\l  %39 = fmul contract double %38, %2\l  %40 = fadd contract double %36, %39\l  %41 = mul nsw i32 %32, %5\l  %42 = add nsw i32 %41, %6\l  %43 = sext i32 %42 to i64\l  %44 = getelementptr inbounds double, double addrspace(1)* %4, i64 %43\l  store double %40, double addrspace(1)* %44, align 8, !tbaa !16\l  %45 = add nsw i32 %32, %26\l  %46 = icmp slt i32 %45, %3\l  br i1 %46, label %31, label %30, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5c8cef0:s0 -> Node0x5c8cef0;
+	Node0x5c8cef0:s1 -> Node0x5c8cd20;
+}

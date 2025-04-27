@@ -1,0 +1,8 @@
+```
+// Consider increasing block size to improve parallelism
+// Ensure sufficient shared memory is allocated for the largest block size
+// Unroll the loop further to maximize performance
+// Ensure memory coalescing, align memory accesses to reduce global memory transactions
+// Use warp shuffle for reduction to minimize shared memory usage
+// Check for bank conflicts in shared memory access
+```

@@ -1,0 +1,7 @@
+```
+// Merge conditions to minimize thread divergence
+// Calculate base indices once to reduce redundant calculations
+// Use shared memory to store intermediate results for faster access
+// Ensure that memory accesses are coalesced by aligning the accesses of adjacent threads
+// Synchronize threads at the end of memory operations to ensure data consistency
+```

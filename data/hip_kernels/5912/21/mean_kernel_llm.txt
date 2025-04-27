@@ -1,0 +1,5 @@
+// Precompute filter_offset to reduce redundant computations during iteration
+// Precompute batch_offset to minimize repeated calculations in inner loops
+// Accumulate in local variable temp_mean to optimize memory access patterns
+// Use scaled accumulation result for final mean calculation to improve precision 
+// Ensure index calculations are performed outside of inner loop to reduce overhead

@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ keyword for g_u1 and g_u2 to suggest compiler for potential memory access optimization.
+// Optimize memory access by using float4 or float2 for coalesced memory access if applicable.
+// Ensure tile accesses are coalesced to reduce global memory transactions.
+// Minimize bank conflicts in shared memory by ensuring proper indexing and padding.
+// Consider using asynchronous memory transfers or prefetching for g_u2 for better hiding latency.
+// Evaluate occupancy and ensure optimal block size for maximum parallel efficiency.
+// Ensure __syncthreads() are appropriately placed to avoid unnecessary synchronization barriers.
+```

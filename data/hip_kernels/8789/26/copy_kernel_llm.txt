@@ -1,0 +1,7 @@
+```
+// Coalesce memory access by ensuring contiguous threads access contiguous memory locations
+// Use shared memory to reduce global memory access and improve bandwidth utilization
+// Use vectorized memory loads and stores if the hardware supports it
+// Ensure that the number of threads per block is a multiple of the warp size to avoid partial warp inefficiencies
+// Consider using a loop unrolling technique to increase instruction-level parallelism
+```

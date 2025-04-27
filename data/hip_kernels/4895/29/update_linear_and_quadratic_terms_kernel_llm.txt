@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to cache frequently accessed global data like cur_tot_weight.
+// Implement loop unrolling for the iteration over 'n' to reduce loop overhead.
+// Prefetch data into registers in advance within the loop to hide memory latency.
+// Consider memory coalescing by aligning memory access patterns within the loop.
+// Minimize warp divergence by aligning computation within warps.
+```

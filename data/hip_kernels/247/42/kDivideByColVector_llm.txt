@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for vec to reduce global memory access latency.
+// Ensure coalesced memory access by aligning data and using contiguous memory access patterns.
+// Evaluate the grid and block dimensions to ensure full GPU utilization and minimize instruction divergence.
+// Verify if __fdividef is optimal for precision/performance trade-off on the target GPU architecture.
+```

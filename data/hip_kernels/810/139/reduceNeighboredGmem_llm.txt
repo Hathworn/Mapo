@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for faster intra-block reduction
+// Avoid bank conflicts by padding shared memory if using shared memory
+// Minimize the number of __syncthreads() for better performance optimization
+// Check memory coalescing to improve global memory access efficiency
+```

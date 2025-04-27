@@ -1,0 +1,5 @@
+// Ensure coalesced access to global memory when loading pIn into shared memory
+// Consider using a warp-level reduction for atomic operations to minimize contention
+// Use larger tile sizes in shared memory to reduce global memory access frequency
+// Opt for vectorized loads/stores where possible to improve bandwidth utilization
+// Evaluate the potential benefit of using cooperative groups for synchronization

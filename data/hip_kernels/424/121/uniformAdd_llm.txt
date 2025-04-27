@@ -1,0 +1,6 @@
+```
+// Load uniform value into shared memory to reduce global memory access.
+// Use shared memory to store data that is accessed multiple times by threads within a block.
+// Ensure that memory accesses are coalesced to improve memory bandwidth usage.
+// Consider using loop unrolling if it leads to better performance in other parts of the kernel.
+```

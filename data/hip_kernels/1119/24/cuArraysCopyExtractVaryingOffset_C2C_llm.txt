@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning memory layout for imageIn and imageOut arrays.
+// Use shared memory if possible to reduce global memory access latency.
+// Optimize access pattern to offsets array to minimize strided memory access.
+// Consider employing vectorized memory operations for float2 types, such as using float4 if feasible.
+// Reorganize thread block dimensions to maximize memory coalescing, especially for threadX and threadY.
+```

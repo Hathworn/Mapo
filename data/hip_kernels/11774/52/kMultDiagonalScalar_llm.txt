@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory access is coalesced by using a calculated stride
+// Use shared memory if there are frequent accesses to the same data
+// Consider loop unrolling if width is known and constant
+// Check for bank conflicts in shared memory usage
+// Use the __restrict__ qualifier for input and output pointers if no aliasing
+// Consider optimizing the grid and block dimensions for the specific GPU architecture
+```

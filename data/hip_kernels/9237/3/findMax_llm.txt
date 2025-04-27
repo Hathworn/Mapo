@@ -1,0 +1,3 @@
+// Consider coalesced memory access by ensuring threads access consecutive memory locations in a warp.
+// Minimize divergent branching to reduce warp serialization by simplifying if conditions where possible.
+// Use shared memory to reduce global memory access when finding the maximum in each row.

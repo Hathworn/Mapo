@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring X and v are accessed in a contiguous manner.
+// Optimize memory access patterns by using shared memory if there are frequent accesses to v[col].
+// Ensure grid and block sizes are optimal for the GPU architecture being targeted.
+// Minimize warp divergence by aligning the iteration strategy with warp execution.
+```

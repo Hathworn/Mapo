@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Optimize memory coalescing by checking alignment of data structures accessed by threads.
+// Evaluate if using warp-level primitives could reduce divergence and improve performance.
+// Use of constant memory for static data can improve bandwidth if the data fits within 64KB.
+// Revisit the kernel launch configuration (blocks and threads) to ensure optimal occupancy.
+// Consider using asynchronous memory transfers to hide memory latency and improve overlap with computation.
+```

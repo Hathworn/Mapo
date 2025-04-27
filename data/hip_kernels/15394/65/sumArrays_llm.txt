@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data structures
+// Minimize shared memory usage to avoid unnecessary latency
+// Consider using __restrict__ keyword for pointer arguments to enable better compiler optimizations
+// Evaluate the use of mixed precision if it suits accuracy requirements
+// Use asynchronous memory prefetching to hide memory latency
+// Tune grid and block dimensions based on hardware specifics to maximize occupancy
+```

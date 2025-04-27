@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses by ensuring contiguous threads access contiguous memory locations.
+// Implement shared memory to cache frequently accessed data and reduce global memory transactions.
+// Use __restrict__ keyword for pointers to potentially allow further compiler optimizations.
+// Check for warp divergence due to conditional statements and attempt to minimize it.
+// Optimize access to the 'labels' array by ensuring it's accessed in a coalesced manner.
+```

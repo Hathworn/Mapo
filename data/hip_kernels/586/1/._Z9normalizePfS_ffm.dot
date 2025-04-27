@@ -1,0 +1,18 @@
+digraph "CFG for '_Z9normalizePfS_ffm' function" {
+	label="CFG for '_Z9normalizePfS_ffm' function";
+
+	Node0x4e79300 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = sext i32 %14 to i64\l  %16 = icmp ult i64 %15, %4\l  br i1 %16, label %17, label %31\l|{<s0>T|<s1>F}}"];
+	Node0x4e79300:s0 -> Node0x4e79df0;
+	Node0x4e79300:s1 -> Node0x4e7b340;
+	Node0x4e79df0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%17:\l17:                                               \l  %18 = getelementptr inbounds float, float addrspace(1)* %1, i64 %15\l  %19 = load float, float addrspace(1)* %18, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %20 = fcmp contract ult float %19, %3\l  %21 = getelementptr inbounds float, float addrspace(1)* %0, i64 %15\l  br i1 %20, label %22, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x4e79df0:s0 -> Node0x4e7be50;
+	Node0x4e79df0:s1 -> Node0x4e7bee0;
+	Node0x4e7be50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%22:\l22:                                               \l  %23 = load float, float addrspace(1)* %21, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %24 = fcmp contract olt float %23, %2\l  br i1 %24, label %29, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x4e7be50:s0 -> Node0x4e7bee0;
+	Node0x4e7be50:s1 -> Node0x4e7c730;
+	Node0x4e7c730 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%25:\l25:                                               \l  %26 = fsub contract float %19, %2\l  %27 = fsub contract float %3, %2\l  %28 = fdiv contract float %26, %27\l  br label %29\l}"];
+	Node0x4e7c730 -> Node0x4e7bee0;
+	Node0x4e7bee0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e8765c70",label="{%29:\l29:                                               \l  %30 = phi float [ %28, %25 ], [ 1.000000e+00, %17 ], [ 0.000000e+00, %22 ]\l  store float %30, float addrspace(1)* %21, align 4, !tbaa !7\l  br label %31\l}"];
+	Node0x4e7bee0 -> Node0x4e7b340;
+	Node0x4e7b340 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

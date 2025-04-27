@@ -1,0 +1,6 @@
+```
+// Optimize memory access patterns to improve coalescing for PolyValue reads.
+// Evaluate the impact of using shared memory to cache frequently accessed PolyValue data.
+// Consider using __ldg() for reading PolyValue if it is read-only and resides in GPU's global memory.
+// Ensure aligned memory access for OCTData to improve memory throughput.
+```

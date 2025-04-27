@@ -1,0 +1,4 @@
+// Pre-compute constants outside the loop to reduce redundant calculations.
+// Pre-compute division outside the loop as it is computationally expensive.
+// Pre-compute division by 10 outside of the loop.
+// Use direct memory offsets rather than recalculating for each access.

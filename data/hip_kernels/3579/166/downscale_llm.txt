@@ -1,0 +1,3 @@
+// Accumulate in a register before writing to global memory to reduce memory writes
+// Consider launching kernels with optimal block and grid sizes based on device specifications
+// Avoid redundant calculations by computing indices once and reusing them

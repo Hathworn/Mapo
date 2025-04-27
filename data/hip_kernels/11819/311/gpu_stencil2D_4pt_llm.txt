@@ -1,0 +1,10 @@
+```
+// Use shared memory to reduce global memory accesses
+// Efficient copy from global to shared memory reduces latency
+// Align memory accesses to improve coalescing
+// Use __syncthreads() strategically to ensure memory consistency
+// Minimize divergence in conditionals for halos
+// Optimize halo copying by minimizing memory bandwidth usage
+// Calculate indices carefully to avoid redundant computations
+// Use shared memory for stencil calculations to improve access time
+```

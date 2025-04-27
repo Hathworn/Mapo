@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access and improve memory coalescing.
+// Consider padding shared memory to avoid bank conflicts.
+// Ensure that block dimensions are optimized for the target architecture.
+// Consider loop unrolling for operations inside the general case to reduce overhead.
+// Align data in global memory for better access efficiency.
+```

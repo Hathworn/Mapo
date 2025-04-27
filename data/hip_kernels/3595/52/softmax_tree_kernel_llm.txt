@@ -1,0 +1,6 @@
+```cpp
+// Unroll the first loop in softmax_device to enhance memory access efficiency.
+// Combine overhead reduction with loop computation in the second loop.
+// Merge normalization into the prior loop to eliminate an additional memory pass.
+// Precompute indices outside loops in softmax_tree_kernel to decrease unnecessary computations.
+```

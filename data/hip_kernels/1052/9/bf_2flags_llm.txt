@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using shared memory where possible
+// Consider coalesced memory access patterns for global memory reads/writes
+// Avoid unnecessary atomic operations for better performance
+// Utilize registers for frequently accessed variables
+// Reuse shared memory flags localF1 and localF2 for reducing global memory access
+// Utilize warp level primitives for synchronization
+```

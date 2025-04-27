@@ -1,0 +1,3 @@
+// Use shared memory to store variance and mean values per filter for reduced global memory access
+// Use __syncthreads() to ensure all threads have loaded values into shared memory
+// Use shared memory value instead of global for improved performance and reduced latency

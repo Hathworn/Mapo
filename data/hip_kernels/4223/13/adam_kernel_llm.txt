@@ -1,0 +1,6 @@
+```
+// Precompute B1_t and B2_t outside the loop to reduce repetitive calculations.
+// Calculate the linear index once to minimize overhead inside the kernel.
+// Check index boundary condition early to avoid unnecessary computations.
+// Use registers efficiently by minimizing repeated memory access.
+```

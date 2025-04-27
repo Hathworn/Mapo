@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache d_FIR_input values for each warp and reduce global memory access
+// Consider coalescing memory access patterns in d_SNR_output and d_SNR_taps for better performance
+// Optimize the access to d_MSD[0] and d_MSD[1] by using register variables if possible
+// Unroll the loop to decrease loop overhead and improve performance
+// Check for bank conflicts in shared memory access to further enhance memory access efficiency
+// Leverage warp shuffling to share values between threads without additional shared memory usage
+```

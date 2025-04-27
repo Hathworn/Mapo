@@ -1,0 +1,5 @@
+// Use shared memory to cooperatively load indices to reduce global memory accesses.
+// Unroll the loop to increase data locality and reduce loop overhead.
+// Use thread synchronization (syncthreads) efficiently to ensure all threads in the block have loaded indices.
+// Validate row indices to avoid out-of-bounds memory accesses.
+// Optimize memory access patterns by accessing contiguous memory locations where possible.

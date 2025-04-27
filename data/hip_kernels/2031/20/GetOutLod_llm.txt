@@ -1,0 +1,7 @@
+```
+// Use shared memory to store num_erased values to reduce global memory access
+// Consider coalesced memory access for in_lod and out_lod0 arrays
+// Use loop unrolling if lod_len is known at compile time and is small
+// Minimize bank conflicts when using shared memory
+// Use __restrict__ keyword for pointer arguments to help compiler optimize
+```

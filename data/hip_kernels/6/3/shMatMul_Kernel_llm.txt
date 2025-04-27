@@ -1,0 +1,7 @@
+```
+// Ensure coalesced global memory access for matrixC write operations
+// Use shared memory to reduce global memory access for matrixA and matrixB
+// Consider using persistent threads to reduce kernel launch overhead for larger matrices
+// Optimize shared memory usage to avoid bank conflicts for sh_MatrixA and sh_MatrixB
+// Ensure boundary checks are correct to prevent invalid memory accesses
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for `minmax` to reduce global memory accesses.
+// Ensure `block_x` calculation uses optimal stride for warp-level parallelism.
+// Optimize memory coalescing for `ptrs` accesses.
+// Evaluate the usage of `atomics` for potential reduction in shared state updates.
+// Assess loop unrolling for the inner loop to minimize control overhead.
+```

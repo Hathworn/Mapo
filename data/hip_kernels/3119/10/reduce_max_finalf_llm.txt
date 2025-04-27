@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses to improve cache hits and reduce latency.
+// Use shared memory to store partial results for all threads in a block to reduce global memory accesses.
+// Optimize grid and block dimensions to maximize occupancy and minimize warp divergence.
+// Minimize the synchronization overhead by ensuring only necessary __syncthreads() calls are used.

@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access by ensuring threads access consecutive elements in global memory.
+// Consider using shared memory to hold larger chunks of data to reduce global memory access.
+// Ensure data accessed by each warp is aligned, to avoid bank conflicts and improve memory throughput.
+// Optimize loop unrolling for the squared differences computation for better performance.
+// Use more blocks if NUM_THREADS does not fully utilize GPU resources for better load balancing.
+// Use __restrict__ keyword for vg_a, vg_b, and d pointers (if applicable) to help the compiler with optimization.
+```

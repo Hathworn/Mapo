@@ -1,0 +1,8 @@
+```
+// Ensure memory alignment for better performance
+// Use __restrict__ keyword to prevent pointer aliasing
+// Consider using shared memory for frequently accessed data
+// Minimize global memory access by using registers
+// Prefetch data into registers to hide memory latency
+// Reduce divergence by ensuring uniform work distribution
+```

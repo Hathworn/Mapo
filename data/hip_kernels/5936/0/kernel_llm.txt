@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses for better memory throughput
+// Use shared memory to reduce global memory accesses if possible
+// Ensure appropriate use of __syncthreads() to avoid race conditions
+// Minimize conditional branching inside the kernel for performance benefits
+// Evaluate use of vectorized operations to optimize data processing
+// Optimize block and grid dimensions to maximize occupancy
+```

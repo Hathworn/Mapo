@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store data and avoid frequent global memory access
+// Use coalesced memory access patterns for data loading and storage
+// Explore using texture memory for read-only data like constants
+// Re-examine memory-bound sections for potential warp-level optimizations
+// Investigate reducing register pressure by optimizing local variable usage
+```

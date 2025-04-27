@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce redundant global memory accesses
+// Ensure memory coalescing by optimizing the access pattern to avoid bank conflicts
+// Pre-fetch data into registers before using to reduce memory latency
+// Consider loop unrolling if applicable for kernel efficiency
+// Evaluate the use of warp shuffle functions for potential latency reduction
+// Analyze for potential use of asynchronous data transfer and overlap computation
+```

@@ -1,0 +1,7 @@
+```cpp
+// Combine memory reads and writes to coalesce memory access
+// Use float4 vectors to optimize data throughput for d_Iout
+// Pre-compute scalar multiplication to reduce operations inside the kernel
+// Ensure memory access patterns are aligned to improve cache utilization
+// Minimize thread divergence by ensuring conditional branches are outside critical paths
+```

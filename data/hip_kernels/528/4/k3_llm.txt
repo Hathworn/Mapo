@@ -1,0 +1,4 @@
+// Consider coalescing memory accesses for par_mat and cap_mat arrays.
+// Utilize shared memory for frequently accessed matrices like adj_mat and cap_max_mat.
+// Align memory accesses to improve memory efficiency, especially for cap_mat and augPath.
+// Explore using __syncthreads() to synchronize threads where necessary.

@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to minimize global memory access latency
+// Ensure memory access coalescing for arr and result arrays
+// Explore launching the kernel with an optimal block size for improved performance
+// Utilize constant memory for const_arr1 and const_arr2 if they are read-only and fit within size limits
+```

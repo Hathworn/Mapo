@@ -1,0 +1,6 @@
+```
+// Use __shared__ memory for frequently accessed data to reduce global memory accesses.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Consider loop unrolling for performance improvement if there are loops in the kernel.
+// Ensure proper memory alignment to avoid misaligned accesses.
+```

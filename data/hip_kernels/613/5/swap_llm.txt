@@ -1,0 +1,5 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Ensure all threads have written to shared memory using __syncthreads()
+// Use __syncthreads() again to ensure data consistency after memory swap
+```

@@ -1,0 +1,8 @@
+```
+// Consider increasing shared memory size if scale_factor * scale_factor exceeds 1024
+// Optimize memory bandwidth by minimizing global memory accesses
+// Utilize coalesced memory access patterns for gradOutput_data
+// Ensure synchronization (__syncthreads) is strategically placed
+// Experiment with block and thread sizes for optimal occupancy
+// Perform arithmetic operations on registers instead of shared memory
+```

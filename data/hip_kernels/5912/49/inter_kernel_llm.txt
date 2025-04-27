@@ -1,0 +1,4 @@
+// Consider using shared memory to store portions of X and Y to reduce global memory access.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Consider using loop unrolling to improve the throughput of the loop processing.
+// Utilize const memory if X or Y contains constants or unchanging elements across iterations.

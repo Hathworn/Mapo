@@ -1,0 +1,13 @@
+```cpp
+// Use shared memory to minimize global memory access latency
+// Ensure coalesced memory accesses when reading input_k
+// Consider using float2 for coalesced memory access and increased throughput
+// Ensure buffer initialization reduces bank conflicts in shared memory
+// Optimize reduction loop to minimize thread divergence
+// Consider loop unrolling in the reduction step for increased ILP
+// Avoid warp divergence by ensuring uniform control flow
+// Utilize efficient use of ceilf and fminf/fmaxf to reduce computational overhead
+// Prefetch data into registers to minimize memory latency
+// Consider using asynchronous copies if supported to exploit memory bandwidth
+// Minimize the number of syncthreads calls to reduce synchronization overhead
+```

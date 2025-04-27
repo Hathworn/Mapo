@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache repeated mask[i] accesses for better memory coalescing.
+// Ensure that the grid and block size are chosen to maximize occupancy and fully utilize GPU resources.
+// Perform alignment checks and ensure pointer addresses are aligned to improve memory access efficiency.
+// Minimize conditional branches in the kernel to prevent divergent warps and improve performance.
+// Analyze and experiment with loop unroll pragmas for optimizing loop execution within the kernel.
+```

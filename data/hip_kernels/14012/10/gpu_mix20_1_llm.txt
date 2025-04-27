@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency if possible
+// Optimize data prefetching for ipOffset to minimize pipeline stalls
+// Consider using vectorized memory operations for ip data loading
+// Use warp-synchronous programming model to enhance work units execution efficiency
+// Evaluate using memory coalescing strategy for reading ip data
+// Reduce arithmetic intensity by pre-computing constant values outside the loop
+```

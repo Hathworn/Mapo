@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Use coalesced memory accesses to maximize memory bandwidth utilization.
+// Explore loop unrolling further if profile data suggests bottlenecks in computation.
+// Ensure threads within a warp process consecutive data elements to optimize for memory throughput.
+// Investigate the use of texture memory for read-only data if applicable.
+```

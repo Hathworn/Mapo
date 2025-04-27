@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced global memory access by aligning memory accesses to warp boundaries.
+// Consider using float4 or float2 for vectorized memory loads if k is a multiple.
+// Evaluate reducing shared memory bank conflicts using padding strategy if needed.
+// Attempt to eliminate shared memory usage by performing reduction final step using warp-level primitives.
+// Consider occupancy optimization by experimenting with different NUM_THREADS values.
+```

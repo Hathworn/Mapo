@@ -1,0 +1,7 @@
+```cpp
+// Use coalesced memory accesses by ensuring contiguous threads access contiguous memory.
+// Optimize memory access by ensuring data alignment for improved cache performance.
+// Consider using shared memory if multiple accesses to the same data occur within a block to reduce global memory accesses.
+// Make sure to use __restrict__ qualifiers for pointers to enable better compiler optimizations if no aliasing occurs.
+// Evaluate if loop unrolling in cases of repeated operations could reduce instruction overhead.
+```

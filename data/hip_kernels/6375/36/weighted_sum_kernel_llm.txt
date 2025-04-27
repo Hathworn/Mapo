@@ -1,0 +1,7 @@
+```
+// Combine loads of 'a[i]' and 's[i]' to reduce memory latency
+// Use shared memory for 's' if its reuse is high to reduce global memory access
+// Consider loop unrolling if 'n' is large to improve performance
+// Ensure coalesced memory access for 'a', 'b', 's', and 'c' arrays
+// Prefetch data into registers to minimize stalls
+```

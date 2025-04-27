@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access to improve global memory read efficiency
+// Minimize use of __syncthreads() for better performance where possible
+// Consider loop unrolling to optimize the reduction loop further
+// Align shared memory access for reduced bank conflicts
+```

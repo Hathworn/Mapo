@@ -1,0 +1,9 @@
+```
+// Optimize memory access patterns to reduce bank conflicts
+// Ensure shared memory allocations align with hardware
+// Use vectorized loads if possible for global memory access
+// Consider using read-only memory cache for _matrixA and _matrixB
+// Minimize the number of __syncthreads() calls if safe
+// Explore loop unrolling for the k-loop for potential performance gains
+// Ensure grid and block dimensions match the hardware warp size for efficiency
+```

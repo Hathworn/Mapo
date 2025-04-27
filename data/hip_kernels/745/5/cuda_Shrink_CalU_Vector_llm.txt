@@ -1,0 +1,7 @@
+```
+// Consolidate repeated index calculations and reduce using shared memory if beneficial
+// Fuse kernel operations to reduce global memory accesses for X, U, and Y
+// Optimize memory access patterns to utilize coalesced memory accesses
+// Explore usage of __ldg() for L1Weight, if constants are seldom changed
+// Consider loop unrolling for the iterations over nFilts
+```

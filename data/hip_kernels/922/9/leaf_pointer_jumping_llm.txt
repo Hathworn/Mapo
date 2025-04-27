@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory coalescing by accessing adjacent memory locations for parent array.
+// Consider using shared memory if parent array values are frequently accessed and updated.
+// Evaluate the use of warp shuffle instructions to optimize parent pointer updates.
+// Minimize divergent branches by ensuring warp-wide uniformity in vertex_state conditions.
+// Consider loop unrolling if loop structures are introduced for efficiency.
+// Align memory accesses to avoid bank conflicts when using shared memory.
+```

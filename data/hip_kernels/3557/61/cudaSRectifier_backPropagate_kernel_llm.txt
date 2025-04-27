@@ -1,0 +1,3 @@
+// Precompute conditionals outside loop to avoid branch divergence
+// Use stride loop to ensure efficient memory access patterns
+// Consider using shared memory if computations on 'x' can benefit from reuse within a block

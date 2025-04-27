@@ -1,0 +1,5 @@
+digraph "CFG for '_Z12OneHotKernelPKfliiPKlPf' function" {
+	label="CFG for '_Z12OneHotKernelPKfliiPKlPf' function";
+
+	Node0x47b0fb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = sext i32 %8 to i64\l  %10 = getelementptr inbounds i64, i64 addrspace(1)* %4, i64 %9\l  %11 = load i64, i64 addrspace(1)* %10, align 8, !tbaa !5, !amdgpu.noclobber\l... !9\l  %12 = sext i32 %2 to i64\l  %13 = mul nsw i64 %11, %12\l  %14 = zext i32 %7 to i64\l  %15 = add nsw i64 %13, %14\l  %16 = getelementptr inbounds float, float addrspace(1)* %0, i64 %15\l  %17 = load float, float addrspace(1)* %16, align 4, !tbaa !10,\l... !amdgpu.noclobber !9\l  %18 = mul nsw i32 %8, %2\l  %19 = add nsw i32 %18, %7\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds float, float addrspace(1)* %5, i64 %20\l  store float %17, float addrspace(1)* %21, align 4, !tbaa !10\l  ret void\l}"];
+}

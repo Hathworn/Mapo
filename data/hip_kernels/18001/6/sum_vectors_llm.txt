@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access for the atomic add operation.
+// Consider coalesced memory access for both src and dst arrays to improve memory throughput.
+// Optimize block size to better utilize memory bandwidth and GPU resources.
+// Use loop unrolling for potential performance improvement with the atomic add operation.

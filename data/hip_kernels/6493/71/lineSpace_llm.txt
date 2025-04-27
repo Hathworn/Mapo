@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store the delta values calculated for each dimension to reduce redundant global memory access.
+// Ensure that shared memory is initialized by looping through each dimension only once per thread block.
+// Use __syncthreads() to synchronize threads after shared memory initialization for consistent access.
+// Minimize global memory accesses by calculating the index offsets within a single thread block.
+```

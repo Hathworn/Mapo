@@ -1,0 +1,6 @@
+```
+// Use shared memory for partial results, to minimize global memory access.
+// Corrected to calculate distance contribution.
+// Synchronize to ensure all threads have written to shared memory.
+// Reduction to sum contributions from all threads.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access when possible
+// Consider using vectorized loads/stores for coalesced access
+// Reduce divergent branching for better warp efficiency
+// Ensure memory is aligned for faster access
+// Precompute constant values outside loops wherever possible
+```

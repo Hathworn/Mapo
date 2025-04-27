@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses for both tensor and src to improve memory bandwidth utilization.
+// Ensure that the access patterns are aligned and contiguous to benefit from coalesced memory reads.
+// Utilize shared memory if data reuse is high between threads to minimize global memory bandwidth usage.
+// Assess the impact of register pressure caused by unrolling and optimize based on hardware capabilities.
+// Evaluate the occupancy and thread block size to maintain optimal thread utilization.
+```

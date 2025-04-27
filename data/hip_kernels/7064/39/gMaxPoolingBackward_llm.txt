@@ -1,0 +1,7 @@
+```
+// Consider loading adjacent rows/cols for the block into shared memory to further improve memory coalescing.
+// Avoid reading mask in a separate operation to benefit from memory coalescing.
+// Investigate potential bank conflicts in shared memory loads for further optimization.
+// Use warp shuffle instructions to reduce register usage and increase warp efficiency.
+// Minimize synchronization cost by optimizing how shared memory is utilized across different threads.
+```

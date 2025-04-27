@@ -1,0 +1,13 @@
+digraph "CFG for '_Z21chol_kernel_optimizedPfii' function" {
+	label="CFG for '_Z21chol_kernel_optimizedPfii' function";
+
+	Node0x463d0f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = add i32 %4, 1\l  %6 = add i32 %5, %1\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = add i32 %6, %7\l  %9 = icmp uge i32 %8, %6\l  %10 = icmp ult i32 %8, 2048\l  %11 = and i1 %9, %10\l  br i1 %11, label %12, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x463d0f0:s0 -> Node0x463d2a0;
+	Node0x463d0f0:s1 -> Node0x463eaf0;
+	Node0x463d2a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%12:\l12:                                               \l  %13 = shl i32 %1, 11\l  %14 = add i32 %6, %13\l  %15 = zext i32 %14 to i64\l  %16 = getelementptr inbounds float, float addrspace(1)* %0, i64 %15\l  %17 = shl i32 %6, 11\l  br label %18\l}"];
+	Node0x463d2a0 -> Node0x463efa0;
+	Node0x463efa0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  %19 = phi i32 [ %8, %12 ], [ %31, %18 ]\l  %20 = load float, float addrspace(1)* %16, align 4, !tbaa !5\l  %21 = add nuw i32 %19, %13\l  %22 = zext i32 %21 to i64\l  %23 = getelementptr inbounds float, float addrspace(1)* %0, i64 %22\l  %24 = load float, float addrspace(1)* %23, align 4, !tbaa !5\l  %25 = fmul contract float %20, %24\l  %26 = add nuw i32 %19, %17\l  %27 = zext i32 %26 to i64\l  %28 = getelementptr inbounds float, float addrspace(1)* %0, i64 %27\l  %29 = load float, float addrspace(1)* %28, align 4, !tbaa !5\l  %30 = fsub contract float %29, %25\l  store float %30, float addrspace(1)* %28, align 4, !tbaa !5\l  %31 = add i32 %19, %2\l  %32 = icmp uge i32 %31, %6\l  %33 = icmp ult i32 %31, 2048\l  %34 = and i1 %32, %33\l  br i1 %34, label %18, label %35, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x463efa0:s0 -> Node0x463efa0;
+	Node0x463efa0:s1 -> Node0x463eaf0;
+	Node0x463eaf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  ret void\l}"];
+}

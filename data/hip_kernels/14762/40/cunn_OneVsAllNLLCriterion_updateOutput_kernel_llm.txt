@@ -1,0 +1,8 @@
+```c
+// Use coalesced memory access for input and target arrays
+// Consider using vectorized loads where possible
+// Ensure positiveWeight array is in constant memory if it doesn't change across iterations
+// Minimize bank conflicts when accessing shared memory buffer
+// Ensure enough threads to fully utilize the block for the parallel reduction
+// Pre-warm input data into L1 cache if possible
+```

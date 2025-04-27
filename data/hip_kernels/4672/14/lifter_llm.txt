@@ -1,0 +1,7 @@
+```cpp
+// Consider using __restrict__ keyword for cepstrum to improve memory access optimization
+// Ensure that memory accesses are coalesced for better performance
+// Try using shared memory if the data is reused within the block
+// Check if loop unrolling could provide any benefits
+// Evaluate if using float2 or similar data types could optimize vectorized operations
+```

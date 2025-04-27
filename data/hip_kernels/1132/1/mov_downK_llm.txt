@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access to improve memory throughput
+// Reuse shared memory where possible to minimize global memory accesses
+// Minimize the number of __syncthreads() calls for better performance
+// Consider loop unrolling for the stack_down function to reduce loop overhead
+// Ensure proper alignment of data for optimal access patterns
+// Avoid branching within warp if possible to prevent warp divergence
+```

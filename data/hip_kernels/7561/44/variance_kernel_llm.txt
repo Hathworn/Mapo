@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache mean values for faster access within threads
+// Balance the workload across threads to eliminate any unnecessary unused threads
+// Unroll loops to increase instruction throughput and reduce control overhead
+// Minimize the use of powf by replacing with simple arithmetic operations where possible
+// Coalesce memory access patterns for x and variance arrays for better memory throughput
+```

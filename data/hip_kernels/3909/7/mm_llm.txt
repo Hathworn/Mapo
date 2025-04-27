@@ -1,0 +1,4 @@
+// Use register variables for temporary sums, reduce memory access
+// Avoid redundant calculations, compute indices directly in loop
+// Store result back to global memory after loop, minimize global memory writes
+// Ensure coalesced memory access by proper data placement of dA and dB

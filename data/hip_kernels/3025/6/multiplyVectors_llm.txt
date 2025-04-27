@@ -1,0 +1,7 @@
+```
+// Use shared memory to optimize memory access patterns and reduce global memory accesses
+// Ensure that accessing shared and global memory is coalesced whenever possible
+// Load data into shared memory in chunks to minimize costly accesses to global memory
+// Synchronize threads with __syncthreads() to ensure all threads have finished loading into shared memory before computation
+// Consider aligning memory accesses and using vectorized loads/stores for additional performance improvements
+```

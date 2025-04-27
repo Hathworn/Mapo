@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access by checking memory alignment
+// Consider using shared memory to store intermediate results
+// Minimize global memory accesses by storing frequently used data in registers
+// Use __restrict__ qualifier to help compiler optimize memory accesses
+// Use warp shuffling to reduce reliance on atomic operations where possible
+// Optimize loop unrolling for potential performance improvement
+// Ensure occupancy is maximized by balancing thread block size and register usage
+// Utilize texture memory for potential cache benefits with specific access patterns
+```

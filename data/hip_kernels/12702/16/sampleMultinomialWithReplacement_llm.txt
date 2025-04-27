@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access for the 'normDistPrefixSum' and 'dest' arrays for each thread.
+// Use shared memory to cache 'normDistPrefixSum' data for each block to reduce global memory access.
+// Investigate whether loop unrolling in 'binarySearchForMultinomial' function can be beneficial.
+// Apply vectorized reads and writes where possible to improve memory bandwidth utilization.
+// Ensure that 'hiprand_uniform' is efficiently used to avoid excessive state transitions.
+// Check for possibility of avoiding warp divergence within the search loop.
+```

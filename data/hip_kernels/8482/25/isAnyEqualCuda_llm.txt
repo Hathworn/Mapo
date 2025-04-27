@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory access for 'value'
+// Consider coalescing global memory accesses when fetching 'image' and 'value'
+// Ensure shared memory utilization is optimal for 'valueCount'
+// Ensure __syncthreads() is used after loading shared memory
+// Optimize atomic operations by minimizing their frequency
+```

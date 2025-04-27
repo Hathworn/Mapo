@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory accesses, especially for frequently accessed data.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Ensure data_col accesses are aligned to improve memory throughput.
+// Minimize branching by structuring code to reduce conditional checks within loops.
+// Evaluate loop unrolling techniques for the ksize loops to potentially increase performance.
+```

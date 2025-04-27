@@ -1,0 +1,5 @@
+```
+// Utilize shared memory for frequently accessed data to reduce global memory access latency.
+// Ensure coalesced access to d_edge_list for improved memory throughput.
+// Consider using atomic operations cautiously to prevent race conditions when signaling *loop.
+```

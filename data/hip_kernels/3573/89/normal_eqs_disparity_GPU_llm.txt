@@ -1,0 +1,12 @@
+```
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory locations for d_disparity_compact.
+// Use shared memory to cache data from global memory when possible to minimize global memory accesses.
+// Utilize __ldg() to load data from global memory when applicable to take advantage of read-only cache.
+// Minimize divergence by ensuring that conditions in the if-statement are consistent across threads within a warp.
+// Where applicable, opt for intrinsic functions like __fdividef() for faster operations.
+// Evaluate whether reducing multiple independent accumulations into a single operation can optimize the code.
+// Store intermediate results in registers to reduce redundant calculations.
+// Ensure the optimal occupancy by controlling the amount of shared memory and number of registers per thread.
+// Reorganize operations to improve instruction-level parallelism.
+// Balance the workload between threads to ensure each thread does an equal amount of work.
+```

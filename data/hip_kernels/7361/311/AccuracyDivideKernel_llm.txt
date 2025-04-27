@@ -1,0 +1,3 @@
+// Use a larger shared memory block if multiple values need to be accessed simultaneously.
+// Optimize memory access by coalescing writes back to global memory.
+// Minimize __syncthreads() calls where possible to reduce synchronization overhead.

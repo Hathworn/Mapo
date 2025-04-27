@@ -1,0 +1,7 @@
+```cpp
+// // Consider using shared memory to reduce global memory access for read operations
+// // Ensure coalesced memory access by carefully aligning data structures
+// // Prefetch data to registers for frequently accessed variables like fx, fy, and offset
+// // Use __restrict__ keyword for pointer parameters to improve memory access times
+// // Minimize divergent branches within warp execution
+```

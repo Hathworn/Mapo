@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access.
+// Ensure memory coalescing by accessing consecutive memory locations within warps.
+// Minimize divergent branches for better warp efficiency.
+// Use vectorized loads to optimize memory bandwidth utilization if possible.

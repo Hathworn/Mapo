@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory accesses to improve memory bandwidth utilization.
+// Ensure INCX allows for optimal coalescing when accessing X.
+// Adjust ALPHA to reside in shared memory if accessed frequently by threads.
+// Verify that ALPHA is a constant or passed efficiently to the kernel.
+// Minimize divergent branches within the kernel for better performance.
+// Profile and tune blockDim.x and gridDim.x for optimal occupancy.
+```

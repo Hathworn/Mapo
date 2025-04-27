@@ -1,0 +1,4 @@
+// Use shared memory to reduce the number of global memory accesses.
+// Align shared memory accesses to improve memory coalescing.
+// Ensure memory writes to global memory are minimized.
+// Use __syncthreads() to ensure correct memory access ordering.

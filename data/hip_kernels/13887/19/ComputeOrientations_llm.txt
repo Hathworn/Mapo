@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory accesses for loading g_Data to shared memory
+// Pre-compute constant values outside of loops where possible
+// Utilize shared memory to reduce redundant global memory accesses
+// Ensure memory access patterns are aligned for optimal performance
+// Reduce branching within critical loops to avoid warp divergence
+// Leverage loop unrolling for small, fixed-size loops if beneficial
+// Synchronize threads efficiently to minimize stalls
+// Optimize shared memory usage to prevent bank conflicts
+```

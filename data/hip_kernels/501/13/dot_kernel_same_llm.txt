@@ -1,0 +1,6 @@
+// Minimize global memory access by using shared memory for intermediate calculations
+// Use 'temp' array in shared memory to store partial results for reduction
+// Ensure data alignment for 'vg_a' and 'vg_b' to reduce misaligned memory access
+// Minimize warp divergence by ensuring threads in a warp follow similar execution paths
+// Optimize loop for 'offset' to minimize fence instructions and memory latency
+// Strive for coalesced memory access patterns when reading 'vg_a' and storing results in 'd'

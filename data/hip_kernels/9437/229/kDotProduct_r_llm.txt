@@ -1,0 +1,5 @@
+// Use a register for interim summation to reduce global memory accesses.
+// Apply loop unrolling to minimize loop overhead and maximize memory throughput.
+// Use __shared__ memory to reduce redundant global memory accesses.
+// Utilize __syncthreads() to synchronize threads and ensure correct reduction.
+// Reduce shared memory using a loop for clarity and maintain memory consistency.

@@ -1,0 +1,4 @@
+// Consider using warp shuffle operations for more efficient reduction instead of __syncthreads().
+// Utilize more shared memory for frequently accessed data to reduce global memory access.
+// Explore coalesced memory access patterns for g_Data loads to improve bandwidth usage.
+// Use texture or read-only cache for g_Data if access patterns are suitable for caching.

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses and improve memory coalescing
+// Ensure global memory reads are coalesced by appropriate alignment and use of shared memory
+// Synchronize threads after loading data into shared memory to avoid race conditions
+// Consider further optimizing thread block size for better occupancy and less idle time

@@ -1,0 +1,5 @@
+// Consider coalescing memory accesses for ROIRef and ROIEst to improve memory bandwidth.
+// Optimize memory access patterns for partsEst and partsVisibilityEst to achieve better coalescing.
+// Use shared memory to store frequently accessed variables like means and std to reduce global memory access latency.
+// Organize the computation and access pattern to minimize warp divergence for better performance.
+// Consider unrolling loops where beneficial, such as the template and parts estimation loops.

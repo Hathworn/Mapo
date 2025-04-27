@@ -1,0 +1,6 @@
+```
+// Precompute indices to minimize arithmetic calculations in the loop.
+// Use coalesced memory accesses by ensuring sequential threads access sequential memory locations.
+// Consider using shared memory if multiple threads access the same data.
+// Ensure memory accesses are aligned to improve performance.
+```

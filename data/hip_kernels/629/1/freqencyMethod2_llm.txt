@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory access
+// Ensure proper memory coalescing by using strided access pattern
+// Use atomic operations in shared memory to reduce global memory contention
+// Synchronize threads to ensure consistent data in shared memory before accumulation
+// Distribute shared memory initialization work among threads for balanced load
+// Accumulate final results from shared to global memory strategically
+```

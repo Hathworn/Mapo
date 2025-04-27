@@ -1,0 +1,4 @@
+// Use __restrict__ keyword to allow the compiler to optimize memory access patterns
+// Ensure memory access is coalesced to maximize throughput
+// Minimize global memory access and prefer shared memory where possible
+// Optimize occupancy by properly balancing register usage and block size

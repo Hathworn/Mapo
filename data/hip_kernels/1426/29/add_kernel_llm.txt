@@ -1,0 +1,7 @@
+```c
+// Use shared memory if applicable to minimize global memory accesses
+// Optimize coalesced memory accesses for X to improve performance
+// Ensure INCX is suitable to avoid strided access pattern penalty
+// Optimize the grid and block dimensions for maximum occupancy
+// Consider using vectorized loads/stores if INCX allows it
+```

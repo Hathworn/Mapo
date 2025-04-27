@@ -1,0 +1,5 @@
+// Consider using loop unrolling for better memory access patterns
+// Optimize shared memory usage by avoiding bank conflicts
+// Ensure coalesced access to global memory when loading inputs
+// Avoid unnecessary __syncthreads() for last warp reduction
+// Use volatile keyword for variables accessed within a warp without synchronization

@@ -1,0 +1,8 @@
+```
+// Use loop unrolling to reduce loop overhead and increase instruction-level parallelism.
+// Ensure coalesced memory access to improve memory bandwidth utilization.
+// Utilize shared memory to reduce global memory accesses.
+// Perform reduction in shared memory to take advantage of faster access speeds compared to global memory.
+// Minimize synchronization barriers to reduce thread divergence.
+// Store the final reduction result in global memory using only a single thread within the block.
+```

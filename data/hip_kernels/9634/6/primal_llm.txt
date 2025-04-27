@@ -1,0 +1,5 @@
+// Consider using shared memory more effectively by defining specific parts of xbar to load into shared memory
+// Transfer data from global to shared memory in coalesced manner to optimize memory bandwidth usage
+// Avoid repeated calculations inside loops by precomputing index offsets
+// Optimize memory access patterns to minimize warp divergence by ensuring threads within a warp access consecutive memory
+// Explore using vectorized loads and stores for y1, y2, and xbar to increase throughput

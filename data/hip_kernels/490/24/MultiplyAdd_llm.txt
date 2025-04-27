@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to cache d_Data values for better memory access patterns.
+// Consider using float2 or float4 for coalesced memory access.
+// Ensure constant memory is used effectively by loading d_ConstantA and d_ConstantB into registers or shared memory.
+// Minimize divergence by ensuring all threads in a warp follow the same execution path.
+```

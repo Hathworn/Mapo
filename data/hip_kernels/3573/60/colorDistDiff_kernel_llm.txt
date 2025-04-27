@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access
+// Load disparity and disparity_prior into shared memory at the beginning to minimize latency
+// Ensure threads synchronize after loading data into shared memory for consistency
+// Consider coalescing memory accesses for output image to improve throughput
+// Evaluate potential optimization by using texture memory for disparity access
+// Assess loop unrolling for arithmetic operations to enhance processing speed
+// Minimize conditional branching and divergence for warp efficiency
+```

@@ -1,0 +1,6 @@
+```
+// Use __restrict__ keyword for pointer parameters to improve memory access optimizations
+// Ensure coalesced memory access by verifying INCX equals 1
+// Consider using shared memory for caching data if the operation involves multiple accesses
+// Evaluate the impact of adjusting blockDim and gridDim for optimal occupancy and memory throughput
+```

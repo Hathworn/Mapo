@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory access by ensuring coalesced memory access patterns
+// Utilize shared memory if the size allows to reduce global memory traffic
+// Consider using __restrict__ qualifiers to reduce pointer aliasing overhead
+// Implement loop unrolling if applicable to enhance performance
+// Evaluate the usage of texture memory for read-only data if beneficial
+// Ensure memory accesses are aligned to a 32-byte boundary to improve performance
+```

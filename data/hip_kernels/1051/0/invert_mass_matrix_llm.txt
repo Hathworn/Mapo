@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for pointers to improve compiler optimizations.
+// Ensure coalesced memory access by organizing the input data layout appropriately.
+// Use shared memory if data reuse within the block is possible to reduce global memory transactions.
+// Evaluate if occupancy improvements are achieved by adjusting block size and grid size.
+// Profile the kernel to identify if memory latency is a bottleneck and opt for further memory hierarchy optimizations.
+```

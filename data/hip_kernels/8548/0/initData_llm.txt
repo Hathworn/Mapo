@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for arrays h and g
+// Use shared memory if frequent access to specific data patterns is needed
+// Balance workload by ensuring each block processes sufficient amount of work
+// Minimize divergent branches by aligning conditional checks with warp boundaries
+// Ensure kernel launch configuration aligns with device's compute capabilities
+```

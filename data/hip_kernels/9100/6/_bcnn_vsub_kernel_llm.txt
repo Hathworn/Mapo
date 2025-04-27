@@ -1,0 +1,6 @@
+// Consider using warp shuffle for data exchange within thread block
+// Minimize conditional statements within the kernel
+// Explore optimal block and grid sizes based on hardware architecture
+// Ensure shared memory usage is within device limits
+// Use coalesced memory access for global memory loads and stores
+// Evaluate if padding shared memory arrays can avoid bank conflicts

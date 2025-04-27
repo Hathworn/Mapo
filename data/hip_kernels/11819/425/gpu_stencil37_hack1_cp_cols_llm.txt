@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by having threads access contiguous memory locations
+// Use shared memory to reduce global memory access and improve performance
+// Check for boundary conditions to prevent out-of-bounds memory access
+// Use __syncthreads() to synchronize threads within a block after memory operations
+// Ensure __syncthreads() is called after updating shared memory to maintain consistency
+```

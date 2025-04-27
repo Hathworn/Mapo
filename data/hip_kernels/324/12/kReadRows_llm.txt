@@ -1,0 +1,7 @@
+```cpp
+// Move calculations for offsets outside the loop to reduce repeated computations.
+// Utilize shared memory to lower the latency of global memory access.
+// Synchronize threads after loading data into shared memory to maintain data integrity.
+// Load data from shared memory rather than global memory for improved access speed.
+// Ensure synchronization of threads after each iteration to maintain loop consistency.
+```

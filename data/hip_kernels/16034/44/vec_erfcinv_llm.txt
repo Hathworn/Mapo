@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory accesses by ensuring y and result arrays are aligned
+// Use shared memory if multiple threads need the same data from y for further operations
+// Minimize divergent branching by ensuring all threads within a warp follow the same execution path
+```

@@ -1,0 +1,4 @@
+// Coalesce memory access by using a stride of blockDim.x to minimize memory transaction costs. 
+// Utilize shared memory for temporary storage to reduce global memory access latency.
+// Ensure alignment of memory accesses to improve throughput. 
+// Minimize branch divergence by ensuring that all threads in a warp execute similar operations.

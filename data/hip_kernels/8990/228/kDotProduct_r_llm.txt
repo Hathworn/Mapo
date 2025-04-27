@@ -1,0 +1,8 @@
+```
+// Utilize loop unrolling to minimize memory access and improve throughput
+// Align memory accesses to ensure coalescing and reduce latency
+// Opt for shared memory in reduction to lower global memory writes
+// Employ early exit conditions to reduce unnecessary computations
+// Increase block size for better occupancy and efficient use of shared memory
+// Ensure atomic operations on global memory writes if concurrent access possible
+```

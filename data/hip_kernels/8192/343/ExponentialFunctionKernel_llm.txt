@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced accesses to global memory
+// Consider using shared memory for input if it leads to frequently reused data within a block
+// Ensure that the input and output arrays are aligned to memory boundary for faster access
+// Use loop unrolling if applicable to reduce the loop overhead and improve throughput

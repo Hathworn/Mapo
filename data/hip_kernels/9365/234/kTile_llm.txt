@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access when loading data from global to shared memory
+// Ensure shared memory size matches the tile size to optimize for bank conflicts
+// Consider changing tile dimensions or using loop unrolling for better performance
+// Minimize __syncthreads() calls by ensuring threads work independently where possible
+```

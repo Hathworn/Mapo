@@ -1,0 +1,8 @@
+```cpp
+// Consider using texture memory for read-only data like g_u2 if access patterns are spatially coherent.
+// Prefetch and use registers to store temporary data yval to minimize latency and maximize data reuse.
+// Use shared memory to reduce redundant global memory accesses, optimizing for data locality.
+// Unroll small loops to reduce loop overhead and increase instruction level parallelism.
+// Ensure coalesced memory access for g_u2 and g_u1 to optimize global memory bandwidth usage.
+// Use __syncthreads() cautiously as it can introduce overhead; ensure it's necessary for data dependencies.
+```

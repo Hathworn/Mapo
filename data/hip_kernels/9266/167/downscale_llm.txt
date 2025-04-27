@@ -1,0 +1,4 @@
+// Use shared memory to cache data and reduce global memory access
+// Consider using texture memory for read-only data to improve memory bandwidth
+// Use memory coalescing techniques to ensure threads access contiguous memory locations
+// Optimize block and grid configuration to maximize occupancy and minimize thread divergence

@@ -1,0 +1,10 @@
+digraph "CFG for '_Z9doGPUWorkiPi' function" {
+	label="CFG for '_Z9doGPUWorkiPi' function";
+
+	Node0x50f2ba0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %4 = icmp ult i32 %3, %0\l  br i1 %4, label %5, label %8\l|{<s0>T|<s1>F}}"];
+	Node0x50f2ba0:s0 -> Node0x50f3a50;
+	Node0x50f2ba0:s1 -> Node0x50f3ae0;
+	Node0x50f3a50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%5:\l5:                                                \l  %6 = zext i32 %3 to i64\l  %7 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %6\l  store i32 %3, i32 addrspace(1)* %7, align 4, !tbaa !5\l  br label %8\l}"];
+	Node0x50f3a50 -> Node0x50f3ae0;
+	Node0x50f3ae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  ret void\l}"];
+}

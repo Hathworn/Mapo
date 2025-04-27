@@ -1,0 +1,5 @@
+```cpp
+// Ensure coalesced memory access by assigning contiguous memory addresses within the same warp.
+// Use shared memory to cache gradOutput_data if possible to reduce global memory accesses.
+// Minimize thread divergence by ensuring all threads within a warp execute the same path.
+```

@@ -1,0 +1,9 @@
+```
+// Consider aligning data structures to optimize global memory access
+// Explore using shared memory to cache d_2d_cost_matrix to reduce global memory accesses
+// Use shared memory for d_ts and d_ss during distance calculations to improve memory bandwidth
+// Implement thread coarsening to reduce the number of threads and increase the workload per thread
+// Look into using warp-level primitives for reduction to improve performance
+// Ensure strided access patterns are minimized for coalesced memory access
+// Utilize the __restrict__ qualifier for pointers to ensure aggressiveness in compiler optimizations
+```

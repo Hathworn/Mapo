@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access latency  
+// Ensure synchronization with __syncthreads to prevent race conditions  
+// Use extern __shared__ to maximize shared memory usage  
+// Only perform synchronization when necessary to minimize overhead  
+// Align shared memory access patterns to improve coalescing  
+// Minimize condition checks inside loops to reduce thread divergence  

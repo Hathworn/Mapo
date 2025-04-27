@@ -1,0 +1,9 @@
+```cpp
+// Ensure coalesced memory access where possible
+// Avoid bank conflicts in shared memory usage
+// Minimize divergent branching outside critical loops
+// Consider using shared memory for frequently accessed data
+// Prefetch data to reduce latency
+// Optimize usage of registers to minimize spills to global memory
+// Minimize arithmetic intensity within inner loops by precomputing invariant expressions
+```

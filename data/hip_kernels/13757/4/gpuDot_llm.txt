@@ -1,0 +1,5 @@
+// Consider using texture memory for read-only data like 'a' and 'b' to improve access speed.
+// Use vectorized data types (e.g., float4) for loads to increase memory bandwidth utilization.
+// Explore use of cooperative groups to optimize the reduction process.
+// Ensure data is aligned in memory to maximize coalesced access patterns.
+// If possible, pad shared memory to avoid bank conflicts during reduction.

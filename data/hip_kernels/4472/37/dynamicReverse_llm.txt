@@ -1,0 +1,7 @@
+```
+// Utilize coalesced memory access to reduce global memory transactions.
+// Consider increasing block size for better occupancy if shared memory allows.
+// Ensure that shared memory bank conflicts are minimized.
+// Prefetch data to shared memory using loop unrolling if possible.
+// Implement further latency hiding techniques by overlapping computation with data transfer.
+```

@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for gradvelff when multiple threads access nearby indices to reduce global memory accesses.
+// Evaluate the possibility of using texture memory for velrhop to improve read performance.
+// Experiment with loop unrolling to increase instruction-level parallelism.
+// Assess the benefit of increasing block size to have more threads and optimize occupancy.
+```

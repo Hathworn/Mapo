@@ -1,0 +1,6 @@
+// Use grid-stride loop to maximize parallelism
+// Ensure data is allocated in contiguous memory blocks for coalesced access
+// Consider shared memory to store intermediate results for better locality
+// Check for bank conflicts in shared memory access if implemented
+// Optimize block and grid dimensions based on hardware capabilities
+// Minimize divergence by ensuring all threads perform similar operations

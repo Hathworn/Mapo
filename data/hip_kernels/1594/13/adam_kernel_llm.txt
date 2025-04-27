@@ -1,0 +1,6 @@
+```
+// Minimize global memory access by loading m[index] and v[index] once.
+// Reduce redundant powf calculations by pre-calculating and reusing B1^t and B2^t.
+// Utilize registers to store intermediate results to avoid repeated computation.
+// Consider using shared memory if there is reuse of data between threads.
+```

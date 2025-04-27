@@ -1,0 +1,7 @@
+```
+// Use shared memory if accessing poli[] results in significant memory contention
+// Ensure data is coalesced by properly aligning poli[] in memory
+// Consider using loop unrolling if N is known at compile time and is static
+// Avoid bank conflicts in shared memory by using padding if required
+// Prefetch data into registers if additional computations are necessary
+```

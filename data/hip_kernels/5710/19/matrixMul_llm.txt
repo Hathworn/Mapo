@@ -1,0 +1,6 @@
+// Reduce register usage by reducing the precision if possible (e.g., float -> half)
+// Ensure memory coalescing by accessing global memory in thread order
+// Use shared memory effectively to minimize global memory accesses
+// Optimize shared memory load/store patterns to reduce bank conflicts
+// Consider loop unrolling for the main computation loop to increase instruction-level parallelism
+// Avoid redundant synchronizations and only synchronize when absolutely needed

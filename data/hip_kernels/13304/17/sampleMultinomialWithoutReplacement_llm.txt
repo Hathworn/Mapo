@@ -1,0 +1,7 @@
+```
+// Coalesced access to normDistPrefixSum can improve memory throughput.
+// Reduce divergent branches in binarySearchForMultinomial function.
+// Consider using shared memory for the normDistPrefixSum within a block for faster access.
+// Avoid bank conflicts by using padding in shared memory if implemented.
+// Ensure access to origDist is coalesced for better performance.
+```

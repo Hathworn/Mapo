@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced access to global memory for improved memory throughput
+// Minimize warp divergence by ensuring threads in a warp follow the same execution path
+// Use shared memory if possible to reduce global memory accesses
+// Consider loop unrolling for repeated operations to improve performance
+```

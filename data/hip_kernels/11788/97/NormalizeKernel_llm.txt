@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for normalization_factor to reduce global memory accesses.
+// Utilize vectorized memory instructions if possible to optimize image data access.
+// Minimize divergent code paths by ensuring scale is frequently non-zero to avoid the conditional branch.
+```

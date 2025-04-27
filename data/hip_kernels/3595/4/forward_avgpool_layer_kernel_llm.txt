@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store partial results from input.
+// Reduce global memory access by using register memory for sum.
+// Precompute h * w to avoid redundant calculations inside the loop.
+// Optimize in_base_index by moving multiplication outside the loop.
+// Explore using warp-level primitives for more efficient parallel reduction.
+```

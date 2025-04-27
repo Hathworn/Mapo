@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses and increase access speed
+// Optimize warp reduction to minimize execution divergence and shared memory bank conflicts
+// Consider using cooperative groups for more efficient warp-level reductions
+// Ensure memory coalescing by accessing contiguous memory locations
+// Check occupancy and adjust block size accordingly for better performance
+```

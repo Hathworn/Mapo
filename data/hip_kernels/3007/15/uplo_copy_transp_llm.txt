@@ -1,0 +1,8 @@
+```cpp
+// Consider increasing tile size for better memory coalescing if shared memory allows
+// Ensure shared memory usage doesn't exceed available SM resources
+// Check alignment of memory accesses to reduce potential bank conflicts
+// Use appropriate occupancy tool to find optimal block size for target hardware
+// Investigate if loop unrolling could further improve performance
+// Consider non-default memory access patterns to exploit L1/L2 cache
+```

@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce global memory access latency.
+// Precompute flow_row_offset and image_row_offset outside the main loop for efficiency.
+// Optimize memory coalescing by ensuring access patterns match warp execution.
+// Evaluate if arithmetic operations within the kernel can be minimized or reused.
+// Use atomic operations judiciously to minimize potential performance bottlenecks.
+// Assess if float precision is sufficient or if half precision can be employed.

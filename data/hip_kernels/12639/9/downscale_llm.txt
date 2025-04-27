@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory traffic
+// Ensure coalesced memory access by checking memory alignment for gradOutput_data
+// Minimize divergent branches, especially in for loops
+// Explore loop unrolling for the inner loop to increase throughput
+// Check if atomic operations are necessary during accumulation to avoid data races

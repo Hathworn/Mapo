@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for block-level caching to minimize global memory accesses.
+// Optimize coalesced memory access by adjusting the width step size to a multiple of the warp size.
+// Reduce divergent branches by using predication or warp-level primitives.
+// Take advantage of loop unrolling for known iteration counts to improve performance.
+// Ensure memory accesses are coalesced by aligning pointers with warp boundaries.
+// Minimize the use of atomic operations, if applicable, for better memory bandwidth efficiency.
+```

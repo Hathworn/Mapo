@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses for the kernel.
+// Check for memory coalescing in global memory accesses.
+// Ensure minimal bank conflicts if shared memory is used.
+// Try loop unrolling if the kernel size is known at compile time.
+// Analyze and optimize boundary condition checks.
+// Make sure to minimize branch divergence in the warp.
+```

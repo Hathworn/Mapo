@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring that data used by consecutive threads are contiguous in memory
+// Utilize shared memory for repeated access to the same data to reduce global memory traffic
+// Minimize divergence by ensuring if condition applies uniformly to blocks of threads
+// Ensure proper occupancy by tuning block size and grid size
+// Use __fdividef for potentially enhanced performance on division operations
+// Prefetch data if possible to hide memory latency
+```

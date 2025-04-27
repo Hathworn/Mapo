@@ -1,0 +1,6 @@
+```
+// Use shared memory to minimize global memory access latency for Ar and Aw arrays.
+// Consider coalesced memory access by ensuring that threads access contiguous memory addresses.
+// Evaluate the use of a larger number of threads per block to increase parallelism.
+// Investigate the memory alignment of the Ar and Aw arrays for optimal performance.
+```

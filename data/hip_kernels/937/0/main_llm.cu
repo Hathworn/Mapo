@@ -1,0 +1,63 @@
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <getopt.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <hip/hip_runtime.h>
+#include "hsl2rgb_gpu_son_llm.cu"
+#include <chrono>
+#include <iostream>
+using namespace std;
+using namespace std::chrono;
+int main(int argc, char **argv) {
+hipSetDevice(0);
+
+    int XSIZE = 512; 
+    int YSIZE = 512;
+    int BLOCKX = 16;
+    int BLOCKY = 16;
+
+    if (argc > 1) XSIZE = atoi(argv[1]);
+    if (argc > 2) YSIZE = atoi(argv[2]);
+    if (argc > 3) BLOCKX = atoi(argv[3]);
+    if (argc > 4) BLOCKY = atoi(argv[4]);
+    float *d_h = NULL;
+hipMalloc(&d_h, XSIZE*YSIZE);
+float *d_s = NULL;
+hipMalloc(&d_s, XSIZE*YSIZE);
+unsigned char *d_l = NULL;
+hipMalloc(&d_l, XSIZE*YSIZE);
+unsigned char *d_r = NULL;
+hipMalloc(&d_r, XSIZE*YSIZE);
+unsigned char *d_g = NULL;
+hipMalloc(&d_g, XSIZE*YSIZE);
+unsigned char *d_b = NULL;
+hipMalloc(&d_b, XSIZE*YSIZE);
+int size = XSIZE*YSIZE;
+int iXSIZE= XSIZE;
+int iYSIZE= YSIZE;
+while(iXSIZE%BLOCKX!=0) {
+iXSIZE++;
+}
+while(iYSIZE%BLOCKY!=0) {
+iYSIZE++;
+}
+dim3 gridBlock(iXSIZE/BLOCKX, iYSIZE/BLOCKY);
+dim3 threadBlock(BLOCKX, BLOCKY);
+hipFree(0);
+hsl2rgb_gpu_son<<<gridBlock, threadBlock>>>(d_h,d_s,d_l,d_r,d_g,d_b,size);
+hipDeviceSynchronize();
+for (int loop_counter = 0; loop_counter < 5; ++loop_counter) {
+hsl2rgb_gpu_son<<<gridBlock, threadBlock>>>(d_h,d_s,d_l,d_r,d_g,d_b,size);
+}
+hipDeviceSynchronize();
+auto start = steady_clock::now();
+for (int loop_counter = 0; loop_counter < 5; loop_counter++) {
+hsl2rgb_gpu_son<<<gridBlock, threadBlock>>>(d_h,d_s,d_l,d_r,d_g,d_b,size);
+}
+hipDeviceSynchronize();
+auto end = steady_clock::now();
+auto usecs = duration_cast<duration<float, microseconds::period>>(end - start);
+cout << '[' << usecs.count() << ',' << '(' << BLOCKX << ',' << BLOCKY << ')' << ',' << '(' << XSIZE << ',' << YSIZE << ')' << ']' << endl;
+}

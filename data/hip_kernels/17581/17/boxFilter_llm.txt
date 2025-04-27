@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Load filter area into shared memory for faster access.
+// Use coalesced memory access patterns to improve bandwidth utilization.
+// Ensure threads are not accessing out-of-bound memory.
+// Preload pixels in the boundary into shared memory if possible.
+// Reduce redundant calculations by storing constants outside the loop.
+```

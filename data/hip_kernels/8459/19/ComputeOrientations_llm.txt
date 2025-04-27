@@ -1,0 +1,6 @@
+// Reduce shared memory usage where possible
+// Initialize histogram with zero using shared memory
+// Precompute Gaussian weights to optimize calculations 
+// Clamp coordinates to avoid out-of-bounds memory access
+// Use atomic operations for histogram updates to prevent race conditions
+// Optimize peak finding in histogram using shared memory

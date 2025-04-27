@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory accesses in frequent updates
+// Ensure coalesced memory access patterns by aligning data structures properly
+// Utilize warp-level primitives for better efficiency on shared calculations
+// Avoid repeated division by computing common terms once and storing them
+// Prefetch data into registers to minimize access latency during computations
+// Examine if loop unrolling could benefit performance for the strides used
+```

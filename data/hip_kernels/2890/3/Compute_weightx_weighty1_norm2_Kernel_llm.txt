@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to cache psi since it's accessed multiple times
+// Avoid using shared memory for phi as it's accessed sequentially and won't benefit greatly
+// Ensure coalesced access patterns for global memory reads/writes
+// Prefetch data into shared memory to hide latency of global memory access
+```

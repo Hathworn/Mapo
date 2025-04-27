@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for i_index and j_index for better global memory access patterns
+// Use shared memory to cache exp_Vj if shared memory is available to reduce redundant global memory access
+// Prefetch N_ptr and G_ptr to registers for faster access in each thread
+// Ensure is_Bennett access is coalesced
+// Optimize memory access pattern for result_ptr to ensure coalesced writes
+// Evaluate if memory access patterns for N_ptr and G_ptr can be improved for better efficiency
+```

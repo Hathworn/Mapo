@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning threadIdx.x with the data layout.
+// Minimize divergent branches by ensuring warp execution paths remain coherent.
+// Consider memory alignment to reduce bank conflicts.
+// Prefetch memory outside of critical loops to improve cache utilization.
+// Utilize shared memory for frequently accessed data to minimize global memory access.
+// Ensure atomic operations are minimized or replaced wherever possible to reduce contention.
+```

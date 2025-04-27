@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring global memory reads and writes are coalesced
+// Consider using shared memory to cache common data if there are shared calculations
+// Minimize divergent branching by ensuring consistent execution paths within a warp
+// Leverage constant memory if there are any constant inputs that can be reused across threads

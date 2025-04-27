@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache input data accessed frequently
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Evaluate if split kernels can reduce execution time by processing outputs in separate kernels
+// Profile kernel to verify and minimize branch divergence in conditional statements
+// Use float4 or float2 for loading and storing data to potentially increase memory throughput
+// Analyze occupancy and consider adjusting block size for optimal performance
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory effectively to reduce global memory accesses.
+// Minimize the number of conditions inside the inner loops for better performance.
+// Coalesce global memory accesses by ensuring consecutive thread accesses are contiguous.
+// Use __syncthreads() judiciously to ensure data consistency while minimizing synchronization overhead.
+// Consider unrolling loops to reduce loop control overhead and increase instruction level parallelism.
+```

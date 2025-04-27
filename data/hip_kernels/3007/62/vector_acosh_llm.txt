@@ -1,0 +1,7 @@
+```
+// Use shared memory for faster data access
+// Load element into shared memory before computation to reduce global memory access
+// Ensure all threads have loaded their element using __syncthreads() to maintain consistency
+// Perform computation on data stored in shared memory
+// Use shared memory to minimize latency associated with global memory access
+```

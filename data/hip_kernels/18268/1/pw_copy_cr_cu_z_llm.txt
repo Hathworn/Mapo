@@ -1,0 +1,8 @@
+```c
+// Use shared memory for better memory coalescing
+// Load data into shared memory
+// Write back to global memory
+// Consider using larger block size to increase occupancy
+// Ensure memory alignment for better performance
+// Minimize __syncthreads() usage if possible
+```

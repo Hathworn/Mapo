@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory to cache `u`, `v`, and `src` for better memory access patterns.
+// Use texture memory for `u`, `v`, and `src` if they are read-only to take advantage of caching.
+// Optimize the global memory access by coalescing loads from `dst`, `normalization_factor`.
+// Consider adjusting the block size to better fit the GPU architecture's occupancy and reduce warp divergence.
+// Minimize the use of atomic operations by restructuring the algorithm to reduce contention.
+// Precompute repeated expressions such as `flow_row_offset + j` to reduce redundant calculations.
+```

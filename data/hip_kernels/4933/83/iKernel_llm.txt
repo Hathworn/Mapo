@@ -1,0 +1,5 @@
+// Ensure coalesced memory access for arrays A, B, and C
+// Use shared memory if data reuse exists within a block
+// Experiment with different block sizes to find optimal performance
+// Apply loop unrolling to hide memory latency
+// Consider using #pragma unroll for explicit loop unrolling suggestions

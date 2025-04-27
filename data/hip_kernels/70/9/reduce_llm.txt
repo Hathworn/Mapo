@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses for improved performance.
+// Use a larger stride to reduce thread divergence and increase instruction throughput.
+// Avoid shared memory bank conflicts by careful data placement and access patterns.
+// Utilize loop unrolling in the reduction stages to minimize branch divergence.
+// Ensure warp-synchronization to reduce unnecessary barrier synchronizations.
+// Minimize register usage to accommodate more concurrent threads and blocks.
+```

@@ -1,0 +1,10 @@
+```
+// Consider using coalesced memory access patterns when accessing devDiff by reorganizing data layout.
+// Use float4 or float2 types for reading devDiff when nClusters is a multiple of 4 or 2 for better memory bandwidth usage.
+// Ensure all data stored in shared memory can fit within the size limits to avoid bank conflicts.
+// Pre-fetch values that will be reused in registers outside the loop to reduce memory access latency.
+// Utilize shared memory more effectively by loading values that will be reused across threads in a block.
+// Minimize the use of atomic operations by grouping multiple operations together where possible.
+// Explore the possibility of using warp-level primitives to reduce atomic contention at the block level.
+// Evaluate occupancy rates to ensure efficient use of streaming multiprocessors and adjust block size accordingly.
+```

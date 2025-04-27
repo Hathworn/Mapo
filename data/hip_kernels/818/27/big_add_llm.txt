@@ -1,0 +1,7 @@
+```c
+// Consider utilizing shared memory to cache a and b values if multiple accesses are needed
+// Ensure coalesced memory access for arrays a, b, and c to maximize memory throughput
+// Adjust block size and grid size based on target GPU architecture for optimal performance
+// Experiment with different loop unrolling factors to find the best balance between performance and register usage
+// Check for register pressure which might increase due to unrolling and adjust accordingly
+```

@@ -1,0 +1,10 @@
+```
+// Consider using aligned memory access for better cache performance.
+// Use __restrict__ pointers to the kernel arguments to aid compiler optimization.
+// Ensure idata and g_odata are declared with HIP managed memory for unified access.
+// Experiment with different block sizes to find an optimal configuration for your hardware.
+// Implement loop unrolling for the reduction loop to minimize warp divergence.
+// Utilize shared memory efficiently by minimizing bank conflicts within thread blocks.
+// Benchmark performance with different grid sizes to leverage your GPU's full potential.
+// Use occupancy calculator to determine optimal block/memory sizes to maximize throughput.
+```

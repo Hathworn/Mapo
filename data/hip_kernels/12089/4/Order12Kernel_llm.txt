@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory accesses
+// Load data into shared memory before computations
+// Consider coalescing global memory accesses
+// Reduce syncthreads calls to improve performance
+// Evaluate loop unrolling for repeated computations
+// Align data accesses to improve memory throughput

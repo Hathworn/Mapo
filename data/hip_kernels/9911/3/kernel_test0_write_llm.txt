@@ -1,0 +1,7 @@
+```cpp
+// Consider using coalesced memory accesses to optimize global memory bandwidth utilization
+// Evaluate the use of shared memory if there is potential for reducing global memory accesses
+// Explore potential benefits of using vectorized data types (e.g., uint2 or uint4) for wider memory transactions
+// Use __syncthreads() if any synchronization is required after memory writes (not needed here)
+// Benchmark with different BLOCKSIZE values to find optimal performance settings
+```

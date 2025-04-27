@@ -1,0 +1,4 @@
+// Consider using shared memory to store tile data to reduce global memory accesses for feats.
+// Optimize thread block sizes to ensure maximum occupancy for the given GPU architecture.
+// Ensure coalesced memory access by using appropriate memory strides for feats and feats_sq.
+// Evaluate warp-level optimizations such as warp shuffles to reduce redundant loads.

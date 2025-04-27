@@ -1,0 +1,12 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Consolidate shared arrays to minimize shared memory usage.
+// Avoid using __mul24 intrinsic for better portability.
+// Use #pragma unroll to assist the compiler with loop unrolling.
+// Ensure boundary conditions are handled to avoid out-of-bounds memory access.
+// Use __syncthreads to synchronize threads when necessary.
+// Optimize the use of fminf and fmaxf functions to minimize redundant computations.
+// Minimize the number of condition checks inside loops.
+// Ensure efficient use of memory by avoiding unused shared memory slots.
+// Ensure coalesced memory access patterns for optimized memory bandwidth utilization.
+```

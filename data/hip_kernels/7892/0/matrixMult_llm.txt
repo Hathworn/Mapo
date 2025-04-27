@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Consider tiling the matrix to optimize cache usage
+// Ensure alignment for coalesced memory access
+// Use thread coarsening to increase occupancy if necessary
+// Consider loop unrolling for the inner multiplication loop
+// Ensure data resides in shared memory for all accesses within loops
+// Minimize __syncthreads() calls if possible to save overhead
+```

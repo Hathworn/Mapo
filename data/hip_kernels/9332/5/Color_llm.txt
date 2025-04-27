@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to store rawColorMap data for faster access.
+// Attempt to optimize rawBinSums accessed in each thread to minimize memory reads.
+// Use texture memory for read-only rawColorMap to enhance data locality.
+// Perform memory coalescing on rawBinSums for better global memory access efficiency.
+// Implement loop unrolling techniques where applicable for performance improvement.
+// Evaluate use of __restrict__ pointers to eliminate aliasing and improve access speed.
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to improve memory access pattern and reduce global memory transactions.
+// Use __syncthreads() to ensure all threads have loaded data into shared memory before proceeding.
+// Consider increasing block size or optimizing loop increments for better memory coalescing.
+// Handle edge cases separately to avoid branch divergence.
+```

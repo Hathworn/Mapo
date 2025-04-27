@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access for global memory reads.
+// Consider using warp shuffle operations to reduce synchronization points.
+// Ensure that shared memory usage is optimized to prevent bank conflicts.
+// Minimize the use of __syncthreads() by restructuring the reduction pattern.
+// Consider splitting large blocks into smaller ones to improve occupancy.
+```

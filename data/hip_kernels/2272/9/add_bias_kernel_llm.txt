@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed variables to reduce global memory access latency
+// Ensure memory accesses are coalesced to improve memory throughput
+// Investigate the possibility of using warp-level operations for better occupancy and efficiency
+// Check for bank conflicts in shared memory usage if implemented
+// Use __restrict__ keyword for pointers to enable compiler optimizations
+// Consider loop unrolling for the innermost loop to minimize loop overhead
+```

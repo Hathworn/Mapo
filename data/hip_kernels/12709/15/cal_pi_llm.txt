@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory to accumulate local sums for better memory access patterns
+// Ensure memory coalescing during the write back to global memory
+// Avoid bank conflicts; if using shared memory, align accesses for better performance
+// Optimize memory access by ensuring sum[idx] is accessed in the most contiguous fashion
+// Consider using loop unrolling for the iteration loop to enhance performance
+```

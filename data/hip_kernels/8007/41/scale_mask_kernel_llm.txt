@@ -1,0 +1,11 @@
+```cpp
+// Consider using shared memory for frequently accessed data.
+// Coalesce memory accesses to improve global memory throughput.
+// Ensure alignment of data structures for efficient access.
+// Utilize warp-based computations to reduce divergence.
+// Minimize register usage to allow for more active threads per multiprocessor.
+// Avoid bank conflicts if using shared memory for mask or x arrays.
+// Optimize loop unrolling if applicable to reduce overhead.
+// Use asynchronous memory transfers if host-device data transfer is required.
+// Evaluate the use of texture memory for potentially improved bandwidth.
+```

@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access and improve performance
+// Load matrix elements into shared memory to reduce latency
+// Ensure synchronization with __syncthreads() after loading data into shared memory
+// Accumulate values using data from shared memory instead of global memory for faster computation

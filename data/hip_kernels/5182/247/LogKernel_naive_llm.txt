@@ -1,0 +1,7 @@
+```
+// Consider increasing threadIdx.x for coalesced memory access
+// Ensure A is aligned in memory for optimal access patterns
+// Experiment with different block and grid sizes for performance tuning
+// Use __restrict__ qualifier if A and out0 pointers do not alias
+// Load data into shared memory if accessing A multiple times
+```

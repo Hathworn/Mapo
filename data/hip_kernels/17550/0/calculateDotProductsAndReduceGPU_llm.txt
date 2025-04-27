@@ -1,0 +1,4 @@
+// Ensure memory coalescing by accessing consecutive elements within a warp.
+// Minimize bank conflicts in shared memory by ensuring aligned memory accesses.
+// Reduce shared memory bank conflicts by making stride accesses.
+// Consider double buffering or shuffle intrinsic for further reduction optimization.

@@ -1,0 +1,9 @@
+```
+// Use cooperative indexing to avoid shared memory bank conflicts in memory access
+// Exit threads early that don't perform meaningful work to save computation resources
+// Pre-compute constants outside of loops to minimize redundant calculations during execution
+// Compute boundaries only once outside of nested loops to reduce redundant arithmetic operations
+// Use max and min functions to ensure indices are within bounds and avoid out-of-range access
+// Accumulate results using topdiff values to streamline computation within the kernel
+// Normalize sum by dividing by sumelems for memory access efficiency and accurate result computation
+```

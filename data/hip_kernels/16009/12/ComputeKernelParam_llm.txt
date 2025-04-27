@@ -1,0 +1,8 @@
+```c
+// Ensure coalesced memory access by using float3 pointer for kernelImg
+// Minimize divergent control flow by aligning if-conditions to thread warps
+// Precompute repeated operations outside the thread blocks if possible
+// Use shared memory if the kernelImg size allows for faster memory access
+// Consider using __ldg() for read-only data to make use of cache
+// Optimize boundary checks to reduce thread divergence
+```

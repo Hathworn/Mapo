@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns when reading from dev_pillar_count_histo to improve memory throughput
+// Consider using shared memory for dev_pillar_count_histo if there are repeated accesses
+// Avoid warp divergence by checking boundary conditions and early exits uniformly across threads
+// Employ loop unrolling techniques if applicable for accessing dev_sparse_pillar_map
+// Optimize atomic operations where possible to reduce contention and improve performance
+```

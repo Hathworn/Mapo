@@ -1,0 +1,10 @@
+digraph "CFG for '_Z5kCopyPfS_jjj' function" {
+	label="CFG for '_Z5kCopyPfS_jjj' function";
+
+	Node0x63510b0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp ult i32 %14, %4\l  br i1 %15, label %16, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x63510b0:s0 -> Node0x6352fb0;
+	Node0x63510b0:s1 -> Node0x6353040;
+	Node0x6352fb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = freeze i32 %14\l  %18 = freeze i32 %2\l  %19 = udiv i32 %17, %18\l  %20 = mul i32 %19, %3\l  %21 = mul i32 %19, %18\l  %22 = sub i32 %17, %21\l  %23 = add i32 %20, %22\l  %24 = zext i32 %23 to i64\l  %25 = getelementptr inbounds float, float addrspace(1)* %0, i64 %24\l  %26 = load float, float addrspace(1)* %25, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %27 = getelementptr inbounds float, float addrspace(1)* %1, i64 %24\l  store float %26, float addrspace(1)* %27, align 4, !tbaa !7\l  br label %28\l}"];
+	Node0x6352fb0 -> Node0x6353040;
+	Node0x6353040 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%28:\l28:                                               \l  ret void\l}"];
+}

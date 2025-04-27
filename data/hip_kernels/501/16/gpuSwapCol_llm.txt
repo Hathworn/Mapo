@@ -1,0 +1,4 @@
+// Consider using shared memory to store frequently accessed data within blocks to reduce global memory accesses.
+// Check if memory coalescing is optimal by ensuring that threads access contiguous sections of memory.
+// Evaluate the potential benefits of loop unrolling if applicable for better performance in critical sections.
+// Ensure alignment of memory accesses for improved performance on GPU architecture.

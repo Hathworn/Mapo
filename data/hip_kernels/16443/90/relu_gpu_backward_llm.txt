@@ -1,0 +1,6 @@
+```
+// Align memory accesses to improve coalescing.
+// Ensure threads within a warp access consecutive memory addresses.
+// Use shared memory if there is data re-use within a block.
+// Minimize divergence by keeping conditional branches simple.
+```

@@ -1,0 +1,23 @@
+digraph "CFG for '_Z15pointer_jumpingPiiPb' function" {
+	label="CFG for '_Z15pointer_jumpingPiiPb' function";
+
+	Node0x49aaa70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %4, %10\l  %12 = add i32 %11, %5\l  %13 = icmp ne i32 %5, 0\l  br i1 %13, label %15, label %14\l|{<s0>T|<s1>F}}"];
+	Node0x49aaa70:s0 -> Node0x49aac50;
+	Node0x49aaa70:s1 -> Node0x49aca00;
+	Node0x49aca00 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7a88970",label="{%14:\l14:                                               \l  store i8 0, i8 addrspace(3)* @_ZZ15pointer_jumpingPiiPbE10block_flag, align\l... 1, !tbaa !7\l  br label %15\l}"];
+	Node0x49aca00 -> Node0x49aac50;
+	Node0x49aac50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %16 = icmp slt i32 %12, %1\l  br i1 %16, label %17, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x49aac50:s0 -> Node0x49ac380;
+	Node0x49aac50:s1 -> Node0x49ad1f0;
+	Node0x49ac380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%17:\l17:                                               \l  %18 = sext i32 %12 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !11, !amdgpu.noclobber\l... !6\l  %21 = sext i32 %20 to i64\l  %22 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %21\l  %23 = load i32, i32 addrspace(1)* %22, align 4, !tbaa !11, !amdgpu.noclobber\l... !6\l  %24 = icmp eq i32 %20, %23\l  br i1 %24, label %26, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x49ac380:s0 -> Node0x49ad1f0;
+	Node0x49ac380:s1 -> Node0x49ae4a0;
+	Node0x49ae4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%25:\l25:                                               \l  store i32 %23, i32 addrspace(1)* %19, align 4, !tbaa !11\l  store i8 1, i8 addrspace(3)* @_ZZ15pointer_jumpingPiiPbE10block_flag, align\l... 1, !tbaa !7\l  br label %26\l}"];
+	Node0x49ae4a0 -> Node0x49ad1f0;
+	Node0x49ad1f0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%26:\l26:                                               \l  %27 = load i8, i8 addrspace(3)* @_ZZ15pointer_jumpingPiiPbE10block_flag,\l... align 1\l  %28 = icmp eq i8 %27, 0\l  %29 = select i1 %13, i1 true, i1 %28\l  br i1 %29, label %31, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x49ad1f0:s0 -> Node0x49ae6c0;
+	Node0x49ad1f0:s1 -> Node0x49aefd0;
+	Node0x49aefd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%30:\l30:                                               \l  store i8 1, i8 addrspace(1)* %2, align 1, !tbaa !7\l  br label %31\l}"];
+	Node0x49aefd0 -> Node0x49ae6c0;
+	Node0x49ae6c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%31:\l31:                                               \l  ret void\l}"];
+}

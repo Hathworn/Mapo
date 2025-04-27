@@ -1,0 +1,7 @@
+```
+// Consider increasing the number of threads per block for better occupancy
+// Use coalesced memory access to increase memory throughput
+// Optimize the size of shared memory usage according to actual block size needs
+// Minimize the use of __syncthreads() to avoid synchronization overhead
+// Use read-only cache (const restrict qualifier) if data is read-only after loading
+```

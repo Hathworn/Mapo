@@ -1,0 +1,5 @@
+```c
+// Consider using shared memory to cache frequently accessed data like 'minmax[y * w + x]' for reducing global memory access.
+// Ensure coalesced memory access when reading from 'minmax' and writing to 'ptrs' for improved performance.
+// Evaluate the stride based on warp size or memory access patterns to optimize load balancing among threads.
+```

@@ -1,0 +1,7 @@
+```
+// Use larger shared memory arrays for more simultaneous data elements
+// Consider unrolling loops for computational efficiency if applicable
+// Minimize use of __syncthreads() to reduce synchronization overhead
+// Optimize grid and block dimensions for better occupancy
+// Align data to ensure coalesced memory access when possible
+```

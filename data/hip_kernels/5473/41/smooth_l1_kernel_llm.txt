@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access and reuse data within the block if possible.
+// Consider vectorized loads and stores to optimize memory throughput.
+// Analyze the compiler's ability to unroll the loop and suggest pragma unroll directives if beneficial.
+// Coalesce memory accesses to improve memory transaction efficiency.
+// Minimize divergence by ensuring branching is aligned across warps.
+// Ensure data alignment for pred, truth, delta, and error arrays to leverage faster memory access.
+```

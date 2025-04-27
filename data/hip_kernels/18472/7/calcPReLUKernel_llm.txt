@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for input and output arrays to improve memory access efficiency.
+// Consider using shared memory to cache frequently accessed weights for better memory access performance.
+// Ensure thread block dimensions are chosen to maximize occupancy and match the architecture's warp size.
+// Align data structures to improve memory access patterns and throughput.
+// Use __restrict__ qualifiers for input and output pointers to enable better compiler optimizations.
+```

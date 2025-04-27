@@ -1,0 +1,9 @@
+```cpp
+// Consider using shared memory for frequently accessed data to reduce global memory reads
+// Optimize memory coalescing by ensuring that threads access contiguous memory locations
+// Check bank conflicts in shared memory and adjust the stride if needed
+// Ensure enough occupancy for latency hiding by tuning block size
+// Utilize vectorized operations if possible for memory-bound operations
+// Consider loop unrolling to reduce the loop overhead
+// Minimize divergent branches within the kernel
+```

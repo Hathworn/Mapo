@@ -1,0 +1,4 @@
+// Move pointer arithmetic outside the kernel loop to reduce memory access overhead
+// Minimize float2 packing/unpacking by operating directly within registers
+// Precompute repetitive calculations to reduce instructions
+// Store result directly after operations to minimize memory write overhead

@@ -1,0 +1,8 @@
+```
+// Consider using constant memory for frequently accessed data like kernel_p for faster access
+// Optimize shared memory usage to ensure all grid threads can utilize it effectively
+// Ensure coalesced memory access patterns by aligning input_p memory accesses among threads
+// Consider loop unrolling for the innermost loop to enhance instruction parallelism
+// Ensure shared memory buffer doesn't exceed the hardware's limits to avoid bank conflicts
+// Reduce syncthreads usage when possible to decrease synchronization overhead
+```

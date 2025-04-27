@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Aim to combine memory accesses through coalesced reads from global memory.
+// Use texture memory for read-only data to benefit from cached memory access.
+// Balance the workload across threads to enhance performance scaling.
+```

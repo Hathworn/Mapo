@@ -1,0 +1,3 @@
+// Use shared memory to reduce redundant accesses to 'vec' within a block
+// Consider using loop unrolling to accelerate the computation within threads
+// Ensure coalesced memory accesses by aligning data structures if possible

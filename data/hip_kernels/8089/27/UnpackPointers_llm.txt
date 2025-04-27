@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced access to global memory when loading data into shared memory
+// Employ coalesced writes to global memory for ptrs array
+// Minimize shared memory accesses by reducing redundant reads
+// Adjust grid and block configurations to maximize occupancy and efficiently hide latency
+```

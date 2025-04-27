@@ -1,0 +1,7 @@
+// Consider optimizing memory read patterns to improve coalesced access
+// Check if shared memory can be utilized to store intermediate computations
+// Investigate potential for using warp-level primitives to reduce synchronization overhead
+// Ensure memory alignment for better cache utilization
+// Evaluate if loop unrolling could benefit performance in reduction operations
+// Review the possibility of using compiler hints for optimizing floating-point operations
+// Confirm that atomic operations are used effectively without hindering parallel performance

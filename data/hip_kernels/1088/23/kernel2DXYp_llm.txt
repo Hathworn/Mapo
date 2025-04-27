@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache weights for faster access and reduce global memory reads.
+// Minimize the memory transactions by utilizing shared memory for storing dataInput within boundaries.
+// Employ __syncthreads() to ensure complete loading of data into shared memory before operating on it.
+// Unroll loops to improve performance by increasing instruction-level parallelism.
+// Optimize boundary conditions to reduce conditional branching and ensure coalesced memory access.
+// Ensure efficient thread access patterns to maximize memory throughput and reduce latency.
+// Consider aligning shared memory access to avoid bank conflicts and improve performance.
+```

@@ -1,0 +1,7 @@
+// Use shared memory to minimize global memory accesses
+// Apply loop unrolling to improve instruction throughput
+// Ensure memory coalescing by accessing contiguous indices in global memory
+// Use __syncthreads() to synchronize threads before reducing  
+// Utilize volatile keyword to prevent optimization issues within warps
+// Reduce divergent branches by organizing warp-level operations carefully
+// Write final result from the shared memory to global memory with minimal contention

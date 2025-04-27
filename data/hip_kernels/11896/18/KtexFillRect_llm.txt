@@ -1,0 +1,4 @@
+// Optimize memory access by calculating surface offset outside the conditionals.
+// Use shared memory to improve data access for Pts if accessed multiple times.
+// Minimize divergence by evaluating conditions with minimal branching.
+// Consider loop unrolling for calculations involving Pts to reduce instruction count.

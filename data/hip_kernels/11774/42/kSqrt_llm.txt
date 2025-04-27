@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for repetitive data access to reduce global memory load
+// Ensure coalesced memory access by aligning data properly
+// Evaluate occupancy and adjust block and grid size for optimal performance 
+// Use __restrict__ qualifier to help compiler optimize memory access patterns
+// Check for bank conflicts in shared memory usage if applied in future modifications
+```

@@ -1,0 +1,7 @@
+```
+// Ensure memory access patterns are coalesced by aligning data structures
+// Consider using shared memory if data is reused between threads within the same block
+// Utilize __restrict__ pointers to assist the compiler with optimization
+// Investigate the possibility of increasing block size for better occupancy
+// Profile the kernel to determine if memory bandwidth is a bottleneck
+```

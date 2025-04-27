@@ -1,0 +1,10 @@
+```
+// Use __ldg to read from global memory when possible for improved caching
+// Reduce shared memory usage by loading minimal required data
+// Consider using float2 or float4 for coalesced memory accesses
+// Align shared memory arrays to avoid bank conflicts
+// Optimize the for loop by limiting iterations to active threads
+// Consider loop unrolling for the loop with a fixed small iteration count
+// Use warp-level primitives like __shfl_down_sync for min/max calculations
+// Avoid unnecessary shared memory synchronization (__syncthreads())
+```

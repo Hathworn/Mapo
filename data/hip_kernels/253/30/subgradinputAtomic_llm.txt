@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency.
+// Use coalesced memory access patterns for gradOutput and gradInput.
+// Explore warp divergence reduction by aligning computation and memory access.
+// Optimize atomic operations by minimizing their use within inner loops.
+// Assess register usage to maximize kernel occupancy and performance.

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses
+// Ensure coalesced memory accesses for better bandwidth utilization
+// Prefer using registers for computation to minimize shared memory usage
+// Apply loop unrolling for better performance in the reduction loop
+// Consider using atomic operations for reduction if applicable

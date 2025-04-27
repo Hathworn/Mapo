@@ -1,0 +1,15 @@
+digraph "CFG for '_Z7initOneP10chromosomeiPiS1_' function" {
+	label="CFG for '_Z7initOneP10chromosomeiPiS1_' function";
+
+	Node0x461ce10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = icmp ult i32 %5, 50\l  br i1 %6, label %7, label %29\l|{<s0>T|<s1>F}}"];
+	Node0x461ce10:s0 -> Node0x4620570;
+	Node0x461ce10:s1 -> Node0x4620600;
+	Node0x4620570 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%7:\l7:                                                \l  %8 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = zext i16 %12 to i32\l  %14 = mul nuw nsw i32 %5, %13\l  %15 = add nuw nsw i32 %14, %8\l  %16 = srem i32 %15, %1\l  %17 = icmp eq i32 %5, %16\l  %18 = zext i32 %5 to i64\l  br i1 %17, label %19, label %26\l|{<s0>T|<s1>F}}"];
+	Node0x4620570:s0 -> Node0x4621f70;
+	Node0x4620570:s1 -> Node0x4622000;
+	Node0x4621f70 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%19:\l19:                                               \l  %20 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %0, i64 %18, i32 2, i64 %18\l  store i8 1, i8 addrspace(1)* %20, align 1, !tbaa !7\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %18\l  %22 = load i32, i32 addrspace(1)* %21, align 4, !tbaa !11, !amdgpu.noclobber\l... !6\l  %23 = sext i32 %22 to i64\l  %24 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %0, i64 %18, i32 1\l  store i64 %23, i64 addrspace(1)* %24, align 8, !tbaa !13\l  %25 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %0, i64 %18, i32 0\l  store i64 %23, i64 addrspace(1)* %25, align 8, !tbaa !16\l  br label %29\l}"];
+	Node0x4621f70 -> Node0x4620600;
+	Node0x4622000 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%26:\l26:                                               \l  %27 = zext i32 %16 to i64\l  %28 = getelementptr inbounds %struct.chromosome, %struct.chromosome\l... addrspace(1)* %0, i64 %18, i32 2, i64 %27\l  store i8 0, i8 addrspace(1)* %28, align 1, !tbaa !7\l  br label %29\l}"];
+	Node0x4622000 -> Node0x4620600;
+	Node0x4620600 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  ret void\l}"];
+}

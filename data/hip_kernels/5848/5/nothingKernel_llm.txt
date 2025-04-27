@@ -1,0 +1,9 @@
+```
+// Consider using shared memory to store frequently accessed data and reduce global memory access.
+// Ensure coalesced memory access patterns to improve global memory bandwidth utilization.
+// Minimize use of global memory by prioritizing register and shared memory where possible.
+// Evaluate the use of loop unrolling if applicable for reducing the loop overhead.
+// Align data structures to improve memory access speed and reduce bank conflicts.
+// Optimize grid and block dimensions to maximize occupancy and hardware utilization.
+// Prefetch data judiciously to hide memory latency where feasible.
+```

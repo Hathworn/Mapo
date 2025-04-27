@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for coalesced access to improve memory throughput
+// Ensure global memory accesses are coalesced to optimize performance
+// Evaluate the use of loop unrolling to decrease the number of iterations
+// Avoid warp divergence by ensuring all threads in a warp follow the same execution path
+// Use __syncthreads() to synchronize threads after accessing shared data, if applicable
+```

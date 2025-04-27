@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed src data
+// Optimize access patterns by ensuring coalesced global memory accesses for src and dst
+// Reduce atomic operations by aggregating results in shared memory before writing back to global memory
+// Verify correct use of __forceinline__ for performance benefit in critical functions
+// Ensure grid and block sizes optimize occupancy while minimizing warp divergence
+```

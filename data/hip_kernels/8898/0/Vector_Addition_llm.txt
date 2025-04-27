@@ -1,0 +1,6 @@
+```
+// Use shared memory for repeated data access to reduce global memory transactions
+// Ensure coalesced memory access by aligning data structures optimally
+// Experiment with different block sizes to find optimal performance for target hardware
+// Minimize divergence by ensuring all threads within a warp follow the same execution path
+```

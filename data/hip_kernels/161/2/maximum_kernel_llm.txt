@@ -1,0 +1,6 @@
+```cpp
+// Allocate sufficient shared memory to minimize global memory accesses.
+// Avoid redundant threadIdx calculations for more efficient memory access.
+// Load elements into shared memory to utilize faster memory access.
+// Perform intra-block reduction in shared memory to minimize global synchronization.
+```

@@ -1,0 +1,8 @@
+```
+// Minimize thread divergence by using early exits instead of deeply nested conditionals.
+// Consider loading repeated data into shared memory for reduced global memory access.
+// Align memory accesses to coalesced memory transactions for improved throughput.
+// Investigate whether combined loads and stores can be used to optimize bandwidth utilization.
+// Ensure memory access patterns are stride-efficient to take advantage of L2 cache efficiently.
+// Evaluate potential use of memory fences to ensure correct ordering of operations when necessary.
+```

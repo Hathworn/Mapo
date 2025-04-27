@@ -1,0 +1,9 @@
+```
+// Consider aligning memory accesses to improve coalescing
+// Ensure that all threads in a warp access contiguous memory locations
+// Minimize divergent branches by ensuring threads in a warp follow a similar execution path
+// Utilize shared memory for repeated access data to reduce global memory loads
+// Experiment with different block and grid sizes to find an optimal configuration
+// Consider using __restrict__ qualifier to enable more optimization by the compiler
+// Reduce the use of if statements to minimize execution path divergence
+```

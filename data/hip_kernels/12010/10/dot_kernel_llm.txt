@@ -1,0 +1,7 @@
+```
+// Optimize memory access by using shared memory for frequently accessed data
+// Consider loop unrolling for 'for (int i = 0; i < size; ++i)' to improve performance
+// Minimize divergent branches from 'if (index >= num_pairs) return;' by organizing blocks better
+// Coalesce memory access for 'output' and 'delta' arrays to increase memory throughput
+// Prefetch data into registers to reduce global memory access latency
+```

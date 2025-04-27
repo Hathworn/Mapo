@@ -1,0 +1,8 @@
+```cpp
+// Use registers to cache frequently used variables to reduce global memory accesses
+// Minimize mathematical operations within the kernel to enhance computational efficiency
+// Precompute scale factors outside of loops when possible to save computation inside the kernel
+// Use the min-max clamp functions to ensure weight calculations are bounded correctly
+// Combine texture fetching results immediately to reduce the need for intermediate storage
+// Ensure coalesced memory accesses by aligning data access patterns with warp threads
+```

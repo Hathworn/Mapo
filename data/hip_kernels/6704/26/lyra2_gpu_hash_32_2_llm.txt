@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve memory throughput.
+// Use shared memory to minimize global memory access latency if there are shared computations.
+// Utilize warp shuffle functions for intra-warp communications to optimize performance.
+// Ensure nounce variable does not cause bank conflicts if shared in any manner.
+// If possible, increase the number of iterations processed per thread to reduce overhead.
+// Consider increasing occupancy by optimizing register and shared memory usage.
+```

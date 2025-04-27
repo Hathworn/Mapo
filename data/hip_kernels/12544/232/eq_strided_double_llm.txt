@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache data for coalesced memory access
+// Ensure all global memory accesses are aligned to improve throughput
+// Minimize divergent branches to reduce warp execution time
+// Optimize loop unrolling to improve pipeline utilization
+// Assess the use of atomic operations for potential performance gains if needed
+// Reduce register usage per thread to allow more concurrent active threads
+```

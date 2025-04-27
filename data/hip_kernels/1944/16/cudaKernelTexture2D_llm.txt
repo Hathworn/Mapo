@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning threads' access to surface memory
+// Minimize divergent branches by using warp-centric checks instead of individual thread checks
+// Consider using shared memory if data reuse across threads can be identified
+// Ensure trigonometric computations are minimized and reused across similar calculations
+// Evaluate impacts of loop unrolling if iterative calculations exist within the kernel
+```

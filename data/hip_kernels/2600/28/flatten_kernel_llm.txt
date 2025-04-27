@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns to optimize throughput.
+// Use shared memory to reduce repetitive global memory accesses.
+// Ensure that 'N' is a multiple of the block size for full occupancy.
+// Minimize divergent branches, especially within the kernel's critical path.
+// Adjust grid and block dimensions to best fit the GPU's multiprocessor count.
+// Consider using loop unrolling for operations performed within the warp.
+// Use `__syncthreads()` only if absolutely necessary, as it can cause performance bottlenecks.
+```

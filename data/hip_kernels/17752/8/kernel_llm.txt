@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses when accessing referencePoints
+// Consider coalesced memory access for sub_searchPoints to improve memory throughput
+// Utilize vectorized memory access patterns for sub_searchPoints and referencePoints
+// Minimize redundant calculations within the loop to reduce computational overhead
+// Consider loop unrolling for the computation within the for-loop to enhance performance

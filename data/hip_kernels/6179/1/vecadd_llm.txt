@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for the input and output arrays.
+// Ensure __syncthreads() is placed correctly to prevent race conditions.
+// Use shared memory only when it can significantly reduce global memory access.
+// Minimize the usage of shared memory if it does not provide a noticeable performance gain.
+// Allocate shared memory as needed to avoid unnecessary overhead.
+// Optimize block size based on the GPU architecture for better performance.
+```

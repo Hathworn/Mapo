@@ -1,0 +1,6 @@
+```
+// Use grid-stride loops to efficiently load data to avoid divergence and improve coalesced memory access.
+// Consider using warp shuffle operations to improve reduction efficiency within a warp.
+// Align shared memory access to avoid bank conflicts during the reduction process.
+// Minimize global memory writes by storing intermediate results entirely in shared memory before writing final results.
+```

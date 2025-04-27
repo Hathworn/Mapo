@@ -1,0 +1,4 @@
+// Use shared memory to cache vec elements for better memory access patterns
+// Try coalesced access patterns for mat and tgtMat to improve memory throughput
+// Consider loop unrolling for the main computation to reduce loop overhead
+// Optimize stride calculation by avoiding redundant recalculations within the loop

@@ -1,0 +1,8 @@
+```
+// Consider optimizing shared memory allocation for the colorwheel arrays to reduce redundant initialization.
+// Use memory coalescing techniques when accessing the input and output arrays to improve memory read/write throughput.
+// For threads that are inactive due to boundary conditions, optimize by reducing divergence.
+// Investigate if wider vector loads/stores can be applied for the colorwheel arrays to increase load efficiency.
+// Check the effectiveness of shared memory usage—ensuring all threads within the block benefit from initialized values.
+// Assess if rearranging computations to group dependent calculations minimizes register usage and improves latency hiding.
+```

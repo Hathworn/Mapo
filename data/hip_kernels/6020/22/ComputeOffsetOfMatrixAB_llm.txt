@@ -1,0 +1,4 @@
+// Use shared memory to store row_sum and col_sum to reduce global memory access latency.
+// Consider padding shared memory to avoid bank conflicts when accessing row_sum and col_sum.
+// Compute K_A_B - row_sum[blockIdx.x] and col_sum[idx] independently to enable possible instruction-level parallelism.
+// Prefetch row_sum and col_sum values before loop execution to exploit memory coalescing.

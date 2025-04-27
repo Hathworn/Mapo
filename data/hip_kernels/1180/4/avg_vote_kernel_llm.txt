@@ -1,0 +1,8 @@
+```c
+// Use shared memory to cache A and reduce global memory accesses
+// Use texture memory for corrAB to benefit from cached reads
+// Ensure coalesced memory access for writing to B
+// Consider unrolling inner loops to improve performance
+// Optimize the condition checks to reduce branch divergence
+// Align memory allocations for A and B for better efficiency
+```

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access when loading data into shared memory
+// Minimize global memory accesses by leveraging shared memory as much as possible
+// Ensure proper synchronization with __syncthreads() when using shared memory
+// Consider unrolling loops if applicable for further performance gains
+// Check for bank conflicts in shared memory access and optimize if necessary
+```

@@ -1,0 +1,9 @@
+```
+// Consider increasing block size to improve memory coalescing
+// Ensure grid and block dimensions are optimized for the target device
+// Use shared memory to store frequently accessed data inside loops
+// Minimize usage of global memory inside loop
+// Assess potential benefits of loop unrolling for the inner loop
+// Balance load among threads by exploring different block dimensions
+// Investigate use of warp shuffle for performance optimization
+```

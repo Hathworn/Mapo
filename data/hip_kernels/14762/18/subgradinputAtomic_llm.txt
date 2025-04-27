@@ -1,0 +1,10 @@
+```cpp
+// Consider coalesced memory accesses for gradOutput and gradInput
+// Optimize memory access pattern for better cache performance
+// Use shared memory for frequently accessed data to reduce global memory traffic
+// Unroll loops to reduce loop overhead and increase throughput
+// Evaluate using half precision for computations if accuracy allows
+// Consider launching more threads to keep the GPU more utilized
+// Minimize use of atomic operations if possible
+// Explore warp-level primitives to optimize atomic operations
+```

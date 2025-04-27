@@ -1,0 +1,7 @@
+```
+// Use shared memory to store data chunks reused by multiple threads to reduce global memory accesses.
+// Consider using coalesced memory accesses to enhance memory throughput.
+// Optimize thread block size to maximize occupancy and improve performance.
+// Investigate the use of vectorized loads/stores to further optimize memory transactions.
+// Assess the necessity of __syncthreads() for synchronizing shared memory access if introduced.
+```

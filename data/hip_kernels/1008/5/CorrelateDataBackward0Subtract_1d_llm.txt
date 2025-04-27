@@ -1,0 +1,11 @@
+```
+// Use shared memory to reduce repetitive global memory reads.
+// Ensure that shared memory usage does not exceed available limits per block.
+// Consider coalescing memory accesses to improve performance.
+// Minimize bank conflicts when accessing shared memory.
+// Optimize memory access patterns to ensure contiguous reads and writes.
+// Reduce redundant calculations within the kernel loop where possible.
+// Align memory access to the warp size to leverage coalesced access.
+// Loop unrolling may yield performance improvements in certain scenarios.
+// Ensure sufficient synchronization between threads when using shared memory.
+```

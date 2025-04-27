@@ -1,0 +1,4 @@
+// Consider aligning data on memory boundaries for coalesced access.
+// Use shared memory if there's repeated access to the same data.
+// Explore increasing warp occupancy to reduce idle threads and enhance utilization.
+// Implement additional loop unrolling for deeper pipelining and reduced branch divergence.

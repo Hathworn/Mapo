@@ -1,0 +1,8 @@
+```
+// Consider using warp-level primitives to avoid __syncthreads inside the loop
+// Optimize access patterns to shared memory to minimize bank conflicts
+// Reduce global memory access by using register variables where possible
+// Take advantage of loop unrolling for the reduction loop
+// Consider optimizing block and grid dimensions for given hardware limitations
+// Ensure the shared memory's size is compatible with intended block size
+```

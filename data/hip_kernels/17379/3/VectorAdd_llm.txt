@@ -1,0 +1,8 @@
+// Consider using shared memory for frequent data access to reduce global memory accesses   
+// Minimize bank conflicts in shared memory by using padding if needed  
+// Optimize global memory access patterns by ensuring coalesced memory accesses   
+// Use texture memory instead of global memory if the data is read-only and fits into cache  
+// Prefetch data to reduce latency in accessing global memory  
+// Experiment with different block sizes to find an optimal configuration for the hardware  
+// Avoid using double precision unless necessary since it incurs higher computational costs  
+// Replace pow function with faster approximation methods if acceptable precision trade-off

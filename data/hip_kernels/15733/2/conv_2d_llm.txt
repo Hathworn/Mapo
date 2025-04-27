@@ -1,0 +1,4 @@
+// Use shared memory to store mask and avoid redundant global memory access.
+// Consider coalesced memory access patterns for Mat and res to improve bandwidth.
+// Ensure alignment for Mat and res on memory boundaries for optimal access speed.
+// Take advantage of constant memory for the mask as it is read-only and used by all threads.

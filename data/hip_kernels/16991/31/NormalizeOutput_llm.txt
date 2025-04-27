@@ -1,0 +1,6 @@
+```
+// Load fixed values like batch_index and class_index into registers before kernel loops to reduce memory access.
+// Minimize global memory access by using shared memory to store frequently accessed data.
+// Consider coalescing memory accesses to improve bandwidth utilization.
+// Optimize the block size to ensure maximum occupancy and efficient resource usage.
+```

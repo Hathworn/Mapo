@@ -1,0 +1,22 @@
+digraph "CFG for '_Z5primePii' function" {
+	label="CFG for '_Z5primePii' function";
+
+	Node0x55aa730 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e97a5f70",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp sgt i32 %11, %1\l  br i1 %12, label %53, label %13\l|{<s0>T|<s1>F}}"];
+	Node0x55aa730:s0 -> Node0x55ac670;
+	Node0x55aa730:s1 -> Node0x55ac700;
+	Node0x55ac700 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%13:\l13:                                               \l  %14 = sext i32 %11 to i64\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %14\l  %16 = load i32, i32 addrspace(1)* %15, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %17 = sitofp i32 %16 to float\l  %18 = icmp slt i32 %16, 1\l  %19 = select i1 %18, float 0x41F0000000000000, float 1.000000e+00\l  %20 = fmul float %19, %17\l  %21 = tail call float @llvm.sqrt.f32(float %20)\l  %22 = bitcast float %21 to i32\l  %23 = add nsw i32 %22, -1\l  %24 = bitcast i32 %23 to float\l  %25 = add nsw i32 %22, 1\l  %26 = bitcast i32 %25 to float\l  %27 = tail call i1 @llvm.amdgcn.class.f32(float %20, i32 608)\l  %28 = select i1 %18, float 0x3EF0000000000000, float 1.000000e+00\l  %29 = fneg float %26\l  %30 = tail call float @llvm.fma.f32(float %29, float %21, float %20)\l  %31 = fcmp ogt float %30, 0.000000e+00\l  %32 = fneg float %24\l  %33 = tail call float @llvm.fma.f32(float %32, float %21, float %20)\l  %34 = fcmp ole float %33, 0.000000e+00\l  %35 = select i1 %34, float %24, float %21\l  %36 = select i1 %31, float %26, float %35\l  %37 = fmul float %28, %36\l  %38 = select i1 %27, float %20, float %37\l  %39 = fadd contract float %38, 1.000000e+00\l  %40 = and i32 %16, 1\l  %41 = icmp eq i32 %40, 0\l  br i1 %41, label %52, label %42\l|{<s0>T|<s1>F}}"];
+	Node0x55ac700:s0 -> Node0x55ad200;
+	Node0x55ac700:s1 -> Node0x55af2f0;
+	Node0x55af2f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dbdcde70",label="{%42:\l42:                                               \l  %43 = fcmp contract ult float %39, 3.000000e+00\l  br i1 %43, label %53, label %47\l|{<s0>T|<s1>F}}"];
+	Node0x55af2f0:s0 -> Node0x55ac670;
+	Node0x55af2f0:s1 -> Node0x55af4c0;
+	Node0x55af600 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{%44:\l44:                                               \l  %45 = sitofp i32 %51 to float\l  %46 = fcmp contract ult float %39, %45\l  br i1 %46, label %53, label %47, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x55af600:s0 -> Node0x55ac670;
+	Node0x55af600:s1 -> Node0x55af4c0;
+	Node0x55af4c0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%47:\l47:                                               \l  %48 = phi i32 [ %51, %44 ], [ 3, %42 ]\l  %49 = srem i32 %16, %48\l  %50 = icmp eq i32 %49, 0\l  %51 = add nuw nsw i32 %48, 2\l  br i1 %50, label %52, label %44\l|{<s0>T|<s1>F}}"];
+	Node0x55af4c0:s0 -> Node0x55ad200;
+	Node0x55af4c0:s1 -> Node0x55af600;
+	Node0x55ad200 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ead5c970",label="{%52:\l52:                                               \l  store i32 1, i32 addrspace(1)* %15, align 4, !tbaa !7\l  br label %53\l}"];
+	Node0x55ad200 -> Node0x55ac670;
+	Node0x55ac670 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e97a5f70",label="{%53:\l53:                                               \l  ret void\l}"];
+}

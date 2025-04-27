@@ -1,0 +1,9 @@
+```
+// Load data in chunked fashion to improve coalescing
+// Double the loop stride to minimize warp divergence
+// Use shared memory to minimize global memory access
+// Perform a thread block reduction using shared memory
+// Use unrolled loops for warp-level operations to reduce latency
+// Store reduction results from shared to global memory only once
+// Avoid bank conflicts in shared memory access by ensuring proper data alignment
+```

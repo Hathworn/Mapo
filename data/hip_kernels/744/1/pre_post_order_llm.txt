@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for the 'roots', 'leaves', and 'singletons' arrays to improve efficiency.
+// Utilize shared memory more effectively by minimizing unnecessary reads/writes to global memory.
+// Explore warp shuffle operations for intra-block communication instead of using shared memory.
+// Ensure memory alignment for `depth`, `zeta`, and `zeta_tilde` to leverage faster memory transactions.
+// Reduce the number of global memory accesses by storing frequently used values in registers.
+// Avoid repeated calculations for indices in the inner loop by pre-computing outside the loop if possible.
+```

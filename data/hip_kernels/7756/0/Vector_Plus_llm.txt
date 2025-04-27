@@ -1,0 +1,7 @@
+```
+// Use shared memory for faster data access if applicable
+// Ensure data coalescing by having consecutive threads access consecutive data elements
+// Minimize global memory access inside the loop to improve performance
+// Consider loop unrolling if the loop body is small enough
+// Align data structures to memory boundaries for optimized access
+```

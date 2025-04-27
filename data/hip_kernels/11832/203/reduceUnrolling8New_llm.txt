@@ -1,0 +1,9 @@
+```cpp
+// Ensure data is coalesced by accessing contiguous memory locations across threads
+// Consider using shared memory to store intermediate results for better data reuse
+// Optimize the if-else boundary check to minimize overhead by leveraging warp efficiency
+// Use __restrict__ qualifier on pointers to enable better compiler optimizations
+// Prefetch next data elements into registers to hide global memory latency
+// Evaluate potential for using float or double precision for more efficient global memory transactions
+// Consider using Asynchronous Copy with Cooperative Groups if supported
+```

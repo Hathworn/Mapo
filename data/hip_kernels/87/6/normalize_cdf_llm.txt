@@ -1,0 +1,6 @@
+```
+// Precompute normalization constant outside of the thread loop to reduce redundant calculations.
+// Use a single read operation for d_input_cdf[n-1] to minimize global memory access.
+// Ensure coalesced memory accesses by having consecutive threads access consecutive memory locations.
+// Consider using shared memory if further memory access optimization is needed.
+```

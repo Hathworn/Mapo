@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access
+// Coalesce global memory accesses to improve memory bandwidth utilization
+// Consider using vectorized data types for memory write operations
+// Optimize block size and grid size for better latency hiding and occupancy
+// Avoid bank conflicts when using shared memory if applicable
+// Ensure memory alignment to avoid inefficient memory transactions
+```

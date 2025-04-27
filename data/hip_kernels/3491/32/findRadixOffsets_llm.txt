@@ -1,0 +1,8 @@
+```
+// Consider using shared memory efficiently to reduce global memory access.
+// Use warp-level primitives like __shfl_sync for better divergence handling and performance.
+// Optimize memory access patterns to achieve full coalescing for better throughput.
+// Review atomic operations usage as they could be a bottleneck in performance.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Utilize vectorized access to keys array if possible for optimized memory bandwidth.
+```

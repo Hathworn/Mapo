@@ -1,0 +1,8 @@
+```
+// Use shared memory to load portions of the target image for better memory access patterns.
+// Minimize the use of __ldg by using shared memory where applicable.
+// Ensure coalesced memory access by aligning data access to warp size.
+// Use asynchronous memory prefetching for larger datasets if beneficial.
+// Consider loop unrolling if there are repeating access patterns within loops.
+// Evaluate the use of vectorized memory operations, such as float4, for loading and storing pixel data.
+```

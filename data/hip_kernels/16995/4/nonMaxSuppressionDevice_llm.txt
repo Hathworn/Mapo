@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce memory access time for gradient arrays.
+// Evaluate using texture memory for d_gradientMag for better cache utilization.
+// Align memory access to optimize memory transactions and reduce bank conflicts.
+// Use loop unwinding techniques to minimize control flow divergence in thread execution.
+// Explore coalesced memory access patterns to enhance global memory throughput.
+// Investigate using half-precision floats for computations where precision is less critical.
+```

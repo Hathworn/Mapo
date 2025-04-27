@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory access latency
+// Ensure shared memory size is appropriate for blockDim.x
+// Consider using __syncthreads() to synchronize threads after loading data into shared memory
+// Reduce bank conflicts in shared memory accesses
+```

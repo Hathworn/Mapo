@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for smaller values of nPoints to reduce global memory access.
+// Ensure coalesced access to devDiff by having threads access contiguous memory locations.
+// Preload devDiff values into registers to minimize repeated memory fetches.
+// Evaluate potential benefits of loop unrolling in scenarios with small nClusters.
+// Consider organizing data to ensure better cache utilization in devClusters.
+// Use warp shuffles to minimize synchronization when aggregating results across threads.
+```

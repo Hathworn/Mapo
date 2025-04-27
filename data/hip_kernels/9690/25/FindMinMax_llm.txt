@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory access for global reads from d_Data
+// Use unrolling for the loop over rows to increase instruction throughput
+// Adjust shared memory access patterns to avoid bank conflicts
+// Consider increasing block size for better GPU occupancy
+```

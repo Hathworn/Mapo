@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce global memory access per thread
+// Ensure coalesced memory access patterns by aligning data accesses
+// Consider using vectorized memory operations for improved bandwidth utilization
+// Optimize block size to maximize occupancy while ensuring sufficient parallelism
+// Use __syncthreads() to synchronize threads if shared memory is used
+// Profile to identify and minimize potential bank conflicts in shared memory usage
+```

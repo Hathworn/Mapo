@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by aligning data properly
+// Minimize global memory accesses by using shared memory if applicable
+// Evaluate if atomic operations can be replaced to reduce synchronization overhead
+// Consider loop unrolling if there are iterative operations within the kernel
+// Profile kernel launches to check for occupancy bottlenecks
+// Use __restrict__ qualifiers to aid compiler optimizations
+```

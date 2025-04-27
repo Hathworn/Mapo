@@ -1,0 +1,12 @@
+```
+// Ensure blockIdx.y and blockIdx.z are not used if the grid is 1-dimensional
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Allocate shared memory efficiently by minimizing its size according to n
+// Perform synchronization efficiently to avoid excessive barrier overhead
+// Consider using warp-level primitives for reduction to improve performance
+// Maximize thread occupancy by choosing an appropriate block size
+// Ensure y, a, and x are aligned to prevent uncoalesced access patterns
+// Opt for in-register storage within threads to reduce global memory access
+// Avoid bank conflicts in shared memory by ensuring access patterns align
+// Re-evaluate the launch configuration for optimal grid size based on the input dimensions
+```

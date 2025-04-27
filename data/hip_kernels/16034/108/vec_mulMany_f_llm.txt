@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for the kernel array to reduce global memory accesses.
+// Minimize register usage by optimizing math operations for better occupancy.
+// Ensure coalesced memory access by aligning data if possible.
+// Evaluate whether using a 2D thread block can improve performance depending on the data distribution.
+// Check if loop unrolling would benefit performance in scenarios with predictable loops.
+```

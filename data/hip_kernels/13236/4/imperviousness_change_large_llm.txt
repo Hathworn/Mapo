@@ -1,0 +1,7 @@
+// Avoid unnecessary computations by checking index bounds in the loop
+// Consider using shared memory for faster access compared to global memory
+// Optimize memory access patterns to minimize bank conflicts and maximize coalesced access
+// Reuse register variables to store frequently accessed data to reduce memory bandwidth consumption
+// Use loop unrolling to reduce loop control overhead and improve performance
+// Ensure enough threads are launched to keep the GPU fully occupied
+// Consider using warp-level operations for further optimization

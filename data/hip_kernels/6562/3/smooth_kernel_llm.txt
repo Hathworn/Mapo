@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by accessing consecutive elements
+// Consider using shared memory to cache repeated read data from global memory
+// Aim to minimize divergent branches within the warp
+// Unroll loops to improve instruction throughput if size is known at compile time
+// Balance grid and block sizes to match the GPU architecture for better occupancy
+```

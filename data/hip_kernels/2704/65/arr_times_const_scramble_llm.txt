@@ -1,0 +1,9 @@
+```
+// Use __restrict__ qualifier for pointers to help compiler optimize memory access
+// Use shared memory if possible to reduce global memory access latency
+// Consider loop unrolling for better ILP (Instruction Level Parallelism)
+// Ensure memory accesses are coalesced to improve bandwidth utilization
+// Use warp-wide operations to minimize divergence
+// Pre-fetch data to registers to hide memory latency
+// Consider using vectorized loads and stores if applicable
+```

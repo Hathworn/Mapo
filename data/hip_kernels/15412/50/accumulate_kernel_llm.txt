@@ -1,0 +1,3 @@
+// Use a local variable for sum to improve performance
+// Reduce global memory access by using shared memory for intermediate results if possible
+// Minimize thread divergence by ensuring the loop runs uniformly for all threads

@@ -1,0 +1,10 @@
+```cpp
+// Increase cache utilization by reducing boundary checks to only the edges
+// Pre-load shared memory to minimize latency during data access
+// Use __syncthreads() only when necessary to reduce performance bottlenecks
+// Reuse intermediate values in calculations to minimize repeated computation
+// Reduce the number of min and max calculations by leveraging shared memory
+// Minimize synchronization overhead by structuring code logic to minimize waits
+// Align memory accesses to coalesce reads and writes where possible
+// Ensure shared memory arrays have minimal padding to reduce shared memory bank conflicts
+```

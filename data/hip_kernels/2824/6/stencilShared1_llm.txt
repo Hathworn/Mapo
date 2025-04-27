@@ -1,0 +1,9 @@
+```
+// Ensure coalesced access patterns when loading data into shared memory
+// Consider using vectorized loads/stores if applicable for better memory throughput
+// Minimize shared memory usage by optimizing the buffer size if possible
+// Align shared memory access to avoid bank conflicts
+// Use __syncthreads() judiciously to reduce synchronization overhead
+// Minimize register usage by optimizing variable scope and data reuse
+// Use __launch_bounds__ to specify block size limits for better occupancy
+```

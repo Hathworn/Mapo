@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13threshold_onePfS_Piii' function" {
+	label="CFG for '_Z13threshold_onePfS_Piii' function";
+
+	Node0x564f1d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !4, !invariant.load !5\l  %10 = zext i16 %9 to i32\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = mul i32 %11, %10\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp ult i32 %14, %4\l  %16 = zext i32 %14 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !7, !amdgpu.noclobber\l... !5\l  %19 = icmp sle i32 %18, %3\l  %20 = and i1 %19, %15\l  br i1 %20, label %21, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x564f1d0:s0 -> Node0x5651ba0;
+	Node0x564f1d0:s1 -> Node0x5651c30;
+	Node0x5651ba0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%21:\l21:                                               \l  %22 = getelementptr inbounds float, float addrspace(1)* %0, i64 %16\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !11,\l... !amdgpu.noclobber !5\l  %24 = getelementptr inbounds float, float addrspace(1)* %1, i64 %16\l  store float %23, float addrspace(1)* %24, align 4, !tbaa !11\l  br label %25\l}"];
+	Node0x5651ba0 -> Node0x5651c30;
+	Node0x5651c30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  ret void\l}"];
+}

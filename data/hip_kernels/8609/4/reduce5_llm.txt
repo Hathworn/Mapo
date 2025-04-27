@@ -1,0 +1,10 @@
+```
+// Consider increasing the block size to better utilize the GPU's parallel capabilities.
+// Use a unified memory policy for optimal global memory access patterns.
+// Ensure coalesced memory access by aligning memory accesses of threads within a warp.
+// Minimize conditional statements inside critical loops for better warp execution efficiency.
+// Consider padding shared memory to avoid bank conflicts at the warp level.
+// Replace volatile keyword with __syncthreads() if data consistency is critical across warps.
+// Use atomic operations for reduction if further optimization is required for specific use-cases.
+// Analyze and optimize instruction-level parallelism using profiling tools.
+```

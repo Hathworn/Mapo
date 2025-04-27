@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring INCX is 1 for continuous data
+// Minimize divergence by ensuring warp threads handle similar control paths
+// Use shared memory if multiple threads access the same data to reduce global memory transactions
+// Evaluate increasing block size to find the optimal kernel configuration for your hardware
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to store mean values to reduce global memory access latency.
+// Use shared memory to store intermediate sum results to improve memory locality.
+// Consider loop unrolling for the spatial loop to potentially enhance performance.
+// Optimize memory access patterns to ensure coalesced memory access.
+// Investigate using float4 data type for memory access to utilize vectorized operations.
+```

@@ -1,0 +1,3 @@
+// Consider using shared memory to cache input elements and reduce global memory accesses.
+// Increase block size if possible to utilize more threads and achieve better occupancy.
+// Minimize conditional checks within the kernel for better instruction throughput.

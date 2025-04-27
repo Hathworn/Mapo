@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache portions of mat and vec to reduce repeated global memory accesses.
+// Ensure coalesced memory access patterns by aligning data structures appropriately.
+// Ensure that the load and store operations are aligned to facilitate faster memory operations.
+// Avoid divergent branches within the loop to maintain efficiency across all threads in a warp.
+// Consider loop unrolling to enhance performance by minimizing loop overhead.
+```

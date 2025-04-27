@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses if possible.
+// Ensure coalesced memory access by aligning hiprandState array properly.
+// Use __restrict__ keyword for state pointer to enable better compiler optimizations.
+// Consider adjusting block size to optimize the number of threads per block for better performance.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+```

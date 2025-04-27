@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses for g_in and g_ttmp by using consecutive threads
+// Avoid bank conflicts by aligning g_ttmp accesses if possible
+// Consider using shared memory for frequently accessed data if beneficial
+// Use fast math operations where precision permits
+```

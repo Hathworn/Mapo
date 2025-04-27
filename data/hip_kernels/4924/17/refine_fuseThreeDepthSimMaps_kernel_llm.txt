@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data like dpts and sims arrays
+// Coalesced memory access can be optimized by ensuring sequential threads access successive memory locations
+// Check if the data can be processed block by block to reduce global memory access
+// Evaluate if loop unrolling could help reduce overhead and increase throughput
+```

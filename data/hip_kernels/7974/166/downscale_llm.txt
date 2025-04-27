@@ -1,0 +1,8 @@
+```
+// Ensure memory coalescing by aligning memory accesses
+// Consider using shared memory to cache gradOutput_data for reuse
+// Optimize the thread/block configuration based on occupancy
+// Use loop unrolling for the inner loop for further performance gains
+// Minimize the number of global memory accesses where possible
+// Analyze bank conflicts and adjust memory access patterns
+```

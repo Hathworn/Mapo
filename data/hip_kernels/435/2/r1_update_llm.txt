@@ -1,0 +1,6 @@
+```
+// Load col[idy * ldc] once per idy outside of the inner loop to reduce redundant memory access
+// Ensure coalesced memory access in reading the row array for better performance
+// Try padding or aligning data to improve memory access patterns and reduce bank conflicts
+// Consider using shared memory to store frequently accessed variables like col_val if it reduces global memory access
+```

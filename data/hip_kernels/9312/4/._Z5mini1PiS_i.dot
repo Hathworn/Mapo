@@ -1,0 +1,11 @@
+digraph "CFG for '_Z5mini1PiS_i' function" {
+	label="CFG for '_Z5mini1PiS_i' function";
+
+	Node0x5eacf10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = shl i32 %4, 8\l  %6 = add nsw i32 %5, 256\l  %7 = tail call i32 @llvm.smin.i32(i32 %6, i32 %2)\l  %8 = icmp slt i32 %5, %7\l  br i1 %8, label %13, label %9\l|{<s0>T|<s1>F}}"];
+	Node0x5eacf10:s0 -> Node0x5ead100;
+	Node0x5eacf10:s1 -> Node0x5eadc50;
+	Node0x5eadc50 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%9:\l9:                                                \l  %10 = phi i32 [ 7888888, %3 ], [ %19, %13 ]\l  %11 = zext i32 %4 to i64\l  %12 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %11\l  store i32 %10, i32 addrspace(1)* %12, align 4, !tbaa !4\l  ret void\l}"];
+	Node0x5ead100 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%13:\l13:                                               \l  %14 = phi i32 [ %20, %13 ], [ %5, %3 ]\l  %15 = phi i32 [ %19, %13 ], [ 7888888, %3 ]\l  %16 = sext i32 %14 to i64\l  %17 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %16\l  %18 = load i32, i32 addrspace(1)* %17, align 4, !tbaa !4, !amdgpu.noclobber\l... !8\l  %19 = tail call i32 @llvm.smin.i32(i32 %15, i32 %18)\l  %20 = add nsw i32 %14, 1\l  %21 = icmp slt i32 %20, %7\l  br i1 %21, label %13, label %9, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x5ead100:s0 -> Node0x5ead100;
+	Node0x5ead100:s1 -> Node0x5eadc50;
+}

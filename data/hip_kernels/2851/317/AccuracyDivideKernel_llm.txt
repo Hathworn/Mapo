@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if the accuracy value is computed in each block
+// Perform the division on the CPU if possible to avoid kernel launch overhead
+// Ensure that accuracy is effectively cached to reduce global memory access time
+// Assess if multiple kernel calls can be merged to reduce launch latency
+```

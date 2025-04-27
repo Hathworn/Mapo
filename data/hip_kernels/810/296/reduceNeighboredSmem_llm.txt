@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses to improve throughput.
+// Ensure enough threads are active to achieve full device utilization.
+// Minimize shared memory bank conflicts for faster data access.
+// Optimize thread divergence during the reduction process.
+// Ensure `blockDim.x` is a power of two for efficient reduction.
+```

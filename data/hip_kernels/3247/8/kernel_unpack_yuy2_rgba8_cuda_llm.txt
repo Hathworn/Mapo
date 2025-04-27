@@ -1,0 +1,7 @@
+```c
+// Consider coalesced access to improve memory throughput by aligning access patterns.
+// Use shared memory to reduce redundant global memory access for frequently used values.
+// Optimize loop's stride to avoid repetitive calculations with constant values.
+// Ensure that memory access is aligned to minimize inefficient memory transactions.
+// Consider using texture memory for better caching on read-only data like `src`.
+```

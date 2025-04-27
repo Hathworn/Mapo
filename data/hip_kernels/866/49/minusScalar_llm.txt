@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for frequently accessed data to reduce global memory accesses.
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Minimize the use of global memory through registers where possible for individual thread operations.
+// Ensure memory allocation is aligned for optimal access across the compute units.
+// Consider adjusting block and grid sizes for better occupancy and memory access patterns.
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency
+// Prefetch data from global memory to shared memory when possible
+// Ensure memory coalescing by aligning data access patterns
+// Consider loop unrolling if applicable for further performance boost
+// Use appropriate grid and block dimensions to maximize occupancy

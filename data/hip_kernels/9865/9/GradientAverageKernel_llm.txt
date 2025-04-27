@@ -1,0 +1,8 @@
+```cpp
+// Consider using coalesced memory access by ensuring threads in a warp access consecutive memory locations.
+// Use padding in shared memory to avoid bank conflicts.
+// Optimize shared memory usage to limit the number of reads and writes, e.g., reduce unnecessary overwrites.
+// Pre-calculate repetitive computations outside of loops to minimize redundant calculations.
+// Consider loop unrolling for the neighbor accumulation loop to improve performance.
+// Use __ldg() to load read-only data to leverage read-only data cache where possible.
+```

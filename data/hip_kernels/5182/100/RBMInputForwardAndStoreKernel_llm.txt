@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access by ensuring inputPtr, outputPtr, and storePtr are accessed sequentially.
+// Use shared memory to cache biasPtr if applyBias is frequently true, reducing global memory accesses.
+// Verify if float2 or float4 operations can be used for vectorized memory accesses for optimization.
+// Align inputPtr, outputPtr, storePtr, and biasPtr to 128 bytes to enable more efficient memory transactions.
+// Minimize warp divergence by reordering conditions to reduce conditional branches.
+```

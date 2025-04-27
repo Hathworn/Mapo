@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory reads
+// Use a stride pattern to improve coalesced memory access
+// Implement loop unrolling for the inner loop to decrease overhead
+// Consider banking in shared memory to improve performance and reduce conflicts
+// Evaluate the impact of using __restrict__ keyword to potentially improve memory access speeds
+// Tune block and grid dimensions to match the GPU architecture and maximize occupancy
+```

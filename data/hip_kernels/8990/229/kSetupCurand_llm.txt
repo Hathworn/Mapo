@@ -1,0 +1,7 @@
+```
+// Ensure threadCount is a multiple of warp size for optimal warp execution.
+// Use shared memory to minimize global memory accesses where possible.
+// Coalesce global memory accesses for improved bandwidth utilization.
+// Consider using __restrict__ pointers to enable compiler optimizations.
+// Align data access to cache line boundaries to enhance memory throughput.
+```

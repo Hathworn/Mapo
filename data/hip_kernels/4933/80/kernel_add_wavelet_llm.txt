@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory if possible to reduce global memory access
+// Try loop unrolling if applicable to enhance performance
+// Ensure coalesced memory access for better memory throughput
+// Explore using texture memory for read-only data
+// Consider occupancy optimization for better utilization of hardware resources
+// Evaluate the use of __restrict__ to provide the compiler with optimization hints
+// Investigate cacheability options to improve memory access times
+```

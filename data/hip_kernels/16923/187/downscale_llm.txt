@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced reads and writes in the kernel.
+// Consider using shared memory to reduce global memory access latency.
+// Ensure that the memory accesses within the loop are contiguous when accessing gradOutput_data.
+// Use __restrict__ pointers for gradInput_data and gradOutput_data to enable better compiler optimizations.
+// Consider unrolling the loop for offset to reduce loop overhead, if max_idx is small.
+// Minimize the number of operations in the translate_idx_inv function.
+// Ensure that grid size and block size are chosen to maximize warp utilization and occupancy.
+```

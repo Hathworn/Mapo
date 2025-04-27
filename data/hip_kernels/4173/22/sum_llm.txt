@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for input to improve memory bandwidth utilization
+// Use warp-level primitives to optimize the reduction process
+// Minimize shared memory usage by reducing unnecessary allocations and synchronizations
+// Ensure atomicAdd is not a bottleneck by optimizing the number of thread blocks
+// Check for half-warp divergence in reduction loop and optimize accordingly
+```

@@ -1,0 +1,4 @@
+// Use __restrict__ keyword for pointers data_l, data_r, and result to advise compiler about non-aliasing.
+// Ensure data is accessed in coalesced manner to optimize memory bandwidth usage.
+// Consider using shared memory if data reuse exists among threads within a block.
+// Align data to cache line or bank size to optimize memory access patterns.

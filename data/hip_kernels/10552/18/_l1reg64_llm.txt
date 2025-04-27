@@ -1,0 +1,5 @@
+// Cache w[i] to reduce global memory access
+// Calculate stride outside the loop to optimize loop execution
+// Consider using shared memory for further optimization if access patterns allow
+// Optimize thread block size for best GPU occupancy and performance
+// Align w and dw arrays for coalesced memory access

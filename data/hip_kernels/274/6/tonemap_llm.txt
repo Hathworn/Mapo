@@ -1,0 +1,8 @@
+```
+// Coalesce memory access by ensuring adjacent threads access adjacent memory locations for d_x, d_y, d_log_Y.
+// Use shared memory to cache d_cdf_norm values as they are accessed by multiple threads.
+// Consider using warp-wide operations to optimize bin_index calculation across threads.
+// Minimize divergent branches by restructuring the logic within if statements where possible.
+// Use __restrict__ keyword for pointers to inform the compiler of non-aliasing memory regions.
+// Consider prefetching data to improve memory latency hiding, especially for d_cdf_norm.
+```

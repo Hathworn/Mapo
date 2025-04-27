@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory accesses
+// Ensure proper synchronization using __syncthreads() to avoid race conditions
+// Partition matrix into tiles to reduce memory bandwidth requirement
+// Align thread block size with shared memory configuration for efficient access
+// Optimize loop iterations based on block size to minimize redundant computations

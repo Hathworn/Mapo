@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses to improve memory bandwidth utilization.
+// Utilize shared memory more efficiently by minimizing unnecessary loads and reusing data.
+// Optimize thread mapping to reduce bank conflicts when accessing shared memory.
+// Ensure warp divergence is minimized by grouping threads performing similar operations.
+// Prefetch global memory data into shared memory to hide memory latency.
+// Unroll inner loops where beneficial to enhance performance by reducing loop overhead.
+// Evaluate the use of texture memory for read-only data if spatial locality is high.
+// Double buffer shared memory if feasible to overlap compute with memory operations.
+```

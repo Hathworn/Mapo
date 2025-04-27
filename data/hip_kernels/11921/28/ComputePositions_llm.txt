@@ -1,0 +1,9 @@
+```
+// Use shared memory to store frequently accessed data for reduced global memory reads
+// Pre-fetch global memory data into local registers when possible to minimize latency
+// Ensure global memory accesses are coalesced to optimize memory bandwidth utilization
+// Consider unrolling loops if applicable to improve performance
+// Avoid bank conflicts in shared memory by ensuring proper memory alignment
+// Minimize divergent branching within the warp when checking conditions
+// Evaluate if reducing precision from float to half is applicable to gain performance
+```

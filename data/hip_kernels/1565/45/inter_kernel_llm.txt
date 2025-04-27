@@ -1,0 +1,7 @@
+```
+// Precompute indices outside of the main loop to reduce redundant calculations
+// Coalesce global memory access by ensuring continuous memory access patterns
+// Use shared memory to load data into faster, thread-accessible storage
+// Consider using vectorized loads and stores for X and Y to increase bandwidth utilization
+// Minimize divergent branches to maintain warp efficiency
+```

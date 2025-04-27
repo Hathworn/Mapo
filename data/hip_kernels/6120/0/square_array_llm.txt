@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory accesses.
+// Ensure blockDim.x is set to 256 or less to match shared memory allocation.
+// Load data from global memory to shared memory to reduce access latency.
+// Synchronize threads with __syncthreads() for correct shared memory operations.
+// Perform computation directly in shared memory.
+// Store results back to global memory after computation to reduce overall access.

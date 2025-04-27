@@ -1,0 +1,4 @@
+// Consider using shared memory to store normalization_factor for better memory access pattern.
+// Use float instead of float2 if only real values are needed to reduce memory usage.
+// Ensure coalesced memory access for image array to improve bandwidth utilization.
+// Minimize branching within the kernel for better performance.

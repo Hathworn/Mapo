@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache parts of restoredEigenvectors for better memory access
+// Consider loop unrolling for the for-loop to reduce loop overhead
+// Avoid bank conflicts when accessing shared memory
+// Minimize global memory accesses by using registers for frequently accessed data
+// Ensure coalesced memory access patterns for meanSubtractedImages
+// Consider using texture memory for meanSubtractedImages if it's accessed randomly
+```

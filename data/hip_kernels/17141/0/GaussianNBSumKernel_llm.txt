@@ -1,0 +1,7 @@
+```
+// Consider further optimizing shared memory usage to avoid bank conflicts
+// Explore the possibility of using warp-level primitives to reduce syncthreads overhead
+// Assess if loop unrolling could improve performance during mean calculation
+// Investigate if coalesced memory access for d_data[] can be further improved
+// Check if atomic operations on shared memory can be avoided to enhance performance
+```

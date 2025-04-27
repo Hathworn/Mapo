@@ -1,0 +1,3 @@
+// Optimize by using shared memory for faster access if block size is small  
+// Load data into shared memory before computation (assuming blockDim.x <= 256)  
+// Perform log operation using shared memory  

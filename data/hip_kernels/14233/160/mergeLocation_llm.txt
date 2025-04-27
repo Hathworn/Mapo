@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to hold data that will be reused by threads in the same block to minimize global memory access latency.
+// Optimize memory access patterns by ensuring coalesced reads from `loc_`, which are already implemented as `ptidx` is used.
+// Ensure that `x` and `y` arrays are also accessed in a coalesced manner as the memory access is done sequentially with respect to `ptidx`.
+// Evaluate if arithmetic operations can be rearranged to take advantage of instruction-level parallelism or fused multiply-add (FMA) instructions.
+// Review the use of `scale` as a constant to ensure it doesn't change per kernel launch, which aids in optimization by the compiler.
+```

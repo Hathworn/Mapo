@@ -1,0 +1,6 @@
+```
+// Ensure that memory accesses for mask and in are coalesced for better performance
+// Use __ldg to load values from the mask array to benefit from the L1 cache
+// Consider employing shared memory if mask values are reused across multiple threads within a block
+// Explore the use of warp-level primitives to further optimize mask checks
+```

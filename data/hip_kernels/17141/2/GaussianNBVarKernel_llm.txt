@@ -1,0 +1,4 @@
+// Use shared memory to cache per-class variances for faster access
+// Initialize shared memory before calculating to ensure it's clean
+// Use atomic operations to prevent race conditions when updating shared memory
+// Normalize variance calculation using class counts after accumulation in shared memory

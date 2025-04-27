@@ -1,0 +1,7 @@
+```c
+// Coalesce global memory accesses by ensuring thread indices map to contiguous memory locations
+// Utilize shared memory if multiple threads access nearby input data to reduce global memory accesses
+// Consider loop unrolling to enhance throughput if applicable
+// Investigate using warp-wide operations to further optimize memory access patterns
+// Ensure optimal block size is chosen to fully utilize GPU resources, considering occupancy and memory bandwidth
+```

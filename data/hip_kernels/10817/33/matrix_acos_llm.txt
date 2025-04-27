@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory if multiple threads access the same data to reduce global memory access.
+// Ensure coalesced memory access patterns for better performance.
+// Use __restrict__ keyword for pointer arguments if applicable to help the compiler optimize memory access.
+// Optimize block and grid dimensions for better occupancy and load balancing.
+// Prefer using warp-level primitives for better performance on computations across threads within a warp.
+```

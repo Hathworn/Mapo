@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access for d_MSD_DIT_widths and d_MSD_DIT to improve memory access patterns
+// Use shared memory to cache d_MSD_DIT_widths and d_MSD_DIT values accessed by multiple threads in a block
+// Use __syncthreads() appropriately after loading data to shared memory to ensure all threads have updated values
+// Minimize float to int conversions by maintaining consistent data types across calculations
+// Ensure alignment of memory access to prevent bank conflicts
+// Reuse calculated values like floorf(log2f()) result to avoid redundant calculations
+```

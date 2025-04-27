@@ -1,0 +1,4 @@
+// Use shared memory if the same data is accessed multiple times by threads
+// Consider memory coalescing for better access patterns
+// Try to align memory accesses to improve throughput
+// Ensure numEls is a multiple of blockDim.x for optimal execution

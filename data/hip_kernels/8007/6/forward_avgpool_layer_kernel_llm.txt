@@ -1,0 +1,4 @@
+// Consider using float4 for input data loading to coalesce global memory access
+// Ensure shared memory usage aligns with warp size for efficiency
+// Evaluate the use of __restrict__ qualifier for input and output pointers if suitable
+// Use loop unrolling for the block stride loop to enhance performance

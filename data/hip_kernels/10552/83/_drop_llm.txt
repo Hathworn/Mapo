@@ -1,0 +1,4 @@
+// Use shared memory if possible to reduce global memory access
+// Consider using warp shuffle operations to optimize memory usage
+// Ensure memory coalescing by using appropriate block and grid sizes
+// Use constant memory for `dropout` and `scale` if these values do not change across threads

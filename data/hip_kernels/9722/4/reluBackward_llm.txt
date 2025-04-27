@@ -1,0 +1,6 @@
+```
+// Optimize: Ensure coalesced memory access by having contiguous data accessed by consecutive threads.
+// Optimize: Consider using shared memory if there is reuse of data within a block to reduce global memory access.
+// Optimize: Adjust grid and block size to maximize occupancy and minimize idle threads.
+// Optimize: Profile the memory access patterns to identify any possible memory bottlenecks.
+```

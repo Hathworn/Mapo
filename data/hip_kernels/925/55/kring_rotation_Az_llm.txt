@@ -1,0 +1,5 @@
+// Use shared memory for frequently accessed data to reduce global memory access latency.
+// Consider data prefetching techniques to hide memory access latency.
+// Ensure memory coalescing by aligning data structures properly.
+// Avoid unnecessary memory operations within the kernel by minimizing global memory accesses.
+// Optimize the block and grid dimensions to maximize occupancy without causing excessive memory usage.

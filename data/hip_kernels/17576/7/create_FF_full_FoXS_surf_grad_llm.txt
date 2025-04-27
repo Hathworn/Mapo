@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Preload necessary data into shared memory to minimize repeated global reads
+// Ensure coalesced global memory writes for FF_full to optimize memory bandwidth
+// Utilize __syncthreads() to ensure all threads have consistent view of shared memory
+// Calculate hydration factor outside atomic loop to avoid redundant computations
+// Consider vectorizing surf_grad calculations for improved parallel efficiency
+```

@@ -1,0 +1,10 @@
+```
+// Use register and shared memory to minimize global memory access and latency.
+// Consider optimizing block and thread allocation for efficient load balancing.
+// Prefetch data where possible to reduce access overhead.
+// Use warp-level primitives for efficient thread synchronization.
+// Ensure coalesced memory access to improve bandwidth utilization.
+// Utilize asynchronous memory transfers for overlapping data movement and computation.
+// Examine memory bank conflicts and align data to utilize burst transfers.
+// Reassess the compiler optimization flags for the kernel to fine-tune performance.
+```

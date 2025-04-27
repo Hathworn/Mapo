@@ -1,0 +1,9 @@
+```
+// Ensure BLOCK_SIZE matches blockDim.x for optimal shared memory usage
+// Consider coalesced memory access patterns for global memory
+// Use __restrict__ to enable compiler optimizations for pointers
+// Reduce redundant memory access by maximizing shared memory usage
+// Use __syncthreads() to synchronize threads after loading shared memory
+// Optimize BLOCK_SIZE to balance between shared memory usage and register pressure
+// Avoid bank conflicts in shared memory for better performance
+```

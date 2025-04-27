@@ -1,0 +1,6 @@
+// Use shared memory to cache gradOutput_data to reduce repeated global memory access  
+// Combine reads and writes to coalesce memory transactions for gradInput_data and gradOutput_data  
+// Align memory accesses to warp boundaries for improved throughput  
+// Replace manual loop unrolling with compiler directives such as #pragma unroll  
+// Optimize irregular memory access patterns by restricting threads to contiguous indices  
+// Use __restrict__ keyword for gradInput_data and gradOutput_data pointers to assist compiler optimization  

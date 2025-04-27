@@ -1,0 +1,10 @@
+```
+// Use shared memory to cache srcImage data for faster access.
+// Optimize memory coalescing by aligning srcImage and dstImage accesses.
+// Consider using texture or surface memory for srcImage to leverage hardware interpolation features.
+// Reduce register pressure by minimizing the use of temporary variables in hot paths.
+// Use warp-level primitives to further optimize chroma data processing.
+// Explore using asynchronous memory copies to overlap data transfer with computation.
+// Investigate the use of inline PTX to optimize specific low-level operations.
+// Group similar operations to enable compiler optimizations like loop unrolling.
+```

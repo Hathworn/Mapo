@@ -1,0 +1,4 @@
+// Ensure coalesced memory access by accessing contiguous memory locations
+// Consider using shared memory for small datasets to reduce global memory access latency
+// Avoid warp divergence by ensuring uniform loop execution across threads
+// Prefer vector types for memory operations if applicable to improve throughput

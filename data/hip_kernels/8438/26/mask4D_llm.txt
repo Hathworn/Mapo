@@ -1,0 +1,5 @@
+// Use shared memory to store mask values for faster access
+// This helps reduce global memory access latency and improve performance
+// Ensure the shared memory size fits within hardware limitations
+// Optimize memory access patterns to maximize coalesced memory access
+// Consider using warp-wise operations for further optimization

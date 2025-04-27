@@ -1,0 +1,11 @@
+```
+// Cache the values from global memory into registers to reduce memory access latency.
+// Use shared memory to store frequently accessed data to minimize global memory accesses.
+// Avoid strided access patterns to better utilize memory coalescing in the kernel.
+// Preload data into registers outside the loop to reduce redundant global memory accesses.
+// Utilize vectorized operations if possible to increase memory throughput.
+// Consider loop unrolling to improve computational efficiency and reduce loop overhead.
+// Minimize divergent branching to maximize parallel execution efficiency.
+// Align data structures to reduce memory access penalties.
+// Use warp-level primitives to increase data reuse among threads and reduce memory traffic.
+```

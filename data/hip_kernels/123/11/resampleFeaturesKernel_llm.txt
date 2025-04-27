@@ -1,0 +1,7 @@
+```
+// Precompute interval for efficiency to reduce computational overhead
+// Use shared memory to cache weights for faster access (only if fits into shared memory)
+// Ensure that shared memory size is specified based on blockDim.x to avoid overflow
+// Utilize __syncthreads() to synchronize threads after loading weights into shared memory
+// Optimize index calculation by minimizing variable dependency and using parallel assignment
+```

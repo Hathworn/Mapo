@@ -1,0 +1,5 @@
+digraph "CFG for '_Z17bankConflictsReadPfiPy' function" {
+	label="CFG for '_Z17bankConflictsReadPfiPy' function";
+
+	Node0x5926ae0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i64 @llvm.amdgcn.s.memtime()\l  %5 = tail call i64 @llvm.amdgcn.s.memtime()\l  %6 = sub i64 %5, %4\l  store i64 %6, i64 addrspace(1)* %2, align 8, !tbaa !4\l  ret void\l}"];
+}

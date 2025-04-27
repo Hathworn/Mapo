@@ -1,0 +1,8 @@
+```
+// Use shared memory if possible to reduce global memory access
+// Consider coalesced memory access for connectionMatrix
+// Prefetch pointsCoordinates to registers to minimize latency
+// Avoid atomic operations by reducing contention, if possible
+// Align memory accesses for better cache performance
+// Evaluate warp occupancy to ensure efficient execution
+```

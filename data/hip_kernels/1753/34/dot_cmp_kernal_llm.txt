@@ -1,0 +1,8 @@
+```
+// Ensure sufficient shared memory allocation for partial sums
+// Consider using loop unrolling for the reduction step
+// Minimize shared memory bank conflicts by padding
+// Prefetch data into registers to reduce memory latency
+// Align data1 and data2 pointers to minimize misaligned accesses
+// Use cooperative groups for better synchronization within the block
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency.
+// Use vectorized memory access to minimize warp divergence.
+// Ensure coalesced memory access for arrays to maximize throughput.
+// Consider reordering threads if data access patterns lead to bank conflicts.
+// Leverage loop unrolling techniques to reduce branch overhead.

@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access by reorganizing data layout if needed.
+// Use shared memory to store parts of input data for faster access.
+// Minimize global memory accesses; consider registering frequently accessed variables.
+// Ensure that memory accesses are aligned to allow for more efficient read/write operations.
+// Utilize warp shuffling to reduce the number of overall iterations in loops.
+// Experiment with different block and grid sizes for optimal occupancy and performance.
+```

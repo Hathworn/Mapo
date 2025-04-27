@@ -1,0 +1,7 @@
+```cpp
+// Use __restrict__ pointers for A, B, C to help the compiler with potential optimizations.
+// Consider using float4 or float2 to allow coalesced memory access.
+// Minimize data transfer by maximizing the usage of shared memory with careful indexing.
+// Align shared memory size to avoid bank conflicts and optimize memory access patterns.
+// Use more than one thread block if max_block_rows is large for improved occupancy.
+```

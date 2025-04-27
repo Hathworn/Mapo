@@ -1,0 +1,9 @@
+```
+// Align data access patterns to reduce memory transactions
+// Use coalesced global memory loads whenever possible
+// Minimize bank conflicts in shared memory
+// Consider padding shared memory to avoid bank conflicts
+// Ensure proper synchronization with __syncthreads()
+// Evaluate impact of block size on performance
+// Experiment with loop unrolling to increase instruction throughput
+```

@@ -1,0 +1,5 @@
+// Use shared memory for row data to reduce global memory access
+// Prefetch row data to registers to improve access speed
+// Align data accesses to natural boundaries for better memory coalescing
+// Consider tuning block and grid sizes for optimal performance
+// Use __restrict__ keyword for pointers to allow compiler optimizations

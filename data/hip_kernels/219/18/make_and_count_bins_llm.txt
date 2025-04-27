@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for bin_counters to reduce global memory access.
+// Optimize memory access patterns by ensuring coalesced access to vec array.
+// Avoid conditional statements where possible to reduce branching and improve warp efficiency.
+// Use __syncthreads() strategically if using shared memory for synchronization.
+// Analyze warp divergence caused by if conditions and optimize block size accordingly.
+```

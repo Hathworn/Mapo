@@ -1,0 +1,8 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access.
+// Consider coalescing memory accesses for g_Data1, g_Data2, and g_Data3.
+// Ensure that warp divergence is minimized in control flow conditions where possible.
+// Prefetch data into registers to reduce memory latency.
+// Consider loop unrolling if applicable to reduce overhead.
+// Optimize instruction-level parallelism to avoid pipeline stalls.
+```

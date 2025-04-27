@@ -1,0 +1,9 @@
+```c
+// Use shared memory to reduce global memory accesses for frequently accessed data
+// Preload xmins and xmaxes to shared memory to reduce latency
+// Use a loop unrolling strategy to optimize the for loop for calculating powers
+// Minimize global memory writes by accumulating results in registers when possible
+// Ensure proper memory coalescing when accessing queryPts and regression arrays
+// Consider using __syncthreads() where necessary for synchronization and correctness
+// Evaluate the use of vectorized operations to improve memory access patterns and throughput
+```

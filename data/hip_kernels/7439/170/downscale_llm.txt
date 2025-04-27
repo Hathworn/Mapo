@@ -1,0 +1,6 @@
+// Consider reorganizing memory access to maximize coalesced access
+// Minimize divergence by ensuring uniform execution within warp
+// Use shared memory for data reuse to reduce global memory traffic
+// Prefer float4 or other vector types for faster memory access
+// Avoid expensive arithmetic operations within the main loop
+// Align memory allocations to maximize memory throughput

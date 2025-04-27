@@ -1,0 +1,7 @@
+```
+// Use shared memory to store tile portions of Md and Nd to reduce global memory access
+// Prefetch data elements from Md and Nd into shared memory before computation
+// Ensure coalesced memory access by accessing matrix elements in a row-major order
+// Avoid bank conflicts in shared memory by adjusting shared memory layout
+// Consider loop unrolling within the for loop to enhance computational efficiency
+```

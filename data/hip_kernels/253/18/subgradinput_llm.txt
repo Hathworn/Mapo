@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access patterns to improve global memory read/write efficiency.
+// Ensure that gradOutput and gradInput accesses are coalesced as much as possible.
+// Minimize divergent threads within warps when iterating over the output dimensions.
+// Evaluate loop unrolling for inner loops (ky, kx) to potentially improve performance.
+// Utilize shared memory for weight if accessed frequently and reused multiple times.
+```

@@ -1,0 +1,4 @@
+// Use shared memory to store tiles of matrices A and B for improved memory access patterns.
+// Ensure shared memory is properly synchronized after loading tiles to prevent race conditions.
+// Optimize global memory accesses by coalescing memory reads for matrices A and B.
+// Aim to maximize thread utilization by processing blocks of data in parallel.

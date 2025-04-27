@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory access by using contiguous threads for sequential elements
+// Consider using shared memory cache to reduce global memory access latency for a[i]
+// Optimize occupancy by balancing block size vs register/memory usage
+// Use a compile-time constant for block size to maximize efficiency
+```

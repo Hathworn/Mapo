@@ -1,0 +1,4 @@
+// Consider using shared memory for caching data accessed within the loop to minimize global memory traffic.
+// Ensure coalesced memory access by aligning data reads and writes with warp boundaries.
+// Avoid divergent branches within the loop to maximize warp execution efficiency.
+// If possible, use vectorized data types and operations to reduce the number of memory transactions.

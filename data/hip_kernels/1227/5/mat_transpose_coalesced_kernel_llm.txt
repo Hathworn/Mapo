@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure memory coalescing by organizing access patterns
+// Implement double buffering to hide memory load latency, if applicable
+// Consider prefetching data into shared memory for efficiency
+// Optimize thread block size to match warp size for maximum occupancy
+// Evaluate warp divergence and adjust thread logic if necessary
+```

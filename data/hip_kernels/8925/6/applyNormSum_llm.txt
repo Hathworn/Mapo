@@ -1,0 +1,6 @@
+```cpp
+// Precompute coeffs outside of loop as they are constant for all elements
+// Use stride loop for better GPU memory access pattern
+// Consider using shared memory to reduce redundant memory access
+// Align memory access by using sizeof(double) for dMap, dSupFeature, and dInfFeature
+```

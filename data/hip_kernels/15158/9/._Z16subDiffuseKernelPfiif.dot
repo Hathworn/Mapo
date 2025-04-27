@@ -1,0 +1,5 @@
+digraph "CFG for '_Z16subDiffuseKernelPfiif' function" {
+	label="CFG for '_Z16subDiffuseKernelPfiif' function";
+
+	Node0x644db30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = mul nsw i32 %1, 22\l  %6 = add nsw i32 %5, %2\l  %7 = sext i32 %6 to i64\l  %8 = getelementptr inbounds float, float addrspace(1)* %0, i64 %7\l  %9 = load float, float addrspace(1)* %8, align 4, !tbaa !4,\l... !amdgpu.noclobber !8\l  %10 = fsub contract float %9, %3\l  store float %10, float addrspace(1)* %8, align 4, !tbaa !4\l  ret void\l}"];
+}

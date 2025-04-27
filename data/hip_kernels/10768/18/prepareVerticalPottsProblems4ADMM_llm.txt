@@ -1,0 +1,5 @@
+// Coalesce memory accesses to improve global memory throughput in v and in arrays  
+// Align memory accesses of weights and weightsPrime with warp size  
+// Avoid redundant recalculations of weightsIndex by storing it in a register  
+// Consider using shared memory for weights and weightsPrime to decrease global memory latency  
+// Optimize thread block and grid dimensions to improve occupancy and memory bandwidth utilization  

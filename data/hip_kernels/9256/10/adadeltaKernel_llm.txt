@@ -1,0 +1,4 @@
+// Precompute scaling factor outside the loop to reduce redundant calculations
+// Load gradient once to reduce redundant memory accesses
+// Use rsqrt for better performance instead of sqrt
+// Avoid division for performance by using multiplication

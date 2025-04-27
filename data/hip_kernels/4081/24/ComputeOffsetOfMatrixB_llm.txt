@@ -1,0 +1,3 @@
+// Use shared memory to cache row_sum data for each block to reduce global memory accesses.  
+// Consider memory coalescing for the output array to optimize global memory access.  
+// Ensure that the kernel launch configuration maximizes occupancy of threads per block.  

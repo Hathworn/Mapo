@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory access for input to improve memory throughput.
+// Ensure that output and indexes are also accessed in a coalesced manner.
+// Use shared memory to load input data tiles when accessing it multiple times.
+// Minimize bank conflicts in shared memory accesses if shared memory is used.
+// Consider using __restrict__ keyword for input pointers if appropriate.
+// Ensure that the kernel is launched with optimal block and grid sizes.
+// Evaluate the use of loop unrolling for the size * size loop.
+```

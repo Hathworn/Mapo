@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for normalization_factor to reduce global memory access
+// Use memory coalescing by accessing normalization_factor and image consecutively
+// Prefetch data to registers for reuse within the thread block to minimize latency
+// Ensure alignment of data structures for optimal memory transactions
+```

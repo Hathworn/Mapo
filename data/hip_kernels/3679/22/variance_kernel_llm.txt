@@ -1,0 +1,6 @@
+```cpp
+// Calculate scale outside the loop to save computational resources
+// Use local variable 'var' for accumulation to reduce global memory access
+// Avoid using powf for better performance by replacing it with multiplication
+// Write the final result to global memory outside the loop to minimize global memory writes
+```

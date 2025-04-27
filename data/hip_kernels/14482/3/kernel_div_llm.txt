@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency
+// Avoid warp divergence by ensuring threads execute similar paths
+// Access global memory coalesced to improve memory throughput
+// Load frequently accessed data into registers to reduce memory access time
+// Reduce the number of memory transactions by aligning data accesses
+```

@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory if the data size and access pattern benefit from it.
+// Ensure coalesced global memory access for threads within a warp.
+// Reduce the use of atomic operations for cases where multiple threads need to write to the same memory location.
+// Optimize data transfer between host and device by minimizing transfer frequency and only transferring necessary data.
+// Explore using streams for overlapping data transfers with computation to improve concurrency.
+// Profile memory usage and access patterns to ensure maximum throughput and efficiency.
+```

@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access for in1_x and in1_d to improve memory bandwidth.
+// Consider shared memory for in2_x to further reduce global memory accesses.
+// Use loop unrolling to increase instruction level parallelism.
+// Prefetch next elements to hide memory latency.
+```

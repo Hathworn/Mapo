@@ -1,0 +1,4 @@
+// Consider using shared memory for loading input data to reduce global memory access latency.
+// Ensure coalesced global memory accesses by arranging data accesses using warp-friendly patterns.
+// Use constant memory for any constants or read-only data to optimize memory bandwidth usage.
+// Evaluate occupancy and adjust block size or register usage to maximize hardware utilization.

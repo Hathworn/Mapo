@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by checking alignment of gradInput_data.
+// Use shared memory to cache gradOutput_data for frequent access.
+// Consider loop unrolling for the accumulation loop to reduce loop overhead.
+// Ensure gradOutput_data is read in a coalesced fashion.
+// Use fewer registers by reusing temporary variables.
+```

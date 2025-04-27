@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory access and improve efficiency.
+// Accumulate sums in shared memory to minimize memory access latency.
+// Utilize __syncthreads() after writing to shared memory to ensure synchronization.
+// Ensure the final accumulation is performed within shared memory to leverage faster access.
+// Use __syncthreads() after the final summation to ensure all threads observe the update.
+```

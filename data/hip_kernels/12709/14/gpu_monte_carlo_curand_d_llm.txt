@@ -1,0 +1,5 @@
+```
+// Use state update instead of reinitialization to avoid costly state setup every iteration
+// Unroll the loop for improved performance by reducing branch divergence
+// Store the updated state back to ensure each thread maintains its pseudo-random sequence
+```

@@ -1,0 +1,9 @@
+```c
+// Ensure coalesced memory access when loading d_Data
+// Avoid warp divergence by minimizing conditional statements
+// Utilize shared memory to reduce global memory access
+// Minimize the number of times __syncthreads() is called
+// Consider loop unrolling for better performance in reduction phase
+// Align memory accesses to improve memory throughput
+// Store results in registers whenever possible to reduce shared memory usage
+```

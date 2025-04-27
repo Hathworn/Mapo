@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to reduce redundant global memory accesses
+// Optimize memory coalescing by ensuring sequential threads access sequential memory locations
+// Use warp-level primitives for optimizing reduction or other collective operations
+// Ensure proper memory alignment for increased memory transaction efficiency
+// Leverage asynchronous data copy operations if applicable
+// Explore potential use of constant memory for frequently used constant values
+// Evaluate register usage to minimize spills and improve occupancy
+// Adjust block and grid dimensions for better occupancy and reduced overhead
+```

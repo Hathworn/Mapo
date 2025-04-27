@@ -1,0 +1,10 @@
+```
+// Optimize memory coalescing by ensuring continuous memory accesses for better performance.
+// Use warp-level operations to reduce synchronization overhead.
+// Consider using texture memory for read-only data to improve cache efficiency.
+// Ensure shared memory usage aligns properly with hardware limits to avoid bank conflicts.
+// Utilize explicit loop unrolling to potentially improve arithmetic intensity and throughput.
+// Consider using __restrict__ pointers for potential compiler optimizations.
+// Evaluate constant memory utilization for frequently accessed values to reduce memory latency.
+// Minimize the reuse of shared memory by optimizing data life cycle within the kernel.
+```

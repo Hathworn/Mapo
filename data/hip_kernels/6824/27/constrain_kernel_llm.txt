@@ -1,0 +1,4 @@
+// Consider aligning memory accesses to improve coalescing.  
+// Use shared memory for repeated access to ALPHA to reduce global memory reads.  
+// Optimize INCX handling to ensure contiguous memory access if possible.  
+// Evaluate warp size utilization for potential thread divergence optimization.

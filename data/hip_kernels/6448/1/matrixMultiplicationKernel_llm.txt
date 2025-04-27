@@ -1,0 +1,5 @@
+// Optimize using shared memory for faster access compared to global memory.
+// Ensure As and Bs arrays are optimized to fit in shared memory per block.
+// Use __syncthreads to synchronize threads after loading into shared memory.
+// Tile loop should account for out-of-bound indices, preventing invalid memory access.
+// Consider additional memory coalescing optimization for global memory access.

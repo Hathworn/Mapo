@@ -1,0 +1,8 @@
+```c
+// Use shared memory to reduce global memory access
+// Load shared memory considering boundary checks
+// extra loads for halo elements
+// Unroll loop to increase instruction-level parallelism
+// Ensure memory coalescing when accessing global memory
+// Consider increasing thread block size for better occupancy
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data within blocks for faster access
+// Align data access to ensure coalesced memory transactions
+// Optimize block size to exploit GPU architecture for better occupancy
+// Consider using float3 instead of float4 for memory efficiency if alpha channel is not needed
+// Avoid branching inside the kernel by using conditional assignments or predefined tables
+```

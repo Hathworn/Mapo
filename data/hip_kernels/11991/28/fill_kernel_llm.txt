@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for better performance.
+// Use __restrict__ for pointers if applicable to optimize memory access.
+// Explore shared memory usage if the data can be reused across threads.
+// Ensure data alignment for float access to avoid unaligned memory access.
+// Check for warp divergence due to conditional statements and optimize them.
+```

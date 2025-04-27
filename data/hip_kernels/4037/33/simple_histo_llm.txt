@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to reduce global memory traffic by storing frequently accessed data locally in each block.
+// Coalesce global memory accesses to improve memory throughput by ensuring consecutive threads access consecutive memory locations.
+// Reduce the frequency of atomic operations as they can serialize execution and lead to contention.
+```

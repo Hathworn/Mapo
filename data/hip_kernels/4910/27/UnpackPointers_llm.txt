@@ -1,0 +1,9 @@
+```
+// Consider increasing the use of shared memory for larger blocks of minmax values to improve memory access coalescing.
+// Reduce bank conflicts in shared memory access by possible padding techniques.
+// Ensure w (width) is a multiple of the warp size to fully utilize coalesced memory accesses.
+// Minimize the use of __syncthreads() to only necessary synchronization points to reduce overhead.
+// Consider employing loop unrolling techniques on smaller loops like 'for (int k = 0; k < 32; k++)' for performance gain.
+// Evaluate the benefits of prefetching data from global to shared memory to further optimize memory usage.
+// Aim to modify the kernel launch configuration, if possible, for optimal thread block sizes to best match hardware architecture.
+```

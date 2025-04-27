@@ -1,0 +1,6 @@
+```
+// Use grid-stride loop for improved parallelism to handle more elements.
+// Consider accessing memory in a coalesced manner to improve memory throughput.
+// Ensure the number of threads is a multiple of the warp size for efficiency.
+// Explore using shared memory if there are frequent accesses to the same data.
+```

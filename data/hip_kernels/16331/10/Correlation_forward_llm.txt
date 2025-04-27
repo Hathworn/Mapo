@@ -1,0 +1,4 @@
+// Consider using shared memory to store rInput1 and rInput2 values for each thread block to reduce global memory accesses.
+// Explore the possibility of using texture memory for rInput1 and rInput2 for faster caching on GPUs.
+// Investigate the use of memory coalescing for better access patterns when reading from global memory.
+// Evaluate the impact of different thread block sizes on memory access patterns and overall kernel performance.

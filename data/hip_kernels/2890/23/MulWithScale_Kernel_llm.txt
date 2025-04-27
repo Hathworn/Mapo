@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access where possible
+// Optimize memory access patterns for coalescing across threads
+// Consider using vectorized types like float4 for nChannels % 4 == 0
+// Ensure occupancy is maximized by choosing appropriate block size
+```

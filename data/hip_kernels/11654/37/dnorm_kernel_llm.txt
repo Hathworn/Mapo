@@ -1,0 +1,6 @@
+```
+// Use shared memory for frequently accessed variables like mu and sigma to reduce global memory access
+// Minimize the use of expensive mathematical functions; consider precomputing constants like sqrt(2*pi)
+// Ensure memory coalescing by checking vals array access pattern aligns with warp execution
+// Consider using __syncthreads() to avoid race conditions if shared memory is utilized
+```

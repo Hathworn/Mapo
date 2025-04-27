@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data and reduce global memory access latency
+// Use __ldg intrinsic to load read-only data from global memory for improved efficiency
+// Consider aligning data to warp size to improve coalesced memory access
+// Check for memory access patterns to ensure maximum utilization of memory bandwidth
+// Consider loop unrolling for array access if applicable to enhance instruction-level parallelism
+```

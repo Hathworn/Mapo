@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Load data efficiently to shared memory to minimize latency
+// Ensure coalesced memory access when loading to shared memory
+// Use __syncthreads to synchronize threads after loading data
+// Optimize computations using shared memory to reduce recomputation
+// Consider using vector operations if applicable to enhance throughput
+// Use __syncthreads to synchronize threads before storing data back
+```

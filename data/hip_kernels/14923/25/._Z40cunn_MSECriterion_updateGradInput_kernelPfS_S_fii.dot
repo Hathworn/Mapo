@@ -1,0 +1,11 @@
+digraph "CFG for '_Z40cunn_MSECriterion_updateGradInput_kernelPfS_S_fii' function" {
+	label="CFG for '_Z40cunn_MSECriterion_updateGradInput_kernelPfS_S_fii' function";
+
+	Node0x4e17410 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = mul nsw i32 %7, %5\l  %9 = sext i32 %8 to i64\l  %10 = getelementptr inbounds float, float addrspace(1)* %0, i64 %9\l  %11 = getelementptr inbounds float, float addrspace(1)* %1, i64 %9\l  %12 = getelementptr inbounds float, float addrspace(1)* %2, i64 %9\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %14 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %15 = getelementptr i8, i8 addrspace(4)* %14, i64 4\l  %16 = bitcast i8 addrspace(4)* %15 to i16 addrspace(4)*\l  %17 = load i16, i16 addrspace(4)* %16, align 4, !range !5, !invariant.load !6\l  %18 = zext i16 %17 to i32\l  %19 = icmp slt i32 %13, %5\l  br i1 %19, label %21, label %20\l|{<s0>T|<s1>F}}"];
+	Node0x4e17410:s0 -> Node0x4e19530;
+	Node0x4e17410:s1 -> Node0x4e195c0;
+	Node0x4e195c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%20:\l20:                                               \l  ret void\l}"];
+	Node0x4e19530 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%21:\l21:                                               \l  %22 = phi i32 [ %31, %21 ], [ %13, %6 ]\l  %23 = zext i32 %22 to i64\l  %24 = getelementptr inbounds float, float addrspace(1)* %11, i64 %23\l  %25 = load float, float addrspace(1)* %24, align 4, !tbaa !7\l  %26 = getelementptr inbounds float, float addrspace(1)* %12, i64 %23\l  %27 = load float, float addrspace(1)* %26, align 4, !tbaa !7\l  %28 = fsub contract float %25, %27\l  %29 = fmul contract float %28, %3\l  %30 = getelementptr inbounds float, float addrspace(1)* %10, i64 %23\l  store float %29, float addrspace(1)* %30, align 4, !tbaa !7\l  %31 = add nuw nsw i32 %22, %18\l  %32 = icmp slt i32 %31, %5\l  br i1 %32, label %21, label %20, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x4e19530:s0 -> Node0x4e19530;
+	Node0x4e19530:s1 -> Node0x4e195c0;
+}

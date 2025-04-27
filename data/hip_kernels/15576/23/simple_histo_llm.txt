@@ -1,0 +1,6 @@
+```
+// Coalesce global memory accesses to reduce transaction overhead
+// Use shared memory to store partial histograms before final global memory update
+// Minimize divergent branches by ensuring warp-aligned memory accesses
+// Consider loop unrolling for better instruction-level parallelism
+```

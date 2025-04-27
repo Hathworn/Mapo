@@ -1,0 +1,4 @@
+// Consider coalesced memory access to reduce bandwidth usage  
+// Ensure __syncthreads() is necessary, otherwise remove it to save instructions  
+// Optimize memory access patterns to utilize L1 and L2 cache efficiently  
+// Avoid shared memory bank conflicts by aligning data access

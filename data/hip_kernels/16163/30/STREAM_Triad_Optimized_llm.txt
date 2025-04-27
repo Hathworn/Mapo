@@ -1,0 +1,9 @@
+```
+// Minimize global memory access by ensuring coalesced memory access patterns
+// Consider using shared memory if multiple threads reuse elements of 'a' or 'b'
+// Ensure that the kernel is launched with an optimal block size for the target GPU
+// Explore use of vectorized loads and stores if possible, for higher memory throughput
+// Profile kernel to identify potential warp divergence and adjust thread execution accordingly
+// Use occupancy calculator to determine optimal grid and block dimensions
+// Consider loop unrolling for the computation to reduce instruction overhead
+```

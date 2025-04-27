@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning memory with warp size
+// Consider using shared memory to reduce global memory access
+// Use __restrict__ to enable compiler optimizations by indicating no aliasing
+// Check memory access pattern to prevent bank conflicts
+// Prefetch data into registers to minimize global memory latency
+```

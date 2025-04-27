@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory access
+// Perform two global memory loads in one instruction to increase data throughput
+// Ensure no out of bounds memory access for better efficiency
+// Use __syncthreads() to synchronize and avoid race conditions
+// Reduce the number of __syncthreads() calls by optimizing the reduction loop
+// Coalesce global memory writes for better performance

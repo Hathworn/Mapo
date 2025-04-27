@@ -1,0 +1,6 @@
+// Consider coalescing global memory access to improve memory throughput.
+// Use shared memory efficiently to minimize global memory access.
+// Reduce bank conflicts in shared memory by adjusting shared memory access patterns.
+// Ensure kernel execution is within valid grid and block limits.
+// Optimize loop conditions and break early when possible to save computation.
+// Verify if additional memory access patterns can be optimized by using texture memory.

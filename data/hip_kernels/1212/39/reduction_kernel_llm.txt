@@ -1,0 +1,5 @@
+// Consider minimizing memory access latency by ensuring coalesced access patterns.
+// Use shared memory efficiently to avoid bank conflicts.
+// Ensure memory writes are coalesced for optimal performance.
+// Avoid spilling variables to local memory which could increase latency.
+// Use __syncthreads() judiciously to prevent unnecessary synchronization overhead.

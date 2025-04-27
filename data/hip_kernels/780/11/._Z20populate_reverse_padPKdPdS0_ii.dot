@@ -1,0 +1,15 @@
+digraph "CFG for '_Z20populate_reverse_padPKdPdS0_ii' function" {
+	label="CFG for '_Z20populate_reverse_padPKdPdS0_ii' function";
+
+	Node0x620b290 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = icmp slt i32 %14, %3\l  br i1 %15, label %16, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x620b290:s0 -> Node0x620d190;
+	Node0x620b290:s1 -> Node0x620d220;
+	Node0x620d190 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%16:\l16:                                               \l  %17 = load double, double addrspace(1)* %2, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %18 = xor i32 %14, -1\l  %19 = add i32 %18, %3\l  %20 = sext i32 %19 to i64\l  %21 = getelementptr inbounds double, double addrspace(1)* %0, i64 %20\l  %22 = load double, double addrspace(1)* %21, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %23 = fsub contract double %22, %17\l  br label %26\l}"];
+	Node0x620d190 -> Node0x620e580;
+	Node0x620d220 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%24:\l24:                                               \l  %25 = icmp slt i32 %14, %4\l  br i1 %25, label %26, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x620d220:s0 -> Node0x620e580;
+	Node0x620d220:s1 -> Node0x620e710;
+	Node0x620e580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#d8564670",label="{%26:\l26:                                               \l  %27 = phi double [ %23, %16 ], [ 0.000000e+00, %24 ]\l  %28 = sext i32 %14 to i64\l  %29 = getelementptr inbounds double, double addrspace(1)* %1, i64 %28\l  store double %27, double addrspace(1)* %29, align 8, !tbaa !7\l  br label %30\l}"];
+	Node0x620e580 -> Node0x620e710;
+	Node0x620e710 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  ret void\l}"];
+}

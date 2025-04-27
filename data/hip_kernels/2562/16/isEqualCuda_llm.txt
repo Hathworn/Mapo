@@ -1,0 +1,3 @@
+// Consider using shared memory for row data to reduce global memory access.
+// Use coalesced memory accesses by ensuring aligned data reads.
+// Evaluate memory access stride; ensure it's optimal for adjacent threads.

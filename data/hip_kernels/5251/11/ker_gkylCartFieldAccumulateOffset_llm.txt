@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for improved memory bandwidth usage
+// Ensure enough threads per block to maintain high occupancy and hide latencies
+// Use shared memory to reduce global memory accesses where possible
+// Minimize divergent branching to enhance warp execution efficiency
+// Consider using constant memory for parameters like fact if they are unchanged
+```

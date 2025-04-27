@@ -1,0 +1,8 @@
+```
+// Consider using texture memory for rho if access pattern is suitable
+// Ensure coalesced access for rho loading into shared_rho
+// Avoid bank conflicts when accessing shared memory
+// Use __syncthreads() efficiently to minimize thread divergence
+// Prefetch rho data into registers if possible
+// Optimize B computation by unrolling loops or using vectorized operations if applicable
+```

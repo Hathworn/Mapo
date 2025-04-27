@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access for d_outputweights
+// Precompute id * numHiddenNeurons + keyPress to avoid redundant calculations in the loop
+// Minimize repeated access to d_weights by storing its value in a register before the loop
+// Leverage loop unrolling to optimize the calculation of totalChange and update of d_weights
+// Use warp-level primitives to reduce atomic operations on biasChange
+```

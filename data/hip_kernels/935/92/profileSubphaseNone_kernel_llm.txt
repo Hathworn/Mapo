@@ -1,0 +1,5 @@
+```
+// No memory access in the kernel, hence no memory optimization needed.
+// Ensure the kernel is launched with optimal block and grid sizes to avoid resource underutilization.
+// Use __launch_bounds__ if the kernel had logic to maximize occupancy.
+```

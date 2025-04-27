@@ -1,0 +1,7 @@
+```c
+// Consider using atomics to avoid race conditions
+// Utilize shared memory for data that is reused across threads
+// Minimize global memory accesses by caching data in shared memory
+// Optimize block size to maximize occupancy and throughput
+// Ensure proper memory coalescing to improve memory bandwidth utilization
+```

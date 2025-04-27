@@ -1,0 +1,3 @@
+// Use shared memory to cache min_val and max_val to reduce redundant global memory accesses
+// Ensure data coalescing by aligning the data accesses and using warp-level synchronization if applicable
+// Consider using texture memory for read-only data to potentially increase memory read throughput

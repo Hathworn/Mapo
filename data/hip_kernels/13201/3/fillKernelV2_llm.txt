@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for writing to arrays a and b
+// Use shared memory to store sin_val and cos_val to reduce redundant calculations
+// Ensure enough threads per block to hide memory latency by increasing occupancy
+// Investigate alignment of arrays a and b to reduce possible misalignment issues
+```

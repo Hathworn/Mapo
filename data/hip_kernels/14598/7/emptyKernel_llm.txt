@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access by ensuring threads access contiguous memory locations.
+// Minimize the use of global memory and prefer shared memory for variables frequently accessed by threads.
+// Ensure optimal block size to maximize occupancy without exceeding available registers and shared memory per block.
+// Use appropriate memory access patterns to take advantage of the L1 and L2 cache hierarchy.
+// Avoid warp divergence by ensuring all threads in a warp follow the same execution path.
+// Align data structures to cache line boundaries to minimize cache misses.
+// Evaluate the use of asynchronous memory copies to overlap computation with data transfer.
+// Profile the kernel's performance to identify and eliminate possible bottlenecks.
+```

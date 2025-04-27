@@ -1,0 +1,5 @@
+```
+// Use __shared__ memory to store the normalization constant to reduce redundant global memory accesses.
+// Avoid redundant division by computing normalization constant once per block.
+// Use __syncthreads() to ensure all threads have access to the computed normalization constant.
+```

@@ -1,0 +1,4 @@
+// Consider coalesced memory access patterns when loading data into shared memory.
+// Ensure shared memory utilization fits within hardware limitations for different GPUs.
+// Use __syncthreads() only when necessary to avoid performance bottlenecks.
+// Optimize shared memory usage to allow higher occupancy if blockDim.x exceeds 1024.

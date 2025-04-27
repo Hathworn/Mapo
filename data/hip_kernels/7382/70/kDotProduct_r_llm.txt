@@ -1,0 +1,4 @@
+// Use a register for temporal accumulation to reduce memory accesses
+// Save intermediate results in shared memory to reduce global memory access
+// Apply unrolling in reduction to optimize computation
+// Utilize warp shuffle for efficient intra-warp reduction

@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring contiguous threads access contiguous memory locations
+// Consider using shared memory to minimize global memory access latency
+// Ensure grid and block dimensions are chosen to maximize occupancy
+// Use __restrict__ keyword if data pointers do not alias to enhance compiler optimizations
+// Prefer using const pointers if the data is read-only to enable further optimizations
+```

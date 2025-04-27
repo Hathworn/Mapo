@@ -1,0 +1,8 @@
+```
+// #pragma unroll  // Consider loop unrolling for improved parallel execution efficiency
+// Initialize sum inside the inner loop to avoid unnecessary memory operations
+// Utilize shared memory for frequently accessed data to minimize global memory access
+// Ensure coalesced access to global memory for optimal memory bandwidth usage
+// Balance the workload across threads to avoid idle threads and improve latency
+// Consider using warp-level synchronization for more efficient thread management
+```

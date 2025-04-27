@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for PointType_BestN to improve memory throughput.
+// Decompose complex expressions used in indexing for better readability and potential compiler optimization.
+// Minimize divergent branches within the loop to improve warp execution efficiency.
+// Store repeated calculations such as sizeIndex * rows * ChooseBestN in temporary variables to reduce arithmetic instructions.
+// Prefetch nextPoint into a register before entering the inner loop to reduce repetitive memory accesses.
+// Utilize shared memory to store frequently accessed data like PointType_BestN to reduce global memory transactions.
+```

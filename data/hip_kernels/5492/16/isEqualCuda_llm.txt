@@ -1,0 +1,6 @@
+```
+// Optimize memory access by ensuring in1 and in2 are coalesced.
+// Use shared memory to reduce global memory access if applicable.
+// Ensure isEqual is aligned for atomic operations to avoid bank conflicts.
+// Consider using warp-wise reduction to improve atomic operation efficiency.
+```

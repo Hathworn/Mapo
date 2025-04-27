@@ -1,0 +1,15 @@
+digraph "CFG for '_Z44kernel_vec_equals_vec1_plus_alpha_times_vec2PdS_dS_S_i' function" {
+	label="CFG for '_Z44kernel_vec_equals_vec1_plus_alpha_times_vec2PdS_dS_S_i' function";
+
+	Node0x5fe84e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %8 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %9 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %10 = getelementptr i8, i8 addrspace(4)* %9, i64 4\l  %11 = bitcast i8 addrspace(4)* %10 to i16 addrspace(4)*\l  %12 = load i16, i16 addrspace(4)* %11, align 4, !range !5, !invariant.load !6\l  %13 = zext i16 %12 to i32\l  %14 = mul i32 %8, %13\l  %15 = add nsw i32 %14, %7\l  %16 = icmp slt i32 %15, %5\l  br i1 %16, label %17, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x5fe84e0:s0 -> Node0x5fe9420;
+	Node0x5fe84e0:s1 -> Node0x5fea4a0;
+	Node0x5fe9420 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%17:\l17:                                               \l  %18 = icmp eq double addrspace(1)* %3, addrspacecast (double* null to double\l... addrspace(1)*)\l  br i1 %18, label %22, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x5fe9420:s0 -> Node0x5feac90;
+	Node0x5fe9420:s1 -> Node0x5fead20;
+	Node0x5fead20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f6bfa670",label="{%19:\l19:                                               \l  %20 = load double, double addrspace(1)* %3, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %21 = fmul contract double %20, %2\l  br label %22\l}"];
+	Node0x5fead20 -> Node0x5feac90;
+	Node0x5feac90 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3947570",label="{%22:\l22:                                               \l  %23 = phi double [ %21, %19 ], [ %2, %17 ]\l  %24 = sext i32 %15 to i64\l  %25 = getelementptr inbounds double, double addrspace(1)* %1, i64 %24\l  %26 = load double, double addrspace(1)* %25, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %27 = getelementptr inbounds double, double addrspace(1)* %4, i64 %24\l  %28 = load double, double addrspace(1)* %27, align 8, !tbaa !7,\l... !amdgpu.noclobber !6\l  %29 = fmul contract double %23, %28\l  %30 = fadd contract double %26, %29\l  %31 = getelementptr inbounds double, double addrspace(1)* %0, i64 %24\l  store double %30, double addrspace(1)* %31, align 8, !tbaa !7\l  br label %32\l}"];
+	Node0x5feac90 -> Node0x5fea4a0;
+	Node0x5fea4a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%32:\l32:                                               \l  ret void\l}"];
+}

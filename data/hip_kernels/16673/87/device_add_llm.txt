@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access patterns for optimal performance
+// Minimize use of shared memory if data reuse is low
+// Ensure shared memory size does not exceed limits for more parallel blocks
+// Use __syncthreads() only when necessary to avoid unnecessary synchronization overhead
+```

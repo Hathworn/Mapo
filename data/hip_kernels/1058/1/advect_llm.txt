@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access for 'a' and 'oA' arrays.
+// Minimize shared memory usage; consider using registers if possible.
+// Use loop unrolling on for-loops to reduce loop overhead.
+// Consider double buffering to hide global memory latency.
+// Align data in memory to avoid misalignment penalties.
+// Avoid shared data bank conflicts by proper memory access patterns.
+// Avoid unnecessary repeated calculations inside the loop.
+// Use `__builtin_expect` to guide branch prediction effectively.
+```

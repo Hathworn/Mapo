@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data if multiple threads access the same data
+// Ensure coalesced memory access by aligning data structures in memory
+// Reduce global memory accesses by using registers for frequently accessed variables
+// Use __restrict__ pointers to allow for additional compiler optimizations
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+```

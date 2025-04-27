@@ -1,0 +1,6 @@
+```cpp
+// Use coalesced memory accesses for optimal performance
+// Avoid conditional statements within the kernel for better warp efficiency
+// Ensure __syncthreads() is used if shared memory is introduced in future optimizations
+// Consider using shared memory for intermediate computations if applicable
+```

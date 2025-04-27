@@ -1,0 +1,6 @@
+```
+// Use __restrict__ keyword to ensure pointers do not alias, improving memory access
+// Align data sizes to memory cache lines for optimal access speed
+// Prefetch data into shared memory if reuse in threads exists
+// Optimize use of registers by minimizing local variable count
+```

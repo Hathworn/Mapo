@@ -1,0 +1,6 @@
+```c
+// Use shared memory to reduce redundant global memory accesses for biases
+// Load biases to shared memory only once per block
+// Ensure bias loading is synchronized across threads with __syncthreads
+// Access shared memory for biases to increase memory throughput
+```

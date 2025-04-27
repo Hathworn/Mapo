@@ -1,0 +1,5 @@
+```c
+// Load lifter coefficients into shared memory to reduce global memory accesses
+// Use shared memory to apply lifter coefficients for faster memory access
+// Ensure only thread 0 handles energy computing to minimize divergence
+```

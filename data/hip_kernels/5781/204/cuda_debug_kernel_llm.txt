@@ -1,0 +1,8 @@
+```
+// Consider aligning data access to leverage global memory coalescing.
+// Use shared memory to reduce global memory accesses where possible.
+// Optimize thread block size to match the hardware's warp size for efficiency.
+// Analyze memory access patterns to minimize memory latency.
+// Ensure that there is no bank conflict in shared memory usage.
+// Investigate if computation to memory access ratio can be improved.
+```

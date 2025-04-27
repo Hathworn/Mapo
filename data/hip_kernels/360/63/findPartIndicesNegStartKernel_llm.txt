@@ -1,0 +1,6 @@
+```
+// Consider using shared memory loading optimizations
+// Ensure memory coalescing by accessing shared memory sequentially
+// Reduce global memory reads by replacing them with shared memory
+// Use __syncthreads() to synchronize threads after loading to shared memory
+```

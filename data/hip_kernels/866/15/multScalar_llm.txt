@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring contiguous threads access contiguous memory locations
+// Consider using shared memory for data reuse among threads within the same block
+// Optimize the block size to ensure maximum occupancy and utilization of GPU resources
+// Avoid unnecessary global memory accesses by ensuring 'in' and 'out' arrays are accessed efficiently
+// Evaluate memory access patterns to ensure aligned memory accesses for improved performance
+```

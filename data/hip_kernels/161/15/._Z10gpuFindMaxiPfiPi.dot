@@ -1,0 +1,38 @@
+digraph "CFG for '_Z10gpuFindMaxiPfiPi' function" {
+	label="CFG for '_Z10gpuFindMaxiPfiPi' function";
+
+	Node0x4ead8c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = mul i32 %5, %2\l  %7 = add nsw i32 %6, %2\l  %8 = getelementptr inbounds [512 x i32], [512 x i32] addrspace(3)*\l... @_ZZ10gpuFindMaxiPfiPiE11maxIndicies, i32 0, i32 %5\l  store i32 -1, i32 addrspace(3)* %8, align 4, !tbaa !5\l  %9 = icmp slt i32 %6, %0\l  br i1 %9, label %10, label %66\l|{<s0>T|<s1>F}}"];
+	Node0x4ead8c0:s0 -> Node0x4ead910;
+	Node0x4ead8c0:s1 -> Node0x4eaf210;
+	Node0x4ead910 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%10:\l10:                                               \l  %11 = add nsw i32 %6, 1\l  %12 = icmp sgt i32 %2, 1\l  %13 = icmp slt i32 %11, %0\l  %14 = select i1 %12, i1 %13, i1 false\l  br i1 %14, label %15, label %30\l|{<s0>T|<s1>F}}"];
+	Node0x4ead910:s0 -> Node0x4eaf5e0;
+	Node0x4ead910:s1 -> Node0x4eaf630;
+	Node0x4eaf5e0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%15:\l15:                                               \l  %16 = phi i32 [ %26, %15 ], [ %11, %10 ]\l  %17 = phi i32 [ %25, %15 ], [ %6, %10 ]\l  %18 = sext i32 %16 to i64\l  %19 = getelementptr inbounds float, float addrspace(1)* %1, i64 %18\l  %20 = load float, float addrspace(1)* %19, align 4, !tbaa !9,\l... !amdgpu.noclobber !11\l  %21 = sext i32 %17 to i64\l  %22 = getelementptr inbounds float, float addrspace(1)* %1, i64 %21\l  %23 = load float, float addrspace(1)* %22, align 4, !tbaa !9,\l... !amdgpu.noclobber !11\l  %24 = fcmp contract ogt float %20, %23\l  %25 = select i1 %24, i32 %16, i32 %17\l  %26 = add nsw i32 %16, 1\l  %27 = icmp slt i32 %26, %7\l  %28 = icmp slt i32 %26, %0\l  %29 = select i1 %27, i1 %28, i1 false\l  br i1 %29, label %15, label %30, !llvm.loop !12\l|{<s0>T|<s1>F}}"];
+	Node0x4eaf5e0:s0 -> Node0x4eaf5e0;
+	Node0x4eaf5e0:s1 -> Node0x4eaf630;
+	Node0x4eaf630 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%30:\l30:                                               \l  %31 = phi i32 [ %6, %10 ], [ %25, %15 ]\l  store i32 %31, i32 addrspace(3)* %8, align 4, !tbaa !5\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %32 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %33 = getelementptr i8, i8 addrspace(4)* %32, i64 4\l  %34 = bitcast i8 addrspace(4)* %33 to i16 addrspace(4)*\l  %35 = load i16, i16 addrspace(4)* %34, align 4, !range !14, !invariant.load\l... !11\l  %36 = icmp ult i16 %35, 2\l  br i1 %36, label %39, label %37\l|{<s0>T|<s1>F}}"];
+	Node0x4eaf630:s0 -> Node0x4eb2240;
+	Node0x4eaf630:s1 -> Node0x4eb22d0;
+	Node0x4eb22d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%37:\l37:                                               \l  %38 = zext i16 %35 to i32\l  br label %41\l}"];
+	Node0x4eb22d0 -> Node0x4eb2480;
+	Node0x4eb2240 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%39:\l39:                                               \l  %40 = icmp eq i32 %5, 0\l  br i1 %40, label %64, label %66\l|{<s0>T|<s1>F}}"];
+	Node0x4eb2240:s0 -> Node0x4eb25d0;
+	Node0x4eb2240:s1 -> Node0x4eaf210;
+	Node0x4eb2480 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%41:\l41:                                               \l  %42 = phi i32 [ %43, %62 ], [ %38, %37 ]\l  %43 = lshr i32 %42, 1\l  %44 = icmp ult i32 %5, %43\l  br i1 %44, label %45, label %62\l|{<s0>T|<s1>F}}"];
+	Node0x4eb2480:s0 -> Node0x4eb2960;
+	Node0x4eb2480:s1 -> Node0x4eb2700;
+	Node0x4eb2960 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%45:\l45:                                               \l  %46 = load i32, i32 addrspace(3)* %8, align 4, !tbaa !5\l  %47 = add nuw nsw i32 %43, %5\l  %48 = getelementptr inbounds [512 x i32], [512 x i32] addrspace(3)*\l... @_ZZ10gpuFindMaxiPfiPiE11maxIndicies, i32 0, i32 %47\l  %49 = load i32, i32 addrspace(3)* %48, align 4, !tbaa !5\l  %50 = icmp ne i32 %46, -1\l  %51 = icmp ne i32 %49, -1\l  %52 = select i1 %50, i1 %51, i1 false\l  br i1 %52, label %53, label %62\l|{<s0>T|<s1>F}}"];
+	Node0x4eb2960:s0 -> Node0x4eb2bb0;
+	Node0x4eb2960:s1 -> Node0x4eb2700;
+	Node0x4eb2bb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f4987a70",label="{%53:\l53:                                               \l  %54 = sext i32 %46 to i64\l  %55 = getelementptr inbounds float, float addrspace(1)* %1, i64 %54\l  %56 = load float, float addrspace(1)* %55, align 4, !tbaa !9,\l... !amdgpu.noclobber !11\l  %57 = sext i32 %49 to i64\l  %58 = getelementptr inbounds float, float addrspace(1)* %1, i64 %57\l  %59 = load float, float addrspace(1)* %58, align 4, !tbaa !9,\l... !amdgpu.noclobber !11\l  %60 = fcmp contract olt float %56, %59\l  br i1 %60, label %61, label %62\l|{<s0>T|<s1>F}}"];
+	Node0x4eb2bb0:s0 -> Node0x4eb3380;
+	Node0x4eb2bb0:s1 -> Node0x4eb2700;
+	Node0x4eb3380 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%61:\l61:                                               \l  store i32 %49, i32 addrspace(3)* %8, align 4, !tbaa !5\l  br label %62\l}"];
+	Node0x4eb3380 -> Node0x4eb2700;
+	Node0x4eb2700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%62:\l62:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %63 = icmp ult i32 %42, 4\l  br i1 %63, label %39, label %41, !llvm.loop !15\l|{<s0>T|<s1>F}}"];
+	Node0x4eb2700:s0 -> Node0x4eb2240;
+	Node0x4eb2700:s1 -> Node0x4eb2480;
+	Node0x4eb25d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%64:\l64:                                               \l  %65 = load i32, i32 addrspace(3)* getelementptr inbounds ([512 x i32], [512\l... x i32] addrspace(3)* @_ZZ10gpuFindMaxiPfiPiE11maxIndicies, i32 0, i32 0),\l... align 16, !tbaa !5\l  store i32 %65, i32 addrspace(1)* %3, align 4, !tbaa !5\l  br label %66\l}"];
+	Node0x4eb25d0 -> Node0x4eaf210;
+	Node0x4eaf210 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f5c1a970",label="{%66:\l66:                                               \l  ret void\l}"];
+}

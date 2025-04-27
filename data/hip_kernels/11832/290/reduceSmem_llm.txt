@@ -1,0 +1,7 @@
+```
+// Ensure global and shared memory accesses are coalesced.
+// Use bank conflict-free shared memory accesses.
+// Consider loop unrolling for the final reduction stages.
+// Minimize use of __syncthreads() for better performance.
+// Use warp-level intrinsic functions for reduction when appropriate.
+```

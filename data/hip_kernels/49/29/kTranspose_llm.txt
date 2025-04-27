@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access latency
+// Add padding in shared memory to reduce bank conflicts
+// Early exit if global indices are out of bounds to reduce unnecessary computations
+// Ensure coalesced global memory access by aligning data load and store patterns

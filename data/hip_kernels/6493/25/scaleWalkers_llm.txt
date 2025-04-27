@@ -1,0 +1,4 @@
+// Consider using shared memory for frequently accessed data to improve memory access speed.
+// Ensure memory accesses are coalesced to avoid unnecessary global memory transactions.
+// If applicable, consider using texture memory for read-only data to take advantage of caching benefits.
+// Use __restrict__ keyword to indicate non-aliasing pointers, potentially improving compiler optimization.

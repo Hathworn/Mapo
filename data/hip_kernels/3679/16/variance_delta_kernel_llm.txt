@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for `variance` and `mean` to reduce global memory access latency.
+// Use `__restrict__` pointers for input arrays to enable enhanced compiler optimizations.
+// Unroll the inner loop for spatial computations to improve ILP (Instruction Level Parallelism).
+// Replace `powf(variance_val + .00001f, -1.5f)` with a precomputed or inline optimized operation.
+// Employ vectorized memory access if data alignment allows for coalesced global memory reads.
+// Minimize warp divergence by reordering the computation if possible.
+```

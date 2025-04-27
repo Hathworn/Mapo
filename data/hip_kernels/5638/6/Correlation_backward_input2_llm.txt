@@ -1,0 +1,6 @@
+// Consider using const memory for frequently accessed constants to improve access speed.
+// Ensure memory coalescing by aligning data structures, possibly reordering data in memory to align consecutive thread access.
+// Use shared memory efficiently by minimizing redundant memory loads and ensuring stride-appropriate access patterns.
+// Consider unrolling loops for accessing gradOutput to reduce branching overhead and facilitate optimizing compilers.
+// Use warp-level primitives for reduction steps to take advantage of fast data sharing across threads within a warp.
+// Calculate indices using integer arithmetic where possible to reduce floating-point operations.

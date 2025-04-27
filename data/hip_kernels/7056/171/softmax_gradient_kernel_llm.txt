@@ -1,0 +1,4 @@
+// Ensure memory coalescing when accessing Y, dY, and dX arrays by aligning the memory address of data structures.
+// Use shared memory to minimize redundant reading of global memory, enhancing memory access speed for reduction operations.
+// Implement warp-wide reduction techniques within blocks to optimize synchronization and improve performance.
+// Minimize divergence within warp by ensuring all threads follow the same execution path during reduction and computation.

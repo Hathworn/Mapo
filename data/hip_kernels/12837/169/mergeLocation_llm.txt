@@ -1,0 +1,5 @@
+// Consider using shared memory to store intermediate data for more efficient access.
+// Use __ldg() for faster read-only cache access, as done with loc_ array.
+// Ensure the grid and block dimensions are optimized for the target GPU architecture.
+// Minimize global memory accesses by using registers whenever possible.
+// Align data structures to reduce memory access latency.

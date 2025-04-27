@@ -1,0 +1,4 @@
+// Consider using shared memory to cache loc_ values for better coalesced access.
+// Ensure that npoints is divisible by blockDim.x for optimal thread-block execution.
+// Examine if the scale computation can be moved outside the kernel if it remains constant for all points.
+// Use vectorized loads if possible, combining loc_ accesses into a single operation.

@@ -1,0 +1,8 @@
+```
+// Load mask into shared memory if not too large
+// Coalesce global memory accesses for imgInput and imgOutput
+// Use const __restrict__ pointers for imgInput and mask
+// Balance threads per block to optimize occupancy
+// Use loop unrolling for small kernel sizes
+// Avoid redundant computations of index (e.g., ((y + j) * width) + (x + i))
+```

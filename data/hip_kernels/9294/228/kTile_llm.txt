@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache src elements if multiple threads read from the same region
+// Ensure coalesced memory access for reading from src and writing to tgt by aligning data to warp size
+// If possible, adjust block size to match the warp size to maximize GPU resource utilization
+// Opt for vectorized loading/storing (e.g., float2, float4) if data alignment permits
+// Minimize divergent branches within the loop to optimize thread execution
+```

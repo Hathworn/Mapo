@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory accesses, improving data locality.
+// Avoid bank conflicts in shared memory by ensuring proper memory access patterns.
+// Use loop unrolling to optimize reduction within shared memory for faster computation.
+// Utilize volatile memory access for the last warp to prevent compiler optimization issues and ensure correct results.
+// Align thread count with the warp size to optimize reduction using warp efficiency.

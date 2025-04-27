@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for d_x, d_y, d_log_Y to reduce memory latency
+// Use shared memory for frequently accessed data like d_cdf_norm to reduce global memory accesses
+// Pre-compute constant values like log_Y_range / num_bins outside the kernel
+// Ensure kernel launch parameters are optimal for occupancy and resource usage
+// Use __restrict__ qualifier for pointer arguments if parallel accesses are independent
+// Consider loop unrolling if processing multiple pixels per thread for better throughput
+```

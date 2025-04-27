@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache xLowIdx, xHighIdx, yLowIdx, yHighIdx, xInter, yInter for better memory access patterns
+// Ensure alignment to memory boundaries by padding structures if necessary
+// Try adjusting block and grid dimensions to optimize device occupancy
+// Use warp-level primitives to maximize use of the GPU hardware
+// Avoid bank conflicts by organizing data access to shared memory
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access and improve performance.
+// Use loop unrolling to decrease branch divergence and increase instruction throughput.
+// Minimize memory access latency by ensuring coalesced memory access patterns.
+// Use __syncthreads wisely to avoid unnecessary synchronization overhead.
+// Consider using atomic operations for concurrent writes to global memory if possible.
+// Minimize usage of volatile keyword and ensure data consistency through appropriate synchronization.
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Ensure coalesced memory access pattern to improve memory throughput.
+// Utilize a single loop structure to minimize index calculation overhead.
+// Implement parallel reduction to optimize the sum computation.
+// Use __syncthreads() to synchronize threads and avoid race conditions.
+// Reduce the number of conditional statements in the reduction phase.
+```

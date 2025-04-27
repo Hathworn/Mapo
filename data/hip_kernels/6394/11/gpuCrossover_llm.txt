@@ -1,0 +1,9 @@
+```
+// Consider ensuring coalesced memory access by aligning memory accesses across threads
+// Use shared memory to store temporary results to reduce global memory accesses
+// Prefetch data to registers to reduce repeated global memory access when possible
+// Optimize the use of hiprandState to avoid potential bank conflicts
+// Use a separate kernel for mutation to improve memory access patterns
+// Ensure loop variables and indices do not cause unnecessary divergence among threads
+// Minimize the number of global memory writes by combining them when possible
+```

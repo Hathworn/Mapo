@@ -1,0 +1,5 @@
+// Consider unrolling loops to enhance performance
+// Ensure coalesced memory access to global memory
+// Use warp-level synchronization with __syncwarp() if supported 
+// Avoid unnecessary __syncthreads() to reduce overhead
+// Maximize occupancy by tuning block size

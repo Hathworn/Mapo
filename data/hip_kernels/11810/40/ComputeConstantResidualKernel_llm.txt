@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache VMed and invRmed to reduce global memory access
+// Consider loop unrolling for operations involving nsec
+// Optimize memory access pattern to ensure coalesced access for Vtheta
+// Use block-wide synchronization if shared memory is utilized
+// Ensure alignment for double precision variables to improve memory access speed
+```

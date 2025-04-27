@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory access for frequently accessed data.
+// Consider using texture or surface memory for better cached access patterns.
+// Align data structures to ensure memory coalescing and avoid bank conflicts.
+// Increase vectorization factors if bandwidth allows for more efficient memory utilization.
+// Ensure kernel launch parameters optimize occupancy while balancing warp utilization.
+// Evaluate potential benefits of latency hiding through concurrent kernel execution.
+```

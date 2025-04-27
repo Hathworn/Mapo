@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize global memory access latency.
+// Group threads in a warp to utilize memory coalescing.
+// Consider using __ldg() for read-only data to benefit from L1 cache.
+// Align data structures to cache line size to improve memory access efficiency.
+// Minimize divergent warps by ensuring all threads within a block follow the same execution path.
+// Ensure shared memory usage fits within the hardware limits to avoid bank conflicts.
+// Balance between occupancy and register usage to fully utilize available resources.
+// Tune block size and grid size for optimal performance based on the target GPU architecture.
+```

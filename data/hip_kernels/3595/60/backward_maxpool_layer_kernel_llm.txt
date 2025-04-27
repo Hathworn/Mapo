@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for delta and prev_delta.
+// Use shared memory to reduce global memory accesses for frequently accessed data.
+// Consider loop unrolling for the neighborhood area iteration to reduce loop overhead.
+// Ensure memory access patterns are coalesced, especially in the inner loops.
+// Consider using texture cache for read-only data accessed randomly like indexes.
+```

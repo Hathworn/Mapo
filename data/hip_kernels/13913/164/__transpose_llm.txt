@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to reduce global memory access and avoid bank conflicts
+// Align the shared memory array size to a multiple of the warp size to avoid bank conflicts
+// Use a flattened grid loop to optimize global memory coalescing
+// Synchronize threads after loading data into shared memory
+// Use a similar optimized loop for writing back the transposed data
+// Ensure memory accesses are within bounds to prevent out-of-range access
+```

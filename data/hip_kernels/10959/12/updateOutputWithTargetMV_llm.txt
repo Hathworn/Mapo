@@ -1,0 +1,9 @@
+```
+// Ensure that input and weight are coalesced by aligning access patterns
+// Use __restrict__ keyword for input, weight, and score pointers to increase optimization potential
+// Consider using warp-level primitives like __shfl_down_sync for reduction to reduce __syncthreads usage
+// Reduce shared memory usage by ensuring MV_BUFFER_SIZE is as small as possible
+// Consider double buffering in shared memory to hide latency
+// Use float4 or similar data types for input and weight to improve memory bandwidth utilization
+// Prefetch data from input and weight to shared memory to reduce global memory latency
+```

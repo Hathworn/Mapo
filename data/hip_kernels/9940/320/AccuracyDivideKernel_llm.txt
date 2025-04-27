@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses when accessing the accuracy variable
+// Consider using shared memory if the accuracy variable is used by multiple threads
+// Avoid warp divergence by ensuring uniform execution within the warp
+// Minimize global memory accesses by reducing the use of atomic operations
+```

@@ -1,0 +1,6 @@
+```c
+// Use linear indexing for improved memory coalescing
+// Ensure memory accesses are coalesced by aligning data structures
+// Consider using shared memory if future enhancements involve inter-thread data transfer
+// Removed unnecessary __syncthreads() call to reduce synchronization overhead
+```

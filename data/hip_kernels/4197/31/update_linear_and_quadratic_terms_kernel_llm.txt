@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for 'quadratic' updates
+// Minimize divergent branches within the kernel
+// Optimize the stride to match warp size for better utilization
+// Prefer shared memory if 'quadratic' is accessed multiple times
+// Make sure 'cur_tot_weight' is effectively cached between iterations
+// Synchronize threads only where necessary for 'linear[0]' update
+```

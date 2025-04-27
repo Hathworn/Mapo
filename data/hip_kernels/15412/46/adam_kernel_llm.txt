@@ -1,0 +1,7 @@
+```
+// Optimize index calculation for 1D grid
+// Avoid recomputation for B1_t and B2_t
+// Process elements in-bounds by checking index < N
+// Use compound assignment instead of direct calculation
+// Consider using __syncthreads() if there are dependent calculations across threads
+```

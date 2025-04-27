@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by aligning data column-wise
+// Load data to shared memory in a single loop for better utilization
+// Minimize thread divergence by having each thread access consecutive memory locations
+// Balance loads across warp by ensuring even distribution of iterations amongst threads
+// Avoid bank conflicts by accessing shared memory in a strided manner
+// Ensure synchronization after loading data to shared memory
+// Limit condition checks inside loops to reduce branch divergence
+```

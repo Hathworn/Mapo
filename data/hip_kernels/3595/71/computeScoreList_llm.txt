@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access latency.
+// Coalesce memory accesses to starting_voxel_id and voxel_id arrays to maximize memory throughput.
+// Optimize loop by ensuring starting_voxel_id[id] and starting_voxel_id[id + 1] are read only once and stored in local variables.
+// Ensure that e_x_cov_x accesses are coalesced for better memory throughput.
+```

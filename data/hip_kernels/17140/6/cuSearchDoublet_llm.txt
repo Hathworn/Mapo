@@ -1,0 +1,7 @@
+```
+// Use shared memory where possible to reduce global memory access latency.
+// Combine loops for Bcomp and Tcomp to minimize redundant accesses and enhance memory coalescing.
+// Use atomic operations to prevent race conditions while updating shared resources.
+// Optimize loop bounds and ensure stride optimizations for better memory access patterns.
+// Use __syncthreads() to ensure all threads have completed prior to accessing shared data.
+```

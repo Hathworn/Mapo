@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Ensure coalesced memory access for grad_out and grad_points.
+// Avoid atomic operations where possible by optimizing reduction strategy.
+// Use loop unrolling to improve performance in the innermost loop.
+// Consider using warp shuffle functions to reduce reliance on atomic operations.
+```

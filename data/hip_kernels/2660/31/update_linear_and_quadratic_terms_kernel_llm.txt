@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to reduce global memory access frequency for cur_tot_weight.
+// Optimize memory accesses by ensuring coalesced memory patterns in loop iterations.
+// Ensure the 'quadratic' array indices are correctly calculated to avoid memory bank conflicts.
+// Evaluate if atomic operations can be minimized or replaced for better performance.
+// Prioritize warp execution by avoiding branch divergence in kernel.
+```

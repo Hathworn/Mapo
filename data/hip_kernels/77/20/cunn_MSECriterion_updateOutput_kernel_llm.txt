@@ -1,0 +1,10 @@
+```
+// Use coalesced memory access by ensuring input_k and target_k are aligned
+// Exploit shared memory to reduce global memory accesses
+// Ensure shared memory array is appropriately sized to prevent memory bank conflicts
+// Consider padding shared memory to optimize access patterns
+// Minimize __syncthreads() to ensure warp efficiency
+// Utilize warp-level primitives for reduction to decrease synchronization overhead
+// Align input and target arrays to maximize memory throughput
+// Consider splitting large reductions into multiple smaller reductions to fit shared memory limits
+```

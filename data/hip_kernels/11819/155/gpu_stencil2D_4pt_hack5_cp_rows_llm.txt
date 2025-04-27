@@ -1,0 +1,5 @@
+```
+// Consider using coalesced memory access for dst to improve memory throughput
+// Ensure shared memory access is conflict-free by adjusting shared memory layout
+// Use __ldg() for read-only data to take advantage of the texture cache
+```

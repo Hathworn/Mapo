@@ -1,0 +1,6 @@
+```c
+// Use shared memory for potential shared data, if needed in future
+// Minimize printf calls by using thread 0 of each block
+// Consider using __syncthreads() if sharedData is used
+// Explore using warp-level primitives for communication optimization
+```

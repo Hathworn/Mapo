@@ -1,0 +1,11 @@
+digraph "CFG for '_Z11initWeightsPfj' function" {
+	label="CFG for '_Z11initWeightsPfj' function";
+
+	Node0x64a30f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = sext i32 %11 to i64\l  %13 = getelementptr inbounds float, float addrspace(1)* %0, i64 %12\l  %14 = load float, float addrspace(1)* %13, align 4, !tbaa !7,\l... !amdgpu.noclobber !5\l  %15 = uitofp i32 %1 to float\l  %16 = fdiv contract float %14, %15\l  %17 = fcmp contract ogt float %16, 5.000000e+00\l  br i1 %17, label %18, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x64a30f0:s0 -> Node0x64a4af0;
+	Node0x64a30f0:s1 -> Node0x64a65a0;
+	Node0x64a4af0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%18:\l18:                                               \l  %19 = phi float [ %20, %18 ], [ %16, %2 ]\l  %20 = fmul contract float %19, 5.000000e-01\l  %21 = fcmp contract ogt float %20, 5.000000e+00\l  br i1 %21, label %18, label %22, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x64a4af0:s0 -> Node0x64a4af0;
+	Node0x64a4af0:s1 -> Node0x64a65a0;
+	Node0x64a65a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%22:\l22:                                               \l  %23 = phi float [ %16, %2 ], [ %20, %18 ]\l  %24 = urem i32 %1, 3\l  %25 = urem i32 %11, %24\l  %26 = icmp eq i32 %25, 0\l  %27 = fneg contract float %23\l  %28 = select i1 %26, float %27, float %23\l  store float %28, float addrspace(1)* %13, align 4, !tbaa !7\l  ret void\l}"];
+}

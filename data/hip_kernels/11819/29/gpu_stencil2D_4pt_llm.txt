@@ -1,0 +1,9 @@
+```cpp
+// Use __restrict__ keyword for src and dst pointers to aid compiler optimizations.
+// Align shared memory accesses by using a stride to eliminate bank conflicts.
+// Consider adjusting TILE_SIZE to maximize occupancy based on register usage.
+// Ensure that the amount of shared memory declared does not exceed device limits.
+// Use cooperative groups and grid-stride loops for potential parallelization improvements.
+// Analyze and optimize boundary conditions separately to improve overall performance.
+// Apply loop unrolling where applicable to improve computational efficiency.
+```

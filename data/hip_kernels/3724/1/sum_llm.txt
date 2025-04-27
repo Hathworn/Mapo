@@ -1,0 +1,5 @@
+// Use shared memory for reductions to minimize global memory accesses
+// Ensure adequate shared memory allocation for both numerator and denominator arrays
+// Utilize __syncthreads() to synchronize threads for reliable shared memory usage
+// Reduce redundant recalculations by storing values in registers where possible
+// Implement a warp-wise reduction if the block size is multiple of warp size

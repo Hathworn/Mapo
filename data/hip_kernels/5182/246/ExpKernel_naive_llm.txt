@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for global memory reads from A.
+// Optimize shared memory usage by ensuring its size is appropriately dimensioned.
+// Minimize synchronization by reducing dependency on __syncthreads() where possible.
+// Ensure out0 writes are coalesced for better memory efficiency.
+// Explore loop unrolling for potential additional performance gains in parallel execution.
+```

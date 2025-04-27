@@ -1,0 +1,7 @@
+```
+// Use registers to reduce global memory access
+// Ensure coalesced memory access by aligning accesses in consecutive threads
+// Minimize shared memory usage to reduce bank conflicts
+// Align shared memory access to improve efficiency
+// Utilize __syncthreads() to ensure memory consistency between threads
+```

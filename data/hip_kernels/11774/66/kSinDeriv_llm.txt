@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ keyword for pointers to enable compiler optimizations
+// Use shared memory to store frequently accessed values if multiple threads access the same data
+// Ensure coalesced memory access by aligning data properly
+// Consider loop unrolling for fixed-size data
+// Leverage warp shuffle functions to reduce shared memory use
+```

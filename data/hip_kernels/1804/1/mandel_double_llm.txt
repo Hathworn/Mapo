@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for storing the viridis colormap to reduce global memory access.
+// Optimize memory access patterns to ensure coalesced reads and writes for the ptr array.
+// Precalculate values like zoomX, zoomY, re_factor, and im_factor outside of loops to save computation.
+// Utilize constant memory for frequently accessed read-only data whenever possible.
+// Ensure loop boundaries and conditions minimize unnecessary computations and checks.
+```

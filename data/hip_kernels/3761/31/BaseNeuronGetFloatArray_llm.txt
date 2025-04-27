@@ -1,0 +1,8 @@
+```
+// Improve memory access by ensuring arr1 and arr2 are aligned to avoid uncoalesced accesses
+// Consider using shared memory to further reduce global memory access latency
+// Optimize step1 and step2 to ensure they are multiples of warp size for better memory access patterns
+// If possible, launch kernel with optimal block size for the device's architecture to maximize occupancy
+// Experiment with different grid and block configurations to find the most efficient setup
+// Ensure sufficient device memory is available and not over-subscribed to prevent bottlenecks
+```

@@ -1,0 +1,6 @@
+```c
+// Consider increasing the number of threads per block to maximize occupancy.
+// Use shared memory if possible to reduce global memory accesses.
+// Ensure that memory accesses are coalesced for better performance.
+// Validate the use of uniforms across warps to avoid divergence.
+```

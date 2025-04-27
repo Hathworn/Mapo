@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses when reading from g_idata to improve memory bandwidth utilization.
+// Employ shared memory to further reduce the global memory accesses.
+// Evaluate the possibility of further reducing the number of __syncthreads() calls.
+// Investigate using warp shuffling instructions to optimize reduction within a warp.
+// Explore optimizing for architectural specifics of the target GPU such as memory hierarchy and warp size.
+```

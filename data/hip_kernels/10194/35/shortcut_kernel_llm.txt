@@ -1,0 +1,8 @@
+```
+// Ensure memory access patterns are coalesced for global memory reads and writes.
+// Consider using shared memory to reduce redundant global memory accesses.
+// Use loop unrolling if applicable to reduce the overhead of loop control.
+// Optimize grid and block dimensions for your specific hardware for maximum occupancy.
+// If possible, use texture memory for read-only data to improve memory access efficiency.
+// Ensure kernel launches are asynchronous to overlap with data transfers if possible.
+```

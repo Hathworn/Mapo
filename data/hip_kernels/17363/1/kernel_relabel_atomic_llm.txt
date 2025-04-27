@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access by ensuring consecutive threads access consecutive memory locations
+// Avoid bank conflicts in shared memory by ensuring each thread accesses different banks
+// Consider using a larger block size if possible to increase occupancy and hide memory latency
+// Use more registers per thread if performance allows, to store frequently accessed variables
+// Evaluate the use of asynchronous memory transfers to overlap data transfer and computation
+```

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for fields data to reduce global memory access latency
+// Investigate if loop interchange could provide better coalescing of memory accesses
+// Evaluate using texture memory for read-only data like fields to improve cache hit rates
+// Assess if using warp-level primitives like __shfl_sync could optimize reducing sums
+// Explore the possibility of breaking large loops into multiple kernels for better load balancing
+```

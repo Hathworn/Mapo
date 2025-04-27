@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access by aligning data and using contiguous memory.
+// Minimize divergent branches by restructuring if conditions or moving them outside loops when possible.
+// Optimize loop unrolling to reduce loop overhead and increase instruction throughput.
+// Use __restrict__ qualifiers to provide the compiler with more optimization opportunities by asserting non-aliasing pointers.
+// Consider using shared memory to exploit data reuse within a block and reduce global memory accesses.
+// Align the data to 128 bytes if possible to make the best use of GPU memory architecture.
+```

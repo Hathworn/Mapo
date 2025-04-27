@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory access for Ar and Aw to improve memory throughput.
+// Use shared memory to store intermediate results for better memory access patterns.
+// Optimize memory alignment and padding to avoid bank conflicts.
+// Explore warp-level primitive use for parallel reduction of results.
+// Apply loop unrolling to reduce loop overhead and improve performance for small loop ranges.
+// Ensure the use of __restrict__ keyword if applicable to maximize compiler optimization.
+// Consider occupancy optimization by adjusting block and grid sizes per physical constraints.
+```

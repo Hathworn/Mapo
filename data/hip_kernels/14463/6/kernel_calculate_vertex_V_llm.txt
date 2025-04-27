@@ -1,0 +1,6 @@
+```
+// Compute index once and reuse to prevent redundant calculations
+// Reduce global memory accesses by restructuring data layout
+// Coalesce memory accesses for `vbo_ptr` and `d_ptr` by ensuring threads access consecutive memory locations
+// Consider using shared memory if accessing common data across threads to improve memory access speed
+```

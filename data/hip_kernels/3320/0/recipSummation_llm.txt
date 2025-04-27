@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access if data and recip have spatial locality.
+// Ensure memory access patterns are coalesced to improve memory throughput.
+// Explore using vectorized data types (e.g., float2, double2) for loading and storing consecutive data elements.
+// Investigate optimizing the grid and block dimensions for better occupancy and performance.
+// Evaluate if loop unrolling techniques could be applied to improve performance for this specific workload.
+```

@@ -1,0 +1,26 @@
+digraph "CFG for '_Z9VecReducePfS_i' function" {
+	label="CFG for '_Z9VecReducePfS_i' function";
+
+	Node0x63cfe80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %6 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %7 = getelementptr i8, i8 addrspace(4)* %6, i64 4\l  %8 = bitcast i8 addrspace(4)* %7 to i16 addrspace(4)*\l  %9 = load i16, i16 addrspace(4)* %8, align 4, !range !5, !invariant.load !6\l  %10 = zext i16 %9 to i32\l  %11 = mul i32 %5, %10\l  %12 = add i32 %11, %4\l  %13 = icmp ult i32 %12, %2\l  br i1 %13, label %14, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x63cfe80:s0 -> Node0x63d0c10;
+	Node0x63cfe80:s1 -> Node0x63d1e10;
+	Node0x63d0c10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#bfd3f670",label="{%14:\l14:                                               \l  %15 = zext i32 %12 to i64\l  %16 = getelementptr inbounds float, float addrspace(1)* %0, i64 %15\l  %17 = load float, float addrspace(1)* %16, align 4, !tbaa !7,\l... !amdgpu.noclobber !6\l  br label %18\l}"];
+	Node0x63d0c10 -> Node0x63d1e10;
+	Node0x63d1e10 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%18:\l18:                                               \l  %19 = phi float [ %17, %14 ], [ 0.000000e+00, %3 ]\l  %20 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %4\l  store float %19, float addrspace(3)* %20, align 4\l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %21 = icmp ult i16 %9, 2\l  br i1 %21, label %22, label %24\l|{<s0>T|<s1>F}}"];
+	Node0x63d1e10:s0 -> Node0x63d3900;
+	Node0x63d1e10:s1 -> Node0x63d3990;
+	Node0x63d3900 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%22:\l22:                                               \l  %23 = icmp eq i32 %4, 0\l  br i1 %23, label %36, label %40\l|{<s0>T|<s1>F}}"];
+	Node0x63d3900:s0 -> Node0x63d3b60;
+	Node0x63d3900:s1 -> Node0x63d3bb0;
+	Node0x63d3990 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%24:\l24:                                               \l  %25 = phi i32 [ %26, %34 ], [ %10, %18 ]\l  %26 = lshr i32 %25, 1\l  %27 = icmp ult i32 %4, %26\l  br i1 %27, label %28, label %34\l|{<s0>T|<s1>F}}"];
+	Node0x63d3990:s0 -> Node0x63d3fb0;
+	Node0x63d3990:s1 -> Node0x63d3d20;
+	Node0x63d3fb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%28:\l28:                                               \l  %29 = load float, float addrspace(3)* %20, align 4, !tbaa !7\l  %30 = add nuw nsw i32 %26, %4\l  %31 = getelementptr inbounds [0 x float], [0 x float] addrspace(3)* @sdata,\l... i32 0, i32 %30\l  %32 = load float, float addrspace(3)* %31, align 4, !tbaa !7\l  %33 = fadd contract float %29, %32\l  store float %33, float addrspace(3)* %20, align 4, !tbaa !7\l  br label %34\l}"];
+	Node0x63d3fb0 -> Node0x63d3d20;
+	Node0x63d3d20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%34:\l34:                                               \l  fence syncscope(\"workgroup\") release\l  tail call void @llvm.amdgcn.s.barrier()\l  fence syncscope(\"workgroup\") acquire\l  %35 = icmp ult i32 %25, 4\l  br i1 %35, label %22, label %24, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x63d3d20:s0 -> Node0x63d3900;
+	Node0x63d3d20:s1 -> Node0x63d3990;
+	Node0x63d3b60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b2ccfb70",label="{%36:\l36:                                               \l  %37 = load float, float addrspace(3)* getelementptr inbounds ([0 x float],\l... [0 x float] addrspace(3)* @sdata, i32 0, i32 0), align 4, !tbaa !7\l  %38 = zext i32 %5 to i64\l  %39 = getelementptr inbounds float, float addrspace(1)* %1, i64 %38\l  store float %37, float addrspace(1)* %39, align 4, !tbaa !7\l  br label %40\l}"];
+	Node0x63d3b60 -> Node0x63d3bb0;
+	Node0x63d3bb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#e3d9d370",label="{%40:\l40:                                               \l  ret void\l}"];
+}

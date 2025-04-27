@@ -1,0 +1,5 @@
+// Use shared memory for partial results to minimize global memory access
+// Consider cooperative groups for more efficient warp-level operations
+// Ensure memory coalescing by aligning memory accesses
+// Reduce bank conflicts in shared memory by padding
+// Use warp-synchronous programming to avoid barriers and reduce latency

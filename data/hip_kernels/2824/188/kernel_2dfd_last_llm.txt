@@ -1,0 +1,11 @@
+```
+// Use shared memory to store tile data for better memory coalescing.
+// Unroll loops to fully utilize the GPU's parallel processing capabilities.
+// Load halo data into shared memory to minimize global memory accesses.
+// Ensure coalesced access by storing intermediate results in shared memory.
+// Use __syncthreads() to synchronize threads after writing into shared memory.
+// Optimize the usage of registers by storing frequently accessed data.
+// Apply loop unrolling where beneficial to reduce loop overhead.
+// Reduce the number of __syncthreads() calls by minimizing shared memory dependencies.
+// Maximize work per thread to exploit fine-grained parallelism.
+```

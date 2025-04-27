@@ -1,0 +1,8 @@
+```
+// Use __restrict__ qualifiers for pointers to improve memory access performance.
+// Ensure coalesced memory accesses by aligning data structures and access patterns.
+// Minimize bank conflicts in shared memory by ensuring no simultaneous accesses to the same bank.
+// Consider loop unrolling techniques for the reduction loop to enhance performance.
+// Ensure proper synchronization using __syncthreads() to avoid race conditions.
+// Optimize for different GPU architectures to balance memory bandwidth and compute resources.
+```

@@ -1,0 +1,4 @@
+// Consider using __restrict__ pointers to avoid pointer aliasing
+// Use shared memory to cache state values that are frequently accessed
+// Ensure all global memory accesses are coalesced
+// Try to minimize the number of global memory accesses in the kernel

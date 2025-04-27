@@ -1,0 +1,7 @@
+```c
+// Ensure coalesced memory access when loading t2_d into shared memory
+// Use shared memory to reduce global memory accesses for t2_d
+// Consider unrolling nested loops to improve instruction throughput
+// Minimize use of atomic operations for memory updates if applicable
+// Use __syncthreads() efficiently to avoid excessive synchronization
+```

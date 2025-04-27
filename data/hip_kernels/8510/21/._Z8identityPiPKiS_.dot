@@ -1,0 +1,10 @@
+digraph "CFG for '_Z8identityPiPKiS_' function" {
+	label="CFG for '_Z8identityPiPKiS_' function";
+
+	Node0x4c7b090 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = zext i32 %4 to i64\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = zext i32 %6 to i64\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !5, !invariant.load !6\l  %12 = zext i16 %11 to i64\l  %13 = mul nuw nsw i64 %12, %7\l  %14 = add nuw nsw i64 %13, %5\l  %15 = load i32, i32 addrspace(1)* %0, align 4, !tbaa !7, !amdgpu.noclobber !6\l  %16 = sext i32 %15 to i64\l  %17 = icmp slt i64 %14, %16\l  br i1 %17, label %18, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x4c7b090:s0 -> Node0x4c7d980;
+	Node0x4c7b090:s1 -> Node0x4c7da10;
+	Node0x4c7d980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%18:\l18:                                               \l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %14\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7, !amdgpu.noclobber\l... !6\l  %21 = getelementptr inbounds i32, i32 addrspace(1)* %2, i64 %14\l  store i32 %20, i32 addrspace(1)* %21, align 4, !tbaa !7\l  br label %22\l}"];
+	Node0x4c7d980 -> Node0x4c7da10;
+	Node0x4c7da10 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%22:\l22:                                               \l  ret void\l}"];
+}

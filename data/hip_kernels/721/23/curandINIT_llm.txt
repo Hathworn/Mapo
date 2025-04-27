@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store part of d_states for faster access
+// Ensure coalesced memory access by aligning d_states with preferred memory patterns
+// Utilize __syncthreads() to ensure all threads have finished initializing state before use
+// Ensure the grid size is optimized to keep all SMs fully utilized
+// Minimize register usage by limiting complex operations inside the loop
+```

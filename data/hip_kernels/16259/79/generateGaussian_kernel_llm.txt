@@ -1,0 +1,7 @@
+```
+// Precompute constant value for deltaSquared to minimize repeated calculations
+// Use __expf for faster exponential computation in the kernel
+// Ensure coalesced memory access when writing to og array for better memory throughput
+// Consider using shared memory if multiple threads require same data to reduce global memory reads
+// Reduce divergent branches by simplifying calculations and ensuring warp uniformity
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by aligning rowSize with memory boundaries
+// Ensure that data types are consistent to prevent misaligned memory access
+// Use shared memory to reduce global memory access if patterns are detected
+// Experiment with loop unrolling if there are repeated operations in a loop
+// Optimize thread block size to match the warp size of the GPU for efficiency
+```

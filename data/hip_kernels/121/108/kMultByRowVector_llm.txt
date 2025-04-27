@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by using row-major order
+// Consider using shared memory for vec if it fits within shared memory limits
+// Reduce global memory transactions by combining loads and stores where possible
+// Analyze potential use of warp shuffle operations for further optimization
+// Explore the possibility of loop unrolling if applicable
+```

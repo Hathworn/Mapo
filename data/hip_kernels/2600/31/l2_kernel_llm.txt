@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory accesses for pred, truth, delta, and error arrays
+// Consider using shared memory to reduce global memory accesses
+// Minimize memory latency by using __syncthreads() where necessary
+// Optimize memory access patterns to reduce bank conflicts
+// Use compiler hints like __restrict__ to improve memory optimizations
+```

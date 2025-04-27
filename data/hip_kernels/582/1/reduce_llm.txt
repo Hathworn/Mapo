@@ -1,0 +1,10 @@
+```
+// Consider using coalesced memory accesses for d_in to improve memory access efficiency.
+// Ensure optimal occupancy by choosing the right block size for the kernel.
+// Utilize shared memory efficiently to reduce global memory accesses and improve performance.
+// Use __syncthreads() sparingly to avoid serialization and reduce synchronization overhead.
+// Analyze the shared memory bank conflicts and align data accesses to minimize them.
+// Implement loop unrolling in the reduction loop to optimize performance.
+// Consider using __restrict__ keyword for pointers to help the compiler with optimization.
+// Explore reducing the number of shared memory barriers for performance gains.
+```

@@ -1,0 +1,5 @@
+```
+// Cache cur_tot_weight value to reduce repeated global memory reads
+// Use a single loop iteration with stride to improve memory coalescing
+// Employ atomicAdd for safe concurrent updates to shared data
+```

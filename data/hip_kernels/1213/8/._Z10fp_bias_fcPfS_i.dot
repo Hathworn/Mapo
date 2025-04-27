@@ -1,0 +1,11 @@
+digraph "CFG for '_Z10fp_bias_fcPfS_i' function" {
+	label="CFG for '_Z10fp_bias_fcPfS_i' function";
+
+	Node0x4c2a4a0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %5 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %6 = getelementptr i8, i8 addrspace(4)* %5, i64 4\l  %7 = bitcast i8 addrspace(4)* %6 to i16 addrspace(4)*\l  %8 = load i16, i16 addrspace(4)* %7, align 4, !range !4, !invariant.load !5\l  %9 = zext i16 %8 to i32\l  %10 = getelementptr inbounds i8, i8 addrspace(4)* %5, i64 12\l  %11 = bitcast i8 addrspace(4)* %10 to i32 addrspace(4)*\l  %12 = load i32, i32 addrspace(4)* %11, align 4, !tbaa !6\l  %13 = mul i32 %4, %9\l  %14 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %15 = add i32 %13, %14\l  %16 = udiv i32 %12, %9\l  %17 = mul i32 %16, %9\l  %18 = icmp ugt i32 %12, %17\l  %19 = zext i1 %18 to i32\l  %20 = add i32 %16, %19\l  %21 = mul i32 %20, %9\l  %22 = mul nsw i32 %15, %2\l  %23 = sdiv i32 %22, %21\l  %24 = add nsw i32 %15, 1\l  %25 = mul nsw i32 %24, %2\l  %26 = sdiv i32 %25, %21\l  %27 = icmp slt i32 %23, %26\l  br i1 %27, label %29, label %28\l|{<s0>T|<s1>F}}"];
+	Node0x4c2a4a0:s0 -> Node0x4c2cd20;
+	Node0x4c2a4a0:s1 -> Node0x4c2cdb0;
+	Node0x4c2cdb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%28:\l28:                                               \l  ret void\l}"];
+	Node0x4c2cd20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%29:\l29:                                               \l  %30 = phi i32 [ %37, %29 ], [ %23, %3 ]\l  %31 = sext i32 %30 to i64\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %31\l  %33 = load float, float addrspace(1)* %32, align 4, !tbaa !16\l  %34 = getelementptr inbounds float, float addrspace(1)* %0, i64 %31\l  %35 = load float, float addrspace(1)* %34, align 4, !tbaa !16\l  %36 = fadd contract float %33, %35\l  store float %36, float addrspace(1)* %34, align 4, !tbaa !16\l  %37 = add nsw i32 %30, 1\l  %38 = icmp slt i32 %37, %26\l  br i1 %38, label %29, label %28, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x4c2cd20:s0 -> Node0x4c2cd20;
+	Node0x4c2cd20:s1 -> Node0x4c2cdb0;
+}

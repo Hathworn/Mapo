@@ -1,0 +1,5 @@
+// Ensure coalesced access by aligning data to memory boundaries.
+// Optimize shared memory bank conflicts by structuring data correctly.
+// Use __syncthreads() only when necessary to minimize performance overhead.
+// Prefetch data from global memory to shared memory to reduce access latency.
+// Avoid redundant condition checks by restructuring loops for efficiency.

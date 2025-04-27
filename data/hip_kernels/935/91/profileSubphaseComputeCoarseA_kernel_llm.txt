@@ -1,0 +1,8 @@
+```
+// Consider using vectorized data types for coalesced memory access
+// Optimize shared memory usage to prevent bank conflicts
+// Prefetch data into shared memory to hide latency
+// Minimize divergent branches within the loop
+// Use __restrict__ keyword to help the compiler with memory optimizations
+// Ensure data is correctly aligned for optimal memory transactions
+```

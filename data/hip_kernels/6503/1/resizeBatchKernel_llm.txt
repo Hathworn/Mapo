@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to improve memory access performance
+// Precompute scaling factors outside the kernel to reduce redundant calculations
+// Use texture memory for potentially better cache locality when accessing source image
+// Ensure memory coalescing by aligning data structures and access patterns
+// Optimize thread block size considering GPU architecture for maximal occupancy
+// Explore the use of asynchronous memory transfers and streams to hide memory latency
+```

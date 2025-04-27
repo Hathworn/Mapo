@@ -1,0 +1,4 @@
+// Use coalesced memory access when loading data into shared memory for improved performance
+// Ensure the shared memory size is carefully calculated to fit all data for each block to avoid bank conflicts
+// Consider reducing the number of __syncthreads() if possible by restructuring code logic
+// Limit the use of shared memory to avoid overuse, which can decrease occupancy

@@ -1,0 +1,10 @@
+```
+// Ensure coalesced memory access by aligning data load
+// Consider using memory access patterns that avoid bank conflicts
+// Use shared memory to minimize global memory access latency
+// Perform loop unrolling for improved performance in the data loading loop
+// Combine multiple threads' work to optimize resource utilization
+// Align shared memory arrays to avoid bank conflicts
+// Use constexpr or inline function for constants like 16 if applicable
+// Employ warp-level primitives for the reduction step
+```

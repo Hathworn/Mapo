@@ -1,0 +1,21 @@
+digraph "CFG for '_Z20square_matrix_kerneliiPKfiPfi' function" {
+	label="CFG for '_Z20square_matrix_kerneliiPKfiPfi' function";
+
+	Node0x5d3cb60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%6:\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 6\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 2, !range !4, !invariant.load !5\l  %12 = zext i16 %11 to i32\l  %13 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 16\l  %14 = bitcast i8 addrspace(4)* %13 to i32 addrspace(4)*\l  %15 = load i32, i32 addrspace(4)* %14, align 8, !tbaa !6\l  %16 = mul i32 %7, %12\l  %17 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !15\l  %18 = add i32 %16, %17\l  %19 = icmp slt i32 %18, %0\l  br i1 %19, label %20, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x5d3cb60:s0 -> Node0x5d3edf0;
+	Node0x5d3cb60:s1 -> Node0x5d3ee80;
+	Node0x5d3edf0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#8fb1fe70",label="{%20:\l20:                                               \l  %21 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %22 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %23 = bitcast i8 addrspace(4)* %22 to i16 addrspace(4)*\l  %24 = load i16, i16 addrspace(4)* %23, align 4, !range !4, !invariant.load !5\l  %25 = zext i16 %24 to i32\l  %26 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 12\l  %27 = bitcast i8 addrspace(4)* %26 to i32 addrspace(4)*\l  %28 = load i32, i32 addrspace(4)* %27, align 4, !tbaa !16\l  %29 = mul i32 %21, %25\l  %30 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %31 = add i32 %29, %30\l  %32 = icmp slt i32 %31, %1\l  %33 = udiv i32 %15, %12\l  %34 = mul i32 %33, %12\l  %35 = icmp ugt i32 %15, %34\l  %36 = zext i1 %35 to i32\l  %37 = add i32 %33, %36\l  %38 = mul i32 %37, %12\l  br label %40\l}"];
+	Node0x5d3edf0 -> Node0x5d410f0;
+	Node0x5d3ee80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#abc8fd70",label="{%39:\l39:                                               \l  ret void\l}"];
+	Node0x5d410f0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%40:\l40:                                               \l  %41 = phi i32 [ %18, %20 ], [ %52, %51 ]\l  br i1 %32, label %42, label %51\l|{<s0>T|<s1>F}}"];
+	Node0x5d410f0:s0 -> Node0x5d41370;
+	Node0x5d410f0:s1 -> Node0x5d41270;
+	Node0x5d41370 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#efcebd70",label="{%42:\l42:                                               \l  %43 = mul nsw i32 %41, %3\l  %44 = mul nsw i32 %41, %5\l  %45 = udiv i32 %28, %25\l  %46 = mul i32 %45, %25\l  %47 = icmp ugt i32 %28, %46\l  %48 = zext i1 %47 to i32\l  %49 = add i32 %45, %48\l  %50 = mul i32 %49, %25\l  br label %54\l}"];
+	Node0x5d41370 -> Node0x5d41910;
+	Node0x5d41270 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7b99e70",label="{%51:\l51:                                               \l  %52 = add i32 %38, %41\l  %53 = icmp slt i32 %52, %0\l  br i1 %53, label %40, label %39, !llvm.loop !17\l|{<s0>T|<s1>F}}"];
+	Node0x5d41270:s0 -> Node0x5d410f0;
+	Node0x5d41270:s1 -> Node0x5d3ee80;
+	Node0x5d41910 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%54:\l54:                                               \l  %55 = phi i32 [ %31, %42 ], [ %64, %54 ]\l  %56 = add nsw i32 %55, %43\l  %57 = sext i32 %56 to i64\l  %58 = getelementptr inbounds float, float addrspace(1)* %2, i64 %57\l  %59 = load float, float addrspace(1)* %58, align 4, !tbaa !19\l  %60 = fmul contract float %59, %59\l  %61 = add nsw i32 %55, %44\l  %62 = sext i32 %61 to i64\l  %63 = getelementptr inbounds float, float addrspace(1)* %4, i64 %62\l  store float %60, float addrspace(1)* %63, align 4, !tbaa !19\l  %64 = add i32 %50, %55\l  %65 = icmp slt i32 %64, %1\l  br i1 %65, label %54, label %51, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x5d41910:s0 -> Node0x5d41910;
+	Node0x5d41910:s1 -> Node0x5d41270;
+}

@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for bias[] to improve access latency
+// Ensure n_channel is a multiple of block size to avoid divergence
+// Avoid bank conflicts in shared memory for better throughput
+```

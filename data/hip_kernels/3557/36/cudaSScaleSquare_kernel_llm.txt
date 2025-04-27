@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache inputs and results for better memory access efficiency.
+// Minimize global memory access by utilizing shared memory for result storage.
+// Ensure proper synchronization if shared memory is updated by multiple threads, using __syncthreads().
+```

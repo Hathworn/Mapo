@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing consecutive elements in global memory.
+// Minimize shared memory bank conflicts by organizing data accesses properly.
+// Use a warp-synchronous reduction to reduce synchronization overhead.
+// Implement loop unrolling in the reduction step to enhance performance.
+// Consider increasing block size for better utilization if shared memory allows.
+```

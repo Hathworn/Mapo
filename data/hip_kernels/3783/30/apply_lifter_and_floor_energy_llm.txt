@@ -1,0 +1,7 @@
+```
+// Use shared memory for lifter coefficients to reduce global memory accesses
+// Pre-load lifter coefficients in shared memory to minimize access times
+// Synchronize threads after loading to ensure all threads have access
+// Loop through columns with stride of blockDim.x for coalesced access
+// Energy optimization applied only by threadId 0 for minimal synchronization
+```

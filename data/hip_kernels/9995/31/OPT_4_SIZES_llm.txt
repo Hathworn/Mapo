@@ -1,0 +1,10 @@
+```
+// Ensure coalesced global memory access where possible
+// Check alignment and padding to improve memory access patterns
+// Prefetch data to reduce global memory access latency
+// Minimize divergent branching by restructuring the loops
+// Consider utilizing shared memory for reused data
+// Use warp-level primitives to optimize parallel reductions
+// Align data accesses to match the memory bus width
+// Combine adjacent memory accesses to minimize transactions
+```

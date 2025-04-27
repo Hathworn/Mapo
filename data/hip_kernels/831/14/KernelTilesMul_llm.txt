@@ -1,0 +1,9 @@
+```
+// Consider optimizing memory access patterns for Mat1 and Mat2 by ensuring coalesced access.
+// Ensure shared memory usage does not exceed the limits to avoid bank conflicts.
+// Experiment with different TILE_WIDTH values for better shared memory utilization.
+// Use warp-level intrinsic functions for further performance improvements.
+// Check if loop unrolling can be optimized further based on your target GPU architecture.
+// Avoid unnecessary syncthreads() calls by confirming data dependency.
+// Explore using texture memory for read-only data, like Mat1 and Mat2, for improved cache performance.
+```

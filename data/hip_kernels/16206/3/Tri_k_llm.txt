@@ -1,0 +1,8 @@
+```c
+// Use shared memory to improve access speed for frequently used data.
+// Coalesce global memory accesses by aligning data used by each thread.
+// Preload data into registers to minimize memory fetch latency.
+// Consider using loop unrolling for fixed-size operations.
+// Ensure memory access patterns are optimized for coalescence.
+// Reduce divergent branches to enhance warp execution efficiency.
+```

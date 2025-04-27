@@ -1,0 +1,12 @@
+```
+// Consider aligning data to improve coalesced memory accesses.
+// Use shared memory effectively to reduce global memory transactions.
+// Apply loop unrolling to minimize instruction overhead and increase efficiency.
+// Ensure atomic operations are minimized or replaced to reduce serialization.
+// Reorganize data layout to improve memory access patterns and bandwidth.
+// Use the first warp cleanup optimization to set shared memory.
+// Consider pre-loading frequently accessed data into shared memory.
+// Opt for minimizing divergence with logical operations.
+// Leverage grid-stride loops to accommodate various problem sizes.
+// Employ __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+```

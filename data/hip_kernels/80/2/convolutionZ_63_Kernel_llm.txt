@@ -1,0 +1,12 @@
+```
+// Use __shared__ memory to reduce global memory accesses and increase efficiency.
+// Optimize the loop boundary conditions to minimize conditional checks.
+// Aim to coalesce global memory access for improved bandwidth utilization.
+// Ensure that __syncthreads() is correctly placed to synchronize threads.
+// Consider further unrolling the inner loop for better parallel execution.
+// Evaluate the use of __constant__ memory for constant data to cache efficiently.
+// Check if loop unrolling beyond a certain limit yields diminishing returns.
+// Avoid excessive __threadfence() unless necessary for memory synchronization.
+// Align shared memory accesses to prevent bank conflicts.
+// Utilize warp shuffling (if applicable) to reduce shared memory usage.
+```

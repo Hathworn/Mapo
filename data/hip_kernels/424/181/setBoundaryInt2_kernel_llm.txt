@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed data to reduce global memory access latency
+// Coalesce global memory accesses to ensure better memory throughput
+// Minimize thread divergence by ensuring all threads in a warp follow the same execution path
+// Adjust grid and block dimensions to improve occupancy and ensure optimal resource utilization
+// Pre-fetch data if possible to hide memory latencies
+```

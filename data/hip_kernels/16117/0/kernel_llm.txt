@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for global memory reads and writes
+// Ensure shared memory arrays match the warp size for better efficiency
+// Expand shared memory usage if all threads can use it without overflow
+// Align data access to ensure non-overlapping bank accesses in shared memory
+// Utilize thread block and grid dimensions to maximize occupancy and throughput
+```

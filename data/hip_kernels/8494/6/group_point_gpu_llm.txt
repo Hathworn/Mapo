@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access for points
+// Adjust shared memory size as needed for different input sizes
+// Load points into shared memory to minimize repetitive global memory reads
+// Synchronize threads to ensure shared memory is properly populated before use
+// Consider further optimization by coalescing memory access if possible
+```

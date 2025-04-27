@@ -1,0 +1,4 @@
+// Use shared memory to store data for the current block to reduce global memory accesses.
+// Optimize memory coalescing by ensuring contiguous threads access consecutive memory locations.
+// Consider using warp-level primitives for further optimizations in data access.
+// Avoid excessive use of branching, use ternary operators where possible for better efficiency.

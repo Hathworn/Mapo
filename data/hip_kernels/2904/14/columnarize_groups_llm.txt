@@ -1,0 +1,4 @@
+// Ensure memory alignment for columnar_buffer and rowwise_buffer to improve access patterns.
+// Use __ldg intrinsic for read-only access to rowwise_buffer when possible.
+// Optimize memory transactions by considering using shared memory for small col_widths.
+// Consider loop unrolling for iterating through columns to reduce loop overhead.

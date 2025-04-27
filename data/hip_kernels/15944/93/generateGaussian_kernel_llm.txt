@@ -1,0 +1,3 @@
+// Consider using shared memory for og to reduce global memory access latency
+// Precompute __expf(-(x * x) * varFactor) outside the loop if applicable
+// Minimize usage of device functions inside the kernel for better performance

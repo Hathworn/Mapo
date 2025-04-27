@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory access latency
+// Prefer loading contiguous memory blocks into shared memory for better coalescing
+// Ensure all threads in a block reach __syncthreads() to prevent race conditions

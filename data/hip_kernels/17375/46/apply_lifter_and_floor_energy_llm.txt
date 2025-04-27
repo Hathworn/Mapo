@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses for lifter coefficients
+// Use parallel processing for efficient application of lifter coefficients
+// Ensure synchronization after loading lifter coefficients to shared memory
+// Apply energy floor only in the first thread to minimize redundant computations
+// Minimize warp divergence by limiting conditional operations inside the main loop
+```

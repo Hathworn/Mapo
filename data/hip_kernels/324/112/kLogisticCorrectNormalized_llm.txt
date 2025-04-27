@@ -1,0 +1,6 @@
+```
+// Optimize memory access patterns by ensuring coalesced memory access for the mat and targets arrays
+// Consider using shared memory to cache frequently used data within a block to reduce global memory accesses
+// Load data into registers where possible to reduce redundant global memory accesses
+// Evaluate the use of warp shuffle functions to optimize reductions and minimize branch divergence
+```

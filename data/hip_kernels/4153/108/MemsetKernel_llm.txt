@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for values accessed frequently by multiple threads to reduce global memory access.
+// Grouping global memory accesses could lead to coalesced memory access, improving performance.
+// Use texture memory (or read-only cache) for read-only data to potentially exploit cache performance.
+// Tune the block and grid sizes based on the architecture to maximize occupancy and minimize potential thread divergence.
+// Consider loop unrolling techniques if applicable to decrease overhead in iterative operations.
+```

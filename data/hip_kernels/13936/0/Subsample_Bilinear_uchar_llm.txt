@@ -1,0 +1,8 @@
+```
+// Precompute scaling factors outside the loop if possible
+// Optimize by using shared memory for frequent data access to reduce global memory bandwidth
+// Minimize the use of tex2D by combining interpolation logic
+// Consider using inline functions for min/max to improve readability and maintain performance
+// Evaluate the potential of vectorized operations based on uchar4 if applicable
+// Avoid casting and conversions within kernel to maintain performance
+```

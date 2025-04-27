@@ -1,0 +1,3 @@
+// Use dynamic shared memory to store norm elements for each block to reduce global memory access.
+// Efficiently load norm values into shared memory by using conditionals to limit redundant loads.
+// Ensure synchronization with __syncthreads() after loading data into shared memory.

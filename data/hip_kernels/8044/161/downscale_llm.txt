@@ -1,0 +1,7 @@
+// Consider using shared memory to reduce redundant global memory accesses  
+// Use memory coalescing techniques to optimize global memory access patterns  
+// Ensure data alignment to prevent memory access penalties  
+// Minimize bank conflicts when accessing shared memory  
+// Look into using asynchronous copy operations to overlap computation and memory transfers  
+// Utilize warp-level primitives to reduce thread divergence during accumulation  
+// Avoid unnecessary recomputation within the translate_idx_inv function by optimizing variable reuse

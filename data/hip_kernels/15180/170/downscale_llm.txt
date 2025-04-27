@@ -1,0 +1,5 @@
+```
+// Consider using shared memory to cache gradOutput_data for better memory access patterns
+// Suggest using coalesced memory access patterns for gradInput_data to reduce memory transaction costs
+// Explore using warp-level primitives like __shfl to optimize thread communication
+```

@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access patterns for gradInput_data
+// Use shared memory to buffer gradOutput_data for increased cache locality
+// Consider reducing arithmetic intensity within translate_idx_inv
+// Utilize vectorized memory instructions if applicable for gradOutput_data
+// Minimize register utilization within loop by extracting common subexpressions
+// Align memory allocations to improve access speed if possible
+```

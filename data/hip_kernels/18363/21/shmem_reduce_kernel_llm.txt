@@ -1,0 +1,7 @@
+```
+// Use memory coalescing to optimize global memory access patterns.
+// Align shared memory usage to prevent bank conflicts.
+// Prefer to use __ldg() for read-only data in shared memory if applicable.
+// Minimize usage of __syncthreads() to reduce synchronization overhead.
+// Consider using warp shuffle operations to avoid using shared memory in the last steps.
+```

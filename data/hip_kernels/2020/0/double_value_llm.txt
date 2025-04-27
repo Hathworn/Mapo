@@ -1,0 +1,5 @@
+// Use shared memory to reduce redundant global memory accesses
+// Ensure block size accommodates all threads for full utilization of shared memory
+// Optimize block size and grid size for better memory coalescing
+// Consider loop unrolling if computation on shared memory is extensive
+// Use __syncthreads() to synchronize threads for shared memory consistency

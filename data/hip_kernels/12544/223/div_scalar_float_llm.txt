@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache input data dy if there are frequent accesses
+// Ensure coalesced global memory access for dy and result arrays
+// Consider using vectorized reads and writes for dy and result, like float2 or float4
+// Check and align memory accesses to optimize the use of memory bandwidth
+// Minimize branching within the loop to improve warp execution efficiency
+```

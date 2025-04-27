@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store input data for faster access within a block.
+// Coalesce memory accesses by ensuring consecutive threads access consecutive memory locations.
+// Minimize bank conflicts in shared memory by careful data layout.
+// Use __restrict__ qualifier to indicate that input pointers do not alias for more efficient memory access.
+// Ensure memory accesses are coalesced by aligning data accesses to warp size.
+```

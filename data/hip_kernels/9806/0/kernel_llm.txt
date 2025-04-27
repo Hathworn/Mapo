@@ -1,0 +1,4 @@
+// Use shared memory to reduce repeated global memory accesses.
+// Coalesce memory accesses for better bandwidth utilization.
+// Minimize divergent threads within warps.
+// Use occupancy calculator to ensure optimal block and grid sizes.

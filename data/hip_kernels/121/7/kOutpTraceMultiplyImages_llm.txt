@@ -1,0 +1,3 @@
+// Precompute base pointers outside of the loop to reduce memory access overhead
+// Align memory access patterns for coalesced global memory reads and writes
+// Use __syncthreads() to synchronize threads and ensure data consistency

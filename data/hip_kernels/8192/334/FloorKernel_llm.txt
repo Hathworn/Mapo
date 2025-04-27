@@ -1,0 +1,12 @@
+```cpp
+// Consider using __restrict__ keyword for input and output pointers to advise the compiler about no aliasing
+// Optimize memory access by ensuring input and output arrays are aligned to 32-byte boundaries
+// Consider using vectorized data types (e.g., float4) to process multiple elements per thread
+// Evaluate performance benefits of using shared memory if access patterns allow
+// Ensure coalesced memory access by having contiguous memory accesses to input and output arrays by adjacent threads
+// Consider using memory prefetching techniques to hide global memory latency
+// Explore warp shuffle operations if reductions or inter-thread communications are needed
+// Assess the trade-offs of using more registers versus shared memory for temporary variables
+// Use appropriate launch bounds to maximize GPU occupancy based on register and shared memory usage
+// Test running the kernel with different block sizes to find the optimal configuration
+```

@@ -1,0 +1,8 @@
+```
+// Consider coalesced access by ensuring contiguous threads access contiguous memory locations
+// Use shared memory to reduce global memory accesses
+// Minimize divergent branches inside the kernel
+// Ensure that the grid dimension is optimized for the GPU being used
+// Load multiple elements per thread if possible to improve memory bandwidth utilization
+// Try to keep occupancy high by maximizing the usage of threads per block
+```

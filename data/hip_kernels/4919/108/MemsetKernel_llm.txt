@@ -1,0 +1,9 @@
+```
+// Use cooperative grid-stride loop for improved memory access pattern
+// This pattern allows threads to work more efficiently across the grid dimensions
+// Helps minimize idling and maximize occupancy by keeping threads busy
+// Stride pattern helps in coalesced memory access, reducing bank conflicts
+// Ensure memory access is aligned for better performance
+// Use shared memory if applicable to reduce global memory fetches
+// Consider adjusting block and grid dimensions to maximize performance on specific hardware
+```

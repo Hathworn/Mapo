@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access for array b and c to optimize memory transactions.
+// Consider using shared memory if b is accessed multiple times by threads within the same block to reduce global memory access.
+// Ensure all memory accesses are aligned to avoid uncoalesced memory transactions.
+// Profile the kernel to identify potential warp divergence and eliminate it if possible.
+// Consider vectorized operations if data alignment permits and the compiler supports it.
+// Evaluate the occupancy of the kernel and adjust block and grid sizes to maximize it.
+```

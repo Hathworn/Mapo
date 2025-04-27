@@ -1,0 +1,8 @@
+```
+// Use dynamic shared memory to minimize global memory access
+// Precompute total_spatial to reduce repeated calculations
+// Optimize inner loop to reduce index calculations by leveraging thread indexing
+// Accumulate results in shared memory to reduce global memory bandwidth
+// Ensure __syncthreads() is used to synchronize threads in the block
+// Calculate the final variance using all accumulated values in shared memory
+```

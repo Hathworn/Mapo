@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Ensure coalesced memory access when loading into shared memory
+// Synchronize threads after loading to ensure all data is available
+// Iterate efficiently by calculating global index based on block and thread index
+// Use modulo operator to handle wrapping around source dimensions
+```

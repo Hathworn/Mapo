@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access when loading data from global memory to improve memory access efficiency.
+// Minimize the use of __syncthreads() to reduce synchronization overhead and improve performance.
+// Optimize shared memory usage by ensuring data alignment and reducing bank conflicts.
+// Consider using warp-level primitives (e.g., __shfl_xor_sync) for reduction to reduce shared memory dependency.
+// Avoid unnecessary boundary checks to eliminate redundant instructions.
+// Use dynamic shared memory allocation only when required to avoid excessive shared memory usage.
+```

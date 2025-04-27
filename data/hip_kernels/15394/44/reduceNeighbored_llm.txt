@@ -1,0 +1,7 @@
+```
+// Consider padding shared memory to avoid bank conflicts
+// Utilize warp shuffles to reduce __syncthreads overhead
+// Optimize memory access patterns to ensure coalesced global reads
+// Use loop unrolling for the reduction loop to minimize loop overhead
+// Align data structures to improve memory access efficiency
+```

@@ -1,0 +1,9 @@
+```c
+// Consider using shared memory to cache neighborhood pixel data to reduce global memory access.
+// Use texture memory for raw image data when access patterns exhibit 2D spatial locality for improved cache efficiency.
+// Investigate using memory coalescing by aligning data accesses for raw images across threads to reduce memory transactions.
+// Consider unrolling the inner loop completely for the neighborhood pixel computation to reduce branch overhead.
+// Precompute any repeated calculations such as scale factors to save computation time inside the loop.
+// Maximize the usage of registers instead of shared memory for temporary variables to leverage faster access speeds.
+// Minimize thread divergence by ensuring calculations and conditions are uniform across threads.
+```

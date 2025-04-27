@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency.
+// Use __ldg intrinsic for faster read-only data fetch from global memory.
+// Ensure shared memory usage fits within the limits to avoid bank conflicts.
+// Consider coalesced access patterns for global memory operations.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory for weights in each block to reduce global memory access
+// Consider coalescing memory accesses for weights and CDF to improve performance
+// Implement loop unrolling in cdfCalc for better instruction-level parallelism
+// Prefetch data if possible to hide memory latency
+// Ensure alignment of memory access for partial_sums and seed arrays
+```

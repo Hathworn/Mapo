@@ -1,0 +1,6 @@
+// Use shared memory to cache frequently accessed data
+// Align memory accesses to ensure coalescing
+// Minimize divergent branches by restructuring conditionals if possible
+// Consider loop unrolling for small, fixed-size loops
+// Ensure shared memory usage optimization
+// Review if atomic operations are necessary and optimize where possible

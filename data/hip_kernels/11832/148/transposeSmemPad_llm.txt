@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to minimize global memory accesses and improve data reuse
+// Add padding to shared memory to avoid bank conflicts
+// Ensure correct boundaries to prevent out-of-bounds memory access
+// Tile dimensions should match block dimensions for optimal thread scheduling
+// Use __syncthreads() for synchronization between threads in a block
+```

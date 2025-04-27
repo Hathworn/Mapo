@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses and improve cache locality.
+// Ensure threads within a block have synchronized access to shared memory.
+// Utilize coalesced memory access patterns to minimize memory transaction overhead.
+// Optimize blockDim.y to fit the size of the shared memory and make full use of bandwidth.
+// Load matrix elements into shared memory to reduce latency and improve throughput.
+```

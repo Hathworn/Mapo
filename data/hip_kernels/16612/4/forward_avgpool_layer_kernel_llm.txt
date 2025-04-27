@@ -1,0 +1,6 @@
+```
+// Optimize: Use shared memory for block-level data reuse if applicable
+// Suggestion: Coalesce global memory reads by ensuring input[i] accesses are sequential
+// Suggestion: Use atomic operations if reduction across threads in a block is needed
+// Suggestion: Consider using a different grid dimension to maximize occupancy
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data and reduce global memory accesses
+// Use conditional statements to avoid unnecessary memory operations and reduce divergence
+// Synchronize threads after loading data to shared memory to ensure data consistency
+// Aim to coalesce global memory accesses for better efficiency
+// Avoid branching inside loops to minimize warp divergence
+```

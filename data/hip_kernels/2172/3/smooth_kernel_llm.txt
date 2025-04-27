@@ -1,0 +1,6 @@
+// Flatten block and thread IDs into a single ID to ensure coalesced memory access
+// Precalculate half of size to avoid redundant computation
+// Pre-calculate output index to reduce repeated calculations within the loop
+// Consider using shared memory for accessing x within boundary checks to reduce global memory access
+// Ensure boundary check reduces divergent branching, optimizing the loop control flow
+// Use atomic operations on delta[out_index] if necessary to prevent race conditions

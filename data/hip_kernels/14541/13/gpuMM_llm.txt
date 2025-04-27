@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce global memory accesses.
+// Load a block of data into shared memory to improve memory bandwidth utilization.
+// Ensure that all threads in a block synchronize after loading data into shared memory.
+// Optimize the number of tiles by considering memory coalescing for large matrices.
+// Avoid bank conflicts in shared memory access for better performance.
+// Validate boundary conditions to prevent out-of-bounds memory access.
+```

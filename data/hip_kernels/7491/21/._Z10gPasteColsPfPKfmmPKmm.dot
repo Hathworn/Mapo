@@ -1,0 +1,27 @@
+digraph "CFG for '_Z10gPasteColsPfPKfmmPKmm' function" {
+	label="CFG for '_Z10gPasteColsPfPKfmmPKmm' function";
+
+	Node0x49969e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a5c3fe70",label="{%6:\l  %7 = icmp eq i64 %2, 0\l  br i1 %7, label %24, label %8\l|{<s0>T|<s1>F}}"];
+	Node0x49969e0:s0 -> Node0x4996980;
+	Node0x49969e0:s1 -> Node0x4997110;
+	Node0x4997110 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#93b5fe70",label="{%8:\l8:                                                \l  %9 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %10 = icmp eq i64 %5, 0\l  %11 = tail call i32 @llvm.amdgcn.workitem.id.x()\l  %12 = tail call align 4 i8 addrspace(4)* @llvm.amdgcn.dispatch.ptr()\l  %13 = getelementptr i8, i8 addrspace(4)* %12, i64 4\l  %14 = bitcast i8 addrspace(4)* %13 to i16 addrspace(4)*\l  %15 = getelementptr inbounds i8, i8 addrspace(4)* %12, i64 12\l  %16 = bitcast i8 addrspace(4)* %15 to i32 addrspace(4)*\l  %17 = load i32, i32 addrspace(4)* %16, align 4, !tbaa !4\l  %18 = load i16, i16 addrspace(4)* %14, align 4, !range !13, !invariant.load\l... !14\l  %19 = zext i16 %18 to i32\l  %20 = udiv i32 %17, %19\l  %21 = mul i32 %20, %19\l  %22 = icmp ugt i32 %17, %21\l  %23 = zext i1 %22 to i32\l  br label %25\l}"];
+	Node0x4997110 -> Node0x4998e60;
+	Node0x4996980 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#a5c3fe70",label="{%24:\l24:                                               \l  ret void\l}"];
+	Node0x4998e60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%25:\l25:                                               \l  %26 = phi i32 [ 0, %8 ], [ %54, %52 ]\l  %27 = add i32 %26, %9\l  %28 = sext i32 %27 to i64\l  %29 = icmp ult i64 %28, %2\l  br i1 %29, label %30, label %52\l|{<s0>T|<s1>F}}"];
+	Node0x4998e60:s0 -> Node0x4999240;
+	Node0x4998e60:s1 -> Node0x4998fb0;
+	Node0x4999240 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f3c7b170",label="{%30:\l30:                                               \l  %31 = mul i64 %28, %5\l  %32 = getelementptr inbounds float, float addrspace(1)* %1, i64 %31\l  %33 = mul i64 %28, %3\l  %34 = getelementptr inbounds float, float addrspace(1)* %0, i64 %33\l  br i1 %10, label %52, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x4999240:s0 -> Node0x4998fb0;
+	Node0x4999240:s1 -> Node0x4997c20;
+	Node0x4997c20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%35:\l35:                                               \l  %36 = phi i32 [ %49, %48 ], [ 0, %30 ]\l  %37 = add i32 %36, %11\l  %38 = sext i32 %37 to i64\l  %39 = icmp ult i64 %38, %5\l  br i1 %39, label %40, label %48\l|{<s0>T|<s1>F}}"];
+	Node0x4997c20:s0 -> Node0x4999ae0;
+	Node0x4997c20:s1 -> Node0x4999810;
+	Node0x4999ae0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#d6524470",label="{%40:\l40:                                               \l  %41 = getelementptr inbounds float, float addrspace(1)* %32, i64 %38\l  %42 = load float, float addrspace(1)* %41, align 4, !tbaa !15\l  %43 = getelementptr inbounds i64, i64 addrspace(1)* %4, i64 %38\l  %44 = load i64, i64 addrspace(1)* %43, align 8, !tbaa !19, !amdgpu.noclobber\l... !14\l  %45 = getelementptr inbounds float, float addrspace(1)* %34, i64 %44\l  %46 = load float, float addrspace(1)* %45, align 4, !tbaa !15\l  %47 = fadd contract float %42, %46\l  store float %47, float addrspace(1)* %45, align 4, !tbaa !15\l  br label %48\l}"];
+	Node0x4999ae0 -> Node0x4999810;
+	Node0x4999810 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%48:\l48:                                               \l  %49 = add i32 %36, %19\l  %50 = sext i32 %49 to i64\l  %51 = icmp ult i64 %50, %5\l  br i1 %51, label %35, label %52, !llvm.loop !21\l|{<s0>T|<s1>F}}"];
+	Node0x4999810:s0 -> Node0x4997c20;
+	Node0x4999810:s1 -> Node0x4998fb0;
+	Node0x4998fb0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f7ac8e70",label="{%52:\l52:                                               \l  %53 = add i32 %20, %26\l  %54 = add i32 %53, %23\l  %55 = sext i32 %54 to i64\l  %56 = icmp ult i64 %55, %2\l  br i1 %56, label %25, label %24, !llvm.loop !23\l|{<s0>T|<s1>F}}"];
+	Node0x4998fb0:s0 -> Node0x4998e60;
+	Node0x4998fb0:s1 -> Node0x4996980;
+}

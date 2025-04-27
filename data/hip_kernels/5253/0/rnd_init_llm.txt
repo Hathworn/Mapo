@@ -1,0 +1,5 @@
+// Consider using shared memory for frequently accessed data to reduce global memory access latency
+// Optimize memory coalescing by ensuring data accessed by consecutive threads lies in consecutive memory locations
+// Evaluate thread block size to improve warp efficiency and minimize divergence
+// Limit the use of atomic operations in global memory to avoid serialization and improve parallel execution
+// Consider loop unrolling techniques to reduce instruction overhead and enhance throughput

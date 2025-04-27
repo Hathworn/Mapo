@@ -1,0 +1,8 @@
+```cpp
+// Ensure memory access is coalesced where possible
+// Avoid bank conflicts in shared memory usage
+// Minimize global memory transactions by using shared memory efficiently
+// Consider using __restrict__ to aid the compiler in optimization
+// Organize data to reduce cache misses
+// Use appropriate memory access patterns to maximize warp efficiency
+```

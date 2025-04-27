@@ -1,0 +1,5 @@
+// Utilize shared memory to cache 'pred' and 'truth' for faster access
+// Minimize branch divergence within warp
+// Prefetch 'pred' and 'truth' values to registers before use
+// Consider aligning memory accesses to improve coalescing
+// Use __syncthreads() if needed for synchronization when using shared memory

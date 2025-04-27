@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by having threads access contiguous memory locations
+// Use shared memory if data reuse is high and within a block to reduce global memory access
+// Consider aligning data to 128 bytes for better memory access efficiency
+// Use __restrict__ keyword to inform the compiler of non-aliasing pointers for optimization
+// Balance the number of threads and blocks to fully utilize the GPU's compute capabilities
+```

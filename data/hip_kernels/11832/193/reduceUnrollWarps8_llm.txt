@@ -1,0 +1,8 @@
+```
+// Use shared memory to store partial sums to optimize memory bandwidth usage
+// Use loop unrolling to reduce the number of iterations and improve performance
+// Use __syncthreads() to ensure all threads have computed their partial sums before proceeding
+// Use volatile keyword to prevent compiler optimizations that might reorder operations and ensure correct in-place reduction
+// Write final result from shared memory to global memory only once to minimize global memory writes
+// Avoid bank conflicts in shared memory by ensuring aligned accesses
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache a and b values for coalesced access
+// Ensure that ld_a, ld_b, and ld_c are multiples of warp size for bank conflict reduction
+// Use loop unrolling for regular access patterns in fmax operation
+// Leverage asynchronous memory copy operations to overlap memory transfer and computation
+// Consider using __restrict__ qualifiers on pointers to help compiler optimizations
+```

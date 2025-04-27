@@ -1,0 +1,6 @@
+```c
+// Optimize memory access by ensuring memory coalescing
+// Use shared memory if multiple threads access the same data
+// Consider using vectorized loads/stores for float arrays
+// Ensure n is a multiple of blockDim.x for maximum occupancy
+```

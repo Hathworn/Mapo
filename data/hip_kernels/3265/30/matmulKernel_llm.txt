@@ -1,0 +1,4 @@
+// Consider using shared memory to reduce global memory accesses for matrices A and B  
+// Optimize the memory access by coalescing reads from global memory  
+// Increase block size to improve parallelism, if resources allow  
+// Check for bank conflicts when using shared memory

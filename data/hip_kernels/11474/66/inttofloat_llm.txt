@@ -1,0 +1,7 @@
+```c
+// Optimize memory access by ensuring coalesced memory accesses for input and output arrays.
+// Consider using shared memory if there are repeated accesses to the same data within threads.
+// Ensure adequate occupancy and hide memory latency with enough active threads.
+// Evaluate the benefit of using __ldg() for read-only data to utilize texture memory caches.
+// Prefetch data into registers if multiple operations will be performed on the same data element.
+```

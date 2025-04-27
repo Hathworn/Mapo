@@ -1,0 +1,5 @@
+// Ensure coalesced memory access for ptr_in and ptr_out by aligning data structures.
+// Consider using shared memory to reduce memory access latency and maximize bandwidth.
+// Minimize divergent threads by optimizing index calculations to achieve uniform execution paths.
+// Implement loop unrolling for thread-specific computations to improve execution speed.
+// Investigate vectorized instructions to process multiple data elements per thread for improved performance.

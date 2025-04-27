@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Avoid redundant accesses to global memory by using cached values
+// Ensure correct synchronization with __syncthreads() before reading shared memory
+// Consider allocating more threads to better utilize available bandwidth
+// Optimize thread usage by minimizing idle threads
+```

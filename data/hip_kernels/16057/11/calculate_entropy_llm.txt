@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses by ensuring adjacent threads access adjacent memory addresses
+// Use float instead of float in shared memory to ensure higher precision in calculations
+// Minimize the number of global memory accesses within the while loop by caching necessary values in registers
+// Utilize warp-level primitives to perform reduction more efficiently rather than using shared memory for reduction
+// Eliminate unnecessary __syncthreads() for better warp execution efficiency
+// Avoid printf statements inside kernel for performance critical sections
+```

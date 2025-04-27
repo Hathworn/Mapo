@@ -1,0 +1,8 @@
+```
+// Use shared memory to reduce redundant global memory accesses for dgm0
+// Minimize divergence by ensuring the warp has unified execution paths
+// Ensure memory coalescing by using consecutive threads accessing consecutive memory addresses in q
+// Prefetch data to reduce memory latency where possible
+// Optimize arithmetic operations to enhance performance
+// Consider using loop unrolling to optimize the for loop when reducing x
+```

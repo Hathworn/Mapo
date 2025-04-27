@@ -1,0 +1,5 @@
+```cpp
+// Use shared memory to cache d_Data1 and d_Data2 values for better memory access patterns
+// Consider coalesced memory access patterns for reading from global memory
+// Minimize divergent branches by ensuring all threads in a warp follow the same execution path
+```

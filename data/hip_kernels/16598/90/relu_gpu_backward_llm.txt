@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access for improved memory throughput
+// Consider using shared memory to reduce redundant global memory accesses
+// Explore the use of warp-level primitives for potential performance enhancement
+// Use __restrict__ qualifiers for ingrad, outgrad, and indata to help the compiler optimize memory access
+// Ensure the block size is selected to maximize occupancy and match the GPU architecture
+```

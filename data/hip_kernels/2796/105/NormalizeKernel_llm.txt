@@ -1,0 +1,4 @@
+// Use shared memory to store normalization factors for better memory access efficiency.
+// Consider coalesced memory access patterns for the image array to improve memory throughput.
+// Reuse loaded values as much as possible to minimize global memory accesses.
+// Ensure the normalization_factor array is accessed in a coalesced fashion.

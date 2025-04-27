@@ -1,0 +1,15 @@
+digraph "CFG for 'relu_backward' function" {
+	label="CFG for 'relu_backward' function";
+
+	Node0x55ed550 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !4, !invariant.load !5\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %14 = add i32 %12, %13\l  %15 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %16 = getelementptr i8, i8 addrspace(4)* %7, i64 6\l  %17 = bitcast i8 addrspace(4)* %16 to i16 addrspace(4)*\l  %18 = load i16, i16 addrspace(4)* %17, align 2, !range !4, !invariant.load !5\l  %19 = zext i16 %18 to i32\l  %20 = mul i32 %15, %19\l  %21 = tail call i32 @llvm.amdgcn.workitem.id.y(), !range !6\l  %22 = add i32 %20, %21\l  %23 = icmp slt i32 %14, %3\l  %24 = icmp slt i32 %22, %4\l  %25 = select i1 %23, i1 %24, i1 false\l  br i1 %25, label %26, label %39\l|{<s0>T|<s1>F}}"];
+	Node0x55ed550:s0 -> Node0x55f1000;
+	Node0x55ed550:s1 -> Node0x55f1090;
+	Node0x55f1000 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%26:\l26:                                               \l  %27 = mul nsw i32 %14, %4\l  %28 = add nsw i32 %27, %22\l  %29 = sext i32 %28 to i64\l  %30 = getelementptr inbounds double, double addrspace(1)* %0, i64 %29\l  %31 = load double, double addrspace(1)* %30, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  %32 = fcmp contract ogt double %31, 0.000000e+00\l  br i1 %32, label %33, label %36\l|{<s0>T|<s1>F}}"];
+	Node0x55f1000:s0 -> Node0x55ef640;
+	Node0x55f1000:s1 -> Node0x55ef6d0;
+	Node0x55ef640 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f1ccb870",label="{%33:\l33:                                               \l  %34 = getelementptr inbounds double, double addrspace(1)* %1, i64 %29\l  %35 = load double, double addrspace(1)* %34, align 8, !tbaa !7,\l... !amdgpu.noclobber !5\l  br label %36\l}"];
+	Node0x55ef640 -> Node0x55ef6d0;
+	Node0x55ef6d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#ef886b70",label="{%36:\l36:                                               \l  %37 = phi contract double [ %35, %33 ], [ 0.000000e+00, %26 ]\l  %38 = getelementptr inbounds double, double addrspace(1)* %2, i64 %29\l  store double %37, double addrspace(1)* %38, align 8, !tbaa !7\l  br label %39\l}"];
+	Node0x55ef6d0 -> Node0x55f1090;
+	Node0x55f1090 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%39:\l39:                                               \l  ret void\l}"];
+}

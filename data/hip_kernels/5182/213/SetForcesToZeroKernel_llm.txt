@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ keyword for the force pointer for improved memory access if applicable
+// Ensure force is aligned to enable coalesced memory access
+// Use shared memory if the kernel has potential for temporal locality
+// Check grid and block size configuration for optimal occupancy and performance
+// Consider vectorizing loads/stores if force allows
+// Use asynchronous memory prefetching if applicable
+// Ensure stride does not cause severe memory divergence
+```

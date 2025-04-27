@@ -1,0 +1,10 @@
+digraph "CFG for '_Z10ResetImagePfi' function" {
+	label="CFG for '_Z10ResetImagePfi' function";
+
+	Node0x499a2d0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %4 = getelementptr i8, i8 addrspace(4)* %3, i64 4\l  %5 = bitcast i8 addrspace(4)* %4 to i16 addrspace(4)*\l  %6 = load i16, i16 addrspace(4)* %5, align 4, !range !4, !invariant.load !5\l  %7 = zext i16 %6 to i32\l  %8 = getelementptr inbounds i8, i8 addrspace(4)* %3, i64 12\l  %9 = bitcast i8 addrspace(4)* %8 to i32 addrspace(4)*\l  %10 = load i32, i32 addrspace(4)* %9, align 4, !tbaa !6\l  %11 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.y()\l  %13 = udiv i32 %10, %7\l  %14 = mul i32 %13, %7\l  %15 = icmp ugt i32 %10, %14\l  %16 = zext i1 %15 to i32\l  %17 = add i32 %13, %16\l  %18 = mul i32 %17, %12\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !15\l  %20 = add i32 %18, %11\l  %21 = mul i32 %20, %7\l  %22 = add i32 %21, %19\l  %23 = icmp slt i32 %22, %1\l  br i1 %23, label %24, label %27\l|{<s0>T|<s1>F}}"];
+	Node0x499a2d0:s0 -> Node0x499cb20;
+	Node0x499a2d0:s1 -> Node0x499cbb0;
+	Node0x499cb20 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%24:\l24:                                               \l  %25 = sext i32 %22 to i64\l  %26 = getelementptr inbounds float, float addrspace(1)* %0, i64 %25\l  store float 0.000000e+00, float addrspace(1)* %26, align 4, !tbaa !16\l  br label %27\l}"];
+	Node0x499cb20 -> Node0x499cbb0;
+	Node0x499cbb0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```
+// Consider using loop unrolling to enhance performance in the inner loops
+// Use coalesced memory access pattern for reading data into shared memory
+// Consider optimizing for memory bank conflicts when accessing shared memory
+// Ensure enough shared memory per block based on n, adjust block size as necessary
+// Check occupancy and adjust block size or use `__launch_bounds__` for hardware constraints
+```

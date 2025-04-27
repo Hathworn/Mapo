@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory reads
+// Ensure coalesced access by aligning data structure to warp size
+// Minimize register usage to prevent spilling into global memory
+// Consider loop unrolling to increase instruction-level parallelism
+// Profile and optimize for memory bandwidth and latency constraints
+```

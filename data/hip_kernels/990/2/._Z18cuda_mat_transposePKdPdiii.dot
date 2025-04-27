@@ -1,0 +1,11 @@
+digraph "CFG for '_Z18cuda_mat_transposePKdPdiii' function" {
+	label="CFG for '_Z18cuda_mat_transposePKdPdiii' function";
+
+	Node0x59df570 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%5:\l  %6 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %7 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %8 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %9 = getelementptr i8, i8 addrspace(4)* %8, i64 4\l  %10 = bitcast i8 addrspace(4)* %9 to i16 addrspace(4)*\l  %11 = load i16, i16 addrspace(4)* %10, align 4, !range !5, !invariant.load !6\l  %12 = zext i16 %11 to i32\l  %13 = getelementptr inbounds i8, i8 addrspace(4)* %8, i64 12\l  %14 = bitcast i8 addrspace(4)* %13 to i32 addrspace(4)*\l  %15 = load i32, i32 addrspace(4)* %14, align 4, !tbaa !7\l  %16 = mul i32 %7, %12\l  %17 = add i32 %16, %6\l  %18 = udiv i32 %15, %12\l  %19 = mul i32 %18, %12\l  %20 = icmp ugt i32 %15, %19\l  %21 = zext i1 %20 to i32\l  %22 = add i32 %18, %21\l  %23 = mul i32 %22, %12\l  %24 = icmp slt i32 %17, %4\l  br i1 %24, label %25, label %41\l|{<s0>T|<s1>F}}"];
+	Node0x59df570:s0 -> Node0x59e1af0;
+	Node0x59df570:s1 -> Node0x59e1b80;
+	Node0x59e1af0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = phi i32 [ %39, %25 ], [ %17, %5 ]\l  %27 = freeze i32 %26\l  %28 = freeze i32 %3\l  %29 = sdiv i32 %27, %28\l  %30 = mul i32 %29, %28\l  %31 = sub i32 %27, %30\l  %32 = mul nsw i32 %31, %2\l  %33 = add nsw i32 %32, %29\l  %34 = sext i32 %33 to i64\l  %35 = getelementptr inbounds double, double addrspace(1)* %0, i64 %34\l  %36 = load double, double addrspace(1)* %35, align 8, !tbaa !16\l  %37 = sext i32 %26 to i64\l  %38 = getelementptr inbounds double, double addrspace(1)* %1, i64 %37\l  store double %36, double addrspace(1)* %38, align 8, !tbaa !16\l  %39 = add nsw i32 %26, %23\l  %40 = icmp slt i32 %39, %4\l  br i1 %40, label %25, label %41, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x59e1af0:s0 -> Node0x59e1af0;
+	Node0x59e1af0:s1 -> Node0x59e1b80;
+	Node0x59e1b80 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%41:\l41:                                               \l  ret void\l}"];
+}

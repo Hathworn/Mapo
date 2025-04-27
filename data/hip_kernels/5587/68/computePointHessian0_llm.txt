@@ -1,0 +1,3 @@
+// Load dh_ang into shared memory to minimize global memory access latency.
+// Use registers for variables involved in repeated computations to reduce memory access.
+// Pre-compute repeated expressions to minimize redundant calculations.

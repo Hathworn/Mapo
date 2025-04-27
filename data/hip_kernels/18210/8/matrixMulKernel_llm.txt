@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Ensure memory coalescing by accessing continuous memory blocks
+// Minimize shared memory bank conflicts
+// Consider using atomic operations if needed to avoid race conditions

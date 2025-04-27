@@ -1,0 +1,7 @@
+```
+// Consider aligning memory accesses of d_output and d_targets for coalesced access.
+// Use __ldg() for read-only data if possible to improve cache performance.
+// Implement a shared memory bank conflict avoidance strategy to enhance performance.
+// Evaluate shared memory usage to ensure it does not exceed maximum capacity, leading to reduced occupancy.
+// Minimize divergence by letting all threads within a warp execute the same instructions.
+```

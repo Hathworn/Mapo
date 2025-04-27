@@ -1,0 +1,6 @@
+```c
+// Use shared memory to store PairWise elements and reduce global memory accesses.
+// Minimize redundant calculations by checking if delr2 equals zero only once.
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Replace powf with custom inline calculations for efficiency.
+```

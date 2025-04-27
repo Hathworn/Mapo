@@ -1,0 +1,5 @@
+// Ensure optimal use of shared memory by reducing bank conflicts
+// Consider using warp-level primitives to reduce __syncthreads() overhead
+// Optimize data access patterns to ensure coalesced memory transactions
+// Adjust step size to improve load balancing and memory efficiency
+// Minimize if conditions inside loops for better branch prediction

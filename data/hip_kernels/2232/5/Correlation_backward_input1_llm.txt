@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses for rInput2 to improve memory bandwidth utilization.
+// Use shared memory to buffer repeated data fetches where possible to reduce global memory accesses.
+// Ensure gradOutput accesses are coalesced for better performance.
+// Consider loop unrolling for the reduction loop to improve speed.
+// Use __syncthreads() wisely – ensure minimal divergence and overhead.
+```

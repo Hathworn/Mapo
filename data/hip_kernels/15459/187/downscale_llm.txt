@@ -1,0 +1,8 @@
+```c
+// Consider coalesced memory accesses for gradInput_data and gradOutput_data.
+// Use shared memory to minimize global memory accesses where possible.
+// Optimize the thread block size to maximize occupancy and minimize memory latency.
+// Use __syncthreads() if shared memory is utilized to avoid race conditions.
+// Evaluate if further loop unrolling is beneficial for performance.
+// Consider using warp-level primitives for intra-warp communication.
+```

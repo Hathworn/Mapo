@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to reduce global memory accesses
+// Ensure matrices are aligned to 32x32 blocks for optimal shared memory usage
+// Consider increasing block size if resources allow for larger concurrent threads
+// Minimize shared memory bank conflicts by ensuring 32x32 block usage
+```

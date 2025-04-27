@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if data reuse within the block is possible
+// Ensure coalesced memory access for better global memory efficiency
+// Minimizing branching could further improve performance
+// Use __restrict__ pointers for pointer aliasing optimizations
+// Investigate possible use of vectorized loads and stores for better memory bandwidth usage
+```

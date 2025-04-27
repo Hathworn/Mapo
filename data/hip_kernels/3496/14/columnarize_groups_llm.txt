@@ -1,0 +1,7 @@
+```
+// Consider increasing block size to optimize memory throughput
+// Utilize shared memory to cache row data and reduce global memory access
+// Experiment with loop unrolling for better performance if col_widths has fixed patterns
+// Align data in memory to coalesce memory access
+// Evaluate the use of texture memory for better cache hits if applicable
+```

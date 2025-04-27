@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Ensure data alignment to maximize memory coalescing.
+// Use a warp-friendly access pattern to avoid bank conflicts.
+// Avoid redundant recalculation by prefetching reused data.
+```

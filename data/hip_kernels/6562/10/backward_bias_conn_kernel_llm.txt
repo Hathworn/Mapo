@@ -1,0 +1,6 @@
+```
+// Ensure the blockDim.x does not exceed the maximum shared memory size
+// Utilize shared memory to minimize global memory access frequency
+// Accumulate in shared memory to improve coalesced access pattern
+// Perform reduction within blocks to reduce the number of atomic operations
+```

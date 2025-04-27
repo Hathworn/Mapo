@@ -1,0 +1,9 @@
+```
+// Use shared memory efficiently to reduce global memory access latency.
+// Consider loop unrolling to reduce loop overhead in memory copy section.
+// Optimize bank conflicts in shared memory access for performance gain.
+// Exploit memory coalescing by aligning data access with warp threads.
+// Minimize control divergence by carefully structuring conditional operations.
+// Use pragma unroll for the loop to enhance instruction-level parallelism.
+// Reduce warp divergence by iterating only the necessary number of times.
+```

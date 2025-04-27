@@ -1,0 +1,4 @@
+// Optimize memory access by ensuring coalesced global memory reads in the loop
+// Consider adjusting shared memory size based on blockDim.x to utilize memory efficiently
+// Use warp-level reduction to minimize __syncthreads overhead
+// Prefetch data into shared memory for reduced global memory latency

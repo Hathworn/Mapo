@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency.
+// Align memory accesses to improve coalesced memory transactions.
+// Consider using texture memory for frequent read access patterns.
+// Profile the kernel to identify bottlenecks and adjust block size accordingly.

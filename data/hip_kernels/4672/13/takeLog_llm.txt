@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency.
+// Balance thread workload by ensuring each thread has an equal amount of data.
+// Explore coalescing techniques to optimize memory access patterns and minimize warp divergence.
+// Use loop unrolling techniques to enhance pipeline utilization in heavily iterative computations.
+// Profile and adjust block and thread dimensions to match the hardware’s capabilities for optimal occupancy.

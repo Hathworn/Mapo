@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory access by ensuring the src array accesses are contiguous for neighboring threads.
+// Ensure shared memory utilization is maximized to reduce global memory access latency by appropriately sizing tile and halo regions.
+// Use __syncthreads() efficiently to avoid unnecessary synchronization overhead and potential deadlock scenarios.
+// Optimize loop bounds for better thread divergence handling and ensure optimal occupancy.
+// Consider loop unrolling for the inner loops to reduce loop overhead, especially for small TILE_SIZE values.
+// Ensure that halo regions are minimized to avoid unnecessary memory traffic between global and shared memory.
+```

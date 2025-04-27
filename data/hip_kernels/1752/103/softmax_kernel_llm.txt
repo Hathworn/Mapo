@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses for storing the largest element
+// Use atomicMax to safely find the maximum in shared memory
+// Reduce the use of atomic operations for sum calculation to minimize serialization
+// Consider warp-level primitives for faster reductions if hardware supports it
+// Pre-compute repeated calculations outside loops when possible to reduce instruction count
+// Ensure coalesced memory access patterns for input and output arrays for better bandwidth utilization
+// Consider adjusting block size to maximize occupancy while ensuring sufficient parallelism for the work
+```

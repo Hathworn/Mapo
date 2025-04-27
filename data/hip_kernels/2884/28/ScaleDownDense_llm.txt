@@ -1,0 +1,10 @@
+```
+// Consider utilizing optimal memory alignment for shared memory access.
+// Ensure no bank conflicts occur when accessing the irows shared memory.
+// Optimize calculation of indices to avoid redundant operations.
+// Reuse data in shared memory to minimize global memory accesses.
+// Consider unrolling loops for better throughput.
+// Minimize synchronization points if possible for performance gains.
+// Use const or restrict qualifiers to indicate non-aliasing pointers.
+// Ensure pitch is used correctly for optimal memory accessing patterns.
+```

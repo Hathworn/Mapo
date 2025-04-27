@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache nnCol values to reduce global memory accesses.
+// Evaluate if coalesced memory access can be further optimized for dOut updates.
+// Leverage loop unrolling to potentially improve performance within the loop.
+// Address potential memory alignment issues for nn and dOut for better memory throughput.
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory accesses for in1 and in2
+// Consider coalescing memory access by ensuring consecutive threads access consecutive memory locations
+// Avoid divergence in conditional operations for improved warp execution efficiency
+// Experiment with loop unrolling if applicable to minimize the latency of instruction fetching

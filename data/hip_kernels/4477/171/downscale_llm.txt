@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache gradOutput_data values and reduce global memory accesses.
+// Try to coalesce memory accesses to gradInput_data to improve memory throughput.
+// Ensure the loop unrolling factor matches the common hardware warp size for better ILP and efficiency.
+// Consider using vectorized memory operations to optimize throughput and reduce latency.
+// Balance the number of threads per block to optimize occupancy and utilize more CUDA cores.
+```

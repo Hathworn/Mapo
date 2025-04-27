@@ -1,0 +1,5 @@
+```
+// Use shared memory for faster memory access for each thread block
+// Store sum in shared memory to avoid redundant computation
+// __syncthreads to ensure all threads have written to shared memory before use
+```

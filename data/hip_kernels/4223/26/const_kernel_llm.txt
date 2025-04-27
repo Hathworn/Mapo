@@ -1,0 +1,5 @@
+// Consider using shared memory to store ALPHA if accessed frequently by threads  
+// Optimize memory coalescing by ensuring X is accessed in a contiguous manner  
+// Use __restrict__ keyword if applicable to inform compiler of non-overlapping pointer accesses  
+// Implement warp-level primitives to further reduce branch divergence  
+// Analyze whether prefetching data or using asynchronous copies can benefit performance  

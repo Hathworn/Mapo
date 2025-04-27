@@ -1,0 +1,8 @@
+```
+// Consider coalescing memory accesses by ensuring linear and quadratic arrays are accessed in a contiguous manner
+// Minimize divergent branches within the kernel to improve warp execution efficiency
+// Use shared memory if possible to store values that are repeatedly accessed within threads
+// Repeat the optimization for quadratic term updates with warp-level reduction to minimize global memory accesses
+// Adjust block and grid dimensions to achieve full utilization of the GPU cores
+// Double-check memory bounds and alignment to prevent memory access bottlenecks
+```

@@ -1,0 +1,5 @@
+// Consider using shared memory to optimize access to Ar and Aw within the block.
+// Prefetch data from global memory into shared memory for faster access.
+// Minimize conditional branching to improve thread execution coherence and reduce warp divergence.
+// Align memory accesses to improve coalesced memory operations, particularly for float2 data types.
+// Calculate and use the correct stride for global memory access to minimize cache misses.

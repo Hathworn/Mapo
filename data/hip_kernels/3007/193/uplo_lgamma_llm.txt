@@ -1,0 +1,4 @@
+// Consider using shared memory to cache parts of array a for faster access.
+// Ensure memory coalescing by aligning memory accesses to word boundaries for a and b.
+// Group threads to minimize warp divergence by optimizing conditional checks in control structures.
+// Implement loop unrolling for computation of lgamma to reduce instruction overhead.

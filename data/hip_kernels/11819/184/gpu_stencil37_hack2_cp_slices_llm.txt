@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency for the shared_slices array.
+// Precompute indices like s_area_double and tile_offset to reduce redundant calculations inside loops.
+// Ensure memory coalescing by organizing data access patterns to read/write contiguous blocks of memory.
+// Streamline conditional checks (legalCurCol, legalCurRow, legalNextSlice) to minimize branching inside loops.
+// Minimize synchronization overhead by ensuring __syncthreads() is used appropriately, only when necessary.

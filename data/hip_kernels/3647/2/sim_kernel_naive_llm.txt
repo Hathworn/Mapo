@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory for temporary storage to reduce global memory access
+// Ensure coalesced memory access patterns by aligning data structures
+// Use loop unrolling for operations on neighboring elements if applicable
+// Balance workload across threads by adapting block and grid sizes
+// Minimize divergent branches by structuring conditionals carefully
+// Prefetch data into registers to further reduce memory access latency
+```

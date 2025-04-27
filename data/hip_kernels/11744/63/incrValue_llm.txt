@@ -1,0 +1,4 @@
+// Consider data alignment to memory boundaries for coalesced access
+// Ensure data resides in global memory for efficient atomic operations
+// Minimize the use of atomics to reduce serialization and contention
+// Evaluate using shared memory for data that doesn't require atomics

@@ -1,0 +1,6 @@
+// Consider using shared memory to reduce global memory accesses.
+// Minimize bank conflicts when using shared memory.
+// Improve data coalescing by ensuring consecutive threads access consecutive memory locations.
+// Reduce divergent branches within the conditional boundary check.
+// Ensure proper memory access pattern to utilize memory bandwidth effectively.
+// Cache data in registers as much as possible to reduce memory latency.

@@ -1,0 +1,4 @@
+// Use __restrict__ qualifier for pointer arguments to improve memory access efficiency
+// Ensure data array is allocated in pinned memory to enhance memory transfer rates
+// Consider using shared memory for frequently accessed data within the block to reduce global memory access
+// Utilize coalesced memory access patterns to optimize bandwidth usage

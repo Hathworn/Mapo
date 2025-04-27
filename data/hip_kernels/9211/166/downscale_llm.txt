@@ -1,0 +1,7 @@
+```
+// Optimize block and thread index calculation by ensuring coalesced memory access
+// Precompute scale factor squared to reduce redundant calculations
+// Precompute x offset and y offset outside the loop to minimize arithmetic operations
+// Reuse base_ipidx and increment with offsets to reduce repeated index calculations
+// Consider using shared memory to further optimize memory access patterns
+```

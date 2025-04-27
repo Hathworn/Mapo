@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses when reading input data
+// Utilize shared memory to minimize redundant global memory accesses
+// Use __syncthreads() to ensure all threads have loaded their portion into shared memory
+// Optimize shared memory usage by adjusting block and grid dimensions
+// Avoid excessive synchronization to reduce potential performance bottlenecks
+```

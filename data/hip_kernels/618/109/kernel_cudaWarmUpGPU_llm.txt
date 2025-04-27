@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if additional data access is needed
+// Ensure coalesced memory access patterns for any data transactions
+// Minimize divergent branches within the kernel
+// Use volatile keyword cautiously, as it may inhibit certain compiler optimizations
+// Analyze occupancy to ensure maximum thread usage within blocks
+```

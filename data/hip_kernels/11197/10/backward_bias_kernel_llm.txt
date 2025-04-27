@@ -1,0 +1,4 @@
+// Consider using warp-level primitives to accumulate results for better performance.
+// Use atomic operations to update bias_updates to avoid race conditions.
+// Optimize memory access patterns for coalesced reads from delta array.
+// Use shared memory more efficiently by loading data in larger chunks where possible.

@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Use shared memory effectively to reduce global memory accesses
+// Optimize memory reads by using appropriate conditional logic to avoid unnecessary global memory access
+// Consider avoiding bank conflicts in shared memory by proper alignment
+// Minimize synchronization by restructuring data access patterns to avoid unnecessary __syncthreads()
+```

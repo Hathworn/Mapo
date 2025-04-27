@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by aligning data structures for gradInput_data and gradOutput_data
+// Use shared memory to store temporary values from gradOutput_data to reduce global memory access
+// Optimize loop unrolling to enhance performance by ensuring memory accesses are efficient
+// Ensure that memory access patterns follow memory transaction optimizations for better global load/store efficiency
+// Use __restrict__ qualifier for gradInput_data and gradOutput_data pointers if there is no aliasing
+// Minimize high-latency global memory access by reusing data from previous iterations when possible
+```

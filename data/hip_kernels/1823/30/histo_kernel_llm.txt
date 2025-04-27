@@ -1,0 +1,9 @@
+```cpp
+// Use shared memory for histogram bins to reduce global memory accesses
+// Initialize shared memory bins
+// Synchronize threads to ensure all shared memory is initialized
+// Calculate the starting index and the offset to the next block each thread will process
+// Accumulate data into shared memory to minimize global memory write contention
+// Synchronize threads to ensure all data is accumulated in shared memory
+// Write the shared memory results to global memory
+```

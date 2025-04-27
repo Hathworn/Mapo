@@ -1,0 +1,8 @@
+```cpp
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Consider using shared memory for intermediate results to reduce global memory access
+// Minimize divergent branches by reorganizing conditional statements
+// Precompute constant values outside the kernel if possible
+// Analyze data locality to enhance cache usage
+// Avoid redundant memory fetches by hoisting invariant calculations
+```

@@ -1,0 +1,6 @@
+```
+// Use shared memory to store partial results for threads in the same block to reduce global memory accesses.
+// Consider coalescing access patterns when reading A, Bdata, and writing to C to improve memory bandwidth utilization.
+// Evaluate whether using float2 or float4 vector loads is possible in A or Bdata to further reduce the number of memory transactions.
+// Optimize loop unrolling for the inner loop to increase computational intensity.
+```

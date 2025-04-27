@@ -1,0 +1,5 @@
+digraph "CFG for '_Z6getPosPiiS_' function" {
+	label="CFG for '_Z6getPosPiiS_' function";
+
+	Node0x4efca70 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = add nsw i32 %1, -1\l  %5 = sext i32 %4 to i64\l  %6 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %5\l  %7 = load i32, i32 addrspace(1)* %6, align 4, !tbaa !4, !amdgpu.noclobber !8\l  store i32 %7, i32 addrspace(1)* %2, align 4, !tbaa !4\l  ret void\l}"];
+}

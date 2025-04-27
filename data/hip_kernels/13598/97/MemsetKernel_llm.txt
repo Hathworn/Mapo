@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory traffic if data reuse is possible.
+// Ensure coalesced memory accesses by having consecutive threads access consecutive data elements.
+// Minimize the number of memory transactions by optimizing the grid and block dimensions.
+// Consider loop unrolling if there are any repeated computation patterns within the kernel.
+// Profile the kernel to identify potential memory bottlenecks and address them.
+```

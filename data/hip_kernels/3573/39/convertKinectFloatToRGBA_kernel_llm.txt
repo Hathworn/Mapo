@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for out_image
+// Consider using shared memory to cache in_image data
+// Pre-compute common expressions like (upperLim - lowerLim)
+// Replace branching in color calculation with lookup tables if feasible
+// Check for bank conflicts in shared memory usage
+// Use __restrict__ pointers to help the compiler with optimizations
+```

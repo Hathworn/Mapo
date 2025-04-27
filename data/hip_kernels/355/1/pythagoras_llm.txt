@@ -1,0 +1,8 @@
+```
+// Use shared memory to cache input data for coalesced access and reduced global memory transactions.
+// Optimize block size to match the GPU's warp size for maximum occupancy and alignment with memory transactions.
+// Minimize data type conversion by loading input as float directly if possible to avoid overhead.
+// Ensure memory access patterns enable coalesced reads from global memory for both input arrays a and b.
+// Consider utilizing loop unrolling if input size allows for reduced loop overhead.
+// Evaluate using asynchronous memory prefetching or overlapping computation with data transfer for better performance.
+```

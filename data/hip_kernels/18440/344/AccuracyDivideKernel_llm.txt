@@ -1,0 +1,7 @@
+```cpp
+// Ensure optimal usage of shared memory by avoiding bank conflicts
+// Minimize the number of threads that perform global memory writes
+// Consider using atomic operations if multiple threads write to the same memory location
+// Verify that the `__syncthreads()` call is necessary to avoid performance penalties
+// Evaluate if more data can be utilized in shared memory to further reduce global memory access
+```

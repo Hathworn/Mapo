@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns for A and B loading.
+// Use float4 or similar vector loads to reduce memory transactions.
+// Minimize use of shared memory for cases where global memory can be accessed efficiently.
+// Reevaluate the boundary checks to minimize conditionals within the inner loop.
+// Ensure no bank conflicts occur in shared memory access.
+// Consider computing in registers to reduce shared memory usage.
+// Move invariants out of the loop to optimize execution.
+```

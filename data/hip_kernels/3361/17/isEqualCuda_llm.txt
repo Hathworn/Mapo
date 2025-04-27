@@ -1,0 +1,5 @@
+```
+// Consider coalesced memory access by aligning in1 and in2 memory accesses to warp size.
+// Use shared memory to minimize global memory access for rowSize calculations.
+// Optimize atomic operations by minimizing the use of atomicAnd if possible.
+```

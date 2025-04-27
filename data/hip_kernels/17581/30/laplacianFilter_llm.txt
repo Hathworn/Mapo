@@ -1,0 +1,5 @@
+// Use shared memory to cache tiles of srcImage for faster access.
+// Ensure coalesced memory access patterns to optimize throughput.
+// Consider using texture memory for better spatial locality.
+// Experiment with block and grid sizes to balance parallel execution with memory bandwidth.
+// Replace magic number kernel size with a constant variable for flexibility and readability.

@@ -1,0 +1,4 @@
+// Consider caching loc_ data in shared memory for repeated access during loop execution
+// Optimize memory access by ensuring x and y arrays are aligned and avoid memory bank conflicts
+// Use float2 variable to access loc_ instead of short2 to reduce type conversion overhead
+// Consider loop unrolling to reduce overhead and increase kernel execution efficiency

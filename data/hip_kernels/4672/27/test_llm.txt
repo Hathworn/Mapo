@@ -1,0 +1,7 @@
+```
+// Store smoothed[i] divided by nhalf in a temporary variable to avoid redundant division
+// Use fabsf for single precision floating point absolute value
+// Consider coalesced access to smoothed and nonSmoothed arrays for better memory throughput
+// Minimize divergence in conditional statements by optimizing threshold logic
+// Ensure that memory access patterns are efficient for the current GPU architecture
+```

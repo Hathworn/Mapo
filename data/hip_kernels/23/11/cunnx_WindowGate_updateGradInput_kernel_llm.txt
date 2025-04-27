@@ -1,0 +1,6 @@
+```
+// Use shared memory to store intermediate sums for reduction
+// Ensure coalesced memory access for input_k and gradInput_k arrays
+// Minimize divergent branches in parallel reduction loops
+// Prefetch data to reduce latency from global memory
+```

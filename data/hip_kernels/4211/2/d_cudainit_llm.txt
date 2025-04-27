@@ -1,0 +1,4 @@
+// Ensure memory coalescing by aligning data access patterns
+// Minimize bank conflicts in shared memory accesses
+// Use __syncthreads() to prevent race conditions when necessary
+// Consider using warp-level primitives for further optimization

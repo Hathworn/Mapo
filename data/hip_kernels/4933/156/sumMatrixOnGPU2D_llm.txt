@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data for coalesced access
+// Ensure data is accessed sequentially to maximize memory throughput
+// Align data structures to avoid misaligned access penalties
+// Utilize vectorized loads and stores if possible
+// Minimize divergent branches within the GPU kernel
+```

@@ -1,0 +1,4 @@
+// Use warp reduction to optimize sum computation within a block to reduce latency.
+// Improve memory access patterns by reordering data accesses to ensure coalesced memory access.
+// Utilize shared memory and partial reduction to minimize global memory writes.
+// Consider using atomic operations for scale_updates to ensure thread-safe accumulation.

@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access by ensuring contiguous threads access contiguous memory
+// Analyze memory usage and benefit from shared memory if appropriate
+// Evaluate the use of constant memory for frequently read-only data
+// Avoid branch divergence by ensuring uniform execution paths within warps
+// Ensure the kernel is fully utilized by appropriate choice of block and grid size
+// Use memory prefetch if needed
+```

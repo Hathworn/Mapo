@@ -1,0 +1,10 @@
+```
+// Ensure coalesced access patterns for global memory reads
+// Use appropriate memory alignment for improved performance
+// Minimize use of shared memory to essential data only
+// Opt for loop unrolling to reduce loop overhead
+// Consider reducing __syncthreads() calls for better efficiency
+// Use warp-level primitives for more efficient data exchange
+// Ensure grid and block dimensions maximize occupancy
+// Experiment with different tile sizes for optimal performance
+```

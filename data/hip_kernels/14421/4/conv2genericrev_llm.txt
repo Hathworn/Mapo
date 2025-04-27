@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory access and improve memory bandwidth utilization
+// Utilize unrolled loops for efficient memory access, minimizing latency and maximizing throughput
+// Consider aligning input and kernel pointers within shared memory to prevent bank conflicts
+// Ensure synchronization points are placed correctly to avoid race conditions and ensure data consistency
+// Explore potential loop transformations or vectorization techniques for better SIMD utilization
+// Assess occupancy to balance between compute resource utilization and memory bandwidth efficiency
+// Investigate the potential for memory coalescing to enhance memory access patterns and reduce transaction overhead
+```

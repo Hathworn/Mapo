@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses
+// Coalesce memory accesses for points and out arrays
+// Ensure idx array access is coalesced for better performance
+// Consider using float4 instead of float for vectorized memory access
+// Align data to improve memory transaction efficiency
+// Minimize idle threads by optimizing grid and block dimensions
+// Experiment with different loop unrolling factors for optimal performance
+```

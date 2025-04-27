@@ -1,0 +1,8 @@
+```cpp
+// Load shared memory in coalesced manner
+// Use __syncthreads() to synchronize threads after shared memory loading
+// Maximize coalesced global memory access in loops
+// Minimize index calculations inside innermost loop
+// Flatten loop indices to optimize register usage
+// Use const memory for frequently reused variables where possible
+```

@@ -1,0 +1,7 @@
+```
+// Ensure memory access coalescing by using appropriate memory layouts
+// Consider using __ldg intrinsic for read-only data like 'net' and 'activation'
+// Optimize thread usage to ensure maximum warp efficiency
+// Look into shared memory if 'activation' is accessed by multiple threads nearby
+// Consider using register for storing frequently accessed data
+```

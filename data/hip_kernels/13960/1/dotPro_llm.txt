@@ -1,0 +1,6 @@
+```c
+// Use shared memory to minimize global memory access latency
+// Employ efficient strided loop to reduce iteration overhead on memory accesses
+// Implement loop unrolling in reduction to minimize synchronization requirement
+// Ensure that only the first thread writes to global memory to minimize atomic operations
+```

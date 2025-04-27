@@ -1,0 +1,5 @@
+digraph "CFG for '_Z13sumArrayOnGPUPfS_S_' function" {
+	label="CFG for '_Z13sumArrayOnGPUPfS_S_' function";
+
+	Node0x48fed20 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = zext i32 %4 to i64\l  %6 = getelementptr inbounds float, float addrspace(1)* %0, i64 %5\l  %7 = load float, float addrspace(1)* %6, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %8 = getelementptr inbounds float, float addrspace(1)* %1, i64 %5\l  %9 = load float, float addrspace(1)* %8, align 4, !tbaa !5,\l... !amdgpu.noclobber !9\l  %10 = fadd contract float %7, %9\l  %11 = getelementptr inbounds float, float addrspace(1)* %2, i64 %5\l  store float %10, float addrspace(1)* %11, align 4, !tbaa !5\l  ret void\l}"];
+}

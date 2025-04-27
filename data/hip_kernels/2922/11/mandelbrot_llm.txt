@@ -1,0 +1,5 @@
+// Use shared memory to cache 'a' and 'b' values to reduce global memory access
+// Align memory accesses to improve coalescing for better performance
+// Use atomic operations to minimize write conflicts in shared computation scenarios
+// Consider using texture memory for frequently accessed read-only data
+// Optimize loop termination condition to reduce unnecessary calculations

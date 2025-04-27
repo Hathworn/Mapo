@@ -1,0 +1,3 @@
+// Consider using shared memory for temporary storage to reduce global memory access latency.
+// Reduce the number of __syncthreads() calls by unrolling more iterations.
+// Use atomic operations for writing final results to global memory if there are race conditions.

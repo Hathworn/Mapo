@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses to reduce transaction overhead.
+// Minimize the use of atomic operations as they serialize access and can become a bottleneck.
+// Use shared memory effectively to reduce accesses to global memory which are more costly.
+// Ensure that shared memory is utilized within its capacity to prevent spills to global memory.
+// Try to maximize occupancy by configuring the block size and shared memory usage optimally.
+// Consider prefetching data to shared memory to hide global memory latency.
+// Align memory access patterns to prevent unaligned and inefficient memory transactions.
+// Investigate the usage of larger memory transactions to improve throughput.
+```

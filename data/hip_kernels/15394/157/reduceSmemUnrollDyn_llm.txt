@@ -1,0 +1,9 @@
+```
+// Ensure coalesced access patterns by using contiguous global memory access.
+// Utilize loop unrolling to reduce the overhead of loop control.
+// Store thread-local sums in shared memory to minimize global memory accesses.
+// Employ shared memory for in-place reduction to speed up data exchange between threads.
+// Optimize shared memory reduction by handling entire warps at a time.
+// Use volatile keyword for synchronization purposes to prevent compiler optimizations from removing necessary memory accesses.
+// Minimize thread divergence within warp-based reduction for efficiency.
+```

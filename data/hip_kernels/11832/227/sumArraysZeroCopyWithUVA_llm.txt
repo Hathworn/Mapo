@@ -1,0 +1,6 @@
+```
+// Use coalesced memory accesses to improve memory bandwidth
+// Minimize divergent threads by ensuring thread indices remain within bounds
+// Consider using shared memory if data is reused within blocks
+// Use texture memory for read-only data to reduce load on global memory
+```

@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory access by accessing input and output in a linear fashion
+// Consider prefetching data to shared memory if reuse exists
+// Minimize thread divergence by ensuring all threads in a warp follow the same code path
+// Analyze memory access patterns to identify potential bank conflicts
+// Use __restrict__ keyword for input and output pointers to optimize compiler optimizations
+// Profile and adjust block and grid dimensions based on the target hardware
+// Explore the use of asynchronous data transfers to overlap computation and communication
+```

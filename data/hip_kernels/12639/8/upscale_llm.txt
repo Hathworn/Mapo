@@ -1,0 +1,9 @@
+```
+// Consider coalescing memory access patterns for better performance.
+// Align data structures to 128-byte for optimal memory transactions.
+// Ensure global memory reads and writes are coalesced.
+// Use shared memory to reduce global memory accesses if possible.
+// Optimize scale_factor computation to avoid redundant division operations.
+// Minimize thread divergence by ensuring warp-level execution consistency.
+// Experiment with different block and grid sizes for better occupancy.
+```

@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced memory access for imgIn and imgOut to optimize global memory bandwidth
+// Use shared memory to cache tile of imgIn to reduce redundant global memory access
+// Consider loop unrolling to reduce loop overhead and improve ILP (Instruction-Level Parallelism)
+// Preload kernel coefficients into registers to minimize memory latency
+// Minimize conditional operators by refactoring boundary checks
+// Avoid bank conflicts when using shared memory by ensuring proper padding
+```

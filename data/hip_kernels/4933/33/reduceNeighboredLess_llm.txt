@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory to store block data to reduce global memory access.
+// Enable compiler optimizations or inline PTX to improve performance.
+// Experiment with different block sizes to optimize shared memory usage and performance.
+// Minimize __syncthreads() usage by restructuring reduction operations if possible.
+```

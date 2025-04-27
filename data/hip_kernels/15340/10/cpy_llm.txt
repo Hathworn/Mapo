@@ -1,0 +1,10 @@
+```
+// Consider increasing block size for better occupancy and performance.
+// Ensure shared memory usage is optimal and does not lead to bank conflicts.
+// Optimize memory access patterns to ensure coalesced reads and writes.
+// Minimize the use of __syncthreads() to reduce synchronization overhead.
+// Use warp-level primitives for reduction to enhance efficiency.
+// Explore using float4 or int4 to load/store data to utilize memory bandwidth fully.
+// Evaluate the grid size to balance parallelism and workload distribution.
+// Consider memory prefetching to hide latency and improve performance.
+```

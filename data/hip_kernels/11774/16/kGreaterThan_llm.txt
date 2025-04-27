@@ -1,0 +1,7 @@
+```
+// Use more threads per block to potentially improve performance
+// Consider using shared memory to decrease global memory access latency
+// Check for coalesced memory access for better utilization of memory bandwidth
+// Ensure memory alignment for faster data transfer
+// Use the __restrict__ keyword to inform the compiler of non-aliasing memory access
+```

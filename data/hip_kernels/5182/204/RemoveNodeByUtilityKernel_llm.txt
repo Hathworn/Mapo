@@ -1,0 +1,9 @@
+```
+// Optimize memory access by ensuring coalesced access patterns for arrays.
+// Consider using shared memory for frequently accessed data to reduce global memory traffic.
+// Minimize bank conflicts by ensuring proper alignment of shared memory access.
+// Use __restrict__ qualifiers to indicate there are no aliasing pointers, allowing better compiler optimization.
+// Consider optimizing the loop unrolling for the connection matrix updates for better performance.
+// Ensure the kernel is launched with optimal block and grid size for the hardware.
+// Pre-calculate and use baseIndex for connectionMatrix and connectionAge to avoid repeated computation.
+```

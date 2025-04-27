@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store portions of array B to reduce global memory access.
+// Ensure that A and B are coalesced by checking memory alignment and ensuring sequential threads access sequential memory addresses.
+// Implement loop unrolling to enhance loop performance by reducing the loop control overhead.
+// Use __restrict__ qualifiers for pointers A and B if applicable to enable better compiler optimizations.
+// Balance the block and grid size to ensure maximum utilization of the GPU's resources and bandwidth.
+```

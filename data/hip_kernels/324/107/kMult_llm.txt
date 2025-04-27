@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache data for a and b to reduce global memory access.
+// Consider using vectorized loads/stores for coalesced memory access.
+// Ensure all memory accesses are coalesced by aligning data structures.
+// Minimize branch divergence by handling different scale_targets values separately outside the loop.
+// Use loop unrolling techniques to increase instruction throughput.
+```

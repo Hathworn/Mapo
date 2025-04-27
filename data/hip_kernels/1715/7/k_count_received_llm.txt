@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory access latency.
+// Minimize warp divergence by ensuring that all threads in a warp execute the same code path.
+// Ensure coalesced memory access to d_n_recv_by_block to enhance memory access efficiency.
+// Align data structures to 32 bytes where possible to maximize memory access efficiency.
+```

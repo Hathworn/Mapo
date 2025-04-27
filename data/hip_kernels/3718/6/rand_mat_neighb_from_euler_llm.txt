@@ -1,0 +1,10 @@
+```c
+// Precompute and cache frequently accessed indices to reduce redundant calculations
+// Minimize global memory transactions by using shared memory or registers when possible
+// Prefetch data into registers to hide memory latency
+// Align data structures to enable coalesced memory access
+// Use __syncthreads() to avoid race conditions if using shared memory
+// Optimize arithmetic to balance register usage and computation
+// Reduce the number of branches to prevent warp divergence
+// Consider using fused multiply-add (FMA) operations for better precision and performance
+```

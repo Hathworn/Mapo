@@ -1,0 +1,6 @@
+```
+// Consider using shared memory if data reuse is possible within the block.
+// Ensure coalesced memory access to optimize memory bandwidth utilization.
+// Minimize strides by setting INCX and INCY to 1 if possible to enhance access patterns.
+// Reduce memory divergence by aligning data accesses across threads in a warp.
+```

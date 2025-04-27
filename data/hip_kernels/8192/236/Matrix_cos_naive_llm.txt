@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to improve global memory throughput
+// Ensure aligned memory accesses to take advantage of memory bandwidth
+// Use shared memory to reduce redundant global memory access if applicable
+// Check if using __restrict__ keyword can help in conveying no-overlap info
+// Optimize thread and block configuration for better occupancy
+```

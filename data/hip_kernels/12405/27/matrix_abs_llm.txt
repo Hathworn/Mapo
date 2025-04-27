@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access
+// Ensure coalesced memory access by aligning thread blocks
+// Prefetch data to registers to minimize latency
+// Use __syncthreads() to avoid race conditions in shared memory
+// Minimize memory divergence by ensuring contiguous data access
+```

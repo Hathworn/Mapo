@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access for d_input to improve memory access efficiency
+// Consider using shared memory to further optimize memory access patterns if needed
+// Ensure that startPos aligns with warp boundaries for better memory coalescing
+// Minimize branching by ensuring pos is always within bounds before accessing d_input
+```

@@ -1,0 +1,7 @@
+```
+// Optimize memory access patterns to reduce global memory transactions
+// Consider using shared memory to cache input data for faster access
+// Align memory accesses to 32-bit or 64-bit boundaries for coalesced reads
+// Ensure all input data is loaded and used to avoid bank conflicts in shared memory
+// Use loop unrolling for the inner loop to reduce loop control overhead
+```

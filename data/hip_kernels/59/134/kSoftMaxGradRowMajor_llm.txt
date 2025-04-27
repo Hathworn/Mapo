@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache frequently accessed data to reduce global memory access.
+// Ensure memory coalescing by accessing memory in a sequential pattern to improve performance.
+// Evaluate if loop unrolling can be applied to reduce loop overhead and enhance instruction-level parallelism.
+// Analyze if using half precision can be beneficial for reducing memory bandwidth usage, if precision allows.
+// Parallelize across the height dimension if possible, to better utilize GPU resources by increasing warp occupancy.
+```

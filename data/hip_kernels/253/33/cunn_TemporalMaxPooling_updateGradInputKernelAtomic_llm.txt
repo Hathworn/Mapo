@@ -1,0 +1,4 @@
+// Consider using shared memory to store temporary results to reduce global memory access
+// Ensure coalesced access to global memory by aligning memory accesses across warp threads
+// Use loop unrolling to minimize loop overhead and increase execution efficiency
+// Minimize divergent branches within the warp to improve execution parallelism

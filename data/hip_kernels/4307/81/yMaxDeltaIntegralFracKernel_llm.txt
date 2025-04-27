@@ -1,0 +1,8 @@
+```cpp
+// Consider coalescing memory accesses by aligning memory reads according to warp size.
+// Minimize divergent branches by using conditional assignments instead of multiple if-statements.
+// Use shared memory for frequently accessed data to reduce global memory load operations.
+// Prefetch data to registers to reduce the number of loads from global memory within loops.
+// Ensure that writes to tmpArray are coalesced to improve memory throughput.
+// Optimize access patterns to inData by ensuring contiguous threads access contiguous memory.
+```

@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache data for coalesced access and avoid repeated loads from global memory.
+// Ensure that memory accesses are coalesced, which is already well-aligned for vx and vy arrays.
+// Pitch memory is used for writing outputs, which is good for alignment but make sure it is effectively utilized.
+// Minimize the divergence within the warp by ensuring the conditional checks do not split warps.
+// Reduce the number of arithmetic operations inside the loop by hoisting invariant calculations out where possible.
+// Consider occupancy or wavefront optimizations if register or shared memory use becomes restrictive.
+```

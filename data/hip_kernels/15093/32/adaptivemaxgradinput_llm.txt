@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for gradOutput, gradInput, indices_x, indices_y to enhance memory bandwidth utilization.
+// Ensure that reads and writes to global memory are coalesced for optimal performance.
+// Optimize for cache usage by ensuring data locality; try to load data into shared memory if possible.
+// Minimize the utilization of divergent branches to enhance execution efficiency.
+```

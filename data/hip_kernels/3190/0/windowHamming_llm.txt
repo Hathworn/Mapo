@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory access latency
+// Ensure coalesced access to global memory by aligning data properly
+// Use float2 or float4 types for vectorized memory access if applicable
+// Optimize registers usage to prevent spilling
+// Ensure occupancy by choosing optimal block size and grid size

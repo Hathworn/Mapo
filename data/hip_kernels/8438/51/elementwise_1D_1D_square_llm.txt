@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access by ensuring consecutive threads access consecutive memory locations.
+// Use shared memory to reduce global memory accesses where appropriate.
+// Utilize memory alignment and padding to prevent bank conflicts if shared memory is used.
+// Explore occupancy by adjusting block size to increase parallelism and resource utilization.
+// Investigate memory access patterns for possible cache coherence improvements.
+```

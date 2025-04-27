@@ -1,0 +1,7 @@
+```
+// Consider coalescing global memory accesses for gradInput, gradOutput, indices_x, and indices_y.
+// Ensure memory alignment for optimal global memory access speed.
+// Use shared memory to reduce redundant global memory accesses for indices_x and indices_y.
+// Evaluate register usage to prevent register spilling, which can slow down performance.
+// Minimize divergent branches by ensuring that all threads in a warp follow the same execution path.
+```

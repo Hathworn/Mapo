@@ -1,0 +1,6 @@
+```cpp
+// Consider using shared memory for pEnd and pEt to reduce global memory accesses.
+// Ensure pEt and pEnd are accessed in a coalesced manner to improve memory throughput.
+// Prefetch data into registers to further reduce the latency of global memory access.
+// Adjust grid and block dimensions for improved memory bandwidth utilization.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency
+// Ensure idx does not exceed array size limits with boundary checks
+// Optimize block and grid dimensions for better hardware utilization
+// Consider memory coalescing patterns for x, y, z arrays
+// Minimize __syncthreads() usage where possible for better performance

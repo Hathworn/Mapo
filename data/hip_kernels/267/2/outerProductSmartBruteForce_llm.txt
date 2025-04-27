@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to cache vec elements and reduce global memory accesses
+// Ensure coalesced memory access by having consecutive threads access consecutive elements in vec
+// Use __syncthreads() to synchronize threads after loading data into shared memory
+// Minimize bank conflicts in shared memory by organizing data layout properly
+```

@@ -1,0 +1,9 @@
+```
+// Consider using __restrict__ qualifiers for dst and src pointers to improve compiler optimizations.
+// Ensure coalesced memory accesses by organizing data layout for better memory bandwidth utilization.
+// Combine nested loops where possible to reduce loop overhead and enhance performance.
+// Optimize shared memory usage by minimizing access patterns and redundant reads.
+// Consider increasing tile size for better load balancing across threads.
+// Verify global memory accesses are aligned to prevent uncoalesced memory transactions.
+// Ensure warp-level parallelism to utilize full potential of compute units.
+```

@@ -1,0 +1,6 @@
+```cpp
+// Use shared memory to minimize global memory accesses for maxloc.
+// Ensure coalesced memory accesses by organizing threads along the y-direction for imageOut updates.
+// Consider loop unrolling for inner loops to enhance performance.
+// Align memory accesses to improve global memory access efficiency.
+```

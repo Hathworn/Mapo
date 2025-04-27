@@ -1,0 +1,8 @@
+```c
+// Ensure memory coalescing by aligning data accesses to eliminate bank conflicts
+// Use shared memory to store temporary results and reduce global memory accesses
+// Utilize loop unrolling to minimize loop overhead and improve performance
+// Prefetch input data into registers to reduce global memory latency
+// Consider using float4 or other vectorized data types for memory operations to increase throughput
+// Balance the workload across threads and blocks to optimize resource utilization
+```

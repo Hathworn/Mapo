@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize repeated global memory access for variables like bbox, width_offset, and height_offset
+// Allocate warp level reduction techniques for efficient computation within blocks
+// Utilize texture memory for `indices` to improve cache hit rates and latency for access patterns
+// Apply coalesced memory access patterns to optimize grad writes
+// Reduce branching by rearranging conditional logic for better warp execution efficiency
+```

@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for pointer variables to guide the compiler for optimizations
+// Use coalesced memory access pattern by ensuring consecutive threads access consecutive memory locations
+// Optimize shared memory usage to reduce bank conflicts if possible
+// Consider split kernel into multiple stages if register pressure is high
+// Ensure enough occupancy by optimizing block size and grid size based on hardware
+// Prefetch data into shared memory or registers to hide global memory latency
+```

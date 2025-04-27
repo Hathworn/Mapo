@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory to cache values that are accessed by all threads to reduce global memory accesses.
+// Consider loop unrolling for the inner loop to improve performance.
+// Ensure data alignment to avoid misaligned memory accesses which can degrade performance.
+// Preload data to registers to reduce the number of memory accesses inside the loop.
+// Avoid branch divergence by structuring conditions uniformly across threads.
+```

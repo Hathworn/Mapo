@@ -1,0 +1,9 @@
+```
+// Ensure coalesced memory accesses by aligning data array accesses for better performance.
+// Use shared memory efficiently to reduce global memory access latency.
+// Optimize the Gaussian computation by precomputing constant values outside main loops.
+// Unroll inner loops where possible to increase instruction throughput.
+// Maintain synchronized threads at key points to ensure all shared memory operations are complete.
+// Minimize conditional statements within threads to maximize parallel efficiency.
+// Consider using warp shuffle operations for the histogram reduction phase to optimize performance.
+```

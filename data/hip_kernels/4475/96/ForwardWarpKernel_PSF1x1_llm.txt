@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache frequently accessed values to reduce global memory accesses
+// Ensure coalesced memory access by aligning threads with data layout in global memory
+// Consider using texture memory for read-only data when access pattern has spatial locality
+// Reduce divergent branching by refactoring conditional logic to improve warp efficiency
+// Optimize arithmetic operations by minimizing conversions and using intrinsics when possible
+```

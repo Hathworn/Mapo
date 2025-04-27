@@ -1,0 +1,8 @@
+```
+// Consider increasing the workload per thread to reduce kernel launch overhead.
+// Ensure coalesced memory access by processing continuous memory locations.
+// Explore using shared memory for commonly accessed data to minimize global memory access.
+// Investigate using the __restrict__ qualifier for pointers to improve compiler optimizations.
+// Analyze the impact of varying the block size and grid size for better hardware utilization.
+// Evaluate using memory prefetching techniques to hide memory latency.
+```

@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory accesses
+// Ensure all threads have synchronized after loading to shared memory
+// Work with batches of data that fit into shared memory to reduce loading overhead
+// Consider coalesced memory access patterns to optimize memory bandwidth
+// Ensure data loading to shared memory occurs with proper bounds checking
+```

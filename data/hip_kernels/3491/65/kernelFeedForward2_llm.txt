@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for biases to reduce global memory access
+// Ensure memory coalescence by checking access pattern of biases and zs
+// Use loop unrolling if applicable to reduce loop overhead
+// Explore the use of vectorized data types for better memory throughput
+// Investigate occupancy to ensure maximum resource utilization
+```

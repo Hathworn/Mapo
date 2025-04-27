@@ -1,0 +1,8 @@
+```cpp
+// Ensure coalesced global memory access for better performance.
+// Consider using float4 or float2 for loading global memory if possible.
+// Ensure that shared memory access is free of bank conflicts.
+// Minimize the number of __syncthreads() to reduce synchronization overhead.
+// Consider adjusting the SIZE for optimal occupancy and memory usage.
+// Explore tuning block size and grid size based on the target GPU architecture.
+```

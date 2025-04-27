@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory accesses.
+// Analyze memory access patterns to ensure coalesced memory access.
+// Increase block size if register usage allows, to improve occupancy.
+// Utilize __restrict__ keyword if applicable to prevent redundant memory loads.
+// Consider loop unrolling for further performance improvement.
+```

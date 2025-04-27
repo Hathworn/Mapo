@@ -1,0 +1,8 @@
+// Ensure memory coalescing for input and output access
+// Use shared memory to reduce global memory access
+// Minimize divergence by ensuring all threads follow the same path in conditionals
+// Preload data in shared memory to optimize repeated access in loops
+// Avoid unnecessary synchronization; use __syncthreads only when data dependencies exist
+// Align shared memory size with warp size for better memory access efficiency
+// Prefer built-in math functions like expf for better performance
+// Fine-tune block and grid dimensions to fully utilize GPU resources

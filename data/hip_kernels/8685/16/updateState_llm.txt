@@ -1,0 +1,7 @@
+```
+// Consider memory coalescing for improved access patterns to B array
+// Use __ldg() for read-only data to accelerate memory accesses to external array
+// Try to reduce shared memory usage if possible by using local variables
+// Evaluate use of warp shuffle instructions to reduce __syncthreads overhead
+// Consider fine-tuning block and thread dimensions for optimal performance
+```

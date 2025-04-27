@@ -1,0 +1,5 @@
+```
+// Use shared memory to cache row_sum and col_sum to reduce global memory accesses
+// Consider coalesced memory access patterns for output writes
+// Utilize more threads per block to increase occupancy and throughput
+```

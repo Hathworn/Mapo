@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for reusable variables like variance and mean to reduce global memory access within the same block
+// Merge variance and mean memory accesses to minimize global memory transactions
+// Fuse computations where possible to reduce instruction count, like combining arithmetic operations
+// Consider loop unrolling if there are loop-like structures for better instruction-level parallelism
+// Explore if pre-fetching data from global memory helps reduce memory latency
+```

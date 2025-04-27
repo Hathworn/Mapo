@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory accesses for optimal performance
+// Minimize branching by using warp-synchronous programming where possible
+// Consider using shared memory to reduce global memory accesses
+// Align data structures to 128 bytes to avoid bank conflicts
+// Use __restrict__ keyword for pointers to enable additional compiler optimizations
+// Experiment with varying block sizes to identify optimal configuration
+```

@@ -1,0 +1,15 @@
+digraph "CFG for '_Z23set_chunk_data_verticesiiiddddPdS_S_S_' function" {
+	label="CFG for '_Z23set_chunk_data_verticesiiiddddPdS_S_S_' function";
+
+	Node0x549b760 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%11:\l  %12 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %13 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %14 = getelementptr i8, i8 addrspace(4)* %13, i64 4\l  %15 = bitcast i8 addrspace(4)* %14 to i16 addrspace(4)*\l  %16 = load i16, i16 addrspace(4)* %15, align 4, !range !4, !invariant.load !5\l  %17 = zext i16 %16 to i32\l  %18 = mul i32 %12, %17\l  %19 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %20 = add i32 %18, %19\l  %21 = icmp sgt i32 %20, %0\l  br i1 %21, label %30, label %22\l|{<s0>T|<s1>F}}"];
+	Node0x549b760:s0 -> Node0x549e4a0;
+	Node0x549b760:s1 -> Node0x549e530;
+	Node0x549e530 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%22:\l22:                                               \l  %23 = sub nsw i32 %20, %2\l  %24 = sitofp i32 %23 to double\l  %25 = fmul contract double %24, %3\l  %26 = fadd contract double %25, %5\l  %27 = sext i32 %20 to i64\l  %28 = getelementptr inbounds double, double addrspace(1)* %7, i64 %27\l  store double %26, double addrspace(1)* %28, align 8, !tbaa !7\l  %29 = getelementptr inbounds double, double addrspace(1)* %9, i64 %27\l  store double %3, double addrspace(1)* %29, align 8, !tbaa !7\l  br label %30\l}"];
+	Node0x549e530 -> Node0x549e4a0;
+	Node0x549e4a0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%30:\l30:                                               \l  %31 = icmp sgt i32 %20, %1\l  br i1 %31, label %40, label %32\l|{<s0>T|<s1>F}}"];
+	Node0x549e4a0:s0 -> Node0x549f370;
+	Node0x549e4a0:s1 -> Node0x549f3c0;
+	Node0x549f3c0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%32:\l32:                                               \l  %33 = sub nsw i32 %20, %2\l  %34 = sitofp i32 %33 to double\l  %35 = fmul contract double %34, %4\l  %36 = fadd contract double %35, %6\l  %37 = sext i32 %20 to i64\l  %38 = getelementptr inbounds double, double addrspace(1)* %8, i64 %37\l  store double %36, double addrspace(1)* %38, align 8, !tbaa !7\l  %39 = getelementptr inbounds double, double addrspace(1)* %10, i64 %37\l  store double %4, double addrspace(1)* %39, align 8, !tbaa !7\l  br label %40\l}"];
+	Node0x549f3c0 -> Node0x549f370;
+	Node0x549f370 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%40:\l40:                                               \l  ret void\l}"];
+}

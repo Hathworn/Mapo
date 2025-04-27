@@ -1,0 +1,6 @@
+```
+// Use shared memory to store common variables like batch_index and class_index
+// This minimizes redundant global memory accesses from multiple threads
+// Use __syncthreads() to ensure all threads have up-to-date shared memory values
+// Use appropriate indexing to reduce global memory stride
+```

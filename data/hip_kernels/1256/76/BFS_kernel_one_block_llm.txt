@@ -1,0 +1,4 @@
+// Load as much data as possible into shared memory to minimize global memory access.
+// Use __syncthreads() to synchronize shared memory access among threads.
+// Optimize global memory accesses by coalescing reads and writes whenever possible.
+// Use atomic operations carefully to ensure data consistency while minimizing potential performance penalties.

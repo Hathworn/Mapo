@@ -1,0 +1,7 @@
+```
+// Ensure coalesced global memory access by using continuous indices
+// Minimize memory access by prefetching values into shared memory if possible
+// Consider using memory access patterns that reduce bank conflicts
+// Utilize warp-level primitives to reduce divergent branching
+// If applicable, explore using texture memory for frequent read-only access
+```

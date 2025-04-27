@@ -1,0 +1,10 @@
+```
+// Consider optimizing memory access by using shared memory to store src_data and out_data temporarily.
+// Ensure data alignment is optimized for efficient memory access, e.g., struct packing.
+// Explore memory coalescing techniques to ensure global memory accesses are contiguous.
+// Assess if using vectorized data types like float4 instead of uchar4 can optimize register usage.
+// Evaluate cache behavior – possibly use __ldg() for read-only data to optimize L1 cache hit rate.
+// Analyze launch parameters to maximize occupancy and reduce warp divergence.
+// Optimize branching by minimizing the usage of conditional statements, especially within the kernel loop.
+// Consider unrolling the loop to reduce control overhead if possible.
+```

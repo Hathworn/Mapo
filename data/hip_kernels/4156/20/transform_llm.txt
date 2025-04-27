@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce the latency of global memory accesses.
+// Minimize memory access divergence by ensuring coalesced access patterns.
+// Reduce redundant transformation matrix accesses by storing relevant parts in registers.
+// Prioritize memory access patterns that maximize bandwidth utilization.
+// Ensure memory accesses within the loop are properly unrolled, if possible.
+```

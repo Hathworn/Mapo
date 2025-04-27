@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency for frequently used data.
+// Prefetch elements from global memory to registers to optimize memory access.
+// Ensure coalesced memory access patterns when accessing global memory.
+// Use __syncthreads() to synchronize threads when necessary to prevent race conditions.
+// Minimize divergent branching by restructuring conditional statements.
+```

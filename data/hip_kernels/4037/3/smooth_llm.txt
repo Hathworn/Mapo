@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure all threads write to shared memory before reading to avoid race conditions
+// Use __syncthreads() to synchronize threads after writing to shared memory
+// Avoid out-of-bounds access by checking thread index limits
+```

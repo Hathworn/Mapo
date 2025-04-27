@@ -1,0 +1,6 @@
+```
+// Precompute division outside of the loop to reduce redundant calculations
+// Store the divided result back to global memory to reuse
+// Use intrinsic function fmaxf for better performance than a manual comparison
+// Ensure coalesced memory access by having threads access contiguous memory locations
+```

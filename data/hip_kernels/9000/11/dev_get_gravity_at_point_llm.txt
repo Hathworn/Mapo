@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns to access eps, xh, yh, zh arrays.
+// Consider padding structures to avoid unaligned memory accesses.
+// Use shared memory to cache frequently used data within a block to reduce global memory accesses.
+// Prefetch data to registers to hide memory latency and reduce global memory bandwidth.
+// Minimize branching within warp by aligning the condition checks across threads.
+```

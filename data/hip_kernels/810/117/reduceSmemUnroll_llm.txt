@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory accesses
+// Prefetch global memory data to registers for faster access
+// Unroll loops to increase throughput and minimize loop overhead
+// Implement warp unrolling to further reduce loop overhead 
+// Use volatile keyword to prevent compiler optimizations in warp unrolling 
+```

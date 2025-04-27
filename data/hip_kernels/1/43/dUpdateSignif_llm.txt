@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache tcutoffs array to optimize memory access
+// Ensure coalesced memory access by aligning gpuData and gpuResults properly
+// Utilize warp shuffle operations for better intra-warp communication
+// Analyze the use of float vs. double for precision and performance trade-off
+// Consider merging small kernels to reduce kernel launch overhead
+```

@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier for glcm and norm pointers for better memory access optimization
+// Optimize memory access pattern by ensuring coalesced access
+// Use shared memory to reduce global memory accesses if applicable
+// Use warp-level primitives for reduction if further reductions are required
+// Evaluate potential benefits of occupancy increase by tuning block and grid dimensions
+```

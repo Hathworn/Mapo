@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to minimize global memory access latency
+// Avoid bank conflicts by ensuring shared memory access patterns are coalesced
+// Load block-specific values into shared memory once to reduce redundant global memory access
+// Synchronize threads within the block to ensure all have loaded shared values before use
+// Consider adjusting thread block size for optimal occupancy and memory throughput
+// Align memory accesses to increase coalescence
+```

@@ -1,0 +1,4 @@
+// Consider using shared memory to cache function pointer table as it is accessed by all threads.
+// Use coalesced memory access patterns when accessing input and output arrays to optimize memory throughput.
+// Evaluate if using texture memory for input data can improve fetch efficiency in specific hardware contexts.
+// Consider loop unrolling if optimization is beneficial for the targeted hardware architecture.

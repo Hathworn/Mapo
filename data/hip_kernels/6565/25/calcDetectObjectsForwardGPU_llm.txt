@@ -1,0 +1,5 @@
+// Optimize memory access by using shared memory for frequently accessed data
+// Precompute input stride outside loops to reduce calculations within the kernel
+// Use unroll pragma to improve performance of loops over classes
+// Minimize repeated global memory accesses by storing intermediate results in local variables
+// Improve memory access patterns by using linear indices for reading/writing data

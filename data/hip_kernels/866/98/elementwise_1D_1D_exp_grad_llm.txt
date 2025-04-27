@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to store repetitive access data for improved memory access efficiency
+// Ensure memory coalescing by aligning memory accesses to avoid warp divergence
+// Apply further loop unrolling if registers and shared memory allow to maximize throughput
+// Use __restrict__ keyword for pointer arguments to enable compiler optimizations
+// Evaluate using asynchronous memory prefetching if the input size is very large
+```

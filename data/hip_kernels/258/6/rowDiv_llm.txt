@@ -1,0 +1,5 @@
+```
+// Consider using shared memory for b[blockIdx.x] to reduce redundant global memory accesses
+// Optimize memory access pattern to ensure coalesced reads of a[i] and c[i]
+// Ensure b is accessed efficiently by all threads in the block to minimize memory latency
+```

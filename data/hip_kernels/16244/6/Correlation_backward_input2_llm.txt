@@ -1,0 +1,9 @@
+```
+// Consider aligning memory accesses to improve coalescing.
+// Use __restrict__ on input pointers to help the compiler optimize memory access.
+// Prefetch data into shared memory if possible to further optimize memory access.
+// Investigate the use of warp-level primitives to reduce shared memory usage.
+// Ensure that shared memory usage does not exceed hardware limitations.
+// Adjust block and grid dimensions to optimize occupancy.
+// Conduct analysis to evaluate the impact of bank conflicts in shared memory.
+```

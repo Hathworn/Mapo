@@ -1,0 +1,7 @@
+```
+// Coalesce global memory accesses by ensuring threads access consecutive memory addresses.
+// Use shared memory if multiple accesses to the same data by threads can be leveraged.
+// Minimize global memory reads by storing frequently accessed data in registers.
+// Consider using thread blocks and warps efficiently to ensure memory coalescing.
+// Avoid excessive type conversions to improve performance.
+```

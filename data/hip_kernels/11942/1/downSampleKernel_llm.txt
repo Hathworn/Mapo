@@ -1,0 +1,7 @@
+```
+// Use shared memory to store d_in values for faster access
+// Consider coalescing memory accesses by ensuring d_in accesses follow a pattern of sequential threads
+// Ensure d_out write operations are coalesced by assigning output index based on idx without additional arithmetic
+// Minimize divergent code paths by reducing conditional complexity or restructuring conditionals
+// Optimize loop unrolling or vectorization if operations can be batched together efficiently
+```

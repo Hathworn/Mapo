@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Use __syncthreads() for proper synchronization if shared resources are used
+// Ensure optimal thread block size for the GPU architecture being used
+// Coalesce global memory accesses to improve memory throughput
+// Minimize divergent branches within the kernel
+```

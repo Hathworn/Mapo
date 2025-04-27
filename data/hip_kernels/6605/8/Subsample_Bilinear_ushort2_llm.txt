@@ -1,0 +1,4 @@
+// Consider using shared memory to cache loaded texels for blocks to reduce global memory access
+// Ensure coalesced access for loading texels by aligning warp with texel reads
+// Use vectorized operations when possible for fetching multiple texels at once to reduce instruction overhead
+// Precompute repeated calculations like scale factors outside of the kernel, if they remain constant across calls

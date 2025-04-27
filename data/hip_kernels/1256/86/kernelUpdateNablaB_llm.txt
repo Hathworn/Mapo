@@ -1,0 +1,7 @@
+```
+// Optimize memory access by ensuring nabla_b and delta_nabla_b are coalesced.
+// Consider using shared memory if there is data reuse within the block.
+// Ensure global memory access patterns are sequential and avoid bank conflicts.
+// Analyze if using float4 or other vectorized memory load/store can improve performance.
+// Avoid warp divergence by ensuring the same execution path for all threads.
+```

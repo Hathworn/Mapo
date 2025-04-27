@@ -1,0 +1,5 @@
+```
+// Use shared memory to reduce access latency
+// Synchronize threads after loading to shared memory to prevent data hazard
+// Avoid redundant writes to global memory by using a single thread for the final result
+```

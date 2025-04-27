@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access.
+// Initialize shared memory to avoid undefined behavior.
+// Use atomic operations to prevent race conditions.
+// Ensure __syncthreads() is used to maintain correctness during reduction.

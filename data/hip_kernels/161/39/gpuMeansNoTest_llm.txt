@@ -1,0 +1,6 @@
+```cpp
+// Ensure successive memory accesses are by contiguous threads to improve coalescing.
+// Use shared memory to reduce global memory accesses and improve performance.
+// Consider using vectorized loads/stores for better memory throughput.
+// Reduce overall synchronization by minimizing the number of __syncthreads() calls.
+```

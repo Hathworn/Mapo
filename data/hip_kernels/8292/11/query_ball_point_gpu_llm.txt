@@ -1,0 +1,8 @@
+```c
+// Consider using shared memory for repeated loads of xyz1 to reduce global memory accesses.
+// Implement loop unrolling for the loop iterating over 'k' to enhance ILP.
+// Prefetch radius[0] outside the loop over 'k' to minimize memory latency.
+// Use squared distance comparison instead of calculating square root for performance gain.
+// Combine multiple conditional checks within the loop to reduce control divergence.
+// Align memory accesses to prevent bank conflicts and optimize memory coalescing.
+```

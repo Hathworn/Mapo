@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses within the pooling window loop.
+// Consider using loop unrolling to optimize the iteration over pooling window (size x size).
+// Investigate if better thread block configuration could improve memory access patterns and occupancy.

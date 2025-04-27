@@ -1,0 +1,4 @@
+// Consider coalesced memory access when loading input into shared memory
+// Align shared memory access pattern to avoid bank conflicts
+// Use warp-synchronous parallelism where possible to reduce synchronization overhead
+// Ensure memory accesses are coalesced when writing back to global memory

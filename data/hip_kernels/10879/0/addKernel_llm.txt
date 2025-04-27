@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache data locally for faster access
+// Minimize bank conflicts by padding shared memory where necessary
+// Optimize memory access patterns by structuring data for coalesced access
+// Reduce divergence by ensuring all threads within a warp follow the same execution path
+// Pre-fetch data to registers when possible to reduce memory latency
+```

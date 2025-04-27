@@ -1,0 +1,9 @@
+```
+// Consider coalesced memory access patterns to improve memory throughput
+// Use shared memory to store input data that is accessed multiple times
+// Use __syncthreads() to synchronize threads before using shared memory data
+// Ensure that shared memory arrays are sized appropriately to avoid bank conflicts
+// Reduce redundant global memory accesses by reusing data from shared memory
+// Minimize the number of accesses to global memory for improved performance
+// Use constant memory for c_Spacing if it remains unchanged to improve access speed
+```

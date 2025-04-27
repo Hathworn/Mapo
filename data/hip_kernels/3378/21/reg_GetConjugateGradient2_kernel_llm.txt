@@ -1,0 +1,8 @@
+```
+// Consider coalescing global memory accesses to improve memory access efficiency.
+// Use shared memory to reduce global memory transactions if multiple threads access the same data.
+// Evaluate if loop unrolling can be applied to accelerate the computations.
+// Verify if using warp shuffle operations can optimize the reduction patterns.
+// Assess if using __restrict__ qualifiers for pointers could help the compiler optimize memory access.
+// Review the possibility of employing mixed precision to enhance performance without significant loss of accuracy.
+```

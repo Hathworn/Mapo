@@ -1,0 +1,8 @@
+```cpp
+// Consider using shared memory for input values for coalesced access and reduced global memory transactions.
+// Use warp synchronization and warp-level primitives for parallel reduction to optimize largest element computation.
+// Apply loop unrolling for the computation loops to enhance performance.
+// Prefetch data into registers to reduce latency and improve access speed.
+// Optimize memory access patterns to ensure coalesced writes in output storage.
+// Reduce synchronization overhead by minimizing __syncthreads() usage where possible.
+```

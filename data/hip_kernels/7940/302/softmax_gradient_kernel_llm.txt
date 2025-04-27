@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ keyword for pointer parameters to improve memory access speed.
+// Evaluate using float4 for vectorized memory accesses when dim is large and aligned.
+// Check for possible bank conflicts in shared memory access and pad shared memory if necessary.
+// Ensure memory accesses are coalesced by aligning data properly.
+// Experiment with varying blockDim.x to find optimal thread block size for different GPU architectures.
+// Consider launching multiple blocks per warp for smaller dim sizes to improve occupation.
+```

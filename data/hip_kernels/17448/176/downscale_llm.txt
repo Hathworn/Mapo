@@ -1,0 +1,6 @@
+// Use shared memory to reduce global memory access
+// Optimize thread index calculation to minimize redundant arithmetic
+// Consider using vectorized operations for gradInput_data and gradOutput_data
+// Pre-fetch gradOutput_data to maximize memory throughput
+// Use coalesced memory access patterns for gradOutput_data
+// Reduce warp divergence by ensuring uniform control flow

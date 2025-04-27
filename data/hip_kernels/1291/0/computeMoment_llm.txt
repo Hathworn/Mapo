@@ -1,0 +1,7 @@
+```c
+// Use shared memory for weightArr to reduce global memory accesses.
+// Ensure threads from the same warp access shared memory in a coalesced manner.
+// Use __syncthreads() to synchronize threads after loading data to shared memory.
+// Consider padding sharedWeightArr to avoid bank conflicts.
+// Ensure all threads within a block participate before __syncthreads() for correct behavior.
+```

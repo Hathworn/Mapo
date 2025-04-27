@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to reduce global memory access latency
+// Ensure threads within a block are synchronized before using shared memory
+// Each thread should handle multiple elements from the matrix when possible
+// Consider coalescing memory access patterns for both global and shared memory
+// Experiment with different block and grid sizes to maximize occupancy and minimize divergence
+// Use padding in shared memory to avoid bank conflicts
+```

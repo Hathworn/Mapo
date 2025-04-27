@@ -1,0 +1,6 @@
+```
+// Use shared memory to cache `gradOutput_data` for coalesced memory access
+// Implement loop unrolling for the loop iterating over `scale_factor * scale_factor`
+// Check the feasibility of preloading data for `gradOutput_data` to reduce memory latency
+// Consider using warp-level primitives to optimize reduction within threads
+```

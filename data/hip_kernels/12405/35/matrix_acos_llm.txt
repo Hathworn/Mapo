@@ -1,0 +1,6 @@
+```
+// Consider utilizing shared memory for commonly accessed data to reduce global memory access latency.
+// Ensure memory coalescing by aligning data access patterns, especially if A and C are large arrays.
+// Investigate the potential of loop unrolling for better performance if the loop size is known at compile time.
+// Evaluate occupancy and adjust block and grid sizes to achieve maximum hardware utilization.
+```

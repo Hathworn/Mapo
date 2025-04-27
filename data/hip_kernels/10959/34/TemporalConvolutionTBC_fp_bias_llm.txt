@@ -1,0 +1,4 @@
+// Consider optimizing memory access by using shared memory for frequently accessed variables.
+// Reduce global memory accesses by preloading bias[x] into a register before the loop.
+// Explore the possibility of using warp-level primitives for coalesced memory accesses.
+// Verify the kernel launch configuration to ensure that blockDim.x and gridDim.y are appropriately set for the hardware.

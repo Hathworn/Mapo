@@ -1,0 +1,8 @@
+```
+// Use shared memory for flow parameters (u, v) to reduce global memory accesses
+// Optimize access patterns for src and dst using coalesced memory accesses
+// Consider using texture memory for src to benefit from hardware caching
+// Precompute time_scale multiplication to minimize operations within the kernel
+// Exploit vectorized types (like float2) for memory access to src and dst
+// Investigate use of warp shuffle for reducing normalization_factor computation latency
+```

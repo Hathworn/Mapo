@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring threads access contiguous memory
+// Avoid bank conflicts by accessing memory in a stride pattern that aligns with warp size
+// Reduce global memory access by loading data into shared memory when possible
+// Ensure loops are unrolled by the compiler or manually unroll them for efficiency
+```

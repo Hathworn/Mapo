@@ -1,0 +1,5 @@
+digraph "CFG for '_Z23generateGaussian_kernelPffi' function" {
+	label="CFG for '_Z23generateGaussian_kernelPffi' function";
+
+	Node0x626ed80 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%3:\l  %4 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %5 = sub i32 %4, %2\l  %6 = mul i32 %5, %5\l  %7 = sub i32 0, %6\l  %8 = sitofp i32 %7 to float\l  %9 = fmul contract float %1, 2.000000e+00\l  %10 = fmul contract float %9, %1\l  %11 = fdiv contract float %8, %10\l  %12 = tail call float @llvm.exp.f32(float %11)\l  %13 = zext i32 %4 to i64\l  %14 = getelementptr inbounds float, float addrspace(1)* %0, i64 %13\l  store float %12, float addrspace(1)* %14, align 4, !tbaa !5\l  ret void\l}"];
+}

@@ -1,0 +1,7 @@
+```
+// Utilize shared memory to reduce global memory access
+// Initialize shared memory only by the required number of threads
+// Use atomic operations in shared memory to minimize contention
+// Write results back to global memory after processing in shared memory
+// Synchronize threads to ensure shared memory operations are completed
+```

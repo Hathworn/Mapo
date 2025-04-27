@@ -1,0 +1,6 @@
+// Consider coalesced memory access patterns for input arrays.
+// Try to optimize memory access for 'target', 'mapping', and 'n_class_in_cluster'.
+// Ensure memory alignment for output arrays to improve access speed.
+// Use shared memory to reduce global memory access for the 'score' variable within a block.
+// Investigate if prefetching of 'logsum_k' can minimize latency.
+// Evaluate the impact of warp-level primitives instead of explicit synchronization points.

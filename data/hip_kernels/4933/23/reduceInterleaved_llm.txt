@@ -1,0 +1,5 @@
+// Use shared memory for faster intra-block communication and reduce global memory accesses
+// Consider unrolling the reduction loop to improve performance
+// Reduce synchronization overhead by minimizing __syncthreads() usage
+// Align memory access patterns to coalesce global memory reads and writes
+// Avoid warp divergence to enhance parallel efficiency

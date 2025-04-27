@@ -1,0 +1,11 @@
+digraph "CFG for '_Z7convertPdS_' function" {
+	label="CFG for '_Z7convertPdS_' function";
+
+	Node0x5bcde60 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = shl i32 %3, 8\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = add i32 %4, %5\l  %7 = icmp slt i32 %6, 10000\l  br i1 %7, label %8, label %18\l|{<s0>T|<s1>F}}"];
+	Node0x5bcde60:s0 -> Node0x5bcf650;
+	Node0x5bcde60:s1 -> Node0x5bcf6e0;
+	Node0x5bcf650 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%8:\l8:                                                \l  %9 = phi i32 [ %16, %8 ], [ %6, %2 ]\l  %10 = sub i32 9999, %9\l  %11 = sext i32 %10 to i64\l  %12 = getelementptr inbounds double, double addrspace(1)* %1, i64 %11\l  %13 = load double, double addrspace(1)* %12, align 8, !tbaa !5\l  %14 = sext i32 %9 to i64\l  %15 = getelementptr inbounds double, double addrspace(1)* %0, i64 %14\l  store double %13, double addrspace(1)* %15, align 8, !tbaa !5\l  %16 = add nsw i32 %9, 131072\l  %17 = icmp slt i32 %9, -121072\l  br i1 %17, label %8, label %18, !llvm.loop !9\l|{<s0>T|<s1>F}}"];
+	Node0x5bcf650:s0 -> Node0x5bcf650;
+	Node0x5bcf650:s1 -> Node0x5bcf6e0;
+	Node0x5bcf6e0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#c7d7f070",label="{%18:\l18:                                               \l  ret void\l}"];
+}

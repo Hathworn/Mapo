@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring sequential threads access sequential memory addresses.
+// Use __restrict__ to give the compiler hints about non-aliasing pointers for possible optimizations.
+// Optimize by minimizing the use of global memory and maximizing the use of shared memory if possible.
+// Ensure the kernel is launched with an appropriate number of threads to fully utilize the GPU.
+```

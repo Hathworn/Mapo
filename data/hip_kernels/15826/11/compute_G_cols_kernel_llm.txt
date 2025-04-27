@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for exp_V_ptr, N_ptr, and G_ptr to improve memory throughput.
+// Use shared memory for inv_exp_diff to reduce redundant global memory loads.
+// Use loop unrolling for the l loop to enhance instruction-level parallelism.
+// Ensure data alignment for the arrays to utilize efficient memory transactions.
+// Prefer constant memory for frequently accessed read-only data like N_c if within hardware limits.
+```

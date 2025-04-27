@@ -1,0 +1,7 @@
+```c
+// Consider coalescing global memory accesses for d_input and d_output.
+// Use memory padding to avoid bank conflicts in shared memory.
+// Ensure enough threads are used to hide memory latency with where __syncthreads() is placed.
+// Try optimizing y_r and x_r to reduce redundant calculations within loops.
+// Potentially adjust block and grid dimensions based on the problem size for optimal occupancy.
+```

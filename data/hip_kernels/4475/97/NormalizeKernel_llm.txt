@@ -1,0 +1,5 @@
+// Use shared memory if multiple threads access the same data to reduce global memory reads.  
+// Employ memory coalescing by ensuring that global memory accesses are contiguous when possible.
+// Minimize divergent branches by reordering calculations and conditions if applicable.  
+// Prefetch data into registers to reduce access latency if register usage allows.  
+// Consider loop unrolling optimizations if applicable for repeated operations.

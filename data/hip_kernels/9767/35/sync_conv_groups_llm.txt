@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses.
+// Ensure memory accesses are coalesced for better performance.
+// Explore use of __restrict__ pointers to enable compiler optimizations.
+// Use loop unrolling to enhance instruction throughput where applicable.
+// Adjust block size to match the warp size, optimizing CUDA core usage.

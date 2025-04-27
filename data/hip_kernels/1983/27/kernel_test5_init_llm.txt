@@ -1,0 +1,7 @@
+```
+// Align memory accesses to increase throughput
+// Unroll loops to reduce the overhead of branch instructions
+// Use 32-bit accesses instead of 8-bit to improve memory coalescing
+// Ensure the thread block size is a multiple of the warp size for optimal performance
+// Prefetch data when possible to hide memory latency
+```

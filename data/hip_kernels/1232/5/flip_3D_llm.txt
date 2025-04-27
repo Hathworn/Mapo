@@ -1,0 +1,8 @@
+```
+// Remove __syncthreads(); as each branch works on disjoint data
+// Consider optimizing memory accesses by aligning data fetches
+// Explore using shared memory to improve data locality for each thread block
+// Evaluate coalescing memory accesses to minimize latency
+// Investigate loop unrolling for operations on small arrays for better performance
+// Analyze the possibility of using atomic operations if write conflicts occur
+```

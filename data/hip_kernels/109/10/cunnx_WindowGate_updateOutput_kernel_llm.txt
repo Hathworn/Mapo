@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory for intermediate computations to reduce global memory access
+// Perform parallel reduction strategy to minimize synchronization overhead
+// Minimize shared memory usage where possible to increase block occupancy
+// Use warp-level primitives to reduce the number of synchronization points
+// Coalesce memory accesses where possible to improve global memory bandwidth
+// Consider using __ldg intrinsics for read-only data for better caching
+```

@@ -1,0 +1,8 @@
+```
+// Use shared memory to improve access speed as it is faster than global memory
+// Ensure all threads load data into shared memory before proceeding
+// Tile dimensions should match block dimensions to maximize shared memory utilization
+// Avoid bank conflicts in shared memory by ensuring memory access patterns are coalesced
+// Ensure xIdx and yIdx recalculations after transposition step
+// Reduce global memory access by reusing data stored in shared memory
+```

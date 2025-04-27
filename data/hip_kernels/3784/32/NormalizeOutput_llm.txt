@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory accesses
+// Ensure data is coalesced for parallel threads
+// Minimize the use of atomic operations for better performance
+// Optimize grid and block dimensions for maximum occupancy

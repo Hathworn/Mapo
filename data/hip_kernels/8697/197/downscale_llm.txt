@@ -1,0 +1,6 @@
+```
+// Consider reducing global memory accesses by utilizing shared memory.
+// Optimize memory coalescing by ensuring threads within a warp access consecutive memory locations.
+// Reduce redundant calculations by pre-computing repeated expressions and storing them in local variables.
+// Ensure enough threads per block to maximize GPU occupancy while considering register and shared memory usage.
+```

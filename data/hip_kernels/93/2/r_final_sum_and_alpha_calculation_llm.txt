@@ -1,0 +1,6 @@
+```
+// Load data into shared memory to improve memory coalescing and reduce global memory access latency
+// Use warp synchronous operations to perform reduction efficiently
+// Calculate results only once per block to reduce redundant computation
+// Utilize shared memory effectively by initializing unused elements to 0
+```

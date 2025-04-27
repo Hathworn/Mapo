@@ -1,0 +1,7 @@
+```
+// Move invariant computation of scale outside the kernel loop if applicable
+// Ensure coalesced memory access by reordering data access pattern if possible
+// Minimize shared memory usage by using registers for local computations
+// Consider loop unrolling for the inner loop to enhance performance
+// Use atomic operations if concurrent writes are necessary in a similar kernel
+```

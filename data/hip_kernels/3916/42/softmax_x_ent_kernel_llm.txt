@@ -1,0 +1,7 @@
+```
+// Use shared memory to store frequently accessed data to reduce global memory access time.
+// Consider reading pred and truth values into registers to minimize latency.
+// Implement loop unrolling if applicable to improve performance when n is large.
+// Optimize memory access patterns to ensure coalesced memory access.
+// Consider using warp-level primitives to further optimize reduction operations within a warp.
+```

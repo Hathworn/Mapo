@@ -1,0 +1,5 @@
+// Ensure coalesced access to global memory by properly aligning X and Y arrays
+// Consider using shared memory for temporary storage to reduce global memory traffic
+// Optimize loop to minimize latency overhead by maximizing arithmetic instructions
+// Evaluate warp efficiency and adjust the block size for maximum occupancy
+// Minimize control divergence by ensuring uniform branch execution across threads

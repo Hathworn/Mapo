@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache `norm[xIndex]` to reduce global memory reads.
+// Use coalesced memory access for `array` for improved memory throughput.
+// Ensure proper alignment when accessing `array` and `norm` to optimize memory performance.
+// Minimize bank conflicts if shared memory is introduced.
+// Avoid divergent branches by ensuring warp-wide uniform execution where possible.
+// Use a suitable block size that maximizes occupancy without increasing register/memory pressure.
+```

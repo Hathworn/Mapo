@@ -1,0 +1,7 @@
+```
+// Improve memory coalescing by ensuring consecutive threads access consecutive memory locations in 'num'.
+// Minimize atomic operations by reducing their usage within each warp, possibly using warp reduction techniques.
+// Consider reducing the use of __syncthreads() to improve performance, ensuring no data races occur.
+// Optimize shared memory usage by re-evaluating the size if block size is different from 32, adapting accordingly.
+// When final reduction step is performed, use parallel reduction to enhance performance and scalability.
+```

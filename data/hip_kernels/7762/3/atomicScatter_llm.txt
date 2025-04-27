@@ -1,0 +1,7 @@
+// Use shared memory to reduce global memory accesses
+// Consider using texture memory for frequent read access patterns
+// Minimize bank conflicts in shared memory accesses
+// Unroll loops for small iteration counts to decrease overhead
+// Use constant memory for frequently accessed constant values
+// Align memory accesses to 128 bytes for better performance
+// Avoid redundant calculations by storing results in local variables

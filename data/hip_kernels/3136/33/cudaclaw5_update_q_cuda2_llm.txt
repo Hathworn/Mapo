@@ -1,0 +1,11 @@
+```
+// Use shared memory to store fm, fp, gm, gp for faster access.
+// Avoid bank conflicts by carefully aligning data in shared memory.
+// Prefetch data from global memory to registers to reduce access latency.
+// Use vectorized loads and stores if possible to improve memory throughput.
+// Ensure coalesced memory access patterns for qold, fm, fp, gm, gp arrays.
+// Minimize arithmetic operations within the loop by factoring out computations.
+// Use loop unrolling to decrease loop overhead and increase instruction-level parallelism.
+// Ensure that the loop bounds and strides align with memory caching strategies.
+// Evaluate the use of asynchronous memory operations where applicable.
+```

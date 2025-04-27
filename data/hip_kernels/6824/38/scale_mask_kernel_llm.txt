@@ -1,0 +1,8 @@
+```
+// Consider using __restrict__ qualifier for pointer arguments to improve memory access speed
+// Ensure x and mask are memory aligned to increase coalescing potential
+// Use shared memory if there are opportunities to reuse mask values within a block
+// Increase occupancy by optimizing block size to match the target GPU architecture
+// Minimize divergence by ensuring conditions inside loops are optimized
+// Prefetch mask values to registers if repeated accesses are detected
+```

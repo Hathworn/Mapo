@@ -1,0 +1,10 @@
+digraph "CFG for '_Z13init_row_permPii' function" {
+	label="CFG for '_Z13init_row_permPii' function";
+
+	Node0x565dec0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%2:\l  %3 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %4 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %5 = getelementptr i8, i8 addrspace(4)* %4, i64 4\l  %6 = bitcast i8 addrspace(4)* %5 to i16 addrspace(4)*\l  %7 = load i16, i16 addrspace(4)* %6, align 4, !range !4, !invariant.load !5\l  %8 = zext i16 %7 to i32\l  %9 = mul i32 %3, %8\l  %10 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !6\l  %11 = add i32 %9, %10\l  %12 = icmp slt i32 %11, %1\l  br i1 %12, label %13, label %16\l|{<s0>T|<s1>F}}"];
+	Node0x565dec0:s0 -> Node0x565fdc0;
+	Node0x565dec0:s1 -> Node0x565fe50;
+	Node0x565fdc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%13:\l13:                                               \l  %14 = sext i32 %11 to i64\l  %15 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %14\l  store i32 %11, i32 addrspace(1)* %15, align 4, !tbaa !7\l  br label %16\l}"];
+	Node0x565fdc0 -> Node0x565fe50;
+	Node0x565fe50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  ret void\l}"];
+}

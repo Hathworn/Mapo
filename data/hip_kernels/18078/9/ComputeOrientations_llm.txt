@@ -1,0 +1,8 @@
+```
+// Use shared memory for data prefetch to reduce global memory access.
+// Prefetch Gaussian values into shared memory to reuse across threads.
+// Minimize shared memory size by optimizing histogram size.
+// Use atomic operations efficiently to avoid thread conflicts.
+// Ensure that memory access patterns are coalesced.
+// Reduce global memory writes by caching results locally before writing.
+```

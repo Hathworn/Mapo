@@ -1,0 +1,5 @@
+// Ensure index calculations use blockIdx to minimize conditional checks
+// Prefetch idx values into local variables to reduce global memory access
+// Utilize shared memory for frequently accessed data like points and idx
+// Consider using atomic operations if concurrent writes might occur
+// Explore coalescing global memory access patterns by adjusting data layout

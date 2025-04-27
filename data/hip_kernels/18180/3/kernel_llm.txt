@@ -1,0 +1,10 @@
+```
+// Consider using shared memory to reduce global memory accesses.
+// Optimize thread block size to improve occupancy and memory coalescing.
+// Minimize bank conflicts in shared memory accesses.
+// Use loop unrolling to increase instruction throughput.
+// Align memory accesses to improve coalescing and reduce latency.
+// Consider using read-only cache for constant data.
+// Ensure memory accesses are coalesced for optimal bandwidth.
+// Use __syncthreads() judiciously to avoid unnecessary synchronization overhead.
+```

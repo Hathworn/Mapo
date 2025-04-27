@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access to improve memory throughput.
+// Use shared memory to reduce global memory accesses within the loop.
+// Ensure __syncthreads() is placed correctly to avoid synchronization issues.
+// Avoid bank conflicts in shared memory accesses.
+// Reduce the number of global memory accesses by accumulating results in registers.
+// Leverage loop unrolling to optimize the loop performance, if applicable.
+```

@@ -1,0 +1,11 @@
+```cpp
+// Use shared memory to store H matrix if reused in multiple threads.
+// Consider coalesced memory accesses for reading and writing systemMatrixVals and systemMatrixCols.
+// Use constant memory for H matrix to reduce global memory access time if H is constant.
+// Consider using texture memory for read-only data like H matrix.
+// Pre-fetch data needed inside the loop to shared memory to reduce global memory accesses.
+// Ensure grid and block dimensions are optimized for maximum occupancy on the GPU.
+// Use __restrict__ qualifier for pointers to inform the compiler about non-aliasing.
+// Ensure adequate register usage to avoid spilling, which can impact performance.
+// Consider optimizing block dimensions to minimize memory divergence.
+```

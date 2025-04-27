@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory accesses for the src, u, and v arrays to improve memory bandwidth.
+// Use shared memory if data reuse within a block is significant to reduce global memory accesses.
+// Ensure coalesced writes to the dst and normalization_factor arrays for optimal write bandwidth.
+// Utilize prefetching techniques to hide global memory latency.
+// Minimize potential bank conflicts if using shared memory within the kernel.
+```

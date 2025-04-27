@@ -1,0 +1,4 @@
+// Use shared memory for A and B to reduce global memory access latency.
+// Employ memory coalescing for A and B accesses to maximize bandwidth utilization.
+// Avoid bank conflicts in shared memory by ensuring proper indexing.
+// Minimize divergent threads by restructuring boundary checks.

@@ -1,0 +1,7 @@
+```
+// Consider using __restrict__ qualifier for pointer parameters to improve compiler optimizations
+// Ensure coalesced global memory access for d_data_in and d_data_out
+// Minimize shared memory bank conflicts in operations with s_data
+// Reduce the number of __syncthreads() calls if possible
+// Adjust block size (BLKSIZE) for best occupancy and performance balance
+```

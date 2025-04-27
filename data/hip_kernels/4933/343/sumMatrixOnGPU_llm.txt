@@ -1,0 +1,7 @@
+```
+// Use shared memory to store tiles of MatA and MatB for coalesced access
+// Consider loop unrolling if the operation inside the loop is computationally intensive
+// Optimize memory access by ensuring all threads within a warp access contiguous memory locations
+// Minimize global memory accesses by maximizing data reuse within shared memory tiles
+// Align memory accesses with memory boundaries for improved performance
+```

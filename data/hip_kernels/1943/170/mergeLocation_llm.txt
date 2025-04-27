@@ -1,0 +1,6 @@
+// Ensure memory coalescing by using consecutive memory indices
+// Consider using shared memory to reduce global memory access latency
+// Use __syncthreads() if modifying shared memory within the kernel
+// Check if __fmul_rn() is the optimal choice for multiplication precision and performance
+// Evaluate the use of texture memory for read-only data like loc_ to potentially improve performance
+// Consider loop unrolling if parallelism across threads can be further optimized

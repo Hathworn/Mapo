@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for data that is accessed multiple times
+// Ensure coalesced memory access to improve memory bandwidth utilization
+// Minimize divergent branches to enhance warp efficiency
+// Prefer using registers over shared or global memory for intermediate calculations
+// Use const qualifier for parameters that are not modified within the kernel
+```

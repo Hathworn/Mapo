@@ -1,0 +1,5 @@
+// Ensure coalesced memory access patterns for gradOutput[] and gradWeight[] for better memory bandwidth utilization.
+// Avoid branching within the critical loop and use predicated memory accesses where possible for efficiency.
+// Consider loop unrolling for the innermost loops to improve instruction throughput.
+// Optimize memory usage by leveraging shared memory if possible to reduce redundant global memory accesses.
+// Use atomic operations when updating gradWeight to prevent race conditions in parallel updates.

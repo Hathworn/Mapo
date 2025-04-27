@@ -1,0 +1,7 @@
+```
+// Use shared memory for frequently accessed data to reduce global memory access.
+// Optimize memory access by ensuring coalesced reads/writes where possible.
+// Use __restrict__ qualifier on pointer arguments to enable better compiler optimizations.
+// Consider increasing the number of threads per block for higher occupancy if resources allow.
+// Investigate the use of warp shuffle operations for reduction instead of manual summation.
+```

@@ -1,0 +1,7 @@
+```cpp
+// Preload fj for reuse and reduce global memory access
+// Use shared memory to store frequently accessed variables to prevent repeated global memory access
+// Compute tx and ty minus r outside the loop for efficiency
+// Optimize memory access patterns to ensure coalesced access for all threads
+// Consider using loop unrolling for predictable loops
+```

@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning shared memory loads
+// Use __syncthreads() to synchronize threads after loading to shared memory
+// Minimize global memory access by utilizing shared memory effectively
+// Consider increasing block size if memory bandwidth allows
+// Check if blockIdx.x based prefetching could enhance performance
+```

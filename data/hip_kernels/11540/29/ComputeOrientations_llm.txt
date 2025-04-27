@@ -1,0 +1,13 @@
+```
+// Ensure coalesced memory access by aligning data loads
+// Utilize shared memory to reduce global memory access
+// Precompute Gaussian values to avoid recalculating in each iteration
+// Use __syncthreads() to ensure all threads have complete data before processing
+// Avoid divergent branches by handling edge cases uniformly
+// Load data into shared memory for reuse across threads
+// Implement loop unrolling if possible for improved performance
+// Use atomic operations with caution due to potential performance reduction
+// Minimize use of expensive mathematical functions within critical loops
+// Align data structures to improve memory access patterns
+// Consider occupancy and thread efficiency when setting block size
+```

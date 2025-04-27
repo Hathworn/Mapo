@@ -1,0 +1,5 @@
+// Use shared memory for weights to reduce global memory access latency
+// Ensure coalesced memory access patterns for shared memory loads
+// Optimize reduction using warp shuffle to avoid atomic operations
+// Preload shared memory outside the main computation loop if possible
+// Consider using loop unrolling to optimize memory access in compute loops

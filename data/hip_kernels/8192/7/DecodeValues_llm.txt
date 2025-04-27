@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for dir, negDir, and origin arrays to reduce global memory access
+// Minimize divergent branches by restructuring conditionals
+// Prefetch superposition[i] into a register to reduce memory latency
+// Combine addition operations to minimize the number of arithmetic instructions
+// Consider loop unrolling for the for loop to reduce loop overhead
+```

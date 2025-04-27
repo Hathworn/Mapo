@@ -1,0 +1,7 @@
+```
+// Use shared memory to cache force values for faster access as force[index] is read multiple times
+// Consider coalesced memory access patterns for positions, force, and vel arrays
+// Try to align data allocations to improve memory access efficiency
+// Minimize the usage of `fabs` and `ceil` by precomputing or restructuring arithmetic expressions
+// Explore loop unrolling if applicable for further performance benefits
+```

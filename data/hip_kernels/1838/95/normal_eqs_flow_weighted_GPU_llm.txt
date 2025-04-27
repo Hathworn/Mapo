@@ -1,0 +1,12 @@
+```
+// Use shared memory to reduce redundant global memory loads.
+// Ensure coalesced access when fetching data from global memory.
+// Consider employing vectorized loads for better memory throughput.
+// Use warp-level primitives for efficient in-block reduction.
+// Unroll loops where possible to reduce loop overhead.
+// Explore using __shfl_sync for inter-lane communication to minimize shared memory usage.
+// Minimize branch divergence, especially within if-else blocks.
+// Consider optimizing the access pattern of d_start_ind_flow and d_ind_flow_Zbuffer.
+// Evaluate the use of __ldg intrinsic for read-only data to utilize texture cache.
+// Balance computational workload among different blocks to prevent load imbalance.
+```

@@ -1,0 +1,8 @@
+```
+// Use memory coalescing for in_d and out_d by ensuring consecutive threads access consecutive memory locations
+// Prefetch data to shared memory if accessed multiple times within the kernel
+// Consider tiling the loop to exploit spatial locality and improve cache usage
+// Use warp-level primitives to reduce redundant calculations
+// Double-check thread divergence by ensuring all threads within a warp progress similarly
+// Optimize the grid and block dimensions for better workload distribution and load balancing
+```

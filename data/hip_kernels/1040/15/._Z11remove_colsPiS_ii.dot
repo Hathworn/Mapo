@@ -1,0 +1,18 @@
+digraph "CFG for '_Z11remove_colsPiS_ii' function" {
+	label="CFG for '_Z11remove_colsPiS_ii' function";
+
+	Node0x615a180 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = icmp slt i32 %5, %3\l  br i1 %6, label %7, label %15\l|{<s0>T|<s1>F}}"];
+	Node0x615a180:s0 -> Node0x615afc0;
+	Node0x615a180:s1 -> Node0x615b050;
+	Node0x615afc0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%7:\l7:                                                \l  %8 = sext i32 %2 to i64\l  %9 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %8\l  %10 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %11 = getelementptr i8, i8 addrspace(4)* %10, i64 4\l  %12 = bitcast i8 addrspace(4)* %11 to i16 addrspace(4)*\l  %13 = load i16, i16 addrspace(4)* %12, align 4, !range !5, !invariant.load !6\l  %14 = zext i16 %13 to i32\l  br label %16\l}"];
+	Node0x615afc0 -> Node0x615bff0;
+	Node0x615b050 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%15:\l15:                                               \l  ret void\l}"];
+	Node0x615bff0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%16:\l16:                                               \l  %17 = phi i32 [ %5, %7 ], [ %26, %25 ]\l  %18 = sext i32 %17 to i64\l  %19 = getelementptr inbounds i32, i32 addrspace(1)* %1, i64 %18\l  %20 = load i32, i32 addrspace(1)* %19, align 4, !tbaa !7\l  %21 = load i32, i32 addrspace(1)* %9, align 4, !tbaa !7\l  %22 = icmp eq i32 %20, %21\l  br i1 %22, label %23, label %25\l|{<s0>T|<s1>F}}"];
+	Node0x615bff0:s0 -> Node0x615ccd0;
+	Node0x615bff0:s1 -> Node0x615b200;
+	Node0x615ccd0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#de614d70",label="{%23:\l23:                                               \l  %24 = getelementptr inbounds i32, i32 addrspace(1)* %0, i64 %18\l  store i32 -1, i32 addrspace(1)* %24, align 4, !tbaa !7\l  br label %25\l}"];
+	Node0x615ccd0 -> Node0x615b200;
+	Node0x615b200 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%25:\l25:                                               \l  %26 = add i32 %17, %14\l  %27 = icmp slt i32 %26, %3\l  br i1 %27, label %16, label %15, !llvm.loop !11\l|{<s0>T|<s1>F}}"];
+	Node0x615b200:s0 -> Node0x615bff0;
+	Node0x615b200:s1 -> Node0x615b050;
+}

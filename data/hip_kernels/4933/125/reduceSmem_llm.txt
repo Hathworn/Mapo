@@ -1,0 +1,9 @@
+```
+// Use shared memory to reduce global memory accesses and improve performance
+// Ensure memory coalescing by organizing data access patterns efficiently
+// Use __syncthreads() to synchronize threads within a block and avoid data hazards
+// Unroll loops to optimize warp execution and reduce instruction overhead
+// Use volatile keyword for variables involved in the warp unrolling to prevent compiler optimizations that could lead to incorrect results
+// Check boundary conditions to prevent out-of-bounds memory access
+// Minimize the use of __syncthreads() inside loops to reduce synchronization overhead
+```

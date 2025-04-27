@@ -1,0 +1,8 @@
+```
+// Ensure shared memory is allocated appropriately to avoid bank conflicts.
+// Consider using __restrict__ keyword for pointer declarations to inform the compiler of non-aliasing.
+// Optimize memory access pattern for better cache utilization by ensuring data accesses are contiguous.
+// Utilize warp-level operations where possible to reduce synchronization overhead.
+// Verify grid and block dimensions to match hardware constraints for better performance.
+// Examine use of atomic operations if there are race conditions affecting shared memory.
+```

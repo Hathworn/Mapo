@@ -1,0 +1,5 @@
+```cpp
+// Consider using shared memory to cache frequently accessed global memory data like ftoomega and ftovel.
+// Coalesce memory access by ensuring consecutive threads access consecutive elements in ftoforces array.
+// Use constant memory for read-only data accessed by all threads, like simulate2d and dt, to reduce global memory access.
+```

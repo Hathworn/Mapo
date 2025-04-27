@@ -1,0 +1,7 @@
+```
+// Use shared memory to minimize global memory access latency
+// Load lifter coefficients into shared memory in a coalesced manner
+// Ensure synchronization after writing into shared memory
+// Optimize lifter coefficient application by unrolling the loop, if possible
+// Use warp-level primitives to reduce synchronization overhead
+```

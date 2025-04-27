@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to cache src elements for coalesced access patterns
+// Improve memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Ensure that stride between accesses minimizes bank conflicts
+// Experiment with different block sizes to optimize occupancy and reduce wasted computations
+// Prefetch data into shared memory to hide memory latency
+// Use loop unrolling where possible to reduce loop overhead
+```

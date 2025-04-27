@@ -1,0 +1,7 @@
+```cpp
+// Consider using cooperative groups for better synchronization
+// Optimize memory access by ensuring state array is in coalesced order
+// Use shared memory if accessing state multiple times within the kernel
+// Minimize divergence by ensuring even workload distribution across threads
+// Use loop unrolling if this setup is a bottleneck and loops are present
+```

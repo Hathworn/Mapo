@@ -1,0 +1,6 @@
+```
+// Use shared memory for storing intermediate values to improve memory access speed
+// Unrolling the loop to reduce overhead and increase parallel execution
+// Consider further reducing global memory accesses by ensuring data locality
+// Use coalesced global memory access patterns when reading/writing with 'a', 'b', and 'x'
+```

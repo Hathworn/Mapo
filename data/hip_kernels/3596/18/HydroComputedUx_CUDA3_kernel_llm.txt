@@ -1,0 +1,7 @@
+```cpp
+// Use shared memory for temporary storage to improve memory access coalescing
+// Ensure all access patterns are coalesced to maximize memory throughput
+// Consider prefetching data to registers to reduce repeated global memory access
+// Minimize divergent branches within the loop for better warp execution
+// Align data access to avoid non-aligned memory operations
+```

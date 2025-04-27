@@ -1,0 +1,9 @@
+```cpp
+// Use __ldg() to load global memory where appropriate for read-only data to benefit from the texture cache.
+// Optimize stride access patterns to ensure coalesced memory access where possible.
+// Consider loop unrolling for the inner loops to increase instruction level parallelism.
+// Utilize shared memory effectively to minimize global memory traffic, ensuring bank conflicts are avoided.
+// Experiment with different block sizes to find the optimal configuration for maximal occupancy on the GPU.
+// Apply warp-level primitives such as __shfl_down_sync for partial reductions to reduce synchronization overhead.
+// Evaluate different strategies for reducing the accumulated sums, possibly using separate reduction kernels for efficiency.
+```

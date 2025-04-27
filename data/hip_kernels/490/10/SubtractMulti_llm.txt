@@ -1,0 +1,3 @@
+// Consider using shared memory to store portions of d_Data to reduce global memory access.
+// Optimize memory access pattern by ensuring coalesced access to d_Result and d_Data.
+// Double-check if memory padding (pitch) can be streamlined to avoid bank conflicts.

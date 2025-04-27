@@ -1,0 +1,7 @@
+```
+// Ensure memory coalescing by accessing `dz`, `z`, `dx` with contiguous threads.
+// Use shared memory to cache variables that are repeatedly used like `edz`, `eydz`.
+// Consider reducing global memory transactions by combining multiple operations if possible.
+// Use `__syncthreads()` if necessary when accessing data that might have race conditions.
+// Minimize the use of branching in kernel code to improve warp execution efficiency.
+```

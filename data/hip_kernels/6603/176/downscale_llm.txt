@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by ensuring threads access consecutive memory locations.
+// Use shared memory to cache repeated global memory accesses to reduce global memory traffic.
+// Ensure warp-aware memory access patterns to increase memory access efficiency.
+// Use __syncthreads() judiciously when using shared memory to ensure all threads have completed memory operations.
+// Optimize thread block and grid size configuration to maximize occupancy and hide memory latency.
+```

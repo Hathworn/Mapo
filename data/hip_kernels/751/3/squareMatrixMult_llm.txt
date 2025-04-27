@@ -1,0 +1,8 @@
+```cpp
+// Use shared memory to store tiles for efficient data reuse
+// Load tiles efficiently to optimize memory access patterns
+// Consider coalescing global memory accesses for d_a and d_b
+// Use __syncthreads() to ensure all threads have finished loading tiles
+// Unroll loops to improve performance by reducing loop overhead
+// Write back the result conditionally if the indices are within bounds
+```

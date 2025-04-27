@@ -1,0 +1,7 @@
+```
+// Consider using shared memory if there is data reuse among threads
+// Ensure coalesced memory access by aligning data in memory
+// Explore vectorized memory operations for double types
+// Minimize global memory accesses by utilizing registers
+// Avoid warp divergence by ensuring if conditions are uniform across threads
+```

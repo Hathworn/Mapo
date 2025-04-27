@@ -1,0 +1,3 @@
+// Consider using shared memory to store portions of A and B to reduce global memory access.
+// Optimize memory coalescing by ensuring that consecutive threads access consecutive memory locations.
+// Minimize divergent branches in the if-else statements to improve warp efficiency.

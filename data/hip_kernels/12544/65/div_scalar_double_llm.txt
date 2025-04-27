@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by checking memory alignment
+// Consider loading elements into shared memory to reduce global memory access
+// Use __ldg to take advantage of read-only data cache for dy if the data is not being modified
+// Experiment with different block sizes for better occupancy and performance
+// Minimize divergent branches by organizing threads to meet conditions more uniformly
+// Align data in memory to improve cache efficiency and reduce latency
+```

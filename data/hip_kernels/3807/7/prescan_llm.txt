@@ -1,0 +1,8 @@
+```cpp
+// Consider coalesced memory access for d_in array.
+// Use shared memory to exploit data reuse and minimize global memory access.
+// Align data access to improve memory coalescing.
+// Minimize memory traffic through use of temporary registers.
+// Explore using warp-level primitives to reduce divergence.
+// Investigate effects of increasing thread block size for better occupancy.
+```

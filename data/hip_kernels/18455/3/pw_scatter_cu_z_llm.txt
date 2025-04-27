@@ -1,0 +1,5 @@
+// Ensure ghatmap accesses are coalesced to optimize memory transactions.
+// Use shared memory to reduce global memory bandwidth usage if access patterns allow.
+// Minimize divergent branches by reorganizing conditional checks.
+// Consider loop unrolling if applicable to balance computational and memory access efficiency.
+// Align data to enable coalesced access, particularly if adjustments are necessary for ghatmap.

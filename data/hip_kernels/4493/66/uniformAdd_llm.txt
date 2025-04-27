@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory accesses by ensuring g_data and uniforms are accessed sequentially
+// Use shared memory efficiently to minimize global memory accesses
+// Ensure uniform usage of __syncthreads() to avoid race conditions
+// Consider loop unrolling for performance improvement if applicable
+// Optimize block size to ensure full occupancy for better performance
+```

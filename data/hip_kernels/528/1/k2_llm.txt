@@ -1,0 +1,4 @@
+// Optimize memory access by using __shared__ memory for frequently accessed variables
+// Minimize global memory access by using local variables when possible
+// Use atomics carefully to avoid unnecessary synchronization-induced overheads
+// Consider using cooperative groups to enable flexible synchronization within blocks

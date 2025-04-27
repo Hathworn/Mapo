@@ -1,0 +1,8 @@
+```
+// Use register for accumulation to minimize shared memory usage
+// Reduce the number of synchronization points for performance gain
+// Use volatile for finer control at warp-level reduction
+// Coalesce global memory writes by storing final results in blocks
+// Ensure continuous access pattern in global memory for a and b
+// Optimize loop by ensuring numCols is a power of two, if possible
+```

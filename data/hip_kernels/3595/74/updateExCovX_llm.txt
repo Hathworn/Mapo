@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access by ensuring threads access consecutive memory locations
+// Use shared memory if multiple threads read the same data to reduce global memory access
+// Ensure that gauss_d2 is read from memory to registers once per kernel launch if constant
+// Minimize divergent branches to keep all warps in the same execution path
+```

@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access patterns by aligning accesses to 'adjacency' array.
+// Minimize warp divergence by reducing conditional branches within the loop.
+// Use shared memory to store 'adjacency' data temporarily if beneficial to reduce global memory access.
+// Prefetch 'neighbor' data outside the loop if possible for efficient memory usage.
+```

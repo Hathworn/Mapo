@@ -1,0 +1,8 @@
+```
+// Use __shfl_down_sync for warp-level reduction to avoid using shared memory
+// Minimize shared memory usage by using local variables for reduction
+// Use cooperative groups for efficient intra-warp communication
+// Ensure memory coalescing by aligning d_in access with warp boundaries
+// Reduce __syncthreads usage by optimizing warp communication
+// Consider using warp shuffle operations to further optimize performance
+```

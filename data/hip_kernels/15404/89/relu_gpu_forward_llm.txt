@@ -1,0 +1,8 @@
+```
+// Ensure memory accesses are coalesced by aligning data structures properly
+// Consider using shared memory to further optimize memory access patterns
+// Use warp-level primitives for operations within the same warp to reduce latency
+// Experiment with different block sizes to find the optimal configuration
+// Minimize branch divergence by restructuring conditional statements if possible
+// Make sure the input N is a multiple of the warp size for better performance
+```

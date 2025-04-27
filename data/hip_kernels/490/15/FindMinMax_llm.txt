@@ -1,0 +1,8 @@
+```
+// Consider coalesced access for d_Data by adjusting data layout
+// Ensure pitch for d_Data matches pitch alignment requirements
+// Utilize shared memory effectively by ensuring enough shared memory is allocated
+// Opt for loop unrolling for the data loading loop if compiler does not automatically
+// Optimize synchronization by minimizing __syncthreads() calls when possible
+// Use warp-level primitives if applicable to reduce synchronization overhead during reduction
+```

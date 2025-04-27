@@ -1,0 +1,7 @@
+```
+// Use shared memory to further reduce global memory access
+// Consider aligning data structures to cache lines for coalesced access
+// Evaluate loop unrolling factor using device specifications for optimal performance
+// Apply warp-level primitives to increase data parallelism
+// Implement asynchronous memory copies where possible to overlap data transfer and computation
+```

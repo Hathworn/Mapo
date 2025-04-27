@@ -1,0 +1,8 @@
+```
+// Improve memory access patterns by ensuring coalesced access to global memory
+// Use shared memory if possible for repeated data access within the block
+// Align data structures to improve memory access efficiency
+// Consider loop unrolling to reduce loop overhead
+// Ensure that the number of threads in a block is a multiple of the warp size
+// Use __syncthreads() where necessary to synchronize shared memory operations
+```

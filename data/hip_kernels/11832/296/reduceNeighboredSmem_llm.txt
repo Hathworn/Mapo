@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring g_idata access pattern is sequential
+// Use __restrict__ qualifier for pointers if aliasing does not occur for potential compiler optimization
+// Optimize shared memory usage by reducing the size of shared memory array if possible
+// Ensure that the shared memory allocation does not exceed the limits to avoid bank conflicts
+// Consider launching more blocks if occupancy allows, to hide memory latency
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce global memory access latency
+// Coalesce global memory accesses for A, B, and C to improve memory bandwidth utilization
+// Consider prefetching data to hide memory latency
+// Use appropriate block and grid sizes to ensure maximum occupancy

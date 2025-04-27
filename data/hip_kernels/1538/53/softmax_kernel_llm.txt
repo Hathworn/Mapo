@@ -1,0 +1,9 @@
+```
+// Use shared memory for input and output to enhance data locality
+// Optimize the largest element search with warped-level parallel reduction
+// Coalesce memory access for input and output arrays for better throughput
+// Minimize use of the global memory by storing partial results in shared memory
+// Consider loop unrolling to reduce loop overhead
+// Utilize constant memory for frequently accessed configurations such as stride and temp
+// Employ occupancy calculator to determine optimal block size
+```

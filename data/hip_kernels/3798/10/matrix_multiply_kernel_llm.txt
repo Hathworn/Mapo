@@ -1,0 +1,6 @@
+```
+// Use shared memory to reduce global memory access latency
+// Ensure coalesced memory access for matrix elements
+// Minimize __syncthreads() usage for better performance
+// Consider loop unrolling for the accumulation loop
+```

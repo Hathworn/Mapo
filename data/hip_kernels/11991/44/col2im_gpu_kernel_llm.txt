@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses and optimize bandwidth.
+// Pre-compute the commonly used variables and store them in local variables to reduce redundant computations.
+// Investigate whether loop unrolling for the nested loops could improve performance.
+// Verify coalesced memory accesses for data_col and data_im to maximize memory throughput.
+// Assess the potential benefits of using texture or surface memory for reading data_col.

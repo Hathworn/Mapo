@@ -1,0 +1,10 @@
+```
+// Consider coalescing global memory accesses
+// Use shared memory to reduce global memory bandwidth
+// Load data in a coalesced manner within loops
+// Attempt to unroll loops where possible to enhance instruction-level parallelism (ILP)
+// Ensure shared memory access patterns are conflict-free
+// Use __syncthreads() only when necessary to avoid synchronization overhead
+// Employ vectorized operations for efficient computation
+// Reduce results within shared memory before final write-back to global memory
+```

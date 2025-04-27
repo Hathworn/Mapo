@@ -1,0 +1,8 @@
+```
+// Use shared memory to minimize global memory access
+// Consider initializing shared_bins with multiple threads for speed
+// Ensure shared memory is evenly accessed to optimize memory bandwidth
+// Use atomic operations to avoid race conditions in shared memory
+// Efficiently aggregate shared results to global memory to reduce congestion
+// Use memory coalescing techniques when reading from global to shared memory
+```

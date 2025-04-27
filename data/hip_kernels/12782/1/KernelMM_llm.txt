@@ -1,0 +1,9 @@
+```cpp
+// Consider using __restrict__ keyword for pointers A, B, and C to help the compiler with optimization.
+// Ensure that TILE_SIZE is a multiple of warp size for better memory coalescing.
+// Evaluate whether using half precision (float16) can offer performance benefits if precision allows.
+// Ensure that TILE_SIZE fits well within shared memory limits for the target GPU architecture.
+// Consider loop unrolling for the inner product calculation to reduce loop overhead.
+// Optimize bank conflicts by padding shared memory if necessary to align memory accesses.
+// If possible, preload data into registers to minimize shared memory accesses during computations.
+```

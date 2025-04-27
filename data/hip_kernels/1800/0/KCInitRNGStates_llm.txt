@@ -1,0 +1,6 @@
+```
+// Consider coalesced access for gSeeds to enhance memory access efficiency.
+// Optimize memory access patterns by ensuring gStates are accessed sequentially.
+// Pre-fetch data into shared memory if reused to reduce global memory access.
+// Minimize divergence by ensuring threads in a warp follow similar execution paths.
+```

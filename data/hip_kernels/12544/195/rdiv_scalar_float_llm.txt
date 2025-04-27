@@ -1,0 +1,7 @@
+```
+// Consider aligning data to improve memory coalescing
+// Use __restrict__ qualifier for pointers to allow better compiler optimizations
+// Evaluate if shared memory can be utilized to minimize global memory accesses
+// Optimize the division operation if possible, as it's computationally expensive
+// Check for bank conflicts in memory accesses within each thread block
+```

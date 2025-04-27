@@ -1,0 +1,3 @@
+// Use shared memory to store a tile of the array to reduce global memory accesses
+// Align memory accesses to warp boundaries to improve coalescing
+// Consider using atomic operations if applicable to reduce contention for shared resource

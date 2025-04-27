@@ -1,0 +1,7 @@
+```c
+// Use shared memory to minimize global memory access for thread block, especially for dir and coef arrays
+// Consider using texture memory for reading input, mask, and fixed arrays to take advantage of caching
+// Coalesce global memory accesses by ensuring consecutive threads access consecutive memory locations
+// Consider loop tiling or blocking techniques if the kernel uses large data sets to improve cache reuse
+// Minimize divergence by ensuring threads in warps follow similar execution paths
+```

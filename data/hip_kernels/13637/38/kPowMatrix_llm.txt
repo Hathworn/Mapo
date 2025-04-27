@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access for 'mat' and 'pow'
+// Ensure 'target' is aligned for coalesced writes
+// Utilize shared memory if the operation can benefit from it
+// Minimize divergent branching for warp efficiency
+// Adjust block size to optimize thread occupancy
+```

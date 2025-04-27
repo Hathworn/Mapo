@@ -1,0 +1,6 @@
+```c
+// Use shared memory to cache image data to minimize global memory access
+// Coalesce global memory accesses by ensuring data layout is aligned for the warp
+// Employ loop unrolling if applicable to reduce instruction overhead
+// Consider using texture memory for read-only data access for potential caching benefits
+```

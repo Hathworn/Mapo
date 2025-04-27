@@ -1,0 +1,10 @@
+```
+// Consider using coalesced memory access for reading from and writing to global memory.
+// Ensure all threads within a warp access consecutive memory addresses.
+// Use shared memory to store intermediate computations to reduce global memory accesses.
+// Reduce the number of synchronization points to optimize thread performance.
+// Apply loop unrolling for the reduction phase to reduce loop overhead.
+// Avoid bank conflicts in shared memory by ensuring proper memory alignment.
+// Consider optimizing the computation of maximum using warp reduction.
+// Use __syncthreads wisely to ensure that synchronization occurs only when necessary.
+```

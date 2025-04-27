@@ -1,0 +1,5 @@
+// Avoid redundant computations to optimize memory access  
+// Use warp shuffle to reduce overhead in the reduction step  
+// Consider using __ldg() for read-only cache optimization  
+// Utilize shared memory efficiently to reduce global memory access  
+// Leverage thread synchronization to ensure data consistency

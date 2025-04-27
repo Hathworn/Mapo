@@ -1,0 +1,8 @@
+```
+// Use __restrict__ to hint the compiler for better optimization
+// Optimize memory access patterns to improve coalesced memory accesses
+// Avoid using __float2int_rn if exact integer conversion is not required
+// Consider using shared memory for frequently accessed data to reduce latency
+// Ensure data is aligned properly for optimal memory transactions
+// Minimize divergent branches within the thread to maximize parallel efficiency
+```

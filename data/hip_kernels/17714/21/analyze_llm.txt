@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce contention on global memory
+// Initialize shared memory to improve access latency
+// Reduce the number of atomic operations on global memory
+// Use __syncthreads() to synchronize threads before accessing shared memory
+// Accumulate results in shared memory before writing back to global memory
+```

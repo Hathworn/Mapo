@@ -1,0 +1,6 @@
+```
+// Consider coalescing memory accesses for 'cellStartEnd' to improve memory throughput
+// Minimize divergent branching to reduce warp execution time
+// Use shared memory to cache 'cellStartEnd' for repeated access within the block if applicable
+// Ensure memory alignment for 'concentration' to enhance global memory write efficiency
+```

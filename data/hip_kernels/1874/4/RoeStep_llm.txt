@@ -1,0 +1,4 @@
+// Use shared memory to store temporary variables like w1, w2, w3 to reduce global memory access.
+// Coalesce memory accesses for better performance by ensuring threads access consecutive memory locations.
+// Leverage warp-level computing by organizing computations within warps to minimize thread divergence.
+// Utilize asynchronous memory transfers if possible to overlap computation and data movement.

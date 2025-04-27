@@ -1,0 +1,6 @@
+```
+// Optimize memory access patterns by ensuring coalesced access when reading from x and writing to out.
+// Consider using shared memory to reduce global memory access for repeated calculations.
+// Reduce the complexity of index calculations or pre-compute them if possible to save on-register time.
+// Ensure that all thread blocks have balanced workloads to prevent some streaming multiprocessors from being underutilized.
+```

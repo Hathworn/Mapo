@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to reduce global memory access for elements accessed multiple times.
+// Consider loop unrolling if the operation within if statement can be predicted.
+// Ensure coalesced memory access by verifying the alignment of the vector in memory.
+// Use pinned memory for input/output vectors to increase data transfer speed between host and device.
+```

@@ -1,0 +1,4 @@
+// Unroll loop by processing multiple elements per thread to improve memory access pattern
+// Consider shared memory to reduce redundant data reads and improve data locality
+// Use vectorized data types for coalesced memory access
+// Prefer __expf over exp for faster computation

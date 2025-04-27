@@ -1,0 +1,6 @@
+```
+// Consider coalesced memory access for img_in and img_out.
+// Ensure alignment to memory boundaries for img_in, img_out, and lut.
+// Utilize shared memory for frequently accessed LUT entries to reduce global memory traffic.
+// Minimize divergent branches by ensuring img_size is divisible by block dimensions.
+```

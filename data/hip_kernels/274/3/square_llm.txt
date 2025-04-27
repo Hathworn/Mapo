@@ -1,0 +1,4 @@
+// Try to ensure memory accesses are coalesced for better performance.
+// Use shared memory to cache data if d_in is accessed multiple times.
+// Minimize divergence by ensuring all threads within a warp follow the same execution path.
+// Use vectorized memory accesses if possible to leverage multiple memory transactions per instruction.

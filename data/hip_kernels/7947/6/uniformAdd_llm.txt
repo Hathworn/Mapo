@@ -1,0 +1,6 @@
+```cpp
+// Ensure coalesced memory access to optimize memory transactions.
+// Use __syncthreads() after loading uni to avoid race conditions.
+// Minimize divergence within the warp for optimal performance.
+// Align data access to improve cache utilization.
+```

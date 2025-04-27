@@ -1,0 +1,7 @@
+```
+// Optimize shared memory usage by minimizing shared memory footprint where possible.
+// Ensure coalesced global memory access by having threads access consecutive memory locations.
+// Consider loop unrolling for fixed-length loops to increase performance.
+// Prefetch data to shared memory if possible for better data reuse and reduced global memory access.
+// Use __syncthreads() sparingly to minimize synchronization overhead.
+```

@@ -1,0 +1,5 @@
+// Use shared memory to minimize global memory access latency.  
+// Optimize memory coalescing by ensuring threads in the same warp access contiguous memory locations.  
+// Consider loop unrolling to reduce the overhead of branch instructions.  
+// Align data access patterns to a 128-byte boundary to take advantage of coalesced memory access.  
+// Evaluate using warp-level primitives to optimize synchronization and data exchange.

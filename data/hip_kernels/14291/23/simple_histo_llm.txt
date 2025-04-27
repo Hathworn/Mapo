@@ -1,0 +1,6 @@
+```c
+// Consider using shared memory to reduce global memory traffic.
+// Preload d_in data to shared memory if the data size allows.
+// Ensure coalesced memory accesses for d_in for better performance.
+// Minimize usage of atomic operations by reducing contention on frequently accessed bins.
+```

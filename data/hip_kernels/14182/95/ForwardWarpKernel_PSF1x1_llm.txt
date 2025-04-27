@@ -1,0 +1,8 @@
+```
+// Load flow values coalesced
+// Use texture memory for src and flow to leverage caching benefits
+// Precompute flow_row_offset and image_row_offset only once per thread block
+// Prefer shared memory for frequent access data within the block
+// Balance block size to optimize occupancy and memory access patterns
+// Use __ldg() for read-only memory access if loading multiple values
+```

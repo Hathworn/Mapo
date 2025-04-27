@@ -1,0 +1,7 @@
+```
+// Consider further reducing global memory access by caching xyz1 data in shared memory
+// Optimize loop unrolling for xyz1 data accesses to potentially improve performance
+// Evaluate use of atomic operations if conflicts arise in pts_cnt assignment
+// Investigate warp-level primitives to optimize syncthreads usage
+// Consider splitting large kernels to ensure better resource utilization
+```

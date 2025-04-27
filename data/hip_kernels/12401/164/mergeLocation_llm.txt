@@ -1,0 +1,7 @@
+// Consider using memory coalescing for accessing loc_ array
+// Ensure that loc_ is aligned properly to take advantage of coalesced memory access
+// Use __syncthreads() efficiently to reduce overhead
+// Check if using shared memory improves performance given the block size and npoints
+// Evaluate whether reduced shared memory usage would benefit larger data sets
+// Analyze if further loop unrolling could enhance performance depending on hardware specifics
+// Experiment with various block sizes to find optimal balance between occupancy and performance

@@ -1,0 +1,6 @@
+```
+// Utilize shared memory to cache inFreeArray accesses and minimize global memory latency
+// Load sharedFreeArray only within a single warp to avoid redundant shared memory usage
+// Ensure thread synchronization after loading data into shared memory to avoid race conditions
+// Consider using vectorized loads if data alignment permits to further optimize memory access
+```

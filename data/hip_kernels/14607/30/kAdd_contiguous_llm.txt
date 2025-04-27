@@ -1,0 +1,3 @@
+// Use shared memory to reduce global memory accesses if possible
+// Ensure coalesced memory access patterns to maximize bandwidth
+// Minimize thread divergence by ensuring all threads in a warp execute the same instructions

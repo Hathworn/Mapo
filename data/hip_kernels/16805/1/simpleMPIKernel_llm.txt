@@ -1,0 +1,7 @@
+```
+// Use coalesced memory access patterns for input loading
+// Minimize the use of __syncthreads() for better warp scheduling
+// Consider using vectorized data types for improved data throughput
+// Align data in shared memory to avoid bank conflicts
+// Optimize the computation to maximize instruction throughput
+```

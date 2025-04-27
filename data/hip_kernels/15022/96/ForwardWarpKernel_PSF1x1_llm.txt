@@ -1,0 +1,5 @@
+// Consider using shared memory to cache frequently accessed data
+// Optimize memory access by minimizing global memory fetches
+// Coalesce memory access patterns to improve bandwidth utilization
+// Ensure that variables such as flow_idx and image_idx are reused to avoid redundant calculations
+// Utilize warp-level primitives for efficient parallelism

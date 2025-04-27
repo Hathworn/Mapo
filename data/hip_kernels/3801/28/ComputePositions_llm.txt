@@ -1,0 +1,9 @@
+```
+// Minimize global memory access by using shared memory to cache data
+// Ensure memory access is coalesced for better performance
+// Prioritize shared memory usage for frequently accessed data
+// Re-arrange instructions to maximize instruction-level parallelism
+// Use of __syncthreads to prevent race conditions when sharing data
+// Inline determinant calculations to reduce function call overhead
+// Use __fdividef for faster division operations where possible
+```

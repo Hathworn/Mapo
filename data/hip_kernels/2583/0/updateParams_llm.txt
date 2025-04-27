@@ -1,0 +1,9 @@
+```
+// Use shared memory to cache frequently accessed data
+// Consider data alignment for coalesced memory access
+// Employ loop unrolling for straight-line code paths
+// Optimize reduction across threads for faster updates
+// Minimize atomic operations for reduced contention
+// Balance grid and block dimensions to maximize occupancy
+// Use constant memory for immutable values like alpha, beta1, beta2
+```

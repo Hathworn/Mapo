@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access patterns for starting_voxel_id and voxel_id arrays
+// Improve memory access by ensuring e_x_cov_x is accessed coalesced
+// Use shared memory to reduce global memory latency if possible
+// Consider loop unrolling to enhance performance
+// Use vectorized loads and stores if the architecture supports it
+```

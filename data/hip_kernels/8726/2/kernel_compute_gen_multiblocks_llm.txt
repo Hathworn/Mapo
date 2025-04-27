@@ -1,0 +1,8 @@
+```
+// Ensure coalesced memory access by having threads process consecutive matrix elements
+// Minimize divergent branches by ensuring all threads follow similar execution paths
+// Use shared memory to reduce global memory accesses for neighboring cells
+// Prefetch data into registers to reduce repetitive global memory reads
+// Use loop unrolling techniques where applicable to reduce loop overhead
+// Align memory access patterns with warp boundaries for better memory access efficiency
+```

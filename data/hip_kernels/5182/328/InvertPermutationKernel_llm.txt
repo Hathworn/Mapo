@@ -1,0 +1,6 @@
+// Consider using shared memory for input data to reduce global memory access
+// Prefetch data into registers to minimize latency
+// Ensure coalesced global memory access for better performance
+// Use warp-level synchronization if applicable instead of __syncthreads for efficiency
+// Investigate loop unrolling if processing multiple elements per thread
+// Ensure input and output are not aliased for correct synchronization

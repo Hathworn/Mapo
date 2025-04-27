@@ -1,0 +1,8 @@
+```
+// Consider using shared memory to reduce global memory access for frequently accessed data
+// Coalesce global memory accesses for improved memory throughput
+// Minimize branching within the kernel to improve performance
+// Consider changing the loop structure to improve warp efficiency 
+// Use constant memory for unchanging variables like 'N' and 'k' when passed to the kernel
+// Ensure enough threads are launched to cover the full range of data elements efficiently
+```

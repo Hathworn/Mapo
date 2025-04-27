@@ -1,0 +1,9 @@
+```
+// Consider using float2 for memory coalescing when accessing vg_a and vg_b
+// Align pitch to be a multiple of preferred memory alignment to improve coalesced access
+// Use shared memory to store results of __powf calculations for reuse within the block
+// Minimize bank conflicts in shared memory access by padding shared memory array
+// Use more than one warp for final reduction if k is large enough
+// Prefetch vg_a data into registers if k is small to reduce global memory access latency
+// Ensure global memory stores are coalesced when writing to d
+```

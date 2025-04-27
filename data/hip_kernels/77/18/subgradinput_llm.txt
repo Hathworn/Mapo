@@ -1,0 +1,5 @@
+// Consider memory coalescing by using shared memory to reduce global memory transactions.
+// Group consecutive memory accesses for gradInput to improve spatial locality and memory access efficiency.
+// Precompute offsets for complex index calculations to reduce repetitive computations.
+// Evaluate potential loop unrolling for the kernel height and width loops if computational resources allow for it.
+// Minimize warp divergence by aligning work with warp-friendly execution patterns in conditions and loops.

@@ -1,0 +1,6 @@
+```
+// Ensure coalesced memory accesses to optimize global memory throughput
+// Use shared memory for data reused within the block to reduce global memory access
+// Minimize idle threads by optimizing block size for better resource utilization
+// Use __restrict__ pointers if applicable to help the compiler with load/store optimization
+```

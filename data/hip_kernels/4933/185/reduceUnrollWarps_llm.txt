@@ -1,0 +1,10 @@
+```
+// Consider coalesced memory access for g_idata to optimize global memory access.
+// Evaluate the benefit of accessing g_idata as float2 or int2 to achieve coalesced access.
+// Use shared memory to reduce global memory access for idata and improve performance.
+// Investigate warp shuffle operations to replace __syncthreads() within a warp.
+// Utilize loop unrolling for the in-place reduction loop to minimize the loop overhead.
+// Explore using thread-fence operations for atomic operations if needed.
+// Minimize divergence in the if conditions to exploit warp parallelism effectively.
+// Consider using __restrict__ qualifiers to inform the compiler about non-aliasing pointers.
+```

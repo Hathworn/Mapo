@@ -1,0 +1,9 @@
+```
+// Ensure appropriate block dimensions to maximize occupancy
+// Minimize global memory accesses by using shared memory
+// Perform boundary checks to prevent out-of-bounds accesses
+// Utilize shared memory to reduce global memory traffic
+// Use __syncthreads() to synchronize threads after loading shared memory
+// Optimize shared memory usage by calculating indices properly
+// Reduce global memory writes to only necessary updated values
+```

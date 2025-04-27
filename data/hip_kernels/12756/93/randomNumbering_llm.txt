@@ -1,0 +1,6 @@
+```
+// Use shared memory to store hiprandState if multiple threads access the same elements
+// Coalesce global memory accesses for both globalState and degreeCount arrays
+// Minimize divergence within warps by restructuring conditionals if possible
+// Use constant memory for constant parameters if applicable, like 'limit'
+```

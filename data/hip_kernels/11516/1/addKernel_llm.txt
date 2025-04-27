@@ -1,0 +1,3 @@
+// Consider using shared memory to cache dev_a[p] to reduce global memory access latency.
+// Preload dev_size into a register or shared memory to reduce repetitive global memory accesses.
+// Ensure compute capability for large data by dynamically allocating shared memory.

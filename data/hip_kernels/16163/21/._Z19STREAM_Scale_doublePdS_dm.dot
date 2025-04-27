@@ -1,0 +1,13 @@
+digraph "CFG for '_Z19STREAM_Scale_doublePdS_dm' function" {
+	label="CFG for '_Z19STREAM_Scale_doublePdS_dm' function";
+
+	Node0x5ad14b0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !5, !invariant.load !6\l  %11 = zext i16 %10 to i32\l  %12 = getelementptr inbounds i8, i8 addrspace(4)* %7, i64 12\l  %13 = bitcast i8 addrspace(4)* %12 to i32 addrspace(4)*\l  %14 = load i32, i32 addrspace(4)* %13, align 4, !tbaa !7\l  %15 = mul i32 %6, %11\l  %16 = add i32 %15, %5\l  %17 = zext i32 %16 to i64\l  %18 = icmp ult i64 %17, %3\l  br i1 %18, label %19, label %35\l|{<s0>T|<s1>F}}"];
+	Node0x5ad14b0:s0 -> Node0x5ad1500;
+	Node0x5ad14b0:s1 -> Node0x5ad3840;
+	Node0x5ad1500 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{%19:\l19:                                               \l  %20 = udiv i32 %14, %11\l  %21 = mul i32 %20, %11\l  %22 = icmp ugt i32 %14, %21\l  %23 = zext i1 %22 to i32\l  %24 = add i32 %20, %23\l  %25 = mul i32 %24, %11\l  %26 = zext i32 %25 to i64\l  br label %27\l}"];
+	Node0x5ad1500 -> Node0x5ad3d30;
+	Node0x5ad3d30 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%27:\l27:                                               \l  %28 = phi i64 [ %17, %19 ], [ %33, %27 ]\l  %29 = getelementptr inbounds double, double addrspace(1)* %0, i64 %28\l  %30 = load double, double addrspace(1)* %29, align 8, !tbaa !16\l  %31 = fmul contract double %30, %2\l  %32 = getelementptr inbounds double, double addrspace(1)* %1, i64 %28\l  store double %31, double addrspace(1)* %32, align 8, !tbaa !16\l  %33 = add i64 %28, %26\l  %34 = icmp ult i64 %33, %3\l  br i1 %34, label %27, label %35, !llvm.loop !20\l|{<s0>T|<s1>F}}"];
+	Node0x5ad3d30:s0 -> Node0x5ad3d30;
+	Node0x5ad3d30:s1 -> Node0x5ad3840;
+	Node0x5ad3840 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#dedcdb70",label="{%35:\l35:                                               \l  ret void\l}"];
+}

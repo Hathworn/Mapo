@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to reduce global memory access latency
+// Optimize block and grid dimensions for better occupancy and performance
+// Coalesce global memory accesses by ensuring contiguous threads access contiguous data
+// Prefetch data to registers to minimize global memory reads within the loop
+// Check if using a different memory space like constant memory could reduce latency
+```

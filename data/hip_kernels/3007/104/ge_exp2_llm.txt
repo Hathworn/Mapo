@@ -1,0 +1,7 @@
+```
+// Use __restrict__ keyword to aid the compiler in optimizing memory accesses
+// Ensure coalesced memory access by aligning data structures in memory
+// Consider using shared memory if there are shared computation patterns
+// Minimize use of global memory where possible to reduce memory latency
+// Utilize warp-level primitives to reduce redundant calculations
+```

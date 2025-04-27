@@ -1,0 +1,9 @@
+```
+// Consider coalescing global memory access for input array
+// Utilize shared memory to reduce global memory transactions
+// Reduce thread divergence by ensuring all threads participate equally
+// Optimize the block size to utilize available shared memory effectively
+// Use occupations to analyze and fine-tune the occupancy level
+// Ensure the number of threads per block is a multiple of warp size
+// Consider using asynchronous memory prefetching if appropriate
+```

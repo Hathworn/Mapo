@@ -1,0 +1,4 @@
+// Use a register to reduce accesses to global memory
+// Use shared memory to store intermediate results for reduction
+// Minimize condition checks within the kernel by using registers and shared memory
+// Use memory coalescing for accessing input arrays `a` and `x`

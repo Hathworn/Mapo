@@ -1,0 +1,8 @@
+```
+// Load data into shared memory to reduce global memory accesses
+// Use parallel reduction to compute the norm efficiently
+// Employ warp shuffle-based reduction to minimize synchronization overhead
+// Use atomic operations for accurate accumulation of partial results
+// Apply conditional renormalization to avoid unnecessary operations
+// Minimize divergent branches by aligning conditions within warps
+```

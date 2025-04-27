@@ -1,0 +1,3 @@
+// Move redundant calculations outside the if statement for performance improvement.
+// Calculate 'value1', 'value2', and 'norm' before condition check.
+// Use efficient memory access by using += only once for 'result[tid]'.

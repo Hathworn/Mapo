@@ -1,0 +1,4 @@
+// Use shared memory to minimize global memory access for reference points.
+// Ensure coalesced memory access for both searchPoints and referencePoints.
+// Reduce __syncthreads() calls where possible to avoid thread synchronization overhead.
+// Optimize thread usage to ensure warp-level execution whenever feasible.

@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to reduce global memory access
+// Optimize memory access patterns to improve coalescing in the id computation
+// Adjust thread and block settings to balance between limiting divergence and maximizing occupancy
+// Reduce the number of __syncthreads() calls to minimize synchronization overhead
+// Evaluate loop unrolling for small loops to mitigate loop overhead
+```

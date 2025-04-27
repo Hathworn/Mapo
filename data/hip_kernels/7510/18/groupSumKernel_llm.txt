@@ -1,0 +1,8 @@
+```
+// Optimize memory access by using __ldg intrinsic to load read-only input values for better performance
+// Consider using shared memory to further reduce global memory access latency
+// Minimize the use of atomic operations by restructuring computations when feasible
+// Use a tiling strategy to improve memory coalescing and bandwidth utilization
+// Explore the use of loop unrolling techniques to decrease instruction overhead and increase throughput
+// Profile the kernel to identify potential warp divergence and optimize control flow
+```

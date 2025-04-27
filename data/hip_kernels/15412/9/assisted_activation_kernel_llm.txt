@@ -1,0 +1,6 @@
+```c
+// Load elements from global memory only once outside the loop to minimize memory accesses.
+// Use loop unrolling pragma to increase instruction-level parallelism.
+// Check bounds early to avoid unnecessary calculations and improve warp execution efficiency.
+// Consider using shared memory to further reduce global memory accesses and improve performance.
+```

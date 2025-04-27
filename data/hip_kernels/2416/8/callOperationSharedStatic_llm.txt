@@ -1,0 +1,9 @@
+```c
+// Consider coalesced memory access for a and b when loading into shared memory
+// Ensure shared memory is sized efficiently to avoid bank conflicts
+// Optimize the use of shared memory to reduce shared memory bank conflicts
+// Align data to reduce misaligned memory access overhead
+// Avoid unnecessary use of shared memory if computations can be done directly
+// Consider vectorized loads and stores if applicable
+// Ensure __syncthreads() is minimized and utilized effectively
+```

@@ -1,0 +1,7 @@
+```
+// Avoid uncoalesced memory access in softmax_device
+// Ensure input and output arrays are aligned for optimal memory access
+// Use shared memory to cache input data and reduce global memory reads
+// Precompute constant stride indices to reduce arithmetic overhead
+// Minimize divergent branching by organizing data for coalesced access
+```

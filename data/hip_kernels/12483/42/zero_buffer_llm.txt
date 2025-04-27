@@ -1,0 +1,4 @@
+// Ensure coalesced memory access patterns for buffer if possible
+// Minimize shared memory usage to avoid bank conflicts
+// Consider loop unrolling for the buffer initialization
+// Use appropriate block and grid sizes for maximizing occupancy

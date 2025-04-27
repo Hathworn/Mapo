@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by utilizing consecutive threads within a warp
+// Minimize launch overhead by tuning block sizes for better occupancy
+// Consider padding the histogram array to avoid bank conflicts
+// Investigate the use of shared memory for intermediate histogram computation
+// Optimize memory access patterns for better cache utilization
+```

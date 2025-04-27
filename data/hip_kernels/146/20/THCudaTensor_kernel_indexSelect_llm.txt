@@ -1,0 +1,4 @@
+// Consider using shared memory to store tid, src_stride, and index data for faster access.
+// Ensure memory access patterns are coalesced by aligning memory boundaries.
+// Explore usage of texture memory for repeated index accesses.
+// Optimize memory bank conflicts when using shared memory.

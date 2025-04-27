@@ -1,0 +1,4 @@
+// Implement memory coalescing by ensuring consecutive threads access consecutive memory locations.
+// Utilize shared memory effectively to minimize global memory access latency during reduction.
+// Consider using atomic operations if multiple warps are writing to the same global memory location.
+// Ensure loop unrolling is optimized for specific hardware and thread count to maximize performance.

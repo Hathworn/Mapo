@@ -1,0 +1,7 @@
+```
+// Consider using __shared__ memory to reduce global memory accesses if possible
+// Use memory coalescing techniques for better memory bandwidth utilization
+// Minimize the use of printf as it can degrade performance on the GPU
+// Ensure that the kernel is launched with optimal block and grid sizes
+// Align data structures to 16 or 32 bytes for better memory access patterns
+```

@@ -1,0 +1,5 @@
+// Ensure coalesced memory access by checking alignment and data structure
+// Consider using shared memory for frequently accessed data
+// Optimize thread block size for better occupancy and throughput
+// Utilize warp-level primitives if applicable to reduce divergence
+// Ensure values fit within cache to minimize global memory access

@@ -1,0 +1,6 @@
+```
+// Consider reducing global memory accesses by storing hiprandState in shared memory if multiple threads use the same state
+// Optimize memory coalescing by ensuring consecutive threads access consecutive memory locations
+// Minimize bank conflicts when using shared memory by ensuring proper alignment
+// Explore using constant memory for `seed` if it's read-only and accessed frequently
+```

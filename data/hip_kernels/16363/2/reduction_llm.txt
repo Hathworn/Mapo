@@ -1,0 +1,6 @@
+```
+// Use a stride-based loop to enhance memory coalescing
+// Consider using shared memory to reduce global memory access latency
+// Ensure that block size is a multiple of warp size to improve performance
+// Avoid divergent branches within the loop to maintain warp efficiency
+```

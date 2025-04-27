@@ -1,0 +1,7 @@
+```
+// Ensure coalesced memory access by aligning data structures in memory
+// Use shared memory to reduce redundant global memory access if needed
+// Optimize block size to balance between parallelism and memory bandwidth
+// Minimize divergence by ensuring that all threads within a warp follow the same execution path
+// Consider using texture memory for read-only data if access patterns are 2D spatial locality
+```

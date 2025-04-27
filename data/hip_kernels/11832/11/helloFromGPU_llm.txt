@@ -1,0 +1,7 @@
+```c
+// Consider using shared memory for frequently accessed data to reduce global memory accesses.
+// Optimize memory coalescing to ensure threads within a warp access consecutive memory locations.
+// Explore the use of warp shuffle functions for better data exchange within a warp.
+// Assess if reducing thread divergence in conditional statements enhances performance.
+// Evaluate using asynchronous memory copies to overlap data transfers with computations.
+```

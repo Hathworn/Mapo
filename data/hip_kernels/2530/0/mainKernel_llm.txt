@@ -1,0 +1,7 @@
+```
+// Use early return to minimize unnecessary computation
+// Ensure memory access patterns are coalesced for optimal memory throughput
+// Consider using shared memory if threads within the block require frequent data reuse
+// Minimize memory divergence by aligning data structures to memory boundaries
+// Explore occupancy to ensure high utilization of the GPU cores
+```

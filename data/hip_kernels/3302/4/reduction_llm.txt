@@ -1,0 +1,7 @@
+```
+// Consider using warp-level primitives for direct warp reduction to avoid excessive __syncthreads()
+// Evaluate using atomics for reduction to potentially simplify code and improve parallelism
+// Ensure memory coalescing by aligning input data properly
+// Avoid bank conflicts in shared memory by carefully organizing access patterns
+// Explore using fast math operations to increase computation speed
+```

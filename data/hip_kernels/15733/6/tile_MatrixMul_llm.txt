@@ -1,0 +1,5 @@
+// Use shared memory to reduce global memory access latency.
+// Ensure coalesced memory access patterns for loading A and B matrices.
+// Align thread and block indices to optimize memory access patterns.
+// Minimize thread divergence by ensuring conditional statements are uniform across threads.
+// Consider using an optimized tile size that maximizes shared memory usage while minimizing bank conflicts.

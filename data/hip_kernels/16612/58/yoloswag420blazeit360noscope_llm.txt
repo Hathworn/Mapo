@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for cache-sensitive data to reduce global memory access latency
+// Ensure memory coalescing for input and rand arrays to improve access efficiency
+// Use __restrict__ keyword on pointers if applicable to inform the compiler about non-aliasing
+// Optimize the grid and block dimensions for better occupancy and load balancing
+```

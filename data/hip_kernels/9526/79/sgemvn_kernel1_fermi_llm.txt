@@ -1,0 +1,8 @@
+```
+// Ensure the computation index is within valid range before accessing memory to avoid unnecessary checks.
+// Use pointer arithmetic to access elements instead of using indices for better cache locality.
+// Unroll inner loop to allow the compiler to optimize loop operations and reduce loop overhead.
+// Perform accumulative operations in registers to minimize global memory access.
+// Increment A by lda inside the unrolled loop for efficient memory traversal.
+// Write results to global memory only when computation is complete and within the valid index to avoid partial writes.
+```

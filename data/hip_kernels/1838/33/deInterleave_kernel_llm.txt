@@ -1,0 +1,7 @@
+```
+// Ensure memory access is coalesced for d_XY_in loading
+// Use shared memory to minimize global memory access for reuse within a block
+// Consider loop unrolling if processing multiple elements per thread
+// Ensure proper memory alignment for pitched memory
+// Minimize divergence by limiting the use of conditional statements
+```

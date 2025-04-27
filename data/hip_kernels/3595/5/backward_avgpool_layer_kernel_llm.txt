@@ -1,0 +1,7 @@
+```
+// Consider coalescing memory access for in_delta and out_delta to improve global memory bandwidth usage.
+// Try using shared memory to cache values of out_delta if it is reused multiple times.
+// Assess if loop unrolling can be applied for calculations within the kernel to enhance performance.
+// Explore the possibility of launching the kernel with a different block size for optimal occupancy and resource utilization.
+// Ensure alignment of data structures to 128 bytes to fully utilize memory transactions on GPU.
+```

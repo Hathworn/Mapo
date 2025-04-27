@@ -1,0 +1,9 @@
+```
+// Consider coalesced loads from global to shared memory for LUT
+// Ensure shared memory usage is within limits to avoid bank conflicts
+// Coalesce global memory accesses in reading img_in
+// Minimize divergence by ensuring threads execute similar instructions
+// Prefetch data when beneficial to hide memory latency
+// Use constant memory if LUT size and access patterns are suitable
+// Double-buffer shared memory to overlap computation and memory transfer
+```

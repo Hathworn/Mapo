@@ -1,0 +1,7 @@
+```
+// Use shared memory for reduced latency access
+// Use __restrict__ keyword to aid compiler optimizations
+// Minimize global memory accesses by using a single thread for reading and writing
+// Ensure coalesced access pattern when reading input array if possible
+// Use __syncthreads() to synchronize threads for shared memory consistency
+```

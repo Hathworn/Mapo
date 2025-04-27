@@ -1,0 +1,5 @@
+// Use shared memory to reduce the usage of atomic operations
+// Accumulate values in shared memory to minimize atomic contention
+// Ensure __syncthreads() is used to synchronize between threads
+// Use atomicAdd only at the final step to accumulate into global memory
+// Optimize memory access patterns to improve coalescing

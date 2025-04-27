@@ -1,0 +1,7 @@
+```cpp
+// Use padding in shared memory to avoid bank conflicts
+// Consider using float3 or float4 for coalesced memory access
+// Merge loops to reduce synchronization overhead
+// Use faster intrinsic functions for math operations like rsqrtf
+// Accumulate partial sums in registers before shared memory reduction
+```

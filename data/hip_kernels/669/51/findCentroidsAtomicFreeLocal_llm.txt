@@ -1,0 +1,6 @@
+```
+// Consider using shared memory to reduce global memory accesses for filter_responses.
+// Use coalesced memory accesses when reading from and writing to global memory.
+// Use warp-level primitives like __shfl_down_sync for parallel reduction.
+// Reduce the use of atomic operations by accumulating results in local variables.
+```

@@ -1,0 +1,7 @@
+```c
+// Consider using global memory coalescing by ensuring consecutive threads access consecutive memory locations for the 'x' and 'delta' arrays.
+// Prefetch data to shared memory for 'x', 'delta', and 'mean' to increase memory bandwidth utilization.
+// Ensure that shared memory usage does not exceed hardware limits to prevent low occupancy.
+// Try loop unrolling techniques in the main loop to reduce loop overhead and increase throughput.
+// Explore the use of atomic operations to handle aggregation of shared_memory across threads in different cases.
+```

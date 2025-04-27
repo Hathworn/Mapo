@@ -1,0 +1,5 @@
+// Use loop fusion to reduce redundant iterations and improve performance.
+// Minimize divergent branches by clamping boundaries efficiently.
+// Optimize global memory access by coalescing d_g and d_b reads.
+// Pre-calculate gb_average to reduce repeated computations and save instructions.
+// Ensure coalesced writes to d_r_output for better memory throughput.

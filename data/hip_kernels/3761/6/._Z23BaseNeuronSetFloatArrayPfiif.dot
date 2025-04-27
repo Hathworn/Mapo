@@ -1,0 +1,10 @@
+digraph "CFG for '_Z23BaseNeuronSetFloatArrayPfiif' function" {
+	label="CFG for '_Z23BaseNeuronSetFloatArrayPfiif' function";
+
+	Node0x5d01f50 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%4:\l  %5 = tail call i32 @llvm.amdgcn.workitem.id.x(), !range !4\l  %6 = tail call i32 @llvm.amdgcn.workgroup.id.x()\l  %7 = tail call align 4 dereferenceable(64) i8 addrspace(4)*\l... @llvm.amdgcn.dispatch.ptr()\l  %8 = getelementptr i8, i8 addrspace(4)* %7, i64 4\l  %9 = bitcast i8 addrspace(4)* %8 to i16 addrspace(4)*\l  %10 = load i16, i16 addrspace(4)* %9, align 4, !range !5, !invariant.load !6\l  %11 = zext i16 %10 to i32\l  %12 = mul i32 %6, %11\l  %13 = add i32 %12, %5\l  %14 = icmp slt i32 %13, %1\l  br i1 %14, label %15, label %19\l|{<s0>T|<s1>F}}"];
+	Node0x5d01f50:s0 -> Node0x5d01fe0;
+	Node0x5d01f50:s1 -> Node0x5d03ef0;
+	Node0x5d01fe0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#f59c7d70",label="{%15:\l15:                                               \l  %16 = mul nsw i32 %13, %2\l  %17 = sext i32 %16 to i64\l  %18 = getelementptr inbounds float, float addrspace(1)* %0, i64 %17\l  store float %3, float addrspace(1)* %18, align 4, !tbaa !7\l  br label %19\l}"];
+	Node0x5d01fe0 -> Node0x5d03ef0;
+	Node0x5d03ef0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{%19:\l19:                                               \l  ret void\l}"];
+}

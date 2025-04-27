@@ -1,0 +1,6 @@
+```
+// Consider optimizing memory access patterns for shared_rows to improve coalescing.
+// Explore double buffering techniques to minimize wait time on __syncthreads().
+// Investigate increasing tile_y for better memory throughput and reduced divergence.
+// Assess the potential benefit of using texture memory for read-only data like dst.
+```

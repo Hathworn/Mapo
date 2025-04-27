@@ -1,0 +1,8 @@
+```
+// Consider using shared memory for commonly accessed input data within thread blocks
+// Coalesce memory accesses by ensuring threads access contiguous memory locations
+// Minimize redundant calculations, such as reusing computed index values
+// Reduce arithmetic operations by precomputing constant values
+// Consider using registers for frequently accessed variables such as B, G, R
+// Avoid branch divergence by ensuring all threads within a warp follow the same execution path
+```

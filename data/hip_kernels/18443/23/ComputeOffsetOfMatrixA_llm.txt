@@ -1,0 +1,7 @@
+```c
+// Consider coalescing memory accesses when reading from col_sum
+// Use shared memory to reduce global memory access latency, if applicable
+// Ensure block size is a multiple of warp size for optimal performance
+// Assess if memory access pattern aligns with GPU memory architecture
+// Minimize divergence to reduce warp serialization
+```

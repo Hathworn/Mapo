@@ -1,0 +1,7 @@
+```
+// Consider using a reduction pattern to optimize shared memory access.
+// Use block-wise reduction to reduce global memory access.
+// Avoid atomic operations by using local threads calculations.
+// Ensure memory coalescing while accessing input data.
+// Consider increasing block size for better occupancy.
+```

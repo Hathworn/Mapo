@@ -1,0 +1,10 @@
+```cpp
+// Optimize: Consider minimizing shared memory size by reducing matrix dimensions if possible
+// Optimize: Preload diagonal and non-diagonal values into registers to reduce global memory accesses
+// Optimize: Use loop unrolling to decrease loop overhead and increase throughput
+// Optimize: Use coalesced memory accesses when reading and writing to global memory
+// Optimize: Ensure warp divergence is minimized during branching
+// Optimize: Consider using float2 or float4 for non-diagonal values for efficient memory access
+// Optimize: Align data structures to meet memory coalescing requirements
+// Optimize: Reduce the number of __syncthreads() calls if possible
+```

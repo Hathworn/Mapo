@@ -1,0 +1,7 @@
+```
+// Consider using shared memory for frequently accessed data to minimize global memory accesses.
+// Optimize memory coalescing by ensuring contiguous threads access contiguous memory locations.
+// Investigate using vectorized loads/stores for the arrays if supported by the hardware.
+// Profile to ensure the compute-to-memory access ratio is appropriate for avoiding memory bottlenecks.
+// Double-check memory alignment for potential optimization with hardware-based requirements.
+```

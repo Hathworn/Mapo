@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to cache src data blocks to reduce global memory accesses
+// Explore coalesced memory pattern for the src array access to improve memory access efficiency
+// Use loop unrolling techniques in the nested loops for reduced overhead
+// Consider maximizing occupancy by selecting an optimal block size that utilizes GPU resources effectively
+// Minimize divergence by ensuring threads within a warp follow the same execution path
+```

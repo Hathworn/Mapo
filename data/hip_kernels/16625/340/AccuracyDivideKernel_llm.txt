@@ -1,0 +1,6 @@
+```
+// Consider using shared memory for frequently accessed data to reduce memory latency.
+// Evaluate if `accuracy` can be transferred to the device once instead of in every kernel call.
+// Ensure the kernel is launched with enough parallelism to fully utilize the GPU.
+// Check if `__restrict__` keyword can be used to give the compiler more optimization info.
+```

@@ -1,0 +1,11 @@
+```cpp
+// Use cooperative loading to maximize shared memory usage
+// Improve the memory coalescing by accessing consecutive elements
+// Maintain warp efficiency by synchronizing all threads after memory operations
+// Use shared memory efficiently to minimize global memory access
+// Clear last element for correct scan operation
+// Minimize synchronization points to enhance performance
+// Improve index calculation for global memory storage
+// Ensure memory writes back to global memory after processing
+// Use ternary for clearer logic and potential reduction in branching
+```

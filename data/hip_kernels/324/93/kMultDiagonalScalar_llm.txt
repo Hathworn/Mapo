@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access by ensuring data used by threads in a warp is contiguous
+// Use shared memory for data reuse if multiple threads access the same data
+// Optimize for memory latency by ensuring enough threads to hide global memory latency
+// Consider reducing memory accesses by using registers to hold temporary values
+// Minimize divergent branches as all threads in a warp should follow the same execution path
+```

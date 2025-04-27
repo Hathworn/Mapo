@@ -1,0 +1,6 @@
+```
+// Cache cur_weight to reduce global memory access
+// Use shared memory to reduce computation per thread and memory access
+// Use atomicAdd for thread safety
+// Ensure only one thread updates linear term
+```

@@ -1,0 +1,7 @@
+```
+// Consider coalesced memory access to reduce global memory transactions.
+// Use shared memory to cache data if there are strided access patterns.
+// Minimize warp divergence by checking conditions outside of the critical loop.
+// Ensure data is aligned to memory segment boundaries for better access efficiency.
+// Reduce the number of global memory writes by updating multiple values in a single transaction if possible.
+```

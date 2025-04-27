@@ -1,0 +1,4 @@
+// Use shared memory to reduce redundant global memory accesses for lifter coefficients.
+// Ensure memory alignment to improve coalesced access.
+// Consider optimizing thread block size for better utilization of GPU resources.
+// Minimize memory divergence by ensuring contiguous memory access patterns.

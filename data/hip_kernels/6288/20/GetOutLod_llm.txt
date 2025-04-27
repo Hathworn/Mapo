@@ -1,0 +1,7 @@
+```
+// Optimize memory access by utilizing shared memory if possible
+// Consider using __restrict__ qualifiers for pointer arguments to improve compiler optimizations
+// Ensure coalesced memory access patterns for in_lod and out_lod0 arrays
+// Evaluate potential benefits of using vectorized loads and stores
+// Minimize divergence in the warp by ensuring the condition affects entire warps consistently
+```

@@ -1,0 +1,4 @@
+// Use shared memory to reduce repeated global memory access
+// Ensure coalesced memory access patterns for both reads and writes
+// Optimize shared memory size if possible, consider src width and height constraints
+// Consider loop unrolling for the loop iterating over threads to increase efficiency

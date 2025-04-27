@@ -1,0 +1,5 @@
+// Consider using shared memory to reduce global memory accesses.
+// Optimize memory access patterns to ensure coalesced access by all threads in a warp.
+// Minimize the use of barriers to reduce synchronization overhead.
+// Utilize vectorized data types for memory accesses, when possible.
+// Ensure data is aligned to memory boundaries for efficient access.

@@ -1,0 +1,4 @@
+// Use shared memory to cache inputs and reduce global memory access
+// Consider using vectorized loads for better memory coalescing
+// Optimize memory access patterns to minimize bank conflicts
+// Balance the occupancy by adjusting block size and register usage

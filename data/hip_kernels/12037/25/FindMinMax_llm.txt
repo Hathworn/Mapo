@@ -1,0 +1,8 @@
+```
+// Consider coalesced memory access for d_Data to improve memory bandwidth utilization
+// Use a check to avoid accessing out-of-bounds memory when loading d_Data
+// Minimize shared memory usage by only storing necessary values
+// Implement loop unrolling technique for the reduction phase
+// Ensure proper memory alignment for optimal memory access patterns
+// Reduce the number of __syncthreads() to avoid unnecessary barriers
+```

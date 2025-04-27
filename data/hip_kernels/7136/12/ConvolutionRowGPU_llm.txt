@@ -1,0 +1,4 @@
+// Consider coalesced memory access by aligning data for float4 operations.
+// Use shared memory to reduce global memory access latency.
+// Minimize bank conflicts in shared memory usage.
+// Consider using texture memory for efficient read-only data access.

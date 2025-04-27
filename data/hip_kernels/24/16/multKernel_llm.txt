@@ -1,0 +1,7 @@
+```
+// Optimize shared memory usage by coalescing memory accesses in the tile loading phase.
+// Ensure coalesced global memory access when loading data into shared memory.
+// Consider increasing TILE_WIDTH to better use shared memory, depending on hardware constraints.
+// Reduce the number of __syncthreads() calls if possible for performance improvement.
+// Explore using float2 or float4 data types for vectorized memory access where applicable.
+```

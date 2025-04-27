@@ -1,0 +1,7 @@
+```cpp
+// Consider coalesced memory access patterns for optimal performance
+// Use __syncthreads() only when absolutely necessary to minimize overhead
+// Align global memory operations to improve memory throughput
+// Ensure that BLOCKSIZE is a multiple of warp size for best performance
+// Optimize the stride in loops to reduce bank conflicts in shared memory
+```

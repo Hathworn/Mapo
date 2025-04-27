@@ -1,0 +1,10 @@
+```
+// Use shared memory to minimize global memory usage
+// Initialize shared memory arrays to avoid repetitive calculations
+// Precompute Gaussian weights and store them in shared memory
+// Load only valid pixel data into shared memory to avoid out-of-bound accesses
+// Ensure threads have a coalesced access pattern to global memory
+// Optimize histogram reduction using fewer synchronization points
+// Employ boundary checks to minimize conditional branch divergence
+// Use warp-level synchronization where possible for efficiency
+```

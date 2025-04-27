@@ -1,0 +1,6 @@
+```
+// Precompute constants outside the loop to reduce redundant calculations
+// Use shared memory to minimize global memory accesses if possible
+// Ensure thread coalescing by accessing global memory in a contiguous manner
+// Optimize memory access patterns to leverage memory coalescing for uchar4
+```

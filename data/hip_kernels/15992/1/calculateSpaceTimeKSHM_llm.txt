@@ -1,0 +1,9 @@
+```cpp
+// Load black hole data into shared memory to reduce global memory access
+// Use memcpy to load black hole data into shared memory at once for coalesced access
+// Ensure all threads synchronize after loading shared memory to prevent race conditions
+// Calculate global index correctly for accessing the SPBox
+// Use SOFTENING to prevent division by zero errors
+// Use rsqrtf for more efficient computation of inverse square root
+// Perform calculations locally within each thread to minimize shared memory usage
+```

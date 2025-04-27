@@ -1,0 +1,6 @@
+```c
+// Optimize memory access by ensuring d_synaptic_efficacies_or_weights, d_time_of_last_spike_to_reach_synapse, and d_postsynaptic_neuron_indices are in global memory coalesced patterns.
+// Consider using shared memory if data reuse within the block is possible for d_synaptic_efficacies_or_weights or d_postsynaptic_neuron_indices.
+// The use of atomic operations can serialize access; evaluate if the kernel configuration or algorithm change can reduce contention.
+// Investigate if loop unrolling can enhance the throughput by decreasing loop overhead.
+```

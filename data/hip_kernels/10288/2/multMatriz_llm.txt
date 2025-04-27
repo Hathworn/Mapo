@@ -1,0 +1,7 @@
+```
+// Use shared memory to store submatrices for faster access
+// Coalesce global memory accesses for db by accessing sequential threads
+// Consider loop unrolling to improve the throughput of loop iterations
+// Avoid bank conflicts by ensuring shared memory is accessed efficiently
+// Minimize thread divergence by organizing workloads appropriately
+```

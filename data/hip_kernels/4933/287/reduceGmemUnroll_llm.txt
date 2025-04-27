@@ -1,0 +1,7 @@
+```cpp
+// Consider using shared memory to avoid redundant global memory accesses
+// Align data access to enable coalesced global memory transactions
+// Use __syncthreads() efficiently to minimize idle time
+// Unroll loops appropriately to maximize instruction throughput
+// Use volatile keyword cautiously to avoid unnecessary synchronization overhead
+```

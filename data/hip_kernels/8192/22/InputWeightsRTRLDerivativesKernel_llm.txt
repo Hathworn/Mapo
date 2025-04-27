@@ -1,0 +1,5 @@
+// Optimize memory access by avoiding bank conflicts
+// Use local registers to minimize global memory access latency
+// Ensure coalesced memory access patterns for input and hiddenActivationDerivatives arrays
+// Consider using shared memory for frequently accessed data to reduce redundant reads from global memory
+// Ensure alignment of memory access for recurrentWeights and previousInputWeightRTRLDerivatives arrays to maximize performance

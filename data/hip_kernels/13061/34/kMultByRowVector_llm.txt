@@ -1,0 +1,7 @@
+```
+// Use shared memory for vec to reduce global memory accesses
+// Consider vectorizing operations using float4 or similar types
+// Ensure memory coalescing by checking memory access patterns
+// Optimize blockDim and gridDim based on specific GPU architecture
+// Use asynchronous memory copies if applicable to reduce latency
+```

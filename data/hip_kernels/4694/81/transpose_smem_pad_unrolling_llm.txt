@@ -1,0 +1,7 @@
+```c
+// Use shared memory to reduce global memory accesses and enhance data reuse
+// Employ unrolling to increase instruction throughput and improve performance
+// Ensure boundary checks prevent out-of-bounds memory access
+// Align shared memory accesses to benefit from memory coalescing
+// Utilize __syncthreads() to synchronize threads before reading from shared memory
+```

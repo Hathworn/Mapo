@@ -1,0 +1,7 @@
+```
+// Consider using shared memory to buffer input data for each block and reduce global memory accesses.
+// Utilize vectorized loads and stores for coalesced memory access patterns in A, B, AP, and BP arrays.
+// Minimize register usage by unrolling inner loops for smaller patch sizes.
+// Evaluate memory alignment and ensure data is aligned for optimal access patterns.
+// Consider the use of texture memory if data access patterns are suitable.
+```

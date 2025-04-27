@@ -1,0 +1,6 @@
+// Use shared memory to minimize global memory access
+// Adjust TILE_SIZE according to hardware limits for optimal shared memory use
+// Use __syncthreads() to ensure memory consistency and synchronization
+// Load data into shared memory before computation to reduce redundant global memory access
+// Optimize conditional checks to minimize branch divergence
+// Preload neighboring elements into shared memory when possible to avoid conditional access outside shared memory

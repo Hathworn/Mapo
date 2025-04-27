@@ -1,0 +1,5 @@
+// Consider using shared memory for data coalescing to improve memory access patterns.
+// Utilize registers to store frequently accessed data to minimize repeated calculations.
+// Synchronize threads to ensure data is fully loaded into shared memory before computation.
+// Ensure condition checks for data operations are minimized within the loop to enhance performance.
+// Consider using shared memory only when the block size allows efficient use.

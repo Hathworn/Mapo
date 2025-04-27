@@ -1,0 +1,6 @@
+```
+// Consider coalescing global memory access for float* Rmatrices
+// Use shared memory to reduce global memory reads for subArraySizes
+// Use shared memory to store float diagEntry to reduce redundant calculations
+// Minimize divergent branches within the warp
+```

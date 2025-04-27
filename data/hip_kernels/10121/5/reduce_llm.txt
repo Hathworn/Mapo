@@ -1,0 +1,8 @@
+```
+// Use coalesced memory access when loading data into shared memory
+// Align block size to power-of-two for better reduction performance
+// Remove bounds check if the input size is guaranteed to align with blockDim.x
+// Minimize the use of __syncthreads() where possible to reduce synchronization overhead
+// Prefer warp-level primitives for reduction inside a warp
+// Avoid atomicAdd in global memory by performing a tree-based reduction across blocks
+```

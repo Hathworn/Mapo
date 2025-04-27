@@ -1,0 +1,5 @@
+// Consider caching frequently accessed variables like 'stride' and 'pad' in shared memory for faster access.
+// Use shared memory for data that can be reused among threads within the same block such as 'src_data' and 'dst_grad'.
+// Optimize memory access to reduce bank conflicts in shared memory.
+// Reuse register variables when possible to minimize register pressure.
+// Ensure that atomic operations are necessary; if multiple threads rarely write to the same location, consider alternative methods to reduce atomic contention.

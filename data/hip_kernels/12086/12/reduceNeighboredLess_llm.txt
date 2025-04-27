@@ -1,0 +1,7 @@
+```
+// Consider aligning shared memory usage with warp size for better coalescing
+// Minimize the boundary check by using if (idx < n) at the beginning
+// Use only what is necessary in shared memory to reduce allocation size
+// Try to use atomic operations where possible for performance improvement
+// Ensure memory access patterns are coalesced for optimal performance
+```

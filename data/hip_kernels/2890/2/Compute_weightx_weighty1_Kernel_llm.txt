@@ -1,0 +1,4 @@
+// Use shared memory to cache psi and phi values if they are reused across threads
+// Consider using texture memory for absIx and absIy for improved memory access patterns
+// Explore the possibility of loop unrolling in case any iterative operations are included
+// Optimize memory access by ensuring coalesced memory transactions for weightx and weighty

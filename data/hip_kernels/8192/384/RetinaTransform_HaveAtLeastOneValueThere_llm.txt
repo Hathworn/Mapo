@@ -1,0 +1,4 @@
+// Consider using shared memory to hold input data for block access to reduce global memory accesses
+// Precompute subImg and diameterPix outside of loops to reduce redundant calculations
+// Optimize memory access patterns by ensuring input[x + y * inputWidth] is coalesced
+// Use float4 or similar vector types to load multiple values in a single memory transaction for mask values

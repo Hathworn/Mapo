@@ -1,0 +1,8 @@
+```
+// Use more efficient memory accesses by coalescing reads from global memory.
+// Consider using loop unrolling for the reduction phase to minimize branch divergence.
+// Ensure that the shared memory usage is optimized to prevent bank conflicts.
+// Evaluate the use of vectorized operations to speed up memory transactions.
+// Explore the possibility of using atomic operations for final min-max calculation if contention is low.
+// Profile the code to tune the block size and grid size for maximum performance.
+```

@@ -1,0 +1,5 @@
+// Consider coalescing memory access to d_in for more efficient memory transactions.
+// Use __syncthreads() strategically to minimize stalls and maximize parallel execution.
+// To increase occupancy, balance shared memory usage and register utilization.
+// Ensure global memory access patterns are sequential to boost memory throughput.
+// Consider using warp shuffles for reduction operations to minimize shared memory dependency.

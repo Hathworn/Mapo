@@ -1,0 +1,7 @@
+```
+// Use shared memory to reduce global memory access if possible
+// Coalesce global memory accesses for a, b, s, and c
+// Prefer using float4 or float2 data types for vectorized operations
+// Use __restrict__ qualifier for pointer arguments if no aliasing
+// Consider loop unrolling if this kernel is called with small n
+```

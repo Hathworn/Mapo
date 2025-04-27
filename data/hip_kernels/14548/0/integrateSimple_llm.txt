@@ -1,0 +1,8 @@
+```
+// Utilize shared memory to minimize global memory access by storing intermediate sums
+// Ensure efficient memory coalescing when accessing global memory to improve throughput
+// Maximize warp utilization by processing consecutive data chunks within a loop
+// Minimize divergences within warps by ensuring uniform loop iterations
+// Utilize atomic operations for accumulating results across blocks safely
+// Avoid excessive synchronization by limiting __syncthreads to necessary points
+```

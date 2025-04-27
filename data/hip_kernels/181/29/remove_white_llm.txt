@@ -1,0 +1,13 @@
+```
+// Use shared memory for caching frequently accessed data
+// Coalesce global memory accesses for improved memory bandwidth
+// Align data in memory to ensure coalesced access
+// Use float4 to load/store data when applicable for more efficient memory access
+// Consider loop unrolling to reduce loop overhead
+// Launch kernels with optimally sized thread blocks for maximal occupancy
+// Minimize divergent branches within warps
+// Minimize global memory accesses by utilizing registers efficiently
+// Use asynchronous memory operations where possible
+// Employ __restrict__ keyword for pointers to enable the compiler to optimize memory accesses
+// Avoid using magic numbers; define constants for clarity and maintainability
+```

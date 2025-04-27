@@ -1,0 +1,6 @@
+```
+// Use coalesced memory access patterns to improve global memory access speed
+// Consider using warp shuffle instead of shared memory for reductions within a warp
+// Minimize __syncthreads() usage to reduce synchronization overhead
+// Ensure shared memory access is conflict-free by aligning data
+```
